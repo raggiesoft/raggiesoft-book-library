@@ -123,6 +123,10 @@
             <option value="dark">Dark Mode</option>
             <option value="sepia">Sepia Mode</option>
         </select>
+        <div style="margin-top: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
+            <input type="checkbox" id="reader-custom-theme-toggle" checked style="width: 1.1rem; height: 1.1rem; accent-color: var(--rs-primary);">
+            <label for="reader-custom-theme-toggle" style="font-size: 0.9rem;">Allow Custom Story Themes</label>
+        </div>
     </div>
     
     <div style="margin-bottom: 1.5rem;">
@@ -243,6 +247,7 @@ dialog::backdrop {
     const widthSelect = document.getElementById('reader-width-select');
     const fontSelect = document.getElementById('reader-font-select');
     const audioSelect = document.getElementById('reader-audio-select');
+    const customThemeToggle = document.getElementById('reader-custom-theme-toggle');
     const readerPage = document.querySelector('.reader-page');
     const btnResetAll = document.getElementById('reader-settings-reset-all');
     
@@ -255,6 +260,7 @@ dialog::backdrop {
     let currentWidth = 'default';
     let currentFontFamily = 'system-ui, -apple-system, sans-serif';
     let currentAutoPlayAudio = 'false';
+    let currentCustomThemeEnabled = true;
 
     
     // Load Settings
@@ -262,7 +268,7 @@ dialog::backdrop {
         const stored = localStorage.getItem('reader-settings');
         if (stored) {
             const settings = JSON.parse(stored);
-            if (settings.theme) { applyTheme(settings.theme); } else { applyTheme('auto'); }
+            if (settings.theme) { applyTheme(settings.theme, settings.customThemeEnabled !== false); } else { applyTheme('auto', settings.customThemeEnabled !== false); }
             if (settings.fontSize) applyFontSize(settings.fontSize);
             if (settings.width) { applyWidth(settings.width); } else { applyWidth('default'); }
             if (settings.fontFamily) { applyFontFamily(settings.fontFamily); } else { applyFontFamily('system-ui, -apple-system, sans-serif'); }
@@ -270,7 +276,7 @@ dialog::backdrop {
         }
     } catch (e) {}
     if (!localStorage.getItem('reader-settings')) {
-        applyTheme('auto');
+        applyTheme('auto', true);
         applyWidth('default');
         applyFontFamily('system-ui, -apple-system, sans-serif');
         applyAudioSetting('false');
@@ -290,16 +296,41 @@ dialog::backdrop {
     if (btnReset) btnReset.addEventListener('click', () => applyFontSize(1.15));
 
     // Theme Handlers
-    function applyTheme(theme) {
-        document.body.classList.remove('theme-light', 'theme-dark', 'theme-sepia', 'theme-auto');
-        document.body.classList.add(`theme-${theme}`);
+    function applyTheme(theme, customEnabled = true) {
+        currentCustomThemeEnabled = customEnabled;
+        if (customThemeToggle) customThemeToggle.checked = customEnabled;
+        
+        document.body.classList.remove('theme-light', 'theme-dark', 'theme-sepia', 'theme-auto', 'theme-custom');
+        
+        const customThemeMeta = document.querySelector('meta[name="stardust-narrative-theme"]');
+        const narrativeTheme = customThemeMeta ? customThemeMeta.getAttribute('content') : null;
+        const customThemeLink = document.getElementById('narrative-theme-css');
+        
+        // Remove old narrative class just in case it changed
+        document.body.className = document.body.className.replace(/narrative-theme-[a-zA-Z0-9_-]+/g, '').trim();
+
+        if (currentCustomThemeEnabled && narrativeTheme && narrativeTheme.trim() !== '') {
+            document.body.classList.add('theme-custom');
+            document.body.classList.add(`narrative-theme-${narrativeTheme}`);
+            if (customThemeLink) customThemeLink.disabled = false;
+        } else {
+            if (customThemeLink) customThemeLink.disabled = true;
+            document.body.classList.add(`theme-${theme}`);
+        }
+        
         if (themeSelect) themeSelect.value = theme;
         saveSettings();
     }
 
     if (themeSelect) {
         themeSelect.addEventListener('change', (e) => {
-            applyTheme(e.target.value);
+            applyTheme(e.target.value, currentCustomThemeEnabled);
+        });
+    }
+    
+    if (customThemeToggle) {
+        customThemeToggle.addEventListener('change', (e) => {
+            applyTheme(themeSelect ? themeSelect.value : 'auto', e.target.checked);
         });
     }
 
@@ -350,7 +381,7 @@ dialog::backdrop {
     if (btnResetAll) {
         btnResetAll.addEventListener('click', () => {
             applyFontSize(1.15);
-            applyTheme('auto');
+            applyTheme('auto', true);
             applyWidth('default');
             applyFontFamily('system-ui, -apple-system, sans-serif');
             applyAudioSetting('false');
@@ -361,6 +392,7 @@ dialog::backdrop {
     function saveSettings() {
         localStorage.setItem('reader-settings', JSON.stringify({
             theme: themeSelect ? themeSelect.value : 'auto',
+            customThemeEnabled: currentCustomThemeEnabled,
             fontSize: currentFontSize,
             width: currentWidth,
             fontFamily: currentFontFamily,
