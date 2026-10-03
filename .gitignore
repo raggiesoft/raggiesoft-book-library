@@ -1,0 +1,101 @@
+# =================================================
+# 
+# RaggieSoft Assets - Git Ignore Rules
+# 
+# =================================================
+# 
+# --- Audio Source Files ---
+# These are the master files used for transcoding.
+*.wav
+*.aiff
+*.flac
+*.alac
+*.dsd
+*.dff
+*.dsf
+
+# --- Generated Audio Files ---
+# These are the output files created by the transcoder script.
+*.mp3
+*.ogg
+*.aac
+*.m4a
+*.wma
+
+# --- High-Resolution Design & Art Files ---
+# Raw Photoshop/Illustrator files and uncompressed images.
+*.psd
+*.psb
+*.ai
+*.eps
+*.tiff
+*.tif
+*.raw
+*.cr2
+*.dng
+
+# --- Video & Motion Graphics ---
+# Promotional videos, music videos, and raw renders.
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.webm
+*.prproj
+*.aep
+
+# --- Archives & Compressed Files ---
+# These are the large downloadable packages for users.
+*.7z
+*.zip
+*.tar.gz
+*.rar
+*.gz
+
+# --- Disc Image & Binary Data ---
+# These formats are often large and not needed in version control.
+*.iso
+*.bin
+*.cue
+*.img
+*.dmg
+
+# --- OS Generated Files ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# --- IDE / Editor Configs ---
+.vscode/
+.idea/
+*.swp
+
+# --- Narrative & Reference Assets ---
+# Ignore ALL source/reference images inside ANY book directory
+_workspace/books/*/images/source/
+*upscayl*.png
+
+# --- WORKSPACE SECURITY ---
+# Ignore the real keys
+_workspace/build-tools/rclone/rclone.conf
+_workspace/build-tools/ssh_keys.txt
+
+# Do NOT ignore the example config
+!_workspace/build-tools/rclone/rclone.conf.example
+
+# --- WORKSPACE & TOOLS ---
+# Ignore all binaries and configs in build-tools
+_workspace/build-tools/
+
+# Exception: Keep the example config so we know where to put keys
+!_workspace/build-tools/rclone/rclone.conf.example
+
+# --- Narrative & Reference Assets ---
+# Ignore ALL source/reference images inside ANY book directory
+_workspace/books/*/images/source/
+_workspace/books/*/images/people/real-person/
+
+# Ignore all Upscayl output directories and contents (case-insensitive catch)
+*[Uu]pscayl*/
+*upscayl*.pnggit rm --cached -r "*[Uu]pscayl*"
