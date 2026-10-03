@@ -81,33 +81,32 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
 <main id="stardust-reading-pane" tabindex="-1">
     <div class="book-page reader-page">
         <!-- Breadcrumbs & Nav -->
-        <div class="reader-nav mb-4">
-            <a href="/catalog" class="text-muted text-decoration-none">Catalog</a> &raquo; 
-            <a href="<?php echo htmlspecialchars($overviewUrl); ?>" class="text-muted text-decoration-none"><?php echo htmlspecialchars(ucfirst($seriesSlug)); ?></a> &raquo; 
-            <strong><?php echo htmlspecialchars($title); ?></strong>
+        <div class="reader-nav" style="margin-bottom: 2rem; opacity: 0.7; font-size: 0.9rem;">
+            <a href="https://raggiesoft.com/raggiesoft-books" target="_blank" style="text-decoration: none;">Publisher Home</a> &raquo; 
+            <strong style="color: var(--rs-text);"><?php echo htmlspecialchars($title); ?></strong>
         </div>
 
         <article class="story-content">
             <!-- Title Header -->
-            <div class="text-center mb-5 pb-3 border-bottom">
-                <h1 class="fw-bold mb-3"><?php echo htmlspecialchars($title); ?></h1>
+            <div style="text-align: center; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--rs-border);">
+                <h1 style="margin-bottom: 1rem; font-weight: 700;"><?php echo htmlspecialchars($title); ?></h1>
                 
                 <?php if (!empty($frontmatter['date']) || !empty($frontmatter['start_time']) || !empty($frontmatter['pov']) || !empty($frontmatter['location'])): ?>
-                    <div class="metadata d-flex flex-wrap justify-content-center gap-3 text-muted small fw-semibold">
+                    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; opacity: 0.7; font-size: 0.85rem; font-weight: 600;">
                         <?php if (!empty($frontmatter['date'])): ?>
-                            <span><i class="ph ph-calendar-blank"></i> <?php echo htmlspecialchars($frontmatter['date']); ?></span>
+                            <span style="display: flex; align-items: center; gap: 4px;"><i class="ph ph-calendar-blank"></i> <?php echo htmlspecialchars($frontmatter['date']); ?></span>
                         <?php endif; ?>
                         
                         <?php if (!empty($frontmatter['start_time'])): ?>
-                            <span><i class="ph ph-clock"></i> <?php echo htmlspecialchars($frontmatter['start_time']); ?></span>
+                            <span style="display: flex; align-items: center; gap: 4px;"><i class="ph ph-clock"></i> <?php echo htmlspecialchars($frontmatter['start_time']); ?></span>
                         <?php endif; ?>
                         
                         <?php if (!empty($frontmatter['location'])): ?>
-                            <span><i class="ph ph-map-pin"></i> <?php echo htmlspecialchars($frontmatter['location']); ?></span>
+                            <span style="display: flex; align-items: center; gap: 4px;"><i class="ph ph-map-pin"></i> <?php echo htmlspecialchars($frontmatter['location']); ?></span>
                         <?php endif; ?>
                         
                         <?php if (!empty($frontmatter['pov'])): ?>
-                            <span><i class="ph ph-eye"></i> POV: <?php echo htmlspecialchars($frontmatter['pov']); ?></span>
+                            <span style="display: flex; align-items: center; gap: 4px;"><i class="ph ph-eye"></i> POV: <?php echo htmlspecialchars($frontmatter['pov']); ?></span>
                         <?php endif; ?>
                     </div>
                 <?php endif; ?>
@@ -118,19 +117,17 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
         </article>
         
         <!-- Bottom Navigation -->
-        <div class="d-flex justify-content-between mt-5 pt-4 border-top">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--rs-border);">
             <?php if ($prevUrl): ?>
-                <a href="<?php echo htmlspecialchars($prevUrl); ?>" class="btn btn-outline-secondary">&larr; Previous</a>
+                <a href="<?php echo htmlspecialchars($prevUrl); ?>" class="rs-btn">&larr; Previous</a>
             <?php else: ?>
-                <button class="btn btn-outline-secondary" disabled>&larr; Previous</button>
+                <button class="rs-btn" disabled style="opacity: 0.5; cursor: not-allowed;">&larr; Previous</button>
             <?php endif; ?>
 
-            <a href="<?php echo htmlspecialchars($overviewUrl); ?>" class="btn btn-link text-muted">Index</a>
-
             <?php if ($nextUrl): ?>
-                <a href="<?php echo htmlspecialchars($nextUrl); ?>" class="btn btn-primary">Next &rarr;</a>
+                <a href="<?php echo htmlspecialchars($nextUrl); ?>" class="rs-btn rs-btn-primary">Next &rarr;</a>
             <?php else: ?>
-                <button class="btn btn-primary" disabled>Next &rarr;</button>
+                <button class="rs-btn rs-btn-primary" disabled style="opacity: 0.5; cursor: not-allowed;">Next &rarr;</button>
             <?php endif; ?>
         </div>
     </div>
@@ -145,7 +142,7 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
 .story-content {
     font-size: 1.15rem;
     line-height: 1.8;
-    color: var(--text-color, #111);
+    color: var(--rs-text);
 }
 .story-content p {
     margin-bottom: 1.5rem;

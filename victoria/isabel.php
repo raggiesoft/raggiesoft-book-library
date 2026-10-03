@@ -1,25 +1,24 @@
 <?php
 // Stardust Engine Library: Master Router
+// The Three Siblings: Victoria (Vault), Isabel (Router), Oliver (Viewer)
 header('Content-Type: text/html; charset=utf-8');
 
 $requestUri = strtok($_SERVER['REQUEST_URI'], '?');
 $basePath = realpath(__DIR__ . '/../');
 
 // ---------------------------------------------------------
-// STARDUST ROUTER INTELLIGENCE
+// ISABEL'S ROUTING LOGIC
 // ---------------------------------------------------------
-
-$isHome = ($requestUri == '/' || $requestUri == '/isabel.php' || $requestUri == '/index.php');
-$isCatalog = ($requestUri == '/catalog' || $requestUri == '/catalog/overview.php');
 
 $pageConfig = [
     'showSidebar' => true,
     'theme' => 'oceanview',
-    'view' => ''
+    'view' => $basePath . '/victoria/oliver.php'
 ];
 
+// Always try to load the route data based on the series slug
 $seriesSlug = '';
-if (preg_match('#^/([^/]+)#', $requestUri, $matches) && !$isHome && !$isCatalog) {
+if (preg_match('#^/([^/]+)#', $requestUri, $matches)) {
     $seriesSlug = $matches[1];
     
     // Load Route Data for Series
@@ -34,16 +33,10 @@ if (preg_match('#^/([^/]+)#', $requestUri, $matches) && !$isHome && !$isCatalog)
     }
 }
 
-if ($isHome) {
-    $pageConfig['showSidebar'] = false;
-    $pageConfig['view'] = $basePath . '/includes/components/pages/home.php';
-} else if ($isCatalog) {
-    $pageConfig['showSidebar'] = false;
-    $pageConfig['view'] = $basePath . '/includes/components/pages/catalog/overview.php';
-} else if ($seriesSlug && $requestUri === "/$seriesSlug") {
-    $pageConfig['view'] = $basePath . '/includes/components/pages/series_toc.php';
-} else {
-    $pageConfig['view'] = $basePath . '/includes/components/pages/viewer.php';
+// Redirect base path to the publisher imprint home
+if ($requestUri === '/' || $requestUri === '/isabel.php' || $requestUri === '/index.php' || $requestUri === '/catalog') {
+    header('Location: https://raggiesoft.com/raggiesoft-books');
+    exit;
 }
 
 // Extract Variables for Views
@@ -63,8 +56,6 @@ echo '<div id="stardust-main-wrapper">';
 
 // Include Sidebar
 if ($showSidebar) {
-    // We could dynamically load $pageConfig['sidebar'] if we wanted, 
-    // but for now we fallback to the default sidebar component
     $sidebarFile = $basePath . '/includes/components/sidebars/sidebar.php';
     if (!empty($pageConfig['sidebar'])) {
         $candidate = $basePath . '/includes/components/sidebars/' . basename($pageConfig['sidebar']) . '.php';
@@ -73,12 +64,8 @@ if ($showSidebar) {
     require_once $sidebarFile;
 }
 
-// Render the actual page view
-if (file_exists($pageConfig['view'])) {
-    require_once $pageConfig['view'];
-} else {
-    echo '<main id="stardust-reading-pane" tabindex="-1"><div class="book-page"><h1>404 Not Found</h1><p>The requested route could not be found.</p></div></main>';
-}
+// Oliver takes over for the actual reading pane
+require_once $pageConfig['view'];
 
 echo '</div> <!-- END #stardust-main-wrapper -->';
 
