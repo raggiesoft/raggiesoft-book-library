@@ -318,12 +318,12 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
                         
                     </div>
                     
-                    <dialog id="narrative-lyrics-dialog" style="padding: 0; border: 1px solid var(--rs-border); border-radius: 12px; background: var(--rs-bg); color: var(--rs-text); box-shadow: 0 10px 40px rgba(0,0,0,0.3); max-width: 600px; width: 90%; max-height: 85vh;">
+                    <dialog id="narrative-lyrics-dialog" style="padding: 0; border: 1px solid var(--rs-border); border-radius: 12px; background: var(--rs-bg); color: var(--rs-text); box-shadow: 0 10px 40px rgba(0,0,0,0.3); max-width: 600px; width: 90%; max-height: 85vh; overflow: hidden;">
                         <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; border-bottom: 1px solid var(--rs-border); background: var(--rs-card-bg);">
                             <h3 id="narrative-lyrics-title" style="margin: 0; font-size: 1.2rem; font-weight: 700;"></h3>
                             <button id="narrative-lyrics-close" class="rs-btn" style="padding: 0.5rem; border: none; background: transparent; font-size: 1.2rem; cursor: pointer;"><i class="ph ph-x"></i></button>
                         </div>
-                        <div id="narrative-lyrics-content" style="padding: 1.5rem; overflow-y: auto; max-height: calc(85vh - 70px); font-size: 1.1rem; line-height: 1.6;">
+                        <div id="narrative-lyrics-content" style="padding: 1.5rem; overflow-y: auto; max-height: calc(85vh - 80px); font-size: 1.1rem; line-height: 1.6;">
                         </div>
                     </dialog>
                     
