@@ -11,7 +11,7 @@ $basePath = realpath(__DIR__ . '/../');
 // ---------------------------------------------------------
 
 $pageConfig = [
-    'view' => $basePath . '/sophia/oliver.php'
+    'theme' => 'raggiesoft-books'
 ];
 
 // Always try to load the route data based on the series slug
@@ -38,10 +38,22 @@ if ($requestUri === '/' || $requestUri === '/isabel.php' || $requestUri === '/in
 }
 
 // Extract Variables for Views
-$currentPageTheme = $pageConfig['theme'] ?? 'oceanview';
+$currentPageTheme = $pageConfig['theme'] ?? 'raggiesoft-books';
 $siteName = $pageConfig['siteName'] ?? 'Ocean View Archives';
 
-// We do NOT use the legacy header.php or sidebar.php anymore.
-// We just drop straight into Oliver.
+// Do NOT load a header menu (like header-default) so the reader has full screen real estate
+$currentHeaderMenu = null;
+
+// Include Global HTML Header (Opens HTML, Head, Body, #stardust-app)
+require_once $basePath . '/includes/components/headers/header.php';
+
+echo '<div id="stardust-main-wrapper" style="display: block; margin: 0; padding: 0;">';
+
+// Oliver takes over for the actual reading pane (No Sidebar included)
 require_once $basePath . '/sophia/oliver.php';
+
+echo '</div> <!-- END #stardust-main-wrapper -->';
+
+// Include Global HTML Footer (Closes #stardust-app, injects SPA script)
+require_once $basePath . '/includes/components/footers/footer.php';
 ?>
