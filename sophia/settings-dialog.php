@@ -181,6 +181,7 @@ body.theme-dark {
     --rs-card-bg: #1e1e1e;
     --rs-text: #e0e0e0;
     --rs-border: #333;
+    --rs-surface: #1e1e1e;
 }
 body.theme-sepia {
     --rs-bg: #f4ecd8;
@@ -188,6 +189,7 @@ body.theme-sepia {
     --rs-card-bg: #fdf6e3;
     --rs-text: #5c4b37;
     --rs-border: #e0d5c1;
+    --rs-surface: #fdf6e3;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -197,6 +199,7 @@ body.theme-sepia {
         --rs-card-bg: #1e1e1e;
         --rs-text: #e0e0e0;
         --rs-border: #333;
+        --rs-surface: #1e1e1e;
     }
 }
 
