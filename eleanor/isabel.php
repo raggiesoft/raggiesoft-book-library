@@ -47,7 +47,7 @@ $currentHeaderMenu = null;
 // Include Global HTML Header (Opens HTML, Head, Body, #stardust-app)
 require_once $basePath . '/includes/components/headers/header.php';
 
-echo '<div id="stardust-main-wrapper" style="display: block; margin: 0; padding: 0;">';
+echo '<div id="stardust-main-wrapper">';
 
 // Oliver takes over for the actual reading pane (No Sidebar included)
 require_once $basePath . '/sophia/oliver.php';

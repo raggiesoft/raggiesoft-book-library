@@ -21,7 +21,7 @@ if (file_exists($routeFile)) {
 }
 
 if (empty($actualFilePath)) {
-    echo '<main id="stardust-reading-pane" tabindex="-1"><div class="book-page"><h1>Chapter Not Found</h1><p>The requested route could not be found in the route map.</p></div></main>';
+    echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;"><div class="book-page"><h1>Chapter Not Found</h1><p>The requested route could not be found in the route map.</p></div></main>';
     return;
 }
 
@@ -31,7 +31,7 @@ $mdUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/' . $actualF
 
 $mdContent = @file_get_contents($mdUrl);
 if ($mdContent === false) {
-    echo '<main id="stardust-reading-pane" tabindex="-1"><div class="book-page"><h1>File Not Found</h1><p>The narrative file could not be loaded from the Vault.</p></div></main>';
+    echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;"><div class="book-page"><h1>File Not Found</h1><p>The narrative file could not be loaded from the Vault.</p></div></main>';
     return;
 }
 
@@ -80,7 +80,7 @@ $overviewUrl = '/' . $seriesSlug;
 $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
 ?>
 
-<main id="stardust-reading-pane" tabindex="-1">
+<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;">
     <div class="book-page reader-page">
         <!-- Breadcrumbs & Nav -->
         <div class="reader-nav" style="margin-bottom: 2rem; opacity: 0.7; font-size: 0.9rem;">
