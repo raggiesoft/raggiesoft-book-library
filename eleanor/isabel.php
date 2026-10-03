@@ -14,8 +14,18 @@ $pageConfig = [
     'theme' => 'raggiesoft-books'
 ];
 
+// Load Master Settings
+$settingsFile = $basePath . '/data/settings.json';
+if (file_exists($settingsFile)) {
+    $settings = json_decode(file_get_contents($settingsFile), true);
+    $cdnBaseUrl = $settings['cdnBaseUrl'] ?? 'https://assets.raggiesoft.com';
+    $siteName = $settings['siteName'] ?? 'Ocean View Archives';
+} else {
+    $cdnBaseUrl = 'https://assets.raggiesoft.com';
+    $siteName = 'Ocean View Archives';
+}
+
 // Always try to load the route data based on the series slug
-$cdnBaseUrl = 'https://assets.raggiesoft.com';
 $seriesSlug = '';
 if (preg_match('#^/([^/]+)#', $requestUri, $matches)) {
     $seriesSlug = $matches[1];
