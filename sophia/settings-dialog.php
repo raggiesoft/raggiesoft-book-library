@@ -14,6 +14,16 @@
     </div>
 
     <div style="margin-bottom: 1.5rem;">
+        <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Font Family</h4>
+        <select id="reader-font-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
+            <option value="system-ui, -apple-system, sans-serif">System Sans-Serif (Default)</option>
+            <option value="'Lora', serif">Lora (Serif)</option>
+            <option value="'Inter', sans-serif">Inter (Sans-Serif)</option>
+            <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible</option>
+        </select>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
         <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Article Width</h4>
         <select id="reader-width-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
             <option value="default">Default (800px)</option>
@@ -80,6 +90,7 @@ dialog::backdrop {
     const contentBody = document.querySelector('.story-content');
     const themeSelect = document.getElementById('reader-theme-select');
     const widthSelect = document.getElementById('reader-width-select');
+    const fontSelect = document.getElementById('reader-font-select');
     const readerPage = document.querySelector('.reader-page');
     const btnResetAll = document.getElementById('reader-settings-reset-all');
     
@@ -97,11 +108,13 @@ dialog::backdrop {
             if (settings.theme) { applyTheme(settings.theme); } else { applyTheme('auto'); }
             if (settings.fontSize) applyFontSize(settings.fontSize);
             if (settings.width) { applyWidth(settings.width); } else { applyWidth('default'); }
+            if (settings.fontFamily) { applyFontFamily(settings.fontFamily); } else { applyFontFamily('system-ui, -apple-system, sans-serif'); }
         }
     } catch (e) {}
     if (!localStorage.getItem('reader-settings')) {
         applyTheme('auto');
         applyWidth('default');
+        applyFontFamily('system-ui, -apple-system, sans-serif');
     }
 
     // Font Size Handlers
@@ -151,6 +164,21 @@ dialog::backdrop {
     if (widthSelect) {
         widthSelect.addEventListener('change', (e) => applyWidth(e.target.value));
     }
+
+    // Font Family Handlers
+    let currentFontFamily = 'system-ui, -apple-system, sans-serif';
+    function applyFontFamily(font) {
+        currentFontFamily = font;
+        if (contentBody) {
+            contentBody.style.fontFamily = font;
+        }
+        if (fontSelect) fontSelect.value = font;
+        saveSettings();
+    }
+
+    if (fontSelect) {
+        fontSelect.addEventListener('change', (e) => applyFontFamily(e.target.value));
+    }
     
     // Reset All Handler
     if (btnResetAll) {
@@ -158,6 +186,7 @@ dialog::backdrop {
             applyFontSize(1.15);
             applyTheme('auto');
             applyWidth('default');
+            applyFontFamily('system-ui, -apple-system, sans-serif');
             dialog.close();
         });
     }
@@ -166,7 +195,8 @@ dialog::backdrop {
         localStorage.setItem('reader-settings', JSON.stringify({
             theme: themeSelect ? themeSelect.value : 'auto',
             fontSize: currentFontSize,
-            width: currentWidth
+            width: currentWidth,
+            fontFamily: currentFontFamily
         }));
     }
 

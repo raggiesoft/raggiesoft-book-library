@@ -11,7 +11,20 @@
     <link rel="stylesheet" href="https://assets.raggiesoft.com/stardust-engine-library/css/theme-<?= htmlspecialchars($currentPageTheme ?? 'oceanview') ?>.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
     <!-- Phosphor Icons (fallback for UI icons) -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+        <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P9RG9JVYB6"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-P9RG9JVYB6');
+    </script>
 </head>
 <body class="theme-<?= htmlspecialchars($currentPageTheme ?? 'oceanview') ?>">
 
