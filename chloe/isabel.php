@@ -51,6 +51,10 @@ $currentPageTheme = $pageConfig['theme'] ?? 'oceanview';
 $showSidebar = $pageConfig['showSidebar'] ?? true;
 $siteName = $pageConfig['siteName'] ?? 'Ocean View Archives';
 
+// Resolve Header
+$headerFile = $pageConfig['headerMenu'] ?? 'header-default';
+$currentHeaderMenu = $basePath . '/includes/components/headers/' . $headerFile . '.php';
+
 // Include Global HTML Header & Navbar (which handles theme classes)
 require_once $basePath . '/includes/components/headers/header.php';
 
