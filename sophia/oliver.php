@@ -283,6 +283,11 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
                                     <button id="narrative-audio-loop-toggle" class="rs-btn" style="border-radius: 50%; width: 36px; height: 36px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 2px solid var(--rs-primary); color: var(--rs-primary); background: rgba(0,0,0,0.05);" aria-label="Toggle Repeat: ON" title="Repeat 1 Track: ON">
                                         <i class="ph ph-repeat-once" style="font-size: 1.2rem;"></i>
                                     </button>
+                                    
+                                    <?php $lyricsUrl = $cdnBaseUrl . '/engine-room-records/artists/' . $artistSlug . '/' . $albumSlug . '/lyrics/' . $filenameNoExt . '.md'; ?>
+                                    <button id="narrative-audio-lyrics-toggle" class="rs-btn" style="border-radius: 50%; width: 36px; height: 36px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid var(--rs-border); background: transparent;" aria-label="View Lyrics" title="View Lyrics" data-url="<?php echo htmlspecialchars($lyricsUrl); ?>" data-title="<?php echo htmlspecialchars($audioTitleDisplay); ?>">
+                                        <i class="ph ph-music-notes" style="font-size: 1.2rem;"></i>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -312,10 +317,94 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
                         
                         
                     </div>
-                                        <script>
+                    
+                    <dialog id="narrative-lyrics-dialog" style="padding: 0; border: 1px solid var(--rs-border); border-radius: 12px; background: var(--rs-bg); color: var(--rs-text); box-shadow: 0 10px 40px rgba(0,0,0,0.3); max-width: 600px; width: 90%; max-height: 85vh;">
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; border-bottom: 1px solid var(--rs-border); background: var(--rs-card-bg);">
+                            <h3 id="narrative-lyrics-title" style="margin: 0; font-size: 1.2rem; font-weight: 700;"></h3>
+                            <button id="narrative-lyrics-close" class="rs-btn" style="padding: 0.5rem; border: none; background: transparent; font-size: 1.2rem; cursor: pointer;"><i class="ph ph-x"></i></button>
+                        </div>
+                        <div id="narrative-lyrics-content" style="padding: 1.5rem; overflow-y: auto; max-height: calc(85vh - 70px); font-size: 1.1rem; line-height: 1.6;">
+                        </div>
+                    </dialog>
+                    
+                    <script>
                     (function() {
                         const audioEl = document.getElementById('narrative-audio-element');
                         const loopBtn = document.getElementById('narrative-audio-loop-toggle');
+                        const lyricsBtn = document.getElementById('narrative-audio-lyrics-toggle');
+                        const lyricsDialog = document.getElementById('narrative-lyrics-dialog');
+                        const lyricsTitle = document.getElementById('narrative-lyrics-title');
+                        const lyricsContent = document.getElementById('narrative-lyrics-content');
+                        const lyricsClose = document.getElementById('narrative-lyrics-close');
+                        
+                        if (lyricsClose && lyricsDialog) {
+                            lyricsClose.addEventListener('click', () => {
+                                lyricsDialog.close();
+                            });
+                        }
+                        
+                        if (lyricsBtn && lyricsDialog) {
+                            lyricsBtn.addEventListener('click', () => {
+                                const title = lyricsBtn.getAttribute('data-title');
+                                const url = lyricsBtn.getAttribute('data-url');
+                                
+                                lyricsTitle.textContent = title;
+                                lyricsContent.innerHTML = '<div style="text-align: center; padding: 2rem; opacity: 0.7;">Retrieving data from the Vault...</div>';
+                                lyricsDialog.showModal();
+                                
+                                fetch(url + "?v=" + Date.now())
+                                    .then(res => {
+                                        if (!res.ok) throw new Error("Lore file not found.");
+                                        return res.text();
+                                    })
+                                    .then(text => {
+                                        let rawBlocks = text.split(/\n\s*\n/);
+                                        let htmlOutput = rawBlocks.map(block => {
+                                            if (block.trim() === '') return '';
+                                            let lines = block.split('\n');
+                                            let headerHtml = '';
+                                            let contentLines = [];
+                                            
+                                            lines.forEach(line => {
+                                                line = line.trim();
+                                                if (line === '') return;
+                                                
+                                                if (line.match(/^#+\s+/)) {
+                                                    let headerLevel = line.match(/^#+/)[0].length;
+                                                    let headerText = line.replace(/^#+\s+/, '').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+                                                    if (headerLevel === 1) return;
+                                                    let hClass = (headerLevel === 3 && line.includes('LORE NOTE:')) 
+                                                        ? 'style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; color: var(--rs-primary); letter-spacing: 1px; margin-bottom: 0.5rem;"' 
+                                                        : 'style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem;"';
+                                                    headerHtml += `<div ${hClass}>${headerText}</div>`;
+                                                } else {
+                                                    contentLines.push(line);
+                                                }
+                                            });
+                                            
+                                            let processedBody = contentLines.map(line => {
+                                                let parsedLine = line.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+                                                parsedLine = parsedLine.replace(/\*(.*?)\*/g, '<em>$1</em>');
+                                                parsedLine = parsedLine.replace(/~~(.*?)~~/g, '<del>$1</del>');
+                                                return parsedLine;
+                                            });
+                                            
+                                            if (contentLines.length === 0) return `<div style="margin-bottom: 1.5rem;">${headerHtml}</div>`;
+                                            
+                                            return `
+                                                <div style="margin-bottom: 1.5rem;">
+                                                    ${headerHtml}
+                                                    <div style="line-height: 1.6;">${processedBody.join('<br>')}</div>
+                                                </div>`;
+                                        }).join('');
+                                        
+                                        lyricsContent.innerHTML = htmlOutput;
+                                    })
+                                    .catch(err => {
+                                        lyricsContent.innerHTML = '<div style="color: #dc3545; padding: 1rem; border: 1px solid #dc3545; border-radius: 6px; background: rgba(220,53,69,0.1);">Data Corrupted. Unable to retrieve lyrics.</div>';
+                                    });
+                            });
+                        }
                         
                         if (audioEl) {
                             // Initialize Media Session API
