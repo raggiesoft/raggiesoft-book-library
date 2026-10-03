@@ -88,8 +88,36 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
         <!-- Breadcrumbs & Nav -->
         <div class="reader-nav" style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center;">
             <div style="opacity: 0.7; font-size: 0.9rem;">
-            <a href="https://raggiesoft.com/raggiesoft-books/books" style="text-decoration: none;">Publisher Home</a> &raquo; 
-            <strong style="color: var(--rs-text);"><?php echo htmlspecialchars($title); ?></strong>
+            <a href="https://raggiesoft.com/raggiesoft-books/books" style="text-decoration: none;">Publisher Home</a>
+            <?php 
+            global $katie, $seriesSlug, $actualFilePath;
+            
+            $seriesTitle = $katie['series_title'] ?? (ucfirst($seriesSlug) . ' Narrative');
+            $bookTitle = '';
+            $chapTitle = '';
+            
+            if ($katie && isset($katie['books'])) {
+                foreach ($katie['books'] as $b) {
+                    if (isset($b['chapters'])) {
+                        foreach ($b['chapters'] as $c) {
+                            if (isset($c['parts'])) {
+                                foreach ($c['parts'] as $p) {
+                                    if ($p['file_path'] === $actualFilePath) {
+                                        $bookTitle = $b['book_title'];
+                                        $chapTitle = $c['chap_title'];
+                                        break 3;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            ?>
+            &raquo; <span style="color: var(--rs-text);"><?php echo htmlspecialchars($seriesTitle); ?></span>
+            <?php if ($bookTitle): ?> &raquo; <span style="color: var(--rs-text);"><?php echo htmlspecialchars($bookTitle); ?></span><?php endif; ?>
+            <?php if ($chapTitle): ?> &raquo; <span style="color: var(--rs-text);"><?php echo htmlspecialchars($chapTitle); ?></span><?php endif; ?>
+            &raquo; <strong style="color: var(--rs-text); font-weight: 700;"><?php echo htmlspecialchars($title); ?></strong>
             </div>
             <div style="display: flex; gap: 1rem;">
                 <button id="stardust-sidebar-toggle" class="rs-btn" style="padding: 0.5rem 1rem; font-size: 0.85rem;"><i class="ph ph-list"></i> Chapters</button>
