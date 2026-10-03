@@ -4,7 +4,7 @@
         <!-- Hero Section -->
         <section class="ova-hero text-center">
             <div class="hero-content">
-                <i class="fa-duotone fa-book-journal-whills hero-icon"></i>
+                <i class="ph-duotone ph-books hero-icon"></i>
                 <h1 class="ova-title">Ocean View Archives</h1>
                 <p class="ova-subtitle">Independent Publishing Imprint. Preserving narratives across dimensions.</p>
             </div>

@@ -43,7 +43,7 @@ $seriesTitle = $katieData['series_title'] ?? ucfirst(str_replace('-', ' ', $seri
                                                     ?>
                                                     <li class="mb-2">
                                                         <a href="<?php echo htmlspecialchars($partUrl); ?>" class="text-decoration-none part-link">
-                                                            <i class="fa-regular fa-file-lines me-2"></i>
+                                                            <i class="ph ph-file-text me-2"></i>
                                                             <?php echo htmlspecialchars($part['part_title'] ?? 'Part ' . ltrim($part['part_id'], 'p')); ?>
                                                         </a>
                                                     </li>
