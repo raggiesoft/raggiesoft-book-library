@@ -11,8 +11,11 @@ $basePath = realpath(__DIR__ . '/../');
 
 $isHome = ($requestUri == '/' || $requestUri == '/isabel.php' || $requestUri == '/index.php');
 
-// Include Header
+// Include Global HTML Header & Navbar
 require_once $basePath . '/includes/components/headers/header.php';
+
+// Wrap Sidebar and Main content
+echo '<div id="stardust-main-wrapper">';
 
 // Include Sidebar (Except on Home Page)
 if (!$isHome) {
@@ -37,6 +40,8 @@ if ($isHome) {
     // Deep links like /casey/b001/c001/p001
     require_once $basePath . '/includes/components/pages/viewer.php';
 }
+
+echo '</div> <!-- END #stardust-main-wrapper -->';
 
 require_once $basePath . '/includes/components/footers/footer.php';
 ?>
