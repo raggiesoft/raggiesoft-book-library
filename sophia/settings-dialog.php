@@ -103,9 +103,9 @@
         <div style="padding: 1.5rem 1.5rem 0 1.5rem; border-bottom: 1px solid var(--rs-border);">
             <h3 style="margin-top: 0; margin-bottom: 1rem; font-weight: bold;">Reader Settings</h3>
             <div style="display: flex; gap: 1rem; margin-bottom: -1px; overflow-x: auto;" id="reader-settings-tabs">
-                <button class="settings-tab active" data-tab="layout">Layout</button>
-                <button class="settings-tab" data-tab="theme">Theme</button>
-                <button class="settings-tab" data-tab="advanced">Advanced</button>
+                <button type="button" class="settings-tab active" data-tab="layout">Layout</button>
+                <button type="button" class="settings-tab" data-tab="theme">Theme</button>
+                <button type="button" class="settings-tab" data-tab="advanced">Advanced</button>
             </div>
         </div>
         
@@ -115,9 +115,9 @@
                 <div style="margin-bottom: 1.5rem;">
                     <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Text Size</h4>
                     <div style="display: flex; gap: 0.5rem;">
-                        <button class="rs-btn" id="btn-text-decrease" style="flex: 1;">A-</button>
-                        <button class="rs-btn" id="btn-text-reset" style="flex: 1;">Default</button>
-                        <button class="rs-btn" id="btn-text-increase" style="flex: 1;">A+</button>
+                        <button type="button" class="rs-btn" id="btn-text-decrease" style="flex: 1;">A-</button>
+                        <button type="button" class="rs-btn" id="btn-text-reset" style="flex: 1;">Default</button>
+                        <button type="button" class="rs-btn" id="btn-text-increase" style="flex: 1;">A+</button>
                     </div>
                 </div>
 
@@ -175,14 +175,14 @@
                 <hr style="border: 0; border-top: 1px solid var(--rs-border); margin: 2rem 0;">
                 
                 <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-                    <button id="reader-run-wizard-btn" class="rs-btn" style="width: 100%;"><i class="ph ph-magic-wand"></i> Run Welcome Wizard</button>
-                    <button id="reader-settings-reset-all" class="rs-btn rs-btn-danger" style="width: 100%;">Reset All Settings to Default</button>
+                    <button type="button" id="reader-run-wizard-btn" class="rs-btn" style="width: 100%;"><i class="ph ph-magic-wand"></i> Run Welcome Wizard</button>
+                    <button type="button" id="reader-settings-reset-all" class="rs-btn rs-btn-danger" style="width: 100%;">Reset All Settings to Default</button>
                 </div>
             </div>
         </div>
         
         <div style="padding: 1.5rem; border-top: 1px solid var(--rs-border); text-align: center;">
-            <button id="close-settings-btn" class="rs-btn rs-btn-primary" style="width: 100%;">Done</button>
+            <button type="button" id="close-settings-btn" class="rs-btn rs-btn-primary" style="width: 100%;">Done</button>
         </div>
     </div>
 </dialog>
@@ -335,7 +335,7 @@ dialog::backdrop {
     const tabContents = document.querySelectorAll('.settings-tab-content');
     
     tabBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', (e) => { e.preventDefault();
             tabBtns.forEach(b => b.classList.remove('active'));
             tabContents.forEach(c => c.style.display = 'none');
             btn.classList.add('active');
@@ -344,8 +344,8 @@ dialog::backdrop {
     });
     
     if (btnRunWizard) {
-        btnRunWizard.addEventListener('click', () => {
-            localStorage.removeItem('stardust-wizard-completed');
+        btnRunWizard.addEventListener('click', (e) => { e.preventDefault();
+            localStorage.removeItem('rs-wizard-completed');
             window.location.reload();
         });
     }
