@@ -1,6 +1,74 @@
 <?php
 // Sophia's Reader Settings Dialog
 ?>
+<!-- WIZARD95 DIALOG -->
+<dialog id="reader-wizard-dialog" class="wizard-dialog">
+    <div class="wizard-container">
+        <!-- Left Sidebar Graphic -->
+        <div id="wizard-sidebar-graphic" class="wizard-sidebar"></div>
+        
+        <!-- Right Content Area -->
+        <div class="wizard-content">
+            
+            <!-- Step 1 -->
+            <div id="wizard-step-1" class="wizard-step active-step">
+                <h2 style="margin-top: 0; color: var(--rs-primary);">Welcome to Ocean View Archives!</h2>
+                <p>Hi there! I'm Isabel, the routing engine here at the Archives.</p>
+                <p>Before you start reading, Oliver and I wanted to help you set up your reading environment. The Archives are designed for long, distraction-free reading sessions, so let's make sure the layout is comfortable for you.</p>
+                <div style="margin-top: 2rem;">
+                    <h4 style="margin-bottom: 0.5rem;">Choose your Article Width:</h4>
+                    <select id="wizard-width-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
+                        <option value="default">Default (800px) - Recommended</option>
+                        <option value="wide">Wide (1200px)</option>
+                        <option value="full">Full Screen (100%)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div id="wizard-step-2" class="wizard-step" style="display: none;">
+                <h2 style="margin-top: 0; color: var(--rs-primary);">Themes & Text Size</h2>
+                <p>Hey, I'm Eleanor! I handle the public entry points.</p>
+                <p>If you're reading late at night, staring at a bright white screen can cause serious eye strain. We have a few themes available to help with that.</p>
+                <div style="margin-top: 2rem;">
+                    <h4 style="margin-bottom: 0.5rem;">Select a Theme:</h4>
+                    <select id="wizard-theme-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
+                        <option value="auto">System Default (Matches your OS)</option>
+                        <option value="light">Light Mode (Crisp & Clean)</option>
+                        <option value="dark">Dark Mode (Best for night)</option>
+                        <option value="sepia">Sepia Mode (Easy on the eyes)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div id="wizard-step-3" class="wizard-step" style="display: none;">
+                <h2 style="margin-top: 0; color: var(--rs-primary);">Fonts & Accessibility</h2>
+                <p>Hello! I'm Sophia, the keeper of the vault.</p>
+                <p>My brother Oliver wants you to know about <strong>Atkinson Hyperlegible</strong>. It's a special font designed by the Braille Institute to make letters incredibly distinct and readable, especially for low-vision readers. Try it out!</p>
+                <div style="margin-top: 2rem;">
+                    <h4 style="margin-bottom: 0.5rem;">Choose your Typography:</h4>
+                    <select id="wizard-font-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
+                        <option value="system-ui, -apple-system, sans-serif">System Sans-Serif (Default)</option>
+                        <option value="'Lora', serif">Lora (Classic Serif)</option>
+                        <option value="'Inter', sans-serif">Inter (Modern Sans)</option>
+                        <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible (Accessibility)</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <div class="wizard-footer">
+                <button id="wizard-btn-prev" class="rs-btn" style="visibility: hidden;">&larr; Back</button>
+                <button id="wizard-btn-next" class="rs-btn rs-btn-primary">Next &rarr;</button>
+                <button id="wizard-btn-finish" class="rs-btn rs-btn-primary" style="display: none;">Start Reading &rarr;</button>
+            </div>
+            
+        </div>
+    </div>
+</dialog>
+
+<!-- STANDARD SETTINGS DIALOG -->
 <dialog id="reader-settings-dialog" style="padding: 2rem; border-radius: 12px; border: 1px solid var(--rs-border); background: var(--rs-card-bg, #fff); color: var(--rs-text); max-width: 400px; width: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
     <h3 style="margin-top: 0; margin-bottom: 1.5rem; font-weight: bold;">Reader Settings</h3>
     
@@ -78,6 +146,66 @@ body.theme-sepia {
 dialog::backdrop {
     background: rgba(0,0,0,0.5);
     backdrop-filter: blur(2px);
+}
+
+/* WIZARD95 STYLES */
+.wizard-dialog {
+    padding: 0;
+    border-radius: 12px;
+    border: 1px solid var(--rs-border);
+    background: var(--rs-card-bg, #fff);
+    color: var(--rs-text);
+    max-width: 700px;
+    width: 100%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+.wizard-container {
+    display: flex;
+    min-height: 450px;
+}
+.wizard-sidebar {
+    width: 35%;
+    background-color: #000;
+    background-size: cover;
+    background-position: center;
+    border-right: 1px solid var(--rs-border);
+}
+.wizard-content {
+    width: 65%;
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+.wizard-step p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+.wizard-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--rs-border);
+    padding-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .wizard-container {
+        flex-direction: column;
+        min-height: auto;
+    }
+    .wizard-sidebar {
+        width: 100%;
+        height: 180px;
+        background-position: top center;
+        border-right: none;
+        border-bottom: 1px solid var(--rs-border);
+    }
+    .wizard-content {
+        width: 100%;
+        padding: 1.5rem;
+    }
 }
 </style>
 
@@ -201,11 +329,105 @@ dialog::backdrop {
     }
 
     // Modal Handlers
-    if (btnOpen && dialog) {
-        btnOpen.addEventListener('click', () => dialog.showModal());
+    const wizardDialog = document.getElementById('reader-wizard-dialog');
+    const hasCompletedWizard = localStorage.getItem('rs-wizard-completed');
+
+    if (btnOpen) {
+        btnOpen.addEventListener('click', () => {
+            if (localStorage.getItem('rs-wizard-completed')) {
+                dialog.showModal();
+            } else {
+                wizardDialog.showModal();
+                updateWizardState();
+            }
+        });
     }
     if (btnClose && dialog) {
         btnClose.addEventListener('click', () => dialog.close());
+    }
+
+    // WIZARD LOGIC
+    let currentStep = 1;
+    const totalSteps = 3;
+    const wizardSidebar = document.getElementById('wizard-sidebar-graphic');
+    const btnNext = document.getElementById('wizard-btn-next');
+    const btnPrev = document.getElementById('wizard-btn-prev');
+    const btnFinish = document.getElementById('wizard-btn-finish');
+    
+    // Sync wizard selects with global selects
+    const wizTheme = document.getElementById('wizard-theme-select');
+    const wizWidth = document.getElementById('wizard-width-select');
+    const wizFont = document.getElementById('wizard-font-select');
+    
+    // Initial sync
+    if (wizTheme) wizTheme.value = themeSelect ? themeSelect.value : 'auto';
+    if (wizWidth) wizWidth.value = widthSelect ? widthSelect.value : 'default';
+    if (wizFont) wizFont.value = fontSelect ? fontSelect.value : 'system-ui, -apple-system, sans-serif';
+
+    // Live update when wizard selects change
+    if (wizTheme) wizTheme.addEventListener('change', (e) => applyTheme(e.target.value));
+    if (wizWidth) wizWidth.addEventListener('change', (e) => applyWidth(e.target.value));
+    if (wizFont) wizFont.addEventListener('change', (e) => applyFontFamily(e.target.value));
+
+    const stepImages = {
+        1: 'https://assets.raggiesoft.com/stardust-engine-library/images/wizard/isabel_oliver_hug.jpg',
+        2: 'https://assets.raggiesoft.com/stardust-engine-library/images/wizard/eleanor_oliver_hug.jpg',
+        3: 'https://assets.raggiesoft.com/stardust-engine-library/images/wizard/sophia_oliver_hug.jpg'
+    };
+
+    function updateWizardState() {
+        // Hide all steps
+        for(let i = 1; i <= totalSteps; i++) {
+            const stepEl = document.getElementById('wizard-step-' + i);
+            if (stepEl) stepEl.style.display = 'none';
+        }
+        
+        // Show current step
+        const currentEl = document.getElementById('wizard-step-' + currentStep);
+        if (currentEl) currentEl.style.display = 'block';
+        
+        // Update Sidebar Image
+        if (wizardSidebar && stepImages[currentStep]) {
+            wizardSidebar.style.backgroundImage = `url('${stepImages[currentStep]}')`;
+        }
+
+        // Update Buttons
+        if (btnPrev) {
+            btnPrev.style.visibility = currentStep > 1 ? 'visible' : 'hidden';
+        }
+        
+        if (currentStep === totalSteps) {
+            if (btnNext) btnNext.style.display = 'none';
+            if (btnFinish) btnFinish.style.display = 'block';
+        } else {
+            if (btnNext) btnNext.style.display = 'block';
+            if (btnFinish) btnFinish.style.display = 'none';
+        }
+    }
+
+    if (btnNext) {
+        btnNext.addEventListener('click', () => {
+            if (currentStep < totalSteps) {
+                currentStep++;
+                updateWizardState();
+            }
+        });
+    }
+
+    if (btnPrev) {
+        btnPrev.addEventListener('click', () => {
+            if (currentStep > 1) {
+                currentStep--;
+                updateWizardState();
+            }
+        });
+    }
+
+    if (btnFinish) {
+        btnFinish.addEventListener('click', () => {
+            localStorage.setItem('rs-wizard-completed', 'true');
+            wizardDialog.close();
+        });
     }
 })();
 </script>
