@@ -14,6 +14,15 @@
     </div>
 
     <div style="margin-bottom: 1.5rem;">
+        <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Article Width</h4>
+        <select id="reader-width-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
+            <option value="default">Default (800px)</option>
+            <option value="wide">Wide (1200px)</option>
+            <option value="full">Full Width (100%)</option>
+        </select>
+    </div>
+
+    <div style="margin-bottom: 1.5rem;">
         <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Theme</h4>
         <select id="reader-theme-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
             <option value="auto">System Default</option>
@@ -23,8 +32,9 @@
         </select>
     </div>
     
-    <div style="text-align: right; margin-top: 2rem;">
-        <button id="close-settings-btn" class="rs-btn rs-btn-primary">Done</button>
+    <div style="text-align: center; margin-top: 2.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+        <button id="close-settings-btn" class="rs-btn rs-btn-primary" style="width: 100%;">Done</button>
+        <button id="reader-settings-reset-all" class="rs-btn" style="width: 100%; color: #dc3545; border-color: #dc3545; background: transparent;">Reset All Defaults</button>
     </div>
 </dialog>
 
@@ -69,6 +79,9 @@ dialog::backdrop {
     
     const contentBody = document.querySelector('.story-content');
     const themeSelect = document.getElementById('reader-theme-select');
+    const widthSelect = document.getElementById('reader-width-select');
+    const readerPage = document.querySelector('.reader-page');
+    const btnResetAll = document.getElementById('reader-settings-reset-all');
     
     const btnIncrease = document.getElementById('btn-text-increase');
     const btnDecrease = document.getElementById('btn-text-decrease');
@@ -83,10 +96,12 @@ dialog::backdrop {
             const settings = JSON.parse(stored);
             if (settings.theme) { applyTheme(settings.theme); } else { applyTheme('auto'); }
             if (settings.fontSize) applyFontSize(settings.fontSize);
+            if (settings.width) { applyWidth(settings.width); } else { applyWidth('default'); }
         }
     } catch (e) {}
     if (!localStorage.getItem('reader-settings')) {
         applyTheme('auto');
+        applyWidth('default');
     }
 
     // Font Size Handlers
@@ -116,10 +131,42 @@ dialog::backdrop {
         });
     }
 
+    // Width Handlers
+    let currentWidth = 'default';
+    function applyWidth(width) {
+        currentWidth = width;
+        if (readerPage) {
+            if (width === 'wide') {
+                readerPage.style.maxWidth = '1200px';
+            } else if (width === 'full') {
+                readerPage.style.maxWidth = '100%';
+            } else {
+                readerPage.style.maxWidth = '800px';
+            }
+        }
+        if (widthSelect) widthSelect.value = width;
+        saveSettings();
+    }
+    
+    if (widthSelect) {
+        widthSelect.addEventListener('change', (e) => applyWidth(e.target.value));
+    }
+    
+    // Reset All Handler
+    if (btnResetAll) {
+        btnResetAll.addEventListener('click', () => {
+            applyFontSize(1.15);
+            applyTheme('auto');
+            applyWidth('default');
+            dialog.close();
+        });
+    }
+
     function saveSettings() {
         localStorage.setItem('reader-settings', JSON.stringify({
             theme: themeSelect ? themeSelect.value : 'auto',
-            fontSize: currentFontSize
+            fontSize: currentFontSize,
+            width: currentWidth
         }));
     }
 
