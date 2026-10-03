@@ -370,9 +370,9 @@ dialog::backdrop {
     if (wizFont) wizFont.addEventListener('change', (e) => applyFontFamily(e.target.value));
 
     const stepImages = {
-        1: 'https://assets.raggiesoft.com/stardust-engine-library/images/wizard/isabel_oliver_hug.jpg',
-        2: 'https://assets.raggiesoft.com/stardust-engine-library/images/wizard/eleanor_oliver_hug.jpg',
-        3: 'https://assets.raggiesoft.com/stardust-engine-library/images/wizard/sophia_oliver_hug.jpg'
+        1: '<?php echo $cdnBaseUrl; ?>/stardust-engine-library/images/wizard/isabel_oliver_hug.jpg',
+        2: '<?php echo $cdnBaseUrl; ?>/stardust-engine-library/images/wizard/eleanor_oliver_hug.jpg',
+        3: '<?php echo $cdnBaseUrl; ?>/stardust-engine-library/images/wizard/sophia_oliver_hug.jpg'
     };
 
     function updateWizardState() {
