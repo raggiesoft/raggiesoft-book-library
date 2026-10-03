@@ -1,0 +1,28 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "raggiesoft-books",
+        "siteName": "Ocean View Archives",
+        "isSequential": true,
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books",
+        "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
+        "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
+        "navbarBrandLink": "/raggiesoft-books"
+    },
+    "/mary-childhood": {
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "mary-childhood",
+        "theme": "raggiesoft-books"
+    },
+    "/mary-childhood/mary-s-early-years/chapter-1/part-1-high-command": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: High Command",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p001.md",
+        "nextUrl": "/ashley-tower/b001/c001/p001",
+        "nextText": "Continue to Ashley Tower"
+    }
+}

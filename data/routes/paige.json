@@ -1,0 +1,1448 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "raggiesoft-books",
+        "siteName": "Ocean View Archives",
+        "isSequential": true,
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books",
+        "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
+        "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
+        "navbarBrandLink": "/raggiesoft-books"
+    },
+    "/paige": {
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "paige",
+        "theme": "raggiesoft-books"
+    },
+    "/paige/freshman-year/band-camp/part-1-the-downbeat": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Downbeat",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p001.md"
+    },
+    "/paige/freshman-year/band-camp/part-2-breakfast": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Breakfast",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p002.md"
+    },
+    "/paige/freshman-year/band-camp/part-3-the-section-leader": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Section Leader",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p003.md"
+    },
+    "/paige/freshman-year/band-camp/part-4-texture": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Texture",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p004.md"
+    },
+    "/paige/freshman-year/band-camp/part-5-the-file": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The File",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p005.md"
+    },
+    "/paige/freshman-year/band-camp/part-6-rocket-burger": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: Rocket Burger",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p006.md"
+    },
+    "/paige/freshman-year/band-camp/part-7-the-connection": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Connection",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p007.md"
+    },
+    "/paige/freshman-year/band-camp/part-8-the-overwatch": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Overwatch",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p008.md"
+    },
+    "/paige/freshman-year/band-camp/part-9-the-all-clear": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The All Clear",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p009.md"
+    },
+    "/paige/freshman-year/band-camp/part-10-the-table": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Table",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p010.md"
+    },
+    "/paige/freshman-year/the-fall/part-1-third-quarter": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Third Quarter",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p001.md"
+    },
+    "/paige/freshman-year/the-fall/part-2-the-signal": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Signal",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p002.md"
+    },
+    "/paige/freshman-year/winter-2000/part-1-the-visitor": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Visitor",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c003/p001.md"
+    },
+    "/paige/freshman-year/winter-2000/part-2-the-confrontation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Confrontation",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c003/p002.md"
+    },
+    "/paige/freshman-year/winter-2000/part-3-the-clinic": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Clinic",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c003/p003.md"
+    },
+    "/paige/freshman-year/winter-2000/part-4-the-law-of-the-lunchroom": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Law of the Lunchroom",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c003/p004.md"
+    },
+    "/paige/freshman-year/the-static/part-1-the-first-satellite": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The First Satellite",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p001.md"
+    },
+    "/paige/freshman-year/the-static/part-2-the-inside-man": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Inside Man",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p002.md"
+    },
+    "/paige/freshman-year/the-static/part-3-the-dinner-table": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Dinner Table",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p003.md"
+    },
+    "/paige/the-blueprint/the-cracks/part-1-static": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Static",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p001.md"
+    },
+    "/paige/the-blueprint/the-cracks/part-2-the-escape-vehicle": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Escape Vehicle",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p002.md"
+    },
+    "/paige/the-blueprint/the-cracks/part-3-the-route": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Route",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p003.md"
+    },
+    "/paige/the-blueprint/the-cracks/part-4-the-sugar-rush": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Sugar Rush",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p004.md"
+    },
+    "/paige/the-blueprint/the-cracks/part-5-the-calculation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Calculation",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p005.md"
+    },
+    "/paige/the-blueprint/the-cracks/part-6-the-collapse": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Collapse",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p006.md"
+    },
+    "/paige/the-blueprint/the-cracks/part-7-the-closet": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Closet",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p007.md"
+    },
+    "/paige/the-blueprint/the-severance/part-1-the-sofa": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Sofa",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c002/p001.md"
+    },
+    "/paige/the-blueprint/the-iron-city/part-1-the-transfer-point": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Transfer Point",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p001.md"
+    },
+    "/paige/the-blueprint/the-iron-city/part-2-the-red-booth": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Red Booth",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p002.md"
+    },
+    "/paige/the-blueprint/the-iron-city/part-3-the-detour": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Detour",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p003.md"
+    },
+    "/paige/the-blueprint/the-iron-city/part-4-pepper-plaza": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Pepper Plaza",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p004.md"
+    },
+    "/paige/the-blueprint/the-iron-city/part-5-the-configuration": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Configuration",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p005.md"
+    },
+    "/paige/the-blueprint/the-machine/part-1-route-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Route 1",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c004/p001.md"
+    },
+    "/paige/the-blueprint/the-machine/part-2-the-acoustic-engine": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Acoustic Engine",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c004/p002.md"
+    },
+    "/paige/the-blueprint/the-machine/part-3-the-pitch": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Pitch",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c004/p003.md"
+    },
+    "/paige/the-blueprint/the-machine/part-4-the-terminal": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Terminal",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c004/p004.md"
+    },
+    "/paige/the-blueprint/the-machine/part-5-the-foundry": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Foundry",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c004/p005.md"
+    },
+    "/paige/the-blueprint/the-machine/part-6-the-old-lady-on-the-hill": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Old Lady on the Hill",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c004/p006.md"
+    },
+    "/paige/the-blueprint/the-machine/part-7-the-reset": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Reset",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c004/p007.md"
+    },
+    "/paige/the-blueprint/the-machine/part-8-the-iron-sea": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Iron Sea",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c004/p008.md"
+    },
+    "/paige/the-blueprint/the-machine/part-9-the-forger-s-call": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Forger's Call",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c004/p009.md"
+    },
+    "/paige/the-blueprint/the-machine/part-10-the-false-start": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The False Start",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c004/p010.md"
+    },
+    "/paige/the-blueprint/the-machine/part-11-system-overload": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: System Overload",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c004/p011.md"
+    },
+    "/paige/the-blueprint/the-machine/part-12-the-human-grid": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: The Human Grid",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c004/p012.md"
+    },
+    "/paige/the-blueprint/the-machine/part-13-zero-tolerance": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 13: Zero Tolerance",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c004/p013.md"
+    },
+    "/paige/the-blueprint/the-machine/part-14-the-shutout": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 14: The Shutout",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c004/p014.md"
+    },
+    "/paige/the-blueprint/the-machine/part-15-the-shuttle": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 15: The Shuttle",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c004/p015.md"
+    },
+    "/paige/the-blueprint/the-source-code/part-1-the-diagnosis": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Diagnosis",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c005/p001.md"
+    },
+    "/paige/the-blueprint/the-source-code/part-2-the-firewall": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Firewall",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c005/p002.md"
+    },
+    "/paige/the-blueprint/the-source-code/part-3-the-protocol-upgrade": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Protocol Upgrade",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c005/p003.md"
+    },
+    "/paige/a-new-beginning/the-launch-code/part-1-the-loop": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Loop",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c001/p001.md"
+    },
+    "/paige/a-new-beginning/the-launch-code/part-2-the-frequency": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Frequency",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c001/p002.md"
+    },
+    "/paige/a-new-beginning/the-launch-code/part-3-the-base": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Base",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c001/p003.md"
+    },
+    "/paige/a-new-beginning/the-source-code/part-1-the-manual": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Manual",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p001.md"
+    },
+    "/paige/a-new-beginning/the-source-code/part-2-the-calibration": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Calibration",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p002.md"
+    },
+    "/paige/a-new-beginning/the-source-code/part-3-the-curriculum": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Curriculum",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p003.md"
+    },
+    "/paige/a-new-beginning/the-source-code/part-4-the-open-door": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Open Door",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p004.md"
+    },
+    "/paige/a-new-beginning/the-source-code/part-5-the-morning-after": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Morning After",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p005.md"
+    },
+    "/paige/a-new-beginning/the-source-code/part-6-the-cartridge-exchange": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Cartridge Exchange",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p006.md"
+    },
+    "/paige/a-new-beginning/the-source-code/part-7-channel-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Channel 3",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p007.md"
+    },
+    "/paige/a-new-beginning/the-syllabus/part-1-the-loophole": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Loophole",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c003/p001.md"
+    },
+    "/paige/a-new-beginning/the-syllabus/part-2-the-run": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Run",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c003/p002.md"
+    },
+    "/paige/a-new-beginning/the-syllabus/part-3-the-medical-logistics": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Medical Logistics",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c003/p003.md"
+    },
+    "/paige/a-new-beginning/the-syllabus/part-4-the-schematic": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Schematic",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c003/p004.md"
+    },
+    "/paige/a-new-beginning/the-syllabus/part-5-data-verified": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Data Verified",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c003/p005.md"
+    },
+    "/paige/a-new-beginning/the-syllabus/part-6-the-clear-curtain": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Clear Curtain",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c003/p006.md"
+    },
+    "/paige/a-new-beginning/the-syllabus/part-7-the-silo": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Silo",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c003/p007.md"
+    },
+    "/paige/a-new-beginning/the-network/part-1-the-primary-node": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Primary Node",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c004/p001.md"
+    },
+    "/paige/a-new-beginning/the-network/part-2-the-red-flag": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Red Flag",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c004/p002.md"
+    },
+    "/paige/a-new-beginning/the-network/part-3-the-maintenance-run": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Maintenance Run",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c004/p003.md"
+    },
+    "/paige/a-new-beginning/proper-terminology/part-1-ground-rules": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Ground Rules",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c005/p001.md"
+    },
+    "/paige/a-new-beginning/proper-terminology/part-2-zero-tolerance": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Zero Tolerance",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c005/p002.md"
+    },
+    "/paige/a-new-beginning/proper-terminology/part-3-safe-harbor": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Safe Harbor",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c005/p003.md"
+    },
+    "/paige/a-new-beginning/proper-terminology/part-4-the-predator": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Predator",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c005/p004.md"
+    },
+    "/paige/a-new-beginning/proper-terminology/part-5-geometry-and-physics": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Geometry and Physics",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c005/p005.md"
+    },
+    "/paige/a-new-beginning/proper-terminology/part-6-the-safe-zone": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Safe Zone",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c005/p006.md"
+    },
+    "/paige/a-new-beginning/proper-terminology/part-7-the-incorrect-variable": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Incorrect Variable",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c005/p007.md"
+    },
+    "/paige/a-new-beginning/proper-terminology/part-8-the-distortion": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Distortion",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c005/p008.md"
+    },
+    "/paige/a-new-beginning/proper-terminology/part-9-the-contaminant": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Contaminant",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c005/p009.md"
+    },
+    "/paige/a-new-beginning/proper-terminology/part-10-the-humidity-index": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Humidity Index",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c005/p010.md"
+    },
+    "/paige/a-new-beginning/the-admin-console/part-1-the-cool-down": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Cool Down",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c006/p001.md"
+    },
+    "/paige/a-new-beginning/the-admin-console/part-2-the-signal": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Signal",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c006/p002.md"
+    },
+    "/paige/a-new-beginning/the-admin-console/part-3-the-final-frontier": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Final Frontier",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c006/p003.md"
+    },
+    "/paige/a-new-beginning/the-admin-console/part-4-the-system-architecture": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The System Architecture",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c006/p004.md"
+    },
+    "/paige/a-new-beginning/the-admin-console/part-5-the-sandwich-configuration": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Sandwich Configuration",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c006/p005.md"
+    },
+    "/paige/a-new-beginning/autism-diagnosis/part-1-the-debugger": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Debugger",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c007/p001.md"
+    },
+    "/paige/a-new-beginning/autism-diagnosis/part-2-operating-systems": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Operating Systems",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c007/p002.md"
+    },
+    "/paige/a-new-beginning/autism-diagnosis/part-3-the-king-bed-defense": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The King Bed Defense",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c007/p003.md"
+    },
+    "/paige/a-new-beginning/autism-diagnosis/part-4-the-source-code": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Source Code",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c007/p004.md"
+    },
+    "/paige/a-new-beginning/autism-diagnosis/part-5-the-uplink": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Uplink",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c007/p005.md"
+    },
+    "/paige/a-new-beginning/autism-diagnosis/part-6-the-thunderhead": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Thunderhead",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c007/p006.md"
+    },
+    "/paige/a-new-beginning/autism-diagnosis/part-7-the-warning": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Warning",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c007/p007.md"
+    },
+    "/paige/a-new-beginning/autism-diagnosis/part-8-the-all-clear": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The All Clear",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c007/p008.md"
+    },
+    "/paige/a-new-beginning/the-prime-time-block/part-1-the-decompression-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Decompression Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c008/p001.md"
+    },
+    "/paige/a-new-beginning/the-prime-time-block/part-2-the-emergency-brake": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Emergency Brake",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c008/p002.md"
+    },
+    "/paige/a-new-beginning/the-prime-time-block/part-3-the-dark-closet": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Dark Closet",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c008/p003.md"
+    },
+    "/paige/a-new-beginning/the-prime-time-block/part-4-the-awakening": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Awakening",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c008/p004.md"
+    },
+    "/paige/a-new-beginning/the-prime-time-block/part-5-the-recovery-cycle": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Recovery Cycle",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c008/p005.md"
+    },
+    "/paige/a-new-beginning/the-prime-time-block/part-6-the-system-halt": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The System Halt",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c008/p006.md"
+    },
+    "/paige/a-new-beginning/the-prime-time-block/part-7-manual-override": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Manual Override",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c008/p007.md"
+    },
+    "/paige/a-new-beginning/the-anatomy-of-resilience/part-1-the-purge": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Purge",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c009/p001.md"
+    },
+    "/paige/a-new-beginning/the-anatomy-of-resilience/part-2-the-buffer": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Buffer",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c009/p002.md"
+    },
+    "/paige/a-new-beginning/the-anatomy-of-resilience/part-3-the-quiet-room": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Quiet Room",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c009/p003.md"
+    },
+    "/paige/a-new-beginning/the-anatomy-of-resilience/part-4-the-transit-the-trail": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Transit & The Trail",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c009/p004.md"
+    },
+    "/paige/a-new-beginning/the-anatomy-of-resilience/part-5-the-recharge": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Recharge",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c009/p005.md"
+    },
+    "/paige/a-new-beginning/the-anatomy-of-resilience/part-6-the-drive-thru": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Drive-Thru",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c009/p006.md"
+    },
+    "/paige/a-new-beginning/the-anatomy-of-resilience/part-7-dinner": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Dinner",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c009/p007.md"
+    },
+    "/paige/a-new-beginning/the-anatomy-of-resilience/part-8-the-cost-benefit-analysis": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Cost-Benefit Analysis",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c009/p008.md"
+    },
+    "/paige/a-new-beginning/the-anatomy-of-resilience/part-9-the-analog-archive": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Analog Archive",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c009/p009.md"
+    },
+    "/paige/a-new-beginning/the-anatomy-of-resilience/part-10-the-captaincy-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Captaincy Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c009/p010.md"
+    },
+    "/paige/a-new-beginning/the-anatomy-of-resilience/part-11-the-shutdown-sequence": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The Shutdown Sequence",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c009/p011.md"
+    },
+    "/paige/the-false-anchor/the-new-variable/part-1-the-remainder": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Remainder",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c001/p001.md"
+    },
+    "/paige/the-false-anchor/the-new-variable/part-2-the-static-stack": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Static Stack",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c001/p002.md"
+    },
+    "/paige/the-false-anchor/the-seed/part-1-the-observation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Observation",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c002/p001.md"
+    },
+    "/paige/the-false-anchor/the-seed/part-2-the-recoil": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Recoil",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c002/p002.md"
+    },
+    "/paige/the-false-anchor/the-seed/part-3-the-split-screen": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Split Screen",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c002/p003.md"
+    },
+    "/paige/the-false-anchor/the-seed/part-4-the-syntax-error": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Syntax Error",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c002/p004.md"
+    },
+    "/paige/the-false-anchor/the-orbital-decay/part-1-the-logic-bomb": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Logic Bomb",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c003/p001.md"
+    },
+    "/paige/the-false-anchor/the-orbital-decay/part-2-the-presentation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Presentation",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c003/p002.md"
+    },
+    "/paige/the-false-anchor/the-orbital-decay/part-3-the-disconnect": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Disconnect",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c003/p003.md"
+    },
+    "/paige/the-false-anchor/the-orbital-decay/part-4-the-horizon-line": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Horizon Line",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c003/p004.md"
+    },
+    "/paige/the-false-anchor/the-orbital-decay/part-5-the-point-of-no-return": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Point of No Return",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c003/p005.md"
+    },
+    "/paige/the-false-anchor/the-orbital-decay/part-6-the-detour": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Detour",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c003/p006.md"
+    },
+    "/paige/the-false-anchor/the-orbital-decay/part-7-the-burning-mile": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Burning Mile",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c003/p007.md"
+    },
+    "/paige/the-false-anchor/the-orbital-decay/part-8-the-pasco-lock": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Pasco Lock",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c003/p008.md"
+    },
+    "/paige/the-false-anchor/the-orbital-decay/part-9-the-silence": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Silence",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c003/p009.md"
+    },
+    "/paige/the-false-anchor/the-rescue/part-1-the-advance-team": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Advance Team",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c004/p001.md"
+    },
+    "/paige/the-false-anchor/the-rescue/part-2-the-intercept": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Intercept",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c004/p002.md"
+    },
+    "/paige/the-false-anchor/the-rescue/part-3-the-time-lock": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Time Lock",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c004/p003.md"
+    },
+    "/paige/the-false-anchor/the-rescue/part-4-the-decontamination-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Decontamination Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c004/p004.md"
+    },
+    "/paige/the-false-anchor/the-rescue/part-5-frequency-tuned": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Frequency Tuned",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c004/p005.md"
+    },
+    "/paige/the-false-anchor/the-rescue/part-6-the-signal-cut": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Signal Cut",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c004/p006.md"
+    },
+    "/paige/the-false-anchor/the-tourist-protocol/part-1-fueling-the-expedition": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Fueling the Expedition",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c005/p001.md"
+    },
+    "/paige/the-false-anchor/the-tourist-protocol/part-2-the-mode-switch": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Mode Switch",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c005/p002.md"
+    },
+    "/paige/the-false-anchor/the-tourist-protocol/part-3-the-observation-deck": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Observation Deck",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c005/p003.md"
+    },
+    "/paige/the-false-anchor/the-tourist-protocol/part-4-the-deep-blue": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Deep Blue",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c005/p004.md"
+    },
+    "/paige/the-false-anchor/the-tourist-protocol/part-5-the-wheelchair-epiphany": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Wheelchair Epiphany",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c005/p005.md"
+    },
+    "/paige/the-false-anchor/the-tourist-protocol/part-6-the-scar": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Scar",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c005/p006.md"
+    },
+    "/paige/the-false-anchor/the-tourist-protocol/part-7-high-voltage": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: High Voltage",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c005/p007.md"
+    },
+    "/paige/the-false-anchor/the-tourist-protocol/part-8-the-silent-signal": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Silent Signal",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c005/p008.md"
+    },
+    "/paige/the-false-anchor/the-tourist-protocol/part-9-the-restoration": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Restoration",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c005/p009.md"
+    },
+    "/paige/the-false-anchor/the-tourist-protocol/part-10-the-flight-plan": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Flight Plan",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c005/p010.md"
+    },
+    "/paige/the-false-anchor/the-tourist-protocol/part-11-the-northern-trajectory": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The Northern Trajectory",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c005/p011.md"
+    },
+    "/paige/the-false-anchor/flight-to-tahoma/part-1-the-bypass": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Bypass",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c006/p001.md"
+    },
+    "/paige/the-false-anchor/flight-to-tahoma/part-2-the-iron-creek-lodge": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Iron Creek Lodge",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c006/p002.md"
+    },
+    "/paige/the-false-anchor/flight-to-tahoma/part-3-the-bear-s-den": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Bear's Den",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c006/p003.md"
+    },
+    "/paige/the-false-anchor/flight-to-tahoma/part-4-the-supply-run": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Supply Run",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c006/p004.md"
+    },
+    "/paige/the-false-anchor/flight-to-tahoma/part-5-the-hypothesis-the-lock": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Hypothesis & The Lock",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c006/p005.md"
+    },
+    "/paige/the-false-anchor/flight-to-tahoma/part-6-the-iron-giants-the-safe-mode": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Iron Giants & The Safe Mode",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c006/p006.md"
+    },
+    "/paige/the-false-anchor/flight-to-tahoma/part-7-factory-settings": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Factory Settings",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c006/p007.md"
+    },
+    "/paige/the-false-anchor/flight-to-tahoma/part-8-the-iron-spirits": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Iron Spirits",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c006/p008.md"
+    },
+    "/paige/the-false-anchor/flight-to-tahoma/part-9-the-silent-engines": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Silent Engines",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c006/p009.md"
+    },
+    "/paige/the-false-anchor/flight-to-tahoma/part-10-the-refueling": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Refueling",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c006/p010.md"
+    },
+    "/paige/the-false-anchor/flight-to-tahoma/part-11-glacial-flour": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: Glacial Flour",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c006/p011.md"
+    },
+    "/paige/the-false-anchor/flight-to-tahoma/part-12-the-return-vector": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: The Return Vector",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c006/p012.md"
+    },
+    "/paige/the-false-anchor/flight-to-tahoma/part-13-the-holding-pattern": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 13: The Holding Pattern",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c006/p013.md"
+    },
+    "/paige/the-false-anchor/flight-to-tahoma/part-14-the-null-hypothesis": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 14: The Null Hypothesis",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c006/p014.md"
+    },
+    "/paige/the-false-anchor/the-flight-home/part-1-the-final-bill": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Final Bill",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c007/p001.md"
+    },
+    "/paige/the-false-anchor/the-flight-home/part-2-the-departure-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Departure Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c007/p002.md"
+    },
+    "/paige/the-false-anchor/the-flight-home/part-3-the-gateway-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Gateway Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c007/p003.md"
+    },
+    "/paige/the-false-anchor/the-flight-home/part-4-the-checkpoint-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Checkpoint Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c007/p004.md"
+    },
+    "/paige/the-false-anchor/the-flight-home/part-5-the-soundtrack-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Soundtrack Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c007/p005.md"
+    },
+    "/paige/the-false-anchor/the-flight-home/part-6-the-hub-dilemma": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Hub Dilemma",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c007/p006.md"
+    },
+    "/paige/the-false-anchor/the-flight-home/part-7-the-safety-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Safety Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c007/p007.md"
+    },
+    "/paige/the-false-anchor/the-flight-home/part-8-the-ascent-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Ascent Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c007/p008.md"
+    },
+    "/paige/the-false-anchor/the-flight-home/part-9-the-mid-air-transfer": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Mid-Air Transfer",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c007/p009.md"
+    },
+    "/paige/the-false-anchor/the-flight-home/part-10-the-descent-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Descent Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c007/p010.md"
+    },
+    "/paige/the-false-anchor/the-flight-home/part-11-the-neon-horizon": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The Neon Horizon",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c007/p011.md"
+    },
+    "/paige/the-false-anchor/the-flight-home/part-12-the-refueling-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: The Refueling Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c007/p012.md"
+    },
+    "/paige/the-false-anchor/the-flight-home/part-13-the-propeller-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 13: The Propeller Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c007/p013.md"
+    },
+    "/paige/the-false-anchor/the-flight-home/part-14-the-valley-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 14: The Valley Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c007/p014.md"
+    },
+    "/paige/the-false-anchor/the-flight-home/part-15-the-final-mile": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 15: The Final Mile",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c007/p015.md"
+    },
+    "/paige/the-false-anchor/the-flight-home/part-16-the-shutdown-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 16: The Shutdown Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c007/p016.md"
+    },
+    "/paige/the-false-anchor/the-trojan-horse/part-1-the-invalid-variable": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Invalid Variable",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c008/p001.md"
+    },
+    "/paige/the-false-anchor/the-trojan-horse/part-2-the-legal-shield": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Legal Shield",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c008/p002.md"
+    },
+    "/paige/the-false-anchor/the-trojan-horse/part-3-the-null-hypothesis": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Null Hypothesis",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c008/p003.md"
+    },
+    "/paige/the-false-anchor/the-trojan-horse/part-4-the-restoration": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Restoration",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c008/p004.md"
+    },
+    "/paige/the-false-anchor/the-optimization-protocol/part-1-the-transaction": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Transaction",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c009/p001.md"
+    },
+    "/paige/the-false-anchor/the-optimization-protocol/part-2-the-hardware-upgrade": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Hardware Upgrade",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c009/p002.md"
+    },
+    "/paige/the-false-anchor/the-optimization-protocol/part-3-the-deed-of-trust": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Deed of Trust",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c009/p003.md"
+    },
+    "/paige/the-false-anchor/the-satellite-convergence/part-1-the-invasion-force": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Invasion Force",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c010/p001.md"
+    },
+    "/paige/the-false-anchor/the-satellite-convergence/part-2-the-dungeon": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Dungeon",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c010/p002.md"
+    },
+    "/paige/the-false-anchor/the-satellite-convergence/part-3-the-privacy-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Privacy Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c010/p003.md"
+    },
+    "/paige/the-false-anchor/the-satellite-convergence/part-4-settlement": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Settlement",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c010/p004.md"
+    },
+    "/paige/the-false-anchor/the-satellite-convergence/part-5-the-throne-of-shame": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Throne of Shame",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c010/p005.md"
+    },
+    "/paige/the-false-anchor/the-satellite-convergence/part-6-the-morning-audit": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Morning Audit",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c010/p006.md"
+    },
+    "/paige/the-false-anchor/the-satellite-convergence/part-7-fueling-the-army": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Fueling the Army",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c010/p007.md"
+    },
+    "/paige/the-false-anchor/the-satellite-convergence/part-8-division-of-labor": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: Division of Labor",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c010/p008.md"
+    },
+    "/paige/the-false-anchor/the-satellite-convergence/part-9-the-laundry-brigade": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Laundry Brigade",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c010/p009.md"
+    },
+    "/paige/the-false-anchor/the-satellite-convergence/part-10-the-anchor-point": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Anchor Point",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c010/p010.md"
+    },
+    "/paige/the-false-anchor/the-satellite-convergence/part-11-the-zero-privacy-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The Zero-Privacy Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c010/p011.md"
+    },
+    "/paige/the-false-anchor/the-satellite-convergence/part-12-structural-integrity-test": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: Structural Integrity Test",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c010/p012.md"
+    },
+    "/paige/the-false-anchor/the-satellite-convergence/part-13-the-rotation-of-the-guard": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 13: The Rotation of the Guard",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c010/p013.md"
+    },
+    "/paige/the-false-anchor/the-satellite-convergence/part-14-the-black-box-review": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 14: The Black Box Review",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c010/p014.md"
+    },
+    "/paige/the-false-anchor/the-satellite-convergence/part-15-clearance-denied": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 15: Clearance Denied",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c010/p015.md"
+    },
+    "/paige/the-false-anchor/the-big-one-five/part-1-trajectory-calculations": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Trajectory Calculations",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c011/p001.md"
+    },
+    "/paige/the-false-anchor/the-big-one-five/part-2-the-ramp": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Ramp",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c011/p002.md"
+    },
+    "/paige/the-false-anchor/the-big-one-five/part-3-the-arcade-intervention": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Arcade Intervention",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c011/p003.md"
+    },
+    "/paige/the-false-anchor/the-big-one-five/part-4-the-carbohydrate-loading": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Carbohydrate Loading",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c011/p004.md"
+    },
+    "/paige/the-false-anchor/the-big-one-five/part-5-pyrotechnic-redundancy": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Pyrotechnic Redundancy",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c011/p005.md"
+    },
+    "/paige/the-false-anchor/the-big-one-five/part-6-the-voltage-spike": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Voltage Spike",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c011/p006.md"
+    },
+    "/paige/the-false-anchor/the-big-one-five/part-7-the-shutdown-sequence": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Shutdown Sequence",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c011/p007.md"
+    },
+    "/paige/the-false-anchor/the-big-one-five/part-8-the-photographic-evidence": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Photographic Evidence",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c011/p008.md"
+    },
+    "/paige/the-false-anchor/the-big-one-five/part-9-the-platoon-deployment": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Platoon Deployment",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c011/p009.md"
+    },
+    "/paige/the-false-anchor/the-big-one-five/part-10-the-decompression-chamber": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Decompression Chamber",
+        "theme": "raggiesoft-books",
+        "filePath": "b004/c011/p010.md"
+    },
+    "/paige/system-integration/the-transfer-point/part-1-the-pathfinder": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Pathfinder",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c001/p001.md"
+    },
+    "/paige/system-integration/the-transfer-point/part-2-the-bunker": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Bunker",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c001/p002.md"
+    },
+    "/paige/system-integration/the-transfer-point/part-3-the-heap-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Heap Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c001/p003.md"
+    },
+    "/paige/system-integration/the-transfer-point/part-4-the-pressure-check": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Pressure Check",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c001/p004.md"
+    },
+    "/paige/system-integration/the-transfer-point/part-5-the-migration": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Migration",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c001/p005.md"
+    },
+    "/paige/system-integration/the-physical-layer/part-1-the-descent": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Descent",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c002/p001.md"
+    },
+    "/paige/system-integration/the-physical-layer/part-2-the-search-query": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Search Query",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c002/p002.md"
+    },
+    "/paige/system-integration/the-physical-layer/part-3-the-mega-bed": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Mega-Bed",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c002/p003.md"
+    },
+    "/paige/system-integration/the-physical-layer/part-4-the-pittsburgh-toilet": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Pittsburgh Toilet",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c002/p004.md"
+    },
+    "/paige/system-integration/the-physical-layer/part-5-the-permit-phase": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Permit Phase",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c002/p005.md"
+    },
+    "/paige/system-integration/the-physical-layer/part-6-the-wet-room": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Wet Room",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c002/p006.md"
+    },
+    "/paige/system-integration/the-physical-layer/part-7-the-mega-bed-assembly": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Mega-Bed Assembly",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c002/p007.md"
+    },
+    "/paige/system-integration/the-satellite-link/part-1-the-radford-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Radford Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c003/p001.md"
+    },
+    "/paige/system-integration/the-satellite-link/part-2-the-holding-pattern": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Holding Pattern",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c003/p002.md"
+    },
+    "/paige/system-integration/the-satellite-link/part-3-the-cargo-bay": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Cargo Bay",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c003/p003.md"
+    },
+    "/paige/system-integration/the-satellite-link/part-4-the-mess-hall": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Mess Hall",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c003/p004.md"
+    },
+    "/paige/system-integration/the-satellite-link/part-5-the-supply-line": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Supply Line",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c003/p005.md"
+    },
+    "/paige/system-integration/the-satellite-link/part-6-the-transit-bible": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Transit Bible",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c003/p006.md"
+    },
+    "/paige/system-integration/the-fishersville-protocol/part-1-the-last-supper": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Last Supper",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c004/p001.md"
+    },
+    "/paige/system-integration/the-fishersville-protocol/part-2-barnett-hall": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Barnett Hall",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c004/p002.md"
+    },
+    "/paige/system-integration/the-fishersville-protocol/part-3-suite-200": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Suite 200",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c004/p003.md"
+    },
+    "/paige/system-integration/the-signal-to-noise-ratio/part-1-the-circuit": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Circuit",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c005/p001.md"
+    },
+    "/paige/system-integration/the-signal-to-noise-ratio/part-2-the-shift-change": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Shift Change",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c005/p002.md"
+    },
+    "/paige/system-integration/the-signal-to-noise-ratio/part-3-the-main-event": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Main Event",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c005/p003.md"
+    },
+    "/paige/system-integration/the-signal-to-noise-ratio/part-4-the-carrier-wave": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Carrier Wave",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c005/p004.md"
+    },
+    "/paige/system-integration/the-signal-to-noise-ratio/part-5-the-countdown": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Countdown",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c005/p005.md"
+    },
+    "/paige/system-integration/the-signal-to-noise-ratio/part-6-the-midnight-threshold": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Midnight Threshold",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c005/p006.md"
+    },
+    "/paige/system-integration/the-extraction/part-1-the-pickup": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Pickup",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c006/p001.md"
+    },
+    "/paige/system-integration/the-extraction/part-2-the-debrief": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Debrief",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c006/p002.md"
+    },
+    "/paige/system-integration/the-extraction/part-3-the-reunion": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Reunion",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c006/p003.md"
+    },
+    "/paige/system-integration/the-closed-circuit/part-1-the-intruder": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Intruder",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c007/p001.md"
+    },
+    "/paige/system-integration/the-closed-circuit/part-2-the-emergency-brake": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Emergency Brake",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c007/p002.md"
+    },
+    "/paige/system-integration/the-closed-circuit/part-3-the-exception": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Exception",
+        "theme": "raggiesoft-books",
+        "filePath": "b005/c007/p003.md"
+    }
+}

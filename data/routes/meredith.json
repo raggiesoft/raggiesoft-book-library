@@ -1,0 +1,128 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "raggiesoft-books",
+        "siteName": "Ocean View Archives",
+        "isSequential": true,
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books",
+        "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
+        "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
+        "navbarBrandLink": "/raggiesoft-books"
+    },
+    "/meredith": {
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "meredith",
+        "theme": "raggiesoft-books"
+    },
+    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/part-1-the-garage-barracks": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Garage Barracks",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p001.md"
+    },
+    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/part-2-the-commute": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Commute",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p002.md"
+    },
+    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/part-3-the-walker-building-lounge": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Walker Building Lounge",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p003.md"
+    },
+    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/part-4-the-infolink-update": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The InfoLink Update",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p004.md"
+    },
+    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/part-5-the-color-correction": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Color Correction",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p005.md"
+    },
+    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/part-6-sdv-100": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: SDV 100",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p006.md"
+    },
+    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/part-7-the-foundation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Foundation",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p007.md"
+    },
+    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/part-8-the-promenade-at-granby": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Promenade at Granby",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p008.md"
+    },
+    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/part-9-the-debrief": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Debrief",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p009.md"
+    },
+    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/part-10-the-salon-debrief": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Salon Debrief",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p010.md"
+    },
+    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/part-11-the-library-intercept": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The Library Intercept",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p011.md"
+    },
+    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/part-12-the-family-briefing": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: The Family Briefing",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p012.md"
+    },
+    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/part-13-the-evening-routine": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 13: The Evening Routine",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p013.md"
+    },
+    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/part-14-the-summons": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 14: The Summons",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p014.md"
+    },
+    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/part-15-the-vanguard-rests": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 15: The Vanguard Rests",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p015.md"
+    },
+    "/meredith/book-4-the-vanguard/chapter-2-the-virginia-beach-perimeter/part-1-morning-in-the-barracks": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Morning in the Barracks",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p001.md"
+    },
+    "/meredith/book-4-the-vanguard/chapter-2-the-virginia-beach-perimeter/part-2-the-acoustic-clarification": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Acoustic Clarification",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p002.md"
+    },
+    "/meredith/book-4-the-vanguard/chapter-2-the-virginia-beach-perimeter/part-3-the-princess-anne-perimeter": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Princess Anne Perimeter",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p003.md"
+    }
+}

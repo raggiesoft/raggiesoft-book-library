@@ -1,0 +1,122 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "raggiesoft-books",
+        "siteName": "Ocean View Archives",
+        "isSequential": true,
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books",
+        "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
+        "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
+        "navbarBrandLink": "/raggiesoft-books"
+    },
+    "/pebble-borrow": {
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "pebble-borrow",
+        "theme": "raggiesoft-books"
+    },
+    "/pebble-borrow/the-motel-on-the-highway/the-threshold/part-1-out-of-the-storm": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Out of the Storm",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p001.md"
+    },
+    "/pebble-borrow/the-motel-on-the-highway/setting-the-scene/part-1-the-apex-late-night-switch": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The APEX Late-Night Switch",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c002/p001.md"
+    },
+    "/pebble-borrow/the-motel-on-the-highway/setting-the-scene/part-2-the-apex-world-premier-presentation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The APEX World Premier Presentation",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c002/p002.md"
+    },
+    "/pebble-borrow/the-motel-on-the-highway/amanda-protects-her-siblings/part-1-the-apex-late-night-switch": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The APEX Late\u2011Night Switch",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p001.md"
+    },
+    "/pebble-borrow/the-motel-on-the-highway/amanda-protects-her-siblings/part-2-saturday-morning-the-teasing-begins": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Saturday Morning \u2014 The Teasing Begins",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p002.md"
+    },
+    "/pebble-borrow/welcome-to-pebble-burrow/returning-to-the-surface/part-1-the-apocalyptic-reality": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Apocalyptic Reality",
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c014/p001.md"
+    },
+    "/pebble-borrow/welcome-to-pebble-burrow/returning-to-the-surface/part-2-the-burden-of-ownership": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Burden of Ownership",
+        "theme": "raggiesoft-books",
+        "filePath": "b007/c014/p002.md"
+    },
+    "/pebble-borrow/the-general-s-arrival/the-holy-grail-of-geothermal-energy/part-1-0700-hours-the-first-refusal": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: 0700 Hours: The First Refusal",
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c002/p001.md"
+    },
+    "/pebble-borrow/the-general-s-arrival/0830-hours-the-four-star-directive/part-1-the-net-closes": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Net Closes",
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c003/p001.md"
+    },
+    "/pebble-borrow/the-general-s-arrival/1015-hours-the-commander-in-chief/part-1-the-breach": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Breach",
+        "theme": "raggiesoft-books",
+        "filePath": "b008/c005/p001.md"
+    },
+    "/pebble-borrow/amanda-interviews-care-nurses/the-verification/part-1-call-1-the-surgeon": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Call 1: The Surgeon",
+        "theme": "raggiesoft-books",
+        "filePath": "b023/c007/p001.md"
+    },
+    "/pebble-borrow/amanda-interviews-care-nurses/the-verification/part-2-call-2-the-social-worker": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Call 2: The Social Worker",
+        "theme": "raggiesoft-books",
+        "filePath": "b023/c007/p002.md"
+    },
+    "/pebble-borrow/amanda-interviews-care-nurses/the-verification/part-3-call-3-the-director-of-nursing": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Call 3: The Director of Nursing",
+        "theme": "raggiesoft-books",
+        "filePath": "b023/c007/p003.md"
+    },
+    "/pebble-borrow/amanda-interviews-care-nurses/the-fortress-is-staffed/part-1-the-night-watch": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Night Watch",
+        "theme": "raggiesoft-books",
+        "filePath": "b023/c008/p001.md"
+    },
+    "/pebble-borrow/amanda-interviews-care-nurses/the-fortress-is-staffed/part-2-the-muscle": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Muscle",
+        "theme": "raggiesoft-books",
+        "filePath": "b023/c008/p002.md"
+    },
+    "/pebble-borrow/amanda-interviews-care-nurses/the-fortress-is-staffed/part-3-the-rebuilders": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Rebuilders",
+        "theme": "raggiesoft-books",
+        "filePath": "b023/c008/p003.md"
+    },
+    "/pebble-borrow/amanda-interviews-care-nurses/the-fortress-is-staffed/part-4-the-shield": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Shield",
+        "theme": "raggiesoft-books",
+        "filePath": "b023/c008/p004.md"
+    }
+}

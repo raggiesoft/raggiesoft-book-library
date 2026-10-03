@@ -1,0 +1,422 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "raggiesoft-books",
+        "siteName": "Ocean View Archives",
+        "isSequential": true,
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books",
+        "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
+        "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
+        "navbarBrandLink": "/raggiesoft-books"
+    },
+    "/kelly": {
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "The Quantum Directive: Kelly's Cut",
+        "theme": "raggiesoft-books"
+    },
+    "/kelly/the-anchor/a-fork-in-the-road/part-1-the-bulletin-board": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Bulletin Board \ud83d\udccc",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p001.md"
+    },
+    "/kelly/the-anchor/a-fork-in-the-road/part-2-the-perfect-pitch": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Perfect Pitch \ud83d\udcde",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p002.md"
+    },
+    "/kelly/the-anchor/a-fork-in-the-road/part-3-the-first-day": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The First Day \ud83c\udfe2",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p003.md"
+    },
+    "/kelly/the-anchor/a-fork-in-the-road/part-4-lunch-with-the-devs": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Lunch with the Devs \ud83d\udcbb",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p004.md"
+    },
+    "/kelly/the-anchor/a-fork-in-the-road/part-5-pager-code-005-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Pager Code 005.1 \ud83d\udcdf",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p005.md"
+    },
+    "/kelly/the-anchor/the-keynote/part-1-peace-treaty-before-sunrise": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Peace Treaty Before Sunrise\u2600\ufe0f",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p001.md"
+    },
+    "/kelly/the-anchor/the-keynote/part-2-the-aftermath": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Aftermath \ud83c\udf07",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p002.md"
+    },
+    "/kelly/the-anchor/the-keynote/part-3-the-memo-arrives": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Memo Arrives \ud83d\udcc4",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p003.md"
+    },
+    "/kelly/the-anchor/the-keynote/part-4-three-thousand-miles-of-fury": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Three Thousand Miles of Fury \ud83d\ude20",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p004.md"
+    },
+    "/kelly/the-anchor/the-keynote/part-5-the-anchor": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Anchor \u2693",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p005.md"
+    },
+    "/kelly/the-anchor/the-keynote/part-6-a-powerful-ally": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: A Powerful Ally \ud83e\udd1d",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p006.md"
+    },
+    "/kelly/the-anchor/the-keynote/part-7-one-of-the-trench-people": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: One of the Trench People \ud83c\udf7d\ufe0f",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p007.md"
+    },
+    "/kelly/the-anchor/the-keynote/part-8-the-envelope": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Envelope \u2709\ufe0f",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p008.md"
+    },
+    "/kelly/the-anchor/the-keynote/part-9-the-story-breaks": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Story Breaks \ud83d\udcf0",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p009.md"
+    },
+    "/kelly/the-anchor/the-keynote/part-10-out-of-the-loop": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: Out of the Loop \ud83d\udeec",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p010.md"
+    },
+    "/kelly/the-anchor/the-implosion/part-1-the-last-stand": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Last Stand \ud83d\udeb6\u200d\u2642\ufe0f",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c003/p001.md"
+    },
+    "/kelly/the-anchor/the-implosion/part-2-the-verdict": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Verdict \u2696\ufe0f",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c003/p002.md"
+    },
+    "/kelly/the-anchor/closing-the-book/part-1-the-press-conference": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Press Conference \ud83c\udfa4",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p001.md"
+    },
+    "/kelly/the-anchor/closing-the-book/part-2-spilling-the-beans": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Spilling the Beans \ud83d\udcbb",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p002.md"
+    },
+    "/kelly/the-anchor/closing-the-book/part-3-good-news-at-jester-s": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Good News at Jester\\'s \ud83c\udf54",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p003.md"
+    },
+    "/kelly/the-anchor/closing-the-book/part-4-an-unbelievable-offer": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: An Unbelievable Offer \ud83e\udd64",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p004.md"
+    },
+    "/kelly/the-anchor/closing-the-book/part-5-the-walk-home": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Walk Home \ud83c\udfe1",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p005.md"
+    },
+    "/kelly/the-anchor/closing-the-book/part-6-a-new-family-plan": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: A New Family Plan \ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p006.md"
+    },
+    "/kelly/the-anchor/closing-the-book/part-7-leaving-on-good-terms": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Leaving on Good Terms \ud83d\udcdd",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p007.md"
+    },
+    "/kelly/the-anchor/closing-the-book/part-8-making-it-official": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: Making it Official \ud83c\udf93",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p008.md"
+    },
+    "/kelly/the-anchor/closing-the-book/part-9-training-day": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: Training Day \ud83d\udc68\u200d\ud83c\udfeb",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p009.md"
+    },
+    "/kelly/the-anchor/closing-the-book/part-10-a-new-wardrobe": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: A New Wardrobe \ud83d\udc54",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p010.md"
+    },
+    "/kelly/the-anchor/closing-the-book/part-11-first-steps-first-stumbles": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: First Steps, First Stumbles \ud83d\udc63",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p011.md"
+    },
+    "/kelly/the-anchor/closing-the-book/part-12-the-blue-badge": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: The Blue Badge \ud83d\udfe6",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p012.md"
+    },
+    "/kelly/the-anchor/closing-the-book/part-13-breaking-the-ice": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 13: Breaking the Ice \ud83e\uddca",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p013.md"
+    },
+    "/kelly/the-anchor/closing-the-book/part-14-the-priceless-photo": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 14: The Priceless Photo \ud83d\uddbc\ufe0f",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p014.md"
+    },
+    "/kelly/the-anchor/closing-the-book/part-15-clocking-out-for-the-last-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 15: Clocking Out for the Last Time \ud83d\udd70\ufe0f",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p015.md"
+    },
+    "/kelly/the-anchor/welcome-to-quantum/part-1-your-voices-matter-here": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Your Voices Matter Here \ud83e\udd1d",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c005/p001.md"
+    },
+    "/kelly/the-anchor/welcome-to-quantum/part-2-starting-with-why": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Starting with \\'Why\\' \ud83d\udca1",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c005/p002.md"
+    },
+    "/kelly/the-anchor/welcome-to-quantum/part-3-an-overwhelming-good": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: An Overwhelming Good \u221e",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c005/p003.md"
+    },
+    "/kelly/the-anchor/welcome-to-quantum/part-4-the-first-line-of-code": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The First Line of Code \u2328\ufe0f",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c005/p004.md"
+    },
+    "/kelly/the-anchor/the-bridge-to-cupertino/part-1-an-unexpected-invitation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: An Unexpected Invitation \u2708\ufe0f",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c006/p001.md"
+    },
+    "/kelly/the-anchor/the-bridge-to-cupertino/part-2-jessica-did-her-homework": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Jessica Did Her Homework \ud83d\udcda",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c006/p002.md"
+    },
+    "/kelly/the-anchor/the-bridge-to-cupertino/part-3-a-fortuitous-encounter": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: A Fortuitous Encounter \ud83e\udd1d",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c006/p003.md"
+    },
+    "/kelly/the-anchor/the-bridge-to-cupertino/part-4-southbound-on-i-5": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Southbound on I-5 \ud83d\udcbc",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c006/p004.md"
+    },
+    "/kelly/the-anchor/the-bridge-to-cupertino/part-5-the-first-time-flyers-arrival-at-sea": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The First-Time Flyers\\' Arrival at SEA \u2708\ufe0f",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c006/p005.md"
+    },
+    "/kelly/the-anchor/the-bridge-to-cupertino/part-6-the-bridge-builders": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Bridge Builders \ud83c\udf09",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c006/p006.md"
+    },
+    "/kelly/the-anchor/the-bridge-to-cupertino/part-7-first-class-to-cupertino": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: First Class to Cupertino \u2708\ufe0f",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c006/p007.md"
+    },
+    "/kelly/the-anchor/the-bridge-to-cupertino/part-8-six-years": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: Six Years \ud83e\udd2f",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c006/p008.md"
+    },
+    "/kelly/the-anchor/the-bridge-to-cupertino/part-9-welcome-to-cupertino": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: Welcome to Cupertino \u2600\ufe0f",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c006/p009.md"
+    },
+    "/kelly/the-anchor/the-bridge-to-cupertino/part-10-best-behavior": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: Best Behavior \ud83e\udd1d",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c006/p010.md"
+    },
+    "/kelly/the-anchor/the-bridge-to-cupertino/part-11-the-binary-canteen": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The Binary Canteen \ud83e\udd6a",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c006/p011.md"
+    },
+    "/kelly/the-anchor/inside-infinite-loop/part-1-company-policy": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Company Policy \ud83d\udccb",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c007/p001.md"
+    },
+    "/kelly/the-anchor/inside-infinite-loop/part-2-an-uneven-gait": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: An Uneven Gait \ud83d\udeb6\u200d\u2642\ufe0f",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c007/p002.md"
+    },
+    "/kelly/the-anchor/inside-infinite-loop/part-3-a-necessary-anchor": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: A Necessary Anchor \u2693",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c007/p003.md"
+    },
+    "/kelly/the-anchor/inside-infinite-loop/part-4-proof-of-work": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Proof of Work \ud83d\udcbb",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c007/p004.md"
+    },
+    "/kelly/the-anchor/inside-infinite-loop/part-5-coding-from-the-couch": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Coding from the Couch \ud83d\udecb\ufe0f",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c007/p005.md"
+    },
+    "/kelly/the-anchor/inside-infinite-loop/part-6-project-chimera": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: Project Chimera \ud83e\udd2b",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c007/p006.md"
+    },
+    "/kelly/the-anchor/inside-infinite-loop/part-7-a-sister-s-insistence": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: A Sister\\'s Insistence \u6756",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c007/p007.md"
+    },
+    "/kelly/the-anchor/inside-infinite-loop/part-8-the-right-tool-for-the-job": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Right Tool for the Job \ud83c\udf7d\ufe0f",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c007/p008.md"
+    },
+    "/kelly/the-anchor/inside-infinite-loop/part-9-what-s-really-going-on": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: What\\'s Really Going On? \ud83d\udcac",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c007/p009.md"
+    },
+    "/kelly/the-anchor/a-new-reality/part-1-the-right-tool-for-the-job": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Right Tool for the Job \u267f",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c008/p001.md"
+    },
+    "/kelly/the-anchor/a-new-reality/part-2-breakfast-at-the-hotel": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Breakfast at the Hotel \ud83e\udd5e",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c008/p002.md"
+    },
+    "/kelly/the-anchor/a-new-reality/part-3-the-bug-bash": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Bug Bash \ud83d\udc1e",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c008/p003.md"
+    },
+    "/kelly/the-anchor/a-new-reality/part-4-lunch-at-caffe-magna": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Lunch at Caffe Magna \ud83c\udf55",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c008/p004.md"
+    },
+    "/kelly/the-anchor/a-new-reality/part-5-the-analysis": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Analysis \ud83e\udde0",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c008/p005.md"
+    },
+    "/kelly/the-anchor/a-new-reality/part-6-the-phone-call": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Phone Call \ud83d\udcde",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c008/p006.md"
+    },
+    "/kelly/the-anchor/a-new-reality/part-7-the-bidding-war-begins": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Bidding War Begins \u2696\ufe0f",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c008/p007.md"
+    },
+    "/kelly/the-anchor/a-new-reality/part-8-professional-courtesy": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: Professional Courtesy \ud83e\udd2b",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c008/p008.md"
+    },
+    "/kelly/the-bidding-war-as-seen-on-devnet/the-players/part-1-the-developer-community": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Developer Community",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c002/p001.md"
+    },
+    "/kelly/the-bidding-war-as-seen-on-devnet/the-players/part-2-the-ceos": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The CEOs",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c002/p002.md"
+    },
+    "/kelly/the-bidding-war-as-seen-on-devnet/choosing-a-future/part-1-all-the-offers-on-the-table": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: All the Offers on the Table \ud83d\udcc2",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p001.md"
+    }
+}

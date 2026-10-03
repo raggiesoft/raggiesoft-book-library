@@ -1,0 +1,482 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "raggiesoft-books",
+        "siteName": "Ocean View Archives",
+        "isSequential": true,
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books",
+        "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
+        "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
+        "navbarBrandLink": "/raggiesoft-books"
+    },
+    "/jessica": {
+        "view": "pages/raggiesoft-books/books/series",
+        "title": "The Quantum Directive: Jessica's Cut",
+        "theme": "raggiesoft-books"
+    },
+    "/jessica/currents-and-crosswinds/an-ordinary-july/part-1-day-to-day-at-quantum": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Day-to-Day at Quantum",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p001.md"
+    },
+    "/jessica/currents-and-crosswinds/an-ordinary-july/part-2-the-review-that-isn-t": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The \u201cReview\u201d That Isn\u2019t",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p002.md"
+    },
+    "/jessica/currents-and-crosswinds/an-ordinary-july/part-3-across-the-quad": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Across the Quad",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p003.md"
+    },
+    "/jessica/currents-and-crosswinds/an-ordinary-july/part-4-the-executive-suite": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Executive Suite",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p004.md"
+    },
+    "/jessica/currents-and-crosswinds/an-ordinary-july/part-5-off-to-bfi": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Off to BFI",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p005.md"
+    },
+    "/jessica/currents-and-crosswinds/an-ordinary-july/part-6-the-flight-east": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Flight East",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p006.md"
+    },
+    "/jessica/currents-and-crosswinds/an-ordinary-july/part-7-providence-to-boston": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Providence to Boston",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p007.md"
+    },
+    "/jessica/currents-and-crosswinds/an-ordinary-july/part-8-the-morning-hand-off": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Morning Hand-Off",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p008.md"
+    },
+    "/jessica/currents-and-crosswinds/an-ordinary-july/part-9-the-green-room": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Green Room",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p009.md"
+    },
+    "/jessica/currents-and-crosswinds/an-ordinary-july/part-10-the-cue": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Cue",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p010.md"
+    },
+    "/jessica/currents-and-crosswinds/an-ordinary-july/part-11-the-reveal": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: The Reveal",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p011.md"
+    },
+    "/jessica/currents-and-crosswinds/an-ordinary-july/part-12-the-introduction": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: The Introduction",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p012.md"
+    },
+    "/jessica/currents-and-crosswinds/an-ordinary-july/part-13-the-crown-jewel": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 13: The Crown Jewel",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p013.md"
+    },
+    "/jessica/currents-and-crosswinds/an-ordinary-july/part-14-the-aftermath": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 14: The Aftermath",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p014.md"
+    },
+    "/jessica/currents-and-crosswinds/an-ordinary-july/part-15-the-fallout": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 15: The Fallout",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p015.md"
+    },
+    "/jessica/currents-and-crosswinds/an-ordinary-july/part-16-the-debrief": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 16: The Debrief",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p016.md"
+    },
+    "/jessica/currents-and-crosswinds/currents-to-still-water/part-1-homecoming": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Homecoming",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p001.md"
+    },
+    "/jessica/currents-and-crosswinds/currents-to-still-water/part-2-part-2-unwelcome-currents": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Part\u202f2: Unwelcome Currents",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p002.md"
+    },
+    "/jessica/currents-and-crosswinds/currents-to-still-water/part-3-part-3-evening-edition": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Part\u202f3: Evening Edition",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p003.md"
+    },
+    "/jessica/currents-and-crosswinds/currents-to-still-water/part-4-part-4-the-60-into-town": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Part\u202f4: The \\\\#60 into Town",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p004.md"
+    },
+    "/jessica/currents-and-crosswinds/currents-to-still-water/part-5-part-5-the-creamery-along-the-wall": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Part\u202f5: The Creamery Along the Wall",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p005.md"
+    },
+    "/jessica/currents-and-crosswinds/currents-to-still-water/part-6-part-6-breakfast-at-the-creamery": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: Part\u202f6: Breakfast at the Creamery",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p006.md"
+    },
+    "/jessica/currents-and-crosswinds/currents-to-still-water/part-7-the-first-autograph": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The First Autograph",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p007.md"
+    },
+    "/jessica/currents-and-crosswinds/the-spark-of-rebellion/part-1-the-morning-commute": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Morning Commute",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c003/p001.md"
+    },
+    "/jessica/currents-and-crosswinds/the-spark-of-rebellion/part-2-a-silent-protest": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: A Silent Protest",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c003/p002.md"
+    },
+    "/jessica/currents-and-crosswinds/the-spark-of-rebellion/part-3-the-confrontation-at-aurora": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Confrontation at Aurora",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c003/p003.md"
+    },
+    "/jessica/currents-and-crosswinds/the-war-councils-assemble/part-1-quantum-s-alliance": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Quantum\\'s Alliance",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p001.md"
+    },
+    "/jessica/currents-and-crosswinds/the-war-councils-assemble/part-2-aurora-s-rebellion": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Aurora\\'s Rebellion",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p002.md"
+    },
+    "/jessica/currents-and-crosswinds/the-memo/part-1-the-leak": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Leak",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c005/p001.md"
+    },
+    "/jessica/currents-and-crosswinds/the-memo/part-2-damage-control": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Damage Control",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c005/p002.md"
+    },
+    "/jessica/currents-and-crosswinds/the-exodus/part-1-the-intercepted-letter": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Intercepted Letter",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c006/p001.md"
+    },
+    "/jessica/currents-and-crosswinds/the-exodus/part-2-the-last-stand": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Last Stand",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c006/p002.md"
+    },
+    "/jessica/currents-and-crosswinds/sanctuary-across-the-lake/part-1-a-new-alliance": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A New Alliance",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c007/p001.md"
+    },
+    "/jessica/currents-and-crosswinds/sanctuary-across-the-lake/part-2-to-fork-or-not-to-fork": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: To Fork or Not to Fork?",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c007/p002.md"
+    },
+    "/jessica/currents-and-crosswinds/sanctuary-across-the-lake/part-3-solidarity-in-action": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Solidarity in Action",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c007/p003.md"
+    },
+    "/jessica/currents-and-crosswinds/the-fall-of-aurora/part-1-the-empty-loft": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Empty Loft",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c008/p001.md"
+    },
+    "/jessica/currents-and-crosswinds/the-fall-of-aurora/part-2-the-board-meeting": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Board Meeting",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c008/p002.md"
+    },
+    "/jessica/currents-and-crosswinds/the-fall-of-aurora/part-3-kelly-is-not-for-sale": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Kelly is Not For Sale",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c008/p003.md"
+    },
+    "/jessica/currents-and-crosswinds/the-fall-of-aurora/part-4-the-press-conference": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Press Conference",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c008/p004.md"
+    },
+    "/jessica/currents-and-crosswinds/the-fall-of-aurora/part-5-spilling-the-beans": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Spilling the Beans",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c008/p005.md"
+    },
+    "/jessica/currents-and-crosswinds/the-fall-of-aurora/part-6-the-final-paycheck": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Final Paycheck",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c008/p006.md"
+    },
+    "/jessica/currents-and-crosswinds/the-final-straw/part-1-an-intern-s-story": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: An Intern\\'s Story",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c009/p001.md"
+    },
+    "/jessica/currents-and-crosswinds/the-final-straw/part-2-a-poisoned-well": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: A Poisoned Well",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c009/p002.md"
+    },
+    "/jessica/currents-and-crosswinds/a-new-beginning/part-1-writing-the-next-chapter": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Writing the Next Chapter",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c010/p001.md"
+    },
+    "/jessica/currents-and-crosswinds/a-new-beginning/part-2-kelly-and-ryan-s-first-day": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Kelly and Ryan\u2019s First Day",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c010/p002.md"
+    },
+    "/jessica/currents-and-crosswinds/a-new-beginning/part-3-break-room": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Break Room",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c010/p003.md"
+    },
+    "/jessica/currents-and-crosswinds/a-new-beginning/part-4-jessica-s-office": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Jessica\\'s Office",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c010/p004.md"
+    },
+    "/jessica/currents-and-crosswinds/a-new-beginning/part-5-the-overwhelming-good": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Overwhelming Good",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c010/p005.md"
+    },
+    "/jessica/currents-and-crosswinds/a-new-beginning/part-6-the-first-line-of-code": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The First Line of Code",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c010/p006.md"
+    },
+    "/jessica/currents-and-crosswinds/the-bridge-to-cupertino/part-1-the-cupertino-trip": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Cupertino Trip",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c011/p001.md"
+    },
+    "/jessica/currents-and-crosswinds/the-bridge-to-cupertino/part-2-the-gate-and-the-extended-family": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Gate and the Extended Family",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c011/p002.md"
+    },
+    "/jessica/currents-and-crosswinds/the-bridge-to-cupertino/part-3-on-the-bridge-to-cupertino": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: On the Bridge to Cupertino",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c011/p003.md"
+    },
+    "/jessica/currents-and-crosswinds/the-bridge-to-cupertino/part-4-the-california-sun": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The California Sun",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c011/p004.md"
+    },
+    "/jessica/currents-and-crosswinds/the-bridge-to-cupertino/part-5-inside-infinite-loop": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Inside Infinite Loop",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c011/p005.md"
+    },
+    "/jessica/currents-and-crosswinds/the-bridge-to-cupertino/part-6-the-dev-lab": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Dev Lab",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c011/p006.md"
+    },
+    "/jessica/currents-and-crosswinds/the-bridge-to-cupertino/part-7-a-day-at-work": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: A Day at Work",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c011/p007.md"
+    },
+    "/jessica/currents-and-crosswinds/the-bridge-to-cupertino/part-8-lunch-at-caffe-magna": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: Lunch at Caffe Magna",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c011/p008.md"
+    },
+    "/jessica/currents-and-crosswinds/the-bridge-to-cupertino/part-9-the-bug-bash": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: The Bug Bash",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c011/p009.md"
+    },
+    "/jessica/currents-and-crosswinds/the-bridge-to-cupertino/part-10-the-kernel-panic-fix": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: The Kernel Panic Fix",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c011/p010.md"
+    },
+    "/jessica/currents-and-crosswinds/the-bridge-to-cupertino/part-11-a-room-with-a-view": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: A Room with a View",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c011/p011.md"
+    },
+    "/jessica/currents-and-crosswinds/the-bridge-to-cupertino/part-12-finders-keepers": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: Finders Keepers",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c011/p012.md"
+    },
+    "/jessica/currents-and-crosswinds/the-bridge-to-cupertino/part-13-morning-in-cupertino": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 13: Morning in Cupertino",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c011/p013.md"
+    },
+    "/jessica/currents-and-crosswinds/the-bridge-to-cupertino/part-14-a-picnic-with-cousins": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 14: A Picnic with Cousins",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c011/p014.md"
+    },
+    "/jessica/currents-and-crosswinds/the-bridge-to-cupertino/part-15-homeward-bound": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 15: Homeward Bound",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c011/p015.md"
+    },
+    "/jessica/currents-and-crosswinds/the-bridge-to-cupertino/part-16-the-flight-home": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 16: The Flight Home",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c011/p016.md"
+    },
+    "/jessica/currents-and-crosswinds/bidding-for-the-twins/part-1-the-offer": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Offer",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c012/p001.md"
+    },
+    "/jessica/currents-and-crosswinds/bidding-for-the-twins/part-2-the-bidding-war": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Bidding War",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c012/p002.md"
+    },
+    "/jessica/currents-and-crosswinds/bidding-for-the-twins/part-3-the-escalation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Escalation",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c012/p003.md"
+    },
+    "/jessica/currents-and-crosswinds/bidding-for-the-twins/part-4-the-decision": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Decision",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c012/p004.md"
+    },
+    "/jessica/currents-and-crosswinds/bidding-for-the-twins/part-5-the-dotted-line": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Dotted Line",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c012/p005.md"
+    },
+    "/jessica/currents-and-crosswinds/bidding-for-the-twins/part-6-the-first-paycheck": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The First Paycheck",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c012/p006.md"
+    },
+    "/jessica/currents-and-crosswinds/bidding-for-the-twins/part-7-acknowledging-talent": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Acknowledging Talent",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c012/p007.md"
+    },
+    "/jessica/currents-and-crosswinds/bidding-for-the-twins/part-8-a-new-role": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: A New Role",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c012/p008.md"
+    },
+    "/jessica/currents-and-crosswinds/a-new-family/part-1-pizza-night": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Pizza Night",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c013/p001.md"
+    },
+    "/jessica/currents-and-crosswinds/a-new-family/part-2-the-apartment-hunt": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Apartment Hunt",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c013/p002.md"
+    },
+    "/jessica/currents-and-crosswinds/a-new-family/part-3-the-capitol-hill-grand": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Capitol Hill Grand",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c013/p003.md"
+    },
+    "/jessica/currents-and-crosswinds/a-new-family/part-4-move-in-day": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Move-In Day",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c013/p004.md"
+    }
+}
