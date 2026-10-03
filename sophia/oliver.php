@@ -99,12 +99,14 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
         <article class="story-content">
             <!-- Title Header -->
             <div style="text-align: center; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--rs-border); position: relative;">
-                <?php 
-                global $katie, $seriesSlug;
-                $seriesTitleForHeader = !empty($katie['title']) ? $katie['title'] : (ucfirst($seriesSlug) . ' Narrative');
-                ?>
-                <div class="reader-series-title"><?php echo htmlspecialchars($seriesTitleForHeader); ?></div>
-                <h1 style="margin-bottom: 1rem; font-weight: 700; position: relative; z-index: 2;"><?php echo htmlspecialchars($title); ?></h1>
+                <div class="reader-series-header"><?php echo htmlspecialchars($seriesTitle); ?></div>
+                <?php if ($bookTitle): ?>
+                    <h2 class="reader-book-header"><?php echo htmlspecialchars($bookTitle); ?></h2>
+                <?php endif; ?>
+                <?php if ($chapTitle): ?>
+                    <h3 class="reader-chapter-header"><?php echo htmlspecialchars($chapTitle); ?></h3>
+                <?php endif; ?>
+                <h1 class="reader-part-header"><?php echo htmlspecialchars($title); ?></h1>
                 
                 <?php if (!empty($frontmatter['date']) || !empty($frontmatter['start_time']) || !empty($frontmatter['pov']) || !empty($frontmatter['location'])): ?>
                     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; opacity: 0.7; font-size: 0.85rem; font-weight: 600;">
@@ -324,16 +326,32 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
     margin-bottom: 1.5rem;
     text-indent: 2rem; /* Traditional book indentation */
 }
-.reader-series-title {
-    font-size: clamp(1.5rem, 5vw, 3.5rem);
-    font-weight: 900;
+.reader-series-header {
+    font-size: 1.1rem;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: var(--rs-primary, #007bff);
-    opacity: 0.15;
-    line-height: 1.1;
-    margin-bottom: -15px; /* Pull the h1 up over it */
-    position: relative;
-    z-index: 1;
+    margin-bottom: 0.5rem;
+}
+.reader-book-header {
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: var(--rs-text);
+    margin: 0 0 0.25rem 0;
+}
+.reader-chapter-header {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--rs-text);
+    opacity: 0.8;
+    margin: 0 0 1.5rem 0;
+}
+.reader-part-header {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--rs-text);
+    margin: 0 0 1rem 0;
+    line-height: 1.2;
 }
 </style>
