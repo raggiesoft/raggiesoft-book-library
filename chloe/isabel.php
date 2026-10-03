@@ -19,6 +19,11 @@ require_once $basePath . '/includes/components/sidebars/sidebar.php';
 if ($requestUri == '/' || $requestUri == '/isabel.php' || $requestUri == '/index.php') {
     // Show Landing Page
     require_once $basePath . '/includes/components/pages/home.php';
+} else if (preg_match('#^/([^/]+)$#', $requestUri, $matches)) {
+    // Show Series Overview Page
+    // Example: /casey, /ashley-tower
+    $seriesSlug = $matches[1];
+    require_once $basePath . '/includes/components/pages/overview.php';
 } else {
     // Show Book Reader
     require_once $basePath . '/includes/components/pages/reader.php';
