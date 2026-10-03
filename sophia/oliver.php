@@ -242,13 +242,66 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
                                 }
                             }
                         }
+                        
+                        $spotifyUrl = $appleUrl = $amazonUrl = $youtubeUrl = $storeStandardUrl = null;
+                        
+                        $artistAlbumsJsonUrl = $cdnBaseUrl . '/engine-room-records/artists/' . $artistSlug . '/albums.json';
+                        $artistAlbumsRaw = @file_get_contents($artistAlbumsJsonUrl);
+                        if ($artistAlbumsRaw) {
+                            $artistAlbumsData = json_decode($artistAlbumsRaw, true);
+                            if ($artistAlbumsData) {
+                                foreach ($artistAlbumsData as $era) {
+                                    if (!empty($era['albums'])) {
+                                        foreach ($era['albums'] as $alb) {
+                                            if (isset($alb['folder']) && $alb['folder'] === $albumSlug) {
+                                                if (!empty($alb['spotifyId'])) $spotifyUrl = "https://open.spotify.com/album/{$alb['spotifyId']}";
+                                                if (!empty($alb['appleId'])) $appleUrl = "https://music.apple.com/us/album/{$alb['appleId']}";
+                                                if (!empty($alb['amazonId'])) $amazonUrl = "https://music.amazon.com/albums/{$alb['amazonId']}";
+                                                if (!empty($alb['youtubeId'])) $youtubeUrl = "https://music.youtube.com/playlist?list={$alb['youtubeId']}";
+                                                if (!empty($alb['storeStandardUrl'])) $storeStandardUrl = $alb['storeStandardUrl'];
+                                                break 2;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     ?>
-                    <div class="reader-audio-player" style="margin-top: 1.5rem; display: inline-flex; align-items: center; gap: 1rem; padding: 0.75rem 1.5rem; border: 1px solid var(--rs-border); border-radius: 30px; background: var(--rs-card-bg); text-align: left; max-width: 100%;">
-                        <button id="narrative-audio-play" class="rs-btn" style="border-radius: 50%; width: 40px; height: 40px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0;" aria-label="Play Soundtrack"><i class="ph ph-play" style="font-size: 1.2rem;"></i></button>
-                        <div style="overflow: hidden;">
-                            <div style="font-size: 0.75rem; opacity: 0.7; text-transform: uppercase; letter-spacing: 1px; line-height: 1;">Background Audio</div>
-                            <div style="font-weight: 600; font-size: 0.95rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.4;"><?php echo htmlspecialchars($audioTitleDisplay); ?></div>
+                    <div class="reader-audio-player" style="margin-top: 2rem; border: 1px solid var(--rs-border); border-radius: 12px; background: var(--rs-card-bg); overflow: hidden; max-width: 500px; margin-left: auto; margin-right: auto; text-align: left; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                        <div style="display: flex; align-items: center; gap: 1.25rem; padding: 1.25rem;">
+                            <img src="<?php echo htmlspecialchars($albumArtUrl); ?>" alt="Album Art" style="width: 80px; height: 80px; border-radius: 6px; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                            
+                            <div style="flex: 1; overflow: hidden;">
+                                <div style="font-size: 0.75rem; opacity: 0.7; text-transform: uppercase; letter-spacing: 1px; line-height: 1; margin-bottom: 0.35rem;">Background Audio</div>
+                                <div style="font-weight: 700; font-size: 1.1rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.2; margin-bottom: 0.25rem;"><?php echo htmlspecialchars($audioTitleDisplay); ?></div>
+                                <div style="font-size: 0.85rem; opacity: 0.8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><?php echo htmlspecialchars($artistDisplay); ?> &bull; <i><?php echo htmlspecialchars($albumDisplay); ?></i></div>
+                            </div>
+                            
+                            <button id="narrative-audio-play" class="rs-btn" style="border-radius: 50%; width: 50px; height: 50px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 2px solid var(--rs-primary); color: var(--rs-primary);" aria-label="Play Soundtrack">
+                                <i class="ph ph-play" style="font-size: 1.5rem; margin-left: 3px;"></i>
+                            </button>
                         </div>
+                        
+                        <?php if ($spotifyUrl || $appleUrl || $amazonUrl || $youtubeUrl || $storeStandardUrl): ?>
+                        <div style="background: var(--rs-bg); border-top: 1px solid var(--rs-border); padding: 0.75rem 1rem; display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
+                            <?php if ($spotifyUrl): ?>
+                                <a href="<?php echo htmlspecialchars($spotifyUrl); ?>" target="_blank" title="Listen on Spotify" class="rs-btn" style="padding: 0.3rem 0.6rem; font-size: 0.85rem; border-color: #1DB954; color: #1DB954;"><i class="ph ph-spotify-logo" style="margin-right: 4px;"></i> Spotify</a>
+                            <?php endif; ?>
+                            <?php if ($appleUrl): ?>
+                                <a href="<?php echo htmlspecialchars($appleUrl); ?>" target="_blank" title="Listen on Apple Music" class="rs-btn" style="padding: 0.3rem 0.6rem; font-size: 0.85rem; border-color: #FA243C; color: #FA243C;"><i class="ph ph-apple-logo" style="margin-right: 4px;"></i> Apple</a>
+                            <?php endif; ?>
+                            <?php if ($amazonUrl): ?>
+                                <a href="<?php echo htmlspecialchars($amazonUrl); ?>" target="_blank" title="Listen on Amazon Music" class="rs-btn" style="padding: 0.3rem 0.6rem; font-size: 0.85rem; border-color: #00A8E1; color: #00A8E1;"><i class="ph ph-amazon-logo" style="margin-right: 4px;"></i> Amazon</a>
+                            <?php endif; ?>
+                            <?php if ($youtubeUrl): ?>
+                                <a href="<?php echo htmlspecialchars($youtubeUrl); ?>" target="_blank" title="Listen on YouTube" class="rs-btn" style="padding: 0.3rem 0.6rem; font-size: 0.85rem; border-color: #FF0000; color: #FF0000;"><i class="ph ph-youtube-logo" style="margin-right: 4px;"></i> YouTube</a>
+                            <?php endif; ?>
+                            <?php if ($storeStandardUrl): ?>
+                                <a href="<?php echo htmlspecialchars($storeStandardUrl); ?>" target="_blank" title="Buy Digital Archive" class="rs-btn rs-btn-primary" style="padding: 0.3rem 0.6rem; font-size: 0.85rem;"><i class="ph ph-shopping-cart" style="margin-right: 4px;"></i> Store</a>
+                            <?php endif; ?>
+                        </div>
+                        <?php endif; ?>
+                        
                         <audio id="narrative-audio-element" src="<?php echo htmlspecialchars($audioUrl); ?>" loop preload="none"></audio>
                     </div>
                     <script>
