@@ -170,14 +170,21 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
 
                 <?php if (!empty($frontmatter['audio'])): ?>
                     <?php 
-                        $audioUrl = $cdnBaseUrl . '/' . ltrim($frontmatter['audio'], '/'); 
-                        $audioTitle = basename($frontmatter['audio'], '.mp3'); 
+                        // Automatically prepend the artists directory path to simplify YAML frontmatter
+                        $rawAudioPath = ltrim($frontmatter['audio'], '/');
+                        if (strpos($rawAudioPath, 'engine-room-records/') === false) {
+                            $rawAudioPath = 'engine-room-records/artists/' . $rawAudioPath;
+                        }
+                        $audioUrl = $cdnBaseUrl . '/' . $rawAudioPath; 
+                        $audioTitleRaw = basename($frontmatter['audio'], '.mp3');
+                        $audioTitleDisplay = ucwords(str_replace('-', ' ', preg_replace('/^\d+-\d+-/', '', $audioTitleRaw)));
+                        $povDisplay = !empty($frontmatter['pov']) ? $frontmatter['pov'] : 'Narrative Soundtrack';
                     ?>
                     <div class="reader-audio-player" style="margin-top: 1.5rem; display: inline-flex; align-items: center; gap: 1rem; padding: 0.75rem 1.5rem; border: 1px solid var(--rs-border); border-radius: 30px; background: var(--rs-card-bg); text-align: left; max-width: 100%;">
-                        <button id="narrative-audio-play" class="rs-btn" style="border-radius: 50%; width: 40px; height: 40px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><i class="ph ph-play" style="font-size: 1.2rem;"></i></button>
+                        <button id="narrative-audio-play" class="rs-btn" style="border-radius: 50%; width: 40px; height: 40px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0;" aria-label="Play Soundtrack"><i class="ph ph-play" style="font-size: 1.2rem;"></i></button>
                         <div style="overflow: hidden;">
                             <div style="font-size: 0.75rem; opacity: 0.7; text-transform: uppercase; letter-spacing: 1px; line-height: 1;">Background Audio</div>
-                            <div style="font-weight: 600; font-size: 0.95rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.4;"><?php echo htmlspecialchars(ucwords(str_replace('-', ' ', $audioTitle))); ?></div>
+                            <div style="font-weight: 600; font-size: 0.95rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.4;"><?php echo htmlspecialchars($audioTitleDisplay); ?></div>
                         </div>
                         <audio id="narrative-audio-element" src="<?php echo htmlspecialchars($audioUrl); ?>" loop preload="none"></audio>
                     </div>
@@ -187,17 +194,39 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
                         const playBtn = document.getElementById('narrative-audio-play');
                         if (audioEl && playBtn) {
                             const icon = playBtn.querySelector('i');
+                            
+                            // Initialize Media Session API
+                            if ('mediaSession' in navigator) {
+                                navigator.mediaSession.metadata = new MediaMetadata({
+                                    title: <?php echo json_encode($audioTitleDisplay); ?>,
+                                    artist: <?php echo json_encode($povDisplay); ?>,
+                                    album: 'Stardust Engine Narratives'
+                                });
+                                navigator.mediaSession.setActionHandler('play', () => audioEl.play());
+                                navigator.mediaSession.setActionHandler('pause', () => audioEl.pause());
+                            }
+
+                            // Sync Play/Pause Button State with actual Audio Element state
+                            // This ensures the button updates if paused via Media Keys/Lockscreen
+                            audioEl.addEventListener('play', () => {
+                                icon.classList.remove('ph-play');
+                                icon.classList.add('ph-pause');
+                                playBtn.classList.add('rs-btn-primary');
+                                playBtn.setAttribute('aria-label', 'Pause Soundtrack');
+                            });
+
+                            audioEl.addEventListener('pause', () => {
+                                icon.classList.remove('ph-pause');
+                                icon.classList.add('ph-play');
+                                playBtn.classList.remove('rs-btn-primary');
+                                playBtn.setAttribute('aria-label', 'Play Soundtrack');
+                            });
+
                             playBtn.addEventListener('click', () => {
                                 if (audioEl.paused) {
                                     audioEl.play();
-                                    icon.classList.remove('ph-play');
-                                    icon.classList.add('ph-pause');
-                                    playBtn.classList.add('rs-btn-primary');
                                 } else {
                                     audioEl.pause();
-                                    icon.classList.remove('ph-pause');
-                                    icon.classList.add('ph-play');
-                                    playBtn.classList.remove('rs-btn-primary');
                                 }
                             });
                         }
