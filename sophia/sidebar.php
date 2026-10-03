@@ -13,9 +13,7 @@ if (!empty($routeData)) {
     }
 }
 
-$katieUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/katie.json';
-$katieContent = @file_get_contents($katieUrl);
-$katie = $katieContent ? json_decode($katieContent, true) : null;
+// $katie is already loaded in isabel.php for SEO purposes
 ?>
 
 <aside id="stardust-sidebar" class="reader-sidebar">

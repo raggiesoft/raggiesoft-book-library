@@ -104,12 +104,48 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
                 
                 <?php if (!empty($frontmatter['date']) || !empty($frontmatter['start_time']) || !empty($frontmatter['pov']) || !empty($frontmatter['location'])): ?>
                     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; opacity: 0.7; font-size: 0.85rem; font-weight: 600;">
-                        <?php if (!empty($frontmatter['date'])): ?>
-                            <span style="display: flex; align-items: center; gap: 4px;"><i class="ph ph-calendar-blank"></i> <?php echo htmlspecialchars($frontmatter['date']); ?></span>
-                        <?php endif; ?>
-                        
-                        <?php if (!empty($frontmatter['start_time'])): ?>
-                            <span style="display: flex; align-items: center; gap: 4px;"><i class="ph ph-clock"></i> <?php echo htmlspecialchars($frontmatter['start_time']); ?></span>
+                        <?php 
+                        if (!empty($frontmatter['date'])): 
+                            $isoString = '';
+                            if (!empty($frontmatter['start_time'])) {
+                                $tzMap = [
+                                    'ET' => 'America/New_York', 'EST' => 'America/New_York', 'EDT' => 'America/New_York',
+                                    'PT' => 'America/Los_Angeles', 'PST' => 'America/Los_Angeles', 'PDT' => 'America/Los_Angeles',
+                                    'CT' => 'America/Chicago', 'CST' => 'America/Chicago', 'CDT' => 'America/Chicago',
+                                    'MT' => 'America/Denver', 'MST' => 'America/Denver', 'MDT' => 'America/Denver'
+                                ];
+                                $tzStr = $tzMap[$frontmatter['timezone'] ?? 'ET'] ?? 'UTC';
+                                try {
+                                    $dt = new DateTime($frontmatter['date'] . ' ' . $frontmatter['start_time'], new DateTimeZone($tzStr));
+                                    $isoString = $dt->format(DateTime::ATOM);
+                                } catch (Exception $e) {}
+                            }
+                        ?>
+                            <span id="story-datetime-display" style="display: flex; align-items: center; gap: 4px;" data-iso="<?php echo htmlspecialchars($isoString); ?>">
+                                <i class="ph ph-calendar-blank"></i> 
+                                <span class="dt-text">
+                                    <?php echo htmlspecialchars($frontmatter['date'] . (!empty($frontmatter['start_time']) ? ' ' . $frontmatter['start_time'] . ' ' . ($frontmatter['timezone'] ?? '') : '')); ?>
+                                </span>
+                            </span>
+                            
+                            <?php if ($isoString): ?>
+                            <script>
+                            (function() {
+                                const el = document.getElementById('story-datetime-display');
+                                const iso = el.getAttribute('data-iso');
+                                if (iso) {
+                                    try {
+                                        const d = new Date(iso);
+                                        const formatter = new Intl.DateTimeFormat(undefined, { 
+                                            weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', 
+                                            hour: 'numeric', minute: '2-digit', timeZoneName: 'short' 
+                                        });
+                                        el.querySelector('.dt-text').textContent = formatter.format(d);
+                                    } catch(e) {}
+                                }
+                            })();
+                            </script>
+                            <?php endif; ?>
                         <?php endif; ?>
                         
                         <?php if (!empty($frontmatter['location'])): ?>

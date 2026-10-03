@@ -40,7 +40,25 @@ if ($requestUri === '/' || $requestUri === '/isabel.php' || $requestUri === '/in
 
 // Extract Variables for Views
 $currentPageTheme = $pageConfig['theme'] ?? 'raggiesoft-books';
-$siteName = $pageConfig['siteName'] ?? 'Ocean View Archives';
+// Pre-fetch Katie for both SEO Title and Sidebar
+$katie = null;
+if ($seriesSlug) {
+    $katieUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/katie.json';
+    $katieContent = @file_get_contents($katieUrl);
+    $katie = $katieContent ? json_decode($katieContent, true) : null;
+}
+
+$siteName = 'Ocean View Archives';
+if (!empty($pageConfig['title'])) {
+    // Parse "Part 1: Chapter 1: The Architect's Lesson" -> "The Architect's Lesson"
+    $titleParts = explode(':', $pageConfig['title']);
+    $cleanPartTitle = trim(end($titleParts));
+    
+    $seriesTitle = $katie['title'] ?? (ucfirst($seriesSlug) . ' Narrative');
+    
+    // SEO Format: Specific | General
+    $siteName = $cleanPartTitle . ' | ' . $seriesTitle;
+}
 
 // Do NOT load a header menu (like header-default) so the reader has full screen real estate
 $currentHeaderMenu = null;
