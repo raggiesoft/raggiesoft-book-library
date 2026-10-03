@@ -148,7 +148,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
     }
 </style>
 
-<main id="stardust-reading-pane" style="padding: 0; display: block; overflow-x: hidden;">
+<main id="stardust-reading-pane" style="padding: 0 !important; display: block !important; overflow-x: hidden !important; width: 100% !important; flex: 1;">
 <div class="immersive-container hero-rotator-container" data-images="<?php echo $imagesJson; ?>">
     <div class="hero-bg-layer hero-bg-layer-1" style="background-image: url('<?php echo $startImage; ?>');"></div>
     <div class="hero-bg-layer hero-bg-layer-2" style="background-image: url(''); opacity: 0;"></div>
@@ -206,7 +206,7 @@ $imagesJson = htmlspecialchars(json_encode($heroImages), ENT_QUOTES, 'UTF-8');
                         $route = !empty($book['first_route']) ? str_replace('/raggiesoft-books/books', '', $book['first_route']) : '/' . $slug;
                         
                         // Determine cover art
-                        $image = '';
+                        $image = $cdnBaseUrl . '/raggiesoft-books/images/book-placeholder.jpg';
                         if (!empty($book['image'])) {
                             $image = $cdnBaseUrl . $book['image'];
                         }
