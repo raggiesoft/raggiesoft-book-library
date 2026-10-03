@@ -13,7 +13,7 @@ $basePath = realpath(__DIR__ . '/../');
 $pageConfig = [
     'showSidebar' => true,
     'theme' => 'oceanview',
-    'view' => $basePath . '/victoria/oliver.php'
+    'view' => $basePath . '/eleanor/oliver.php'
 ];
 
 // Always try to load the route data based on the series slug
