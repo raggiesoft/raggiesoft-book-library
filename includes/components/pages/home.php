@@ -1,14 +1,15 @@
 <main id="stardust-reading-pane" tabindex="-1">
+    <!-- Ocean View Archives Hero Section -->
     <div class="book-page home-page" style="max-width: 1200px; margin: 0 auto; padding: 2rem;">
-        <header class="home-hero">
-            <h1>Welcome to the RaggieSoft Universe</h1>
-            <p class="subtitle">Explore the interconnected worlds of the Stardust Engine Narrative Library.</p>
+        <header class="home-hero ova-hero">
+            <h1 class="ova-title">Ocean View Archives</h1>
+            <p class="subtitle ova-subtitle">Independent Publishing Imprint. Preserving narratives across dimensions.</p>
         </header>
 
-        <section class="stardust-grid">
+        <section class="stardust-grid mt-5">
             <!-- Book 1: The Quantum Directive -->
             <a href="/books/casey/b001/c001/p001" class="stardust-card">
-                <div class="stardust-card-cover">
+                <div class="stardust-card-cover theme-quantum">
                     <h3>The Quantum Directive</h3>
                     <span>The Caretakers</span>
                 </div>
@@ -47,3 +48,28 @@
         </section>
     </div>
 </main>
+
+<style>
+.ova-hero {
+    border-bottom: 2px solid var(--border-color, #eaeaea);
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+}
+
+.ova-title {
+    font-family: 'Impact', sans-serif, system-ui;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 3.5rem !important;
+    color: var(--primary-color, #0f172a) !important;
+}
+
+.ova-subtitle {
+    font-family: monospace;
+    color: var(--text-muted, #555) !important;
+}
+
+.theme-quantum {
+    background: #1e3a8a !important; /* Deep Blue */
+}
+</style>
