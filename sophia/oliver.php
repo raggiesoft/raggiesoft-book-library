@@ -21,12 +21,7 @@ if (file_exists($routeFile)) {
 }
 
 if (empty($actualFilePath)) {
-    echo '<?php if ($narrativeTheme): ?>
-    <meta name="stardust-narrative-theme" content="<?php echo htmlspecialchars($narrativeTheme); ?>">
-    <link id="narrative-theme-css" rel="stylesheet" href="<?php echo htmlspecialchars($cdnBaseUrl . '/raggiesoft-books/css/themes/' . $narrativeTheme . '.css'); ?>" disabled>
-<?php endif; ?>
-
-<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;"><div class="book-page"><h1>Chapter Not Found</h1><p>The requested route could not be found in the route map.</p></div></main>';
+    echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;"><div class="book-page"><h1>Chapter Not Found</h1><p>The requested route could not be found in the route map.</p></div></main>';
     return;
 }
 
@@ -39,12 +34,7 @@ if ($mdContent !== false) {
     $mdContent = str_replace('{{CDN}}', $cdnBaseUrl, $mdContent);
 }
 if ($mdContent === false) {
-    echo '<?php if ($narrativeTheme): ?>
-    <meta name="stardust-narrative-theme" content="<?php echo htmlspecialchars($narrativeTheme); ?>">
-    <link id="narrative-theme-css" rel="stylesheet" href="<?php echo htmlspecialchars($cdnBaseUrl . '/raggiesoft-books/css/themes/' . $narrativeTheme . '.css'); ?>" disabled>
-<?php endif; ?>
-
-<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;"><div class="book-page"><h1>File Not Found</h1><p>The narrative file could not be loaded from the Vault.</p></div></main>';
+    echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;"><div class="book-page"><h1>File Not Found</h1><p>The narrative file could not be loaded from the Vault.</p></div></main>';
     return;
 }
 
@@ -69,8 +59,6 @@ if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $mdContent, $matche
     }
 }
 
-$narrativeTheme = $frontmatter['theme'] ?? null;
-
 // 3. Render HTML
 require_once $basePath . '/includes/classes/stardust-parsedown.php';
 $Parsedown = new StardustParsedown();
@@ -93,8 +81,8 @@ if ($currentIndex !== false) {
 
 $overviewUrl = '/' . $seriesSlug;
 $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
+$narrativeTheme = $frontmatter['theme'] ?? null;
 ?>
-
 <?php if ($narrativeTheme): ?>
     <meta name="stardust-narrative-theme" content="<?php echo htmlspecialchars($narrativeTheme); ?>">
     <link id="narrative-theme-css" rel="stylesheet" href="<?php echo htmlspecialchars($cdnBaseUrl . '/raggiesoft-books/css/themes/' . $narrativeTheme . '.css'); ?>" disabled>
