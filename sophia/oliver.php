@@ -295,7 +295,17 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
                                 <div style="font-size: 0.85rem; opacity: 0.8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 0.75rem;"><?php echo htmlspecialchars($artistDisplay); ?> &bull; <i><?php echo htmlspecialchars($albumDisplay); ?></i></div>
                                 
                                 <div style="display: flex; align-items: center; gap: 0.75rem; width: 100%;">
-                                    <audio id="narrative-audio-element" src="<?php echo htmlspecialchars($audioUrl); ?>" controls loop preload="none" style="flex: 1; height: 36px; border-radius: 6px; outline: none;"></audio>
+                                    <audio id="narrative-audio-element" src="<?php echo htmlspecialchars($audioUrl); ?>" loop preload="metadata" style="display: none;"></audio>
+                                    
+                                    <button id="narrative-audio-play-toggle" class="rs-btn" style="border-radius: 50%; width: 36px; height: 36px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid var(--rs-border); background: transparent;" aria-label="Play/Pause" title="Play/Pause">
+                                        <i class="ph ph-play" style="font-size: 1.2rem;" id="narrative-audio-play-icon"></i>
+                                    </button>
+                                    
+                                    <div style="flex: 1; display: flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; opacity: 0.8;">
+                                        <span id="narrative-audio-current">0:00</span>
+                                        <input type="range" id="narrative-audio-scrubber" value="0" min="0" step="1" style="flex: 1; accent-color: var(--rs-primary);">
+                                        <span id="narrative-audio-duration">0:00</span>
+                                    </div>
                                     
                                     <button id="narrative-audio-loop-toggle" class="rs-btn" style="border-radius: 50%; width: 36px; height: 36px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 2px solid var(--rs-primary); color: var(--rs-primary); background: rgba(0,0,0,0.05);" aria-label="Toggle Repeat: ON" title="Repeat 1 Track: ON">
                                         <i class="ph ph-repeat-once" style="font-size: 1.2rem;"></i>
@@ -352,6 +362,61 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
                         const lyricsDialog = document.getElementById('narrative-lyrics-dialog');
                         const lyricsTitle = document.getElementById('narrative-lyrics-title');
                         const lyricsContent = document.getElementById('narrative-lyrics-content');
+                        const playToggleBtn = document.getElementById('narrative-audio-play-toggle');
+                        const playIcon = document.getElementById('narrative-audio-play-icon');
+                        const scrubber = document.getElementById('narrative-audio-scrubber');
+                        const currentTimeDisplay = document.getElementById('narrative-audio-current');
+                        const durationDisplay = document.getElementById('narrative-audio-duration');
+                        
+                        if (audioEl && playToggleBtn) {
+                            function formatTime(secs) {
+                                if (isNaN(secs)) return '0:00';
+                                const m = Math.floor(secs / 60);
+                                const s = Math.floor(secs % 60);
+                                return m + ':' + (s < 10 ? '0' : '') + s;
+                            }
+                            
+                            // Play/Pause toggle
+                            playToggleBtn.addEventListener('click', () => {
+                                if (audioEl.paused) {
+                                    audioEl.play().catch(e => console.warn(e));
+                                } else {
+                                    audioEl.pause();
+                                }
+                            });
+                            
+                            // Update icons on play/pause
+                            audioEl.addEventListener('play', () => {
+                                playIcon.classList.remove('ph-play');
+                                playIcon.classList.add('ph-pause');
+                            });
+                            audioEl.addEventListener('pause', () => {
+                                playIcon.classList.remove('ph-pause');
+                                playIcon.classList.add('ph-play');
+                            });
+                            
+                            // Update duration once metadata is loaded
+                            audioEl.addEventListener('loadedmetadata', () => {
+                                scrubber.max = audioEl.duration;
+                                durationDisplay.textContent = formatTime(audioEl.duration);
+                            });
+                            
+                            // Update scrubber as audio plays
+                            audioEl.addEventListener('timeupdate', () => {
+                                if (!scrubber.matches(':active')) {
+                                    scrubber.value = audioEl.currentTime;
+                                    currentTimeDisplay.textContent = formatTime(audioEl.currentTime);
+                                }
+                            });
+                            
+                            // Seek when user scrubs
+                            scrubber.addEventListener('input', () => {
+                                currentTimeDisplay.textContent = formatTime(scrubber.value);
+                            });
+                            scrubber.addEventListener('change', () => {
+                                audioEl.currentTime = scrubber.value;
+                            });
+                        }
                         const lyricsClose = document.getElementById('narrative-lyrics-close');
                         
                         if (lyricsClose && lyricsDialog) {
