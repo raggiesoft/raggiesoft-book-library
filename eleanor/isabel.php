@@ -64,7 +64,7 @@ if (!empty($pageConfig['title'])) {
     $titleParts = explode(':', $pageConfig['title']);
     $cleanPartTitle = trim(end($titleParts));
     
-    $seriesTitle = $katie['series_title'] ?? (ucfirst($seriesSlug) . ' Narrative');
+    $seriesTitle = !empty($katie['series_title']) ? $katie['series_title'] : (ucwords(str_replace('-', ' ', $seriesSlug)));
     
     // SEO Format: Specific | General
     $siteName = $cleanPartTitle . ' | ' . $seriesTitle;

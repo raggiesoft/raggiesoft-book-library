@@ -84,64 +84,94 @@
 </dialog>
 
 <!-- STANDARD SETTINGS DIALOG -->
-<dialog id="reader-settings-dialog" style="padding: 2rem; border-radius: 12px; border: 1px solid var(--rs-border); background: var(--rs-card-bg, #fff); color: var(--rs-text); max-width: 400px; width: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
-    <h3 style="margin-top: 0; margin-bottom: 1.5rem; font-weight: bold;">Reader Settings</h3>
-    
-    <div style="margin-bottom: 1.5rem;">
-        <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Text Size</h4>
-        <div style="display: flex; gap: 0.5rem;">
-            <button class="rs-btn" id="btn-text-decrease" style="flex: 1;">A-</button>
-            <button class="rs-btn" id="btn-text-reset" style="flex: 1;">Default</button>
-            <button class="rs-btn" id="btn-text-increase" style="flex: 1;">A+</button>
+<dialog id="reader-settings-dialog" style="padding: 0; border-radius: 12px; border: 1px solid var(--rs-border); background: var(--rs-card-bg, #fff); color: var(--rs-text); max-width: 400px; width: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden;">
+    <div style="display: flex; flex-direction: column; height: 100%;">
+        <div style="padding: 1.5rem 1.5rem 0 1.5rem; border-bottom: 1px solid var(--rs-border);">
+            <h3 style="margin-top: 0; margin-bottom: 1rem; font-weight: bold;">Reader Settings</h3>
+            <div style="display: flex; gap: 1rem; margin-bottom: -1px; overflow-x: auto;" id="reader-settings-tabs">
+                <button class="settings-tab active" data-tab="layout">Layout</button>
+                <button class="settings-tab" data-tab="theme">Theme</button>
+                <button class="settings-tab" data-tab="advanced">Advanced</button>
+            </div>
         </div>
-    </div>
+        
+        <div style="padding: 1.5rem; overflow-y: auto; max-height: 60vh;">
+            <!-- LAYOUT TAB -->
+            <div id="settings-tab-layout" class="settings-tab-content">
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Text Size</h4>
+                    <div style="display: flex; gap: 0.5rem;">
+                        <button class="rs-btn" id="btn-text-decrease" style="flex: 1;">A-</button>
+                        <button class="rs-btn" id="btn-text-reset" style="flex: 1;">Default</button>
+                        <button class="rs-btn" id="btn-text-increase" style="flex: 1;">A+</button>
+                    </div>
+                </div>
 
-    <div style="margin-bottom: 1.5rem;">
-        <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Font Family</h4>
-        <select id="reader-font-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
-            <option value="system-ui, -apple-system, sans-serif">System Sans-Serif (Default)</option>
-            <option value="'Lora', serif">Lora (Serif)</option>
-            <option value="'Inter', sans-serif">Inter (Sans-Serif)</option>
-            <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible</option>
-        </select>
-    </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Font Family</h4>
+                    <select id="reader-font-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
+                        <option value="system-ui, -apple-system, sans-serif">System Sans-Serif (Default)</option>
+                        <option value="'Lora', serif">Lora (Serif)</option>
+                        <option value="'Inter', sans-serif">Inter (Sans-Serif)</option>
+                        <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible</option>
+                    </select>
+                </div>
 
-    <div style="margin-bottom: 1.5rem;">
-        <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Article Width</h4>
-        <select id="reader-width-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
-            <option value="default">Default (800px)</option>
-            <option value="wide">Wide (1200px)</option>
-            <option value="full">Full Width (100%)</option>
-        </select>
-    </div>
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Article Width</h4>
+                    <select id="reader-width-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
+                        <option value="default">Default (800px)</option>
+                        <option value="wide">Wide (1200px)</option>
+                        <option value="full">Full Width (100%)</option>
+                    </select>
+                </div>
+            </div>
 
-    <div style="margin-bottom: 1.5rem;">
-        <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Theme</h4>
-        <select id="reader-theme-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
-            <option value="auto">System Default</option>
-            <option value="light">Light Mode</option>
-            <option value="dark">Dark Mode</option>
-            <option value="sepia">Sepia Mode</option>
-        </select>
-        <div style="margin-top: 0.75rem; display: flex; align-items: center; gap: 0.5rem;">
-            <input type="checkbox" id="reader-custom-theme-toggle" checked style="width: 1.1rem; height: 1.1rem; accent-color: var(--rs-primary);">
-            <label for="reader-custom-theme-toggle" style="font-size: 0.9rem;">Allow Custom Story Themes</label>
+            <!-- THEME TAB -->
+            <div id="settings-tab-theme" class="settings-tab-content" style="display: none;">
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Color Mode</h4>
+                    <select id="reader-theme-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
+                        <option value="auto">System Default</option>
+                        <option value="light">Light Mode</option>
+                        <option value="dark">Dark Mode</option>
+                        <option value="sepia">Sepia Mode</option>
+                    </select>
+                    <div style="margin-top: 1rem; padding: 1rem; background: var(--rs-bg, #f5f5f5); border-radius: 8px; border: 1px solid var(--rs-border);">
+                        <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                            <input type="checkbox" id="reader-custom-theme-toggle" checked style="width: 1.1rem; height: 1.1rem; accent-color: var(--rs-primary);">
+                            <strong style="font-size: 0.95rem;">Allow Custom Story Themes</strong>
+                        </div>
+                        <p style="font-size: 0.85rem; opacity: 0.8; margin: 0;">Some scenes have unique, immersive aesthetics (like a rainy 4 AM night). Check this box to allow these themes to override your color mode when available.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ADVANCED TAB -->
+            <div id="settings-tab-advanced" class="settings-tab-content" style="display: none;">
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Narrative Soundtrack</h4>
+                    <select id="reader-audio-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
+                        <option value="false">Turned Off</option>
+                        <option value="true">Play Automatically</option>
+                    </select>
+                </div>
+                
+                <hr style="border: 0; border-top: 1px solid var(--rs-border); margin: 2rem 0;">
+                
+                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                    <button id="reader-run-wizard-btn" class="rs-btn" style="width: 100%;"><i class="ph ph-magic-wand"></i> Run Welcome Wizard</button>
+                    <button id="reader-settings-reset-all" class="rs-btn rs-btn-danger" style="width: 100%;">Reset All Settings to Default</button>
+                </div>
+            </div>
         </div>
-    </div>
-    
-    <div style="margin-bottom: 1.5rem;">
-        <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Narrative Soundtrack</h4>
-        <select id="reader-audio-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
-            <option value="false">Turned Off</option>
-            <option value="true">Play Automatically</option>
-        </select>
-    </div>
-    
-    <div style="text-align: center; margin-top: 2.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
-        <button id="close-settings-btn" class="rs-btn rs-btn-primary" style="width: 100%;">Done</button>
-        <button id="reader-settings-reset-all" class="rs-btn" style="width: 100%; color: #dc3545; border-color: #dc3545; background: transparent;">Reset All Defaults</button>
+        
+        <div style="padding: 1.5rem; border-top: 1px solid var(--rs-border); text-align: center;">
+            <button id="close-settings-btn" class="rs-btn rs-btn-primary" style="width: 100%;">Done</button>
+        </div>
     </div>
 </dialog>
+
 
 <style>
 /* Reader Themes applied to #stardust-reading-pane or body */
@@ -234,6 +264,26 @@ dialog::backdrop {
         padding: 1.5rem;
     }
 }
+
+.settings-tab {
+    background: transparent;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+    color: var(--rs-text);
+    opacity: 0.7;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+.settings-tab:hover {
+    opacity: 1;
+}
+.settings-tab.active {
+    opacity: 1;
+    font-weight: 600;
+    color: var(--rs-primary);
+    border-bottom: 2px solid var(--rs-primary);
+}
 </style>
 
 <script>
@@ -250,6 +300,26 @@ dialog::backdrop {
     const customThemeToggle = document.getElementById('reader-custom-theme-toggle');
     const readerPage = document.querySelector('.reader-page');
     const btnResetAll = document.getElementById('reader-settings-reset-all');
+    const btnRunWizard = document.getElementById('reader-run-wizard-btn');
+    const tabBtns = document.querySelectorAll('.settings-tab');
+    const tabContents = document.querySelectorAll('.settings-tab-content');
+    
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            tabBtns.forEach(b => b.classList.remove('active'));
+            tabContents.forEach(c => c.style.display = 'none');
+            btn.classList.add('active');
+            document.getElementById('settings-tab-' + btn.dataset.tab).style.display = 'block';
+        });
+    });
+    
+    if (btnRunWizard) {
+        btnRunWizard.addEventListener('click', () => {
+            localStorage.removeItem('stardust-wizard-completed');
+            window.location.reload();
+        });
+    }
+
     
     const btnIncrease = document.getElementById('btn-text-increase');
     const btnDecrease = document.getElementById('btn-text-decrease');

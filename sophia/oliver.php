@@ -86,6 +86,18 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
 <?php if ($narrativeTheme): ?>
     <meta name="stardust-narrative-theme" content="<?php echo htmlspecialchars($narrativeTheme); ?>">
     <link id="narrative-theme-css" rel="stylesheet" href="<?php echo htmlspecialchars($cdnBaseUrl . '/raggiesoft-books/css/themes/' . $narrativeTheme . '.css'); ?>" disabled>
+    <?php if ($narrativeTheme === 'dark-rain'): ?>
+    <div class="narrative-rain-container" aria-hidden="true">
+        <?php for($i=0; $i<60; $i++): 
+            $left = rand(0, 100);
+            $duration = 0.4 + (rand(0, 40) / 100);
+            $delay = rand(0, 200) / 100;
+            $opacity = rand(20, 50) / 100;
+        ?>
+        <div class="narrative-rain-drop" style="left: <?php echo $left; ?>%; animation-duration: <?php echo $duration; ?>s; animation-delay: <?php echo $delay; ?>s; --drop-opacity: <?php echo $opacity; ?>;"></div>
+        <?php endfor; ?>
+    </div>
+    <?php endif; ?>
 <?php endif; ?>
 
 <main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;">
@@ -96,7 +108,7 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
             <?php 
             global $katie, $seriesSlug, $actualFilePath;
             
-            $seriesTitle = $katie['series_title'] ?? (ucfirst($seriesSlug) . ' Narrative');
+            $seriesTitle = !empty($katie['series_title']) ? $katie['series_title'] : (ucwords(str_replace('-', ' ', $seriesSlug)));
             $bookTitle = '';
             $chapTitle = '';
             
