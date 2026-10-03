@@ -312,13 +312,12 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
                         
                         
                     </div>
-                    <script>
+                                        <script>
                     (function() {
                         const audioEl = document.getElementById('narrative-audio-element');
-                        const playBtn = document.getElementById('narrative-audio-play');
-                        if (audioEl && playBtn) {
-                            const icon = playBtn.querySelector('i');
-                            
+                        const loopBtn = document.getElementById('narrative-audio-loop-toggle');
+                        
+                        if (audioEl) {
                             // Initialize Media Session API
                             if ('mediaSession' in navigator) {
                                 navigator.mediaSession.metadata = new MediaMetadata({
@@ -332,44 +331,43 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
                                 navigator.mediaSession.setActionHandler('play', () => audioEl.play());
                                 navigator.mediaSession.setActionHandler('pause', () => audioEl.pause());
                             }
-
-                            // Sync Play/Pause Button State with actual Audio Element state
-                            // This ensures the button updates if paused via Media Keys/Lockscreen
-                            audioEl.addEventListener('play', () => {
-                                icon.classList.remove('ph-play');
-                                icon.classList.add('ph-pause');
-                                playBtn.classList.add('rs-btn-primary');
-                                playBtn.setAttribute('aria-label', 'Pause Soundtrack');
-                            });
-
-                            audioEl.addEventListener('pause', () => {
-                                icon.classList.remove('ph-pause');
-                                icon.classList.add('ph-play');
-                                playBtn.classList.remove('rs-btn-primary');
-                                playBtn.setAttribute('aria-label', 'Play Soundtrack');
-                            });
-
-                            playBtn.addEventListener('click', () => {
-                                if (audioEl.paused) {
-                                    audioEl.play().catch(e => console.error("Audio play failed:", e));
-                                } else {
-                                    audioEl.pause();
-                                }
-                            });
                             
-                            // Check Auto-Play User Preference
-                            try {
-                                const storedSettings = localStorage.getItem('reader-settings');
-                                if (storedSettings) {
-                                    const settings = JSON.parse(storedSettings);
-                                    if (settings.autoPlayAudio === 'true') {
-                                        // Browsers may still block this unless the user has interacted with the domain previously
-                                        audioEl.play().catch(e => {
-                                            console.warn("Autoplay blocked by browser. User must interact first.");
+                            // Auto-play settings check
+                            const lsSettings = localStorage.getItem('ovaSettings');
+                            if (lsSettings) {
+                                try {
+                                    const parsed = JSON.parse(lsSettings);
+                                    if (parsed.narrativeSoundtrack) {
+                                        audioEl.play().catch(err => {
+                                            console.warn("Autoplay blocked by browser. User must interact first.", err);
                                         });
                                     }
+                                } catch(e) {}
+                            }
+                        }
+
+                        if (audioEl && loopBtn) {
+                            const icon = loopBtn.querySelector('i');
+                            loopBtn.addEventListener('click', () => {
+                                audioEl.loop = !audioEl.loop;
+                                if (audioEl.loop) {
+                                    icon.classList.remove('ph-repeat');
+                                    icon.classList.add('ph-repeat-once');
+                                    loopBtn.style.borderColor = 'var(--rs-primary)';
+                                    loopBtn.style.color = 'var(--rs-primary)';
+                                    loopBtn.style.background = 'rgba(0,0,0,0.05)';
+                                    loopBtn.setAttribute('title', 'Repeat 1 Track: ON');
+                                    loopBtn.setAttribute('aria-label', 'Toggle Repeat: ON');
+                                } else {
+                                    icon.classList.remove('ph-repeat-once');
+                                    icon.classList.add('ph-repeat');
+                                    loopBtn.style.borderColor = 'var(--rs-border)';
+                                    loopBtn.style.color = 'inherit';
+                                    loopBtn.style.background = 'transparent';
+                                    loopBtn.setAttribute('title', 'Repeat 1 Track: OFF');
+                                    loopBtn.setAttribute('aria-label', 'Toggle Repeat: OFF');
                                 }
-                            } catch (e) {}
+                            });
                         }
                     })();
                     </script>
