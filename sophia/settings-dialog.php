@@ -72,6 +72,20 @@
                 </div>
             </div>
 
+            <!-- Step 5 -->
+            <div id="wizard-step-5" class="wizard-step" style="display: none;">
+                <h2 style="margin-top: 0; color: var(--rs-primary);">Immersive Story Themes</h2>
+                <p>We're almost done! I'm Eleanor, and this is my sister Isabel.</p>
+                <p>Some of the narratives here feature unique, immersive aesthetics designed specifically for that scene (like reading under a dark, rainy 4 AM sky). We highly recommend leaving this enabled for the full experience, but you can choose to force your standard color mode instead.</p>
+                <div style="margin-top: 2rem; padding: 1.5rem; background: var(--rs-bg); border-radius: 8px; border: 1px solid var(--rs-border);">
+                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.5rem;">
+                        <input type="checkbox" id="wizard-custom-theme-toggle" checked style="width: 1.25rem; height: 1.25rem; accent-color: var(--rs-primary);">
+                        <label for="wizard-custom-theme-toggle" style="font-size: 1rem; font-weight: 600; cursor: pointer;">Allow Custom Story Themes</label>
+                    </div>
+                    <p style="font-size: 0.9rem; opacity: 0.8; margin: 0; margin-top: 0.5rem; padding-left: 2rem;">If unchecked, the archives will always use the color mode you selected in Step 2.</p>
+                </div>
+            </div>
+
             <!-- Navigation Buttons -->
             <div class="wizard-footer">
                 <button id="wizard-btn-prev" class="rs-btn" style="visibility: hidden;">&larr; Back</button>
@@ -131,7 +145,7 @@
             <div id="settings-tab-theme" class="settings-tab-content" style="display: none;">
                 <div style="margin-bottom: 1.5rem;">
                     <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Color Mode</h4>
-                    <select id="reader-theme-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
+                                        <select id="reader-theme-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
                         <option value="auto">System Default</option>
                         <option value="light">Light Mode</option>
                         <option value="dark">Dark Mode</option>
@@ -144,6 +158,7 @@
                         </div>
                         <p style="font-size: 0.85rem; opacity: 0.8; margin: 0;">Some scenes have unique, immersive aesthetics (like a rainy 4 AM night). Check this box to allow these themes to override your color mode when available.</p>
                     </div>
+
                 </div>
             </div>
 
@@ -287,6 +302,18 @@ dialog::backdrop {
     color: var(--rs-primary);
     border-bottom: 2px solid var(--rs-primary);
 }
+
+.rs-input {
+    background: var(--rs-surface);
+    color: var(--rs-text);
+    border: 1px solid var(--rs-border);
+    border-radius: 6px;
+    font-family: inherit;
+}
+.rs-input:focus {
+    outline: 2px solid var(--rs-primary);
+    outline-offset: 1px;
+}
 </style>
 
 <script>
@@ -372,6 +399,8 @@ dialog::backdrop {
     function applyTheme(theme, customEnabled = true) {
         currentCustomThemeEnabled = customEnabled;
         if (customThemeToggle) customThemeToggle.checked = customEnabled;
+        const wizCustomTheme = document.getElementById('wizard-custom-theme-toggle');
+        if (wizCustomTheme) wizCustomTheme.checked = customEnabled;
         
         document.body.classList.remove('theme-light', 'theme-dark', 'theme-sepia', 'theme-auto', 'theme-custom');
         
@@ -493,7 +522,7 @@ dialog::backdrop {
 
     // WIZARD LOGIC
     let currentStep = 1;
-    const totalSteps = 4;
+    const totalSteps = 5;
     const wizardSidebar = document.getElementById('wizard-sidebar-graphic');
     const btnNext = document.getElementById('wizard-btn-next');
     const btnPrev = document.getElementById('wizard-btn-prev');
@@ -510,18 +539,23 @@ dialog::backdrop {
     if (wizWidth) wizWidth.value = widthSelect ? widthSelect.value : 'default';
     if (wizFont) wizFont.value = fontSelect ? fontSelect.value : 'system-ui, -apple-system, sans-serif';
     if (wizAudio) wizAudio.value = audioSelect ? audioSelect.value : 'false';
+    const wizCustomTheme = document.getElementById('wizard-custom-theme-toggle');
+    if (wizCustomTheme && customThemeToggle) wizCustomTheme.checked = customThemeToggle.checked;
 
     // Live update when wizard selects change
-    if (wizTheme) wizTheme.addEventListener('change', (e) => applyTheme(e.target.value));
+    if (wizTheme) wizTheme.addEventListener('change', (e) => applyTheme(e.target.value, currentCustomThemeEnabled));
     if (wizWidth) wizWidth.addEventListener('change', (e) => applyWidth(e.target.value));
     if (wizFont) wizFont.addEventListener('change', (e) => applyFontFamily(e.target.value));
     if (wizAudio) wizAudio.addEventListener('change', (e) => applyAudioSetting(e.target.value));
+    if (wizCustomTheme) wizCustomTheme.addEventListener('change', (e) => applyTheme(themeSelect ? themeSelect.value : 'auto', e.target.checked));
+
 
     const stepImages = {
         1: '<?php echo $cdnBaseUrl; ?>/stardust-engine-library/images/wizard/isabel_oliver_hug.jpg',
         2: '<?php echo $cdnBaseUrl; ?>/stardust-engine-library/images/wizard/eleanor_oliver_hug.jpg',
         3: '<?php echo $cdnBaseUrl; ?>/stardust-engine-library/images/wizard/sophia_oliver_hug.jpg',
-        4: '<?php echo $cdnBaseUrl; ?>/stardust-engine-library/images/wizard/sophia_isabel_audio.jpg'
+        4: '<?php echo $cdnBaseUrl; ?>/stardust-engine-library/images/wizard/sophia_isabel_audio.jpg',
+        5: '<?php echo $cdnBaseUrl; ?>/stardust-engine-library/images/wizard/eleanor_isabel_twins.jpg'
     };
 
     function updateWizardState() {
