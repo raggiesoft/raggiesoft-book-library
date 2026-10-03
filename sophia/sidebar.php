@@ -21,8 +21,11 @@ if (!empty($routeData)) {
         <a href="https://raggiesoft.com/raggiesoft-books/books" class="rs-btn rs-btn-brand" style="flex: 1; text-align: center; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 4px;"><i class="ph ph-books"></i> Library</a>
         <button id="reader-settings-toggle" class="rs-btn" style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 4px;"><i class="ph ph-gear"></i> Settings</button>
     </div>
-    <h3 style="margin-top: 1rem;"><?php echo htmlspecialchars($katie['title'] ?? 'Table of Contents'); ?></h3>
-    <p style="opacity: 0.7; font-size: 0.85rem;">Table of Contents</p>
+    <h3 style="margin-top: 1rem; color: var(--rs-primary);"><?php 
+        $sidebarSeriesTitle = $katie['series_title'] ?? (ucfirst($seriesSlug) . ' Narrative');
+        echo htmlspecialchars($sidebarSeriesTitle); 
+    ?></h3>
+    <p style="opacity: 0.7; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Table of Contents</p>
     <hr style="border:0; border-top:1px solid var(--rs-border); margin: 20px 0;">
     
     <nav class="toc-nav">
