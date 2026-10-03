@@ -22,7 +22,6 @@ if (file_exists($routeFile)) {
 
 if (empty($actualFilePath)) {
     echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;"><div class="book-page"><h1>Chapter Not Found</h1><p>The requested route could not be found in the route map.</p></div></main>';
-    return;
 }
 
 // 1. Fetch Markdown Content from CDN
@@ -35,7 +34,6 @@ if ($mdContent !== false) {
 }
 if ($mdContent === false) {
     echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;"><div class="book-page"><h1>File Not Found</h1><p>The narrative file could not be loaded from the Vault.</p></div></main>';
-    return;
 }
 
 // 2. Parse YAML Frontmatter
@@ -101,12 +99,17 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
 <?php endif; ?>
 
 <main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;">
-    <div class="book-page reader-page">
+    <div class="narrative-rain-container" aria-hidden="true">
+        <?php for ($i = 0; $i < 20; $i++): ?>
+            <div class="narrative-rain-drop" style="left: <?php echo rand(0, 100); ?>%; animation-duration: <?php echo (rand(500, 1500) / 1000); ?>s; animation-delay: <?php echo (rand(0, 2000) / 1000); ?>s; opacity: <?php echo (rand(2, 6) / 10); ?>;"></div>
+        <?php endfor; ?>
+    </div>
         <!-- Breadcrumbs & Nav -->
         <div class="reader-nav" style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center;">
             <div style="opacity: 0.7; font-size: 0.9rem;">
             <?php 
-            global $katie, $seriesSlug, $actualFilePath;
+            global $katie, $seriesSlug, $pageConfig;
+            $actualFilePath = $pageConfig["filePath"] ?? "";
             
             $seriesTitle = !empty($katie['series_title']) ? $katie['series_title'] : (ucwords(str_replace('-', ' ', $seriesSlug)));
             $bookTitle = '';
@@ -345,25 +348,8 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
                         </div>
                         <?php endif; ?>
 
-                            <?php if ($appleUrl): ?>
-                                <a href="<?php echo htmlspecialchars($appleUrl); ?>" target="_blank" title="Listen on Apple Music" class="rs-btn" style="padding: 0.3rem 0.6rem; font-size: 0.85rem; border-color: #FA243C; color: #FA243C;"><i class="ph ph-apple-logo" style="margin-right: 4px;"></i> Apple</a>
-                            <?php endif; ?>
-                            <?php if ($amazonUrl): ?>
-                                <a href="<?php echo htmlspecialchars($amazonUrl); ?>" target="_blank" title="Listen on Amazon Music" class="rs-btn" style="padding: 0.3rem 0.6rem; font-size: 0.85rem; border-color: #00A8E1; color: #00A8E1;"><i class="ph ph-amazon-logo" style="margin-right: 4px;"></i> Amazon</a>
-                            <?php endif; ?>
-                            <?php if ($youtubeUrl): ?>
-                                <a href="<?php echo htmlspecialchars($youtubeUrl); ?>" target="_blank" title="Listen on YouTube" class="rs-btn" style="padding: 0.3rem 0.6rem; font-size: 0.85rem; border-color: #FF0000; color: #FF0000;"><i class="ph ph-youtube-logo" style="margin-right: 4px;"></i> YouTube</a>
-                            <?php endif; ?>
-                            <?php if ($storeStandardUrl): ?>
-                                <a href="<?php echo htmlspecialchars($storeStandardUrl); ?>" target="_blank" title="Buy MP3 / OGG Digital Archive" class="rs-btn rs-btn-primary" style="padding: 0.3rem 0.6rem; font-size: 0.85rem;"><i class="ph ph-shopping-cart" style="margin-right: 4px;"></i> MP3/OGG</a>
-                            <?php endif; ?>
-                            <?php if ($storeAudiophileUrl): ?>
-                                <a href="<?php echo htmlspecialchars($storeAudiophileUrl); ?>" target="_blank" title="Buy WAV / FLAC Audiophile Archive" class="rs-btn" style="padding: 0.3rem 0.6rem; font-size: 0.85rem; border-color: var(--rs-primary); color: var(--rs-primary);"><i class="ph ph-shopping-bag" style="margin-right: 4px;"></i> WAV/FLAC</a>
-                            <?php endif; ?>
-                        </div>
-                        <?php endif; ?>
                         
-                        
+                    </div>
                     </div>
                     
                     <dialog id="narrative-lyrics-dialog" style="padding: 0; border: 1px solid var(--rs-border); border-radius: 12px; background: var(--rs-bg); color: var(--rs-text); box-shadow: 0 10px 40px rgba(0,0,0,0.3); max-width: 600px; width: 90%; max-height: 85vh; overflow: hidden;">

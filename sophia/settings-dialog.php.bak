@@ -343,6 +343,7 @@ dialog::backdrop {
         });
     });
     
+    }
 
     
     const btnIncrease = document.getElementById('btn-text-increase');

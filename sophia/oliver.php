@@ -22,7 +22,6 @@ if (file_exists($routeFile)) {
 
 if (empty($actualFilePath)) {
     echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;"><div class="book-page"><h1>Chapter Not Found</h1><p>The requested route could not be found in the route map.</p></div></main>';
-    return;
 }
 
 // 1. Fetch Markdown Content from CDN
@@ -35,7 +34,6 @@ if ($mdContent !== false) {
 }
 if ($mdContent === false) {
     echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;"><div class="book-page"><h1>File Not Found</h1><p>The narrative file could not be loaded from the Vault.</p></div></main>';
-    return;
 }
 
 // 2. Parse YAML Frontmatter
@@ -101,12 +99,11 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
 <?php endif; ?>
 
 <main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;">
-    <div class="book-page reader-page">
-        <!-- Breadcrumbs & Nav -->
         <div class="reader-nav" style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center;">
             <div style="opacity: 0.7; font-size: 0.9rem;">
             <?php 
-            global $katie, $seriesSlug, $actualFilePath;
+            global $katie, $seriesSlug, $pageConfig;
+            $actualFilePath = $pageConfig["filePath"] ?? "";
             
             $seriesTitle = !empty($katie['series_title']) ? $katie['series_title'] : (ucwords(str_replace('-', ' ', $seriesSlug)));
             $bookTitle = '';
@@ -346,6 +343,7 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
                         <?php endif; ?>
 
                         
+                    </div>
                     </div>
                     
                     <dialog id="narrative-lyrics-dialog" style="padding: 0; border: 1px solid var(--rs-border); border-radius: 12px; background: var(--rs-bg); color: var(--rs-text); box-shadow: 0 10px 40px rgba(0,0,0,0.3); max-width: 600px; width: 90%; max-height: 85vh; overflow: hidden;">
