@@ -252,7 +252,7 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
                         <audio id="narrative-audio-element" src="<?php echo htmlspecialchars($audioUrl); ?>" loop preload="none"></audio>
                     </div>
                     <script>
-                    document.addEventListener('DOMContentLoaded', () => {
+                    (function() {
                         const audioEl = document.getElementById('narrative-audio-element');
                         const playBtn = document.getElementById('narrative-audio-play');
                         if (audioEl && playBtn) {
@@ -290,7 +290,7 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
 
                             playBtn.addEventListener('click', () => {
                                 if (audioEl.paused) {
-                                    audioEl.play();
+                                    audioEl.play().catch(e => console.error("Audio play failed:", e));
                                 } else {
                                     audioEl.pause();
                                 }
@@ -310,7 +310,7 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
                                 }
                             } catch (e) {}
                         }
-                    });
+                    })();
                     </script>
                 <?php endif; ?>
 
