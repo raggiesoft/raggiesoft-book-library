@@ -1,75 +1,99 @@
 <main id="stardust-reading-pane" tabindex="-1">
-    <!-- Ocean View Archives Hero Section -->
-    <div class="book-page home-page" style="max-width: 1200px; margin: 0 auto; padding: 2rem;">
-        <header class="home-hero ova-hero text-center">
-            <h1 class="ova-title">Ocean View Archives</h1>
-            <p class="subtitle ova-subtitle">Independent Publishing Imprint. Preserving narratives across dimensions.</p>
-        </header>
-
-        <section class="stardust-grid mt-5">
-            <!-- Book 1: The Quantum Directive -->
-            <a href="/casey" class="stardust-card">
-                <div class="stardust-card-cover theme-quantum">
-                    <h3>The Quantum Directive</h3>
-                    <span>Sci-Fi / Corporate Drama</span>
-                </div>
-                <div class="stardust-card-info">
-                    <h4>The Quantum Directive</h4>
-                    <p>Follow the lives of the Vance and Delaney siblings as they navigate the complexities of found family, deep trauma, and corporate maneuvering at Quantum.</p>
-                    <span class="stardust-card-action"><i class="fa-solid fa-book-open"></i> View Series &rarr;</span>
-                </div>
-            </a>
-
-            <!-- Book 2: Ashley Tower -->
-            <a href="/ashley-tower" class="stardust-card">
-                <div class="stardust-card-cover theme-red">
-                    <h3>Ashley Tower</h3>
-                    <span>Thriller / Suspense</span>
-                </div>
-                <div class="stardust-card-info">
-                    <h4>Ashley Tower</h4>
-                    <p>Donald's harrowing escape from Texas to the safety of Ashley Tower. A story of resilience and liberation.</p>
-                    <span class="stardust-card-action"><i class="fa-solid fa-book-open"></i> View Series &rarr;</span>
-                </div>
-            </a>
-            
-            <!-- Book 3: Aethel Saga -->
-            <a href="/aethel" class="stardust-card">
-                <div class="stardust-card-cover theme-green">
-                    <h3>Aethel Saga</h3>
-                    <span>Epic Fantasy</span>
-                </div>
-                <div class="stardust-card-info">
-                    <h4>Aethel Saga</h4>
-                    <p>Enter the realm of Aethel, where magic and destiny intertwine in a sweeping epic fantasy spanning generations.</p>
-                    <span class="stardust-card-action"><i class="fa-solid fa-book-open"></i> View Series &rarr;</span>
-                </div>
-            </a>
+    <div class="publisher-home">
+        
+        <!-- Hero Section -->
+        <section class="ova-hero text-center">
+            <div class="hero-content">
+                <i class="fa-duotone fa-book-journal-whills hero-icon"></i>
+                <h1 class="ova-title">Ocean View Archives</h1>
+                <p class="ova-subtitle">Independent Publishing Imprint. Preserving narratives across dimensions.</p>
+            </div>
         </section>
+
+        <!-- About / Mission Statement -->
+        <section class="ova-mission">
+            <div class="mission-text text-center">
+                <h2>Our Mission</h2>
+                <p>At Ocean View Archives, we believe in the power of deep, interconnected storytelling. As an independent imprint, we are dedicated to archiving the raw, unfiltered histories, thrillers, and epics of the Stardust Engine universe.</p>
+                <p>From the corporate battlegrounds of the East Coast to the frozen isolation of the Texas panhandle, we publish narratives that explore resilience, found family, and the heavy toll of survival.</p>
+                
+                <div class="mt-4">
+                    <a href="/catalog" class="btn-catalog">Explore the Catalog</a>
+                </div>
+            </div>
+        </section>
+
     </div>
 </main>
 
 <style>
+.publisher-home {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
 .ova-hero {
-    border-bottom: 2px solid var(--border-color, #eaeaea);
-    padding-bottom: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
+}
+
+.hero-icon {
+    font-size: 4rem;
+    color: var(--primary-color, #0f172a);
+    margin-bottom: 1.5rem;
 }
 
 .ova-title {
     font-family: 'Impact', sans-serif, system-ui;
     text-transform: uppercase;
-    letter-spacing: 2px;
-    font-size: 3.5rem !important;
-    color: var(--primary-color, #0f172a) !important;
+    letter-spacing: 3px;
+    font-size: 4rem;
+    color: var(--primary-color, #0f172a);
+    margin-bottom: 1rem;
 }
 
 .ova-subtitle {
     font-family: monospace;
-    color: var(--text-muted, #555) !important;
+    font-size: 1.25rem;
+    color: var(--text-muted, #64748b);
 }
 
-.theme-quantum {
-    background: #1e3a8a !important; /* Deep Blue */
+.ova-mission {
+    background: var(--surface-color, #f8fafc);
+    border: 1px solid var(--border-color, #e2e8f0);
+    border-radius: 12px;
+    padding: 4rem 3rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.mission-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color, #0f172a);
+}
+
+.mission-text p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: var(--text-color, #334155);
+    margin-bottom: 1.5rem;
+}
+
+.btn-catalog {
+    display: inline-block;
+    background: var(--primary-color, #0f172a);
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 1rem 2.5rem;
+    border-radius: 99px;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn-catalog:hover {
+    background: #1e293b;
+    transform: translateY(-2px);
+    color: #fff;
 }
 </style>
