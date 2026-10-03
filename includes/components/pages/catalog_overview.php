@@ -36,13 +36,18 @@
                     $title = $book['title'] ?? 'Unknown Archive';
                     $desc = $book['description'] ?? '';
                     // The old publish script outputs first_route as /raggiesoft-books/books/{slug}
-                    // The new patch outputs it correctly, but if reading from the hub's catalog, we need to strip it.
                     $route = !empty($book['first_route']) ? str_replace('/raggiesoft-books/books', '', $book['first_route']) : '/' . $slug;
                     $image = !empty($book['image']) ? 'https://assets.raggiesoft.com' . $book['image'] : '';
                 ?>
                     <a href="<?php echo htmlspecialchars($route); ?>" class="stardust-card">
-                        <div class="stardust-card-cover theme-oceanview" <?php if($image): ?>style="background-image: url('<?php echo htmlspecialchars($image); ?>'); background-size: cover; background-position: center;"<?php endif; ?>>
-                            <?php if(!$image): ?><h3><?php echo htmlspecialchars($title); ?></h3><?php endif; ?>
+                        <div class="stardust-card-cover theme-oceanview" style="position: relative; width: 100%; padding-top: 150%; display: block; height: 0;">
+                            <?php if($image): ?>
+                                <img src="<?php echo htmlspecialchars($image); ?>" alt="<?php echo htmlspecialchars($title); ?>" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
+                            <?php else: ?>
+                                <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; padding: 1rem; text-align: center;">
+                                    <h3 style="margin: 0; color: #fff; font-size: 1.5rem;"><?php echo htmlspecialchars($title); ?></h3>
+                                </div>
+                            <?php endif; ?>
                         </div>
                         <div class="stardust-card-info">
                             <h4><?php echo htmlspecialchars($title); ?></h4>
