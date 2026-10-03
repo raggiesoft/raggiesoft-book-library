@@ -345,6 +345,24 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
                         </div>
                         <?php endif; ?>
 
+                            <?php if ($appleUrl): ?>
+                                <a href="<?php echo htmlspecialchars($appleUrl); ?>" target="_blank" title="Listen on Apple Music" class="rs-btn" style="padding: 0.3rem 0.6rem; font-size: 0.85rem; border-color: #FA243C; color: #FA243C;"><i class="ph ph-apple-logo" style="margin-right: 4px;"></i> Apple</a>
+                            <?php endif; ?>
+                            <?php if ($amazonUrl): ?>
+                                <a href="<?php echo htmlspecialchars($amazonUrl); ?>" target="_blank" title="Listen on Amazon Music" class="rs-btn" style="padding: 0.3rem 0.6rem; font-size: 0.85rem; border-color: #00A8E1; color: #00A8E1;"><i class="ph ph-amazon-logo" style="margin-right: 4px;"></i> Amazon</a>
+                            <?php endif; ?>
+                            <?php if ($youtubeUrl): ?>
+                                <a href="<?php echo htmlspecialchars($youtubeUrl); ?>" target="_blank" title="Listen on YouTube" class="rs-btn" style="padding: 0.3rem 0.6rem; font-size: 0.85rem; border-color: #FF0000; color: #FF0000;"><i class="ph ph-youtube-logo" style="margin-right: 4px;"></i> YouTube</a>
+                            <?php endif; ?>
+                            <?php if ($storeStandardUrl): ?>
+                                <a href="<?php echo htmlspecialchars($storeStandardUrl); ?>" target="_blank" title="Buy MP3 / OGG Digital Archive" class="rs-btn rs-btn-primary" style="padding: 0.3rem 0.6rem; font-size: 0.85rem;"><i class="ph ph-shopping-cart" style="margin-right: 4px;"></i> MP3/OGG</a>
+                            <?php endif; ?>
+                            <?php if ($storeAudiophileUrl): ?>
+                                <a href="<?php echo htmlspecialchars($storeAudiophileUrl); ?>" target="_blank" title="Buy WAV / FLAC Audiophile Archive" class="rs-btn" style="padding: 0.3rem 0.6rem; font-size: 0.85rem; border-color: var(--rs-primary); color: var(--rs-primary);"><i class="ph ph-shopping-bag" style="margin-right: 4px;"></i> WAV/FLAC</a>
+                            <?php endif; ?>
+                        </div>
+                        <?php endif; ?>
+                        
                         
                     </div>
                     
