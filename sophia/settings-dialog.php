@@ -242,7 +242,12 @@ dialog::backdrop {
     const btnDecrease = document.getElementById('btn-text-decrease');
     const btnReset = document.getElementById('btn-text-reset');
 
-    let currentFontSize = 1.15; // default rem
+    // Global State Variables (must be initialized before first run)
+    let currentFontSize = 1.15; 
+    let currentWidth = 'default';
+    let currentFontFamily = 'system-ui, -apple-system, sans-serif';
+    let currentAutoPlayAudio = 'false';
+
     
     // Load Settings
     try {
@@ -291,7 +296,6 @@ dialog::backdrop {
     }
 
     // Width Handlers
-    let currentWidth = 'default';
     function applyWidth(width) {
         currentWidth = width;
         if (readerPage) {
@@ -312,7 +316,6 @@ dialog::backdrop {
     }
 
     // Font Family Handlers
-    let currentFontFamily = 'system-ui, -apple-system, sans-serif';
     function applyFontFamily(font) {
         currentFontFamily = font;
         if (contentBody) {
@@ -326,7 +329,6 @@ dialog::backdrop {
         fontSelect.addEventListener('change', (e) => applyFontFamily(e.target.value));
     }
 
-    let currentAutoPlayAudio = 'false';
     function applyAudioSetting(val) {
         currentAutoPlayAudio = val;
         if (audioSelect) audioSelect.value = val;
