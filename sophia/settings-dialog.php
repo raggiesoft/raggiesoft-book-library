@@ -60,7 +60,7 @@
             <!-- Step 4 -->
             <div id="wizard-step-4" class="wizard-step" style="display: none;">
                 <h2 style="margin-top: 0; color: var(--rs-primary);">Narrative Soundtrack</h2>
-                <p>Did you know? Our Archives often include a built-in narrative soundtrack! Many stories feature ambient music or fully produced original songs (like those from Engine Room Records) mapped to specific scenes.</p>
+                <p>Did you know? Our Archives include a built-in narrative soundtrack! All of the music is produced exclusively by our in-universe label, Engine Room Records, and mapped directly to specific scenes.</p>
                 <p>Since the soundtrack is deeply tied to the narrative's emotional pacing, you can choose whether or not to automatically play background audio when turning a page.</p>
                 <div style="margin-top: 2rem;">
                     <h4 style="margin-bottom: 0.5rem;">Background Audio Preference:</h4>
