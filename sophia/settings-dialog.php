@@ -16,6 +16,7 @@
     <div style="margin-bottom: 1.5rem;">
         <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Theme</h4>
         <select id="reader-theme-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
+            <option value="auto">System Default</option>
             <option value="light">Light Mode</option>
             <option value="dark">Dark Mode</option>
             <option value="sepia">Sepia Mode</option>
@@ -44,6 +45,16 @@ body.theme-sepia {
     --rs-border: #e0d5c1;
 }
 
+@media (prefers-color-scheme: dark) {
+    body.theme-auto {
+        --rs-bg: #121212;
+        --rs-bg-alt: #1a1a1a;
+        --rs-card-bg: #1e1e1e;
+        --rs-text: #e0e0e0;
+        --rs-border: #333;
+    }
+}
+
 dialog::backdrop {
     background: rgba(0,0,0,0.5);
     backdrop-filter: blur(2px);
@@ -70,10 +81,13 @@ dialog::backdrop {
         const stored = localStorage.getItem('reader-settings');
         if (stored) {
             const settings = JSON.parse(stored);
-            if (settings.theme) applyTheme(settings.theme);
+            if (settings.theme) { applyTheme(settings.theme); } else { applyTheme('auto'); }
             if (settings.fontSize) applyFontSize(settings.fontSize);
         }
     } catch (e) {}
+    if (!localStorage.getItem('reader-settings')) {
+        applyTheme('auto');
+    }
 
     // Font Size Handlers
     function applyFontSize(size) {
@@ -90,10 +104,8 @@ dialog::backdrop {
 
     // Theme Handlers
     function applyTheme(theme) {
-        document.body.classList.remove('theme-light', 'theme-dark', 'theme-sepia');
-        if (theme !== 'light') {
-            document.body.classList.add(`theme-${theme}`);
-        }
+        document.body.classList.remove('theme-light', 'theme-dark', 'theme-sepia', 'theme-auto');
+        document.body.classList.add(`theme-${theme}`);
         if (themeSelect) themeSelect.value = theme;
         saveSettings();
     }
@@ -106,7 +118,7 @@ dialog::backdrop {
 
     function saveSettings() {
         localStorage.setItem('reader-settings', JSON.stringify({
-            theme: themeSelect ? themeSelect.value : 'light',
+            theme: themeSelect ? themeSelect.value : 'auto',
             fontSize: currentFontSize
         }));
     }
