@@ -93,7 +93,6 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
             </div>
             <div style="display: flex; gap: 1rem;">
                 <button id="stardust-sidebar-toggle" class="rs-btn" style="padding: 0.5rem 1rem; font-size: 0.85rem;"><i class="ph ph-list"></i> Chapters</button>
-                <button id="reader-settings-toggle" class="rs-btn" style="padding: 0.5rem 1rem; font-size: 0.85rem;"><i class="ph ph-gear"></i> Settings</button>
             </div>
         </div>
 

@@ -17,7 +17,10 @@ if (!empty($routeData)) {
 ?>
 
 <aside id="stardust-sidebar" class="reader-sidebar">
-    <a href="https://raggiesoft.com/raggiesoft-books/books" class="rs-btn rs-btn-brand" style="display: block; text-align: center; margin-bottom: 1.5rem; text-decoration: none;"><i class="ph ph-books"></i> Back to Library</a>
+    <div style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
+        <a href="https://raggiesoft.com/raggiesoft-books/books" class="rs-btn rs-btn-brand" style="flex: 1; text-align: center; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 4px;"><i class="ph ph-books"></i> Library</a>
+        <button id="reader-settings-toggle" class="rs-btn" style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 4px;"><i class="ph ph-gear"></i> Settings</button>
+    </div>
     <h3 style="margin-top: 1rem;"><?php echo htmlspecialchars($katie['title'] ?? 'Table of Contents'); ?></h3>
     <p style="opacity: 0.7; font-size: 0.85rem;">Table of Contents</p>
     <hr style="border:0; border-top:1px solid var(--rs-border); margin: 20px 0;">
