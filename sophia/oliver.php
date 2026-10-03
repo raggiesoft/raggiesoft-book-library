@@ -83,9 +83,15 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
 <main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;">
     <div class="book-page reader-page">
         <!-- Breadcrumbs & Nav -->
-        <div class="reader-nav" style="margin-bottom: 2rem; opacity: 0.7; font-size: 0.9rem;">
+        <div class="reader-nav" style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center;">
+            <div style="opacity: 0.7; font-size: 0.9rem;">
             <a href="https://raggiesoft.com/raggiesoft-books" target="_blank" style="text-decoration: none;">Publisher Home</a> &raquo; 
             <strong style="color: var(--rs-text);"><?php echo htmlspecialchars($title); ?></strong>
+            </div>
+            <div style="display: flex; gap: 1rem;">
+                <button id="stardust-sidebar-toggle" class="rs-btn" style="padding: 0.5rem 1rem; font-size: 0.85rem;"><i class="ph ph-list"></i> Chapters</button>
+                <button id="reader-settings-toggle" class="rs-btn" style="padding: 0.5rem 1rem; font-size: 0.85rem;"><i class="ph ph-gear"></i> Settings</button>
+            </div>
         </div>
 
         <article class="story-content">
