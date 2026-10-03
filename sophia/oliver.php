@@ -172,13 +172,48 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
                     <?php 
                         // Automatically prepend the artists directory path to simplify YAML frontmatter
                         $rawAudioPath = ltrim($frontmatter['audio'], '/');
+                        $strippedAudioPath = str_replace('engine-room-records/artists/', '', $rawAudioPath);
                         if (strpos($rawAudioPath, 'engine-room-records/') === false) {
                             $rawAudioPath = 'engine-room-records/artists/' . $rawAudioPath;
                         }
                         $audioUrl = $cdnBaseUrl . '/' . $rawAudioPath; 
-                        $audioTitleRaw = basename($frontmatter['audio'], '.mp3');
-                        $audioTitleDisplay = ucwords(str_replace('-', ' ', preg_replace('/^\d+-\d+-/', '', $audioTitleRaw)));
-                        $povDisplay = !empty($frontmatter['pov']) ? $frontmatter['pov'] : 'Narrative Soundtrack';
+                        
+                        $audioParts = explode('/', $strippedAudioPath);
+                        $artistSlug = $audioParts[0] ?? '';
+                        $albumSlug = $audioParts[1] ?? '';
+                        
+                        $filenameWithExt = end($audioParts);
+                        $filenameNoExt = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+                        
+                        // Default fallback displays
+                        $audioTitleDisplay = ucwords(str_replace('-', ' ', preg_replace('/^\d+-\d+-/', '', $filenameNoExt)));
+                        $artistDisplay = !empty($frontmatter['pov']) ? $frontmatter['pov'] : 'Narrative Soundtrack';
+                        $albumDisplay = 'Stardust Engine Narratives';
+                        $albumArtUrl = $cdnBaseUrl . '/engine-room-records/artists/' . $artistSlug . '/' . $albumSlug . '/album-art.jpg';
+                        
+                        // Fetch Metadata from CDN
+                        $albumJsonUrl = $cdnBaseUrl . '/engine-room-records/artists/' . $artistSlug . '/' . $albumSlug . '/album.json';
+                        $tracksJsonUrl = $cdnBaseUrl . '/engine-room-records/artists/' . $artistSlug . '/' . $albumSlug . '/tracks.json';
+                        
+                        $albumDataRaw = @file_get_contents($albumJsonUrl);
+                        if ($albumDataRaw) {
+                            $albumData = json_decode($albumDataRaw, true);
+                            if (!empty($albumData['name'])) $albumDisplay = $albumData['name'];
+                            if (!empty($albumData['byArtist']['name'])) $artistDisplay = $albumData['byArtist']['name'];
+                        }
+                        
+                        $tracksDataRaw = @file_get_contents($tracksJsonUrl);
+                        if ($tracksDataRaw) {
+                            $tracksData = json_decode($tracksDataRaw, true);
+                            if (!empty($tracksData['tracks'])) {
+                                foreach ($tracksData['tracks'] as $track) {
+                                    if ($track['fileName'] === $filenameNoExt) {
+                                        if (!empty($track['title'])) $audioTitleDisplay = $track['title'];
+                                        break;
+                                    }
+                                }
+                            }
+                        }
                     ?>
                     <div class="reader-audio-player" style="margin-top: 1.5rem; display: inline-flex; align-items: center; gap: 1rem; padding: 0.75rem 1.5rem; border: 1px solid var(--rs-border); border-radius: 30px; background: var(--rs-card-bg); text-align: left; max-width: 100%;">
                         <button id="narrative-audio-play" class="rs-btn" style="border-radius: 50%; width: 40px; height: 40px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0;" aria-label="Play Soundtrack"><i class="ph ph-play" style="font-size: 1.2rem;"></i></button>
@@ -199,8 +234,11 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
                             if ('mediaSession' in navigator) {
                                 navigator.mediaSession.metadata = new MediaMetadata({
                                     title: <?php echo json_encode($audioTitleDisplay); ?>,
-                                    artist: <?php echo json_encode($povDisplay); ?>,
-                                    album: 'Stardust Engine Narratives'
+                                    artist: <?php echo json_encode($artistDisplay); ?>,
+                                    album: <?php echo json_encode($albumDisplay); ?>,
+                                    artwork: [
+                                        { src: <?php echo json_encode($albumArtUrl); ?>, sizes: '512x512', type: 'image/jpeg' }
+                                    ]
                                 });
                                 navigator.mediaSession.setActionHandler('play', () => audioEl.play());
                                 navigator.mediaSession.setActionHandler('pause', () => audioEl.pause());
