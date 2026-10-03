@@ -15,6 +15,7 @@ $pageConfig = [
 ];
 
 // Always try to load the route data based on the series slug
+$cdnBaseUrl = 'https://assets.raggiesoft.com';
 $seriesSlug = '';
 if (preg_match('#^/([^/]+)#', $requestUri, $matches)) {
     $seriesSlug = $matches[1];
@@ -49,10 +50,16 @@ require_once $basePath . '/includes/components/headers/header.php';
 
 echo '<div id="stardust-main-wrapper">';
 
-// Oliver takes over for the actual reading pane (No Sidebar included)
+// Include Sophia's TOC Sidebar
+require_once $basePath . '/sophia/sidebar.php';
+
+// Oliver takes over for the actual reading pane
 require_once $basePath . '/sophia/oliver.php';
 
 echo '</div> <!-- END #stardust-main-wrapper -->';
+
+// Include Reader Settings Dialog
+require_once $basePath . '/sophia/settings-dialog.php';
 
 // Include Global HTML Footer (Closes #stardust-app, injects SPA script)
 require_once $basePath . '/includes/components/footers/footer.php';
