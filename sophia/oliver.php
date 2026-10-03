@@ -22,6 +22,7 @@ if (file_exists($routeFile)) {
 
 if (empty($actualFilePath)) {
     echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;"><div class="book-page"><h1>Chapter Not Found</h1><p>The requested route could not be found in the route map.</p></div></main>';
+    return;
 }
 
 // 1. Fetch Markdown Content from CDN
@@ -34,6 +35,7 @@ if ($mdContent !== false) {
 }
 if ($mdContent === false) {
     echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;"><div class="book-page"><h1>File Not Found</h1><p>The narrative file could not be loaded from the Vault.</p></div></main>';
+    return;
 }
 
 // 2. Parse YAML Frontmatter
@@ -99,6 +101,8 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
 <?php endif; ?>
 
 <main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;">
+    <div class="book-page reader-page">
+        <!-- Breadcrumbs & Nav -->
         <div class="reader-nav" style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center;">
             <div style="opacity: 0.7; font-size: 0.9rem;">
             <?php 
