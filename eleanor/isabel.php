@@ -1,6 +1,6 @@
 <?php
 // Stardust Engine Library: Master Router
-// The Three Siblings: Victoria (Vault), Isabel (Router), Oliver (Viewer)
+// The OVA Siblings: Eleanor (Public Entry), Isabel (Router), Sophia (Protected Vault), Oliver (Viewer)
 header('Content-Type: text/html; charset=utf-8');
 
 $requestUri = strtok($_SERVER['REQUEST_URI'], '?');
@@ -11,9 +11,7 @@ $basePath = realpath(__DIR__ . '/../');
 // ---------------------------------------------------------
 
 $pageConfig = [
-    'showSidebar' => true,
-    'theme' => 'oceanview',
-    'view' => $basePath . '/eleanor/oliver.php'
+    'view' => $basePath . '/sophia/oliver.php'
 ];
 
 // Always try to load the route data based on the series slug
@@ -35,39 +33,15 @@ if (preg_match('#^/([^/]+)#', $requestUri, $matches)) {
 
 // Redirect base path to the publisher imprint home
 if ($requestUri === '/' || $requestUri === '/isabel.php' || $requestUri === '/index.php' || $requestUri === '/catalog') {
-    header('Location: https://raggiesoft.com/raggiesoft-books');
+    header('Location: https://raggiesoft.com/raggiesoft-books/books');
     exit;
 }
 
 // Extract Variables for Views
 $currentPageTheme = $pageConfig['theme'] ?? 'oceanview';
-$showSidebar = $pageConfig['showSidebar'] ?? true;
 $siteName = $pageConfig['siteName'] ?? 'Ocean View Archives';
 
-// Resolve Header
-$headerFile = $pageConfig['headerMenu'] ?? 'header-default';
-$currentHeaderMenu = $basePath . '/includes/components/headers/' . $headerFile . '.php';
-
-// Include Global HTML Header & Navbar (which handles theme classes)
-require_once $basePath . '/includes/components/headers/header.php';
-
-// Wrap Sidebar and Main content
-echo '<div id="stardust-main-wrapper">';
-
-// Include Sidebar
-if ($showSidebar) {
-    $sidebarFile = $basePath . '/includes/components/sidebars/sidebar.php';
-    if (!empty($pageConfig['sidebar'])) {
-        $candidate = $basePath . '/includes/components/sidebars/' . basename($pageConfig['sidebar']) . '.php';
-        if (file_exists($candidate)) $sidebarFile = $candidate;
-    }
-    require_once $sidebarFile;
-}
-
-// Oliver takes over for the actual reading pane
-require_once $pageConfig['view'];
-
-echo '</div> <!-- END #stardust-main-wrapper -->';
-
-require_once $basePath . '/includes/components/footers/footer.php';
+// We do NOT use the legacy header.php or sidebar.php anymore.
+// We just drop straight into Oliver.
+require_once $basePath . '/sophia/oliver.php';
 ?>
