@@ -39,7 +39,7 @@ if ($isHome) {
     $pageConfig['view'] = $basePath . '/includes/components/pages/home.php';
 } else if ($isCatalog) {
     $pageConfig['showSidebar'] = false;
-    $pageConfig['view'] = $basePath . '/includes/components/pages/catalog_overview.php';
+    $pageConfig['view'] = $basePath . '/includes/components/pages/catalog/overview.php';
 } else if ($seriesSlug && $requestUri === "/$seriesSlug") {
     $pageConfig['view'] = $basePath . '/includes/components/pages/series_toc.php';
 } else {
