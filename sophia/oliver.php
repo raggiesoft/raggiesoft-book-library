@@ -243,7 +243,7 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
                             }
                         }
                         
-                        $spotifyUrl = $appleUrl = $amazonUrl = $youtubeUrl = $storeStandardUrl = null;
+                        $spotifyUrl = $appleUrl = $amazonUrl = $youtubeUrl = $storeStandardUrl = $storeAudiophileUrl = null;
                         
                         $artistAlbumsJsonUrl = $cdnBaseUrl . '/engine-room-records/artists/' . $artistSlug . '/albums.json';
                         $artistAlbumsRaw = @file_get_contents($artistAlbumsJsonUrl);
@@ -259,6 +259,7 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
                                                 if (!empty($alb['amazonId'])) $amazonUrl = "https://music.amazon.com/albums/{$alb['amazonId']}";
                                                 if (!empty($alb['youtubeId'])) $youtubeUrl = "https://music.youtube.com/playlist?list={$alb['youtubeId']}";
                                                 if (!empty($alb['storeStandardUrl'])) $storeStandardUrl = $alb['storeStandardUrl'];
+                                                if (!empty($alb['storeAudiophileUrl'])) $storeAudiophileUrl = $alb['storeAudiophileUrl'];
                                                 break 2;
                                             }
                                         }
@@ -282,7 +283,7 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
                             </button>
                         </div>
                         
-                        <?php if ($spotifyUrl || $appleUrl || $amazonUrl || $youtubeUrl || $storeStandardUrl): ?>
+                        <?php if ($spotifyUrl || $appleUrl || $amazonUrl || $youtubeUrl || $storeStandardUrl || $storeAudiophileUrl): ?>
                         <div style="background: var(--rs-bg); border-top: 1px solid var(--rs-border); padding: 0.75rem 1rem; display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
                             <?php if ($spotifyUrl): ?>
                                 <a href="<?php echo htmlspecialchars($spotifyUrl); ?>" target="_blank" title="Listen on Spotify" class="rs-btn" style="padding: 0.3rem 0.6rem; font-size: 0.85rem; border-color: #1DB954; color: #1DB954;"><i class="ph ph-spotify-logo" style="margin-right: 4px;"></i> Spotify</a>
@@ -297,7 +298,10 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
                                 <a href="<?php echo htmlspecialchars($youtubeUrl); ?>" target="_blank" title="Listen on YouTube" class="rs-btn" style="padding: 0.3rem 0.6rem; font-size: 0.85rem; border-color: #FF0000; color: #FF0000;"><i class="ph ph-youtube-logo" style="margin-right: 4px;"></i> YouTube</a>
                             <?php endif; ?>
                             <?php if ($storeStandardUrl): ?>
-                                <a href="<?php echo htmlspecialchars($storeStandardUrl); ?>" target="_blank" title="Buy Digital Archive" class="rs-btn rs-btn-primary" style="padding: 0.3rem 0.6rem; font-size: 0.85rem;"><i class="ph ph-shopping-cart" style="margin-right: 4px;"></i> Store</a>
+                                <a href="<?php echo htmlspecialchars($storeStandardUrl); ?>" target="_blank" title="Buy MP3 / OGG Digital Archive" class="rs-btn rs-btn-primary" style="padding: 0.3rem 0.6rem; font-size: 0.85rem;"><i class="ph ph-shopping-cart" style="margin-right: 4px;"></i> MP3/OGG</a>
+                            <?php endif; ?>
+                            <?php if ($storeAudiophileUrl): ?>
+                                <a href="<?php echo htmlspecialchars($storeAudiophileUrl); ?>" target="_blank" title="Buy WAV / FLAC Audiophile Archive" class="rs-btn" style="padding: 0.3rem 0.6rem; font-size: 0.85rem; border-color: var(--rs-primary); color: var(--rs-primary);"><i class="ph ph-shopping-bag" style="margin-right: 4px;"></i> WAV/FLAC</a>
                             <?php endif; ?>
                         </div>
                         <?php endif; ?>
