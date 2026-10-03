@@ -108,20 +108,21 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
                         if (!empty($frontmatter['date'])): 
                             $isoString = '';
                             if (!empty($frontmatter['start_time'])) {
+                                $rawTz = $frontmatter['timezone'] ?? 'America/New_York';
                                 $tzMap = [
                                     'ET' => 'America/New_York', 'EST' => 'America/New_York', 'EDT' => 'America/New_York',
                                     'PT' => 'America/Los_Angeles', 'PST' => 'America/Los_Angeles', 'PDT' => 'America/Los_Angeles',
                                     'CT' => 'America/Chicago', 'CST' => 'America/Chicago', 'CDT' => 'America/Chicago',
                                     'MT' => 'America/Denver', 'MST' => 'America/Denver', 'MDT' => 'America/Denver'
                                 ];
-                                $tzStr = $tzMap[$frontmatter['timezone'] ?? 'ET'] ?? 'UTC';
+                                $tzStr = $tzMap[$rawTz] ?? $rawTz; // Use map, or fallback to the raw IANA string
                                 try {
                                     $dt = new DateTime($frontmatter['date'] . ' ' . $frontmatter['start_time'], new DateTimeZone($tzStr));
                                     $isoString = $dt->format(DateTime::ATOM);
                                 } catch (Exception $e) {}
                             }
                         ?>
-                            <span id="story-datetime-display" style="display: flex; align-items: center; gap: 4px;" data-iso="<?php echo htmlspecialchars($isoString); ?>">
+                            <span id="story-datetime-display" style="display: flex; align-items: center; gap: 4px;" data-iso="<?php echo htmlspecialchars($isoString); ?>" data-iana="<?php echo htmlspecialchars($frontmatter['timezone'] ?? ''); ?>">
                                 <i class="ph ph-calendar-blank"></i> 
                                 <span class="dt-text">
                                     <?php echo htmlspecialchars($frontmatter['date'] . (!empty($frontmatter['start_time']) ? ' ' . $frontmatter['start_time'] . ' ' . ($frontmatter['timezone'] ?? '') : '')); ?>
@@ -136,10 +137,15 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
                                 if (iso) {
                                     try {
                                         const d = new Date(iso);
-                                        const formatter = new Intl.DateTimeFormat(undefined, { 
+                                        const iana = el.getAttribute('data-iana');
+                                        const options = { 
                                             weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', 
                                             hour: 'numeric', minute: '2-digit', timeZoneName: 'short' 
-                                        });
+                                        };
+                                        if (iana) {
+                                            options.timeZone = iana;
+                                        }
+                                        const formatter = new Intl.DateTimeFormat('en-US', options);
                                         el.querySelector('.dt-text').textContent = formatter.format(d);
                                     } catch(e) {}
                                 }
