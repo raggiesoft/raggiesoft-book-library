@@ -343,11 +343,6 @@ dialog::backdrop {
         });
     });
     
-    if (btnRunWizard) {
-        btnRunWizard.addEventListener('click', (e) => { e.preventDefault();
-            localStorage.removeItem('rs-wizard-completed');
-            window.location.reload();
-        });
     }
 
     
@@ -527,6 +522,16 @@ dialog::backdrop {
     const btnNext = document.getElementById('wizard-btn-next');
     const btnPrev = document.getElementById('wizard-btn-prev');
     const btnFinish = document.getElementById('wizard-btn-finish');
+    if (btnRunWizard) {
+        btnRunWizard.addEventListener('click', (e) => { 
+            e.preventDefault();
+            localStorage.removeItem('rs-wizard-completed');
+            dialog.close();
+            currentStep = 1;
+            document.getElementById('reader-wizard-dialog').showModal();
+            updateWizardState();
+        });
+    }
     
     // Sync wizard selects with global selects
     const wizTheme = document.getElementById('wizard-theme-select');
@@ -611,6 +616,13 @@ dialog::backdrop {
             localStorage.setItem('rs-wizard-completed', 'true');
             wizardDialog.close();
         });
+    }
+    // Auto-show wizard on page load if not completed
+    if (wizardDialog && !hasCompletedWizard) {
+        setTimeout(() => {
+            wizardDialog.showModal();
+            updateWizardState();
+        }, 100);
     }
 })();
 </script>

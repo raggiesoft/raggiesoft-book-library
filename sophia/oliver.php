@@ -319,11 +319,32 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
                             </div>
                         </div>
                         
-                        <?php if ($spotifyUrl || $appleUrl || $amazonUrl || $youtubeUrl || $storeStandardUrl || $storeAudiophileUrl): ?>
-                        <div style="background: var(--rs-bg); border-top: 1px solid var(--rs-border); padding: 0.75rem 1rem; display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
-                            <?php if ($spotifyUrl): ?>
-                                <a href="<?php echo htmlspecialchars($spotifyUrl); ?>" target="_blank" title="Listen on Spotify" class="rs-btn" style="padding: 0.3rem 0.6rem; font-size: 0.85rem; border-color: #1DB954; color: #1DB954;"><i class="ph ph-spotify-logo" style="margin-right: 4px;"></i> Spotify</a>
-                            <?php endif; ?>
+                                                <?php if ($spotifyUrl || $appleUrl || $amazonUrl || $youtubeUrl || $storeStandardUrl || $storeAudiophileUrl): ?>
+                        <div style="background: var(--rs-bg); border-top: 1px solid var(--rs-border); padding: 0.75rem 1rem; display: flex; flex-direction: column; gap: 0.5rem; align-items: center; text-align: center;">
+                            <div style="font-size: 0.8rem; opacity: 0.7;">Love this soundtrack? Add it to your personal library:</div>
+                            <div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
+                                <?php if ($spotifyUrl): ?>
+                                    <a href="<?php echo htmlspecialchars($spotifyUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Listen on Spotify" class="rs-btn" style="padding: 0.3rem 0.6rem; font-size: 0.85rem; border-color: #1DB954; color: #1DB954;"><i class="ph ph-spotify-logo" style="margin-right: 4px;"></i> Spotify <i class="ph ph-arrow-square-out" style="margin-left: 4px; opacity: 0.7;"></i></a>
+                                <?php endif; ?>
+                                <?php if ($appleUrl): ?>
+                                    <a href="<?php echo htmlspecialchars($appleUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Listen on Apple Music" class="rs-btn" style="padding: 0.3rem 0.6rem; font-size: 0.85rem; border-color: #FA243C; color: #FA243C;"><i class="ph ph-apple-logo" style="margin-right: 4px;"></i> Apple <i class="ph ph-arrow-square-out" style="margin-left: 4px; opacity: 0.7;"></i></a>
+                                <?php endif; ?>
+                                <?php if ($amazonUrl): ?>
+                                    <a href="<?php echo htmlspecialchars($amazonUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Listen on Amazon Music" class="rs-btn" style="padding: 0.3rem 0.6rem; font-size: 0.85rem; border-color: #00A8E1; color: #00A8E1;"><i class="ph ph-amazon-logo" style="margin-right: 4px;"></i> Amazon <i class="ph ph-arrow-square-out" style="margin-left: 4px; opacity: 0.7;"></i></a>
+                                <?php endif; ?>
+                                <?php if ($youtubeUrl): ?>
+                                    <a href="<?php echo htmlspecialchars($youtubeUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Listen on YouTube" class="rs-btn" style="padding: 0.3rem 0.6rem; font-size: 0.85rem; border-color: #FF0000; color: #FF0000;"><i class="ph ph-youtube-logo" style="margin-right: 4px;"></i> YouTube <i class="ph ph-arrow-square-out" style="margin-left: 4px; opacity: 0.7;"></i></a>
+                                <?php endif; ?>
+                                <?php if ($storeStandardUrl): ?>
+                                    <a href="<?php echo htmlspecialchars($storeStandardUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Buy MP3 / OGG Digital Archive" class="rs-btn rs-btn-primary" style="padding: 0.3rem 0.6rem; font-size: 0.85rem;"><i class="ph ph-shopping-cart" style="margin-right: 4px;"></i> MP3/OGG <i class="ph ph-arrow-square-out" style="margin-left: 4px; opacity: 0.7;"></i></a>
+                                <?php endif; ?>
+                                <?php if ($storeAudiophileUrl): ?>
+                                    <a href="<?php echo htmlspecialchars($storeAudiophileUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Buy WAV / FLAC Audiophile Archive" class="rs-btn" style="padding: 0.3rem 0.6rem; font-size: 0.85rem; border-color: var(--rs-primary); color: var(--rs-primary);"><i class="ph ph-shopping-bag" style="margin-right: 4px;"></i> WAV/FLAC <i class="ph ph-arrow-square-out" style="margin-left: 4px; opacity: 0.7;"></i></a>
+                                <?php endif; ?>
+                            </div>
+                        </div>
+                        <?php endif; ?>
+
                             <?php if ($appleUrl): ?>
                                 <a href="<?php echo htmlspecialchars($appleUrl); ?>" target="_blank" title="Listen on Apple Music" class="rs-btn" style="padding: 0.3rem 0.6rem; font-size: 0.85rem; border-color: #FA243C; color: #FA243C;"><i class="ph ph-apple-logo" style="margin-right: 4px;"></i> Apple</a>
                             <?php endif; ?>
