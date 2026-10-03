@@ -88,7 +88,6 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
         <!-- Breadcrumbs & Nav -->
         <div class="reader-nav" style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center;">
             <div style="opacity: 0.7; font-size: 0.9rem;">
-            <a href="https://raggiesoft.com/raggiesoft-books/books" style="text-decoration: none;">Publisher Home</a>
             <?php 
             global $katie, $seriesSlug, $actualFilePath;
             
@@ -114,10 +113,8 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
                 }
             }
             ?>
-            &raquo; <span style="color: var(--rs-text);"><?php echo htmlspecialchars($seriesTitle); ?></span>
-            <?php if ($bookTitle): ?> &raquo; <span style="color: var(--rs-text);"><?php echo htmlspecialchars($bookTitle); ?></span><?php endif; ?>
-            <?php if ($chapTitle): ?> &raquo; <span style="color: var(--rs-text);"><?php echo htmlspecialchars($chapTitle); ?></span><?php endif; ?>
-            &raquo; <strong style="color: var(--rs-text); font-weight: 700;"><?php echo htmlspecialchars($title); ?></strong>
+            <a href="https://raggiesoft.com/raggiesoft-books/books" style="text-decoration: none;">Library</a>
+            &raquo; <strong style="color: var(--rs-text); font-weight: 600;"><?php echo htmlspecialchars($seriesTitle); ?></strong>
             </div>
             <div style="display: flex; gap: 1rem;">
                 <button id="stardust-sidebar-toggle" class="rs-btn" style="padding: 0.5rem 1rem; font-size: 0.85rem;"><i class="ph ph-list"></i> Chapters</button>
@@ -127,13 +124,14 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
         <article class="story-content">
             <!-- Title Header -->
             <div style="text-align: center; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--rs-border); position: relative;">
-                <div class="reader-series-header"><?php echo htmlspecialchars($seriesTitle); ?></div>
-                <?php if ($bookTitle): ?>
-                    <h2 class="reader-book-header"><?php echo htmlspecialchars($bookTitle); ?></h2>
-                <?php endif; ?>
-                <?php if ($chapTitle): ?>
-                    <h3 class="reader-chapter-header"><?php echo htmlspecialchars($chapTitle); ?></h3>
-                <?php endif; ?>
+                <div class="reader-series-header">
+                    <?php 
+                    $eyebrowParts = [$seriesTitle];
+                    if ($bookTitle) $eyebrowParts[] = $bookTitle;
+                    if ($chapTitle) $eyebrowParts[] = $chapTitle;
+                    echo htmlspecialchars(implode(' • ', $eyebrowParts));
+                    ?>
+                </div>
                 <h1 class="reader-part-header"><?php echo htmlspecialchars($title); ?></h1>
                 
                 <?php if (!empty($frontmatter['date']) || !empty($frontmatter['start_time']) || !empty($frontmatter['pov']) || !empty($frontmatter['location'])): ?>
@@ -355,25 +353,13 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
     text-indent: 2rem; /* Traditional book indentation */
 }
 .reader-series-header {
-    font-size: 1.1rem;
+    font-size: 0.85rem;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     color: var(--rs-primary, #007bff);
-    margin-bottom: 0.5rem;
-}
-.reader-book-header {
-    font-size: 1.75rem;
-    font-weight: 800;
-    color: var(--rs-text);
-    margin: 0 0 0.25rem 0;
-}
-.reader-chapter-header {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--rs-text);
-    opacity: 0.8;
-    margin: 0 0 1.5rem 0;
+    margin-bottom: 1rem;
+    opacity: 0.9;
 }
 .reader-part-header {
     font-size: 2.5rem;
