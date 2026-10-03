@@ -55,8 +55,15 @@
                         <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible (Accessibility)</option>
                     </select>
                 </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div id="wizard-step-4" class="wizard-step" style="display: none;">
+                <h2 style="margin-top: 0; color: var(--rs-primary);">Narrative Soundtrack</h2>
+                <p>Did you know? Our Archives often include a built-in narrative soundtrack! Many stories feature ambient music or fully produced original songs (like those from Engine Room Records) mapped to specific scenes.</p>
+                <p>Since the soundtrack is deeply tied to the narrative's emotional pacing, you can choose whether or not to automatically play background audio when turning a page.</p>
                 <div style="margin-top: 2rem;">
-                    <h4 style="margin-bottom: 0.5rem;">Narrative Soundtrack:</h4>
+                    <h4 style="margin-bottom: 0.5rem;">Background Audio Preference:</h4>
                     <select id="wizard-audio-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
                         <option value="false">Turned Off (Default)</option>
                         <option value="true">Play Automatically</option>
@@ -380,7 +387,7 @@ dialog::backdrop {
 
     // WIZARD LOGIC
     let currentStep = 1;
-    const totalSteps = 3;
+    const totalSteps = 4;
     const wizardSidebar = document.getElementById('wizard-sidebar-graphic');
     const btnNext = document.getElementById('wizard-btn-next');
     const btnPrev = document.getElementById('wizard-btn-prev');
@@ -407,7 +414,8 @@ dialog::backdrop {
     const stepImages = {
         1: '<?php echo $cdnBaseUrl; ?>/stardust-engine-library/images/wizard/isabel_oliver_hug.jpg',
         2: '<?php echo $cdnBaseUrl; ?>/stardust-engine-library/images/wizard/eleanor_oliver_hug.jpg',
-        3: '<?php echo $cdnBaseUrl; ?>/stardust-engine-library/images/wizard/sophia_oliver_hug.jpg'
+        3: '<?php echo $cdnBaseUrl; ?>/stardust-engine-library/images/wizard/sophia_oliver_hug.jpg',
+        4: '<?php echo $cdnBaseUrl; ?>/stardust-engine-library/images/wizard/sophia_isabel_audio.jpg'
     };
 
     function updateWizardState() {
