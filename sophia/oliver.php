@@ -25,13 +25,15 @@ if (empty($actualFilePath)) {
     return;
 }
 
-// 1. Fetch Markdown Content
-$mdPath = $basePath . '/../raggiesoft-narratives/books/' . $seriesSlug . '/' . $actualFilePath;
-if (!file_exists($mdPath)) {
-    echo '<main id="stardust-reading-pane" tabindex="-1"><div class="book-page"><h1>File Not Found</h1><p>The physical file could not be located.</p></div></main>';
+// 1. Fetch Markdown Content from CDN
+$cdnBaseUrl = 'https://assets.raggiesoft.com';
+$mdUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/' . $actualFilePath;
+
+$mdContent = @file_get_contents($mdUrl);
+if ($mdContent === false) {
+    echo '<main id="stardust-reading-pane" tabindex="-1"><div class="book-page"><h1>File Not Found</h1><p>The narrative file could not be loaded from the Vault.</p></div></main>';
     return;
 }
-$mdContent = file_get_contents($mdPath);
 
 // 2. Parse YAML Frontmatter
 $frontmatter = [];
