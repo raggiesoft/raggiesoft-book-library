@@ -272,15 +272,19 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
                         <div style="display: flex; align-items: center; gap: 1.25rem; padding: 1.25rem;">
                             <img src="<?php echo htmlspecialchars($albumArtUrl); ?>" alt="Album Art" style="width: 80px; height: 80px; border-radius: 6px; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
                             
-                            <div style="flex: 1; overflow: hidden;">
+                            <div style="flex: 1; overflow: hidden; display: flex; flex-direction: column;">
                                 <div style="font-size: 0.75rem; opacity: 0.7; text-transform: uppercase; letter-spacing: 1px; line-height: 1; margin-bottom: 0.35rem;">Background Audio</div>
                                 <div style="font-weight: 700; font-size: 1.1rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.2; margin-bottom: 0.25rem;"><?php echo htmlspecialchars($audioTitleDisplay); ?></div>
-                                <div style="font-size: 0.85rem; opacity: 0.8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><?php echo htmlspecialchars($artistDisplay); ?> &bull; <i><?php echo htmlspecialchars($albumDisplay); ?></i></div>
+                                <div style="font-size: 0.85rem; opacity: 0.8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 0.75rem;"><?php echo htmlspecialchars($artistDisplay); ?> &bull; <i><?php echo htmlspecialchars($albumDisplay); ?></i></div>
+                                
+                                <div style="display: flex; align-items: center; gap: 0.75rem; width: 100%;">
+                                    <audio id="narrative-audio-element" src="<?php echo htmlspecialchars($audioUrl); ?>" controls loop preload="none" style="flex: 1; height: 36px; border-radius: 6px; outline: none;"></audio>
+                                    
+                                    <button id="narrative-audio-loop-toggle" class="rs-btn" style="border-radius: 50%; width: 36px; height: 36px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 2px solid var(--rs-primary); color: var(--rs-primary); background: rgba(0,0,0,0.05);" aria-label="Toggle Repeat: ON" title="Repeat 1 Track: ON">
+                                        <i class="ph ph-repeat-once" style="font-size: 1.2rem;"></i>
+                                    </button>
+                                </div>
                             </div>
-                            
-                            <button id="narrative-audio-play" class="rs-btn" style="border-radius: 50%; width: 50px; height: 50px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 2px solid var(--rs-primary); color: var(--rs-primary);" aria-label="Play Soundtrack">
-                                <i class="ph ph-play" style="font-size: 1.5rem; margin-left: 3px;"></i>
-                            </button>
                         </div>
                         
                         <?php if ($spotifyUrl || $appleUrl || $amazonUrl || $youtubeUrl || $storeStandardUrl || $storeAudiophileUrl): ?>
@@ -306,7 +310,7 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
                         </div>
                         <?php endif; ?>
                         
-                        <audio id="narrative-audio-element" src="<?php echo htmlspecialchars($audioUrl); ?>" loop preload="none"></audio>
+                        
                     </div>
                     <script>
                     (function() {
