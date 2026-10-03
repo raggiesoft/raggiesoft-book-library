@@ -40,7 +40,7 @@
                     $image = !empty($book['image']) ? 'https://assets.raggiesoft.com' . $book['image'] : '';
                 ?>
                     <a href="<?php echo htmlspecialchars($route); ?>" class="stardust-card">
-                        <div class="stardust-card-cover theme-oceanview" style="padding-top: 150%;">
+                        <div class="stardust-card-cover theme-oceanview" style="position: relative; padding-top: 150%;">
                             <?php if($image): ?>
                                 <img src="<?php echo htmlspecialchars($image); ?>" alt="<?php echo htmlspecialchars($title); ?>" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover;">
                             <?php else: ?>
