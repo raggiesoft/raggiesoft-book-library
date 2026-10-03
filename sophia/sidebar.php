@@ -63,13 +63,33 @@ if (!empty($routeData)) {
     </nav>
 </aside>
 
+<!-- Mobile Backdrop -->
+<div id="reader-sidebar-backdrop" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 999; backdrop-filter: blur(2px);"></div>
+
 <style>
 .reader-sidebar {
     padding: 1.5rem;
     overflow-y: auto;
-    border-right: 1px solid var(--rs-border);
     background: var(--rs-bg-alt, #fafafa);
+    transition: transform 0.3s ease;
 }
+
+@media (max-width: 991px) {
+    .reader-sidebar {
+        position: fixed !important;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100vh;
+        z-index: 1000;
+        transform: translateX(-100%);
+        box-shadow: 5px 0 15px rgba(0,0,0,0.1);
+    }
+    .reader-sidebar.open {
+        transform: translateX(0);
+    }
+}
+
 @media (min-width: 992px) {
     #stardust-sidebar.reader-sidebar {
         position: static !important;
@@ -79,9 +99,12 @@ if (!empty($routeData)) {
         z-index: 1 !important;
         box-shadow: none !important;
         flex-shrink: 0;
+        border-right: 1px solid var(--rs-border);
     }
-    /* Hide the mobile toggle button on desktop */
     #stardust-sidebar-toggle {
+        display: none !important;
+    }
+    #reader-sidebar-backdrop {
         display: none !important;
     }
 }
@@ -90,3 +113,29 @@ if (!empty($routeData)) {
     color: var(--rs-primary);
 }
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const sidebar = document.getElementById('stardust-sidebar');
+    const toggleBtn = document.getElementById('stardust-sidebar-toggle');
+    const backdrop = document.getElementById('reader-sidebar-backdrop');
+
+    function toggleSidebar() {
+        if (sidebar.classList.contains('open')) {
+            sidebar.classList.remove('open');
+            backdrop.style.display = 'none';
+        } else {
+            sidebar.classList.add('open');
+            backdrop.style.display = 'block';
+        }
+    }
+
+    if (toggleBtn) {
+        toggleBtn.addEventListener('click', toggleSidebar);
+    }
+    
+    if (backdrop) {
+        backdrop.addEventListener('click', toggleSidebar);
+    }
+});
+</script>
