@@ -5,14 +5,21 @@ header('Content-Type: text/html; charset=utf-8');
 $requestUri = strtok($_SERVER['REQUEST_URI'], '?');
 $basePath = realpath(__DIR__ . '/../');
 
-// Include Header
-require_once $basePath . '/includes/components/headers/header.php';
-require_once $basePath . '/includes/components/sidebars/sidebar.php';
-
 // ---------------------------------------------------------
 // STARDUST ROUTER
 // ---------------------------------------------------------
-if ($requestUri == '/' || $requestUri == '/isabel.php' || $requestUri == '/index.php') {
+
+$isHome = ($requestUri == '/' || $requestUri == '/isabel.php' || $requestUri == '/index.php');
+
+// Include Header
+require_once $basePath . '/includes/components/headers/header.php';
+
+// Include Sidebar (Except on Home Page)
+if (!$isHome) {
+    require_once $basePath . '/includes/components/sidebars/sidebar.php';
+}
+
+if ($isHome) {
     // 1. Publisher Home Page (Ocean View Archives)
     require_once $basePath . '/includes/components/pages/home.php';
 
