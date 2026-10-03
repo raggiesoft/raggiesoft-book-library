@@ -26,7 +26,7 @@ if (empty($actualFilePath)) {
 }
 
 // 1. Fetch Markdown Content from CDN
-$cdnBaseUrl = 'https://assets.raggiesoft.com';
+// $cdnBaseUrl is injected by isabel.php
 $mdUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/' . $actualFilePath;
 
 $mdContent = @file_get_contents($mdUrl);
@@ -167,6 +167,44 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
                         <?php endif; ?>
                     </div>
                 <?php endif; ?>
+
+                <?php if (!empty($frontmatter['audio'])): ?>
+                    <?php 
+                        $audioUrl = $cdnBaseUrl . '/' . ltrim($frontmatter['audio'], '/'); 
+                        $audioTitle = basename($frontmatter['audio'], '.mp3'); 
+                    ?>
+                    <div class="reader-audio-player" style="margin-top: 1.5rem; display: inline-flex; align-items: center; gap: 1rem; padding: 0.75rem 1.5rem; border: 1px solid var(--rs-border); border-radius: 30px; background: var(--rs-card-bg); text-align: left; max-width: 100%;">
+                        <button id="narrative-audio-play" class="rs-btn" style="border-radius: 50%; width: 40px; height: 40px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><i class="ph ph-play" style="font-size: 1.2rem;"></i></button>
+                        <div style="overflow: hidden;">
+                            <div style="font-size: 0.75rem; opacity: 0.7; text-transform: uppercase; letter-spacing: 1px; line-height: 1;">Background Audio</div>
+                            <div style="font-weight: 600; font-size: 0.95rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.4;"><?php echo htmlspecialchars(ucwords(str_replace('-', ' ', $audioTitle))); ?></div>
+                        </div>
+                        <audio id="narrative-audio-element" src="<?php echo htmlspecialchars($audioUrl); ?>" loop preload="none"></audio>
+                    </div>
+                    <script>
+                    document.addEventListener('DOMContentLoaded', () => {
+                        const audioEl = document.getElementById('narrative-audio-element');
+                        const playBtn = document.getElementById('narrative-audio-play');
+                        if (audioEl && playBtn) {
+                            const icon = playBtn.querySelector('i');
+                            playBtn.addEventListener('click', () => {
+                                if (audioEl.paused) {
+                                    audioEl.play();
+                                    icon.classList.remove('ph-play');
+                                    icon.classList.add('ph-pause');
+                                    playBtn.classList.add('rs-btn-primary');
+                                } else {
+                                    audioEl.pause();
+                                    icon.classList.remove('ph-pause');
+                                    icon.classList.add('ph-play');
+                                    playBtn.classList.remove('rs-btn-primary');
+                                }
+                            });
+                        }
+                    });
+                    </script>
+                <?php endif; ?>
+
             </div>
 
             <!-- Parsedown Content -->
