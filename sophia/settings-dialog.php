@@ -31,12 +31,14 @@
 /* Reader Themes applied to #stardust-reading-pane or body */
 body.theme-dark {
     --rs-bg: #121212;
+    --rs-bg-alt: #1a1a1a;
     --rs-card-bg: #1e1e1e;
     --rs-text: #e0e0e0;
     --rs-border: #333;
 }
 body.theme-sepia {
     --rs-bg: #f4ecd8;
+    --rs-bg-alt: #eaddc4;
     --rs-card-bg: #fdf6e3;
     --rs-text: #5c4b37;
     --rs-border: #e0d5c1;

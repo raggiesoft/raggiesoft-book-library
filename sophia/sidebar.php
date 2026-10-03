@@ -18,7 +18,7 @@ $katieContent = @file_get_contents($katieUrl);
 $katie = $katieContent ? json_decode($katieContent, true) : null;
 ?>
 
-<aside id="stardust-sidebar" style="overflow-y: auto; height: 100vh;">
+<aside id="stardust-sidebar" class="reader-sidebar">
     <h3 style="margin-top: 1rem;"><?php echo htmlspecialchars($katie['title'] ?? 'Table of Contents'); ?></h3>
     <p style="opacity: 0.7; font-size: 0.85rem;">Table of Contents</p>
     <hr style="border:0; border-top:1px solid var(--rs-border); margin: 20px 0;">
@@ -65,6 +65,27 @@ $katie = $katieContent ? json_decode($katieContent, true) : null;
 </aside>
 
 <style>
+.reader-sidebar {
+    padding: 1.5rem;
+    overflow-y: auto;
+    border-right: 1px solid var(--rs-border);
+    background: var(--rs-bg-alt, #fafafa);
+}
+@media (min-width: 992px) {
+    #stardust-sidebar.reader-sidebar {
+        position: static !important;
+        transform: none !important;
+        width: 350px !important;
+        height: 100vh !important;
+        z-index: 1 !important;
+        box-shadow: none !important;
+        flex-shrink: 0;
+    }
+    /* Hide the mobile toggle button on desktop */
+    #stardust-sidebar-toggle {
+        display: none !important;
+    }
+}
 .toc-nav a:hover {
     opacity: 1 !important;
     color: var(--rs-primary);

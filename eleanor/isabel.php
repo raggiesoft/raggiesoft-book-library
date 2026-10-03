@@ -48,7 +48,7 @@ $currentHeaderMenu = null;
 // Include Global HTML Header (Opens HTML, Head, Body, #stardust-app)
 require_once $basePath . '/includes/components/headers/header.php';
 
-echo '<div id="stardust-main-wrapper">';
+echo '<div id="stardust-main-wrapper" style="display: flex; height: 100vh; overflow: hidden; width: 100%;">';
 
 // Include Sophia's TOC Sidebar
 require_once $basePath . '/sophia/sidebar.php';
