@@ -30,6 +30,9 @@ $cdnBaseUrl = 'https://assets.raggiesoft.com';
 $mdUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/' . $actualFilePath;
 
 $mdContent = @file_get_contents($mdUrl);
+if ($mdContent !== false) {
+    $mdContent = str_replace('{{CDN}}', $cdnBaseUrl, $mdContent);
+}
 if ($mdContent === false) {
     echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;"><div class="book-page"><h1>File Not Found</h1><p>The narrative file could not be loaded from the Vault.</p></div></main>';
     return;
@@ -85,7 +88,7 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
         <!-- Breadcrumbs & Nav -->
         <div class="reader-nav" style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center;">
             <div style="opacity: 0.7; font-size: 0.9rem;">
-            <a href="https://raggiesoft.com/raggiesoft-books" target="_blank" style="text-decoration: none;">Publisher Home</a> &raquo; 
+            <a href="https://raggiesoft.com/raggiesoft-books/books" style="text-decoration: none;">Publisher Home</a> &raquo; 
             <strong style="color: var(--rs-text);"><?php echo htmlspecialchars($title); ?></strong>
             </div>
             <div style="display: flex; gap: 1rem;">

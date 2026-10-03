@@ -19,6 +19,7 @@ $katie = $katieContent ? json_decode($katieContent, true) : null;
 ?>
 
 <aside id="stardust-sidebar" class="reader-sidebar">
+    <a href="https://raggiesoft.com/raggiesoft-books/books" class="rs-btn rs-btn-brand" style="display: block; text-align: center; margin-bottom: 1.5rem; text-decoration: none;"><i class="ph ph-books"></i> Back to Library</a>
     <h3 style="margin-top: 1rem;"><?php echo htmlspecialchars($katie['title'] ?? 'Table of Contents'); ?></h3>
     <p style="opacity: 0.7; font-size: 0.85rem;">Table of Contents</p>
     <hr style="border:0; border-top:1px solid var(--rs-border); margin: 20px 0;">
