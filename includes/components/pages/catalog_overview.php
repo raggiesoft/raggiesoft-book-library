@@ -6,44 +6,42 @@
         </header>
 
         <section class="stardust-grid">
-            <!-- Book 1: The Quantum Directive -->
-            <a href="/casey" class="stardust-card">
-                <div class="stardust-card-cover theme-quantum">
-                    <h3>The Quantum Directive</h3>
-                    <span>Sci-Fi / Corporate Drama</span>
-                </div>
-                <div class="stardust-card-info">
-                    <h4>The Quantum Directive</h4>
-                    <p>Follow the lives of the Vance and Delaney siblings as they navigate the complexities of found family, deep trauma, and corporate maneuvering at Quantum.</p>
-                    <span class="stardust-card-action"><i class="ph ph-book-open"></i> View Series &rarr;</span>
-                </div>
-            </a>
-
-            <!-- Book 2: Ashley Tower -->
-            <a href="/ashley-tower" class="stardust-card">
-                <div class="stardust-card-cover theme-red">
-                    <h3>Ashley Tower</h3>
-                    <span>Thriller / Suspense</span>
-                </div>
-                <div class="stardust-card-info">
-                    <h4>Ashley Tower</h4>
-                    <p>Donald's harrowing escape from Texas to the safety of Ashley Tower. A story of resilience and liberation.</p>
-                    <span class="stardust-card-action"><i class="ph ph-book-open"></i> View Series &rarr;</span>
-                </div>
-            </a>
+            <?php
+            // Fetch the master catalog directly from the local assets mount
+            $catalogFile = $basePath . '/../raggiesoft-assets/raggiesoft-books/books/catalog.json';
+            $books = [];
             
-            <!-- Book 3: Aethel Saga -->
-            <a href="/aethel" class="stardust-card">
-                <div class="stardust-card-cover theme-green">
-                    <h3>Aethel Saga</h3>
-                    <span>Epic Fantasy</span>
+            if (file_exists($catalogFile)) {
+                $catalogData = file_get_contents($catalogFile);
+                $books = json_decode($catalogData, true) ?? [];
+            }
+
+            if (empty($books)):
+            ?>
+                <div class="text-center w-100 py-5">
+                    <i class="ph ph-books" style="font-size: 3rem; color: var(--text-muted);"></i>
+                    <h3 class="mt-3 text-muted">Library Catalog Offline</h3>
+                    <p>The system is currently compiling the archives. Please check back later.</p>
                 </div>
-                <div class="stardust-card-info">
-                    <h4>Aethel Saga</h4>
-                    <p>Enter the realm of Aethel, where magic and destiny intertwine in a sweeping epic fantasy spanning generations.</p>
-                    <span class="stardust-card-action"><i class="ph ph-book-open"></i> View Series &rarr;</span>
-                </div>
-            </a>
+            <?php else: ?>
+                <?php foreach ($books as $book): 
+                    $slug = $book['slug'] ?? '';
+                    $title = $book['title'] ?? 'Unknown Archive';
+                    $desc = $book['description'] ?? '';
+                    $route = !empty($book['first_route']) ? $book['first_route'] : '/' . $slug;
+                ?>
+                    <a href="<?php echo htmlspecialchars($route); ?>" class="stardust-card">
+                        <div class="stardust-card-cover theme-quantum">
+                            <h3><?php echo htmlspecialchars($title); ?></h3>
+                        </div>
+                        <div class="stardust-card-info">
+                            <h4><?php echo htmlspecialchars($title); ?></h4>
+                            <p><?php echo htmlspecialchars($desc); ?></p>
+                            <span class="stardust-card-action"><i class="ph ph-book-open"></i> Read Series &rarr;</span>
+                        </div>
+                    </a>
+                <?php endforeach; ?>
+            <?php endif; ?>
         </section>
     </div>
 </main>

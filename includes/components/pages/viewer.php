@@ -1,17 +1,36 @@
 <?php
-// RaggieSoft Books - Markdown Viewer
-// Renders local Markdown files from raggiesoft-narratives
+// RaggieSoft Books - Markdown Viewer (Route JSON Driven)
 
-$narrativesPath = realpath($basePath . '/../raggiesoft-narratives/books');
-$mdPath = $narrativesPath . $requestUri . '.md';
+$requestUri = rtrim($requestUri, '/');
+$parts = explode('/', ltrim($requestUri, '/'));
+$seriesSlug = $parts[0] ?? '';
 
-// Ensure the request is within the narratives directory (security)
-if (strpos(realpath(dirname($mdPath)), $narrativesPath) !== 0 || !file_exists($mdPath)) {
-    echo '<main id="stardust-reading-pane" tabindex="-1"><div class="book-page"><h1>Chapter Not Found</h1><p>The requested story part could not be located in the archives.</p></div></main>';
+$routeFile = $basePath . '/data/routes/' . $seriesSlug . '.json';
+$routeData = [];
+$config = [];
+$actualFilePath = '';
+
+if (file_exists($routeFile)) {
+    $routeData = json_decode(file_get_contents($routeFile), true);
+    if (isset($routeData[$requestUri])) {
+        $config = $routeData[$requestUri];
+        if (isset($config['filePath'])) {
+            $actualFilePath = $config['filePath'];
+        }
+    }
+}
+
+if (empty($actualFilePath)) {
+    echo '<main id="stardust-reading-pane" tabindex="-1"><div class="book-page"><h1>Chapter Not Found</h1><p>The requested route could not be found in the route map.</p></div></main>';
     return;
 }
 
 // 1. Fetch Markdown Content
+$mdPath = $basePath . '/../raggiesoft-narratives/books/' . $seriesSlug . '/' . $actualFilePath;
+if (!file_exists($mdPath)) {
+    echo '<main id="stardust-reading-pane" tabindex="-1"><div class="book-page"><h1>File Not Found</h1><p>The physical file could not be located.</p></div></main>';
+    return;
+}
 $mdContent = file_get_contents($mdPath);
 
 // 2. Parse YAML Frontmatter
@@ -40,11 +59,23 @@ require_once $basePath . '/includes/classes/stardust-parsedown.php';
 $Parsedown = new StardustParsedown();
 $htmlContent = $Parsedown->text($mdContent);
 
-// 4. Sequence Navigation (Extract Series/Book from path to determine previous/next)
-$pathParts = explode('/', ltrim($requestUri, '/'));
-$seriesSlug = $pathParts[0] ?? '';
+// 4. Sequence Navigation (Provided by Route JSON)
+$prevUrl = $config['prevUrl'] ?? null;
+$nextUrl = $config['nextUrl'] ?? null;
+$sequenceName = $routeData['common']['siteName'] ?? 'Ocean View Archives';
+
+// Fallback logic to generate previous/next if they aren't explicitly in the JSON
+$routeKeys = array_keys($routeData);
+$filteredKeys = array_filter($routeKeys, function($k) { return $k !== 'common' && strpos($k, '/book-') !== false; });
+$filteredKeys = array_values($filteredKeys); // reindex
+$currentIndex = array_search($requestUri, $filteredKeys);
+if ($currentIndex !== false) {
+    if ($currentIndex > 0 && empty($prevUrl)) $prevUrl = $filteredKeys[$currentIndex - 1];
+    if ($currentIndex < count($filteredKeys) - 1 && empty($nextUrl)) $nextUrl = $filteredKeys[$currentIndex + 1];
+}
+
 $overviewUrl = '/' . $seriesSlug;
-$title = $frontmatter['title'] ?? 'Untitled Chapter';
+$title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
 ?>
 
 <main id="stardust-reading-pane" tabindex="-1">
@@ -88,9 +119,19 @@ $title = $frontmatter['title'] ?? 'Untitled Chapter';
         
         <!-- Bottom Navigation -->
         <div class="d-flex justify-content-between mt-5 pt-4 border-top">
-            <button class="btn btn-outline-secondary" disabled>&larr; Previous</button>
+            <?php if ($prevUrl): ?>
+                <a href="<?php echo htmlspecialchars($prevUrl); ?>" class="btn btn-outline-secondary">&larr; Previous</a>
+            <?php else: ?>
+                <button class="btn btn-outline-secondary" disabled>&larr; Previous</button>
+            <?php endif; ?>
+
             <a href="<?php echo htmlspecialchars($overviewUrl); ?>" class="btn btn-link text-muted">Index</a>
-            <button class="btn btn-primary" disabled>Next &rarr;</button>
+
+            <?php if ($nextUrl): ?>
+                <a href="<?php echo htmlspecialchars($nextUrl); ?>" class="btn btn-primary">Next &rarr;</a>
+            <?php else: ?>
+                <button class="btn btn-primary" disabled>Next &rarr;</button>
+            <?php endif; ?>
         </div>
     </div>
 </main>
