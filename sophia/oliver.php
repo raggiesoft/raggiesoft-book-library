@@ -267,6 +267,20 @@ $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
                                     audioEl.pause();
                                 }
                             });
+                            
+                            // Check Auto-Play User Preference
+                            try {
+                                const storedSettings = localStorage.getItem('reader-settings');
+                                if (storedSettings) {
+                                    const settings = JSON.parse(storedSettings);
+                                    if (settings.autoPlayAudio === 'true') {
+                                        // Browsers may still block this unless the user has interacted with the domain previously
+                                        audioEl.play().catch(e => {
+                                            console.warn("Autoplay blocked by browser. User must interact first.");
+                                        });
+                                    }
+                                }
+                            } catch (e) {}
                         }
                     });
                     </script>

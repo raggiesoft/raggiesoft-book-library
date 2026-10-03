@@ -55,6 +55,13 @@
                         <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible (Accessibility)</option>
                     </select>
                 </div>
+                <div style="margin-top: 2rem;">
+                    <h4 style="margin-bottom: 0.5rem;">Narrative Soundtrack:</h4>
+                    <select id="wizard-audio-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
+                        <option value="false">Turned Off (Default)</option>
+                        <option value="true">Play Automatically</option>
+                    </select>
+                </div>
             </div>
 
             <!-- Navigation Buttons -->
@@ -107,6 +114,14 @@
             <option value="light">Light Mode</option>
             <option value="dark">Dark Mode</option>
             <option value="sepia">Sepia Mode</option>
+        </select>
+    </div>
+    
+    <div style="margin-bottom: 1.5rem;">
+        <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Narrative Soundtrack</h4>
+        <select id="reader-audio-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
+            <option value="false">Turned Off</option>
+            <option value="true">Play Automatically</option>
         </select>
     </div>
     
@@ -219,6 +234,7 @@ dialog::backdrop {
     const themeSelect = document.getElementById('reader-theme-select');
     const widthSelect = document.getElementById('reader-width-select');
     const fontSelect = document.getElementById('reader-font-select');
+    const audioSelect = document.getElementById('reader-audio-select');
     const readerPage = document.querySelector('.reader-page');
     const btnResetAll = document.getElementById('reader-settings-reset-all');
     
@@ -237,12 +253,14 @@ dialog::backdrop {
             if (settings.fontSize) applyFontSize(settings.fontSize);
             if (settings.width) { applyWidth(settings.width); } else { applyWidth('default'); }
             if (settings.fontFamily) { applyFontFamily(settings.fontFamily); } else { applyFontFamily('system-ui, -apple-system, sans-serif'); }
+            if (settings.autoPlayAudio) { applyAudioSetting(settings.autoPlayAudio); } else { applyAudioSetting('false'); }
         }
     } catch (e) {}
     if (!localStorage.getItem('reader-settings')) {
         applyTheme('auto');
         applyWidth('default');
         applyFontFamily('system-ui, -apple-system, sans-serif');
+        applyAudioSetting('false');
     }
 
     // Font Size Handlers
@@ -307,6 +325,16 @@ dialog::backdrop {
     if (fontSelect) {
         fontSelect.addEventListener('change', (e) => applyFontFamily(e.target.value));
     }
+
+    let currentAutoPlayAudio = 'false';
+    function applyAudioSetting(val) {
+        currentAutoPlayAudio = val;
+        if (audioSelect) audioSelect.value = val;
+        saveSettings();
+    }
+    if (audioSelect) {
+        audioSelect.addEventListener('change', (e) => applyAudioSetting(e.target.value));
+    }
     
     // Reset All Handler
     if (btnResetAll) {
@@ -315,6 +343,7 @@ dialog::backdrop {
             applyTheme('auto');
             applyWidth('default');
             applyFontFamily('system-ui, -apple-system, sans-serif');
+            applyAudioSetting('false');
             dialog.close();
         });
     }
@@ -324,7 +353,8 @@ dialog::backdrop {
             theme: themeSelect ? themeSelect.value : 'auto',
             fontSize: currentFontSize,
             width: currentWidth,
-            fontFamily: currentFontFamily
+            fontFamily: currentFontFamily,
+            autoPlayAudio: currentAutoPlayAudio
         }));
     }
 
@@ -358,16 +388,19 @@ dialog::backdrop {
     const wizTheme = document.getElementById('wizard-theme-select');
     const wizWidth = document.getElementById('wizard-width-select');
     const wizFont = document.getElementById('wizard-font-select');
+    const wizAudio = document.getElementById('wizard-audio-select');
     
     // Initial sync
     if (wizTheme) wizTheme.value = themeSelect ? themeSelect.value : 'auto';
     if (wizWidth) wizWidth.value = widthSelect ? widthSelect.value : 'default';
     if (wizFont) wizFont.value = fontSelect ? fontSelect.value : 'system-ui, -apple-system, sans-serif';
+    if (wizAudio) wizAudio.value = audioSelect ? audioSelect.value : 'false';
 
     // Live update when wizard selects change
     if (wizTheme) wizTheme.addEventListener('change', (e) => applyTheme(e.target.value));
     if (wizWidth) wizWidth.addEventListener('change', (e) => applyWidth(e.target.value));
     if (wizFont) wizFont.addEventListener('change', (e) => applyFontFamily(e.target.value));
+    if (wizAudio) wizAudio.addEventListener('change', (e) => applyAudioSetting(e.target.value));
 
     const stepImages = {
         1: '<?php echo $cdnBaseUrl; ?>/stardust-engine-library/images/wizard/isabel_oliver_hug.jpg',
