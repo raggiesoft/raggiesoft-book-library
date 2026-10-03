@@ -4,7 +4,7 @@
     </div> <!-- Close #stardust-app -->
 
     <!-- The hyper-optimized Stardust SPA Router -->
-    <script src="https://assets.raggiesoft.com/stardust-engine-library/js/stardust-spa.js"></script>
+    <script src="https://assets.raggiesoft.com/stardust-engine-library/js/stardust-spa.min.js"></script>
 
 </body>
 </html>
