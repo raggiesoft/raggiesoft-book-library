@@ -28,6 +28,7 @@
     </script>
 </head>
 <body class="theme-<?= htmlspecialchars($currentPageTheme ?? 'oceanview') ?>">
+    <a href="#stardust-main-content" class="visually-hidden-focusable" style="position: absolute; z-index: 9999; padding: 1rem; background: var(--rs-primary); color: white; text-decoration: none; border-radius: 4px; left: 1rem; top: 1rem;">Skip to main content</a>
 
     <!-- Audio Player (Outside SPA Zone) -->
     <audio id="stardust-bgm" loop preload="auto"></audio>

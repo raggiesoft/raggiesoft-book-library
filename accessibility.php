@@ -115,9 +115,22 @@ document.addEventListener('DOMContentLoaded', () => {
         
         <div class="a11y-card">
             <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;"><i class="ph ph-keyboard" style="margin-right: 0.5rem;"></i> Keyboard Navigation</h3>
-            <p style="margin-bottom: 0;">
+            <p>
                 Our reading interfaces and hubs are designed to be fully navigable via keyboard, ensuring that users who rely 
                 on assistive technologies or cannot use a mouse can fully interact with the narrative.
+            </p>
+            <p style="margin-bottom: 0;">
+                A <strong>"Skip to main content"</strong> link is provided at the very top of every page. When focused via the Tab key, it becomes visible, allowing keyboard users to bypass repetitive navigation and jump directly to the reading pane.
+            </p>
+        </div>
+        
+        <div class="a11y-card">
+            <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1rem;"><i class="ph ph-speaker-high" style="margin-right: 0.5rem;"></i> Screen Readers & AAC Dialogue</h3>
+            <p>
+                Our narratives frequently feature characters who communicate using Augmentative and Alternative Communication (AAC) devices (such as text-to-speech laptops or tablets).
+            </p>
+            <p style="margin-bottom: 0;">
+                To ensure a consistent and immersive experience for screen reader users, the Stardust Engine automatically intercepts these lines of dialogue and prefaces them with visually-hidden <strong>"AAC Device:"</strong> text. This guarantees that screen readers clearly differentiate between spoken dialogue and synthesized device output, preserving the structural intent of the story for all readers.
             </p>
         </div>
         

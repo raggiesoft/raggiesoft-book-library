@@ -247,6 +247,7 @@ class StardustParsedown extends Parsedown {
 <wa-button slot="footer" variant="neutral" onclick="document.getElementById(\'' . $id . '\').hide()">Close</wa-button>
 </wa-dialog>';
         }, $text);
+        $text = preg_replace('/<aac>(.*?)<\/aac>/is', '<span class="visually-hidden">AAC Device: </span><em class="aac-device">$1</em>', $text);
         
         return parent::text($text);
     }
