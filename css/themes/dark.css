@@ -1,9 +1,0 @@
-/* theme-dark.css */
-body.theme-dark {
-    --rs-bg: #1c1917; /* Very dark warm gray (dirty) */
-    --rs-surface: #292524;
-    --rs-text: #e7e5e4;
-    --rs-primary: #dc2626; /* Angry/danger red */
-    --rs-secondary: #78716c;
-    --rs-border: #44403c;
-}
