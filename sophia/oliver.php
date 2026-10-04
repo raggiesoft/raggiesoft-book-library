@@ -225,6 +225,19 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
                         }
                         $audioUrl = $cdnBaseUrl . '/' . $rawAudioPath; 
                         
+                        $audioStart = 0;
+                        if (!empty($frontmatter['audio_start'])) {
+                            $val = $frontmatter['audio_start'];
+                            if (strpos($val, ':') !== false) {
+                                $parts = explode(':', $val);
+                                if (count($parts) == 2) {
+                                    $audioStart = ((int)$parts[0] * 60) + (float)$parts[1];
+                                }
+                            } else {
+                                $audioStart = (float)$val;
+                            }
+                        }
+
                         $audioParts = explode('/', $strippedAudioPath);
                         $artistSlug = $audioParts[0] ?? '';
                         $albumSlug = $audioParts[1] ?? '';
@@ -297,7 +310,7 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
                                 <div style="font-size: 0.85rem; opacity: 0.8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 0.75rem;"><?php echo htmlspecialchars($artistDisplay); ?> &bull; <i><?php echo htmlspecialchars($albumDisplay); ?></i></div>
                                 
                                 <div style="display: flex; align-items: center; gap: 0.75rem; width: 100%;">
-                                    <audio id="narrative-audio-element" src="<?php echo htmlspecialchars($audioUrl); ?>" loop preload="metadata" style="display: none;"></audio>
+                                    <audio id="narrative-audio-element" src="<?php echo htmlspecialchars($audioUrl); ?>" data-start-time="<?php echo $audioStart; ?>" loop preload="metadata" style="display: none;"></audio>
                                     
                                     <button id="narrative-audio-play-toggle" class="rs-btn" style="border-radius: 50%; width: 36px; height: 36px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid var(--rs-border); background: transparent;" aria-label="Play/Pause" title="Play/Pause">
                                         <i class="ph ph-play" style="font-size: 1.2rem;" id="narrative-audio-play-icon"></i>
@@ -374,6 +387,8 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
                         const durationDisplay = document.getElementById('narrative-audio-duration');
                         
                         if (audioEl && playToggleBtn) {
+                            const startTime = parseFloat(audioEl.getAttribute('data-start-time') || 0);
+
                             function formatTime(secs) {
                                 if (isNaN(secs)) return '0:00';
                                 const m = Math.floor(secs / 60);
@@ -404,6 +419,9 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
                             audioEl.addEventListener('loadedmetadata', () => {
                                 scrubber.max = audioEl.duration;
                                 durationDisplay.textContent = formatTime(audioEl.duration);
+                                if (startTime > 0 && audioEl.currentTime < startTime) {
+                                    audioEl.currentTime = startTime;
+                                }
                             });
                             
                             // Update scrubber as audio plays
