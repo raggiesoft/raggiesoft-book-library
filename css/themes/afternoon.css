@@ -1,0 +1,14 @@
+:root {
+    --theme-bg-color: #fcf8eb;
+    --theme-text-color: #2b2b2b;
+    --theme-accent-color: #d68f3a;
+    --theme-accent-hover: #b5762d;
+    --theme-border-color: #e8dbb7;
+    --theme-muted-text: #665c49;
+    --theme-surface-color: #f7ecd0;
+}
+
+body.theme-afternoon {
+    background-color: var(--theme-bg-color);
+    color: var(--theme-text-color);
+}
