@@ -286,7 +286,7 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
                             }
                         }
                     ?>
-                    <div class="reader-audio-player" style="margin-top: 2rem; border: 1px solid var(--rs-border); border-radius: 12px; background: var(--rs-card-bg); overflow: hidden; max-width: 500px; margin-left: auto; margin-right: auto; text-align: left; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                    <div class="reader-audio-player" style="margin-top: 2rem; border: 1px solid var(--rs-border); border-radius: 12px; background: var(--rs-card-bg); overflow: hidden; max-width: 100%; margin-left: auto; margin-right: auto; text-align: left; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
                         <div style="display: flex; align-items: center; gap: 1.25rem; padding: 1.25rem;">
                             <img src="<?php echo htmlspecialchars($albumArtUrl); ?>" alt="Album Art" style="width: 80px; height: 80px; border-radius: 6px; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
                             
