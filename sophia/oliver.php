@@ -213,8 +213,9 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
                         <?php endif; ?>
                     </div>
                 <?php endif; ?>
+            </div>
 
-                <?php if (!empty($frontmatter['audio'])): ?>
+            <?php if (!empty($frontmatter['audio'])): ?>
                     <?php 
                         // Automatically prepend the artists directory path to simplify YAML frontmatter
                         $rawAudioPath = ltrim($frontmatter['audio'], '/');
@@ -548,8 +549,6 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
                     })();
                     </script>
                 <?php endif; ?>
-
-            </div>
 
             <!-- Parsedown Content -->
             <?php echo $htmlContent; ?>

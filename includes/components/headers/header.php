@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title><?= htmlspecialchars($siteName ?? 'Ocean View Archives') ?></title>
-    <link rel="stylesheet" href="https://assets.raggiesoft.com/stardust-engine-library/css/stardust-engine.min.css">
+    <link rel="stylesheet" href="https://assets.raggiesoft.com/stardust-engine-library/css/stardust-engine.min.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="https://assets.raggiesoft.com/stardust-engine-library/css/theme-<?= htmlspecialchars($currentPageTheme ?? 'oceanview') ?>.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
     <!-- Phosphor Icons (fallback for UI icons) -->
