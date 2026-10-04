@@ -1,0 +1,20 @@
+/* theme-tech.css */
+body.theme-tech {
+    --rs-bg: #f0fdf4; /* Digital green tint */
+    --rs-surface: #ffffff;
+    --rs-text: #14532d;
+    --rs-primary: #16a34a; /* Tech green */
+    --rs-secondary: #86efac;
+    --rs-border: #bbf7d0;
+}
+
+@media (prefers-color-scheme: dark) {
+    body.theme-tech {
+        --rs-bg: #052e16; /* Dark terminal green */
+        --rs-surface: #14532d;
+        --rs-text: #f0fdf4;
+        --rs-primary: #4ade80;
+        --rs-secondary: #16a34a;
+        --rs-border: #166534;
+    }
+}
