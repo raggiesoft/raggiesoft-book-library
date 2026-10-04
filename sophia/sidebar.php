@@ -71,9 +71,10 @@ if (!empty($routeData)) {
                                             <?php 
                                             $href = $fileToUrl[$part['file_path']] ?? '#'; 
                                             $isActive = ($href === $requestUri) ? 'color: var(--rs-primary); font-weight: bold;' : 'opacity: 0.7;';
+                                            $activeClass = ($href === $requestUri) ? 'active-toc-link' : '';
                                             ?>
                                             <li style="margin-bottom: 0.25rem;">
-                                                <a href="<?php echo htmlspecialchars($href); ?>" style="text-decoration: none; <?php echo $isActive; ?> display: block; padding: 2px 0;">
+                                                <a href="<?php echo htmlspecialchars($href); ?>" class="<?php echo $activeClass; ?>" style="text-decoration: none; <?php echo $isActive; ?> display: block; padding: 2px 0;">
                                                     <?php echo htmlspecialchars($part['part_title']); ?>
                                                 </a>
                                             </li>
@@ -143,6 +144,18 @@ if (!empty($routeData)) {
 </style>
 
 <script>
+(function() {
+    // Scroll to the active TOC link
+    function scrollToActiveTOC() {
+        const activeLink = document.querySelector('.active-toc-link');
+        if (activeLink) {
+            activeLink.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    }
+    // Small delay to ensure layout is complete
+    setTimeout(scrollToActiveTOC, 100);
+})();
+
 document.addEventListener('DOMContentLoaded', () => {
     const sidebar = document.getElementById('stardust-sidebar');
     const toggleBtn = document.getElementById('stardust-sidebar-toggle');
