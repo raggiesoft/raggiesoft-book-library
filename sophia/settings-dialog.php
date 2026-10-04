@@ -99,7 +99,7 @@
 </dialog>
 
 <!-- STANDARD SETTINGS DIALOG -->
-<dialog id="reader-settings-dialog" style="padding: 0; border-radius: 12px; border: 1px solid var(--rs-border); background: var(--rs-card-bg, #fff); color: var(--rs-text); max-width: 400px; width: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden;">
+<dialog id="reader-settings-dialog" style="padding: 0; border-radius: 12px; border: 1px solid var(--rs-border); background: var(--rs-card-bg, var(--rs-surface, #fff)); color: var(--rs-text); max-width: 400px; width: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden;">
     <div style="display: flex; flex-direction: column; height: 100%;">
         <div style="padding: 1.5rem 1.5rem 0 1.5rem; border-bottom: 1px solid var(--rs-border);">
             <h3 style="margin-top: 0; margin-bottom: 1rem; font-weight: bold;">Reader Settings</h3>
@@ -153,7 +153,7 @@
                         <option value="sepia">Sepia Mode</option>
                         <option value="dark-sepia">Dark Sepia</option>
                     </select>
-                    <div style="margin-top: 1rem; padding: 1rem; background: var(--rs-bg, #f5f5f5); border-radius: 8px; border: 1px solid var(--rs-border);">
+                    <div style="margin-top: 1rem; padding: 1rem; background: var(--rs-surface, #f5f5f5); border-radius: 8px; border: 1px solid var(--rs-border);">
                         <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
                             <input type="checkbox" id="reader-custom-theme-toggle" checked style="width: 1.1rem; height: 1.1rem; accent-color: var(--rs-primary);">
                             <strong style="font-size: 0.95rem;">Allow Custom Story Themes</strong>
@@ -161,7 +161,7 @@
                         <p style="font-size: 0.85rem; opacity: 0.8; margin: 0;">Some scenes have unique, immersive aesthetics (like a rainy 4 AM night). Check this box to allow these themes to override your color mode when available.</p>
                     </div>
                     
-                    <div style="margin-top: 1rem; padding: 1rem; background: var(--rs-bg, #f5f5f5); border-radius: 8px; border: 1px solid var(--rs-border);">
+                    <div style="margin-top: 1rem; padding: 1rem; background: var(--rs-surface, #f5f5f5); border-radius: 8px; border: 1px solid var(--rs-border);">
                         <h4 style="font-size: 0.95rem; margin-top: 0; margin-bottom: 0.5rem;">Developer Theme Preview</h4>
                         <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
                             <select id="dev-theme-select" class="rs-input" style="flex: 1; padding: 0.5rem; font-size: 0.9rem;">
@@ -272,7 +272,7 @@ dialog::backdrop {
     padding: 0;
     border-radius: 12px;
     border: 1px solid var(--rs-border);
-    background: var(--rs-card-bg, #fff);
+    background: var(--rs-card-bg, var(--rs-surface, #fff));
     color: var(--rs-text);
     max-width: 700px;
     width: 100%;
