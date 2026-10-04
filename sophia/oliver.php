@@ -103,7 +103,7 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
 <main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;">
     <div class="book-page reader-page">
         <!-- Breadcrumbs & Nav -->
-        <div class="reader-nav" style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center;">
+        <div class="reader-nav" style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
             <div style="opacity: 0.7; font-size: 0.9rem;">
             <?php 
             global $katie, $seriesSlug, $pageConfig;
@@ -454,7 +454,7 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
                                 const url = lyricsBtn.getAttribute('data-url');
                                 
                                 lyricsTitle.textContent = title;
-                                lyricsContent.innerHTML = '<div style="text-align: center; padding: 2rem; opacity: 0.7;">Retrieving data from the Vault...</div>';
+                                lyricsContent.innerHTML = '<div style="text-align: center; padding: 1rem; opacity: 0.7;">Retrieving data from the Vault...</div>';
                                 lyricsDialog.showModal();
                                 
                                 fetch(url + "?v=" + Date.now())
@@ -572,7 +572,7 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
         </article>
         
         <!-- Bottom Navigation -->
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--rs-border);">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--rs-border);">
             <?php if ($prevUrl): ?>
                 <a href="<?php echo htmlspecialchars($prevUrl); ?>" class="rs-btn">&larr; Previous</a>
             <?php else: ?>
@@ -592,7 +592,7 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
 .reader-page {
     max-width: 800px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1rem;
 }
 .story-content {
     font-size: 1.15rem;
@@ -609,7 +609,7 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
     opacity: 0.9;
 }
 .reader-part-header {
-    font-size: 2.5rem;
+    font-size: clamp(1.75rem, 5vw, 2.5rem);
     font-weight: 900;
     color: var(--rs-text);
     margin: 0 0 1rem 0;
