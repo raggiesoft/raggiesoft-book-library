@@ -54,7 +54,8 @@ body.theme-dark-sepia {
     background-color: var(--page-bg);
     color: var(--page-text);
     padding: 3rem 1.5rem;
-    min-height: 100vh;
+    height: 100vh;
+    overflow-y: auto;
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
 }
@@ -78,7 +79,11 @@ document.addEventListener('DOMContentLoaded', () => {
 </script>
 
 <div class="a11y-container">
-    <div style="max-width: 800px; margin: 0 auto;">
+    <div style="max-width: 800px; margin: 0 auto; padding-bottom: 4rem;">
+        <div style="margin-bottom: 2rem;">
+            <a href="javascript:history.back()" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--page-text); text-decoration: none; font-weight: 600; opacity: 0.7;"><i class="ph ph-arrow-left"></i> Back to Reader</a>
+        </div>
+        
         <h1 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 1rem;">Accessibility Statement</h1>
         <p style="font-size: 1.2rem; margin-bottom: 3rem; opacity: 0.9;">At RaggieSoft, we believe digital experiences should be accessible, comfortable, and safe for everyone.</p>
 
