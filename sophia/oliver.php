@@ -71,7 +71,10 @@ $sequenceName = $routeData['common']['siteName'] ?? 'Ocean View Archives';
 
 // Fallback logic to generate previous/next if they aren't explicitly in the JSON
 $routeKeys = array_keys($routeData);
-$filteredKeys = array_filter($routeKeys, function($k) { return $k !== 'common' && strpos($k, '/book-') !== false; });
+$seriesSlugForFilter = '/' . ($seriesSlug ?? '');
+$filteredKeys = array_filter($routeKeys, function($k) use ($seriesSlugForFilter) { 
+    return $k !== 'common' && $k !== $seriesSlugForFilter; 
+});
 $filteredKeys = array_values($filteredKeys); // reindex
 $currentIndex = array_search($requestUri, $filteredKeys);
 if ($currentIndex !== false) {
