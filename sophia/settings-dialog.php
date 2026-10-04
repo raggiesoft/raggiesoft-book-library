@@ -282,7 +282,7 @@ dialog::backdrop {
     }
     .wizard-sidebar {
         width: 100%;
-        height: 180px;
+        display: none;
         background-position: top center;
         border-right: none;
         border-bottom: 1px solid var(--rs-border);
