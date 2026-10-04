@@ -1,8 +1,5 @@
 <?php
 // Stardust Engine Library: Global Header Component
-if (isset($_GET['preview_theme'])) {
-    $currentPageTheme = preg_replace('/[^a-zA-Z0-9_-]/', '', $_GET['preview_theme']);
-}
 $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? ' theme-dark' : '';
 ?>
 <!DOCTYPE html>

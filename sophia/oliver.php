@@ -82,6 +82,9 @@ if ($currentIndex !== false) {
 $overviewUrl = '/' . $seriesSlug;
 $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
 $narrativeTheme = $frontmatter['theme'] ?? null;
+if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
+    $narrativeTheme = preg_replace('/[^a-zA-Z0-9_-]/', '', $_GET['preview_theme']);
+}
 ?>
 <?php if ($narrativeTheme): ?>
     <meta name="stardust-narrative-theme" content="<?php echo htmlspecialchars($narrativeTheme); ?>">
