@@ -175,7 +175,7 @@
                 <hr style="border: 0; border-top: 1px solid var(--rs-border); margin: 2rem 0;">
                 
                 <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-                    <button type="button" id="reader-run-wizard-btn" class="rs-btn" style="width: 100%;"><i class="ph ph-magic-wand"></i> Run Welcome Wizard</button>
+                    <button type="button" id="reader-run-wizard-btn" class="rs-btn" style="width: 100%;" onclick="runWelcomeWizard();"><i class="ph ph-magic-wand"></i> Run Welcome Wizard</button>
                     <button type="button" id="reader-settings-reset-all" class="rs-btn rs-btn-danger" style="width: 100%;">Reset All Settings to Default</button>
                 </div>
             </div>
@@ -521,16 +521,18 @@ dialog::backdrop {
     const btnNext = document.getElementById('wizard-btn-next');
     const btnPrev = document.getElementById('wizard-btn-prev');
     const btnFinish = document.getElementById('wizard-btn-finish');
-    if (btnRunWizard) {
-        btnRunWizard.addEventListener('click', (e) => { 
-            e.preventDefault();
-            localStorage.removeItem('rs-wizard-completed');
+    window.runWelcomeWizard = function() {
+        localStorage.removeItem('rs-wizard-completed');
+        if (dialog && dialog.open) {
             dialog.close();
-            currentStep = 1;
-            document.getElementById('reader-wizard-dialog').showModal();
+        }
+        currentStep = 1;
+        const wizDialog = document.getElementById('reader-wizard-dialog');
+        if (wizDialog) {
+            wizDialog.showModal();
             updateWizardState();
-        });
-    }
+        }
+    };
     
     // Sync wizard selects with global selects
     const wizTheme = document.getElementById('wizard-theme-select');
