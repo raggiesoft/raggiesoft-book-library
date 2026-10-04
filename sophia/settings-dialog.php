@@ -177,6 +177,7 @@
                 <hr style="border: 0; border-top: 1px solid var(--rs-border); margin: 2rem 0;">
                 
                 <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                    <a href="/accessibility.php" class="rs-btn" style="width: 100%; text-decoration: none; text-align: center; background: transparent; border: 1px solid var(--rs-border);"><i class="ph ph-wheelchair"></i> Accessibility Statement</a>
                     <button type="button" id="reader-run-wizard-btn" class="rs-btn" style="width: 100%;" onclick="runWelcomeWizard();"><i class="ph ph-magic-wand"></i> Run Welcome Wizard</button>
                     <button type="button" id="reader-settings-reset-all" class="rs-btn rs-btn-danger" style="width: 100%;">Reset All Settings to Default</button>
                 </div>
