@@ -31,20 +31,42 @@ if (!empty($routeData)) {
     <nav class="toc-nav">
         <?php if ($katie && !empty($katie['books'])): ?>
             <?php foreach ($katie['books'] as $book): ?>
-                <div class="toc-book" style="margin-bottom: 1.5rem;">
-                    <h4 style="font-size: 1rem; margin-bottom: 0.5rem; color: var(--rs-primary);">
+                <?php 
+                $bookHasActive = false;
+                foreach ($book['chapters'] ?? [] as $chapter) {
+                    foreach ($chapter['parts'] ?? [] as $part) {
+                        if (($fileToUrl[$part['file_path']] ?? '#') === $requestUri) {
+                            $bookHasActive = true;
+                            break 2;
+                        }
+                    }
+                }
+                $bookOpenAttr = $bookHasActive ? 'open' : '';
+                ?>
+                <details class="toc-book" style="margin-bottom: 1.5rem;" <?php echo $bookOpenAttr; ?>>
+                    <summary style="font-size: 1rem; margin-bottom: 0.5rem; color: var(--rs-primary); cursor: pointer; font-weight: bold; list-style-position: inside; user-select: none;">
                         <?php echo htmlspecialchars($book['book_title']); ?>
-                    </h4>
+                    </summary>
                     
                     <?php if (!empty($book['chapters'])): ?>
                         <?php foreach ($book['chapters'] as $chapter): ?>
-                            <div class="toc-chapter" style="margin-bottom: 1rem; padding-left: 1rem;">
-                                <h5 style="font-size: 0.9rem; margin-bottom: 0.25rem; opacity: 0.9;">
+                            <?php 
+                            $chapterHasActive = false;
+                            foreach ($chapter['parts'] ?? [] as $part) {
+                                if (($fileToUrl[$part['file_path']] ?? '#') === $requestUri) {
+                                    $chapterHasActive = true;
+                                    break;
+                                }
+                            }
+                            $chapOpenAttr = $chapterHasActive ? 'open' : '';
+                            ?>
+                            <details class="toc-chapter" style="margin-bottom: 1rem; padding-left: 1rem;" <?php echo $chapOpenAttr; ?>>
+                                <summary style="font-size: 0.9rem; margin-bottom: 0.25rem; opacity: 0.9; cursor: pointer; list-style-position: inside; user-select: none;">
                                     <?php echo htmlspecialchars($chapter['chap_title']); ?>
-                                </h5>
+                                </summary>
                                 
                                 <?php if (!empty($chapter['parts'])): ?>
-                                    <ul style="list-style: none; padding-left: 1rem; margin: 0; font-size: 0.85rem;">
+                                    <ul style="list-style: none; padding-left: 1.25rem; margin: 0.5rem 0 0 0; font-size: 0.85rem;">
                                         <?php foreach ($chapter['parts'] as $part): ?>
                                             <?php 
                                             $href = $fileToUrl[$part['file_path']] ?? '#'; 
@@ -58,10 +80,10 @@ if (!empty($routeData)) {
                                         <?php endforeach; ?>
                                     </ul>
                                 <?php endif; ?>
-                            </div>
+                            </details>
                         <?php endforeach; ?>
                     <?php endif; ?>
-                </div>
+                </details>
             <?php endforeach; ?>
         <?php else: ?>
             <p>No table of contents available.</p>
