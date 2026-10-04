@@ -160,6 +160,31 @@
                         </div>
                         <p style="font-size: 0.85rem; opacity: 0.8; margin: 0;">Some scenes have unique, immersive aesthetics (like a rainy 4 AM night). Check this box to allow these themes to override your color mode when available.</p>
                     </div>
+                    
+                    <div style="margin-top: 1rem; padding: 1rem; background: var(--rs-bg, #f5f5f5); border-radius: 8px; border: 1px solid var(--rs-border);">
+                        <h4 style="font-size: 0.95rem; margin-top: 0; margin-bottom: 0.5rem;">Developer Theme Preview</h4>
+                        <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
+                            <select id="dev-theme-select" class="rs-input" style="flex: 1; padding: 0.5rem; font-size: 0.9rem;">
+                                <option value="">-- Select Theme --</option>
+                                <?php
+                                $themesJsonFile = __DIR__ . '/../data/themes.json';
+                                if (file_exists($themesJsonFile)) {
+                                    $themesList = json_decode(file_get_contents($themesJsonFile), true);
+                                    if (is_array($themesList)) {
+                                        foreach ($themesList as $themeName) {
+                                            echo '<option value="' . htmlspecialchars($themeName) . '">' . htmlspecialchars($themeName) . '</option>';
+                                        }
+                                    }
+                                }
+                                ?>
+                            </select>
+                            <button type="button" id="dev-theme-apply" class="rs-btn">Preview</button>
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 0.5rem;">
+                            <input type="checkbox" id="dev-theme-force-dark" style="width: 1.1rem; height: 1.1rem; accent-color: var(--rs-primary);">
+                            <strong style="font-size: 0.85rem;">Force body.theme-dark (WCAG contrast testing)</strong>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -631,6 +656,37 @@ dialog::backdrop {
             localStorage.setItem('rs-wizard-completed', 'true');
             wizardDialog.close();
         });
+    }
+
+    // Developer Theme Preview Logic
+    const devThemeInput = document.getElementById('dev-theme-select');
+    const devThemeApply = document.getElementById('dev-theme-apply');
+    const devThemeForceDark = document.getElementById('dev-theme-force-dark');
+    
+    if (devThemeApply && devThemeInput && devThemeForceDark) {
+        devThemeApply.addEventListener('click', () => {
+            const themeName = devThemeInput.value.trim();
+            if (themeName) {
+                // Update URL parameter so the PHP header loads the correct CSS file
+                const url = new URL(window.location.href);
+                url.searchParams.set('preview_theme', themeName);
+                if (devThemeForceDark.checked) {
+                    url.searchParams.set('force_dark', '1');
+                } else {
+                    url.searchParams.delete('force_dark');
+                }
+                window.location.href = url.toString();
+            }
+        });
+        
+        // Check URL for existing preview state to prefill
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.has('preview_theme')) {
+            devThemeInput.value = urlParams.get('preview_theme');
+        }
+        if (urlParams.has('force_dark')) {
+            devThemeForceDark.checked = true;
+        }
     }
 })();
 </script>

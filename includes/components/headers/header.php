@@ -1,5 +1,9 @@
 <?php
 // Stardust Engine Library: Global Header Component
+if (isset($_GET['preview_theme'])) {
+    $currentPageTheme = preg_replace('/[^a-zA-Z0-9_-]/', '', $_GET['preview_theme']);
+}
+$forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? ' theme-dark' : '';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -7,9 +11,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title><?= htmlspecialchars($siteName ?? 'Ocean View Archives') ?></title>
-    <link rel="stylesheet" href="https://assets.raggiesoft.com/common/css/raggiesoft-grid.css">
-    <link rel="stylesheet" href="https://assets.raggiesoft.com/stardust-engine-library/css/stardust-engine.min.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href="https://assets.raggiesoft.com/stardust-engine-library/css/theme-<?= htmlspecialchars($currentPageTheme ?? 'oceanview') ?>.min.css">
+    <?php $assetsUrl = $cdnBaseUrl ?? 'https://assets.raggiesoft.com'; ?>
+    <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-grid.css">
+    <link rel="stylesheet" href="<?= $assetsUrl ?>/stardust-engine-library/css/stardust-engine.min.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="<?= $assetsUrl ?>/stardust-engine-library/css/theme-<?= htmlspecialchars($currentPageTheme ?? 'oceanview') ?>.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
     <!-- Phosphor Icons (fallback for UI icons) -->
         <script src="https://unpkg.com/@phosphor-icons/web"></script>
@@ -27,7 +32,7 @@
       gtag('config', 'G-P9RG9JVYB6');
     </script>
 </head>
-<body class="theme-<?= htmlspecialchars($currentPageTheme ?? 'oceanview') ?>">
+<body class="theme-<?= htmlspecialchars($currentPageTheme ?? 'oceanview') ?><?= $forceDarkClass ?>">
     <a href="#stardust-main-content" class="visually-hidden-focusable" style="position: absolute; z-index: 9999; padding: 1rem; background: var(--rs-primary); color: white; text-decoration: none; border-radius: 4px; left: 1rem; top: 1rem;">Skip to main content</a>
 
     <!-- Audio Player (Outside SPA Zone) -->
