@@ -1,0 +1,20 @@
+/* theme-aquarium.css */
+body.theme-aquarium {
+    --rs-bg: #e0f2fe; /* Light blue */
+    --rs-surface: #f0f9ff;
+    --rs-text: #0f172a;
+    --rs-primary: #0284c7;
+    --rs-secondary: #38bdf8;
+    --rs-border: #bae6fd;
+}
+
+@media (prefers-color-scheme: dark) {
+    body.theme-aquarium {
+        --rs-bg: #082f49; /* Deep sea blue */
+        --rs-surface: #0c4a6e;
+        --rs-text: #e0f2fe;
+        --rs-primary: #38bdf8;
+        --rs-secondary: #0284c7;
+        --rs-border: #0369a1;
+    }
+}

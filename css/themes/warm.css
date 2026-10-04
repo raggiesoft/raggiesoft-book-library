@@ -1,0 +1,20 @@
+/* theme-warm.css */
+body.theme-warm {
+    --rs-bg: #fffbeb; /* Warm amber/yellow tint */
+    --rs-surface: #ffffff;
+    --rs-text: #451a03; /* Deep warm brown */
+    --rs-primary: #d97706; /* Warm orange */
+    --rs-secondary: #fbbf24;
+    --rs-border: #fcd34d;
+}
+
+@media (prefers-color-scheme: dark) {
+    body.theme-warm {
+        --rs-bg: #451a03; /* Deep warm brown background */
+        --rs-surface: #78350f;
+        --rs-text: #fef3c7;
+        --rs-primary: #f59e0b;
+        --rs-secondary: #fbbf24;
+        --rs-border: #92400e;
+    }
+}

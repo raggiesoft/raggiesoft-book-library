@@ -1,0 +1,20 @@
+/* theme-subway.css */
+body.theme-subway {
+    --rs-bg: #f3f4f6; /* Concrete gray */
+    --rs-surface: #ffffff;
+    --rs-text: #1f2937;
+    --rs-primary: #047857; /* Emerald Line Green */
+    --rs-secondary: #4338ca; /* Indigo Line Blue */
+    --rs-border: #d1d5db;
+}
+
+@media (prefers-color-scheme: dark) {
+    body.theme-subway {
+        --rs-bg: #111827; /* Dark tunnel */
+        --rs-surface: #1f2937;
+        --rs-text: #f9fafb;
+        --rs-primary: #10b981; /* Glowing Emerald */
+        --rs-secondary: #6366f1; /* Glowing Indigo */
+        --rs-border: #374151;
+    }
+}
