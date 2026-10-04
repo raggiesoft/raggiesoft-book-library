@@ -144,18 +144,6 @@ if (!empty($routeData)) {
 </style>
 
 <script>
-(function() {
-    // Scroll to the active TOC link
-    function scrollToActiveTOC() {
-        const activeLink = document.querySelector('.active-toc-link');
-        if (activeLink) {
-            activeLink.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-    }
-    // Small delay to ensure layout is complete
-    setTimeout(scrollToActiveTOC, 100);
-})();
-
 document.addEventListener('DOMContentLoaded', () => {
     const sidebar = document.getElementById('stardust-sidebar');
     const toggleBtn = document.getElementById('stardust-sidebar-toggle');
