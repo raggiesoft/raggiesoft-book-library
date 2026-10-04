@@ -1,0 +1,20 @@
+/* theme-roadtrip.css */
+body.theme-roadtrip {
+    --rs-bg: #f8fafc; /* Open road daylight */
+    --rs-surface: #ffffff;
+    --rs-text: #1e293b;
+    --rs-primary: #3b82f6; /* Highway sign blue */
+    --rs-secondary: #22c55e; /* Highway sign green */
+    --rs-border: #cbd5e1;
+}
+
+@media (prefers-color-scheme: dark) {
+    body.theme-roadtrip {
+        --rs-bg: #0f172a;
+        --rs-surface: #1e293b;
+        --rs-text: #f8fafc;
+        --rs-primary: #60a5fa;
+        --rs-secondary: #4ade80;
+        --rs-border: #334155;
+    }
+}
