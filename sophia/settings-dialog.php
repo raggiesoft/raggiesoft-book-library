@@ -618,12 +618,5 @@ dialog::backdrop {
             wizardDialog.close();
         });
     }
-    // Auto-show wizard on page load if not completed
-    if (wizardDialog && !hasCompletedWizard) {
-        setTimeout(() => {
-            wizardDialog.showModal();
-            updateWizardState();
-        }, 100);
-    }
 })();
 </script>
