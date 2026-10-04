@@ -152,8 +152,22 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
                 </div>
                 <h1 class="reader-part-header"><?php echo htmlspecialchars($title); ?></h1>
                 
-                <?php if (!empty($frontmatter['date']) || !empty($frontmatter['start_time']) || !empty($frontmatter['pov']) || !empty($frontmatter['location'])): ?>
+                <?php if (!empty($frontmatter['stardate']) || !empty($frontmatter['realm_time']) || !empty($frontmatter['date']) || !empty($frontmatter['start_time']) || !empty($frontmatter['pov']) || !empty($frontmatter['location'])): ?>
                     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; opacity: 0.7; font-size: 0.85rem; font-weight: 600;">
+                        <?php if (!empty($frontmatter['stardate'])): ?>
+                            <span style="display: flex; align-items: center; gap: 4px;" title="Stardate">
+                                <i class="ph ph-planet"></i> 
+                                <span class="dt-text"><?php echo htmlspecialchars('Stardate ' . $frontmatter['stardate']); ?></span>
+                            </span>
+                        <?php endif; ?>
+                        
+                        <?php if (!empty($frontmatter['realm_time'])): ?>
+                            <span style="display: flex; align-items: center; gap: 4px;" title="Realm Time">
+                                <i class="ph ph-hourglass-high"></i> 
+                                <span class="dt-text"><?php echo htmlspecialchars($frontmatter['realm_time']); ?></span>
+                            </span>
+                        <?php endif; ?>
+
                         <?php 
                         if (!empty($frontmatter['date'])): 
                             $isoString = '';
