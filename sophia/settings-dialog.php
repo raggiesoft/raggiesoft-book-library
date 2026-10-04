@@ -185,8 +185,12 @@
                             <button type="button" id="dev-theme-apply" class="rs-btn">Preview</button>
                         </div>
                         <div style="display: flex; align-items: center; gap: 0.5rem;">
-                            <input type="checkbox" id="dev-theme-force-dark" style="width: 1.1rem; height: 1.1rem; accent-color: var(--rs-primary);">
-                            <strong style="font-size: 0.85rem;">Force body.theme-dark (WCAG contrast testing)</strong>
+                            <strong style="font-size: 0.85rem; width: 80px;">Color Mode:</strong>
+                            <select id="dev-theme-force-mode" class="rs-input" style="flex: 1; padding: 0.4rem; font-size: 0.85rem;">
+                                <option value="auto">Auto (OS Default)</option>
+                                <option value="light">Force Light</option>
+                                <option value="dark">Force Dark</option>
+                            </select>
                         </div>
                     </div>
 
@@ -665,9 +669,9 @@ dialog::backdrop {
     // Developer Theme Preview Logic (Client-side, No Reload)
     const devThemeInput = document.getElementById('dev-theme-select');
     const devThemeApply = document.getElementById('dev-theme-apply');
-    const devThemeForceDark = document.getElementById('dev-theme-force-dark');
+    const devThemeForceMode = document.getElementById('dev-theme-force-mode');
     
-    if (devThemeApply && devThemeInput && devThemeForceDark) {
+    if (devThemeApply && devThemeInput && devThemeForceMode) {
         devThemeApply.addEventListener('click', () => {
             const themeName = devThemeInput.value.trim();
             if (themeName) {
@@ -696,9 +700,16 @@ dialog::backdrop {
                     const customToggle = document.getElementById('reader-custom-theme-toggle');
                     applyTheme(themeSelect ? themeSelect.value : 'auto', customToggle ? customToggle.checked : true);
                     
-                    // Force dark mode if requested (overriding applyTheme's strict class management)
-                    if (devThemeForceDark.checked) {
+                    // Force explicit mode if requested (overrides applyTheme's class management)
+                    if (devThemeForceMode.value === 'light') {
+                        document.body.classList.add('theme-light');
+                        document.body.classList.remove('theme-dark', 'theme-auto');
+                    } else if (devThemeForceMode.value === 'dark') {
                         document.body.classList.add('theme-dark');
+                        document.body.classList.remove('theme-light', 'theme-auto');
+                    } else {
+                        // For auto, ensure no forced classes are present
+                        document.body.classList.remove('theme-light', 'theme-dark');
                     }
                 }, 50);
             }
