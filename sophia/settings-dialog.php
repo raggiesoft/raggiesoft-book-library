@@ -211,11 +211,16 @@
                                     $themesList = json_decode(file_get_contents($themesJsonFile), true);
                                     if (is_array($themesList)) {
                                         foreach ($themesList as $themeId => $themeName) {
-                                            // Handle fallback if themes.json hasn't been updated yet (array vs associative)
-                                            if (is_numeric($themeId)) {
+                                            // Handle multiple formats of themes.json
+                                            $supportsModes = true; // default
+                                            if (is_array($themeName)) {
+                                                $supportsModes = isset($themeName['supports_modes']) ? $themeName['supports_modes'] : true;
+                                                $themeName = $themeName['name'];
+                                            } else if (is_numeric($themeId)) {
                                                 $themeId = $themeName; 
                                             }
-                                            echo '<option value="' . htmlspecialchars($themeId) . '">' . htmlspecialchars($themeName) . '</option>';
+                                            $dataAttr = $supportsModes ? 'true' : 'false';
+                                            echo '<option value="' . htmlspecialchars($themeId) . '" data-supports-modes="' . $dataAttr . '">' . htmlspecialchars($themeName) . '</option>';
                                         }
                                     }
                                 }
@@ -700,6 +705,21 @@ dialog::backdrop {
             }
             clearTimeout(clickTimer);
             clickTimer = setTimeout(() => { clickCount = 0; }, 2000);
+        });
+        
+        // Handle disabling Color Mode dropdown for fixed themes
+        devThemeInput.addEventListener('change', () => {
+            const selectedOption = devThemeInput.options[devThemeInput.selectedIndex];
+            if (selectedOption && selectedOption.dataset.supportsModes === 'false') {
+                devThemeForceMode.disabled = true;
+                devThemeForceMode.value = 'auto';
+                devThemeForceMode.title = "This theme has a fixed aesthetic and does not support toggling light/dark modes.";
+                devThemeForceMode.style.opacity = '0.5';
+            } else {
+                devThemeForceMode.disabled = false;
+                devThemeForceMode.title = "";
+                devThemeForceMode.style.opacity = '1';
+            }
         });
         
         // Revert Theme on close

@@ -1,23 +1,86 @@
 {
-    "afternoon": "Afternoon",
-    "aquarium": "Aquarium",
-    "courtroom": "Courtroom",
-    "dark": "Dark",
-    "dark-rain": "Dark Rain",
-    "evening": "Evening",
-    "medical": "Medical",
-    "morning": "Morning",
-    "music": "Music",
-    "night": "Night",
-    "roadtrip": "Roadtrip",
-    "school": "School",
-    "severe-thunderstorm": "Severe Thunderstorm",
-    "stadium": "Stadium",
-    "starlight": "Starlight",
-    "subway": "Subway",
-    "tech": "Tech",
-    "thunderstorm": "Thunderstorm",
-    "thunderstorm-dark": "Thunderstorm Dark",
-    "uplifting": "Uplifting",
-    "warm": "Warm"
+    "afternoon": {
+        "name": "Afternoon",
+        "supports_modes": true
+    },
+    "aquarium": {
+        "name": "Aquarium",
+        "supports_modes": true
+    },
+    "courtroom": {
+        "name": "Courtroom",
+        "supports_modes": true
+    },
+    "dark": {
+        "name": "Dark",
+        "supports_modes": false
+    },
+    "dark-rain": {
+        "name": "Dark Rain",
+        "supports_modes": false
+    },
+    "evening": {
+        "name": "Evening",
+        "supports_modes": false
+    },
+    "medical": {
+        "name": "Medical",
+        "supports_modes": true
+    },
+    "morning": {
+        "name": "Morning",
+        "supports_modes": true
+    },
+    "music": {
+        "name": "Music",
+        "supports_modes": true
+    },
+    "night": {
+        "name": "Night",
+        "supports_modes": true
+    },
+    "roadtrip": {
+        "name": "Roadtrip",
+        "supports_modes": true
+    },
+    "school": {
+        "name": "School",
+        "supports_modes": true
+    },
+    "severe-thunderstorm": {
+        "name": "Severe Thunderstorm",
+        "supports_modes": false
+    },
+    "stadium": {
+        "name": "Stadium",
+        "supports_modes": false
+    },
+    "starlight": {
+        "name": "Starlight",
+        "supports_modes": false
+    },
+    "subway": {
+        "name": "Subway",
+        "supports_modes": true
+    },
+    "tech": {
+        "name": "Tech",
+        "supports_modes": true
+    },
+    "thunderstorm": {
+        "name": "Thunderstorm",
+        "supports_modes": false
+    },
+    "thunderstorm-dark": {
+        "name": "Thunderstorm Dark",
+        "supports_modes": false
+    },
+    "uplifting": {
+        "name": "Uplifting",
+        "supports_modes": true
+    },
+    "warm": {
+        "name": "Warm",
+        "supports_modes": true
+    }
 }
