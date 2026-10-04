@@ -707,21 +707,6 @@ dialog::backdrop {
             clickTimer = setTimeout(() => { clickCount = 0; }, 2000);
         });
         
-        // Handle disabling Color Mode dropdown for fixed themes
-        devThemeInput.addEventListener('change', () => {
-            const selectedOption = devThemeInput.options[devThemeInput.selectedIndex];
-            if (selectedOption && selectedOption.dataset.supportsModes === 'false') {
-                devThemeForceMode.disabled = true;
-                devThemeForceMode.value = 'auto';
-                devThemeForceMode.title = "This theme has a fixed aesthetic and does not support toggling light/dark modes.";
-                devThemeForceMode.style.opacity = '0.5';
-            } else {
-                devThemeForceMode.disabled = false;
-                devThemeForceMode.title = "";
-                devThemeForceMode.style.opacity = '1';
-            }
-        });
-        
         // Revert Theme on close
         const revertTheme = () => {
             devTesterDialog.close();
@@ -751,6 +736,22 @@ dialog::backdrop {
     const devThemeForceMode = document.getElementById('dev-theme-force-mode');
     
     if (devThemeApply && devThemeInput && devThemeForceMode) {
+        
+        // Handle disabling Color Mode dropdown for fixed themes
+        devThemeInput.addEventListener('change', () => {
+            const selectedOption = devThemeInput.options[devThemeInput.selectedIndex];
+            if (selectedOption && selectedOption.dataset.supportsModes === 'false') {
+                devThemeForceMode.disabled = true;
+                devThemeForceMode.value = 'auto';
+                devThemeForceMode.title = "This theme has a fixed aesthetic and does not support toggling light/dark modes.";
+                devThemeForceMode.style.opacity = '0.5';
+            } else {
+                devThemeForceMode.disabled = false;
+                devThemeForceMode.title = "";
+                devThemeForceMode.style.opacity = '1';
+            }
+        });
+
         devThemeApply.addEventListener('click', () => {
             const themeName = devThemeInput.value.trim();
             if (themeName) {
