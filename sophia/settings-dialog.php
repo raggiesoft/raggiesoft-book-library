@@ -171,8 +171,12 @@
                                 if (file_exists($themesJsonFile)) {
                                     $themesList = json_decode(file_get_contents($themesJsonFile), true);
                                     if (is_array($themesList)) {
-                                        foreach ($themesList as $themeName) {
-                                            echo '<option value="' . htmlspecialchars($themeName) . '">' . htmlspecialchars($themeName) . '</option>';
+                                        foreach ($themesList as $themeId => $themeName) {
+                                            // Handle fallback if themes.json hasn't been updated yet (array vs associative)
+                                            if (is_numeric($themeId)) {
+                                                $themeId = $themeName; 
+                                            }
+                                            echo '<option value="' . htmlspecialchars($themeId) . '">' . htmlspecialchars($themeName) . '</option>';
                                         }
                                     }
                                 }
@@ -658,7 +662,7 @@ dialog::backdrop {
         });
     }
 
-    // Developer Theme Preview Logic
+    // Developer Theme Preview Logic (Client-side, No Reload)
     const devThemeInput = document.getElementById('dev-theme-select');
     const devThemeApply = document.getElementById('dev-theme-apply');
     const devThemeForceDark = document.getElementById('dev-theme-force-dark');
@@ -667,26 +671,38 @@ dialog::backdrop {
         devThemeApply.addEventListener('click', () => {
             const themeName = devThemeInput.value.trim();
             if (themeName) {
-                // Update URL parameter so the PHP header loads the correct CSS file
-                const url = new URL(window.location.href);
-                url.searchParams.set('preview_theme', themeName);
-                if (devThemeForceDark.checked) {
-                    url.searchParams.set('force_dark', '1');
-                } else {
-                    url.searchParams.delete('force_dark');
+                // Find or create narrative meta tag
+                let meta = document.querySelector('meta[name="stardust-narrative-theme"]');
+                if (!meta) {
+                    meta = document.createElement('meta');
+                    meta.name = 'stardust-narrative-theme';
+                    document.head.appendChild(meta);
                 }
-                window.location.href = url.toString();
+                meta.setAttribute('content', themeName);
+                
+                // Find or create narrative CSS link
+                let link = document.getElementById('narrative-theme-css');
+                if (!link) {
+                    link = document.createElement('link');
+                    link.id = 'narrative-theme-css';
+                    link.rel = 'stylesheet';
+                    document.head.appendChild(link);
+                }
+                link.href = '<?php echo $cdnBaseUrl; ?>/raggiesoft-books/css/themes/' + themeName + '.css';
+                
+                // Wait briefly for the new CSS to fetch before re-applying theme logic
+                setTimeout(() => {
+                    const themeSelect = document.getElementById('reader-theme-select');
+                    const customToggle = document.getElementById('reader-custom-theme-toggle');
+                    applyTheme(themeSelect ? themeSelect.value : 'auto', customToggle ? customToggle.checked : true);
+                    
+                    // Force dark mode if requested (overriding applyTheme's strict class management)
+                    if (devThemeForceDark.checked) {
+                        document.body.classList.add('theme-dark');
+                    }
+                }, 50);
             }
         });
-        
-        // Check URL for existing preview state to prefill
-        const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.has('preview_theme')) {
-            devThemeInput.value = urlParams.get('preview_theme');
-        }
-        if (urlParams.has('force_dark')) {
-            devThemeForceDark.checked = true;
-        }
     }
 })();
 </script>
