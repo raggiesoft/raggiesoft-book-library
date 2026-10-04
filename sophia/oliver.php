@@ -287,7 +287,7 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
                             }
                         }
                     ?>
-                    <div class="reader-audio-player" style="margin-top: 2rem; border: 1px solid var(--rs-border); border-radius: 12px; background: var(--rs-card-bg); overflow: hidden; max-width: 100%; margin-left: auto; margin-right: auto; text-align: left; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                    <div class="reader-audio-player" style="margin-top: 2rem; border: 1px solid var(--rs-border); border-radius: 12px; background: var(--rs-surface); overflow: hidden; max-width: 100%; margin-left: auto; margin-right: auto; text-align: left; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
                         <div style="display: flex; align-items: center; gap: 1.25rem; padding: 1.25rem;">
                             <img src="<?php echo htmlspecialchars($albumArtUrl); ?>" alt="Album Art" style="width: 80px; height: 80px; border-radius: 6px; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
                             
@@ -323,7 +323,7 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
                         
                                                 <?php if ($spotifyUrl || $appleUrl || $amazonUrl || $youtubeUrl || $storeStandardUrl || $storeAudiophileUrl): ?>
                         <div style="background: var(--rs-bg); border-top: 1px solid var(--rs-border); padding: 0.75rem 1rem; display: flex; flex-direction: column; gap: 0.5rem; align-items: center; text-align: center;">
-                            <div style="font-size: 0.8rem; opacity: 0.7;">Love this soundtrack? Add it to your personal library:</div>
+                            <div style="font-size: 0.8rem; opacity: 0.7;">The background audio is a low-quality stream. To hear the full high-fidelity mix (and support the author), please stream it on your favorite service:</div>
                             <div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
                                 <?php if ($spotifyUrl): ?>
                                     <a href="<?php echo htmlspecialchars($spotifyUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Listen on Spotify" class="rs-btn" style="padding: 0.3rem 0.6rem; font-size: 0.85rem; border-color: #1DB954; color: #1DB954;"><i class="ph ph-spotify-logo" style="margin-right: 4px;"></i> Spotify <i class="ph ph-arrow-square-out" style="margin-left: 4px; opacity: 0.7;"></i></a>
@@ -352,7 +352,7 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
                     </div>
                     
                     <dialog id="narrative-lyrics-dialog" style="padding: 0; border: 1px solid var(--rs-border); border-radius: 12px; background: var(--rs-bg); color: var(--rs-text); box-shadow: 0 10px 40px rgba(0,0,0,0.3); max-width: 600px; width: 90%; max-height: 85vh; overflow: hidden;">
-                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; border-bottom: 1px solid var(--rs-border); background: var(--rs-card-bg);">
+                        <div style="display: flex; justify-content: space-between; align-items: center; padding: 1rem 1.5rem; border-bottom: 1px solid var(--rs-border); background: var(--rs-surface);">
                             <h3 id="narrative-lyrics-title" style="margin: 0; font-size: 1.2rem; font-weight: 700;"></h3>
                             <button id="narrative-lyrics-close" class="rs-btn" style="padding: 0.5rem; border: none; background: transparent; font-size: 1.2rem; cursor: pointer;"><i class="ph ph-x"></i></button>
                         </div>
@@ -581,10 +581,6 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
     font-size: 1.15rem;
     line-height: 1.8;
     color: var(--rs-text);
-}
-.story-content p {
-    margin-bottom: 1.5rem;
-    text-indent: 2rem; /* Traditional book indentation */
 }
 .reader-series-header {
     font-size: 0.85rem;
