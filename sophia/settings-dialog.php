@@ -405,7 +405,7 @@ dialog::backdrop {
         if (customThemeToggle) customThemeToggle.checked = customEnabled;
         const wizCustomTheme = document.getElementById('wizard-custom-theme-toggle');
         if (wizCustomTheme) wizCustomTheme.checked = customEnabled;
-        
+        // Remove standard themes
         document.body.classList.remove('theme-light', 'theme-dark', 'theme-sepia', 'theme-dark-sepia', 'theme-auto', 'theme-custom');
         
         const customThemeMeta = document.querySelector('meta[name="stardust-narrative-theme"]');
@@ -413,11 +413,14 @@ dialog::backdrop {
         const customThemeLink = document.getElementById('narrative-theme-css');
         
         // Remove old narrative class just in case it changed
+        if (narrativeTheme) {
+            document.body.classList.remove(`theme-${narrativeTheme}`);
+        }
         document.body.className = document.body.className.replace(/narrative-theme-[a-zA-Z0-9_-]+/g, '').trim();
 
         if (currentCustomThemeEnabled && narrativeTheme && narrativeTheme.trim() !== '') {
             document.body.classList.add('theme-custom');
-            document.body.classList.add(`narrative-theme-${narrativeTheme}`);
+            document.body.classList.add(`theme-${narrativeTheme}`);
             if (customThemeLink) customThemeLink.disabled = false;
         } else {
             if (customThemeLink) customThemeLink.disabled = true;
