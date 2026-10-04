@@ -102,7 +102,7 @@
 <dialog id="reader-settings-dialog" style="padding: 0; border-radius: 12px; border: 1px solid var(--rs-border); background: var(--rs-card-bg, var(--rs-surface, #fff)); color: var(--rs-text); max-width: 400px; width: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden;">
     <div style="display: flex; flex-direction: column; height: 100%;">
         <div style="padding: 1.5rem 1.5rem 0 1.5rem; border-bottom: 1px solid var(--rs-border);">
-            <h3 style="margin-top: 0; margin-bottom: 1rem; font-weight: bold;">Reader Settings</h3>
+            <h3 id="reader-settings-title" style="margin-top: 0; margin-bottom: 1rem; font-weight: bold; user-select: none;">Reader Settings</h3>
             <div style="display: flex; gap: 1rem; margin-bottom: -1px; overflow-x: auto;" id="reader-settings-tabs">
                 <button type="button" class="settings-tab active" data-tab="layout">Layout</button>
                 <button type="button" class="settings-tab" data-tab="theme">Theme</button>
@@ -161,6 +161,45 @@
                         <p style="font-size: 0.85rem; opacity: 0.8; margin: 0;">Some scenes have unique, immersive aesthetics (like a rainy 4 AM night). Check this box to allow these themes to override your color mode when available.</p>
                     </div>
                     
+
+
+                </div>
+            </div>
+
+            <!-- ADVANCED TAB -->
+            <div id="settings-tab-advanced" class="settings-tab-content" style="display: none;">
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Narrative Soundtrack</h4>
+                    <select id="reader-audio-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
+                        <option value="false">Turned Off</option>
+                        <option value="true">Play Automatically</option>
+                    </select>
+                </div>
+                
+                <hr style="border: 0; border-top: 1px solid var(--rs-border); margin: 2rem 0;">
+                
+                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                    <a href="/accessibility.php" class="rs-btn" style="width: 100%; text-decoration: none; text-align: center; background: transparent; border: 1px solid var(--rs-border);"><i class="ph ph-wheelchair"></i> Accessibility Statement</a>
+                    <button type="button" id="reader-run-wizard-btn" class="rs-btn" style="width: 100%;" onclick="runWelcomeWizard();"><i class="ph ph-magic-wand"></i> Run Welcome Wizard</button>
+                    <button type="button" id="reader-settings-reset-all" class="rs-btn rs-btn-danger" style="width: 100%;">Reset All Settings to Default</button>
+                </div>
+            </div>
+        </div>
+        
+        <div style="padding: 1.5rem; border-top: 1px solid var(--rs-border); text-align: center;">
+            <button type="button" id="close-settings-btn" class="rs-btn rs-btn-primary" style="width: 100%;">Done</button>
+        </div>
+    </div>
+</dialog>
+
+<!-- DEVELOPER THEME TESTER DIALOG -->
+<dialog id="dev-theme-tester-dialog" style="padding: 0; border-radius: 12px; border: 1px solid var(--rs-border); background: var(--rs-card-bg, var(--rs-surface, #fff)); color: var(--rs-text); max-width: 400px; width: 100%; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden;">
+    <div style="display: flex; flex-direction: column; height: 100%;">
+        <div style="padding: 1.5rem 1.5rem 0 1.5rem; border-bottom: 1px solid var(--rs-border);">
+            <h3 style="margin-top: 0; margin-bottom: 1rem; font-weight: bold; color: var(--rs-primary);">🛠 Developer Sandbox</h3>
+        </div>
+        <div style="padding: 1.5rem; flex: 1; overflow-y: auto;">
+            <p style="font-size: 0.9rem; margin-top: 0;">This is a hidden sandbox for WCAG contrast testing and CSS development.</p>
                     <div style="margin-top: 1rem; padding: 1rem; background: var(--rs-surface, #f5f5f5); border-radius: 8px; border: 1px solid var(--rs-border);">
                         <h4 style="font-size: 0.95rem; margin-top: 0; margin-bottom: 0.5rem;">Developer Theme Preview</h4>
                         <div style="display: flex; gap: 0.5rem; margin-bottom: 0.75rem;">
@@ -193,32 +232,9 @@
                             </select>
                         </div>
                     </div>
-
-                </div>
-            </div>
-
-            <!-- ADVANCED TAB -->
-            <div id="settings-tab-advanced" class="settings-tab-content" style="display: none;">
-                <div style="margin-bottom: 1.5rem;">
-                    <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Narrative Soundtrack</h4>
-                    <select id="reader-audio-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
-                        <option value="false">Turned Off</option>
-                        <option value="true">Play Automatically</option>
-                    </select>
-                </div>
-                
-                <hr style="border: 0; border-top: 1px solid var(--rs-border); margin: 2rem 0;">
-                
-                <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-                    <a href="/accessibility.php" class="rs-btn" style="width: 100%; text-decoration: none; text-align: center; background: transparent; border: 1px solid var(--rs-border);"><i class="ph ph-wheelchair"></i> Accessibility Statement</a>
-                    <button type="button" id="reader-run-wizard-btn" class="rs-btn" style="width: 100%;" onclick="runWelcomeWizard();"><i class="ph ph-magic-wand"></i> Run Welcome Wizard</button>
-                    <button type="button" id="reader-settings-reset-all" class="rs-btn rs-btn-danger" style="width: 100%;">Reset All Settings to Default</button>
-                </div>
-            </div>
         </div>
-        
         <div style="padding: 1.5rem; border-top: 1px solid var(--rs-border); text-align: center;">
-            <button type="button" id="close-settings-btn" class="rs-btn rs-btn-primary" style="width: 100%;">Done</button>
+            <button type="button" id="close-dev-tester-btn" class="rs-btn rs-btn-primary" style="width: 100%;">Close & Revert Theme</button>
         </div>
     </div>
 </dialog>
@@ -666,6 +682,49 @@ dialog::backdrop {
         });
     }
 
+        // Developer Backdoor
+    const readerTitle = document.getElementById('reader-settings-title');
+    const devTesterDialog = document.getElementById('dev-theme-tester-dialog');
+    const btnCloseDevTester = document.getElementById('close-dev-tester-btn');
+    
+    if (readerTitle && devTesterDialog) {
+        let clickCount = 0;
+        let clickTimer = null;
+        
+        readerTitle.addEventListener('click', () => {
+            clickCount++;
+            if (clickCount >= 5) {
+                dialog.close();
+                devTesterDialog.showModal();
+                clickCount = 0;
+            }
+            clearTimeout(clickTimer);
+            clickTimer = setTimeout(() => { clickCount = 0; }, 2000);
+        });
+        
+        // Revert Theme on close
+        const revertTheme = () => {
+            devTesterDialog.close();
+            // Remove the forced preview CSS and Meta
+            let meta = document.querySelector('meta[name="stardust-narrative-theme"]');
+            if (meta) meta.remove();
+            let link = document.getElementById('narrative-theme-css');
+            if (link) link.remove();
+            
+            // Re-apply real settings
+            const themeSelect = document.getElementById('reader-theme-select');
+            const customToggle = document.getElementById('reader-custom-theme-toggle');
+            applyTheme(themeSelect ? themeSelect.value : 'auto', customToggle ? customToggle.checked : true);
+        };
+        
+        if (btnCloseDevTester) {
+            btnCloseDevTester.addEventListener('click', revertTheme);
+        }
+        
+        // Also revert if they hit Esc or click outside (the dialog close event)
+        devTesterDialog.addEventListener('close', revertTheme);
+    }
+    
     // Developer Theme Preview Logic (Client-side, No Reload)
     const devThemeInput = document.getElementById('dev-theme-select');
     const devThemeApply = document.getElementById('dev-theme-apply');
