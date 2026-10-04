@@ -37,6 +37,7 @@
                         <option value="light">Light Mode (Crisp & Clean)</option>
                         <option value="dark">Dark Mode (Best for night)</option>
                         <option value="sepia">Sepia Mode (Easy on the eyes)</option>
+                        <option value="dark-sepia">Dark Sepia (Warm & Dark)</option>
                     </select>
                 </div>
             </div>
@@ -150,6 +151,7 @@
                         <option value="light">Light Mode</option>
                         <option value="dark">Dark Mode</option>
                         <option value="sepia">Sepia Mode</option>
+                        <option value="dark-sepia">Dark Sepia</option>
                     </select>
                     <div style="margin-top: 1rem; padding: 1rem; background: var(--rs-bg, #f5f5f5); border-radius: 8px; border: 1px solid var(--rs-border);">
                         <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
@@ -205,6 +207,14 @@ body.theme-sepia {
     --rs-text: #5c4b37;
     --rs-border: #e0d5c1;
     --rs-surface: #fdf6e3;
+}
+body.theme-dark-sepia {
+    --rs-bg: #2b251e;
+    --rs-bg-alt: #383028;
+    --rs-card-bg: #1f1b16;
+    --rs-text: #e0d5c1;
+    --rs-border: #4a4135;
+    --rs-surface: #1f1b16;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -396,7 +406,7 @@ dialog::backdrop {
         const wizCustomTheme = document.getElementById('wizard-custom-theme-toggle');
         if (wizCustomTheme) wizCustomTheme.checked = customEnabled;
         
-        document.body.classList.remove('theme-light', 'theme-dark', 'theme-sepia', 'theme-auto', 'theme-custom');
+        document.body.classList.remove('theme-light', 'theme-dark', 'theme-sepia', 'theme-dark-sepia', 'theme-auto', 'theme-custom');
         
         const customThemeMeta = document.querySelector('meta[name="stardust-narrative-theme"]');
         const narrativeTheme = customThemeMeta ? customThemeMeta.getAttribute('content') : null;
