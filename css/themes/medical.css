@@ -1,0 +1,19 @@
+/* theme-medical.css */
+body.theme-medical {
+    --rs-bg: #f0fdfa; /* Clean sterile light teal/cyan */
+    --rs-surface: #ffffff;
+    --rs-text: #134e4a;
+    --rs-primary: #0d9488;
+    --rs-secondary: #2dd4bf;
+    --rs-border: #ccfbf1;
+}
+@media (prefers-color-scheme: dark) {
+    body.theme-medical {
+        --rs-bg: #042f2e;
+        --rs-surface: #115e59;
+        --rs-text: #ccfbf1;
+        --rs-primary: #2dd4bf;
+        --rs-secondary: #0d9488;
+        --rs-border: #0f766e;
+    }
+}

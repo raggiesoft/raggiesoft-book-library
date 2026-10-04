@@ -1,0 +1,9 @@
+/* theme-evening.css */
+body.theme-evening {
+    --rs-bg: #1e1b4b; /* Deep twilight indigo */
+    --rs-surface: #312e81;
+    --rs-text: #e0e7ff;
+    --rs-primary: #818cf8;
+    --rs-secondary: #a5b4fc;
+    --rs-border: #3730a3;
+}
