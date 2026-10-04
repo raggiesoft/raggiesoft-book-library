@@ -304,21 +304,27 @@ $narrativeTheme = $frontmatter['theme'] ?? null;
                         <div style="display: flex; align-items: center; gap: 1.25rem; padding: 1.25rem;">
                             <img src="<?php echo htmlspecialchars($albumArtUrl); ?>" alt="Album Art" style="width: 80px; height: 80px; border-radius: 6px; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
                             
-                            <div style="flex: 1; overflow: hidden; display: flex; flex-direction: column;">
+                            <div style="flex: 1; overflow: hidden; display: flex; flex-direction: column; min-width: 0;">
                                 <div style="font-size: 0.75rem; opacity: 0.7; text-transform: uppercase; letter-spacing: 1px; line-height: 1; margin-bottom: 0.35rem;">Background Audio</div>
-                                <div style="font-weight: 700; font-size: 1.1rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; line-height: 1.2; margin-bottom: 0.25rem;"><?php echo htmlspecialchars($audioTitleDisplay); ?></div>
-                                <div style="font-size: 0.85rem; opacity: 0.8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 0.75rem;"><?php echo htmlspecialchars($artistDisplay); ?> &bull; <i><?php echo htmlspecialchars($albumDisplay); ?></i></div>
                                 
-                                <div style="display: flex; align-items: center; gap: 0.75rem; width: 100%;">
+                                <div class="reader-audio-scroll-wrap" style="font-weight: 700; font-size: 1.1rem; line-height: 1.2; margin-bottom: 0.25rem;">
+                                    <span class="reader-audio-scroll-text"><?php echo htmlspecialchars($audioTitleDisplay); ?></span>
+                                </div>
+                                
+                                <div class="reader-audio-scroll-wrap" style="font-size: 0.85rem; opacity: 0.8; margin-bottom: 0.75rem;">
+                                    <span class="reader-audio-scroll-text"><?php echo htmlspecialchars($artistDisplay); ?> &bull; <i><?php echo htmlspecialchars($albumDisplay); ?></i></span>
+                                </div>
+                                
+                                <div class="reader-audio-controls-row">
                                     <audio id="narrative-audio-element" src="<?php echo htmlspecialchars($audioUrl); ?>" data-start-time="<?php echo $audioStart; ?>" loop preload="metadata" style="display: none;"></audio>
                                     
                                     <button id="narrative-audio-play-toggle" class="rs-btn" style="border-radius: 50%; width: 36px; height: 36px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid var(--rs-border); background: transparent;" aria-label="Play/Pause" title="Play/Pause">
                                         <i class="ph ph-play" style="font-size: 1.2rem;" id="narrative-audio-play-icon"></i>
                                     </button>
                                     
-                                    <div style="flex: 1; display: flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; opacity: 0.8;">
+                                    <div class="reader-audio-scrubber-container">
                                         <span id="narrative-audio-current">0:00</span>
-                                        <input type="range" id="narrative-audio-scrubber" value="0" min="0" step="1" style="flex: 1; accent-color: var(--rs-primary);">
+                                        <input type="range" id="narrative-audio-scrubber" value="0" min="0" step="1">
                                         <span id="narrative-audio-duration">0:00</span>
                                     </div>
                                     
