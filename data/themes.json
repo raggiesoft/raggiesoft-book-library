@@ -23,6 +23,10 @@
         "name": "Evening",
         "supports_modes": false
     },
+    "fog": {
+        "name": "Karl The Fog",
+        "supports_modes": true
+    },
     "medical": {
         "name": "Medical",
         "supports_modes": true
