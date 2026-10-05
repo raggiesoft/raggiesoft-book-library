@@ -1,6 +1,7 @@
 <?php
-global $katie, $cdnBaseUrl, $seriesSlug;
+global $katie, $cdnBaseUrl, $seriesSlug, $Parsedown;
 $seriesTitle = $katie['series_title'] ?? 'Book Series';
+$seriesDescriptionLong = $katie['series_description_long'] ?? '';
 $seriesDescription = $katie['series_description'] ?? 'No description available.';
 $seriesImage = $katie['series_image'] ?? '';
 $tocUrl = '/' . $seriesSlug . '/toc';
@@ -48,7 +49,15 @@ $tocUrl = '/' . $seriesSlug . '/toc';
         
         <div style="text-align: left;">
             <h2 style="border-bottom: 1px solid var(--rs-border); padding-bottom: 0.5rem; margin-bottom: 1.5rem; color: var(--rs-primary);">About this Series</h2>
-            <p style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2.5rem; opacity: 0.9;"><?php echo nl2br(htmlspecialchars($seriesDescription)); ?></p>
+            <div style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2.5rem; opacity: 0.9;">
+                <?php 
+                if (!empty($seriesDescriptionLong) && isset($Parsedown)) {
+                    echo $Parsedown->text($seriesDescriptionLong);
+                } else {
+                    echo '<p>' . nl2br(htmlspecialchars($seriesDescription)) . '</p>';
+                }
+                ?>
+            </div>
             
             <div>
                 <a href="<?php echo htmlspecialchars($tocUrl); ?>" class="rs-btn rs-btn-primary" style="font-size: 1.1rem; padding: 0.75rem 2rem; display: inline-flex; align-items: center; gap: 0.5rem;">
