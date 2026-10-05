@@ -27,27 +27,69 @@ if (empty($actualFilePath)) {
 
 // 1. Fetch Markdown Content from CDN (or intercept internal paths)
 // $cdnBaseUrl is injected by isabel.php
-if ($actualFilePath === '__TOC__') {
+if ($actualFilePath === '__SERIES_LANDING__') {
+    global $katie;
+    $seriesTitle = $katie['series_title'] ?? 'Book Series';
+    $mdContent = "# " . $seriesTitle . "\n\n";
+    if (!empty($katie['series_description'])) {
+        $mdContent .= $katie['series_description'] . "\n\n";
+    }
+    $mdContent .= "[View the Table of Contents](/raggiesoft-books/books/" . $katie['series_slug'] . "/toc) to begin reading.\n";
+} elseif ($actualFilePath === '__TOC__') {
     global $katie;
     $mdContent = "# Table of Contents\n\n";
     if (!empty($katie['books'])) {
         foreach ($katie['books'] as $book) {
-            $mdContent .= "### " . $book['book_title'] . "\n";
-            if (!empty($book['chapters'])) {
-                foreach ($book['chapters'] as $chap) {
-                    $mdContent .= "#### " . $chap['chap_title'] . "\n";
-                    if (!empty($chap['parts'])) {
-                        foreach ($chap['parts'] as $part) {
-                            $href = $fileToUrl[$part['file_path']] ?? '#';
-                            $mdContent .= "* [" . $part['part_title'] . "](" . $href . ")\n";
-                        }
-                    }
-                    $mdContent .= "\n";
-                }
-            }
+            $bookHref = isset($book['book_url']) ? $book['book_url'] : '#';
+            $mdContent .= "### [" . $book['book_title'] . "](" . $bookHref . ")\n\n";
         }
     } else {
         $mdContent .= "*No content available.*";
+    }
+} elseif (strpos($actualFilePath, '__BOOK_TOC__|') === 0) {
+    global $katie;
+    $parts = explode('|', $actualFilePath);
+    $bIndex = (int)$parts[1];
+    
+    if (isset($katie['books'][$bIndex])) {
+        $book = $katie['books'][$bIndex];
+        $mdContent = "# " . $book['book_title'] . "\n\n";
+        if (!empty($book['chapters'])) {
+            foreach ($book['chapters'] as $chap) {
+                $chapHref = isset($chap['chap_url']) ? $chap['chap_url'] : '#';
+                $mdContent .= "### [" . $chap['chap_title'] . "](" . $chapHref . ")\n\n";
+            }
+        } else {
+            $mdContent .= "*No chapters available in this book.*";
+        }
+        $mdContent .= "\n\n*[&larr; Back to Main Table of Contents](/raggiesoft-books/books/" . $katie['series_slug'] . "/toc)*";
+    } else {
+        $mdContent = "# Error\n\nBook not found.";
+    }
+} elseif (strpos($actualFilePath, '__CHAP_TOC__|') === 0) {
+    global $katie;
+    $parts = explode('|', $actualFilePath);
+    $bIndex = (int)$parts[1];
+    $cIndex = (int)$parts[2];
+    
+    if (isset($katie['books'][$bIndex]['chapters'][$cIndex])) {
+        $book = $katie['books'][$bIndex];
+        $chap = $katie['books'][$bIndex]['chapters'][$cIndex];
+        $mdContent = "# " . $chap['chap_title'] . "\n\n";
+        $mdContent .= "*(from " . $book['book_title'] . ")*\n\n";
+        if (!empty($chap['parts'])) {
+            foreach ($chap['parts'] as $part) {
+                $href = $fileToUrl[$part['file_path']] ?? '#';
+                $mdContent .= "* [" . $part['part_title'] . "](" . $href . ")\n";
+            }
+        } else {
+            $mdContent .= "*No parts available in this chapter.*";
+        }
+        
+        $bookHref = isset($book['book_url']) ? $book['book_url'] : '#';
+        $mdContent .= "\n\n*[&larr; Back to " . $book['book_title'] . "](" . $bookHref . ")*";
+    } else {
+        $mdContent = "# Error\n\nChapter not found.";
     }
 } else {
     $mdUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/' . $actualFilePath;

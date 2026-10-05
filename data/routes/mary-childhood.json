@@ -13,15 +13,28 @@
         "navbarBrandLink": "/raggiesoft-books"
     },
     "/mary-childhood": {
-        "view": "pages/raggiesoft-books/books/series",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Mary Childhood",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "__SERIES_LANDING__"
     },
     "/mary-childhood/toc": {
-        "view": "pages/raggiesoft-books/books/toc",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Table of Contents - Mary Childhood",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/mary-childhood/mary-s-early-years": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Mary's Early Years",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|0"
+    },
+    "/mary-childhood/mary-s-early-years/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|0"
     },
     "/mary-childhood/mary-s-early-years/chapter-1/part-1-high-command": {
         "view": "pages/raggiesoft-books/books/viewer",

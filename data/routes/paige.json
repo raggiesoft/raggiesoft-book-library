@@ -13,15 +13,28 @@
         "navbarBrandLink": "/raggiesoft-books"
     },
     "/paige": {
-        "view": "pages/raggiesoft-books/books/series",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Paige",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "__SERIES_LANDING__"
     },
     "/paige/toc": {
-        "view": "pages/raggiesoft-books/books/toc",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Table of Contents - Paige",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/paige/freshman-year": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Freshman Year",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|0"
+    },
+    "/paige/freshman-year/band-camp": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Band Camp",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|0"
     },
     "/paige/freshman-year/band-camp/part-1-the-downbeat": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -83,6 +96,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p010.md"
     },
+    "/paige/freshman-year/the-fall": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Fall",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|1"
+    },
     "/paige/freshman-year/the-fall/part-1-third-quarter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Third Quarter",
@@ -94,6 +113,12 @@
         "title": "Part 2: The Signal",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p002.md"
+    },
+    "/paige/freshman-year/winter-2000": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Winter 2000",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|2"
     },
     "/paige/freshman-year/winter-2000/part-1-the-visitor": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -119,6 +144,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p004.md"
     },
+    "/paige/freshman-year/the-static": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Static",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|3"
+    },
     "/paige/freshman-year/the-static/part-1-the-first-satellite": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The First Satellite",
@@ -136,6 +167,18 @@
         "title": "Part 3: The Dinner Table",
         "theme": "raggiesoft-books",
         "filePath": "b001/c004/p003.md"
+    },
+    "/paige/the-blueprint": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Blueprint",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|1"
+    },
+    "/paige/the-blueprint/the-cracks": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Cracks",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|0"
     },
     "/paige/the-blueprint/the-cracks/part-1-static": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -179,11 +222,23 @@
         "theme": "raggiesoft-books",
         "filePath": "b002/c001/p007.md"
     },
+    "/paige/the-blueprint/the-severance": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Severance",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|1"
+    },
     "/paige/the-blueprint/the-severance/part-1-the-sofa": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Sofa",
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p001.md"
+    },
+    "/paige/the-blueprint/the-iron-city": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Iron City",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|2"
     },
     "/paige/the-blueprint/the-iron-city/part-1-the-transfer-point": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -214,6 +269,12 @@
         "title": "Part 5: The Configuration",
         "theme": "raggiesoft-books",
         "filePath": "b002/c003/p005.md"
+    },
+    "/paige/the-blueprint/the-machine": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Machine",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|3"
     },
     "/paige/the-blueprint/the-machine/part-1-route-1": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -305,6 +366,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b002/c004/p015.md"
     },
+    "/paige/the-blueprint/the-source-code": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Source Code",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|4"
+    },
     "/paige/the-blueprint/the-source-code/part-1-the-diagnosis": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Diagnosis",
@@ -323,6 +390,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b002/c005/p003.md"
     },
+    "/paige/a-new-beginning": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A New Beginning",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|2"
+    },
+    "/paige/a-new-beginning/the-launch-code": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Launch Code",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|0"
+    },
     "/paige/a-new-beginning/the-launch-code/part-1-the-loop": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Loop",
@@ -340,6 +419,12 @@
         "title": "Part 3: The Base",
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p003.md"
+    },
+    "/paige/a-new-beginning/the-source-code": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Source Code",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|1"
     },
     "/paige/a-new-beginning/the-source-code/part-1-the-manual": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -383,6 +468,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p007.md"
     },
+    "/paige/a-new-beginning/the-syllabus": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Syllabus",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|2"
+    },
     "/paige/a-new-beginning/the-syllabus/part-1-the-loophole": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Loophole",
@@ -425,6 +516,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c003/p007.md"
     },
+    "/paige/a-new-beginning/the-network": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Network",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|3"
+    },
     "/paige/a-new-beginning/the-network/part-1-the-primary-node": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Primary Node",
@@ -442,6 +539,12 @@
         "title": "Part 3: The Maintenance Run",
         "theme": "raggiesoft-books",
         "filePath": "b003/c004/p003.md"
+    },
+    "/paige/a-new-beginning/proper-terminology": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Proper Terminology",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|4"
     },
     "/paige/a-new-beginning/proper-terminology/part-1-ground-rules": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -503,6 +606,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c005/p010.md"
     },
+    "/paige/a-new-beginning/the-admin-console": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Admin Console",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|5"
+    },
     "/paige/a-new-beginning/the-admin-console/part-1-the-cool-down": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Cool Down",
@@ -532,6 +641,12 @@
         "title": "Part 5: The Sandwich Configuration",
         "theme": "raggiesoft-books",
         "filePath": "b003/c006/p005.md"
+    },
+    "/paige/a-new-beginning/autism-diagnosis": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Autism Diagnosis",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|6"
     },
     "/paige/a-new-beginning/autism-diagnosis/part-1-the-debugger": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -581,6 +696,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c007/p008.md"
     },
+    "/paige/a-new-beginning/the-prime-time-block": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Prime Time Block",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|7"
+    },
     "/paige/a-new-beginning/the-prime-time-block/part-1-the-decompression-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Decompression Protocol",
@@ -622,6 +743,12 @@
         "title": "Part 7: Manual Override",
         "theme": "raggiesoft-books",
         "filePath": "b003/c008/p007.md"
+    },
+    "/paige/a-new-beginning/the-anatomy-of-resilience": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Anatomy of Resilience",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|8"
     },
     "/paige/a-new-beginning/the-anatomy-of-resilience/part-1-the-purge": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -689,6 +816,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c009/p011.md"
     },
+    "/paige/the-false-anchor": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The False Anchor",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|3"
+    },
+    "/paige/the-false-anchor/the-new-variable": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The New Variable",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|0"
+    },
     "/paige/the-false-anchor/the-new-variable/part-1-the-remainder": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Remainder",
@@ -700,6 +839,12 @@
         "title": "Part 2: The Static Stack",
         "theme": "raggiesoft-books",
         "filePath": "b004/c001/p002.md"
+    },
+    "/paige/the-false-anchor/the-seed": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Seed",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|1"
     },
     "/paige/the-false-anchor/the-seed/part-1-the-observation": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -724,6 +869,12 @@
         "title": "Part 4: The Syntax Error",
         "theme": "raggiesoft-books",
         "filePath": "b004/c002/p004.md"
+    },
+    "/paige/the-false-anchor/the-orbital-decay": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Orbital Decay",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|2"
     },
     "/paige/the-false-anchor/the-orbital-decay/part-1-the-logic-bomb": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -779,6 +930,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b004/c003/p009.md"
     },
+    "/paige/the-false-anchor/the-rescue": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Rescue",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|3"
+    },
     "/paige/the-false-anchor/the-rescue/part-1-the-advance-team": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Advance Team",
@@ -814,6 +971,12 @@
         "title": "Part 6: The Signal Cut",
         "theme": "raggiesoft-books",
         "filePath": "b004/c004/p006.md"
+    },
+    "/paige/the-false-anchor/the-tourist-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Tourist Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|4"
     },
     "/paige/the-false-anchor/the-tourist-protocol/part-1-fueling-the-expedition": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -880,6 +1043,12 @@
         "title": "Part 11: The Northern Trajectory",
         "theme": "raggiesoft-books",
         "filePath": "b004/c005/p011.md"
+    },
+    "/paige/the-false-anchor/flight-to-tahoma": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Flight to Tahoma",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|5"
     },
     "/paige/the-false-anchor/flight-to-tahoma/part-1-the-bypass": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -964,6 +1133,12 @@
         "title": "Part 14: The Null Hypothesis",
         "theme": "raggiesoft-books",
         "filePath": "b004/c006/p014.md"
+    },
+    "/paige/the-false-anchor/the-flight-home": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Flight Home",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|6"
     },
     "/paige/the-false-anchor/the-flight-home/part-1-the-final-bill": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1061,6 +1236,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b004/c007/p016.md"
     },
+    "/paige/the-false-anchor/the-trojan-horse": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Trojan Horse",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|7"
+    },
     "/paige/the-false-anchor/the-trojan-horse/part-1-the-invalid-variable": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Invalid Variable",
@@ -1085,6 +1266,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b004/c008/p004.md"
     },
+    "/paige/the-false-anchor/the-optimization-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Optimization Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|8"
+    },
     "/paige/the-false-anchor/the-optimization-protocol/part-1-the-transaction": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Transaction",
@@ -1102,6 +1289,12 @@
         "title": "Part 3: The Deed of Trust",
         "theme": "raggiesoft-books",
         "filePath": "b004/c009/p003.md"
+    },
+    "/paige/the-false-anchor/the-satellite-convergence": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Satellite Convergence",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|9"
     },
     "/paige/the-false-anchor/the-satellite-convergence/part-1-the-invasion-force": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1193,6 +1386,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b004/c010/p015.md"
     },
+    "/paige/the-false-anchor/the-big-one-five": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Big One-Five",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|10"
+    },
     "/paige/the-false-anchor/the-big-one-five/part-1-trajectory-calculations": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Trajectory Calculations",
@@ -1253,6 +1452,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b004/c011/p010.md"
     },
+    "/paige/system-integration": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "System Integration",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|4"
+    },
+    "/paige/system-integration/the-transfer-point": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Transfer Point",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|0"
+    },
     "/paige/system-integration/the-transfer-point/part-1-the-pathfinder": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Pathfinder",
@@ -1282,6 +1493,12 @@
         "title": "Part 5: The Migration",
         "theme": "raggiesoft-books",
         "filePath": "b005/c001/p005.md"
+    },
+    "/paige/system-integration/the-physical-layer": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Physical Layer",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|1"
     },
     "/paige/system-integration/the-physical-layer/part-1-the-descent": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1325,6 +1542,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b005/c002/p007.md"
     },
+    "/paige/system-integration/the-satellite-link": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Satellite Link",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|2"
+    },
     "/paige/system-integration/the-satellite-link/part-1-the-radford-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Radford Protocol",
@@ -1361,6 +1584,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b005/c003/p006.md"
     },
+    "/paige/system-integration/the-fishersville-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Fishersville Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|3"
+    },
     "/paige/system-integration/the-fishersville-protocol/part-1-the-last-supper": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Last Supper",
@@ -1378,6 +1607,12 @@
         "title": "Part 3: Suite 200",
         "theme": "raggiesoft-books",
         "filePath": "b005/c004/p003.md"
+    },
+    "/paige/system-integration/the-signal-to-noise-ratio": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Signal-to-Noise Ratio",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|4"
     },
     "/paige/system-integration/the-signal-to-noise-ratio/part-1-the-circuit": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1415,6 +1650,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b005/c005/p006.md"
     },
+    "/paige/system-integration/the-extraction": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Extraction",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|5"
+    },
     "/paige/system-integration/the-extraction/part-1-the-pickup": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Pickup",
@@ -1432,6 +1673,12 @@
         "title": "Part 3: The Reunion",
         "theme": "raggiesoft-books",
         "filePath": "b005/c006/p003.md"
+    },
+    "/paige/system-integration/the-closed-circuit": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Closed Circuit",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|6"
     },
     "/paige/system-integration/the-closed-circuit/part-1-the-intruder": {
         "view": "pages/raggiesoft-books/books/viewer",

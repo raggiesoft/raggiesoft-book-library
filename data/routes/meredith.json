@@ -13,15 +13,28 @@
         "navbarBrandLink": "/raggiesoft-books"
     },
     "/meredith": {
-        "view": "pages/raggiesoft-books/books/series",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Meredith",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "__SERIES_LANDING__"
     },
     "/meredith/toc": {
-        "view": "pages/raggiesoft-books/books/toc",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Table of Contents - Meredith",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/meredith/book-4-the-vanguard": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 4: The Vanguard",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|0"
+    },
+    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The First Drop-Off",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|0"
     },
     "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/part-1-the-garage-barracks": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -112,6 +125,12 @@
         "title": "Part 15: The Vanguard Rests",
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p015.md"
+    },
+    "/meredith/book-4-the-vanguard/chapter-2-the-virginia-beach-perimeter": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Virginia Beach Perimeter",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|1"
     },
     "/meredith/book-4-the-vanguard/chapter-2-the-virginia-beach-perimeter/part-1-morning-in-the-barracks": {
         "view": "pages/raggiesoft-books/books/viewer",

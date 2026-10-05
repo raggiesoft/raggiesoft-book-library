@@ -13,15 +13,28 @@
         "navbarBrandLink": "/raggiesoft-books"
     },
     "/dream-kingdom": {
-        "view": "pages/raggiesoft-books/books/series",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Dream Kingdom",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "__SERIES_LANDING__"
     },
     "/dream-kingdom/toc": {
-        "view": "pages/raggiesoft-books/books/toc",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Table of Contents - Dream Kingdom",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/dream-kingdom/book-1-the-dream-kingdom": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 1: The Dream Kingdom",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|0"
+    },
+    "/dream-kingdom/book-1-the-dream-kingdom/chapter-1-the-analog-jammer-friday-october-30-1992": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Analog Jammer \u2013 Friday, October 30, 1992",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|0"
     },
     "/dream-kingdom/book-1-the-dream-kingdom/chapter-1-the-analog-jammer-friday-october-30-1992/part-1-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -40,6 +53,12 @@
         "title": "Part 3: Untitled Chapter",
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p003.md"
+    },
+    "/dream-kingdom/book-1-the-dream-kingdom/chapter-2-the-ghost-in-the-dark-saturday-october-31-1992": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Ghost in the Dark \u2013 Saturday, October 31, 1992",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|1"
     },
     "/dream-kingdom/book-1-the-dream-kingdom/chapter-2-the-ghost-in-the-dark-saturday-october-31-1992/part-1-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",

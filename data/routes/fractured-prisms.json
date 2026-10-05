@@ -13,14 +13,153 @@
         "navbarBrandLink": "/raggiesoft-books"
     },
     "/fractured-prisms": {
-        "view": "pages/raggiesoft-books/books/series",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Fractured Prisms",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "__SERIES_LANDING__"
     },
     "/fractured-prisms/toc": {
-        "view": "pages/raggiesoft-books/books/toc",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Table of Contents - Fractured Prisms",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/fractured-prisms/book-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|0"
+    },
+    "/fractured-prisms/book-1/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|0"
+    },
+    "/fractured-prisms/book-1/chapter-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|1"
+    },
+    "/fractured-prisms/book-1/chapter-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|2"
+    },
+    "/fractured-prisms/book-1/chapter-4": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|3"
+    },
+    "/fractured-prisms/book-1/chapter-5": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 5",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|4"
+    },
+    "/fractured-prisms/book-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|1"
+    },
+    "/fractured-prisms/book-2/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|0"
+    },
+    "/fractured-prisms/book-2/chapter-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|1"
+    },
+    "/fractured-prisms/book-2/chapter-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|2"
+    },
+    "/fractured-prisms/book-2/chapter-4": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|3"
+    },
+    "/fractured-prisms/book-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 3",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|2"
+    },
+    "/fractured-prisms/book-4": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 4",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|3"
+    },
+    "/fractured-prisms/book-4/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|0"
+    },
+    "/fractured-prisms/book-4/chapter-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|1"
+    },
+    "/fractured-prisms/book-4/chapter-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|2"
+    },
+    "/fractured-prisms/book-5": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 5",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|4"
+    },
+    "/fractured-prisms/book-5/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|0"
+    },
+    "/fractured-prisms/book-5/chapter-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|1"
+    },
+    "/fractured-prisms/book-5/chapter-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|2"
+    },
+    "/fractured-prisms/book-5/chapter-4": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|3"
+    },
+    "/fractured-prisms/book-5/chapter-5": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 5",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|4"
+    },
+    "/fractured-prisms/book-5/chapter-6": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 6",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|5"
     }
 }

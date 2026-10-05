@@ -13,15 +13,28 @@
         "navbarBrandLink": "/raggiesoft-books"
     },
     "/kelly": {
-        "view": "pages/raggiesoft-books/books/series",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Kelly",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "__SERIES_LANDING__"
     },
     "/kelly/toc": {
-        "view": "pages/raggiesoft-books/books/toc",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Table of Contents - Kelly",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/kelly/the-anchor": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Anchor",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|0"
+    },
+    "/kelly/the-anchor/a-fork-in-the-road": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Fork in the Road",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|0"
     },
     "/kelly/the-anchor/a-fork-in-the-road/part-1-the-bulletin-board": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -52,6 +65,12 @@
         "title": "Part 5: Pager Code 005.1 \ud83d\udcdf",
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p005.md"
+    },
+    "/kelly/the-anchor/the-keynote": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Keynote",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|1"
     },
     "/kelly/the-anchor/the-keynote/part-1-peace-treaty-before-sunrise": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -113,6 +132,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p010.md"
     },
+    "/kelly/the-anchor/the-implosion": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Implosion",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|2"
+    },
     "/kelly/the-anchor/the-implosion/part-1-the-last-stand": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Last Stand \ud83d\udeb6\u200d\u2642\ufe0f",
@@ -124,6 +149,12 @@
         "title": "Part 2: The Verdict \u2696\ufe0f",
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p002.md"
+    },
+    "/kelly/the-anchor/closing-the-book": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Closing the Book",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|3"
     },
     "/kelly/the-anchor/closing-the-book/part-1-the-press-conference": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -215,6 +246,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c004/p015.md"
     },
+    "/kelly/the-anchor/welcome-to-quantum": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Welcome to Quantum",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|4"
+    },
     "/kelly/the-anchor/welcome-to-quantum/part-1-your-voices-matter-here": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Your Voices Matter Here \ud83e\udd1d",
@@ -238,6 +275,12 @@
         "title": "Part 4: The First Line of Code \u2328\ufe0f",
         "theme": "raggiesoft-books",
         "filePath": "b001/c005/p004.md"
+    },
+    "/kelly/the-anchor/the-bridge-to-cupertino": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Bridge to Cupertino",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|5"
     },
     "/kelly/the-anchor/the-bridge-to-cupertino/part-1-an-unexpected-invitation": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -305,6 +348,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c006/p011.md"
     },
+    "/kelly/the-anchor/inside-infinite-loop": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Inside Infinite Loop",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|6"
+    },
     "/kelly/the-anchor/inside-infinite-loop/part-1-company-policy": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Company Policy \ud83d\udccb",
@@ -359,6 +408,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c007/p009.md"
     },
+    "/kelly/the-anchor/a-new-reality": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A New Reality",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|7"
+    },
     "/kelly/the-anchor/a-new-reality/part-1-the-right-tool-for-the-job": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Right Tool for the Job \u267f",
@@ -407,6 +462,24 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c008/p008.md"
     },
+    "/kelly/the-bidding-war-as-seen-on-devnet": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Bidding War as seen on DevNet",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|1"
+    },
+    "/kelly/the-bidding-war-as-seen-on-devnet/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|0"
+    },
+    "/kelly/the-bidding-war-as-seen-on-devnet/the-players": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Players",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|1"
+    },
     "/kelly/the-bidding-war-as-seen-on-devnet/the-players/part-1-the-developer-community": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Developer Community",
@@ -419,10 +492,22 @@
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p002.md"
     },
+    "/kelly/the-bidding-war-as-seen-on-devnet/choosing-a-future": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Choosing a Future",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|2"
+    },
     "/kelly/the-bidding-war-as-seen-on-devnet/choosing-a-future/part-1-all-the-offers-on-the-table": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: All the Offers on the Table \ud83d\udcc2",
         "theme": "raggiesoft-books",
         "filePath": "b002/c003/p001.md"
+    },
+    "/kelly/book-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 3",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|2"
     }
 }

@@ -13,16 +13,28 @@
         "navbarBrandLink": "/raggiesoft-books"
     },
     "/luna-leo": {
-        "view": "pages/raggiesoft-books/books/series",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Luna & Leo",
         "theme": "raggiesoft-books",
         "filePath": "index.md"
     },
     "/luna-leo/toc": {
-        "view": "pages/raggiesoft-books/books/toc",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Table of Contents - Luna & Leo",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/luna-leo/early-years": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Early Years",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|0"
+    },
+    "/luna-leo/early-years/birthday-morning-and-the-grandparents-arrival": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Birthday Morning and the Grandparents' Arrival",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|0"
     },
     "/luna-leo/early-years/birthday-morning-and-the-grandparents-arrival/part-1-birthday-morning-and-the-grandparents-arrival": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -66,6 +78,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p007.md"
     },
+    "/luna-leo/elementary-and-middle-school": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Elementary and Middle School",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|1"
+    },
+    "/luna-leo/elementary-and-middle-school/breakthrough-for-leo": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Breakthrough for Leo",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|0"
+    },
     "/luna-leo/elementary-and-middle-school/breakthrough-for-leo/part-1-breakthrough-for-leo": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Breakthrough for Leo",
@@ -78,6 +102,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b002/c001/p002.md"
     },
+    "/luna-leo/elementary-and-middle-school/stella-to-the-sore-rescue": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Stella to the Sore Rescue",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|1"
+    },
     "/luna-leo/elementary-and-middle-school/stella-to-the-sore-rescue/part-1-stella-to-the-sore-rescue": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Stella to the Sore Rescue",
@@ -89,6 +119,18 @@
         "title": "Part 2: Sunday with Stella",
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p002.md"
+    },
+    "/luna-leo/the-equipment-arrivals": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Equipment Arrivals",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|2"
+    },
+    "/luna-leo/the-equipment-arrivals/introduction-and-anticipation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Introduction and Anticipation",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|0"
     },
     "/luna-leo/the-equipment-arrivals/introduction-and-anticipation/part-1-introduction-and-anticipation": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -114,6 +156,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p004.md"
     },
+    "/luna-leo/twins-summer-with-stella": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Twins Summer with Stella",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|3"
+    },
+    "/luna-leo/twins-summer-with-stella/the-demarco-decree": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The DeMarco Decree",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|0"
+    },
     "/luna-leo/twins-summer-with-stella/the-demarco-decree/part-1-the-demarco-decree": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The DeMarco Decree",
@@ -126,11 +180,23 @@
         "theme": "raggiesoft-books",
         "filePath": "b004/c001/p002.md"
     },
+    "/luna-leo/twins-summer-with-stella/the-record-player-discovery": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Record Player Discovery",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|1"
+    },
     "/luna-leo/twins-summer-with-stella/the-record-player-discovery/part-1-the-record-player-discovery": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Record Player Discovery",
         "theme": "raggiesoft-books",
         "filePath": "b004/c002/p001.md"
+    },
+    "/luna-leo/twins-summer-with-stella/the-music-store": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Music Store",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|2"
     },
     "/luna-leo/twins-summer-with-stella/the-music-store/part-1-the-music-store": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -138,11 +204,23 @@
         "theme": "raggiesoft-books",
         "filePath": "b004/c003/p001.md"
     },
+    "/luna-leo/twins-summer-with-stella/the-doorbell-rings": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Doorbell Rings",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|3"
+    },
     "/luna-leo/twins-summer-with-stella/the-doorbell-rings/part-1-the-doorbell-rings": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Doorbell Rings",
         "theme": "raggiesoft-books",
         "filePath": "b004/c004/p001.md"
+    },
+    "/luna-leo/twins-summer-with-stella/legal-issues-settled": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Legal Issues Settled",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|4"
     },
     "/luna-leo/twins-summer-with-stella/legal-issues-settled/part-1-legal-issues-settled": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -150,11 +228,23 @@
         "theme": "raggiesoft-books",
         "filePath": "b004/c005/p001.md"
     },
+    "/luna-leo/twins-summer-with-stella/programming-the-aac": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Programming the AAC",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|5"
+    },
     "/luna-leo/twins-summer-with-stella/programming-the-aac/part-1-programming-the-aac": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Programming the AAC",
         "theme": "raggiesoft-books",
         "filePath": "b004/c006/p001.md"
+    },
+    "/luna-leo/twins-summer-with-stella/weight-of-academic-neglect": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Weight of Academic Neglect",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|6"
     },
     "/luna-leo/twins-summer-with-stella/weight-of-academic-neglect/part-1-weight-of-academic-neglect": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -162,11 +252,23 @@
         "theme": "raggiesoft-books",
         "filePath": "b004/c007/p001.md"
     },
+    "/luna-leo/twins-summer-with-stella/opus-computers-setup": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Opus Computers Setup",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|7"
+    },
     "/luna-leo/twins-summer-with-stella/opus-computers-setup/part-1-opus-computers-setup": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Opus Computers Setup",
         "theme": "raggiesoft-books",
         "filePath": "b004/c008/p001.md"
+    },
+    "/luna-leo/twins-summer-with-stella/rainy-tuesday-evening": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Rainy Tuesday Evening",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|8"
     },
     "/luna-leo/twins-summer-with-stella/rainy-tuesday-evening/part-1-rainy-tuesday-evening": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -174,11 +276,23 @@
         "theme": "raggiesoft-books",
         "filePath": "b004/c009/p001.md"
     },
+    "/luna-leo/twins-summer-with-stella/compublue-keymech": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "COMPUBLUE KeyMech",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|9"
+    },
     "/luna-leo/twins-summer-with-stella/compublue-keymech/part-1-compublue-keymech": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: COMPUBLUE KeyMech",
         "theme": "raggiesoft-books",
         "filePath": "b004/c010/p001.md"
+    },
+    "/luna-leo/twins-summer-with-stella/oregon-trail-preparation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Oregon Trail Preparation",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|10"
     },
     "/luna-leo/twins-summer-with-stella/oregon-trail-preparation/part-1-oregon-trail-preparation": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -186,11 +300,23 @@
         "theme": "raggiesoft-books",
         "filePath": "b004/c011/p001.md"
     },
+    "/luna-leo/twins-summer-with-stella/saturday-morning-research": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Saturday Morning Research",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|11"
+    },
     "/luna-leo/twins-summer-with-stella/saturday-morning-research/part-1-saturday-morning-research": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Saturday Morning Research",
         "theme": "raggiesoft-books",
         "filePath": "b004/c012/p001.md"
+    },
+    "/luna-leo/twins-summer-with-stella/printing-the-reports": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Printing the Reports",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|12"
     },
     "/luna-leo/twins-summer-with-stella/printing-the-reports/part-1-printing-the-reports": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -198,11 +324,23 @@
         "theme": "raggiesoft-books",
         "filePath": "b004/c013/p001.md"
     },
+    "/luna-leo/twins-summer-with-stella/therapy-appointment-drive": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Therapy Appointment Drive",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|13"
+    },
     "/luna-leo/twins-summer-with-stella/therapy-appointment-drive/part-1-therapy-appointment-drive": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Therapy Appointment Drive",
         "theme": "raggiesoft-books",
         "filePath": "b004/c014/p001.md"
+    },
+    "/luna-leo/twins-summer-with-stella/classic-rock-discoveries": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Classic Rock Discoveries",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|14"
     },
     "/luna-leo/twins-summer-with-stella/classic-rock-discoveries/part-1-classic-rock-discoveries": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -210,17 +348,35 @@
         "theme": "raggiesoft-books",
         "filePath": "b004/c015/p001.md"
     },
+    "/luna-leo/twins-summer-with-stella/wherever-you-go": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Wherever You Go",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|15"
+    },
     "/luna-leo/twins-summer-with-stella/wherever-you-go/part-1-wherever-you-go": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Wherever You Go",
         "theme": "raggiesoft-books",
         "filePath": "b004/c016/p001.md"
     },
+    "/luna-leo/twins-summer-with-stella/friday-night-lights": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Friday Night Lights",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|16"
+    },
     "/luna-leo/twins-summer-with-stella/friday-night-lights/part-1-friday-night-lights": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Friday Night Lights",
         "theme": "raggiesoft-books",
         "filePath": "b004/c017/p001.md"
+    },
+    "/luna-leo/twins-summer-with-stella/charter-bus-to-the-mountains": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Charter Bus to the Mountains",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|17"
     },
     "/luna-leo/twins-summer-with-stella/charter-bus-to-the-mountains/part-1-charter-bus-to-the-mountains": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -252,6 +408,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b004/c018/p005.md"
     },
+    "/luna-leo/twins-summer-with-stella/a-form-from-school": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Form from School",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|18"
+    },
     "/luna-leo/twins-summer-with-stella/a-form-from-school/part-1-a-form-from-school": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Form from School",
@@ -275,6 +437,18 @@
         "title": "Part 4: Kevin is Snubbed",
         "theme": "raggiesoft-books",
         "filePath": "b004/c019/p004.md"
+    },
+    "/luna-leo/sophomore-year": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Sophomore Year",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|4"
+    },
+    "/luna-leo/sophomore-year/the-porter-morning-machine": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Porter Morning Machine",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|0"
     },
     "/luna-leo/sophomore-year/the-porter-morning-machine/part-1-the-porter-morning-machine": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -324,6 +498,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b005/c001/p008.md"
     },
+    "/luna-leo/sophomore-year/online-reconnaissance": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Online Reconnaissance",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|1"
+    },
     "/luna-leo/sophomore-year/online-reconnaissance/part-1-online-reconnaissance": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Online Reconnaissance",
@@ -353,6 +533,12 @@
         "title": "Part 5: Built Holt Tough",
         "theme": "raggiesoft-books",
         "filePath": "b005/c002/p005.md"
+    },
+    "/luna-leo/sophomore-year/showing-off-the-new-car": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Showing Off the New Car",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|2"
     },
     "/luna-leo/sophomore-year/showing-off-the-new-car/part-1-showing-off-the-new-car": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -384,6 +570,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b005/c003/p005.md"
     },
+    "/luna-leo/sophomore-year/difficult-news": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Difficult News",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|3"
+    },
     "/luna-leo/sophomore-year/difficult-news/part-1-difficult-news": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Difficult News",
@@ -395,6 +587,12 @@
         "title": "Part 2: The Final Phone Call",
         "theme": "raggiesoft-books",
         "filePath": "b005/c004/p002.md"
+    },
+    "/luna-leo/sophomore-year/turnpike-wonders": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Turnpike Wonders",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|4"
     },
     "/luna-leo/sophomore-year/turnpike-wonders/part-1-turnpike-wonders": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -432,6 +630,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b005/c005/p006.md"
     },
+    "/luna-leo/sophomore-year/programming-the-aac": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Programming the AAC",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|5"
+    },
     "/luna-leo/sophomore-year/programming-the-aac/part-1-coastal-wonders-marine-center": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Coastal Wonders Marine Center",
@@ -462,6 +666,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b005/c006/p005.md"
     },
+    "/luna-leo/junior-year": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Junior Year",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|5"
+    },
+    "/luna-leo/junior-year/a-rainy-saturday-session": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Rainy Saturday Session",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|0"
+    },
     "/luna-leo/junior-year/a-rainy-saturday-session/part-1-a-rainy-saturday-session": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Rainy Saturday Session",
@@ -479,6 +695,12 @@
         "title": "Part 3: The Signal",
         "theme": "raggiesoft-books",
         "filePath": "b006/c001/p003.md"
+    },
+    "/luna-leo/junior-year/the-rental-agreement": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Rental Agreement",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|1"
     },
     "/luna-leo/junior-year/the-rental-agreement/part-1-the-rental-agreement": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -510,6 +732,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b006/c002/p005.md"
     },
+    "/luna-leo/senior-year-and-the-new-beginning": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Senior Year and The New Beginning",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|6"
+    },
+    "/luna-leo/senior-year-and-the-new-beginning/an-unseen-ally": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "An Unseen Ally",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|0"
+    },
     "/luna-leo/senior-year-and-the-new-beginning/an-unseen-ally/part-1-an-unseen-ally": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: An Unseen Ally",
@@ -533,6 +767,12 @@
         "title": "Part 4: Cafeteria Connection, Contact Exchange, and a Vile Misinterpretation",
         "theme": "raggiesoft-books",
         "filePath": "b007/c001/p004.md"
+    },
+    "/luna-leo/senior-year-and-the-new-beginning/an-afternoon-visit-and-gathering-clouds": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "An Afternoon Visit and Gathering Clouds",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|1"
     },
     "/luna-leo/senior-year-and-the-new-beginning/an-afternoon-visit-and-gathering-clouds/part-1-an-afternoon-visit-and-gathering-clouds": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -582,17 +822,35 @@
         "theme": "raggiesoft-books",
         "filePath": "b007/c002/p008.md"
     },
+    "/luna-leo/senior-year-and-the-new-beginning/a-test-of-trust": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Test of Trust",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|2"
+    },
     "/luna-leo/senior-year-and-the-new-beginning/a-test-of-trust/part-1-a-test-of-trust": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Test of Trust",
         "theme": "raggiesoft-books",
         "filePath": "b007/c003/p001.md"
     },
+    "/luna-leo/senior-year-and-the-new-beginning/the-guardian-s-blessing": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Guardian's Blessing",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|3"
+    },
     "/luna-leo/senior-year-and-the-new-beginning/the-guardian-s-blessing/part-1-the-guardian-s-blessing": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Guardian's Blessing",
         "theme": "raggiesoft-books",
         "filePath": "b007/c004/p001.md"
+    },
+    "/luna-leo/senior-year-and-the-new-beginning/a-quiet-evening-promised": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Quiet Evening Promised",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|4"
     },
     "/luna-leo/senior-year-and-the-new-beginning/a-quiet-evening-promised/part-1-calculus-tutoring": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -623,6 +881,12 @@
         "title": "Part 5: Saturday Matinee and a Souring Mood",
         "theme": "raggiesoft-books",
         "filePath": "b007/c005/p005.md"
+    },
+    "/luna-leo/senior-year-and-the-new-beginning/calculus-tutoring": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Calculus Tutoring",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|5"
     },
     "/luna-leo/senior-year-and-the-new-beginning/calculus-tutoring/part-1-a-quiet-evening-promised": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -666,11 +930,29 @@
         "theme": "raggiesoft-books",
         "filePath": "b007/c006/p007.md"
     },
+    "/luna-leo/senior-year-and-the-new-beginning/chapter-7": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 7",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|6"
+    },
     "/luna-leo/senior-year-and-the-new-beginning/chapter-7/part-1-happy-new-year": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Happy New Year",
         "theme": "raggiesoft-books",
         "filePath": "b007/c007/p001.md"
+    },
+    "/luna-leo/the-great-north-american-excursion-eastbound": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Great North American Excursion: Eastbound",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|7"
+    },
+    "/luna-leo/the-great-north-american-excursion-eastbound/all-aboard": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "All Aboard",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|0"
     },
     "/luna-leo/the-great-north-american-excursion-eastbound/all-aboard/part-1-all-aboard": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -738,6 +1020,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b008/c001/p011.md"
     },
+    "/luna-leo/the-great-north-american-excursion-eastbound/museum-hopping": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Museum Hopping",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|1"
+    },
     "/luna-leo/the-great-north-american-excursion-eastbound/museum-hopping/part-1-an-afternoon-among-the-animals": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: An Afternoon Among the Animals",
@@ -791,6 +1079,12 @@
         "title": "Part 9: The Fortress, Reassembled",
         "theme": "raggiesoft-books",
         "filePath": "b008/c002/p009.md"
+    },
+    "/luna-leo/the-great-north-american-excursion-eastbound/the-practice-mission": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Practice Mission",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|2"
     },
     "/luna-leo/the-great-north-american-excursion-eastbound/the-practice-mission/part-1-museum-hopping": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -846,6 +1140,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b008/c003/p009.md"
     },
+    "/luna-leo/the-great-north-american-excursion-eastbound/a-layover-in-philly": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Layover in Philly",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|3"
+    },
     "/luna-leo/the-great-north-american-excursion-eastbound/a-layover-in-philly/part-1-the-practice-mission": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Practice Mission",
@@ -893,6 +1193,12 @@
         "title": "Part 8: A Sanctuary of Calm",
         "theme": "raggiesoft-books",
         "filePath": "b008/c004/p008.md"
+    },
+    "/luna-leo/the-great-north-american-excursion-eastbound/the-journey-west": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Journey West",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|4"
     },
     "/luna-leo/the-great-north-american-excursion-eastbound/the-journey-west/part-1-the-journey-continues": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -942,6 +1248,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b008/c005/p008.md"
     },
+    "/luna-leo/the-great-north-american-excursion-eastbound/the-shadow-on-the-platform": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Shadow on the Platform",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|5"
+    },
     "/luna-leo/the-great-north-american-excursion-eastbound/the-shadow-on-the-platform/part-1-a-desperate-search": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Desperate Search",
@@ -953,6 +1265,12 @@
         "title": "Part 2: A Day in the Steel City",
         "theme": "raggiesoft-books",
         "filePath": "b008/c006/p002.md"
+    },
+    "/luna-leo/the-great-north-american-excursion-eastbound/the-steel-city": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Steel City",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|6"
     },
     "/luna-leo/the-great-north-american-excursion-eastbound/the-steel-city/part-1-the-colors-of-the-steel-city": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -971,6 +1289,18 @@
         "title": "Part 3: A Sanctuary in the Steel City",
         "theme": "raggiesoft-books",
         "filePath": "b008/c007/p003.md"
+    },
+    "/luna-leo/the-great-north-american-excursion-heartland-to-the-peaks": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Great North American Excursion: Heartland to the Peaks",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|8"
+    },
+    "/luna-leo/the-great-north-american-excursion-heartland-to-the-peaks/the-windy-city": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Windy City",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|8|0"
     },
     "/luna-leo/the-great-north-american-excursion-heartland-to-the-peaks/the-windy-city/part-1-good-morning-chicago": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1020,6 +1350,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b009/c008/p008.md"
     },
+    "/luna-leo/the-great-north-american-excursion-heartland-to-the-peaks/the-heartland": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Heartland",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|8|1"
+    },
     "/luna-leo/the-great-north-american-excursion-heartland-to-the-peaks/the-heartland/part-1-the-brat-diet": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The BRAT Diet",
@@ -1049,6 +1385,12 @@
         "title": "Part 5: Crossing the Plains",
         "theme": "raggiesoft-books",
         "filePath": "b009/c009/p005.md"
+    },
+    "/luna-leo/the-great-north-american-excursion-heartland-to-the-peaks/the-mile-high-city": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Mile High City",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|8|2"
     },
     "/luna-leo/the-great-north-american-excursion-heartland-to-the-peaks/the-mile-high-city/part-1-the-mile-high-city": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1080,6 +1422,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b009/c010/p005.md"
     },
+    "/luna-leo/the-great-north-american-excursion-heartland-to-the-peaks/the-botanic-gardens": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Botanic Gardens",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|8|3"
+    },
     "/luna-leo/the-great-north-american-excursion-heartland-to-the-peaks/the-botanic-gardens/part-1-the-centennial-botanic-gardens": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Centennial Botanic Gardens",
@@ -1097,6 +1445,12 @@
         "title": "Part 3: One More Night",
         "theme": "raggiesoft-books",
         "filePath": "b009/c011/p003.md"
+    },
+    "/luna-leo/the-great-north-american-excursion-heartland-to-the-peaks/the-moffat-tunnel": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Moffat Tunnel",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|8|4"
     },
     "/luna-leo/the-great-north-american-excursion-heartland-to-the-peaks/the-moffat-tunnel/part-1-night-terrors": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1140,6 +1494,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b009/c012/p007.md"
     },
+    "/luna-leo/the-great-north-american-excursion-heartland-to-the-peaks/the-salt-lake-stop": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Salt Lake Stop",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|8|5"
+    },
     "/luna-leo/the-great-north-american-excursion-heartland-to-the-peaks/the-salt-lake-stop/part-1-the-salt-lake-stop": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Salt Lake Stop",
@@ -1169,6 +1529,18 @@
         "title": "Part 5: The Sovereign Regency San Francisco",
         "theme": "raggiesoft-books",
         "filePath": "b009/c013/p005.md"
+    },
+    "/luna-leo/the-great-north-american-excursion-the-golden-state": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Great North American Excursion: The Golden State",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|9"
+    },
+    "/luna-leo/the-great-north-american-excursion-the-golden-state/the-city-by-the-bay": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The City by the Bay",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|0"
     },
     "/luna-leo/the-great-north-american-excursion-the-golden-state/the-city-by-the-bay/part-1-the-historic-f-line": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1224,6 +1596,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b010/c014/p009.md"
     },
+    "/luna-leo/the-great-north-american-excursion-the-golden-state/the-sovereign-regency": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Sovereign Regency",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|1"
+    },
     "/luna-leo/the-great-north-american-excursion-the-golden-state/the-sovereign-regency/part-1-the-atrium": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Atrium",
@@ -1260,6 +1638,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b010/c015/p007.md"
     },
+    "/luna-leo/the-great-north-american-excursion-the-golden-state/karl-the-fog": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Karl The Fog",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|2"
+    },
     "/luna-leo/the-great-north-american-excursion-the-golden-state/karl-the-fog/part-1-the-golden-gate": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Golden Gate",
@@ -1289,6 +1673,12 @@
         "title": "Part 5: The Premonition",
         "theme": "raggiesoft-books",
         "filePath": "b010/c016/p005.md"
+    },
+    "/luna-leo/the-great-north-american-excursion-the-golden-state/the-sub-basement": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Sub-Basement",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|3"
     },
     "/luna-leo/the-great-north-american-excursion-the-golden-state/the-sub-basement/part-1-the-lingering-shadows": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1332,6 +1722,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b010/c017/p007.md"
     },
+    "/luna-leo/the-great-north-american-excursion-the-golden-state/the-southbound-platform": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Southbound Platform",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|4"
+    },
     "/luna-leo/the-great-north-american-excursion-the-golden-state/the-southbound-platform/part-1-the-southbound-platform": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Southbound Platform",
@@ -1367,6 +1763,12 @@
         "title": "Part 6: The Voyage Inn",
         "theme": "raggiesoft-books",
         "filePath": "b010/c018/p006.md"
+    },
+    "/luna-leo/the-great-north-american-excursion-the-golden-state/global-studios": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Global Studios",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|5"
     },
     "/luna-leo/the-great-north-american-excursion-the-golden-state/global-studios/part-1-global-city": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1409,6 +1811,12 @@
         "title": "Part 7: The Shipping Box",
         "theme": "raggiesoft-books",
         "filePath": "b010/c019/p007.md"
+    },
+    "/luna-leo/the-great-north-american-excursion-the-golden-state/the-enchanted-resort": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Enchanted Resort",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|6"
     },
     "/luna-leo/the-great-north-american-excursion-the-golden-state/the-enchanted-resort/part-1-the-orange-county-commute": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1458,11 +1866,29 @@
         "theme": "raggiesoft-books",
         "filePath": "b010/c020/p008.md"
     },
+    "/luna-leo/the-great-north-american-excursion-the-golden-state/hollywood-forever": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Hollywood Forever",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|7"
+    },
     "/luna-leo/the-great-north-american-excursion-the-golden-state/hollywood-forever/part-1-fellowship-with-all-life": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Fellowship with All Life",
         "theme": "raggiesoft-books",
         "filePath": "b010/c021/p001.md"
+    },
+    "/luna-leo/the-great-north-american-excursion-emerald-endings": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Great North American Excursion: Emerald Endings",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|10"
+    },
+    "/luna-leo/the-great-north-american-excursion-emerald-endings/chapter-98": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 98",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|10|0"
     },
     "/luna-leo/the-great-north-american-excursion-emerald-endings/chapter-98/part-1-the-shattering": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1529,6 +1955,12 @@
         "title": "Part 11: Evening Rituals and Secure Sleep",
         "theme": "raggiesoft-books",
         "filePath": "b011/c098/p011.md"
+    },
+    "/luna-leo/the-great-north-american-excursion-emerald-endings/chapter-99": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 99",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|10|1"
     },
     "/luna-leo/the-great-north-american-excursion-emerald-endings/chapter-99/part-1-the-shadow-on-the-platform": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1620,6 +2052,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b011/c099/p015.md"
     },
+    "/luna-leo/the-delores-nightmare": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Delores Nightmare",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|11"
+    },
+    "/luna-leo/the-delores-nightmare/a-grieving-start": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Grieving Start",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|11|0"
+    },
     "/luna-leo/the-delores-nightmare/a-grieving-start/part-1-a-grieving-start": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Grieving Start",
@@ -1680,6 +2124,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b012/c001/p010.md"
     },
+    "/luna-leo/the-delores-nightmare/the-tutor": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Tutor",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|11|1"
+    },
     "/luna-leo/the-delores-nightmare/the-tutor/part-1-the-tutor": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Tutor",
@@ -1721,6 +2171,12 @@
         "title": "Part 7: A Fragile Normalcy",
         "theme": "raggiesoft-books",
         "filePath": "b012/c002/p007.md"
+    },
+    "/luna-leo/the-delores-nightmare/the-hijacked-plan": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Hijacked Plan",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|11|2"
     },
     "/luna-leo/the-delores-nightmare/the-hijacked-plan/part-1-the-hijacked-plan": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1781,6 +2237,12 @@
         "title": "Part 10: Tuesday Morning Departure",
         "theme": "raggiesoft-books",
         "filePath": "b012/c003/p010.md"
+    },
+    "/luna-leo/the-delores-nightmare/the-trip-proposal": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Trip Proposal",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|11|3"
     },
     "/luna-leo/the-delores-nightmare/the-trip-proposal/part-1-the-trip-proposal": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1853,6 +2315,12 @@
         "title": "Part 12: The Breaking Point",
         "theme": "raggiesoft-books",
         "filePath": "b012/c004/p012.md"
+    },
+    "/luna-leo/the-delores-nightmare/escape-through-the-rain": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Escape Through the Rain",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|11|4"
     },
     "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-1-escape-through-the-rain": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1986,6 +2454,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b012/c005/p022.md"
     },
+    "/luna-leo/safe-harbor-stark-reality": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Safe Harbor, Stark Reality",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|12"
+    },
+    "/luna-leo/safe-harbor-stark-reality/the-first-morning": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The First Morning",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|12|0"
+    },
     "/luna-leo/safe-harbor-stark-reality/the-first-morning/part-1-the-first-morning": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The First Morning",
@@ -2052,6 +2532,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b013/c003/p011.md"
     },
+    "/luna-leo/safe-harbor-stark-reality/assembling-the-fortress": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Assembling the Fortress",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|12|1"
+    },
     "/luna-leo/safe-harbor-stark-reality/assembling-the-fortress/part-1-assembling-the-fortress": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Assembling the Fortress",
@@ -2075,6 +2561,12 @@
         "title": "Part 4: Ordering a New Voice",
         "theme": "raggiesoft-books",
         "filePath": "b013/c004/p004.md"
+    },
+    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A New Language of Home",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|12|2"
     },
     "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/part-1-a-new-language-of-home": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2202,6 +2694,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b013/c005/p021.md"
     },
+    "/luna-leo/safe-harbor-stark-reality/the-morning-after": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Morning After",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|12|3"
+    },
     "/luna-leo/safe-harbor-stark-reality/the-morning-after/part-1-the-morning-after": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Morning After",
@@ -2250,6 +2748,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b013/c006/p008.md"
     },
+    "/luna-leo/safe-harbor-stark-reality/a-day-of-quiet": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Day of Quiet",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|12|4"
+    },
     "/luna-leo/safe-harbor-stark-reality/a-day-of-quiet/part-1-a-day-of-quiet": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Day of Quiet",
@@ -2286,11 +2790,29 @@
         "theme": "raggiesoft-books",
         "filePath": "b013/c007/p006.md"
     },
+    "/luna-leo/safe-harbor-stark-reality/the-day-in-court": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Day in Court",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|12|5"
+    },
     "/luna-leo/safe-harbor-stark-reality/the-day-in-court/part-1-the-day-in-court": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Day in Court",
         "theme": "raggiesoft-books",
         "filePath": "b013/c008/p001.md"
+    },
+    "/luna-leo/the-trial-and-the-toast": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Trial and The Toast",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|13"
+    },
+    "/luna-leo/the-trial-and-the-toast/the-judge-s-order": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Judge's Order",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|13|0"
     },
     "/luna-leo/the-trial-and-the-toast/the-judge-s-order/part-1-the-judge-s-order": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2327,6 +2849,12 @@
         "title": "Part 6: An Impossible Thought",
         "theme": "raggiesoft-books",
         "filePath": "b014/c001/p006.md"
+    },
+    "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Test and a Toast",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|13|1"
     },
     "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/part-1-a-test-and-a-toast": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2400,6 +2928,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b014/c002/p012.md"
     },
+    "/luna-leo/the-iron-point-transfer": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Iron Point Transfer",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|14"
+    },
+    "/luna-leo/the-iron-point-transfer/the-weapon": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Weapon",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|14|0"
+    },
     "/luna-leo/the-iron-point-transfer/the-weapon/part-1-the-weapon": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Weapon",
@@ -2441,6 +2981,12 @@
         "title": "Part 7: The Long Twilight",
         "theme": "raggiesoft-books",
         "filePath": "b015/c001/p007.md"
+    },
+    "/luna-leo/the-iron-point-transfer/the-iron-link": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Iron Link",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|14|1"
     },
     "/luna-leo/the-iron-point-transfer/the-iron-link/part-1-the-iron-link": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2520,6 +3066,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b015/c002/p013.md"
     },
+    "/luna-leo/the-iron-point-transfer/the-orange-army": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Orange Army",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|14|2"
+    },
     "/luna-leo/the-iron-point-transfer/the-orange-army/part-1-the-orange-army": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Orange Army",
@@ -2592,6 +3144,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b015/c003/p012.md"
     },
+    "/luna-leo/the-iron-point-transfer/the-transfer-of-power": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Transfer of Power",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|14|3"
+    },
     "/luna-leo/the-iron-point-transfer/the-transfer-of-power/part-1-the-transfer-of-power": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Transfer of Power",
@@ -2627,6 +3185,12 @@
         "title": "Part 6: The ARTS-Box",
         "theme": "raggiesoft-books",
         "filePath": "b015/c004/p006.md"
+    },
+    "/luna-leo/the-iron-point-transfer/the-landing": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Landing",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|14|4"
     },
     "/luna-leo/the-iron-point-transfer/the-landing/part-1-the-landing": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2682,6 +3246,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b015/c005/p009.md"
     },
+    "/luna-leo/the-iron-point-transfer/the-ticket-kiosk": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Ticket Kiosk",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|14|5"
+    },
     "/luna-leo/the-iron-point-transfer/the-ticket-kiosk/part-1-the-ticket-kiosk": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Ticket Kiosk",
@@ -2729,6 +3299,12 @@
         "title": "Part 8: The Return of the Fleet",
         "theme": "raggiesoft-books",
         "filePath": "b015/c006/p008.md"
+    },
+    "/luna-leo/the-iron-point-transfer/the-official-stamp": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Official Stamp",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|14|6"
     },
     "/luna-leo/the-iron-point-transfer/the-official-stamp/part-1-the-official-stamp": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2778,6 +3354,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b015/c007/p008.md"
     },
+    "/luna-leo/the-iron-point-transfer/the-ferry-and-the-fortress": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Ferry and the Fortress",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|14|7"
+    },
     "/luna-leo/the-iron-point-transfer/the-ferry-and-the-fortress/part-1-the-ferry-and-the-fortress": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Ferry and the Fortress",
@@ -2813,6 +3395,18 @@
         "title": "Part 6: The Night Watch",
         "theme": "raggiesoft-books",
         "filePath": "b015/c008/p006.md"
+    },
+    "/luna-leo/finding-a-new-house": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Finding a New House",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|15"
+    },
+    "/luna-leo/finding-a-new-house/the-05-30-alarm": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The 05:30 Alarm",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|15|0"
     },
     "/luna-leo/finding-a-new-house/the-05-30-alarm/part-1-the-05-30-alarm": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2879,6 +3473,12 @@
         "title": "Part 11: The Glass Wall",
         "theme": "raggiesoft-books",
         "filePath": "b016/c001/p011.md"
+    },
+    "/luna-leo/finding-a-new-house/the-green-room": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Green Room",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|15|1"
     },
     "/luna-leo/finding-a-new-house/the-green-room/part-1-the-green-room": {
         "view": "pages/raggiesoft-books/books/viewer",

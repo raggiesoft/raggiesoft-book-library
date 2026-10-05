@@ -13,21 +13,40 @@
         "navbarBrandLink": "/raggiesoft-books"
     },
     "/rachel": {
-        "view": "pages/raggiesoft-books/books/series",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Rachel",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "__SERIES_LANDING__"
     },
     "/rachel/toc": {
-        "view": "pages/raggiesoft-books/books/toc",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Table of Contents - Rachel",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/rachel/book-1-the-delaney-street-years": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 1: The Delaney Street Years",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|0"
+    },
+    "/rachel/book-1-the-delaney-street-years/chapter-1-the-sabertooth-kitty": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Sabertooth Kitty",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|0"
     },
     "/rachel/book-1-the-delaney-street-years/chapter-1-the-sabertooth-kitty/part-1-the-sensory-avalanche": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Sensory Avalanche",
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p001.md"
+    },
+    "/rachel/book-1-the-delaney-street-years/chapter-2-the-lower-bunk": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Lower Bunk",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|1"
     },
     "/rachel/book-1-the-delaney-street-years/chapter-2-the-lower-bunk/part-1-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -40,6 +59,12 @@
         "title": "Part 2: The New Arrangement",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p002.md"
+    },
+    "/rachel/book-1-the-delaney-street-years/chapter-3-the-morning-after": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The Morning After",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|2"
     },
     "/rachel/book-1-the-delaney-street-years/chapter-3-the-morning-after/part-1-the-discovery": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -89,6 +114,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p008.md"
     },
+    "/rachel/book-2-the-saltwater-summer": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 2: The Saltwater Summer",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|1"
+    },
+    "/rachel/book-2-the-saltwater-summer/chapter-1-the-sanctuary-friday-august-11th-1995": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Sanctuary \u2013 Friday, August 11th, 1995",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|0"
+    },
     "/rachel/book-2-the-saltwater-summer/chapter-1-the-sanctuary-friday-august-11th-1995/part-1-the-safe-harbor": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Safe Harbor",
@@ -131,6 +168,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b002/c001/p007.md"
     },
+    "/rachel/book-2-the-saltwater-summer/chapter-2-the-catalyst-saturday-august-12th-1995": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Catalyst \u2013 Saturday, August 12th, 1995",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|1"
+    },
     "/rachel/book-2-the-saltwater-summer/chapter-2-the-catalyst-saturday-august-12th-1995/part-1-the-inventory": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Inventory",
@@ -160,6 +203,12 @@
         "title": "Part 5: The Genesis of Hatred",
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p005.md"
+    },
+    "/rachel/book-2-the-saltwater-summer/chapter-3-the-enforcer": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The Enforcer",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|2"
     },
     "/rachel/book-2-the-saltwater-summer/chapter-3-the-enforcer/part-1-the-mirrored-room": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -227,6 +276,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b002/c003/p011.md"
     },
+    "/rachel/book-2-the-saltwater-summer/chapter-4-the-latchkey-solstice": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4: The Latchkey Solstice",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|3"
+    },
     "/rachel/book-2-the-saltwater-summer/chapter-4-the-latchkey-solstice/part-1-the-latchkey-captain": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Latchkey Captain",
@@ -268,6 +323,12 @@
         "title": "Part 7: Lights Out",
         "theme": "raggiesoft-books",
         "filePath": "b002/c004/p007.md"
+    },
+    "/rachel/book-2-the-saltwater-summer/chapter-5-the-thursday-deployment-thursday-august-17-1995": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 5: The Thursday Deployment \u2013 Thursday, August 17, 1995",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|4"
     },
     "/rachel/book-2-the-saltwater-summer/chapter-5-the-thursday-deployment-thursday-august-17-1995/part-1-breaking-camp": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -340,6 +401,12 @@
         "title": "Part 12: The Fracture",
         "theme": "raggiesoft-books",
         "filePath": "b002/c005/p012.md"
+    },
+    "/rachel/book-2-the-saltwater-summer/chapter-6-the-shattered-illusion": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 6: The Shattered Illusion",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|5"
     },
     "/rachel/book-2-the-saltwater-summer/chapter-6-the-shattered-illusion/part-1-the-physical-proof": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -419,6 +486,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b002/c006/p013.md"
     },
+    "/rachel/book-2-the-saltwater-summer/chapter-7-the-long-road": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 7: The Long Road",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|6"
+    },
     "/rachel/book-2-the-saltwater-summer/chapter-7-the-long-road/part-1-kehr-s-sign": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Kehr\u2019s Sign",
@@ -454,6 +527,12 @@
         "title": "Part 6: The Night Watch",
         "theme": "raggiesoft-books",
         "filePath": "b002/c007/p006.md"
+    },
+    "/rachel/book-2-the-saltwater-summer/chapter-8-the-warpath": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 8: The Warpath",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|7"
     },
     "/rachel/book-2-the-saltwater-summer/chapter-8-the-warpath/part-1-bear-and-bug": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -496,6 +575,18 @@
         "title": "Part 7: The Night Watch",
         "theme": "raggiesoft-books",
         "filePath": "b002/c008/p007.md"
+    },
+    "/rachel/book-3-base-camp": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 3: Base Camp",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|2"
+    },
+    "/rachel/book-3-base-camp/chapter-1-the-monday-war-monday-august-21st-1995": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Monday War \u2013 Monday, August 21st, 1995",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|0"
     },
     "/rachel/book-3-base-camp/chapter-1-the-monday-war-monday-august-21st-1995/part-1-the-weight-of-september": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -551,6 +642,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p009.md"
     },
+    "/rachel/book-3-base-camp/chapter-2-the-marathon-tuesday-august-22-1995": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Marathon \u2013 Tuesday, August 22, 1995",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|1"
+    },
     "/rachel/book-3-base-camp/chapter-2-the-marathon-tuesday-august-22-1995/part-1-the-transfer-of-trust": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Transfer of Trust",
@@ -587,6 +684,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p006.md"
     },
+    "/rachel/book-3-base-camp/chapter-3-the-birthday-sunday-august-27-1995": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The Birthday \u2013 Sunday, August 27, 1995",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|2"
+    },
     "/rachel/book-3-base-camp/chapter-3-the-birthday-sunday-august-27-1995/part-1-the-sunday-shift": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Sunday Shift",
@@ -616,6 +719,12 @@
         "title": "Part 5: The Flat Relief",
         "theme": "raggiesoft-books",
         "filePath": "b003/c003/p005.md"
+    },
+    "/rachel/book-3-base-camp/chapter-4-the-homebound-tutor-tuesday-september-5-1995": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4: The Homebound Tutor \u2013 Tuesday, September 5, 1995",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|3"
     },
     "/rachel/book-3-base-camp/chapter-4-the-homebound-tutor-tuesday-september-5-1995/part-1-the-first-bell": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -665,6 +774,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c004/p008.md"
     },
+    "/rachel/book-3-base-camp/chapter-5-the-chimney-sweep": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 5: The Chimney Sweep",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|4"
+    },
     "/rachel/book-3-base-camp/chapter-5-the-chimney-sweep/part-1-the-autumn-shift": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Autumn Shift",
@@ -688,6 +803,12 @@
         "title": "Part 4: Fortifying the Perimeter",
         "theme": "raggiesoft-books",
         "filePath": "b003/c005/p004.md"
+    },
+    "/rachel/book-3-base-camp/chapter-6-the-foreclosure": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 6: The Foreclosure",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|5"
     },
     "/rachel/book-3-base-camp/chapter-6-the-foreclosure/part-1-the-wednesday-rhythm": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -713,6 +834,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c006/p004.md"
     },
+    "/rachel/book-3-base-camp/chapter-7-jessica-s-15th-birthday": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 7: Jessica\u2019s 15th Birthday",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|6"
+    },
     "/rachel/book-3-base-camp/chapter-7-jessica-s-15th-birthday/part-1-a-full-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Full Perimeter",
@@ -730,6 +857,12 @@
         "title": "Part 3: The Phantom Anchor",
         "theme": "raggiesoft-books",
         "filePath": "b003/c007/p003.md"
+    },
+    "/rachel/book-3-base-camp/chapter-8-the-consecration-friday-october-20th-1995": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 8: The Consecration \u2013 Friday, October 20th, 1995",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|7"
     },
     "/rachel/book-3-base-camp/chapter-8-the-consecration-friday-october-20th-1995/part-1-the-midnight-blue-shield": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -761,6 +894,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c008/p005.md"
     },
+    "/rachel/book-4-middle-school": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 4: Middle School",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|3"
+    },
+    "/rachel/book-4-middle-school/chapter-1-the-spring-sound-showcase-friday-may-14-1999": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Spring Sound Showcase \u2013 Friday, May 14, 1999",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|0"
+    },
     "/rachel/book-4-middle-school/chapter-1-the-spring-sound-showcase-friday-may-14-1999/part-1-the-friday-commute": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Friday Commute",
@@ -778,6 +923,12 @@
         "title": "Part 3: Deploying Base Camp",
         "theme": "raggiesoft-books",
         "filePath": "b004/c001/p003.md"
+    },
+    "/rachel/book-4-middle-school/chapter-2-the-old-world-saturday-may-15-1999": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Old World \u2013 Saturday, May 15, 1999",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|1"
     },
     "/rachel/book-4-middle-school/chapter-2-the-old-world-saturday-may-15-1999/part-1-the-departure-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -893,11 +1044,29 @@
         "theme": "raggiesoft-books",
         "filePath": "b004/c002/p019.md"
     },
+    "/rachel/book-4-middle-school/chapter-3-the-sunday-perimeter-sunday-may-16-1999": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The Sunday Perimeter \u2013 Sunday, May 16, 1999",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|2"
+    },
     "/rachel/book-4-middle-school/chapter-3-the-sunday-perimeter-sunday-may-16-1999/part-1-the-sleepover-calculation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Sleepover Calculation",
         "theme": "raggiesoft-books",
         "filePath": "b004/c003/p001.md"
+    },
+    "/rachel/book-5-high-school": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 5: High School",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|4"
+    },
+    "/rachel/book-5-high-school/chapter-1-marching-band": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: Marching Band",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|0"
     },
     "/rachel/book-5-high-school/chapter-1-marching-band/part-1-jessica-s-wake-up-call": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -910,6 +1079,12 @@
         "title": "Part 2: Band Camp",
         "theme": "raggiesoft-books",
         "filePath": "b005/c001/p002.md"
+    },
+    "/rachel/book-5-high-school/chapter-2-the-concrete-walkway": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Concrete Walkway",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|1"
     },
     "/rachel/book-5-high-school/chapter-2-the-concrete-walkway/part-1-black-friday": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -935,6 +1110,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b005/c002/p004.md"
     },
+    "/rachel/book-5-high-school/chapter-3-the-holding-pattern": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The Holding Pattern",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|2"
+    },
     "/rachel/book-5-high-school/chapter-3-the-holding-pattern/part-1-the-daytime-warden": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Daytime Warden",
@@ -946,6 +1127,12 @@
         "title": "Part 2: The Logic Blueprint",
         "theme": "raggiesoft-books",
         "filePath": "b005/c003/p002.md"
+    },
+    "/rachel/book-5-high-school/chapter-4-christmas-eve": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4: Christmas Eve",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|3"
     },
     "/rachel/book-5-high-school/chapter-4-christmas-eve/part-1-the-accessibility-calculation": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1006,6 +1193,12 @@
         "title": "Part 10: The Santa Stakeout",
         "theme": "raggiesoft-books",
         "filePath": "b005/c004/p010.md"
+    },
+    "/rachel/book-5-high-school/chapter-5-the-christmas-anomaly": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 5: The Christmas Anomaly",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|4"
     },
     "/rachel/book-5-high-school/chapter-5-the-christmas-anomaly/part-1-the-phantom-drop": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1091,6 +1284,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b005/c005/p014.md"
     },
+    "/rachel/book-5-high-school/chapter-6-the-catalyst-initiative": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 6: The Catalyst Initiative",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|5"
+    },
     "/rachel/book-5-high-school/chapter-6-the-catalyst-initiative/part-1-the-bare-metal": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Bare Metal",
@@ -1108,6 +1307,18 @@
         "title": "Part 3: The Holding Pattern",
         "theme": "raggiesoft-books",
         "filePath": "b005/c006/p003.md"
+    },
+    "/rachel/book-6-atlanta-spring-trip": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 6: Atlanta Spring Trip",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|5"
+    },
+    "/rachel/book-6-atlanta-spring-trip/chapter-1-the-catalyst-notification": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Catalyst Notification",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|0"
     },
     "/rachel/book-6-atlanta-spring-trip/chapter-1-the-catalyst-notification/part-1-the-desktop-under-the-stairs": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1139,6 +1350,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b006/c001/p005.md"
     },
+    "/rachel/book-6-atlanta-spring-trip/chapter-2-arrival-at-the-hotel": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: Arrival at the Hotel",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|1"
+    },
     "/rachel/book-6-atlanta-spring-trip/chapter-2-arrival-at-the-hotel/part-1-the-wheelchair-lift": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Wheelchair Lift",
@@ -1157,11 +1374,29 @@
         "theme": "raggiesoft-books",
         "filePath": "b006/c002/p003.md"
     },
+    "/rachel/book-6-atlanta-spring-trip/chapter-3-the-roanoke-rapids-collapse": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The Roanoke Rapids Collapse",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|2"
+    },
     "/rachel/book-6-atlanta-spring-trip/chapter-3-the-roanoke-rapids-collapse/part-1-the-crown-burger-trigger": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Crown Burger Trigger",
         "theme": "raggiesoft-books",
         "filePath": "b006/c003/p001.md"
+    },
+    "/rachel/book-7-seeds-of-a-divorce": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 7: Seeds of a Divorce",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|6"
+    },
+    "/rachel/book-7-seeds-of-a-divorce/chapter-1-the-continental-shift": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Continental Shift",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|0"
     },
     "/rachel/book-7-seeds-of-a-divorce/chapter-1-the-continental-shift/part-1-the-aunt-janet-extraction": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1199,6 +1434,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b007/c001/p006.md"
     },
+    "/rachel/book-7-seeds-of-a-divorce/chapter-2-the-taps-grid-the-breda-fleet": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The TAPS Grid & The Breda Fleet",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|1"
+    },
     "/rachel/book-7-seeds-of-a-divorce/chapter-2-the-taps-grid-the-breda-fleet/part-1-reclaiming-the-armor": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Reclaiming the Armor",
@@ -1222,6 +1463,12 @@
         "title": "Part 4: The Room 412 Perimeter",
         "theme": "raggiesoft-books",
         "filePath": "b007/c002/p004.md"
+    },
+    "/rachel/book-7-seeds-of-a-divorce/chapter-3-the-provisions-run": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The Provisions Run",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|2"
     },
     "/rachel/book-7-seeds-of-a-divorce/chapter-3-the-provisions-run/part-1-the-ada-fortress": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1259,6 +1506,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b007/c003/p006.md"
     },
+    "/rachel/book-7-seeds-of-a-divorce/chapter-4-the-tourist-perimeter": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4: The Tourist Perimeter",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|3"
+    },
     "/rachel/book-7-seeds-of-a-divorce/chapter-4-the-tourist-perimeter/part-1-the-reassembled-pack": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Reassembled Pack",
@@ -1288,6 +1541,18 @@
         "title": "Part 5: The Bremerton Landing",
         "theme": "raggiesoft-books",
         "filePath": "b007/c004/p005.md"
+    },
+    "/rachel/book-8-the-delaney-street-fracture": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 8: The Delaney Street Fracture",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|7"
+    },
+    "/rachel/book-8-the-delaney-street-fracture/chapter-1-rachel-s-first-band-camp": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: Rachel\u2019s First Band Camp",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|0"
     },
     "/rachel/book-8-the-delaney-street-fracture/chapter-1-rachel-s-first-band-camp/part-1-awakening-my-sister": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1349,6 +1614,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b008/c001/p010.md"
     },
+    "/rachel/book-9-the-divorce-reprieve": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 9: The Divorce Reprieve",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|8"
+    },
+    "/rachel/book-9-the-divorce-reprieve/chapter-1-the-mall": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Mall",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|8|0"
+    },
     "/rachel/book-9-the-divorce-reprieve/chapter-1-the-mall/part-1-vacation-from-parents": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Vacation from Parents",
@@ -1366,6 +1643,12 @@
         "title": "Part 3: Up All Night Party",
         "theme": "raggiesoft-books",
         "filePath": "b009/c001/p003.md"
+    },
+    "/rachel/book-9-the-divorce-reprieve/chapter-2-the-teenage-script": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Teenage Script",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|8|1"
     },
     "/rachel/book-9-the-divorce-reprieve/chapter-2-the-teenage-script/part-1-the-elephant-in-the-room": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1385,6 +1668,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b009/c002/p003.md"
     },
+    "/rachel/book-10-the-divorce": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 10: The Divorce",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|9"
+    },
+    "/rachel/book-10-the-divorce/chapter-3-the-broken-door": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The Broken Door",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|0"
+    },
     "/rachel/book-10-the-divorce/chapter-3-the-broken-door/part-1-rachel-s-fury": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Rachel's Fury",
@@ -1403,11 +1698,23 @@
         "theme": "raggiesoft-books",
         "filePath": "b010/c001/p003.md"
     },
+    "/rachel/book-10-the-divorce/chapter-4-the-inevitable-math": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4: The Inevitable Math",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|1"
+    },
     "/rachel/book-10-the-divorce/chapter-4-the-inevitable-math/part-1-the-guidance-office": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Guidance Office",
         "theme": "raggiesoft-books",
         "filePath": "b010/c002/p001.md"
+    },
+    "/rachel/book-10-the-divorce/chapter-5-the-grounded-skies": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 5: The Grounded Skies",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|2"
     },
     "/rachel/book-10-the-divorce/chapter-5-the-grounded-skies/part-1-the-eerie-silence": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1433,6 +1740,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b010/c003/p004.md"
     },
+    "/rachel/book-10-the-divorce/chapter-6-the-compromised-perimeter": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 6: The Compromised Perimeter",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|3"
+    },
     "/rachel/book-10-the-divorce/chapter-6-the-compromised-perimeter/part-1-the-broken-routine": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Broken Routine",
@@ -1445,6 +1758,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b010/c004/p002.md"
     },
+    "/rachel/book-10-the-divorce/chapter-7-the-loophole": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 7: The Loophole",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|4"
+    },
     "/rachel/book-10-the-divorce/chapter-7-the-loophole/part-1-the-bleeding-finances": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Bleeding Finances",
@@ -1456,6 +1775,12 @@
         "title": "Part 2: The Living Hell",
         "theme": "raggiesoft-books",
         "filePath": "b010/c005/p002.md"
+    },
+    "/rachel/book-10-the-divorce/chapter-8-the-departure": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 8: The Departure",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|5"
     },
     "/rachel/book-10-the-divorce/chapter-8-the-departure/part-1-the-bright-idea": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1475,6 +1800,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b010/c006/p003.md"
     },
+    "/rachel/book-11-michael-s-new-life": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 11: Michael's New Life",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|10"
+    },
+    "/rachel/book-11-michael-s-new-life/chapter-1-a-left-coast-christmas": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: A Left Coast Christmas",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|10|0"
+    },
     "/rachel/book-11-michael-s-new-life/chapter-1-a-left-coast-christmas/part-1-arrival-at-pdx": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Arrival at PDX",
@@ -1493,6 +1830,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b011/c001/p003.md"
     },
+    "/rachel/book-11-michael-s-new-life/chapter-2-a-clark-county-christmas": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: A Clark County Christmas",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|10|1"
+    },
     "/rachel/book-11-michael-s-new-life/chapter-2-a-clark-county-christmas/part-1-left-coast-time": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Left Coast Time",
@@ -1510,6 +1853,12 @@
         "title": "Part 3: The Hard Conversation",
         "theme": "raggiesoft-books",
         "filePath": "b011/c002/p003.md"
+    },
+    "/rachel/book-11-michael-s-new-life/chapter-3-shopping-in-portland": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: Shopping in Portland",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|10|2"
     },
     "/rachel/book-11-michael-s-new-life/chapter-3-shopping-in-portland/part-1-the-transit-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1535,6 +1884,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b011/c003/p004.md"
     },
+    "/rachel/book-11-michael-s-new-life/chapter-4-the-virginia-hammer": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4: The Virginia Hammer",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|10|3"
+    },
     "/rachel/book-11-michael-s-new-life/chapter-4-the-virginia-hammer/part-1-the-quantum-shield": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Quantum Shield",
@@ -1546,6 +1901,12 @@
         "title": "Part 2: The Status Quo",
         "theme": "raggiesoft-books",
         "filePath": "b011/c004/p002.md"
+    },
+    "/rachel/book-11-michael-s-new-life/chapter-5-a-new-tradition": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 5: A New Tradition",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|10|4"
     },
     "/rachel/book-11-michael-s-new-life/chapter-5-a-new-tradition/part-1-the-legal-stranger": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1582,6 +1943,12 @@
         "title": "Part 6: The Regulated Sanctuary",
         "theme": "raggiesoft-books",
         "filePath": "b011/c005/p006.md"
+    },
+    "/rachel/book-11-michael-s-new-life/chapter-6-a-left-coast-thanksgiving": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 6: A Left Coast Thanksgiving",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|10|5"
     },
     "/rachel/book-11-michael-s-new-life/chapter-6-a-left-coast-thanksgiving/part-1-the-hudson-s-parade": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1625,6 +1992,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b011/c006/p007.md"
     },
+    "/rachel/book-11-michael-s-new-life/chapter-9-the-southbound-arts": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 9: The Southbound ARTS",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|10|6"
+    },
     "/rachel/book-11-michael-s-new-life/chapter-9-the-southbound-arts/part-1-the-reverse-route": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Reverse Route",
@@ -1636,6 +2009,18 @@
         "title": "Part 2: The Security Checkpoint",
         "theme": "raggiesoft-books",
         "filePath": "b011/c007/p002.md"
+    },
+    "/rachel/book-12-the-east-coast": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 12: The East Coast",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|11"
+    },
+    "/rachel/book-12-the-east-coast/chapter-1-outbound-to-orf": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: Outbound to ORF",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|11|0"
     },
     "/rachel/book-12-the-east-coast/chapter-1-outbound-to-orf/part-1-the-first-class-algorithm": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1691,6 +2076,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b012/c001/p009.md"
     },
+    "/rachel/book-12-the-east-coast/chapter-2-arrival-at-norfolk": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: Arrival at Norfolk",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|11|1"
+    },
     "/rachel/book-12-the-east-coast/chapter-2-arrival-at-norfolk/part-1-sibling-reunification": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Sibling Reunification",
@@ -1709,11 +2100,29 @@
         "theme": "raggiesoft-books",
         "filePath": "b012/c002/p003.md"
     },
+    "/rachel/book-12-the-east-coast/chapter-3-the-new-baseline": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The New Baseline",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|11|2"
+    },
     "/rachel/book-12-the-east-coast/chapter-3-the-new-baseline/part-1-the-three-hour-shift": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Three-Hour Shift",
         "theme": "raggiesoft-books",
         "filePath": "b012/c003/p001.md"
+    },
+    "/rachel/book-13-michael-s-senior-year": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 13: Michael\u2019s Senior Year",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|12"
+    },
+    "/rachel/book-13-michael-s-senior-year/chapter-1-the-empty-shell": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Empty Shell",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|12|0"
     },
     "/rachel/book-13-michael-s-senior-year/chapter-1-the-empty-shell/part-1-the-last-morning": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1763,6 +2172,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b013/c001/p008.md"
     },
+    "/rachel/book-13-michael-s-senior-year/chapter-2-the-digital-mirage": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Digital Mirage",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|12|1"
+    },
     "/rachel/book-13-michael-s-senior-year/chapter-2-the-digital-mirage/part-1-the-best-tech-ambush": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Best Tech Ambush",
@@ -1811,11 +2226,29 @@
         "theme": "raggiesoft-books",
         "filePath": "b013/c002/p008.md"
     },
+    "/rachel/book-13-michael-s-senior-year/chapter-3-the-extraction": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The Extraction",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|12|2"
+    },
     "/rachel/book-13-michael-s-senior-year/chapter-3-the-extraction/part-1-the-morning-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Morning Perimeter",
         "theme": "raggiesoft-books",
         "filePath": "b013/c003/p001.md"
+    },
+    "/rachel/book-14-delores": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 14: Delores",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|13"
+    },
+    "/rachel/book-14-delores/chapter-1-the-quiet-void": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Quiet Void",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|13|0"
     },
     "/rachel/book-14-delores/chapter-1-the-quiet-void/part-1-the-last-of-the-pack": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1847,17 +2280,41 @@
         "theme": "raggiesoft-books",
         "filePath": "b014/c001/p005.md"
     },
+    "/rachel/book-14-delores/chapter-2-the-gateway": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Gateway",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|13|1"
+    },
     "/rachel/book-14-delores/chapter-2-the-gateway/part-1-the-morning-call": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Morning Call",
         "theme": "raggiesoft-books",
         "filePath": "b014/c002/p001.md"
     },
+    "/rachel/book-15-the-end-of-hell": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 15: The End of Hell",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|14"
+    },
+    "/rachel/book-15-the-end-of-hell/chapter-1-the-setup": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Setup",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|14|0"
+    },
     "/rachel/book-15-the-end-of-hell/chapter-1-the-setup/part-1-the-pitch": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Pitch",
         "theme": "raggiesoft-books",
         "filePath": "b015/c001/p001.md"
+    },
+    "/rachel/book-15-the-end-of-hell/chapter-2-the-departure": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Departure",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|14|1"
     },
     "/rachel/book-15-the-end-of-hell/chapter-2-the-departure/part-1-the-deception-at-churchland-square": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1895,6 +2352,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b015/c002/p006.md"
     },
+    "/rachel/book-15-the-end-of-hell/chapter-3-the-appalachian-crossing": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The Appalachian Crossing",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|14|2"
+    },
     "/rachel/book-15-the-end-of-hell/chapter-3-the-appalachian-crossing/part-1-the-knoxville-layover": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Knoxville Layover",
@@ -1924,6 +2387,12 @@
         "title": "Part 5: Kansas City",
         "theme": "raggiesoft-books",
         "filePath": "b015/c003/p005.md"
+    },
+    "/rachel/book-15-the-end-of-hell/chapter-4-the-northern-anchor": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4: The Northern Anchor",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|14|3"
     },
     "/rachel/book-15-the-end-of-hell/chapter-4-the-northern-anchor/part-1-the-state-line": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1960,6 +2429,12 @@
         "title": "Part 6: The Salt Lake Layover",
         "theme": "raggiesoft-books",
         "filePath": "b015/c004/p006.md"
+    },
+    "/rachel/book-15-the-end-of-hell/chapter-5-the-pasco-lock": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 5: The Pasco Lock",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|14|4"
     },
     "/rachel/book-15-the-end-of-hell/chapter-5-the-pasco-lock/part-1-the-idaho-crossing": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2021,6 +2496,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b015/c005/p010.md"
     },
+    "/rachel/book-15-the-end-of-hell/chapter-6-the-escape-route": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 6: The Escape Route",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|14|5"
+    },
     "/rachel/book-15-the-end-of-hell/chapter-6-the-escape-route/part-1-the-kent-station-transfer": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Kent Station Transfer",
@@ -2050,6 +2531,12 @@
         "title": "Part 5: The Shattered Fog",
         "theme": "raggiesoft-books",
         "filePath": "b015/c006/p005.md"
+    },
+    "/rachel/book-15-the-end-of-hell/chapter-7-morning-hell": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 7: Morning Hell",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|14|6"
     },
     "/rachel/book-15-the-end-of-hell/chapter-7-morning-hell/part-1-forced-exit": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2105,6 +2592,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b015/c007/p009.md"
     },
+    "/rachel/book-15-the-end-of-hell/chapter-8-decompression-day": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 8: Decompression Day",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|14|7"
+    },
     "/rachel/book-15-the-end-of-hell/chapter-8-decompression-day/part-1-the-liquid-rebellion": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Liquid Rebellion",
@@ -2152,6 +2645,12 @@
         "title": "Part 8: The Perimeter Holds",
         "theme": "raggiesoft-books",
         "filePath": "b015/c008/p008.md"
+    },
+    "/rachel/book-15-the-end-of-hell/chapter-9-the-southern-route": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 9: The Southern Route",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|14|8"
     },
     "/rachel/book-15-the-end-of-hell/chapter-9-the-southern-route/part-1-the-tukwila-extraction": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2201,6 +2700,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b015/c009/p008.md"
     },
+    "/rachel/book-16-awe-monday-night-war": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 16: AWE Monday Night War",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|15"
+    },
+    "/rachel/book-16-awe-monday-night-war/chapter-1-the-portland-offensive": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Portland Offensive",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|15|0"
+    },
     "/rachel/book-16-awe-monday-night-war/chapter-1-the-portland-offensive/part-1-the-morning-deployment": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Morning Deployment",
@@ -2224,6 +2735,12 @@
         "title": "Part 4: The Plaza Approach",
         "theme": "raggiesoft-books",
         "filePath": "b016/c001/p004.md"
+    },
+    "/rachel/book-16-awe-monday-night-war/chapter-2-arrival-at-rose-city-center": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: Arrival at Rose City Center",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|15|1"
     },
     "/rachel/book-16-awe-monday-night-war/chapter-2-arrival-at-rose-city-center/part-1-will-call": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2260,6 +2777,12 @@
         "title": "Part 6: The Dark Matches",
         "theme": "raggiesoft-books",
         "filePath": "b016/c002/p006.md"
+    },
+    "/rachel/book-16-awe-monday-night-war/chapter-3-awe-monday-night-war": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: AWE Monday Night War",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|15|2"
     },
     "/rachel/book-16-awe-monday-night-war/chapter-3-awe-monday-night-war/part-1-live-from-portland": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2345,6 +2868,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b016/c003/p014.md"
     },
+    "/rachel/book-17-a-few-small-repairs": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 17: A Few Small Repairs",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|16"
+    },
+    "/rachel/book-17-a-few-small-repairs/chapter-1-breakfast-in-vancouver": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: Breakfast in Vancouver",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|16|0"
+    },
     "/rachel/book-17-a-few-small-repairs/chapter-1-breakfast-in-vancouver/part-1-the-anchor-s-rest": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Anchor's Rest",
@@ -2392,6 +2927,12 @@
         "title": "Part 8: The Union Station Protocol",
         "theme": "raggiesoft-books",
         "filePath": "b017/c001/p008.md"
+    },
+    "/rachel/book-17-a-few-small-repairs/chapter-2-the-financial-extraction": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Financial Extraction",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|16|1"
     },
     "/rachel/book-17-a-few-small-repairs/chapter-2-the-financial-extraction/part-1-the-transit-grid": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2453,6 +2994,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b017/c002/p010.md"
     },
+    "/rachel/book-17-a-few-small-repairs/chapter-3-the-sanctuary-holiday": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The Sanctuary Holiday",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|16|2"
+    },
     "/rachel/book-17-a-few-small-repairs/chapter-3-the-sanctuary-holiday/part-1-the-sentinel-tether": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Sentinel Tether",
@@ -2470,6 +3017,12 @@
         "title": "Part 3: The Sugar Crash & The Independent Perimeter",
         "theme": "raggiesoft-books",
         "filePath": "b017/c003/p003.md"
+    },
+    "/rachel/book-17-a-few-small-repairs/chapter-4-the-spectacle-of-the-season": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4: The Spectacle of the Season",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|16|3"
     },
     "/rachel/book-17-a-few-small-repairs/chapter-4-the-spectacle-of-the-season/part-1-the-afterglow-and-the-doorbuster-clock": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2531,6 +3084,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b017/c004/p010.md"
     },
+    "/rachel/book-17-a-few-small-repairs/chapter-5-the-weekend-shift": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 5: The Weekend Shift",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|16|4"
+    },
     "/rachel/book-17-a-few-small-repairs/chapter-5-the-weekend-shift/part-1-the-choice": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Choice",
@@ -2567,6 +3126,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b017/c005/p006.md"
     },
+    "/rachel/book-18-the-eastern-anchor": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 18: The Eastern Anchor",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|17"
+    },
+    "/rachel/book-18-the-eastern-anchor/chapter-1-the-foundation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Foundation",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|17|0"
+    },
     "/rachel/book-18-the-eastern-anchor/chapter-1-the-foundation/part-1-the-tarmac-and-the-tear": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Tarmac and the Tear",
@@ -2578,6 +3149,12 @@
         "title": "Part 2: The Decoy Protocol",
         "theme": "raggiesoft-books",
         "filePath": "b018/c001/p002.md"
+    },
+    "/rachel/book-18-the-eastern-anchor/chapter-2-the-blueprint-and-the-sabomnim": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Blueprint and the Sabomnim",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|17|1"
     },
     "/rachel/book-18-the-eastern-anchor/chapter-2-the-blueprint-and-the-sabomnim/part-1-the-transition-wake-up": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2633,6 +3210,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b018/c002/p009.md"
     },
+    "/rachel/book-18-the-eastern-anchor/chapter-3-the-sunday-reset": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The Sunday Reset",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|17|2"
+    },
     "/rachel/book-18-the-eastern-anchor/chapter-3-the-sunday-reset/part-1-the-three-day-math": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Three-Day Math",
@@ -2656,6 +3239,12 @@
         "title": "Part 4: The Evolution of the Anchor",
         "theme": "raggiesoft-books",
         "filePath": "b018/c003/p004.md"
+    },
+    "/rachel/book-18-the-eastern-anchor/chapter-4-the-digital-sos": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4: The Digital SOS",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|17|3"
     },
     "/rachel/book-18-the-eastern-anchor/chapter-4-the-digital-sos/part-1-the-command-center": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2705,6 +3294,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b018/c004/p008.md"
     },
+    "/rachel/book-18-the-eastern-anchor/chapter-5-the-fortress": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 5: The Fortress",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|17|4"
+    },
     "/rachel/book-18-the-eastern-anchor/chapter-5-the-fortress/part-1-the-lifelong-partner": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Lifelong Partner",
@@ -2735,17 +3330,41 @@
         "theme": "raggiesoft-books",
         "filePath": "b018/c005/p005.md"
     },
+    "/rachel/book-18-the-eastern-anchor/chapter-6-the-deployment": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 6: The Deployment",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|17|5"
+    },
     "/rachel/book-18-the-eastern-anchor/chapter-6-the-deployment/part-1-the-west-coast-wake-up": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The West Coast Wake-Up",
         "theme": "raggiesoft-books",
         "filePath": "b018/c006/p001.md"
     },
+    "/rachel/book-19-the-director-s-perimeter": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 19: The Director's Perimeter",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|18"
+    },
+    "/rachel/book-19-the-director-s-perimeter/chapter-1-the-capture": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Capture",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|18|0"
+    },
     "/rachel/book-19-the-director-s-perimeter/chapter-1-the-capture/part-1-the-sme-directive": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The SME Directive",
         "theme": "raggiesoft-books",
         "filePath": "b019/c001/p001.md"
+    },
+    "/rachel/book-19-the-director-s-perimeter/chapter-2-the-moosewood-anomaly": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Moosewood Anomaly",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|18|1"
     },
     "/rachel/book-19-the-director-s-perimeter/chapter-2-the-moosewood-anomaly/part-1-the-twenty-first-milestone": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2771,6 +3390,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b019/c002/p004.md"
     },
+    "/rachel/book-19-the-director-s-perimeter/chapter-3-the-tactical-acquisition": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The Tactical Acquisition",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|18|2"
+    },
     "/rachel/book-19-the-director-s-perimeter/chapter-3-the-tactical-acquisition/part-1-the-route-36-commute": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Route 36 Commute",
@@ -2782,6 +3407,12 @@
         "title": "Part 2: The Corporate Guillotine",
         "theme": "raggiesoft-books",
         "filePath": "b019/c003/p002.md"
+    },
+    "/rachel/book-19-the-director-s-perimeter/chapter-4-ground-zero": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4: Ground Zero",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|18|3"
     },
     "/rachel/book-19-the-director-s-perimeter/chapter-4-ground-zero/part-1-the-demolition-directive": {
         "view": "pages/raggiesoft-books/books/viewer",

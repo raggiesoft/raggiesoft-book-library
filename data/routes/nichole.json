@@ -13,15 +13,28 @@
         "navbarBrandLink": "/raggiesoft-books"
     },
     "/nichole": {
-        "view": "pages/raggiesoft-books/books/series",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Nichole",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "__SERIES_LANDING__"
     },
     "/nichole/toc": {
-        "view": "pages/raggiesoft-books/books/toc",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Table of Contents - Nichole",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/nichole/elementary-school": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Elementary School",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|0"
+    },
+    "/nichole/elementary-school/the-newport-vacation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Newport Vacation",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|0"
     },
     "/nichole/elementary-school/the-newport-vacation/part-1-the-bachelor-pad": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -77,11 +90,29 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p009.md"
     },
+    "/nichole/elementary-school/project-alpha": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Project Alpha",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|1"
+    },
     "/nichole/elementary-school/project-alpha/part-1-origin-story-project-alpha": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Origin Story: Project Alpha",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p001.md"
+    },
+    "/nichole/middle-school": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Middle School",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|1"
+    },
+    "/nichole/middle-school/the-test-run": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Test Run",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|0"
     },
     "/nichole/middle-school/the-test-run/part-1-the-curb-trap": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -89,11 +120,23 @@
         "theme": "raggiesoft-books",
         "filePath": "b002/c001/p001.md"
     },
+    "/nichole/middle-school/the-yellow-wall": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Yellow Wall",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|1"
+    },
     "/nichole/middle-school/the-yellow-wall/part-1-arrival-at-morrison-middle-school": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Arrival at Morrison Middle School",
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p001.md"
+    },
+    "/nichole/middle-school/middle-school-life": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Middle School Life",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|2"
     },
     "/nichole/middle-school/middle-school-life/part-1-the-fire-alarm": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -124,6 +167,18 @@
         "title": "Part 5: The Architect and the Laborer",
         "theme": "raggiesoft-books",
         "filePath": "b002/c003/p005.md"
+    },
+    "/nichole/freshman-year": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Freshman Year",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|2"
+    },
+    "/nichole/freshman-year/welcome-to-northwood-high-school": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Welcome to Northwood High School",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|0"
     },
     "/nichole/freshman-year/welcome-to-northwood-high-school/part-1-the-5-am-alarm": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -173,6 +228,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p008.md"
     },
+    "/nichole/freshman-year/the-smoke-test": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Smoke Test",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|1"
+    },
     "/nichole/freshman-year/the-smoke-test/part-1-the-area-of-rescue": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Area of Rescue",
@@ -215,6 +276,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p007.md"
     },
+    "/nichole/junior-year": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Junior Year",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|3"
+    },
+    "/nichole/junior-year/planning-for-the-future": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Planning for the Future",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|0"
+    },
     "/nichole/junior-year/planning-for-the-future/part-1-transitioning-nichole-s-iep": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Transitioning Nichole\u2019s IEP",
@@ -233,6 +306,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b004/c001/p003.md"
     },
+    "/nichole/junior-year/the-handover": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Handover",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|1"
+    },
     "/nichole/junior-year/the-handover/part-1-the-first-shift": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The First Shift",
@@ -250,6 +329,18 @@
         "title": "Part 3: The Maintenance Crew",
         "theme": "raggiesoft-books",
         "filePath": "b004/c002/p003.md"
+    },
+    "/nichole/senior-year": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Senior Year",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|4"
+    },
+    "/nichole/senior-year/graduation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Graduation",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|0"
     },
     "/nichole/senior-year/graduation/part-1-the-breach": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -275,6 +366,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b005/c001/p004.md"
     },
+    "/nichole/senior-year/the-reset": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Reset",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|1"
+    },
     "/nichole/senior-year/the-reset/part-1-damage-control": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Damage Control",
@@ -293,6 +390,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b005/c002/p003.md"
     },
+    "/nichole/college-tours": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "College Tours",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|5"
+    },
+    "/nichole/college-tours/the-misfit-tour": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Misfit Tour",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|0"
+    },
     "/nichole/college-tours/the-misfit-tour/part-1-the": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The \\",
@@ -304,6 +413,12 @@
         "title": "Part 2: The Commuter Special",
         "theme": "raggiesoft-books",
         "filePath": "b006/c001/p002.md"
+    },
+    "/nichole/college-tours/the-institution": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Institution",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|1"
     },
     "/nichole/college-tours/the-institution/part-1-the-valley-of-hope": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -395,6 +510,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b006/c002/p015.md"
     },
+    "/nichole/college-tours/virginia-dominion-university": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Virginia Dominion University",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|2"
+    },
     "/nichole/college-tours/virginia-dominion-university/part-1-the-thirteen-hour-problem": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Thirteen-Hour Problem",
@@ -455,6 +576,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b006/c003/p010.md"
     },
+    "/nichole/college-tours/trek-up-the-east-coast": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Trek Up the East Coast",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|3"
+    },
     "/nichole/college-tours/trek-up-the-east-coast/part-1-the-peninsula-run": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Peninsula Run",
@@ -485,6 +612,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b006/c004/p005.md"
     },
+    "/nichole/college-tours/vermont": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Vermont",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|4"
+    },
     "/nichole/college-tours/vermont/part-1-the-green-mountain-haul": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Green Mountain Haul",
@@ -508,6 +641,12 @@
         "title": "Part 4: The Fuel Stop",
         "theme": "raggiesoft-books",
         "filePath": "b006/c005/p004.md"
+    },
+    "/nichole/college-tours/an-ocean-of-an-idea": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "An Ocean of an Idea",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|5"
     },
     "/nichole/college-tours/an-ocean-of-an-idea/part-1-the-new-jersey-pivot": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -538,6 +677,12 @@
         "title": "Part 5: The Ocean State Arrival",
         "theme": "raggiesoft-books",
         "filePath": "b006/c006/p005.md"
+    },
+    "/nichole/college-tours/the-commuter-loop": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Commuter Loop",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|6"
     },
     "/nichole/college-tours/the-commuter-loop/part-1-the-holy-cow": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -586,6 +731,12 @@
         "title": "Part 8: The Upgrade",
         "theme": "raggiesoft-books",
         "filePath": "b006/c007/p008.md"
+    },
+    "/nichole/college-tours/the-gap-year-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Gap Year Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|7"
     },
     "/nichole/college-tours/the-gap-year-protocol/part-1-the-disassembly-date-july-8-2003-time-6-30-pm-location-1850-delaney-street-virginia-beach-virginia": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -640,6 +791,12 @@
         "title": "Part 9: The Credential Hunt",
         "theme": "raggiesoft-books",
         "filePath": "b006/c008/p009.md"
+    },
+    "/nichole/college-tours/the-independent-grid": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Independent Grid",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|8"
     },
     "/nichole/college-tours/the-independent-grid/part-1-the-commute": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -707,6 +864,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b006/c009/p011.md"
     },
+    "/nichole/the-gap-year": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Gap Year",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|6"
+    },
+    "/nichole/the-gap-year/the-fleet-upgrade": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Fleet Upgrade",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|0"
+    },
     "/nichole/the-gap-year/the-fleet-upgrade/part-1-the-dual-grid-dilemma": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Dual-Grid Dilemma",
@@ -754,6 +923,12 @@
         "title": "Part 8: The Final Transfer",
         "theme": "raggiesoft-books",
         "filePath": "b007/c001/p008.md"
+    },
+    "/nichole/the-gap-year/the-commuter-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Commuter Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|1"
     },
     "/nichole/the-gap-year/the-commuter-protocol/part-1-the-intake": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -803,6 +978,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b007/c002/p008.md"
     },
+    "/nichole/the-gap-year/exploring-braxton": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Exploring Braxton",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|2"
+    },
     "/nichole/the-gap-year/exploring-braxton/part-1-the-zero-friction-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Zero-Friction Protocol",
@@ -833,11 +1014,23 @@
         "theme": "raggiesoft-books",
         "filePath": "b007/c003/p005.md"
     },
+    "/nichole/the-gap-year/the-sync": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Sync",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|3"
+    },
     "/nichole/the-gap-year/the-sync/part-1-the-war-room": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The War Room",
         "theme": "raggiesoft-books",
         "filePath": "b007/c004/p001.md"
+    },
+    "/nichole/the-gap-year/the-fortress-test": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Fortress Test",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|4"
     },
     "/nichole/the-gap-year/the-fortress-test/part-1-the-severed-link": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -881,6 +1074,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b007/c005/p007.md"
     },
+    "/nichole/braxton-freshman": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Braxton Freshman",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|7"
+    },
+    "/nichole/braxton-freshman/the-first-semester": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The First Semester",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|0"
+    },
     "/nichole/braxton-freshman/the-first-semester/part-1-the-sorting-failure": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Sorting Failure",
@@ -910,6 +1115,12 @@
         "title": "Part 5: The Fortress Weekend",
         "theme": "raggiesoft-books",
         "filePath": "b008/c001/p005.md"
+    },
+    "/nichole/braxton-freshman/the-machine-in-motion": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Machine in Motion",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|1"
     },
     "/nichole/braxton-freshman/the-machine-in-motion/part-1-the-zero-friction-morning": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1001,6 +1212,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b008/c002/p015.md"
     },
+    "/nichole/braxton-freshman/nichole-adapts": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Nichole Adapts",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|2"
+    },
     "/nichole/braxton-freshman/nichole-adapts/part-1-engine-failure": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Engine Failure",
@@ -1018,6 +1235,12 @@
         "title": "Part 3: The Integration",
         "theme": "raggiesoft-books",
         "filePath": "b008/c003/p003.md"
+    },
+    "/nichole/braxton-freshman/the-procedure-the-tune-up": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Procedure: \"The Tune-Up\"",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|3"
     },
     "/nichole/braxton-freshman/the-procedure-the-tune-up/part-1-the-handover-the-night-before-time-8-00-pm": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1048,6 +1271,12 @@
         "title": "Part 5: The War Room",
         "theme": "raggiesoft-books",
         "filePath": "b008/c004/p005.md"
+    },
+    "/nichole/braxton-freshman/nichole-s-recovery": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Nichole\u2019s Recovery",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|4"
     },
     "/nichole/braxton-freshman/nichole-s-recovery/part-1-the-recovery-room": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1091,6 +1320,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b008/c005/p007.md"
     },
+    "/nichole/braxton-freshman/the-routine": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Routine",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|5"
+    },
     "/nichole/braxton-freshman/the-routine/part-1-the-winter-siege": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Winter Siege",
@@ -1121,11 +1356,35 @@
         "theme": "raggiesoft-books",
         "filePath": "b008/c006/p005.md"
     },
+    "/nichole/braxton-junior-year": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Braxton Junior Year",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|8"
+    },
+    "/nichole/braxton-junior-year/concept-the-joint-defense": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Concept: The Joint Defense",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|8|0"
+    },
     "/nichole/braxton-junior-year/concept-the-joint-defense/part-1-the-outcome": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Outcome",
         "theme": "raggiesoft-books",
         "filePath": "b009/c001/p001.md"
+    },
+    "/nichole/braxton-senior-year": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Braxton Senior Year",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|9"
+    },
+    "/nichole/braxton-senior-year/graduation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Graduation",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|0"
     },
     "/nichole/braxton-senior-year/graduation/part-1-the-protocol-negotiation": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1138,6 +1397,18 @@
         "title": "Part 2: The \\",
         "theme": "raggiesoft-books",
         "filePath": "b010/c001/p002.md"
+    },
+    "/nichole/bennett-dynamics": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Bennett Dynamics",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|10"
+    },
+    "/nichole/bennett-dynamics/an-idea": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "An Idea",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|10|0"
     },
     "/nichole/bennett-dynamics/an-idea/part-1-the-incorporation": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1156,6 +1427,18 @@
         "title": "Part 3: The Tablet Revolution",
         "theme": "raggiesoft-books",
         "filePath": "b011/c001/p003.md"
+    },
+    "/nichole/the-twilight-years": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Twilight Years",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|11"
+    },
+    "/nichole/the-twilight-years/the-long-retreat": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Long Retreat",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|11|0"
     },
     "/nichole/the-twilight-years/the-long-retreat/part-1-the-last-funeral": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1181,6 +1464,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b012/c001/p004.md"
     },
+    "/nichole/the-twilight-years/the-slow-rust": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Slow Rust",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|11|1"
+    },
     "/nichole/the-twilight-years/the-slow-rust/part-1-the-first-breakdown": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The First Breakdown",
@@ -1199,6 +1488,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b012/c002/p003.md"
     },
+    "/nichole/the-end": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The End",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|12"
+    },
+    "/nichole/the-end/the-synchronized-shutdown": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Synchronized Shutdown",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|12|0"
+    },
     "/nichole/the-end/the-synchronized-shutdown/part-1-date-february-14-2058-age-72-location-the-master-suite-95-west-main-road-portsmouth-ri": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Date: February 14, 2058 Age: 72 Location: The Master Suite, 95 West Main Road, Portsmouth, RI",
@@ -1210,5 +1511,11 @@
         "title": "Part 2: Epilogue: The Legacy",
         "theme": "raggiesoft-books",
         "filePath": "b013/c001/p002.md"
+    },
+    "/nichole/book-14": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 14",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|13"
     }
 }

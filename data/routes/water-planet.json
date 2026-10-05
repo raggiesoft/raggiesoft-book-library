@@ -13,12 +13,13 @@
         "navbarBrandLink": "/raggiesoft-books"
     },
     "/water-planet": {
-        "view": "pages/raggiesoft-books/books/series",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Water Planet",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "__SERIES_LANDING__"
     },
     "/water-planet/toc": {
-        "view": "pages/raggiesoft-books/books/toc",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Table of Contents - Water Planet",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"

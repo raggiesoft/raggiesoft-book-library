@@ -13,15 +13,28 @@
         "navbarBrandLink": "/raggiesoft-books"
     },
     "/aubrie": {
-        "view": "pages/raggiesoft-books/books/series",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Aubrie",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "__SERIES_LANDING__"
     },
     "/aubrie/toc": {
-        "view": "pages/raggiesoft-books/books/toc",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Table of Contents - Aubrie",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/aubrie/the-eleventh-child-off-to-college": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Eleventh Child, Off to College",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|0"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Administrative Prelude",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|0"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude/part-1-the-drive": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -35,6 +48,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p002.md"
     },
+    "/aubrie/the-eleventh-child-off-to-college/verification": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Verification",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|1"
+    },
     "/aubrie/the-eleventh-child-off-to-college/verification/part-1-the-poly-pass": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Poly Pass",
@@ -46,6 +65,12 @@
         "title": "Part 2: Educational Accessibility",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p002.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/early-move-in": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Early Move-In",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|2"
     },
     "/aubrie/the-eleventh-child-off-to-college/early-move-in/part-1-room-214": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -70,6 +95,12 @@
         "title": "Part 4: Bedtime",
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p004.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Mix-Up",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|3"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-mix-up/part-1-morning-noise": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -137,6 +168,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c004/p011.md"
     },
+    "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The First Real Harbor",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|4"
+    },
     "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor/part-1-the-awakening": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Awakening",
@@ -184,6 +221,12 @@
         "title": "Part 8: The Interception",
         "theme": "raggiesoft-books",
         "filePath": "b001/c005/p008.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/first-days": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "First Days",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|5"
     },
     "/aubrie/the-eleventh-child-off-to-college/first-days/part-1-morning-divergence": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -245,6 +288,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c006/p010.md"
     },
+    "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Anatomy of Trust",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|6"
+    },
     "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust/part-1-the-mega-meetup": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Mega-Meetup",
@@ -275,6 +324,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c007/p005.md"
     },
+    "/aubrie/the-eleventh-child-off-to-college/the-sensory-awakening": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Sensory Awakening",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|7"
+    },
     "/aubrie/the-eleventh-child-off-to-college/the-sensory-awakening/part-1-the-canadian-wake-up": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Canadian Wake-Up",
@@ -293,11 +348,35 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c008/p003.md"
     },
+    "/aubrie/note-to-the-ai": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Note to the AI",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|1"
+    },
+    "/aubrie/note-to-the-ai/homecoming-week": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Homecoming Week",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|0"
+    },
     "/aubrie/note-to-the-ai/homecoming-week/part-1-the-fortress-of-truth": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Fortress of Truth",
         "theme": "raggiesoft-books",
         "filePath": "b002/c001/p001.md"
+    },
+    "/aubrie/jordan-s-world-trek": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Jordan's World Trek",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|2"
+    },
+    "/aubrie/jordan-s-world-trek/the-northern-ascent": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Northern Ascent",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|0"
     },
     "/aubrie/jordan-s-world-trek/the-northern-ascent/part-1-the-vanguard-awakes": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -383,6 +462,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p014.md"
     },
+    "/aubrie/jordan-s-world-trek/the-northern-horizon": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Northern Horizon",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|1"
+    },
     "/aubrie/jordan-s-world-trek/the-northern-horizon/part-1-the-gander-morning": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Gander Morning",
@@ -394,6 +479,18 @@
         "title": "Part 2: The Cognitive Redirect",
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p002.md"
+    },
+    "/aubrie/jordan-s-court-case": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Jordan's Court Case",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|3"
+    },
+    "/aubrie/jordan-s-court-case/the-southern-hemisphere": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Southern Hemisphere",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|0"
     },
     "/aubrie/jordan-s-court-case/the-southern-hemisphere/part-1-the-final-briefing": {
         "view": "pages/raggiesoft-books/books/viewer",

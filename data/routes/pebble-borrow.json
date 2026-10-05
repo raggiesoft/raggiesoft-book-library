@@ -13,21 +13,46 @@
         "navbarBrandLink": "/raggiesoft-books"
     },
     "/pebble-borrow": {
-        "view": "pages/raggiesoft-books/books/series",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Pebble Borrow",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "__SERIES_LANDING__"
     },
     "/pebble-borrow/toc": {
-        "view": "pages/raggiesoft-books/books/toc",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Table of Contents - Pebble Borrow",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/pebble-borrow/book-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|0"
+    },
+    "/pebble-borrow/the-motel-on-the-highway": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Motel on the Highway",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|1"
+    },
+    "/pebble-borrow/the-motel-on-the-highway/the-threshold": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Threshold",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|0"
     },
     "/pebble-borrow/the-motel-on-the-highway/the-threshold/part-1-out-of-the-storm": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Out of the Storm",
         "theme": "raggiesoft-books",
         "filePath": "b002/c001/p001.md"
+    },
+    "/pebble-borrow/the-motel-on-the-highway/setting-the-scene": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Setting the Scene",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|1"
     },
     "/pebble-borrow/the-motel-on-the-highway/setting-the-scene/part-1-the-apex-late-night-switch": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -41,6 +66,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p002.md"
     },
+    "/pebble-borrow/the-motel-on-the-highway/amanda-protects-her-siblings": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Amanda Protects her Siblings",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|2"
+    },
     "/pebble-borrow/the-motel-on-the-highway/amanda-protects-her-siblings/part-1-the-apex-late-night-switch": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The APEX Late\u2011Night Switch",
@@ -52,6 +83,126 @@
         "title": "Part 2: Saturday Morning \u2014 The Teasing Begins",
         "theme": "raggiesoft-books",
         "filePath": "b002/c003/p002.md"
+    },
+    "/pebble-borrow/book-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 3",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|2"
+    },
+    "/pebble-borrow/book-4": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 4",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|3"
+    },
+    "/pebble-borrow/book-5": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 5",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|4"
+    },
+    "/pebble-borrow/book-5/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|0"
+    },
+    "/pebble-borrow/book-6": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 6",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|5"
+    },
+    "/pebble-borrow/welcome-to-pebble-burrow": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Welcome to Pebble Burrow",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|6"
+    },
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|0"
+    },
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|1"
+    },
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|2"
+    },
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-4": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|3"
+    },
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-5": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 5",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|4"
+    },
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-6": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 6",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|5"
+    },
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-7": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 7",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|6"
+    },
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-8": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 8",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|7"
+    },
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-9": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 9",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|8"
+    },
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-10": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 10",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|9"
+    },
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-11": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 11",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|10"
+    },
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-12": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 12",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|11"
+    },
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-13": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 13",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|12"
+    },
+    "/pebble-borrow/welcome-to-pebble-burrow/returning-to-the-surface": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Returning to the Surface",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|13"
     },
     "/pebble-borrow/welcome-to-pebble-burrow/returning-to-the-surface/part-1-the-apocalyptic-reality": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -65,11 +216,47 @@
         "theme": "raggiesoft-books",
         "filePath": "b007/c014/p002.md"
     },
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-15": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 15",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|14"
+    },
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-16": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 16",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|15"
+    },
+    "/pebble-borrow/the-general-s-arrival": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The General's Arrival",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|7"
+    },
+    "/pebble-borrow/the-general-s-arrival/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|0"
+    },
+    "/pebble-borrow/the-general-s-arrival/the-holy-grail-of-geothermal-energy": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Holy Grail of Geothermal Energy",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|1"
+    },
     "/pebble-borrow/the-general-s-arrival/the-holy-grail-of-geothermal-energy/part-1-0700-hours-the-first-refusal": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: 0700 Hours: The First Refusal",
         "theme": "raggiesoft-books",
         "filePath": "b008/c002/p001.md"
+    },
+    "/pebble-borrow/the-general-s-arrival/0830-hours-the-four-star-directive": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "0830 Hours: The Four-Star Directive",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|2"
     },
     "/pebble-borrow/the-general-s-arrival/0830-hours-the-four-star-directive/part-1-the-net-closes": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -77,11 +264,479 @@
         "theme": "raggiesoft-books",
         "filePath": "b008/c003/p001.md"
     },
+    "/pebble-borrow/the-general-s-arrival/chapter-4": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|3"
+    },
+    "/pebble-borrow/the-general-s-arrival/1015-hours-the-commander-in-chief": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "1015 Hours: The Commander-in-Chief",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|4"
+    },
     "/pebble-borrow/the-general-s-arrival/1015-hours-the-commander-in-chief/part-1-the-breach": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Breach",
         "theme": "raggiesoft-books",
         "filePath": "b008/c005/p001.md"
+    },
+    "/pebble-borrow/book-9": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 9",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|8"
+    },
+    "/pebble-borrow/book-9/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|8|0"
+    },
+    "/pebble-borrow/book-9/chapter-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|8|1"
+    },
+    "/pebble-borrow/book-10": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 10",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|9"
+    },
+    "/pebble-borrow/book-10/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|0"
+    },
+    "/pebble-borrow/book-10/chapter-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|1"
+    },
+    "/pebble-borrow/book-10/chapter-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|2"
+    },
+    "/pebble-borrow/book-10/chapter-4": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|3"
+    },
+    "/pebble-borrow/book-10/chapter-5": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 5",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|4"
+    },
+    "/pebble-borrow/book-10/chapter-6": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 6",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|5"
+    },
+    "/pebble-borrow/book-10/chapter-7": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 7",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|6"
+    },
+    "/pebble-borrow/book-10/chapter-8": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 8",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|7"
+    },
+    "/pebble-borrow/book-10/chapter-9": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 9",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|8"
+    },
+    "/pebble-borrow/book-10/chapter-10": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 10",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|9"
+    },
+    "/pebble-borrow/book-10/chapter-11": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 11",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|10"
+    },
+    "/pebble-borrow/book-10/chapter-12": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 12",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|11"
+    },
+    "/pebble-borrow/book-11": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 11",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|10"
+    },
+    "/pebble-borrow/book-11/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|10|0"
+    },
+    "/pebble-borrow/book-11/chapter-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|10|1"
+    },
+    "/pebble-borrow/book-11/chapter-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|10|2"
+    },
+    "/pebble-borrow/book-11/chapter-4": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|10|3"
+    },
+    "/pebble-borrow/book-12": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 12",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|11"
+    },
+    "/pebble-borrow/book-12/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|11|0"
+    },
+    "/pebble-borrow/book-12/chapter-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|11|1"
+    },
+    "/pebble-borrow/book-12/chapter-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|11|2"
+    },
+    "/pebble-borrow/book-13": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 13",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|12"
+    },
+    "/pebble-borrow/book-13/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|12|0"
+    },
+    "/pebble-borrow/book-13/chapter-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|12|1"
+    },
+    "/pebble-borrow/book-13/chapter-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|12|2"
+    },
+    "/pebble-borrow/book-13/chapter-4": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|12|3"
+    },
+    "/pebble-borrow/book-13/chapter-5": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 5",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|12|4"
+    },
+    "/pebble-borrow/book-13/chapter-6": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 6",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|12|5"
+    },
+    "/pebble-borrow/book-14": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 14",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|13"
+    },
+    "/pebble-borrow/book-14/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|13|0"
+    },
+    "/pebble-borrow/book-14/chapter-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|13|1"
+    },
+    "/pebble-borrow/book-14/chapter-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|13|2"
+    },
+    "/pebble-borrow/book-15": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 15",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|14"
+    },
+    "/pebble-borrow/book-15/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|14|0"
+    },
+    "/pebble-borrow/book-15/chapter-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|14|1"
+    },
+    "/pebble-borrow/book-15/chapter-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|14|2"
+    },
+    "/pebble-borrow/book-16": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 16",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|15"
+    },
+    "/pebble-borrow/book-16/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|15|0"
+    },
+    "/pebble-borrow/book-16/chapter-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|15|1"
+    },
+    "/pebble-borrow/book-16/chapter-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|15|2"
+    },
+    "/pebble-borrow/book-16/chapter-4": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|15|3"
+    },
+    "/pebble-borrow/book-17": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 17",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|16"
+    },
+    "/pebble-borrow/book-17/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|16|0"
+    },
+    "/pebble-borrow/book-17/chapter-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|16|1"
+    },
+    "/pebble-borrow/book-17/chapter-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|16|2"
+    },
+    "/pebble-borrow/book-17/chapter-4": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|16|3"
+    },
+    "/pebble-borrow/book-17/chapter-5": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 5",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|16|4"
+    },
+    "/pebble-borrow/book-17/chapter-6": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 6",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|16|5"
+    },
+    "/pebble-borrow/book-18": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 18",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|17"
+    },
+    "/pebble-borrow/book-18/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|17|0"
+    },
+    "/pebble-borrow/book-18/chapter-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|17|1"
+    },
+    "/pebble-borrow/book-19": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 19",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|18"
+    },
+    "/pebble-borrow/book-19/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|18|0"
+    },
+    "/pebble-borrow/book-19/chapter-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|18|1"
+    },
+    "/pebble-borrow/book-19/chapter-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|18|2"
+    },
+    "/pebble-borrow/book-20": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 20",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|19"
+    },
+    "/pebble-borrow/book-20/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|19|0"
+    },
+    "/pebble-borrow/book-20/chapter-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|19|1"
+    },
+    "/pebble-borrow/book-20/chapter-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|19|2"
+    },
+    "/pebble-borrow/book-21": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 21",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|20"
+    },
+    "/pebble-borrow/book-21/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|20|0"
+    },
+    "/pebble-borrow/book-21/chapter-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|20|1"
+    },
+    "/pebble-borrow/book-21/chapter-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|20|2"
+    },
+    "/pebble-borrow/book-22": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 22",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|21"
+    },
+    "/pebble-borrow/amanda-interviews-care-nurses": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Amanda Interviews Care Nurses",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|22"
+    },
+    "/pebble-borrow/amanda-interviews-care-nurses/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|22|0"
+    },
+    "/pebble-borrow/amanda-interviews-care-nurses/chapter-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|22|1"
+    },
+    "/pebble-borrow/amanda-interviews-care-nurses/chapter-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|22|2"
+    },
+    "/pebble-borrow/amanda-interviews-care-nurses/chapter-4": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|22|3"
+    },
+    "/pebble-borrow/amanda-interviews-care-nurses/chapter-5": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 5",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|22|4"
+    },
+    "/pebble-borrow/amanda-interviews-care-nurses/chapter-6": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 6",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|22|5"
+    },
+    "/pebble-borrow/amanda-interviews-care-nurses/the-verification": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Verification",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|22|6"
     },
     "/pebble-borrow/amanda-interviews-care-nurses/the-verification/part-1-call-1-the-surgeon": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -100,6 +755,12 @@
         "title": "Part 3: Call 3: The Director of Nursing",
         "theme": "raggiesoft-books",
         "filePath": "b023/c007/p003.md"
+    },
+    "/pebble-borrow/amanda-interviews-care-nurses/the-fortress-is-staffed": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Fortress is Staffed",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|22|7"
     },
     "/pebble-borrow/amanda-interviews-care-nurses/the-fortress-is-staffed/part-1-the-night-watch": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -124,5 +785,23 @@
         "title": "Part 4: The Shield",
         "theme": "raggiesoft-books",
         "filePath": "b023/c008/p004.md"
+    },
+    "/pebble-borrow/book-24": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 24",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|23"
+    },
+    "/pebble-borrow/book-24/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|23|0"
+    },
+    "/pebble-borrow/book-24/chapter-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|23|1"
     }
 }

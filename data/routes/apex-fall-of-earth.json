@@ -13,15 +13,28 @@
         "navbarBrandLink": "/raggiesoft-books"
     },
     "/apex-fall-of-earth": {
-        "view": "pages/raggiesoft-books/books/series",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Apex Fall Of Earth",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "__SERIES_LANDING__"
     },
     "/apex-fall-of-earth/toc": {
-        "view": "pages/raggiesoft-books/books/toc",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Table of Contents - Apex Fall Of Earth",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/apex-fall-of-earth/wyatt-s-prologue": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Wyatt\u2019s Prologue",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|0"
+    },
+    "/apex-fall-of-earth/wyatt-s-prologue/wyatt-expendable-assets": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Wyatt \u2013 Expendable Assets",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|0"
     },
     "/apex-fall-of-earth/wyatt-s-prologue/wyatt-expendable-assets/part-1-the-deep-end-mid-october-2044": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -71,6 +84,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p008.md"
     },
+    "/apex-fall-of-earth/sarah-s-prologue": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Sarah\u2019s Prologue",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|1"
+    },
+    "/apex-fall-of-earth/sarah-s-prologue/sarah-the-promise": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Sarah \u2013 The Promise",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|0"
+    },
     "/apex-fall-of-earth/sarah-s-prologue/sarah-the-promise/part-1-first-flight-mid-october-2044": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: First Flight \u2013 Mid-October 2044",
@@ -119,6 +144,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b002/c001/p008.md"
     },
+    "/apex-fall-of-earth/the-acquisition": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Acquisition",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|2"
+    },
+    "/apex-fall-of-earth/the-acquisition/wyatt-orientation-day": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Wyatt \u2013 Orientation Day",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|0"
+    },
     "/apex-fall-of-earth/the-acquisition/wyatt-orientation-day/part-1-the-powder-keg": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Powder Keg",
@@ -154,6 +191,12 @@
         "title": "Part 6: 42-C",
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p006.md"
+    },
+    "/apex-fall-of-earth/the-acquisition/the-second-shift": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Second Shift",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|1"
     },
     "/apex-fall-of-earth/the-acquisition/the-second-shift/part-1-wake-up-call": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -221,6 +264,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p011.md"
     },
+    "/apex-fall-of-earth/the-acquisition/day-three": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Day Three",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|2"
+    },
     "/apex-fall-of-earth/the-acquisition/day-three/part-1-the-illusion-of-control": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Illusion of Control",
@@ -281,6 +330,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c003/p010.md"
     },
+    "/apex-fall-of-earth/the-acquisition/day-four": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Day Four",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|3"
+    },
     "/apex-fall-of-earth/the-acquisition/day-four/part-1-structural-failure": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Structural Failure",
@@ -311,6 +366,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c004/p005.md"
     },
+    "/apex-fall-of-earth/analogue-ghosts": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Analogue Ghosts",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|3"
+    },
+    "/apex-fall-of-earth/analogue-ghosts/delta-niner": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Delta Niner",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|0"
+    },
     "/apex-fall-of-earth/analogue-ghosts/delta-niner/part-1-the-blinking-clock": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Blinking Clock",
@@ -329,6 +396,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b004/c001/p003.md"
     },
+    "/apex-fall-of-earth/analogue-ghosts/the-lungs-of-the-station": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Lungs of the Station",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|1"
+    },
     "/apex-fall-of-earth/analogue-ghosts/the-lungs-of-the-station/part-1-the-hydroponics-bay": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Hydroponics Bay",
@@ -346,6 +419,12 @@
         "title": "Part 3: The Expanding Fracture",
         "theme": "raggiesoft-books",
         "filePath": "b004/c002/p003.md"
+    },
+    "/apex-fall-of-earth/analogue-ghosts/the-boiler-room": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Boiler Room",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|2"
     },
     "/apex-fall-of-earth/analogue-ghosts/the-boiler-room/part-1-the-descent": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -377,6 +456,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b004/c003/p005.md"
     },
+    "/apex-fall-of-earth/analogue-ghosts/the-glass-wall": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Glass Wall",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|3"
+    },
     "/apex-fall-of-earth/analogue-ghosts/the-glass-wall/part-1-an-attempt-at-normalcy": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: An Attempt at Normalcy",
@@ -407,6 +492,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b004/c004/p005.md"
     },
+    "/apex-fall-of-earth/analogue-ghosts/the-nomad": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Nomad",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|4"
+    },
     "/apex-fall-of-earth/analogue-ghosts/the-nomad/part-1-a-vector-to-nowhere": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Vector to Nowhere",
@@ -436,6 +527,12 @@
         "title": "Part 5: The Blank Slate",
         "theme": "raggiesoft-books",
         "filePath": "b004/c005/p005.md"
+    },
+    "/apex-fall-of-earth/analogue-ghosts/the-frontier": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Frontier",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|5"
     },
     "/apex-fall-of-earth/analogue-ghosts/the-frontier/part-1-the-coordinates": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -478,6 +575,18 @@
         "title": "Part 7: The Backlog",
         "theme": "raggiesoft-books",
         "filePath": "b004/c006/p007.md"
+    },
+    "/apex-fall-of-earth/the-sanctuary": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Sanctuary",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|4"
+    },
+    "/apex-fall-of-earth/the-sanctuary/planetfall": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Planetfall",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|0"
     },
     "/apex-fall-of-earth/the-sanctuary/planetfall/part-1-atmospheric-entry": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -545,6 +654,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b005/c001/p011.md"
     },
+    "/apex-fall-of-earth/the-sanctuary/the-first-morning": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The First Morning",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|1"
+    },
     "/apex-fall-of-earth/the-sanctuary/the-first-morning/part-1-the-river": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The River",
@@ -586,6 +701,12 @@
         "title": "Part 7: The Eden Rule",
         "theme": "raggiesoft-books",
         "filePath": "b005/c002/p007.md"
+    },
+    "/apex-fall-of-earth/the-sanctuary/the-high-ground": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The High Ground",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|2"
     },
     "/apex-fall-of-earth/the-sanctuary/the-high-ground/part-1-the-floodplain": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -640,6 +761,12 @@
         "title": "Part 9: The Saltwater Oasis",
         "theme": "raggiesoft-books",
         "filePath": "b005/c003/p009.md"
+    },
+    "/apex-fall-of-earth/the-sanctuary/the-architects": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Architects",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|3"
     },
     "/apex-fall-of-earth/the-sanctuary/the-architects/part-1-the-first-semester": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -713,6 +840,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b005/c004/p012.md"
     },
+    "/apex-fall-of-earth/the-sanctuary/the-pioneers": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Pioneers",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|4"
+    },
     "/apex-fall-of-earth/the-sanctuary/the-pioneers/part-1-the-upgrade": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Upgrade",
@@ -766,6 +899,12 @@
         "title": "Part 9: The Runabout",
         "theme": "raggiesoft-books",
         "filePath": "b005/c005/p009.md"
+    },
+    "/apex-fall-of-earth/the-sanctuary/planet-eden": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Planet Eden",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|5"
     },
     "/apex-fall-of-earth/the-sanctuary/planet-eden/part-1-the-maiden-voyage": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -832,6 +971,12 @@
         "title": "Part 11: The Overcompensation",
         "theme": "raggiesoft-books",
         "filePath": "b005/c006/p011.md"
+    },
+    "/apex-fall-of-earth/the-sanctuary/the-blueprint": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Blueprint",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|6"
     },
     "/apex-fall-of-earth/the-sanctuary/the-blueprint/part-1-three-pulses": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -905,6 +1050,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b005/c007/p012.md"
     },
+    "/apex-fall-of-earth/the-first-generation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The First Generation",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|5"
+    },
+    "/apex-fall-of-earth/the-first-generation/the-architect": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Architect",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|0"
+    },
     "/apex-fall-of-earth/the-first-generation/the-architect/part-1-the-tolerances-of-eden": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Tolerances of Eden",
@@ -958,6 +1115,12 @@
         "title": "Part 9: Cosmic Dust",
         "theme": "raggiesoft-books",
         "filePath": "b006/c001/p009.md"
+    },
+    "/apex-fall-of-earth/the-first-generation/the-arrival": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Arrival",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|1"
     },
     "/apex-fall-of-earth/the-first-generation/the-arrival/part-1-the-gravity-of-eden": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1013,6 +1176,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b006/c002/p009.md"
     },
+    "/apex-fall-of-earth/the-first-generation/the-blueprint-fails": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Blueprint Fails",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|2"
+    },
     "/apex-fall-of-earth/the-first-generation/the-blueprint-fails/part-1-the-flaw-in-the-wood": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Flaw in the Wood",
@@ -1048,6 +1217,12 @@
         "title": "Part 6: The Soup Kitchen",
         "theme": "raggiesoft-books",
         "filePath": "b006/c003/p006.md"
+    },
+    "/apex-fall-of-earth/the-first-generation/the-vanguard-discovers-gravity": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Vanguard Discovers Gravity",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|3"
     },
     "/apex-fall-of-earth/the-first-generation/the-vanguard-discovers-gravity/part-1-the-rule-of-three": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1085,6 +1260,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b006/c004/p006.md"
     },
+    "/apex-fall-of-earth/the-first-generation/the-chain-of-command": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Chain of Command",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|4"
+    },
     "/apex-fall-of-earth/the-first-generation/the-chain-of-command/part-1-the-new-recruit": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The New Recruit",
@@ -1120,6 +1301,12 @@
         "title": "Part 6: The Genesis Check",
         "theme": "raggiesoft-books",
         "filePath": "b006/c005/p006.md"
+    },
+    "/apex-fall-of-earth/the-first-generation/the-rapid-deployment": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Rapid Deployment",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|5"
     },
     "/apex-fall-of-earth/the-first-generation/the-rapid-deployment/part-1-the-accelerated-recruit": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1175,6 +1362,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b006/c006/p009.md"
     },
+    "/apex-fall-of-earth/the-fall-of-apex": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Fall of Apex",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|6"
+    },
+    "/apex-fall-of-earth/the-fall-of-apex/checkmate": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Checkmate",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|0"
+    },
     "/apex-fall-of-earth/the-fall-of-apex/checkmate/part-1-the-sovereign-s-hubris": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Sovereign\u2019s Hubris",
@@ -1217,6 +1416,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b007/c001/p007.md"
     },
+    "/apex-fall-of-earth/the-fall-of-apex/the-trial-of-the-century": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Trial of the Century",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|1"
+    },
     "/apex-fall-of-earth/the-fall-of-apex/the-trial-of-the-century/part-1-the-government-in-exile": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Government-in-Exile",
@@ -1247,6 +1452,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b007/c002/p005.md"
     },
+    "/apex-fall-of-earth/the-fall-of-apex/the-architects-of-eden": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Architects of Eden",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|2"
+    },
     "/apex-fall-of-earth/the-fall-of-apex/the-architects-of-eden/part-1-the-healing-room": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Healing Room",
@@ -1270,6 +1481,18 @@
         "title": "Part 4: The History Lesson",
         "theme": "raggiesoft-books",
         "filePath": "b007/c003/p004.md"
+    },
+    "/apex-fall-of-earth/the-growing-world": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Growing World",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|7"
+    },
+    "/apex-fall-of-earth/the-growing-world/the-final-roster": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Final Roster",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|0"
     },
     "/apex-fall-of-earth/the-growing-world/the-final-roster/part-1-the-pattern-disruption": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1306,6 +1529,12 @@
         "title": "Part 6: The Enforcers",
         "theme": "raggiesoft-books",
         "filePath": "b008/c001/p006.md"
+    },
+    "/apex-fall-of-earth/the-growing-world/the-foundations-of-genesis": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Foundations of Genesis",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|1"
     },
     "/apex-fall-of-earth/the-growing-world/the-foundations-of-genesis/part-1-the-expanded-jurisdiction": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1349,6 +1578,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b008/c002/p007.md"
     },
+    "/apex-fall-of-earth/the-growing-world/the-awakening": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Awakening",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|2"
+    },
     "/apex-fall-of-earth/the-growing-world/the-awakening/part-1-the-first-breath": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The First Breath",
@@ -1385,6 +1620,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b008/c003/p006.md"
     },
+    "/apex-fall-of-earth/the-village-of-genesis": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Village of Genesis",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|8"
+    },
+    "/apex-fall-of-earth/the-village-of-genesis/the-second-wave": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Second Wave",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|8|0"
+    },
     "/apex-fall-of-earth/the-village-of-genesis/the-second-wave/part-1-the-expanding-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Expanding Perimeter",
@@ -1415,6 +1662,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b009/c001/p005.md"
     },
+    "/apex-fall-of-earth/the-village-of-genesis/jack-the-lunar-embassy": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Jack \u2013 The Lunar Embassy",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|8|1"
+    },
     "/apex-fall-of-earth/the-village-of-genesis/jack-the-lunar-embassy/part-1-the-fleet-girl": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Fleet Girl",
@@ -1433,6 +1686,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b009/c002/p003.md"
     },
+    "/apex-fall-of-earth/the-village-of-genesis/the-refugee": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Refugee",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|8|2"
+    },
     "/apex-fall-of-earth/the-village-of-genesis/the-refugee/part-1-the-great-chowder-rebellion": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Great Chowder Rebellion",
@@ -1450,6 +1709,12 @@
         "title": "Part 3: The Golden Cage",
         "theme": "raggiesoft-books",
         "filePath": "b009/c003/p003.md"
+    },
+    "/apex-fall-of-earth/the-village-of-genesis/the-asylum": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Asylum",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|8|3"
     },
     "/apex-fall-of-earth/the-village-of-genesis/the-asylum/part-1-the-scavenger-s-tale": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1487,6 +1752,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b009/c004/p006.md"
     },
+    "/apex-fall-of-earth/the-village-of-genesis/leo-the-overseer": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Leo \u2013 The Overseer",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|8|4"
+    },
     "/apex-fall-of-earth/the-village-of-genesis/leo-the-overseer/part-1-the-geometry-of-peace": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Geometry of Peace",
@@ -1511,6 +1782,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b009/c005/p004.md"
     },
+    "/apex-fall-of-earth/the-village-of-genesis/wyatt-the-founders": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Wyatt \u2013 The Founders",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|8|5"
+    },
     "/apex-fall-of-earth/the-village-of-genesis/wyatt-the-founders/part-1-the-watch": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Watch",
@@ -1522,6 +1799,12 @@
         "title": "Part 2: The Age of Majority",
         "theme": "raggiesoft-books",
         "filePath": "b009/c006/p002.md"
+    },
+    "/apex-fall-of-earth/the-village-of-genesis/leo-the-wilderness": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Leo \u2013 The Wilderness",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|8|6"
     },
     "/apex-fall-of-earth/the-village-of-genesis/leo-the-wilderness/part-1-the-logistics-of-the-wild": {
         "view": "pages/raggiesoft-books/books/viewer",

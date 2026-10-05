@@ -13,21 +13,40 @@
         "navbarBrandLink": "/raggiesoft-books"
     },
     "/crimson-node": {
-        "view": "pages/raggiesoft-books/books/series",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Crimson Node",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "__SERIES_LANDING__"
     },
     "/crimson-node/toc": {
-        "view": "pages/raggiesoft-books/books/toc",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Table of Contents - Crimson Node",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/crimson-node/book-1-the-illusion": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 1: The Illusion",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|0"
+    },
+    "/crimson-node/book-1-the-illusion/chapter-1-the-approach-ndash-friday-april-23-1999": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Approach &ndash; Friday, April 23, 1999",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|0"
     },
     "/crimson-node/book-1-the-illusion/chapter-1-the-approach-ndash-friday-april-23-1999/part-1-anomalies": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Anomalies",
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p001.md"
+    },
+    "/crimson-node/book-1-the-illusion/chapter-2-the-core-ecosystem-ndash-friday-april-30-1999": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Core Ecosystem &ndash; Friday, April 30, 1999",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|1"
     },
     "/crimson-node/book-1-the-illusion/chapter-2-the-core-ecosystem-ndash-friday-april-30-1999/part-1-the-commons": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -52,6 +71,12 @@
         "title": "Part 4: The Fallout",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p004.md"
+    },
+    "/crimson-node/book-1-the-illusion/chapter-3-the-triple-birthday-ndash-sunday-may-2-1999": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The Triple Birthday &ndash; Sunday, May 2, 1999",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|2"
     },
     "/crimson-node/book-1-the-illusion/chapter-3-the-triple-birthday-ndash-sunday-may-2-1999/part-1-the-morning-routine": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -101,6 +126,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p008.md"
     },
+    "/crimson-node/book-1-the-illusion/chapter-4-the-failed-apology-ndash-monday-may-3-1999": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4: The Failed Apology &ndash; Monday, May 3, 1999",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|3"
+    },
     "/crimson-node/book-1-the-illusion/chapter-4-the-failed-apology-ndash-monday-may-3-1999/part-1-the-band-room-hallway": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Band Room Hallway",
@@ -143,6 +174,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c004/p007.md"
     },
+    "/crimson-node/book-1-the-illusion/interlude-the-reckoning": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Interlude: The Reckoning",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|4"
+    },
     "/crimson-node/book-1-the-illusion/interlude-the-reckoning/part-1-the-new-hierarchy": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The New Hierarchy",
@@ -172,6 +209,12 @@
         "title": "Part 5: The Thunderstorm",
         "theme": "raggiesoft-books",
         "filePath": "b001/c005/p005.md"
+    },
+    "/crimson-node/book-1-the-illusion/chapter-6-the-senior-prom-ndash-may-1999": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 6: The Senior Prom &ndash; May 1999",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|5"
     },
     "/crimson-node/book-1-the-illusion/chapter-6-the-senior-prom-ndash-may-1999/part-1-the-request": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -203,6 +246,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c006/p005.md"
     },
+    "/crimson-node/book-1-the-illusion/chapter-7-the-blueprint": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 7: The Blueprint",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|6"
+    },
     "/crimson-node/book-1-the-illusion/chapter-7-the-blueprint/part-1-a-new-day": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A New Day",
@@ -214,6 +263,12 @@
         "title": "Part 2: The Plan",
         "theme": "raggiesoft-books",
         "filePath": "b001/c007/p002.md"
+    },
+    "/crimson-node/book-1-the-illusion/chapter-8-the-administration": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 8: The Administration",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|7"
     },
     "/crimson-node/book-1-the-illusion/chapter-8-the-administration/part-1-the-drop-off": {
         "view": "pages/raggiesoft-books/books/viewer",

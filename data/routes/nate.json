@@ -13,21 +13,46 @@
         "navbarBrandLink": "/raggiesoft-books"
     },
     "/nate": {
-        "view": "pages/raggiesoft-books/books/series",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Nate",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "__SERIES_LANDING__"
     },
     "/nate/toc": {
-        "view": "pages/raggiesoft-books/books/toc",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Table of Contents - Nate",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/nate/book-the-architecture-of-safe-spaces": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book: The Architecture of Safe Spaces",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|0"
+    },
+    "/nate/book-the-architecture-of-safe-spaces/chapter-1-the-triplet-anomaly-saturday-april-16-1994": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Triplet Anomaly \u2014 Saturday, April 16, 1994",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|0"
     },
     "/nate/book-the-architecture-of-safe-spaces/chapter-1-the-triplet-anomaly-saturday-april-16-1994/part-1-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Untitled Chapter",
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p001.md"
+    },
+    "/nate/book-the-demolition-of-the-cage": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book: The Demolition of the Cage",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|1"
+    },
+    "/nate/book-the-demolition-of-the-cage/chapter-1-the-line-in-the-sand-friday-november-10-2006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Line in the Sand - Friday, November 10, 2006",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|0"
     },
     "/nate/book-the-demolition-of-the-cage/chapter-1-the-line-in-the-sand-friday-november-10-2006/part-1-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -95,6 +120,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b002/c001/p011.md"
     },
+    "/nate/book-the-demolition-of-the-cage/chapter-2-the-reinforcements-saturday-november-11-2006": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Reinforcements - Saturday, November 11, 2006",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|1"
+    },
     "/nate/book-the-demolition-of-the-cage/chapter-2-the-reinforcements-saturday-november-11-2006/part-1-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Untitled Chapter",
@@ -125,6 +156,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p005.md"
     },
+    "/nate/book-the-demolition-of-the-cage/chapter-3-christmas-holiday-saturday-december-23rd-2026": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: Christmas Holiday \u2013 Saturday, December 23<sup>rd</sup>, 2026",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|2"
+    },
     "/nate/book-the-demolition-of-the-cage/chapter-3-christmas-holiday-saturday-december-23rd-2026/part-1-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Untitled Chapter",
@@ -149,6 +186,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b002/c003/p004.md"
     },
+    "/nate/book-the-architecture-of-a-safe-space": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book: The Architecture of a Safe Space",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|2"
+    },
+    "/nate/book-the-architecture-of-a-safe-space/chapter-1-the-fortress-thursday-august-23-2007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Fortress \u2013 Thursday, August 23, 2007",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|0"
+    },
     "/nate/book-the-architecture-of-a-safe-space/chapter-1-the-fortress-thursday-august-23-2007/part-1-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Untitled Chapter",
@@ -166,6 +215,12 @@
         "title": "Part 3: Untitled Chapter",
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p003.md"
+    },
+    "/nate/book-the-architecture-of-a-safe-space/chapter-2-the-logistics-of-trust-friday-august-24-2007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Logistics of Trust \u2013 Friday, August 24, 2007",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|1"
     },
     "/nate/book-the-architecture-of-a-safe-space/chapter-2-the-logistics-of-trust-friday-august-24-2007/part-1-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -202,6 +257,12 @@
         "title": "Part 6: Untitled Chapter",
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p006.md"
+    },
+    "/nate/book-the-architecture-of-a-safe-space/chapter-3-expanding-the-perimeter-monday-august-27-2007": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: Expanding the Perimeter \u2013 Monday, August 27, 2007",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|2"
     },
     "/nate/book-the-architecture-of-a-safe-space/chapter-3-expanding-the-perimeter-monday-august-27-2007/part-1-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",

@@ -13,15 +13,28 @@
         "navbarBrandLink": "/raggiesoft-books"
     },
     "/jessica": {
-        "view": "pages/raggiesoft-books/books/series",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Jessica",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "__SERIES_LANDING__"
     },
     "/jessica/toc": {
-        "view": "pages/raggiesoft-books/books/toc",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Table of Contents - Jessica",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/jessica/currents-and-crosswinds": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Currents and Crosswinds",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|0"
+    },
+    "/jessica/currents-and-crosswinds/an-ordinary-july": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "An Ordinary July",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|0"
     },
     "/jessica/currents-and-crosswinds/an-ordinary-july/part-1-day-to-day-at-quantum": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -119,6 +132,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p016.md"
     },
+    "/jessica/currents-and-crosswinds/currents-to-still-water": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Currents to Still Water",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|1"
+    },
     "/jessica/currents-and-crosswinds/currents-to-still-water/part-1-homecoming": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Homecoming",
@@ -161,6 +180,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p007.md"
     },
+    "/jessica/currents-and-crosswinds/the-spark-of-rebellion": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Spark of Rebellion",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|2"
+    },
     "/jessica/currents-and-crosswinds/the-spark-of-rebellion/part-1-the-morning-commute": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Morning Commute",
@@ -179,6 +204,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p003.md"
     },
+    "/jessica/currents-and-crosswinds/the-war-councils-assemble": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The War Councils Assemble",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|3"
+    },
     "/jessica/currents-and-crosswinds/the-war-councils-assemble/part-1-quantum-s-alliance": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Quantum's Alliance",
@@ -190,6 +221,12 @@
         "title": "Part 2: Aurora's Rebellion",
         "theme": "raggiesoft-books",
         "filePath": "b001/c004/p002.md"
+    },
+    "/jessica/currents-and-crosswinds/the-memo": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Memo",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|4"
     },
     "/jessica/currents-and-crosswinds/the-memo/part-1-the-leak": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -203,6 +240,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c005/p002.md"
     },
+    "/jessica/currents-and-crosswinds/the-exodus": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Exodus",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|5"
+    },
     "/jessica/currents-and-crosswinds/the-exodus/part-1-the-intercepted-letter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Intercepted Letter",
@@ -214,6 +257,12 @@
         "title": "Part 2: The Last Stand",
         "theme": "raggiesoft-books",
         "filePath": "b001/c006/p002.md"
+    },
+    "/jessica/currents-and-crosswinds/sanctuary-across-the-lake": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Sanctuary Across the Lake",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|6"
     },
     "/jessica/currents-and-crosswinds/sanctuary-across-the-lake/part-1-a-new-alliance": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -232,6 +281,12 @@
         "title": "Part 3: Solidarity in Action",
         "theme": "raggiesoft-books",
         "filePath": "b001/c007/p003.md"
+    },
+    "/jessica/currents-and-crosswinds/the-fall-of-aurora": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Fall of Aurora",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|7"
     },
     "/jessica/currents-and-crosswinds/the-fall-of-aurora/part-1-the-empty-loft": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -269,6 +324,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c008/p006.md"
     },
+    "/jessica/currents-and-crosswinds/the-final-straw": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Final Straw",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|8"
+    },
     "/jessica/currents-and-crosswinds/the-final-straw/part-1-an-intern-s-story": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: An Intern's Story",
@@ -280,6 +341,12 @@
         "title": "Part 2: A Poisoned Well",
         "theme": "raggiesoft-books",
         "filePath": "b001/c009/p002.md"
+    },
+    "/jessica/currents-and-crosswinds/a-new-beginning": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A New Beginning",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|9"
     },
     "/jessica/currents-and-crosswinds/a-new-beginning/part-1-writing-the-next-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -316,6 +383,12 @@
         "title": "Part 6: The First Line of Code",
         "theme": "raggiesoft-books",
         "filePath": "b001/c010/p006.md"
+    },
+    "/jessica/currents-and-crosswinds/the-bridge-to-cupertino": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Bridge to Cupertino",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|10"
     },
     "/jessica/currents-and-crosswinds/the-bridge-to-cupertino/part-1-the-cupertino-trip": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -413,6 +486,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c011/p016.md"
     },
+    "/jessica/currents-and-crosswinds/bidding-for-the-twins": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Bidding for the Twins",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|11"
+    },
     "/jessica/currents-and-crosswinds/bidding-for-the-twins/part-1-the-offer": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Offer",
@@ -461,6 +540,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c012/p008.md"
     },
+    "/jessica/currents-and-crosswinds/a-new-family": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A New Family",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|12"
+    },
     "/jessica/currents-and-crosswinds/a-new-family/part-1-pizza-night": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Pizza Night",
@@ -484,5 +569,23 @@
         "title": "Part 4: Move-In Day",
         "theme": "raggiesoft-books",
         "filePath": "b001/c013/p004.md"
+    },
+    "/jessica/book-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|1"
+    },
+    "/jessica/book-2/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|0"
+    },
+    "/jessica/book-2/chapter-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|1"
     }
 }

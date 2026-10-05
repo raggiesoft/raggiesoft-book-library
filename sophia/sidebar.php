@@ -16,7 +16,31 @@ if (!empty($routeData)) {
 // Calculate sequence navigation
 $sbPrevUrl = null;
 $sbNextUrl = null;
-$sbUpUrl = '/' . $seriesSlug; // Series Landing Page
+
+// Dynamic Up Navigation based on URL segments
+$segments = explode('/', trim($requestUri, '/'));
+$sbUpUrl = '/raggiesoft-books/books/' . $seriesSlug; // Default to Landing Page
+$sbUpLabel = "Up";
+if (count($segments) == 4) {
+    // We are at a Book or TOC
+    if ($segments[3] === 'toc') {
+        $sbUpUrl = '/raggiesoft-books/books/' . $seriesSlug;
+        $sbUpLabel = "Up to Series";
+    } else {
+        $sbUpUrl = '/raggiesoft-books/books/' . $seriesSlug . '/toc';
+        $sbUpLabel = "Up to TOC";
+    }
+} elseif (count($segments) == 5) {
+    // We are at a Chapter
+    array_pop($segments);
+    $sbUpUrl = '/' . implode('/', $segments);
+    $sbUpLabel = "Up to Book";
+} elseif (count($segments) >= 6) {
+    // We are at a Part
+    array_pop($segments);
+    $sbUpUrl = '/' . implode('/', $segments);
+    $sbUpLabel = "Up to Chapter";
+}
 
 if (!empty($routeData)) {
     $routeConfig = $routeData[$requestUri] ?? [];
@@ -54,7 +78,7 @@ if (!empty($routeData)) {
             <i class="ph ph-house" style="font-size: 1.25rem;"></i> Home
         </a>
         <a href="<?php echo htmlspecialchars($sbUpUrl); ?>" class="sidebar-nav-link" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; padding: 0.75rem 0.5rem; border-radius: 6px; color: var(--rs-text); font-weight: 500;">
-            <i class="ph ph-book-open" style="font-size: 1.25rem;"></i> Table of Contents
+            <i class="ph ph-level-up" style="font-size: 1.25rem;"></i> <?php echo htmlspecialchars($sbUpLabel); ?>
         </a>
         
         <hr style="border:0; border-top:1px solid var(--rs-border); margin: 10px 0;">

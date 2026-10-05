@@ -13,15 +13,28 @@
         "navbarBrandLink": "/raggiesoft-books"
     },
     "/bob-emily": {
-        "view": "pages/raggiesoft-books/books/series",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Bob Emily",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "__SERIES_LANDING__"
     },
     "/bob-emily/toc": {
-        "view": "pages/raggiesoft-books/books/toc",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Table of Contents - Bob Emily",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/bob-emily/life-without-a-father": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Life Without a Father",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|0"
+    },
+    "/bob-emily/life-without-a-father/the-longest-day": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Longest Day",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|0"
     },
     "/bob-emily/life-without-a-father/the-longest-day/part-1-the-final-promise": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -64,6 +77,12 @@
         "title": "Part 7: A New Plan of Action",
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p007.md"
+    },
+    "/bob-emily/life-without-a-father/the-new-normal": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The New Normal",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|1"
     },
     "/bob-emily/life-without-a-father/the-new-normal/part-1-the-first-day": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -155,6 +174,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p015.md"
     },
+    "/bob-emily/assault": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Assault",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|1"
+    },
+    "/bob-emily/assault/the-locker": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Locker",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|0"
+    },
     "/bob-emily/assault/the-locker/part-1-the-assault": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Assault",
@@ -184,6 +215,12 @@
         "title": "Part 5: The Perp Walk",
         "theme": "raggiesoft-books",
         "filePath": "b002/c001/p005.md"
+    },
+    "/bob-emily/assault/the-hospital": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Hospital",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|1"
     },
     "/bob-emily/assault/the-hospital/part-1-the-long-wait": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -233,6 +270,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p008.md"
     },
+    "/bob-emily/bob-healing": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Bob Healing",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|2"
+    },
+    "/bob-emily/bob-healing/bob-s-new-reality": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Bob\u2019s New Reality",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|0"
+    },
     "/bob-emily/bob-healing/bob-s-new-reality/part-1-the-first-day-home": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The First Day Home",
@@ -281,6 +330,12 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p008.md"
     },
+    "/bob-emily/bob-healing/bob-and-emily-see-the-stars": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Bob and Emily See the Stars",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|1"
+    },
     "/bob-emily/bob-healing/bob-and-emily-see-the-stars/part-1-a-trip-to-the-stars": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Trip to the Stars",
@@ -310,6 +365,12 @@
         "title": "Part 5: Chapter Notes: Bluewater Transit Steps Up to the Plate",
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p005.md"
+    },
+    "/bob-emily/bob-healing/finishing-the-semester-strong": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Finishing the Semester Strong",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|2"
     },
     "/bob-emily/bob-healing/finishing-the-semester-strong/part-1-a-hard-limit": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -346,6 +407,18 @@
         "title": "Part 6: The Graduation Pact",
         "theme": "raggiesoft-books",
         "filePath": "b003/c003/p006.md"
+    },
+    "/bob-emily/summer-2015": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Summer 2015",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|3"
+    },
+    "/bob-emily/summer-2015/a-tale-of-two-sanctuaries": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Tale of Two Sanctuaries",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|0"
     },
     "/bob-emily/summer-2015/a-tale-of-two-sanctuaries/part-1-the-christiansburg-connection": {
         "view": "pages/raggiesoft-books/books/viewer",

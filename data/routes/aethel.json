@@ -13,15 +13,28 @@
         "navbarBrandLink": "/raggiesoft-books"
     },
     "/aethel": {
-        "view": "pages/raggiesoft-books/books/series",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Aethel",
-        "theme": "raggiesoft-books"
+        "theme": "raggiesoft-books",
+        "filePath": "__SERIES_LANDING__"
     },
     "/aethel/toc": {
-        "view": "pages/raggiesoft-books/books/toc",
+        "view": "pages/raggiesoft-books/books/viewer",
         "title": "Table of Contents - Aethel",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/aethel/era-1-the-age-of-myth": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Era 1: The Age of Myth",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|0"
+    },
+    "/aethel/era-1-the-age-of-myth/book-i-the-silver-sun": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book I: The Silver Sun",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|0"
     },
     "/aethel/era-1-the-age-of-myth/book-i-the-silver-sun/part-1-chapter-1-the-architect-s-lesson": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -35,6 +48,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p002.md"
     },
+    "/aethel/era-2-the-age-of-silence": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Era 2: The Age of Silence",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|1"
+    },
+    "/aethel/era-2-the-age-of-silence/book-i-the-silver-gauntlet-of-aethel": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book I: The Silver Gauntlet of Aethel",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|0"
+    },
     "/aethel/era-2-the-age-of-silence/book-i-the-silver-gauntlet-of-aethel/part-1-chapter-1-the-sundering-of-sunstead": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Chapter 1: The Sundering of Sunstead",
@@ -46,6 +71,12 @@
         "title": "Part 2: Chapter 2: The Silence of the Hearth",
         "theme": "raggiesoft-books",
         "filePath": "b002/c001/p002.md"
+    },
+    "/aethel/era-2-the-age-of-silence/book-ii-the-shadow-s-heart": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book II: The Shadow's Heart",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|1"
     },
     "/aethel/era-2-the-age-of-silence/book-ii-the-shadow-s-heart/part-1-chapter-1-the-hunted-and-the-caged": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -70,6 +101,12 @@
         "title": "Part 4: Chapter 4: The Bridge of a Thousand Truths",
         "theme": "raggiesoft-books",
         "filePath": "b002/c002/p004.md"
+    },
+    "/aethel/era-2-the-age-of-silence/book-iii-the-dawn-of-the-twins": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book III: The Dawn of the Twins",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|2"
     },
     "/aethel/era-2-the-age-of-silence/book-iii-the-dawn-of-the-twins/part-1-chapter-1-the-siege-of-the-shadowspire": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -101,6 +138,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b002/c003/p005.md"
     },
+    "/aethel/era-3-the-age-of-tides": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Era 3: The Age of Tides",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|2"
+    },
+    "/aethel/era-3-the-age-of-tides/book-i-the-glass-sea": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book I: The Glass Sea",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|0"
+    },
     "/aethel/era-3-the-age-of-tides/book-i-the-glass-sea/part-1-chapter-1-the-tide-and-the-torch": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Chapter 1: The Tide and the Torch",
@@ -124,6 +173,12 @@
         "title": "Part 4: Chapter 4: The Gyre",
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p004.md"
+    },
+    "/aethel/era-3-the-age-of-tides/book-ii-the-star-eater": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book II: The Star-Eater",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|1"
     },
     "/aethel/era-3-the-age-of-tides/book-ii-the-star-eater/part-1-chapter-1-the-silent-sector": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -155,6 +210,18 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c002/p005.md"
     },
+    "/aethel/era-4-the-iron-heart": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Era 4: The Iron Heart",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|3"
+    },
+    "/aethel/era-4-the-iron-heart/book-i-the-magnetic-north": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book I: The Magnetic North",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|0"
+    },
     "/aethel/era-4-the-iron-heart/book-i-the-magnetic-north/part-1-chapter-1-the-art-of-doing-nothing": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Chapter 1: The Art of Doing Nothing",
@@ -184,6 +251,12 @@
         "title": "Part 5: Chapter 4: The Return Journey",
         "theme": "raggiesoft-books",
         "filePath": "b004/c001/p005.md"
+    },
+    "/aethel/era-4-the-iron-heart/book-ii-the-pilgrimage": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book II: The Pilgrimage",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|1"
     },
     "/aethel/era-4-the-iron-heart/book-ii-the-pilgrimage/part-1-chapter-1-the-privacy-of-stone": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -220,6 +293,12 @@
         "title": "Part 6: Chapter 6: The Starlight Check-In",
         "theme": "raggiesoft-books",
         "filePath": "b004/c002/p006.md"
+    },
+    "/aethel/era-4-the-iron-heart/book-iii-the-zero-point": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book III: The Zero Point",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|2"
     },
     "/aethel/era-4-the-iron-heart/book-iii-the-zero-point/part-1-prologue-the-silence-between-stars": {
         "view": "pages/raggiesoft-books/books/viewer",
