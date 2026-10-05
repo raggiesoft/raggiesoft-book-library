@@ -200,27 +200,7 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                             </span>
                             
                             <?php if ($isoString): ?>
-                            <script>
-                            (function() {
-                                const el = document.getElementById('story-datetime-display');
-                                const iso = el.getAttribute('data-iso');
-                                if (iso) {
-                                    try {
-                                        const d = new Date(iso);
-                                        const iana = el.getAttribute('data-iana');
-                                        const options = { 
-                                            weekday: 'short', year: 'numeric', month: 'short', day: 'numeric', 
-                                            hour: 'numeric', minute: '2-digit', timeZoneName: 'short' 
-                                        };
-                                        if (iana) {
-                                            options.timeZone = iana;
-                                        }
-                                        const formatter = new Intl.DateTimeFormat('en-US', options);
-                                        el.querySelector('.dt-text').textContent = formatter.format(d);
-                                    } catch(e) {}
-                                }
-                            })();
-                            </script>
+                            
                             <?php endif; ?>
                         <?php endif; ?>
                         
@@ -336,7 +316,7 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                                 </div>
                                 
                                 <div class="reader-audio-controls-row">
-                                    <audio id="narrative-audio-element" src="<?php echo htmlspecialchars($audioUrl); ?>" data-start-time="<?php echo $audioStart; ?>" loop preload="metadata" style="display: none;"></audio>
+                                    <audio id="narrative-audio-element" data-title="<?php echo htmlspecialchars($audioTitleDisplay); ?>" data-artist="<?php echo htmlspecialchars($artistDisplay); ?>" data-album="<?php echo htmlspecialchars($albumDisplay); ?>" data-artwork="<?php echo htmlspecialchars($albumArtUrl); ?>" src="<?php echo htmlspecialchars($audioUrl); ?>" data-start-time="<?php echo $audioStart; ?>" loop preload="metadata" style="display: none;"></audio>
                                     
                                     <button id="narrative-audio-play-toggle" class="rs-btn" style="border-radius: 50%; width: 36px; height: 36px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid var(--rs-border); background: transparent;" aria-label="Play/Pause" title="Play/Pause">
                                         <i class="ph ph-play" style="font-size: 1.2rem;" id="narrative-audio-play-icon"></i>
@@ -398,199 +378,7 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                         </div>
                     </dialog>
                     
-                    <script>
-                    (function() {
-                        const audioEl = document.getElementById('narrative-audio-element');
-                        const loopBtn = document.getElementById('narrative-audio-loop-toggle');
-                        const lyricsBtn = document.getElementById('narrative-audio-lyrics-toggle');
-                        const lyricsDialog = document.getElementById('narrative-lyrics-dialog');
-                        const lyricsTitle = document.getElementById('narrative-lyrics-title');
-                        const lyricsContent = document.getElementById('narrative-lyrics-content');
-                        const playToggleBtn = document.getElementById('narrative-audio-play-toggle');
-                        const playIcon = document.getElementById('narrative-audio-play-icon');
-                        const scrubber = document.getElementById('narrative-audio-scrubber');
-                        const currentTimeDisplay = document.getElementById('narrative-audio-current');
-                        const durationDisplay = document.getElementById('narrative-audio-duration');
-                        
-                        if (audioEl && playToggleBtn) {
-                            const startTime = parseFloat(audioEl.getAttribute('data-start-time') || 0);
-
-                            function formatTime(secs) {
-                                if (isNaN(secs)) return '0:00';
-                                const m = Math.floor(secs / 60);
-                                const s = Math.floor(secs % 60);
-                                return m + ':' + (s < 10 ? '0' : '') + s;
-                            }
-                            
-                            // Play/Pause toggle
-                            playToggleBtn.addEventListener('click', () => {
-                                if (audioEl.paused) {
-                                    audioEl.play().catch(e => console.warn(e));
-                                } else {
-                                    audioEl.pause();
-                                }
-                            });
-                            
-                            // Update icons on play/pause
-                            audioEl.addEventListener('play', () => {
-                                playIcon.classList.remove('ph-play');
-                                playIcon.classList.add('ph-pause');
-                            });
-                            audioEl.addEventListener('pause', () => {
-                                playIcon.classList.remove('ph-pause');
-                                playIcon.classList.add('ph-play');
-                            });
-                            
-                            // Update duration once metadata is loaded
-                            audioEl.addEventListener('loadedmetadata', () => {
-                                scrubber.max = audioEl.duration;
-                                durationDisplay.textContent = formatTime(audioEl.duration);
-                                if (startTime > 0 && audioEl.currentTime < startTime) {
-                                    audioEl.currentTime = startTime;
-                                }
-                            });
-                            
-                            // Update scrubber as audio plays
-                            audioEl.addEventListener('timeupdate', () => {
-                                if (!scrubber.matches(':active')) {
-                                    scrubber.value = audioEl.currentTime;
-                                    currentTimeDisplay.textContent = formatTime(audioEl.currentTime);
-                                }
-                            });
-                            
-                            // Seek when user scrubs
-                            scrubber.addEventListener('input', () => {
-                                currentTimeDisplay.textContent = formatTime(scrubber.value);
-                            });
-                            scrubber.addEventListener('change', () => {
-                                audioEl.currentTime = scrubber.value;
-                            });
-                        }
-                        const lyricsClose = document.getElementById('narrative-lyrics-close');
-                        
-                        if (lyricsClose && lyricsDialog) {
-                            lyricsClose.addEventListener('click', () => {
-                                lyricsDialog.close();
-                            });
-                        }
-                        
-                        if (lyricsBtn && lyricsDialog) {
-                            lyricsBtn.addEventListener('click', () => {
-                                const title = lyricsBtn.getAttribute('data-title');
-                                const url = lyricsBtn.getAttribute('data-url');
-                                
-                                lyricsTitle.textContent = title;
-                                lyricsContent.innerHTML = '<div style="text-align: center; padding: 1rem; opacity: 0.7;">Retrieving data from the Vault...</div>';
-                                lyricsDialog.showModal();
-                                
-                                fetch(url + "?v=" + Date.now())
-                                    .then(res => {
-                                        if (!res.ok) throw new Error("Lore file not found.");
-                                        return res.text();
-                                    })
-                                    .then(text => {
-                                        let rawBlocks = text.split(/\n\s*\n/);
-                                        let htmlOutput = rawBlocks.map(block => {
-                                            if (block.trim() === '') return '';
-                                            let lines = block.split('\n');
-                                            let headerHtml = '';
-                                            let contentLines = [];
-                                            
-                                            lines.forEach(line => {
-                                                line = line.trim();
-                                                if (line === '') return;
-                                                
-                                                if (line.match(/^#+\s+/)) {
-                                                    let headerLevel = line.match(/^#+/)[0].length;
-                                                    let headerText = line.replace(/^#+\s+/, '').replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-                                                    if (headerLevel === 1) return;
-                                                    let hClass = (headerLevel === 3 && line.includes('LORE NOTE:')) 
-                                                        ? 'style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; color: var(--rs-primary); letter-spacing: 1px; margin-bottom: 0.5rem;"' 
-                                                        : 'style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem;"';
-                                                    headerHtml += `<div ${hClass}>${headerText}</div>`;
-                                                } else {
-                                                    contentLines.push(line);
-                                                }
-                                            });
-                                            
-                                            let processedBody = contentLines.map(line => {
-                                                let parsedLine = line.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-                                                parsedLine = parsedLine.replace(/\*(.*?)\*/g, '<em>$1</em>');
-                                                parsedLine = parsedLine.replace(/~~(.*?)~~/g, '<del>$1</del>');
-                                                return parsedLine;
-                                            });
-                                            
-                                            if (contentLines.length === 0) return `<div style="margin-bottom: 1.5rem;">${headerHtml}</div>`;
-                                            
-                                            return `
-                                                <div style="margin-bottom: 1.5rem;">
-                                                    ${headerHtml}
-                                                    <div style="line-height: 1.6;">${processedBody.join('<br>')}</div>
-                                                </div>`;
-                                        }).join('');
-                                        
-                                        lyricsContent.innerHTML = htmlOutput;
-                                    })
-                                    .catch(err => {
-                                        lyricsContent.innerHTML = '<div style="color: #dc3545; padding: 1rem; border: 1px solid #dc3545; border-radius: 6px; background: rgba(220,53,69,0.1);">Data Corrupted. Unable to retrieve lyrics.</div>';
-                                    });
-                            });
-                        }
-                        
-                        if (audioEl) {
-                            // Initialize Media Session API
-                            if ('mediaSession' in navigator) {
-                                navigator.mediaSession.metadata = new MediaMetadata({
-                                    title: <?php echo json_encode($audioTitleDisplay); ?>,
-                                    artist: <?php echo json_encode($artistDisplay); ?>,
-                                    album: <?php echo json_encode($albumDisplay); ?>,
-                                    artwork: [
-                                        { src: <?php echo json_encode($albumArtUrl); ?>, sizes: '512x512', type: 'image/jpeg' }
-                                    ]
-                                });
-                                navigator.mediaSession.setActionHandler('play', () => audioEl.play());
-                                navigator.mediaSession.setActionHandler('pause', () => audioEl.pause());
-                            }
-                            
-                            // Auto-play settings check
-                            const lsSettings = localStorage.getItem('ovaSettings');
-                            if (lsSettings) {
-                                try {
-                                    const parsed = JSON.parse(lsSettings);
-                                    if (parsed.narrativeSoundtrack) {
-                                        audioEl.play().catch(err => {
-                                            console.warn("Autoplay blocked by browser. User must interact first.", err);
-                                        });
-                                    }
-                                } catch(e) {}
-                            }
-                        }
-
-                        if (audioEl && loopBtn) {
-                            const icon = loopBtn.querySelector('i');
-                            loopBtn.addEventListener('click', () => {
-                                audioEl.loop = !audioEl.loop;
-                                if (audioEl.loop) {
-                                    icon.classList.remove('ph-repeat');
-                                    icon.classList.add('ph-repeat-once');
-                                    loopBtn.style.borderColor = 'var(--rs-primary)';
-                                    loopBtn.style.color = 'var(--rs-primary)';
-                                    loopBtn.style.background = 'rgba(0,0,0,0.05)';
-                                    loopBtn.setAttribute('title', 'Repeat 1 Track: ON');
-                                    loopBtn.setAttribute('aria-label', 'Toggle Repeat: ON');
-                                } else {
-                                    icon.classList.remove('ph-repeat-once');
-                                    icon.classList.add('ph-repeat');
-                                    loopBtn.style.borderColor = 'var(--rs-border)';
-                                    loopBtn.style.color = 'inherit';
-                                    loopBtn.style.background = 'transparent';
-                                    loopBtn.setAttribute('title', 'Repeat 1 Track: OFF');
-                                    loopBtn.setAttribute('aria-label', 'Toggle Repeat: OFF');
-                                }
-                            });
-                        }
-                    })();
-                    </script>
+                    
                 <?php endif; ?>
 
             <!-- Parsedown Content -->
@@ -614,31 +402,4 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
     </div>
 </main>
 
-<style>
-.reader-page {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 1rem;
-}
-.story-content {
-    font-size: 1.15rem;
-    line-height: 1.8;
-    color: var(--rs-text);
-}
-.reader-series-header {
-    font-size: 0.85rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: var(--rs-primary, #007bff);
-    margin-bottom: 1rem;
-    opacity: 0.9;
-}
-.reader-part-header {
-    font-size: clamp(1.75rem, 5vw, 2.5rem);
-    font-weight: 900;
-    color: var(--rs-text);
-    margin: 0 0 1rem 0;
-    line-height: 1.2;
-}
-</style>
+
