@@ -27,70 +27,24 @@ if (empty($actualFilePath)) {
 
 // 1. Fetch Markdown Content from CDN (or intercept internal paths)
 // $cdnBaseUrl is injected by isabel.php
+$specialPageType = null;
+$specialPageIndex1 = 0;
+$specialPageIndex2 = 0;
+$mdContent = '';
+
 if ($actualFilePath === '__SERIES_LANDING__') {
-    global $katie;
-    $seriesTitle = $katie['series_title'] ?? 'Book Series';
-    $mdContent = "# " . $seriesTitle . "\n\n";
-    if (!empty($katie['series_description'])) {
-        $mdContent .= $katie['series_description'] . "\n\n";
-    }
-    $mdContent .= "[View the Table of Contents](/" . $katie['series_slug'] . "/toc) to begin reading.\n";
+    $specialPageType = 'landing';
 } elseif ($actualFilePath === '__TOC__') {
-    global $katie;
-    $mdContent = "# Table of Contents\n\n";
-    if (!empty($katie['books'])) {
-        foreach ($katie['books'] as $book) {
-            $bookHref = isset($book['book_url']) ? str_replace('/raggiesoft-books/books', '', $book['book_url']) : '#';
-            $mdContent .= "### [" . $book['book_title'] . "](" . $bookHref . ")\n\n";
-        }
-    } else {
-        $mdContent .= "*No content available.*";
-    }
+    $specialPageType = 'toc';
 } elseif (strpos($actualFilePath, '__BOOK_TOC__|') === 0) {
-    global $katie;
-    $parts = explode('|', $actualFilePath);
-    $bIndex = (int)$parts[1];
-    
-    if (isset($katie['books'][$bIndex])) {
-        $book = $katie['books'][$bIndex];
-        $mdContent = "# " . $book['book_title'] . "\n\n";
-        if (!empty($book['chapters'])) {
-            foreach ($book['chapters'] as $chap) {
-                $chapHref = isset($chap['chap_url']) ? str_replace('/raggiesoft-books/books', '', $chap['chap_url']) : '#';
-                $mdContent .= "### [" . $chap['chap_title'] . "](" . $chapHref . ")\n\n";
-            }
-        } else {
-            $mdContent .= "*No chapters available in this book.*";
-        }
-        $mdContent .= "\n\n*[&larr; Back to Main Table of Contents](/" . $katie['series_slug'] . "/toc)*";
-    } else {
-        $mdContent = "# Error\n\nBook not found.";
-    }
+    $p = explode('|', $actualFilePath);
+    $specialPageType = 'book_toc';
+    $specialPageIndex1 = (int)($p[1] ?? 0);
 } elseif (strpos($actualFilePath, '__CHAP_TOC__|') === 0) {
-    global $katie;
-    $parts = explode('|', $actualFilePath);
-    $bIndex = (int)$parts[1];
-    $cIndex = (int)$parts[2];
-    
-    if (isset($katie['books'][$bIndex]['chapters'][$cIndex])) {
-        $book = $katie['books'][$bIndex];
-        $chap = $katie['books'][$bIndex]['chapters'][$cIndex];
-        $mdContent = "# " . $chap['chap_title'] . "\n\n";
-        $mdContent .= "*(from " . $book['book_title'] . ")*\n\n";
-        if (!empty($chap['parts'])) {
-            foreach ($chap['parts'] as $part) {
-                $href = $fileToUrl[$part['file_path']] ?? '#';
-                $mdContent .= "* [" . $part['part_title'] . "](" . $href . ")\n";
-            }
-        } else {
-            $mdContent .= "*No parts available in this chapter.*";
-        }
-        
-        $bookHref = isset($book['book_url']) ? str_replace('/raggiesoft-books/books', '', $book['book_url']) : '#';
-        $mdContent .= "\n\n*[&larr; Back to " . $book['book_title'] . "](" . $bookHref . ")*";
-    } else {
-        $mdContent = "# Error\n\nChapter not found.";
-    }
+    $p = explode('|', $actualFilePath);
+    $specialPageType = 'chap_toc';
+    $specialPageIndex1 = (int)($p[1] ?? 0);
+    $specialPageIndex2 = (int)($p[2] ?? 0);
 } else {
     $mdUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/' . $actualFilePath;
     $mdContent = @file_get_contents($mdUrl);
@@ -99,7 +53,7 @@ if ($actualFilePath === '__SERIES_LANDING__') {
     }
 }
 
-if ($mdContent === false) {
+if ($mdContent === false && !$specialPageType) {
     echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;"><div class="book-page"><h1>File Not Found</h1><p>The narrative file could not be loaded from the Vault.</p></div></main>';
     return;
 }
@@ -128,7 +82,21 @@ if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $mdContent, $matche
 // 3. Render HTML
 require_once $basePath . '/includes/classes/stardust-parsedown.php';
 $Parsedown = new StardustParsedown();
-$htmlContent = $Parsedown->text($mdContent);
+if ($specialPageType) {
+    ob_start();
+    if ($specialPageType === 'landing') {
+        require_once __DIR__ . '/landing.php';
+    } elseif ($specialPageType === 'toc') {
+        require_once __DIR__ . '/toc.php';
+    } elseif ($specialPageType === 'book_toc') {
+        require_once __DIR__ . '/book-toc.php';
+    } elseif ($specialPageType === 'chap_toc') {
+        require_once __DIR__ . '/chap-toc.php';
+    }
+    $htmlContent = ob_get_clean();
+} else {
+    $htmlContent = $Parsedown->text($mdContent);
+}
 
 // 4. Sequence Navigation (Provided by Route JSON)
 $prevUrl = $config['prevUrl'] ?? null;
