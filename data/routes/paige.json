@@ -17,6 +17,12 @@
         "title": "Paige",
         "theme": "raggiesoft-books"
     },
+    "/paige/toc": {
+        "view": "pages/raggiesoft-books/books/toc",
+        "title": "Table of Contents - Paige",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
+    },
     "/paige/freshman-year/band-camp/part-1-the-downbeat": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Downbeat",

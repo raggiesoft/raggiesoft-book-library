@@ -17,6 +17,12 @@
         "title": "Casey",
         "theme": "raggiesoft-books"
     },
+    "/casey/toc": {
+        "view": "pages/raggiesoft-books/books/toc",
+        "title": "Table of Contents - Casey",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
+    },
     "/casey/book-1-the-george-wythe-expedition/chapter-1-the-northern-regional/part-1-departing-npn": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Departing NPN",

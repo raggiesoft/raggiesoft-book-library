@@ -14,8 +14,15 @@
     },
     "/luna-leo": {
         "view": "pages/raggiesoft-books/books/series",
-        "title": "Luna Leo",
-        "theme": "raggiesoft-books"
+        "title": "Luna & Leo",
+        "theme": "raggiesoft-books",
+        "filePath": "index.md"
+    },
+    "/luna-leo/toc": {
+        "view": "pages/raggiesoft-books/books/toc",
+        "title": "Table of Contents - Luna & Leo",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
     },
     "/luna-leo/early-years/birthday-morning-and-the-grandparents-arrival/part-1-birthday-morning-and-the-grandparents-arrival": {
         "view": "pages/raggiesoft-books/books/viewer",

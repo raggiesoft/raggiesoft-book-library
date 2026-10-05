@@ -16,5 +16,11 @@
         "view": "pages/raggiesoft-books/books/series",
         "title": "Fractured Prisms",
         "theme": "raggiesoft-books"
+    },
+    "/fractured-prisms/toc": {
+        "view": "pages/raggiesoft-books/books/toc",
+        "title": "Table of Contents - Fractured Prisms",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
     }
 }

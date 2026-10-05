@@ -17,6 +17,12 @@
         "title": "Aubrie",
         "theme": "raggiesoft-books"
     },
+    "/aubrie/toc": {
+        "view": "pages/raggiesoft-books/books/toc",
+        "title": "Table of Contents - Aubrie",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
+    },
     "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude/part-1-the-drive": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Drive",

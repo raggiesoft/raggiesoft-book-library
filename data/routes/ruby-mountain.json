@@ -17,6 +17,12 @@
         "title": "Ruby Mountain",
         "theme": "raggiesoft-books"
     },
+    "/ruby-mountain/toc": {
+        "view": "pages/raggiesoft-books/books/toc",
+        "title": "Table of Contents - Ruby Mountain",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
+    },
     "/ruby-mountain/book-the-great-schism/chapter-1-the-eve-of-exile/part-1-the-traitor": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Traitor",

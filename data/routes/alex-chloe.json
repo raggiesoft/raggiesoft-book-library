@@ -17,6 +17,12 @@
         "title": "Alex Chloe",
         "theme": "raggiesoft-books"
     },
+    "/alex-chloe/toc": {
+        "view": "pages/raggiesoft-books/books/toc",
+        "title": "Table of Contents - Alex Chloe",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
+    },
     "/alex-chloe/alex-s-childhood/the-carter-house/part-1-the-first-meeting": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The First Meeting",

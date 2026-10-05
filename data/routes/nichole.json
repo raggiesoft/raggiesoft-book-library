@@ -17,6 +17,12 @@
         "title": "Nichole",
         "theme": "raggiesoft-books"
     },
+    "/nichole/toc": {
+        "view": "pages/raggiesoft-books/books/toc",
+        "title": "Table of Contents - Nichole",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
+    },
     "/nichole/elementary-school/the-newport-vacation/part-1-the-bachelor-pad": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Bachelor Pad",

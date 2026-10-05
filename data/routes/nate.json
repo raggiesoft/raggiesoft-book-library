@@ -17,6 +17,12 @@
         "title": "Nate",
         "theme": "raggiesoft-books"
     },
+    "/nate/toc": {
+        "view": "pages/raggiesoft-books/books/toc",
+        "title": "Table of Contents - Nate",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
+    },
     "/nate/book-the-architecture-of-safe-spaces/chapter-1-the-triplet-anomaly-saturday-april-16-1994/part-1-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Untitled Chapter",

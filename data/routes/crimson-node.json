@@ -17,6 +17,12 @@
         "title": "Crimson Node",
         "theme": "raggiesoft-books"
     },
+    "/crimson-node/toc": {
+        "view": "pages/raggiesoft-books/books/toc",
+        "title": "Table of Contents - Crimson Node",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
+    },
     "/crimson-node/book-1-the-illusion/chapter-1-the-approach-ndash-friday-april-23-1999/part-1-anomalies": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Anomalies",

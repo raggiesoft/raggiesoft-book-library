@@ -17,6 +17,12 @@
         "title": "Apex Fall Of Earth",
         "theme": "raggiesoft-books"
     },
+    "/apex-fall-of-earth/toc": {
+        "view": "pages/raggiesoft-books/books/toc",
+        "title": "Table of Contents - Apex Fall Of Earth",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
+    },
     "/apex-fall-of-earth/wyatt-s-prologue/wyatt-expendable-assets/part-1-the-deep-end-mid-october-2044": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Deep End \u2013 Mid-October 2044",

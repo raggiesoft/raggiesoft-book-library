@@ -17,6 +17,12 @@
         "title": "Pebble Borrow",
         "theme": "raggiesoft-books"
     },
+    "/pebble-borrow/toc": {
+        "view": "pages/raggiesoft-books/books/toc",
+        "title": "Table of Contents - Pebble Borrow",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
+    },
     "/pebble-borrow/the-motel-on-the-highway/the-threshold/part-1-out-of-the-storm": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Out of the Storm",

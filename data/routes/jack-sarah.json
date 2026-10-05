@@ -17,6 +17,12 @@
         "title": "Jack Sarah",
         "theme": "raggiesoft-books"
     },
+    "/jack-sarah/toc": {
+        "view": "pages/raggiesoft-books/books/toc",
+        "title": "Table of Contents - Jack Sarah",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
+    },
     "/jack-sarah/life-at-fairlawn/the-end-of-a-war/part-1-the-discovery": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Discovery \ud83d\udc94",

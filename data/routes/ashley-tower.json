@@ -17,6 +17,12 @@
         "title": "Ashley Tower",
         "theme": "raggiesoft-books"
     },
+    "/ashley-tower/toc": {
+        "view": "pages/raggiesoft-books/books/toc",
+        "title": "Table of Contents - Ashley Tower",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
+    },
     "/ashley-tower/book-1-the-ascent/chapter-1-the-gathering-storm-tuesday-february-9-2021/part-1-best-laid-plans-7-30-pm": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Best Laid Plans \u2013 7:30 PM",

@@ -25,14 +25,38 @@ if (empty($actualFilePath)) {
     return;
 }
 
-// 1. Fetch Markdown Content from CDN
+// 1. Fetch Markdown Content from CDN (or intercept internal paths)
 // $cdnBaseUrl is injected by isabel.php
-$mdUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/' . $actualFilePath;
-
-$mdContent = @file_get_contents($mdUrl);
-if ($mdContent !== false) {
-    $mdContent = str_replace('{{CDN}}', $cdnBaseUrl, $mdContent);
+if ($actualFilePath === '__TOC__') {
+    global $katie;
+    $mdContent = "# Table of Contents\n\n";
+    if (!empty($katie['books'])) {
+        foreach ($katie['books'] as $book) {
+            $mdContent .= "### " . $book['book_title'] . "\n";
+            if (!empty($book['chapters'])) {
+                foreach ($book['chapters'] as $chap) {
+                    $mdContent .= "#### " . $chap['chap_title'] . "\n";
+                    if (!empty($chap['parts'])) {
+                        foreach ($chap['parts'] as $part) {
+                            $href = $fileToUrl[$part['file_path']] ?? '#';
+                            $mdContent .= "* [" . $part['part_title'] . "](" . $href . ")\n";
+                        }
+                    }
+                    $mdContent .= "\n";
+                }
+            }
+        }
+    } else {
+        $mdContent .= "*No content available.*";
+    }
+} else {
+    $mdUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/' . $actualFilePath;
+    $mdContent = @file_get_contents($mdUrl);
+    if ($mdContent !== false) {
+        $mdContent = str_replace('{{CDN}}', $cdnBaseUrl, $mdContent);
+    }
 }
+
 if ($mdContent === false) {
     echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;"><div class="book-page"><h1>File Not Found</h1><p>The narrative file could not be loaded from the Vault.</p></div></main>';
     return;

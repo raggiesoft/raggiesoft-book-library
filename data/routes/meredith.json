@@ -17,6 +17,12 @@
         "title": "Meredith",
         "theme": "raggiesoft-books"
     },
+    "/meredith/toc": {
+        "view": "pages/raggiesoft-books/books/toc",
+        "title": "Table of Contents - Meredith",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
+    },
     "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/part-1-the-garage-barracks": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Garage Barracks",

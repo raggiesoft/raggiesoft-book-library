@@ -17,6 +17,12 @@
         "title": "Stardust Engine",
         "theme": "raggiesoft-books"
     },
+    "/stardust-engine/toc": {
+        "view": "pages/raggiesoft-books/books/toc",
+        "title": "Table of Contents - Stardust Engine",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
+    },
     "/stardust-engine/book-4-ad-astra/chapter-1-escape-velocity-ndash-1995/part-1-the-magnum-opus-ndash-12-00-pm": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Magnum Opus &ndash; 12:00 PM",

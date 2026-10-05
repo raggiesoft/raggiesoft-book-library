@@ -16,5 +16,11 @@
         "view": "pages/raggiesoft-books/books/series",
         "title": "Beth",
         "theme": "raggiesoft-books"
+    },
+    "/beth/toc": {
+        "view": "pages/raggiesoft-books/books/toc",
+        "title": "Table of Contents - Beth",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
     }
 }

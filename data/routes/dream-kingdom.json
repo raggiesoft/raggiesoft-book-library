@@ -17,6 +17,12 @@
         "title": "Dream Kingdom",
         "theme": "raggiesoft-books"
     },
+    "/dream-kingdom/toc": {
+        "view": "pages/raggiesoft-books/books/toc",
+        "title": "Table of Contents - Dream Kingdom",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
+    },
     "/dream-kingdom/book-1-the-dream-kingdom/chapter-1-the-analog-jammer-friday-october-30-1992/part-1-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Untitled Chapter",

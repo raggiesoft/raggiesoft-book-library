@@ -17,6 +17,12 @@
         "title": "Samantha",
         "theme": "raggiesoft-books"
     },
+    "/samantha/toc": {
+        "view": "pages/raggiesoft-books/books/toc",
+        "title": "Table of Contents - Samantha",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
+    },
     "/samantha/book-1-toby-s-6th-grade/chapter-1-the-father-and-the-uncle-sunday-july-13-1997/part-1-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Untitled Chapter",
