@@ -14,13 +14,13 @@
     },
     "/casey": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Casey",
+        "title": "The Quantum Directive: The Caretakers",
         "theme": "raggiesoft-books",
         "filePath": "__SERIES_LANDING__"
     },
     "/casey/toc": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Table of Contents - Casey",
+        "title": "Table of Contents - The Quantum Directive: The Caretakers",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
     },

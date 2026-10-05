@@ -46,6 +46,8 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c001/p002.md"
+        "filePath": "b001/c001/p002.md",
+        "nextUrl": "/ashley-tower/b001/c001/p001",
+        "nextText": "Continue to Ashley Tower"
     }
 }
