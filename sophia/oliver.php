@@ -180,6 +180,7 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
         </div>
 
         <article class="story-content">
+            <?php if (!$specialPageType): ?>
             <!-- Title Header -->
             <div style="text-align: center; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--rs-border); position: relative;">
                 <div class="reader-series-header">
@@ -248,6 +249,8 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                     </div>
                 <?php endif; ?>
             </div>
+
+            <?php endif; // End if(!$specialPageType) ?>
 
             <?php if (!empty($frontmatter['audio'])): ?>
                     <?php 
