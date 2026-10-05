@@ -14,13 +14,13 @@
     },
     "/apex-fall-of-earth": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Apex Fall Of Earth",
+        "title": "Apex: Fall of Earth",
         "theme": "raggiesoft-books",
         "filePath": "__SERIES_LANDING__"
     },
     "/apex-fall-of-earth/toc": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Table of Contents - Apex Fall Of Earth",
+        "title": "Table of Contents - Apex: Fall of Earth",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
     },

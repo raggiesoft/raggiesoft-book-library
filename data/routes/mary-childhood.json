@@ -14,13 +14,13 @@
     },
     "/mary-childhood": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Mary Childhood",
+        "title": "Mary's Childhood",
         "theme": "raggiesoft-books",
         "filePath": "__SERIES_LANDING__"
     },
     "/mary-childhood/toc": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Table of Contents - Mary Childhood",
+        "title": "Table of Contents - Mary's Childhood",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
     },
