@@ -75,8 +75,8 @@ $currentHeaderMenu = null;
 
 // Include Global HTML Header (Opens HTML, Head, Body, #stardust-app)
 require_once $basePath . '/includes/components/headers/header.php';
-<link rel="stylesheet" href="<?php echo $cdnBaseUrl; ?>/raggiesoft-books/css/reader.css?v=<?php echo time(); ?>">
-<script src="<?php echo $cdnBaseUrl; ?>/raggiesoft-books/js/reader.js?v=<?php echo time(); ?>" defer></script>
+echo '<link rel="stylesheet" href="' . $cdnBaseUrl . '/raggiesoft-books/css/reader.css?v=' . time() . '>';
+echo '<script src="' . $cdnBaseUrl . '/raggiesoft-books/js/reader.js?v=' . time() . '" defer></script>';
 
 
 echo '<div id="stardust-main-wrapper" style="display: flex; height: 100vh; overflow: hidden; width: 100%;">';
