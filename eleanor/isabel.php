@@ -53,7 +53,7 @@ $currentPageTheme = $pageConfig['theme'] ?? 'raggiesoft-books';
 // Pre-fetch Katie for both SEO Title and Sidebar
 $katie = null;
 if ($seriesSlug) {
-    $katieUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/katie.json';
+    $katieUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/toc.json';
     $katieContent = @file_get_contents($katieUrl);
     $katie = $katieContent ? json_decode($katieContent, true) : null;
 }

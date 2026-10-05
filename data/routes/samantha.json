@@ -14,7 +14,7 @@
     },
     "/samantha": {
         "view": "pages/raggiesoft-books/books/series",
-        "title": "samantha",
+        "title": "Samantha",
         "theme": "raggiesoft-books"
     },
     "/samantha/book-1/chapter-1/part-1-untitled-chapter": {

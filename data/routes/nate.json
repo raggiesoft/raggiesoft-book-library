@@ -14,7 +14,7 @@
     },
     "/nate": {
         "view": "pages/raggiesoft-books/books/series",
-        "title": "nate",
+        "title": "Nate",
         "theme": "raggiesoft-books"
     },
     "/nate/book-1/chapter-1/part-1-untitled-chapter": {
