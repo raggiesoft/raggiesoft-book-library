@@ -19,23 +19,23 @@ $sbNextUrl = null;
 
 // Dynamic Up Navigation based on URL segments
 $segments = explode('/', trim($requestUri, '/'));
-$sbUpUrl = '/raggiesoft-books/books/' . $seriesSlug; // Default to Landing Page
+$sbUpUrl = '/' . $seriesSlug; // Default to Landing Page
 $sbUpLabel = "Up";
-if (count($segments) == 4) {
+if (count($segments) == 2) {
     // We are at a Book or TOC
-    if ($segments[3] === 'toc') {
-        $sbUpUrl = '/raggiesoft-books/books/' . $seriesSlug;
+    if ($segments[1] === 'toc') {
+        $sbUpUrl = '/' . $seriesSlug;
         $sbUpLabel = "Up to Series";
     } else {
-        $sbUpUrl = '/raggiesoft-books/books/' . $seriesSlug . '/toc';
+        $sbUpUrl = '/' . $seriesSlug . '/toc';
         $sbUpLabel = "Up to TOC";
     }
-} elseif (count($segments) == 5) {
+} elseif (count($segments) == 3) {
     // We are at a Chapter
     array_pop($segments);
     $sbUpUrl = '/' . implode('/', $segments);
     $sbUpLabel = "Up to Book";
-} elseif (count($segments) >= 6) {
+} elseif (count($segments) >= 4) {
     // We are at a Part
     array_pop($segments);
     $sbUpUrl = '/' . implode('/', $segments);

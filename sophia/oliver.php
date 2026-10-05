@@ -34,13 +34,13 @@ if ($actualFilePath === '__SERIES_LANDING__') {
     if (!empty($katie['series_description'])) {
         $mdContent .= $katie['series_description'] . "\n\n";
     }
-    $mdContent .= "[View the Table of Contents](/raggiesoft-books/books/" . $katie['series_slug'] . "/toc) to begin reading.\n";
+    $mdContent .= "[View the Table of Contents](/" . $katie['series_slug'] . "/toc) to begin reading.\n";
 } elseif ($actualFilePath === '__TOC__') {
     global $katie;
     $mdContent = "# Table of Contents\n\n";
     if (!empty($katie['books'])) {
         foreach ($katie['books'] as $book) {
-            $bookHref = isset($book['book_url']) ? $book['book_url'] : '#';
+            $bookHref = isset($book['book_url']) ? str_replace('/raggiesoft-books/books', '', $book['book_url']) : '#';
             $mdContent .= "### [" . $book['book_title'] . "](" . $bookHref . ")\n\n";
         }
     } else {
@@ -56,13 +56,13 @@ if ($actualFilePath === '__SERIES_LANDING__') {
         $mdContent = "# " . $book['book_title'] . "\n\n";
         if (!empty($book['chapters'])) {
             foreach ($book['chapters'] as $chap) {
-                $chapHref = isset($chap['chap_url']) ? $chap['chap_url'] : '#';
+                $chapHref = isset($chap['chap_url']) ? str_replace('/raggiesoft-books/books', '', $chap['chap_url']) : '#';
                 $mdContent .= "### [" . $chap['chap_title'] . "](" . $chapHref . ")\n\n";
             }
         } else {
             $mdContent .= "*No chapters available in this book.*";
         }
-        $mdContent .= "\n\n*[&larr; Back to Main Table of Contents](/raggiesoft-books/books/" . $katie['series_slug'] . "/toc)*";
+        $mdContent .= "\n\n*[&larr; Back to Main Table of Contents](/" . $katie['series_slug'] . "/toc)*";
     } else {
         $mdContent = "# Error\n\nBook not found.";
     }
@@ -86,7 +86,7 @@ if ($actualFilePath === '__SERIES_LANDING__') {
             $mdContent .= "*No parts available in this chapter.*";
         }
         
-        $bookHref = isset($book['book_url']) ? $book['book_url'] : '#';
+        $bookHref = isset($book['book_url']) ? str_replace('/raggiesoft-books/books', '', $book['book_url']) : '#';
         $mdContent .= "\n\n*[&larr; Back to " . $book['book_title'] . "](" . $bookHref . ")*";
     } else {
         $mdContent = "# Error\n\nChapter not found.";
