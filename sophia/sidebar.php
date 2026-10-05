@@ -20,27 +20,7 @@ $sbNextUrl = null;
 // Dynamic Up Navigation based on URL segments
 $segments = explode('/', trim($requestUri, '/'));
 $sbUpUrl = '/' . $seriesSlug; // Default to Landing Page
-$sbUpLabel = "Up";
-if (count($segments) == 2) {
-    // We are at a Book or TOC
-    if ($segments[1] === 'toc') {
-        $sbUpUrl = '/' . $seriesSlug;
-        $sbUpLabel = "Up to Series";
-    } else {
-        $sbUpUrl = '/' . $seriesSlug . '/toc';
-        $sbUpLabel = "Up to TOC";
-    }
-} elseif (count($segments) == 3) {
-    // We are at a Chapter
-    array_pop($segments);
-    $sbUpUrl = '/' . implode('/', $segments);
-    $sbUpLabel = "Up to Book";
-} elseif (count($segments) >= 4) {
-    // We are at a Part
-    array_pop($segments);
-    $sbUpUrl = '/' . implode('/', $segments);
-    $sbUpLabel = "Up to Chapter";
-}
+$sbUpLabel = "Up to Series";
 
 if (!empty($routeData)) {
     $routeConfig = $routeData[$requestUri] ?? [];
@@ -76,6 +56,9 @@ if (!empty($routeData)) {
     <nav class="toc-nav" style="display: flex; flex-direction: column; gap: 0.5rem;">
         <a href="https://raggiesoft.com/raggiesoft-books/books" class="sidebar-nav-link" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; padding: 0.75rem 0.5rem; border-radius: 6px; color: var(--rs-text); font-weight: 500;">
             <i class="ph ph-house" style="font-size: 1.25rem;"></i> Home
+        </a>
+        <a href="/<?php echo htmlspecialchars($seriesSlug); ?>/toc" class="sidebar-nav-link" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; padding: 0.75rem 0.5rem; border-radius: 6px; color: var(--rs-text); font-weight: 500;">
+            <i class="ph ph-list" style="font-size: 1.25rem;"></i> Table of Contents
         </a>
         <a href="<?php echo htmlspecialchars($sbUpUrl); ?>" class="sidebar-nav-link" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; padding: 0.75rem 0.5rem; border-radius: 6px; color: var(--rs-text); font-weight: 500;">
             <i class="ph ph-level-up" style="font-size: 1.25rem;"></i> <?php echo htmlspecialchars($sbUpLabel); ?>
