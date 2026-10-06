@@ -66,4 +66,31 @@ $tocUrl = '/' . $seriesSlug . '/toc';
             </div>
         </div>
     </div>
+
+<?php 
+$currentUrl = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; 
+$encodedUrl = urlencode($currentUrl);
+$encodedText = urlencode("Check out " . $seriesTitle . " by Michael Ragsdale!");
+$ogImageFile = $cdnBaseUrl . '/raggiesoft-books/images/covers/og-' . $seriesSlug . '.jpg';
+?>
+    <!-- Share Section -->
+    <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--rs-border); text-align: center;">
+        <h3 style="margin-bottom: 1.5rem; color: var(--rs-text);">Share this Book</h3>
+        
+        <img src="<?php echo htmlspecialchars($ogImageFile); ?>" alt="Share Preview" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); margin-bottom: 2rem; border: 1px solid var(--rs-border);" onerror="this.style.display='none'">
+        
+        <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $encodedUrl; ?>" target="_blank" rel="noopener noreferrer" class="rs-btn">
+                <i class="ph ph-facebook-logo"></i> Facebook
+            </a>
+            
+            <a href="https://bsky.app/intent/compose?text=<?php echo $encodedText . '%20' . $encodedUrl; ?>" target="_blank" rel="noopener noreferrer" class="rs-btn">
+                <i class="ph ph-cloud-sun"></i> Bluesky
+            </a>
+
+            <button onclick="navigator.clipboard.writeText('<?php echo htmlspecialchars($currentUrl); ?>'); alert('Link copied to clipboard!');" class="rs-btn rs-btn-primary">
+                <i class="ph ph-link"></i> Copy Link
+            </button>
+        </div>
+    </div>
 </div>

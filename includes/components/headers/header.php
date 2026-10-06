@@ -8,6 +8,29 @@ $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? '
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title><?= htmlspecialchars($siteName ?? 'Ocean View Archives') ?></title>
+    
+    <?php if (!empty($ogTitle)): ?>
+    <meta property="og:title" content="<?= htmlspecialchars($ogTitle) ?>">
+    <meta name="twitter:title" content="<?= htmlspecialchars($ogTitle) ?>">
+    <?php endif; ?>
+    
+    <?php if (!empty($ogDescription)): ?>
+    <meta property="og:description" content="<?= htmlspecialchars($ogDescription) ?>">
+    <meta name="twitter:description" content="<?= htmlspecialchars($ogDescription) ?>">
+    <?php endif; ?>
+    
+    <?php if (!empty($ogImage)): ?>
+    <meta property="og:image" content="<?= htmlspecialchars($ogImage) ?>">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="<?= htmlspecialchars($ogImage) ?>">
+    <?php endif; ?>
+    
+    <?php if (!empty($ogUrl)): ?>
+    <meta property="og:url" content="<?= htmlspecialchars($ogUrl) ?>">
+    <?php endif; ?>
+    
+    <meta property="og:type" content="website">
+
     <?php $assetsUrl = $cdnBaseUrl ?? 'https://assets.raggiesoft.com'; ?>
     <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-grid.css">
     <link rel="stylesheet" href="<?= $assetsUrl ?>/stardust-engine-library/css/stardust-engine.min.css?v=<?php echo time(); ?>">

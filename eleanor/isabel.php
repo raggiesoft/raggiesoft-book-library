@@ -70,6 +70,15 @@ if (!empty($pageConfig['title'])) {
     $siteName = $cleanPartTitle . ' | ' . $seriesTitle;
 }
 
+// Setup OpenGraph Variables
+$ogUrl = 'https://' . $_SERVER['HTTP_HOST'] . $requestUri;
+$ogTitle = $siteName;
+$ogDescription = !empty($katie['series_description']) ? $katie['series_description'] : 'Read this story on the Raggiesoft Ocean View Archives.';
+$ogImage = '';
+if (!empty($seriesSlug)) {
+    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og-' . $seriesSlug . '.jpg';
+}
+
 // Do NOT load a header menu (like header-default) so the reader has full screen real estate
 $currentHeaderMenu = null;
 
