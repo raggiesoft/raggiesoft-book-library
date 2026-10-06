@@ -14,13 +14,13 @@
     },
     "/jessica": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Jessica",
+        "title": "The Quantum Directive: Jessica's Cut",
         "theme": "raggiesoft-books",
         "filePath": "__SERIES_LANDING__"
     },
     "/jessica/toc": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Table of Contents - Jessica",
+        "title": "Table of Contents - The Quantum Directive: Jessica's Cut",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
     },

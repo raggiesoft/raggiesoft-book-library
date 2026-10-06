@@ -14,13 +14,13 @@
     },
     "/alex-chloe": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Alex Chloe",
+        "title": "Beyond Words",
         "theme": "raggiesoft-books",
         "filePath": "__SERIES_LANDING__"
     },
     "/alex-chloe/toc": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Table of Contents - Alex Chloe",
+        "title": "Table of Contents - Beyond Words",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
     },

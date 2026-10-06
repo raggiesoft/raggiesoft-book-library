@@ -14,13 +14,13 @@
     },
     "/ashley-tower": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Ashley Tower",
+        "title": "Fortress in the Clouds",
         "theme": "raggiesoft-books",
         "filePath": "__SERIES_LANDING__"
     },
     "/ashley-tower/toc": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Table of Contents - Ashley Tower",
+        "title": "Table of Contents - Fortress in the Clouds",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
     },
