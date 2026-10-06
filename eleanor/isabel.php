@@ -66,8 +66,11 @@ if (!empty($pageConfig['title'])) {
     
     $seriesTitle = !empty($katie['series_title']) ? $katie['series_title'] : (ucwords(str_replace('-', ' ', $seriesSlug)));
     
-    // SEO Format: Specific | General
-    $siteName = $cleanPartTitle . ' | ' . $seriesTitle;
+    if ($cleanPartTitle === $seriesTitle || $cleanPartTitle === "Table of Contents - $seriesTitle") {
+        $siteName = $cleanPartTitle . ' | Ocean View Archives';
+    } else {
+        $siteName = $cleanPartTitle . ' | ' . $seriesTitle;
+    }
 }
 
 // Setup OpenGraph Variables
@@ -92,6 +95,8 @@ if (!empty($pageConfig['filePath'])) {
             if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $prefetchedMdContent, $matches)) {
                 $rawFrontmatter = $matches[1];
                 $lines = explode("\n", $rawFrontmatter);
+                $fmTitle = '';
+                $fmOgTitle = '';
                 foreach ($lines as $line) {
                     $line = trim($line);
                     if (strpos($line, ':') !== false) {
@@ -99,7 +104,8 @@ if (!empty($pageConfig['filePath'])) {
                         $key = trim($key);
                         $val = trim($val);
                         $val = trim($val, '"\'');
-                        if ($key === 'og_title' && $val !== '') $ogTitle = $val;
+                        if ($key === 'title' && $val !== '') $fmTitle = $val;
+                        if ($key === 'og_title' && $val !== '') $fmOgTitle = $val;
                         if ($key === 'og_description' && $val !== '') $ogDescription = $val;
                         if ($key === 'og_image' && $val !== '') {
                             $ogImage = $val;
@@ -108,6 +114,13 @@ if (!empty($pageConfig['filePath'])) {
                             }
                         }
                     }
+                }
+                
+                if ($fmOgTitle !== '') {
+                    $ogTitle = $fmOgTitle;
+                } elseif ($fmTitle !== '') {
+                    $seriesTitle = !empty($katie['series_title']) ? $katie['series_title'] : (ucwords(str_replace('-', ' ', $seriesSlug)));
+                    $ogTitle = $fmTitle . ' | ' . $seriesTitle;
                 }
             }
         }
