@@ -46,10 +46,14 @@ if ($actualFilePath === '__SERIES_LANDING__') {
     $specialPageIndex1 = (int)($p[1] ?? 0);
     $specialPageIndex2 = (int)($p[2] ?? 0);
 } else {
-    $mdUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/' . $actualFilePath;
-    $mdContent = @file_get_contents($mdUrl);
-    if ($mdContent !== false) {
-        $mdContent = str_replace('{{CDN}}', $cdnBaseUrl, $mdContent);
+    if (isset($prefetchedMdContent) && $prefetchedMdContent !== null) {
+        $mdContent = $prefetchedMdContent;
+    } else {
+        $mdUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/' . $actualFilePath;
+        $mdContent = @file_get_contents($mdUrl);
+        if ($mdContent !== false) {
+            $mdContent = str_replace('{{CDN}}', $cdnBaseUrl, $mdContent);
+        }
     }
 }
 

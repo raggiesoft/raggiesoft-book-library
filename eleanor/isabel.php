@@ -79,6 +79,41 @@ if (!empty($seriesSlug)) {
     $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og-' . $seriesSlug . '.jpg';
 }
 
+// Check for OpenGraph overrides in the Markdown Frontmatter
+$prefetchedMdContent = null;
+if (!empty($pageConfig['filePath'])) {
+    $actualFilePath = $pageConfig['filePath'];
+    $isSpecial = in_array($actualFilePath, ['__SERIES_LANDING__', '__TOC__']) || strpos($actualFilePath, '__BOOK_TOC__|') === 0 || strpos($actualFilePath, '__CHAP_TOC__|') === 0;
+    if (!$isSpecial) {
+        $mdUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/' . $actualFilePath;
+        $prefetchedContent = @file_get_contents($mdUrl);
+        if ($prefetchedContent !== false) {
+            $prefetchedMdContent = str_replace('{{CDN}}', $cdnBaseUrl, $prefetchedContent);
+            if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $prefetchedMdContent, $matches)) {
+                $rawFrontmatter = $matches[1];
+                $lines = explode("\n", $rawFrontmatter);
+                foreach ($lines as $line) {
+                    $line = trim($line);
+                    if (strpos($line, ':') !== false) {
+                        list($key, $val) = explode(':', $line, 2);
+                        $key = trim($key);
+                        $val = trim($val);
+                        $val = trim($val, '"\'');
+                        if ($key === 'og_title' && $val !== '') $ogTitle = $val;
+                        if ($key === 'og_description' && $val !== '') $ogDescription = $val;
+                        if ($key === 'og_image' && $val !== '') {
+                            $ogImage = $val;
+                            if (strpos($ogImage, 'http') !== 0) {
+                                $ogImage = $cdnBaseUrl . '/' . ltrim($ogImage, '/');
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 // Do NOT load a header menu (like header-default) so the reader has full screen real estate
 $currentHeaderMenu = null;
 
