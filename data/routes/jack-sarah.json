@@ -14,13 +14,13 @@
     },
     "/jack-sarah": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Jack & Sarah",
+        "title": "Jack Sarah",
         "theme": "raggiesoft-books",
         "filePath": "__SERIES_LANDING__"
     },
     "/jack-sarah/toc": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Table of Contents - Jack & Sarah",
+        "title": "Table of Contents - Jack Sarah",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
     },

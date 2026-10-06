@@ -14,13 +14,13 @@
     },
     "/kelly": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Quantum Directive: Kelly's Cut",
+        "title": "Kelly",
         "theme": "raggiesoft-books",
         "filePath": "__SERIES_LANDING__"
     },
     "/kelly/toc": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Table of Contents - The Quantum Directive: Kelly's Cut",
+        "title": "Table of Contents - Kelly",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
     },

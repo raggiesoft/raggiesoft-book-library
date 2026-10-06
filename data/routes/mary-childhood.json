@@ -14,13 +14,13 @@
     },
     "/mary-childhood": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Mary's Childhood",
+        "title": "Mary Childhood",
         "theme": "raggiesoft-books",
         "filePath": "__SERIES_LANDING__"
     },
     "/mary-childhood/toc": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Table of Contents - Mary's Childhood",
+        "title": "Table of Contents - Mary Childhood",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
     },
@@ -46,8 +46,6 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c001/p002.md",
-        "nextUrl": "/ashley-tower/b001/c001/p001",
-        "nextText": "Continue to Ashley Tower"
+        "filePath": "b001/c001/p002.md"
     }
 }
