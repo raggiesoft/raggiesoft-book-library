@@ -382,22 +382,22 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                             <div style="font-size: 0.8rem; opacity: 0.7;">The background audio is a low-quality stream. To hear the full high-fidelity mix (and support the author), please stream it on your favorite service:</div>
                             <div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
                                 <?php if ($spotifyUrl): ?>
-                                    <a href="<?php echo htmlspecialchars($spotifyUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Listen on Spotify" class="rs-btn" style="padding: 0.25rem 0.5rem; font-size: 0.8rem; border-color: #1DB954; color: #1DB954;"><i class="ph ph-spotify-logo" style="margin-right: 4px;"></i> Spotify <i class="ph ph-arrow-square-out" style="margin-left: 4px; opacity: 0.7;"></i></a>
+                                    <a href="<?php echo htmlspecialchars($spotifyUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Listen on Spotify" class="rs-btn" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;"><i class="ph ph-spotify-logo" style="margin-right: 4px;"></i> Spotify <i class="ph ph-arrow-square-out" style="margin-left: 4px; opacity: 0.7;"></i></a>
                                 <?php endif; ?>
                                 <?php if ($appleUrl): ?>
-                                    <a href="<?php echo htmlspecialchars($appleUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Listen on Apple Music" class="rs-btn" style="padding: 0.25rem 0.5rem; font-size: 0.8rem; border-color: #FA243C; color: #FA243C;"><i class="ph ph-apple-logo" style="margin-right: 4px;"></i> Apple <i class="ph ph-arrow-square-out" style="margin-left: 4px; opacity: 0.7;"></i></a>
+                                    <a href="<?php echo htmlspecialchars($appleUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Listen on Apple Music" class="rs-btn" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;"><i class="ph ph-apple-logo" style="margin-right: 4px;"></i> Apple <i class="ph ph-arrow-square-out" style="margin-left: 4px; opacity: 0.7;"></i></a>
                                 <?php endif; ?>
                                 <?php if ($amazonUrl): ?>
-                                    <a href="<?php echo htmlspecialchars($amazonUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Listen on Amazon Music" class="rs-btn" style="padding: 0.25rem 0.5rem; font-size: 0.8rem; border-color: #00A8E1; color: #00A8E1;"><i class="ph ph-amazon-logo" style="margin-right: 4px;"></i> Amazon <i class="ph ph-arrow-square-out" style="margin-left: 4px; opacity: 0.7;"></i></a>
+                                    <a href="<?php echo htmlspecialchars($amazonUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Listen on Amazon Music" class="rs-btn" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;"><i class="ph ph-amazon-logo" style="margin-right: 4px;"></i> Amazon <i class="ph ph-arrow-square-out" style="margin-left: 4px; opacity: 0.7;"></i></a>
                                 <?php endif; ?>
                                 <?php if ($youtubeUrl): ?>
-                                    <a href="<?php echo htmlspecialchars($youtubeUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Listen on YouTube" class="rs-btn" style="padding: 0.25rem 0.5rem; font-size: 0.8rem; border-color: #FF0000; color: #FF0000;"><i class="ph ph-youtube-logo" style="margin-right: 4px;"></i> YouTube <i class="ph ph-arrow-square-out" style="margin-left: 4px; opacity: 0.7;"></i></a>
+                                    <a href="<?php echo htmlspecialchars($youtubeUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Listen on YouTube" class="rs-btn" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;"><i class="ph ph-youtube-logo" style="margin-right: 4px;"></i> YouTube <i class="ph ph-arrow-square-out" style="margin-left: 4px; opacity: 0.7;"></i></a>
                                 <?php endif; ?>
                                 <?php if ($storeStandardUrl): ?>
                                     <a href="<?php echo htmlspecialchars($storeStandardUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Buy MP3 / OGG Digital Archive" class="rs-btn rs-btn-primary" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;"><i class="ph ph-shopping-cart" style="margin-right: 4px;"></i> MP3/OGG <i class="ph ph-arrow-square-out" style="margin-left: 4px; opacity: 0.7;"></i></a>
                                 <?php endif; ?>
                                 <?php if ($storeAudiophileUrl): ?>
-                                    <a href="<?php echo htmlspecialchars($storeAudiophileUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Buy WAV / FLAC Audiophile Archive" class="rs-btn" style="padding: 0.25rem 0.5rem; font-size: 0.8rem; border-color: var(--rs-primary); color: var(--rs-primary);"><i class="ph ph-shopping-bag" style="margin-right: 4px;"></i> WAV/FLAC <i class="ph ph-arrow-square-out" style="margin-left: 4px; opacity: 0.7;"></i></a>
+                                    <a href="<?php echo htmlspecialchars($storeAudiophileUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Buy WAV / FLAC Audiophile Archive" class="rs-btn" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;"><i class="ph ph-shopping-bag" style="margin-right: 4px;"></i> WAV/FLAC <i class="ph ph-arrow-square-out" style="margin-left: 4px; opacity: 0.7;"></i></a>
                                 <?php endif; ?>
                             </div>
                         </div>
@@ -422,6 +422,31 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
             <?php echo $htmlContent; ?>
         </article>
         
+        <!-- Share Section for Reader -->
+        <?php if (!$specialPageType): ?>
+        <?php 
+        $currentUrl = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; 
+        $encodedUrl = urlencode($currentUrl);
+        $encodedText = urlencode("Reading " . $title . " from " . $seriesTitle . " by Michael Ragsdale.");
+        ?>
+        <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--rs-border); text-align: center;">
+            <h3 style="margin-bottom: 1.5rem; color: var(--rs-text); font-size: 1.2rem;">Share this Chapter</h3>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $encodedUrl; ?>" target="_blank" rel="noopener noreferrer" class="rs-btn">
+                    <i class="ph ph-facebook-logo"></i> Facebook
+                </a>
+                
+                <a href="https://bsky.app/intent/compose?text=<?php echo $encodedText . '%20' . $encodedUrl; ?>" target="_blank" rel="noopener noreferrer" class="rs-btn">
+                    <i class="ph ph-cloud-sun"></i> Bluesky
+                </a>
+
+                <button onclick="navigator.clipboard.writeText('<?php echo htmlspecialchars($currentUrl); ?>'); alert('Link copied to clipboard!');" class="rs-btn rs-btn-primary">
+                    <i class="ph ph-link"></i> Copy Link
+                </button>
+            </div>
+        </div>
+        <?php endif; ?>
+
         <!-- Bottom Navigation -->
         <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--rs-border);">
             <?php if ($prevUrl): ?>
