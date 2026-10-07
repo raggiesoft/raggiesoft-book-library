@@ -48,7 +48,7 @@ if (!empty($routeData)) {
     </div>
 
     <!-- Instant Search Bar / Form Fallback -->
-    <form action="/raggiesoft-books/search" method="GET" class="search-container" style="position: relative; margin-bottom: 1.5rem;">
+    <form action="https://raggiesoft.com/raggiesoft-books/search" method="GET" class="search-container" style="position: relative; margin-bottom: 1.5rem;">
         <input type="text" id="rs-book-search" name="q" placeholder="Search the universe..." style="width: 100%; padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid var(--rs-border); background: var(--rs-surface); color: var(--rs-text); font-size: 0.95rem;">
         <div id="rs-search-results" style="display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 6px; max-height: 350px; overflow-y: auto; z-index: 1000; box-shadow: 0 8px 24px rgba(0,0,0,0.15); margin-top: 4px;"></div>
     </form>
@@ -147,7 +147,9 @@ document.addEventListener("DOMContentLoaded", function() {
         if (results.length > 0) {
             results.forEach(item => {
                 const div = document.createElement('a');
-                div.href = item.url;
+                // The index contains URLs like "/raggiesoft-books/books/amaya/..." 
+                // but this app runs on books.raggiesoft.com at the root.
+                div.href = item.url.replace('/raggiesoft-books/books/', '/');
                 div.style = "display: block; padding: 0.75rem 1rem; border-bottom: 1px solid var(--rs-border); text-decoration: none; color: var(--rs-text); cursor: pointer;";
                 div.innerHTML = `
                     <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 2px;">${item.series}: ${item.title}</div>
