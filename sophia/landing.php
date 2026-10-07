@@ -52,7 +52,11 @@ $tocUrl = '/' . $seriesSlug . '/toc';
             <div style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2.5rem; opacity: 0.9;">
                 <?php 
                 if (!empty($seriesDescriptionLong) && isset($Parsedown)) {
-                    echo $Parsedown->text($seriesDescriptionLong);
+                    $descContent = $seriesDescriptionLong;
+                    if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $descContent, $matches)) {
+                        $descContent = substr($descContent, strlen($matches[0]));
+                    }
+                    echo $Parsedown->text($descContent);
                 } else {
                     echo '<p>' . nl2br(htmlspecialchars($seriesDescription)) . '</p>';
                 }
