@@ -71,7 +71,7 @@ $tocUrl = '/' . $seriesSlug . '/toc';
 $currentUrl = 'https://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']; 
 $encodedUrl = urlencode($currentUrl);
 $encodedText = urlencode("Check out " . $seriesTitle . " by Michael Ragsdale!");
-$ogImageFile = $cdnBaseUrl . '/raggiesoft-books/images/covers/og-' . $seriesSlug . '.jpg';
+$ogImageFile = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/' . $seriesSlug . '.jpg';
 ?>
     <!-- Share Section -->
     <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--rs-border); text-align: center;">

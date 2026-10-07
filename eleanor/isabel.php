@@ -79,7 +79,7 @@ $ogTitle = $siteName;
 $ogDescription = !empty($katie['series_description']) ? $katie['series_description'] : 'Read this story on the Raggiesoft Ocean View Archives.';
 $ogImage = '';
 if (!empty($seriesSlug)) {
-    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og-' . $seriesSlug . '.jpg';
+    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/' . $seriesSlug . '.jpg';
 }
 
 // Check for OpenGraph overrides in the Markdown Frontmatter
