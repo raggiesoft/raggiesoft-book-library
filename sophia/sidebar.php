@@ -47,11 +47,11 @@ if (!empty($routeData)) {
         <button id="reader-settings-toggle" class="rs-btn" style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 4px;"><i class="ph ph-gear"></i> Settings</button>
     </div>
 
-    <!-- Instant Search Bar -->
-    <div class="search-container" style="position: relative; margin-bottom: 1.5rem;">
-        <input type="text" id="rs-book-search" placeholder="Search the universe..." style="width: 100%; padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid var(--rs-border); background: var(--rs-surface); color: var(--rs-text); font-size: 0.95rem;">
+    <!-- Instant Search Bar / Form Fallback -->
+    <form action="/raggiesoft-books/search" method="GET" class="search-container" style="position: relative; margin-bottom: 1.5rem;">
+        <input type="text" id="rs-book-search" name="q" placeholder="Search the universe..." style="width: 100%; padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid var(--rs-border); background: var(--rs-surface); color: var(--rs-text); font-size: 0.95rem;">
         <div id="rs-search-results" style="display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 6px; max-height: 350px; overflow-y: auto; z-index: 1000; box-shadow: 0 8px 24px rgba(0,0,0,0.15); margin-top: 4px;"></div>
-    </div>
+    </form>
 
     <h3 style="margin-top: 1rem; color: var(--rs-primary);"><?php 
         $sidebarSeriesTitle = $katie['series_title'] ?? (ucfirst($seriesSlug) . ' Narrative');
