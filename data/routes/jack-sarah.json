@@ -180,155 +180,167 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c005/p011.md"
     },
-    "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn/part-12-the-long-night": {
+    "/jack-sarah/life-at-fairlawn/the-long-night": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 12: The Long Night \ud83d\ude20",
+        "title": "The Long Night",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c005/p012.md"
+        "filePath": "__CHAP_TOC__|0|5"
     },
-    "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn/part-13-the-turn": {
+    "/jack-sarah/life-at-fairlawn/the-long-night/part-1-the-long-night": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 13: The Turn \u23f0",
+        "title": "Part 1: The Long Night \ud83d\ude20",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c005/p013.md"
+        "filePath": "b001/c006/p001.md"
     },
-    "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn/part-14-the-confirmation": {
+    "/jack-sarah/life-at-fairlawn/the-long-night/part-2-the-turn": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 14: The Confirmation \u30ec\u30f3\u30c8\u30b2\u30f3",
+        "title": "Part 2: The Turn \u23f0",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c005/p014.md"
+        "filePath": "b001/c006/p002.md"
     },
-    "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn/part-15-the-longest-night": {
+    "/jack-sarah/life-at-fairlawn/the-long-night/part-3-the-confirmation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 15: The Longest Night \ud83c\udf05",
+        "title": "Part 3: The Confirmation \u30ec\u30f3\u30c8\u30b2\u30f3",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c005/p015.md"
+        "filePath": "b001/c006/p003.md"
     },
-    "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn/part-16-the-conti-vac": {
+    "/jack-sarah/life-at-fairlawn/the-long-night/part-4-the-longest-night": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 16: The Conti-Vac \ud83d\udca7",
+        "title": "Part 4: The Longest Night \ud83c\udf05",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c005/p016.md"
+        "filePath": "b001/c006/p004.md"
+    },
+    "/jack-sarah/life-at-fairlawn/the-long-night/part-5-the-conti-vac": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Conti-Vac \ud83d\udca7",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c006/p005.md"
     },
     "/jack-sarah/life-at-fairlawn/a-new-day-in-the-hospital": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Day in the Hospital",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|0|5"
+        "filePath": "__CHAP_TOC__|0|6"
     },
     "/jack-sarah/life-at-fairlawn/a-new-day-in-the-hospital/part-1-the-morning-report": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Morning Report",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c006/p001.md"
+        "filePath": "b001/c007/p001.md"
     },
     "/jack-sarah/life-at-fairlawn/a-new-day-in-the-hospital/part-2-the-longest-morning": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Longest Morning \ud83e\udd5e",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c006/p002.md"
+        "filePath": "b001/c007/p002.md"
     },
     "/jack-sarah/life-at-fairlawn/a-new-day-in-the-hospital/part-3-the-breathing-treatment": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Breathing Treatment",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c006/p003.md"
+        "filePath": "b001/c007/p003.md"
     },
     "/jack-sarah/life-at-fairlawn/a-new-day-in-the-hospital/part-4-a-glimmer-of-hope": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: A Glimmer of Hope \ud83d\ude2e\u200d\ud83d\udca8",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c006/p004.md"
+        "filePath": "b001/c007/p004.md"
     },
     "/jack-sarah/life-at-fairlawn/a-new-day-in-the-hospital/part-5-the-fellowship-of-the-silver-gauntlet": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: The Fellowship of the Silver Gauntlet \ud83c\udfac",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c006/p005.md"
+        "filePath": "b001/c007/p005.md"
     },
     "/jack-sarah/life-at-fairlawn/a-new-day-in-the-hospital/part-6-a-moment-of-levity": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 6: A Moment of Levity \ud83e\udd23",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c006/p006.md"
+        "filePath": "b001/c007/p006.md"
     },
     "/jack-sarah/life-at-fairlawn/a-new-day-in-the-hospital/part-7-the-king-of-trash-duty": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 7: The King of Trash Duty \ud83d\uddf3\ufe0f",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c006/p007.md"
+        "filePath": "b001/c007/p007.md"
     },
     "/jack-sarah/life-at-fairlawn/a-new-day-in-the-hospital/part-8-a-taste-of-victory": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 8: A Taste of Victory \ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc67",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c006/p008.md"
+        "filePath": "b001/c007/p008.md"
     },
     "/jack-sarah/life-at-fairlawn/the-cost-of-the-crisis": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Cost of the Crisis",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|0|6"
+        "filePath": "__CHAP_TOC__|0|7"
     },
     "/jack-sarah/life-at-fairlawn/the-cost-of-the-crisis/part-1-an-unsteady-step": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: An Unsteady Step \ud83d\ude1f",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c007/p001.md"
+        "filePath": "b001/c008/p001.md"
     },
     "/jack-sarah/life-at-fairlawn/the-cost-of-the-crisis/part-2-a-flare-up": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: A Flare-Up",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c007/p002.md"
+        "filePath": "b001/c008/p002.md"
     },
     "/jack-sarah/life-at-fairlawn/the-cost-of-the-crisis/part-3-the-turning-of-the-tide": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Turning of the Tide",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c007/p003.md"
-    },
-    "/jack-sarah/life-at-fairlawn/the-cost-of-the-crisis/part-4-the-last-night": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Last Night\u00a0\ud83d\ude34",
-        "theme": "raggiesoft-books",
-        "filePath": "b001/c007/p004.md"
-    },
-    "/jack-sarah/life-at-fairlawn/the-cost-of-the-crisis/part-5-going-home": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: Going Home",
-        "theme": "raggiesoft-books",
-        "filePath": "b001/c007/p005.md"
-    },
-    "/jack-sarah/life-at-fairlawn/a-sanctuary-of-sleep": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "A Sanctuary of Sleep",
-        "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|0|7"
-    },
-    "/jack-sarah/life-at-fairlawn/a-sanctuary-of-sleep/part-1-homecoming": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Homecoming",
-        "theme": "raggiesoft-books",
-        "filePath": "b001/c008/p001.md"
-    },
-    "/jack-sarah/life-at-fairlawn/a-sanctuary-of-sleep/part-2-the-good-news": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Good News",
-        "theme": "raggiesoft-books",
-        "filePath": "b001/c008/p002.md"
-    },
-    "/jack-sarah/life-at-fairlawn/a-sanctuary-of-sleep/part-3-a-quiet-lunch": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: A Quiet Lunch\u00a0\ud83e\udd6a",
-        "theme": "raggiesoft-books",
         "filePath": "b001/c008/p003.md"
     },
-    "/jack-sarah/life-at-fairlawn/a-sanctuary-of-sleep/part-4-the-promise-of-the-quad": {
+    "/jack-sarah/life-at-fairlawn/going-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Promise of the Quad",
+        "title": "Going Home",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c008/p004.md"
+        "filePath": "__CHAP_TOC__|0|8"
+    },
+    "/jack-sarah/life-at-fairlawn/going-home/part-1-the-last-night": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Last Night\u00a0\ud83d\ude34",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c009/p001.md"
+    },
+    "/jack-sarah/life-at-fairlawn/going-home/part-2-going-home": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Going Home",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c009/p002.md"
+    },
+    "/jack-sarah/life-at-fairlawn/going-home/part-3-homecoming": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Homecoming",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c009/p003.md"
+    },
+    "/jack-sarah/life-at-fairlawn/a-day-of-rest": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Day of Rest",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|9"
+    },
+    "/jack-sarah/life-at-fairlawn/a-day-of-rest/part-1-the-good-news": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Good News",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c010/p001.md"
+    },
+    "/jack-sarah/life-at-fairlawn/a-day-of-rest/part-2-a-quiet-lunch": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: A Quiet Lunch\u00a0\ud83e\udd6a",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c010/p002.md"
+    },
+    "/jack-sarah/life-at-fairlawn/a-day-of-rest/part-3-the-promise-of-the-quad": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Promise of the Quad",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c010/p003.md"
     },
     "/jack-sarah/a-trip-to-washington-dc": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -354,341 +366,353 @@
         "theme": "raggiesoft-books",
         "filePath": "b002/c001/p002.md"
     },
-    "/jack-sarah/a-trip-to-washington-dc/a-healing-journey/part-3-the-journey-in": {
+    "/jack-sarah/a-trip-to-washington-dc/the-journey-in": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Journey In",
+        "title": "The Journey In",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c001/p003.md"
+        "filePath": "__CHAP_TOC__|1|1"
     },
-    "/jack-sarah/a-trip-to-washington-dc/a-healing-journey/part-4-sarah-s-incident": {
+    "/jack-sarah/a-trip-to-washington-dc/the-journey-in/part-1-the-journey-in": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: Sarah\u2019s Incident",
+        "title": "Part 1: The Journey In",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c001/p004.md"
+        "filePath": "b002/c002/p001.md"
     },
-    "/jack-sarah/a-trip-to-washington-dc/a-healing-journey/part-5-tending-to-sarah-s-needs-completing-their-vacation": {
+    "/jack-sarah/a-trip-to-washington-dc/the-journey-in/part-2-sarah-s-incident": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: Tending to Sarah\u2019s Needs & Completing Their Vacation",
+        "title": "Part 2: Sarah\u2019s Incident",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c001/p005.md"
+        "filePath": "b002/c002/p002.md"
     },
-    "/jack-sarah/a-trip-to-washington-dc/a-healing-journey/part-6-a-new-level-of-trust": {
+    "/jack-sarah/a-trip-to-washington-dc/the-journey-in/part-3-tending-to-sarah-s-needs-completing-their-vacation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: A New Level of Trust",
+        "title": "Part 3: Tending to Sarah\u2019s Needs & Completing Their Vacation",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c001/p006.md"
+        "filePath": "b002/c002/p003.md"
     },
-    "/jack-sarah/a-trip-to-washington-dc/a-healing-journey/part-7-a-trip-made-easier": {
+    "/jack-sarah/a-trip-to-washington-dc/the-journey-in/part-4-a-new-level-of-trust": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 7: A Trip Made Easier",
+        "title": "Part 4: A New Level of Trust",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c001/p007.md"
+        "filePath": "b002/c002/p004.md"
+    },
+    "/jack-sarah/a-trip-to-washington-dc/a-trip-made-easier": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Trip Made Easier",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|2"
+    },
+    "/jack-sarah/a-trip-to-washington-dc/a-trip-made-easier/part-1-a-trip-made-easier": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Trip Made Easier",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c003/p001.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/sarah-with-an-injury": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Sarah with an Injury",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|1|1"
+        "filePath": "__CHAP_TOC__|1|3"
     },
     "/jack-sarah/a-trip-to-washington-dc/sarah-with-an-injury/part-1-welcome-home-to-a-twisted-ankle": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Welcome Home to a Twisted Ankle",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c002/p001.md"
+        "filePath": "b002/c004/p001.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/summer-dreams": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Summer Dreams",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|1|2"
+        "filePath": "__CHAP_TOC__|1|4"
     },
     "/jack-sarah/a-trip-to-washington-dc/summer-dreams/part-1-tent-in-a-backyard": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Tent in a Backyard",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c003/p001.md"
+        "filePath": "b002/c005/p001.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/delores": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Delores",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|1|3"
+        "filePath": "__CHAP_TOC__|1|5"
     },
     "/jack-sarah/a-trip-to-washington-dc/delores/part-1-university-open-house": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: University Open House",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c004/p001.md"
+        "filePath": "b002/c006/p001.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/delores/part-2-the-tour": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Tour",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c004/p002.md"
+        "filePath": "b002/c006/p002.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/delores/part-3-an-unexpected-guide": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: An Unexpected Guide",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c004/p003.md"
+        "filePath": "b002/c006/p003.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/delores/part-4-the-conversation-shifts": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Conversation Shifts",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c004/p004.md"
+        "filePath": "b002/c006/p004.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/delores/part-5-lunch-in-the-lion-s-den": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: Lunch in the Lion's Den",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c004/p005.md"
+        "filePath": "b002/c006/p005.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/delores/part-6-a-private-tour": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 6: A Private Tour",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c004/p006.md"
+        "filePath": "b002/c006/p006.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/delores/part-7-the-move": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 7: The Move",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c004/p007.md"
+        "filePath": "b002/c006/p007.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Red Flags and Safe Harbors",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|1|4"
+        "filePath": "__CHAP_TOC__|1|6"
     },
     "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors/part-1-a-cousin-s-rescue": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Cousin's Rescue",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c005/p001.md"
+        "filePath": "b002/c007/p001.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors/part-2-a-rec-center-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: A Rec Center Sanctuary",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c005/p002.md"
+        "filePath": "b002/c007/p002.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors/part-3-closing-down-a-rec-center": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Closing Down a Rec Center",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c005/p003.md"
+        "filePath": "b002/c007/p003.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors/part-4-conversations-on-a-ride-home": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: Conversations on a Ride Home",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c005/p004.md"
+        "filePath": "b002/c007/p004.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors/part-5-a-safe-harbor": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: A Safe Harbor",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c005/p005.md"
+        "filePath": "b002/c007/p005.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors/part-6-coffee-date": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 6: Coffee Date",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c005/p006.md"
+        "filePath": "b002/c007/p006.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Date with Delores",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|1|5"
+        "filePath": "__CHAP_TOC__|1|7"
     },
     "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/part-1-an-unassuming-dinner": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: An Unassuming Dinner",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c006/p001.md"
+        "filePath": "b002/c008/p001.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/part-2-dinner-with-robyn-and-delores": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Dinner with Robyn and Delores",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c006/p002.md"
+        "filePath": "b002/c008/p002.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/part-3-the-interrogation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Interrogation",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c006/p003.md"
+        "filePath": "b002/c008/p003.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/part-4-the-manipulation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Manipulation",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c006/p004.md"
+        "filePath": "b002/c008/p004.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/part-5-the-escape-and-the-hook": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: The Escape and the Hook",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c006/p005.md"
+        "filePath": "b002/c008/p005.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/part-6-the-debrief": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 6: The Debrief",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c006/p006.md"
+        "filePath": "b002/c008/p006.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/part-7-a-theory-is-formed": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 7: A Theory is Formed",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c006/p007.md"
+        "filePath": "b002/c008/p007.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/part-8-the-new-normal-begins": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 8: The New Normal Begins",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c006/p008.md"
+        "filePath": "b002/c008/p008.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/planning-sarah-s-birthday": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Planning Sarah\u2019s Birthday",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|1|6"
+        "filePath": "__CHAP_TOC__|1|8"
     },
     "/jack-sarah/a-trip-to-washington-dc/planning-sarah-s-birthday/part-1-a-mission-for-the-sister": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Mission for the Sister",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c007/p001.md"
+        "filePath": "b002/c009/p001.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/planning-sarah-s-birthday/part-2-a-taste-of-twin-magic": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: A Taste of Twin Magic",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c007/p002.md"
+        "filePath": "b002/c009/p002.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Sarah Bennett, Reporting for Duty",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|1|7"
+        "filePath": "__CHAP_TOC__|1|9"
     },
     "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/part-1-a-day-of-dread-and-duty": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Day of Dread and Duty",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c008/p001.md"
+        "filePath": "b002/c010/p001.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/part-2-a-sunday-morning-at-fairlawn": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: A Sunday Morning at Fairlawn",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c008/p002.md"
+        "filePath": "b002/c010/p002.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/part-3-a-tale-of-two-siblings": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: A Tale of Two Siblings",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c008/p003.md"
+        "filePath": "b002/c010/p003.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/part-4-a-shared-break": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: A Shared Break",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c008/p004.md"
+        "filePath": "b002/c010/p004.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/part-5-trial-by-fecal-contamination": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: Trial by Fecal Contamination",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c008/p005.md"
+        "filePath": "b002/c010/p005.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/part-6-the-longest-shift": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 6: The Longest Shift",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c008/p006.md"
+        "filePath": "b002/c010/p006.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/part-7-peking-duck-inn": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 7: Peking Duck Inn",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c008/p007.md"
+        "filePath": "b002/c010/p007.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/part-8-a-dinner-on-thin-ice": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 8: A Dinner on Thin Ice",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c008/p008.md"
+        "filePath": "b002/c010/p008.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/part-9-the-aftermath": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 9: The Aftermath",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c008/p009.md"
+        "filePath": "b002/c010/p009.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/part-10-a-safe-harbor-at-home": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 10: A Safe Harbor at Home",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c008/p010.md"
+        "filePath": "b002/c010/p010.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/confusion-and-stress": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Confusion and Stress",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|1|8"
+        "filePath": "__CHAP_TOC__|1|10"
     },
     "/jack-sarah/a-trip-to-washington-dc/confusion-and-stress/part-1-a-morning-shrouded-in-fog": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Morning Shrouded in Fog \ud83e\udd63",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c009/p001.md"
+        "filePath": "b002/c011/p001.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/confusion-and-stress/part-2-a-day-of-confusion": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: A Day of Confusion",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c009/p002.md"
+        "filePath": "b002/c011/p002.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/confusion-and-stress/part-3-a-misfired-warning": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: A Misfired Warning",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c009/p003.md"
+        "filePath": "b002/c011/p003.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/welcome-to-work": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Welcome to Work",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|1|9"
+        "filePath": "__CHAP_TOC__|1|11"
     },
     "/jack-sarah/a-trip-to-washington-dc/welcome-to-work/part-1-off-to-work": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Off to Work",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c010/p001.md"
+        "filePath": "b002/c012/p001.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/welcome-to-work/part-2-morning-at-fairlawn": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Morning at Fairlawn",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c010/p002.md"
+        "filePath": "b002/c012/p002.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/welcome-to-work/part-3-first-response": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: First Response",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c010/p003.md"
+        "filePath": "b002/c012/p003.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/welcome-to-work/part-4-the-mobile-emergency-room": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Mobile Emergency Room",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c010/p004.md"
+        "filePath": "b002/c012/p004.md"
     },
     "/jack-sarah/heart-attack": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -750,65 +774,65 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p008.md"
     },
-    "/jack-sarah/heart-attack/the-day-of-surgery": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Day of Surgery",
-        "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|1"
-    },
-    "/jack-sarah/heart-attack/the-day-of-surgery/part-1-the-last-meal": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Last Meal",
-        "theme": "raggiesoft-books",
-        "filePath": "b003/c002/p001.md"
-    },
-    "/jack-sarah/heart-attack/the-day-of-surgery/part-2-the-journey-to-the-or": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Journey to the OR",
-        "theme": "raggiesoft-books",
-        "filePath": "b003/c002/p002.md"
-    },
-    "/jack-sarah/heart-attack/the-day-of-surgery/part-3-a-failed-procedure": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: A Failed Procedure",
-        "theme": "raggiesoft-books",
-        "filePath": "b003/c002/p003.md"
-    },
-    "/jack-sarah/heart-attack/the-day-of-surgery/part-4-a-veteran-s-reassurance": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: A Veteran's Reassurance",
-        "theme": "raggiesoft-books",
-        "filePath": "b003/c002/p004.md"
-    },
-    "/jack-sarah/heart-attack/the-day-of-surgery/part-5-the-transfer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: The Transfer",
-        "theme": "raggiesoft-books",
-        "filePath": "b003/c002/p005.md"
-    },
     "/jack-sarah/heart-attack/heart-hospital": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Heart Hospital",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|2"
+        "filePath": "__CHAP_TOC__|2|1"
     },
     "/jack-sarah/heart-attack/heart-hospital/part-1-serious-health-discussion": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Serious Health Discussion",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c003/p001.md"
+        "filePath": "b003/c002/p001.md"
     },
     "/jack-sarah/heart-attack/heart-hospital/part-2-off-to-the-operating-room": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Off to the Operating Room",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c003/p002.md"
+        "filePath": "b003/c002/p002.md"
     },
     "/jack-sarah/heart-attack/heart-hospital/part-3-waking-up-in-the-intensive-care-unit": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Waking Up in the Intensive Care Unit",
         "theme": "raggiesoft-books",
+        "filePath": "b003/c002/p003.md"
+    },
+    "/jack-sarah/heart-attack/the-day-of-surgery": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Day of Surgery",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|2"
+    },
+    "/jack-sarah/heart-attack/the-day-of-surgery/part-1-the-last-meal": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Last Meal",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c003/p001.md"
+    },
+    "/jack-sarah/heart-attack/the-day-of-surgery/part-2-the-journey-to-the-or": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Journey to the OR",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c003/p002.md"
+    },
+    "/jack-sarah/heart-attack/the-day-of-surgery/part-3-a-failed-procedure": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: A Failed Procedure",
+        "theme": "raggiesoft-books",
         "filePath": "b003/c003/p003.md"
+    },
+    "/jack-sarah/heart-attack/the-day-of-surgery/part-4-a-veteran-s-reassurance": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: A Veteran's Reassurance",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c003/p004.md"
+    },
+    "/jack-sarah/heart-attack/the-day-of-surgery/part-5-the-transfer": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Transfer",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c003/p005.md"
     },
     "/jack-sarah/heart-attack/the-road-to-recovery": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -912,124 +936,142 @@
         "theme": "raggiesoft-books",
         "filePath": "b003/c006/p002.md"
     },
-    "/jack-sarah/heart-attack/recovering-from-a-heart-attack/part-3-a-taste-of-home": {
+    "/jack-sarah/heart-attack/a-taste-of-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: A Taste of Home",
+        "title": "A Taste of Home",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c006/p003.md"
+        "filePath": "__CHAP_TOC__|2|6"
     },
-    "/jack-sarah/heart-attack/recovering-from-a-heart-attack/part-4-a-visit-to-a-second-home": {
+    "/jack-sarah/heart-attack/a-taste-of-home/part-1-a-taste-of-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: A Visit to a Second Home",
+        "title": "Part 1: A Taste of Home",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c006/p004.md"
+        "filePath": "b003/c007/p001.md"
     },
-    "/jack-sarah/heart-attack/recovering-from-a-heart-attack/part-5-a-final-encounter": {
+    "/jack-sarah/heart-attack/a-taste-of-home/part-2-a-visit-to-a-second-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: A Final Encounter",
+        "title": "Part 2: A Visit to a Second Home",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c006/p005.md"
+        "filePath": "b003/c007/p002.md"
     },
-    "/jack-sarah/heart-attack/recovering-from-a-heart-attack/part-6-building-a-sanctuary": {
+    "/jack-sarah/heart-attack/a-final-encounter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: Building a Sanctuary",
+        "title": "A Final Encounter",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c006/p006.md"
+        "filePath": "__CHAP_TOC__|2|7"
     },
-    "/jack-sarah/heart-attack/recovering-from-a-heart-attack/part-7-room-service": {
+    "/jack-sarah/heart-attack/a-final-encounter/part-1-a-final-encounter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 7: Room Service",
+        "title": "Part 1: A Final Encounter",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c006/p007.md"
+        "filePath": "b003/c008/p001.md"
     },
-    "/jack-sarah/heart-attack/recovering-from-a-heart-attack/part-8-the-first-tour": {
+    "/jack-sarah/heart-attack/a-final-encounter/part-2-building-a-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 8: The First Tour",
+        "title": "Part 2: Building a Sanctuary",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c006/p008.md"
+        "filePath": "b003/c008/p002.md"
     },
-    "/jack-sarah/heart-attack/recovering-from-a-heart-attack/part-9-a-cheesy-sanctuary": {
+    "/jack-sarah/heart-attack/a-final-encounter/part-3-room-service": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 9: A Cheesy Sanctuary",
+        "title": "Part 3: Room Service",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c006/p009.md"
+        "filePath": "b003/c008/p003.md"
     },
-    "/jack-sarah/heart-attack/recovering-from-a-heart-attack/part-10-a-collector-s-edition": {
+    "/jack-sarah/heart-attack/the-first-tour": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 10: A Collector's Edition",
+        "title": "The First Tour",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c006/p010.md"
+        "filePath": "__CHAP_TOC__|2|8"
     },
-    "/jack-sarah/heart-attack/recovering-from-a-heart-attack/part-11-dinner-and-bonus-features": {
+    "/jack-sarah/heart-attack/the-first-tour/part-1-the-first-tour": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 11: Dinner and Bonus Features",
+        "title": "Part 1: The First Tour",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c006/p011.md"
+        "filePath": "b003/c009/p001.md"
     },
-    "/jack-sarah/heart-attack/recovering-from-a-heart-attack/part-12-a-sanctuary-decorated": {
+    "/jack-sarah/heart-attack/the-first-tour/part-2-a-cheesy-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 12: A Sanctuary Decorated",
+        "title": "Part 2: A Cheesy Sanctuary",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c006/p012.md"
+        "filePath": "b003/c009/p002.md"
     },
-    "/jack-sarah/heart-attack/recovering-from-a-heart-attack/part-13-the-biological-deadline": {
+    "/jack-sarah/heart-attack/the-first-tour/part-3-a-collector-s-edition": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 13: The Biological Deadline",
+        "title": "Part 3: A Collector's Edition",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c006/p013.md"
+        "filePath": "b003/c009/p003.md"
+    },
+    "/jack-sarah/heart-attack/the-first-tour/part-4-dinner-and-bonus-features": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Dinner and Bonus Features",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c009/p004.md"
+    },
+    "/jack-sarah/heart-attack/the-first-tour/part-5-a-sanctuary-decorated": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: A Sanctuary Decorated",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c009/p005.md"
+    },
+    "/jack-sarah/heart-attack/the-first-tour/part-6-the-biological-deadline": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Biological Deadline",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c009/p006.md"
     },
     "/jack-sarah/heart-attack/the-long-road-ahead": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Long Road Ahead",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|6"
+        "filePath": "__CHAP_TOC__|2|9"
     },
     "/jack-sarah/heart-attack/the-long-road-ahead/part-1-the-windsor-woods-realization": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Windsor Woods Realization",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c007/p001.md"
+        "filePath": "b003/c010/p001.md"
     },
     "/jack-sarah/heart-attack/the-long-road-ahead/part-2-the-long-walk-home": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Long Walk Home",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c007/p002.md"
+        "filePath": "b003/c010/p002.md"
     },
     "/jack-sarah/heart-attack/the-long-road-ahead/part-3-the-sister-shield": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Sister-Shield",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c007/p003.md"
+        "filePath": "b003/c010/p003.md"
     },
     "/jack-sarah/heart-attack/the-long-road-ahead/part-4-a-new-kind-of-housebound": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: A New Kind of Housebound",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c007/p004.md"
+        "filePath": "b003/c010/p004.md"
     },
     "/jack-sarah/heart-attack/a-quiet-refusal": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Quiet Refusal",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|7"
+        "filePath": "__CHAP_TOC__|2|10"
     },
-    "/jack-sarah/heart-attack/a-quiet-refusal/part-1-the-midnight-showing": {
+    "/jack-sarah/heart-attack/a-quiet-refusal/part-1-a-delayed-rejection": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Midnight Showing",
+        "title": "Part 1: A Delayed Rejection",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c008/p001.md"
+        "filePath": "b003/c011/p001.md"
     },
-    "/jack-sarah/heart-attack/a-quiet-refusal/part-2-a-delayed-rejection": {
+    "/jack-sarah/heart-attack/a-quiet-refusal/part-2-a-protector-s-concern": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: A Delayed Rejection",
+        "title": "Part 2: A Protector's Concern",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c008/p002.md"
+        "filePath": "b003/c011/p002.md"
     },
-    "/jack-sarah/heart-attack/a-quiet-refusal/part-3-a-protector-s-concern": {
+    "/jack-sarah/heart-attack/a-quiet-refusal/part-3-the-midnight-showing": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: A Protector's Concern",
+        "title": "Part 3: The Midnight Showing",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c008/p003.md"
+        "filePath": "b003/c011/p003.md"
     }
 }

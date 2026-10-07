@@ -69,16 +69,29 @@ if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $mdContent, $matche
     $mdContent = substr($mdContent, strlen($matches[0])); // Strip it from the content
     
     $lines = explode("\n", $rawFrontmatter);
+    $currentArrayKey = null;
     foreach ($lines as $line) {
-        $line = trim($line);
-        if (strpos($line, ':') !== false) {
-            list($key, $val) = explode(':', $line, 2);
+        $trimmed = trim($line);
+        if ($trimmed === '') continue;
+        
+        if (strpos($trimmed, '-') === 0 && $currentArrayKey) {
+            $val = trim(substr($trimmed, 1));
+            $val = trim($val, '"\'');
+            $frontmatter[$currentArrayKey][] = $val;
+        } elseif (strpos($trimmed, ':') !== false) {
+            list($key, $val) = explode(':', $trimmed, 2);
             $key = trim($key);
             $val = trim($val);
-            $val = trim($val, '"\''); // remove surrounding quotes
-            if ($val !== '') {
+            if ($val === '') {
+                $currentArrayKey = $key;
+                $frontmatter[$currentArrayKey] = [];
+            } else {
+                $val = trim($val, '"\'');
                 $frontmatter[$key] = $val;
+                $currentArrayKey = null;
             }
+        } else {
+            $currentArrayKey = null;
         }
     }
 }
@@ -197,7 +210,7 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                 </div>
                 <h1 class="reader-part-header"><?php echo htmlspecialchars($title); ?></h1>
                 
-                <?php if (!empty($frontmatter['stardate']) || !empty($frontmatter['realm_time']) || !empty($frontmatter['date']) || !empty($frontmatter['start_time']) || !empty($frontmatter['pov']) || !empty($frontmatter['location'])): ?>
+                <?php if (!empty($frontmatter['stardate']) || !empty($frontmatter['realm_time']) || !empty($frontmatter['date']) || !empty($frontmatter['start_time']) || !empty($frontmatter['pov']) || !empty($frontmatter['location']) || !empty($frontmatter['characters'])): ?>
                     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; opacity: 0.7; font-size: 0.85rem; font-weight: 600;">
                         <?php if (!empty($frontmatter['stardate'])): ?>
                             <span style="display: flex; align-items: center; gap: 4px;" title="Stardate">
@@ -249,6 +262,10 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                         
                         <?php if (!empty($frontmatter['pov'])): ?>
                             <span style="display: flex; align-items: center; gap: 4px;"><i class="ph ph-eye"></i> POV: <?php echo htmlspecialchars($frontmatter['pov']); ?></span>
+                        <?php endif; ?>
+                        
+                        <?php if (!empty($frontmatter['characters']) && is_array($frontmatter['characters'])): ?>
+                            <span style="display: flex; align-items: center; gap: 4px;"><i class="ph ph-users"></i> Characters: <?php echo htmlspecialchars(implode(', ', $frontmatter['characters'])); ?></span>
                         <?php endif; ?>
                     </div>
                 <?php endif; ?>
