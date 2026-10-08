@@ -191,5 +191,11 @@
         "title": "Part 8: Pennies on the Dollar",
         "theme": "raggiesoft-books",
         "filePath": "b001/c004/p008.md"
+    },
+    "/drew/book-1/chapter-4/part-9-a-hospital-christmas": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 9: A Hospital Christmas",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p009.md"
     }
 }
