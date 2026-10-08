@@ -131,5 +131,11 @@
         "title": "Part 6: The Sofa",
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p006.md"
+    },
+    "/drew/book-1/chapter-3/part-7-the-coalition": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Coalition",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c003/p007.md"
     }
 }
