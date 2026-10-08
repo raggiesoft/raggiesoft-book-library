@@ -251,5 +251,11 @@
         "title": "Part 3: The Mandatory Reporters",
         "theme": "raggiesoft-books",
         "filePath": "b002/c001/p003.md"
+    },
+    "/drew/book-2/chapter-1/part-4-the-trap": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Trap",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p004.md"
     }
 }
