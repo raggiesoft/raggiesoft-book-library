@@ -119,5 +119,11 @@
         "title": "Part 4: The Manifesto",
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p004.md"
+    },
+    "/drew/book-1/chapter-3/part-5-the-sofa": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Sofa",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c003/p005.md"
     }
 }
