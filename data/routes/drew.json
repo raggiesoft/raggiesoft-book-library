@@ -71,5 +71,11 @@
         "title": "Part 2: The Payphone",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p002.md"
+    },
+    "/drew/book-1/chapter-2/part-3-the-consultation-room": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Consultation Room",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p003.md"
     }
 }
