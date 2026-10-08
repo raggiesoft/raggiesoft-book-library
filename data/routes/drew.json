@@ -149,5 +149,11 @@
         "title": "Part 1: The Vow",
         "theme": "raggiesoft-books",
         "filePath": "b001/c004/p001.md"
+    },
+    "/drew/book-1/chapter-4/part-2-the-racecar": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Racecar",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p002.md"
     }
 }
