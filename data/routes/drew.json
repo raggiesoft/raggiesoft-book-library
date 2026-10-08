@@ -209,5 +209,11 @@
         "title": "Part 11: Going Home",
         "theme": "raggiesoft-books",
         "filePath": "b001/c004/p011.md"
+    },
+    "/drew/book-1/chapter-4/part-12-seven": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 12: Seven",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p012.md"
     }
 }
