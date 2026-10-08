@@ -23,5 +23,23 @@
         "title": "Table of Contents - The Drew Narrative",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/drew/book-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__BOOK_TOC__|0"
+    },
+    "/drew/book-1/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|0"
+    },
+    "/drew/book-1/chapter-1/part-1-the-core-check": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Core Check",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p001.md"
     }
 }
