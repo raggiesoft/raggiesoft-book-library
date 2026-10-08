@@ -212,6 +212,9 @@ class StardustParsedown extends Parsedown {
         // Strip out AI Meta notes so they don't render for human readers
         $text = preg_replace('/\\\\?\[Note to the AI:.*?\\\\?\]/is', '', $text);
         
+        // Replace {{cms}} with the actual assets CDN
+        $text = str_replace('{{cms}}', 'https://assets.raggiesoft.com', $text);
+        
         // Pre-process [credential ...] shortcodes anywhere in the text
         $text = preg_replace_callback('/\[credential\s+(.+?)\]/', function($matches) {
             $attributesString = $matches[1];
