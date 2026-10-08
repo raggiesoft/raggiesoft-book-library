@@ -450,38 +450,46 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
         $encodedUrl = urlencode($currentUrl);
         $encodedText = urlencode("Reading " . $title . " from " . $seriesTitle . " by Michael Ragsdale.");
         ?>
-        <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--rs-border); text-align: center;">
-            <h3 style="margin-bottom: 1.5rem; color: var(--rs-text); font-size: 1.2rem;">Share this Chapter</h3>
-            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $encodedUrl; ?>" target="_blank" rel="noopener noreferrer" class="rs-btn">
-                    <i class="ph ph-facebook-logo"></i> Facebook
+        <div class="bottom-nav-container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--rs-border);">
+            <div style="flex: 1; display: flex; justify-content: flex-start;">
+                <?php if ($prevUrl): ?>
+                    <a href="<?php echo htmlspecialchars($prevUrl); ?>" class="rs-btn">&larr; Previous</a>
+                <?php else: ?>
+                    <button class="rs-btn" disabled style="opacity: 0.5; cursor: not-allowed;">&larr; Previous</button>
+                <?php endif; ?>
+            </div>
+
+            <div style="flex: 2; display: flex; gap: 0.75rem; justify-content: center; flex-wrap: wrap; text-align: center;">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $encodedUrl; ?>" target="_blank" rel="noopener noreferrer" class="rs-btn" title="Share on Facebook">
+                    <i class="ph ph-facebook-logo"></i> <span class="hide-on-mobile">Facebook</span>
                 </a>
                 
-                <a href="https://bsky.app/intent/compose?text=<?php echo $encodedText . '%20' . $encodedUrl; ?>" target="_blank" rel="noopener noreferrer" class="rs-btn">
-                    <i class="ph ph-cloud-sun"></i> Bluesky
+                <a href="https://bsky.app/intent/compose?text=<?php echo $encodedText . '%20' . $encodedUrl; ?>" target="_blank" rel="noopener noreferrer" class="rs-btn" title="Share on Bluesky">
+                    <i class="ph ph-cloud-sun"></i> <span class="hide-on-mobile">Bluesky</span>
                 </a>
 
-                <button onclick="navigator.clipboard.writeText('<?php echo htmlspecialchars($currentUrl); ?>'); alert('Link copied to clipboard!');" class="rs-btn rs-btn-primary">
-                    <i class="ph ph-link"></i> Copy Link
+                <button onclick="navigator.clipboard.writeText('<?php echo htmlspecialchars($currentUrl); ?>'); alert('Link copied to clipboard!');" class="rs-btn" title="Copy Link">
+                    <i class="ph ph-link"></i> <span class="hide-on-mobile">Copy Link</span>
                 </button>
             </div>
+
+            <div style="flex: 1; display: flex; justify-content: flex-end;">
+                <?php if ($nextUrl): ?>
+                    <a href="<?php echo htmlspecialchars($nextUrl); ?>" class="rs-btn rs-btn-primary">Next &rarr;</a>
+                <?php else: ?>
+                    <button class="rs-btn rs-btn-primary" disabled style="opacity: 0.5; cursor: not-allowed;">Next &rarr;</button>
+                <?php endif; ?>
+            </div>
         </div>
+        
+        <style>
+            @media (max-width: 768px) {
+                .hide-on-mobile { display: none !important; }
+                .bottom-nav-container { flex-direction: column-reverse; gap: 2rem !important; }
+            }
+        </style>
         <?php endif; ?>
 
-        <!-- Bottom Navigation -->
-        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--rs-border);">
-            <?php if ($prevUrl): ?>
-                <a href="<?php echo htmlspecialchars($prevUrl); ?>" class="rs-btn">&larr; Previous</a>
-            <?php else: ?>
-                <button class="rs-btn" disabled style="opacity: 0.5; cursor: not-allowed;">&larr; Previous</button>
-            <?php endif; ?>
-
-            <?php if ($nextUrl): ?>
-                <a href="<?php echo htmlspecialchars($nextUrl); ?>" class="rs-btn rs-btn-primary">Next &rarr;</a>
-            <?php else: ?>
-                <button class="rs-btn rs-btn-primary" disabled style="opacity: 0.5; cursor: not-allowed;">Next &rarr;</button>
-            <?php endif; ?>
-        </div>
     </div>
 </main>
 
