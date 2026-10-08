@@ -161,5 +161,11 @@
         "title": "Part 3: The Hospital Haunt",
         "theme": "raggiesoft-books",
         "filePath": "b001/c004/p003.md"
+    },
+    "/drew/book-1/chapter-4/part-4-the-hospital-classroom": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Hospital Classroom",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p004.md"
     }
 }
