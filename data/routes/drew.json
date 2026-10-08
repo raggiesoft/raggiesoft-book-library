@@ -179,5 +179,11 @@
         "title": "Part 6: A Hospital Thanksgiving",
         "theme": "raggiesoft-books",
         "filePath": "b001/c004/p006.md"
+    },
+    "/drew/book-1/chapter-4/part-7-the-clock-is-ticking": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: The Clock is Ticking",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p007.md"
     }
 }
