@@ -245,5 +245,11 @@
         "title": "Part 2: The Linoleum Room",
         "theme": "raggiesoft-books",
         "filePath": "b002/c001/p002.md"
+    },
+    "/drew/book-2/chapter-1/part-3-the-mandatory-reporters": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Mandatory Reporters",
+        "theme": "raggiesoft-books",
+        "filePath": "b002/c001/p003.md"
     }
 }
