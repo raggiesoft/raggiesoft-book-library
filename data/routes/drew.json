@@ -89,5 +89,17 @@
         "title": "Part 5: The Paperwork",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p005.md"
+    },
+    "/drew/book-1/chapter-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|2"
+    },
+    "/drew/book-1/chapter-3/part-1-post-op": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Post-Op",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c003/p001.md"
     }
 }
