@@ -1,0 +1,27 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "oceanview",
+        "siteName": "Ocean View Archives",
+        "isSequential": true,
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books",
+        "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
+        "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
+        "navbarBrandLink": "/raggiesoft-books"
+    },
+    "/drew": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Drew Narrative",
+        "theme": "raggiesoft-books",
+        "filePath": "__SERIES_LANDING__"
+    },
+    "/drew/toc": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Contents - The Drew Narrative",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
+    }
+}
