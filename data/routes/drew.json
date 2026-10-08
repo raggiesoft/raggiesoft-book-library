@@ -107,5 +107,17 @@
         "title": "Part 2: Waking Up",
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p002.md"
+    },
+    "/drew/book-1/chapter-3/part-3-suite-f": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Suite F",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c003/p003.md"
+    },
+    "/drew/book-1/chapter-3/part-4-the-manifesto": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Manifesto",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c003/p004.md"
     }
 }
