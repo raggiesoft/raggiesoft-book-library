@@ -197,5 +197,11 @@
         "title": "Part 9: A Hospital Christmas",
         "theme": "raggiesoft-books",
         "filePath": "b001/c004/p009.md"
+    },
+    "/drew/book-1/chapter-4/part-10-midnight-on-the-ward": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: Midnight on the Ward",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p010.md"
     }
 }
