@@ -53,5 +53,17 @@
         "title": "Part 3: The Front Office",
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p003.md"
+    },
+    "/drew/book-1/chapter-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|1"
+    },
+    "/drew/book-1/chapter-2/part-1-unannounced-arrival": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Unannounced Arrival",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p001.md"
     }
 }
