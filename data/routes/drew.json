@@ -155,5 +155,11 @@
         "title": "Part 2: The Racecar",
         "theme": "raggiesoft-books",
         "filePath": "b001/c004/p002.md"
+    },
+    "/drew/book-1/chapter-4/part-3-the-hospital-haunt": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Hospital Haunt",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p003.md"
     }
 }
