@@ -215,5 +215,11 @@
         "title": "Part 12: Seven",
         "theme": "raggiesoft-books",
         "filePath": "b001/c004/p012.md"
+    },
+    "/drew/book-1/chapter-4/part-13-the-short-bus": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 13: The Short Bus",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p013.md"
     }
 }
