@@ -83,5 +83,11 @@
         "title": "Part 4: The Other Victims",
         "theme": "raggiesoft-books",
         "filePath": "b001/c002/p004.md"
+    },
+    "/drew/book-1/chapter-2/part-5-the-paperwork": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Paperwork",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c002/p005.md"
     }
 }
