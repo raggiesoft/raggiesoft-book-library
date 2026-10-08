@@ -101,5 +101,11 @@
         "title": "Part 1: Post-Op",
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p001.md"
+    },
+    "/drew/book-1/chapter-3/part-2-waking-up": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Waking Up",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c003/p002.md"
     }
 }
