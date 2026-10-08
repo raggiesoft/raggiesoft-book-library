@@ -185,5 +185,11 @@
         "title": "Part 7: The Exhaustion",
         "theme": "raggiesoft-books",
         "filePath": "b001/c004/p007.md"
+    },
+    "/drew/book-1/chapter-4/part-8-pennies-on-the-dollar": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: Pennies on the Dollar",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p008.md"
     }
 }
