@@ -102,28 +102,34 @@
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p001.md"
     },
-    "/drew/book-1/chapter-3/part-2-waking-up": {
+    "/drew/book-1/chapter-3/part-2-the-picu": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Waking Up",
+        "title": "Part 2: The PICU",
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p002.md"
     },
-    "/drew/book-1/chapter-3/part-3-suite-f": {
+    "/drew/book-1/chapter-3/part-3-waking-up": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Suite F",
+        "title": "Part 3: Waking Up",
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p003.md"
     },
-    "/drew/book-1/chapter-3/part-4-the-manifesto": {
+    "/drew/book-1/chapter-3/part-4-suite-f": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Manifesto",
+        "title": "Part 4: Suite F",
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p004.md"
     },
-    "/drew/book-1/chapter-3/part-5-the-sofa": {
+    "/drew/book-1/chapter-3/part-5-the-manifesto": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: The Sofa",
+        "title": "Part 5: The Manifesto",
         "theme": "raggiesoft-books",
         "filePath": "b001/c003/p005.md"
+    },
+    "/drew/book-1/chapter-3/part-6-the-sofa": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Sofa",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c003/p006.md"
     }
 }
