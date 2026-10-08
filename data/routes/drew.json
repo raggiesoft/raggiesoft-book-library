@@ -47,5 +47,11 @@
         "title": "Part 2: The Rest of the Hour",
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p002.md"
+    },
+    "/drew/book-1/chapter-1/part-3-the-front-office": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Front Office",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c001/p003.md"
     }
 }
