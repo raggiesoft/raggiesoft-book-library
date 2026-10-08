@@ -353,5 +353,11 @@
         "title": "Part 1: The Curtain Compromise",
         "theme": "raggiesoft-books",
         "filePath": "b003/c001/p001.md"
+    },
+    "/drew/book-3/chapter-1/part-2-the-emergency": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Emergency",
+        "theme": "raggiesoft-books",
+        "filePath": "b003/c001/p002.md"
     }
 }
