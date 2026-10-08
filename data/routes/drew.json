@@ -203,5 +203,11 @@
         "title": "Part 10: Midnight on the Ward",
         "theme": "raggiesoft-books",
         "filePath": "b001/c004/p010.md"
+    },
+    "/drew/book-1/chapter-4/part-11-going-home": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: Going Home",
+        "theme": "raggiesoft-books",
+        "filePath": "b001/c004/p011.md"
     }
 }
