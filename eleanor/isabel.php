@@ -42,10 +42,11 @@ if (preg_match('#^/([^/]+)#', $requestUri, $matches)) {
     }
 }
 
-// Redirect base path to the publisher imprint home
+$isCatalog = false;
 if ($requestUri === '/' || $requestUri === '/isabel.php' || $requestUri === '/index.php' || $requestUri === '/catalog') {
-    header('Location: https://raggiesoft.com/raggiesoft-books/books');
-    exit;
+    $isCatalog = true;
+    $seriesSlug = '';
+    $pageConfig['title'] = 'Catalog';
 }
 
 // Extract Variables for Views
@@ -138,11 +139,15 @@ echo '<script src="' . $cdnBaseUrl . '/raggiesoft-books/js/reader.js?v=' . time(
 
 echo '<div id="stardust-main-wrapper" style="display: flex; height: 100vh; overflow: hidden; width: 100%;">';
 
-// Include Sophia's TOC Sidebar
-require_once $basePath . '/sophia/sidebar.php';
+if ($isCatalog) {
+    require_once $basePath . '/sophia/catalog.php';
+} else {
+    // Include Sophia's TOC Sidebar
+    require_once $basePath . '/sophia/sidebar.php';
 
-// Oliver takes over for the actual reading pane
-require_once $basePath . '/sophia/oliver.php';
+    // Oliver takes over for the actual reading pane
+    require_once $basePath . '/sophia/oliver.php';
+}
 
 echo '</div> <!-- END #stardust-main-wrapper -->';
 

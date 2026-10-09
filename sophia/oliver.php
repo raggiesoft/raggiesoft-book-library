@@ -188,7 +188,7 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                 }
             }
             ?>
-            <a href="https://raggiesoft.com/raggiesoft-books/books" style="text-decoration: none;">Library</a>
+            <a href="/" style="text-decoration: none;">Library</a>
             &raquo; <strong style="color: var(--rs-text); font-weight: 600;"><?php echo htmlspecialchars($seriesTitle); ?></strong>
             </div>
             <div style="display: flex; gap: 1rem;">

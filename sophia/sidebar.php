@@ -43,12 +43,12 @@ if (!empty($routeData)) {
 
 <aside id="stardust-sidebar" class="reader-sidebar">
     <div style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
-        <a href="https://raggiesoft.com/raggiesoft-books/books" class="rs-btn rs-btn-brand" style="flex: 1; text-align: center; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 4px;"><i class="ph ph-books"></i> Library</a>
+        <a href="/" class="rs-btn rs-btn-brand" style="flex: 1; text-align: center; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 4px;"><i class="ph ph-books"></i> Library</a>
         <button id="reader-settings-toggle" class="rs-btn" style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 4px;"><i class="ph ph-gear"></i> Settings</button>
     </div>
 
     <!-- Instant Search Bar / Form Fallback -->
-    <form action="https://raggiesoft.com/raggiesoft-books/search" method="GET" class="search-container" style="position: relative; margin-bottom: 1.5rem;">
+    <form action="/search" method="GET" class="search-container" style="position: relative; margin-bottom: 1.5rem;">
         <input type="text" id="rs-book-search" name="q" placeholder="Search the universe..." style="width: 100%; padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid var(--rs-border); background: var(--rs-surface); color: var(--rs-text); font-size: 0.95rem;">
         <div id="rs-search-results" style="display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 6px; max-height: 350px; overflow-y: auto; z-index: 1000; box-shadow: 0 8px 24px rgba(0,0,0,0.15); margin-top: 4px;"></div>
     </form>
@@ -61,7 +61,7 @@ if (!empty($routeData)) {
     <hr style="border:0; border-top:1px solid var(--rs-border); margin: 20px 0;">
     
     <nav class="toc-nav" style="display: flex; flex-direction: column; gap: 0.5rem;">
-        <a href="https://raggiesoft.com/raggiesoft-books/books" class="sidebar-nav-link" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; padding: 0.75rem 0.5rem; border-radius: 6px; color: var(--rs-text); font-weight: 500;">
+        <a href="/" class="sidebar-nav-link" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; padding: 0.75rem 0.5rem; border-radius: 6px; color: var(--rs-text); font-weight: 500;">
             <i class="ph ph-house" style="font-size: 1.25rem;"></i> Home
         </a>
         <a href="/<?php echo htmlspecialchars($seriesSlug); ?>/toc" class="sidebar-nav-link" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; padding: 0.75rem 0.5rem; border-radius: 6px; color: var(--rs-text); font-weight: 500;">
