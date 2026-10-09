@@ -75,7 +75,7 @@ if ($catalogData) {
                         <h2 style="font-size: 1rem; font-weight: 700; margin: 0 0 0.25rem 0; color: var(--rs-heading); line-height: 1.2; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
                             <?php echo htmlspecialchars($title); ?>
                         </h2>
-                        <p style="font-size: 0.8rem; opacity: 0.6; margin: 0; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                        <p style="font-size: 0.8rem; opacity: 0.6; margin: 0; line-height: 1.3;">
                             <?php echo htmlspecialchars($desc); ?>
                         </p>
                     </div>
