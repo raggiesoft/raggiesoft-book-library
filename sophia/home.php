@@ -11,15 +11,6 @@ if ($catalogData) {
     $books = json_decode($catalogData, true) ?? [];
 }
 
-// Time-based greeting
-$hour = date('H');
-if ($hour < 12) {
-    $greeting = "Good morning";
-} elseif ($hour < 18) {
-    $greeting = "Good afternoon";
-} else {
-    $greeting = "Good evening";
-}
 ?>
 
 <div style="flex: 1; overflow-y: auto; background: var(--rs-bg); padding-bottom: 6rem; -webkit-overflow-scrolling: touch;">
@@ -30,8 +21,8 @@ if ($hour < 12) {
         <!-- Top Bar: Title & Settings -->
         <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem;">
             <div>
-                <p style="font-size: 1.1rem; color: var(--rs-primary); margin: 0 0 0.25rem 0; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
-                    <?php echo $greeting; ?>, Reader.
+                <p id="rs-home-greeting" style="font-size: 1.1rem; color: var(--rs-primary); margin: 0 0 0.25rem 0; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
+                    Welcome, Reader.
                 </p>
                 <h1 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 2.5rem; font-weight: 800; color: var(--rs-heading); letter-spacing: -0.5px; margin: 0; line-height: 1.1;">
                     Home
@@ -130,6 +121,14 @@ if ($hour < 12) {
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
+    // 0. Update Greeting
+    const hour = new Date().getHours();
+    let greeting = 'Good evening';
+    if (hour < 12) greeting = 'Good morning';
+    else if (hour < 18) greeting = 'Good afternoon';
+    const greetingEl = document.getElementById('rs-home-greeting');
+    if (greetingEl) greetingEl.textContent = greeting + ', Reader.';
+
     // 1. Load Jump Back In
     const lastRead = localStorage.getItem('rs-last-read');
     if (lastRead) {
@@ -209,3 +208,4 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 </script>
+
