@@ -13,7 +13,7 @@
             <!-- Step 1 -->
             <div id="wizard-step-1" class="wizard-step active-step">
                 <h2 style="margin-top: 0; color: var(--rs-primary);">Welcome to Ocean View Archives!</h2>
-                <p>Hi there! I'm Isabel, the routing engine here at the Archives.</p>
+                <p>Hi there! I'm Isabel, the brainchild behind this app, and I'll be your guide. My siblings and I live right here in the Ocean View section of Norfolk, Virginia.</p>
                 <p>Before you start reading, Oliver and I wanted to help you set up your reading environment. The Archives are designed for long, distraction-free reading sessions, so let's make sure the layout is comfortable for you.</p>
                 <div style="margin-top: 2rem;">
                     <h4 style="margin-bottom: 0.5rem;">Choose your Article Width:</h4>
@@ -84,6 +84,18 @@
                         <label for="wizard-custom-theme-toggle" style="font-size: 1rem; font-weight: 600; cursor: pointer;">Allow Custom Story Themes</label>
                     </div>
                     <p style="font-size: 0.9rem; opacity: 0.8; margin: 0; margin-top: 0.5rem; padding-left: 2rem;">If unchecked, the archives will always use the color mode you selected in Step 2.</p>
+                </div>
+            </div>
+
+            <!-- Step 6 -->
+            <div id="wizard-step-6" class="wizard-step" style="display: none;">
+                <h2 style="margin-top: 0; color: var(--rs-primary);">Offline Reading</h2>
+                <p>Hi! I'm Oliver, the one responsible for the reading pane itself.</p>
+                <p>Did you know that you can download entire narratives to your device? This means you can read without an internet connection—perfect for airplanes, road trips, or just saving data.</p>
+                <p>Just look for the Offline switches in the Library settings to download the narratives you want to take with you.</p>
+                <div style="margin-top: 2rem; padding: 1.5rem; background: var(--rs-bg); border-radius: 8px; border: 1px solid var(--rs-border); text-align: center;">
+                    <i class="ph ph-cloud-arrow-down" style="font-size: 2.5rem; color: var(--rs-primary); margin-bottom: 0.5rem; display: inline-block;"></i>
+                    <p style="font-size: 0.95rem; font-weight: 600; margin: 0;">You can manage your offline books anytime from the Settings menu!</p>
                 </div>
             </div>
 

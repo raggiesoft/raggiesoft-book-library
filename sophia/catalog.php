@@ -178,7 +178,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (isStandalone) {
         // If launched as PWA, redirect to last read location if available
         const lastRead = localStorage.getItem('rs-last-read');
-        // Only redirect if there is no hash or specific path loaded, and we are exactly on the root catalog
+        // Only redirect if there is no hash or specific path loaded, and we are exactly on the root home page
         if (lastRead && window.location.pathname === '/' && !sessionStorage.getItem('rs-prevent-auto-redirect')) {
             sessionStorage.setItem('rs-prevent-auto-redirect', 'true'); // Prevent infinite loops if they click "Library" button to come back
             window.location.replace(lastRead);
@@ -198,6 +198,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
     
+    const closeBtn = document.getElementById('rs-pwa-close-banner');
     if (closeBtn) {
         closeBtn.addEventListener('click', () => {
             banner.style.display = 'none';
@@ -206,4 +207,16 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 </script>
+</div>
+
+<!-- Bottom Navigation Bar for Mobile PWA Feel -->
+<div style="position: fixed; bottom: 0; left: 0; right: 0; background: var(--rs-surface); border-top: 1px solid var(--rs-border); display: flex; justify-content: space-around; padding: 0.5rem 0; padding-bottom: env(safe-area-inset-bottom, 0.5rem); z-index: 100;">
+    <a href="/" style="text-decoration: none; color: var(--rs-text); opacity: 0.7; display: flex; flex-direction: column; align-items: center; gap: 2px;">
+        <i class="ph ph-house" style="font-size: 1.5rem;"></i>
+        <span style="font-size: 0.7rem; font-weight: 600;">Home</span>
+    </a>
+    <a href="/library" style="text-decoration: none; color: var(--rs-primary); display: flex; flex-direction: column; align-items: center; gap: 2px;">
+        <i class="ph-fill ph-books" style="font-size: 1.5rem;"></i>
+        <span style="font-size: 0.7rem; font-weight: 600;">Library</span>
+    </a>
 </div>

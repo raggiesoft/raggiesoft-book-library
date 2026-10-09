@@ -43,10 +43,15 @@ if (preg_match('#^/([^/]+)#', $requestUri, $matches)) {
 }
 
 $isCatalog = false;
-if ($requestUri === '/' || $requestUri === '/isabel.php' || $requestUri === '/index.php' || $requestUri === '/catalog') {
+$isHome = false;
+if ($requestUri === '/' || $requestUri === '/isabel.php' || $requestUri === '/index.php') {
+    $isHome = true;
+    $seriesSlug = '';
+    $pageConfig['title'] = 'Home';
+} else if ($requestUri === '/library' || $requestUri === '/catalog') {
     $isCatalog = true;
     $seriesSlug = '';
-    $pageConfig['title'] = 'Catalog';
+    $pageConfig['title'] = 'Library';
 }
 
 // Extract Variables for Views
@@ -143,7 +148,9 @@ echo '<script src="' . $cdnBaseUrl . '/raggiesoft-books/js/reader.js?v=' . time(
 
 echo '<div id="stardust-main-wrapper" style="display: flex; height: 100vh; overflow: hidden; width: 100%;">';
 
-if ($isCatalog) {
+if ($isHome) {
+    require_once $basePath . '/sophia/home.php';
+} else if ($isCatalog) {
     require_once $basePath . '/sophia/catalog.php';
 } else {
     // Include Sophia's TOC Sidebar
