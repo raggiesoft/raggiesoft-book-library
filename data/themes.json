@@ -1,4 +1,8 @@
 {
+    "adventure-travel": {
+        "name": "Adventure Travel",
+        "supports_modes": true
+    },
     "afternoon": {
         "name": "Afternoon",
         "supports_modes": true
@@ -7,8 +11,20 @@
         "name": "Aquarium",
         "supports_modes": true
     },
+    "cosmic-detection": {
+        "name": "Cosmic Detection",
+        "supports_modes": true
+    },
+    "cosmic-horror": {
+        "name": "Cosmic Horror",
+        "supports_modes": true
+    },
     "courtroom": {
         "name": "Courtroom",
+        "supports_modes": true
+    },
+    "danger-descent": {
+        "name": "Danger Descent",
         "supports_modes": true
     },
     "dark": {
@@ -19,9 +35,21 @@
         "name": "Dark Rain",
         "supports_modes": false
     },
+    "divine-temple": {
+        "name": "Divine Temple",
+        "supports_modes": true
+    },
     "evening": {
         "name": "Evening",
         "supports_modes": false
+    },
+    "forest-morning": {
+        "name": "Forest Morning",
+        "supports_modes": true
+    },
+    "gloom": {
+        "name": "Gloom",
+        "supports_modes": true
     },
     "fog": {
         "name": "Karl The Fog",
@@ -43,6 +71,22 @@
         "name": "Night",
         "supports_modes": true
     },
+    "ocean-day": {
+        "name": "Ocean Day",
+        "supports_modes": true
+    },
+    "ocean-storm": {
+        "name": "Ocean Storm",
+        "supports_modes": true
+    },
+    "ocean-volcanic": {
+        "name": "Ocean Volcanic",
+        "supports_modes": true
+    },
+    "ominous-warning": {
+        "name": "Ominous Warning",
+        "supports_modes": true
+    },
     "roadtrip": {
         "name": "Roadtrip",
         "supports_modes": true
@@ -54,6 +98,14 @@
     "severe-thunderstorm": {
         "name": "Severe Thunderstorm",
         "supports_modes": false
+    },
+    "space-gloom": {
+        "name": "Space Gloom",
+        "supports_modes": true
+    },
+    "space-wonder": {
+        "name": "Space Wonder",
+        "supports_modes": true
     },
     "stadium": {
         "name": "Stadium",
@@ -67,6 +119,50 @@
         "name": "Subway",
         "supports_modes": true
     },
+    "sunstead": {
+        "name": "Sunstead",
+        "supports_modes": true
+    },
+    "sunstead-action": {
+        "name": "Sunstead Action",
+        "supports_modes": true
+    },
+    "sunstead-peace": {
+        "name": "Sunstead Peace",
+        "supports_modes": true
+    },
+    "sunstead-peace-disrupted": {
+        "name": "Sunstead Peace Disrupted",
+        "supports_modes": true
+    },
+    "sunstead-politics": {
+        "name": "Sunstead Politics",
+        "supports_modes": true
+    },
+    "sunstead-scour": {
+        "name": "Sunstead Scour",
+        "supports_modes": true
+    },
+    "sunstead-secrecy": {
+        "name": "Sunstead Secrecy",
+        "supports_modes": true
+    },
+    "sunstead-tension": {
+        "name": "Sunstead Tension",
+        "supports_modes": true
+    },
+    "sunstead-victory": {
+        "name": "Sunstead Victory",
+        "supports_modes": true
+    },
+    "sunstead-war": {
+        "name": "Sunstead War",
+        "supports_modes": true
+    },
+    "sunstead-winter": {
+        "name": "Sunstead Winter",
+        "supports_modes": true
+    },
     "tech": {
         "name": "Tech",
         "supports_modes": true
@@ -78,6 +174,10 @@
     "thunderstorm-dark": {
         "name": "Thunderstorm Dark",
         "supports_modes": false
+    },
+    "trauma-healing": {
+        "name": "Trauma Healing",
+        "supports_modes": true
     },
     "uplifting": {
         "name": "Uplifting",
