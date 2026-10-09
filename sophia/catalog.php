@@ -1,51 +1,46 @@
-<?php
-// Sophia's Catalog View (Standalone Library View)
-global $cdnBaseUrl, $siteName, $requestUri;
-
-// Fetch the master catalog directly from the CDN
-$catalogUrl = $cdnBaseUrl . '/raggiesoft-books/books/catalog.json';
-$catalogData = @file_get_contents($catalogUrl);
-$books = [];
-
-if ($catalogData) {
-    $books = json_decode($catalogData, true) ?? [];
-}
-?>
-
-<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto; background-color: var(--rs-bg); color: var(--rs-text);">
+<div style="flex: 1; overflow-y: auto; background: var(--rs-bg); padding-bottom: 4rem; -webkit-overflow-scrolling: touch;">
     
-    <!-- Hero / Header Section -->
-    <div style="background: linear-gradient(135deg, var(--rs-surface) 0%, var(--rs-bg) 100%); border-bottom: 1px solid var(--rs-border); padding: 4rem 2rem; text-align: center; position: relative;">
-        <!-- Top Controls -->
-        <div style="position: absolute; top: 1.5rem; right: 2rem; display: flex; gap: 1rem; align-items: center; z-index: 50;">
-            <div style="position: relative; width: 300px; text-align: left;">
-                <input type="text" id="rs-book-search" placeholder="Search the universe..." style="width: 100%; padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid var(--rs-border); background: var(--rs-bg); color: var(--rs-text); font-size: 0.95rem;">
-                <div id="rs-search-results" style="display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 6px; max-height: 350px; overflow-y: auto; z-index: 1000; box-shadow: 0 8px 24px rgba(0,0,0,0.15); margin-top: 4px;"></div>
+    <!-- Native App Style Header -->
+    <div style="max-width: 1200px; margin: 0 auto; padding: 3rem 1.5rem 1rem;">
+        
+        <!-- Top Bar: Title & Settings -->
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1.5rem;">
+            <div>
+                <h1 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 2.5rem; font-weight: 800; color: var(--rs-heading); letter-spacing: -0.5px; margin: 0; line-height: 1.1;">
+                    Library
+                </h1>
+                <p style="font-size: 1rem; color: var(--rs-primary); margin: 0.25rem 0 0 0; font-weight: 600;">
+                    Ocean View Archives
+                </p>
             </div>
-            <button id="reader-settings-toggle" class="rs-btn rs-btn-primary" style="display: flex; align-items: center; justify-content: center; gap: 6px; padding: 0.75rem 1rem; border-radius: 6px; font-weight: 600; cursor: pointer;">
-                <i class="ph ph-gear" style="font-size: 1.2rem;"></i> Settings
+            
+            <button id="reader-settings-toggle" class="rs-btn" style="background: transparent; color: var(--rs-primary); border: none; padding: 0.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                <i class="ph ph-gear" style="font-size: 1.75rem;"></i>
             </button>
         </div>
 
-        <h1 style="font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 700; color: var(--rs-primary); margin-bottom: 1rem;">
-            Contemporary Fiction Library
-        </h1>
-        <p style="font-size: 1.25rem; opacity: 0.8; max-width: 600px; margin: 0 auto; line-height: 1.6;">
-            The grounded, real-world archives of RaggieSoft Media.
-        </p>
+        <!-- Full Width Search Bar -->
+        <div style="position: relative; width: 100%; margin-bottom: 2rem;">
+            <div style="position: relative; display: flex; align-items: center;">
+                <i class="ph ph-magnifying-glass" style="position: absolute; left: 1rem; color: var(--rs-text); opacity: 0.5; font-size: 1.25rem;"></i>
+                <input type="text" id="rs-book-search" placeholder="Search titles, characters, or lore..." style="width: 100%; padding: 0.85rem 1rem 0.85rem 2.75rem; border-radius: 12px; border: none; background: var(--rs-surface); color: var(--rs-text); font-size: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06); outline: none; -webkit-appearance: none;">
+            </div>
+            <div id="rs-search-results" style="display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 12px; max-height: 350px; overflow-y: auto; z-index: 1000; box-shadow: 0 8px 30px rgba(0,0,0,0.12); margin-top: 8px;"></div>
+        </div>
+        
     </div>
 
     <!-- Catalog Grid -->
-    <div style="max-width: 1200px; margin: 0 auto; padding: 4rem 2rem;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
         
         <?php if (empty($books)): ?>
             <div style="text-align: center; padding: 4rem 0; opacity: 0.7;">
                 <i class="ph ph-books" style="font-size: 4rem; color: var(--rs-primary); margin-bottom: 1rem;"></i>
-                <h2>Library Catalog Offline</h2>
+                <h2>Library Offline</h2>
                 <p>The system is currently compiling the archives. Please check back later.</p>
             </div>
         <?php else: ?>
-            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 2rem;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1.5rem 1rem;">
                 
                 <?php foreach ($books as $book): 
                     $slug = $book['slug'] ?? '';
@@ -55,26 +50,22 @@ if ($catalogData) {
                     $readLink = '/' . $slug . '/';
                 ?>
                 
-                <div class="rs-book-card" data-slug="<?php echo htmlspecialchars($slug); ?>" style="background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; transition: transform 0.2s ease, box-shadow 0.2s ease; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
-                    <!-- Cover Image Container -->
-                    <div style="width: 100%; aspect-ratio: 2/3; background-color: var(--rs-bg); overflow: hidden; position: relative;">
-                        <img src="<?php echo htmlspecialchars($imgSrc); ?>" alt="<?php echo htmlspecialchars($title); ?>" style="width: 100%; height: 100%; object-fit: cover;">
+                <a href="<?php echo htmlspecialchars($readLink); ?>" class="rs-book-card" data-slug="<?php echo htmlspecialchars($slug); ?>" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; transition: transform 0.2s ease;">
+                    <!-- Cover Image -->
+                    <div style="width: 100%; aspect-ratio: 2/3; background-color: var(--rs-surface); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); position: relative; margin-bottom: 0.75rem; border: 1px solid rgba(255,255,255,0.05);">
+                        <img src="<?php echo htmlspecialchars($imgSrc); ?>" alt="<?php echo htmlspecialchars($title); ?>" style="width: 100%; height: 100%; object-fit: cover; display: block;">
                     </div>
                     
-                    <!-- Content Details -->
-                    <div style="padding: 1.5rem; flex: 1; display: flex; flex-direction: column;">
-                        <h2 style="font-size: 1.25rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--rs-heading); line-height: 1.3;">
+                    <!-- Title & Subtitle -->
+                    <div style="padding: 0 0.25rem;">
+                        <h2 style="font-size: 1rem; font-weight: 700; margin: 0 0 0.25rem 0; color: var(--rs-heading); line-height: 1.2; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
                             <?php echo htmlspecialchars($title); ?>
                         </h2>
-                        <p style="font-size: 0.95rem; opacity: 0.8; line-height: 1.5; margin-bottom: 1.5rem; flex: 1;">
+                        <p style="font-size: 0.8rem; opacity: 0.6; margin: 0; line-height: 1.3; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
                             <?php echo htmlspecialchars($desc); ?>
                         </p>
-                        
-                        <a href="<?php echo htmlspecialchars($readLink); ?>" class="rs-btn rs-btn-primary" style="display: block; text-align: center; text-decoration: none; padding: 0.75rem; border-radius: 6px; font-weight: 600;">
-                            <i class="ph ph-book-open" style="margin-right: 0.5rem;"></i> Read Series
-                        </a>
                     </div>
-                </div>
+                </a>
                 
                 <?php endforeach; ?>
                 
@@ -82,7 +73,6 @@ if ($catalogData) {
         <?php endif; ?>
 
     </div>
-
 
 <!-- Instant Search JS -->
 <script>
@@ -127,19 +117,19 @@ document.addEventListener("DOMContentLoaded", function() {
                 results.forEach(item => {
                     const div = document.createElement('a');
                     div.href = item.url.replace('/raggiesoft-books/books/', '/');
-                    div.style = "display: block; padding: 0.75rem 1rem; border-bottom: 1px solid var(--rs-border); text-decoration: none; color: var(--rs-text); cursor: pointer;";
+                    div.style = "display: block; padding: 1rem; border-bottom: 1px solid var(--rs-border); text-decoration: none; color: var(--rs-text); cursor: pointer;";
                     div.innerHTML = `
-                        <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 2px;">${item.series}: ${item.title}</div>
-                        <div style="font-size: 0.75rem; opacity: 0.7; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${item.book} &middot; ${item.chapter}</div>
+                        <div style="font-weight: 600; font-size: 0.95rem; margin-bottom: 4px; color: var(--rs-heading);">${item.series}: ${item.title}</div>
+                        <div style="font-size: 0.8rem; opacity: 0.7; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${item.book} &middot; ${item.chapter}</div>
                     `;
-                    div.addEventListener('mouseenter', () => div.style.background = 'var(--rs-border)');
+                    div.addEventListener('mouseenter', () => div.style.background = 'var(--rs-bg)');
                     div.addEventListener('mouseleave', () => div.style.background = 'transparent');
                     
                     resultsContainer.appendChild(div);
                 });
                 resultsContainer.style.display = 'block';
             } else {
-                resultsContainer.innerHTML = '<div style="padding: 0.75rem 1rem; font-size: 0.85rem; opacity: 0.7;">No results found in the archives.</div>';
+                resultsContainer.innerHTML = '<div style="padding: 1rem; font-size: 0.9rem; opacity: 0.7; text-align: center;">No lore found matching your search.</div>';
                 resultsContainer.style.display = 'block';
             }
         });
@@ -153,6 +143,4 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 </script>
-</main>
-
-
+</div>
