@@ -192,7 +192,7 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
             &raquo; <strong style="color: var(--rs-text); font-weight: 600;"><?php echo htmlspecialchars($seriesTitle); ?></strong>
             </div>
             <div style="display: flex; gap: 1rem;">
-                <button id="stardust-sidebar-toggle" class="rs-btn" style="padding: 0.5rem 1rem; font-size: 0.85rem;"><i class="ph ph-list"></i> Chapters</button>
+                <button id="stardust-sidebar-toggle" class="rs-btn" style="padding: 0.5rem 1rem; font-size: 0.85rem;"><i class="ph ph-list"></i> Menu</button>
             </div>
         </div>
 
