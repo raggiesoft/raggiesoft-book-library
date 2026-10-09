@@ -81,6 +81,10 @@ $ogDescription = !empty($katie['series_description']) ? $katie['series_descripti
 $ogImage = '';
 if (!empty($seriesSlug)) {
     $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/' . $seriesSlug . '.jpg';
+} else if ($isCatalog) {
+    $ogTitle = 'Contemporary Fiction Library | Ocean View Archives';
+    $ogDescription = 'Living stories. Expanding lore. Dive into the universe. The grounded, real-world archives of RaggieSoft Media.';
+    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/og/contemporary.jpg';
 }
 
 // Check for OpenGraph overrides in the Markdown Frontmatter
