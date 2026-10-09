@@ -52,7 +52,7 @@ if ($catalogData) {
                     $title = $book['title'] ?? 'Unknown Archive';
                     $desc = $book['description'] ?? '';
                     $imgSrc = !empty($book['image']) ? $cdnBaseUrl . $book['image'] : $cdnBaseUrl . '/raggiesoft-books/images/book-placeholder.jpg';
-                    $readLink = !empty($book['first_route']) ? $book['first_route'] : '/' . $slug;
+                    $readLink = '/' . $slug . '/';
                 ?>
                 
                 <div style="background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; transition: transform 0.2s ease, box-shadow 0.2s ease; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
