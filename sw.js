@@ -1,13 +1,13 @@
-const CACHE_NAME = 'ova-cache-v3';
-const DYNAMIC_CACHE = 'ova-dynamic-v3';
-const IMAGE_CACHE = 'ova-images-v3';
+const CACHE_NAME = 'ova-cache-v4';
+const DYNAMIC_CACHE = 'ova-dynamic-v4';
+const IMAGE_CACHE = 'ova-images-v4';
 
 const PRECACHE_ASSETS = [
     '/',
     '/manifest.json',
     '/scripts/pwa.js',
     '/favicon.ico',
-    '/icons/icon.svg'
+    'https://assets.raggiesoft.com/raggiesoft-books/images/pwa-icons/icon.svg'
 ];
 
 self.addEventListener('install', event => {

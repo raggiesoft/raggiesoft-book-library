@@ -84,7 +84,7 @@ if (!empty($seriesSlug)) {
 } else if ($isCatalog) {
     $ogTitle = 'Contemporary Fiction Library | Ocean View Archives';
     $ogDescription = 'Living stories. Expanding lore. Dive into the universe. The grounded, real-world archives of RaggieSoft Media.';
-    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/og/contemporary.jpg';
+    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/og/contemporary_v2.jpg';
 }
 
 // Check for OpenGraph overrides in the Markdown Frontmatter
