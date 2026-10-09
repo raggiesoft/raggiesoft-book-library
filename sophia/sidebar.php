@@ -53,7 +53,13 @@ if (!empty($routeData)) {
         <div id="rs-search-results" style="display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 6px; max-height: 350px; overflow-y: auto; z-index: 1000; box-shadow: 0 8px 24px rgba(0,0,0,0.15); margin-top: 4px;"></div>
     </form>
 
-    <h3 style="margin-top: 1rem; color: var(--rs-primary);"><?php 
+    <?php if (!empty($katie['series_image'])): ?>
+    <div style="margin-top: 1.5rem; margin-bottom: 0.5rem; text-align: center;">
+        <img src="<?php echo htmlspecialchars($cdnBaseUrl . $katie['series_image']); ?>" alt="Cover for <?php echo htmlspecialchars($katie['series_title'] ?? ''); ?>" style="width: 100%; max-width: 140px; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.2); display: block; margin: 0 auto;">
+    </div>
+    <?php endif; ?>
+
+    <h3 style="margin-top: 1rem; color: var(--rs-primary); text-align: center;"><?php 
         $sidebarSeriesTitle = $katie['series_title'] ?? (ucfirst($seriesSlug) . ' Narrative');
         echo htmlspecialchars($sidebarSeriesTitle); 
     ?></h3>
