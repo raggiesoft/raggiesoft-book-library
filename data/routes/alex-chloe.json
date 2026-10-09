@@ -2628,9 +2628,9 @@
         "theme": "raggiesoft-books",
         "filePath": "b015/c004/p004.md"
     },
-    "/alex-chloe/our-real-beginning/le-grand-jour-the-big-day/part-5-part-5": {
+    "/alex-chloe/our-real-beginning/le-grand-jour-the-big-day/part-5-special-dances": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: Part 5",
+        "title": "Part 5: Special Dances",
         "theme": "raggiesoft-books",
         "filePath": "b015/c004/p005.md"
     },
@@ -3150,21 +3150,21 @@
         "theme": "raggiesoft-books",
         "filePath": "b020/c001/p006.md"
     },
-    "/alex-chloe/book-21": {
+    "/alex-chloe/book-21-the-turning-point": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 21",
+        "title": "Book 21: The Turning Point",
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|20"
     },
-    "/alex-chloe/book-21/chapter-1": {
+    "/alex-chloe/book-21-the-turning-point/chapter-1-the-confrontation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: The Confrontation",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|20|0"
     },
-    "/alex-chloe/book-21/chapter-2": {
+    "/alex-chloe/book-21-the-turning-point/chapter-2-the-turning-of-the-tide": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 2",
+        "title": "Chapter 2: The Turning of the Tide",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|20|1"
     }

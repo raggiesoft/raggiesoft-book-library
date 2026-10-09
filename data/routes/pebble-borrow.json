@@ -24,9 +24,9 @@
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
     },
-    "/pebble-borrow/book-1": {
+    "/pebble-borrow/book-1-echoes-of-the-past": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 1",
+        "title": "Book 1: Echoes of the Past",
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|0"
     },
@@ -84,33 +84,33 @@
         "theme": "raggiesoft-books",
         "filePath": "b002/c003/p002.md"
     },
-    "/pebble-borrow/book-3": {
+    "/pebble-borrow/book-3-beyond-the-horizon": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 3",
+        "title": "Book 3: Beyond the Horizon",
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|2"
     },
-    "/pebble-borrow/book-4": {
+    "/pebble-borrow/book-4-the-turning-point": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 4",
+        "title": "Book 4: The Turning Point",
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|3"
     },
-    "/pebble-borrow/book-5": {
+    "/pebble-borrow/book-5-a-glimmer-of-hope": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 5",
+        "title": "Book 5: A Glimmer of Hope",
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|4"
     },
-    "/pebble-borrow/book-5/chapter-1": {
+    "/pebble-borrow/book-5-a-glimmer-of-hope/chapter-1-the-confrontation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: The Confrontation",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|0"
     },
-    "/pebble-borrow/book-6": {
+    "/pebble-borrow/book-6-shadows-fall": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 6",
+        "title": "Book 6: Shadows Fall",
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|5"
     },
@@ -120,81 +120,81 @@
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|6"
     },
-    "/pebble-borrow/welcome-to-pebble-burrow/chapter-1": {
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-1-the-aftermath": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: The Aftermath",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|0"
     },
-    "/pebble-borrow/welcome-to-pebble-burrow/chapter-2": {
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-2-the-trial": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 2",
+        "title": "Chapter 2: The Trial",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|1"
     },
-    "/pebble-borrow/welcome-to-pebble-burrow/chapter-3": {
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-3-a-change-of-plans": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 3",
+        "title": "Chapter 3: A Change of Plans",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|2"
     },
-    "/pebble-borrow/welcome-to-pebble-burrow/chapter-4": {
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-4-the-betrayal": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 4",
+        "title": "Chapter 4: The Betrayal",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|3"
     },
-    "/pebble-borrow/welcome-to-pebble-burrow/chapter-5": {
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-5-the-sacrifice": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 5",
+        "title": "Chapter 5: The Sacrifice",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|4"
     },
-    "/pebble-borrow/welcome-to-pebble-burrow/chapter-6": {
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-6-a-moment-of-peace": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 6",
+        "title": "Chapter 6: A Moment of Peace",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|5"
     },
-    "/pebble-borrow/welcome-to-pebble-burrow/chapter-7": {
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-7-a-moment-of-peace": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 7",
+        "title": "Chapter 7: A Moment of Peace",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|6"
     },
-    "/pebble-borrow/welcome-to-pebble-burrow/chapter-8": {
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-8-a-moment-of-peace": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 8",
+        "title": "Chapter 8: A Moment of Peace",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|7"
     },
-    "/pebble-borrow/welcome-to-pebble-burrow/chapter-9": {
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-9-the-betrayal": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 9",
+        "title": "Chapter 9: The Betrayal",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|8"
     },
-    "/pebble-borrow/welcome-to-pebble-burrow/chapter-10": {
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-10-unexpected-encounters": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 10",
+        "title": "Chapter 10: Unexpected Encounters",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|9"
     },
-    "/pebble-borrow/welcome-to-pebble-burrow/chapter-11": {
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-11-the-turning-of-the-tide": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 11",
+        "title": "Chapter 11: The Turning of the Tide",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|10"
     },
-    "/pebble-borrow/welcome-to-pebble-burrow/chapter-12": {
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-12-the-confrontation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 12",
+        "title": "Chapter 12: The Confrontation",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|11"
     },
-    "/pebble-borrow/welcome-to-pebble-burrow/chapter-13": {
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-13-a-new-ally": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 13",
+        "title": "Chapter 13: A New Ally",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|12"
     },
@@ -216,15 +216,15 @@
         "theme": "raggiesoft-books",
         "filePath": "b007/c014/p002.md"
     },
-    "/pebble-borrow/welcome-to-pebble-burrow/chapter-15": {
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-15-the-aftermath": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 15",
+        "title": "Chapter 15: The Aftermath",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|14"
     },
-    "/pebble-borrow/welcome-to-pebble-burrow/chapter-16": {
+    "/pebble-borrow/welcome-to-pebble-burrow/chapter-16-unexpected-encounters": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 16",
+        "title": "Chapter 16: Unexpected Encounters",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|15"
     },
@@ -234,9 +234,9 @@
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|7"
     },
-    "/pebble-borrow/the-general-s-arrival/chapter-1": {
+    "/pebble-borrow/the-general-s-arrival/chapter-1-the-confrontation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: The Confrontation",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|0"
     },
@@ -264,9 +264,9 @@
         "theme": "raggiesoft-books",
         "filePath": "b008/c003/p001.md"
     },
-    "/pebble-borrow/the-general-s-arrival/chapter-4": {
+    "/pebble-borrow/the-general-s-arrival/chapter-4-a-change-of-plans": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 4",
+        "title": "Chapter 4: A Change of Plans",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|3"
     },
@@ -282,411 +282,411 @@
         "theme": "raggiesoft-books",
         "filePath": "b008/c005/p001.md"
     },
-    "/pebble-borrow/book-9": {
+    "/pebble-borrow/book-9-the-endless-journey": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 9",
+        "title": "Book 9: The Endless Journey",
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|8"
     },
-    "/pebble-borrow/book-9/chapter-1": {
+    "/pebble-borrow/book-9-the-endless-journey/chapter-1-unexpected-encounters": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: Unexpected Encounters",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|0"
     },
-    "/pebble-borrow/book-9/chapter-2": {
+    "/pebble-borrow/book-9-the-endless-journey/chapter-2-the-turning-of-the-tide": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 2",
+        "title": "Chapter 2: The Turning of the Tide",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|1"
     },
-    "/pebble-borrow/book-10": {
+    "/pebble-borrow/book-10-the-lost-memories": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 10",
+        "title": "Book 10: The Lost Memories",
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|9"
     },
-    "/pebble-borrow/book-10/chapter-1": {
+    "/pebble-borrow/book-10-the-lost-memories/chapter-1-unexpected-encounters": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: Unexpected Encounters",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|0"
     },
-    "/pebble-borrow/book-10/chapter-2": {
+    "/pebble-borrow/book-10-the-lost-memories/chapter-2-a-moment-of-peace": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 2",
+        "title": "Chapter 2: A Moment of Peace",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|1"
     },
-    "/pebble-borrow/book-10/chapter-3": {
+    "/pebble-borrow/book-10-the-lost-memories/chapter-3-a-desperate-escape": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 3",
+        "title": "Chapter 3: A Desperate Escape",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|2"
     },
-    "/pebble-borrow/book-10/chapter-4": {
+    "/pebble-borrow/book-10-the-lost-memories/chapter-4-into-the-unknown": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 4",
+        "title": "Chapter 4: Into the Unknown",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|3"
     },
-    "/pebble-borrow/book-10/chapter-5": {
+    "/pebble-borrow/book-10-the-lost-memories/chapter-5-a-change-of-plans": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 5",
+        "title": "Chapter 5: A Change of Plans",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|4"
     },
-    "/pebble-borrow/book-10/chapter-6": {
+    "/pebble-borrow/book-10-the-lost-memories/chapter-6-the-trial": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 6",
+        "title": "Chapter 6: The Trial",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|5"
     },
-    "/pebble-borrow/book-10/chapter-7": {
+    "/pebble-borrow/book-10-the-lost-memories/chapter-7-a-desperate-escape": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 7",
+        "title": "Chapter 7: A Desperate Escape",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|6"
     },
-    "/pebble-borrow/book-10/chapter-8": {
+    "/pebble-borrow/book-10-the-lost-memories/chapter-8-unexpected-encounters": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 8",
+        "title": "Chapter 8: Unexpected Encounters",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|7"
     },
-    "/pebble-borrow/book-10/chapter-9": {
+    "/pebble-borrow/book-10-the-lost-memories/chapter-9-into-the-unknown": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 9",
+        "title": "Chapter 9: Into the Unknown",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|8"
     },
-    "/pebble-borrow/book-10/chapter-10": {
+    "/pebble-borrow/book-10-the-lost-memories/chapter-10-the-aftermath": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 10",
+        "title": "Chapter 10: The Aftermath",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|9"
     },
-    "/pebble-borrow/book-10/chapter-11": {
+    "/pebble-borrow/book-10-the-lost-memories/chapter-11-the-arrival": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 11",
+        "title": "Chapter 11: The Arrival",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|10"
     },
-    "/pebble-borrow/book-10/chapter-12": {
+    "/pebble-borrow/book-10-the-lost-memories/chapter-12-the-confrontation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 12",
+        "title": "Chapter 12: The Confrontation",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|11"
     },
-    "/pebble-borrow/book-11": {
+    "/pebble-borrow/book-11-hidden-paths": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 11",
+        "title": "Book 11: Hidden Paths",
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|10"
     },
-    "/pebble-borrow/book-11/chapter-1": {
+    "/pebble-borrow/book-11-hidden-paths/chapter-1-the-turning-of-the-tide": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: The Turning of the Tide",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|10|0"
     },
-    "/pebble-borrow/book-11/chapter-2": {
+    "/pebble-borrow/book-11-hidden-paths/chapter-2-the-confrontation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 2",
+        "title": "Chapter 2: The Confrontation",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|10|1"
     },
-    "/pebble-borrow/book-11/chapter-3": {
+    "/pebble-borrow/book-11-hidden-paths/chapter-3-a-new-ally": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 3",
+        "title": "Chapter 3: A New Ally",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|10|2"
     },
-    "/pebble-borrow/book-11/chapter-4": {
+    "/pebble-borrow/book-11-hidden-paths/chapter-4-the-aftermath": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 4",
+        "title": "Chapter 4: The Aftermath",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|10|3"
     },
-    "/pebble-borrow/book-12": {
+    "/pebble-borrow/book-12-the-turning-point": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 12",
+        "title": "Book 12: The Turning Point",
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|11"
     },
-    "/pebble-borrow/book-12/chapter-1": {
+    "/pebble-borrow/book-12-the-turning-point/chapter-1-into-the-unknown": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: Into the Unknown",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|11|0"
     },
-    "/pebble-borrow/book-12/chapter-2": {
+    "/pebble-borrow/book-12-the-turning-point/chapter-2-the-sacrifice": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 2",
+        "title": "Chapter 2: The Sacrifice",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|11|1"
     },
-    "/pebble-borrow/book-12/chapter-3": {
+    "/pebble-borrow/book-12-the-turning-point/chapter-3-the-arrival": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 3",
+        "title": "Chapter 3: The Arrival",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|11|2"
     },
-    "/pebble-borrow/book-13": {
+    "/pebble-borrow/book-13-beyond-the-horizon": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 13",
+        "title": "Book 13: Beyond the Horizon",
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|12"
     },
-    "/pebble-borrow/book-13/chapter-1": {
+    "/pebble-borrow/book-13-beyond-the-horizon/chapter-1-the-turning-of-the-tide": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: The Turning of the Tide",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|12|0"
     },
-    "/pebble-borrow/book-13/chapter-2": {
+    "/pebble-borrow/book-13-beyond-the-horizon/chapter-2-the-trial": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 2",
+        "title": "Chapter 2: The Trial",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|12|1"
     },
-    "/pebble-borrow/book-13/chapter-3": {
+    "/pebble-borrow/book-13-beyond-the-horizon/chapter-3-the-sacrifice": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 3",
+        "title": "Chapter 3: The Sacrifice",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|12|2"
     },
-    "/pebble-borrow/book-13/chapter-4": {
+    "/pebble-borrow/book-13-beyond-the-horizon/chapter-4-a-desperate-escape": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 4",
+        "title": "Chapter 4: A Desperate Escape",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|12|3"
     },
-    "/pebble-borrow/book-13/chapter-5": {
+    "/pebble-borrow/book-13-beyond-the-horizon/chapter-5-the-sacrifice": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 5",
+        "title": "Chapter 5: The Sacrifice",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|12|4"
     },
-    "/pebble-borrow/book-13/chapter-6": {
+    "/pebble-borrow/book-13-beyond-the-horizon/chapter-6-the-aftermath": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 6",
+        "title": "Chapter 6: The Aftermath",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|12|5"
     },
-    "/pebble-borrow/book-14": {
+    "/pebble-borrow/book-14-a-new-dawn": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 14",
+        "title": "Book 14: A New Dawn",
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|13"
     },
-    "/pebble-borrow/book-14/chapter-1": {
+    "/pebble-borrow/book-14-a-new-dawn/chapter-1-the-turning-of-the-tide": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: The Turning of the Tide",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|13|0"
     },
-    "/pebble-borrow/book-14/chapter-2": {
+    "/pebble-borrow/book-14-a-new-dawn/chapter-2-a-desperate-escape": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 2",
+        "title": "Chapter 2: A Desperate Escape",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|13|1"
     },
-    "/pebble-borrow/book-14/chapter-3": {
+    "/pebble-borrow/book-14-a-new-dawn/chapter-3-the-trial": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 3",
+        "title": "Chapter 3: The Trial",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|13|2"
     },
-    "/pebble-borrow/book-15": {
+    "/pebble-borrow/book-15-the-final-stand": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 15",
+        "title": "Book 15: The Final Stand",
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|14"
     },
-    "/pebble-borrow/book-15/chapter-1": {
+    "/pebble-borrow/book-15-the-final-stand/chapter-1-a-new-ally": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: A New Ally",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|14|0"
     },
-    "/pebble-borrow/book-15/chapter-2": {
+    "/pebble-borrow/book-15-the-final-stand/chapter-2-the-betrayal": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 2",
+        "title": "Chapter 2: The Betrayal",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|14|1"
     },
-    "/pebble-borrow/book-15/chapter-3": {
+    "/pebble-borrow/book-15-the-final-stand/chapter-3-a-moment-of-peace": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 3",
+        "title": "Chapter 3: A Moment of Peace",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|14|2"
     },
-    "/pebble-borrow/book-16": {
+    "/pebble-borrow/book-16-a-new-dawn": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 16",
+        "title": "Book 16: A New Dawn",
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|15"
     },
-    "/pebble-borrow/book-16/chapter-1": {
+    "/pebble-borrow/book-16-a-new-dawn/chapter-1-the-sacrifice": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: The Sacrifice",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|15|0"
     },
-    "/pebble-borrow/book-16/chapter-2": {
+    "/pebble-borrow/book-16-a-new-dawn/chapter-2-a-change-of-plans": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 2",
+        "title": "Chapter 2: A Change of Plans",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|15|1"
     },
-    "/pebble-borrow/book-16/chapter-3": {
+    "/pebble-borrow/book-16-a-new-dawn/chapter-3-a-moment-of-peace": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 3",
+        "title": "Chapter 3: A Moment of Peace",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|15|2"
     },
-    "/pebble-borrow/book-16/chapter-4": {
+    "/pebble-borrow/book-16-a-new-dawn/chapter-4-into-the-unknown": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 4",
+        "title": "Chapter 4: Into the Unknown",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|15|3"
     },
-    "/pebble-borrow/book-17": {
+    "/pebble-borrow/book-17-the-final-stand": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 17",
+        "title": "Book 17: The Final Stand",
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|16"
     },
-    "/pebble-borrow/book-17/chapter-1": {
+    "/pebble-borrow/book-17-the-final-stand/chapter-1-the-trial": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: The Trial",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|16|0"
     },
-    "/pebble-borrow/book-17/chapter-2": {
+    "/pebble-borrow/book-17-the-final-stand/chapter-2-unexpected-encounters": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 2",
+        "title": "Chapter 2: Unexpected Encounters",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|16|1"
     },
-    "/pebble-borrow/book-17/chapter-3": {
+    "/pebble-borrow/book-17-the-final-stand/chapter-3-unexpected-encounters": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 3",
+        "title": "Chapter 3: Unexpected Encounters",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|16|2"
     },
-    "/pebble-borrow/book-17/chapter-4": {
+    "/pebble-borrow/book-17-the-final-stand/chapter-4-into-the-unknown": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 4",
+        "title": "Chapter 4: Into the Unknown",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|16|3"
     },
-    "/pebble-borrow/book-17/chapter-5": {
+    "/pebble-borrow/book-17-the-final-stand/chapter-5-revelations": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 5",
+        "title": "Chapter 5: Revelations",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|16|4"
     },
-    "/pebble-borrow/book-17/chapter-6": {
+    "/pebble-borrow/book-17-the-final-stand/chapter-6-the-arrival": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 6",
+        "title": "Chapter 6: The Arrival",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|16|5"
     },
-    "/pebble-borrow/book-18": {
+    "/pebble-borrow/book-18-silent-whispers": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 18",
+        "title": "Book 18: Silent Whispers",
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|17"
     },
-    "/pebble-borrow/book-18/chapter-1": {
+    "/pebble-borrow/book-18-silent-whispers/chapter-1-into-the-unknown": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: Into the Unknown",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|17|0"
     },
-    "/pebble-borrow/book-18/chapter-2": {
+    "/pebble-borrow/book-18-silent-whispers/chapter-2-revelations": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 2",
+        "title": "Chapter 2: Revelations",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|17|1"
     },
-    "/pebble-borrow/book-19": {
+    "/pebble-borrow/book-19-silent-whispers": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 19",
+        "title": "Book 19: Silent Whispers",
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|18"
     },
-    "/pebble-borrow/book-19/chapter-1": {
+    "/pebble-borrow/book-19-silent-whispers/chapter-1-the-confrontation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: The Confrontation",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|18|0"
     },
-    "/pebble-borrow/book-19/chapter-2": {
+    "/pebble-borrow/book-19-silent-whispers/chapter-2-the-aftermath": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 2",
+        "title": "Chapter 2: The Aftermath",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|18|1"
     },
-    "/pebble-borrow/book-19/chapter-3": {
+    "/pebble-borrow/book-19-silent-whispers/chapter-3-the-arrival": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 3",
+        "title": "Chapter 3: The Arrival",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|18|2"
     },
-    "/pebble-borrow/book-20": {
+    "/pebble-borrow/book-20-a-new-dawn": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 20",
+        "title": "Book 20: A New Dawn",
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|19"
     },
-    "/pebble-borrow/book-20/chapter-1": {
+    "/pebble-borrow/book-20-a-new-dawn/chapter-1-unexpected-encounters": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: Unexpected Encounters",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|19|0"
     },
-    "/pebble-borrow/book-20/chapter-2": {
+    "/pebble-borrow/book-20-a-new-dawn/chapter-2-the-aftermath": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 2",
+        "title": "Chapter 2: The Aftermath",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|19|1"
     },
-    "/pebble-borrow/book-20/chapter-3": {
+    "/pebble-borrow/book-20-a-new-dawn/chapter-3-the-betrayal": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 3",
+        "title": "Chapter 3: The Betrayal",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|19|2"
     },
-    "/pebble-borrow/book-21": {
+    "/pebble-borrow/book-21-a-new-dawn": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 21",
+        "title": "Book 21: A New Dawn",
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|20"
     },
-    "/pebble-borrow/book-21/chapter-1": {
+    "/pebble-borrow/book-21-a-new-dawn/chapter-1-the-arrival": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: The Arrival",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|20|0"
     },
-    "/pebble-borrow/book-21/chapter-2": {
+    "/pebble-borrow/book-21-a-new-dawn/chapter-2-a-desperate-escape": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 2",
+        "title": "Chapter 2: A Desperate Escape",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|20|1"
     },
-    "/pebble-borrow/book-21/chapter-3": {
+    "/pebble-borrow/book-21-a-new-dawn/chapter-3-into-the-unknown": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 3",
+        "title": "Chapter 3: Into the Unknown",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|20|2"
     },
-    "/pebble-borrow/book-22": {
+    "/pebble-borrow/book-22-the-final-stand": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 22",
+        "title": "Book 22: The Final Stand",
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|21"
     },
@@ -696,39 +696,39 @@
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|22"
     },
-    "/pebble-borrow/amanda-interviews-care-nurses/chapter-1": {
+    "/pebble-borrow/amanda-interviews-care-nurses/chapter-1-the-trial": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: The Trial",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|22|0"
     },
-    "/pebble-borrow/amanda-interviews-care-nurses/chapter-2": {
+    "/pebble-borrow/amanda-interviews-care-nurses/chapter-2-the-aftermath": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 2",
+        "title": "Chapter 2: The Aftermath",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|22|1"
     },
-    "/pebble-borrow/amanda-interviews-care-nurses/chapter-3": {
+    "/pebble-borrow/amanda-interviews-care-nurses/chapter-3-the-betrayal": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 3",
+        "title": "Chapter 3: The Betrayal",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|22|2"
     },
-    "/pebble-borrow/amanda-interviews-care-nurses/chapter-4": {
+    "/pebble-borrow/amanda-interviews-care-nurses/chapter-4-the-trial": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 4",
+        "title": "Chapter 4: The Trial",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|22|3"
     },
-    "/pebble-borrow/amanda-interviews-care-nurses/chapter-5": {
+    "/pebble-borrow/amanda-interviews-care-nurses/chapter-5-revelations": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 5",
+        "title": "Chapter 5: Revelations",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|22|4"
     },
-    "/pebble-borrow/amanda-interviews-care-nurses/chapter-6": {
+    "/pebble-borrow/amanda-interviews-care-nurses/chapter-6-the-confrontation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 6",
+        "title": "Chapter 6: The Confrontation",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|22|5"
     },
@@ -786,21 +786,21 @@
         "theme": "raggiesoft-books",
         "filePath": "b023/c008/p004.md"
     },
-    "/pebble-borrow/book-24": {
+    "/pebble-borrow/book-24-silent-whispers": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 24",
+        "title": "Book 24: Silent Whispers",
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|23"
     },
-    "/pebble-borrow/book-24/chapter-1": {
+    "/pebble-borrow/book-24-silent-whispers/chapter-1-the-arrival": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: The Arrival",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|23|0"
     },
-    "/pebble-borrow/book-24/chapter-2": {
+    "/pebble-borrow/book-24-silent-whispers/chapter-2-into-the-unknown": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 2",
+        "title": "Chapter 2: Into the Unknown",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|23|1"
     }

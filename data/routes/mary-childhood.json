@@ -30,19 +30,19 @@
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|0"
     },
-    "/mary-childhood/mary-s-early-years/chapter-1": {
+    "/mary-childhood/mary-s-early-years/chapter-1-a-moment-of-peace": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: A Moment of Peace",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/mary-childhood/mary-s-early-years/chapter-1/part-1-high-command": {
+    "/mary-childhood/mary-s-early-years/chapter-1-a-moment-of-peace/part-1-high-command": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: High Command",
         "theme": "raggiesoft-books",
         "filePath": "b001/c001/p001.md"
     },
-    "/mary-childhood/mary-s-early-years/chapter-1/part-2-untitled-chapter": {
+    "/mary-childhood/mary-s-early-years/chapter-1-a-moment-of-peace/part-2-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Untitled Chapter",
         "theme": "raggiesoft-books",

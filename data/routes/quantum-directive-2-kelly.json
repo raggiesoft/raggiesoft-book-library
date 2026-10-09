@@ -468,9 +468,9 @@
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|1"
     },
-    "/quantum-directive-2-kelly/the-bidding-war-as-seen-on-devnet/chapter-1": {
+    "/quantum-directive-2-kelly/the-bidding-war-as-seen-on-devnet/chapter-1-the-turning-of-the-tide": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: The Turning of the Tide",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
@@ -504,9 +504,9 @@
         "theme": "raggiesoft-books",
         "filePath": "b002/c003/p001.md"
     },
-    "/quantum-directive-2-kelly/book-3": {
+    "/quantum-directive-2-kelly/book-3-the-turning-point": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 3",
+        "title": "Book 3: The Turning Point",
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|2"
     }

@@ -30,9 +30,9 @@
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|0"
     },
-    "/stardust-engine/book-1-cpi-the-forgers/chapter-1": {
+    "/stardust-engine/book-1-cpi-the-forgers/chapter-1-into-the-unknown": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: Into the Unknown",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
@@ -42,9 +42,9 @@
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|1"
     },
-    "/stardust-engine/book-2-the-crash-of-90/chapter-1": {
+    "/stardust-engine/book-2-the-crash-of-90/chapter-1-the-arrival": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: The Arrival",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
@@ -54,9 +54,9 @@
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|2"
     },
-    "/stardust-engine/book-3-the-friction-catastrophe/chapter-1": {
+    "/stardust-engine/book-3-the-friction-catastrophe/chapter-1-revelations": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: Revelations",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|0"
     },
@@ -84,9 +84,9 @@
         "theme": "raggiesoft-books",
         "filePath": "__BOOK_TOC__|4"
     },
-    "/stardust-engine/book-5-the-150m-refusal/chapter-1": {
+    "/stardust-engine/book-5-the-150m-refusal/chapter-1-a-desperate-escape": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "Chapter 1: A Desperate Escape",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|0"
     }
