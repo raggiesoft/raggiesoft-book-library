@@ -67,8 +67,8 @@ if (!empty($routeData)) {
     <hr style="border:0; border-top:1px solid var(--rs-border); margin: 20px 0;">
     
     <nav class="toc-nav" style="display: flex; flex-direction: column; gap: 0.5rem;">
-        <a href="/" class="sidebar-nav-link" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; padding: 0.75rem 0.5rem; border-radius: 6px; color: var(--rs-text); font-weight: 500;">
-            <i class="ph ph-house" style="font-size: 1.25rem;"></i> Home
+        <a href="/library" class="sidebar-nav-link" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; padding: 0.75rem 0.5rem; border-radius: 6px; color: var(--rs-text); font-weight: 500;">
+            <i class="ph ph-books" style="font-size: 1.25rem;"></i> Library
         </a>
         <a href="<?php echo htmlspecialchars($sbUpUrl); ?>" class="sidebar-nav-link" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; padding: 0.75rem 0.5rem; border-radius: 6px; color: var(--rs-text); font-weight: 500;">
             <i class="ph ph-book-open" style="font-size: 1.25rem;"></i> Series Overview
