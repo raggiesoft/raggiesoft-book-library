@@ -3,7 +3,7 @@
 $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? ' theme-dark' : '';
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="color-scheme: light dark;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
