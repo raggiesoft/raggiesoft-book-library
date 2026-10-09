@@ -12,7 +12,7 @@ if ($catalogData) {
 }
 ?>
 
-<div style="flex: 1; overflow-y: auto; background: var(--rs-bg); padding-bottom: 4rem; -webkit-overflow-scrolling: touch;">
+<div class="stardust-mobile-scroll" style="flex: 1; overflow-y: auto; background: var(--rs-bg); padding-bottom: 4rem; -webkit-overflow-scrolling: touch;">
     
     <!-- Native App Style Header -->
     <div style="max-width: 1200px; margin: 0 auto; padding: calc(1.5rem + env(safe-area-inset-top, 0px)) 1.5rem 1rem;">
@@ -235,14 +235,14 @@ document.addEventListener("DOMContentLoaded", function() {
 </script>
 </div>
 
-<!-- Bottom Navigation Bar for Mobile PWA Feel -->
-<div style="position: fixed; bottom: 0; left: 0; right: 0; background: var(--rs-surface); border-top: 1px solid var(--rs-border); display: flex; justify-content: space-around; padding-bottom: env(safe-area-inset-bottom, 0px); z-index: 100;">
-    <a href="/" style="text-decoration: none; color: var(--rs-text); opacity: 0.7; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 0.75rem 2rem;">
-        <i class="ph ph-house" style="font-size: 1.75rem;"></i>
-        <span style="font-size: 0.75rem; font-weight: 600;">Home</span>
+<!-- Bottom Navigation Bar for Mobile PWA Feel (Apple HIG) -->
+<div style="position: fixed; bottom: 0; left: 0; right: 0; background: color-mix(in srgb, var(--rs-surface) 85%, transparent); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-top: 0.5px solid color-mix(in srgb, var(--rs-text) 20%, transparent); display: flex; justify-content: space-around; padding-bottom: env(safe-area-inset-bottom); z-index: 100;">
+    <a href="/" style="text-decoration: none; color: color-mix(in srgb, var(--rs-text) 50%, transparent); display: flex; flex-direction: column; align-items: center; justify-content: center; width: 50%; padding: 6px 0 4px 0;">
+        <i class="ph ph-house" style="font-size: 24px; margin-bottom: 2px;"></i>
+        <span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0;">Home</span>
     </a>
-    <a href="/library" style="text-decoration: none; color: var(--rs-primary); display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 0.75rem 2rem;">
-        <i class="ph-fill ph-books" style="font-size: 1.75rem;"></i>
-        <span style="font-size: 0.75rem; font-weight: 600;">Library</span>
+    <a href="/library" style="text-decoration: none; color: var(--rs-primary); display: flex; flex-direction: column; align-items: center; justify-content: center; width: 50%; padding: 6px 0 4px 0;">
+        <i class="ph-fill ph-books" style="font-size: 24px; margin-bottom: 2px;"></i>
+        <span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0;">Library</span>
     </a>
 </div>

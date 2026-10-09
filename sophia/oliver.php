@@ -21,7 +21,7 @@ if (file_exists($routeFile)) {
 }
 
 if (empty($actualFilePath)) {
-    echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;"><div class="book-page"><h1>Chapter Not Found</h1><p>The requested route could not be found in the route map.</p></div></main>';
+    echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; height: 100dvh; overflow-y: auto;"><div class="book-page"><h1>Chapter Not Found</h1><p>The requested route could not be found in the route map.</p></div></main>';
     return;
 }
 
@@ -58,7 +58,7 @@ if ($actualFilePath === '__SERIES_LANDING__') {
 }
 
 if ($mdContent === false && !$specialPageType) {
-    echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;"><div class="book-page"><h1>File Not Found</h1><p>The narrative file could not be loaded from the Vault.</p></div></main>';
+    echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; height: 100dvh; overflow-y: auto;"><div class="book-page"><h1>File Not Found</h1><p>The narrative file could not be loaded from the Vault.</p></div></main>';
     return;
 }
 
@@ -157,7 +157,7 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
     <?php endif; ?>
 <?php endif; ?>
 
-<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto;">
+<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; height: 100dvh; overflow-y: auto;">
     <div class="book-page reader-page">
         <!-- Breadcrumbs & Nav -->
         <div class="reader-nav" style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
@@ -188,7 +188,7 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                 }
             }
             ?>
-            <a href="/" style="text-decoration: none;">Library</a>
+            <a href="/library" style="text-decoration: none;">Library</a>
             &raquo; <strong style="color: var(--rs-text); font-weight: 600;"><?php echo htmlspecialchars($seriesTitle); ?></strong>
             </div>
             <div style="display: flex; gap: 1rem;">
