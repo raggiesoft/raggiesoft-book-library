@@ -27,10 +27,17 @@ if ($catalogData) {
                     Ocean View Archives
                 </p>
             </div>
-            
-            <button id="reader-settings-toggle" class="rs-btn" style="background: transparent; color: var(--rs-primary); border: none; padding: 0.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;">
-                <i class="ph ph-gear" style="font-size: 1.75rem;"></i>
-            </button>
+            <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <button id="rs-organize-btn" class="rs-btn" style="background: transparent; color: var(--rs-primary); border: none; padding: 0.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;" title="Organize Library">
+                    <i class="ph ph-folder" style="font-size: 1.75rem;"></i>
+                </button>
+                <button id="rs-organize-done-btn" class="rs-btn" style="display: none; background: var(--rs-primary); color: white; border: none; padding: 0.4rem 1rem; border-radius: 6px; font-weight: bold; font-size: 0.85rem; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                    Done
+                </button>
+                <button id="reader-settings-toggle" class="rs-btn" style="background: transparent; color: var(--rs-primary); border: none; padding: 0.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;">
+                    <i class="ph ph-gear" style="font-size: 1.75rem;"></i>
+                </button>
+            </div>
         </div>
 
         <!-- Add to Home Screen Banner -->
@@ -71,39 +78,306 @@ if ($catalogData) {
                 <p>The system is currently compiling the archives. Please check back later.</p>
             </div>
         <?php else: ?>
-            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1.5rem 1rem;">
-                
-                <?php foreach ($books as $book): 
-                    $slug = $book['slug'] ?? '';
-                    $title = $book['title'] ?? 'Unknown Archive';
-                    $desc = $book['description'] ?? '';
-                    $imgSrc = !empty($book['image']) ? $cdnBaseUrl . $book['image'] : $cdnBaseUrl . '/raggiesoft-books/images/book-placeholder.jpg';
-                    $readLink = '/' . $slug . '/';
-                ?>
-                
-                <a href="<?php echo htmlspecialchars($readLink); ?>" class="rs-book-card" data-slug="<?php echo htmlspecialchars($slug); ?>" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; transition: transform 0.2s ease;">
-                    <!-- Cover Image -->
-                    <div style="width: 100%; aspect-ratio: 2/3; background-color: var(--rs-surface); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); position: relative; margin-bottom: 0.75rem; border: 1px solid rgba(255,255,255,0.05);">
-                        <img src="<?php echo htmlspecialchars($imgSrc); ?>" alt="<?php echo htmlspecialchars($title); ?>" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+            <div id="rs-collections-container">
+                <!-- Template for new collections -->
+                <template id="rs-collection-template">
+                    <div class="rs-collection-block" style="margin-bottom: 2rem;">
+                        <div class="rs-collection-header" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+                            <h2 class="rs-collection-title" style="font-size: 1.25rem; font-weight: 700; margin: 0; color: var(--rs-heading);">New Collection</h2>
+                            <button class="rs-btn rs-delete-collection-btn" style="background: transparent; color: var(--rs-red, #ff3b30); border: none; padding: 0.2rem; cursor: pointer; display: none;"><i class="ph ph-trash"></i></button>
+                        </div>
+                        <div class="rs-book-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1.5rem 1rem; min-height: 240px; border: 2px dashed transparent; border-radius: 12px; padding: 0.5rem; transition: border-color 0.2s ease;">
+                            <!-- Books go here -->
+                        </div>
                     </div>
-                    
-                    <!-- Title & Subtitle -->
-                    <div style="padding: 0 0.25rem;">
-                        <h2 style="font-size: 1rem; font-weight: 700; margin: 0 0 0.25rem 0; color: var(--rs-heading); line-height: 1.2; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
-                            <?php echo htmlspecialchars($title); ?>
-                        </h2>
-                        <p style="font-size: 0.8rem; opacity: 0.6; margin: 0; line-height: 1.3;">
-                            <?php echo htmlspecialchars($desc); ?>
-                        </p>
+                </template>
+
+                <div class="rs-collection-block" data-collection-id="default" style="margin-bottom: 2rem;">
+                    <div class="rs-collection-header" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+                        <h2 class="rs-collection-title" style="font-size: 1.25rem; font-weight: 700; margin: 0; color: var(--rs-heading); display: none;">Uncategorized</h2>
+                        <button id="rs-add-collection-btn" class="rs-btn" style="background: transparent; color: var(--rs-primary); border: 1px solid var(--rs-primary); padding: 0.3rem 0.75rem; border-radius: 6px; font-size: 0.85rem; cursor: pointer; display: none;">+ New Collection</button>
                     </div>
-                </a>
-                
-                <?php endforeach; ?>
-                
+                    <div id="rs-default-pool" class="rs-book-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1.5rem 1rem; min-height: 240px; border: 2px dashed transparent; border-radius: 12px; padding: 0.5rem; margin: -0.5rem; transition: border-color 0.2s ease;">
+                        
+                        <?php foreach ($books as $book): 
+                            $slug = $book['slug'] ?? '';
+                            $title = $book['title'] ?? 'Unknown Archive';
+                            $desc = $book['description'] ?? '';
+                            $imgSrc = !empty($book['image']) ? $cdnBaseUrl . $book['image'] : $cdnBaseUrl . '/raggiesoft-books/images/book-placeholder.jpg';
+                            $readLink = '/' . $slug . '/';
+                        ?>
+                        
+                        <a href="<?php echo htmlspecialchars($readLink); ?>" class="rs-book-card" data-slug="<?php echo htmlspecialchars($slug); ?>" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; transition: transform 0.2s ease;">
+                            <!-- Cover Image -->
+                            <div style="width: 100%; aspect-ratio: 2/3; background-color: var(--rs-surface); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); position: relative; margin-bottom: 0.75rem; border: 1px solid rgba(255,255,255,0.05);">
+                                <img src="<?php echo htmlspecialchars($imgSrc); ?>" alt="<?php echo htmlspecialchars($title); ?>" style="width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none;">
+                            </div>
+                            
+                            <!-- Title & Subtitle -->
+                            <div style="padding: 0 0.25rem; pointer-events: none;">
+                                <h2 style="font-size: 1rem; font-weight: 700; margin: 0 0 0.25rem 0; color: var(--rs-heading); line-height: 1.2; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                    <?php echo htmlspecialchars($title); ?>
+                                </h2>
+                                <p style="font-size: 0.8rem; opacity: 0.6; margin: 0; line-height: 1.3;">
+                                    <?php echo htmlspecialchars($desc); ?>
+                                </p>
+                            </div>
+                        </a>
+                        
+                        <?php endforeach; ?>
+                        
+                    </div>
+                </div>
             </div>
         <?php endif; ?>
 
     </div>
+
+<!-- SortableJS and Collections Logic -->
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const container = document.getElementById('rs-collections-container');
+    if (!container) return; // Empty library state
+
+    const defaultPool = document.getElementById('rs-default-pool');
+    const defaultBlock = defaultPool.closest('.rs-collection-block');
+    const defaultTitle = defaultBlock.querySelector('.rs-collection-title');
+    const addCollectionBtn = document.getElementById('rs-add-collection-btn');
+    const organizeBtn = document.getElementById('rs-organize-btn');
+    const doneBtn = document.getElementById('rs-organize-done-btn');
+    const template = document.getElementById('rs-collection-template');
+    
+    let isOrganizeMode = false;
+    let sortables = [];
+
+    // Load from LocalStorage
+    let savedCollections = [];
+    try {
+        const stored = localStorage.getItem('rs-library-collections');
+        if (stored) savedCollections = JSON.parse(stored);
+    } catch (e) {}
+
+    // Apply saved collections
+    if (savedCollections.length > 0) {
+        // We will move items out of defaultPool to new grids
+        savedCollections.forEach(col => {
+            const block = template.content.cloneNode(true).querySelector('.rs-collection-block');
+            block.dataset.collectionId = col.id;
+            block.querySelector('.rs-collection-title').textContent = col.name;
+            const grid = block.querySelector('.rs-book-grid');
+            
+            // Move books that belong here
+            col.books.forEach(slug => {
+                const bookCard = defaultPool.querySelector(`.rs-book-card[data-slug="${slug}"]`);
+                if (bookCard) {
+                    grid.appendChild(bookCard);
+                }
+            });
+            
+            // Insert before default block
+            container.insertBefore(block, defaultBlock);
+        });
+
+        // Restore order of default pool if saved
+        try {
+            const storedOrder = localStorage.getItem('rs-library-order');
+            if (storedOrder) {
+                const defaultOrder = JSON.parse(storedOrder);
+                defaultOrder.forEach(slug => {
+                    const bookCard = defaultPool.querySelector(`.rs-book-card[data-slug="${slug}"]`);
+                    if (bookCard) {
+                        defaultPool.appendChild(bookCard); // append at end in correct order
+                    }
+                });
+            }
+        } catch(e) {}
+    }
+
+    // Toggle Organize Mode
+    function toggleOrganizeMode() {
+        isOrganizeMode = !isOrganizeMode;
+        
+        if (isOrganizeMode) {
+            organizeBtn.style.display = 'none';
+            doneBtn.style.display = 'block';
+            addCollectionBtn.style.display = 'block';
+            defaultTitle.style.display = 'block';
+            
+            // Enable editing titles
+            document.querySelectorAll('.rs-collection-title').forEach(title => {
+                title.contentEditable = "true";
+                title.style.borderBottom = "1px solid var(--rs-primary)";
+                title.style.outline = "none";
+                title.style.minWidth = "100px";
+                title.style.display = "block"; // Make sure default shows up
+            });
+
+            // Show delete buttons on custom collections
+            document.querySelectorAll('.rs-collection-block:not([data-collection-id="default"]) .rs-delete-collection-btn').forEach(btn => {
+                btn.style.display = 'block';
+            });
+            
+            // Prevent link clicks on book cards while sorting
+            document.querySelectorAll('.rs-book-card').forEach(card => {
+                card.style.pointerEvents = 'none';
+                card.style.opacity = '0.8';
+                card.style.transform = 'scale(0.98)';
+                card.style.cursor = 'grab';
+            });
+
+            // Show drop zones
+            document.querySelectorAll('.rs-book-grid').forEach(grid => {
+                grid.style.borderColor = 'color-mix(in srgb, var(--rs-primary) 30%, transparent)';
+            });
+
+            // Initialize Sortable
+            initSortable();
+        } else {
+            // Save state
+            saveCollections();
+
+            organizeBtn.style.display = 'flex';
+            doneBtn.style.display = 'none';
+            addCollectionBtn.style.display = 'none';
+            
+            // Disable editing titles
+            document.querySelectorAll('.rs-collection-title').forEach(title => {
+                title.contentEditable = "false";
+                title.style.borderBottom = "none";
+            });
+            
+            // Hide default pool title if empty or not organize mode
+            const defaultGrid = defaultBlock.querySelector('.rs-book-grid');
+            if (defaultGrid.children.length > 0) {
+                // Keep it visible if there are other collections to distinguish them
+                if (document.querySelectorAll('.rs-collection-block').length > 1) {
+                    defaultTitle.style.display = 'block';
+                } else {
+                    defaultTitle.style.display = 'none';
+                }
+            } else {
+                defaultTitle.style.display = 'none';
+            }
+
+            // Hide delete buttons
+            document.querySelectorAll('.rs-delete-collection-btn').forEach(btn => {
+                btn.style.display = 'none';
+            });
+
+            // Re-enable links
+            document.querySelectorAll('.rs-book-card').forEach(card => {
+                card.style.pointerEvents = 'auto';
+                card.style.opacity = '1';
+                card.style.transform = 'none';
+                card.style.cursor = 'pointer';
+            });
+
+            // Hide drop zones
+            document.querySelectorAll('.rs-book-grid').forEach(grid => {
+                grid.style.borderColor = 'transparent';
+            });
+
+            // Destroy Sortable
+            sortables.forEach(s => s.destroy());
+            sortables = [];
+        }
+    }
+
+    function initSortable() {
+        sortables.forEach(s => s.destroy());
+        sortables = [];
+        
+        document.querySelectorAll('.rs-book-grid').forEach(grid => {
+            sortables.push(new Sortable(grid, {
+                group: 'library',
+                animation: 150,
+                ghostClass: 'rs-sortable-ghost',
+                dragClass: 'rs-sortable-drag',
+                delay: 100, // Small delay for mobile tap vs drag
+                delayOnTouchOnly: true
+            }));
+        });
+    }
+
+    function saveCollections() {
+        const collectionsToSave = [];
+        let defaultOrder = [];
+
+        document.querySelectorAll('.rs-collection-block').forEach(block => {
+            const id = block.dataset.collectionId;
+            const grid = block.querySelector('.rs-book-grid');
+            const slugs = Array.from(grid.querySelectorAll('.rs-book-card')).map(card => card.dataset.slug);
+
+            if (id === 'default') {
+                defaultOrder = slugs;
+            } else {
+                const title = block.querySelector('.rs-collection-title').textContent.trim() || 'Untitled Collection';
+                collectionsToSave.push({ id, name: title, books: slugs });
+            }
+        });
+
+        localStorage.setItem('rs-library-collections', JSON.stringify(collectionsToSave));
+        localStorage.setItem('rs-library-order', JSON.stringify(defaultOrder));
+    }
+
+    // Event Listeners
+    organizeBtn.addEventListener('click', toggleOrganizeMode);
+    doneBtn.addEventListener('click', toggleOrganizeMode);
+
+    addCollectionBtn.addEventListener('click', () => {
+        const block = template.content.cloneNode(true).querySelector('.rs-collection-block');
+        block.dataset.collectionId = 'col_' + Date.now();
+        const title = block.querySelector('.rs-collection-title');
+        title.contentEditable = "true";
+        title.style.borderBottom = "1px solid var(--rs-primary)";
+        title.style.outline = "none";
+        
+        // Show delete btn
+        block.querySelector('.rs-delete-collection-btn').style.display = 'block';
+
+        const grid = block.querySelector('.rs-book-grid');
+        grid.style.borderColor = 'color-mix(in srgb, var(--rs-primary) 30%, transparent)';
+        
+        container.insertBefore(block, defaultBlock);
+        
+        // Focus the new title
+        setTimeout(() => { title.focus(); }, 10);
+        
+        initSortable();
+    });
+
+    container.addEventListener('click', (e) => {
+        if (e.target.closest('.rs-delete-collection-btn')) {
+            const btn = e.target.closest('.rs-delete-collection-btn');
+            const block = btn.closest('.rs-collection-block');
+            const grid = block.querySelector('.rs-book-grid');
+            
+            // Move remaining books back to default pool
+            Array.from(grid.children).forEach(child => {
+                defaultPool.appendChild(child);
+            });
+            
+            block.remove();
+            initSortable();
+        }
+    });
+    
+    // Initial UI fixup
+    if (savedCollections.length > 0) {
+        defaultTitle.style.display = 'block'; // Ensure it's shown if there are other collections
+    }
+});
+</script>
+<style>
+.rs-sortable-ghost {
+    opacity: 0.4;
+    background-color: var(--rs-surface);
+}
+.rs-sortable-drag {
+    cursor: grabbing !important;
+}
+</style>
 
 <!-- Instant Search JS -->
 <script>
