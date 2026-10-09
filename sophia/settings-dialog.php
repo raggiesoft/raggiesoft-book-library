@@ -120,6 +120,7 @@
                 <button type="button" class="settings-tab" data-tab="theme">Theme</button>
                 <button type="button" class="settings-tab" data-tab="library">Library</button>
                 <button type="button" class="settings-tab" data-tab="advanced">Advanced</button>
+                <button type="button" class="settings-tab" data-tab="help">Help</button>
             </div>
         </div>
         
@@ -210,6 +211,28 @@
             </div>
         </div>
         
+
+            <!-- HELP TAB -->
+            <div id="settings-tab-help" class="settings-tab-content" style="display: none; font-size: 0.95rem; line-height: 1.6;">
+                <h4 style="margin-top: 0; color: var(--rs-primary);"><i class="ph ph-keyboard"></i> Keyboard Shortcuts</h4>
+                <ul style="padding-left: 1.5rem; margin-bottom: 1.5rem;">
+                    <li><kbd style="background: var(--rs-surface); border: 1px solid var(--rs-border); padding: 0.1rem 0.4rem; border-radius: 4px;">T</kbd> Toggle Reader Theme</li>
+                    <li><kbd style="background: var(--rs-surface); border: 1px solid var(--rs-border); padding: 0.1rem 0.4rem; border-radius: 4px;">N</kbd> or <kbd style="background: var(--rs-surface); border: 1px solid var(--rs-border); padding: 0.1rem 0.4rem; border-radius: 4px;">Right Arrow</kbd> Next Page</li>
+                    <li><kbd style="background: var(--rs-surface); border: 1px solid var(--rs-border); padding: 0.1rem 0.4rem; border-radius: 4px;">P</kbd> or <kbd style="background: var(--rs-surface); border: 1px solid var(--rs-border); padding: 0.1rem 0.4rem; border-radius: 4px;">Left Arrow</kbd> Previous Page</li>
+                    <li><kbd style="background: var(--rs-surface); border: 1px solid var(--rs-border); padding: 0.1rem 0.4rem; border-radius: 4px;">F</kbd> Toggle Fullscreen</li>
+                    <li><kbd style="background: var(--rs-surface); border: 1px solid var(--rs-border); padding: 0.1rem 0.4rem; border-radius: 4px;">Esc</kbd> Close Sidebar / Modals</li>
+                </ul>
+
+                <h4 style="color: var(--rs-primary);"><i class="ph ph-swatches"></i> Immersive Themes</h4>
+                <p style="margin-bottom: 1.5rem;">Some narratives support special <strong>Immersive Themes</strong> that change the aesthetic of the reader to match the story. You can enable them under the Theme tab, or cycle to them by pressing <kbd style="background: var(--rs-surface); border: 1px solid var(--rs-border); padding: 0.1rem 0.4rem; border-radius: 4px;">T</kbd>.</p>
+
+                <h4 style="color: var(--rs-primary);"><i class="ph ph-wifi-slash"></i> Offline Reading</h4>
+                <p style="margin-bottom: 1.5rem;">You can download entire narratives for offline reading. Navigate to the <strong>Library</strong> tab below to download narratives to your device. When you install the app to your Home Screen, you can read anywhere.</p>
+
+                <h4 style="color: var(--rs-primary);"><i class="ph ph-music-notes"></i> Narrative Soundtracks</h4>
+                <p>Some stories include a custom composed soundtrack. You can set the soundtrack to play automatically in the <strong>Advanced</strong> tab.</p>
+            </div>
+
         <div style="padding: 1.5rem; border-top: 1px solid var(--rs-border); text-align: center;">
             <button type="button" id="close-settings-btn" class="rs-btn rs-btn-primary" style="width: 100%;">Done</button>
         </div>
