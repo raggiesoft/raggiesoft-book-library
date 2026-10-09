@@ -15,7 +15,7 @@ if ($catalogData) {
 <div style="flex: 1; overflow-y: auto; background: var(--rs-bg); padding-bottom: 4rem; -webkit-overflow-scrolling: touch;">
     
     <!-- Native App Style Header -->
-    <div style="max-width: 1200px; margin: 0 auto; padding: 3rem 1.5rem 1rem;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: calc(1.5rem + env(safe-area-inset-top, 0px)) 1.5rem 1rem;">
         
         <!-- Top Bar: Title & Settings -->
         <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1.5rem;">
@@ -236,13 +236,13 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 
 <!-- Bottom Navigation Bar for Mobile PWA Feel -->
-<div style="position: fixed; bottom: 0; left: 0; right: 0; background: var(--rs-surface); border-top: 1px solid var(--rs-border); display: flex; justify-content: space-around; padding: 0.5rem 0; padding-bottom: env(safe-area-inset-bottom, 0.5rem); z-index: 100;">
-    <a href="/" style="text-decoration: none; color: var(--rs-text); opacity: 0.7; display: flex; flex-direction: column; align-items: center; gap: 2px;">
-        <i class="ph ph-house" style="font-size: 1.5rem;"></i>
-        <span style="font-size: 0.7rem; font-weight: 600;">Home</span>
+<div style="position: fixed; bottom: 0; left: 0; right: 0; background: var(--rs-surface); border-top: 1px solid var(--rs-border); display: flex; justify-content: space-around; padding-bottom: env(safe-area-inset-bottom, 0px); z-index: 100;">
+    <a href="/" style="text-decoration: none; color: var(--rs-text); opacity: 0.7; display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 0.75rem 2rem;">
+        <i class="ph ph-house" style="font-size: 1.75rem;"></i>
+        <span style="font-size: 0.75rem; font-weight: 600;">Home</span>
     </a>
-    <a href="/library" style="text-decoration: none; color: var(--rs-primary); display: flex; flex-direction: column; align-items: center; gap: 2px;">
-        <i class="ph-fill ph-books" style="font-size: 1.5rem;"></i>
-        <span style="font-size: 0.7rem; font-weight: 600;">Library</span>
+    <a href="/library" style="text-decoration: none; color: var(--rs-primary); display: flex; flex-direction: column; align-items: center; gap: 4px; padding: 0.75rem 2rem;">
+        <i class="ph-fill ph-books" style="font-size: 1.75rem;"></i>
+        <span style="font-size: 0.75rem; font-weight: 600;">Library</span>
     </a>
 </div>

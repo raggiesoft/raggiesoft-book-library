@@ -6,7 +6,9 @@ $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? '
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
         <link rel="icon" href="/favicon.ico" sizes="32x32">
     <link rel="icon" href="https://assets.raggiesoft.com/raggiesoft-books/images/pwa-icons/icon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="https://assets.raggiesoft.com/raggiesoft-books/images/pwa-icons/apple-icon-180.png">
