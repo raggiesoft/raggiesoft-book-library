@@ -15,7 +15,18 @@ if ($catalogData) {
 <main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; overflow-y: auto; background-color: var(--rs-bg); color: var(--rs-text);">
     
     <!-- Hero / Header Section -->
-    <div style="background: linear-gradient(135deg, var(--rs-surface) 0%, var(--rs-bg) 100%); border-bottom: 1px solid var(--rs-border); padding: 4rem 2rem; text-align: center;">
+    <div style="background: linear-gradient(135deg, var(--rs-surface) 0%, var(--rs-bg) 100%); border-bottom: 1px solid var(--rs-border); padding: 4rem 2rem; text-align: center; position: relative;">
+        <!-- Top Controls -->
+        <div style="position: absolute; top: 1.5rem; right: 2rem; display: flex; gap: 1rem; align-items: center; z-index: 50;">
+            <div style="position: relative; width: 300px; text-align: left;">
+                <input type="text" id="rs-book-search" placeholder="Search the universe..." style="width: 100%; padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid var(--rs-border); background: var(--rs-bg); color: var(--rs-text); font-size: 0.95rem;">
+                <div id="rs-search-results" style="display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 6px; max-height: 350px; overflow-y: auto; z-index: 1000; box-shadow: 0 8px 24px rgba(0,0,0,0.15); margin-top: 4px;"></div>
+            </div>
+            <button id="reader-settings-toggle" class="rs-btn rs-btn-primary" style="display: flex; align-items: center; justify-content: center; gap: 6px; padding: 0.75rem 1rem; border-radius: 6px; font-weight: 600; cursor: pointer;">
+                <i class="ph ph-gear" style="font-size: 1.2rem;"></i> Settings
+            </button>
+        </div>
+
         <h1 style="font-family: 'Playfair Display', serif; font-size: 3rem; font-weight: 700; color: var(--rs-primary); margin-bottom: 1rem;">
             Contemporary Fiction Library
         </h1>
@@ -46,7 +57,7 @@ if ($catalogData) {
                 
                 <div style="background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; transition: transform 0.2s ease, box-shadow 0.2s ease; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
                     <!-- Cover Image Container -->
-                    <div style="width: 100%; aspect-ratio: 16/9; background-color: var(--rs-bg); overflow: hidden; position: relative;">
+                    <div style="width: 100%; aspect-ratio: 2/3; background-color: var(--rs-bg); overflow: hidden; position: relative;">
                         <img src="<?php echo htmlspecialchars($imgSrc); ?>" alt="<?php echo htmlspecialchars($title); ?>" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     
@@ -72,4 +83,76 @@ if ($catalogData) {
 
     </div>
 
+
+<!-- Instant Search JS -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const searchInput = document.getElementById('rs-book-search');
+    const resultsContainer = document.getElementById('rs-search-results');
+    let searchIndex = null;
+    let isFetching = false;
+
+    const searchIndexUrl = 'https://assets.raggiesoft.com/raggiesoft-books/json/search-index.json';
+
+    if (searchInput) {
+        searchInput.addEventListener('focus', async function() {
+            if (!searchIndex && !isFetching) {
+                isFetching = true;
+                try {
+                    const response = await fetch(searchIndexUrl);
+                    searchIndex = await response.json();
+                } catch (err) {
+                    console.error("Failed to load search index", err);
+                }
+            }
+        });
+
+        searchInput.addEventListener('input', function(e) {
+            const query = e.target.value.toLowerCase().trim();
+            resultsContainer.innerHTML = '';
+
+            if (query.length < 3 || !searchIndex) {
+                resultsContainer.style.display = 'none';
+                return;
+            }
+
+            const results = searchIndex.filter(item => {
+                return (item.title && item.title.toLowerCase().includes(query)) || 
+                       (item.content && item.content.toLowerCase().includes(query)) ||
+                       (item.book && item.book.toLowerCase().includes(query)) ||
+                       (item.series && item.series.toLowerCase().includes(query));
+            }).slice(0, 10); // Show top 10
+
+            if (results.length > 0) {
+                results.forEach(item => {
+                    const div = document.createElement('a');
+                    div.href = item.url.replace('/raggiesoft-books/books/', '/');
+                    div.style = "display: block; padding: 0.75rem 1rem; border-bottom: 1px solid var(--rs-border); text-decoration: none; color: var(--rs-text); cursor: pointer;";
+                    div.innerHTML = `
+                        <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 2px;">${item.series}: ${item.title}</div>
+                        <div style="font-size: 0.75rem; opacity: 0.7; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${item.book} &middot; ${item.chapter}</div>
+                    `;
+                    div.addEventListener('mouseenter', () => div.style.background = 'var(--rs-border)');
+                    div.addEventListener('mouseleave', () => div.style.background = 'transparent');
+                    
+                    resultsContainer.appendChild(div);
+                });
+                resultsContainer.style.display = 'block';
+            } else {
+                resultsContainer.innerHTML = '<div style="padding: 0.75rem 1rem; font-size: 0.85rem; opacity: 0.7;">No results found in the archives.</div>';
+                resultsContainer.style.display = 'block';
+            }
+        });
+
+        // Close when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!searchInput.contains(e.target) && !resultsContainer.contains(e.target)) {
+                resultsContainer.style.display = 'none';
+            }
+        });
+    }
+});
+</script>
 </main>
+
+
