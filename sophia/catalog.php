@@ -33,6 +33,22 @@ if ($catalogData) {
             </button>
         </div>
 
+        <!-- Add to Home Screen Banner -->
+        <div id="rs-pwa-install-banner" style="display: none; background: var(--rs-primary, #0056b3); color: white; border-radius: 12px; padding: 1rem; margin-bottom: 2rem; align-items: center; justify-content: space-between; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <div style="width: 48px; height: 48px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0;">
+                    <img src="https://assets.raggiesoft.com/raggiesoft-books/images/pwa-icons/icon-192.png" alt="App Icon" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div>
+                    <h3 style="margin: 0; font-size: 1rem; font-weight: 700;">Install the App</h3>
+                    <p style="margin: 0; font-size: 0.85rem; opacity: 0.9;">Tap Share &gt; Add to Home Screen</p>
+                </div>
+            </div>
+            <button id="rs-pwa-close-banner" style="background: rgba(255,255,255,0.2); border: none; color: white; width: 32px; height: 32px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center;">
+                <i class="ph ph-x" style="font-weight: bold;"></i>
+            </button>
+        </div>
+
         <!-- Full Width Search Bar -->
         <div style="position: relative; width: 100%; margin-bottom: 2rem;">
             <div style="position: relative; display: flex; align-items: center;">
@@ -153,6 +169,39 @@ document.addEventListener("DOMContentLoaded", function() {
             if (!searchInput.contains(e.target) && !resultsContainer.contains(e.target)) {
                 resultsContainer.style.display = 'none';
             }
+        });
+    }
+
+    // PWA Banner Logic
+    const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+    const banner = document.getElementById('rs-pwa-install-banner');
+    if (isStandalone) {
+        // If launched as PWA, redirect to last read location if available
+        const lastRead = localStorage.getItem('rs-last-read');
+        // Only redirect if there is no hash or specific path loaded, and we are exactly on the root catalog
+        if (lastRead && window.location.pathname === '/' && !sessionStorage.getItem('rs-prevent-auto-redirect')) {
+            sessionStorage.setItem('rs-prevent-auto-redirect', 'true'); // Prevent infinite loops if they click "Library" button to come back
+            window.location.replace(lastRead);
+        }
+    } else if (banner) {
+        if (localStorage.getItem('rs-pwa-banner-dismissed') !== 'true') {
+            banner.style.display = 'flex';
+        }
+        
+        let isIos = () => {
+            const userAgent = window.navigator.userAgent.toLowerCase();
+            return /iphone|ipad|ipod/.test( userAgent );
+        };
+        
+        if (!isIos()) {
+            banner.querySelector('p').textContent = 'Install the web app for offline reading.';
+        }
+    }
+    
+    if (closeBtn) {
+        closeBtn.addEventListener('click', () => {
+            banner.style.display = 'none';
+            localStorage.setItem('rs-pwa-banner-dismissed', 'true');
         });
     }
 });
