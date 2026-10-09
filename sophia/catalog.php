@@ -1,3 +1,17 @@
+<?php
+// Sophia's Catalog View (Standalone Library View)
+global $cdnBaseUrl, $siteName, $requestUri;
+
+// Fetch the master catalog directly from the CDN
+$catalogUrl = $cdnBaseUrl . '/raggiesoft-books/books/catalog.json';
+$catalogData = @file_get_contents($catalogUrl);
+$books = [];
+
+if ($catalogData) {
+    $books = json_decode($catalogData, true) ?? [];
+}
+?>
+
 <div style="flex: 1; overflow-y: auto; background: var(--rs-bg); padding-bottom: 4rem; -webkit-overflow-scrolling: touch;">
     
     <!-- Native App Style Header -->
