@@ -34,17 +34,18 @@ if ($catalogData) {
         </div>
 
         <!-- Add to Home Screen Banner -->
-        <div id="rs-pwa-install-banner" style="display: none; background: var(--rs-primary, #0056b3); color: white; border-radius: 12px; padding: 1rem; margin-bottom: 2rem; align-items: center; justify-content: space-between; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-            <div style="display: flex; align-items: center; gap: 1rem;">
+        <div id="rs-pwa-install-banner" style="display: none; background: var(--rs-primary, #0056b3); color: white; border-radius: 12px; padding: 1rem; margin-bottom: 2rem; align-items: flex-start; justify-content: space-between; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+            <div style="display: flex; align-items: flex-start; gap: 1rem; flex: 1;">
                 <div style="width: 48px; height: 48px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0;">
                     <img src="https://assets.raggiesoft.com/raggiesoft-books/images/pwa-icons/icon-192.png" alt="App Icon" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
-                <div>
+                <div style="flex: 1;">
                     <h3 style="margin: 0; font-size: 1rem; font-weight: 700;">Install the App</h3>
                     <p style="margin: 0; font-size: 0.85rem; opacity: 0.9;">Tap Share &gt; Add to Home Screen</p>
+                    <button id="rs-pwa-install-btn" style="display: none; margin-top: 0.5rem; background: white; color: var(--rs-primary, #0056b3); border: none; padding: 0.4rem 1rem; border-radius: 6px; font-weight: bold; font-size: 0.85rem; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">Install Now</button>
                 </div>
             </div>
-            <button id="rs-pwa-close-banner" style="background: rgba(255,255,255,0.2); border: none; color: white; width: 32px; height: 32px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center;">
+            <button id="rs-pwa-close-banner" style="background: rgba(255,255,255,0.2); border: none; color: white; width: 32px; height: 32px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-left: 0.5rem;">
                 <i class="ph ph-x" style="font-weight: bold;"></i>
             </button>
         </div>
@@ -172,9 +173,14 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // PWA Banner Logic
+    // PWA Banner Logic & Install Prompt
     const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
     const banner = document.getElementById('rs-pwa-install-banner');
+    const closeBtn = document.getElementById('rs-pwa-close-banner');
+    const installBtn = document.getElementById('rs-pwa-install-btn');
+    
+    let deferredPrompt;
+
     if (isStandalone) {
         // If launched as PWA, redirect to last read location if available
         const lastRead = localStorage.getItem('rs-last-read');
@@ -183,25 +189,45 @@ document.addEventListener("DOMContentLoaded", function() {
             sessionStorage.setItem('rs-prevent-auto-redirect', 'true'); // Prevent infinite loops if they click "Library" button to come back
             window.location.replace(lastRead);
         }
-    } else if (banner) {
-        if (localStorage.getItem('rs-pwa-banner-dismissed') !== 'true') {
+    } else if (banner && localStorage.getItem('rs-pwa-banner-dismissed') !== 'true') {
+        let isIos = () => /iphone|ipad|ipod/.test(window.navigator.userAgent.toLowerCase());
+        if (isIos()) {
             banner.style.display = 'flex';
         }
-        
-        let isIos = () => {
-            const userAgent = window.navigator.userAgent.toLowerCase();
-            return /iphone|ipad|ipod/.test( userAgent );
-        };
-        
-        if (!isIos()) {
-            banner.querySelector('p').textContent = 'Install the web app for offline reading.';
-        }
     }
-    
-    const closeBtn = document.getElementById('rs-pwa-close-banner');
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+        // Prevent Chrome 67 and earlier from automatically showing the prompt
+        e.preventDefault();
+        // Stash the event so it can be triggered later.
+        deferredPrompt = e;
+        
+        // Show the install button and banner
+        if (!isStandalone && banner && localStorage.getItem('rs-pwa-banner-dismissed') !== 'true') {
+            banner.style.display = 'flex';
+            banner.querySelector('p').textContent = 'Install the web app for offline reading.';
+            if (installBtn) {
+                installBtn.style.display = 'block';
+            }
+        }
+    });
+
+    if (installBtn) {
+        installBtn.addEventListener('click', async () => {
+            if (deferredPrompt) {
+                deferredPrompt.prompt();
+                const { outcome } = await deferredPrompt.userChoice;
+                if (outcome === 'accepted') {
+                    if (banner) banner.style.display = 'none';
+                }
+                deferredPrompt = null;
+            }
+        });
+    }
+
     if (closeBtn) {
         closeBtn.addEventListener('click', () => {
-            banner.style.display = 'none';
+            if (banner) banner.style.display = 'none';
             localStorage.setItem('rs-pwa-banner-dismissed', 'true');
         });
     }
