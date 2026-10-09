@@ -21,7 +21,11 @@ if (file_exists($routeFile)) {
 }
 
 if (empty($actualFilePath)) {
-    echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; height: 100dvh; overflow-y: auto;"><div class="book-page"><h1>Chapter Not Found</h1><p>The requested route could not be found in the route map.</p></div></main>';
+    echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; height: 100dvh; overflow-y: auto;"><div class="book-page"><h1>Chapter Not Found</h1><p>The requested route could not be found in the route map.</p></div></main>
+
+<style>
+#stardust-reading-pane { padding-bottom: 6rem !important; }
+</style>';
     return;
 }
 
@@ -58,7 +62,11 @@ if ($actualFilePath === '__SERIES_LANDING__') {
 }
 
 if ($mdContent === false && !$specialPageType) {
-    echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; height: 100dvh; overflow-y: auto;"><div class="book-page"><h1>File Not Found</h1><p>The narrative file could not be loaded from the Vault.</p></div></main>';
+    echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; height: 100dvh; overflow-y: auto;"><div class="book-page"><h1>File Not Found</h1><p>The narrative file could not be loaded from the Vault.</p></div></main>
+
+<style>
+#stardust-reading-pane { padding-bottom: 6rem !important; }
+</style>';
     return;
 }
 
@@ -453,9 +461,9 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
         <div class="bottom-nav-container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--rs-border);">
             <div style="flex: 1; display: flex; justify-content: flex-start;">
                 <?php if ($prevUrl): ?>
-                    <a href="<?php echo htmlspecialchars($prevUrl); ?>" class="rs-btn">&larr; Previous</a>
+                    <a href="<?php echo htmlspecialchars($prevUrl); ?>" class="rs-btn" id="reader-btn-prev">&larr; Previous</a>
                 <?php else: ?>
-                    <button class="rs-btn" disabled style="opacity: 0.5; cursor: not-allowed;">&larr; Previous</button>
+                    <button class="rs-btn" disabled style="opacity: 0.5; cursor: not-allowed;" id="reader-btn-prev">&larr; Previous</button>
                 <?php endif; ?>
             </div>
 
@@ -475,9 +483,9 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
 
             <div style="flex: 1; display: flex; justify-content: flex-end;">
                 <?php if ($nextUrl): ?>
-                    <a href="<?php echo htmlspecialchars($nextUrl); ?>" class="rs-btn rs-btn-primary">Next &rarr;</a>
+                    <a href="<?php echo htmlspecialchars($nextUrl); ?>" class="rs-btn rs-btn-primary" id="reader-btn-next">Next &rarr;</a>
                 <?php else: ?>
-                    <button class="rs-btn rs-btn-primary" disabled style="opacity: 0.5; cursor: not-allowed;">Next &rarr;</button>
+                    <button class="rs-btn rs-btn-primary" disabled style="opacity: 0.5; cursor: not-allowed;" id="reader-btn-next">Next &rarr;</button>
                 <?php endif; ?>
             </div>
         </div>
@@ -492,5 +500,9 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
 
     </div>
 </main>
+
+<style>
+#stardust-reading-pane { padding-bottom: 6rem !important; }
+</style>
 
 

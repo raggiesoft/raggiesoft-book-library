@@ -109,14 +109,14 @@ if ($catalogData) {
 </div>
 
 <!-- Bottom Navigation Bar for Mobile PWA Feel (Apple HIG) -->
-<div style="position: fixed; bottom: 0; left: 0; right: 0; background: color-mix(in srgb, var(--rs-surface) 85%, transparent); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); border-top: 0.5px solid color-mix(in srgb, var(--rs-text) 20%, transparent); display: flex; justify-content: space-around; padding-bottom: env(safe-area-inset-bottom); z-index: 100;">
-    <a href="/" style="text-decoration: none; color: var(--rs-primary); display: flex; flex-direction: column; align-items: center; justify-content: center; width: 50%; padding: 6px 0 4px 0;">
-        <i class="ph-fill ph-house" style="font-size: 24px; margin-bottom: 2px;"></i>
-        <span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0;">Home</span>
+<div class="ios-tab-bar">
+    <a href="/" class="ios-tab-item active">
+        <i class="ph-fill ph-house"></i>
+        <span>Home</span>
     </a>
-    <a href="/library" style="text-decoration: none; color: color-mix(in srgb, var(--rs-text) 50%, transparent); display: flex; flex-direction: column; align-items: center; justify-content: center; width: 50%; padding: 6px 0 4px 0;">
-        <i class="ph ph-books" style="font-size: 24px; margin-bottom: 2px;"></i>
-        <span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 10px; font-weight: 500; letter-spacing: 0;">Library</span>
+    <a href="/library" class="ios-tab-item inactive">
+        <i class="ph ph-books"></i>
+        <span>Library</span>
     </a>
 </div>
 
