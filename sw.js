@@ -1,11 +1,11 @@
-const CACHE_NAME = 'ova-cache-v1';
+const CACHE_NAME = 'ova-cache-v2';
+const DYNAMIC_CACHE = 'ova-dynamic-v2';
+const IMAGE_CACHE = 'ova-images-v2';
 
 const PRECACHE_ASSETS = [
     '/',
     '/manifest.json',
-    '/icons/icon-192.png',
-    '/icons/icon-512.png',
-    '/icons/apple-touch-icon.png',
+    '/scripts/pwa.js',
     '/favicon.ico',
     '/icons/icon.svg'
 ];
@@ -22,7 +22,11 @@ self.addEventListener('activate', event => {
     event.waitUntil(
         caches.keys().then(cacheNames => {
             return Promise.all(
-                cacheNames.filter(name => name !== CACHE_NAME).map(name => caches.delete(name))
+                cacheNames.map(name => {
+                    if (name !== CACHE_NAME && name !== DYNAMIC_CACHE && name !== IMAGE_CACHE) {
+                        return caches.delete(name);
+                    }
+                })
             );
         })
     );
@@ -30,11 +34,36 @@ self.addEventListener('activate', event => {
 
 self.addEventListener('fetch', event => {
     if (event.request.method !== 'GET') return;
-    
+
+    const url = new URL(event.request.url);
+
+    // 1. Cache First for Images and Assets (assets.raggiesoft.com, fonts)
+    if (url.hostname.includes('assets.raggiesoft.com') || url.hostname.includes('fonts.googleapis.com') || url.hostname.includes('fonts.gstatic.com') || event.request.destination === 'image' || event.request.destination === 'style' || event.request.destination === 'script') {
+        event.respondWith(
+            caches.match(event.request).then(cachedResponse => {
+                if (cachedResponse) {
+                    return cachedResponse;
+                }
+                return fetch(event.request).then(response => {
+                    const cacheName = event.request.destination === 'image' ? IMAGE_CACHE : DYNAMIC_CACHE;
+                    const responseClone = response.clone();
+                    caches.open(cacheName).then(cache => {
+                        cache.put(event.request, responseClone);
+                    });
+                    return response;
+                }).catch(() => {
+                    // Ignore network failure for assets
+                });
+            })
+        );
+        return;
+    }
+
+    // 2. Network First for HTML and JSON Data
     event.respondWith(
         fetch(event.request).then(response => {
             const responseClone = response.clone();
-            caches.open(CACHE_NAME).then(cache => {
+            caches.open(DYNAMIC_CACHE).then(cache => {
                 cache.put(event.request, responseClone);
             });
             return response;
