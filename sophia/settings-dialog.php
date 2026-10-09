@@ -111,7 +111,7 @@
 </dialog>
 
 <!-- STANDARD SETTINGS DIALOG -->
-<dialog id="reader-settings-dialog" style="padding: 0; border-radius: 12px; border: 1px solid var(--rs-border); background: var(--rs-card-bg, var(--rs-surface, #fff)); color: var(--rs-text); max-width: 500px; width: 90%; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden;">
+<dialog id="reader-settings-dialog" style="padding: 0; border-radius: 12px; border: 1px solid var(--rs-border); background: var(--rs-card-bg, var(--rs-surface, #fff)); color: var(--rs-text); max-width: 700px; width: 90%; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden;">
     <div style="display: flex; flex-direction: column; height: 100%;">
         <div style="padding: 1.5rem 1.5rem 0 1.5rem; border-bottom: 1px solid var(--rs-border);">
             <h3 id="reader-settings-title" style="margin-top: 0; margin-bottom: 1rem; font-weight: bold; user-select: none;">Reader Settings</h3>
