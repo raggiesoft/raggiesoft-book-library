@@ -1,6 +1,6 @@
-const CACHE_NAME = 'ova-cache-v2';
-const DYNAMIC_CACHE = 'ova-dynamic-v2';
-const IMAGE_CACHE = 'ova-images-v2';
+const CACHE_NAME = 'ova-cache-v3';
+const DYNAMIC_CACHE = 'ova-dynamic-v3';
+const IMAGE_CACHE = 'ova-images-v3';
 
 const PRECACHE_ASSETS = [
     '/',
