@@ -55,7 +55,7 @@ if ($catalogData) {
                     $readLink = '/' . $slug . '/';
                 ?>
                 
-                <div style="background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; transition: transform 0.2s ease, box-shadow 0.2s ease; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                <div class="rs-book-card" data-slug="<?php echo htmlspecialchars($slug); ?>" style="background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; transition: transform 0.2s ease, box-shadow 0.2s ease; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
                     <!-- Cover Image Container -->
                     <div style="width: 100%; aspect-ratio: 2/3; background-color: var(--rs-bg); overflow: hidden; position: relative;">
                         <img src="<?php echo htmlspecialchars($imgSrc); ?>" alt="<?php echo htmlspecialchars($title); ?>" style="width: 100%; height: 100%; object-fit: cover;">

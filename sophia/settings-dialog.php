@@ -106,6 +106,7 @@
             <div style="display: flex; gap: 1rem; margin-bottom: -1px; overflow-x: auto;" id="reader-settings-tabs">
                 <button type="button" class="settings-tab active" data-tab="layout">Layout</button>
                 <button type="button" class="settings-tab" data-tab="theme">Theme</button>
+                <button type="button" class="settings-tab" data-tab="library">Library</button>
                 <button type="button" class="settings-tab" data-tab="advanced">Advanced</button>
             </div>
         </div>
@@ -163,6 +164,17 @@
                     
 
 
+                </div>
+            </div>
+
+            <!-- LIBRARY TAB -->
+            <div id="settings-tab-library" class="settings-tab-content" style="display: none;">
+                <div style="margin-bottom: 1.5rem;">
+                    <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Manage Archives</h4>
+                    <p style="font-size: 0.85rem; opacity: 0.8; margin-top: 0;">Choose which story archives are visible in your library catalog.</p>
+                    <div id="library-management-list" style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <!-- Populated dynamically via JS -->
+                    </div>
                 </div>
             </div>
 
