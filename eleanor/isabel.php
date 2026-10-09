@@ -146,7 +146,7 @@ echo '<link rel="stylesheet" href="' . $cdnBaseUrl . '/raggiesoft-books/css/read
 echo '<script src="' . $cdnBaseUrl . '/raggiesoft-books/js/reader.js?v=' . time() . '" defer></script>';
 
 
-echo '<div id="stardust-main-wrapper" style="display: flex; height: 100vh; height: 100dvh; overflow: hidden; width: 100%;">';
+echo '<div id="stardust-main-wrapper">';
 
 if ($isHome) {
     require_once $basePath . '/sophia/home.php';

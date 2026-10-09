@@ -12,7 +12,7 @@ if ($catalogData) {
 }
 ?>
 
-<div class="stardust-mobile-scroll" style="flex: 1; overflow-y: auto; background: var(--rs-bg); padding-bottom: 4rem; -webkit-overflow-scrolling: touch;">
+<div class="stardust-mobile-scroll" style="flex: 1; background: var(--rs-bg); padding-bottom: 4rem;">
     
     <!-- Native App Style Header -->
     <div style="max-width: 1200px; margin: 0 auto; padding: calc(1.5rem + env(safe-area-inset-top, 0px)) 1.5rem 1rem;">
