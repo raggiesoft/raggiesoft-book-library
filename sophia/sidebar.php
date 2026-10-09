@@ -43,7 +43,7 @@ if (!empty($routeData)) {
 
 <aside id="stardust-sidebar" class="reader-sidebar">
     <div style="display: flex; gap: 0.5rem; margin-bottom: 1.5rem;">
-        <a href="/" class="rs-btn rs-btn-brand" style="flex: 1; text-align: center; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 4px;"><i class="ph ph-books"></i> Library</a>
+        <a href="/library" class="rs-btn rs-btn-brand" style="flex: 1; text-align: center; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 4px;"><i class="ph ph-books"></i> Library</a>
         <button id="reader-settings-toggle" class="rs-btn" style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 4px;"><i class="ph ph-gear"></i> Settings</button>
     </div>
 
