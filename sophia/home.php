@@ -116,6 +116,19 @@ if ($catalogData) {
           Hidden natively; populated and revealed via JS by scanning localStorage 
           for cached narrative flags.
         -->
+        <!-- 
+          EMPTY STATE
+          Shown when the user has no recent reading history.
+        -->
+        <div id="rs-home-empty" style="display: none; background: var(--rs-surface); border: 1px dashed var(--rs-border); border-radius: 12px; padding: 2.5rem 1.5rem; text-align: center; margin-bottom: 2.5rem;">
+            <div style="width: 64px; height: 64px; border-radius: 50%; background: rgba(0,0,0,0.05); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto;">
+                <i class="ph ph-books" style="font-size: 2rem; color: var(--rs-primary);"></i>
+            </div>
+            <h2 style="font-size: 1.25rem; font-weight: 700; color: var(--rs-heading); margin-top: 0; margin-bottom: 0.5rem;">Welcome to the Archives!</h2>
+            <p style="color: var(--rs-text); opacity: 0.8; font-size: 0.95rem; margin: 0 0 1.5rem 0; line-height: 1.5;">Your reading shelf is currently empty. Browse the library to find your next great story.</p>
+            <a href="/catalog" class="rs-btn rs-btn-brand" style="display: inline-block; text-decoration: none; font-size: 1rem; padding: 0.75rem 1.5rem; font-weight: 600;">Browse Library</a>
+        </div>
+        
         <div id="rs-home-offline" style="display: none; margin-bottom: 2.5rem;">
             <h2 style="font-size: 1.25rem; font-weight: 700; color: var(--rs-heading); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
                 <i class="ph ph-cloud-check"></i> Available Offline
@@ -152,6 +165,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // 1. Process "Jump Back In" State
     // Check localStorage for the exact path the user was last on
     const lastRead = localStorage.getItem('rs-last-read');
+    let matched = false;
     if (lastRead) {
         // Extract the root narrative slug from the saved path (e.g., /alex-chloe/...)
         const parts = lastRead.split('/').filter(p => p.length > 0);
@@ -172,8 +186,13 @@ document.addEventListener("DOMContentLoaded", function() {
                 // Prepend base URL to image path
                 document.getElementById('rs-jump-cover').src = "<?php echo $cdnBaseUrl; ?>" + seriesData.image;
                 document.getElementById('rs-jump-btn').href = lastRead;
+                matched = true;
             }
         }
+    }
+    
+    if (!matched) {
+        document.getElementById('rs-home-empty').style.display = 'block';
     }
 
     // 2. Process "Offline Shelf" State

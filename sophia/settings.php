@@ -99,6 +99,15 @@ global $cdnBaseUrl, $siteName, $requestUri;
                     </select>
                 </div>
 
+                                <!-- LAUNCH BEHAVIOR SELECTOR -->
+                <div>
+                    <label for="rs-settings-launch-behavior" style="display: block; font-weight: bold; margin-bottom: 0.5rem; font-size: 0.95rem;">On App Launch</label>
+                    <select id="rs-settings-launch-behavior" class="rs-input" style="width: 100%; padding: 0.75rem; font-size: 1rem;">
+                        <option value="home">Go to Home Screen</option>
+                        <option value="resume">Resume Last Read Book</option>
+                    </select>
+                </div>
+
                 <!-- LINE SPACING (LINE HEIGHT) SELECTOR -->
                 <div>
                     <label for="rs-settings-line-height" style="display: block; font-weight: bold; margin-bottom: 0.5rem; font-size: 0.95rem;">Line Spacing</label>
@@ -148,7 +157,7 @@ global $cdnBaseUrl, $siteName, $requestUri;
                 
                 <!-- Licensing & Copyright Information -->
                 <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--rs-border);">
-                    <h4 style="margin: 0 0 0.5rem 0; font-size: 1rem; color: var(--rs-primary);">Copyright & Licensing (Stardust Engine v1.0.0)</h4>
+                    <h4 style="margin: 0 0 0.5rem 0; font-size: 1rem; color: var(--rs-primary);">Copyright & Licensing (Stardust Engine v0.1.0)</h4>
                     <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 0.5rem;">
                         <strong>Book Content:</strong> Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" style="color: inherit; font-weight: bold;">CC BY-SA 4.0</a>.
                     </p>
@@ -197,6 +206,11 @@ document.addEventListener("DOMContentLoaded", function() {
     const fontSelect = document.getElementById('rs-settings-font-family');
     if(fontSelect) fontSelect.value = currentFont;
 
+        // 3.5. Initialize Launch Behavior UI
+    const currentLaunch = localStorage.getItem('rs-launch-behavior') || 'home';
+    const launchSelect = document.getElementById('rs-settings-launch-behavior');
+    if(launchSelect) launchSelect.value = currentLaunch;
+
     // 4. Initialize Line Spacing UI
     const currentLH = localStorage.getItem('rs-line-height') || '1.6';
     const lhSelect = document.getElementById('rs-settings-line-height');
@@ -236,6 +250,13 @@ document.addEventListener("DOMContentLoaded", function() {
         applyThemeGlobally();
     });
 
+        // Handle Launch Behavior Change explicitly
+    if (launchSelect) {
+        launchSelect.addEventListener('change', (e) => {
+            localStorage.setItem('rs-launch-behavior', e.target.value);
+        });
+    }
+
     // Handle Line Spacing Change explicitly
     lhSelect.addEventListener('change', (e) => {
         localStorage.setItem('rs-line-height', e.target.value);
@@ -249,7 +270,8 @@ document.addEventListener("DOMContentLoaded", function() {
             localStorage.removeItem('rs-font-size');
             localStorage.removeItem('rs-theme');
             localStorage.removeItem('rs-font-family');
-            localStorage.removeItem('rs-line-height');
+                        localStorage.removeItem('rs-line-height');
+            localStorage.removeItem('rs-launch-behavior');
             
             // Reload page to re-initialize defaults naturally
             window.location.reload();

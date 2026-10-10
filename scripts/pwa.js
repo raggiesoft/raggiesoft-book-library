@@ -32,9 +32,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone || document.referrer.includes('android-app://');
     
     if (isStandalone && currentPath === '/') {
-        // If launched from the OS home screen and landing on the root homepage, attempt to redirect to last read chapter.
+        // If launched from the OS home screen and landing on the root homepage, check launch preference.
+        const launchBehavior = localStorage.getItem('rs-launch-behavior') || 'home';
         const lastRead = localStorage.getItem('lastReadChapter');
-        if (lastRead && lastRead !== '/') {
+        
+        if (launchBehavior === 'resume' && lastRead && lastRead !== '/') {
             // Give a tiny delay so the native OS splash screen transitions naturally before the JS redirect fires.
             setTimeout(() => {
                 window.location.replace(lastRead);

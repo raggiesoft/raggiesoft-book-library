@@ -10,7 +10,7 @@
  * Design Principles:
  *     - Provides a static, standalone view integrated directly into the Stardust 
  *       Engine navigation rather than floating in a modal.
- *     - Enforces semantic versioning (v1.0.0) and clearly delineates MIT/CC BY-SA 
+ *     - Enforces semantic versioning (v0.1.0) and clearly delineates MIT/CC BY-SA 
  *       licensing per the organization's legal rules.
  * 
  * Maintenance Notes:
@@ -97,7 +97,7 @@ global $cdnBaseUrl;
             <hr style="border: 0; border-top: 1px solid var(--rs-border); margin: 1.5rem 0;">
             
             <div style="font-size: 0.85rem; color: var(--rs-text); opacity: 0.8; line-height: 1.5; text-align: center;">
-                <p style="margin: 0 0 0.5rem 0; font-weight: 600;">Stardust Engine v1.0.0</p>
+                <p style="margin: 0 0 0.5rem 0; font-weight: 600;">Stardust Engine v0.1.0</p>
                 <p style="margin: 0 0 0.5rem 0;">Copyright &copy; <?php echo date("Y"); ?> RaggieSoft. All rights reserved.</p>
                 <p style="margin: 0;"><strong>Code License:</strong> MIT</p>
                 <p style="margin: 0;"><strong>Narrative Content License:</strong> CC BY-SA 4.0</p>
