@@ -93,7 +93,7 @@ if (!empty($seriesSlug)) {
 } else if ($isHome) {
     $ogTitle = 'Ocean View Archives | RaggieSoft Media';
     $ogDescription = 'Discover original stories, serialized narratives, and interconnected universes in the official RaggieSoft Media reading library.';
-    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/og/oceanview-archives.jpg';
+    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/og/contemporary_v2.jpg';
 }
 
 // Check for OpenGraph overrides in the Markdown Frontmatter
