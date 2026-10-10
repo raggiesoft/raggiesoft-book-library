@@ -1,4 +1,25 @@
 <?php
+/**
+ * =============================================================================
+ * Architecture & Maintenance Guide: wizard.php
+ * =============================================================================
+ * Purpose:
+ *     A multi-step onboarding wizard for first-time readers, introducing the 
+ *     lore (Isabel/Oliver) and guiding them through visual preferences (width, 
+ *     font size, theme, etc.).
+ * 
+ * Design Principles:
+ *     - Migrated from a <dialog> element to a standalone, routeable page (/welcome) 
+ *       to prevent layout clipping on mobile browsers.
+ *     - JS driven tab-switching dynamically updates the visual preview (the 
+ *       sidebar graphic) and interacts directly with localStorage.
+ * 
+ * Maintenance Notes:
+ *     - The JS logic within this file modifies localStorage keys like 'rs-width' 
+ *       and 'rs-theme'. Changes here must align with how 'reader.js' interprets 
+ *       those same keys.
+ * =============================================================================
+ */
 // Sophia's Welcome Wizard (Standalone View)
 global $cdnBaseUrl;
 ?>

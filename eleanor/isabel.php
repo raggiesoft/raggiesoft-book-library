@@ -80,9 +80,6 @@ if (preg_match('#^/([^/]+)#', $requestUri, $matches)) {
 // Determine if the requested URI corresponds to top-level platform pages
 $isCatalog = false;
 $isHome = false;
-$isDiscover = false;
-$isBookmarks = false;
-$isSettings = false;
 if ($requestUri === '/' || $requestUri === '/isabel.php' || $requestUri === '/index.php') {
     $isHome = true;
     $seriesSlug = ''; // Clear slug to avoid conflicts
@@ -115,6 +112,10 @@ if ($requestUri === '/' || $requestUri === '/isabel.php' || $requestUri === '/in
     $isWelcome = true;
     $seriesSlug = '';
     $pageConfig['title'] = 'Welcome';
+} else if (false) {
+    $isCatalog = true;
+    $seriesSlug = ''; // Clear slug
+    $pageConfig['title'] = 'Library';
 }
 
 // Extract the determined theme for the current view wrapper
@@ -160,14 +161,92 @@ if (!empty($seriesSlug)) {
     $ogDescription = 'Living stories. Expanding lore. Dive into the universe. The grounded, real-world archives of RaggieSoft Media.';
     $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/og/library-og.jpg';
 } else if ($isHome) {
+    $ogTitle = 'Ocean View Archives | RaggieSoft Media';
+    $ogDescription = 'Discover original stories, serialized narratives, and interconnected universes in the official RaggieSoft Media reading library.';
+    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/og/contemporary_v2.jpg';
+}
+
+// Intercept specific Markdown pages to extract explicit OpenGraph overrides from their YAML frontmatter
+$prefetchedMdContent = null;
+if (!empty($pageConfig['filePath'])) {
+    $actualFilePath = $pageConfig['filePath'];
+    
+    // Identify non-physical structural files to prevent unnecessary CDN requests
+    $isSpecial = in_array($actualFilePath, ['__SERIES_LANDING__', '__TOC__']) || strpos($actualFilePath, '__BOOK_TOC__|') === 0 || strpos($actualFilePath, '__CHAP_TOC__|') === 0;
+    
+    if (!$isSpecial) {
+        $mdUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/' . $actualFilePath;
+        $prefetchedContent = @file_get_contents($mdUrl);
+        
+        if ($prefetchedContent !== false) {
+            // Re-map internal {{CDN}} placeholders to the active domain before processing
+            $prefetchedMdContent = str_replace('{{CDN}}', $cdnBaseUrl, $prefetchedContent);
+            
+            // Execute naive regex to capture YAML frontmatter block
+            if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $prefetchedMdContent, $matches)) {
+                $rawFrontmatter = $matches[1];
+                $lines = explode("\n", $rawFrontmatter);
+                $fmTitle = '';
+                $fmOgTitle = '';
+                
+                // Parse key-value pairs manually
+                foreach ($lines as $line) {
+                    $line = trim($line);
+                    if (strpos($line, ':') !== false) {
+                        list($key, $val) = explode(':', $line, 2);
+                        $key = trim($key);
+                        $val = trim($val);
+                        // Strip quotes
+                        $val = trim($val, '"\'');
+                        
+                        if ($key === 'title' && $val !== '') $fmTitle = $val;
+                        if ($key === 'og_title' && $val !== '') $fmOgTitle = $val;
+                        if ($key === 'og_description' && $val !== '') $ogDescription = $val;
+                        if ($key === 'og_image' && $val !== '') {
+                            $ogImage = $val;
+                            // Ensure relative OG images are resolved to absolute URLs
+                            if (strpos($ogImage, 'http') !== 0) {
+                                $ogImage = $cdnBaseUrl . '/' . ltrim($ogImage, '/');
+                            }
+                        }
+                    }
+                }
+                
+                // Apply extracted title overrides
+                if ($fmOgTitle !== '') {
+                    $ogTitle = $fmOgTitle;
+                } elseif ($fmTitle !== '') {
+                    $seriesTitle = !empty($katie['series_title']) ? $katie['series_title'] : (ucwords(str_replace('-', ' ', $seriesSlug)));
+                    $ogTitle = $fmTitle . ' | ' . $seriesTitle;
+                }
+            }
+        }
+    }
+}
+
+// Prevent injection of the global hub header to preserve screen real estate for readers
+$currentHeaderMenu = null;
+
+// Include the Global HTML Header (Opens HTML, Head, Body, and the primary wrapper)
+require_once $basePath . '/includes/components/headers/header.php';
+
+// Inject Stardust-specific styling and logic scripts
+echo '<link rel="stylesheet" href="' . $cdnBaseUrl . '/raggiesoft-books/css/reader.css?v=' . time() . '">';
+echo '<script src="' . $cdnBaseUrl . '/raggiesoft-books/js/reader.js?v=' . time() . '" defer></script>';
+
+// Open the primary application boundary
+echo '<div id="stardust-main-wrapper">';
+
+// Execute the final View routing based on established state
+if ($isHome) {
     require_once $basePath . '/sophia/home.php';
 } else if ($isCatalog) {
     require_once $basePath . '/sophia/catalog.php';
-} else if ($isDiscover) {
+} else if (isset($isDiscover) && $isDiscover) {
     require_once $basePath . '/sophia/discover.php';
-} else if ($isBookmarks) {
+} else if (isset($isBookmarks) && $isBookmarks) {
     require_once $basePath . '/sophia/bookmarks.php';
-} else if ($isSettings) {
+} else if (isset($isSettings) && $isSettings) {
     require_once $basePath . '/sophia/settings.php';
 } else if (isset($isAccessibility) && $isAccessibility) {
     require_once $basePath . '/sophia/accessibility.php';

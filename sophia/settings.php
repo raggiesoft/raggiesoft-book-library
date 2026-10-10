@@ -148,7 +148,7 @@ global $cdnBaseUrl, $siteName, $requestUri;
                 
                 <!-- Licensing & Copyright Information -->
                 <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--rs-border);">
-                    <h4 style="margin: 0 0 0.5rem 0; font-size: 1rem; color: var(--rs-primary);">Copyright & Licensing</h4>
+                    <h4 style="margin: 0 0 0.5rem 0; font-size: 1rem; color: var(--rs-primary);">Copyright & Licensing (Stardust Engine v1.0.0)</h4>
                     <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 0.5rem;">
                         <strong>Book Content:</strong> Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" style="color: inherit; font-weight: bold;">CC BY-SA 4.0</a>.
                     </p>
