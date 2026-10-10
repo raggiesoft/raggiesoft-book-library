@@ -33,11 +33,16 @@
                 <div style="margin-top: 2rem;">
                     <h4 style="margin-bottom: 0.5rem;">Select a Theme:</h4>
                     <select id="wizard-theme-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
-                        <option value="auto">System Default (Matches your OS)</option>
-                        <option value="light">Light Mode (Crisp & Clean)</option>
-                        <option value="dark">Dark Mode (Best for night)</option>
-                        <option value="sepia">Sepia Mode (Easy on the eyes)</option>
-                        <option value="dark-sepia">Dark Sepia (Warm & Dark)</option>
+                        <optgroup label="System Default (Matches your OS)">
+                            <option value="auto">Auto (Light / Dark)</option>
+                            <option value="sepia-system">Auto (Sepia / Dark Sepia)</option>
+                        </optgroup>
+                        <optgroup label="Fixed Themes">
+                            <option value="light">Light Mode (Crisp & Clean)</option>
+                            <option value="dark">Dark Mode (Best for night)</option>
+                            <option value="sepia">Sepia Mode (Easy on the eyes)</option>
+                            <option value="dark-sepia">Dark Sepia (Warm & Dark)</option>
+                        </optgroup>
                     </select>
                 </div>
             </div>
@@ -161,11 +166,16 @@
                 <div style="margin-bottom: 1.5rem;">
                     <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Color Mode</h4>
                                         <select id="reader-theme-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
-                        <option value="auto">System Default</option>
-                        <option value="light">Light Mode</option>
-                        <option value="dark">Dark Mode</option>
-                        <option value="sepia">Sepia Mode</option>
-                        <option value="dark-sepia">Dark Sepia</option>
+                        <optgroup label="System Default">
+                            <option value="auto">Auto (Light / Dark)</option>
+                            <option value="sepia-system">Auto (Sepia / Dark Sepia)</option>
+                        </optgroup>
+                        <optgroup label="Fixed Themes">
+                            <option value="light">Light Mode</option>
+                            <option value="dark">Dark Mode</option>
+                            <option value="sepia">Sepia Mode</option>
+                            <option value="dark-sepia">Dark Sepia</option>
+                        </optgroup>
                     </select>
                     <div style="margin-top: 1rem; padding: 1rem; background: var(--rs-surface, #f5f5f5); border-radius: 8px; border: 1px solid var(--rs-border);">
                         <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
