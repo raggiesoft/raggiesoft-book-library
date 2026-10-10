@@ -141,20 +141,46 @@ function renderCarousel($title, $icon, $bookList, $cdnBaseUrl) {
         -->
         
         <?php 
-        // 1. Trending Now (Shuffled subset)
-        $trendingBooks = $books;
-        shuffle($trendingBooks);
-        renderCarousel("Trending Now", "ph-trend-up", array_slice($trendingBooks, 0, 6), $cdnBaseUrl);
-
-        // 2. New Arrivals (Shuffled differently for mock purposes)
-        $newArrivals = $books;
-        shuffle($newArrivals);
-        renderCarousel("New Arrivals", "ph-sparkle", array_slice($newArrivals, 0, 6), $cdnBaseUrl);
+        // 1. Fetch Carousel Configuration from CDN
+        $discoverConfigUrl = $cdnBaseUrl . '/raggiesoft-books/books/discover.json';
+        $discoverData = @file_get_contents($discoverConfigUrl);
+        $carousels = [];
         
-        // 3. Editor's Picks (Another subset)
-        $editorsPicks = $books;
-        shuffle($editorsPicks);
-        renderCarousel("Editor's Picks", "ph-star", array_slice($editorsPicks, 0, 6), $cdnBaseUrl);
+        if ($discoverData) {
+            $carousels = json_decode($discoverData, true) ?? [];
+        }
+        
+        // 2. Map Book Data to the Book Slugs
+        // Convert the master catalog array into an associative array for quick lookups O(1)
+        $catalogMap = [];
+        foreach ($books as $b) {
+            if (isset($b['slug'])) {
+                $catalogMap[$b['slug']] = $b;
+            }
+        }
+        
+        // 3. Render Carousels based on Configuration
+        if (!empty($carousels)) {
+            foreach ($carousels as $carousel) {
+                $carouselTitle = $carousel['title'] ?? 'Featured';
+                $carouselIcon = $carousel['icon'] ?? 'ph-books';
+                $slugs = $carousel['books'] ?? [];
+                
+                $carouselBooks = [];
+                foreach ($slugs as $s) {
+                    if (isset($catalogMap[$s])) {
+                        $carouselBooks[] = $catalogMap[$s];
+                    }
+                }
+                
+                renderCarousel($carouselTitle, $carouselIcon, $carouselBooks, $cdnBaseUrl);
+            }
+        } else {
+            // Fallback: If discover.json fails, fallback to the old random shuffle
+            $fallbackBooks = $books;
+            shuffle($fallbackBooks);
+            renderCarousel("Featured Archives", "ph-star", array_slice($fallbackBooks, 0, 10), $cdnBaseUrl);
+        }
         ?>
 
     </div>
