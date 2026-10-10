@@ -1,4 +1,15 @@
 <?php
+/**
+ * @file stardust-parsedown.php
+ * @brief Custom extension of the Parsedown Markdown parser.
+ * 
+ * ARCHITECTURE & MAINTENANCE NOTES:
+ * - Domain: Stardust Engine -> Markdown Parsing
+ * - Context: Extends the base `Parsedown` engine to inject Stardust-specific accessibility and structural enhancements (e.g., `scope="col"` on table headers).
+ * - Inheritance: Subclasses `Parsedown` and overrides specific DOM rendering methods like `blockTableComplete()`.
+ * - Integration: Requires the base Parsedown library located in `../components/3rdparty/parsedown/parsedown.php`.
+ * - DO NOT modify the core array manipulation logic for `Block` elements without fully understanding the Parsedown internal abstract syntax tree (AST).
+ */
 // Go up one level from /classes/ to /includes/, then navigate down into the 3rdparty directory
 require_once __DIR__ . '/../components/3rdparty/parsedown/parsedown.php';
 

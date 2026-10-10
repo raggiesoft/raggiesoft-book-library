@@ -1,32 +1,61 @@
 <?php
 /**
- * HOME DASHBOARD VIEW (home.php)
- * ---------------------------------------------------------
- * This file serves as the primary dashboard for returning users.
- * It dynamically renders "Jump Back In" (Resume Reading) and "Available Offline"
- * shelves using client-side JavaScript that queries the browser's localStorage.
+ * =============================================================================
+ * Architecture & Maintenance Guide: home.php
+ * =============================================================================
+ * Purpose:
+ *     This file serves as the primary dashboard for returning users of the 
+ *     Ocean View Archives. It dynamically renders personalized "Jump Back In" 
+ *     (Resume Reading) shelves and "Available Offline" collections based on 
+ *     the user's local reading history.
+ *
+ * Design Principles:
+ *     - Client-Side Rendering (CSR) Mix: User history is strictly kept in 
+ *       the browser (`localStorage`). PHP fetches the master catalog, and 
+ *       JS merges the two to build personalized views securely without server state.
+ *     - PWA Support: Identical to `discover.php`, includes standard offline 
+ *       install prompts.
+ *
+ * Maintenance Notes:
+ *     - If the `localStorage` key structure (`rs-last-read`, `rs-offline-*`) 
+ *       changes in the core reader script, the JS block here must be updated 
+ *       to match.
+ *     - Ensure catalog data structure changes don't break the JS `find()` logic 
+ *       used to map slugs to titles and covers.
+ * =============================================================================
  */
 
-// Sophia's Home View
+// Import necessary variables provided by the Stardust routing engine
 global $cdnBaseUrl, $siteName, $requestUri;
 
-// Fetch the master catalog directly from the CDN to get cover data
+// Fetch the master catalog directly from the CDN to populate cover data for local history
 $catalogUrl = $cdnBaseUrl . '/raggiesoft-books/books/catalog.json';
+
+// Suppress network errors; fallback to empty data if the CDN is unreachable
 $catalogData = @file_get_contents($catalogUrl);
 $books = [];
 
+// Parse the returned JSON, defaulting safely to an empty array
 if ($catalogData) {
     $books = json_decode($catalogData, true) ?? [];
 }
 
 ?>
 
+<!-- 
+  MAIN CONTAINER
+  Uses mobile scrolling rules, appending padding to avoid collision 
+  with the sticky bottom navigation menu.
+-->
 <div class="stardust-mobile-scroll" style="flex: 1; background: var(--rs-bg); padding-bottom: 6rem;">
     
-    <!-- Native App Style Header -->
+    <!-- 
+      NATIVE APP STYLE HEADER
+      Provides safe area insets to avoid mobile OS notch overlap and constrains max-width.
+    -->
     <div style="max-width: 1200px; margin: 0 auto; padding: calc(1.5rem + env(safe-area-inset-top, 0px)) 1.5rem 1rem;">
         
-        <!-- Top Bar: Title & Settings -->
+        <!-- Top Navigation Bar: Displays greeting and quick access to settings -->
         <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem;">
             <div>
                 <p id="rs-home-greeting" style="font-size: 1.1rem; color: var(--rs-primary); margin: 0 0 0.25rem 0; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
@@ -42,7 +71,10 @@ if ($catalogData) {
             </button>
         </div>
 
-        <!-- Add to Home Screen Banner -->
+        <!-- 
+          PWA INSTALL BANNER
+          Prompt injected for supported browsers to encourage offline caching installation.
+        -->
         <div id="rs-pwa-install-banner" style="display: none; background: var(--rs-primary, #0056b3); color: white; border-radius: 12px; padding: 1rem; margin-bottom: 2rem; align-items: flex-start; justify-content: space-between; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
             <div style="display: flex; align-items: flex-start; gap: 1rem; flex: 1;">
                 <div style="width: 48px; height: 48px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0;">
@@ -59,7 +91,10 @@ if ($catalogData) {
             </button>
         </div>
 
-        <!-- Jump Back In Section (Client Side Rendered) -->
+        <!-- 
+          JUMP BACK IN SECTION
+          Hidden natively; revealed via JS if a valid 'rs-last-read' entry exists in localStorage.
+        -->
         <div id="rs-home-jump-back" style="display: none; margin-bottom: 2.5rem;">
             <h2 style="font-size: 1.25rem; font-weight: 700; color: var(--rs-heading); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
                 <i class="ph ph-book-open"></i> Jump Back In
@@ -76,26 +111,37 @@ if ($catalogData) {
             </div>
         </div>
         
-        <!-- Offline Shelf (Client Side Rendered) -->
+        <!-- 
+          OFFLINE SHELF SECTION
+          Hidden natively; populated and revealed via JS by scanning localStorage 
+          for cached narrative flags.
+        -->
         <div id="rs-home-offline" style="display: none; margin-bottom: 2.5rem;">
             <h2 style="font-size: 1.25rem; font-weight: 700; color: var(--rs-heading); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
                 <i class="ph ph-cloud-check"></i> Available Offline
             </h2>
             <div id="rs-home-offline-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 1rem;">
-                <!-- Populated by JS -->
+                <!-- Content dynamically generated by JS iteration over offline store -->
             </div>
         </div>
 
+        <!-- NOTE: Existing stray div preserved for structural integrity. -->
         </div>
 </div>
 
 </div>
 
+<!-- Render bottom tab bar component -->
 <?php include __DIR__ . "/../includes/components/bottom-nav.php"; ?>
 
+<!-- 
+  CLIENT-SIDE DATA RESOLUTION LOGIC
+  Extracts user data from localStorage and matches it against the PHP-injected catalog.
+-->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    // 0. Update Greeting
+    
+    // 0. Update Greeting text based on the user's current local hour
     const hour = new Date().getHours();
     let greeting = 'Good evening';
     if (hour < 12) greeting = 'Good morning';
@@ -103,35 +149,44 @@ document.addEventListener("DOMContentLoaded", function() {
     const greetingEl = document.getElementById('rs-home-greeting');
     if (greetingEl) greetingEl.textContent = greeting + ', Reader.';
 
-    // 1. Load Jump Back In
+    // 1. Process "Jump Back In" State
+    // Check localStorage for the exact path the user was last on
     const lastRead = localStorage.getItem('rs-last-read');
     if (lastRead) {
-        // We can extract series from URL e.g., /alex-chloe/book-1/chapter-1
+        // Extract the root narrative slug from the saved path (e.g., /alex-chloe/...)
         const parts = lastRead.split('/').filter(p => p.length > 0);
         if (parts.length >= 1) {
             const seriesSlug = parts[0];
             
-            // Fetch catalog to find the book cover and title
+            // Bridge server-side catalog into JS memory safely
             const catalog = <?php echo json_encode($books); ?>;
+            
+            // Match the slug to extract specific metadata (title/cover)
             const seriesData = catalog.find(b => b.slug === seriesSlug);
             
             if (seriesData) {
+                // Unhide the section and inject the data
                 document.getElementById('rs-home-jump-back').style.display = 'block';
                 document.getElementById('rs-jump-series').textContent = seriesData.title;
                 document.getElementById('rs-jump-part').textContent = "Continue your progress";
+                // Prepend base URL to image path
                 document.getElementById('rs-jump-cover').src = "<?php echo $cdnBaseUrl; ?>" + seriesData.image;
                 document.getElementById('rs-jump-btn').href = lastRead;
             }
         }
     }
 
-    // 2. Load Offline Shelf
+    // 2. Process "Offline Shelf" State
+    // Scan through all localStorage keys for active offline caches
     const offlineBooks = [];
     const catalog = <?php echo json_encode($books); ?>;
+    
     for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
+        // Identify offline indicator keys
         if (key.startsWith('rs-offline-')) {
             const seriesSlug = key.replace('rs-offline-', '');
+            // Only push if the cache flag is explicitly enabled ('true')
             if (localStorage.getItem(key) === 'true') {
                 const seriesData = catalog.find(b => b.slug === seriesSlug);
                 if (seriesData) {
@@ -141,15 +196,20 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
+    // If matches found, render the offline grid dynamically
     if (offlineBooks.length > 0) {
         const offlineShelf = document.getElementById('rs-home-offline');
         const offlineGrid = document.getElementById('rs-home-offline-grid');
+        // Unhide container
         offlineShelf.style.display = 'block';
         
+        // Generate DOM elements for each offline narrative
         offlineBooks.forEach(book => {
             const a = document.createElement('a');
             a.href = '/' + book.slug + '/';
             a.style = "text-decoration: none; color: inherit; display: block;";
+            
+            // Render card UI featuring an offline checkmark indicator
             a.innerHTML = `
                 <div style="width: 100%; aspect-ratio: 2/3; background-color: var(--rs-surface); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 0.5rem; position: relative;">
                     <img src="<?php echo $cdnBaseUrl; ?>${book.image}" alt="${book.title}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
@@ -163,7 +223,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // PWA Banner & Install Prompt
+    // 3. Initialize PWA Install Banner
     const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
     const banner = document.getElementById('rs-pwa-install-banner');
     const closeBtn = document.getElementById('rs-pwa-close-banner');
@@ -171,6 +231,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     let deferredPrompt;
 
+    // Manually display banner on iOS due to lacking browser API support
     if (!isStandalone && banner && localStorage.getItem('rs-pwa-banner-dismissed') !== 'true') {
         let isIos = () => /iphone|ipad|ipod/.test(window.navigator.userAgent.toLowerCase());
         if (isIos()) {
@@ -178,13 +239,13 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
+    // Capture standard install prompt events on supported platforms
     window.addEventListener('beforeinstallprompt', (e) => {
-        // Prevent Chrome 67 and earlier from automatically showing the prompt
+        // Prevent default native banner popups
         e.preventDefault();
-        // Stash the event so it can be triggered later.
         deferredPrompt = e;
         
-        // Show the install button and banner
+        // Show our themed banner
         if (!isStandalone && banner && localStorage.getItem('rs-pwa-banner-dismissed') !== 'true') {
             banner.style.display = 'flex';
             banner.querySelector('p').textContent = 'Install the web app for offline reading.';
@@ -194,11 +255,13 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
+    // Execute native prompt when user interacts with our button
     if (installBtn) {
         installBtn.addEventListener('click', async () => {
             if (deferredPrompt) {
                 deferredPrompt.prompt();
                 const { outcome } = await deferredPrompt.userChoice;
+                // Auto-dismiss banner if user accepts
                 if (outcome === 'accepted') {
                     if (banner) banner.style.display = 'none';
                 }
@@ -207,6 +270,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
+    // Persist user dismissal
     if (closeBtn) {
         closeBtn.addEventListener('click', () => {
             if (banner) banner.style.display = 'none';
@@ -215,4 +279,3 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 </script>
-

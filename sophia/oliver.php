@@ -1,12 +1,40 @@
 <?php
 /**
- * READING ENVIRONMENT (oliver.php)
- * ---------------------------------------------------------
- * This is the core reading interface (named 'Oliver' in-universe).
- * It dynamically loads and parses Markdown content files based on the requested URL.
- * It uses the Stardust Engine's routing JSON files to map a URL to an actual .md file.
- * This file handles parsing frontmatter, calculating navigation, and rendering the 
- * immersive reading pane.
+ * ============================================================================
+ * ARCHITECTURE & MODULE OVERVIEW: oliver.php
+ * ============================================================================
+ * Purpose:
+ * This file serves as the core reading interface ("Oliver"). It dynamically 
+ * routes requests, parses Markdown files from the CDN, extracts YAML frontmatter, 
+ * and renders the immersive narrative reading experience, including multimedia 
+ * integration (audio).
+ * 
+ * Architectural Role:
+ * The primary view engine for narrative content. It intercepts routing logic 
+ * using JSON maps, separating the UI from the raw content stored externally. 
+ * It converts standard Markdown to HTML via Parsedown while injecting custom 
+ * UI elements like ambient audio players, breadcrumbs, and social sharing links.
+ * 
+ * Key Components:
+ * 1. Routing Engine: Maps `$requestUri` to a physical `.md` path using a 
+ *    series-specific JSON route file (`data/routes/*.json`).
+ * 2. Markdown Parsing: Fetches content from the CDN, strips YAML frontmatter 
+ *    into an array (`$frontmatter`), and uses `StardustParsedown` to render.
+ * 3. Temporal Data Handling: Parses custom frontmatter keys (`stardate`, `date`, 
+ *    `timezone`) to render in-universe chronologies.
+ * 4. Audio Integration: Dynamically generates an HTML5 audio player if `audio` 
+ *    frontmatter exists, resolving tracks against `engine-room-records` metadata.
+ * 5. Special Pages: Handles TOCs and Landing pages by intercepting specific 
+ *    internal path keywords (`__TOC__`, `__LANDING__`) and delegating to sub-views.
+ * 
+ * Maintenance Notes:
+ * - Routing depends entirely on the JSON map. If a URL isn't in the JSON, it 404s.
+ * - Timezone conversions (`America/New_York`) use hardcoded maps for standard 
+ *   abbreviations (`EST/EDT`). Updates to PHP's timezone db or new abbreviations 
+ *   require updates to `$tzMap`.
+ * - Audio fetching logic relies on an assumed directory structure 
+ *   (`engine-room-records/artists/{artist}/{album}`).
+ * ============================================================================
  */
 
 // RaggieSoft Books - Markdown Viewer (Route JSON Driven)
@@ -15,6 +43,7 @@ $requestUri = rtrim($requestUri, '/');
 $parts = explode('/', ltrim($requestUri, '/'));
 $seriesSlug = $parts[0] ?? '';
 
+// Load the routing manifest for the specific series
 $routeFile = $basePath . '/data/routes/' . $seriesSlug . '.json';
 $routeData = [];
 $config = [];
@@ -30,6 +59,7 @@ if (file_exists($routeFile)) {
     }
 }
 
+// Exit early with an error state if the route does not exist
 if (empty($actualFilePath)) {
     echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; height: 100dvh; overflow-y: auto;"><div class="book-page"><h1>Chapter Not Found</h1><p>The requested route could not be found in the route map.</p></div></main>
 
@@ -46,6 +76,7 @@ $specialPageIndex1 = 0;
 $specialPageIndex2 = 0;
 $mdContent = '';
 
+// Handle programmatic view routing for tables of contents and landing pages
 if ($actualFilePath === '__SERIES_LANDING__') {
     $specialPageType = 'landing';
 } elseif ($actualFilePath === '__TOC__') {
@@ -60,12 +91,15 @@ if ($actualFilePath === '__SERIES_LANDING__') {
     $specialPageIndex1 = (int)($p[1] ?? 0);
     $specialPageIndex2 = (int)($p[2] ?? 0);
 } else {
+    // Standard content fetching block
     if (isset($prefetchedMdContent) && $prefetchedMdContent !== null) {
         $mdContent = $prefetchedMdContent;
     } else {
+        // Suppress errors and handle 404s gracefully via the check below
         $mdUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/' . $actualFilePath;
         $mdContent = @file_get_contents($mdUrl);
         if ($mdContent !== false) {
+            // Replace internal CDN macros
             $mdContent = str_replace('{{CDN}}', $cdnBaseUrl, $mdContent);
         }
     }
@@ -82,28 +116,36 @@ if ($mdContent === false && !$specialPageType) {
 
 // 2. Parse YAML Frontmatter
 $frontmatter = [];
+// Matches a block surrounded by '---' at the very start of the string
 if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $mdContent, $matches)) {
     $rawFrontmatter = $matches[1];
     $mdContent = substr($mdContent, strlen($matches[0])); // Strip it from the content
     
     $lines = explode("\n", $rawFrontmatter);
     $currentArrayKey = null;
+    
+    // Custom YAML parser optimized for simple key-value and list structures
     foreach ($lines as $line) {
         $trimmed = trim($line);
         if ($trimmed === '') continue;
         
+        // Handle array items (lines starting with '-')
         if (strpos($trimmed, '-') === 0 && $currentArrayKey) {
             $val = trim(substr($trimmed, 1));
             $val = trim($val, '"\'');
             $frontmatter[$currentArrayKey][] = $val;
-        } elseif (strpos($trimmed, ':') !== false) {
+        } 
+        // Handle key: value pairs
+        elseif (strpos($trimmed, ':') !== false) {
             list($key, $val) = explode(':', $trimmed, 2);
             $key = trim($key);
             $val = trim($val);
             if ($val === '') {
+                // Prepare for an array block
                 $currentArrayKey = $key;
                 $frontmatter[$currentArrayKey] = [];
             } else {
+                // Scalar value
                 $val = trim($val, '"\'');
                 $frontmatter[$key] = $val;
                 $currentArrayKey = null;
@@ -119,6 +161,7 @@ require_once $basePath . '/includes/classes/stardust-parsedown.php';
 $Parsedown = new StardustParsedown();
 if ($specialPageType) {
     ob_start();
+    // Dynamically require the correct PHP sub-view
     if ($specialPageType === 'landing') {
         require_once __DIR__ . '/landing.php';
     } elseif ($specialPageType === 'toc') {
@@ -130,6 +173,7 @@ if ($specialPageType) {
     }
     $htmlContent = ob_get_clean();
 } else {
+    // Parse Standard Markdown
     $htmlContent = $Parsedown->text($mdContent);
 }
 
@@ -141,6 +185,7 @@ $sequenceName = $routeData['common']['siteName'] ?? 'Ocean View Archives';
 // Fallback logic to generate previous/next if they aren't explicitly in the JSON
 $routeKeys = array_keys($routeData);
 $seriesSlugForFilter = '/' . ($seriesSlug ?? '');
+// Filter out non-content keys
 $filteredKeys = array_filter($routeKeys, function($k) use ($seriesSlugForFilter) { 
     return $k !== 'common' && $k !== $seriesSlugForFilter; 
 });
@@ -154,14 +199,19 @@ if ($currentIndex !== false) {
 $overviewUrl = '/' . $seriesSlug;
 $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
 $narrativeTheme = $frontmatter['theme'] ?? null;
+
+// Allow querystring override for theme previewing
 if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
     $narrativeTheme = preg_replace('/[^a-zA-Z0-9_-]/', '', $_GET['preview_theme']);
 }
 ?>
 <?php if ($narrativeTheme): ?>
+    <!-- Ambient CSS Themes and Animations -->
     <meta name="stardust-narrative-theme" content="<?php echo htmlspecialchars($narrativeTheme); ?>">
     <link id="narrative-theme-css" rel="stylesheet" href="<?php echo htmlspecialchars($cdnBaseUrl . '/raggiesoft-books/css/themes/' . $narrativeTheme . '.css'); ?>" disabled>
+    
     <?php if ($narrativeTheme === 'dark-rain'): ?>
+    <!-- Procedural Rain Generation for 'dark-rain' theme -->
     <div class="narrative-rain-container" aria-hidden="true">
         <?php for($i=0; $i<60; $i++): 
             $left = rand(0, 100);
@@ -188,6 +238,7 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
             $bookTitle = '';
             $chapTitle = '';
             
+            // Search the manifest for hierarchy titles to construct breadcrumbs
             if ($katie && isset($katie['books'])) {
                 foreach ($katie['books'] as $b) {
                     if (isset($b['chapters'])) {
@@ -228,6 +279,7 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                 </div>
                 <h1 class="reader-part-header"><?php echo htmlspecialchars($title); ?></h1>
                 
+                <!-- Temporal Metadata Rendering -->
                 <?php if (!empty($frontmatter['stardate']) || !empty($frontmatter['realm_time']) || !empty($frontmatter['date']) || !empty($frontmatter['start_time']) || !empty($frontmatter['pov']) || !empty($frontmatter['location']) || !empty($frontmatter['characters'])): ?>
                     <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; opacity: 0.7; font-size: 0.85rem; font-weight: 600;">
                         <?php if (!empty($frontmatter['stardate'])): ?>
@@ -249,6 +301,7 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                             $isoString = '';
                             if (!empty($frontmatter['start_time'])) {
                                 $rawTz = $frontmatter['timezone'] ?? 'America/New_York';
+                                // Map abbreviations to IANA strings for PHP DateTime
                                 $tzMap = [
                                     'ET' => 'America/New_York', 'EST' => 'America/New_York', 'EDT' => 'America/New_York',
                                     'PT' => 'America/Los_Angeles', 'PST' => 'America/Los_Angeles', 'PDT' => 'America/Los_Angeles',
@@ -291,6 +344,7 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
 
             <?php endif; // End if(!$specialPageType) ?>
 
+            <!-- Audio Player Integration -->
             <?php if (!empty($frontmatter['audio'])): ?>
                     <?php 
                         // Automatically prepend the artists directory path to simplify YAML frontmatter
@@ -301,6 +355,7 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                         }
                         $audioUrl = $cdnBaseUrl . '/' . $rawAudioPath; 
                         
+                        // Parse starting timestamp if provided (e.g., "1:30" or "90")
                         $audioStart = 0;
                         if (!empty($frontmatter['audio_start'])) {
                             $val = $frontmatter['audio_start'];
@@ -314,6 +369,7 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                             }
                         }
 
+                        // Extract artist and album info from path conventions
                         $audioParts = explode('/', $strippedAudioPath);
                         $artistSlug = $audioParts[0] ?? '';
                         $albumSlug = $audioParts[1] ?? '';
@@ -327,7 +383,7 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                         $albumDisplay = 'Stardust Engine Narratives';
                         $albumArtUrl = $cdnBaseUrl . '/engine-room-records/artists/' . $artistSlug . '/' . $albumSlug . '/album-art.jpg';
                         
-                        // Fetch Metadata from CDN
+                        // Fetch Metadata from CDN JSONs for accurate track info
                         $albumJsonUrl = $cdnBaseUrl . '/engine-room-records/artists/' . $artistSlug . '/' . $albumSlug . '/album.json';
                         $tracksJsonUrl = $cdnBaseUrl . '/engine-room-records/artists/' . $artistSlug . '/' . $albumSlug . '/tracks.json';
                         
@@ -351,6 +407,7 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                             }
                         }
                         
+                        // Extract external streaming links
                         $spotifyUrl = $appleUrl = $amazonUrl = $youtubeUrl = $storeStandardUrl = $storeAudiophileUrl = null;
                         
                         $artistAlbumsJsonUrl = $cdnBaseUrl . '/engine-room-records/artists/' . $artistSlug . '/albums.json';
@@ -391,6 +448,7 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                                     <span class="reader-audio-scroll-text"><?php echo htmlspecialchars($artistDisplay); ?> &bull; <i><?php echo htmlspecialchars($albumDisplay); ?></i></span>
                                 </div>
                                 
+                                <!-- Custom HTML5 Audio Player UI -->
                                 <div class="reader-audio-controls-row">
                                     <audio id="narrative-audio-element" data-title="<?php echo htmlspecialchars($audioTitleDisplay); ?>" data-artist="<?php echo htmlspecialchars($artistDisplay); ?>" data-album="<?php echo htmlspecialchars($albumDisplay); ?>" data-artwork="<?php echo htmlspecialchars($albumArtUrl); ?>" src="<?php echo htmlspecialchars($audioUrl); ?>" data-start-time="<?php echo $audioStart; ?>" loop preload="metadata" style="display: none;"></audio>
                                     
@@ -416,7 +474,8 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                             </div>
                         </div>
                         
-                                                <?php if ($spotifyUrl || $appleUrl || $amazonUrl || $youtubeUrl || $storeStandardUrl || $storeAudiophileUrl): ?>
+                        <!-- Streaming Support Links -->
+                        <?php if ($spotifyUrl || $appleUrl || $amazonUrl || $youtubeUrl || $storeStandardUrl || $storeAudiophileUrl): ?>
                         <div style="background: var(--rs-bg); border-top: 1px solid var(--rs-border); padding: 0.75rem 1rem; display: flex; flex-direction: column; gap: 0.5rem; align-items: center; text-align: center;">
                             <div style="font-size: 0.8rem; opacity: 0.7;">The background audio is a low-quality stream. To hear the full high-fidelity mix (and support the author), please stream it on your favorite service:</div>
                             <div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
@@ -514,5 +573,6 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
 <style>
 #stardust-reading-pane { padding-bottom: 6rem !important; }
 </style>    qw
+
 
 

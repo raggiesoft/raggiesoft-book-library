@@ -1,8 +1,42 @@
 <?php
+/**
+ * ============================================================================
+ * ARCHITECTURE & MODULE OVERVIEW: catalog.php
+ * ============================================================================
+ * Purpose:
+ * This file renders the standalone "Library" view (internally named Sophia).
+ * It fetches the master catalog JSON directly from the CDN and provides an 
+ * interface for users to browse, search, and organize their narrative 
+ * collections using a drag-and-drop UI.
+ * 
+ * Architectural Role:
+ * Serves as the primary entry point for users to discover and organize content.
+ * It operates independently of the core reading engine (Oliver) but relies on 
+ * the same CDN backend for data. It includes offline support prompts (PWA) 
+ * and local storage persistence for custom collections.
+ * 
+ * Key Components:
+ * 1. Data Fetching: Retrieves `catalog.json` from the CDN.
+ * 2. UI Layout: A mobile-first, native-app-styled grid layout.
+ * 3. Search functionality: Client-side searching via `search-index.json`.
+ * 4. PWA Integration: Banner and logic to prompt "Add to Home Screen".
+ * 5. Collection Management: Uses SortableJS to allow drag-and-drop book 
+ *    organization, saved entirely client-side in `localStorage`.
+ * 
+ * Maintenance Notes:
+ * - SortableJS logic and DOM manipulation are tightly coupled. Changes to the 
+ *   HTML structure (like `.rs-collection-block` or `.rs-book-card`) require 
+ *   updating the JavaScript selectors.
+ * - LocalStorage is the sole source of truth for custom collections. Clearing 
+ *   browser data will reset the user's library.
+ * ============================================================================
+ */
+
 // Sophia's Catalog View (Standalone Library View)
 global $cdnBaseUrl, $siteName, $requestUri;
 
 // Fetch the master catalog directly from the CDN
+// Utilizing error suppression (@) to prevent catastrophic UI failure on network issues.
 $catalogUrl = $cdnBaseUrl . '/raggiesoft-books/books/catalog.json';
 $catalogData = @file_get_contents($catalogUrl);
 $books = [];
@@ -28,6 +62,7 @@ if ($catalogData) {
                 </p>
             </div>
             <div style="display: flex; gap: 0.5rem; align-items: center;">
+                <!-- Collection Organization Toggle Buttons -->
                 <button id="rs-organize-btn" class="rs-btn" style="background: transparent; color: var(--rs-primary); border: none; padding: 0.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;" title="Organize Library">
                     <i class="ph ph-folder" style="font-size: 1.75rem;"></i>
                 </button>
@@ -41,6 +76,7 @@ if ($catalogData) {
         </div>
 
         <!-- Add to Home Screen Banner -->
+        <!-- Displayed specifically for iOS/Mobile users not running in standalone mode -->
         <div id="rs-pwa-install-banner" style="display: none; background: var(--rs-primary, #0056b3); color: white; border-radius: 12px; padding: 1rem; margin-bottom: 2rem; align-items: flex-start; justify-content: space-between; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
             <div style="display: flex; align-items: flex-start; gap: 1rem; flex: 1;">
                 <div style="width: 48px; height: 48px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0;">
@@ -58,6 +94,7 @@ if ($catalogData) {
         </div>
 
         <!-- Full Width Search Bar -->
+        <!-- Drives the instant client-side search component -->
         <div style="position: relative; width: 100%; margin-bottom: 2rem;">
             <div style="position: relative; display: flex; align-items: center;">
                 <i class="ph ph-magnifying-glass" style="position: absolute; left: 1rem; color: var(--rs-text); opacity: 0.5; font-size: 1.25rem;"></i>
@@ -72,6 +109,7 @@ if ($catalogData) {
     <div style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
         
         <?php if (empty($books)): ?>
+            <!-- Fallback state when CDN is unreachable or catalog is empty -->
             <div style="text-align: center; padding: 4rem 0; opacity: 0.7;">
                 <i class="ph ph-books" style="font-size: 4rem; color: var(--rs-primary); margin-bottom: 1rem;"></i>
                 <h2>Library Offline</h2>
@@ -80,6 +118,7 @@ if ($catalogData) {
         <?php else: ?>
             <div id="rs-collections-container">
                 <!-- Template for new collections -->
+                <!-- Cloned via JS when a user creates a new organizational tier -->
                 <template id="rs-collection-template">
                     <div class="rs-collection-block" style="margin-bottom: 2rem;">
                         <div class="rs-collection-header" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
@@ -92,6 +131,8 @@ if ($catalogData) {
                     </div>
                 </template>
 
+                <!-- Default Collection Pool -->
+                <!-- Contains all books by default before user organization -->
                 <div class="rs-collection-block" data-collection-id="default" style="margin-bottom: 2rem;">
                     <div class="rs-collection-header" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
                         <h2 class="rs-collection-title" style="font-size: 1.25rem; font-weight: 700; margin: 0; color: var(--rs-heading); display: none;">Uncategorized</h2>
@@ -107,6 +148,7 @@ if ($catalogData) {
                             $readLink = '/' . $slug . '/';
                         ?>
                         
+                        <!-- Individual Book Card -->
                         <a href="<?php echo htmlspecialchars($readLink); ?>" class="rs-book-card" data-slug="<?php echo htmlspecialchars($slug); ?>" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; transition: transform 0.2s ease;">
                             <!-- Cover Image -->
                             <div style="width: 100%; aspect-ratio: 2/3; background-color: var(--rs-surface); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); position: relative; margin-bottom: 0.75rem; border: 1px solid rgba(255,255,255,0.05);">
@@ -167,7 +209,7 @@ document.addEventListener("DOMContentLoaded", function() {
             block.querySelector('.rs-collection-title').textContent = col.name;
             const grid = block.querySelector('.rs-book-grid');
             
-            // Move books that belong here
+            // Move books that belong here based on slug
             col.books.forEach(slug => {
                 const bookCard = defaultPool.querySelector(`.rs-book-card[data-slug="${slug}"]`);
                 if (bookCard) {
@@ -195,6 +237,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Toggle Organize Mode
+    // Switches UI state between reading and dragging/dropping.
     function toggleOrganizeMode() {
         isOrganizeMode = !isOrganizeMode;
         
@@ -204,7 +247,7 @@ document.addEventListener("DOMContentLoaded", function() {
             addCollectionBtn.style.display = 'block';
             defaultTitle.style.display = 'block';
             
-            // Enable editing titles
+            // Enable editing titles inline
             document.querySelectorAll('.rs-collection-title').forEach(title => {
                 title.contentEditable = "true";
                 title.style.borderBottom = "1px solid var(--rs-primary)";
@@ -218,7 +261,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 btn.style.display = 'block';
             });
             
-            // Prevent link clicks on book cards while sorting
+            // Prevent link clicks on book cards while sorting to avoid navigation
             document.querySelectorAll('.rs-book-card').forEach(card => {
                 card.style.pointerEvents = 'none';
                 card.style.opacity = '0.8';
@@ -231,10 +274,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 grid.style.borderColor = 'color-mix(in srgb, var(--rs-primary) 30%, transparent)';
             });
 
-            // Initialize Sortable
+            // Initialize Sortable logic
             initSortable();
         } else {
-            // Save state
+            // Save state upon exiting organize mode
             saveCollections();
 
             organizeBtn.style.display = 'flex';
@@ -265,7 +308,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 btn.style.display = 'none';
             });
 
-            // Re-enable links
+            // Re-enable links for reading
             document.querySelectorAll('.rs-book-card').forEach(card => {
                 card.style.pointerEvents = 'auto';
                 card.style.opacity = '1';
@@ -278,7 +321,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 grid.style.borderColor = 'transparent';
             });
 
-            // Destroy Sortable
+            // Destroy Sortable instances to free resources and prevent glitches
             sortables.forEach(s => s.destroy());
             sortables = [];
         }
@@ -353,7 +396,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const block = btn.closest('.rs-collection-block');
             const grid = block.querySelector('.rs-book-grid');
             
-            // Move remaining books back to default pool
+            // Move remaining books back to default pool to prevent data loss
             Array.from(grid.children).forEach(child => {
                 defaultPool.appendChild(child);
             });
@@ -387,6 +430,7 @@ document.addEventListener("DOMContentLoaded", function() {
     let searchIndex = null;
     let isFetching = false;
 
+    // Search index loaded dynamically on focus
     const searchIndexUrl = 'https://assets.raggiesoft.com/raggiesoft-books/json/search-index.json';
 
     if (searchInput) {
@@ -406,6 +450,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const query = e.target.value.toLowerCase().trim();
             resultsContainer.innerHTML = '';
 
+            // Require minimum 3 chars to prevent lag
             if (query.length < 3 || !searchIndex) {
                 resultsContainer.style.display = 'none';
                 return;
@@ -416,7 +461,7 @@ document.addEventListener("DOMContentLoaded", function() {
                        (item.content && item.content.toLowerCase().includes(query)) ||
                        (item.book && item.book.toLowerCase().includes(query)) ||
                        (item.series && item.series.toLowerCase().includes(query));
-            }).slice(0, 10); // Show top 10
+            }).slice(0, 10); // Limit to top 10 for UI performance
 
             if (results.length > 0) {
                 results.forEach(item => {

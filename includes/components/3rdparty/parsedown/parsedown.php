@@ -1,5 +1,32 @@
 <?php
 
+/**
+ * ============================================================================
+ * ARCHITECTURE & MODULE OVERVIEW: parsedown.php
+ * ============================================================================
+ * Purpose:
+ * Parsedown is a fast, third-party Markdown parser for PHP. It takes raw 
+ * Markdown strings and converts them into valid HTML.
+ * 
+ * Architectural Role:
+ * Integrated into the Stardust Engine via `StardustParsedown` (which extends 
+ * this class) to render narrative content. It handles the core conversion 
+ * logic for headers, lists, italics, bold, code blocks, etc.
+ * 
+ * Key Components:
+ * 1. Line Processing: Splits text into blocks based on newline characters 
+ *    and leading markers.
+ * 2. Inline Processing: Scans blocks for inline formatting syntax.
+ * 3. Security: Includes a `safeMode` toggle to strip potentially dangerous 
+ *    HTML from untrusted user input (though typically narratives are trusted).
+ * 
+ * Maintenance Notes:
+ * - This is a 3rd party dependency (v1.8.0). DO NOT modify internal parsing 
+ *   logic here to avoid upgrade headaches. All custom parsing rules specific 
+ *   to RaggieSoft Books should be placed in the `StardustParsedown` child class.
+ * ============================================================================
+ */
+
 #
 #
 # Parsedown

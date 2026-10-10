@@ -1,10 +1,27 @@
 <?php
 /**
- * SETTINGS & ABOUT VIEW (settings.php)
- * ---------------------------------------------------------
- * This file replaces the old settings dialog, presenting the user
- * with a full-page interface for reading preferences, developer credits,
- * and legal/accessibility information.
+ * =============================================================================
+ * Architecture & Maintenance Guide: settings.php
+ * =============================================================================
+ * Purpose:
+ *     This file handles the global preferences and "About" interface for the 
+ *     Ocean View Archives reader. It allows users to modify typography, theme, 
+ *     and line spacing, while also presenting legal information and credits.
+ *
+ * Design Principles:
+ *     - Client-Side Persistence: All settings are immediately saved to `localStorage` 
+ *       via JavaScript, avoiding unnecessary backend state or cookies.
+ *     - Real-Time Updates: The `applyThemeGlobally()` function dispatches a custom 
+ *       event (`rs-settings-changed`) to instantly update the UI without reloading.
+ *     - Lore Integration: The "About" section explicitly references the narrative 
+ *       lore (e.g., Isabel as the developer) to maintain immersion.
+ *
+ * Maintenance Notes:
+ *     - When adding new themes or fonts, ensure the corresponding CSS classes 
+ *       (e.g., `theme-[name]`) exist in the main stylesheet.
+ *     - The `applyThemeGlobally` logic must clear all possible existing theme classes 
+ *       before applying the new one. Keep the class list updated here.
+ * =============================================================================
  */
 
 // Import global variables from the Stardust routing engine
@@ -13,7 +30,7 @@ global $cdnBaseUrl, $siteName, $requestUri;
 
 <!-- 
   MAIN CONTAINER
-  We use flex: 1 and a bottom padding to ensure the content doesn't get 
+  We use flex: 1 and a bottom padding (6rem) to ensure the content doesn't get 
   hidden behind the fixed bottom navigation bar on mobile devices.
 -->
 <div class="stardust-mobile-scroll" style="flex: 1; background: var(--rs-bg); padding-bottom: 6rem;">
@@ -44,6 +61,7 @@ global $cdnBaseUrl, $siteName, $requestUri;
                     <label style="display: block; font-weight: bold; margin-bottom: 0.5rem; font-size: 0.95rem;">Font Size</label>
                     <div style="display: flex; align-items: center; gap: 1rem;">
                         <button type="button" id="rs-settings-font-dec" class="rs-btn" style="flex: 1; font-size: 1.2rem;">A-</button>
+                        <!-- Dynamic readout of current font size percentage -->
                         <span id="rs-settings-font-val" style="font-weight: bold; font-family: monospace; font-size: 1.1rem; min-width: 3ch; text-align: center;">100</span>
                         <button type="button" id="rs-settings-font-inc" class="rs-btn" style="flex: 1; font-size: 1.2rem;">A+</button>
                     </div>
@@ -213,32 +231,32 @@ document.addEventListener("DOMContentLoaded", function() {
     
     // --- LOAD CURRENT SETTINGS FROM LOCALSTORAGE ---
     
-    // 1. Font Size
+    // 1. Initialize Font Size UI
     const currentSizeStr = localStorage.getItem('rs-font-size') || '100';
     let currentSize = parseInt(currentSizeStr, 10);
     const sizeValDisplay = document.getElementById('rs-settings-font-val');
     sizeValDisplay.textContent = currentSize;
 
-    // 2. Theme
+    // 2. Initialize Theme Select UI
     const currentTheme = localStorage.getItem('rs-theme') || 'auto';
     const themeSelect = document.getElementById('rs-settings-theme');
     if(themeSelect) themeSelect.value = currentTheme;
 
-    // 3. Font Family
+    // 3. Initialize Font Family UI
     const currentFont = localStorage.getItem('rs-font-family') || 'system-ui';
     const fontSelect = document.getElementById('rs-settings-font-family');
     if(fontSelect) fontSelect.value = currentFont;
 
-    // 4. Line Spacing (Line Height)
+    // 4. Initialize Line Spacing UI
     const currentLH = localStorage.getItem('rs-line-height') || '1.6';
     const lhSelect = document.getElementById('rs-settings-line-height');
     if(lhSelect) lhSelect.value = currentLH;
     
     // --- EVENT LISTENERS FOR CONTROLS ---
 
-    // Decrease Font Size
+    // Decrease Font Size logic
     document.getElementById('rs-settings-font-dec').addEventListener('click', () => {
-        if (currentSize > 60) {
+        if (currentSize > 60) { // Enforce minimum bound
             currentSize -= 10;
             localStorage.setItem('rs-font-size', currentSize);
             sizeValDisplay.textContent = currentSize;
@@ -246,9 +264,9 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Increase Font Size
+    // Increase Font Size logic
     document.getElementById('rs-settings-font-inc').addEventListener('click', () => {
-        if (currentSize < 200) {
+        if (currentSize < 200) { // Enforce maximum bound
             currentSize += 10;
             localStorage.setItem('rs-font-size', currentSize);
             sizeValDisplay.textContent = currentSize;
@@ -256,33 +274,34 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 
-    // Handle Theme Change
+    // Handle Theme Change explicitly
     themeSelect.addEventListener('change', (e) => {
         localStorage.setItem('rs-theme', e.target.value);
         applyThemeGlobally();
     });
 
-    // Handle Font Family Change
+    // Handle Font Family Change explicitly
     fontSelect.addEventListener('change', (e) => {
         localStorage.setItem('rs-font-family', e.target.value);
         applyThemeGlobally();
     });
 
-    // Handle Line Spacing Change
+    // Handle Line Spacing Change explicitly
     lhSelect.addEventListener('change', (e) => {
         localStorage.setItem('rs-line-height', e.target.value);
         applyThemeGlobally();
     });
 
-    // Reset All Settings
+    // Handle complete settings reset
     document.getElementById('rs-settings-reset-all').addEventListener('click', () => {
+        // Require explicit confirmation to prevent accidental data loss
         if(confirm("Are you sure you want to reset all reading settings to default?")) {
             localStorage.removeItem('rs-font-size');
             localStorage.removeItem('rs-theme');
             localStorage.removeItem('rs-font-family');
             localStorage.removeItem('rs-line-height');
             
-            // Reload page to re-initialize defaults
+            // Reload page to re-initialize defaults naturally
             window.location.reload();
         }
     });
@@ -294,12 +313,14 @@ document.addEventListener("DOMContentLoaded", function() {
      */
     function applyThemeGlobally() {
         const theme = localStorage.getItem('rs-theme') || 'auto';
-        // Strip out any previously applied theme classes
+        // Strip out any previously applied theme classes to prevent conflicts
         document.body.classList.remove('theme-auto', 'theme-light', 'theme-sepia', 'theme-dark', 'theme-dark-sepia', 'theme-sepia-system');
-        // Add the new theme class
+        
+        // Add the newly selected theme class
         document.body.classList.add('theme-' + theme);
 
         // Dispatch a custom event in case other components (like reader.js) are listening
+        // This is crucial for decoupled UI elements that need to react to theme shifts
         const event = new CustomEvent('rs-settings-changed');
         document.dispatchEvent(event);
     }

@@ -2,9 +2,23 @@
 /**
  * BOOKMARKS VIEW (bookmarks.php)
  * ---------------------------------------------------------
- * This file renders the "Bookmarks" tab in the bottom navigation.
- * It reads from the browser's localStorage to find any chapters
- * the user has bookmarked, and displays them in a scrollable list.
+ * Architectural Block Comment:
+ * File: bookmarks.php
+ * Purpose:
+ *     This file renders the "Bookmarks" tab in the bottom navigation of the Stardust Engine reading interface.
+ *     It provides a UI shell for displaying chapters that a user has bookmarked. Because bookmarks are stored 
+ *     locally in the user's browser (localStorage) to respect privacy and support offline functionality, 
+ *     this file relies heavily on client-side JavaScript to actually populate the list.
+ * 
+ * Design Decisions & Future Maintenance:
+ *     - Architecture: PHP handles the server-side layout and attempts to preload the global catalog JSON. 
+ *       The JavaScript uses this preloaded catalog to match local bookmark records (which only store slugs) 
+ *       with rich metadata (like cover images and proper titles).
+ *     - Error Suppression: `@file_get_contents($catalogUrl)` is used intentionally. If the CDN goes down, 
+ *       we don't want a PHP fatal error breaking the whole page; instead, `$books` defaults to an empty array 
+ *       and JS falls back to placeholder data.
+ *     - Layout: Uses flexbox and Mobile-first UI principles, ensuring the `stardust-mobile-scroll` container 
+ *       clears the fixed iOS-style bottom tab bar.
  */
 
 // Import global variables from the Stardust routing engine
@@ -16,7 +30,7 @@ $catalogUrl = $cdnBaseUrl . '/raggiesoft-books/books/catalog.json';
 $catalogData = @file_get_contents($catalogUrl);
 $books = [];
 
-// Decode the JSON catalog into a PHP array so we can look up book data
+// Decode the JSON catalog into a PHP array so we can look up book data later in JS.
 if ($catalogData) {
     $books = json_decode($catalogData, true) ?? [];
 }
@@ -28,6 +42,7 @@ if ($catalogData) {
   hidden behind the fixed bottom navigation bar on mobile devices.
 -->
 <div class="stardust-mobile-scroll" style="flex: 1; background: var(--rs-bg); padding-bottom: 6rem;">
+    <!-- Container wrapper with max-width for desktop, and safe-area adjustments for mobile -->
     <div style="max-width: 1200px; margin: 0 auto; padding: calc(1.5rem + env(safe-area-inset-top, 0px)) 1.5rem 1rem;">
         
         <!-- HEADER SECTION -->
@@ -87,6 +102,7 @@ document.addEventListener("DOMContentLoaded", function() {
         emptyMsg.style.display = 'none';
         
         // Pass the PHP catalog array into JavaScript so we can look up cover images
+        // Safely encoded via json_encode to prevent JS injection vulnerabilities.
         const catalog = <?php echo json_encode($books); ?>;
         
         // Iterate through each bookmark and build the UI
@@ -100,7 +116,7 @@ document.addEventListener("DOMContentLoaded", function() {
             div.href = bm.url; // The URL saved when the user clicked bookmark
             div.style = "display: flex; gap: 1rem; padding: 1rem; background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 12px; text-decoration: none; color: inherit; margin-bottom: 1rem; align-items: center;";
             
-            // Inject the HTML structure for the bookmark card
+            // Inject the HTML structure for the bookmark card, applying the PHP CDN base URL.
             div.innerHTML = `
                 <!-- Book Cover Thumbnail -->
                 <div style="width: 60px; height: 90px; flex-shrink: 0; border-radius: 4px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
