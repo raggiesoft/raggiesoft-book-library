@@ -98,6 +98,15 @@ global $cdnBaseUrl, $siteName, $requestUri;
                         <option value="opendyslexic">OpenDyslexic</option>
                     </select>
                 </div>
+                
+                <!-- FOREIGN LANGUAGE DISPLAY -->
+                <div>
+                    <label for="rs-settings-translation" style="display: block; font-weight: bold; margin-bottom: 0.5rem; font-size: 0.95rem;">Foreign Language Display</label>
+                    <select id="rs-settings-translation" class="rs-input" style="width: 100%; padding: 0.75rem; font-size: 1rem;">
+                        <option value="original">Original Text (Tap to Translate)</option>
+                        <option value="translated">English Translation (Tap for Original)</option>
+                    </select>
+                </div>
 
                                 <!-- BACKGROUND AUDIO -->
                 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -207,7 +216,8 @@ global $cdnBaseUrl, $siteName, $requestUri;
             fontSize: 1.15,
             width: 'default',
             fontFamily: 'system',
-            autoPlayAudio: 'false'
+            autoPlayAudio: 'false',
+            translationMode: 'original'
         };
         try {
             const stored = localStorage.getItem('reader-settings');
@@ -246,6 +256,9 @@ global $cdnBaseUrl, $siteName, $requestUri;
 
     const fontSelect = document.getElementById('rs-settings-font-family');
     if(fontSelect) fontSelect.value = settings.fontFamily || 'system';
+    
+    const transSelect = document.getElementById('rs-settings-translation');
+    if(transSelect) transSelect.value = settings.translationMode || 'original';
 
     const audioSelect = document.getElementById('rs-settings-audio');
     if (audioSelect) audioSelect.checked = (settings.autoPlayAudio === 'true');

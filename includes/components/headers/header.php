@@ -36,7 +36,7 @@
 $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? ' theme-dark' : '';
 ?>
 <!DOCTYPE html>
-<html lang="en" style="color-scheme: light dark;">
+<html lang="en-US" style="color-scheme: light dark;">
 <head>
     <meta charset="UTF-8">
     <!-- Viewport configuration prevents zooming on input focus, essential for native app feel -->
