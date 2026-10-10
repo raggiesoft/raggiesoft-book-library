@@ -201,18 +201,32 @@ global $cdnBaseUrl, $siteName, $requestUri;
 (function() {
     // Helper to get reader settings
     function getReaderSettings() {
-        try {
-            const stored = localStorage.getItem('reader-settings');
-            if (stored) return JSON.parse(stored);
-        } catch(e) {}
-        return {
+        let defaultSettings = {
             theme: 'auto',
             customThemeEnabled: true,
             fontSize: 1.15,
             width: 'default',
-            fontFamily: 'system-ui, -apple-system, sans-serif',
+            fontFamily: 'system',
             autoPlayAudio: 'false'
         };
+        try {
+            const stored = localStorage.getItem('reader-settings');
+            if (stored) {
+                let parsed = JSON.parse(stored);
+                // Migrate legacy font family strings to simple keys
+                if (parsed.fontFamily) {
+                    let ff = parsed.fontFamily.toLowerCase();
+                    if (ff.includes('opendyslexic')) parsed.fontFamily = 'opendyslexic';
+                    else if (ff.includes('atkinson')) parsed.fontFamily = 'atkinson';
+                    else if (ff.includes('inter')) parsed.fontFamily = 'inter';
+                    else if (ff.includes('lora')) parsed.fontFamily = 'lora';
+                    else if (ff.includes('georgia')) parsed.fontFamily = 'georgia';
+                    else if (ff.includes('system') || ff.includes('sans-serif') || ff.includes('apple-system')) parsed.fontFamily = 'system';
+                }
+                return Object.assign({}, defaultSettings, parsed);
+            }
+        } catch(e) {}
+        return defaultSettings;
     }
 
     function saveReaderSettings(settings) {
