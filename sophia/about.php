@@ -92,6 +92,11 @@ global $cdnBaseUrl;
                     <span style="display: flex; align-items: center; gap: 0.75rem;"><i class="ph ph-lock-key" style="font-size: 1.25rem; color: var(--rs-primary);"></i> Privacy Policy</span>
                     <i class="ph ph-arrow-up-right" style="opacity: 0.5;"></i>
                 </a>
+                
+                <a href="https://raggiesoft.com/about/ai-disclaimer" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: var(--rs-text); padding: 0.75rem; border-radius: 8px; background: rgba(0,0,0,0.03);">
+                    <span style="display: flex; align-items: center; gap: 0.75rem;"><i class="ph ph-robot" style="font-size: 1.25rem; color: var(--rs-primary);"></i> AI Disclaimer</span>
+                    <i class="ph ph-arrow-up-right" style="opacity: 0.5;"></i>
+                </a>
             </div>
             
             <hr style="border: 0; border-top: 1px solid var(--rs-border); margin: 1.5rem 0;">

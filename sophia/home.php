@@ -66,9 +66,7 @@ if ($catalogData) {
                 </h1>
             </div>
             
-            <button id="reader-settings-toggle" class="rs-btn" style="background: transparent; color: var(--rs-primary); border: none; padding: 0.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;">
-                <i class="ph ph-gear" style="font-size: 1.75rem;"></i>
-            </button>
+
         </div>
 
         <!-- 
@@ -153,7 +151,9 @@ if ($catalogData) {
 -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    
+    // Safely inject PHP catalog into JS context once
+    const catalog = <?php echo json_encode($books, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?: '[]'; ?>;
+
     // 0. Update Greeting text based on the user's current local hour
     const hour = new Date().getHours();
     let greeting = 'Good evening';
@@ -171,9 +171,6 @@ document.addEventListener("DOMContentLoaded", function() {
         const parts = lastRead.split('/').filter(p => p.length > 0);
         if (parts.length >= 1) {
             const seriesSlug = parts[0];
-            
-            // Bridge server-side catalog into JS memory safely
-            const catalog = <?php echo json_encode($books); ?>;
             
             // Match the slug to extract specific metadata (title/cover)
             const seriesData = catalog.find(b => b.slug === seriesSlug);
@@ -198,7 +195,6 @@ document.addEventListener("DOMContentLoaded", function() {
     // 2. Process "Offline Shelf" State
     // Scan through all localStorage keys for active offline caches
     const offlineBooks = [];
-    const catalog = <?php echo json_encode($books); ?>;
     
     for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);

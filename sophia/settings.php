@@ -150,8 +150,8 @@ global $cdnBaseUrl, $siteName, $requestUri;
                     <i class="ph ph-shield-check"></i> Privacy Policy <i class="ph ph-arrow-square-out" style="margin-left: auto; opacity: 0.5;"></i>
                 </a>
                 
-                <a href="https://raggiesoft.com/about/ai-policy" target="_blank" class="rs-btn" style="text-align: left; display: flex; align-items: center; gap: 0.5rem; background: var(--rs-bg); border: 1px solid var(--rs-border); color: var(--rs-text); justify-content: flex-start;">
-                    <i class="ph ph-robot"></i> AI Policy <i class="ph ph-arrow-square-out" style="margin-left: auto; opacity: 0.5;"></i>
+                <a href="https://raggiesoft.com/about/ai-disclaimer" target="_blank" class="rs-btn" style="text-align: left; display: flex; align-items: center; gap: 0.5rem; background: var(--rs-bg); border: 1px solid var(--rs-border); color: var(--rs-text); justify-content: flex-start;">
+                    <i class="ph ph-robot"></i> AI Disclaimer <i class="ph ph-arrow-square-out" style="margin-left: auto; opacity: 0.5;"></i>
                 </a>
 
                 
