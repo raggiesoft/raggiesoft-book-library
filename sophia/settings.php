@@ -99,7 +99,25 @@ global $cdnBaseUrl, $siteName, $requestUri;
                     </select>
                 </div>
 
-                                <!-- LAUNCH BEHAVIOR SELECTOR -->
+                                <!-- BACKGROUND AUDIO -->
+                <div>
+                    <label for="rs-settings-audio" style="display: block; font-weight: bold; margin-bottom: 0.5rem; font-size: 0.95rem;">Background Audio</label>
+                    <select id="rs-settings-audio" class="rs-input" style="width: 100%; padding: 0.75rem; font-size: 1rem;">
+                        <option value="false">Off (Default)</option>
+                        <option value="true">Auto-Play On</option>
+                    </select>
+                </div>
+
+                <!-- NARRATIVE THEMES TOGGLE -->
+                <div>
+                    <label for="rs-settings-narrative-themes" style="display: block; font-weight: bold; margin-bottom: 0.5rem; font-size: 0.95rem;">Narrative Themes</label>
+                    <select id="rs-settings-narrative-themes" class="rs-input" style="width: 100%; padding: 0.75rem; font-size: 1rem;">
+                        <option value="true">On (Allow Book-Specific Themes)</option>
+                        <option value="false">Off (Force Global Theme)</option>
+                    </select>
+                </div>
+
+                <!-- LAUNCH BEHAVIOR SELECTOR -->
                 <div>
                     <label for="rs-settings-launch-behavior" style="display: block; font-weight: bold; margin-bottom: 0.5rem; font-size: 0.95rem;">On App Launch</label>
                     <select id="rs-settings-launch-behavior" class="rs-input" style="width: 100%; padding: 0.75rem; font-size: 1rem;">
@@ -187,114 +205,124 @@ global $cdnBaseUrl, $siteName, $requestUri;
 -->
 <script>
 document.addEventListener("DOMContentLoaded", function() {
-    
-    // --- LOAD CURRENT SETTINGS FROM LOCALSTORAGE ---
-    
-    // 1. Initialize Font Size UI
-    const currentSizeStr = localStorage.getItem('rs-font-size') || '100';
-    let currentSize = parseInt(currentSizeStr, 10);
+    // Helper to get reader settings
+    function getReaderSettings() {
+        try {
+            const stored = localStorage.getItem('reader-settings');
+            if (stored) return JSON.parse(stored);
+        } catch(e) {}
+        return {
+            theme: 'auto',
+            customThemeEnabled: true,
+            fontSize: 1.15,
+            width: 'default',
+            fontFamily: 'system-ui, -apple-system, sans-serif',
+            autoPlayAudio: 'false'
+        };
+    }
+
+    function saveReaderSettings(settings) {
+        localStorage.setItem('reader-settings', JSON.stringify(settings));
+    }
+
+    const settings = getReaderSettings();
+
+    // 1. Initialize Font Size UI (Map 1.15 to something like 100%)
+    let currentSize = settings.fontSize || 1.15;
     const sizeValDisplay = document.getElementById('rs-settings-font-val');
-    sizeValDisplay.textContent = currentSize;
+    if (sizeValDisplay) sizeValDisplay.textContent = Math.round((currentSize / 1.15) * 100) + '%';
 
-    // 2. Initialize Theme Select UI
-    const currentTheme = localStorage.getItem('rs-theme') || 'auto';
+    // 2. Initialize UI Elements
     const themeSelect = document.getElementById('rs-settings-theme');
-    if(themeSelect) themeSelect.value = currentTheme;
+    if(themeSelect) themeSelect.value = settings.theme || 'auto';
 
-    // 3. Initialize Font Family UI
-    const currentFont = localStorage.getItem('rs-font-family') || 'system-ui';
     const fontSelect = document.getElementById('rs-settings-font-family');
-    if(fontSelect) fontSelect.value = currentFont;
+    if(fontSelect) fontSelect.value = settings.fontFamily || 'system-ui, -apple-system, sans-serif';
 
-        // 3.5. Initialize Launch Behavior UI
-    const currentLaunch = localStorage.getItem('rs-launch-behavior') || 'home';
+    const audioSelect = document.getElementById('rs-settings-audio');
+    if (audioSelect) audioSelect.value = settings.autoPlayAudio || 'false';
+
+    const narrativeThemesSelect = document.getElementById('rs-settings-narrative-themes');
+    if (narrativeThemesSelect) narrativeThemesSelect.value = (settings.customThemeEnabled !== false) ? 'true' : 'false';
+
     const launchSelect = document.getElementById('rs-settings-launch-behavior');
-    if(launchSelect) launchSelect.value = currentLaunch;
+    if(launchSelect) launchSelect.value = localStorage.getItem('rs-launch-behavior') || 'home';
 
-    // 4. Initialize Line Spacing UI
-    const currentLH = localStorage.getItem('rs-line-height') || '1.6';
     const lhSelect = document.getElementById('rs-settings-line-height');
-    if(lhSelect) lhSelect.value = currentLH;
-    
+    if(lhSelect) lhSelect.value = localStorage.getItem('rs-line-height') || '1.6';
+
     // --- EVENT LISTENERS FOR CONTROLS ---
-
-    // Decrease Font Size logic
     document.getElementById('rs-settings-font-dec').addEventListener('click', () => {
-        if (currentSize > 60) { // Enforce minimum bound
-            currentSize -= 10;
-            localStorage.setItem('rs-font-size', currentSize);
-            sizeValDisplay.textContent = currentSize;
-            applyThemeGlobally();
-        }
+        let s = getReaderSettings();
+        s.fontSize = Math.max(s.fontSize - 0.1, 0.8);
+        saveReaderSettings(s);
+        if (sizeValDisplay) sizeValDisplay.textContent = Math.round((s.fontSize / 1.15) * 100) + '%';
     });
 
-    // Increase Font Size logic
     document.getElementById('rs-settings-font-inc').addEventListener('click', () => {
-        if (currentSize < 200) { // Enforce maximum bound
-            currentSize += 10;
-            localStorage.setItem('rs-font-size', currentSize);
-            sizeValDisplay.textContent = currentSize;
-            applyThemeGlobally();
-        }
+        let s = getReaderSettings();
+        s.fontSize = Math.min(s.fontSize + 0.1, 2.5);
+        saveReaderSettings(s);
+        if (sizeValDisplay) sizeValDisplay.textContent = Math.round((s.fontSize / 1.15) * 100) + '%';
     });
 
-    // Handle Theme Change explicitly
-    themeSelect.addEventListener('change', (e) => {
-        localStorage.setItem('rs-theme', e.target.value);
-        applyThemeGlobally();
-    });
+    if (themeSelect) {
+        themeSelect.addEventListener('change', (e) => {
+            let s = getReaderSettings();
+            s.theme = e.target.value;
+            saveReaderSettings(s);
+            applyThemeGlobally(s.theme);
+        });
+    }
 
-    // Handle Font Family Change explicitly
-    fontSelect.addEventListener('change', (e) => {
-        localStorage.setItem('rs-font-family', e.target.value);
-        applyThemeGlobally();
-    });
+    if (fontSelect) {
+        fontSelect.addEventListener('change', (e) => {
+            let s = getReaderSettings();
+            s.fontFamily = e.target.value;
+            saveReaderSettings(s);
+        });
+    }
 
-        // Handle Launch Behavior Change explicitly
+    if (audioSelect) {
+        audioSelect.addEventListener('change', (e) => {
+            let s = getReaderSettings();
+            s.autoPlayAudio = e.target.value;
+            saveReaderSettings(s);
+        });
+    }
+
+    if (narrativeThemesSelect) {
+        narrativeThemesSelect.addEventListener('change', (e) => {
+            let s = getReaderSettings();
+            s.customThemeEnabled = (e.target.value === 'true');
+            saveReaderSettings(s);
+        });
+    }
+
     if (launchSelect) {
         launchSelect.addEventListener('change', (e) => {
             localStorage.setItem('rs-launch-behavior', e.target.value);
         });
     }
 
-    // Handle Line Spacing Change explicitly
-    lhSelect.addEventListener('change', (e) => {
-        localStorage.setItem('rs-line-height', e.target.value);
-        applyThemeGlobally();
-    });
+    if (lhSelect) {
+        lhSelect.addEventListener('change', (e) => {
+            localStorage.setItem('rs-line-height', e.target.value);
+        });
+    }
 
-    // Handle complete settings reset
     document.getElementById('rs-settings-reset-all').addEventListener('click', () => {
-        // Require explicit confirmation to prevent accidental data loss
         if(confirm("Are you sure you want to reset all reading settings to default?")) {
-            localStorage.removeItem('rs-font-size');
-            localStorage.removeItem('rs-theme');
-            localStorage.removeItem('rs-font-family');
-                        localStorage.removeItem('rs-line-height');
+            localStorage.removeItem('reader-settings');
+            localStorage.removeItem('rs-line-height');
             localStorage.removeItem('rs-launch-behavior');
-            
-            // Reload page to re-initialize defaults naturally
             window.location.reload();
         }
     });
 
-    /**
-     * applyThemeGlobally
-     * Applies the chosen theme to the document body immediately so the 
-     * Settings app shell matches the chosen reading theme without needing a reload.
-     */
-    function applyThemeGlobally() {
-        const theme = localStorage.getItem('rs-theme') || 'auto';
-        // Strip out any previously applied theme classes to prevent conflicts
+    function applyThemeGlobally(theme) {
         document.body.classList.remove('theme-auto', 'theme-light', 'theme-sepia', 'theme-dark', 'theme-dark-sepia', 'theme-sepia-system');
-        
-        // Add the newly selected theme class
         document.body.classList.add('theme-' + theme);
-
-        // Dispatch a custom event in case other components (like reader.js) are listening
-        // This is crucial for decoupled UI elements that need to react to theme shifts
-        const event = new CustomEvent('rs-settings-changed');
-        document.dispatchEvent(event);
     }
 });
 </script>
