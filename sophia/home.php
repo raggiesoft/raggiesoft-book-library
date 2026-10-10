@@ -46,7 +46,6 @@ $discoverConfig = [];
 if ($discoverConfigData) {
     $discoverConfig = json_decode($discoverConfigData, true) ?? [];
 }
-}
 
 ?>
 
