@@ -204,7 +204,7 @@ global $cdnBaseUrl, $siteName, $requestUri;
   Handles the real-time updating of UI state and syncing to localStorage.
 -->
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+(function() {
     // Helper to get reader settings
     function getReaderSettings() {
         try {
@@ -324,5 +324,5 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.classList.remove('theme-auto', 'theme-light', 'theme-sepia', 'theme-dark', 'theme-dark-sepia', 'theme-sepia-system');
         document.body.classList.add('theme-' + theme);
     }
-});
+})();
 </script>

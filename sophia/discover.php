@@ -149,7 +149,7 @@ if ($catalogData) {
   Manages dynamic UI state such as time-based greetings and PWA install prompts.
 -->
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+(function() {
     // Determine the appropriate greeting based on local client time
     const hour = new Date().getHours();
     let greeting = 'Good evening';
@@ -215,5 +215,5 @@ document.addEventListener("DOMContentLoaded", function() {
             localStorage.setItem('rs-pwa-banner-dismissed', 'true');
         });
     }
-});
+})();
 </script>

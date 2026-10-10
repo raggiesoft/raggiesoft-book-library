@@ -82,7 +82,7 @@ if ($catalogData) {
   The PHP backend does not know what the user has bookmarked.
 -->
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+(function() {
     // Get references to our DOM elements
     const bookmarksList = document.getElementById('rs-bookmarks-list');
     const emptyMsg = document.getElementById('rs-bookmarks-empty');
@@ -133,5 +133,5 @@ document.addEventListener("DOMContentLoaded", function() {
             bookmarksList.appendChild(div);
         });
     }
-});
+})();
 </script>

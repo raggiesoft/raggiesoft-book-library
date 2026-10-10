@@ -175,7 +175,7 @@ if ($catalogData) {
 <!-- SortableJS and Collections Logic -->
 <script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+(function() {
     const container = document.getElementById('rs-collections-container');
     if (!container) return; // Empty library state
 
@@ -407,7 +407,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (savedCollections.length > 0) {
         defaultTitle.style.display = 'block'; // Ensure it's shown if there are other collections
     }
-});
+})();
 </script>
 <style>
 .rs-sortable-ghost {
@@ -421,7 +421,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 <!-- Instant Search JS -->
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+(function() {
     const searchInput = document.getElementById('rs-book-search');
     const resultsContainer = document.getElementById('rs-search-results');
     let searchIndex = null;
@@ -541,7 +541,7 @@ document.addEventListener("DOMContentLoaded", function() {
             localStorage.setItem('rs-pwa-banner-dismissed', 'true');
         });
     }
-});
+})();
 </script>
 </div>
 

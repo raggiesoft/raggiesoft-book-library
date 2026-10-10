@@ -175,7 +175,7 @@ if (!empty($routeData)) {
   typeahead searching across the entire narrative universe.
 -->
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+(function() {
     const searchInput = document.getElementById('rs-book-search');
     const resultsContainer = document.getElementById('rs-search-results');
     let searchIndex = null;
@@ -249,5 +249,5 @@ document.addEventListener("DOMContentLoaded", function() {
             resultsContainer.style.display = 'none';
         }
     });
-});
+})();
 </script>
