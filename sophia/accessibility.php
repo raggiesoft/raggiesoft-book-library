@@ -116,4 +116,4 @@ global $cdnBaseUrl, $siteName, $requestUri;
   BOTTOM NAVIGATION COMPONENT
   This includes the iOS-style tab bar at the bottom of the screen.
 -->
-<?php include __DIR__ . '/includes/components/bottom-nav.php'; ?>
+<?php include __DIR__ . '/../includes/components/bottom-nav.php'; ?>
