@@ -136,6 +136,36 @@ if ($catalogData) {
             </div>
         </div>
 
+        <!-- 
+          FEATURED HIGHLIGHTS
+          Displays a few random or top books from the catalog to make the home screen 
+          feel alive even when the user has no history or offline books.
+        -->
+        <?php if (!empty($books)): ?>
+        <div id="rs-home-featured" style="margin-bottom: 2.5rem;">
+            <h2 style="font-size: 1.25rem; font-weight: 700; color: var(--rs-heading); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+                <i class="ph ph-sparkle"></i> Featured Highlights
+            </h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 1rem;">
+                <?php 
+                // Display up to 6 random books to keep the screen interesting
+                $featured = $books;
+                shuffle($featured);
+                $featured = array_slice($featured, 0, 6);
+                
+                foreach ($featured as $book): 
+                ?>
+                <a href="/<?php echo htmlspecialchars($book['slug']); ?>/" style="text-decoration: none; color: inherit; display: block;">
+                    <div style="width: 100%; aspect-ratio: 2/3; background-color: var(--rs-surface); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 0.5rem; transition: transform 0.2s ease;">
+                        <img src="<?php echo $cdnBaseUrl . htmlspecialchars($book['image']); ?>" alt="<?php echo htmlspecialchars($book['title']); ?>" style="width: 100%; height: 100%; object-fit: cover; display: block;">
+                    </div>
+                    <h3 style="font-size: 0.85rem; font-weight: 600; margin: 0; line-height: 1.2; text-align: center;"><?php echo htmlspecialchars($book['title']); ?></h3>
+                </a>
+                <?php endforeach; ?>
+            </div>
+        </div>
+        <?php endif; ?>
+
         <!-- NOTE: Existing stray div preserved for structural integrity. -->
         </div>
 </div>
