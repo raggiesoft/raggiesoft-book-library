@@ -99,3 +99,12 @@ _workspace/books/*/images/people/real-person/
 # Ignore all Upscayl output directories and contents (case-insensitive catch)
 *[Uu]pscayl*/
 *upscayl*.pnggit rm --cached -r "*[Uu]pscayl*"
+# --- Google Analytics 4 API Credentials ---
+ga4-credentials.json
+*_credentials*.json
+*service-account*.json
+
+# --- Python Virtual Environment ---
+.venv/
+__pycache__/
+
