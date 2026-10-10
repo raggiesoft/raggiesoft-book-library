@@ -315,6 +315,17 @@ global $cdnBaseUrl, $siteName, $requestUri;
         });
     }
 
+    if (transSelect) {
+        transSelect.addEventListener('change', (e) => {
+            let s = getReaderSettings();
+            s.translationMode = e.target.value;
+            saveReaderSettings(s);
+            if (typeof window.applyTranslationMode === 'function') {
+                window.applyTranslationMode(s.translationMode);
+            }
+        });
+    }
+
     if (audioSelect) {
         audioSelect.addEventListener('change', (e) => {
             let s = getReaderSettings();
