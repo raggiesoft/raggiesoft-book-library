@@ -280,6 +280,7 @@ global $cdnBaseUrl, $siteName, $requestUri;
             let s = getReaderSettings();
             s.fontFamily = e.target.value;
             saveReaderSettings(s);
+            document.body.style.fontFamily = s.fontFamily;
         });
     }
 
@@ -308,6 +309,7 @@ global $cdnBaseUrl, $siteName, $requestUri;
     if (lhSelect) {
         lhSelect.addEventListener('change', (e) => {
             localStorage.setItem('rs-line-height', e.target.value);
+            document.body.style.lineHeight = e.target.value;
         });
     }
 

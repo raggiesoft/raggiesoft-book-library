@@ -196,6 +196,10 @@ $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? '
                     document.body.style.fontFamily = settings.fontFamily;
                 }
             }
+            const lh = localStorage.getItem('rs-line-height');
+            if (lh) {
+                document.body.style.lineHeight = lh;
+            }
         } catch(e) {}
     })();
     </script>
