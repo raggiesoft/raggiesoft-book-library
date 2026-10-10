@@ -1,11 +1,10 @@
 # =================================================
 # 
-# RaggieSoft Assets - Git Ignore Rules
+# RaggieSoft Master Git Ignore Rules
 # 
 # =================================================
-# 
+
 # --- Audio Source Files ---
-# These are the master files used for transcoding.
 *.wav
 *.aiff
 *.flac
@@ -15,7 +14,6 @@
 *.dsf
 
 # --- Generated Audio Files ---
-# These are the output files created by the transcoder script.
 *.mp3
 *.ogg
 *.aac
@@ -23,7 +21,6 @@
 *.wma
 
 # --- High-Resolution Design & Art Files ---
-# Raw Photoshop/Illustrator files and uncompressed images.
 *.psd
 *.psb
 *.ai
@@ -35,7 +32,6 @@
 *.dng
 
 # --- Video & Motion Graphics ---
-# Promotional videos, music videos, and raw renders.
 *.mp4
 *.mov
 *.avi
@@ -45,7 +41,6 @@
 *.aep
 
 # --- Archives & Compressed Files ---
-# These are the large downloadable packages for users.
 *.7z
 *.zip
 *.tar.gz
@@ -53,7 +48,6 @@
 *.gz
 
 # --- Disc Image & Binary Data ---
-# These formats are often large and not needed in version control.
 *.iso
 *.bin
 *.cue
@@ -72,33 +66,22 @@ ehthumbs.db
 *.swp
 
 # --- Narrative & Reference Assets ---
-# Ignore ALL source/reference images inside ANY book directory
-_workspace/books/*/images/source/
-*upscayl*.png
-
-# --- WORKSPACE SECURITY ---
-# Ignore the real keys
-_workspace/build-tools/rclone/rclone.conf
-_workspace/build-tools/ssh_keys.txt
-
-# Do NOT ignore the example config
-!_workspace/build-tools/rclone/rclone.conf.example
-
-# --- WORKSPACE & TOOLS ---
-# Ignore all binaries and configs in build-tools
-_workspace/build-tools/
-
-# Exception: Keep the example config so we know where to put keys
-!_workspace/build-tools/rclone/rclone.conf.example
-
-# --- Narrative & Reference Assets ---
-# Ignore ALL source/reference images inside ANY book directory
 _workspace/books/*/images/source/
 _workspace/books/*/images/people/real-person/
 
-# Ignore all Upscayl output directories and contents (case-insensitive catch)
+# Ignore all Upscayl output directories and contents
 *[Uu]pscayl*/
-*upscayl*.pnggit rm --cached -r "*[Uu]pscayl*"
+*upscayl*.png
+
+# --- WORKSPACE SECURITY ---
+_workspace/build-tools/rclone/rclone.conf
+_workspace/build-tools/ssh_keys.txt
+!_workspace/build-tools/rclone/rclone.conf.example
+
+# --- WORKSPACE & TOOLS ---
+_workspace/build-tools/
+!_workspace/build-tools/rclone/rclone.conf.example
+
 # --- Google Analytics 4 API Credentials ---
 ga4-credentials.json
 *_credentials*.json
@@ -108,3 +91,29 @@ ga4-credentials.json
 .venv/
 __pycache__/
 
+# --- Node / Next.js / Web ---
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+/coverage
+/.next/
+# /out/  <- Allowed so Jenna can push the static build for Sarah to pull
+/build
+*.pem
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.env*
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+
+# --- Project Specific Overrides ---
+/lore/**/_old/
+orion.php
