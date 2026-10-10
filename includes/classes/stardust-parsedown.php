@@ -261,6 +261,14 @@ class StardustParsedown extends Parsedown {
 <wa-button slot="footer" variant="neutral" onclick="document.getElementById(\'' . $id . '\').hide()">Close</wa-button>
 </wa-dialog>';
         }, $text);
+        $text = preg_replace_callback('/<lang="([^"]+)" trans="([^"]+)">(.*?)<\/lang>/is', function($matches) {
+            $langCode = htmlspecialchars($matches[1]);
+            $translated = htmlspecialchars($matches[2]);
+            $original = $matches[3];
+            
+            return '<span class="foreign-language" lang="' . $langCode . '" data-original="' . htmlspecialchars($original) . '" data-translation="' . $translated . '">' . $original . '</span>';
+        }, $text);
+        
         $text = preg_replace('/<aac>(.*?)<\/aac>/is', '<span class="visually-hidden">AAC Device: </span><em class="aac-device">$1</em>', $text);
         
         $text = preg_replace('/<asl>(.*?)<\/asl>/is', '<span class="visually-hidden">American Sign Language: </span><em class="asl-sign">$1</em>', $text);
