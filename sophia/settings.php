@@ -90,12 +90,12 @@ global $cdnBaseUrl, $siteName, $requestUri;
                 <div>
                     <label for="rs-settings-font-family" style="display: block; font-weight: bold; margin-bottom: 0.5rem; font-size: 0.95rem;">Typeface</label>
                     <select id="rs-settings-font-family" class="rs-input" style="width: 100%; padding: 0.75rem; font-size: 1rem;">
-                        <option value="system-ui">System Default (San Francisco/Roboto)</option>
-                        <option value="georgia">Georgia (Serif)</option>
-                        <option value="lora">Lora (Serif)</option>
-                        <option value="inter">Inter (Sans-Serif)</option>
-                        <option value="atkinson">Atkinson Hyperlegible (Sans-Serif)</option>
-                        <option value="dyslexic">OpenDyslexic</option>
+                        <option value="system-ui, -apple-system, sans-serif">System Default (San Francisco/Roboto)</option>
+                        <option value="'Georgia', serif">Georgia (Serif)</option>
+                        <option value="'Lora', serif">Lora (Classic Serif)</option>
+                        <option value="'Inter', sans-serif">Inter (Modern Sans)</option>
+                        <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible (Accessibility)</option>
+                        <option value="'OpenDyslexic', sans-serif">OpenDyslexic</option>
                     </select>
                 </div>
 
