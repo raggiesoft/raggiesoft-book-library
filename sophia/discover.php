@@ -6,7 +6,7 @@
  * Purpose:
  *     This file serves as the main discovery hub for the Ocean View Archives.
  *     It dynamically fetches the global catalog from the Content Delivery 
- *     Network (CDN) and renders a randomized grid of featured books.
+ *     Network (CDN) and renders a storefront-style grid of featured books.
  *
  * Design Principles:
  *     - External State: Relies heavily on the CDN (`catalog.json`) to decouple 
@@ -15,12 +15,15 @@
  *       for PWA installation to support offline caching.
  *     - Fault Tolerance: Uses `@file_get_contents` and null-coalescing (`??`) 
  *       to gracefully handle CDN outages or malformed JSON data.
+ *     - App Store Layout: Implements horizontal scrolling carousels for 
+ *       categories to mimic native reading apps like Apple Books or Kindle.
  *
  * Maintenance Notes:
  *     - PWA installation logic is deeply tied to `rs-pwa-install-banner`. If 
  *       the app structure changes, ensure these DOM IDs remain consistent.
- *     - Currently, the "Featured" algorithm just shuffles all books. If performance 
- *       becomes an issue with a large catalog, shift randomization to the backend.
+ *     - Currently, the "Trending" and "New Releases" algorithms shuffle all books. 
+ *       If performance becomes an issue with a large catalog, shift categorization 
+ *       to the backend.
  * =============================================================================
  */
 
@@ -39,7 +42,49 @@ if ($catalogData) {
     $books = json_decode($catalogData, true) ?? [];
 }
 
+// Helper function to render a horizontal carousel of books
+function renderCarousel($title, $icon, $bookList, $cdnBaseUrl) {
+    if (empty($bookList)) return;
+    
+    echo '<div style="margin-bottom: 2.5rem;">';
+    echo '<h2 style="font-size: 1.25rem; font-weight: 700; color: var(--rs-heading); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">';
+    echo '<i class="ph ' . htmlspecialchars($icon) . '"></i> ' . htmlspecialchars($title);
+    echo '</h2>';
+    
+    // Horizontal scrolling container with hidden scrollbar (WebKit)
+    echo '<div class="rs-carousel-container" style="display: flex; gap: 1.25rem; overflow-x: auto; padding-bottom: 1rem; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">';
+    
+    foreach ($bookList as $book) {
+        $slug = $book['slug'] ?? '';
+        $bookTitle = $book['title'] ?? 'Unknown Archive';
+        $author = 'Michael Ragsdale'; // Defaulting author
+        $imgSrc = !empty($book['image']) ? $cdnBaseUrl . $book['image'] : $cdnBaseUrl . '/raggiesoft-books/images/book-placeholder.jpg';
+        
+        echo '<a href="/' . htmlspecialchars($slug) . '/" style="text-decoration: none; color: inherit; display: block; flex: 0 0 140px; scroll-snap-align: start;">';
+        echo '  <div style="width: 100%; aspect-ratio: 2/3; background-color: var(--rs-surface); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 0.75rem;">';
+        echo '      <img src="' . htmlspecialchars($imgSrc) . '" alt="' . htmlspecialchars($bookTitle) . '" style="width: 100%; height: 100%; object-fit: cover; display: block;">';
+        echo '  </div>';
+        echo '  <h3 style="font-size: 0.9rem; font-weight: 700; margin: 0 0 0.25rem 0; line-height: 1.2; color: var(--rs-heading); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">' . htmlspecialchars($bookTitle) . '</h3>';
+        echo '  <p style="font-size: 0.75rem; opacity: 0.7; margin: 0; text-transform: uppercase; letter-spacing: 0.5px;">' . htmlspecialchars($author) . '</p>';
+        echo '</a>';
+    }
+    
+    echo '</div>';
+    echo '</div>';
+}
+
 ?>
+
+<style>
+/* Hide scrollbar for carousels to maintain clean native look */
+.rs-carousel-container::-webkit-scrollbar {
+    display: none;
+}
+.rs-carousel-container {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+</style>
 
 <!-- 
   MAIN CONTAINER
@@ -63,10 +108,9 @@ if ($catalogData) {
                     Explore the Archives.
                 </p>
                 <h1 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 2.5rem; font-weight: 800; color: var(--rs-heading); letter-spacing: -0.5px; margin: 0; line-height: 1.1;">
-                    Home
+                    Discover
                 </h1>
             </div>
-            
         </div>
 
         <!-- 
@@ -91,54 +135,29 @@ if ($catalogData) {
             </button>
         </div>
 
-        <!-- NOTE: Existing malformed stray HTML tags were present here in the original file. 
-             Preserving exact structure but wrapping them to note the oddity. -->
-                <div style="flex: 1;">
-                    <h3 id="rs-jump-series" style="font-size: 1.1rem; margin: 0 0 0.25rem 0; font-weight: 700;">Loading...</h3>
-                    <p id="rs-jump-part" style="font-size: 0.9rem; opacity: 0.7; margin: 0 0 1rem 0;"></p>
-                    <a id="rs-jump-btn" href="#" class="rs-btn rs-btn-brand" style="display: inline-block; text-decoration: none; font-size: 0.9rem; padding: 0.5rem 1rem;">Resume Reading</a>
-                </div>
-            </div>
-        </div>
-        </div>
-
         <!-- 
-          DISCOVERY GRID
-          Renders a subset of the catalog to highlight random narratives.
+          DISCOVERY CAROUSELS
+          Renders storefront-style categorized lists.
         -->
-        <div style="margin-bottom: 2.5rem;">
-            <h2 style="font-size: 1.25rem; font-weight: 700; color: var(--rs-heading); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
-                <i class="ph ph-books"></i> Discover
-            </h2>
-            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 1rem;">
-                <?php 
-                // Randomize the catalog to present a fresh selection on each load
-                $featuredBooks = $books;
-                shuffle($featuredBooks);
-                
-                // Limit the display to 4 items to keep the UI uncluttered
-                $featuredBooks = array_slice($featuredBooks, 0, 4);
-                
-                foreach ($featuredBooks as $book): 
-                    // Safely extract required metadata, providing fallbacks
-                    $slug = $book['slug'] ?? '';
-                    $title = $book['title'] ?? 'Unknown Archive';
-                    // Prepend CDN base URL if an image exists, else use a local placeholder
-                    $imgSrc = !empty($book['image']) ? $cdnBaseUrl . $book['image'] : $cdnBaseUrl . '/raggiesoft-books/images/book-placeholder.jpg';
-                ?>
-                <!-- Individual Book Card -->
-                <a href="/<?php echo htmlspecialchars($slug); ?>/" style="text-decoration: none; color: inherit; display: block;">
-                    <div style="width: 100%; aspect-ratio: 2/3; background-color: var(--rs-surface); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 0.5rem;">
-                        <img src="<?php echo htmlspecialchars($imgSrc); ?>" alt="<?php echo htmlspecialchars($title); ?>" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                    </div>
-                    <h3 style="font-size: 0.9rem; font-weight: 600; margin: 0; line-height: 1.2; text-align: center;"><?php echo htmlspecialchars($title); ?></h3>
-                </a>
-                <?php endforeach; ?>
-            </div>
-        </div>
         
-    </div>
+        <?php 
+        // 1. Trending Now (Shuffled subset)
+        $trendingBooks = $books;
+        shuffle($trendingBooks);
+        renderCarousel("Trending Now", "ph-trend-up", array_slice($trendingBooks, 0, 6), $cdnBaseUrl);
 
+        // 2. New Arrivals (Shuffled differently for mock purposes)
+        $newArrivals = $books;
+        shuffle($newArrivals);
+        renderCarousel("New Arrivals", "ph-sparkle", array_slice($newArrivals, 0, 6), $cdnBaseUrl);
+        
+        // 3. Editor's Picks (Another subset)
+        $editorsPicks = $books;
+        shuffle($editorsPicks);
+        renderCarousel("Editor's Picks", "ph-star", array_slice($editorsPicks, 0, 6), $cdnBaseUrl);
+        ?>
+
+    </div>
 </div>
 
 <!-- Include the global bottom navigation component -->

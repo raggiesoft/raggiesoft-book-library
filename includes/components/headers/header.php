@@ -181,6 +181,24 @@ $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? '
 </head>
 
 <body class="theme-<?= htmlspecialchars($currentPageTheme ?? 'oceanview') ?><?= $forceDarkClass ?>">
+    <script>
+    (function() {
+        try {
+            const stored = localStorage.getItem('reader-settings');
+            if (stored) {
+                const settings = JSON.parse(stored);
+                if (settings.theme) {
+                    const themes = ['theme-auto', 'theme-light', 'theme-sepia', 'theme-dark', 'theme-dark-sepia', 'theme-sepia-system', 'theme-oceanview'];
+                    document.body.classList.remove(...themes);
+                    document.body.classList.add('theme-' + settings.theme);
+                }
+                if (settings.fontFamily) {
+                    document.body.style.fontFamily = settings.fontFamily;
+                }
+            }
+        } catch(e) {}
+    })();
+    </script>
     
     <!-- Accessibility focus anchor -->
     <a href="#stardust-main-content" class="visually-hidden-focusable" style="position: absolute; z-index: 9999; padding: 1rem; background: var(--rs-primary); color: white; text-decoration: none; border-radius: 4px; left: 1rem; top: 1rem;">Skip to main content</a>
