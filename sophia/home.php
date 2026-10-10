@@ -40,6 +40,14 @@ if ($catalogData) {
     $books = json_decode($catalogData, true) ?? [];
 }
 
+$discoverConfigUrl = $cdnBaseUrl . "/raggiesoft-books/books/discover.json";
+$discoverConfigData = @file_get_contents($discoverConfigUrl);
+$discoverConfig = [];
+if ($discoverConfigData) {
+    $discoverConfig = json_decode($discoverConfigData, true) ?? [];
+}
+}
+
 ?>
 
 <!-- 

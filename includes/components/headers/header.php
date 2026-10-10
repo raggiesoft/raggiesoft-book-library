@@ -187,13 +187,29 @@ $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? '
             const stored = localStorage.getItem('reader-settings');
             if (stored) {
                 const settings = JSON.parse(stored);
-                if (settings.theme) {
+                if (settings.theme && settings.theme !== 'auto') {
                     const themes = ['theme-auto', 'theme-light', 'theme-sepia', 'theme-dark', 'theme-dark-sepia', 'theme-sepia-system', 'theme-oceanview'];
-                    document.body.classList.remove(...themes);
-                    document.body.classList.add('theme-' + settings.theme);
+                    const isSystemPage = document.body.className.includes('theme-oceanview');
+                    if (settings.customThemeEnabled === false || isSystemPage) {
+                        document.body.classList.remove(...themes);
+                        document.body.classList.add('theme-' + settings.theme);
+                    }
                 }
                 if (settings.fontFamily) {
-                    document.body.style.fontFamily = settings.fontFamily;
+                    const fontMap = {
+                        'system': 'system-ui, -apple-system, sans-serif',
+                        'georgia': '"Georgia", serif',
+                        'lora': '"Lora", serif',
+                        'inter': '"Inter", sans-serif',
+                        'atkinson': '"Atkinson Hyperlegible", sans-serif',
+                        'opendyslexic': '"OpenDyslexic", sans-serif'
+                    };
+                    document.body.style.fontFamily = fontMap[settings.fontFamily] || fontMap['system'];
+                }
+                if (settings.fontSize) {
+                    document.body.style.fontSize = settings.fontSize + 'rem';
+                } else {
+                    document.body.style.fontSize = '1.15rem';
                 }
             }
             const lh = localStorage.getItem('rs-line-height');

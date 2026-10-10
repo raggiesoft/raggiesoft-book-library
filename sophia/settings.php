@@ -90,31 +90,25 @@ global $cdnBaseUrl, $siteName, $requestUri;
                 <div>
                     <label for="rs-settings-font-family" style="display: block; font-weight: bold; margin-bottom: 0.5rem; font-size: 0.95rem;">Typeface</label>
                     <select id="rs-settings-font-family" class="rs-input" style="width: 100%; padding: 0.75rem; font-size: 1rem;">
-                        <option value="system-ui, -apple-system, sans-serif">System Default (San Francisco/Roboto)</option>
-                        <option value="'Georgia', serif">Georgia (Serif)</option>
-                        <option value="'Lora', serif">Lora (Classic Serif)</option>
-                        <option value="'Inter', sans-serif">Inter (Modern Sans)</option>
-                        <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible (Accessibility)</option>
-                        <option value="'OpenDyslexic', sans-serif">OpenDyslexic</option>
+                        <option value="system">System Default (San Francisco/Roboto)</option>
+                        <option value="georgia">Georgia (Serif)</option>
+                        <option value="lora">Lora (Classic Serif)</option>
+                        <option value="inter">Inter (Modern Sans)</option>
+                        <option value="atkinson">Atkinson Hyperlegible (Accessibility)</option>
+                        <option value="opendyslexic">OpenDyslexic</option>
                     </select>
                 </div>
 
                                 <!-- BACKGROUND AUDIO -->
-                <div>
-                    <label for="rs-settings-audio" style="display: block; font-weight: bold; margin-bottom: 0.5rem; font-size: 0.95rem;">Background Audio</label>
-                    <select id="rs-settings-audio" class="rs-input" style="width: 100%; padding: 0.75rem; font-size: 1rem;">
-                        <option value="false">Off (Default)</option>
-                        <option value="true">Auto-Play On</option>
-                    </select>
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <label for="rs-settings-audio" style="font-weight: bold; font-size: 0.95rem; margin: 0; cursor: pointer;">Enable Background Audio</label>
+                    <input type="checkbox" id="rs-settings-audio" style="width: 1.5rem; height: 1.5rem; cursor: pointer;">
                 </div>
 
                 <!-- NARRATIVE THEMES TOGGLE -->
-                <div>
-                    <label for="rs-settings-narrative-themes" style="display: block; font-weight: bold; margin-bottom: 0.5rem; font-size: 0.95rem;">Narrative Themes</label>
-                    <select id="rs-settings-narrative-themes" class="rs-input" style="width: 100%; padding: 0.75rem; font-size: 1rem;">
-                        <option value="true">On (Allow Book-Specific Themes)</option>
-                        <option value="false">Off (Force Global Theme)</option>
-                    </select>
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <label for="rs-settings-narrative-themes" style="font-weight: bold; font-size: 0.95rem; margin: 0; cursor: pointer;">Allow Book-Specific Themes</label>
+                    <input type="checkbox" id="rs-settings-narrative-themes" style="width: 1.5rem; height: 1.5rem; cursor: pointer;">
                 </div>
 
                 <!-- LAUNCH BEHAVIOR SELECTOR -->
@@ -237,13 +231,13 @@ global $cdnBaseUrl, $siteName, $requestUri;
     if(themeSelect) themeSelect.value = settings.theme || 'auto';
 
     const fontSelect = document.getElementById('rs-settings-font-family');
-    if(fontSelect) fontSelect.value = settings.fontFamily || 'system-ui, -apple-system, sans-serif';
+    if(fontSelect) fontSelect.value = settings.fontFamily || 'system';
 
     const audioSelect = document.getElementById('rs-settings-audio');
-    if (audioSelect) audioSelect.value = settings.autoPlayAudio || 'false';
+    if (audioSelect) audioSelect.checked = (settings.autoPlayAudio === 'true');
 
     const narrativeThemesSelect = document.getElementById('rs-settings-narrative-themes');
-    if (narrativeThemesSelect) narrativeThemesSelect.value = (settings.customThemeEnabled !== false) ? 'true' : 'false';
+    if (narrativeThemesSelect) narrativeThemesSelect.checked = (settings.customThemeEnabled !== false);
 
     const launchSelect = document.getElementById('rs-settings-launch-behavior');
     if(launchSelect) launchSelect.value = localStorage.getItem('rs-launch-behavior') || 'home';
@@ -257,6 +251,7 @@ global $cdnBaseUrl, $siteName, $requestUri;
         s.fontSize = Math.max(s.fontSize - 0.1, 0.8);
         saveReaderSettings(s);
         if (sizeValDisplay) sizeValDisplay.textContent = Math.round((s.fontSize / 1.15) * 100) + '%';
+        document.body.style.fontSize = s.fontSize + 'rem';
     });
 
     document.getElementById('rs-settings-font-inc').addEventListener('click', () => {
@@ -264,6 +259,7 @@ global $cdnBaseUrl, $siteName, $requestUri;
         s.fontSize = Math.min(s.fontSize + 0.1, 2.5);
         saveReaderSettings(s);
         if (sizeValDisplay) sizeValDisplay.textContent = Math.round((s.fontSize / 1.15) * 100) + '%';
+        document.body.style.fontSize = s.fontSize + 'rem';
     });
 
     if (themeSelect) {
@@ -275,19 +271,27 @@ global $cdnBaseUrl, $siteName, $requestUri;
         });
     }
 
+    const fontMap = {
+        'system': 'system-ui, -apple-system, sans-serif',
+        'georgia': '"Georgia", serif',
+        'lora': '"Lora", serif',
+        'inter': '"Inter", sans-serif',
+        'atkinson': '"Atkinson Hyperlegible", sans-serif',
+        'opendyslexic': '"OpenDyslexic", sans-serif'
+    };
     if (fontSelect) {
         fontSelect.addEventListener('change', (e) => {
             let s = getReaderSettings();
             s.fontFamily = e.target.value;
             saveReaderSettings(s);
-            document.body.style.fontFamily = s.fontFamily;
+            document.body.style.fontFamily = fontMap[s.fontFamily] || fontMap['system'];
         });
     }
 
     if (audioSelect) {
         audioSelect.addEventListener('change', (e) => {
             let s = getReaderSettings();
-            s.autoPlayAudio = e.target.value;
+            s.autoPlayAudio = e.target.checked ? 'true' : 'false';
             saveReaderSettings(s);
         });
     }
@@ -295,8 +299,13 @@ global $cdnBaseUrl, $siteName, $requestUri;
     if (narrativeThemesSelect) {
         narrativeThemesSelect.addEventListener('change', (e) => {
             let s = getReaderSettings();
-            s.customThemeEnabled = (e.target.value === 'true');
+            s.customThemeEnabled = e.target.checked;
             saveReaderSettings(s);
+            if (!s.customThemeEnabled) {
+                applyThemeGlobally(s.theme);
+            } else {
+                window.location.reload(); // Reload to restore book theme if on a book page
+            }
         });
     }
 
