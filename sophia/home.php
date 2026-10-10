@@ -150,7 +150,7 @@ if ($catalogData) {
   Extracts user data from localStorage and matches it against the PHP-injected catalog.
 -->
 <script>
-document.addEventListener("DOMContentLoaded", function() {
+(function() {
     // Safely inject PHP catalog into JS context once
     const catalog = <?php echo json_encode($books, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?: '[]'; ?>;
 
@@ -165,6 +165,11 @@ document.addEventListener("DOMContentLoaded", function() {
     // 1. Process "Jump Back In" State
     // Check localStorage for the exact path the user was last on
     const lastRead = localStorage.getItem('rs-last-read');
+    const launchBehavior = localStorage.getItem('rs-launch-behavior') || 'home';
+    if (launchBehavior === 'resume' && lastRead && window.location.pathname === '/' && !sessionStorage.getItem('rs-prevent-auto-redirect')) {
+        sessionStorage.setItem('rs-prevent-auto-redirect', 'true');
+        window.location.replace(lastRead);
+    }
     let matched = false;
     if (lastRead) {
         // Extract the root narrative slug from the saved path (e.g., /alex-chloe/...)
@@ -292,5 +297,5 @@ document.addEventListener("DOMContentLoaded", function() {
             localStorage.setItem('rs-pwa-banner-dismissed', 'true');
         });
     }
-});
+})();
 </script>

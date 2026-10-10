@@ -67,10 +67,6 @@ if ($catalogData) {
                 </h1>
             </div>
             
-            <!-- Settings button tied to global reader settings modal/view -->
-            <button id="reader-settings-toggle" class="rs-btn" style="background: transparent; color: var(--rs-primary); border: none; padding: 0.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;">
-                <i class="ph ph-gear" style="font-size: 1.75rem;"></i>
-            </button>
         </div>
 
         <!-- 

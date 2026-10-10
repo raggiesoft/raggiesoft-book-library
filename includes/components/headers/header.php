@@ -136,6 +136,38 @@ $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? '
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     
+    <!-- Self-Hosted Typographic Assets -->
+    <style>
+        @font-face {
+            font-family: 'OpenDyslexic';
+            src: url('<?= $assetsUrl ?>/fonts/opendyslexic/OpenDyslexic-Regular.woff') format('woff');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'OpenDyslexic';
+            src: url('<?= $assetsUrl ?>/fonts/opendyslexic/OpenDyslexic-Italic.woff') format('woff');
+            font-weight: 400;
+            font-style: italic;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'OpenDyslexic';
+            src: url('<?= $assetsUrl ?>/fonts/opendyslexic/OpenDyslexic-Bold.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'OpenDyslexic';
+            src: url('<?= $assetsUrl ?>/fonts/opendyslexic/OpenDyslexic-BoldItalic.woff') format('woff');
+            font-weight: 700;
+            font-style: italic;
+            font-display: swap;
+        }
+    </style>
+
     <!-- Google Analytics Integration -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-P9RG9JVYB6"></script>
     <script>

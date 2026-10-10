@@ -69,9 +69,6 @@ if ($catalogData) {
                 <button id="rs-organize-done-btn" class="rs-btn" style="display: none; background: var(--rs-primary); color: white; border: none; padding: 0.4rem 1rem; border-radius: 6px; font-weight: bold; font-size: 0.85rem; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
                     Done
                 </button>
-                <button id="reader-settings-toggle" class="rs-btn" style="background: transparent; color: var(--rs-primary); border: none; padding: 0.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;">
-                    <i class="ph ph-gear" style="font-size: 1.75rem;"></i>
-                </button>
             </div>
         </div>
 
@@ -502,12 +499,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (isStandalone) {
         // If launched as PWA, redirect to last read location if available
-        const lastRead = localStorage.getItem('rs-last-read');
-        // Only redirect if there is no hash or specific path loaded, and we are exactly on the root home page
-        if (lastRead && window.location.pathname === '/' && !sessionStorage.getItem('rs-prevent-auto-redirect')) {
-            sessionStorage.setItem('rs-prevent-auto-redirect', 'true'); // Prevent infinite loops if they click "Library" button to come back
-            window.location.replace(lastRead);
-        }
     } else if (banner && localStorage.getItem('rs-pwa-banner-dismissed') !== 'true') {
         let isIos = () => /iphone|ipad|ipod/.test(window.navigator.userAgent.toLowerCase());
         if (isIos()) {
