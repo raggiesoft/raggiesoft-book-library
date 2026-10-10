@@ -158,7 +158,7 @@ if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $mdContent, $matche
 
 // 3. Render HTML
 require_once $basePath . '/includes/classes/stardust-parsedown.php';
-$Parsedown = new StardustParsedown();
+$Parsedown = new StardustParsedown('vanilla');
 if ($specialPageType) {
     ob_start();
     // Dynamically require the correct PHP sub-view
