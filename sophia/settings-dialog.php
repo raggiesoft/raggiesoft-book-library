@@ -165,7 +165,7 @@
             <div id="settings-tab-theme" class="settings-tab-content" style="display: none;">
                 <div style="margin-bottom: 1.5rem;">
                     <h4 style="font-size: 1rem; margin-bottom: 0.75rem;">Color Mode</h4>
-                                        <select id="reader-theme-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
+                    <select id="reader-theme-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
                         <optgroup label="System Default">
                             <option value="auto">Auto (Light / Dark)</option>
                             <option value="sepia-system">Auto (Sepia / Dark Sepia)</option>

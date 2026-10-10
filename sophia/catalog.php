@@ -510,13 +510,4 @@ document.addEventListener("DOMContentLoaded", function() {
 </div>
 
 <!-- Bottom Navigation Bar for Mobile PWA Feel (Apple HIG) -->
-<div class="ios-tab-bar">
-    <a href="/" class="ios-tab-item inactive">
-        <i class="ph ph-house"></i>
-        <span>Home</span>
-    </a>
-    <a href="/library" class="ios-tab-item active">
-        <i class="ph-fill ph-books"></i>
-        <span>Library</span>
-    </a>
-</div>
+<?php include __DIR__ . "/../includes/components/bottom-nav.php"; ?>
