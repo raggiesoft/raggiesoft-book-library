@@ -90,6 +90,10 @@ if (!empty($seriesSlug)) {
     $ogTitle = 'Contemporary Fiction Library | Ocean View Archives';
     $ogDescription = 'Living stories. Expanding lore. Dive into the universe. The grounded, real-world archives of RaggieSoft Media.';
     $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/og/contemporary_v2.jpg';
+} else if ($isHome) {
+    $ogTitle = 'Ocean View Archives | RaggieSoft Media';
+    $ogDescription = 'Discover original stories, serialized narratives, and interconnected universes in the official RaggieSoft Media reading library.';
+    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/og/oceanview-archives.jpg';
 }
 
 // Check for OpenGraph overrides in the Markdown Frontmatter

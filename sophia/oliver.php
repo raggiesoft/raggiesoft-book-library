@@ -503,6 +503,6 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
 
 <style>
 #stardust-reading-pane { padding-bottom: 6rem !important; }
-</style>
+</style>    qw
 
 
