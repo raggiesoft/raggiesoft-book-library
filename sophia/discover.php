@@ -1,4 +1,12 @@
 <?php
+/**
+ * DISCOVER VIEW (discover.php)
+ * ---------------------------------------------------------
+ * This file serves as the main discovery hub for the Ocean View Archives.
+ * It reads the global catalog from the CDN and renders a grid of featured
+ * or random books, allowing users to browse available narratives.
+ */
+
 // Sophia's Discover View
 global $cdnBaseUrl, $siteName, $requestUri;
 
@@ -15,7 +23,10 @@ if ($catalogData) {
 
 <div class="stardust-mobile-scroll" style="flex: 1; background: var(--rs-bg); padding-bottom: 6rem;">
     
-    <!-- Native App Style Header -->
+    <!-- NATIVE APP STYLE HEADER
+       This wrapper ensures the content does not overlap with safe areas (notches) 
+       and provides a clean max-width layout for tablet/desktop.
+    -->
     <div style="max-width: 1200px; margin: 0 auto; padding: calc(1.5rem + env(safe-area-inset-top, 0px)) 1.5rem 1rem;">
         
         <!-- Top Bar: Title & Settings -->

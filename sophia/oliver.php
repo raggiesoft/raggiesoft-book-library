@@ -1,4 +1,14 @@
 <?php
+/**
+ * READING ENVIRONMENT (oliver.php)
+ * ---------------------------------------------------------
+ * This is the core reading interface (named 'Oliver' in-universe).
+ * It dynamically loads and parses Markdown content files based on the requested URL.
+ * It uses the Stardust Engine's routing JSON files to map a URL to an actual .md file.
+ * This file handles parsing frontmatter, calculating navigation, and rendering the 
+ * immersive reading pane.
+ */
+
 // RaggieSoft Books - Markdown Viewer (Route JSON Driven)
 
 $requestUri = rtrim($requestUri, '/');

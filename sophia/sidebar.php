@@ -1,5 +1,13 @@
 <?php
-// Sophia's Navigation Sidebar (Simplified)
+/**
+ * READER SIDEBAR VIEW (sidebar.php)
+ * ---------------------------------------------------------
+ * This file renders the slide-out navigation menu inside the reading environment (Oliver).
+ * It calculates Next/Previous chapter links based on the current URL using Stardust routing.
+ * It also features a quick-access grid for Home, Library, Bookmarks, and Settings.
+ */
+
+// Legacy comment: Sophia's Navigation Sidebar (Simplified)
 global $seriesSlug, $routeData, $cdnBaseUrl, $requestUri, $katie;
 
 // Build reverse lookup from filePath to URL

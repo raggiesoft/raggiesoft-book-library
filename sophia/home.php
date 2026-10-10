@@ -1,4 +1,12 @@
 <?php
+/**
+ * HOME DASHBOARD VIEW (home.php)
+ * ---------------------------------------------------------
+ * This file serves as the primary dashboard for returning users.
+ * It dynamically renders "Jump Back In" (Resume Reading) and "Available Offline"
+ * shelves using client-side JavaScript that queries the browser's localStorage.
+ */
+
 // Sophia's Home View
 global $cdnBaseUrl, $siteName, $requestUri;
 
