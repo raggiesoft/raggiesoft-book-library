@@ -98,10 +98,16 @@ $tocUrl = '/' . $seriesSlug . '/toc';
                 ?>
             </div>
             
-            <!-- Call to action button to view the TOC -->
-            <div>
+            <!-- Call to action buttons to view the TOC and download eBooks -->
+            <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
                 <a href="<?php echo htmlspecialchars($tocUrl); ?>" class="rs-btn rs-btn-primary" style="font-size: 1.1rem; padding: 0.75rem 2rem; display: inline-flex; align-items: center; gap: 0.5rem;">
                     <i class="ph ph-book-open"></i> View the Table of Contents
+                </a>
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.epub"); ?>" target="_blank" class="rs-btn" style="font-size: 1.1rem; padding: 0.75rem 1.5rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <i class="ph ph-download-simple"></i> EPUB
+                </a>
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.pdf"); ?>" target="_blank" class="rs-btn" style="font-size: 1.1rem; padding: 0.75rem 1.5rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <i class="ph ph-file-pdf"></i> PDF
                 </a>
             </div>
         </div>

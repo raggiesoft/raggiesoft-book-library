@@ -105,10 +105,11 @@ if (!empty($routeData)) {
         <div id="rs-search-results" style="display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 6px; max-height: 350px; overflow-y: auto; z-index: 1000; box-shadow: 0 8px 24px rgba(0,0,0,0.15); margin-top: 4px;"></div>
     </form>
 
-    <!-- Contextual Series Cover Image -->
-    <?php if (!empty($toc_manifest['series_image'])): ?>
-    <div style="margin-top: 1.5rem; margin-bottom: 0.5rem; text-align: center;">
-        <img src="<?php echo htmlspecialchars($cdnBaseUrl . $toc_manifest['series_image']); ?>" alt="Cover for <?php echo htmlspecialchars($toc_manifest['series_title'] ?? ''); ?>" style="width: 100%; max-width: 140px; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.2); display: block; margin: 0 auto;">
+    <!-- E-Book Download Links -->
+    <?php if (!empty($seriesSlug) && !empty($toc_manifest)): ?>
+    <div style="margin-top: 1.5rem; margin-bottom: 0.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+        <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.epub"); ?>" target="_blank" class="rs-btn" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 0.85rem;"><i class="ph ph-book-open"></i> Download EPUB</a>
+        <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.pdf"); ?>" target="_blank" class="rs-btn" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 0.85rem;"><i class="ph ph-file-pdf"></i> Download PDF</a>
     </div>
     <?php endif; ?>
 

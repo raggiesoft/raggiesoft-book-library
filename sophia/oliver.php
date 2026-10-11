@@ -520,6 +520,22 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
             <?php echo $htmlContent; ?>
         </article>
         
+        <!-- E-Book CTA Card -->
+        <?php if (!$specialPageType): ?>
+        <div style="margin-top: 4rem; padding: 2rem; border: 1px solid var(--rs-border); border-radius: 12px; background: var(--rs-surface); text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+            <h3 style="margin-bottom: 1rem; color: var(--rs-primary);">Take this Story Offline</h3>
+            <p style="margin-bottom: 1.5rem; font-size: 1.05rem; opacity: 0.9;">Download the complete, beautifully formatted eBook for your e-reader, tablet, or phone. Yours to keep forever.</p>
+            <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.epub"); ?>" target="_blank" class="rs-btn rs-btn-primary" style="font-size: 1.1rem; padding: 0.75rem 1.5rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <i class="ph ph-download-simple"></i> Download EPUB
+                </a>
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.pdf"); ?>" target="_blank" class="rs-btn" style="font-size: 1.1rem; padding: 0.75rem 1.5rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <i class="ph ph-file-pdf"></i> Download PDF
+                </a>
+            </div>
+        </div>
+        <?php endif; ?>
+
         <!-- Share Section for Reader -->
         <?php if (!$specialPageType): ?>
         <?php 
