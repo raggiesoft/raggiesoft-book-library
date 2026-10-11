@@ -28,13 +28,13 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 1: Echoes of the Past",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|0"
+        "filePath": "__ERA_TOC__|0"
     },
     "/pebble-borrow/the-motel-on-the-highway": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Motel on the Highway",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|1"
+        "filePath": "__ERA_TOC__|1"
     },
     "/pebble-borrow/the-motel-on-the-highway/the-threshold": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -42,11 +42,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
-    "/pebble-borrow/the-motel-on-the-highway/the-threshold/part-1-out-of-the-storm": {
+    "/pebble-borrow/the-motel-on-the-highway/the-threshold/scene-1-out-of-the-storm": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Out of the Storm",
+        "title": "Scene 1: Out of the Storm",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c001/p001.md"
+        "filePath": "e002/c001/s001.md"
     },
     "/pebble-borrow/the-motel-on-the-highway/setting-the-scene": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -54,17 +54,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|1"
     },
-    "/pebble-borrow/the-motel-on-the-highway/setting-the-scene/part-1-the-apex-late-night-switch": {
+    "/pebble-borrow/the-motel-on-the-highway/setting-the-scene/scene-1-the-apex-late-night-switch": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The APEX Late-Night Switch",
+        "title": "Scene 1: The APEX Late-Night Switch",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c002/p001.md"
+        "filePath": "e002/c002/s001.md"
     },
-    "/pebble-borrow/the-motel-on-the-highway/setting-the-scene/part-2-the-apex-world-premier-presentation": {
+    "/pebble-borrow/the-motel-on-the-highway/setting-the-scene/scene-2-the-apex-world-premier-presentation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The APEX World Premier Presentation",
+        "title": "Scene 2: The APEX World Premier Presentation",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c002/p002.md"
+        "filePath": "e002/c002/s002.md"
     },
     "/pebble-borrow/the-motel-on-the-highway/amanda-protects-her-siblings": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -72,35 +72,35 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|2"
     },
-    "/pebble-borrow/the-motel-on-the-highway/amanda-protects-her-siblings/part-1-the-apex-late-night-switch": {
+    "/pebble-borrow/the-motel-on-the-highway/amanda-protects-her-siblings/scene-1-the-apex-late-night-switch": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The APEX Late\u2011Night Switch",
+        "title": "Scene 1: The APEX Late\u2011Night Switch",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c003/p001.md"
+        "filePath": "e002/c003/s001.md"
     },
-    "/pebble-borrow/the-motel-on-the-highway/amanda-protects-her-siblings/part-2-saturday-morning-the-teasing-begins": {
+    "/pebble-borrow/the-motel-on-the-highway/amanda-protects-her-siblings/scene-2-saturday-morning-the-teasing-begins": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Saturday Morning \u2014 The Teasing Begins",
+        "title": "Scene 2: Saturday Morning \u2014 The Teasing Begins",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c003/p002.md"
+        "filePath": "e002/c003/s002.md"
     },
     "/pebble-borrow/book-3-beyond-the-horizon": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 3: Beyond the Horizon",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|2"
+        "filePath": "__ERA_TOC__|2"
     },
     "/pebble-borrow/book-4-the-turning-point": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 4: The Turning Point",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|3"
+        "filePath": "__ERA_TOC__|3"
     },
     "/pebble-borrow/book-5-a-glimmer-of-hope": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 5: A Glimmer of Hope",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|4"
+        "filePath": "__ERA_TOC__|4"
     },
     "/pebble-borrow/book-5-a-glimmer-of-hope/chapter-1-the-confrontation": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -112,13 +112,13 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 6: Shadows Fall",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|5"
+        "filePath": "__ERA_TOC__|5"
     },
     "/pebble-borrow/welcome-to-pebble-burrow": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Welcome to Pebble Burrow",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|6"
+        "filePath": "__ERA_TOC__|6"
     },
     "/pebble-borrow/welcome-to-pebble-burrow/chapter-1-the-aftermath": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -204,17 +204,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|13"
     },
-    "/pebble-borrow/welcome-to-pebble-burrow/returning-to-the-surface/part-1-the-apocalyptic-reality": {
+    "/pebble-borrow/welcome-to-pebble-burrow/returning-to-the-surface/scene-1-the-apocalyptic-reality": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Apocalyptic Reality",
+        "title": "Scene 1: The Apocalyptic Reality",
         "theme": "raggiesoft-books",
-        "filePath": "b007/c014/p001.md"
+        "filePath": "e007/c014/s001.md"
     },
-    "/pebble-borrow/welcome-to-pebble-burrow/returning-to-the-surface/part-2-the-burden-of-ownership": {
+    "/pebble-borrow/welcome-to-pebble-burrow/returning-to-the-surface/scene-2-the-burden-of-ownership": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Burden of Ownership",
+        "title": "Scene 2: The Burden of Ownership",
         "theme": "raggiesoft-books",
-        "filePath": "b007/c014/p002.md"
+        "filePath": "e007/c014/s002.md"
     },
     "/pebble-borrow/welcome-to-pebble-burrow/chapter-15-the-aftermath": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -232,7 +232,7 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The General's Arrival",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|7"
+        "filePath": "__ERA_TOC__|7"
     },
     "/pebble-borrow/the-general-s-arrival/chapter-1-the-confrontation": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -246,11 +246,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|1"
     },
-    "/pebble-borrow/the-general-s-arrival/the-holy-grail-of-geothermal-energy/part-1-0700-hours-the-first-refusal": {
+    "/pebble-borrow/the-general-s-arrival/the-holy-grail-of-geothermal-energy/scene-1-0700-hours-the-first-refusal": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: 0700 Hours: The First Refusal",
+        "title": "Scene 1: 0700 Hours: The First Refusal",
         "theme": "raggiesoft-books",
-        "filePath": "b008/c002/p001.md"
+        "filePath": "e008/c002/s001.md"
     },
     "/pebble-borrow/the-general-s-arrival/0830-hours-the-four-star-directive": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -258,11 +258,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|2"
     },
-    "/pebble-borrow/the-general-s-arrival/0830-hours-the-four-star-directive/part-1-the-net-closes": {
+    "/pebble-borrow/the-general-s-arrival/0830-hours-the-four-star-directive/scene-1-the-net-closes": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Net Closes",
+        "title": "Scene 1: The Net Closes",
         "theme": "raggiesoft-books",
-        "filePath": "b008/c003/p001.md"
+        "filePath": "e008/c003/s001.md"
     },
     "/pebble-borrow/the-general-s-arrival/chapter-4-a-change-of-plans": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -276,17 +276,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|4"
     },
-    "/pebble-borrow/the-general-s-arrival/1015-hours-the-commander-in-chief/part-1-the-breach": {
+    "/pebble-borrow/the-general-s-arrival/1015-hours-the-commander-in-chief/scene-1-the-breach": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Breach",
+        "title": "Scene 1: The Breach",
         "theme": "raggiesoft-books",
-        "filePath": "b008/c005/p001.md"
+        "filePath": "e008/c005/s001.md"
     },
     "/pebble-borrow/book-9-the-endless-journey": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 9: The Endless Journey",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|8"
+        "filePath": "__ERA_TOC__|8"
     },
     "/pebble-borrow/book-9-the-endless-journey/chapter-1-unexpected-encounters": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -304,7 +304,7 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 10: The Lost Memories",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|9"
+        "filePath": "__ERA_TOC__|9"
     },
     "/pebble-borrow/book-10-the-lost-memories/chapter-1-unexpected-encounters": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -382,7 +382,7 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 11: Hidden Paths",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|10"
+        "filePath": "__ERA_TOC__|10"
     },
     "/pebble-borrow/book-11-hidden-paths/chapter-1-the-turning-of-the-tide": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -412,7 +412,7 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 12: The Turning Point",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|11"
+        "filePath": "__ERA_TOC__|11"
     },
     "/pebble-borrow/book-12-the-turning-point/chapter-1-into-the-unknown": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -436,7 +436,7 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 13: Beyond the Horizon",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|12"
+        "filePath": "__ERA_TOC__|12"
     },
     "/pebble-borrow/book-13-beyond-the-horizon/chapter-1-the-turning-of-the-tide": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -478,7 +478,7 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 14: A New Dawn",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|13"
+        "filePath": "__ERA_TOC__|13"
     },
     "/pebble-borrow/book-14-a-new-dawn/chapter-1-the-turning-of-the-tide": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -502,7 +502,7 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 15: The Final Stand",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|14"
+        "filePath": "__ERA_TOC__|14"
     },
     "/pebble-borrow/book-15-the-final-stand/chapter-1-a-new-ally": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -526,7 +526,7 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 16: A New Dawn",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|15"
+        "filePath": "__ERA_TOC__|15"
     },
     "/pebble-borrow/book-16-a-new-dawn/chapter-1-the-sacrifice": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -556,7 +556,7 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 17: The Final Stand",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|16"
+        "filePath": "__ERA_TOC__|16"
     },
     "/pebble-borrow/book-17-the-final-stand/chapter-1-the-trial": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -598,7 +598,7 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 18: Silent Whispers",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|17"
+        "filePath": "__ERA_TOC__|17"
     },
     "/pebble-borrow/book-18-silent-whispers/chapter-1-into-the-unknown": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -616,7 +616,7 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 19: Silent Whispers",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|18"
+        "filePath": "__ERA_TOC__|18"
     },
     "/pebble-borrow/book-19-silent-whispers/chapter-1-the-confrontation": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -640,7 +640,7 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 20: A New Dawn",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|19"
+        "filePath": "__ERA_TOC__|19"
     },
     "/pebble-borrow/book-20-a-new-dawn/chapter-1-unexpected-encounters": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -664,7 +664,7 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 21: A New Dawn",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|20"
+        "filePath": "__ERA_TOC__|20"
     },
     "/pebble-borrow/book-21-a-new-dawn/chapter-1-the-arrival": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -688,13 +688,13 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 22: The Final Stand",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|21"
+        "filePath": "__ERA_TOC__|21"
     },
     "/pebble-borrow/amanda-interviews-care-nurses": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Amanda Interviews Care Nurses",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|22"
+        "filePath": "__ERA_TOC__|22"
     },
     "/pebble-borrow/amanda-interviews-care-nurses/chapter-1-the-trial": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -738,23 +738,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|22|6"
     },
-    "/pebble-borrow/amanda-interviews-care-nurses/the-verification/part-1-call-1-the-surgeon": {
+    "/pebble-borrow/amanda-interviews-care-nurses/the-verification/scene-1-call-1-the-surgeon": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Call 1: The Surgeon",
+        "title": "Scene 1: Call 1: The Surgeon",
         "theme": "raggiesoft-books",
-        "filePath": "b023/c007/p001.md"
+        "filePath": "e023/c007/s001.md"
     },
-    "/pebble-borrow/amanda-interviews-care-nurses/the-verification/part-2-call-2-the-social-worker": {
+    "/pebble-borrow/amanda-interviews-care-nurses/the-verification/scene-2-call-2-the-social-worker": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Call 2: The Social Worker",
+        "title": "Scene 2: Call 2: The Social Worker",
         "theme": "raggiesoft-books",
-        "filePath": "b023/c007/p002.md"
+        "filePath": "e023/c007/s002.md"
     },
-    "/pebble-borrow/amanda-interviews-care-nurses/the-verification/part-3-call-3-the-director-of-nursing": {
+    "/pebble-borrow/amanda-interviews-care-nurses/the-verification/scene-3-call-3-the-director-of-nursing": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Call 3: The Director of Nursing",
+        "title": "Scene 3: Call 3: The Director of Nursing",
         "theme": "raggiesoft-books",
-        "filePath": "b023/c007/p003.md"
+        "filePath": "e023/c007/s003.md"
     },
     "/pebble-borrow/amanda-interviews-care-nurses/the-fortress-is-staffed": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -762,35 +762,35 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|22|7"
     },
-    "/pebble-borrow/amanda-interviews-care-nurses/the-fortress-is-staffed/part-1-the-night-watch": {
+    "/pebble-borrow/amanda-interviews-care-nurses/the-fortress-is-staffed/scene-1-the-night-watch": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Night Watch",
+        "title": "Scene 1: The Night Watch",
         "theme": "raggiesoft-books",
-        "filePath": "b023/c008/p001.md"
+        "filePath": "e023/c008/s001.md"
     },
-    "/pebble-borrow/amanda-interviews-care-nurses/the-fortress-is-staffed/part-2-the-muscle": {
+    "/pebble-borrow/amanda-interviews-care-nurses/the-fortress-is-staffed/scene-2-the-muscle": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Muscle",
+        "title": "Scene 2: The Muscle",
         "theme": "raggiesoft-books",
-        "filePath": "b023/c008/p002.md"
+        "filePath": "e023/c008/s002.md"
     },
-    "/pebble-borrow/amanda-interviews-care-nurses/the-fortress-is-staffed/part-3-the-rebuilders": {
+    "/pebble-borrow/amanda-interviews-care-nurses/the-fortress-is-staffed/scene-3-the-rebuilders": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Rebuilders",
+        "title": "Scene 3: The Rebuilders",
         "theme": "raggiesoft-books",
-        "filePath": "b023/c008/p003.md"
+        "filePath": "e023/c008/s003.md"
     },
-    "/pebble-borrow/amanda-interviews-care-nurses/the-fortress-is-staffed/part-4-the-shield": {
+    "/pebble-borrow/amanda-interviews-care-nurses/the-fortress-is-staffed/scene-4-the-shield": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Shield",
+        "title": "Scene 4: The Shield",
         "theme": "raggiesoft-books",
-        "filePath": "b023/c008/p004.md"
+        "filePath": "e023/c008/s004.md"
     },
     "/pebble-borrow/book-24-silent-whispers": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 24: Silent Whispers",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|23"
+        "filePath": "__ERA_TOC__|23"
     },
     "/pebble-borrow/book-24-silent-whispers/chapter-1-the-arrival": {
         "view": "pages/raggiesoft-books/books/viewer",

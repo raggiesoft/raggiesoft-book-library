@@ -28,7 +28,7 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Eleventh Child, Off to College",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|0"
+        "filePath": "__ERA_TOC__|0"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -36,17 +36,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude/part-1-the-drive": {
+    "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude/scene-1-the-drive": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Drive",
+        "title": "Scene 1: The Drive",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c001/p001.md"
+        "filePath": "e001/c001/s001.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude/part-2-the-shared-bed": {
+    "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude/scene-2-the-shared-bed": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Shared Bed",
+        "title": "Scene 2: The Shared Bed",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c001/p002.md"
+        "filePath": "e001/c001/s002.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/verification": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -54,17 +54,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|1"
     },
-    "/aubrie/the-eleventh-child-off-to-college/verification/part-1-the-poly-pass": {
+    "/aubrie/the-eleventh-child-off-to-college/verification/scene-1-the-poly-pass": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Poly Pass",
+        "title": "Scene 1: The Poly Pass",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c002/p001.md"
+        "filePath": "e001/c002/s001.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/verification/part-2-educational-accessibility": {
+    "/aubrie/the-eleventh-child-off-to-college/verification/scene-2-educational-accessibility": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Educational Accessibility",
+        "title": "Scene 2: Educational Accessibility",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c002/p002.md"
+        "filePath": "e001/c002/s002.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/early-move-in": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -72,29 +72,29 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|2"
     },
-    "/aubrie/the-eleventh-child-off-to-college/early-move-in/part-1-room-214": {
+    "/aubrie/the-eleventh-child-off-to-college/early-move-in/scene-1-room-214": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Room 214",
+        "title": "Scene 1: Room 214",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c003/p001.md"
+        "filePath": "e001/c003/s001.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/early-move-in/part-2-the-awkward-outlet": {
+    "/aubrie/the-eleventh-child-off-to-college/early-move-in/scene-2-the-awkward-outlet": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Awkward Outlet",
+        "title": "Scene 2: The Awkward Outlet",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c003/p002.md"
+        "filePath": "e001/c003/s002.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/early-move-in/part-3-stranded": {
+    "/aubrie/the-eleventh-child-off-to-college/early-move-in/scene-3-stranded": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Stranded",
+        "title": "Scene 3: Stranded",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c003/p003.md"
+        "filePath": "e001/c003/s003.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/early-move-in/part-4-bedtime": {
+    "/aubrie/the-eleventh-child-off-to-college/early-move-in/scene-4-bedtime": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: Bedtime",
+        "title": "Scene 4: Bedtime",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c003/p004.md"
+        "filePath": "e001/c003/s004.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-mix-up": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -102,71 +102,71 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|3"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/part-1-morning-noise": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-1-morning-noise": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Morning Noise",
+        "title": "Scene 1: Morning Noise",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c004/p001.md"
+        "filePath": "e001/c004/s001.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/part-2-an-unlikely-welcome": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-2-an-unlikely-welcome": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: An Unlikely Welcome",
+        "title": "Scene 2: An Unlikely Welcome",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c004/p002.md"
+        "filePath": "e001/c004/s002.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/part-3-the-hall-director": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-3-the-hall-director": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Hall Director",
+        "title": "Scene 3: The Hall Director",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c004/p003.md"
+        "filePath": "e001/c004/s003.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/part-4-making-it-official": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-4-making-it-official": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: Making It Official",
+        "title": "Scene 4: Making It Official",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c004/p004.md"
+        "filePath": "e001/c004/s004.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/part-5-logistics-of-a-co-ed-suite": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-5-logistics-of-a-co-ed-suite": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: Logistics of a Co-Ed Suite",
+        "title": "Scene 5: Logistics of a Co-Ed Suite",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c004/p005.md"
+        "filePath": "e001/c004/s005.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/part-6-the-first-choice": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-6-the-first-choice": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: The First Choice",
+        "title": "Scene 6: The First Choice",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c004/p006.md"
+        "filePath": "e001/c004/s006.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/part-7-the-first-assist": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-7-the-first-assist": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 7: The First Assist",
+        "title": "Scene 7: The First Assist",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c004/p007.md"
+        "filePath": "e001/c004/s007.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/part-8-the-spare-hardware": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-8-the-spare-hardware": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 8: The Spare Hardware",
+        "title": "Scene 8: The Spare Hardware",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c004/p008.md"
+        "filePath": "e001/c004/s008.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/part-9-the-new-voice": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-9-the-new-voice": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 9: The New Voice",
+        "title": "Scene 9: The New Voice",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c004/p009.md"
+        "filePath": "e001/c004/s009.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/part-10-the-antidote": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-10-the-antidote": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 10: The Antidote",
+        "title": "Scene 10: The Antidote",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c004/p010.md"
+        "filePath": "e001/c004/s010.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/part-11-the-trust-fall": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-11-the-trust-fall": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 11: The Trust Fall",
+        "title": "Scene 11: The Trust Fall",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c004/p011.md"
+        "filePath": "e001/c004/s011.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -174,53 +174,53 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|4"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor/part-1-the-awakening": {
+    "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor/scene-1-the-awakening": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Awakening",
+        "title": "Scene 1: The Awakening",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c005/p001.md"
+        "filePath": "e001/c005/s001.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor/part-2-no-privacy": {
+    "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor/scene-2-no-privacy": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: No Privacy",
+        "title": "Scene 2: No Privacy",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c005/p002.md"
+        "filePath": "e001/c005/s002.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor/part-3-worlds-aligned": {
+    "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor/scene-3-worlds-aligned": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Worlds Aligned",
+        "title": "Scene 3: Worlds Aligned",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c005/p003.md"
+        "filePath": "e001/c005/s003.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor/part-4-the-campus-topography": {
+    "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor/scene-4-the-campus-topography": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Campus Topography",
+        "title": "Scene 4: The Campus Topography",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c005/p004.md"
+        "filePath": "e001/c005/s004.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor/part-5-a-different-kind-of-constellation": {
+    "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor/scene-5-a-different-kind-of-constellation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: A Different Kind of Constellation",
+        "title": "Scene 5: A Different Kind of Constellation",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c005/p005.md"
+        "filePath": "e001/c005/s005.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor/part-6-the-safe-harbor-s-perimeter": {
+    "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor/scene-6-the-safe-harbor-s-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: The Safe Harbor's Perimeter",
+        "title": "Scene 6: The Safe Harbor's Perimeter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c005/p006.md"
+        "filePath": "e001/c005/s006.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor/part-7-newman-hall": {
+    "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor/scene-7-newman-hall": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 7: Newman Hall",
+        "title": "Scene 7: Newman Hall",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c005/p007.md"
+        "filePath": "e001/c005/s007.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor/part-8-the-interception": {
+    "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor/scene-8-the-interception": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 8: The Interception",
+        "title": "Scene 8: The Interception",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c005/p008.md"
+        "filePath": "e001/c005/s008.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/first-days": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -228,65 +228,65 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|5"
     },
-    "/aubrie/the-eleventh-child-off-to-college/first-days/part-1-morning-divergence": {
+    "/aubrie/the-eleventh-child-off-to-college/first-days/scene-1-morning-divergence": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Morning Divergence",
+        "title": "Scene 1: Morning Divergence",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c006/p001.md"
+        "filePath": "e001/c006/s001.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/first-days/part-2-into-the-stars": {
+    "/aubrie/the-eleventh-child-off-to-college/first-days/scene-2-into-the-stars": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Into the Stars",
+        "title": "Scene 2: Into the Stars",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c006/p002.md"
+        "filePath": "e001/c006/s002.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/first-days/part-3-the-ascent": {
+    "/aubrie/the-eleventh-child-off-to-college/first-days/scene-3-the-ascent": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Ascent",
+        "title": "Scene 3: The Ascent",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c006/p003.md"
+        "filePath": "e001/c006/s003.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/first-days/part-4-western-civilization": {
+    "/aubrie/the-eleventh-child-off-to-college/first-days/scene-4-western-civilization": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: Western Civilization",
+        "title": "Scene 4: Western Civilization",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c006/p004.md"
+        "filePath": "e001/c006/s004.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/first-days/part-5-the-broken-elevator": {
+    "/aubrie/the-eleventh-child-off-to-college/first-days/scene-5-the-broken-elevator": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: The Broken Elevator",
+        "title": "Scene 5: The Broken Elevator",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c006/p005.md"
+        "filePath": "e001/c006/s005.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/first-days/part-6-the-taste-of-freedom": {
+    "/aubrie/the-eleventh-child-off-to-college/first-days/scene-6-the-taste-of-freedom": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: The Taste of Freedom",
+        "title": "Scene 6: The Taste of Freedom",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c006/p006.md"
+        "filePath": "e001/c006/s006.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/first-days/part-7-the-true-assessment": {
+    "/aubrie/the-eleventh-child-off-to-college/first-days/scene-7-the-true-assessment": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 7: The True Assessment",
+        "title": "Scene 7: The True Assessment",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c006/p007.md"
+        "filePath": "e001/c006/s007.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/first-days/part-8-afternoon-anchors": {
+    "/aubrie/the-eleventh-child-off-to-college/first-days/scene-8-afternoon-anchors": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 8: Afternoon Anchors",
+        "title": "Scene 8: Afternoon Anchors",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c006/p008.md"
+        "filePath": "e001/c006/s008.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/first-days/part-9-evening-data": {
+    "/aubrie/the-eleventh-child-off-to-college/first-days/scene-9-evening-data": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 9: Evening Data",
+        "title": "Scene 9: Evening Data",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c006/p009.md"
+        "filePath": "e001/c006/s009.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/first-days/part-10-the-open-doors": {
+    "/aubrie/the-eleventh-child-off-to-college/first-days/scene-10-the-open-doors": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 10: The Open Doors",
+        "title": "Scene 10: The Open Doors",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c006/p010.md"
+        "filePath": "e001/c006/s010.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -294,35 +294,35 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|6"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust/part-1-the-mega-meetup": {
+    "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust/scene-1-the-mega-meetup": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Mega-Meetup",
+        "title": "Scene 1: The Mega-Meetup",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c007/p001.md"
+        "filePath": "e001/c007/s001.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust/part-2-office-hours": {
+    "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust/scene-2-office-hours": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Office Hours",
+        "title": "Scene 2: Office Hours",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c007/p002.md"
+        "filePath": "e001/c007/s002.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust/part-3-the-mega-group-lunch": {
+    "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust/scene-3-the-mega-group-lunch": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Mega-Group Lunch",
+        "title": "Scene 3: The Mega-Group Lunch",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c007/p003.md"
+        "filePath": "e001/c007/s003.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust/part-4-an-unconventional-study-session": {
+    "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust/scene-4-an-unconventional-study-session": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: An Unconventional Study Session",
+        "title": "Scene 4: An Unconventional Study Session",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c007/p004.md"
+        "filePath": "e001/c007/s004.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust/part-5-the-war-room": {
+    "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust/scene-5-the-war-room": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: The War Room",
+        "title": "Scene 5: The War Room",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c007/p005.md"
+        "filePath": "e001/c007/s005.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-sensory-awakening": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -330,29 +330,29 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|7"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-sensory-awakening/part-1-the-canadian-wake-up": {
+    "/aubrie/the-eleventh-child-off-to-college/the-sensory-awakening/scene-1-the-canadian-wake-up": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Canadian Wake-Up",
+        "title": "Scene 1: The Canadian Wake-Up",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c008/p001.md"
+        "filePath": "e001/c008/s001.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-sensory-awakening/part-2-the-australian-voice": {
+    "/aubrie/the-eleventh-child-off-to-college/the-sensory-awakening/scene-2-the-australian-voice": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Australian Voice",
+        "title": "Scene 2: The Australian Voice",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c008/p002.md"
+        "filePath": "e001/c008/s002.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-sensory-awakening/part-3-primary-care": {
+    "/aubrie/the-eleventh-child-off-to-college/the-sensory-awakening/scene-3-primary-care": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Primary Care",
+        "title": "Scene 3: Primary Care",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c008/p003.md"
+        "filePath": "e001/c008/s003.md"
     },
     "/aubrie/note-to-the-ai": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Note to the AI",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|1"
+        "filePath": "__ERA_TOC__|1"
     },
     "/aubrie/note-to-the-ai/homecoming-week": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -360,17 +360,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
-    "/aubrie/note-to-the-ai/homecoming-week/part-1-the-fortress-of-truth": {
+    "/aubrie/note-to-the-ai/homecoming-week/scene-1-the-fortress-of-truth": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Fortress of Truth",
+        "title": "Scene 1: The Fortress of Truth",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c001/p001.md"
+        "filePath": "e002/c001/s001.md"
     },
     "/aubrie/jordan-s-world-trek": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Jordan's World Trek",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|2"
+        "filePath": "__ERA_TOC__|2"
     },
     "/aubrie/jordan-s-world-trek/the-northern-ascent": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -378,89 +378,89 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|0"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/part-1-the-vanguard-awakes": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-1-the-vanguard-awakes": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Vanguard Awakes",
+        "title": "Scene 1: The Vanguard Awakes",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c001/p001.md"
+        "filePath": "e003/c001/s001.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/part-2-operation-yellow-ribbon": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-2-operation-yellow-ribbon": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Operation Yellow Ribbon",
+        "title": "Scene 2: Operation Yellow Ribbon",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c001/p002.md"
+        "filePath": "e003/c001/s002.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/part-3-the-security-checkpoint": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-3-the-security-checkpoint": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Security Checkpoint",
+        "title": "Scene 3: The Security Checkpoint",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c001/p003.md"
+        "filePath": "e003/c001/s003.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/part-4-the-ten-thousand-foot-rule": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-4-the-ten-thousand-foot-rule": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Ten-Thousand Foot Rule",
+        "title": "Scene 4: The Ten-Thousand Foot Rule",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c001/p004.md"
+        "filePath": "e003/c001/s004.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/part-5-the-international-threshold": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-5-the-international-threshold": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: The International Threshold",
+        "title": "Scene 5: The International Threshold",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c001/p005.md"
+        "filePath": "e003/c001/s005.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/part-6-the-iad-layover-strategy": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-6-the-iad-layover-strategy": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: The IAD Layover Strategy",
+        "title": "Scene 6: The IAD Layover Strategy",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c001/p006.md"
+        "filePath": "e003/c001/s006.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/part-7-the-border-briefing": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-7-the-border-briefing": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 7: The Border Briefing",
+        "title": "Scene 7: The Border Briefing",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c001/p007.md"
+        "filePath": "e003/c001/s007.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/part-8-the-outback-lift": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-8-the-outback-lift": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 8: The Outback Lift",
+        "title": "Scene 8: The Outback Lift",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c001/p008.md"
+        "filePath": "e003/c001/s008.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/part-9-the-price-of-freedom": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-9-the-price-of-freedom": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 9: The Price of Freedom",
+        "title": "Scene 9: The Price of Freedom",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c001/p009.md"
+        "filePath": "e003/c001/s009.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/part-10-the-commonwealth-question": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-10-the-commonwealth-question": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 10: The Commonwealth Question",
+        "title": "Scene 10: The Commonwealth Question",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c001/p010.md"
+        "filePath": "e003/c001/s010.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/part-11-the-epassport-bottleneck": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-11-the-epassport-bottleneck": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 11: The ePassport Bottleneck",
+        "title": "Scene 11: The ePassport Bottleneck",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c001/p011.md"
+        "filePath": "e003/c001/s011.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/part-12-the-yellow-ribbon-welcome": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-12-the-yellow-ribbon-welcome": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 12: The Yellow Ribbon Welcome",
+        "title": "Scene 12: The Yellow Ribbon Welcome",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c001/p012.md"
+        "filePath": "e003/c001/s012.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/part-13-the-gander-lift": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-13-the-gander-lift": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 13: The Gander Lift",
+        "title": "Scene 13: The Gander Lift",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c001/p013.md"
+        "filePath": "e003/c001/s013.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/part-14-the-room-214-reunion": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-14-the-room-214-reunion": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 14: The Room 214 Reunion",
+        "title": "Scene 14: The Room 214 Reunion",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c001/p014.md"
+        "filePath": "e003/c001/s014.md"
     },
     "/aubrie/jordan-s-world-trek/the-northern-horizon": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -468,23 +468,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|1"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-horizon/part-1-the-gander-morning": {
+    "/aubrie/jordan-s-world-trek/the-northern-horizon/scene-1-the-gander-morning": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Gander Morning",
+        "title": "Scene 1: The Gander Morning",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c002/p001.md"
+        "filePath": "e003/c002/s001.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-horizon/part-2-the-cognitive-redirect": {
+    "/aubrie/jordan-s-world-trek/the-northern-horizon/scene-2-the-cognitive-redirect": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Cognitive Redirect",
+        "title": "Scene 2: The Cognitive Redirect",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c002/p002.md"
+        "filePath": "e003/c002/s002.md"
     },
     "/aubrie/jordan-s-court-case": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Jordan's Court Case",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|3"
+        "filePath": "__ERA_TOC__|3"
     },
     "/aubrie/jordan-s-court-case/the-southern-hemisphere": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -492,34 +492,34 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|0"
     },
-    "/aubrie/jordan-s-court-case/the-southern-hemisphere/part-1-the-final-briefing": {
+    "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-1-the-final-briefing": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Final Briefing",
+        "title": "Scene 1: The Final Briefing",
         "theme": "raggiesoft-books",
-        "filePath": "b004/c001/p001.md"
+        "filePath": "e004/c001/s001.md"
     },
-    "/aubrie/jordan-s-court-case/the-southern-hemisphere/part-2-the-phalanx-and-the-gavel": {
+    "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-2-the-phalanx-and-the-gavel": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Phalanx and The Gavel",
+        "title": "Scene 2: The Phalanx and The Gavel",
         "theme": "raggiesoft-books",
-        "filePath": "b004/c001/p002.md"
+        "filePath": "e004/c001/s002.md"
     },
-    "/aubrie/jordan-s-court-case/the-southern-hemisphere/part-3-the-evidentiary-phase": {
+    "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-3-the-evidentiary-phase": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Evidentiary Phase",
+        "title": "Scene 3: The Evidentiary Phase",
         "theme": "raggiesoft-books",
-        "filePath": "b004/c001/p003.md"
+        "filePath": "e004/c001/s003.md"
     },
-    "/aubrie/jordan-s-court-case/the-southern-hemisphere/part-4-the-closing-argument": {
+    "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-4-the-closing-argument": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Closing Argument",
+        "title": "Scene 4: The Closing Argument",
         "theme": "raggiesoft-books",
-        "filePath": "b004/c001/p004.md"
+        "filePath": "e004/c001/s004.md"
     },
-    "/aubrie/jordan-s-court-case/the-southern-hemisphere/part-5-the-gavel-and-the-handcuffs": {
+    "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-5-the-gavel-and-the-handcuffs": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: The Gavel and The Handcuffs",
+        "title": "Scene 5: The Gavel and The Handcuffs",
         "theme": "raggiesoft-books",
-        "filePath": "b004/c001/p005.md"
+        "filePath": "e004/c001/s005.md"
     }
 }

@@ -8,7 +8,7 @@
  *     and provides social media sharing links.
  * 
  * Design Decisions & Future Maintenance:
- *     - Global Variables: Relies on `$katie` for configuration data, `$cdnBaseUrl` for image asset resolution,
+ *     - Global Variables: Relies on `$toc_manifest` for configuration data, `$cdnBaseUrl` for image asset resolution,
  *       `$seriesSlug` for URL generation, and `$Parsedown` for converting the long markdown description into HTML.
  *     - Markdown Parsing: Includes logic to strip YAML frontmatter (`--- ... ---`) from the top of the description file
  *       before passing it to Parsedown to prevent raw metadata from bleeding into the UI.
@@ -20,13 +20,13 @@
  */
 
 // Import requisite dependencies and metadata.
-global $katie, $cdnBaseUrl, $seriesSlug, $Parsedown;
+global $toc_manifest, $cdnBaseUrl, $seriesSlug, $Parsedown;
 
 // Setup fallback values in case the JSON data is missing expected fields.
-$seriesTitle = $katie['series_title'] ?? 'Book Series';
-$seriesDescriptionLong = $katie['series_description_long'] ?? '';
-$seriesDescription = $katie['series_description'] ?? 'No description available.';
-$seriesImage = $katie['series_image'] ?? '';
+$seriesTitle = $toc_manifest['series_title'] ?? 'Book Series';
+$seriesDescriptionLong = $toc_manifest['series_description_long'] ?? '';
+$seriesDescription = $toc_manifest['series_description'] ?? 'No description available.';
+$seriesImage = $toc_manifest['series_image'] ?? '';
 $tocUrl = '/' . $seriesSlug . '/toc';
 ?>
 <style>

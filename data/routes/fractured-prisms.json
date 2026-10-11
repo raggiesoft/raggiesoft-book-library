@@ -28,7 +28,7 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 1: Shadows Fall",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|0"
+        "filePath": "__ERA_TOC__|0"
     },
     "/fractured-prisms/book-1-shadows-fall/chapter-1-revelations": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -64,7 +64,7 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 2: Shadows Fall",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|1"
+        "filePath": "__ERA_TOC__|1"
     },
     "/fractured-prisms/book-2-shadows-fall/chapter-1-the-confrontation": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -94,13 +94,13 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 3: A New Dawn",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|2"
+        "filePath": "__ERA_TOC__|2"
     },
     "/fractured-prisms/book-4-the-endless-journey": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 4: The Endless Journey",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|3"
+        "filePath": "__ERA_TOC__|3"
     },
     "/fractured-prisms/book-4-the-endless-journey/chapter-1-the-confrontation": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -124,7 +124,7 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 5: A New Dawn",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|4"
+        "filePath": "__ERA_TOC__|4"
     },
     "/fractured-prisms/book-5-a-new-dawn/chapter-1-the-arrival": {
         "view": "pages/raggiesoft-books/books/viewer",

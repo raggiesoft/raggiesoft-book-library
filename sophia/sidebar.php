@@ -26,7 +26,7 @@
  */
 
 // Import legacy global variables required for view rendering
-global $seriesSlug, $routeData, $cdnBaseUrl, $requestUri, $katie;
+global $seriesSlug, $routeData, $cdnBaseUrl, $requestUri, $toc_manifest;
 
 // Build a reverse lookup array mapping physical file paths to clean Stardust URLs
 $fileToUrl = [];
@@ -106,15 +106,15 @@ if (!empty($routeData)) {
     </form>
 
     <!-- Contextual Series Cover Image -->
-    <?php if (!empty($katie['series_image'])): ?>
+    <?php if (!empty($toc_manifest['series_image'])): ?>
     <div style="margin-top: 1.5rem; margin-bottom: 0.5rem; text-align: center;">
-        <img src="<?php echo htmlspecialchars($cdnBaseUrl . $katie['series_image']); ?>" alt="Cover for <?php echo htmlspecialchars($katie['series_title'] ?? ''); ?>" style="width: 100%; max-width: 140px; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.2); display: block; margin: 0 auto;">
+        <img src="<?php echo htmlspecialchars($cdnBaseUrl . $toc_manifest['series_image']); ?>" alt="Cover for <?php echo htmlspecialchars($toc_manifest['series_title'] ?? ''); ?>" style="width: 100%; max-width: 140px; border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.2); display: block; margin: 0 auto;">
     </div>
     <?php endif; ?>
 
     <!-- Contextual Series Title -->
     <h3 style="margin-top: 1rem; color: var(--rs-primary); text-align: center;"><?php 
-        $sidebarSeriesTitle = $katie['series_title'] ?? (ucfirst($seriesSlug) . ' Narrative');
+        $sidebarSeriesTitle = $toc_manifest['series_title'] ?? (ucfirst($seriesSlug) . ' Narrative');
         echo htmlspecialchars($sidebarSeriesTitle); 
     ?></h3>
     <p style="opacity: 0.7; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Navigation</p>

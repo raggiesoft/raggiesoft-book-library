@@ -81,9 +81,9 @@ if ($actualFilePath === '__SERIES_LANDING__') {
     $specialPageType = 'landing';
 } elseif ($actualFilePath === '__TOC__') {
     $specialPageType = 'toc';
-} elseif (strpos($actualFilePath, '__BOOK_TOC__|') === 0) {
+} elseif (strpos($actualFilePath, '__ERA_TOC__|') === 0) {
     $p = explode('|', $actualFilePath);
-    $specialPageType = 'book_toc';
+    $specialPageType = 'era_toc';
     $specialPageIndex1 = (int)($p[1] ?? 0);
 } elseif (strpos($actualFilePath, '__CHAP_TOC__|') === 0) {
     $p = explode('|', $actualFilePath);
@@ -166,8 +166,8 @@ if ($specialPageType) {
         require_once __DIR__ . '/landing.php';
     } elseif ($specialPageType === 'toc') {
         require_once __DIR__ . '/toc.php';
-    } elseif ($specialPageType === 'book_toc') {
-        require_once __DIR__ . '/book-toc.php';
+    } elseif ($specialPageType === 'era_toc') {
+        require_once __DIR__ . '/era-toc.php';
     } elseif ($specialPageType === 'chap_toc') {
         require_once __DIR__ . '/chap-toc.php';
     }
@@ -231,22 +231,22 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
         <div class="reader-nav" style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
             <div style="opacity: 0.7; font-size: 0.9rem;">
             <?php 
-            global $katie, $seriesSlug, $pageConfig;
+            global $toc_manifest, $seriesSlug, $pageConfig;
             $actualFilePath = $pageConfig["filePath"] ?? "";
             
-            $seriesTitle = !empty($katie['series_title']) ? $katie['series_title'] : (ucwords(str_replace('-', ' ', $seriesSlug)));
-            $bookTitle = '';
+            $seriesTitle = !empty($toc_manifest['series_title']) ? $toc_manifest['series_title'] : (ucwords(str_replace('-', ' ', $seriesSlug)));
+            $eraTitle = '';
             $chapTitle = '';
             
             // Search the manifest for hierarchy titles to construct breadcrumbs
-            if ($katie && isset($katie['books'])) {
-                foreach ($katie['books'] as $b) {
-                    if (isset($b['chapters'])) {
-                        foreach ($b['chapters'] as $c) {
-                            if (isset($c['parts'])) {
-                                foreach ($c['parts'] as $p) {
-                                    if ($p['file_path'] === $actualFilePath) {
-                                        $bookTitle = $b['book_title'];
+            if ($toc_manifest && isset($toc_manifest['eras'])) {
+                foreach ($toc_manifest['eras'] as $e) {
+                    if (isset($e['chapters'])) {
+                        foreach ($e['chapters'] as $c) {
+                            if (isset($c['scenes'])) {
+                                foreach ($c['scenes'] as $s) {
+                                    if ($s['file_path'] === $actualFilePath) {
+                                        $eraTitle = $e['era_title'];
                                         $chapTitle = $c['chap_title'];
                                         break 3;
                                     }
@@ -272,7 +272,7 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                 <div class="reader-series-header">
                     <?php 
                     $eyebrowParts = [$seriesTitle];
-                    if ($bookTitle) $eyebrowParts[] = $bookTitle;
+                    if ($eraTitle) $eyebrowParts[] = $eraTitle;
                     if ($chapTitle) $eyebrowParts[] = $chapTitle;
                     echo htmlspecialchars(implode(' • ', $eyebrowParts));
                     ?>

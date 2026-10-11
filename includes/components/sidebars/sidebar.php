@@ -21,7 +21,7 @@
  * - This component relies on the `$requestUri` global. If the variable scoping 
  *   in the parent view restricts this, the diagnostic output will fail.
  * - Future iterations should replace the hardcoded "Test Page" links with 
- *   dynamic series or book navigation fetched from `katie.json`.
+ *   dynamic series or novel navigation fetched from `toc.json`.
  * ============================================================================
  */
 

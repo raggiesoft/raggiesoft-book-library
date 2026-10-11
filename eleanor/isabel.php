@@ -14,7 +14,7 @@
  *     - Single Entry Point (Front Controller): All traffic is directed here 
  *       via web server rewrites (e.g., Nginx or Apache).
  *     - Decoupled State: Routing definitions (`$routeData`) and narrative 
- *       configurations (`$katie`) are loaded from static JSON files. This 
+ *       configurations (`$toc_manifest`) are loaded from static JSON files. This 
  *       removes the need for a database.
  *     - SEO Optimization: Automatically parses Markdown frontmatter to inject 
  *       page-specific OpenGraph tags (`og:title`, `og:image`, etc.) for rich 
@@ -122,35 +122,35 @@ if ($requestUri === '/' || $requestUri === '/isabel.php' || $requestUri === '/in
 $currentPageTheme = $pageConfig['theme'] ?? 'raggiesoft-books';
 
 // Pre-fetch the Katie manifest for SEO calculations and Sidebar rendering
-$katie = null;
+$toc_manifest = null;
 if ($seriesSlug) {
     // Note: `@` suppresses network/file warnings if the JSON is missing
-    $katieUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/toc.json';
-    $katieContent = @file_get_contents($katieUrl);
-    $katie = $katieContent ? json_decode($katieContent, true) : null;
+    $toc_manifestUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/toc.json';
+    $toc_manifestContent = @file_get_contents($toc_manifestUrl);
+    $toc_manifest = $toc_manifestContent ? json_decode($toc_manifestContent, true) : null;
 }
 
 $siteName = 'Ocean View Archives';
 if (!empty($pageConfig['title'])) {
-    // Cleanse title strings like "Part 1: Chapter 1: The Architect's Lesson" 
+    // Cleanse title strings like "Scene 1: Chapter 1: The Architect's Lesson" 
     // to just "The Architect's Lesson" for tab aesthetics
     $titleParts = explode(':', $pageConfig['title']);
-    $cleanPartTitle = trim(end($titleParts));
+    $cleanSceneTitle = trim(end($titleParts));
     
     // Resolve series title from manifest, falling back to a formatted slug
-    $seriesTitle = !empty($katie['series_title']) ? $katie['series_title'] : (ucwords(str_replace('-', ' ', $seriesSlug)));
+    $seriesTitle = !empty($toc_manifest['series_title']) ? $toc_manifest['series_title'] : (ucwords(str_replace('-', ' ', $seriesSlug)));
     
-    if ($cleanPartTitle === $seriesTitle || $cleanPartTitle === "Table of Contents - $seriesTitle") {
-        $siteName = $cleanPartTitle . ' | Ocean View Archives';
+    if ($cleanSceneTitle === $seriesTitle || $cleanSceneTitle === "Table of Contents - $seriesTitle") {
+        $siteName = $cleanSceneTitle . ' | Ocean View Archives';
     } else {
-        $siteName = $cleanPartTitle . ' | ' . $seriesTitle;
+        $siteName = $cleanSceneTitle . ' | ' . $seriesTitle;
     }
 }
 
 // Setup baseline OpenGraph variables for social sharing (Twitter, Facebook, Discord, etc.)
 $ogUrl = 'https://' . $_SERVER['HTTP_HOST'] . $requestUri;
 $ogTitle = $siteName;
-$ogDescription = !empty($katie['series_description']) ? $katie['series_description'] : 'Read this story on the Raggiesoft Ocean View Archives.';
+$ogDescription = !empty($toc_manifest['series_description']) ? $toc_manifest['series_description'] : 'Read this story on the Raggiesoft Ocean View Archives.';
 $ogImage = '';
 
 // Determine context-appropriate OpenGraph imagery based on the active route type
@@ -172,7 +172,7 @@ if (!empty($pageConfig['filePath'])) {
     $actualFilePath = $pageConfig['filePath'];
     
     // Identify non-physical structural files to prevent unnecessary CDN requests
-    $isSpecial = in_array($actualFilePath, ['__SERIES_LANDING__', '__TOC__']) || strpos($actualFilePath, '__BOOK_TOC__|') === 0 || strpos($actualFilePath, '__CHAP_TOC__|') === 0;
+    $isSpecial = in_array($actualFilePath, ['__SERIES_LANDING__', '__TOC__']) || strpos($actualFilePath, '__ERA_TOC__|') === 0 || strpos($actualFilePath, '__CHAP_TOC__|') === 0;
     
     if (!$isSpecial) {
         $mdUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/' . $actualFilePath;
@@ -216,7 +216,7 @@ if (!empty($pageConfig['filePath'])) {
                 if ($fmOgTitle !== '') {
                     $ogTitle = $fmOgTitle;
                 } elseif ($fmTitle !== '') {
-                    $seriesTitle = !empty($katie['series_title']) ? $katie['series_title'] : (ucwords(str_replace('-', ' ', $seriesSlug)));
+                    $seriesTitle = !empty($toc_manifest['series_title']) ? $toc_manifest['series_title'] : (ucwords(str_replace('-', ' ', $seriesSlug)));
                     $ogTitle = $fmTitle . ' | ' . $seriesTitle;
                 }
             }

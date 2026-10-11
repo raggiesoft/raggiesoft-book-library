@@ -28,7 +28,7 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 1: Toby\u2019s 6th Grade",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|0"
+        "filePath": "__ERA_TOC__|0"
     },
     "/samantha/book-1-toby-s-6th-grade/chapter-1-the-father-and-the-uncle-sunday-july-13-1997": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -36,29 +36,29 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/samantha/book-1-toby-s-6th-grade/chapter-1-the-father-and-the-uncle-sunday-july-13-1997/part-1-untitled-chapter": {
+    "/samantha/book-1-toby-s-6th-grade/chapter-1-the-father-and-the-uncle-sunday-july-13-1997/scene-1-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Untitled Chapter",
+        "title": "Scene 1: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c001/p001.md"
+        "filePath": "e001/c001/s001.md"
     },
-    "/samantha/book-1-toby-s-6th-grade/chapter-1-the-father-and-the-uncle-sunday-july-13-1997/part-2-untitled-chapter": {
+    "/samantha/book-1-toby-s-6th-grade/chapter-1-the-father-and-the-uncle-sunday-july-13-1997/scene-2-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Untitled Chapter",
+        "title": "Scene 2: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c001/p002.md"
+        "filePath": "e001/c001/s002.md"
     },
-    "/samantha/book-1-toby-s-6th-grade/chapter-1-the-father-and-the-uncle-sunday-july-13-1997/part-3-untitled-chapter": {
+    "/samantha/book-1-toby-s-6th-grade/chapter-1-the-father-and-the-uncle-sunday-july-13-1997/scene-3-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Untitled Chapter",
+        "title": "Scene 3: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c001/p003.md"
+        "filePath": "e001/c001/s003.md"
     },
-    "/samantha/book-1-toby-s-6th-grade/chapter-1-the-father-and-the-uncle-sunday-july-13-1997/part-4-untitled-chapter": {
+    "/samantha/book-1-toby-s-6th-grade/chapter-1-the-father-and-the-uncle-sunday-july-13-1997/scene-4-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: Untitled Chapter",
+        "title": "Scene 4: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c001/p004.md"
+        "filePath": "e001/c001/s004.md"
     },
     "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -66,101 +66,101 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|1"
     },
-    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/part-1-untitled-chapter": {
+    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/scene-1-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Untitled Chapter",
+        "title": "Scene 1: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c002/p001.md"
+        "filePath": "e001/c002/s001.md"
     },
-    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/part-2-untitled-chapter": {
+    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/scene-2-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Untitled Chapter",
+        "title": "Scene 2: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c002/p002.md"
+        "filePath": "e001/c002/s002.md"
     },
-    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/part-3-untitled-chapter": {
+    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/scene-3-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Untitled Chapter",
+        "title": "Scene 3: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c002/p003.md"
+        "filePath": "e001/c002/s003.md"
     },
-    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/part-4-untitled-chapter": {
+    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/scene-4-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: Untitled Chapter",
+        "title": "Scene 4: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c002/p004.md"
+        "filePath": "e001/c002/s004.md"
     },
-    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/part-5-untitled-chapter": {
+    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/scene-5-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: Untitled Chapter",
+        "title": "Scene 5: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c002/p005.md"
+        "filePath": "e001/c002/s005.md"
     },
-    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/part-6-untitled-chapter": {
+    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/scene-6-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: Untitled Chapter",
+        "title": "Scene 6: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c002/p006.md"
+        "filePath": "e001/c002/s006.md"
     },
-    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/part-7-untitled-chapter": {
+    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/scene-7-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 7: Untitled Chapter",
+        "title": "Scene 7: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c002/p007.md"
+        "filePath": "e001/c002/s007.md"
     },
-    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/part-8-untitled-chapter": {
+    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/scene-8-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 8: Untitled Chapter",
+        "title": "Scene 8: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c002/p008.md"
+        "filePath": "e001/c002/s008.md"
     },
-    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/part-9-untitled-chapter": {
+    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/scene-9-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 9: Untitled Chapter",
+        "title": "Scene 9: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c002/p009.md"
+        "filePath": "e001/c002/s009.md"
     },
-    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/part-10-untitled-chapter": {
+    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/scene-10-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 10: Untitled Chapter",
+        "title": "Scene 10: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c002/p010.md"
+        "filePath": "e001/c002/s010.md"
     },
-    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/part-11-untitled-chapter": {
+    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/scene-11-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 11: Untitled Chapter",
+        "title": "Scene 11: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c002/p011.md"
+        "filePath": "e001/c002/s011.md"
     },
-    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/part-12-untitled-chapter": {
+    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/scene-12-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 12: Untitled Chapter",
+        "title": "Scene 12: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c002/p012.md"
+        "filePath": "e001/c002/s012.md"
     },
-    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/part-13-untitled-chapter": {
+    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/scene-13-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 13: Untitled Chapter",
+        "title": "Scene 13: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c002/p013.md"
+        "filePath": "e001/c002/s013.md"
     },
-    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/part-14-untitled-chapter": {
+    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/scene-14-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 14: Untitled Chapter",
+        "title": "Scene 14: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c002/p014.md"
+        "filePath": "e001/c002/s014.md"
     },
-    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/part-15-untitled-chapter": {
+    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/scene-15-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 15: Untitled Chapter",
+        "title": "Scene 15: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c002/p015.md"
+        "filePath": "e001/c002/s015.md"
     },
-    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/part-16-untitled-chapter": {
+    "/samantha/book-1-toby-s-6th-grade/chapter-2-the-extraction-monday-july-14-1997/scene-16-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 16: Untitled Chapter",
+        "title": "Scene 16: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c002/p016.md"
+        "filePath": "e001/c002/s016.md"
     },
     "/samantha/book-1-toby-s-6th-grade/chapter-3-the-night-watch-tuesday-july-15-1997": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -168,17 +168,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|2"
     },
-    "/samantha/book-1-toby-s-6th-grade/chapter-3-the-night-watch-tuesday-july-15-1997/part-1-untitled-chapter": {
+    "/samantha/book-1-toby-s-6th-grade/chapter-3-the-night-watch-tuesday-july-15-1997/scene-1-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Untitled Chapter",
+        "title": "Scene 1: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b001/c003/p001.md"
+        "filePath": "e001/c003/s001.md"
     },
     "/samantha/book-2-toby-s-8th-grade-year": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 2: Toby\u2019s 8th Grade Year",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|1"
+        "filePath": "__ERA_TOC__|1"
     },
     "/samantha/book-2-toby-s-8th-grade-year/chapter-1-the-matrix-anomaly-tuesday-april-20-1999": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -186,17 +186,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
-    "/samantha/book-2-toby-s-8th-grade-year/chapter-1-the-matrix-anomaly-tuesday-april-20-1999/part-1-untitled-chapter": {
+    "/samantha/book-2-toby-s-8th-grade-year/chapter-1-the-matrix-anomaly-tuesday-april-20-1999/scene-1-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Untitled Chapter",
+        "title": "Scene 1: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c001/p001.md"
+        "filePath": "e002/c001/s001.md"
     },
-    "/samantha/book-2-toby-s-8th-grade-year/chapter-1-the-matrix-anomaly-tuesday-april-20-1999/part-2-untitled-chapter": {
+    "/samantha/book-2-toby-s-8th-grade-year/chapter-1-the-matrix-anomaly-tuesday-april-20-1999/scene-2-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Untitled Chapter",
+        "title": "Scene 2: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c001/p002.md"
+        "filePath": "e002/c001/s002.md"
     },
     "/samantha/book-2-toby-s-8th-grade-year/chapter-2-the-intent-to-enroll-friday-april-23-1999": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -204,11 +204,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|1"
     },
-    "/samantha/book-2-toby-s-8th-grade-year/chapter-2-the-intent-to-enroll-friday-april-23-1999/part-1-untitled-chapter": {
+    "/samantha/book-2-toby-s-8th-grade-year/chapter-2-the-intent-to-enroll-friday-april-23-1999/scene-1-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Untitled Chapter",
+        "title": "Scene 1: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c002/p001.md"
+        "filePath": "e002/c002/s001.md"
     },
     "/samantha/book-2-toby-s-8th-grade-year/chapter-3-the-bureaucratic-disbelief-wednesday-april-28-1999": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -216,11 +216,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|2"
     },
-    "/samantha/book-2-toby-s-8th-grade-year/chapter-3-the-bureaucratic-disbelief-wednesday-april-28-1999/part-1-untitled-chapter": {
+    "/samantha/book-2-toby-s-8th-grade-year/chapter-3-the-bureaucratic-disbelief-wednesday-april-28-1999/scene-1-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Untitled Chapter",
+        "title": "Scene 1: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c003/p001.md"
+        "filePath": "e002/c003/s001.md"
     },
     "/samantha/book-2-toby-s-8th-grade-year/chapter-4-the-morrison-stand-off-thursday-may-6-1999": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -228,35 +228,35 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|3"
     },
-    "/samantha/book-2-toby-s-8th-grade-year/chapter-4-the-morrison-stand-off-thursday-may-6-1999/part-1-untitled-chapter": {
+    "/samantha/book-2-toby-s-8th-grade-year/chapter-4-the-morrison-stand-off-thursday-may-6-1999/scene-1-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Untitled Chapter",
+        "title": "Scene 1: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c004/p001.md"
+        "filePath": "e002/c004/s001.md"
     },
-    "/samantha/book-2-toby-s-8th-grade-year/chapter-4-the-morrison-stand-off-thursday-may-6-1999/part-2-untitled-chapter": {
+    "/samantha/book-2-toby-s-8th-grade-year/chapter-4-the-morrison-stand-off-thursday-may-6-1999/scene-2-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Untitled Chapter",
+        "title": "Scene 2: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c004/p002.md"
+        "filePath": "e002/c004/s002.md"
     },
-    "/samantha/book-2-toby-s-8th-grade-year/chapter-4-the-morrison-stand-off-thursday-may-6-1999/part-3-untitled-chapter": {
+    "/samantha/book-2-toby-s-8th-grade-year/chapter-4-the-morrison-stand-off-thursday-may-6-1999/scene-3-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Untitled Chapter",
+        "title": "Scene 3: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c004/p003.md"
+        "filePath": "e002/c004/s003.md"
     },
-    "/samantha/book-2-toby-s-8th-grade-year/chapter-4-the-morrison-stand-off-thursday-may-6-1999/part-4-untitled-chapter": {
+    "/samantha/book-2-toby-s-8th-grade-year/chapter-4-the-morrison-stand-off-thursday-may-6-1999/scene-4-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: Untitled Chapter",
+        "title": "Scene 4: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b002/c004/p004.md"
+        "filePath": "e002/c004/s004.md"
     },
     "/samantha/book-3-the-environmental-doctrine": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 3: The Environmental Doctrine",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|2"
+        "filePath": "__ERA_TOC__|2"
     },
     "/samantha/book-3-the-environmental-doctrine/chapter-1-the-cosmic-collapse-tuesday-july-13-1999": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -264,22 +264,22 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|0"
     },
-    "/samantha/book-3-the-environmental-doctrine/chapter-1-the-cosmic-collapse-tuesday-july-13-1999/part-1-untitled-chapter": {
+    "/samantha/book-3-the-environmental-doctrine/chapter-1-the-cosmic-collapse-tuesday-july-13-1999/scene-1-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Untitled Chapter",
+        "title": "Scene 1: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c001/p001.md"
+        "filePath": "e003/c001/s001.md"
     },
-    "/samantha/book-3-the-environmental-doctrine/chapter-1-the-cosmic-collapse-tuesday-july-13-1999/part-2-untitled-chapter": {
+    "/samantha/book-3-the-environmental-doctrine/chapter-1-the-cosmic-collapse-tuesday-july-13-1999/scene-2-untitled-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Untitled Chapter",
+        "title": "Scene 2: Untitled Chapter",
         "theme": "raggiesoft-books",
-        "filePath": "b003/c001/p002.md"
+        "filePath": "e003/c001/s002.md"
     },
     "/samantha/book-4-silent-whispers": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 4: Silent Whispers",
         "theme": "raggiesoft-books",
-        "filePath": "__BOOK_TOC__|3"
+        "filePath": "__ERA_TOC__|3"
     }
 }
