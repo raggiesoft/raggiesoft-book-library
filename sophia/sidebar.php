@@ -83,8 +83,22 @@ if (!empty($routeData)) {
 <!-- Slide-out sidebar container -->
 <aside id="stardust-sidebar" class="reader-sidebar">
     
+    <!-- 
+      Contextual Series Header
+      Anchored prominently at the top of the sidebar to immediately establish reading context
+    -->
+    <div class="sidebar-series-header" style="text-align: center; margin-bottom: 1.25rem;">
+        <h3 style="margin: 0 0 0.25rem 0; color: var(--rs-primary); font-size: 1.25rem; font-weight: 700; line-height: 1.3;"><?php 
+            $sidebarSeriesTitle = $toc_manifest['series_title'] ?? (ucfirst($seriesSlug) . ' Narrative');
+            echo htmlspecialchars($sidebarSeriesTitle); 
+        ?></h3>
+        <p style="margin: 0; opacity: 0.7; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Navigation</p>
+    </div>
+
+    <hr style="border:0; border-top:1px solid var(--rs-border); margin: 0 0 1.25rem 0;">
+
     <!-- Quick Access Actions Grid -->
-    <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.5rem;">
+    <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.25rem;">
         <div style="display: flex; gap: 0.5rem;">
             <a href="/" class="rs-btn rs-btn-brand" style="flex: 1; text-align: center; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 4px;"><i class="ph ph-house"></i> Home</a>
             <a href="/library" class="rs-btn" style="flex: 1; text-align: center; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 4px;"><i class="ph ph-books"></i> Library</a>
@@ -100,26 +114,19 @@ if (!empty($routeData)) {
       Instant Search Bar
       Acts as a standard form fallback, but enhanced via JS for instant typeahead 
     -->
-    <form action="/search" method="GET" class="search-container" style="position: relative; margin-bottom: 1.5rem;">
+    <form action="/search" method="GET" class="search-container" style="position: relative; margin-bottom: 1.25rem;">
         <input type="text" id="rs-book-search" name="q" placeholder="Search the universe..." style="width: 100%; padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid var(--rs-border); background: var(--rs-surface); color: var(--rs-text); font-size: 0.95rem;">
         <div id="rs-search-results" style="display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 6px; max-height: 350px; overflow-y: auto; z-index: 1000; box-shadow: 0 8px 24px rgba(0,0,0,0.15); margin-top: 4px;"></div>
     </form>
 
     <!-- E-Book Download Links -->
     <?php if (!empty($seriesSlug) && !empty($toc_manifest)): ?>
-    <div style="margin-top: 1.5rem; margin-bottom: 0.5rem; display: flex; flex-direction: column; gap: 0.5rem;">
+    <div style="margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem;">
         <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.epub"); ?>" target="_blank" class="rs-btn" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 0.85rem;"><i class="ph ph-book-open"></i> Download EPUB</a>
         <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.pdf"); ?>" target="_blank" class="rs-btn" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 0.85rem;"><i class="ph ph-file-pdf"></i> Download PDF</a>
     </div>
+    <hr style="border:0; border-top:1px solid var(--rs-border); margin: 0 0 1.25rem 0;">
     <?php endif; ?>
-
-    <!-- Contextual Series Title -->
-    <h3 style="margin-top: 1rem; color: var(--rs-primary); text-align: center;"><?php 
-        $sidebarSeriesTitle = $toc_manifest['series_title'] ?? (ucfirst($seriesSlug) . ' Narrative');
-        echo htmlspecialchars($sidebarSeriesTitle); 
-    ?></h3>
-    <p style="opacity: 0.7; font-size: 0.85rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Navigation</p>
-    <hr style="border:0; border-top:1px solid var(--rs-border); margin: 20px 0;">
     
     <!-- Primary Contextual Navigation Links -->
     <nav class="toc-nav" style="display: flex; flex-direction: column; gap: 0.5rem;">
