@@ -296,6 +296,16 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                             </span>
                         <?php endif; ?>
 
+                        <?php if (empty($frontmatter['date']) && !empty($frontmatter['start_time'])): ?>
+                            <!-- Standalone 24-hour clock for fantasy/non-Earth realms (formatted to OS locale without timezone shifting) -->
+                            <span id="story-time-only-display" style="display: flex; align-items: center; gap: 4px;" data-time-only="<?php echo htmlspecialchars($frontmatter['start_time']); ?>" data-end-time-only="<?php echo htmlspecialchars($frontmatter['end_time'] ?? ''); ?>">
+                                <i class="ph ph-clock"></i>
+                                <span class="dt-text">
+                                    <?php echo htmlspecialchars($frontmatter['start_time'] . (!empty($frontmatter['end_time']) ? ' - ' . $frontmatter['end_time'] : '')); ?>
+                                </span>
+                            </span>
+                        <?php endif; ?>
+
                         <?php 
                         if (!empty($frontmatter['date'])): 
                             $isoString = '';
@@ -321,10 +331,6 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                                     <?php echo htmlspecialchars($frontmatter['date'] . (!empty($frontmatter['start_time']) ? ' ' . $frontmatter['start_time'] . ' ' . ($frontmatter['timezone'] ?? '') : '')); ?>
                                 </span>
                             </span>
-                            
-                            <?php if ($isoString): ?>
-                            
-                            <?php endif; ?>
                         <?php endif; ?>
                         
                         <?php if (!empty($frontmatter['location'])): ?>
