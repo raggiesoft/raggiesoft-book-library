@@ -185,8 +185,11 @@ global $cdnBaseUrl, $siteName, $requestUri;
                     <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 0.5rem;">
                         <strong>Reader Software:</strong> Released under the <a href="https://opensource.org/licenses/MIT" target="_blank" style="color: inherit; font-weight: bold;">MIT License</a>.
                     </p>
-                    <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 0;">
+                    <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 0.75rem;">
                         <strong>Copyright:</strong> &copy; <?php echo date('Y'); ?> RaggieSoft. All rights reserved.
+                    </p>
+                    <p style="font-size: 0.82rem; opacity: 0.78; line-height: 1.5; margin-bottom: 0;">
+                        <strong>Work of Fiction Disclaimer:</strong> All novels, stories, characters, bands, universities (including Commonwealth Polytechnic Institute / CPI), corporations (including OmniCorp and Apex Records), and events in the Ocean View Archives and across the RaggieSoft network are works of fiction. Any resemblance to actual persons, living or dead, businesses, institutions, or events is purely coincidental.
                     </p>
                 </div>
 

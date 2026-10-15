@@ -101,11 +101,14 @@ global $cdnBaseUrl;
             
             <hr style="border: 0; border-top: 1px solid var(--rs-border); margin: 1.5rem 0;">
             
-            <div style="font-size: 0.85rem; color: var(--rs-text); opacity: 0.8; line-height: 1.5; text-align: center;">
+            <div style="font-size: 0.85rem; color: var(--rs-text); opacity: 0.85; line-height: 1.6; text-align: center;">
                 <p style="margin: 0 0 0.5rem 0; font-weight: 600;">Stardust Engine v0.1.0</p>
                 <p style="margin: 0 0 0.5rem 0;">Copyright &copy; <?php echo date("Y"); ?> RaggieSoft. All rights reserved.</p>
                 <p style="margin: 0;"><strong>Code License:</strong> MIT</p>
-                <p style="margin: 0;"><strong>Narrative Content License:</strong> CC BY-SA 4.0</p>
+                <p style="margin: 0 0 0.75rem 0;"><strong>Narrative Content License:</strong> CC BY-SA 4.0</p>
+                <p style="margin: 0; font-size: 0.8rem; opacity: 0.85; max-width: 680px; margin-left: auto; margin-right: auto;">
+                    <strong>Work of Fiction Disclaimer:</strong> All novels, stories, characters (including the developer personas above), bands, universities (including CPI), corporations (including OmniCorp and Apex Records), and events in the Ocean View Archives are works of fiction. Any resemblance to actual persons, living or dead, businesses, institutions, or events is purely coincidental.
+                </p>
             </div>
         </div>
 

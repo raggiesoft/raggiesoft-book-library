@@ -144,5 +144,9 @@ $ogImageFile = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/' . $seriesSlug
                 <i class="ph ph-link"></i> Copy Link
             </button>
         </div>
+
+        <p style="margin-top: 2rem; font-size: 0.8rem; color: var(--rs-text); opacity: 0.72; line-height: 1.5;">
+            <strong>Work of Fiction Disclaimer:</strong> All characters, bands, universities (including CPI), corporations, and events in this series are works of fiction. Any resemblance to actual persons, living or dead, institutions, or events is purely coincidental.
+        </p>
     </div>
 </div>

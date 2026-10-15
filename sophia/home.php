@@ -233,6 +233,10 @@ if ($discoverConfigData) {
         </style>
         <?php endif; ?>
 
+        <div style="margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--rs-border); font-size: 0.8rem; color: var(--rs-text); opacity: 0.72; line-height: 1.5; text-align: center;">
+            <strong>Work of Fiction Disclaimer:</strong> All novels, characters, bands, universities (including CPI), corporations, and events depicted in the Ocean View Archives are works of fiction. Any resemblance to actual persons, living or dead, institutions, or events is purely coincidental.
+        </div>
+
         <!-- NOTE: Existing stray div preserved for structural integrity. -->
         </div>
 </div>
