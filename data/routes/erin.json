@@ -1,0 +1,93 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "oceanview",
+        "siteName": "Ocean View Archives",
+        "isSequential": true,
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books",
+        "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
+        "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
+        "navbarBrandLink": "/raggiesoft-books"
+    },
+    "/erin": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Before the Distance: The Story of John & Erin",
+        "theme": "raggiesoft-books",
+        "filePath": "__SERIES_LANDING__"
+    },
+    "/erin/toc": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Contents - Before the Distance: The Story of John & Erin",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
+    },
+    "/erin/before-the-distance-the-story-of-john-erin": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Before the Distance: The Story of John & Erin",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|0"
+    },
+    "/erin/before-the-distance-the-story-of-john-erin/seconds-into-thunder": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Seconds Into Thunder",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|0"
+    },
+    "/erin/before-the-distance-the-story-of-john-erin/seconds-into-thunder/scene-1-the-three-minute-bell": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Three-Minute Bell",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/s001.md"
+    },
+    "/erin/before-the-distance-the-story-of-john-erin/seconds-into-thunder/scene-2-table-four": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: Table Four",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/s002.md"
+    },
+    "/erin/before-the-distance-the-story-of-john-erin/before-the-distance": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Before the Distance",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|1"
+    },
+    "/erin/before-the-distance-the-story-of-john-erin/before-the-distance/scene-1-the-frayed-mask": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Frayed Mask",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c002/s001.md"
+    },
+    "/erin/before-the-distance-the-story-of-john-erin/before-the-distance/scene-2-when-the-steel-doors-close": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: When the Steel Doors Close",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c002/s002.md"
+    },
+    "/erin/before-the-distance-the-story-of-john-erin/sanctuary-in-the-storm": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Sanctuary in the Storm",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|2"
+    },
+    "/erin/before-the-distance-the-story-of-john-erin/sanctuary-in-the-storm/scene-1-the-locked-perimeter": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Locked Perimeter",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c003/s001.md"
+    },
+    "/erin/before-the-distance-the-story-of-john-erin/not-her": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Not Her",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|3"
+    },
+    "/erin/before-the-distance-the-story-of-john-erin/not-her/scene-1-the-practiced-smile": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Practiced Smile",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c004/s001.md"
+    }
+}
