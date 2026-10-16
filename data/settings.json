@@ -1,5 +1,10 @@
 {
     "siteName": "Ocean View Archives",
     "projectSlug": "raggiesoft-books",
-    "cdnBaseUrl": "https://assets.raggiesoft.com"
+    "cdnBaseUrl": "https://assets.raggiesoft.com",
+    "analytics": {
+        "provider": "google",
+        "trackingId": "G-P9RG9JVYB6",
+        "enabled": true
+    }
 }

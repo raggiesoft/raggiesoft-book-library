@@ -168,15 +168,21 @@ $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? '
         }
     </style>
 
-    <!-- Google Analytics Integration -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P9RG9JVYB6"></script>
+    <!-- Google Analytics 4 (GA4) Telemetry Integration -->
+    <?php
+    $gaEnabled = $settings['analytics']['enabled'] ?? true;
+    $gaTrackingId = $settings['analytics']['trackingId'] ?? 'G-P9RG9JVYB6';
+    if ($gaEnabled && !empty($gaTrackingId)):
+    ?>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=<?= htmlspecialchars($gaTrackingId) ?>"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
-      gtag('config', 'G-P9RG9JVYB6');
+      gtag('config', '<?= htmlspecialchars($gaTrackingId) ?>');
     </script>
+    <?php endif; ?>
     <script src="/scripts/pwa.js"></script>
 </head>
 
