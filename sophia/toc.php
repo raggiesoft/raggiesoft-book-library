@@ -17,7 +17,7 @@
  * Maintenance Notes:
  *     - If the accordion styling breaks, check the `<style>` block at the bottom; 
  *       it overrides default webkit behaviors for summary markers.
- *     - Ensure the `$toc_manifest` array shape remains consistent with `publish_books.php`. 
+ *     - Ensure the `$toc_manifest` array shape remains consistent with `raggiesoft-deployment-tools/paige.php`. 
  *       Specifically, it expects `['eras'] -> ['chapters'] -> ['scenes']`.
  * =============================================================================
  */

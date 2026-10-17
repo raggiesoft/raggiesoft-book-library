@@ -27,7 +27,7 @@ const IMAGE_CACHE = 'ova-images-v5';
 const PRECACHE_ASSETS = [
     '/',
     '/manifest.json',
-    '/scripts/pwa.js?v=20261017i',
+    '/scripts/pwa.js?v=20261017j',
     '/favicon.ico',
     'https://assets.raggiesoft.com/raggiesoft-books/images/pwa-icons/icon.svg'
 ];

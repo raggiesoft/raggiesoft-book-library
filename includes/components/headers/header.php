@@ -127,8 +127,8 @@ $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? '
     <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-grid.css">
     <link rel="stylesheet" href="<?= $assetsUrl ?>/stardust-engine-library/css/stardust-engine.min.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="<?= $assetsUrl ?>/stardust-engine-library/css/theme-<?= htmlspecialchars($currentPageTheme ?? 'oceanview') ?>.min.css">
-    <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-network.css?v=20261017i">
-    <script src="<?= $assetsUrl ?>/common/js/raggiesoft-network.js?v=20261017i" defer></script>
+    <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-network.css?v=20261017j">
+    <script src="<?= $assetsUrl ?>/common/js/raggiesoft-network.js?v=20261017j" defer></script>
     <style>
         /* Native PWA Immersion Guard: Hide cross-site network bar in installed PWA display modes */
         @media (display-mode: standalone),
@@ -217,7 +217,7 @@ $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? '
       gtag('config', '<?= htmlspecialchars($gaTrackingId) ?>');
     </script>
     <?php endif; ?>
-    <script src="/scripts/pwa.js?v=20261017i"></script>
+    <script src="/scripts/pwa.js?v=20261017j"></script>
 </head>
 
 <body class="theme-<?= htmlspecialchars($currentPageTheme ?? 'oceanview') ?><?= $forceDarkClass ?>">
@@ -274,7 +274,6 @@ $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? '
           <li><a href="https://books.raggiesoft.com" aria-current="page" class="is-active">📚 Books</a></li>
           <li><a href="https://stardust.raggiesoft.com" data-no-spa="true">🚀 Stardust</a></li>
           <li><a href="https://engineroom.raggiesoft.com" data-no-spa="true">⚙️ Engine Room</a></li>
-          <li><a href="https://lore.raggiesoft.com" data-no-spa="true">🏛️ Lore</a></li>
           <li><a href="https://corporate.raggiesoft.com" data-no-spa="true">🏢 Corporate</a></li>
           <li><a href="https://storetrainer.raggiesoft.com" data-no-spa="true">💾 StoreTrainer</a></li>
           <li><a href="https://michaelpragsdale.com" data-no-spa="true">👔 Michael P. Ragsdale</a></li>
