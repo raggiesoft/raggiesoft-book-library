@@ -171,7 +171,7 @@ class StardustParsedown extends Parsedown {
             '[!TIP]' => ['variant' => 'success', 'bs_variant' => 'success', 'icon' => 'fa-lightbulb'],
             '[!WARNING]' => ['variant' => 'warning', 'bs_variant' => 'warning', 'icon' => 'fa-triangle-exclamation'],
             '[!CAUTION]' => ['variant' => 'danger', 'bs_variant' => 'danger', 'icon' => 'fa-radiation'],
-            '[!IMPORTANT]' => ['variant' => 'primary', 'bs_variant' => 'primary', 'icon' => 'fa-star'],
+            '[!IMPORTANT]' => ['variant' => 'brand', 'bs_variant' => 'primary', 'icon' => 'fa-star'],
         ];
 
         foreach ($alerts as $trigger => $config) {
@@ -181,10 +181,10 @@ class StardustParsedown extends Parsedown {
                 
                 if ($this->frameworkMode === 'web-awesome') {
                     $Block['element']['handler']['argument'][0] = '<i slot="icon" class="fa-duotone ' . $config['icon'] . '"></i> ' . $Block['element']['handler']['argument'][0];
-                    $Block['element']['name'] = 'wa-alert';
+                    $Block['element']['name'] = 'wa-callout';
                     $Block['element']['attributes'] = [
                         'variant' => $config['variant'],
-                        'open' => 'true',
+                        'appearance' => 'accent',
                         'class' => 'my-4 shadow-sm'
                     ];
                 } else {
@@ -254,14 +254,17 @@ class StardustParsedown extends Parsedown {
             $title = $attrs['title'] ?? 'Credential';
             $desc = $attrs['desc'] ?? '';
             $lore = $attrs['lore'] ?? '';
-            $color = $attrs['color'] ?? 'primary';
+            $color = $attrs['color'] ?? 'brand';
+            // Normalize legacy Web Awesome v2 color names to v3.13.0 semantic variants
+            $waVariantMap = ['primary' => 'brand', 'info' => 'brand', 'secondary' => 'neutral', 'dark' => 'neutral'];
+            $waColor = $waVariantMap[$color] ?? $color;
             $icon = $attrs['icon'] ?? 'fa-id-card';
             
             $id = 'cred-' . uniqid();
             
             if ($this->frameworkMode === 'web-awesome') {
-                return '<wa-button variant="' . $color . '" size="small" class="me-2 mb-2" outline onclick="document.getElementById(\'' . $id . '\').show()">
-<i class="fa-duotone ' . $icon . ' me-2"></i> ' . htmlspecialchars($title) . '
+                return '<wa-button variant="' . $waColor . '" appearance="outlined" size="small" class="me-2 mb-2" onclick="document.getElementById(\'' . $id . '\').show()">
+<i slot="start" class="fa-duotone ' . $icon . '"></i> ' . htmlspecialchars($title) . '
 </wa-button>
 <wa-dialog id="' . $id . '" label="' . htmlspecialchars($title) . '">
 <i slot="label-icon" class="fa-duotone ' . $icon . '"></i>
@@ -269,11 +272,11 @@ class StardustParsedown extends Parsedown {
 <h6 class="text-uppercase small opacity-75 mb-2">Technical Definition</h6>
 <p class="mb-0 text-body-secondary">' . htmlspecialchars($desc) . '</p>
 </div>
-<wa-alert variant="' . $color . '" open class="shadow-sm">
+<wa-callout variant="' . $waColor . '" appearance="accent" class="shadow-sm">
 <i slot="icon" class="fa-duotone fa-shield-check"></i>
 <strong class="d-block mb-1">Application to the Universe</strong>
 <div class="small">' . htmlspecialchars($lore) . '</div>
-</wa-alert>
+</wa-callout>
 <wa-button slot="footer" variant="neutral" onclick="document.getElementById(\'' . $id . '\').hide()">Close</wa-button>
 </wa-dialog>';
             } else {
