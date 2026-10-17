@@ -28,8 +28,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // Check if running as an installed PWA (standalone) via various browser-specific metrics.
-    const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone || document.referrer.includes('android-app://');
+    // Check if running as an installed PWA (standalone, window-controls-overlay, minimal-ui, or fullscreen).
+    const isStandalone =
+        window.matchMedia('(display-mode: standalone), (display-mode: window-controls-overlay), (display-mode: minimal-ui), (display-mode: fullscreen)').matches ||
+        window.navigator.standalone === true ||
+        document.referrer.includes('android-app://');
+
+    if (isStandalone) {
+        document.documentElement.classList.add('is-pwa-standalone');
+        document.body.classList.add('is-pwa-standalone');
+        const netBar = document.querySelector('.rs-network-bar');
+        if (netBar) {
+            netBar.hidden = true;
+            netBar.setAttribute('aria-hidden', 'true');
+            netBar.style.setProperty('display', 'none', 'important');
+        }
+    }
     
     if (isStandalone && currentPath === '/') {
         // If launched from the OS home screen and landing on the root homepage, check launch preference.
@@ -96,6 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Wait for the window `load` event to ensure the SW registration doesn't block the critical rendering path.
         window.addEventListener('load', () => {
             navigator.serviceWorker.register('/sw.js').then(registration => {
+                registration.update();
                 console.log('ServiceWorker registration successful with scope: ', registration.scope);
             }, err => {
                 console.log('ServiceWorker registration failed: ', err);

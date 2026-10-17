@@ -127,8 +127,40 @@ $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? '
     <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-grid.css">
     <link rel="stylesheet" href="<?= $assetsUrl ?>/stardust-engine-library/css/stardust-engine.min.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="<?= $assetsUrl ?>/stardust-engine-library/css/theme-<?= htmlspecialchars($currentPageTheme ?? 'oceanview') ?>.min.css">
-    <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-network.css?v=20261017h">
-    <script src="<?= $assetsUrl ?>/common/js/raggiesoft-network.js?v=20261017h" defer></script>
+    <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-network.css?v=20261017i">
+    <script src="<?= $assetsUrl ?>/common/js/raggiesoft-network.js?v=20261017i" defer></script>
+    <style>
+        /* Native PWA Immersion Guard: Hide cross-site network bar in installed PWA display modes */
+        @media (display-mode: standalone),
+               (display-mode: window-controls-overlay),
+               (display-mode: minimal-ui),
+               (display-mode: fullscreen) {
+            .rs-network-bar,
+            .rs-mobile-network-section {
+                display: none !important;
+            }
+        }
+        html.is-pwa-standalone .rs-network-bar,
+        html.is-pwa-standalone .rs-mobile-network-section {
+            display: none !important;
+        }
+    </style>
+    <script>
+        (function () {
+            try {
+                var isPwa =
+                    (window.navigator && window.navigator.standalone === true) ||
+                    (document.referrer && document.referrer.indexOf('android-app://') === 0) ||
+                    (window.matchMedia &&
+                        window.matchMedia(
+                            '(display-mode: standalone), (display-mode: window-controls-overlay), (display-mode: minimal-ui), (display-mode: fullscreen)'
+                        ).matches);
+                if (isPwa) {
+                    document.documentElement.classList.add('is-pwa-standalone');
+                }
+            } catch (e) {}
+        })();
+    </script>
     
     <!-- Typographic Assets -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
@@ -185,7 +217,7 @@ $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? '
       gtag('config', '<?= htmlspecialchars($gaTrackingId) ?>');
     </script>
     <?php endif; ?>
-    <script src="/scripts/pwa.js"></script>
+    <script src="/scripts/pwa.js?v=20261017i"></script>
 </head>
 
 <body class="theme-<?= htmlspecialchars($currentPageTheme ?? 'oceanview') ?><?= $forceDarkClass ?>">

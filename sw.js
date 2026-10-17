@@ -19,15 +19,15 @@
  */
 
 // Cache partition identifiers
-const CACHE_NAME = 'ova-cache-v4';
-const DYNAMIC_CACHE = 'ova-dynamic-v4';
-const IMAGE_CACHE = 'ova-images-v4';
+const CACHE_NAME = 'ova-cache-v5';
+const DYNAMIC_CACHE = 'ova-dynamic-v5';
+const IMAGE_CACHE = 'ova-images-v5';
 
 // Minimum required assets to render the offline application shell
 const PRECACHE_ASSETS = [
     '/',
     '/manifest.json',
-    '/scripts/pwa.js',
+    '/scripts/pwa.js?v=20261017i',
     '/favicon.ico',
     'https://assets.raggiesoft.com/raggiesoft-books/images/pwa-icons/icon.svg'
 ];
@@ -35,9 +35,10 @@ const PRECACHE_ASSETS = [
 /**
  * INSTALL EVENT
  * Triggered when the service worker is first registered or updated.
- * We use this phase to pre-cache the critical shell assets.
+ * We use this phase to pre-cache the critical shell assets and activate immediately.
  */
 self.addEventListener('install', event => {
+    self.skipWaiting();
     event.waitUntil(
         caches.open(CACHE_NAME).then(cache => {
             return cache.addAll(PRECACHE_ASSETS);
@@ -61,7 +62,7 @@ self.addEventListener('activate', event => {
                     }
                 })
             );
-        })
+        }).then(() => self.clients.claim())
     );
 });
 
