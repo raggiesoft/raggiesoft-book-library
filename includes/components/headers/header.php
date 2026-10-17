@@ -127,8 +127,8 @@ $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? '
     <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-grid.css">
     <link rel="stylesheet" href="<?= $assetsUrl ?>/stardust-engine-library/css/stardust-engine.min.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="<?= $assetsUrl ?>/stardust-engine-library/css/theme-<?= htmlspecialchars($currentPageTheme ?? 'oceanview') ?>.min.css">
-    <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-network.css">
-    <script src="<?= $assetsUrl ?>/common/js/raggiesoft-network.js" defer></script>
+    <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-network.css?v=20261017c">
+    <script src="<?= $assetsUrl ?>/common/js/raggiesoft-network.js?v=20261017c" defer></script>
     
     <!-- Typographic Assets -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
