@@ -127,6 +127,7 @@ $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? '
     <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-grid.css">
     <link rel="stylesheet" href="<?= $assetsUrl ?>/stardust-engine-library/css/stardust-engine.min.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="<?= $assetsUrl ?>/stardust-engine-library/css/theme-<?= htmlspecialchars($currentPageTheme ?? 'oceanview') ?>.min.css">
+    <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-network.css">
     
     <!-- Typographic Assets -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
@@ -228,6 +229,25 @@ $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? '
     
     <!-- Accessibility focus anchor -->
     <a href="#stardust-main-content" class="visually-hidden-focusable" style="position: absolute; z-index: 9999; padding: 1rem; background: var(--rs-primary); color: white; text-decoration: none; border-radius: 4px; left: 1rem; top: 1rem;">Skip to main content</a>
+
+    <!-- Omnidirectional RaggieSoft Ecosystem Network Bar (Outside SPA Zone so it persists across book navigations) -->
+    <nav class="rs-network-bar" aria-label="RaggieSoft Ecosystem Network">
+      <div class="rs-network-bar-inner">
+        <span class="rs-network-label">✦ RaggieSoft Network:</span>
+        <ul class="rs-network-links">
+          <li><a href="https://raggiesoft.com" data-no-spa="true">🌐 Hub</a></li>
+          <li><a href="https://nebulae.raggiesoft.com" data-no-spa="true">🌌 Nebulae</a></li>
+          <li><a href="https://music.raggiesoft.com" data-no-spa="true">🎧 Music</a></li>
+          <li><a href="https://books.raggiesoft.com" aria-current="page" class="is-active">📚 Books</a></li>
+          <li><a href="https://stardust.raggiesoft.com" data-no-spa="true">🚀 Stardust</a></li>
+          <li><a href="https://engineroom.raggiesoft.com" data-no-spa="true">⚙️ Engine Room</a></li>
+          <li><a href="https://lore.raggiesoft.com" data-no-spa="true">🏛️ Lore</a></li>
+          <li><a href="https://corporate.raggiesoft.com" data-no-spa="true">🏢 Corporate</a></li>
+          <li><a href="https://storetrainer.raggiesoft.com" data-no-spa="true">💾 StoreTrainer</a></li>
+          <li><a href="https://michaelpragsdale.com" data-no-spa="true">👔 Michael P. Ragsdale</a></li>
+        </ul>
+      </div>
+    </nav>
 
     <!-- Audio Player (Outside SPA Zone) -->
     <!-- Positioned outside #stardust-app so navigating between pages doesn't kill playback -->
