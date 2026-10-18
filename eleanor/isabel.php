@@ -80,6 +80,8 @@ if (preg_match('#^/([^/]+)#', $requestUri, $matches)) {
 // Determine if the requested URI corresponds to top-level platform pages
 $isCatalog = false;
 $isHome = false;
+$isKnox = false;
+$isAethelSaga = false;
 if ($requestUri === '/' || $requestUri === '/isabel.php' || $requestUri === '/index.php') {
     $isHome = true;
     $seriesSlug = ''; // Clear slug to avoid conflicts
@@ -88,6 +90,14 @@ if ($requestUri === '/' || $requestUri === '/isabel.php' || $requestUri === '/in
     $isCatalog = true;
     $seriesSlug = ''; // Clear slug
     $pageConfig['title'] = 'Library';
+} else if ($requestUri === '/knox') {
+    $isKnox = true;
+    $seriesSlug = '';
+    $pageConfig['title'] = 'Project: KNOX';
+} else if ($requestUri === '/aethel-saga') {
+    $isAethelSaga = true;
+    $seriesSlug = '';
+    $pageConfig['title'] = 'The Silver Gauntlet of Aethel';
 } else if ($requestUri === '/discover') {
     $isDiscover = true;
     $seriesSlug = '';
@@ -157,12 +167,24 @@ $ogImage = '';
 if (!empty($seriesSlug)) {
     $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/' . $seriesSlug . '.jpg';
 } else if ($isCatalog) {
+    $siteName = 'Contemporary Fiction Library | Ocean View Archives';
     $ogTitle = 'Contemporary Fiction Library | Ocean View Archives';
     $ogDescription = 'Living stories. Expanding lore. Dive into the universe. The grounded, real-world archives of RaggieSoft Media.';
     $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/og/library-og.jpg';
+} else if ($isKnox) {
+    $siteName = 'Project: KNOX Universe | Ocean View Archives';
+    $ogTitle = 'Project: KNOX Universe | Ocean View Archives';
+    $ogDescription = 'On a high-gravity frontier world in the Telsan Gap, twins Anya and Kael Rostova evade the monolithic Axiom Archival Division.';
+    $ogImage = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017-knox-ost/social-preview.jpg';
+} else if ($isAethelSaga) {
+    $siteName = 'The Silver Gauntlet of Aethel | Ocean View Archives';
+    $ogTitle = 'The Silver Gauntlet of Aethel | Ocean View Archives';
+    $ogDescription = 'Two twins. One broken world. Follow Kaelan and Kaela across the four mythic eras of Aethel inside the Ocean View Archives.';
+    $ogImage = $cdnBaseUrl . '/aethel/images/aethel-hero.jpg';
 } else if ($isHome) {
+    $siteName = 'Ocean View Archives | RaggieSoft Media';
     $ogTitle = 'Ocean View Archives | RaggieSoft Media';
-    $ogDescription = 'Discover original stories, serialized narratives, and interconnected universes in the official RaggieSoft Media reading library.';
+    $ogDescription = 'The official literary imprint of RaggieSoft Media. Discover Contemporary Fiction, Project: KNOX, and The Silver Gauntlet of Aethel.';
     $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/og/contemporary_v2.jpg';
 }
 
@@ -242,6 +264,10 @@ if ($isHome) {
     require_once $basePath . '/sophia/home.php';
 } else if ($isCatalog) {
     require_once $basePath . '/sophia/catalog.php';
+} else if ($isKnox) {
+    require_once $basePath . '/sophia/knox.php';
+} else if ($isAethelSaga) {
+    require_once $basePath . '/sophia/aethel-saga.php';
 } else if (isset($isDiscover) && $isDiscover) {
     require_once $basePath . '/sophia/discover.php';
 } else if (isset($isBookmarks) && $isBookmarks) {
