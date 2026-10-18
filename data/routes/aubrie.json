@@ -72,33 +72,51 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c002/s002.md"
     },
+    "/aubrie/the-eleventh-child-off-to-college/verification/scene-3-all-the-way": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: All the Way",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c002/s003.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/verification/scene-4-the-routine": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 4: The Routine",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c002/s004.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/verification/scene-5-one-last-night": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 5: One Last Night",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c002/s005.md"
+    },
     "/aubrie/the-eleventh-child-off-to-college/early-move-in": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Early Move-In",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|2"
     },
-    "/aubrie/the-eleventh-child-off-to-college/early-move-in/scene-1-room-214": {
+    "/aubrie/the-eleventh-child-off-to-college/early-move-in/scene-1-eleanor-bennett-commonwealth-hall": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Room 214",
+        "title": "Scene 1: Eleanor Bennett Commonwealth Hall",
         "theme": "raggiesoft-books",
         "filePath": "e001/c003/s001.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/early-move-in/scene-2-the-awkward-outlet": {
+    "/aubrie/the-eleventh-child-off-to-college/early-move-in/scene-2-room-214": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Awkward Outlet",
+        "title": "Scene 2: Room 214",
         "theme": "raggiesoft-books",
         "filePath": "e001/c003/s002.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/early-move-in/scene-3-stranded": {
+    "/aubrie/the-eleventh-child-off-to-college/early-move-in/scene-3-the-awkward-outlet": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Stranded",
+        "title": "Scene 3: The Awkward Outlet",
         "theme": "raggiesoft-books",
         "filePath": "e001/c003/s003.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/early-move-in/scene-4-bedtime": {
+    "/aubrie/the-eleventh-child-off-to-college/early-move-in/scene-4-stranded": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Bedtime",
+        "title": "Scene 4: Stranded",
         "theme": "raggiesoft-books",
         "filePath": "e001/c003/s004.md"
     },
