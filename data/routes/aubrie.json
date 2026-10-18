@@ -36,17 +36,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude/scene-1-the-drive": {
+    "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude/scene-1-an-extension-of-me": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Drive",
+        "title": "Scene 1: An Extension of Me",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/s001.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude/scene-2-the-shared-bed": {
+    "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude/scene-2-the-drive": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Shared Bed",
+        "title": "Scene 2: The Drive",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/s002.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude/scene-3-the-shared-bed": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: The Shared Bed",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/s003.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/verification": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -348,19 +354,103 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c008/s003.md"
     },
-    "/aubrie/note-to-the-ai": {
+    "/aubrie/the-eleventh-child-off-to-college/the-sensory-awakening/scene-4-the-good-faith-offer": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Note to the AI",
+        "title": "Scene 4: The Good Faith Offer",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c008/s004.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-pepper-plaza-expedition": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Pepper Plaza Expedition",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|8"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-pepper-plaza-expedition/scene-1-route-1-to-pepper-plaza": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Route 1 to Pepper Plaza",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c009/s001.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-pepper-plaza-expedition/scene-2-a-world-in-focus": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: A World in Focus",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c009/s002.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-pepper-plaza-expedition/scene-3-the-audiologist-s-verdict": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: The Audiologist's Verdict",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c009/s003.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/monday-night-war": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Monday Night War",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|9"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/monday-night-war/scene-1-strategic-analysis": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Strategic Analysis",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c010/s001.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/monday-night-war/scene-2-the-unbeliever": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The Unbeliever",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c010/s002.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/trial-by-fire-drill": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Trial by Fire Drill",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|10"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/trial-by-fire-drill/scene-1-transforming-jordan-into-a-forger": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Transforming Jordan into a Forger",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c011/s001.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/trial-by-fire-drill/scene-2-the-suite-arrangement-consent-form": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The Suite Arrangement Consent Form",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c011/s002.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/trial-by-fire-drill/scene-3-fire-alarm-in-the-dormitory": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: Fire Alarm in the Dormitory",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c011/s003.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/trial-by-fire-drill/scene-4-the-nightly-pact": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 4: The Nightly Pact",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c011/s004.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/trial-by-fire-drill/scene-5-the-first-night-of-the-pact": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 5: The First Night of the Pact",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c011/s005.md"
+    },
+    "/aubrie/the-sanctuary-the-shield": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Sanctuary & The Shield",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|1"
     },
-    "/aubrie/note-to-the-ai/homecoming-week": {
+    "/aubrie/the-sanctuary-the-shield/homecoming-week": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Homecoming Week",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
-    "/aubrie/note-to-the-ai/homecoming-week/scene-1-the-fortress-of-truth": {
+    "/aubrie/the-sanctuary-the-shield/homecoming-week/scene-1-the-fortress-of-truth": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 1: The Fortress of Truth",
         "theme": "raggiesoft-books",
