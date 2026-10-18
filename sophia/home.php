@@ -331,9 +331,6 @@ if ($discoverConfigData) {
                 <a href="/catalog" class="ova-btn-bronze">
                     <i class="ph-fill ph-book-open"></i> Browse Complete Library (<?= count($books) ?> Volumes)
                 </a>
-                <a href="/discover" class="ova-btn-ghost">
-                    <i class="ph-fill ph-compass"></i> Curated Reading Shelves
-                </a>
                 <a href="#imprint-universes" class="ova-btn-ghost">
                     <i class="ph-fill ph-sparkle"></i> Explore Flagship Universes
                 </a>
@@ -495,96 +492,6 @@ if ($discoverConfigData) {
                 </article>
             </div>
         </section>
-
-        <!-- 
-          FEATURED HIGHLIGHTS
-          Displays curated carousels from discover.json to make the home screen 
-          feel alive even when the user has no history or offline books.
-        -->
-        <?php if (!empty($books)): ?>
-        <div id="rs-home-featured" style="margin-bottom: 2.5rem;">
-            <?php 
-            // Helper function to render a horizontal carousel of books
-            if (!function_exists('renderCarousel')) {
-                function renderCarousel($title, $icon, $bookList, $cdnBaseUrl) {
-                    if (empty($bookList)) return;
-                    echo '<div style="margin-bottom: 2.5rem;">';
-                    echo '<h3 style="font-size: 1.25rem; font-weight: 700; color: var(--rs-heading); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">';
-                    echo '<i class="ph ' . htmlspecialchars($icon) . '"></i> ' . htmlspecialchars($title);
-                    echo '</h3>';
-                    echo '<div class="rs-carousel-container" style="display: flex; gap: 1.25rem; overflow-x: auto; padding-bottom: 1rem; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;">';
-                    foreach ($bookList as $book) {
-                        $slug = $book['slug'] ?? '';
-                        $bookTitle = $book['title'] ?? 'Unknown Archive';
-                        $author = 'Michael Ragsdale'; 
-                        $imgSrc = !empty($book['image']) ? $cdnBaseUrl . $book['image'] : $cdnBaseUrl . '/raggiesoft-books/images/book-placeholder.jpg';
-                        echo '<a href="/' . htmlspecialchars($slug) . '/" style="text-decoration: none; color: inherit; display: block; flex: 0 0 140px; scroll-snap-align: start;">';
-                        echo '  <div style="width: 100%; aspect-ratio: 2/3; background-color: var(--rs-surface); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 0.75rem;">';
-                        echo '      <img src="' . htmlspecialchars($imgSrc) . '" alt="' . htmlspecialchars($bookTitle) . '" style="width: 100%; height: 100%; object-fit: cover; display: block;" loading="lazy">';
-                        echo '  </div>';
-                        echo '  <h4 style="font-size: 0.9rem; font-weight: 700; margin: 0 0 0.25rem 0; line-height: 1.2; color: var(--rs-heading); display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">' . htmlspecialchars($bookTitle) . '</h4>';
-                        echo '  <p style="font-size: 0.75rem; opacity: 0.75; margin: 0; text-transform: uppercase; letter-spacing: 0.5px;">' . htmlspecialchars($author) . '</p>';
-                        echo '</a>';
-                    }
-                    echo '</div>';
-                    echo '</div>';
-                }
-            }
-
-            // Fetch Carousel Configuration from CDN
-            $discoverConfigUrl = $cdnBaseUrl . '/raggiesoft-books/books/discover.json';
-            $discoverData = @file_get_contents($discoverConfigUrl);
-            $carousels = [];
-            
-            if ($discoverData) {
-                $carousels = json_decode($discoverData, true) ?? [];
-            }
-            
-            $catalogMap = [];
-            foreach ($books as $b) {
-                if (isset($b['slug'])) {
-                    $catalogMap[$b['slug']] = $b;
-                }
-            }
-            
-            // Render first two carousels on the Home Screen
-            if (!empty($carousels)) {
-                $count = 0;
-                foreach ($carousels as $carousel) {
-                    if ($count >= 2) break; // Only show top 2 carousels
-                    $carouselTitle = $carousel['title'] ?? 'Featured';
-                    $carouselIcon = $carousel['icon'] ?? 'ph-books';
-                    $slugs = $carousel['books'] ?? [];
-                    
-                    $carouselBooks = [];
-                    foreach ($slugs as $s) {
-                        if (isset($catalogMap[$s])) {
-                            $carouselBooks[] = $catalogMap[$s];
-                        }
-                    }
-                    
-                    renderCarousel($carouselTitle, $carouselIcon, $carouselBooks, $cdnBaseUrl);
-                    $count++;
-                }
-            } else {
-                // Fallback
-                $fallbackBooks = $books;
-                shuffle($fallbackBooks);
-                renderCarousel("Featured Archives", "ph-star", array_slice($fallbackBooks, 0, 6), $cdnBaseUrl);
-            }
-            ?>
-        </div>
-        <style>
-        /* Hide scrollbar for carousels to maintain clean native look */
-        .rs-carousel-container::-webkit-scrollbar {
-            display: none;
-        }
-        .rs-carousel-container {
-            -ms-overflow-style: none;
-            scrollbar-width: none;
-        }
-        </style>
-        <?php endif; ?>
 
         <!-- 
           AUTOMATED TYPESETTING VIA PAIGE & THE STARDUST ENGINE

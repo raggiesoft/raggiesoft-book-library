@@ -294,3 +294,4 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
 </div>
 
 <?php include __DIR__ . "/../includes/components/bottom-nav.php"; ?>
+

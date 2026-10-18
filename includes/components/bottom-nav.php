@@ -32,12 +32,6 @@
         <span>Home</span>
     </a>
     
-    <!-- Discover Tab -->
-    <a href="/discover" class="ios-tab-item <?= (basename($_SERVER['PHP_SELF']) == 'discover.php') ? 'active' : 'inactive' ?>">
-        <i class="<?= (basename($_SERVER['PHP_SELF']) == 'discover.php') ? 'ph-fill' : 'ph' ?> ph-compass"></i>
-        <span>Discover</span>
-    </a>
-    
     <!-- Bookmarks Tab -->
     <a href="/bookmarks" class="ios-tab-item <?= (basename($_SERVER['PHP_SELF']) == 'bookmarks.php') ? 'active' : 'inactive' ?>">
         <i class="<?= (basename($_SERVER['PHP_SELF']) == 'bookmarks.php') ? 'ph-fill' : 'ph' ?> ph-bookmark"></i>

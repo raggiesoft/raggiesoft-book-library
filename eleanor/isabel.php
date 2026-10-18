@@ -99,9 +99,8 @@ if ($requestUri === '/' || $requestUri === '/isabel.php' || $requestUri === '/in
     $seriesSlug = '';
     $pageConfig['title'] = 'The Silver Gauntlet of Aethel';
 } else if ($requestUri === '/discover') {
-    $isDiscover = true;
-    $seriesSlug = '';
-    $pageConfig['title'] = 'Discover';
+    header('Location: /', true, 301);
+    exit;
 } else if ($requestUri === '/bookmarks') {
     $isBookmarks = true;
     $seriesSlug = '';
@@ -170,7 +169,7 @@ if (!empty($seriesSlug)) {
     $siteName = 'Contemporary Fiction Library | Ocean View Archives';
     $ogTitle = 'Contemporary Fiction Library | Ocean View Archives';
     $ogDescription = 'Living stories. Expanding lore. Dive into the universe. The grounded, real-world archives of RaggieSoft Media.';
-    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/og/library-og.jpg';
+    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/og/contemporary_v2.jpg';
 } else if ($isKnox) {
     $siteName = 'Project: KNOX Universe | Ocean View Archives';
     $ogTitle = 'Project: KNOX Universe | Ocean View Archives';
