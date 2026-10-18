@@ -19,15 +19,16 @@
  */
 
 // Cache partition identifiers
-const CACHE_NAME = 'ova-cache-v5';
-const DYNAMIC_CACHE = 'ova-dynamic-v5';
-const IMAGE_CACHE = 'ova-images-v5';
+const CACHE_NAME = 'ova-cache-v6';
+const DYNAMIC_CACHE = 'ova-dynamic-v6';
+const IMAGE_CACHE = 'ova-images-v6';
 
 // Minimum required assets to render the offline application shell
 const PRECACHE_ASSETS = [
     '/',
+    '/library',
     '/manifest.json',
-    '/scripts/pwa.js?v=20261017j',
+    '/scripts/pwa.js?v=20261017m',
     '/favicon.ico',
     'https://assets.raggiesoft.com/raggiesoft-books/images/pwa-icons/icon.svg'
 ];

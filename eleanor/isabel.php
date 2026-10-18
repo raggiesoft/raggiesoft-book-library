@@ -99,7 +99,7 @@ if ($requestUri === '/' || $requestUri === '/isabel.php' || $requestUri === '/in
     $seriesSlug = '';
     $pageConfig['title'] = 'The Silver Gauntlet of Aethel';
 } else if ($requestUri === '/discover') {
-    header('Location: /', true, 301);
+    header('Location: /library', true, 301);
     exit;
 } else if ($requestUri === '/bookmarks') {
     $isBookmarks = true;
@@ -267,8 +267,6 @@ if ($isHome) {
     require_once $basePath . '/sophia/knox.php';
 } else if ($isAethelSaga) {
     require_once $basePath . '/sophia/aethel-saga.php';
-} else if (isset($isDiscover) && $isDiscover) {
-    require_once $basePath . '/sophia/discover.php';
 } else if (isset($isBookmarks) && $isBookmarks) {
     require_once $basePath . '/sophia/bookmarks.php';
 } else if (isset($isSettings) && $isSettings) {

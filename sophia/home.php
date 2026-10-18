@@ -4,24 +4,21 @@
  * Architecture & Maintenance Guide: sophia/home.php
  * =============================================================================
  * Purpose:
- *     Primary Landing Hub for Ocean View Archives (https://books.raggiesoft.com/).
- *     Serves two unified architectural roles:
- *     1. Ocean View Archives Literary Imprint Introduction (Browser Visitors):
- *        Introduces visitors to the official literary imprint of RaggieSoft Media,
- *        its three flagship narrative collections (Contemporary Fiction,
- *        Project: KNOX, and The Silver Gauntlet of Aethel), and the automated
- *        typesetting pipeline powered by Paige (`paige.php`) & The Stardust
- *        Engine Library PWA—so readers are never dumped straight into an
- *        unexplained PWA interface.
- *     2. Personalized Reader Dashboard (Returning Readers & Installed PWA):
- *        Dynamically renders personalized "Jump Back In" (Resume Reading)
- *        shelves, "Available Offline" collections from browser `localStorage`,
- *        and curated shelves from `discover.json`.
+ *     Official Home Page for Ocean View Archives (https://books.raggiesoft.com/).
+ *     Introduces visitors to the official literary imprint of RaggieSoft Media,
+ *     offers a prominent front-and-center gateway to the Full Library (/library),
+ *     showcases the three flagship literary universes (Contemporary Fiction,
+ *     Project: KNOX, and The Silver Gauntlet of Aethel), and explains the
+ *     Stardust Engine Book Reader PWA and automated typesetting pipeline powered
+ *     by Paige (`paige.php`).
  *
  * Design Principles:
- *     - Client-Side Rendering (CSR) Mix: User reading history is strictly kept
- *       in `localStorage` (`rs-last-read`, `rs-offline-*`). PHP fetches the
- *       master catalog, and JS merges the two without server state or databases.
+ *     - Dedicated Home Page (Zero Discover Clutter): Replaces the retired
+ *       Discover / hybrid dashboard view with a clean, authoritative literary
+ *       imprint homepage and direct entry to `/library`.
+ *     - Optional Resume Reading Bar: If returning readers have an active reading
+ *       session in `localStorage` (`rs-last-read`), a compact "Continue Reading"
+ *       banner appears automatically without showing an empty state to new visitors.
  *     - WCAG 2.1 AA Compliance: Enforces >= 4.5:1 text contrast across both
  *       Light Mode and Dark Mode (`prefers-color-scheme`) as well as the
  *       Deep Coastal Teal (#0F4C5C) & Metallic Bronze (#E3B27C) Imprint Hero.
@@ -31,24 +28,15 @@
 // Import necessary variables provided by the Stardust routing engine (Isabel)
 global $cdnBaseUrl, $siteName, $requestUri;
 
-// Fetch the master catalog directly from the CDN to populate cover data for local history
+// Fetch the master catalog directly from the CDN to populate volume count & resume card metadata
 $catalogUrl = $cdnBaseUrl . '/raggiesoft-books/books/catalog.json';
-
-// Suppress network errors; fallback to empty data if the CDN is unreachable
 $catalogData = @file_get_contents($catalogUrl);
 $books = [];
 
-// Parse the returned JSON, defaulting safely to an empty array
 if ($catalogData) {
     $books = json_decode($catalogData, true) ?? [];
 }
-
-$discoverConfigUrl = $cdnBaseUrl . "/raggiesoft-books/books/discover.json";
-$discoverConfigData = @file_get_contents($discoverConfigUrl);
-$discoverConfig = [];
-if ($discoverConfigData) {
-    $discoverConfig = json_decode($discoverConfigData, true) ?? [];
-}
+$volumeCount = count($books);
 ?>
 
 <!-- ARCHITECTURE: Semantic Publisher & CollectionPage JSON-LD metadata -->
@@ -79,13 +67,13 @@ if ($discoverConfigData) {
 
 <style>
     /* =========================================================================
-       OCEAN VIEW ARCHIVES IMPRINT HERO & UNIVERSE SHOWCASE STYLES
+       OCEAN VIEW ARCHIVES HOME PAGE STYLES
        ========================================================================= */
     .ova-imprint-hero {
         background: linear-gradient(145deg, #092c36 0%, #0F4C5C 60%, #0a3642 100%);
         color: #ffffff;
         border-bottom: 4px solid #E3B27C;
-        padding: calc(2rem + env(safe-area-inset-top, 0px)) 1.5rem 2.25rem;
+        padding: calc(2.25rem + env(safe-area-inset-top, 0px)) 1.5rem 2.5rem;
         position: relative;
         overflow: hidden;
     }
@@ -126,7 +114,7 @@ if ($discoverConfigData) {
 
     .ova-imprint-title {
         font-family: 'Playfair Display', Georgia, serif;
-        font-size: clamp(2rem, 4.5vw, 3.1rem);
+        font-size: clamp(2rem, 4.5vw, 3.2rem);
         font-weight: 800;
         color: #F4CFA0;
         letter-spacing: 0.03em;
@@ -139,13 +127,13 @@ if ($discoverConfigData) {
         line-height: 1.65;
         color: #f1f5f9;
         max-width: 68ch;
-        margin: 0 0 1.4rem 0;
+        margin: 0 0 1.5rem 0;
     }
 
     .ova-hero-actions {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.75rem;
+        gap: 0.85rem;
         justify-content: center;
         align-items: center;
     }
@@ -153,15 +141,16 @@ if ($discoverConfigData) {
     .ova-btn-bronze {
         display: inline-flex;
         align-items: center;
-        gap: 0.45rem;
+        gap: 0.5rem;
         background: #E3B27C;
         color: #09222a !important;
         font-weight: 800;
-        font-size: 0.92rem;
-        padding: 0.68rem 1.25rem;
-        border-radius: 8px;
+        font-size: 0.98rem;
+        padding: 0.78rem 1.45rem;
+        border-radius: 10px;
         text-decoration: none;
         border: 1px solid #f6d5a8;
+        box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
         transition: transform 0.15s ease, background-color 0.2s ease;
     }
 
@@ -175,12 +164,12 @@ if ($discoverConfigData) {
         display: inline-flex;
         align-items: center;
         gap: 0.45rem;
-        background: rgba(9, 34, 42, 0.75);
+        background: rgba(9, 34, 42, 0.78);
         color: #f8fafc !important;
         font-weight: 600;
-        font-size: 0.92rem;
-        padding: 0.68rem 1.25rem;
-        border-radius: 8px;
+        font-size: 0.95rem;
+        padding: 0.78rem 1.3rem;
+        border-radius: 10px;
         text-decoration: none;
         border: 1px solid rgba(227, 178, 124, 0.55);
         transition: background-color 0.2s ease, border-color 0.2s ease;
@@ -190,6 +179,57 @@ if ($discoverConfigData) {
     .ova-btn-ghost:focus-visible {
         background: rgba(15, 76, 92, 0.95);
         border-color: #f6d5a8;
+    }
+
+    /* Prominent Library Gateway Card */
+    .ova-library-gateway {
+        background: var(--rs-surface);
+        border: 2px solid var(--rs-border);
+        border-left: 6px solid #E3B27C;
+        border-radius: 14px;
+        padding: 1.5rem;
+        margin-bottom: 2.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    }
+
+    .ova-library-gateway-actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.65rem;
+        align-items: center;
+    }
+
+    .ova-gateway-primary-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+        padding: 0.72rem 1.3rem;
+        border-radius: 9px;
+        font-weight: 800;
+        font-size: 0.95rem;
+        text-decoration: none;
+        background: var(--rs-primary);
+        color: #ffffff !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    }
+
+    .ova-gateway-secondary-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.68rem 1.05rem;
+        border-radius: 9px;
+        font-weight: 700;
+        font-size: 0.88rem;
+        text-decoration: none;
+        background: var(--rs-bg);
+        color: var(--rs-heading) !important;
+        border: 1px solid var(--rs-border);
     }
 
     /* Universe Cards Grid */
@@ -284,6 +324,39 @@ if ($discoverConfigData) {
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     }
 
+    /* 3-Pillar Reader Architecture Features */
+    .ova-features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 1.25rem;
+        margin-bottom: 2.5rem;
+    }
+
+    .ova-feature-card {
+        background: var(--rs-surface);
+        border: 1px solid var(--rs-border);
+        border-radius: 12px;
+        padding: 1.25rem;
+    }
+
+    .ova-feature-title {
+        font-size: 1.02rem;
+        font-weight: 800;
+        color: var(--rs-heading);
+        margin: 0 0 0.45rem 0;
+        display: flex;
+        align-items: center;
+        gap: 0.45rem;
+    }
+
+    .ova-feature-desc {
+        font-size: 0.88rem;
+        line-height: 1.6;
+        color: var(--rs-text);
+        opacity: 0.9;
+        margin: 0;
+    }
+
     /* Automated Typesetting Callout */
     .ova-pipeline-banner {
         background: var(--rs-surface);
@@ -309,7 +382,7 @@ if ($discoverConfigData) {
 
     <!-- 
       OCEAN VIEW ARCHIVES IMPRINT INTRODUCTION HERO
-      Introduces browser visitors to the literary imprint before entering a novel or installing the PWA.
+      Introduces visitors to the literary imprint with a prominent direct button to the Library.
     -->
     <section class="ova-imprint-hero" aria-label="Ocean View Archives Literary Imprint Introduction">
         <div class="ova-imprint-hero-inner">
@@ -328,104 +401,91 @@ if ($discoverConfigData) {
             </p>
 
             <div class="ova-hero-actions">
-                <a href="/catalog" class="ova-btn-bronze">
-                    <i class="ph-fill ph-book-open"></i> Browse Complete Library (<?= count($books) ?> Volumes)
+                <a href="/library" class="ova-btn-bronze">
+                    <i class="ph-fill ph-books"></i> Browse the Full Library<?= $volumeCount > 0 ? ' (' . $volumeCount . ' Volumes)' : '' ?>
                 </a>
                 <a href="#imprint-universes" class="ova-btn-ghost">
-                    <i class="ph-fill ph-sparkle"></i> Explore Flagship Universes
+                    <i class="ph-fill ph-compass"></i> Explore Flagship Universes
                 </a>
             </div>
         </div>
     </section>
     
     <!-- 
-      DASHBOARD & COLLECTIONS CONTAINER
+      HOME PAGE CONTENT CONTAINER
     -->
-    <div style="max-width: 1140px; margin: 0 auto; padding: 2rem 1.5rem 1rem;">
-        
-        <!-- Top Greeting Bar -->
-        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 0.75rem;">
-            <div>
-                <p id="rs-home-greeting" style="font-size: 0.95rem; color: var(--rs-primary); margin: 0 0 0.2rem 0; font-weight: 700; text-transform: uppercase; letter-spacing: 1px;">
-                    Welcome, Reader.
-                </p>
-                <h2 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 1.75rem; font-weight: 800; color: var(--rs-heading); letter-spacing: -0.5px; margin: 0; line-height: 1.15;">
-                    Your Reading Desk &amp; Active Collections
+    <div style="max-width: 1140px; margin: 0 auto; padding: 2.25rem 1.5rem 1rem;">
+
+        <!-- 
+          OPTIONAL CONTINUE READING BAR
+          Hidden by default; only appears if the reader has an active 'rs-last-read' book in localStorage.
+        -->
+        <div id="rs-home-jump-back" style="display: none; margin-bottom: 2.25rem;">
+            <div style="background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 14px; padding: 1.15rem 1.25rem; display: flex; flex-wrap: wrap; gap: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05); align-items: center; justify-content: space-between;">
+                <div style="display: flex; gap: 1rem; align-items: center; min-width: 240px; flex: 1;">
+                    <div style="width: 64px; height: 96px; flex-shrink: 0; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
+                        <img id="rs-jump-cover" src="" alt="Cover" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div>
+                        <span style="display: inline-block; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--rs-primary); margin-bottom: 0.2rem;">
+                            <i class="ph-fill ph-bookmark-simple"></i> Active Reading Session
+                        </span>
+                        <h2 id="rs-jump-series" style="font-size: 1.15rem; margin: 0 0 0.2rem 0; font-weight: 800; color: var(--rs-heading);">Loading...</h2>
+                        <p id="rs-jump-part" style="font-size: 0.88rem; color: var(--rs-text); opacity: 0.8; margin: 0;">Pick up right where you left off</p>
+                    </div>
+                </div>
+                <div style="display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center;">
+                    <a id="rs-jump-btn" href="#" class="ova-gateway-primary-btn">
+                        <i class="ph-fill ph-book-open"></i> Resume Reading
+                    </a>
+                    <a href="/library" class="ova-gateway-secondary-btn">
+                        <i class="ph-fill ph-books"></i> Full Library
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 
+          PROMINENT FULL LIBRARY GATEWAY BANNER
+          Gives visitors a clear, immediate path into the full catalog, bookmarks, and typography settings.
+        -->
+        <section class="ova-library-gateway" aria-labelledby="ova-library-gateway-heading">
+            <div style="flex: 1; min-width: 260px;">
+                <span class="ova-universe-tag">Complete Archive Catalog</span>
+                <h2 id="ova-library-gateway-heading" style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.5rem; font-weight: 800; color: var(--rs-heading); margin: 0 0 0.35rem 0;">
+                    Enter the Ocean View Library
                 </h2>
+                <p style="font-size: 0.94rem; line-height: 1.55; color: var(--rs-text); opacity: 0.9; margin: 0;">
+                    Browse all <?= $volumeCount > 0 ? $volumeCount : '14' ?> standalone volumes, search characters and scenes instantly, or organize your personal reading shelves.
+                </p>
             </div>
-        </div>
+            <div class="ova-library-gateway-actions">
+                <a href="/library" class="ova-gateway-primary-btn">
+                    <i class="ph-fill ph-books"></i> Open the Library
+                </a>
+                <a href="/bookmarks" class="ova-gateway-secondary-btn">
+                    <i class="ph-fill ph-bookmark"></i> Bookmarks
+                </a>
+                <a href="/settings" class="ova-gateway-secondary-btn">
+                    <i class="ph-fill ph-text-aa"></i> Reader Settings
+                </a>
+            </div>
+        </section>
 
         <!-- 
-          PWA INSTALL BANNER
-          Prompt injected for supported browsers to encourage offline caching installation.
-        -->
-        <div id="rs-pwa-install-banner" style="display: none; background: var(--rs-primary, #0056b3); color: white; border-radius: 12px; padding: 1rem; margin-bottom: 2rem; align-items: flex-start; justify-content: space-between; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-            <div style="display: flex; align-items: flex-start; gap: 1rem; flex: 1;">
-                <div style="width: 48px; height: 48px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0;">
-                    <img src="https://assets.raggiesoft.com/raggiesoft-books/images/pwa-icons/icon-192.png" alt="App Icon" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div style="flex: 1;">
-                    <h3 style="margin: 0; font-size: 1rem; font-weight: 700;">Install the Ocean View Reader App</h3>
-                    <p style="margin: 0; font-size: 0.85rem; opacity: 0.9;">Tap Share &gt; Add to Home Screen for full-screen offline reading</p>
-                    <button id="rs-pwa-install-btn" style="display: none; margin-top: 0.5rem; background: white; color: var(--rs-primary, #0056b3); border: none; padding: 0.4rem 1rem; border-radius: 6px; font-weight: bold; font-size: 0.85rem; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">Install Now</button>
-                </div>
-            </div>
-            <button id="rs-pwa-close-banner" aria-label="Dismiss install banner" style="background: rgba(255,255,255,0.2); border: none; color: white; width: 32px; height: 32px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-left: 0.5rem;">
-                <i class="ph ph-x" style="font-weight: bold;"></i>
-            </button>
-        </div>
-
-        <!-- 
-          JUMP BACK IN SECTION
-          Hidden natively; revealed via JS if a valid 'rs-last-read' entry exists in localStorage.
-        -->
-        <div id="rs-home-jump-back" style="display: none; margin-bottom: 2.5rem;">
-            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--rs-heading); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
-                <i class="ph ph-book-open"></i> Jump Back In
-            </h3>
-            <div style="background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 12px; padding: 1rem; display: flex; gap: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05); align-items: center;">
-                <div style="width: 80px; height: 120px; flex-shrink: 0; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
-                    <img id="rs-jump-cover" src="" alt="Cover" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div style="flex: 1;">
-                    <h4 id="rs-jump-series" style="font-size: 1.1rem; margin: 0 0 0.25rem 0; font-weight: 700;">Loading...</h4>
-                    <p id="rs-jump-part" style="font-size: 0.9rem; opacity: 0.75; margin: 0 0 1rem 0;"></p>
-                    <a id="rs-jump-btn" href="#" class="rs-btn rs-btn-brand" style="display: inline-block; text-decoration: none; font-size: 0.9rem; padding: 0.5rem 1rem;">Resume Reading</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- 
-          EMPTY STATE
-          Shown when the user has no recent reading history.
-        -->
-        <div id="rs-home-empty" style="display: none; background: var(--rs-surface); border: 1px dashed var(--rs-border); border-radius: 12px; padding: 1.75rem 1.5rem; text-align: center; margin-bottom: 2.5rem;">
-            <h3 style="font-size: 1.15rem; font-weight: 700; color: var(--rs-heading); margin-top: 0; margin-bottom: 0.4rem;">
-                <i class="ph-fill ph-bookmark-simple" style="color: var(--rs-primary);"></i> No Active Reading Session Yet
-            </h3>
-            <p style="color: var(--rs-text); opacity: 0.85; font-size: 0.94rem; margin: 0; line-height: 1.5;">
-                When you open any novel below, your exact chapter, scroll position, and typography preferences are saved automatically in your browser so you can pick up right where you left off.
-            </p>
-        </div>
-        
-        <div id="rs-home-offline" style="display: none; margin-bottom: 2.5rem;">
-            <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--rs-heading); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
-                <i class="ph ph-cloud-check"></i> Available Offline
-            </h3>
-            <div id="rs-home-offline-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 1rem;">
-                <!-- Content dynamically generated by JS iteration over offline store -->
-            </div>
-        </div>
-
-        <!-- 
-          FLAGSHIP LITERARY UNIVERSES (ACTIVE COLLECTIONS)
-          Preserves the 3 core Ocean View Archives collection pillars so visitors
-          can explore Contemporary Fiction, Project: KNOX, or The Silver Gauntlet of Aethel.
+          FLAGSHIP LITERARY UNIVERSES
+          Showcases the 3 core Ocean View Archives collection pillars:
+          Contemporary Fiction (/library), Project: KNOX (/knox), and The Silver Gauntlet of Aethel (/aethel-saga).
         -->
         <section id="imprint-universes" aria-labelledby="ova-collections-heading">
-            <h3 id="ova-collections-heading" style="font-size: 1.3rem; font-weight: 800; color: var(--rs-heading); margin: 0 0 1rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                <i class="ph-fill ph-compass"></i> Flagship Literary Universes
-            </h3>
+            <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.1rem;">
+                <h2 id="ova-collections-heading" style="font-size: 1.35rem; font-weight: 800; color: var(--rs-heading); margin: 0; display: flex; align-items: center; gap: 0.5rem;">
+                    <i class="ph-fill ph-compass" style="color: var(--rs-primary);"></i> Flagship Literary Universes
+                </h2>
+                <a href="/library" style="font-size: 0.9rem; font-weight: 700; color: var(--rs-primary); text-decoration: none;">
+                    View All Volumes in the Library &rarr;
+                </a>
+            </div>
 
             <div class="ova-universes-grid">
                 <!-- 1. Contemporary Fiction -->
@@ -438,13 +498,13 @@ if ($discoverConfigData) {
                     <div class="ova-universe-body">
                         <div>
                             <span class="ova-universe-tag">Coastal Virginia &amp; CPI Sanctuary</span>
-                            <h4 class="ova-universe-title">Contemporary Fiction</h4>
+                            <h3 class="ova-universe-title">Contemporary Fiction</h3>
                             <p class="ova-universe-desc">
                                 Standalone, grounded narratives set across Virginia. Explore stories of fierce sibling loyalty, authentic disability &amp; neurodivergent representation, and found families building perimeters against an unforgiving world.
                             </p>
                         </div>
-                        <a href="/catalog" class="ova-universe-link">
-                            <i class="ph-fill ph-book-open"></i> Enter the Contemporary Library
+                        <a href="/library" class="ova-universe-link">
+                            <i class="ph-fill ph-books"></i> Browse the Contemporary Library
                         </a>
                     </div>
                 </article>
@@ -459,7 +519,7 @@ if ($discoverConfigData) {
                     <div class="ova-universe-body">
                         <div>
                             <span class="ova-universe-tag">Sci-Fi Espionage &amp; Parallel Cuts</span>
-                            <h4 class="ova-universe-title">Project: KNOX</h4>
+                            <h3 class="ova-universe-title">Project: KNOX</h3>
                             <p class="ova-universe-desc">
                                 On a planet crushed by high gravity in the Telsan Gap, twins Anya and Kael Rostova evade the monolithic Axiom Archival Division. Includes both Jessica's Cut and Kelly's Cut of <em>The Quantum Directive</em>.
                             </p>
@@ -480,9 +540,9 @@ if ($discoverConfigData) {
                     <div class="ova-universe-body">
                         <div>
                             <span class="ova-universe-tag">Four-Era Epic Fantasy Saga</span>
-                            <h4 class="ova-universe-title">The Silver Gauntlet of Aethel</h4>
+                            <h3 class="ova-universe-title">The Silver Gauntlet of Aethel</h3>
                             <p class="ova-universe-desc">
-                                A love letter to 1980s fantasy adventure and symphonic rock. Follow twins Kaelan and Kaela across four mythic eras in a broken world where an ancient debt must be paid in fire.
+                                A love letter to 1980s fantasy adventure and movie soundtracks. Follow twins Kaelan and Kaela across four mythic eras in a broken world where an ancient debt must be paid in fire.
                             </p>
                         </div>
                         <a href="/aethel-saga" class="ova-universe-link">
@@ -494,14 +554,50 @@ if ($discoverConfigData) {
         </section>
 
         <!-- 
+          INSIDE THE STARDUST ENGINE BOOK READER PWA
+          Explains the accessibility, offline PWA, and musical companion features of the platform.
+        -->
+        <section aria-labelledby="ova-reader-features-heading">
+            <h2 id="ova-reader-features-heading" style="font-size: 1.35rem; font-weight: 800; color: var(--rs-heading); margin: 0 0 1rem 0; display: flex; align-items: center; gap: 0.5rem;">
+                <i class="ph-fill ph-book-open-text" style="color: var(--rs-primary);"></i> Built for Accessible, Distraction-Free Reading
+            </h2>
+            <div class="ova-features-grid">
+                <div class="ova-feature-card">
+                    <h3 class="ova-feature-title">
+                        <i class="ph-fill ph-text-aa" style="color: var(--rs-primary);"></i> Section 508 &amp; Dyslexia Typography
+                    </h3>
+                    <p class="ova-feature-desc">
+                        Switch effortlessly between <em>Atkinson Hyperlegible</em>, <em>OpenDyslexic</em>, <em>Lora</em>, and <em>Georgia</em> with customizable font scaling, line spacing, and high-contrast Light, Dark, and Sepia themes.
+                    </p>
+                </div>
+                <div class="ova-feature-card">
+                    <h3 class="ova-feature-title">
+                        <i class="ph-fill ph-cloud-arrow-down" style="color: var(--rs-primary);"></i> Offline-First PWA Architecture
+                    </h3>
+                    <p class="ova-feature-desc">
+                        Install Ocean View Archives to your home screen for a full-screen native app experience. Your active chapter and scroll position are saved locally in your browser with zero tracking databases.
+                    </p>
+                </div>
+                <div class="ova-feature-card">
+                    <h3 class="ova-feature-title">
+                        <i class="ph-fill ph-headphones" style="color: var(--rs-primary);"></i> Engine Room Companion Scores
+                    </h3>
+                    <p class="ova-feature-desc">
+                        Every universe connects directly to its original rock-opera and synth soundtrack in <a href="https://music.raggiesoft.com" data-no-spa="true" style="color: var(--rs-primary); font-weight: 700;">The Listening Room</a>&mdash;from <em>The Stardust Engine</em> to <em>Firelight</em>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 
           AUTOMATED TYPESETTING VIA PAIGE & THE STARDUST ENGINE
           Explains how raw manuscripts are compiled into this zero-database PWA.
         -->
         <section class="ova-pipeline-banner" aria-labelledby="ova-typesetting-heading">
             <div style="flex: 1; min-width: 260px;">
-                <h3 id="ova-typesetting-heading" style="font-size: 1.1rem; font-weight: 800; color: var(--rs-heading); margin: 0 0 0.4rem 0; display: flex; align-items: center; gap: 0.45rem;">
+                <h2 id="ova-typesetting-heading" style="font-size: 1.1rem; font-weight: 800; color: var(--rs-heading); margin: 0 0 0.4rem 0; display: flex; align-items: center; gap: 0.45rem;">
                     <i class="ph-fill ph-sparkle" style="color: var(--rs-primary);"></i> Automated Typesetting via Paige (<code>paige.php</code>) &amp; The Stardust Engine
-                </h3>
+                </h2>
                 <p style="font-size: 0.92rem; line-height: 1.6; color: var(--rs-text); opacity: 0.9; margin: 0;">
                     Ocean View Archives runs on a 100% zero-database, Git-backed literary pipeline. Canonical Markdown manuscripts (<code>e###/c###/s###.md</code>) are ingested, validated, and indexed into structured JSON manifests and client-side search indexes by <strong>Paige</strong> (Literary Editor &amp; Safe Person), then rendered by the OVA Siblings (Eleanor, Isabel, Sophia, and Oliver).
                 </p>
@@ -524,156 +620,34 @@ if ($discoverConfigData) {
 <?php include __DIR__ . "/../includes/components/bottom-nav.php"; ?>
 
 <!-- 
-  CLIENT-SIDE DATA RESOLUTION LOGIC
-  Extracts user data from localStorage and matches it against the PHP-injected catalog.
+  CLIENT-SIDE RESUME READING RESOLUTION
+  Checks localStorage for an active reading session ('rs-last-read') and reveals
+  the compact Continue Reading banner if present.
 -->
 <script>
 (function() {
-    // Safely inject PHP catalog into JS context once
     const catalog = <?php echo json_encode($books, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?: '[]'; ?>;
-
-    // 0. Update Greeting text based on the user's current local hour
-    const hour = new Date().getHours();
-    let greeting = 'Good evening';
-    if (hour < 12) greeting = 'Good morning';
-    else if (hour < 18) greeting = 'Good afternoon';
-    const greetingEl = document.getElementById('rs-home-greeting');
-    if (greetingEl) greetingEl.textContent = greeting + ', Reader.';
-
-    // 1. Process "Jump Back In" State
-    // Check localStorage for the exact path the user was last on
     const lastRead = localStorage.getItem('rs-last-read');
     const launchBehavior = localStorage.getItem('rs-launch-behavior') || 'home';
     if (launchBehavior === 'resume' && lastRead && window.location.pathname === '/' && !sessionStorage.getItem('rs-prevent-auto-redirect')) {
         sessionStorage.setItem('rs-prevent-auto-redirect', 'true');
         window.location.replace(lastRead);
     }
-    let matched = false;
     if (lastRead) {
-        // Extract the root narrative slug from the saved path (e.g., /alex-chloe/...)
         const parts = lastRead.split('/').filter(p => p.length > 0);
         if (parts.length >= 1) {
             const seriesSlug = parts[0];
-            
-            // Match the slug to extract specific metadata (title/cover)
             const seriesData = catalog.find(b => b.slug === seriesSlug);
-            
             if (seriesData) {
-                // Unhide the section and inject the data
-                document.getElementById('rs-home-jump-back').style.display = 'block';
-                document.getElementById('rs-jump-series').textContent = seriesData.title;
-                document.getElementById('rs-jump-part').textContent = "Continue your progress";
-                // Prepend base URL to image path
-                document.getElementById('rs-jump-cover').src = "<?php echo $cdnBaseUrl; ?>" + seriesData.image;
-                document.getElementById('rs-jump-btn').href = lastRead;
-                matched = true;
-            }
-        }
-    }
-    
-    if (!matched) {
-        document.getElementById('rs-home-empty').style.display = 'block';
-    }
-
-    // 2. Process "Offline Shelf" State
-    // Scan through all localStorage keys for active offline caches
-    const offlineBooks = [];
-    
-    for (let i = 0; i < localStorage.length; i++) {
-        const key = localStorage.key(i);
-        // Identify offline indicator keys
-        if (key.startsWith('rs-offline-')) {
-            const seriesSlug = key.replace('rs-offline-', '');
-            // Only push if the cache flag is explicitly enabled ('true')
-            if (localStorage.getItem(key) === 'true') {
-                const seriesData = catalog.find(b => b.slug === seriesSlug);
-                if (seriesData) {
-                    offlineBooks.push(seriesData);
+                const jumpBack = document.getElementById('rs-home-jump-back');
+                if (jumpBack) {
+                    jumpBack.style.display = 'block';
+                    document.getElementById('rs-jump-series').textContent = seriesData.title;
+                    document.getElementById('rs-jump-cover').src = "<?php echo $cdnBaseUrl; ?>" + seriesData.image;
+                    document.getElementById('rs-jump-btn').href = lastRead;
                 }
             }
         }
-    }
-
-    // If matches found, render the offline grid dynamically
-    if (offlineBooks.length > 0) {
-        const offlineShelf = document.getElementById('rs-home-offline');
-        const offlineGrid = document.getElementById('rs-home-offline-grid');
-        // Unhide container
-        offlineShelf.style.display = 'block';
-        
-        // Generate DOM elements for each offline narrative
-        offlineBooks.forEach(book => {
-            const a = document.createElement('a');
-            a.href = '/' + book.slug + '/';
-            a.style = "text-decoration: none; color: inherit; display: block;";
-            
-            // Render card UI featuring an offline checkmark indicator
-            a.innerHTML = `
-                <div style="width: 100%; aspect-ratio: 2/3; background-color: var(--rs-surface); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 0.5rem; position: relative;">
-                    <img src="<?php echo $cdnBaseUrl; ?>${book.image}" alt="${book.title}" style="width: 100%; height: 100%; object-fit: cover; display: block;">
-                    <div style="position: absolute; bottom: 4px; right: 4px; background: rgba(0,0,0,0.6); color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center;">
-                        <i class="ph-fill ph-check-circle" style="font-size: 1rem;"></i>
-                    </div>
-                </div>
-                <h4 style="font-size: 0.85rem; font-weight: 600; margin: 0; line-height: 1.2; text-align: center;">${book.title}</h4>
-            `;
-            offlineGrid.appendChild(a);
-        });
-    }
-
-    // 3. Initialize PWA Install Banner
-    const isStandalone = window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
-    const banner = document.getElementById('rs-pwa-install-banner');
-    const closeBtn = document.getElementById('rs-pwa-close-banner');
-    const installBtn = document.getElementById('rs-pwa-install-btn');
-    
-    let deferredPrompt;
-
-    // Manually display banner on iOS due to lacking browser API support
-    if (!isStandalone && banner && localStorage.getItem('rs-pwa-banner-dismissed') !== 'true') {
-        let isIos = () => /iphone|ipad|ipod/.test(window.navigator.userAgent.toLowerCase());
-        if (isIos()) {
-            banner.style.display = 'flex';
-        }
-    }
-
-    // Capture standard install prompt events on supported platforms
-    window.addEventListener('beforeinstallprompt', (e) => {
-        // Prevent default native banner popups
-        e.preventDefault();
-        deferredPrompt = e;
-        
-        // Show our themed banner
-        if (!isStandalone && banner && localStorage.getItem('rs-pwa-banner-dismissed') !== 'true') {
-            banner.style.display = 'flex';
-            banner.querySelector('p').textContent = 'Install the web app for offline reading.';
-            if (installBtn) {
-                installBtn.style.display = 'block';
-            }
-        }
-    });
-
-    // Execute native prompt when user interacts with our button
-    if (installBtn) {
-        installBtn.addEventListener('click', async () => {
-            if (deferredPrompt) {
-                deferredPrompt.prompt();
-                const { outcome } = await deferredPrompt.userChoice;
-                // Auto-dismiss banner if user accepts
-                if (outcome === 'accepted') {
-                    if (banner) banner.style.display = 'none';
-                }
-                deferredPrompt = null;
-            }
-        });
-    }
-
-    // Persist user dismissal
-    if (closeBtn) {
-        closeBtn.addEventListener('click', () => {
-            if (banner) banner.style.display = 'none';
-            localStorage.setItem('rs-pwa-banner-dismissed', 'true');
-        });
     }
 })();
 </script>
