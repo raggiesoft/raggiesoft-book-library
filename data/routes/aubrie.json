@@ -180,35 +180,41 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s009.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-10-the-first-assist": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-10-the-kincaid-hall-tea-rebellion": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The First Assist",
+        "title": "Scene 10: The Kincaid Hall Tea Rebellion",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s010.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-11-the-spare-hardware": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-11-the-first-assist": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The Spare Hardware",
+        "title": "Scene 11: The First Assist",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s011.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-12-the-new-voice": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-12-the-spare-hardware": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: The New Voice",
+        "title": "Scene 12: The Spare Hardware",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s012.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-13-the-antidote": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-13-the-new-voice": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 13: The Antidote",
+        "title": "Scene 13: The New Voice",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s013.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-14-the-trust-fall": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-14-the-antidote": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 14: The Trust Fall",
+        "title": "Scene 14: The Antidote",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s014.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-15-the-trust-fall": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 15: The Trust Fall",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c004/s015.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -264,6 +270,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c005/s008.md"
     },
+    "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor/scene-9-the-view-from-the-fifth-floor": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 9: The View from the Fifth Floor",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c005/s009.md"
+    },
     "/aubrie/the-eleventh-child-off-to-college/first-days": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "First Days",
@@ -318,17 +330,23 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c006/s008.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/first-days/scene-9-evening-data": {
+    "/aubrie/the-eleventh-child-off-to-college/first-days/scene-9-the-girls-of-505": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: Evening Data",
+        "title": "Scene 9: The Girls of 505",
         "theme": "raggiesoft-books",
         "filePath": "e001/c006/s009.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/first-days/scene-10-the-open-doors": {
+    "/aubrie/the-eleventh-child-off-to-college/first-days/scene-10-evening-data": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Open Doors",
+        "title": "Scene 10: Evening Data",
         "theme": "raggiesoft-books",
         "filePath": "e001/c006/s010.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/first-days/scene-11-the-open-doors": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 11: The Open Doors",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c006/s011.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -354,17 +372,29 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c007/s003.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust/scene-4-an-unconventional-study-session": {
+    "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust/scene-4-the-fifth-floor-hunch": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: An Unconventional Study Session",
+        "title": "Scene 4: The Fifth Floor Hunch",
         "theme": "raggiesoft-books",
         "filePath": "e001/c007/s004.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust/scene-5-the-war-room": {
+    "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust/scene-5-an-unconventional-study-session": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The War Room",
+        "title": "Scene 5: An Unconventional Study Session",
         "theme": "raggiesoft-books",
         "filePath": "e001/c007/s005.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust/scene-6-the-kincaid-hall-collision": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 6: The Kincaid Hall Collision",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c007/s006.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust/scene-7-the-war-room": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 7: The War Room",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c007/s007.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-sensory-awakening": {
         "view": "pages/raggiesoft-books/books/viewer",
