@@ -124,9 +124,15 @@ $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? '
     <?php $assetsUrl = $cdnBaseUrl ?? 'https://assets.raggiesoft.com'; ?>
     
     <!-- Core CSS Pipelines -->
+    <?php
+    $resolvedThemeCss = ($currentPageTheme ?? 'oceanview');
+    if ($resolvedThemeCss === 'raggiesoft-books' || $resolvedThemeCss === '') {
+        $resolvedThemeCss = 'oceanview';
+    }
+    ?>
     <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-grid.css">
     <link rel="stylesheet" href="<?= $assetsUrl ?>/stardust-engine-library/css/stardust-engine.min.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href="<?= $assetsUrl ?>/stardust-engine-library/css/theme-<?= htmlspecialchars($currentPageTheme ?? 'oceanview') ?>.min.css">
+    <link rel="stylesheet" href="<?= $assetsUrl ?>/stardust-engine-library/css/theme-<?= htmlspecialchars($resolvedThemeCss) ?>.min.css">
     <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-network.css?v=20261017m">
     <script src="<?= $assetsUrl ?>/common/js/raggiesoft-network.js?v=20261017m" defer></script>
     <style>
@@ -224,38 +230,44 @@ $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? '
     <script>
     (function() {
         try {
+            const fontMap = {
+                'system': 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif',
+                'georgia': 'Georgia, "Times New Roman", Times, serif',
+                'lora': '"Lora", Georgia, serif',
+                'inter': '"Inter", system-ui, -apple-system, sans-serif',
+                'atkinson': '"Atkinson Hyperlegible", system-ui, -apple-system, sans-serif',
+                'opendyslexic': '"OpenDyslexic", "Comic Sans MS", sans-serif'
+            };
+            function normalizeFontKey(raw) {
+                if (!raw || typeof raw !== 'string') return 'system';
+                const ff = raw.toLowerCase().trim();
+                if (fontMap[ff]) return ff;
+                if (ff.includes('opendyslexic')) return 'opendyslexic';
+                if (ff.includes('atkinson')) return 'atkinson';
+                if (ff.includes('inter')) return 'inter';
+                if (ff.includes('lora')) return 'lora';
+                if (ff.includes('georgia')) return 'georgia';
+                return 'system';
+            }
+
             const stored = localStorage.getItem('reader-settings');
             if (stored) {
                 const settings = JSON.parse(stored);
-                if (settings.theme && settings.theme !== 'auto') {
-                    const themes = ['theme-auto', 'theme-light', 'theme-sepia', 'theme-dark', 'theme-dark-sepia', 'theme-sepia-system', 'theme-oceanview'];
-                    const isSystemPage = document.body.className.includes('theme-oceanview');
-                    if (settings.customThemeEnabled === false || isSystemPage) {
-                        document.body.classList.remove(...themes);
-                        document.body.classList.add('theme-' + settings.theme);
-                    }
-                }
-                if (settings.fontFamily) {
-                    const fontMap = {
-                        'system': 'system-ui, -apple-system, sans-serif',
-                        'georgia': '"Georgia", serif',
-                        'lora': '"Lora", serif',
-                        'inter': '"Inter", sans-serif',
-                        'atkinson': '"Atkinson Hyperlegible", sans-serif',
-                        'opendyslexic': '"OpenDyslexic", sans-serif'
-                    };
-                    document.body.style.fontFamily = fontMap[settings.fontFamily] || fontMap['system'];
-                }
-                if (settings.fontSize) {
-                    document.body.style.fontSize = settings.fontSize + 'rem';
-                } else {
-                    document.body.style.fontSize = '1.15rem';
-                }
+                const themes = ['theme-auto', 'theme-light', 'theme-sepia', 'theme-dark', 'theme-dark-sepia', 'theme-sepia-system'];
+                const activeTheme = settings.theme || 'auto';
+                document.body.classList.remove(...themes);
+                document.body.classList.add('theme-' + activeTheme);
+
+                const fontKey = normalizeFontKey(settings.fontFamily);
+                const resolvedFont = fontMap[fontKey] || fontMap['system'];
+                document.documentElement.style.setProperty('--rs-font-family', resolvedFont);
+                document.body.style.fontFamily = resolvedFont;
+
+                const resolvedSize = (settings.fontSize && !isNaN(parseFloat(settings.fontSize))) ? parseFloat(settings.fontSize) : 1.15;
+                document.documentElement.style.setProperty('--rs-font-size', resolvedSize + 'rem');
             }
-            const lh = localStorage.getItem('rs-line-height');
-            if (lh) {
-                document.body.style.lineHeight = lh;
-            }
+            const lh = localStorage.getItem('rs-line-height') || '1.8';
+            document.documentElement.style.setProperty('--rs-line-height', lh);
         } catch(e) {}
     })();
     </script>

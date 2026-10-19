@@ -78,10 +78,12 @@ global $cdnBaseUrl;
                 <div style="margin-top: 2rem;">
                     <h4 style="margin-bottom: 0.5rem;">Choose your Typography:</h4>
                     <select id="wizard-font-select" class="rs-input" style="width: 100%; padding: 0.5rem;">
-                        <option value="system-ui, -apple-system, sans-serif">System Sans-Serif (Default)</option>
-                        <option value="'Lora', serif">Lora (Classic Serif)</option>
-                        <option value="'Inter', sans-serif">Inter (Modern Sans)</option>
-                        <option value="'Atkinson Hyperlegible', sans-serif">Atkinson Hyperlegible (Accessibility)</option>
+                        <option value="system">System Default (San Francisco/Roboto)</option>
+                        <option value="georgia">Georgia (Serif)</option>
+                        <option value="lora">Lora (Classic Serif)</option>
+                        <option value="inter">Inter (Modern Sans)</option>
+                        <option value="atkinson">Atkinson Hyperlegible (Accessibility)</option>
+                        <option value="opendyslexic">OpenDyslexic</option>
                     </select>
                 </div>
             </div>

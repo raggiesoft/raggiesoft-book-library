@@ -36,6 +36,19 @@ global $cdnBaseUrl, $siteName, $requestUri;
 <div class="stardust-mobile-scroll" style="flex: 1; background: var(--rs-bg); padding-bottom: 6rem;">
     <div style="max-width: 800px; margin: 0 auto; padding: calc(1.5rem + env(safe-area-inset-top, 0px)) 1.5rem 1rem;">
         
+        <!-- 
+          NAVIGATION / BACK TO READING BAR
+          Especially critical in standalone PWA mode (where browser back buttons are hidden)
+          so readers can immediately return to the exact chapter/scene they were reading
+          after adjusting typography or theme settings.
+        -->
+        <div id="rs-settings-back-bar" style="margin-bottom: 1.25rem;">
+            <a href="/" id="rs-settings-back-btn" class="rs-btn" style="display: inline-flex; align-items: center; gap: 0.6rem; padding: 0.6rem 1.1rem; border-radius: 999px; background: var(--rs-surface); border: 1px solid var(--rs-border); color: var(--rs-text); text-decoration: none; font-weight: 600; font-size: 0.95rem; box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
+                <i class="ph-bold ph-arrow-left" style="color: var(--rs-primary); font-size: 1.1rem;"></i>
+                <span id="rs-settings-back-label">Back to Reading</span>
+            </a>
+        </div>
+
         <!-- HEADER SECTION -->
         <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem;">
             <div>
@@ -53,17 +66,36 @@ global $cdnBaseUrl, $siteName, $requestUri;
             <h2 style="font-size: 1.25rem; font-weight: 700; color: var(--rs-heading); margin-top: 0; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">
                 <i class="ph ph-text-aa"></i> Typography & Theme
             </h2>
+
+            <!-- 
+              LIVE TYPOGRAPHY & THEME PREVIEW
+              Uses the exact `.story-content` class and CSS custom properties (`--rs-font-family`,
+              `--rs-font-size`, `--rs-line-height`) so users can immediately see how their chosen
+              typeface, size, line spacing, and reading theme look before returning to their book.
+            -->
+            <div style="margin-bottom: 1.5rem; padding: 1.25rem; border-radius: 10px; background: var(--rs-bg); border: 1px solid var(--rs-border);">
+                <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--rs-primary); margin-bottom: 0.5rem;">
+                    Live Reading Preview
+                </div>
+                <div id="rs-settings-preview" class="story-content" style="margin: 0;">
+                    <p style="margin: 0;">
+                        The warm afternoon light filtered through the limestone arches of Bennett Hall, casting long, quiet shadows across the courtyard as a new semester began at Commonwealth Polytechnic Institute.
+                    </p>
+                </div>
+            </div>
             
             <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem;">
                 
                 <!-- FONT SIZE CONTROLS -->
                 <div>
                     <label style="display: block; font-weight: bold; margin-bottom: 0.5rem; font-size: 0.95rem;">Font Size</label>
-                    <div style="display: flex; align-items: center; gap: 1rem;">
-                        <button type="button" id="rs-settings-font-dec" class="rs-btn" style="flex: 1; font-size: 1.2rem;">A-</button>
-                        <!-- Dynamic readout of current font size percentage -->
-                        <span id="rs-settings-font-val" style="font-weight: bold; font-family: monospace; font-size: 1.1rem; min-width: 3ch; text-align: center;">100</span>
-                        <button type="button" id="rs-settings-font-inc" class="rs-btn" style="flex: 1; font-size: 1.2rem;">A+</button>
+                    <div style="display: flex; align-items: center; gap: 0.75rem;">
+                        <button type="button" id="rs-settings-font-dec" class="rs-btn" style="flex: 1; font-size: 1.15rem;" aria-label="Decrease font size">A-</button>
+                        <!-- Dynamic readout of current font size percentage (click to reset to 100%) -->
+                        <button type="button" id="rs-settings-font-reset" class="rs-btn" title="Reset font size to 100%" style="font-weight: bold; font-family: monospace; font-size: 1rem; min-width: 5.5rem; text-align: center; background: var(--rs-bg);">
+                            <span id="rs-settings-font-val">100%</span>
+                        </button>
+                        <button type="button" id="rs-settings-font-inc" class="rs-btn" style="flex: 1; font-size: 1.15rem;" aria-label="Increase font size">A+</button>
                     </div>
                 </div>
 
@@ -98,6 +130,27 @@ global $cdnBaseUrl, $siteName, $requestUri;
                         <option value="opendyslexic">OpenDyslexic</option>
                     </select>
                 </div>
+
+                <!-- LINE SPACING (LINE HEIGHT) SELECTOR -->
+                <div>
+                    <label for="rs-settings-line-height" style="display: block; font-weight: bold; margin-bottom: 0.5rem; font-size: 0.95rem;">Line Spacing</label>
+                    <select id="rs-settings-line-height" class="rs-input" style="width: 100%; padding: 0.75rem; font-size: 1rem;">
+                        <option value="1.4">Compact (1.4)</option>
+                        <option value="1.6">Normal (1.6)</option>
+                        <option value="1.8">Relaxed (1.8)</option>
+                        <option value="2.0">Loose (2.0)</option>
+                    </select>
+                </div>
+
+                <!-- ARTICLE WIDTH SELECTOR -->
+                <div>
+                    <label for="rs-settings-width" style="display: block; font-weight: bold; margin-bottom: 0.5rem; font-size: 0.95rem;">Page Width (Desktop / Tablet)</label>
+                    <select id="rs-settings-width" class="rs-input" style="width: 100%; padding: 0.75rem; font-size: 1rem;">
+                        <option value="default">Standard Reading Width (800px)</option>
+                        <option value="wide">Wide Margin (1200px)</option>
+                        <option value="full">Full Screen Width (100%)</option>
+                    </select>
+                </div>
                 
                 <!-- FOREIGN LANGUAGE DISPLAY -->
                 <div>
@@ -108,7 +161,7 @@ global $cdnBaseUrl, $siteName, $requestUri;
                     </select>
                 </div>
 
-                                <!-- BACKGROUND AUDIO -->
+                <!-- BACKGROUND AUDIO -->
                 <div style="display: flex; align-items: center; justify-content: space-between;">
                     <label for="rs-settings-audio" style="font-weight: bold; font-size: 0.95rem; margin: 0; cursor: pointer;">Enable Background Audio</label>
                     <input type="checkbox" id="rs-settings-audio" style="width: 1.5rem; height: 1.5rem; cursor: pointer;">
@@ -126,17 +179,6 @@ global $cdnBaseUrl, $siteName, $requestUri;
                     <select id="rs-settings-launch-behavior" class="rs-input" style="width: 100%; padding: 0.75rem; font-size: 1rem;">
                         <option value="home">Go to Home Screen</option>
                         <option value="resume">Resume Last Read Book</option>
-                    </select>
-                </div>
-
-                <!-- LINE SPACING (LINE HEIGHT) SELECTOR -->
-                <div>
-                    <label for="rs-settings-line-height" style="display: block; font-weight: bold; margin-bottom: 0.5rem; font-size: 0.95rem;">Line Spacing</label>
-                    <select id="rs-settings-line-height" class="rs-input" style="width: 100%; padding: 0.75rem; font-size: 1rem;">
-                        <option value="1.4">Compact (1.4)</option>
-                        <option value="1.6">Normal (1.6)</option>
-                        <option value="1.8">Relaxed (1.8)</option>
-                        <option value="2.0">Loose (2.0)</option>
                     </select>
                 </div>
             </div>
@@ -207,13 +249,78 @@ global $cdnBaseUrl, $siteName, $requestUri;
 
 <!-- 
   CLIENT-SIDE SETTINGS LOGIC 
-  Handles the real-time updating of UI state and syncing to localStorage.
+  Handles the real-time updating of UI state, live preview, Back to Reading button,
+  and syncing to localStorage.
 -->
 <script>
 (function() {
+    /**
+     * Canonical map of short font keys to full CSS font-family stacks.
+     * Kept identical to `header.php` and `reader.js` so that every typeface
+     * selection resolves to a valid CSS font stack with a generic family fallback.
+     */
+    const fontMap = window.RS_FONT_MAP || {
+        'system': 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif',
+        'georgia': '"Georgia", serif',
+        'lora': '"Lora", "Georgia", serif',
+        'inter': '"Inter", system-ui, -apple-system, sans-serif',
+        'atkinson': '"Atkinson Hyperlegible", system-ui, -apple-system, sans-serif',
+        'opendyslexic': '"OpenDyslexic", "Comic Sans MS", sans-serif'
+    };
+
+    function normalizeFontKey(rawFont) {
+        if (typeof window.rsNormalizeFontKey === 'function') {
+            return window.rsNormalizeFontKey(rawFont);
+        }
+        if (!rawFont || typeof rawFont !== 'string') return 'system';
+        const lower = rawFont.toLowerCase().trim();
+        if (fontMap[lower]) return lower;
+        if (lower.includes('opendyslexic')) return 'opendyslexic';
+        if (lower.includes('atkinson')) return 'atkinson';
+        if (lower.includes('inter')) return 'inter';
+        if (lower.includes('lora')) return 'lora';
+        if (lower.includes('georgia')) return 'georgia';
+        return 'system';
+    }
+
+    // 0. Configure the "Back to Reading" button at the top of Settings
+    const backBtn = document.getElementById('rs-settings-back-btn');
+    const backLabel = document.getElementById('rs-settings-back-label');
+    const nonBookRoutes = [
+        '/', '/library', '/catalog', '/settings', '/bookmarks',
+        '/about', '/accessibility', '/welcome', '/setup',
+        '/knox', '/aethel-saga', '/search'
+    ];
+    const lastReadPath = localStorage.getItem('rs-last-read');
+    const lastReadTitle = localStorage.getItem('rs-last-read-title');
+    const hasValidLastRead = Boolean(lastReadPath && !nonBookRoutes.includes(lastReadPath));
+
+    if (backBtn) {
+        if (hasValidLastRead) {
+            backBtn.setAttribute('href', lastReadPath);
+            if (backLabel) {
+                backLabel.textContent = lastReadTitle
+                    ? 'Back to Reading (' + lastReadTitle + ')'
+                    : 'Back to Reading';
+            }
+        } else {
+            backBtn.setAttribute('href', '/');
+            if (backLabel) {
+                backLabel.textContent = 'Back';
+            }
+            backBtn.addEventListener('click', (e) => {
+                // If no last-read chapter is stored yet, use browser history if same-origin
+                if (window.history.length > 1 && document.referrer && document.referrer.includes(window.location.host)) {
+                    e.preventDefault();
+                    window.history.back();
+                }
+            });
+        }
+    }
+
     // Helper to get reader settings
     function getReaderSettings() {
-        let defaultSettings = {
+        const defaultSettings = {
             theme: 'auto',
             customThemeEnabled: true,
             fontSize: 1.15,
@@ -225,17 +332,8 @@ global $cdnBaseUrl, $siteName, $requestUri;
         try {
             const stored = localStorage.getItem('reader-settings');
             if (stored) {
-                let parsed = JSON.parse(stored);
-                // Migrate legacy font family strings to simple keys
-                if (parsed.fontFamily) {
-                    let ff = parsed.fontFamily.toLowerCase();
-                    if (ff.includes('opendyslexic')) parsed.fontFamily = 'opendyslexic';
-                    else if (ff.includes('atkinson')) parsed.fontFamily = 'atkinson';
-                    else if (ff.includes('inter')) parsed.fontFamily = 'inter';
-                    else if (ff.includes('lora')) parsed.fontFamily = 'lora';
-                    else if (ff.includes('georgia')) parsed.fontFamily = 'georgia';
-                    else if (ff.includes('system') || ff.includes('sans-serif') || ff.includes('apple-system')) parsed.fontFamily = 'system';
-                }
+                const parsed = JSON.parse(stored);
+                parsed.fontFamily = normalizeFontKey(parsed.fontFamily);
                 return Object.assign({}, defaultSettings, parsed);
             }
         } catch(e) {}
@@ -243,84 +341,136 @@ global $cdnBaseUrl, $siteName, $requestUri;
     }
 
     function saveReaderSettings(settings) {
+        settings.fontFamily = normalizeFontKey(settings.fontFamily);
         localStorage.setItem('reader-settings', JSON.stringify(settings));
     }
 
     const settings = getReaderSettings();
+    // Persist normalized font key immediately in case legacy string was stored
+    saveReaderSettings(settings);
 
-    // 1. Initialize Font Size UI (Map 1.15 to something like 100%)
-    let currentSize = settings.fontSize || 1.15;
+    const previewEl = document.getElementById('rs-settings-preview');
+
+    function syncPreviewAndRootVars(s, lineHeightVal) {
+        const fontKey = normalizeFontKey(s.fontFamily);
+        const cssFont = fontMap[fontKey] || fontMap['system'];
+        const sizeRem = (parseFloat(s.fontSize) || 1.15) + 'rem';
+        const lh = lineHeightVal || localStorage.getItem('rs-line-height') || '1.8';
+
+        document.documentElement.style.setProperty('--rs-font-family', cssFont);
+        document.documentElement.style.setProperty('--rs-font-size', sizeRem);
+        document.documentElement.style.setProperty('--rs-line-height', lh);
+        document.body.style.fontFamily = cssFont;
+
+        if (previewEl) {
+            previewEl.style.fontFamily = cssFont;
+            previewEl.style.fontSize = sizeRem;
+            previewEl.style.lineHeight = lh;
+        }
+    }
+
+    // 1. Initialize Font Size UI (Map 1.15rem baseline to 100%)
+    const currentSize = parseFloat(settings.fontSize) || 1.15;
     const sizeValDisplay = document.getElementById('rs-settings-font-val');
     if (sizeValDisplay) sizeValDisplay.textContent = Math.round((currentSize / 1.15) * 100) + '%';
 
     // 2. Initialize UI Elements
     const themeSelect = document.getElementById('rs-settings-theme');
-    if(themeSelect) themeSelect.value = settings.theme || 'auto';
+    if (themeSelect) themeSelect.value = settings.theme || 'auto';
 
     const fontSelect = document.getElementById('rs-settings-font-family');
-    if(fontSelect) fontSelect.value = settings.fontFamily || 'system';
+    if (fontSelect) fontSelect.value = normalizeFontKey(settings.fontFamily);
+
+    const widthSelect = document.getElementById('rs-settings-width');
+    if (widthSelect) widthSelect.value = settings.width || 'default';
     
     const transSelect = document.getElementById('rs-settings-translation');
-    if(transSelect) transSelect.value = settings.translationMode || 'original';
+    if (transSelect) transSelect.value = settings.translationMode || 'original';
 
     const audioSelect = document.getElementById('rs-settings-audio');
-    if (audioSelect) audioSelect.checked = (settings.autoPlayAudio === 'true');
+    if (audioSelect) audioSelect.checked = (String(settings.autoPlayAudio) === 'true');
 
     const narrativeThemesSelect = document.getElementById('rs-settings-narrative-themes');
     if (narrativeThemesSelect) narrativeThemesSelect.checked = (settings.customThemeEnabled !== false);
 
     const launchSelect = document.getElementById('rs-settings-launch-behavior');
-    if(launchSelect) launchSelect.value = localStorage.getItem('rs-launch-behavior') || 'home';
+    if (launchSelect) launchSelect.value = localStorage.getItem('rs-launch-behavior') || 'home';
 
     const lhSelect = document.getElementById('rs-settings-line-height');
-    if(lhSelect) lhSelect.value = localStorage.getItem('rs-line-height') || '1.6';
+    const initialLh = localStorage.getItem('rs-line-height') || '1.8';
+    if (lhSelect) lhSelect.value = initialLh;
+
+    // Apply initial CSS variables and preview styles
+    syncPreviewAndRootVars(settings, initialLh);
+
+    // Sync active modal buttons in header.php if present
+    function updateFontSize(newSize) {
+        const s = getReaderSettings();
+        s.fontSize = Math.round(newSize * 100) / 100;
+        saveReaderSettings(s);
+        if (sizeValDisplay) sizeValDisplay.textContent = Math.round((s.fontSize / 1.15) * 100) + '%';
+        syncPreviewAndRootVars(s);
+    }
 
     // --- EVENT LISTENERS FOR CONTROLS ---
-    document.getElementById('rs-settings-font-dec').addEventListener('click', () => {
-        let s = getReaderSettings();
-        s.fontSize = Math.max(s.fontSize - 0.1, 0.8);
-        saveReaderSettings(s);
-        if (sizeValDisplay) sizeValDisplay.textContent = Math.round((s.fontSize / 1.15) * 100) + '%';
-        document.body.style.fontSize = s.fontSize + 'rem';
-    });
+    const decBtn = document.getElementById('rs-settings-font-dec');
+    if (decBtn) {
+        decBtn.addEventListener('click', () => {
+            const s = getReaderSettings();
+            updateFontSize(Math.max((parseFloat(s.fontSize) || 1.15) - 0.1, 0.85));
+        });
+    }
 
-    document.getElementById('rs-settings-font-inc').addEventListener('click', () => {
-        let s = getReaderSettings();
-        s.fontSize = Math.min(s.fontSize + 0.1, 2.5);
-        saveReaderSettings(s);
-        if (sizeValDisplay) sizeValDisplay.textContent = Math.round((s.fontSize / 1.15) * 100) + '%';
-        document.body.style.fontSize = s.fontSize + 'rem';
-    });
+    const incBtn = document.getElementById('rs-settings-font-inc');
+    if (incBtn) {
+        incBtn.addEventListener('click', () => {
+            const s = getReaderSettings();
+            updateFontSize(Math.min((parseFloat(s.fontSize) || 1.15) + 0.1, 2.5));
+        });
+    }
+
+    const resetSizeBtn = document.getElementById('rs-settings-font-reset');
+    if (resetSizeBtn) {
+        resetSizeBtn.addEventListener('click', () => {
+            updateFontSize(1.15);
+        });
+    }
 
     if (themeSelect) {
         themeSelect.addEventListener('change', (e) => {
-            let s = getReaderSettings();
+            const s = getReaderSettings();
             s.theme = e.target.value;
             saveReaderSettings(s);
             applyThemeGlobally(s.theme);
         });
     }
 
-    const fontMap = {
-        'system': 'system-ui, -apple-system, sans-serif',
-        'georgia': '"Georgia", serif',
-        'lora': '"Lora", serif',
-        'inter': '"Inter", sans-serif',
-        'atkinson': '"Atkinson Hyperlegible", sans-serif',
-        'opendyslexic': '"OpenDyslexic", sans-serif'
-    };
     if (fontSelect) {
         fontSelect.addEventListener('change', (e) => {
-            let s = getReaderSettings();
-            s.fontFamily = e.target.value;
+            const s = getReaderSettings();
+            s.fontFamily = normalizeFontKey(e.target.value);
             saveReaderSettings(s);
-            document.body.style.fontFamily = fontMap[s.fontFamily] || fontMap['system'];
+            syncPreviewAndRootVars(s);
+            if (typeof window.applyFontFamily === 'function') {
+                window.applyFontFamily(s.fontFamily);
+            }
+        });
+    }
+
+    if (widthSelect) {
+        widthSelect.addEventListener('change', (e) => {
+            const s = getReaderSettings();
+            s.width = e.target.value;
+            saveReaderSettings(s);
+            if (typeof window.applyWidth === 'function') {
+                window.applyWidth(s.width);
+            }
         });
     }
 
     if (transSelect) {
         transSelect.addEventListener('change', (e) => {
-            let s = getReaderSettings();
+            const s = getReaderSettings();
             s.translationMode = e.target.value;
             saveReaderSettings(s);
             if (typeof window.applyTranslationMode === 'function') {
@@ -331,7 +481,7 @@ global $cdnBaseUrl, $siteName, $requestUri;
 
     if (audioSelect) {
         audioSelect.addEventListener('change', (e) => {
-            let s = getReaderSettings();
+            const s = getReaderSettings();
             s.autoPlayAudio = e.target.checked ? 'true' : 'false';
             saveReaderSettings(s);
         });
@@ -339,14 +489,10 @@ global $cdnBaseUrl, $siteName, $requestUri;
 
     if (narrativeThemesSelect) {
         narrativeThemesSelect.addEventListener('change', (e) => {
-            let s = getReaderSettings();
+            const s = getReaderSettings();
             s.customThemeEnabled = e.target.checked;
             saveReaderSettings(s);
-            if (!s.customThemeEnabled) {
-                applyThemeGlobally(s.theme);
-            } else {
-                window.location.reload(); // Reload to restore book theme if on a book page
-            }
+            applyThemeGlobally(s.theme);
         });
     }
 
@@ -358,23 +504,34 @@ global $cdnBaseUrl, $siteName, $requestUri;
 
     if (lhSelect) {
         lhSelect.addEventListener('change', (e) => {
-            localStorage.setItem('rs-line-height', e.target.value);
-            document.body.style.lineHeight = e.target.value;
+            const lh = e.target.value;
+            localStorage.setItem('rs-line-height', lh);
+            const s = getReaderSettings();
+            syncPreviewAndRootVars(s, lh);
+            if (typeof window.applyLineHeight === 'function') {
+                window.applyLineHeight(lh);
+            }
         });
     }
 
-    document.getElementById('rs-settings-reset-all').addEventListener('click', () => {
-        if(confirm("Are you sure you want to reset all reading settings to default?")) {
-            localStorage.removeItem('reader-settings');
-            localStorage.removeItem('rs-line-height');
-            localStorage.removeItem('rs-launch-behavior');
-            window.location.reload();
-        }
-    });
+    const resetAllBtn = document.getElementById('rs-settings-reset-all');
+    if (resetAllBtn) {
+        resetAllBtn.addEventListener('click', () => {
+            if (confirm("Are you sure you want to reset all reading settings to default?")) {
+                localStorage.removeItem('reader-settings');
+                localStorage.removeItem('rs-line-height');
+                localStorage.removeItem('rs-launch-behavior');
+                window.location.reload();
+            }
+        });
+    }
 
     function applyThemeGlobally(theme) {
         document.body.classList.remove('theme-auto', 'theme-light', 'theme-sepia', 'theme-dark', 'theme-dark-sepia', 'theme-sepia-system');
         document.body.classList.add('theme-' + theme);
+        if (typeof window.applyReaderTheme === 'function') {
+            window.applyReaderTheme(theme);
+        }
     }
 })();
 </script>
