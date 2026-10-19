@@ -504,21 +504,105 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c011/s005.md"
     },
-    "/aubrie/the-sanctuary-the-shield": {
+    "/aubrie/the-eleventh-child-off-to-college/homecoming-spirit": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Sanctuary & The Shield",
+        "title": "Homecoming Spirit",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|11"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/homecoming-spirit/scene-1-the-door-decorating-contest": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Door Decorating Contest",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c012/s001.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/homecoming-spirit/scene-2-chalk-the-walk": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: Chalk the Walk",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c012/s002.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/homecoming-spirit/scene-3-the-pep-rally-fortress": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: The Pep Rally Fortress",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c012/s003.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/homecoming-spirit/scene-4-the-parade-and-the-peak": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 4: The Parade and the Peak",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c012/s004.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/homecoming-game-day": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Homecoming Game Day",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|12"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/homecoming-game-day/scene-1-game-day": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Game Day",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c013/s001.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/homecoming-game-day/scene-2-the-pre-game": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The Pre-Game",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c013/s002.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/homecoming-game-day/scene-3-the-first-quarter": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: The First Quarter",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c013/s003.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/homecoming-game-day/scene-4-the-second-quarter": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 4: The Second Quarter",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c013/s004.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/homecoming-game-day/scene-5-halftime": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 5: Halftime",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c013/s005.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/homecoming-game-day/scene-6-the-retreat": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 6: The Retreat",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c013/s006.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/homecoming-game-day/scene-7-the-fortress-of-truth": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 7: The Fortress of Truth",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c013/s007.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/homecoming-game-day/scene-8-the-fortress-at-night": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 8: The Fortress at Night",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c013/s008.md"
+    },
+    "/aubrie/a-new-winter-break-tradition": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A New Winter Break Tradition",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|1"
     },
-    "/aubrie/the-sanctuary-the-shield/homecoming-week": {
+    "/aubrie/a-new-winter-break-tradition/a-winter-wonderland-in-the-basement": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Homecoming Week",
+        "title": "A Winter Wonderland in the Basement",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
-    "/aubrie/the-sanctuary-the-shield/homecoming-week/scene-1-the-fortress-of-truth": {
+    "/aubrie/a-new-winter-break-tradition/a-winter-wonderland-in-the-basement/scene-1-the-fortress-upgrades": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Fortress of Truth",
+        "title": "Scene 1: The Fortress Upgrades",
         "theme": "raggiesoft-books",
         "filePath": "e002/c001/s001.md"
     },
