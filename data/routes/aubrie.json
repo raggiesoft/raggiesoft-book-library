@@ -132,65 +132,83 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s001.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-2-an-unlikely-welcome": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-2-a-clerical-error": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: An Unlikely Welcome",
+        "title": "Scene 2: A Clerical Error",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s002.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-3-the-hall-director": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-3-system-crash": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Hall Director",
+        "title": "Scene 3: System.Crash",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s003.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-4-making-it-official": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-4-the-anchor-holds": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Making It Official",
+        "title": "Scene 4: The Anchor Holds",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s004.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-5-logistics-of-a-co-ed-suite": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-5-the-hall-director": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Logistics of a Co-Ed Suite",
+        "title": "Scene 5: The Hall Director",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s005.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-6-the-first-choice": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-6-a-joke-that-stuck": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The First Choice",
+        "title": "Scene 6: A Joke That Stuck",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s006.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-7-the-first-assist": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-7-making-it-official": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The First Assist",
+        "title": "Scene 7: Making It Official",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s007.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-8-the-spare-hardware": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-8-logistics-of-a-co-ed-suite": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Spare Hardware",
+        "title": "Scene 8: Logistics of a Co-Ed Suite",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s008.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-9-the-new-voice": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-9-the-first-choice": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The New Voice",
+        "title": "Scene 9: The First Choice",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s009.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-10-the-antidote": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-10-the-first-assist": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Antidote",
+        "title": "Scene 10: The First Assist",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s010.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-11-the-trust-fall": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-11-the-spare-hardware": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The Trust Fall",
+        "title": "Scene 11: The Spare Hardware",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s011.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-12-the-new-voice": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 12: The New Voice",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c004/s012.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-13-the-antidote": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 13: The Antidote",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c004/s013.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-14-the-trust-fall": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 14: The Trust Fall",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c004/s014.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor": {
         "view": "pages/raggiesoft-books/books/viewer",
