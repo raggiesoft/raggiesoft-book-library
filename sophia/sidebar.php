@@ -26,7 +26,13 @@
  */
 
 // Import legacy global variables required for view rendering
-global $seriesSlug, $routeData, $cdnBaseUrl, $requestUri, $toc_manifest;
+global $seriesSlug, $routeData, $cdnBaseUrl, $requestUri, $toc_manifest, $pageConfig, $fmTitle;
+
+// Normalize request URI to match route keys even if a trailing slash is present
+$normalizedRequestUri = rtrim($requestUri, '/');
+if ($normalizedRequestUri === '') {
+    $normalizedRequestUri = '/';
+}
 
 // Build a reverse lookup array mapping physical file paths to clean Stardust URLs
 $fileToUrl = [];
@@ -42,16 +48,17 @@ if (!empty($routeData)) {
 // Initialize sequence navigation variables
 $sbPrevUrl = null;
 $sbNextUrl = null;
+$routeConfig = [];
 
 // Determine "Up" navigation based on URL segments
 // Defaults back to the series landing page
-$segments = explode('/', trim($requestUri, '/'));
+$segments = explode('/', trim($normalizedRequestUri, '/'));
 $sbUpUrl = '/' . $seriesSlug; 
 $sbUpLabel = "Up to Series";
 
 // Dynamically calculate sequential "Previous" and "Next" buttons based on current route
 if (!empty($routeData)) {
-    $routeConfig = $routeData[$requestUri] ?? [];
+    $routeConfig = $routeData[$normalizedRequestUri] ?? ($routeData[$requestUri] ?? []);
     
     // First, check if explicit overrides exist in the route definition
     $sbPrevUrl = $routeConfig['prevUrl'] ?? null;
@@ -70,7 +77,7 @@ if (!empty($routeData)) {
     $sbFilteredKeys = array_values($sbFilteredKeys);
     
     // Locate the current page in the sequence
-    $sbCurrentIndex = array_search($requestUri, $sbFilteredKeys);
+    $sbCurrentIndex = array_search($normalizedRequestUri, $sbFilteredKeys);
     if ($sbCurrentIndex !== false) {
         // Assign Previous if not explicitly overridden and not the first page
         if ($sbCurrentIndex > 0 && empty($sbPrevUrl)) $sbPrevUrl = $sbFilteredKeys[$sbCurrentIndex - 1];
@@ -78,6 +85,9 @@ if (!empty($routeData)) {
         if ($sbCurrentIndex < count($sbFilteredKeys) - 1 && empty($sbNextUrl)) $sbNextUrl = $sbFilteredKeys[$sbCurrentIndex + 1];
     }
 }
+
+// Resolve the active page title to display beneath the series header in mixed case (NOT all caps)
+$sidebarPageTitle = $routeConfig['title'] ?? ($pageConfig['title'] ?? (!empty($fmTitle) ? $fmTitle : 'Navigation'));
 ?>
 
 <!-- Slide-out sidebar container -->
@@ -85,14 +95,15 @@ if (!empty($routeData)) {
     
     <!-- 
       Contextual Series Header
-      Anchored prominently at the top of the sidebar to immediately establish reading context
+      Anchored prominently at the top of the sidebar to immediately establish reading context.
+      Displays the series title followed by the current page/scene title in standard mixed case.
     -->
     <div class="sidebar-series-header" style="text-align: center; margin-bottom: 1.25rem;">
         <h3 style="margin: 0 0 0.25rem 0; color: var(--rs-primary); font-size: 1.25rem; font-weight: 700; line-height: 1.3;"><?php 
             $sidebarSeriesTitle = $toc_manifest['series_title'] ?? (ucfirst($seriesSlug) . ' Narrative');
             echo htmlspecialchars($sidebarSeriesTitle); 
         ?></h3>
-        <p style="margin: 0; opacity: 0.7; font-size: 0.75rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">Navigation</p>
+        <p style="margin: 0; opacity: 0.8; font-size: 0.85rem; font-weight: 600; line-height: 1.4;"><?php echo htmlspecialchars($sidebarPageTitle); ?></p>
     </div>
 
     <hr style="border:0; border-top:1px solid var(--rs-border); margin: 0 0 1.25rem 0;">
