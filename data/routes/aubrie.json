@@ -462,9 +462,9 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c009/s001.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-pepper-plaza-expedition/scene-2-a-world-in-focus": {
+    "/aubrie/the-eleventh-child-off-to-college/the-pepper-plaza-expedition/scene-2-the-prescription": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A World in Focus",
+        "title": "Scene 2: The Prescription",
         "theme": "raggiesoft-books",
         "filePath": "e001/c009/s002.md"
     },
@@ -473,6 +473,18 @@
         "title": "Scene 3: The Audiologist's Verdict",
         "theme": "raggiesoft-books",
         "filePath": "e001/c009/s003.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-pepper-plaza-expedition/scene-4-lensworks-at-strickland-farm": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 4: LensWorks at Strickland Farm",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c009/s004.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-pepper-plaza-expedition/scene-5-the-ride-home-in-high-definition": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 5: The Ride Home in High Definition",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c009/s005.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/monday-night-war": {
         "view": "pages/raggiesoft-books/books/viewer",
