@@ -644,6 +644,200 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
 
 <style>
 #stardust-reading-pane { padding-bottom: 6rem !important; }
+
+/* ==========================================================================
+ * OLIVER READER: ZOË PATEL COGNITIVE KERNEL LOG SYNTAX HIGHLIGHTER STYLES
+ * ==========================================================================
+ * Ensures immediate, zero-FOUC WCAG 2.1 AAA syntax highlighting for Zoë's
+ * internal C#/.NET application logs (`ZOË.Systems.Logs.*`) across Light Mode,
+ * Sepia Mode, Dark Mode, and custom narrative themes during SPA navigation.
+ * ========================================================================== */
+.story-content .zoe-kernel-log,
+.story-content .zoe-kernel-log div,
+.story-content .zoe-kernel-log p {
+    text-indent: 0 !important;
+}
+.story-content .zoe-kernel-log::first-letter,
+.story-content .zoe-kernel-log *::first-letter {
+    float: none !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    margin: 0 !important;
+    font-weight: inherit !important;
+    color: inherit !important;
+}
+.zoe-kernel-log {
+    --zkl-bg: #f8fafc;
+    --zkl-header-bg: #eef2f6;
+    --zkl-border: #cbd5e1;
+    --zkl-row-border: rgba(148, 163, 184, 0.22);
+    --zkl-row-hover: rgba(15, 23, 42, 0.035);
+    --zkl-text: #0f172a;
+    --zkl-gutter: #64748b;
+    --zkl-ns: #475569;
+    --zkl-stream: #0369a1;
+    --zkl-punct: #475569;
+    --zkl-severity-fg: #991b1b;
+    --zkl-severity-bg: rgba(185, 28, 28, 0.10);
+    --zkl-severity-border: rgba(185, 28, 28, 0.30);
+    --zkl-exception: #b91c1c;
+    --zkl-thread-fg: #1e40af;
+    --zkl-thread-bg: rgba(30, 64, 175, 0.09);
+    --zkl-bracket: #15803d;
+    --zkl-string: #9a3412;
+    --zkl-label: #6d28d9;
+    --zkl-diagnostic: #0f766e;
+    --zkl-function: #7e22ce;
+    --zkl-identifier: #0e7490;
+    --zkl-constant: #be123c;
+    --zkl-number: #b45309;
+    --zkl-operator: #334155;
+    --zkl-ts-fg: #334155;
+    --zkl-ts-bg: #e2e8f0;
+    font-family: "JetBrains Mono", "Fira Code", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.88em;
+    line-height: 1.6;
+    background: var(--zkl-bg);
+    color: var(--zkl-text);
+    border: 1px solid var(--zkl-border);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 1.75rem 0;
+    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
+}
+body.theme-sepia .zoe-kernel-log {
+    --zkl-bg: #f6efe0;
+    --zkl-header-bg: #ebe1cc;
+    --zkl-border: #d3c4a8;
+    --zkl-ts-bg: #e6dac2;
+    --zkl-ts-fg: #3e3122;
+}
+body.theme-dark .zoe-kernel-log,
+body.theme-dark-sepia .zoe-kernel-log,
+body.theme-night .zoe-kernel-log,
+body.theme-oceanview .zoe-kernel-log {
+    --zkl-bg: #0b1120;
+    --zkl-header-bg: #111827;
+    --zkl-border: #1e293b;
+    --zkl-row-border: rgba(148, 163, 184, 0.14);
+    --zkl-row-hover: rgba(56, 189, 248, 0.06);
+    --zkl-text: #e2e8f0;
+    --zkl-gutter: #94a3b8;
+    --zkl-ns: #94a3b8;
+    --zkl-stream: #38bdf8;
+    --zkl-punct: #94a3b8;
+    --zkl-severity-fg: #fecaca;
+    --zkl-severity-bg: rgba(239, 68, 68, 0.20);
+    --zkl-severity-border: rgba(248, 113, 113, 0.45);
+    --zkl-exception: #f87171;
+    --zkl-thread-fg: #93c5fd;
+    --zkl-thread-bg: rgba(59, 130, 246, 0.18);
+    --zkl-bracket: #4ade80;
+    --zkl-string: #fdba74;
+    --zkl-label: #c084fc;
+    --zkl-diagnostic: #2dd4bf;
+    --zkl-function: #e879f9;
+    --zkl-identifier: #67e8f9;
+    --zkl-constant: #fda4af;
+    --zkl-number: #fde047;
+    --zkl-operator: #cbd5e1;
+    --zkl-ts-fg: #cbd5e1;
+    --zkl-ts-bg: #1e293b;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.38);
+}
+@media (prefers-color-scheme: dark) {
+    body:not(.theme-light):not(.theme-sepia) .zoe-kernel-log {
+        --zkl-bg: #0b1120;
+        --zkl-header-bg: #111827;
+        --zkl-border: #1e293b;
+        --zkl-row-border: rgba(148, 163, 184, 0.14);
+        --zkl-row-hover: rgba(56, 189, 248, 0.06);
+        --zkl-text: #e2e8f0;
+        --zkl-gutter: #94a3b8;
+        --zkl-ns: #94a3b8;
+        --zkl-stream: #38bdf8;
+        --zkl-punct: #94a3b8;
+        --zkl-severity-fg: #fecaca;
+        --zkl-severity-bg: rgba(239, 68, 68, 0.20);
+        --zkl-severity-border: rgba(248, 113, 113, 0.45);
+        --zkl-exception: #f87171;
+        --zkl-thread-fg: #93c5fd;
+        --zkl-thread-bg: rgba(59, 130, 246, 0.18);
+        --zkl-bracket: #4ade80;
+        --zkl-string: #fdba74;
+        --zkl-label: #c084fc;
+        --zkl-diagnostic: #2dd4bf;
+        --zkl-function: #e879f9;
+        --zkl-identifier: #67e8f9;
+        --zkl-constant: #fda4af;
+        --zkl-number: #fde047;
+        --zkl-operator: #cbd5e1;
+        --zkl-ts-fg: #cbd5e1;
+        --zkl-ts-bg: #1e293b;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.38);
+    }
+}
+.zoe-kernel-log-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding: 0.55rem 1rem;
+    background: var(--zkl-header-bg);
+    border-bottom: 1px solid var(--zkl-border);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--zkl-ns);
+}
+.zoe-kernel-log-dots { display: inline-flex; align-items: center; gap: 6px; flex-shrink: 0; }
+.zkl-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.zkl-dot-red { background: #ef4444; }
+.zkl-dot-amber { background: #f59e0b; }
+.zkl-dot-green { background: #10b981; }
+.zoe-kernel-log-title { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--zkl-text); }
+.zkl-header-sep { color: var(--zkl-stream); margin: 0 0.25rem; }
+.zoe-kernel-log-meta { font-size: 0.72rem; padding: 0.12rem 0.5rem; border-radius: 999px; background: var(--zkl-ts-bg); color: var(--zkl-ts-fg); flex-shrink: 0; }
+.zoe-kernel-log-body { display: flex; flex-direction: column; }
+.zoe-log-entry {
+    display: flex;
+    align-items: baseline;
+    gap: 0.75rem;
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid var(--zkl-row-border);
+    border-left: 4px solid #0284c7;
+    transition: background-color 0.15s ease;
+}
+.zoe-log-entry:last-child { border-bottom: none; }
+.zoe-log-entry:hover { background-color: var(--zkl-row-hover); }
+.zoe-log-entry.zoe-log-level-info { border-left-color: #0284c7; }
+.zoe-log-entry.zoe-log-level-warning { border-left-color: #d97706; }
+.zoe-log-entry.zoe-log-level-critical { border-left-color: #dc2626; background-color: rgba(220, 38, 38, 0.04); }
+.zoe-log-entry.zoe-log-level-emotional { border-left-color: #9333ea; }
+.zoe-log-entry.zoe-log-level-action { border-left-color: #059669; }
+.zoe-log-entry.zoe-log-level-scheduler { border-left-color: #4f46e5; }
+.zoe-log-gutter { font-size: 0.75rem; color: var(--zkl-gutter); user-select: none; flex-shrink: 0; min-width: 1.6rem; text-align: right; font-variant-numeric: tabular-nums; }
+.zoe-log-main { flex: 1; min-width: 0; overflow-wrap: anywhere; word-break: break-word; }
+.zkl-ns { color: var(--zkl-ns); font-weight: 600; }
+.zkl-stream { color: var(--zkl-stream); font-weight: 700; }
+.zkl-punct { color: var(--zkl-punct); font-weight: 700; }
+.zkl-severity { color: var(--zkl-severity-fg); background: var(--zkl-severity-bg); border: 1px solid var(--zkl-severity-border); padding: 0.05rem 0.38rem; border-radius: 4px; font-weight: 800; letter-spacing: 0.02em; }
+.zkl-exception { color: var(--zkl-exception); font-weight: 700; text-decoration: underline; text-decoration-style: wavy; text-underline-offset: 3px; }
+.zkl-thread { color: var(--zkl-thread-fg); background: var(--zkl-thread-bg); padding: 0.05rem 0.35rem; border-radius: 4px; font-weight: 700; }
+.zkl-bracket { color: var(--zkl-bracket); font-weight: 600; }
+.zkl-string { color: var(--zkl-string); }
+.zkl-label { color: var(--zkl-label); font-weight: 700; }
+.zkl-diagnostic { color: var(--zkl-diagnostic); font-style: italic; }
+.zkl-function { color: var(--zkl-function); font-weight: 600; }
+.zkl-identifier { color: var(--zkl-identifier); font-weight: 600; }
+.zkl-constant { color: var(--zkl-constant); font-weight: 700; }
+.zkl-number { color: var(--zkl-number); font-weight: 700; font-variant-numeric: tabular-nums; }
+.zkl-operator { color: var(--zkl-operator); font-weight: 700; }
+.zkl-timestamp { font-size: 0.76rem; color: var(--zkl-ts-fg); background: var(--zkl-ts-bg); padding: 0.12rem 0.48rem; border-radius: 4px; white-space: nowrap; flex-shrink: 0; font-variant-numeric: tabular-nums; margin-left: auto; }
+@media (max-width: 640px) {
+    .zoe-log-entry { flex-wrap: wrap; gap: 0.4rem; }
+    .zkl-timestamp { margin-left: 2.2rem; }
+}
 </style>
 
 

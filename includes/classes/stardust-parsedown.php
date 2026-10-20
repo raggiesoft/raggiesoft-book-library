@@ -322,7 +322,225 @@ class StardustParsedown extends Parsedown {
         $text = preg_replace('/<asl>(.*?)<\/asl>/is', '<span class="visually-hidden">American Sign Language: </span><em class="asl-sign">$1</em>', $text);
         $text = preg_replace('/<sgn>(.*?)<\/sgn>/is', '<span class="visually-hidden">Signed: </span><em class="generic-sign">$1</em>', $text);
         $text = preg_replace('/<sms>(.*?)<\/sms>/is', '<span class="visually-hidden">Text Message: </span><em class="sms-message">$1</em>', $text);
+
+        // =====================================================================
+        // ZOË PATEL COGNITIVE KERNEL LOG PARSER & SYNTAX HIGHLIGHTER
+        // =====================================================================
+        // Narrative Context:
+        // Zoë is autistic and processes her internal thoughts, sensory telemetry,
+        // social scripts, and thread priorities like a C#/.NET application writing
+        // to structured system logs (`ZOË.Systems.Logs.KernelLog`, `EmotionalStateLog`,
+        // `SystemSchedulerLog`, `ActionLog`, `InternalStateLog`).
+        //
+        // Supported Authoring Formats in Markdown:
+        // 1. Explicit semantic tags: <zoe-log>...</zoe-log> or <kernellog>...</kernellog>
+        // 2. Fenced code blocks: ```zoe-log ... ``` or ```kernellog ... ```
+        // 3. Automatic zero-config detection: Consecutive lines/paragraphs starting
+        //    with `ZOË.Systems.Logs.` or `ZOE.Systems.Logs.` (including lines wrapped
+        //    in Markdown italics `*...*` or `_..._` from Word/.docx migrations).
+        // =====================================================================
+
+        // 1. Fenced code blocks: ```zoe-log or ```kernellog
+        $text = preg_replace_callback('/```(?:zoe-log|kernellog)\s*\R([\s\S]*?)\R```/iu', function($matches) {
+            return "\n\n" . $this->renderZoeKernelLogBlock($matches[1]) . "\n\n";
+        }, $text);
+
+        // 2. Explicit custom tags: <zoe-log>...</zoe-log> or <kernellog>...</kernellog>
+        $text = preg_replace_callback('/<(?:zoe-log|kernellog)>(.*?)<\/(?:zoe-log|kernellog)>/isu', function($matches) {
+            return "\n\n" . $this->renderZoeKernelLogBlock($matches[1]) . "\n\n";
+        }, $text);
+
+        // 3. Automatic zero-config detection of standalone or consecutive `ZOË.Systems.Logs.*` paragraphs
+        $text = preg_replace_callback(
+            '/(?:^[ \t]*[*_]?[ \t]*(?:ZOË|ZOE)\.Systems\.Logs\.[A-Za-z0-9_]+[^\r\n]*[*_]?[ \t]*(?:\R[ \t]*)*)+/imu',
+            function($matches) {
+                return "\n\n" . $this->renderZoeKernelLogBlock($matches[0]) . "\n\n";
+            },
+            $text
+        );
+
         return parent::text($text);
+    }
+
+    /**
+     * Renders a block of one or more Zoë Patel cognitive kernel log entries into
+     * an accessible, WCAG 2.1 AAA syntax-highlighted diagnostic console component.
+     *
+     * @param string $rawBlock Raw multi-line string containing one or more log entries.
+     * @return string Complete HTML markup for the `.zoe-kernel-log` region.
+     */
+    protected function renderZoeKernelLogBlock(string $rawBlock): string {
+        $lines = preg_split('/\R+/u', trim($rawBlock));
+        $entriesHtml = [];
+        $entryCount = 0;
+
+        foreach ($lines as $rawLine) {
+            $trimmed = trim($rawLine);
+            if ($trimmed === '') {
+                continue;
+            }
+            // Strip optional outer Markdown emphasis markers (* or _) from Word imports
+            if (
+                (str_starts_with($trimmed, '*') && str_ends_with($trimmed, '*') && !str_starts_with($trimmed, '**')) ||
+                (str_starts_with($trimmed, '_') && str_ends_with($trimmed, '_') && !str_starts_with($trimmed, '__'))
+            ) {
+                $trimmed = trim(substr($trimmed, 1, -1));
+            }
+            // Strip optional leading blockquote '>' if copied from a quoted block
+            $trimmed = ltrim($trimmed, "> \t");
+            if ($trimmed === '') {
+                continue;
+            }
+
+            $entryCount++;
+            $entriesHtml[] = $this->highlightZoeLogLine($trimmed, $entryCount);
+        }
+
+        if (empty($entriesHtml)) {
+            return '';
+        }
+
+        $countLabel = $entryCount === 1 ? '1 ENTRY' : ($entryCount . ' ENTRIES');
+
+        return '<div class="zoe-kernel-log my-4" role="region" aria-label="Zoë&#039;s Internal System Log">'
+            . '<span class="visually-hidden">Zoë&#039;s Internal System Log: </span>'
+            . '<div class="zoe-kernel-log-header" aria-hidden="true">'
+            . '<div class="zoe-kernel-log-dots">'
+            . '<span class="zkl-dot zkl-dot-red"></span>'
+            . '<span class="zkl-dot zkl-dot-amber"></span>'
+            . '<span class="zkl-dot zkl-dot-green"></span>'
+            . '</div>'
+            . '<div class="zoe-kernel-log-title">ZOË.Systems.Logs <span class="zkl-header-sep">//</span> Cognitive Runtime Telemetry</div>'
+            . '<div class="zoe-kernel-log-meta">' . htmlspecialchars($countLabel, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8') . '</div>'
+            . '</div>'
+            . '<div class="zoe-kernel-log-body">'
+            . implode('', $entriesHtml)
+            . '</div>'
+            . '</div>';
+    }
+
+    /**
+     * Tokenizes and syntax-highlights a single line from Zoë's cognitive kernel log.
+     * Uses a single-pass offset-captured regular expression lexer so HTML attributes
+     * and entities are never double-escaped or corrupted.
+     *
+     * @param string $rawLine Single log line (e.g. `ZOË.Systems.Logs.KernelLog: ... 10-12-2015 07:05:15`).
+     * @param int    $lineNum 1-based line number within the current log block.
+     * @return string HTML markup for a single `.zoe-log-entry` row.
+     */
+    protected function highlightZoeLogLine(string $rawLine, int $lineNum = 1): string {
+        // Normalize any pre-escaped HTML entities back to raw UTF-8 before single-pass lexing
+        $line = html_entity_decode($rawLine, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+
+        $nsPrefixHtml = '';
+        $streamName = 'KernelLog';
+        $rest = $line;
+
+        // 1. Extract leading `ZOË.Systems.Logs.<StreamName>[:|,]` prefix if present
+        if (preg_match('/^((?:ZOË|ZOE)\.Systems\.Logs\.)([A-Za-z0-9_]+)([:,]?)\s*(.*)$/us', $line, $nsMatch)) {
+            $nsRoot = htmlspecialchars($nsMatch[1], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+            $streamName = $nsMatch[2];
+            $streamEsc = htmlspecialchars($streamName, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+            $streamSlug = strtolower(preg_replace('/[^a-zA-Z0-9]+/', '-', $streamName));
+            $delimEsc = htmlspecialchars($nsMatch[3] !== '' ? $nsMatch[3] : ':', ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+            $rest = $nsMatch[4];
+
+            $nsPrefixHtml = '<span class="zkl-ns">' . $nsRoot . '</span>'
+                . '<span class="zkl-stream zkl-stream-' . $streamSlug . '">' . $streamEsc . '</span>'
+                . '<span class="zkl-punct">' . $delimEsc . '</span> ';
+        }
+
+        // 2. Extract trailing timestamp (`MM-DD-YYYY HH:MM:SS`) if present at end of line
+        $timestampHtml = '';
+        if (preg_match('/^(.*?)\s+(\d{2}-\d{2}-\d{4}\s+\d{2}:\d{2}:\d{2})\.?$/us', $rest, $tsMatch)) {
+            $rest = $tsMatch[1];
+            $tsEsc = htmlspecialchars($tsMatch[2], ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+            $timestampHtml = '<time class="zkl-timestamp">' . $tsEsc . '</time>';
+        }
+
+        // 3. Classify the entry's semantic severity/stream level for row accent styling
+        $rowLevel = 'info';
+        if (preg_match('/\b(?:CRITICAL\s+ERROR|CRITICAL\s+ALERT|[A-Za-z0-9_.]+Exception)\b/u', $rest)) {
+            $rowLevel = 'critical';
+        } elseif (preg_match('/\b(?:WARNING|Error|Alert|Conflict)\s*:/u', $rest)) {
+            $rowLevel = 'warning';
+        } elseif (strcasecmp($streamName, 'EmotionalStateLog') === 0) {
+            $rowLevel = 'emotional';
+        } elseif (strcasecmp($streamName, 'ActionLog') === 0 || preg_match('/\b(?:Execute|Required\s+Action|Action)\s*:/u', $rest)) {
+            $rowLevel = 'action';
+        } elseif (strcasecmp($streamName, 'SystemSchedulerLog') === 0) {
+            $rowLevel = 'scheduler';
+        }
+
+        // 4. Single-pass token lexer over `$rest`
+        $tokenPattern = '/'
+            // Severity badges (CRITICAL ERROR:, WARNING:, Error:, Alert:)
+            . '(?P<severity>\b(?:CRITICAL\s+ERROR|CRITICAL\s+ALERT|WARNING|Error|Alert)\s*:)'
+            // .NET / C# Exceptions (e.g. System.IO.FileNotFoundException(), ComplianceViolationException)
+            . '|(?P<exception>\b[A-Za-z0-9_]+(?:\.[A-Za-z0-9_]+)*Exception\b(?:\(\))?)'
+            // Multithreaded concurrency identifiers (e.g. Thread 1 (Self), Thread 3 (Jordan))
+            . '|(?P<thread>\bThread\s+\d+\s*\([^)]+\))'
+            // Bracketed filesystem paths, states, and context blocks ([...])
+            . '|(?P<bracket>\[[^\]]+\])'
+            // Quoted string/file literals ("..." or '...' when not an English contraction/possessive)
+            . '|(?P<string>"(?:[^"\\\\]|\\\\.)*"|(?<![\p{L}\p{N}])\'(?:[^\'\\\\\r\n]|\\\\.)*\'(?![\p{L}\p{N}]))'
+            // Cognitive phase & structured key labels (Hypothesis:, Analysis:, Conclusion:, Action:, etc.)
+            . '|(?P<label>\b(?:Hypothesis|Analysis|Conclusion|Required\s+Action|Action|Decision|Reason|Clarification\s+received|Input|Output|Conflict|Query|Result|Method|Data|Task|Execute|Status|State|Directive|Priority|Observation|Assessment|Override|Recommendation|Diagnosis|HeartRate|MuscleTension|Temperature|WeightDelta|Current\.Status|Personal\.State|Personal\.Note|Jordan\.State)\s*[:.])'
+            // Process diagnostic verbs (Running diagnostics..., Recalculating..., etc.)
+            . '|(?P<diagnostic>\b(?:Running\s+diagnostics|Processing\s+new\s+input|Searching\s+for\s+alternate\s+files|Cross-referencing|Updating\s+analysis|Recalculating|Monitoring|Initiating|Executing|Compiling)\.{0,3})'
+            // Functional / Node / Entity calls (Agent(Jordan), Observer(Aubrie), ContinueCuddle(Jordan))
+            . '|(?P<function>\b(?:Agent|Observer|Node|User|Target|Subject|Process|Event|System|Execute|ContinueCuddle|IsCuddling|Search)\s*\([^)]*\))'
+            // Dotted C#/.NET object & assembly identifiers (Jordan.OS.State, Jordan.OS, Pact.Members)
+            . '|(?P<identifier>\b[\p{L}_][\p{L}\p{N}_]*(?:\.[\p{L}_][\p{L}\p{N}_]*)+\b(?:\(\))?)'
+            // Booleans, nulls, and uppercase state constants
+            . '|(?P<constant>\b(?:true|false|True|False|TRUE|FALSE|null|NULL|MAX|MIN|HIGH|LOW|CRITICAL|ACTIVE|STANDBY|SAFE|UNSAFE|LOCKED|UNLOCKED|OK|FAILED|SUCCESS)\b)'
+            // Numeric & telemetry metrics (100%, -4 lbs, 99.1F, 95bpm)
+            . '|(?P<number>(?<![\p{L}\p{N}_])[+-]?\d+(?:\.\d+)?(?:\s*(?:%|lbs|bpm|F|C|ms|s|m|h|px|dB))?(?![\p{L}\p{N}_]))'
+            // Comparison, assignment, and state-transition operators (==, !=, ->, =>, =, >, <)
+            . '|(?P<operator>==|!=|->|=>|>=|<=|[=<>])'
+            . '/u';
+
+        $bodyHtml = '';
+        $lastOffset = 0;
+        $length = strlen($rest);
+
+        if (preg_match_all($tokenPattern, $rest, $matches, PREG_SET_ORDER | PREG_OFFSET_CAPTURE)) {
+            foreach ($matches as $match) {
+                $fullMatchText = $match[0][0];
+                $matchOffset = $match[0][1];
+
+                // Append any plain text preceding this token
+                if ($matchOffset > $lastOffset) {
+                    $plainChunk = substr($rest, $lastOffset, $matchOffset - $lastOffset);
+                    $bodyHtml .= htmlspecialchars($plainChunk, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+                }
+
+                // Determine which named token group matched
+                $tokenClass = 'zkl-text';
+                foreach (['severity', 'exception', 'thread', 'bracket', 'string', 'label', 'diagnostic', 'function', 'identifier', 'constant', 'number', 'operator'] as $groupName) {
+                    if (isset($match[$groupName]) && $match[$groupName][1] !== -1 && $match[$groupName][0] !== '') {
+                        $tokenClass = 'zkl-' . $groupName;
+                        break;
+                    }
+                }
+
+                $escapedToken = htmlspecialchars($fullMatchText, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+                $bodyHtml .= '<span class="' . $tokenClass . '">' . $escapedToken . '</span>';
+
+                $lastOffset = $matchOffset + strlen($fullMatchText);
+            }
+        }
+
+        // Append any remaining plain text after the final token
+        if ($lastOffset < $length) {
+            $bodyHtml .= htmlspecialchars(substr($rest, $lastOffset), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+        }
+
+        return '<div class="zoe-log-entry zoe-log-level-' . $rowLevel . '" data-line="' . $lineNum . '">'
+            . '<span class="zoe-log-gutter" aria-hidden="true">' . str_pad((string)$lineNum, 2, '0', STR_PAD_LEFT) . '</span>'
+            . '<div class="zoe-log-main">' . $nsPrefixHtml . $bodyHtml . '</div>'
+            . $timestampHtml
+            . '</div>';
     }
 }
 ?>
