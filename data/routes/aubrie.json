@@ -486,6 +486,24 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c009/s005.md"
     },
+    "/aubrie/the-eleventh-child-off-to-college/the-pepper-plaza-expedition/scene-6-dinner-with-isabel": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 6: Dinner with Isabel",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c009/s006.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-pepper-plaza-expedition/scene-7-taking-out-the-trash": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 7: Taking Out the Trash",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c009/s007.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-pepper-plaza-expedition/scene-8-face-to-face": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 8: Face to Face",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c009/s008.md"
+    },
     "/aubrie/the-eleventh-child-off-to-college/monday-night-war": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Monday Night War",
@@ -498,9 +516,9 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c010/s001.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/monday-night-war/scene-2-the-unbeliever": {
+    "/aubrie/the-eleventh-child-off-to-college/monday-night-war/scene-2-the-main-event": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Unbeliever",
+        "title": "Scene 2: The Main Event",
         "theme": "raggiesoft-books",
         "filePath": "e001/c010/s002.md"
     },
