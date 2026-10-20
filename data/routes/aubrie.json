@@ -492,17 +492,23 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c011/s003.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/trial-by-fire-drill/scene-4-the-nightly-pact": {
+    "/aubrie/the-eleventh-child-off-to-college/trial-by-fire-drill/scene-4-interlude-the-mitigating-factor": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Nightly Pact",
+        "title": "Scene 4: Interlude: The Mitigating Factor",
         "theme": "raggiesoft-books",
         "filePath": "e001/c011/s004.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/trial-by-fire-drill/scene-5-the-first-night-of-the-pact": {
+    "/aubrie/the-eleventh-child-off-to-college/trial-by-fire-drill/scene-5-the-nightly-pact": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The First Night of the Pact",
+        "title": "Scene 5: The Nightly Pact",
         "theme": "raggiesoft-books",
         "filePath": "e001/c011/s005.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/trial-by-fire-drill/scene-6-the-first-night-of-the-pact": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 6: The First Night of the Pact",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c011/s006.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/homecoming-spirit": {
         "view": "pages/raggiesoft-books/books/viewer",
