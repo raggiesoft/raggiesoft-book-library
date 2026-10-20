@@ -48,11 +48,17 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/s002.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude/scene-3-the-shared-bed": {
+    "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude/scene-3-interlude-the-accommodation-file": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Shared Bed",
+        "title": "Scene 3: Interlude: The Accommodation File",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/s003.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude/scene-4-the-shared-bed": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 4: The Shared Bed",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/s004.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/verification": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -72,23 +78,29 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c002/s002.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/verification/scene-3-all-the-way": {
+    "/aubrie/the-eleventh-child-off-to-college/verification/scene-3-interlude-the-counselor-s-note": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: All the Way",
+        "title": "Scene 3: Interlude: The Counselor's Note",
         "theme": "raggiesoft-books",
         "filePath": "e001/c002/s003.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/verification/scene-4-the-routine": {
+    "/aubrie/the-eleventh-child-off-to-college/verification/scene-4-all-the-way": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Routine",
+        "title": "Scene 4: All the Way",
         "theme": "raggiesoft-books",
         "filePath": "e001/c002/s004.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/verification/scene-5-one-last-night": {
+    "/aubrie/the-eleventh-child-off-to-college/verification/scene-5-the-routine": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: One Last Night",
+        "title": "Scene 5: The Routine",
         "theme": "raggiesoft-books",
         "filePath": "e001/c002/s005.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/verification/scene-6-one-last-night": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 6: One Last Night",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c002/s006.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/early-move-in": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -114,11 +126,17 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c003/s003.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/early-move-in/scene-4-stranded": {
+    "/aubrie/the-eleventh-child-off-to-college/early-move-in/scene-4-interlude-early-check-in-rounds": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Stranded",
+        "title": "Scene 4: Interlude: Early Check-In Rounds",
         "theme": "raggiesoft-books",
         "filePath": "e001/c003/s004.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/early-move-in/scene-5-stranded": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 5: Stranded",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c003/s005.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-mix-up": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -168,53 +186,59 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s007.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-8-logistics-of-a-co-ed-suite": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-8-interlude-the-clerical-error-file": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: Logistics of a Co-Ed Suite",
+        "title": "Scene 8: Interlude: The Clerical Error File",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s008.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-9-the-first-choice": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-9-logistics-of-a-co-ed-suite": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The First Choice",
+        "title": "Scene 9: Logistics of a Co-Ed Suite",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s009.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-10-the-kincaid-hall-tea-rebellion": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-10-the-first-choice": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Kincaid Hall Tea Rebellion",
+        "title": "Scene 10: The First Choice",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s010.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-11-the-first-assist": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-11-the-kincaid-hall-tea-rebellion": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The First Assist",
+        "title": "Scene 11: The Kincaid Hall Tea Rebellion",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s011.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-12-the-spare-hardware": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-12-the-first-assist": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: The Spare Hardware",
+        "title": "Scene 12: The First Assist",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s012.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-13-the-new-voice": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-13-the-spare-hardware": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 13: The New Voice",
+        "title": "Scene 13: The Spare Hardware",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s013.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-14-the-antidote": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-14-the-new-voice": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 14: The Antidote",
+        "title": "Scene 14: The New Voice",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s014.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-15-the-trust-fall": {
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-15-the-antidote": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 15: The Trust Fall",
+        "title": "Scene 15: The Antidote",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/s015.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-mix-up/scene-16-the-trust-fall": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 16: The Trust Fall",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c004/s016.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor": {
         "view": "pages/raggiesoft-books/books/viewer",

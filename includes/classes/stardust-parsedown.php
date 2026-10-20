@@ -488,10 +488,10 @@ class StardustParsedown extends Parsedown {
             . '|(?P<label>\b(?:Hypothesis|Analysis|Conclusion|Required\s+Action|Action|Decision|Reason|Clarification\s+received|Input|Output|Conflict|Query|Result|Method|Data|Task|Execute|Status|State|Directive|Priority|Observation|Assessment|Override|Recommendation|Diagnosis|HeartRate|MuscleTension|Temperature|WeightDelta|Current\.Status|Personal\.State|Personal\.Note|Jordan\.State)\s*[:.])'
             // Process diagnostic verbs (Running diagnostics..., Recalculating..., etc.)
             . '|(?P<diagnostic>\b(?:Running\s+diagnostics|Processing\s+new\s+input|Searching\s+for\s+alternate\s+files|Cross-referencing|Updating\s+analysis|Recalculating|Monitoring|Initiating|Executing|Compiling)\.{0,3})'
-            // Functional / Node / Entity calls (Agent(Jordan), Observer(Aubrie), ContinueCuddle(Jordan))
-            . '|(?P<function>\b(?:Agent|Observer|Node|User|Target|Subject|Process|Event|System|Execute|ContinueCuddle|IsCuddling|Search)\s*\([^)]*\))'
-            // Dotted C#/.NET object & assembly identifiers (Jordan.OS.State, Jordan.OS, Pact.Members)
-            . '|(?P<identifier>\b[\p{L}_][\p{L}\p{N}_]*(?:\.[\p{L}_][\p{L}\p{N}_]*)+\b(?:\(\))?)'
+            // Functional / Node / Entity calls (Agent(Jordan), System.Admin(HallDirector_Kelsey), Observer(Aubrie), etc.)
+            . '|(?P<function>\b(?:Agents?|Observers?|Nodes?|Users?|Targets?|Subjects?|Participants?|Process|Event|System(?:\.Admins?)?|Hostile_Agents?|Family_Nodes?|Ally_Nodes?|Sanctuary_Nodes?|SubProtocol|Maintain|Define|Execute|ContinueCuddle|IsCuddling|Search|Love|KernelPanic)\s*\([^)]*\))'
+            // Dotted C#/.NET object, method & assembly identifiers (Jordan.OS.State, Physical.Response(Self), Pact.Members)
+            . '|(?P<identifier>\b[\p{L}_][\p{L}\p{N}_]*(?:\.[\p{L}_][\p{L}\p{N}_]*)+\b(?:\s*\([^)]*\))?)'
             // Booleans, nulls, and uppercase state constants
             . '|(?P<constant>\b(?:true|false|True|False|TRUE|FALSE|null|NULL|MAX|MIN|HIGH|LOW|CRITICAL|ACTIVE|STANDBY|SAFE|UNSAFE|LOCKED|UNLOCKED|OK|FAILED|SUCCESS)\b)'
             // Numeric & telemetry metrics (100%, -4 lbs, 99.1F, 95bpm)
