@@ -936,11 +936,17 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c025/s003.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-4-a-preventable-crisis-the-final-exam": {
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-4-a-preventable-crisis-the-second-drill": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Preventable Crisis & The Final Exam",
+        "title": "Scene 4: A Preventable Crisis & The Second Drill",
         "theme": "raggiesoft-books",
         "filePath": "e001/c025/s004.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-5-the-final-exam": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 5: The Final Exam",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c025/s005.md"
     },
     "/aubrie/a-new-winter-break-tradition": {
         "view": "pages/raggiesoft-books/books/viewer",
