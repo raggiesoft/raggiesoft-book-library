@@ -546,23 +546,29 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|10"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict/scene-1-interlude-the-fourteen-day-floor-reports": {
+    "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict/scene-1-interlude-mutiny-at-mcconnell-transit-center": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Interlude: The Fourteen-Day Floor Reports",
+        "title": "Scene 1: Interlude: Mutiny at McConnell Transit Center",
         "theme": "raggiesoft-books",
         "filePath": "e001/c011/s001.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict/scene-2-interlude-the-post-census-verdict": {
+    "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict/scene-2-interlude-the-fourteen-day-floor-reports": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Interlude: The Post-Census Verdict",
+        "title": "Scene 2: Interlude: The Fourteen-Day Floor Reports",
         "theme": "raggiesoft-books",
         "filePath": "e001/c011/s002.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict/scene-3-the-suite-arrangement-consent-form": {
+    "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict/scene-3-interlude-the-post-census-verdict": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Suite Arrangement Consent Form",
+        "title": "Scene 3: Interlude: The Post-Census Verdict",
         "theme": "raggiesoft-books",
         "filePath": "e001/c011/s003.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict/scene-4-the-suite-arrangement-consent-form": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 4: The Suite Arrangement Consent Form",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c011/s004.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/trial-by-fire-drill": {
         "view": "pages/raggiesoft-books/books/viewer",
