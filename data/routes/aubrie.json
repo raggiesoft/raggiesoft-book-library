@@ -576,41 +576,47 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c011/s005.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/trial-by-fire-drill": {
+    "/aubrie/the-eleventh-child-off-to-college/health-and-safety-week": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Trial by Fire Drill",
+        "title": "Health and Safety Week",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|11"
     },
-    "/aubrie/the-eleventh-child-off-to-college/trial-by-fire-drill/scene-1-transforming-jordan-into-a-forger": {
+    "/aubrie/the-eleventh-child-off-to-college/health-and-safety-week/scene-1-transforming-jordan-into-a-forger": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 1: Transforming Jordan into a Forger",
         "theme": "raggiesoft-books",
         "filePath": "e001/c012/s001.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/trial-by-fire-drill/scene-2-fire-alarm-in-the-dormitory": {
+    "/aubrie/the-eleventh-child-off-to-college/health-and-safety-week/scene-2-one-hundred-and-five-percent": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Fire Alarm in the Dormitory",
+        "title": "Scene 2: One Hundred and Five Percent",
         "theme": "raggiesoft-books",
         "filePath": "e001/c012/s002.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/trial-by-fire-drill/scene-3-interlude-the-mitigating-factor": {
+    "/aubrie/the-eleventh-child-off-to-college/health-and-safety-week/scene-3-fire-alarm-in-the-dormitory": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Interlude: The Mitigating Factor",
+        "title": "Scene 3: Fire Alarm in the Dormitory",
         "theme": "raggiesoft-books",
         "filePath": "e001/c012/s003.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/trial-by-fire-drill/scene-4-the-nightly-pact": {
+    "/aubrie/the-eleventh-child-off-to-college/health-and-safety-week/scene-4-interlude-the-mitigating-factor": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Nightly Pact",
+        "title": "Scene 4: Interlude: The Mitigating Factor",
         "theme": "raggiesoft-books",
         "filePath": "e001/c012/s004.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/trial-by-fire-drill/scene-5-the-first-night-of-the-pact": {
+    "/aubrie/the-eleventh-child-off-to-college/health-and-safety-week/scene-5-the-nightly-pact": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The First Night of the Pact",
+        "title": "Scene 5: The Nightly Pact",
         "theme": "raggiesoft-books",
         "filePath": "e001/c012/s005.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/health-and-safety-week/scene-6-the-first-night-of-the-pact": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 6: The First Night of the Pact",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c012/s006.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/homecoming-spirit": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -936,29 +942,35 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c025/s003.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-4-a-preventable-crisis-the-second-drill": {
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-4-a-preventable-crisis": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Preventable Crisis & The Second Drill",
+        "title": "Scene 4: A Preventable Crisis",
         "theme": "raggiesoft-books",
         "filePath": "e001/c025/s004.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-5-the-final-exam": {
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-5-the-second-drill": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Final Exam",
+        "title": "Scene 5: The Second Drill",
         "theme": "raggiesoft-books",
         "filePath": "e001/c025/s005.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-6-the-first-shot-goodbye-to-henry": {
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-6-the-final-exam": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The First Shot & Goodbye to Henry",
+        "title": "Scene 6: The Final Exam",
         "theme": "raggiesoft-books",
         "filePath": "e001/c025/s006.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-7-interlude-a-dangerous-idea": {
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-7-the-first-shot-goodbye-to-henry": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Interlude: A Dangerous Idea",
+        "title": "Scene 7: The First Shot & Goodbye to Henry",
         "theme": "raggiesoft-books",
         "filePath": "e001/c025/s007.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-8-interlude-a-dangerous-idea": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 8: Interlude: A Dangerous Idea",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c025/s008.md"
     },
     "/aubrie/a-new-winter-break-tradition": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -977,6 +989,30 @@
         "title": "Scene 1: The Fortress Upgrades",
         "theme": "raggiesoft-books",
         "filePath": "e002/c001/s001.md"
+    },
+    "/aubrie/a-new-winter-break-tradition/a-winter-wonderland-in-the-basement/scene-2-new-rules-lessons-in-a-blizzard": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: New Rules & Lessons in a Blizzard",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c001/s002.md"
+    },
+    "/aubrie/a-new-winter-break-tradition/a-winter-wonderland-in-the-basement/scene-3-whiteout-hunkering-down": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: Whiteout & Hunkering Down",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c001/s003.md"
+    },
+    "/aubrie/a-new-winter-break-tradition/a-winter-wonderland-in-the-basement/scene-4-blueprints-for-mobility-the-unbudgeted-blizzard": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 4: Blueprints for Mobility & The Unbudgeted Blizzard",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c001/s004.md"
+    },
+    "/aubrie/a-new-winter-break-tradition/a-winter-wonderland-in-the-basement/scene-5-solar-noon-on-the-winter-solstice": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 5: Solar Noon on the Winter Solstice",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c001/s005.md"
     },
     "/aubrie/jordan-s-world-trek": {
         "view": "pages/raggiesoft-books/books/viewer",
