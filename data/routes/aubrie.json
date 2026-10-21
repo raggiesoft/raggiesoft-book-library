@@ -606,17 +606,23 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c012/s004.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/health-and-safety-week/scene-5-the-nightly-pact": {
+    "/aubrie/the-eleventh-child-off-to-college/health-and-safety-week/scene-5-interlude-the-bureaucratic-firewall": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Nightly Pact",
+        "title": "Scene 5: Interlude: The Bureaucratic Firewall",
         "theme": "raggiesoft-books",
         "filePath": "e001/c012/s005.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/health-and-safety-week/scene-6-the-first-night-of-the-pact": {
+    "/aubrie/the-eleventh-child-off-to-college/health-and-safety-week/scene-6-the-nightly-pact": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The First Night of the Pact",
+        "title": "Scene 6: The Nightly Pact",
         "theme": "raggiesoft-books",
         "filePath": "e001/c012/s006.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/health-and-safety-week/scene-7-the-first-night-of-the-pact": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 7: The First Night of the Pact",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c012/s007.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/homecoming-spirit": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -954,23 +960,29 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c025/s005.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-6-the-final-exam": {
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-6-interlude-fifty-eight-seconds": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Final Exam",
+        "title": "Scene 6: Interlude: Fifty-Eight Seconds",
         "theme": "raggiesoft-books",
         "filePath": "e001/c025/s006.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-7-the-first-shot-goodbye-to-henry": {
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-7-the-final-exam": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The First Shot & Goodbye to Henry",
+        "title": "Scene 7: The Final Exam",
         "theme": "raggiesoft-books",
         "filePath": "e001/c025/s007.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-8-interlude-a-dangerous-idea": {
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-8-the-first-shot-goodbye-to-henry": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: Interlude: A Dangerous Idea",
+        "title": "Scene 8: The First Shot & Goodbye to Henry",
         "theme": "raggiesoft-books",
         "filePath": "e001/c025/s008.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-9-interlude-a-dangerous-idea": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 9: Interlude: A Dangerous Idea",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c025/s009.md"
     },
     "/aubrie/a-new-winter-break-tradition": {
         "view": "pages/raggiesoft-books/books/viewer",
