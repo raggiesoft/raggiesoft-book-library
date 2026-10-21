@@ -564,11 +564,17 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c011/s003.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict/scene-4-the-suite-arrangement-consent-form": {
+    "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict/scene-4-interlude-the-good-faith-accord": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Suite Arrangement Consent Form",
+        "title": "Scene 4: Interlude: The Good-Faith Accord",
         "theme": "raggiesoft-books",
         "filePath": "e001/c011/s004.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict/scene-5-the-suite-arrangement-consent-form": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 5: The Suite Arrangement Consent Form",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c011/s005.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/trial-by-fire-drill": {
         "view": "pages/raggiesoft-books/books/viewer",
