@@ -76,7 +76,7 @@ class StardustParsedown extends Parsedown {
     }
 
     // Handle Checkbox Lists for DSP Forms
-    protected function blockLi($Line, array $Block = null) {
+    protected function blockLi($Line, ?array $Block = null) {
         // Call the parent to do the heavy lifting of parsing the list item
         $Block = parent::blockLi($Line, $Block);
 
@@ -149,52 +149,33 @@ class StardustParsedown extends Parsedown {
         
         // Check if the blockquote starts with **From:** to format it as a Corporate Email
         if (strpos($firstLine, '**From:**') === 0) {
-            if ($this->frameworkMode === 'web-awesome') {
-                $Block['element']['name'] = 'wa-card';
-                $Block['element']['attributes'] = [
-                    'class' => 'my-4 w-100'
-                ];
-                array_unshift($Block['element']['handler']['argument'], '<div slot="header" style="font-size: 0.85em; text-transform: uppercase; font-weight: bold; opacity: 0.7;"><i class="fa-duotone fa-envelope" style="margin-right: 8px;"></i> Secure Corporate Transmission</div>');
-            } else {
-                $Block['element']['name'] = 'div';
-                $Block['element']['attributes'] = [
-                    'class' => 'card my-4 w-100'
-                ];
-                array_unshift($Block['element']['handler']['argument'], '<div class="card-header" style="font-size: 0.85em; text-transform: uppercase; font-weight: bold; opacity: 0.7;"><i class="fa-solid fa-envelope" style="margin-right: 8px;"></i> Secure Corporate Transmission</div><div class="card-body">');
-                array_push($Block['element']['handler']['argument'], '</div>');
-            }
+            $Block['element']['name'] = 'div';
+            $Block['element']['attributes'] = [
+                'class' => 'card bg-base-200 border border-base-300 shadow-sm my-4 w-100'
+            ];
+            array_unshift($Block['element']['handler']['argument'], '<div class="card-header px-4 py-2 border-b border-base-300" style="font-size: 0.85em; text-transform: uppercase; font-weight: bold; opacity: 0.7;"><i class="ph-duotone ph-envelope" style="margin-right: 8px;"></i> Secure Corporate Transmission</div><div class="card-body p-4">');
+            array_push($Block['element']['handler']['argument'], '</div>');
             return $Block;
         }
         
         $alerts = [
-            '[!NOTE]' => ['variant' => 'neutral', 'bs_variant' => 'secondary', 'icon' => 'fa-circle-info'],
-            '[!TIP]' => ['variant' => 'success', 'bs_variant' => 'success', 'icon' => 'fa-lightbulb'],
-            '[!WARNING]' => ['variant' => 'warning', 'bs_variant' => 'warning', 'icon' => 'fa-triangle-exclamation'],
-            '[!CAUTION]' => ['variant' => 'danger', 'bs_variant' => 'danger', 'icon' => 'fa-radiation'],
-            '[!IMPORTANT]' => ['variant' => 'brand', 'bs_variant' => 'primary', 'icon' => 'fa-star'],
+            '[!NOTE]' => ['daisy_variant' => 'alert-info', 'bs_variant' => 'secondary', 'icon' => 'ph-info'],
+            '[!TIP]' => ['daisy_variant' => 'alert-success', 'bs_variant' => 'success', 'icon' => 'ph-lightbulb'],
+            '[!WARNING]' => ['daisy_variant' => 'alert-warning', 'bs_variant' => 'warning', 'icon' => 'ph-warning'],
+            '[!CAUTION]' => ['daisy_variant' => 'alert-error', 'bs_variant' => 'danger', 'icon' => 'ph-radioactive'],
+            '[!IMPORTANT]' => ['daisy_variant' => 'alert-info', 'bs_variant' => 'primary', 'icon' => 'ph-star'],
         ];
 
         foreach ($alerts as $trigger => $config) {
             if (strpos($firstLine, $trigger) === 0) {
                 // Remove the trigger
                 $Block['element']['handler']['argument'][0] = trim(str_replace($trigger, '', $firstLine));
-                
-                if ($this->frameworkMode === 'web-awesome') {
-                    $Block['element']['handler']['argument'][0] = '<i slot="icon" class="fa-duotone ' . $config['icon'] . '"></i> ' . $Block['element']['handler']['argument'][0];
-                    $Block['element']['name'] = 'wa-callout';
-                    $Block['element']['attributes'] = [
-                        'variant' => $config['variant'],
-                        'appearance' => 'accent',
-                        'class' => 'my-4 shadow-sm'
-                    ];
-                } else {
-                    $Block['element']['handler']['argument'][0] = '<i class="fa-solid ' . $config['icon'] . ' me-2"></i> ' . $Block['element']['handler']['argument'][0];
-                    $Block['element']['name'] = 'div';
-                    $Block['element']['attributes'] = [
-                        'class' => 'alert alert-' . $config['bs_variant'] . ' my-4 shadow-sm',
-                        'role' => 'alert'
-                    ];
-                }
+                $Block['element']['handler']['argument'][0] = '<i class="ph-duotone ' . $config['icon'] . ' me-2"></i> ' . $Block['element']['handler']['argument'][0];
+                $Block['element']['name'] = 'div';
+                $Block['element']['attributes'] = [
+                    'class' => 'alert ' . $config['daisy_variant'] . ' alert-' . $config['bs_variant'] . ' my-4 shadow-sm',
+                    'role' => 'alert'
+                ];
                 break;
             }
         }
@@ -255,59 +236,35 @@ class StardustParsedown extends Parsedown {
             $desc = $attrs['desc'] ?? '';
             $lore = $attrs['lore'] ?? '';
             $color = $attrs['color'] ?? 'brand';
-            // Normalize legacy Web Awesome v2 color names to v3.13.0 semantic variants
-            $waVariantMap = ['primary' => 'brand', 'info' => 'brand', 'secondary' => 'neutral', 'dark' => 'neutral'];
-            $waColor = $waVariantMap[$color] ?? $color;
-            $icon = $attrs['icon'] ?? 'fa-id-card';
+            $daisyMap = ['primary' => 'btn-primary', 'brand' => 'btn-primary', 'info' => 'btn-info', 'secondary' => 'btn-neutral', 'neutral' => 'btn-neutral', 'success' => 'btn-success', 'warning' => 'btn-warning', 'danger' => 'btn-error'];
+            $daisyBtn = $daisyMap[$color] ?? 'btn-primary';
+            $icon = $attrs['icon'] ?? 'ph-identification-card';
             
             $id = 'cred-' . uniqid();
             
-            if ($this->frameworkMode === 'web-awesome') {
-                return '<wa-button variant="' . $waColor . '" appearance="outlined" size="small" class="me-2 mb-2" onclick="document.getElementById(\'' . $id . '\').show()">
-<i slot="start" class="fa-duotone ' . $icon . '"></i> ' . htmlspecialchars($title) . '
-</wa-button>
-<wa-dialog id="' . $id . '" label="' . htmlspecialchars($title) . '">
-<i slot="label-icon" class="fa-duotone ' . $icon . '"></i>
-<div class="mb-4">
-<h6 class="text-uppercase small opacity-75 mb-2">Technical Definition</h6>
-<p class="mb-0 text-body-secondary">' . htmlspecialchars($desc) . '</p>
-</div>
-<wa-callout variant="' . $waColor . '" appearance="accent" class="shadow-sm">
-<i slot="icon" class="fa-duotone fa-shield-check"></i>
-<strong class="d-block mb-1">Application to the Universe</strong>
-<div class="small">' . htmlspecialchars($lore) . '</div>
-</wa-callout>
-<wa-button slot="footer" variant="neutral" onclick="document.getElementById(\'' . $id . '\').hide()">Close</wa-button>
-</wa-dialog>';
-            } else {
-                $bsColor = str_replace('neutral', 'secondary', $color); // Simple mapping if needed
-                return '<button type="button" class="btn btn-outline-' . $bsColor . ' btn-sm me-2 mb-2" data-bs-toggle="modal" data-bs-target="#' . $id . '">
-<i class="fa-duotone ' . $icon . ' me-2"></i> ' . htmlspecialchars($title) . '
+            return '<button type="button" class="btn btn-outline ' . $daisyBtn . ' btn-sm me-2 mb-2" onclick="document.getElementById(\'' . $id . '\').showModal()">
+<i class="ph-duotone ' . $icon . ' me-1"></i> ' . htmlspecialchars($title) . '
 </button>
-<div class="modal fade" id="' . $id . '" tabindex="-1" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title"><i class="fa-duotone ' . $icon . ' me-2"></i> ' . htmlspecialchars($title) . '</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <div class="mb-4">
-          <h6 class="text-uppercase small opacity-75 mb-2">Technical Definition</h6>
-          <p class="mb-0 text-body-secondary">' . htmlspecialchars($desc) . '</p>
-        </div>
-        <div class="alert alert-' . $bsColor . ' shadow-sm" role="alert">
-          <h6 class="alert-heading"><i class="fa-duotone fa-shield-check me-2"></i> Application to the Universe</h6>
-          <div class="small">' . htmlspecialchars($lore) . '</div>
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+<dialog id="' . $id . '" class="modal">
+  <div class="modal-box">
+    <h3 class="font-bold text-lg mb-3"><i class="ph-duotone ' . $icon . ' me-2"></i>' . htmlspecialchars($title) . '</h3>
+    <div class="mb-4">
+      <h6 class="text-uppercase small opacity-75 mb-2">Technical Definition</h6>
+      <p class="mb-0 opacity-80">' . htmlspecialchars($desc) . '</p>
+    </div>
+    <div role="alert" class="alert alert-info shadow-sm">
+      <i class="ph-duotone ph-shield-check"></i>
+      <div>
+        <strong class="d-block mb-1">Application to the Universe</strong>
+        <div class="small">' . htmlspecialchars($lore) . '</div>
       </div>
     </div>
+    <div class="modal-action">
+      <form method="dialog"><button class="btn">Close</button></form>
+    </div>
   </div>
-</div>';
-            }
+  <form method="dialog" class="modal-backdrop"><button>close</button></form>
+</dialog>';
         }, $text);
         $text = preg_replace_callback('/<lang="([^"]+)" trans="([^"]+)">(.*?)<\/lang>/is', function($matches) {
             $langCode = htmlspecialchars($matches[1]);

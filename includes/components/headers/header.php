@@ -131,8 +131,8 @@ $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? '
     }
     ?>
     <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-grid.css">
-    <link rel="stylesheet" href="<?= $assetsUrl ?>/stardust-engine-library/css/stardust-engine.min.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href="<?= $assetsUrl ?>/stardust-engine-library/css/theme-<?= htmlspecialchars($resolvedThemeCss) ?>.min.css">
+    <link rel="stylesheet" href="<?= $assetsUrl ?>/raggiesoft-books/library/css/stardust-engine.min.css?v=<?php echo time(); ?>">
+    <link rel="stylesheet" href="<?= $assetsUrl ?>/raggiesoft-books/library/css/theme-<?= htmlspecialchars($resolvedThemeCss) ?>.min.css">
     <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-network.css?v=20261017m">
     <script src="<?= $assetsUrl ?>/common/js/raggiesoft-network.js?v=20261017m" defer></script>
     <style>
@@ -170,8 +170,8 @@ $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? '
     
     <!-- Typographic Assets -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap">
-    <!-- Phosphor Icons (fallback for UI icons) -->
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- Phosphor Icons (Self-Hosted on assets.raggiesoft.com) -->
+    <link rel="stylesheet" href="<?= $assetsUrl ?>/fonts/phosphor/phosphor.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@400;600;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">

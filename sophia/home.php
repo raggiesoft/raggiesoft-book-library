@@ -533,7 +533,7 @@ $volumeCount = count($books);
                 <!-- 3. The Silver Gauntlet of Aethel -->
                 <article class="ova-universe-card">
                     <div class="ova-universe-media">
-                        <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/aethel/images/aethel-hero.jpg"
+                        <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/aethel/images/aethel-hero.jpg"
                              alt="The Silver Gauntlet of Aethel"
                              loading="lazy">
                     </div>

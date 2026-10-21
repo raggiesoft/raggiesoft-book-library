@@ -33,7 +33,7 @@
 
     <!-- The hyper-optimized Stardust SPA Router -->
     <!-- Handles pushState routing and seamless DOM swapping -->
-    <script src="https://assets.raggiesoft.com/stardust-engine-library/js/stardust-spa.min.js"></script>
+    <script src="https://assets.raggiesoft.com/raggiesoft-books/library/js/stardust-spa.min.js"></script>
 
     <!-- PWA Service Worker Registration -->
     <!-- Essential for offline reading and the "Add to Home Screen" native feel -->

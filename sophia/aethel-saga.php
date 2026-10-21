@@ -11,14 +11,14 @@
  *     - Introduces readers to the four mythic eras of Aethel (Era 1: Myth,
  *       Era 2: Silence, Era 3: Tides, Era 4: Iron) before entering the
  *       full-screen Stardust Engine Book Reader.
- *     - Uses 100% canonical e###/c###/s### semantic routes (zero legacy b*/p* URLs).
+ *     - Uses 100% canonical e###/c###/s### semantic routes (zero legacy b-num/p-num URLs).
  *     - Links directly to Firelight's companion rock-opera album in The Listening Room
  *       (https://music.raggiesoft.com/artists/firelight/2025-silver-gauntlet-of-aethel).
  * =============================================================================
  */
 
 global $cdnBaseUrl;
-$posterBg = $cdnBaseUrl . '/aethel/images/aethel-hero.jpg';
+$posterBg = $cdnBaseUrl . '/raggiesoft-books/aethel/images/aethel-hero.jpg';
 $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-gauntlet-of-aethel/album-art.jpg';
 ?>
 

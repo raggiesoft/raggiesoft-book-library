@@ -179,7 +179,7 @@ if (!empty($seriesSlug)) {
     $siteName = 'The Silver Gauntlet of Aethel | Ocean View Archives';
     $ogTitle = 'The Silver Gauntlet of Aethel | Ocean View Archives';
     $ogDescription = 'Two twins. One broken world. Follow Kaelan and Kaela across the four mythic eras of Aethel inside the Ocean View Archives.';
-    $ogImage = $cdnBaseUrl . '/aethel/images/aethel-hero.jpg';
+    $ogImage = $cdnBaseUrl . '/raggiesoft-books/aethel/images/aethel-hero.jpg';
 } else if ($isHome) {
     $siteName = 'Ocean View Archives | RaggieSoft Media';
     $ogTitle = 'Ocean View Archives | RaggieSoft Media';

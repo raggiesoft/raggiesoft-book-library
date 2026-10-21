@@ -173,7 +173,7 @@ if ($catalogData) {
     </div>
 
 <!-- SortableJS and Collections Logic -->
-<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+<script src="<?= htmlspecialchars($cdnBaseUrl ?? 'https://assets.raggiesoft.com') ?>/common/vendor/sortablejs/Sortable.min.js"></script>
 <script>
 (function() {
     const container = document.getElementById('rs-collections-container');
