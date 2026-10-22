@@ -1374,160 +1374,214 @@
         "theme": "raggiesoft-books",
         "filePath": "e002/c008/s004.md"
     },
+    "/aubrie/a-new-winter-break-tradition/breaking-ground-on-the-ramp": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Breaking Ground on the Ramp",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|8"
+    },
+    "/aubrie/a-new-winter-break-tradition/breaking-ground-on-the-ramp/scene-1-the-auger-and-the-blueprint": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Auger and the Blueprint",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c009/s001.md"
+    },
+    "/aubrie/a-new-winter-break-tradition/breaking-ground-on-the-ramp/scene-2-landfall-in-southampton-the-sunday-plan": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: Landfall in Southampton & The Sunday Plan",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c009/s002.md"
+    },
+    "/aubrie/spring-semester-2015": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Spring Semester 2015",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|2"
+    },
+    "/aubrie/spring-semester-2015/the-maroon-express-return-to-the-old-lady": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Maroon Express & Return to The Old Lady",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|0"
+    },
+    "/aubrie/spring-semester-2015/the-maroon-express-return-to-the-old-lady/scene-1-the-sunday-maroon-express": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Sunday Maroon Express",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c001/s001.md"
+    },
+    "/aubrie/spring-semester-2015/the-maroon-express-return-to-the-old-lady/scene-2-the-tour-guide-of-commonwealth-mall": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The Tour Guide of Commonwealth Mall",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c001/s002.md"
+    },
+    "/aubrie/spring-semester-2015/the-maroon-express-return-to-the-old-lady/scene-3-the-first-crack-in-the-armor": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: The First Crack in the Armor",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c001/s003.md"
+    },
+    "/aubrie/spring-semester-2015/the-maroon-express-return-to-the-old-lady/scene-4-meeting-garrett-reynolds": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 4: Meeting Garrett Reynolds",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c001/s004.md"
+    },
     "/aubrie/jordan-s-world-trek": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Jordan's World Trek",
         "theme": "raggiesoft-books",
-        "filePath": "__ERA_TOC__|2"
+        "filePath": "__ERA_TOC__|3"
     },
     "/aubrie/jordan-s-world-trek/the-northern-ascent": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Northern Ascent",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|0"
+        "filePath": "__CHAP_TOC__|3|0"
     },
     "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-1-the-vanguard-awakes": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 1: The Vanguard Awakes",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s001.md"
+        "filePath": "e004/c001/s001.md"
     },
     "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-2-operation-yellow-ribbon": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 2: Operation Yellow Ribbon",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s002.md"
+        "filePath": "e004/c001/s002.md"
     },
     "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-3-the-security-checkpoint": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 3: The Security Checkpoint",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s003.md"
+        "filePath": "e004/c001/s003.md"
     },
     "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-4-the-ten-thousand-foot-rule": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 4: The Ten-Thousand Foot Rule",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s004.md"
+        "filePath": "e004/c001/s004.md"
     },
     "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-5-the-international-threshold": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 5: The International Threshold",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s005.md"
+        "filePath": "e004/c001/s005.md"
     },
     "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-6-the-iad-layover-strategy": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 6: The IAD Layover Strategy",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s006.md"
+        "filePath": "e004/c001/s006.md"
     },
     "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-7-the-border-briefing": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 7: The Border Briefing",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s007.md"
+        "filePath": "e004/c001/s007.md"
     },
     "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-8-the-outback-lift": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 8: The Outback Lift",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s008.md"
+        "filePath": "e004/c001/s008.md"
     },
     "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-9-the-price-of-freedom": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 9: The Price of Freedom",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s009.md"
+        "filePath": "e004/c001/s009.md"
     },
     "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-10-the-commonwealth-question": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 10: The Commonwealth Question",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s010.md"
+        "filePath": "e004/c001/s010.md"
     },
     "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-11-the-epassport-bottleneck": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 11: The ePassport Bottleneck",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s011.md"
+        "filePath": "e004/c001/s011.md"
     },
     "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-12-the-yellow-ribbon-welcome": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 12: The Yellow Ribbon Welcome",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s012.md"
+        "filePath": "e004/c001/s012.md"
     },
     "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-13-the-gander-lift": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 13: The Gander Lift",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s013.md"
+        "filePath": "e004/c001/s013.md"
     },
     "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-14-the-room-214-reunion": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 14: The Room 214 Reunion",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s014.md"
+        "filePath": "e004/c001/s014.md"
     },
     "/aubrie/jordan-s-world-trek/the-northern-horizon": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Northern Horizon",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|1"
+        "filePath": "__CHAP_TOC__|3|1"
     },
     "/aubrie/jordan-s-world-trek/the-northern-horizon/scene-1-the-gander-morning": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 1: The Gander Morning",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s001.md"
+        "filePath": "e004/c002/s001.md"
     },
     "/aubrie/jordan-s-world-trek/the-northern-horizon/scene-2-the-cognitive-redirect": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 2: The Cognitive Redirect",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s002.md"
+        "filePath": "e004/c002/s002.md"
     },
     "/aubrie/jordan-s-court-case": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Jordan's Court Case",
         "theme": "raggiesoft-books",
-        "filePath": "__ERA_TOC__|3"
+        "filePath": "__ERA_TOC__|4"
     },
     "/aubrie/jordan-s-court-case/the-southern-hemisphere": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Southern Hemisphere",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|3|0"
+        "filePath": "__CHAP_TOC__|4|0"
     },
     "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-1-the-final-briefing": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 1: The Final Briefing",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s001.md"
+        "filePath": "e005/c001/s001.md"
     },
     "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-2-the-phalanx-and-the-gavel": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 2: The Phalanx and The Gavel",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s002.md"
+        "filePath": "e005/c001/s002.md"
     },
     "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-3-the-evidentiary-phase": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 3: The Evidentiary Phase",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s003.md"
+        "filePath": "e005/c001/s003.md"
     },
     "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-4-the-closing-argument": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 4: The Closing Argument",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s004.md"
+        "filePath": "e005/c001/s004.md"
     },
     "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-5-the-gavel-and-the-handcuffs": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 5: The Gavel and The Handcuffs",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s005.md"
+        "filePath": "e005/c001/s005.md"
     }
 }
