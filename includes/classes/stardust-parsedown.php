@@ -281,7 +281,7 @@ class StardustParsedown extends Parsedown {
         $text = preg_replace('/<sms>(.*?)<\/sms>/is', '<span class="visually-hidden">Text Message: </span><em class="sms-message">$1</em>', $text);
 
         // =====================================================================
-        // ZOË PATEL COGNITIVE KERNEL LOG PARSER & SYNTAX HIGHLIGHTER
+        // ZOË WREN BROOKS COGNITIVE KERNEL LOG PARSER & SYNTAX HIGHLIGHTER
         // =====================================================================
         // Narrative Context:
         // Zoë is autistic and processes her internal thoughts, sensory telemetry,
@@ -297,10 +297,14 @@ class StardustParsedown extends Parsedown {
         //    in Markdown italics `*...*` or `_..._` from Word/.docx migrations).
         // =====================================================================
 
-        // 1. Fenced code blocks: ```zoe-log or ```kernellog
-        $text = preg_replace_callback('/```(?:zoe-log|kernellog)\s*\R([\s\S]*?)\R```/iu', function($matches) {
-            return "\n\n" . $this->renderZoeKernelLogBlock($matches[1]) . "\n\n";
-        }, $text);
+        // 1. Fenced code blocks: ```zoe-log, ```kernellog, or bare ``` blocks starting with ZOË.Systems.Logs.
+        $text = preg_replace_callback(
+            '/```(?:(?:zoe-log|kernellog)[ \t]*\R|[A-Za-z0-9_-]*[ \t]*\R(?=[ \t]*[*_]?[ \t]*(?:ZOË|ZOE)\.Systems\.Logs\.))([\s\S]*?)\R```/iu',
+            function($matches) {
+                return "\n\n" . $this->renderZoeKernelLogBlock($matches[1]) . "\n\n";
+            },
+            $text
+        );
 
         // 2. Explicit custom tags: <zoe-log>...</zoe-log> or <kernellog>...</kernellog>
         $text = preg_replace_callback('/<(?:zoe-log|kernellog)>(.*?)<\/(?:zoe-log|kernellog)>/isu', function($matches) {
@@ -308,8 +312,10 @@ class StardustParsedown extends Parsedown {
         }, $text);
 
         // 3. Automatic zero-config detection of standalone or consecutive `ZOË.Systems.Logs.*` paragraphs
+        //    (including multi-line blocks where a `ZOË.Systems.Logs.<Stream>:` line is followed by
+        //    `[Thread ...]` lines and/or a trailing `MM-DD-YYYY HH:MM:SS` timestamp line).
         $text = preg_replace_callback(
-            '/(?:^[ \t]*[*_]?[ \t]*(?:ZOË|ZOE)\.Systems\.Logs\.[A-Za-z0-9_]+[^\r\n]*[*_]?[ \t]*(?:\R[ \t]*)*)+/imu',
+            '/(?:^[ \t]*[*_]?[ \t]*(?:ZOË|ZOE)\.Systems\.Logs\.[A-Za-z0-9_]+[^\r\n]*[*_]?[ \t]*(?:\R[ \t]*[*_]?[ \t]*(?:\[Thread\b[^\r\n]*|\d{2}-\d{2}-\d{4}\s+\d{2}:\d{2}:\d{2}\.?)[*_]?[ \t]*)*(?:\R[ \t]*)*)+/imu',
             function($matches) {
                 return "\n\n" . $this->renderZoeKernelLogBlock($matches[0]) . "\n\n";
             },
@@ -320,16 +326,46 @@ class StardustParsedown extends Parsedown {
     }
 
     /**
-     * Renders a block of one or more Zoë Patel cognitive kernel log entries into
+     * AST-level safety net for fenced code blocks: if any fenced code block reaches
+     * Parsedown's AST with a `zoe-log`/`kernellog` language class or body starting
+     * with `ZOË.Systems.Logs.`, render it as a `.zoe-kernel-log` widget instead of `<pre><code>`.
+     */
+    protected function blockFencedCodeComplete($Block) {
+        $Block = parent::blockFencedCodeComplete($Block);
+        if (!isset($Block['element']['element']['text'])) {
+            return $Block;
+        }
+
+        $codeText = trim($Block['element']['element']['text']);
+        $langClass = $Block['element']['element']['attributes']['class'] ?? '';
+
+        if (
+            in_array($langClass, ['language-zoe-log', 'language-kernellog'], true) ||
+            preg_match('/^[*_]?[ \t]*(?:ZOË|ZOE)\.Systems\.Logs\./iu', $codeText)
+        ) {
+            $Block['element'] = [
+                'rawHtml' => $this->renderZoeKernelLogBlock($codeText),
+            ];
+        }
+
+        return $Block;
+    }
+
+    /**
+     * Renders a block of one or more Zoë Wren Brooks cognitive kernel log entries into
      * an accessible, WCAG 2.1 AAA syntax-highlighted diagnostic console component.
+     *
+     * Supports both single-line canonical entries (`ZOË.Systems.Logs.KernelLog: ... 10-12-2015 07:05:15`)
+     * and multi-line grouped entries where a standalone `ZOË.Systems.Logs.<Stream>:` header line
+     * precedes one or more `[Thread ...]` lines and a trailing `MM-DD-YYYY HH:MM:SS` timestamp line.
      *
      * @param string $rawBlock Raw multi-line string containing one or more log entries.
      * @return string Complete HTML markup for the `.zoe-kernel-log` region.
      */
     protected function renderZoeKernelLogBlock(string $rawBlock): string {
         $lines = preg_split('/\R+/u', trim($rawBlock));
-        $entriesHtml = [];
-        $entryCount = 0;
+        $normalizedLines = [];
+        $activeStreamPrefix = 'ZOË.Systems.Logs.KernelLog:';
 
         foreach ($lines as $rawLine) {
             $trimmed = trim($rawLine);
@@ -349,8 +385,41 @@ class StardustParsedown extends Parsedown {
                 continue;
             }
 
+            // Case A: Standalone stream header line (e.g. `ZOË.Systems.Logs.SystemSchedulerLog:`)
+            if (preg_match('/^((?:ZOË|ZOE)\.Systems\.Logs\.[A-Za-z0-9_]+)[:,]?$/iu', $trimmed, $hdrMatch)) {
+                $activeStreamPrefix = $hdrMatch[1] . ':';
+                continue;
+            }
+
+            // Case B: Standalone timestamp line (`MM-DD-YYYY HH:MM:SS`) -> attach to preceding entries lacking a timestamp
+            if (preg_match('/^(\d{2}-\d{2}-\d{4}\s+\d{2}:\d{2}:\d{2})\.?$/u', $trimmed, $tsOnlyMatch)) {
+                $tsValue = $tsOnlyMatch[1];
+                for ($i = count($normalizedLines) - 1; $i >= 0; $i--) {
+                    if (!preg_match('/\d{2}-\d{2}-\d{4}\s+\d{2}:\d{2}:\d{2}\.?$/u', $normalizedLines[$i])) {
+                        $normalizedLines[$i] .= ' ' . $tsValue;
+                    } else {
+                        break;
+                    }
+                }
+                continue;
+            }
+
+            // Case C: Full line starting with `ZOË.Systems.Logs.<Stream>`
+            if (preg_match('/^((?:ZOË|ZOE)\.Systems\.Logs\.[A-Za-z0-9_]+)([:,]?)/iu', $trimmed, $fullMatch)) {
+                $activeStreamPrefix = $fullMatch[1] . ($fullMatch[2] !== '' ? $fullMatch[2] : ':');
+                $normalizedLines[] = $trimmed;
+                continue;
+            }
+
+            // Case D: Continuation/thread line inside a multi-line log block -> inherit active stream prefix
+            $normalizedLines[] = $activeStreamPrefix . ' ' . $trimmed;
+        }
+
+        $entriesHtml = [];
+        $entryCount = 0;
+        foreach ($normalizedLines as $normLine) {
             $entryCount++;
-            $entriesHtml[] = $this->highlightZoeLogLine($trimmed, $entryCount);
+            $entriesHtml[] = $this->highlightZoeLogLine($normLine, $entryCount);
         }
 
         if (empty($entriesHtml)) {
@@ -500,7 +569,4 @@ class StardustParsedown extends Parsedown {
             . '</div>';
     }
 }
-?>
-
-
 
