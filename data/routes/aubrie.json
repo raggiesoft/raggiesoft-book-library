@@ -1314,6 +1314,36 @@
         "theme": "raggiesoft-books",
         "filePath": "e002/c006/s005.md"
     },
+    "/aubrie/a-new-winter-break-tradition/jordan-s-first-new-year-s": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Jordan's First New Year's",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|6"
+    },
+    "/aubrie/a-new-winter-break-tradition/jordan-s-first-new-year-s/scene-1-midnight-in-london": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Midnight in London",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c007/s001.md"
+    },
+    "/aubrie/a-new-winter-break-tradition/jordan-s-first-new-year-s/scene-2-the-emission-spectra-of-earth": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The Emission Spectra of Earth",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c007/s002.md"
+    },
+    "/aubrie/a-new-winter-break-tradition/jordan-s-first-new-year-s/scene-3-ten-seconds-to-2015": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: Ten Seconds to 2015",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c007/s003.md"
+    },
+    "/aubrie/a-new-winter-break-tradition/jordan-s-first-new-year-s/scene-4-booms-in-the-light": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 4: Booms in the Light",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c007/s004.md"
+    },
     "/aubrie/jordan-s-world-trek": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Jordan's World Trek",
