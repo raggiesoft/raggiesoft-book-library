@@ -1422,17 +1422,23 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c001/s003.md"
     },
-    "/aubrie/spring-semester-2015/the-maroon-express-return-to-the-old-lady/scene-4-meeting-garrett-reynolds": {
+    "/aubrie/spring-semester-2015/the-maroon-express-return-to-the-old-lady/scene-4-meeting-garrett-reynolds-the-co-ed-pilot-proposal": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Meeting Garrett Reynolds",
+        "title": "Scene 4: Meeting Garrett Reynolds & The Co-Ed Pilot Proposal",
         "theme": "raggiesoft-books",
         "filePath": "e003/c001/s004.md"
     },
-    "/aubrie/spring-semester-2015/the-maroon-express-return-to-the-old-lady/scene-5-across-the-hall-in-215": {
+    "/aubrie/spring-semester-2015/the-maroon-express-return-to-the-old-lady/scene-5-introducing-garrett-to-suite-214-216": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Across the Hall in 215",
+        "title": "Scene 5: Introducing Garrett to Suite 214/216",
         "theme": "raggiesoft-books",
         "filePath": "e003/c001/s005.md"
+    },
+    "/aubrie/spring-semester-2015/the-maroon-express-return-to-the-old-lady/scene-6-across-the-hall-in-215": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 6: Across the Hall in 215",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c001/s006.md"
     },
     "/aubrie/jordan-s-world-trek": {
         "view": "pages/raggiesoft-books/books/viewer",
