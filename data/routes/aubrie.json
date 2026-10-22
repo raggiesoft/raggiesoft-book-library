@@ -552,29 +552,41 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c011/s001.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict/scene-2-interlude-the-fourteen-day-floor-reports": {
+    "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict/scene-2-interlude-the-joint-administrative-complaint": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Interlude: The Fourteen-Day Floor Reports",
+        "title": "Scene 2: Interlude: The Joint Administrative Complaint",
         "theme": "raggiesoft-books",
         "filePath": "e001/c011/s002.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict/scene-3-interlude-the-post-census-verdict": {
+    "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict/scene-3-interlude-the-fourteen-day-floor-reports": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Interlude: The Post-Census Verdict",
+        "title": "Scene 3: Interlude: The Fourteen-Day Floor Reports",
         "theme": "raggiesoft-books",
         "filePath": "e001/c011/s003.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict/scene-4-interlude-the-good-faith-accord": {
+    "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict/scene-4-interlude-the-post-census-verdict": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Interlude: The Good-Faith Accord",
+        "title": "Scene 4: Interlude: The Post-Census Verdict",
         "theme": "raggiesoft-books",
         "filePath": "e001/c011/s004.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict/scene-5-the-suite-arrangement-consent-form": {
+    "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict/scene-5-interlude-the-good-faith-accord": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Suite Arrangement Consent Form",
+        "title": "Scene 5: Interlude: The Good-Faith Accord",
         "theme": "raggiesoft-books",
         "filePath": "e001/c011/s005.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict/scene-6-interlude-relief-at-the-45-pulse": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 6: Interlude: Relief at the :45 Pulse",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c011/s006.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict/scene-7-the-suite-arrangement-consent-form": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 7: The Suite Arrangement Consent Form",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c011/s007.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/health-and-safety-week": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -846,29 +858,41 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c022/s001.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-thanksgiving-exodus/scene-2-the-final-hour-one-last-hug": {
+    "/aubrie/the-eleventh-child-off-to-college/the-thanksgiving-exodus/scene-2-locking-the-record": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Final Hour & One Last Hug",
+        "title": "Scene 2: Locking the Record",
         "theme": "raggiesoft-books",
         "filePath": "e001/c022/s002.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-thanksgiving-exodus/scene-3-the-maroon-express": {
+    "/aubrie/the-eleventh-child-off-to-college/the-thanksgiving-exodus/scene-3-the-final-hour": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Maroon Express",
+        "title": "Scene 3: The Final Hour",
         "theme": "raggiesoft-books",
         "filePath": "e001/c022/s003.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-thanksgiving-exodus/scene-4-geneva-street": {
+    "/aubrie/the-eleventh-child-off-to-college/the-thanksgiving-exodus/scene-4-one-last-hug": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Geneva Street",
+        "title": "Scene 4: One Last Hug",
         "theme": "raggiesoft-books",
         "filePath": "e001/c022/s004.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-thanksgiving-exodus/scene-5-settling-into-sanctuary": {
+    "/aubrie/the-eleventh-child-off-to-college/the-thanksgiving-exodus/scene-5-the-maroon-express": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Settling into Sanctuary",
+        "title": "Scene 5: The Maroon Express",
         "theme": "raggiesoft-books",
         "filePath": "e001/c022/s005.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-thanksgiving-exodus/scene-6-geneva-street": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 6: Geneva Street",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c022/s006.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-thanksgiving-exodus/scene-7-settling-into-sanctuary": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 7: Settling into Sanctuary",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c022/s007.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/a-thanksgiving-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -882,17 +906,35 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c023/s001.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/a-thanksgiving-sanctuary/scene-2-all-time-quarterback-the-unfamiliar-car": {
+    "/aubrie/the-eleventh-child-off-to-college/a-thanksgiving-sanctuary/scene-2-interlude-checkmate-at-dispatch": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: All-Time Quarterback & The Unfamiliar Car",
+        "title": "Scene 2: Interlude: Checkmate at Dispatch",
         "theme": "raggiesoft-books",
         "filePath": "e001/c023/s002.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/a-thanksgiving-sanctuary/scene-3-a-basement-feast-the-turkey-brawl": {
+    "/aubrie/the-eleventh-child-off-to-college/a-thanksgiving-sanctuary/scene-3-all-time-quarterback": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A Basement Feast & The Turkey Brawl",
+        "title": "Scene 3: All-Time Quarterback",
         "theme": "raggiesoft-books",
         "filePath": "e001/c023/s003.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/a-thanksgiving-sanctuary/scene-4-the-unfamiliar-car": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 4: The Unfamiliar Car",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c023/s004.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/a-thanksgiving-sanctuary/scene-5-a-basement-feast": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 5: A Basement Feast",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c023/s005.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/a-thanksgiving-sanctuary/scene-6-the-turkey-brawl": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 6: The Turkey Brawl",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c023/s006.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/operation-black-friday-the-family-charter": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -900,29 +942,47 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|23"
     },
-    "/aubrie/the-eleventh-child-off-to-college/operation-black-friday-the-family-charter/scene-1-the-mission-briefing-the-first-purchase": {
+    "/aubrie/the-eleventh-child-off-to-college/operation-black-friday-the-family-charter/scene-1-the-mission-briefing": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Mission Briefing & The First Purchase",
+        "title": "Scene 1: The Mission Briefing",
         "theme": "raggiesoft-books",
         "filePath": "e001/c024/s001.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/operation-black-friday-the-family-charter/scene-2-the-big-box-gauntlet-return-to-sanctuary": {
+    "/aubrie/the-eleventh-child-off-to-college/operation-black-friday-the-family-charter/scene-2-the-first-purchase": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Big Box Gauntlet & Return to Sanctuary",
+        "title": "Scene 2: The First Purchase",
         "theme": "raggiesoft-books",
         "filePath": "e001/c024/s002.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/operation-black-friday-the-family-charter/scene-3-truth-or-dare-the-serious-talk": {
+    "/aubrie/the-eleventh-child-off-to-college/operation-black-friday-the-family-charter/scene-3-the-big-box-gauntlet": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Truth or Dare & The Serious Talk",
+        "title": "Scene 3: The Big Box Gauntlet",
         "theme": "raggiesoft-books",
         "filePath": "e001/c024/s003.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/operation-black-friday-the-family-charter/scene-4-the-family-charter": {
+    "/aubrie/the-eleventh-child-off-to-college/operation-black-friday-the-family-charter/scene-4-return-to-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Family Charter",
+        "title": "Scene 4: Return to Sanctuary",
         "theme": "raggiesoft-books",
         "filePath": "e001/c024/s004.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/operation-black-friday-the-family-charter/scene-5-truth-or-dare": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 5: Truth or Dare",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c024/s005.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/operation-black-friday-the-family-charter/scene-6-the-serious-talk": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 6: The Serious Talk",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c024/s006.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/operation-black-friday-the-family-charter/scene-7-the-family-charter": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 7: The Family Charter",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c024/s007.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-new-normal": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -930,59 +990,89 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|24"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-1-return-to-the-old-lady-the-reunion": {
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-1-return-to-the-old-lady": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Return to The Old Lady & The Reunion",
+        "title": "Scene 1: Return to The Old Lady",
         "theme": "raggiesoft-books",
         "filePath": "e001/c025/s001.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-2-spring-semester-planning-a-semester-in-motion": {
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-2-the-corridor-reunion": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Spring Semester Planning & A Semester in Motion",
+        "title": "Scene 2: The Corridor Reunion",
         "theme": "raggiesoft-books",
         "filePath": "e001/c025/s002.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-3-a-double-birthday-conspiracy": {
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-3-the-route-11-blueprint": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A Double Birthday Conspiracy",
+        "title": "Scene 3: The Route 11 Blueprint",
         "theme": "raggiesoft-books",
         "filePath": "e001/c025/s003.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-4-a-preventable-crisis": {
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-4-operation-spring-schedule": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Preventable Crisis",
+        "title": "Scene 4: Operation Spring Schedule",
         "theme": "raggiesoft-books",
         "filePath": "e001/c025/s004.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-5-the-second-drill": {
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-5-a-semester-in-motion": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Second Drill",
+        "title": "Scene 5: A Semester in Motion",
         "theme": "raggiesoft-books",
         "filePath": "e001/c025/s005.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-6-interlude-fifty-eight-seconds": {
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-6-a-double-birthday-conspiracy": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Interlude: Fifty-Eight Seconds",
+        "title": "Scene 6: A Double Birthday Conspiracy",
         "theme": "raggiesoft-books",
         "filePath": "e001/c025/s006.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-7-the-final-exam": {
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-7-a-preventable-crisis": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Final Exam",
+        "title": "Scene 7: A Preventable Crisis",
         "theme": "raggiesoft-books",
         "filePath": "e001/c025/s007.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-8-the-first-shot-goodbye-to-henry": {
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-8-the-second-drill": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The First Shot & Goodbye to Henry",
+        "title": "Scene 8: The Second Drill",
         "theme": "raggiesoft-books",
         "filePath": "e001/c025/s008.md"
     },
-    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-9-interlude-a-dangerous-idea": {
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-9-interlude-fifty-eight-seconds": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: Interlude: A Dangerous Idea",
+        "title": "Scene 9: Interlude: Fifty-Eight Seconds",
         "theme": "raggiesoft-books",
         "filePath": "e001/c025/s009.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-10-the-final-exam": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 10: The Final Exam",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c025/s010.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-11-the-first-shot": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 11: The First Shot",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c025/s011.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-12-goodbye-to-henry": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 12: Goodbye to Henry",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c025/s012.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-13-departure-for-winter-break": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 13: Departure for Winter Break",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c025/s013.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-new-normal/scene-14-interlude-a-dangerous-idea": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 14: Interlude: A Dangerous Idea",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c025/s014.md"
     },
     "/aubrie/a-new-winter-break-tradition": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1008,23 +1098,41 @@
         "theme": "raggiesoft-books",
         "filePath": "e002/c001/s002.md"
     },
-    "/aubrie/a-new-winter-break-tradition/a-winter-wonderland-in-the-basement/scene-3-whiteout-hunkering-down": {
+    "/aubrie/a-new-winter-break-tradition/a-winter-wonderland-in-the-basement/scene-3-blackout-the-neighbor-s-chimney": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Whiteout & Hunkering Down",
+        "title": "Scene 3: Blackout & The Neighbor's Chimney",
         "theme": "raggiesoft-books",
         "filePath": "e002/c001/s003.md"
     },
-    "/aubrie/a-new-winter-break-tradition/a-winter-wonderland-in-the-basement/scene-4-blueprints-for-mobility-the-unbudgeted-blizzard": {
+    "/aubrie/a-new-winter-break-tradition/a-winter-wonderland-in-the-basement/scene-4-hunkering-down": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Blueprints for Mobility & The Unbudgeted Blizzard",
+        "title": "Scene 4: Hunkering Down",
         "theme": "raggiesoft-books",
         "filePath": "e002/c001/s004.md"
     },
-    "/aubrie/a-new-winter-break-tradition/a-winter-wonderland-in-the-basement/scene-5-solar-noon-on-the-winter-solstice": {
+    "/aubrie/a-new-winter-break-tradition/a-winter-wonderland-in-the-basement/scene-5-forty-six-inches": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Solar Noon on the Winter Solstice",
+        "title": "Scene 5: Forty-Six Inches",
         "theme": "raggiesoft-books",
         "filePath": "e002/c001/s005.md"
+    },
+    "/aubrie/a-new-winter-break-tradition/a-winter-wonderland-in-the-basement/scene-6-interlude-the-unbudgeted-blizzard": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 6: Interlude: The Unbudgeted Blizzard",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c001/s006.md"
+    },
+    "/aubrie/a-new-winter-break-tradition/a-winter-wonderland-in-the-basement/scene-7-blueprints-for-mobility": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 7: Blueprints for Mobility",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c001/s007.md"
+    },
+    "/aubrie/a-new-winter-break-tradition/a-winter-wonderland-in-the-basement/scene-8-solar-noon-on-the-winter-solstice": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 8: Solar Noon on the Winter Solstice",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c001/s008.md"
     },
     "/aubrie/jordan-s-world-trek": {
         "view": "pages/raggiesoft-books/books/viewer",
