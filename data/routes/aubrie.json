@@ -1518,23 +1518,35 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c004/s003.md"
     },
-    "/aubrie/spring-semester-2015/the-new-pact-of-suite-214-216": {
+    "/aubrie/spring-semester-2015/the-new-pact-the-leviathan-cut-and-an-80s-education": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The New Pact of Suite 214/216",
+        "title": "The New Pact, The Leviathan Cut, and An 80s Education",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|4"
     },
-    "/aubrie/spring-semester-2015/the-new-pact-of-suite-214-216/scene-1-the-proposal-in-room-214": {
+    "/aubrie/spring-semester-2015/the-new-pact-the-leviathan-cut-and-an-80s-education/scene-1-the-proposal-in-room-214": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 1: The Proposal in Room 214",
         "theme": "raggiesoft-books",
         "filePath": "e003/c005/s001.md"
     },
-    "/aubrie/spring-semester-2015/the-new-pact-of-suite-214-216/scene-2-the-first-night-of-the-new-pact": {
+    "/aubrie/spring-semester-2015/the-new-pact-the-leviathan-cut-and-an-80s-education/scene-2-the-first-night-of-the-new-pact": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 2: The First Night of the New Pact",
         "theme": "raggiesoft-books",
         "filePath": "e003/c005/s002.md"
+    },
+    "/aubrie/spring-semester-2015/the-new-pact-the-leviathan-cut-and-an-80s-education/scene-3-the-leviathan-cut-a-sister-s-love": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: The Leviathan Cut (A Sister's Love)",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c005/s003.md"
+    },
+    "/aubrie/spring-semester-2015/the-new-pact-the-leviathan-cut-and-an-80s-education/scene-4-an-80s-education-electric-color": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 4: An 80s Education (Electric Color)",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c005/s004.md"
     },
     "/aubrie/spring-semester-2015/friday-9-32-am": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1656,17 +1668,23 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c010/s004.md"
     },
-    "/aubrie/spring-semester-2015/the-figure-eight-lap": {
+    "/aubrie/spring-semester-2015/the-figure-eight-lap-and-a-sister-s-love": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Figure-Eight Lap",
+        "title": "The Figure-Eight Lap and 'A Sister's Love'",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|10"
     },
-    "/aubrie/spring-semester-2015/the-figure-eight-lap/scene-1-soft-cardiac-breakfast-and-the-figure-eight-lap": {
+    "/aubrie/spring-semester-2015/the-figure-eight-lap-and-a-sister-s-love/scene-1-soft-cardiac-breakfast-and-the-figure-eight-lap": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 1: Soft Cardiac Breakfast and the Figure-Eight Lap",
         "theme": "raggiesoft-books",
         "filePath": "e003/c011/s001.md"
+    },
+    "/aubrie/spring-semester-2015/the-figure-eight-lap-and-a-sister-s-love/scene-2-vocalizing-a-sister-s-love": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: Vocalizing 'A Sister's Love'",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c011/s002.md"
     },
     "/aubrie/spring-semester-2015/four-pounds-down": {
         "view": "pages/raggiesoft-books/books/viewer",
