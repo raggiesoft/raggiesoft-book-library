@@ -200,8 +200,8 @@ if (!empty($pageConfig['filePath'])) {
         $prefetchedContent = @file_get_contents($mdUrl);
         
         if ($prefetchedContent !== false) {
-            // Re-map internal {{CDN}} placeholders to the active domain before processing
-            $prefetchedMdContent = str_replace('{{CDN}}', $cdnBaseUrl, $prefetchedContent);
+            // Re-map internal {{CDN}} and {{cms}} placeholders to the active domain before processing
+            $prefetchedMdContent = str_replace(['{{CDN}}', '{{cms}}'], $cdnBaseUrl, $prefetchedContent);
             
             // Execute naive regex to capture YAML frontmatter block
             if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $prefetchedMdContent, $matches)) {
@@ -209,6 +209,8 @@ if (!empty($pageConfig['filePath'])) {
                 $lines = explode("\n", $rawFrontmatter);
                 $fmTitle = '';
                 $fmOgTitle = '';
+                $fmImage = '';
+                $fmOgImage = '';
                 
                 // Parse key-value pairs manually
                 foreach ($lines as $line) {
@@ -223,13 +225,26 @@ if (!empty($pageConfig['filePath'])) {
                         if ($key === 'title' && $val !== '') $fmTitle = $val;
                         if ($key === 'og_title' && $val !== '') $fmOgTitle = $val;
                         if ($key === 'og_description' && $val !== '') $ogDescription = $val;
-                        if ($key === 'og_image' && $val !== '') {
-                            $ogImage = $val;
-                            // Ensure relative OG images are resolved to absolute URLs
-                            if (strpos($ogImage, 'http') !== 0) {
-                                $ogImage = $cdnBaseUrl . '/' . ltrim($ogImage, '/');
-                            }
+                        if ($key === 'image' && $val !== '') $fmImage = $val;
+                        if ($key === 'og_image' && $val !== '') $fmOgImage = $val;
+                    }
+                }
+                
+                // Automatic OpenGraph (og:image / twitter:image) inheritance:
+                // If the scene specifies an explicit `og_image:`, prioritize it; otherwise,
+                // automatically promote the scene's 16:9 chapter header plate (`image:`).
+                $resolvedSceneOgImage = ($fmOgImage !== '') ? $fmOgImage : $fmImage;
+                if ($resolvedSceneOgImage !== '') {
+                    // Strip any StardustParsedown layout hash (#fullwidth / #inline)
+                    $resolvedSceneOgImage = preg_replace('/#.*$/', '', $resolvedSceneOgImage);
+                    if (strpos($resolvedSceneOgImage, 'http') !== 0) {
+                        $cleanImgPath = ltrim($resolvedSceneOgImage, '/');
+                        if (strpos($cleanImgPath, 'raggiesoft-books/') !== 0 && strpos($cleanImgPath, 'engine-room-records/') !== 0) {
+                            $cleanImgPath = 'raggiesoft-books/images/scenes/' . $cleanImgPath;
                         }
+                        $ogImage = $cdnBaseUrl . '/' . $cleanImgPath;
+                    } else {
+                        $ogImage = $resolvedSceneOgImage;
                     }
                 }
                 

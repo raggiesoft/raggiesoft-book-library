@@ -276,8 +276,36 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
 
         <article class="story-content">
             <?php if (!$specialPageType): ?>
+            <?php
+            // Resolve optional YAML frontmatter `image:` and `image_alt:` for the 16:9 Chapter Header Plate (Option A).
+            // Spans 100% of the reading column width on large displays and scales down proportionally on smaller screens.
+            $sceneHeaderImage = !empty($frontmatter['image']) ? trim($frontmatter['image']) : '';
+            $sceneHeaderImageAlt = !empty($frontmatter['image_alt']) ? trim($frontmatter['image_alt']) : ($title . ' — ' . $seriesTitle);
+            if ($sceneHeaderImage !== '') {
+                $sceneHeaderImage = str_replace(['{{CDN}}', '{{cms}}'], $cdnBaseUrl, $sceneHeaderImage);
+                $sceneHeaderImage = preg_replace('/#.*$/', '', $sceneHeaderImage);
+                if (strpos($sceneHeaderImage, 'http') !== 0) {
+                    $cleanHeaderPath = ltrim($sceneHeaderImage, '/');
+                    if (strpos($cleanHeaderPath, 'raggiesoft-books/') !== 0 && strpos($cleanHeaderPath, 'engine-room-records/') !== 0) {
+                        $cleanHeaderPath = 'raggiesoft-books/images/scenes/' . $cleanHeaderPath;
+                    }
+                    $sceneHeaderImage = $cdnBaseUrl . '/' . $cleanHeaderPath;
+                }
+            }
+            ?>
             <!-- Title Header -->
             <div style="text-align: center; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--rs-border); position: relative;">
+                <?php if ($sceneHeaderImage !== ''): ?>
+                <figure class="reader-chapter-plate" style="margin: 0 0 1.75rem 0; width: 100%; border-radius: 12px; overflow: hidden; border: 1px solid var(--rs-border); box-shadow: 0 6px 24px rgba(0,0,0,0.12); background: var(--rs-surface);">
+                    <img src="<?php echo htmlspecialchars($sceneHeaderImage); ?>"
+                         alt="<?php echo htmlspecialchars($sceneHeaderImageAlt); ?>"
+                         width="1200"
+                         height="675"
+                         fetchpriority="high"
+                         decoding="async"
+                         style="width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; display: block;">
+                </figure>
+                <?php endif; ?>
                 <div class="reader-series-header">
                     <?php 
                     $eyebrowParts = [$seriesTitle];
@@ -576,20 +604,40 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
             <?php echo $htmlContent; ?>
         </article>
         
-        <!-- E-Book CTA Card -->
+        <!-- E-Book CTA Card (Dismissible; persisted in reader-settings.showOfflineCta and resettable in Settings) -->
         <?php if (!$specialPageType): ?>
-        <div style="margin-top: 4rem; padding: 2rem; border: 1px solid var(--rs-border); border-radius: 12px; background: var(--rs-surface); text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
-            <h3 style="margin-bottom: 1rem; color: var(--rs-primary);">Take this Story Offline</h3>
-            <p style="margin-bottom: 1.5rem; font-size: 1.05rem; opacity: 0.9;">Download the complete, beautifully formatted eBook for your e-reader, tablet, or phone. Yours to keep forever.</p>
+        <div id="rs-offline-cta-card" class="rs-offline-cta-card" style="position: relative; margin-top: 4rem; padding: 2rem; border: 1px solid var(--rs-border); border-radius: 12px; background: var(--rs-surface); text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+            <button type="button" id="rs-dismiss-offline-cta" class="rs-btn" title="Dismiss card (can be re-enabled in Settings)" aria-label="Dismiss Take this Story Offline card" style="position: absolute; top: 0.75rem; right: 0.75rem; padding: 0.3rem 0.65rem; font-size: 0.8rem; opacity: 0.75; display: inline-flex; align-items: center; gap: 0.25rem;">
+                <i class="ph ph-x"></i> Hide
+            </button>
+            <h3 style="margin-bottom: 0.75rem; color: var(--rs-primary);">Take this Story Offline</h3>
+            <p style="margin-bottom: 1.25rem; font-size: 1.05rem; opacity: 0.9;">Download the complete, illustrated eBook for your e-reader, tablet, or phone. Yours to keep forever.</p>
             <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.epub"); ?>" target="_blank" class="rs-btn rs-btn-primary" style="font-size: 1.1rem; padding: 0.75rem 1.5rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.epub"); ?>" target="_blank" class="rs-btn rs-btn-primary" style="font-size: 1.05rem; padding: 0.7rem 1.4rem; display: inline-flex; align-items: center; gap: 0.5rem;">
                     <i class="ph ph-download-simple"></i> Download EPUB
                 </a>
-                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.pdf"); ?>" target="_blank" class="rs-btn" style="font-size: 1.1rem; padding: 0.75rem 1.5rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.pdf"); ?>" target="_blank" class="rs-btn" style="font-size: 1.05rem; padding: 0.7rem 1.4rem; display: inline-flex; align-items: center; gap: 0.5rem;">
                     <i class="ph ph-file-pdf"></i> Download PDF
                 </a>
             </div>
+            <div style="margin-top: 1rem; padding-top: 0.85rem; border-top: 1px dashed var(--rs-border); font-size: 0.85rem; opacity: 0.85; display: flex; align-items: center; justify-content: center; gap: 0.5rem; flex-wrap: wrap;">
+                <span><i class="ph ph-cell-signal-low"></i> On a metered connection? Plain-text (no images):</span>
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.epub"); ?>" target="_blank" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">EPUB (Text Only)</a>
+                <span aria-hidden="true">&bull;</span>
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.pdf"); ?>" target="_blank" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">PDF (Text Only)</a>
+            </div>
         </div>
+        <script>
+        (function() {
+            try {
+                var s = JSON.parse(localStorage.getItem('reader-settings') || '{}');
+                if (s && s.showOfflineCta === false) {
+                    var c = document.getElementById('rs-offline-cta-card');
+                    if (c) c.style.display = 'none';
+                }
+            } catch (e) {}
+        })();
+        </script>
         <?php endif; ?>
 
         <!-- Share Section for Reader -->

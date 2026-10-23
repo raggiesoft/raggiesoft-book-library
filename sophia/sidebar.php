@@ -130,11 +130,21 @@ $sidebarPageTitle = $routeConfig['title'] ?? ($pageConfig['title'] ?? (!empty($f
         <div id="rs-search-results" style="display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 6px; max-height: 350px; overflow-y: auto; z-index: 1000; box-shadow: 0 8px 24px rgba(0,0,0,0.15); margin-top: 4px;"></div>
     </form>
 
-    <!-- E-Book Download Links -->
+    <!-- E-Book Download Links (Compact 2-column primary row + 1-line Plain-Text Metered strip) -->
     <?php if (!empty($seriesSlug) && !empty($toc_manifest)): ?>
-    <div style="margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 0.5rem;">
-        <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.epub"); ?>" target="_blank" class="rs-btn" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 0.85rem;"><i class="ph ph-book-open"></i> Download EPUB</a>
-        <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.pdf"); ?>" target="_blank" class="rs-btn" style="text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 0.85rem;"><i class="ph ph-file-pdf"></i> Download PDF</a>
+    <div style="margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 0.45rem;">
+        <div style="display: flex; gap: 0.5rem;">
+            <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.epub"); ?>" target="_blank" class="rs-btn" title="Download Illustrated EPUB" style="flex: 1; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 0.85rem; padding: 0.5rem;"><i class="ph ph-book-open"></i> EPUB</a>
+            <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.pdf"); ?>" target="_blank" class="rs-btn" title="Download Illustrated PDF" style="flex: 1; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 0.85rem; padding: 0.5rem;"><i class="ph ph-file-pdf"></i> PDF</a>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: space-between; font-size: 0.75rem; opacity: 0.8; padding: 0 0.25rem;">
+            <span><i class="ph ph-cell-signal-low"></i> Text-Only (Metered):</span>
+            <span style="display: inline-flex; align-items: center; gap: 0.35rem;">
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.epub"); ?>" target="_blank" title="Download Plain-Text EPUB (No Images)" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 2px;">EPUB</a>
+                <span aria-hidden="true">&bull;</span>
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.pdf"); ?>" target="_blank" title="Download Plain-Text PDF (No Images)" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 2px;">PDF</a>
+            </span>
+        </div>
     </div>
     <hr style="border:0; border-top:1px solid var(--rs-border); margin: 0 0 1.25rem 0;">
     <?php endif; ?>

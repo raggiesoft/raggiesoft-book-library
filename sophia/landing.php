@@ -98,7 +98,7 @@ $tocUrl = '/' . $seriesSlug . '/toc';
                 ?>
             </div>
             
-            <!-- Call to action buttons to view the TOC and download eBooks -->
+            <!-- Call to action buttons to view the TOC and download eBooks (Illustrated + Metered Plain-Text) -->
             <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
                 <a href="<?php echo htmlspecialchars($tocUrl); ?>" class="rs-btn rs-btn-primary" style="font-size: 1.1rem; padding: 0.75rem 2rem; display: inline-flex; align-items: center; gap: 0.5rem;">
                     <i class="ph ph-book-open"></i> View the Table of Contents
@@ -109,6 +109,12 @@ $tocUrl = '/' . $seriesSlug . '/toc';
                 <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.pdf"); ?>" target="_blank" class="rs-btn" style="font-size: 1.1rem; padding: 0.75rem 1.5rem; display: inline-flex; align-items: center; gap: 0.5rem;">
                     <i class="ph ph-file-pdf"></i> PDF
                 </a>
+            </div>
+            <div style="margin-top: 0.75rem; font-size: 0.85rem; opacity: 0.85; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                <span><i class="ph ph-cell-signal-low"></i> On a metered connection? Plain-text (no images):</span>
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.epub"); ?>" target="_blank" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">EPUB (Text Only)</a>
+                <span aria-hidden="true">&bull;</span>
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.pdf"); ?>" target="_blank" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">PDF (Text Only)</a>
             </div>
         </div>
     </div>

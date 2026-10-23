@@ -173,6 +173,12 @@ global $cdnBaseUrl, $siteName, $requestUri;
                     <input type="checkbox" id="rs-settings-narrative-themes" style="width: 1.5rem; height: 1.5rem; cursor: pointer;">
                 </div>
 
+                <!-- OFFLINE DOWNLOAD CARD TOGGLE -->
+                <div style="display: flex; align-items: center; justify-content: space-between;">
+                    <label for="rs-settings-offline-cta" style="font-weight: bold; font-size: 0.95rem; margin: 0; cursor: pointer;">Show "Take this Story Offline" Download Card</label>
+                    <input type="checkbox" id="rs-settings-offline-cta" style="width: 1.5rem; height: 1.5rem; cursor: pointer;">
+                </div>
+
                 <!-- LAUNCH BEHAVIOR SELECTOR -->
                 <div>
                     <label for="rs-settings-launch-behavior" style="display: block; font-weight: bold; margin-bottom: 0.5rem; font-size: 0.95rem;">On App Launch</label>
@@ -327,7 +333,8 @@ global $cdnBaseUrl, $siteName, $requestUri;
             width: 'default',
             fontFamily: 'system',
             autoPlayAudio: 'false',
-            translationMode: 'original'
+            translationMode: 'original',
+            showOfflineCta: true
         };
         try {
             const stored = localStorage.getItem('reader-settings');
@@ -392,6 +399,9 @@ global $cdnBaseUrl, $siteName, $requestUri;
 
     const narrativeThemesSelect = document.getElementById('rs-settings-narrative-themes');
     if (narrativeThemesSelect) narrativeThemesSelect.checked = (settings.customThemeEnabled !== false);
+
+    const offlineCtaSelect = document.getElementById('rs-settings-offline-cta');
+    if (offlineCtaSelect) offlineCtaSelect.checked = (settings.showOfflineCta !== false);
 
     const launchSelect = document.getElementById('rs-settings-launch-behavior');
     if (launchSelect) launchSelect.value = localStorage.getItem('rs-launch-behavior') || 'home';
@@ -493,6 +503,17 @@ global $cdnBaseUrl, $siteName, $requestUri;
             s.customThemeEnabled = e.target.checked;
             saveReaderSettings(s);
             applyThemeGlobally(s.theme);
+        });
+    }
+
+    if (offlineCtaSelect) {
+        offlineCtaSelect.addEventListener('change', (e) => {
+            const s = getReaderSettings();
+            s.showOfflineCta = e.target.checked;
+            saveReaderSettings(s);
+            if (typeof window.applyOfflineCtaSetting === 'function') {
+                window.applyOfflineCtaSetting(s.showOfflineCta, false);
+            }
         });
     }
 
