@@ -372,12 +372,14 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                     <button type="button"
                             class="reader-hero-nav reader-hero-prev"
                             data-hero-prev
+                            onclick="window.stardustStepHeroCarousel && window.stardustStepHeroCarousel(this, -1); return false;"
                             aria-label="Previous scene illustration">
                         <i class="ph-bold ph-caret-left" aria-hidden="true"></i>
                     </button>
                     <button type="button"
                             class="reader-hero-nav reader-hero-next"
                             data-hero-next
+                            onclick="window.stardustStepHeroCarousel && window.stardustStepHeroCarousel(this, 1); return false;"
                             aria-label="Next scene illustration">
                         <i class="ph-bold ph-caret-right" aria-hidden="true"></i>
                     </button>
@@ -388,6 +390,7 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                             <button type="button"
                                     class="reader-hero-dot<?php echo $sIdx === 0 ? ' is-active' : ''; ?>"
                                     data-hero-dot="<?php echo $sIdx; ?>"
+                                    onclick="window.stardustGoHeroCarousel && window.stardustGoHeroCarousel(this, <?php echo (int)$sIdx; ?>); return false;"
                                     role="tab"
                                     aria-selected="<?php echo $sIdx === 0 ? 'true' : 'false'; ?>"
                                     aria-label="<?php echo htmlspecialchars('Show illustration ' . ($sIdx + 1) . ' of ' . $heroSlideCount); ?>"></button>
@@ -395,6 +398,99 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                         </div>
                     </div>
                 </figure>
+                <script>
+                /**
+                 * Self-contained inline Hero Image Carousel controller for `oliver.php`.
+                 * Executed automatically on both full page loads and `stardust-spa.min.js`
+                 * soft-navigations (even when external CDN scripts are cached by the PWA Service Worker).
+                 */
+                (function () {
+                    window.stardustSetHeroSlide = function (carousel, nextIdx) {
+                        if (!carousel) return;
+                        var slides = carousel.querySelectorAll('[data-hero-slide]');
+                        var dots = carousel.querySelectorAll('[data-hero-dot]');
+                        var counterEl = carousel.querySelector('[data-hero-counter]');
+                        var total = slides.length;
+                        if (total <= 1) return;
+                        var target = ((nextIdx % total) + total) % total;
+                        carousel.setAttribute('data-hero-active-index', String(target));
+                        for (var i = 0; i < total; i++) {
+                            var isActive = (i === target);
+                            slides[i].classList.toggle('is-active', isActive);
+                            slides[i].setAttribute('aria-hidden', isActive ? 'false' : 'true');
+                            slides[i].style.opacity = isActive ? '1' : '0';
+                            slides[i].style.pointerEvents = isActive ? 'auto' : 'none';
+                            slides[i].style.position = isActive ? 'relative' : 'absolute';
+                            slides[i].style.zIndex = isActive ? '2' : '0';
+                        }
+                        for (var j = 0; j < dots.length; j++) {
+                            var dotActive = (j === target);
+                            dots[j].classList.toggle('is-active', dotActive);
+                            dots[j].setAttribute('aria-selected', dotActive ? 'true' : 'false');
+                        }
+                        if (counterEl) {
+                            counterEl.textContent = (target + 1) + ' / ' + total;
+                        }
+                    };
+                    window.stardustStepHeroCarousel = function (btnEl, delta) {
+                        if (!btnEl) return;
+                        var carousel = btnEl.closest('[data-hero-carousel]');
+                        if (!carousel) return;
+                        var cur = parseInt(carousel.getAttribute('data-hero-active-index') || '0', 10);
+                        if (isNaN(cur)) cur = 0;
+                        window.stardustSetHeroSlide(carousel, cur + delta);
+                    };
+                    window.stardustGoHeroCarousel = function (btnEl, targetIdx) {
+                        if (!btnEl) return;
+                        var carousel = btnEl.closest('[data-hero-carousel]');
+                        if (!carousel) return;
+                        window.stardustSetHeroSlide(carousel, targetIdx);
+                    };
+                    var carousels = document.querySelectorAll('[data-hero-carousel]');
+                    for (var c = 0; c < carousels.length; c++) {
+                        (function (carousel) {
+                            if (!carousel.hasAttribute('data-hero-active-index')) {
+                                window.stardustSetHeroSlide(carousel, 0);
+                            }
+                            if (carousel.dataset.heroKeySwipeBound === 'true') return;
+                            carousel.dataset.heroKeySwipeBound = 'true';
+                            carousel.addEventListener('keydown', function (e) {
+                                var cur = parseInt(carousel.getAttribute('data-hero-active-index') || '0', 10) || 0;
+                                if (e.key === 'ArrowLeft') {
+                                    e.preventDefault();
+                                    e.stopPropagation();
+                                    window.stardustSetHeroSlide(carousel, cur - 1);
+                                } else if (e.key === 'ArrowRight') {
+                                    e.preventDefault();
+                                    e.stopPropagation();
+                                    window.stardustSetHeroSlide(carousel, cur + 1);
+                                }
+                            });
+                            var touchStartX = null;
+                            var touchStartY = null;
+                            carousel.addEventListener('touchstart', function (e) {
+                                if (e.touches && e.touches.length === 1) {
+                                    touchStartX = e.touches[0].clientX;
+                                    touchStartY = e.touches[0].clientY;
+                                }
+                            }, { passive: true });
+                            carousel.addEventListener('touchend', function (e) {
+                                if (touchStartX === null || touchStartY === null) return;
+                                if (e.changedTouches && e.changedTouches.length === 1) {
+                                    var dx = e.changedTouches[0].clientX - touchStartX;
+                                    var dy = e.changedTouches[0].clientY - touchStartY;
+                                    if (Math.abs(dx) > 40 && Math.abs(dx) > Math.abs(dy)) {
+                                        var cur = parseInt(carousel.getAttribute('data-hero-active-index') || '0', 10) || 0;
+                                        window.stardustSetHeroSlide(carousel, dx < 0 ? cur + 1 : cur - 1);
+                                    }
+                                }
+                                touchStartX = null;
+                                touchStartY = null;
+                            }, { passive: true });
+                        })(carousels[c]);
+                    }
+                })();
+                </script>
                 <?php endif; ?>
                 <div class="reader-series-header">
                     <?php 
@@ -975,6 +1071,33 @@ body.theme-oceanview .zoe-kernel-log {
 @media (max-width: 640px) {
     .zoe-log-entry { flex-wrap: wrap; gap: 0.4rem; }
     .zkl-timestamp { margin-left: 2.2rem; }
+}
+
+/* ==========================================================================
+ * OLIVER READER: INLINE HERO IMAGE CAROUSEL FALLBACK STYLES
+ * ==========================================================================
+ * Embedded directly in `oliver.php` alongside `reader.css` so installed PWA
+ * instances (`Ocean View Archives`) render carousel transitions immediately
+ * even before Service Worker cache rotation completes.
+ * ========================================================================== */
+.reader-hero-carousel { position: relative; user-select: none; outline: none; }
+.reader-hero-carousel:focus-visible { outline: 3px solid var(--rs-primary, #3b82f6); outline-offset: 2px; }
+.reader-hero-carousel-viewport { position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: var(--rs-surface, #111827); }
+.reader-hero-slide { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; pointer-events: none; transition: opacity 0.32s ease-in-out; }
+.reader-hero-slide.is-active { position: relative; opacity: 1; pointer-events: auto; z-index: 2; }
+.reader-hero-nav { position: absolute; top: 50%; transform: translateY(-50%); z-index: 4; width: 42px; height: 42px; border-radius: 9999px; border: 1px solid rgba(255, 255, 255, 0.35); background: rgba(15, 23, 42, 0.78); color: #ffffff; display: inline-flex; align-items: center; justify-content: center; cursor: pointer; font-size: 1.2rem; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); transition: background-color 0.18s ease, border-color 0.18s ease; }
+.reader-hero-prev { left: 0.85rem; }
+.reader-hero-next { right: 0.85rem; }
+.reader-hero-nav:hover { background: rgba(15, 23, 42, 0.94); border-color: rgba(255, 255, 255, 0.75); }
+.reader-hero-nav:focus-visible { outline: 3px solid #60a5fa; outline-offset: 2px; background: rgba(15, 23, 42, 0.96); }
+.reader-hero-controls { position: absolute; left: 0.85rem; right: 0.85rem; bottom: 0.75rem; z-index: 4; display: flex; align-items: center; justify-content: space-between; pointer-events: none; }
+.reader-hero-counter { pointer-events: auto; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.04em; padding: 0.25rem 0.65rem; border-radius: 9999px; background: rgba(15, 23, 42, 0.82); color: #ffffff; border: 1px solid rgba(255, 255, 255, 0.28); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+.reader-hero-dots { pointer-events: auto; display: inline-flex; align-items: center; gap: 0.45rem; padding: 0.35rem 0.65rem; border-radius: 9999px; background: rgba(15, 23, 42, 0.78); border: 1px solid rgba(255, 255, 255, 0.28); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+.reader-hero-dot { width: 10px; height: 10px; padding: 0; border-radius: 9999px; border: 1px solid rgba(255, 255, 255, 0.75); background: rgba(255, 255, 255, 0.35); cursor: pointer; transition: width 0.18s ease, background-color 0.18s ease; }
+.reader-hero-dot.is-active { width: 24px; background: #ffffff; border-color: #ffffff; }
+.reader-hero-dot:focus-visible { outline: 2px solid #60a5fa; outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) {
+    .reader-hero-slide, .reader-hero-nav, .reader-hero-dot { transition: none !important; }
 }
 </style>
 
