@@ -211,22 +211,43 @@ if (!empty($pageConfig['filePath'])) {
                 $fmOgTitle = '';
                 $fmImage = '';
                 $fmOgImage = '';
+                $currentFmArrayKey = null;
                 
-                // Parse key-value pairs manually
+                // Parse key-value pairs and YAML list blocks manually
+                // (Supports both scalar `image: "..."` and multi-slide Hero Image Carousels where
+                // `image:` or `images:` is a YAML list; the first slide becomes the default `og:image`).
                 foreach ($lines as $line) {
                     $line = trim($line);
+                    if ($line === '') continue;
+
+                    if (strpos($line, '-') === 0 && $currentFmArrayKey !== null) {
+                        $itemVal = trim(substr($line, 1));
+                        $itemVal = trim($itemVal, '"\'');
+                        if (($currentFmArrayKey === 'image' || $currentFmArrayKey === 'images') && $fmImage === '' && $itemVal !== '') {
+                            $fmImage = $itemVal;
+                        }
+                        continue;
+                    }
+
                     if (strpos($line, ':') !== false) {
                         list($key, $val) = explode(':', $line, 2);
                         $key = trim($key);
                         $val = trim($val);
+                        if ($val === '') {
+                            $currentFmArrayKey = $key;
+                            continue;
+                        }
+                        $currentFmArrayKey = null;
                         // Strip quotes
                         $val = trim($val, '"\'');
                         
                         if ($key === 'title' && $val !== '') $fmTitle = $val;
                         if ($key === 'og_title' && $val !== '') $fmOgTitle = $val;
                         if ($key === 'og_description' && $val !== '') $ogDescription = $val;
-                        if ($key === 'image' && $val !== '') $fmImage = $val;
+                        if (($key === 'image' || $key === 'images') && $val !== '' && $fmImage === '') $fmImage = $val;
                         if ($key === 'og_image' && $val !== '') $fmOgImage = $val;
+                    } else {
+                        $currentFmArrayKey = null;
                     }
                 }
                 

@@ -277,33 +277,123 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
         <article class="story-content">
             <?php if (!$specialPageType): ?>
             <?php
-            // Resolve optional YAML frontmatter `image:` and `image_alt:` for the 16:9 Chapter Header Plate (Option A).
-            // Spans 100% of the reading column width on large displays and scales down proportionally on smaller screens.
-            $sceneHeaderImage = !empty($frontmatter['image']) ? trim($frontmatter['image']) : '';
-            $sceneHeaderImageAlt = !empty($frontmatter['image_alt']) ? trim($frontmatter['image_alt']) : ($title . ' — ' . $seriesTitle);
-            if ($sceneHeaderImage !== '') {
-                $sceneHeaderImage = str_replace(['{{CDN}}', '{{cms}}'], $cdnBaseUrl, $sceneHeaderImage);
-                $sceneHeaderImage = preg_replace('/#.*$/', '', $sceneHeaderImage);
-                if (strpos($sceneHeaderImage, 'http') !== 0) {
-                    $cleanHeaderPath = ltrim($sceneHeaderImage, '/');
+            /**
+             * ============================================================================
+             * SCENE HERO IMAGE & HERO IMAGE CAROUSEL RESOLVER (Option A Header Plate)
+             * ============================================================================
+             * Supports both a single scalar `image:` / `image_alt:` AND a multi-slide
+             * YAML list (`image:` + `image_alt:` arrays, or `images:` + `image_alts:`).
+             * - When 1 slide is present: renders a static 16:9 `<figure class="reader-chapter-plate">`.
+             * - When 2+ slides are present: renders an accessible, keyboard- and swipe-navigable
+             *   16:9 Hero Image Carousel (`<figure class="reader-chapter-plate reader-hero-carousel">`).
+             */
+            $normalizeHeroUrl = function ($rawUrl) use ($cdnBaseUrl) {
+                $url = trim((string)$rawUrl);
+                if ($url === '') return '';
+                $url = str_replace(['{{CDN}}', '{{cms}}'], $cdnBaseUrl, $url);
+                $url = preg_replace('/#.*$/', '', $url);
+                if (strpos($url, 'http') !== 0) {
+                    $cleanHeaderPath = ltrim($url, '/');
                     if (strpos($cleanHeaderPath, 'raggiesoft-books/') !== 0 && strpos($cleanHeaderPath, 'engine-room-records/') !== 0) {
                         $cleanHeaderPath = 'raggiesoft-books/images/scenes/' . $cleanHeaderPath;
                     }
-                    $sceneHeaderImage = $cdnBaseUrl . '/' . $cleanHeaderPath;
+                    $url = $cdnBaseUrl . '/' . $cleanHeaderPath;
                 }
+                return $url;
+            };
+
+            $rawHeroImages = [];
+            if (!empty($frontmatter['images'])) {
+                $rawHeroImages = is_array($frontmatter['images']) ? $frontmatter['images'] : [$frontmatter['images']];
+            } elseif (!empty($frontmatter['image'])) {
+                $rawHeroImages = is_array($frontmatter['image']) ? $frontmatter['image'] : [$frontmatter['image']];
             }
+
+            $rawHeroAlts = [];
+            if (!empty($frontmatter['image_alts'])) {
+                $rawHeroAlts = is_array($frontmatter['image_alts']) ? $frontmatter['image_alts'] : [$frontmatter['image_alts']];
+            } elseif (!empty($frontmatter['image_alt'])) {
+                $rawHeroAlts = is_array($frontmatter['image_alt']) ? $frontmatter['image_alt'] : [$frontmatter['image_alt']];
+            }
+
+            $heroSlides = [];
+            $defaultHeroAlt = $title . ' — ' . $seriesTitle;
+            foreach ($rawHeroImages as $hIdx => $rawImgVal) {
+                $resolvedSrc = $normalizeHeroUrl($rawImgVal);
+                if ($resolvedSrc === '') continue;
+                $resolvedAlt = isset($rawHeroAlts[$hIdx]) && trim((string)$rawHeroAlts[$hIdx]) !== ''
+                    ? trim((string)$rawHeroAlts[$hIdx])
+                    : (isset($rawHeroAlts[0]) && trim((string)$rawHeroAlts[0]) !== '' ? trim((string)$rawHeroAlts[0]) : $defaultHeroAlt);
+                $heroSlides[] = [
+                    'src' => $resolvedSrc,
+                    'alt' => $resolvedAlt
+                ];
+            }
+            $heroSlideCount = count($heroSlides);
             ?>
             <!-- Title Header -->
             <div style="text-align: center; margin-bottom: 3rem; padding-bottom: 2rem; border-bottom: 1px solid var(--rs-border); position: relative;">
-                <?php if ($sceneHeaderImage !== ''): ?>
+                <?php if ($heroSlideCount === 1): ?>
                 <figure class="reader-chapter-plate" style="margin: 0 0 1.75rem 0; width: 100%; border-radius: 12px; overflow: hidden; border: 1px solid var(--rs-border); box-shadow: 0 6px 24px rgba(0,0,0,0.12); background: var(--rs-surface);">
-                    <img src="<?php echo htmlspecialchars($sceneHeaderImage); ?>"
-                         alt="<?php echo htmlspecialchars($sceneHeaderImageAlt); ?>"
+                    <img src="<?php echo htmlspecialchars($heroSlides[0]['src']); ?>"
+                         alt="<?php echo htmlspecialchars($heroSlides[0]['alt']); ?>"
                          width="1200"
                          height="675"
                          fetchpriority="high"
                          decoding="async"
                          style="width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; display: block;">
+                </figure>
+                <?php elseif ($heroSlideCount > 1): ?>
+                <figure class="reader-chapter-plate reader-hero-carousel"
+                        data-hero-carousel
+                        tabindex="0"
+                        role="region"
+                        aria-roledescription="carousel"
+                        aria-label="<?php echo htmlspecialchars('Scene Hero Illustrations (' . $heroSlideCount . ' slides)'); ?>"
+                        style="margin: 0 0 1.75rem 0; width: 100%; border-radius: 12px; overflow: hidden; border: 1px solid var(--rs-border); box-shadow: 0 6px 24px rgba(0,0,0,0.12); background: var(--rs-surface); position: relative;">
+                    <div class="reader-hero-carousel-viewport">
+                        <?php foreach ($heroSlides as $sIdx => $slide): ?>
+                        <div class="reader-hero-slide<?php echo $sIdx === 0 ? ' is-active' : ''; ?>"
+                             data-hero-slide="<?php echo $sIdx; ?>"
+                             role="group"
+                             aria-roledescription="slide"
+                             aria-label="<?php echo htmlspecialchars('Illustration ' . ($sIdx + 1) . ' of ' . $heroSlideCount); ?>"
+                             aria-hidden="<?php echo $sIdx === 0 ? 'false' : 'true'; ?>">
+                            <img src="<?php echo htmlspecialchars($slide['src']); ?>"
+                                 alt="<?php echo htmlspecialchars($slide['alt']); ?>"
+                                 width="1200"
+                                 height="675"
+                                 <?php if ($sIdx === 0): ?>fetchpriority="high"<?php else: ?>loading="lazy"<?php endif; ?>
+                                 decoding="async"
+                                 style="width: 100%; height: auto; aspect-ratio: 16 / 9; object-fit: cover; display: block;">
+                        </div>
+                        <?php endforeach; ?>
+                    </div>
+                    <button type="button"
+                            class="reader-hero-nav reader-hero-prev"
+                            data-hero-prev
+                            aria-label="Previous scene illustration">
+                        <i class="ph-bold ph-caret-left" aria-hidden="true"></i>
+                    </button>
+                    <button type="button"
+                            class="reader-hero-nav reader-hero-next"
+                            data-hero-next
+                            aria-label="Next scene illustration">
+                        <i class="ph-bold ph-caret-right" aria-hidden="true"></i>
+                    </button>
+                    <div class="reader-hero-controls">
+                        <span class="reader-hero-counter" data-hero-counter aria-live="polite">1 / <?php echo $heroSlideCount; ?></span>
+                        <div class="reader-hero-dots" role="tablist" aria-label="Select scene illustration">
+                            <?php foreach ($heroSlides as $sIdx => $slide): ?>
+                            <button type="button"
+                                    class="reader-hero-dot<?php echo $sIdx === 0 ? ' is-active' : ''; ?>"
+                                    data-hero-dot="<?php echo $sIdx; ?>"
+                                    role="tab"
+                                    aria-selected="<?php echo $sIdx === 0 ? 'true' : 'false'; ?>"
+                                    aria-label="<?php echo htmlspecialchars('Show illustration ' . ($sIdx + 1) . ' of ' . $heroSlideCount); ?>"></button>
+                            <?php endforeach; ?>
+                        </div>
+                    </div>
                 </figure>
                 <?php endif; ?>
                 <div class="reader-series-header">
