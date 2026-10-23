@@ -1446,479 +1446,227 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c001/s007.md"
     },
-    "/aubrie/spring-semester-2015/a-student-and-a-man": {
+    "/aubrie/spring-semester-2015/the-new-pact": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "A Student and a Man",
+        "title": "The New Pact",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|1"
     },
-    "/aubrie/spring-semester-2015/a-student-and-a-man/scene-1-the-alaskan-king-discovery": {
+    "/aubrie/spring-semester-2015/the-new-pact/scene-1-the-proposal-in-room-214": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Alaskan King Discovery",
+        "title": "Scene 1: The Proposal in Room 214",
         "theme": "raggiesoft-books",
         "filePath": "e003/c002/s001.md"
     },
-    "/aubrie/spring-semester-2015/a-student-and-a-man/scene-2-engl-102-and-the-broken-pdf": {
+    "/aubrie/spring-semester-2015/the-new-pact/scene-2-the-first-night-of-the-new-pact": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: ENGL 102 and the Broken PDF",
+        "title": "Scene 2: The First Night of the New Pact",
         "theme": "raggiesoft-books",
         "filePath": "e003/c002/s002.md"
     },
-    "/aubrie/spring-semester-2015/a-student-and-a-man/scene-3-calculus-and-the-binary-stars": {
+    "/aubrie/spring-semester-2015/a-spring-in-motion": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Calculus and the Binary Stars",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s003.md"
-    },
-    "/aubrie/spring-semester-2015/the-roads-of-rome-and-the-choices-of-a-man": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Roads of Rome and the Choices of a Man",
+        "title": "A Spring in Motion",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|2"
     },
-    "/aubrie/spring-semester-2015/the-roads-of-rome-and-the-choices-of-a-man/scene-1-hist-115-history-of-ancient-rome": {
+    "/aubrie/spring-semester-2015/a-spring-in-motion/scene-1-the-alaskan-king-discovery": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: HIST 115: History of Ancient Rome",
+        "title": "Scene 1: The Alaskan King Discovery",
         "theme": "raggiesoft-books",
         "filePath": "e003/c003/s001.md"
     },
-    "/aubrie/spring-semester-2015/the-roads-of-rome-and-the-choices-of-a-man/scene-2-options-funding-and-the-man-in-the-chair": {
+    "/aubrie/spring-semester-2015/a-spring-in-motion/scene-2-calculus-and-the-binary-stars": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Options, Funding, and the Man in the Chair",
+        "title": "Scene 2: Calculus and the Binary Stars",
         "theme": "raggiesoft-books",
         "filePath": "e003/c003/s002.md"
     },
-    "/aubrie/spring-semester-2015/the-roads-of-rome-and-the-choices-of-a-man/scene-3-the-roster-of-eighteen": {
+    "/aubrie/spring-semester-2015/a-spring-in-motion/scene-3-hist-115-history-of-ancient-rome": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Roster of Eighteen",
+        "title": "Scene 3: HIST 115: History of Ancient Rome",
         "theme": "raggiesoft-books",
         "filePath": "e003/c003/s003.md"
     },
-    "/aubrie/spring-semester-2015/operation-file-first-and-the-passport-blitz": {
+    "/aubrie/spring-semester-2015/options-funding-and-the-man-in-the-chair": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Operation File First and the Passport Blitz",
+        "title": "Options, Funding, and the Man in the Chair",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|3"
     },
-    "/aubrie/spring-semester-2015/operation-file-first-and-the-passport-blitz/scene-1-operation-file-first": {
+    "/aubrie/spring-semester-2015/options-funding-and-the-man-in-the-chair/scene-1-options-funding-and-the-man-in-the-chair": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Operation 'File First'",
+        "title": "Scene 1: Options, Funding, and the Man in the Chair",
         "theme": "raggiesoft-books",
         "filePath": "e003/c004/s001.md"
+    },
+    "/aubrie/spring-semester-2015/options-funding-and-the-man-in-the-chair/scene-2-the-roster-of-eighteen-and-the-southern-hemisphere-winter": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The Roster of Eighteen and the Southern Hemisphere Winter",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c004/s002.md"
+    },
+    "/aubrie/spring-semester-2015/operation-file-first-and-the-passport-blitz": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Operation 'File First' and the Passport Blitz",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|4"
+    },
+    "/aubrie/spring-semester-2015/operation-file-first-and-the-passport-blitz/scene-1-operation-file-first-and-the-geneva-street-id": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Operation 'File First' and the Geneva Street ID",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c005/s001.md"
     },
     "/aubrie/spring-semester-2015/operation-file-first-and-the-passport-blitz/scene-2-the-titan-x350-seating-lab": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 2: The Titan-X350 Seating Lab",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c004/s002.md"
-    },
-    "/aubrie/spring-semester-2015/operation-file-first-and-the-passport-blitz/scene-3-eighteen-passports-and-nexus-cards": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Eighteen Passports and NEXUS Cards",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c004/s003.md"
-    },
-    "/aubrie/spring-semester-2015/the-new-pact-the-leviathan-cut-and-an-80s-education": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The New Pact, The Leviathan Cut, and An 80s Education",
-        "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|4"
-    },
-    "/aubrie/spring-semester-2015/the-new-pact-the-leviathan-cut-and-an-80s-education/scene-1-the-proposal-in-room-214": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Proposal in Room 214",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s001.md"
-    },
-    "/aubrie/spring-semester-2015/the-new-pact-the-leviathan-cut-and-an-80s-education/scene-2-the-first-night-of-the-new-pact": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The First Night of the New Pact",
-        "theme": "raggiesoft-books",
         "filePath": "e003/c005/s002.md"
     },
-    "/aubrie/spring-semester-2015/the-new-pact-the-leviathan-cut-and-an-80s-education/scene-3-the-leviathan-cut-a-sister-s-love": {
+    "/aubrie/spring-semester-2015/operation-file-first-and-the-passport-blitz/scene-3-sixteen-passports-sixteen-nexus-cards-and-two-australian-epassports": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Leviathan Cut (A Sister's Love)",
+        "title": "Scene 3: Sixteen Passports, Sixteen NEXUS Cards, and Two Australian ePassports",
         "theme": "raggiesoft-books",
         "filePath": "e003/c005/s003.md"
     },
-    "/aubrie/spring-semester-2015/the-new-pact-the-leviathan-cut-and-an-80s-education/scene-4-an-80s-education-electric-color": {
+    "/aubrie/spring-semester-2015/the-leviathan-cut-an-80s-education": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: An 80s Education (Electric Color)",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s004.md"
-    },
-    "/aubrie/spring-semester-2015/friday-9-32-am": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Friday, 9:32 AM",
+        "title": "The Leviathan Cut & An 80s Education",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|5"
     },
-    "/aubrie/spring-semester-2015/friday-9-32-am/scene-1-friday-9-32-am-the-attack": {
+    "/aubrie/spring-semester-2015/the-leviathan-cut-an-80s-education/scene-1-the-leviathan-cut-a-sister-s-love": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Friday, 9:32 AM (The Attack)",
+        "title": "Scene 1: The Leviathan Cut (A Sister's Love)",
         "theme": "raggiesoft-books",
         "filePath": "e003/c006/s001.md"
     },
-    "/aubrie/spring-semester-2015/friday-9-32-am/scene-2-the-emergency-room-and-nuclear-medicine": {
+    "/aubrie/spring-semester-2015/the-leviathan-cut-an-80s-education/scene-2-an-80s-education-electric-color": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Emergency Room and Nuclear Medicine",
+        "title": "Scene 2: An 80s Education (Electric Color)",
         "theme": "raggiesoft-books",
         "filePath": "e003/c006/s002.md"
     },
-    "/aubrie/spring-semester-2015/friday-9-32-am/scene-3-the-hall-director-and-the-ras": {
+    "/aubrie/spring-semester-2015/hey-cacuho-the-residence-life-conference": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Hall Director and the RAs",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c006/s003.md"
-    },
-    "/aubrie/spring-semester-2015/friday-9-32-am/scene-4-the-failed-balloon-angioplasty": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Failed Balloon Angioplasty",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c006/s004.md"
-    },
-    "/aubrie/spring-semester-2015/friday-9-32-am/scene-5-the-first-watch-npo": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The First Watch (NPO)",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c006/s005.md"
-    },
-    "/aubrie/spring-semester-2015/the-thirty-six-hour-wait": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Thirty-Six-Hour Wait",
+        "title": "HEY CACUHO! The Residence Life Conference",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|6"
     },
-    "/aubrie/spring-semester-2015/the-thirty-six-hour-wait/scene-1-every-two-hours": {
+    "/aubrie/spring-semester-2015/hey-cacuho-the-residence-life-conference/scene-1-sending-off-the-ras-the-cacuho-presentation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Every Two Hours",
+        "title": "Scene 1: Sending Off the RAs (The CACUHO Presentation)",
         "theme": "raggiesoft-books",
         "filePath": "e003/c007/s001.md"
     },
-    "/aubrie/spring-semester-2015/the-thirty-six-hour-wait/scene-2-waiting-on-roanoke-madison-s-watch": {
+    "/aubrie/spring-semester-2015/hey-cacuho-the-residence-life-conference/scene-2-the-empty-room-across-the-hall": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Waiting on Roanoke (Madison's Watch)",
+        "title": "Scene 2: The Empty Room Across the Hall",
         "theme": "raggiesoft-books",
         "filePath": "e003/c007/s002.md"
     },
-    "/aubrie/spring-semester-2015/the-rubber-duck-convoy-to-roanoke": {
+    "/aubrie/spring-semester-2015/hey-cacuho-the-residence-life-conference/scene-3-breakout-session-4b-breaking-the-binary-corridor": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Rubber Duck Convoy to Roanoke",
+        "title": "Scene 3: Breakout Session 4B: Breaking the Binary Corridor",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c007/s003.md"
+    },
+    "/aubrie/spring-semester-2015/hey-cacuho-the-residence-life-conference/scene-4-hey-cacuho-clothespins-and-the-gamble-aria-nightmare": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 4: HEY CACUHO! Clothespins and the Gamble Aria Nightmare",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c007/s004.md"
+    },
+    "/aubrie/spring-semester-2015/the-stalker-at-the-desk-the-hotel-at-poly": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Stalker at the Desk & The Hotel at Poly",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|7"
     },
-    "/aubrie/spring-semester-2015/the-rubber-duck-convoy-to-roanoke/scene-1-the-call-and-the-u-s-11-detour": {
+    "/aubrie/spring-semester-2015/the-stalker-at-the-desk-the-hotel-at-poly/scene-1-the-investigator-at-the-front-desk": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Call and the U.S. 11 Detour",
+        "title": "Scene 1: The Investigator at the Front Desk",
         "theme": "raggiesoft-books",
         "filePath": "e003/c008/s001.md"
     },
-    "/aubrie/spring-semester-2015/the-rubber-duck-convoy-to-roanoke/scene-2-dr-hassan-and-the-virtual-fortress": {
+    "/aubrie/spring-semester-2015/the-stalker-at-the-desk-the-hotel-at-poly/scene-2-the-war-council-and-the-hotel-at-poly": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Dr. Hassan and the Virtual Fortress",
+        "title": "Scene 2: The War Council and The Hotel at Poly",
         "theme": "raggiesoft-books",
         "filePath": "e003/c008/s002.md"
-    },
-    "/aubrie/spring-semester-2015/open-heart-and-the-silent-vigil": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Open Heart and the Silent Vigil",
-        "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|8"
-    },
-    "/aubrie/spring-semester-2015/open-heart-and-the-silent-vigil/scene-1-the-6-00-am-roll-out": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The 6:00 AM Roll-Out",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c009/s001.md"
-    },
-    "/aubrie/spring-semester-2015/open-heart-and-the-silent-vigil/scene-2-do-not-touch-him-the-cvicu-vigil": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Do Not Touch Him (The CVICU Vigil)",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c009/s002.md"
-    },
-    "/aubrie/spring-semester-2015/a-cvicu-romance-in-the-blizzard": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "A CVICU Romance in the Blizzard",
-        "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|9"
-    },
-    "/aubrie/spring-semester-2015/a-cvicu-romance-in-the-blizzard/scene-1-the-cpap-crisis-and-the-early-flakes": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The CPAP Crisis and the Early Flakes",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c010/s001.md"
-    },
-    "/aubrie/spring-semester-2015/a-cvicu-romance-in-the-blizzard/scene-2-parallel-sanctuaries-and-dinner-for-nine": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Parallel Sanctuaries and Dinner for Nine",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c010/s002.md"
-    },
-    "/aubrie/spring-semester-2015/a-cvicu-romance-in-the-blizzard/scene-3-a-cvicu-romance-intimacy-v2": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A CVICU Romance (Intimacy v2)",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c010/s003.md"
-    },
-    "/aubrie/spring-semester-2015/a-cvicu-romance-in-the-blizzard/scene-4-the-diuretic-and-the-two-hour-interrupts": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Diuretic and the Two-Hour Interrupts",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c010/s004.md"
-    },
-    "/aubrie/spring-semester-2015/the-figure-eight-lap-and-a-sister-s-love": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Figure-Eight Lap and 'A Sister's Love'",
-        "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|10"
-    },
-    "/aubrie/spring-semester-2015/the-figure-eight-lap-and-a-sister-s-love/scene-1-soft-cardiac-breakfast-and-the-figure-eight-lap": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Soft Cardiac Breakfast and the Figure-Eight Lap",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c011/s001.md"
-    },
-    "/aubrie/spring-semester-2015/the-figure-eight-lap-and-a-sister-s-love/scene-2-vocalizing-a-sister-s-love": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Vocalizing 'A Sister's Love'",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c011/s002.md"
-    },
-    "/aubrie/spring-semester-2015/four-pounds-down": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Four Pounds Down",
-        "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|11"
-    },
-    "/aubrie/spring-semester-2015/four-pounds-down/scene-1-four-pounds-down-and-the-highway-thaw": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Four Pounds Down and the Highway Thaw",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c012/s001.md"
-    },
-    "/aubrie/spring-semester-2015/the-discharge-argument-and-the-basement-sanctuary": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Discharge Argument and the Basement Sanctuary",
-        "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|12"
-    },
-    "/aubrie/spring-semester-2015/the-discharge-argument-and-the-basement-sanctuary/scene-1-the-discharge-argument": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Discharge Argument",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c013/s001.md"
-    },
-    "/aubrie/spring-semester-2015/the-discharge-argument-and-the-basement-sanctuary/scene-2-sternal-precautions-and-the-recovery-protocol": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Sternal Precautions and the Recovery Protocol",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c013/s002.md"
-    },
-    "/aubrie/spring-semester-2015/work-buddies-and-the-pact-of-six": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Work Buddies and the Pact of Six",
-        "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|13"
-    },
-    "/aubrie/spring-semester-2015/work-buddies-and-the-pact-of-six/scene-1-work-buddies-in-the-basement": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Work Buddies in the Basement",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c014/s001.md"
-    },
-    "/aubrie/spring-semester-2015/work-buddies-and-the-pact-of-six/scene-2-the-pact-of-six-on-the-table": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Pact of Six on the Table",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c014/s002.md"
-    },
-    "/aubrie/spring-semester-2015/the-accessibility-project": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Accessibility Project",
-        "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|14"
-    },
-    "/aubrie/spring-semester-2015/the-accessibility-project/scene-1-a-student-and-a-man-mapping-the-unseen-campus": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Student and a Man: Mapping the Unseen Campus",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c015/s001.md"
-    },
-    "/aubrie/spring-semester-2015/three-hundred-and-fifty-pounds-of-freedom": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Three Hundred and Fifty Pounds of Freedom",
-        "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|15"
-    },
-    "/aubrie/spring-semester-2015/three-hundred-and-fifty-pounds-of-freedom/scene-1-the-first-outing-at-the-smokin-anvil": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The First Outing at The Smokin' Anvil",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c016/s001.md"
-    },
-    "/aubrie/spring-semester-2015/three-hundred-and-fifty-pounds-of-freedom/scene-2-three-hundred-and-fifty-pounds-of-freedom": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Three Hundred and Fifty Pounds of Freedom",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c016/s002.md"
-    },
-    "/aubrie/spring-semester-2015/guardianship-the-summons": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Guardianship: The Summons",
-        "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|16"
-    },
-    "/aubrie/spring-semester-2015/guardianship-the-summons/scene-1-kelsey-s-office-at-three-o-clock": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Kelsey's Office at Three O'Clock",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c017/s001.md"
-    },
-    "/aubrie/spring-semester-2015/guardianship-the-summons/scene-2-the-war-council-and-the-hotel-at-poly": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The War Council and the Hotel at Poly",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c017/s002.md"
-    },
-    "/aubrie/spring-semester-2015/the-guardian-s-assessment-and-the-breaking-point": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Guardian's Assessment and the Breaking Point",
-        "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|17"
-    },
-    "/aubrie/spring-semester-2015/the-guardian-s-assessment-and-the-breaking-point/scene-1-the-guardian-s-assessment-ms-anya-sharma": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Guardian's Assessment (Ms. Anya Sharma)",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c018/s001.md"
-    },
-    "/aubrie/spring-semester-2015/the-guardian-s-assessment-and-the-breaking-point/scene-2-cardiac-rehab-the-breaking-point": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Cardiac Rehab (The Breaking Point)",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c018/s002.md"
     },
     "/aubrie/spring-semester-2015/the-bluewater-bunker": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bluewater Bunker",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|18"
+        "filePath": "__CHAP_TOC__|2|8"
     },
-    "/aubrie/spring-semester-2015/the-bluewater-bunker/scene-1-sanctuary-compromised": {
+    "/aubrie/spring-semester-2015/the-bluewater-bunker/scene-1-sanctuary-compromised-the-rubber-duck-convoy-to-bluewater": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Sanctuary Compromised",
+        "title": "Scene 1: Sanctuary Compromised (The Rubber Duck Convoy to Bluewater)",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c019/s001.md"
+        "filePath": "e003/c009/s001.md"
     },
     "/aubrie/spring-semester-2015/the-bluewater-bunker/scene-2-making-it-work-in-bluewater": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 2: Making It Work in Bluewater",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c019/s002.md"
+        "filePath": "e003/c009/s002.md"
     },
-    "/aubrie/spring-semester-2015/lessons-from-a-fellow-traveler": {
+    "/aubrie/spring-semester-2015/the-bluewater-bunker/scene-3-lessons-from-a-fellow-traveler-and-the-heart-hum": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Lessons from a Fellow Traveler",
+        "title": "Scene 3: Lessons from a Fellow Traveler and the Heart-Hum",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|19"
+        "filePath": "e003/c009/s003.md"
     },
-    "/aubrie/spring-semester-2015/lessons-from-a-fellow-traveler/scene-1-lessons-from-a-fellow-traveler-and-the-heart-hum-name": {
+    "/aubrie/spring-semester-2015/a-new-dawn-a-new-ride-the-s-s-freedom": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Lessons from a Fellow Traveler and the Heart-Hum Name",
+        "title": "A New Dawn, A New Ride (The S.S. Freedom)",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c020/s001.md"
+        "filePath": "__CHAP_TOC__|2|9"
     },
-    "/aubrie/spring-semester-2015/the-rubber-duck-convoy-on-u-s-58": {
+    "/aubrie/spring-semester-2015/a-new-dawn-a-new-ride-the-s-s-freedom/scene-1-three-hundred-and-fifty-pounds-of-freedom": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Rubber Duck Convoy on U.S. 58",
+        "title": "Scene 1: Three Hundred and Fifty Pounds of Freedom",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|20"
+        "filePath": "e003/c010/s001.md"
     },
-    "/aubrie/spring-semester-2015/the-rubber-duck-convoy-on-u-s-58/scene-1-the-rubber-duck-convoy-on-u-s-58": {
+    "/aubrie/spring-semester-2015/a-new-dawn-a-new-ride-the-s-s-freedom/scene-2-maiden-voyage-of-the-s-s-freedom-and-the-kuiper-belt": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Rubber Duck Convoy on U.S. 58",
+        "title": "Scene 2: Maiden Voyage of the S.S. Freedom and the Kuiper Belt",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c021/s001.md"
+        "filePath": "e003/c010/s002.md"
     },
-    "/aubrie/spring-semester-2015/dismissed-with-prejudice": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Dismissed with Prejudice",
-        "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|21"
-    },
-    "/aubrie/spring-semester-2015/dismissed-with-prejudice/scene-1-sixteen-strong-in-the-gallery-dismissed-with-prejudice": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Sixteen Strong in the Gallery (Dismissed with Prejudice)",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c022/s001.md"
-    },
-    "/aubrie/spring-semester-2015/dismissed-with-prejudice/scene-2-u-s-460-west-and-the-price-of-malice": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: U.S. 460 West and the Price of Malice",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c022/s002.md"
-    },
-    "/aubrie/spring-semester-2015/the-s-s-freedom-returns-to-campus": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The S.S. Freedom Returns to Campus",
-        "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|22"
-    },
-    "/aubrie/spring-semester-2015/the-s-s-freedom-returns-to-campus/scene-1-maiden-voyage-of-the-s-s-freedom": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Maiden Voyage of the S.S. Freedom",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c023/s001.md"
-    },
-    "/aubrie/spring-semester-2015/the-s-s-freedom-returns-to-campus/scene-2-allies-in-the-lecture-hall-and-the-kuiper-belt": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Allies in the Lecture Hall and the Kuiper Belt",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c023/s002.md"
-    },
-    "/aubrie/spring-semester-2015/the-s-s-freedom-returns-to-campus/scene-3-the-food-court-affirmation-and-the-night-of-the-pact": {
+    "/aubrie/spring-semester-2015/a-new-dawn-a-new-ride-the-s-s-freedom/scene-3-the-food-court-affirmation-and-the-night-of-the-pact": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 3: The Food Court Affirmation and the Night of the Pact",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c023/s003.md"
+        "filePath": "e003/c010/s003.md"
     },
-    "/aubrie/spring-semester-2015/starting-a-revolution-in-walton-hall": {
+    "/aubrie/spring-semester-2015/closing-the-old-lady-ready-for-the-world": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Starting a Revolution in Walton Hall",
+        "title": "Closing the Old Lady & Ready for the World",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|23"
+        "filePath": "__CHAP_TOC__|2|10"
     },
-    "/aubrie/spring-semester-2015/starting-a-revolution-in-walton-hall/scene-1-starting-a-revolution-in-walton-hall": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Starting a Revolution in Walton Hall",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c024/s001.md"
-    },
-    "/aubrie/spring-semester-2015/goodbye-to-the-old-lady": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Goodbye to the Old Lady",
-        "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|24"
-    },
-    "/aubrie/spring-semester-2015/goodbye-to-the-old-lady/scene-1-stripping-room-214": {
+    "/aubrie/spring-semester-2015/closing-the-old-lady-ready-for-the-world/scene-1-stripping-room-214": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 1: Stripping Room 214",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c025/s001.md"
+        "filePath": "e003/c011/s001.md"
     },
-    "/aubrie/spring-semester-2015/goodbye-to-the-old-lady/scene-2-a-very-long-hug-in-the-second-floor-hallway": {
+    "/aubrie/spring-semester-2015/closing-the-old-lady-ready-for-the-world/scene-2-a-very-long-hug-in-the-second-floor-hallway": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 2: A Very Long Hug in the Second-Floor Hallway",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c025/s002.md"
+        "filePath": "e003/c011/s002.md"
     },
-    "/aubrie/spring-semester-2015/goodbye-to-the-old-lady/scene-3-the-eleventh-child-ready-for-the-world": {
+    "/aubrie/spring-semester-2015/closing-the-old-lady-ready-for-the-world/scene-3-the-eleventh-child-ready-for-the-world": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 3: The Eleventh Child: Ready for the World",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c025/s003.md"
+        "filePath": "e003/c011/s003.md"
     },
     "/aubrie/jordan-s-world-trek": {
         "view": "pages/raggiesoft-books/books/viewer",
