@@ -147,14 +147,40 @@ class StardustParsedown extends Parsedown {
         
         $firstLine = $Block['element']['handler']['argument'][0];
         
-        // Check if the blockquote starts with **From:** to format it as a Corporate Email
-        if (strpos($firstLine, '**From:**') === 0) {
-            $Block['element']['name'] = 'div';
-            $Block['element']['attributes'] = [
-                'class' => 'card bg-base-200 border border-base-300 shadow-sm my-4 w-100'
+        // Check if the blockquote starts with **From:** or **To:** to format it as a Corporate Email
+        // IMPORTANT AST NOTE: Never prepend raw `<div>` HTML strings into `$Block['element']['handler']['argument']`,
+        // because Parsedown's `blockMarkup` will treat the `<div>` line and all contiguous following lines (`**From:**`,
+        // `**To:**`, etc.) as raw HTML without parsing inline Markdown (`**bold**`, `*italics*`, `` `code` ``).
+        // Instead, construct the `.card-header` and `.card-body` as structured Parsedown AST child `elements`.
+        if (strpos($firstLine, '**From:**') === 0 || strpos($firstLine, '**To:**') === 0) {
+            $innerLines = $Block['element']['handler']['argument'];
+            $Block['element'] = [
+                'name' => 'div',
+                'attributes' => [
+                    'class' => 'card bg-base-200 border border-base-300 shadow-sm my-4 w-100'
+                ],
+                'elements' => [
+                    [
+                        'name' => 'div',
+                        'attributes' => [
+                            'class' => 'card-header px-4 py-2 border-b border-base-300',
+                            'style' => 'font-size: 0.85em; text-transform: uppercase; font-weight: bold; opacity: 0.7;'
+                        ],
+                        'rawHtml' => '<i class="ph-duotone ph-envelope" style="margin-right: 8px;"></i> Secure Corporate Transmission'
+                    ],
+                    [
+                        'name' => 'div',
+                        'attributes' => [
+                            'class' => 'card-body p-4'
+                        ],
+                        'handler' => [
+                            'function' => 'linesElements',
+                            'argument' => $innerLines,
+                            'destination' => 'elements'
+                        ]
+                    ]
+                ]
             ];
-            array_unshift($Block['element']['handler']['argument'], '<div class="card-header px-4 py-2 border-b border-base-300" style="font-size: 0.85em; text-transform: uppercase; font-weight: bold; opacity: 0.7;"><i class="ph-duotone ph-envelope" style="margin-right: 8px;"></i> Secure Corporate Transmission</div><div class="card-body p-4">');
-            array_push($Block['element']['handler']['argument'], '</div>');
             return $Block;
         }
         
