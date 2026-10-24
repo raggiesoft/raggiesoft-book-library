@@ -1998,34 +1998,40 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|0"
     },
-    "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-1-the-final-briefing": {
+    "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-1-the-first-in-person-gal-interview": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Final Briefing",
+        "title": "Scene 1: The First In-Person GAL Interview",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/s001.md"
     },
-    "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-2-the-phalanx-and-the-gavel": {
+    "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-2-the-phalanx-the-rule-on-witnesses-and-the-gavel": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Phalanx and The Gavel",
+        "title": "Scene 2: The Phalanx, The Rule on Witnesses, and The Gavel",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/s002.md"
     },
-    "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-3-the-evidentiary-phase": {
+    "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-3-the-institutional-shield-ms-higgins-and-kelsey-brennan": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Evidentiary Phase",
+        "title": "Scene 3: The Institutional Shield: Ms. Higgins and Kelsey Brennan",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/s003.md"
     },
-    "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-4-the-closing-argument": {
+    "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-4-the-floor-advisors-isabel-dawson-and-henry-walsh": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Closing Argument",
+        "title": "Scene 4: The Floor Advisors: Isabel Dawson and Henry Walsh",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/s004.md"
     },
-    "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-5-the-gavel-and-the-handcuffs": {
+    "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-5-the-benefactor-and-the-outback-daniel-brooks-and-jessica-gallagher": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Gavel and The Handcuffs",
+        "title": "Scene 5: The Benefactor and The Outback: Daniel Brooks and Jessica Gallagher",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/s005.md"
+    },
+    "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-6-the-closing-argument-the-gavel-and-the-handcuffs": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 6: The Closing Argument, The Gavel, and The Handcuffs",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c001/s006.md"
     }
 }
