@@ -14,12 +14,12 @@
         "ebook_sizes": {
             "epub": "36.7 MB",
             "pdf": "17.4 MB",
-            "text_epub": "858 KB",
-            "text_pdf": "3.2 MB",
-            "epub_bytes": 38457514,
-            "pdf_bytes": 18199455,
-            "text_epub_bytes": 878859,
-            "text_pdf_bytes": 3389822
+            "text_epub": "865 KB",
+            "text_pdf": "3.3 MB",
+            "epub_bytes": 38464365,
+            "pdf_bytes": 18220630,
+            "text_epub_bytes": 885716,
+            "text_pdf_bytes": 3410482
         }
     },
     "/aubrie": {
@@ -2392,6 +2392,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e006/c001/s003.md"
     },
+    "/aubrie/fall-semester-2015/the-5-45-am-problem-the-new-normal-6-00-am/scene-4-the-sociology-fortress-walton-hall": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 4: The Sociology Fortress (Walton Hall)",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c001/s004.md"
+    },
     "/aubrie/fall-semester-2015/question-the-rules-the-birth-of-fin": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Question The Rules: The Birth of Fin#",
@@ -2416,250 +2422,646 @@
         "theme": "raggiesoft-books",
         "filePath": "e006/c003/s001.md"
     },
-    "/aubrie/fall-semester-2015/home-on-geneva-street-the-paper-invasion-fall-break": {
+    "/aubrie/fall-semester-2015/one-week-to-process-the-shot-depo-vanguard-150/scene-2-updating-the-household-medical-registry": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Home on Geneva Street, The Paper Invasion & Fall Break",
+        "title": "Scene 2: Updating the Household Medical Registry",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c003/s002.md"
+    },
+    "/aubrie/fall-semester-2015/home-on-geneva-street": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Home on Geneva Street",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|3"
     },
-    "/aubrie/fall-semester-2015/home-on-geneva-street-the-paper-invasion-fall-break/scene-1-home-on-geneva-street": {
+    "/aubrie/fall-semester-2015/home-on-geneva-street/scene-1-home-on-geneva-street": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 1: Home on Geneva Street",
         "theme": "raggiesoft-books",
         "filePath": "e006/c004/s001.md"
     },
-    "/aubrie/fall-semester-2015/home-on-geneva-street-the-paper-invasion-fall-break/scene-2-the-paper-invasion-cp87a": {
+    "/aubrie/fall-semester-2015/the-paper-invasion-notice-cp87a": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Paper Invasion (CP87A)",
+        "title": "The Paper Invasion (Notice CP87A)",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c004/s002.md"
+        "filePath": "__CHAP_TOC__|5|4"
     },
-    "/aubrie/fall-semester-2015/home-on-geneva-street-the-paper-invasion-fall-break/scene-3-fall-break-2015-the-i-64-gauntlet-the-leviathan-cut": {
+    "/aubrie/fall-semester-2015/the-paper-invasion-notice-cp87a/scene-1-the-envelope-on-the-table": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Fall Break 2015: The I-64 Gauntlet & The Leviathan Cut",
+        "title": "Scene 1: The Envelope on the Table",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c004/s003.md"
+        "filePath": "e006/c005/s001.md"
+    },
+    "/aubrie/fall-semester-2015/the-paper-invasion-notice-cp87a/scene-2-notice-cp87a-the-paper-invasion": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: Notice CP87A (The Paper Invasion)",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c005/s002.md"
+    },
+    "/aubrie/fall-semester-2015/fall-break-2015-the-i-64-gauntlet-the-autumn-fever": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Fall Break 2015: The I-64 Gauntlet & The Autumn Fever",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|5"
+    },
+    "/aubrie/fall-semester-2015/fall-break-2015-the-i-64-gauntlet-the-autumn-fever/scene-1-the-i-64-concurrency-the-rocket-burger-abort": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The I-64 Concurrency & The Rocket Burger Abort",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c006/s001.md"
+    },
+    "/aubrie/fall-semester-2015/fall-break-2015-the-i-64-gauntlet-the-autumn-fever/scene-2-the-100-1-f-fever-the-aethelian-tome-box-set": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The 100.1\u00b0F Fever & The Aethelian Tome Box Set",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c006/s002.md"
+    },
+    "/aubrie/fall-semester-2015/the-leviathan-cut-twelve-hours-in-aethel": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Leviathan Cut (Twelve Hours in Aethel)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|6"
+    },
+    "/aubrie/fall-semester-2015/the-leviathan-cut-twelve-hours-in-aethel/scene-1-the-leviathan-cut-12-hours-and-21-minutes": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Leviathan Cut (12 Hours and 21 Minutes)",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c007/s001.md"
     },
     "/aubrie/fall-semester-2015/friday-9-32-am-the-broken-foundation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Friday, 9:32 AM (The Broken Foundation)",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|5|4"
+        "filePath": "__CHAP_TOC__|5|7"
     },
     "/aubrie/fall-semester-2015/friday-9-32-am-the-broken-foundation/scene-1-friday-9-32-am-the-attack": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 1: Friday, 9:32 AM (The Attack)",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c005/s001.md"
-    },
-    "/aubrie/fall-semester-2015/friday-9-32-am-the-broken-foundation/scene-2-massive-stemi-the-extrication-the-wrong-bus": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Massive STEMI: The Extrication & The Wrong Bus",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c005/s002.md"
-    },
-    "/aubrie/fall-semester-2015/friday-9-32-am-the-broken-foundation/scene-3-the-emergency-room-the-nuclear-medicine-lab": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Emergency Room & The Nuclear Medicine Lab",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c005/s003.md"
-    },
-    "/aubrie/fall-semester-2015/the-longest-night-npo-the-failed-angioplasty": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Longest Night (NPO & The Failed Angioplasty)",
-        "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|5|5"
-    },
-    "/aubrie/fall-semester-2015/the-longest-night-npo-the-failed-angioplasty/scene-1-the-transfer-npo-and-the-fork-in-the-road": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Transfer, NPO, and the Fork in the Road",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s001.md"
-    },
-    "/aubrie/fall-semester-2015/the-longest-night-npo-the-failed-angioplasty/scene-2-the-red-line-and-the-cath-lab": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Red Line and the Cath Lab",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s002.md"
-    },
-    "/aubrie/fall-semester-2015/the-longest-night-npo-the-failed-angioplasty/scene-3-99-calcified-the-failed-angioplasty": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: 99% Calcified: The Failed Angioplasty",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s003.md"
-    },
-    "/aubrie/fall-semester-2015/the-longest-night-npo-the-failed-angioplasty/scene-4-the-longest-night-the-fifteen-minute-torture": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Longest Night & The Fifteen-Minute Torture",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s004.md"
-    },
-    "/aubrie/fall-semester-2015/the-longest-night-npo-the-failed-angioplasty/scene-5-the-saturday-sunday-watches-forty-eight-hours-npo": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Saturday & Sunday Watches (Forty-Eight Hours NPO)",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s005.md"
-    },
-    "/aubrie/fall-semester-2015/the-longest-night-npo-the-failed-angioplasty/scene-6-the-call-from-star-city-the-route-11-diversion": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Call from Star City & The Route 11 Diversion",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s006.md"
-    },
-    "/aubrie/fall-semester-2015/the-roanoke-fortress": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Roanoke Fortress",
-        "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|5|6"
-    },
-    "/aubrie/fall-semester-2015/the-roanoke-fortress/scene-1-arrival-at-star-city-the-surgeon-s-briefing": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Arrival at Star City & The Surgeon's Briefing",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c007/s001.md"
-    },
-    "/aubrie/fall-semester-2015/the-roanoke-fortress/scene-2-the-theatrical-cut-the-virtual-fortress": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Theatrical Cut & The Virtual Fortress",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c007/s002.md"
-    },
-    "/aubrie/fall-semester-2015/the-roanoke-fortress/scene-3-the-6-00-am-pre-op-goodbye-the-ten-hour-wait": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The 6:00 AM Pre-Op Goodbye & The Ten-Hour Wait",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c007/s003.md"
-    },
-    "/aubrie/fall-semester-2015/waking-up-the-blizzard-fortress-a-cvicu-romance": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Waking Up & The Blizzard Fortress (A CVICU Romance)",
-        "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|5|7"
-    },
-    "/aubrie/fall-semester-2015/waking-up-the-blizzard-fortress-a-cvicu-romance/scene-1-the-cpap-crisis-the-early-arrival": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The CPAP Crisis & The Early Arrival",
-        "theme": "raggiesoft-books",
         "filePath": "e006/c008/s001.md"
     },
-    "/aubrie/fall-semester-2015/waking-up-the-blizzard-fortress-a-cvicu-romance/scene-2-a-cvicu-romance-protocol-intimacy-v2": {
+    "/aubrie/fall-semester-2015/friday-9-32-am-the-broken-foundation/scene-2-massive-stemi-the-extrication": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A CVICU Romance (Protocol: Intimacy.v2)",
+        "title": "Scene 2: Massive STEMI: The Extrication",
         "theme": "raggiesoft-books",
         "filePath": "e006/c008/s002.md"
     },
-    "/aubrie/fall-semester-2015/waking-up-the-blizzard-fortress-a-cvicu-romance/scene-3-the-psychological-deadlock-the-bed-scale-the-discharge-argument": {
+    "/aubrie/fall-semester-2015/friday-9-32-am-the-broken-foundation/scene-3-the-ambulance-ride-running-hot": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Psychological Deadlock, The Bed Scale, & The Discharge Argument",
+        "title": "Scene 3: The Ambulance Ride (Running Hot)",
         "theme": "raggiesoft-books",
         "filePath": "e006/c008/s003.md"
     },
-    "/aubrie/fall-semester-2015/home-recovery-a-thanksgiving-of-victories": {
+    "/aubrie/fall-semester-2015/friday-9-32-am-the-broken-foundation/scene-4-the-wrong-bus-on-commonwealth-mall": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Home Recovery & A Thanksgiving of Victories",
+        "title": "Scene 4: The Wrong Bus on Commonwealth Mall",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c008/s004.md"
+    },
+    "/aubrie/fall-semester-2015/friday-9-32-am-the-broken-foundation/scene-5-the-emergency-room-cardiac-trauma-bay-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 5: The Emergency Room (Cardiac Trauma Bay 3)",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c008/s005.md"
+    },
+    "/aubrie/fall-semester-2015/friday-9-32-am-the-broken-foundation/scene-6-the-nuclear-medicine-lab-the-agonizing-wait": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 6: The Nuclear Medicine Lab & The Agonizing Wait",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c008/s006.md"
+    },
+    "/aubrie/fall-semester-2015/the-fork-in-the-road-the-failed-angioplasty": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Fork in the Road & The Failed Angioplasty",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|8"
     },
-    "/aubrie/fall-semester-2015/home-recovery-a-thanksgiving-of-victories/scene-1-return-to-the-sanctuary-the-sternal-meltdown": {
+    "/aubrie/fall-semester-2015/the-fork-in-the-road-the-failed-angioplasty/scene-1-the-transfer-to-the-third-floor": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Return to the Sanctuary & The Sternal Meltdown",
+        "title": "Scene 1: The Transfer to the Third Floor",
         "theme": "raggiesoft-books",
         "filePath": "e006/c009/s001.md"
     },
-    "/aubrie/fall-semester-2015/home-recovery-a-thanksgiving-of-victories/scene-2-the-parents-watch-monday-tuesday": {
+    "/aubrie/fall-semester-2015/the-fork-in-the-road-the-failed-angioplasty/scene-2-room-312-strict-npo": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Parents' Watch (Monday & Tuesday)",
+        "title": "Scene 2: Room 312 (Strict NPO)",
         "theme": "raggiesoft-books",
         "filePath": "e006/c009/s002.md"
     },
-    "/aubrie/fall-semester-2015/home-recovery-a-thanksgiving-of-victories/scene-3-a-heart-healthy-thanksgiving-the-slammed-door-goodbye-alex": {
+    "/aubrie/fall-semester-2015/the-fork-in-the-road-the-failed-angioplasty/scene-3-the-fork-in-the-road": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A Heart-Healthy Thanksgiving & The Slammed Door (Goodbye, Alex)",
+        "title": "Scene 3: The Fork in the Road",
         "theme": "raggiesoft-books",
         "filePath": "e006/c009/s003.md"
     },
-    "/aubrie/fall-semester-2015/home-recovery-a-thanksgiving-of-victories/scene-4-the-black-friday-road-trip-the-caregiver-handoff": {
+    "/aubrie/fall-semester-2015/the-fork-in-the-road-the-failed-angioplasty/scene-4-a-brother-s-warning-a-family-s-vow": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Black Friday Road Trip & The Caregiver Handoff",
+        "title": "Scene 4: A Brother's Warning, A Family's Vow",
         "theme": "raggiesoft-books",
         "filePath": "e006/c009/s004.md"
+    },
+    "/aubrie/fall-semester-2015/the-fork-in-the-road-the-failed-angioplasty/scene-5-megan-s-supply-run-the-cpi-reinforcements": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 5: Megan's Supply Run & The CPI Reinforcements",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c009/s005.md"
+    },
+    "/aubrie/fall-semester-2015/the-fork-in-the-road-the-failed-angioplasty/scene-6-the-red-line": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 6: The Red Line",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c009/s006.md"
+    },
+    "/aubrie/fall-semester-2015/the-fork-in-the-road-the-failed-angioplasty/scene-7-inside-the-cardiac-catheterization-lab": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 7: Inside the Cardiac Catheterization Lab",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c009/s007.md"
+    },
+    "/aubrie/fall-semester-2015/the-fork-in-the-road-the-failed-angioplasty/scene-8-waking-in-the-cath-lab": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 8: Waking in the Cath Lab",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c009/s008.md"
+    },
+    "/aubrie/fall-semester-2015/the-fork-in-the-road-the-failed-angioplasty/scene-9-99-calcified-the-failed-angioplasty": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 9: 99% Calcified: The Failed Angioplasty",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c009/s009.md"
+    },
+    "/aubrie/fall-semester-2015/the-fork-in-the-road-the-failed-angioplasty/scene-10-the-verdict-open-heart-bypass": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 10: The Verdict (Open-Heart Bypass)",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c009/s010.md"
+    },
+    "/aubrie/fall-semester-2015/the-fork-in-the-road-the-failed-angioplasty/scene-11-the-longest-wait": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 11: The Longest Wait",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c009/s011.md"
+    },
+    "/aubrie/fall-semester-2015/the-fork-in-the-road-the-failed-angioplasty/scene-12-the-first-watch": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 12: The First Watch",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c009/s012.md"
+    },
+    "/aubrie/fall-semester-2015/the-fork-in-the-road-the-failed-angioplasty/scene-13-the-midnight-vitals-check": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 13: The Midnight Vitals Check",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c009/s013.md"
+    },
+    "/aubrie/fall-semester-2015/the-fifteen-minute-torture-the-saturday-watch": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Fifteen-Minute Torture & The Saturday Watch",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|9"
+    },
+    "/aubrie/fall-semester-2015/the-fifteen-minute-torture-the-saturday-watch/scene-1-the-fifteen-minute-torture-weaning-the-radial-band": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Fifteen-Minute Torture (Weaning the Radial Band)",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c010/s001.md"
+    },
+    "/aubrie/fall-semester-2015/the-fifteen-minute-torture-the-saturday-watch/scene-2-the-6-00-am-vitals-check": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The 6:00 AM Vitals Check",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c010/s002.md"
+    },
+    "/aubrie/fall-semester-2015/the-fifteen-minute-torture-the-saturday-watch/scene-3-the-saturday-shift-change": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: The Saturday Shift Change",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c010/s003.md"
+    },
+    "/aubrie/fall-semester-2015/the-fifteen-minute-torture-the-saturday-watch/scene-4-the-longest-day-thirty-six-hours-npo": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 4: The Longest Day (Thirty-Six Hours NPO)",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c010/s004.md"
+    },
+    "/aubrie/fall-semester-2015/the-fifteen-minute-torture-the-saturday-watch/scene-5-the-second-watch-madison-s-vigil": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 5: The Second Watch (Madison's Vigil)",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c010/s005.md"
+    },
+    "/aubrie/fall-semester-2015/the-call-from-star-city-the-roanoke-fortress": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Call from Star City & The Roanoke Fortress",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|10"
+    },
+    "/aubrie/fall-semester-2015/the-call-from-star-city-the-roanoke-fortress/scene-1-the-sunday-wait-forty-eight-hours-npo": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Sunday Wait (Forty-Eight Hours NPO)",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c011/s001.md"
+    },
+    "/aubrie/fall-semester-2015/the-call-from-star-city-the-roanoke-fortress/scene-2-the-call-from-star-city": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The Call from Star City",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c011/s002.md"
+    },
+    "/aubrie/fall-semester-2015/the-call-from-star-city-the-roanoke-fortress/scene-3-the": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: The \\",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c011/s003.md"
+    },
+    "/aubrie/fall-semester-2015/the-call-from-star-city-the-roanoke-fortress/scene-4-the-u-s-route-11-diversion": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 4: The U.S. Route 11 Diversion",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c011/s004.md"
+    },
+    "/aubrie/fall-semester-2015/the-call-from-star-city-the-roanoke-fortress/scene-5-arrival-at-star-city-general-hospital": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 5: Arrival at Star City General Hospital",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c011/s005.md"
+    },
+    "/aubrie/fall-semester-2015/the-call-from-star-city-the-roanoke-fortress/scene-6-the-surgeon-s-briefing-dr-tariq-hassan": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 6: The Surgeon's Briefing (Dr. Tariq Hassan)",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c011/s006.md"
+    },
+    "/aubrie/fall-semester-2015/the-call-from-star-city-the-roanoke-fortress/scene-7-the-theatrical-cut": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 7: The Theatrical Cut",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c011/s007.md"
+    },
+    "/aubrie/fall-semester-2015/the-call-from-star-city-the-roanoke-fortress/scene-8-the-virtual-fortress-zo-s-confession": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 8: The Virtual Fortress & Zo\u00eb's Confession",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c011/s008.md"
+    },
+    "/aubrie/fall-semester-2015/the-6-00-am-pre-op-goodbye-the-ten-hour-wait": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The 6:00 AM Pre-Op Goodbye & The Ten-Hour Wait",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|11"
+    },
+    "/aubrie/fall-semester-2015/the-6-00-am-pre-op-goodbye-the-ten-hour-wait/scene-1-the-pre-op-goodbye": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Pre-Op Goodbye",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c012/s001.md"
+    },
+    "/aubrie/fall-semester-2015/the-6-00-am-pre-op-goodbye-the-ten-hour-wait/scene-2-operating-room-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: Operating Room 2",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c012/s002.md"
+    },
+    "/aubrie/fall-semester-2015/the-6-00-am-pre-op-goodbye-the-ten-hour-wait/scene-3-ten-hours-later-cvicu-bay-4": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: Ten Hours Later: CVICU Bay 4 (\\",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c012/s003.md"
+    },
+    "/aubrie/fall-semester-2015/waking-up-the-cpap-crisis": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Waking Up: The CPAP Crisis",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|12"
+    },
+    "/aubrie/fall-semester-2015/waking-up-the-cpap-crisis/scene-1-the-cpap-crisis": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The CPAP Crisis",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c013/s001.md"
+    },
+    "/aubrie/fall-semester-2015/the-blizzard-fortress-a-cvicu-romance": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Blizzard Fortress & A CVICU Romance",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|13"
+    },
+    "/aubrie/fall-semester-2015/the-blizzard-fortress-a-cvicu-romance/scene-1-the-coming-storm-zo-s-early-arrival": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Coming Storm & Zo\u00eb's Early Arrival",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c014/s001.md"
+    },
+    "/aubrie/fall-semester-2015/the-blizzard-fortress-a-cvicu-romance/scene-2-the-incentive-spirometer-1-500-milliliters": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The Incentive Spirometer (1,500 Milliliters)",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c014/s002.md"
+    },
+    "/aubrie/fall-semester-2015/the-blizzard-fortress-a-cvicu-romance/scene-3-first-real-food-parallel-sanctuaries": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: First Real Food & Parallel Sanctuaries",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c014/s003.md"
+    },
+    "/aubrie/fall-semester-2015/the-blizzard-fortress-a-cvicu-romance/scene-4-a-cvicu-romance-protocol-intimacy-v2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 4: A CVICU Romance (Protocol: Intimacy.v2)",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c014/s004.md"
+    },
+    "/aubrie/fall-semester-2015/the-psychological-deadlock-the-bed-scale": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Psychological Deadlock & The Bed Scale",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|14"
+    },
+    "/aubrie/fall-semester-2015/the-psychological-deadlock-the-bed-scale/scene-1-the-diuretic-the-psychological-deadlock": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Diuretic & The Psychological Deadlock",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c015/s001.md"
+    },
+    "/aubrie/fall-semester-2015/the-psychological-deadlock-the-bed-scale/scene-2-protocol-change-ensuite-the-bed-scale-338-0-lbs": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: Protocol.Change(EnSuite) & The Bed Scale (338.0 lbs)",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c015/s002.md"
+    },
+    "/aubrie/fall-semester-2015/the-discharge-argument-return-to-the-sanctuary": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Discharge Argument & Return to the Sanctuary",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|15"
+    },
+    "/aubrie/fall-semester-2015/the-discharge-argument-return-to-the-sanctuary/scene-1-the-discharge-argument": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Discharge Argument",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c016/s001.md"
+    },
+    "/aubrie/fall-semester-2015/the-discharge-argument-return-to-the-sanctuary/scene-2-return-to-the-sanctuary-the-sternal-meltdown": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: Return to the Sanctuary & The Sternal Meltdown",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c016/s002.md"
+    },
+    "/aubrie/fall-semester-2015/the-discharge-argument-return-to-the-sanctuary/scene-3-the-washing-protocol-the-one-partner-rule": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: The Washing Protocol & The One-Partner Rule",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c016/s003.md"
+    },
+    "/aubrie/fall-semester-2015/the-parents-watch": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Parents' Watch",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|16"
+    },
+    "/aubrie/fall-semester-2015/the-parents-watch/scene-1-the-parents-watch": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Parents' Watch",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c017/s001.md"
+    },
+    "/aubrie/fall-semester-2015/a-thanksgiving-of-victories-the-slammed-door": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Thanksgiving of Victories & The Slammed Door",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|17"
+    },
+    "/aubrie/fall-semester-2015/a-thanksgiving-of-victories-the-slammed-door/scene-1-a-heart-healthy-thanksgiving-feast": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: A Heart-Healthy Thanksgiving Feast",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c018/s001.md"
+    },
+    "/aubrie/fall-semester-2015/a-thanksgiving-of-victories-the-slammed-door/scene-2-the-slammed-door-goodbye-alex": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The Slammed Door (Goodbye, Alex)",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c018/s002.md"
+    },
+    "/aubrie/fall-semester-2015/the-black-friday-road-trip": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Black Friday Road Trip",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|18"
+    },
+    "/aubrie/fall-semester-2015/the-black-friday-road-trip/scene-1-the-black-friday-compromise-scenic-road-trip": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Black Friday Compromise & Scenic Road Trip",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c019/s001.md"
+    },
+    "/aubrie/fall-semester-2015/the-academic-physical-counter-attack": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Academic & Physical Counter-Attack",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|19"
+    },
+    "/aubrie/fall-semester-2015/the-academic-physical-counter-attack/scene-1-the-academic-physical-counter-attack": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Academic & Physical Counter-Attack",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c020/s001.md"
+    },
+    "/aubrie/fall-semester-2015/the-caregiver-handoff-enter-megan": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Caregiver Handoff (Enter Megan)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|20"
+    },
+    "/aubrie/fall-semester-2015/the-caregiver-handoff-enter-megan/scene-1-the-caregiver-handoff-enter-megan": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Caregiver Handoff (Enter Megan)",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c021/s001.md"
     },
     "/aubrie/fall-semester-2015/a-new-caregiver-a-new-routine-megan-s-watch": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Caregiver, A New Routine (Megan's Watch)",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|5|9"
+        "filePath": "__CHAP_TOC__|5|21"
     },
-    "/aubrie/fall-semester-2015/a-new-caregiver-a-new-routine-megan-s-watch/scene-1-the-5-15-am-handoff-the-morning-watch": {
+    "/aubrie/fall-semester-2015/a-new-caregiver-a-new-routine-megan-s-watch/scene-1-the-5-15-am-handoff": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The 5:15 AM Handoff & The Morning Watch",
+        "title": "Scene 1: The 5:15 AM Handoff",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c010/s001.md"
+        "filePath": "e006/c022/s001.md"
     },
-    "/aubrie/fall-semester-2015/a-new-caregiver-a-new-routine-megan-s-watch/scene-2-the-daytime-watch-the-single-lift-shower-midnight-butterflies": {
+    "/aubrie/fall-semester-2015/a-new-caregiver-a-new-routine-megan-s-watch/scene-2-the-morning-watch": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Daytime Watch, The Single-Lift Shower, & Midnight Butterflies",
+        "title": "Scene 2: The Morning Watch",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c010/s002.md"
+        "filePath": "e006/c022/s002.md"
     },
-    "/aubrie/fall-semester-2015/a-new-caregiver-a-new-routine-megan-s-watch/scene-3-work-buddies-the-eng-102-accessibility-proposal-explicit-permission": {
+    "/aubrie/fall-semester-2015/a-new-caregiver-a-new-routine-megan-s-watch/scene-3-the-daytime-watch-the-lunchtime-check-in": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Work Buddies, The ENG 102 Accessibility Proposal, & Explicit Permission",
+        "title": "Scene 3: The Daytime Watch & The Lunchtime Check-In",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c010/s003.md"
+        "filePath": "e006/c022/s003.md"
     },
-    "/aubrie/fall-semester-2015/a-new-caregiver-a-new-routine-megan-s-watch/scene-4-the-dream-of-the-future-the-smokin-anvil": {
+    "/aubrie/fall-semester-2015/a-new-caregiver-a-new-routine-megan-s-watch/scene-4-the-sister-s-watch": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Dream of the Future & The Smokin' Anvil",
+        "title": "Scene 4: The Sister's Watch",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c010/s004.md"
+        "filePath": "e006/c022/s004.md"
+    },
+    "/aubrie/fall-semester-2015/a-new-caregiver-a-new-routine-megan-s-watch/scene-5-the-single-lift-shower-late-night-butterflies": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 5: The Single-Lift Shower & Late-Night Butterflies",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c022/s005.md"
+    },
+    "/aubrie/fall-semester-2015/work-buddies": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Work Buddies",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|22"
+    },
+    "/aubrie/fall-semester-2015/work-buddies/scene-1-work-buddies-at-the-dining-table": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Work Buddies at the Dining Table",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c023/s001.md"
+    },
+    "/aubrie/fall-semester-2015/the-eng-102-accessibility-proposal-explicit-permission": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The ENG 102 Accessibility Proposal & Explicit Permission",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|23"
+    },
+    "/aubrie/fall-semester-2015/the-eng-102-accessibility-proposal-explicit-permission/scene-1-the-eng-102-campus-accessibility-map-proposal": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The ENG 102 Campus Accessibility Map Proposal",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c024/s001.md"
+    },
+    "/aubrie/fall-semester-2015/the-eng-102-accessibility-proposal-explicit-permission/scene-2-the-shower-protocol-explicit-permission": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The Shower Protocol & Explicit Permission",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c024/s002.md"
+    },
+    "/aubrie/fall-semester-2015/the-dream-of-the-future-the-smokin-anvil": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Dream of the Future & The Smokin' Anvil",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|24"
+    },
+    "/aubrie/fall-semester-2015/the-dream-of-the-future-the-smokin-anvil/scene-1-the-dream-of-the-future": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Dream of the Future",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c025/s001.md"
+    },
+    "/aubrie/fall-semester-2015/the-dream-of-the-future-the-smokin-anvil/scene-2-the-first-outing-breakfast-at-the-smokin-anvil": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The First Outing: Breakfast at The Smokin' Anvil",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c025/s002.md"
     },
     "/aubrie/fall-semester-2015/the-comeback-the-breaking-point": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Comeback & The Breaking Point",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|5|10"
+        "filePath": "__CHAP_TOC__|5|25"
     },
-    "/aubrie/fall-semester-2015/the-comeback-the-breaking-point/scene-1-the-return-to-campus-the-walton-hall-presentation": {
+    "/aubrie/fall-semester-2015/the-comeback-the-breaking-point/scene-1-morning-prep-on-geneva-street": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Return to Campus & The Walton Hall Presentation",
+        "title": "Scene 1: Morning Prep on Geneva Street",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c011/s001.md"
+        "filePath": "e006/c026/s001.md"
     },
-    "/aubrie/fall-semester-2015/the-comeback-the-breaking-point/scene-2-the-system-crash-the-breaking-point": {
+    "/aubrie/fall-semester-2015/the-comeback-the-breaking-point/scene-2-the-blue-disabled-parking-placard": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The System Crash (The Breaking Point)",
+        "title": "Scene 2: The Blue Disabled Parking Placard",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c011/s002.md"
+        "filePath": "e006/c026/s002.md"
     },
-    "/aubrie/fall-semester-2015/the-comeback-the-breaking-point/scene-3-the-new-safe-person-the-solo-corporate-mixer": {
+    "/aubrie/fall-semester-2015/the-comeback-the-breaking-point/scene-3-the-return-to-walton-hall-the-presentation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The New Safe Person & The Solo Corporate Mixer",
+        "title": "Scene 3: The Return to Walton Hall (The Presentation)",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c011/s003.md"
+        "filePath": "e006/c026/s003.md"
     },
-    "/aubrie/fall-semester-2015/the-christmas-protocol-jordan-shawn-kelly": {
+    "/aubrie/fall-semester-2015/the-comeback-the-breaking-point/scene-4-the-system-crash-the-breaking-point": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Christmas Protocol (Jordan Shawn Kelly)",
+        "title": "Scene 4: The System Crash (The Breaking Point)",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|5|11"
+        "filePath": "e006/c026/s004.md"
     },
-    "/aubrie/fall-semester-2015/the-christmas-protocol-jordan-shawn-kelly/scene-1-the-christmas-night-invitation-megan-joins-the-king-bed": {
+    "/aubrie/fall-semester-2015/the-comeback-the-breaking-point/scene-5-the-new-safe-person": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Christmas Night Invitation (Megan Joins the King Bed)",
+        "title": "Scene 5: The New Safe Person",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c012/s001.md"
+        "filePath": "e006/c026/s005.md"
     },
-    "/aubrie/fall-semester-2015/the-christmas-protocol-jordan-shawn-kelly/scene-2-the-boxing-day-intervention-the-first-kiss": {
+    "/aubrie/fall-semester-2015/the-solo-corporate-mixer": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Boxing Day Intervention & The First Kiss",
+        "title": "The Solo Corporate Mixer",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c012/s002.md"
+        "filePath": "__CHAP_TOC__|5|26"
     },
-    "/aubrie/fall-semester-2015/the-christmas-protocol-jordan-shawn-kelly/scene-3-a-legal-firewall-for-jordan-the-new-identity-jordan-shawn-kelly": {
+    "/aubrie/fall-semester-2015/the-solo-corporate-mixer/scene-1-the-solo-corporate-mixer": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A Legal Firewall for Jordan & The New Identity (Jordan Shawn Kelly)",
+        "title": "Scene 1: The Solo Corporate Mixer",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c012/s003.md"
+        "filePath": "e006/c027/s001.md"
+    },
+    "/aubrie/fall-semester-2015/the-christmas-night-invitation-megan-joins-the-king-bed": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Christmas Night Invitation (Megan Joins the King Bed)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|27"
+    },
+    "/aubrie/fall-semester-2015/the-christmas-night-invitation-megan-joins-the-king-bed/scene-1-the-christmas-night-invitation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Christmas Night Invitation",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c028/s001.md"
+    },
+    "/aubrie/fall-semester-2015/the-christmas-night-invitation-megan-joins-the-king-bed/scene-2-awake-in-the-king-bed": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: Awake in the King Bed",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c028/s002.md"
+    },
+    "/aubrie/fall-semester-2015/the-boxing-day-intervention-the-first-kiss": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Boxing Day Intervention & The First Kiss",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|28"
+    },
+    "/aubrie/fall-semester-2015/the-boxing-day-intervention-the-first-kiss/scene-1-the-boxing-day-intervention-the-first-kiss": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Boxing Day Intervention & The First Kiss",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c029/s001.md"
+    },
+    "/aubrie/fall-semester-2015/the-boxing-day-intervention-the-first-kiss/scene-2-the-no-privacy-protocol-boxing-day-breakfast": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The No-Privacy Protocol & Boxing Day Breakfast",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c029/s002.md"
+    },
+    "/aubrie/fall-semester-2015/a-legal-firewall-for-jordan-jordan-shawn-kelly": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Legal Firewall for Jordan (Jordan Shawn Kelly)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|29"
+    },
+    "/aubrie/fall-semester-2015/a-legal-firewall-for-jordan-jordan-shawn-kelly/scene-1-a-legal-firewall-for-jordan": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: A Legal Firewall for Jordan",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c030/s001.md"
+    },
+    "/aubrie/fall-semester-2015/a-legal-firewall-for-jordan-jordan-shawn-kelly/scene-2-jordan-shawn-kelly-the-double-wedding-proposal": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: Jordan Shawn Kelly & The Double Wedding Proposal",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c030/s002.md"
     }
 }
