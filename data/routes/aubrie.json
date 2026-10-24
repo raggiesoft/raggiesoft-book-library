@@ -13,13 +13,13 @@
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
             "epub": "36.6 MB",
-            "pdf": "17.2 MB",
-            "text_epub": "792 KB",
-            "text_pdf": "3 MB",
-            "epub_bytes": 38389760,
-            "pdf_bytes": 18004345,
-            "text_epub_bytes": 811099,
-            "text_pdf_bytes": 3194599
+            "pdf": "17.3 MB",
+            "text_epub": "819 KB",
+            "text_pdf": "3.1 MB",
+            "epub_bytes": 38417655,
+            "pdf_bytes": 18093001,
+            "text_epub_bytes": 838996,
+            "text_pdf_bytes": 3281944
         }
     },
     "/aubrie": {
@@ -2511,5 +2511,47 @@
         "title": "Scene 3: The Emergency Room & The Nuclear Medicine Lab",
         "theme": "raggiesoft-books",
         "filePath": "e006/c005/s003.md"
+    },
+    "/aubrie/fall-semester-2015/the-longest-night-npo-the-failed-angioplasty": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Longest Night (NPO & The Failed Angioplasty)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|5"
+    },
+    "/aubrie/fall-semester-2015/the-longest-night-npo-the-failed-angioplasty/scene-1-the-transfer-npo-and-the-fork-in-the-road": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Transfer, NPO, and the Fork in the Road",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c006/s001.md"
+    },
+    "/aubrie/fall-semester-2015/the-longest-night-npo-the-failed-angioplasty/scene-2-the-red-line-and-the-cath-lab": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The Red Line and the Cath Lab",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c006/s002.md"
+    },
+    "/aubrie/fall-semester-2015/the-longest-night-npo-the-failed-angioplasty/scene-3-99-calcified-the-failed-angioplasty": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: 99% Calcified: The Failed Angioplasty",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c006/s003.md"
+    },
+    "/aubrie/fall-semester-2015/the-longest-night-npo-the-failed-angioplasty/scene-4-the-longest-night-the-fifteen-minute-torture": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 4: The Longest Night & The Fifteen-Minute Torture",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c006/s004.md"
+    },
+    "/aubrie/fall-semester-2015/the-longest-night-npo-the-failed-angioplasty/scene-5-the-saturday-sunday-watches-forty-eight-hours-npo": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 5: The Saturday & Sunday Watches (Forty-Eight Hours NPO)",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c006/s005.md"
+    },
+    "/aubrie/fall-semester-2015/the-longest-night-npo-the-failed-angioplasty/scene-6-the-call-from-star-city-the-route-11-diversion": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 6: The Call from Star City & The Route 11 Diversion",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c006/s006.md"
     }
 }
