@@ -13,13 +13,13 @@
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
             "epub": "36.6 MB",
-            "pdf": "17 MB",
-            "text_epub": "744 KB",
-            "text_pdf": "2.9 MB",
-            "epub_bytes": 38340090,
-            "pdf_bytes": 17853777,
-            "text_epub_bytes": 761392,
-            "text_pdf_bytes": 3044673
+            "pdf": "17.2 MB",
+            "text_epub": "786 KB",
+            "text_pdf": "3 MB",
+            "epub_bytes": 38383622,
+            "pdf_bytes": 17983521,
+            "text_epub_bytes": 804969,
+            "text_pdf_bytes": 3173828
         }
     },
     "/aubrie": {
@@ -1690,359 +1690,635 @@
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|3"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent-christiansburg-to-gander": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Northern Ascent",
+        "title": "The Northern Ascent (Christiansburg to Gander)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|0"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-1-the-vanguard-awakes": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent-christiansburg-to-gander/scene-1-the-vanguard-awakes": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 1: The Vanguard Awakes",
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/s001.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-2-operation-yellow-ribbon": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent-christiansburg-to-gander/scene-2-operation-yellow-ribbon": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 2: Operation Yellow Ribbon",
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/s002.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-3-the-security-checkpoint": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent-christiansburg-to-gander/scene-3-the-security-checkpoint": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 3: The Security Checkpoint",
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/s003.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-4-the-ten-thousand-foot-rule": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent-christiansburg-to-gander/scene-4-the-ten-thousand-foot-rule": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 4: The Ten-Thousand Foot Rule",
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/s004.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-5-the-international-threshold": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent-christiansburg-to-gander/scene-5-the-international-threshold": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 5: The International Threshold",
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/s005.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-6-the-iad-layover-strategy": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent-christiansburg-to-gander/scene-6-the-iad-layover-strategy": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 6: The IAD Layover Strategy",
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/s006.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-7-the-border-briefing": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent-christiansburg-to-gander/scene-7-the-border-briefing": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 7: The Border Briefing",
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/s007.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-8-the-outback-lift": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent-christiansburg-to-gander/scene-8-the-outback-lift": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 8: The Outback Lift",
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/s008.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-9-the-price-of-freedom": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent-christiansburg-to-gander/scene-9-the-price-of-freedom": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 9: The Price of Freedom",
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/s009.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-10-the-commonwealth-question": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent-christiansburg-to-gander/scene-10-the-commonwealth-question": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 10: The Commonwealth Question",
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/s010.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-11-the-epassport-bottleneck": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent-christiansburg-to-gander/scene-11-the-epassport-bottleneck": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 11: The ePassport Bottleneck",
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/s011.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-12-the-yellow-ribbon-welcome": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent-christiansburg-to-gander/scene-12-the-yellow-ribbon-welcome": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 12: The Yellow Ribbon Welcome",
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/s012.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-13-the-gander-lift": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent-christiansburg-to-gander/scene-13-the-gander-lift": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 13: The Gander Lift",
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/s013.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-ascent/scene-14-the-room-214-reunion": {
+    "/aubrie/jordan-s-world-trek/the-northern-ascent-christiansburg-to-gander/scene-14-the-room-214-reunion": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 14: The Room 214 Reunion",
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/s014.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-horizon": {
+    "/aubrie/jordan-s-world-trek/safe-haven-and-the-steel-girder-gander-newfoundland": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Northern Horizon",
+        "title": "Safe Haven and the Steel Girder (Gander, Newfoundland)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|1"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-horizon/scene-1-the-gander-morning": {
+    "/aubrie/jordan-s-world-trek/safe-haven-and-the-steel-girder-gander-newfoundland/scene-1-the-gander-morning": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 1: The Gander Morning",
         "theme": "raggiesoft-books",
         "filePath": "e004/c002/s001.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-horizon/scene-2-the-cognitive-redirect": {
+    "/aubrie/jordan-s-world-trek/safe-haven-and-the-steel-girder-gander-newfoundland/scene-2-the-cognitive-redirect": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 2: The Cognitive Redirect",
         "theme": "raggiesoft-books",
         "filePath": "e004/c002/s002.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-horizon/scene-3-safe-haven-and-the-steel-girder": {
+    "/aubrie/jordan-s-world-trek/safe-haven-and-the-steel-girder-gander-newfoundland/scene-3-safe-haven-and-the-steel-girder": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 3: Safe Haven and the Steel Girder",
         "theme": "raggiesoft-books",
         "filePath": "e004/c002/s003.md"
     },
-    "/aubrie/jordan-s-world-trek/the-northern-horizon/scene-4-cobb-s-pond-kitchen-music-and-calling-charlottesville": {
+    "/aubrie/jordan-s-world-trek/the-easternmost-edge-of-north-america-st-john-s-avalon-eastern-point": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Cobb's Pond, Kitchen Music, and Calling Charlottesville",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s004.md"
-    },
-    "/aubrie/jordan-s-world-trek/the-northern-horizon/scene-5-the-crossroads-of-the-world": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Crossroads of the World",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s005.md"
-    },
-    "/aubrie/jordan-s-world-trek/the-nordic-bridge-reykjavik": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Nordic Bridge (Reykjavik)",
+        "title": "The Easternmost Edge of North America (St. John's & Avalon Eastern Point)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|2"
     },
-    "/aubrie/jordan-s-world-trek/the-nordic-bridge-reykjavik/scene-1-midnight-sun-and-the-yellow-bus-grid": {
+    "/aubrie/jordan-s-world-trek/the-easternmost-edge-of-north-america-st-john-s-avalon-eastern-point/scene-1-iceberg-alley-beacon-hill-and-the-easternmost-lighthouse": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Midnight Sun and the Yellow Bus Grid",
+        "title": "Scene 1: Iceberg Alley, Beacon Hill, and the Easternmost Lighthouse",
         "theme": "raggiesoft-books",
         "filePath": "e004/c003/s001.md"
     },
-    "/aubrie/jordan-s-world-trek/the-nordic-bridge-reykjavik/scene-2-zero-gravity-in-the-azure-lagoon": {
+    "/aubrie/jordan-s-world-trek/gander-heritage-boardwalk-kitchen-music-and-calling-charlottesville": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Zero Gravity in the Azure Lagoon",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c003/s002.md"
-    },
-    "/aubrie/jordan-s-world-trek/the-nordic-bridge-reykjavik/scene-3-basalt-columns-harpa-and-the-ten-thirty-sun": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Basalt Columns, Harpa, and the Ten-Thirty Sun",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c003/s003.md"
-    },
-    "/aubrie/jordan-s-world-trek/the-nordic-bridge-reykjavik/scene-4-the-victorian-grid-briefing": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Victorian Grid Briefing",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c003/s004.md"
-    },
-    "/aubrie/jordan-s-world-trek/the-red-bus-navigator-london": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Red Bus Navigator (London)",
+        "title": "Gander Heritage Boardwalk, Kitchen Music, and Calling Charlottesville",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|3"
     },
-    "/aubrie/jordan-s-world-trek/the-red-bus-navigator-london/scene-1-four-passports-the-green-channel-and-the-heathrow-ambush": {
+    "/aubrie/jordan-s-world-trek/gander-heritage-boardwalk-kitchen-music-and-calling-charlottesville/scene-1-gander-heritage-boardwalk-kitchen-music-and-calling-charlottesville": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Four Passports, the Green Channel, and the Heathrow Ambush",
+        "title": "Scene 1: Gander Heritage Boardwalk, Kitchen Music, and Calling Charlottesville",
         "theme": "raggiesoft-books",
         "filePath": "e004/c004/s001.md"
     },
-    "/aubrie/jordan-s-world-trek/the-red-bus-navigator-london/scene-2-the-bloomsbury-negotiation": {
+    "/aubrie/jordan-s-world-trek/the-crossroads-of-the-world-gander-international-departures": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Bloomsbury Negotiation",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c004/s002.md"
-    },
-    "/aubrie/jordan-s-world-trek/the-red-bus-navigator-london/scene-3-chief-navigator-of-the-red-double-deckers": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Chief Navigator of the Red Double-Deckers",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c004/s003.md"
-    },
-    "/aubrie/jordan-s-world-trek/the-red-bus-navigator-london/scene-4-carnaby-street-and-the-hollow-square": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Carnaby Street and the Hollow Square",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c004/s004.md"
-    },
-    "/aubrie/jordan-s-world-trek/the-red-bus-navigator-london/scene-5-houghton-street-and-the-transatlantic-reunion-call": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Houghton Street and the Transatlantic Reunion Call",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c004/s005.md"
-    },
-    "/aubrie/jordan-s-world-trek/the-wrong-liverpool-merseyside": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Wrong Liverpool (Merseyside)",
+        "title": "The Crossroads of the World (Gander International Departures)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|4"
     },
-    "/aubrie/jordan-s-world-trek/the-wrong-liverpool-merseyside/scene-1-passenger-assist-at-london-euston": {
+    "/aubrie/jordan-s-world-trek/the-crossroads-of-the-world-gander-international-departures/scene-1-the-crossroads-of-the-world": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Passenger Assist at London Euston",
+        "title": "Scene 1: The Crossroads of the World",
         "theme": "raggiesoft-books",
         "filePath": "e004/c005/s001.md"
     },
-    "/aubrie/jordan-s-world-trek/the-wrong-liverpool-merseyside/scene-2-wrong-liverpool-everyone": {
+    "/aubrie/jordan-s-world-trek/midnight-sun-and-the-yellow-bus-grid-keflav-k-to-reykjavik": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Wrong Liverpool, Everyone!",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c005/s002.md"
-    },
-    "/aubrie/jordan-s-world-trek/the-wrong-liverpool-merseyside/scene-3-the-eastern-leap-from-heathrow": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Eastern Leap from Heathrow",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c005/s003.md"
-    },
-    "/aubrie/jordan-s-world-trek/the-quiet-sanctuary-and-the-bullet-train": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Quiet Sanctuary and the Bullet Train",
+        "title": "Midnight Sun and the Yellow Bus Grid (Keflav\u00edk to Reykjavik)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|5"
     },
-    "/aubrie/jordan-s-world-trek/the-quiet-sanctuary-and-the-bullet-train/scene-1-pang-pon-pang-pon-haneda-airport-and-the-architecture-of-respect": {
+    "/aubrie/jordan-s-world-trek/midnight-sun-and-the-yellow-bus-grid-keflav-k-to-reykjavik/scene-1-midnight-sun-and-the-yellow-bus-grid": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Pang-Pon-Pang-Pon: Haneda Airport and the Architecture of Respect",
+        "title": "Scene 1: Midnight Sun and the Yellow Bus Grid",
         "theme": "raggiesoft-books",
         "filePath": "e004/c006/s001.md"
     },
-    "/aubrie/jordan-s-world-trek/the-quiet-sanctuary-and-the-bullet-train/scene-2-the-yamanote-slope-board-and-the-city-that-doesn-t-yell": {
+    "/aubrie/jordan-s-world-trek/zero-gravity-in-the-azure-lagoon-grindav-k-iceland": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Yamanote Slope Board and the City That Doesn't Yell",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c006/s002.md"
-    },
-    "/aubrie/jordan-s-world-trek/the-quiet-sanctuary-and-the-bullet-train/scene-3-the-hassha-melody-on-the-bullet-train-platform": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Hassha Melody on the Bullet Train Platform",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c006/s003.md"
-    },
-    "/aubrie/jordan-s-world-trek/the-quiet-sanctuary-and-the-bullet-train/scene-4-the-brooks-family-s-osaka-and-a-question-about-the-future": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Brooks Family's Osaka and a Question About the Future",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c006/s004.md"
-    },
-    "/aubrie/jordan-s-world-trek/voyages-on-the-seto-inland-sea": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Voyages on the Seto Inland Sea",
+        "title": "Zero Gravity in the Azure Lagoon (Grindav\u00edk, Iceland)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|6"
     },
-    "/aubrie/jordan-s-world-trek/voyages-on-the-seto-inland-sea/scene-1-osaka-south-port-and-boarding-the-starry-sky": {
+    "/aubrie/jordan-s-world-trek/zero-gravity-in-the-azure-lagoon-grindav-k-iceland/scene-1-zero-gravity-in-the-azure-lagoon": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Osaka South Port and Boarding the Starry Sky",
+        "title": "Scene 1: Zero Gravity in the Azure Lagoon",
         "theme": "raggiesoft-books",
         "filePath": "e004/c007/s001.md"
     },
-    "/aubrie/jordan-s-world-trek/voyages-on-the-seto-inland-sea/scene-2-threat-level-zero-hoshizora-no-uta-japanese-version": {
+    "/aubrie/jordan-s-world-trek/between-two-continents-the-golden-circle-iceland": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Threat Level Zero: Hoshizora no Uta (Japanese Version)",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c007/s002.md"
-    },
-    "/aubrie/jordan-s-world-trek/voyages-on-the-seto-inland-sea/scene-3-for-you-are-safe-upon-the-sea-hoshizora-no-uta-english-version": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: For You Are Safe Upon the Sea: Hoshizora no Uta (English Version)",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c007/s003.md"
-    },
-    "/aubrie/jordan-s-world-trek/voyages-on-the-seto-inland-sea/scene-4-morning-light-on-beppu-bay-and-the-japn-101-pact": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Morning Light on Beppu Bay and the JAPN 101 Pact",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c007/s004.md"
-    },
-    "/aubrie/jordan-s-world-trek/the-deterministic-sanctuary-singapore": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Deterministic Sanctuary (Singapore)",
+        "title": "Between Two Continents (The Golden Circle, Iceland)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|7"
     },
-    "/aubrie/jordan-s-world-trek/the-deterministic-sanctuary-singapore/scene-1-the-garden-terminal-and-smart-card-number-six": {
+    "/aubrie/jordan-s-world-trek/between-two-continents-the-golden-circle-iceland/scene-1-the-continental-rift-strokkur-geyser-and-the-golden-cataract": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Garden Terminal and Smart Card Number Six",
+        "title": "Scene 1: The Continental Rift, Strokkur Geyser, and the Golden Cataract",
         "theme": "raggiesoft-books",
         "filePath": "e004/c008/s001.md"
     },
-    "/aubrie/jordan-s-world-trek/the-deterministic-sanctuary-singapore/scene-2-the-deterministic-city-and-the-cloud-forest": {
+    "/aubrie/jordan-s-world-trek/basalt-columns-the-aurora-glass-hall-and-the-ten-thirty-sun-reykjavik": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Deterministic City and the Cloud Forest",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c008/s002.md"
-    },
-    "/aubrie/jordan-s-world-trek/the-deterministic-sanctuary-singapore/scene-3-zo-systems-logs-diagnosed-at-three": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: ZO\u00cb.Systems.Logs (Diagnosed at Three)",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c008/s003.md"
-    },
-    "/aubrie/jordan-s-world-trek/the-deterministic-sanctuary-singapore/scene-4-the-three-continent-video-call": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Three-Continent Video Call",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c008/s004.md"
-    },
-    "/aubrie/jordan-s-world-trek/southern-cross-winter-and-the-real-liverpool-sydney-liverpool-nsw": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Southern Cross Winter and the Real Liverpool (Sydney & Liverpool, NSW)",
+        "title": "Basalt Columns, the Aurora Glass Hall, and the Ten-Thirty Sun (Reykjavik)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|8"
     },
-    "/aubrie/jordan-s-world-trek/southern-cross-winter-and-the-real-liverpool-sydney-liverpool-nsw/scene-1-southern-cross-airways-and-smart-card-number-seven": {
+    "/aubrie/jordan-s-world-trek/basalt-columns-the-aurora-glass-hall-and-the-ten-thirty-sun-reykjavik/scene-1-basalt-columns-the-aurora-glass-hall-and-the-ten-thirty-sun": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Southern Cross Airways and Smart Card Number Seven",
+        "title": "Scene 1: Basalt Columns, the Aurora Glass Hall, and the Ten-Thirty Sun",
         "theme": "raggiesoft-books",
         "filePath": "e004/c009/s001.md"
     },
-    "/aubrie/jordan-s-world-trek/southern-cross-winter-and-the-real-liverpool-sydney-liverpool-nsw/scene-2-right-liverpool-everyone-liverpool-new-south-wales": {
+    "/aubrie/jordan-s-world-trek/the-victorian-grid-briefing-reykjavik": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Right Liverpool, Everyone! (Liverpool, New South Wales)",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c009/s002.md"
-    },
-    "/aubrie/jordan-s-world-trek/frost-on-the-red-dirt-and-the-thirty-five-hour-gauntlet-petermann-outback-return-to-roa": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Frost on the Red Dirt and the Thirty-Five-Hour Gauntlet (Petermann Outback & Return to ROA)",
+        "title": "The Victorian Grid Briefing (Reykjavik)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|9"
     },
-    "/aubrie/jordan-s-world-trek/frost-on-the-red-dirt-and-the-thirty-five-hour-gauntlet-petermann-outback-return-to-roa/scene-1-ulu-u-and-the-three-hour-corrugated-track-to-gallagher-s-roadhouse": {
+    "/aubrie/jordan-s-world-trek/the-victorian-grid-briefing-reykjavik/scene-1-the-victorian-grid-briefing": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Ulu\u1e5fu and the Three-Hour Corrugated Track to Gallagher's Roadhouse",
+        "title": "Scene 1: The Victorian Grid Briefing",
         "theme": "raggiesoft-books",
         "filePath": "e004/c010/s001.md"
     },
-    "/aubrie/jordan-s-world-trek/frost-on-the-red-dirt-and-the-thirty-five-hour-gauntlet-petermann-outback-return-to-roa/scene-2-twenty-eight-degrees-at-dawn-frost-on-the-tires": {
+    "/aubrie/jordan-s-world-trek/the-heathrow-ambush-and-the-bloomsbury-negotiation-london": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Twenty-Eight Degrees at Dawn (Frost on the Tires)",
+        "title": "The Heathrow Ambush and the Bloomsbury Negotiation (London)",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c010/s002.md"
+        "filePath": "__CHAP_TOC__|3|10"
     },
-    "/aubrie/jordan-s-world-trek/frost-on-the-red-dirt-and-the-thirty-five-hour-gauntlet-petermann-outback-return-to-roa/scene-3-the-satellite-phone-at-three-thirty-in-the-morning": {
+    "/aubrie/jordan-s-world-trek/the-heathrow-ambush-and-the-bloomsbury-negotiation-london/scene-1-four-passports-the-green-channel-and-the-heathrow-ambush": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Satellite Phone at Three-Thirty in the Morning",
+        "title": "Scene 1: Four Passports, the Green Channel, and the Heathrow Ambush",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c010/s003.md"
+        "filePath": "e004/c011/s001.md"
     },
-    "/aubrie/jordan-s-world-trek/frost-on-the-red-dirt-and-the-thirty-five-hour-gauntlet-petermann-outback-return-to-roa/scene-4-thirty-five-hours-to-roanoke-the-gate-hug": {
+    "/aubrie/jordan-s-world-trek/the-heathrow-ambush-and-the-bloomsbury-negotiation-london/scene-2-the-bloomsbury-negotiation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Thirty-Five Hours to Roanoke (The Gate Hug)",
+        "title": "Scene 2: The Bloomsbury Negotiation",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c010/s004.md"
+        "filePath": "e004/c011/s002.md"
+    },
+    "/aubrie/jordan-s-world-trek/red-double-deckers-and-carnaby-street-westminster-soho-london": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Red Double-Deckers and Carnaby Street (Westminster & Soho, London)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|11"
+    },
+    "/aubrie/jordan-s-world-trek/red-double-deckers-and-carnaby-street-westminster-soho-london/scene-1-chief-navigator-of-the-red-double-deckers": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Chief Navigator of the Red Double-Deckers",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c012/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/red-double-deckers-and-carnaby-street-westminster-soho-london/scene-2-carnaby-street-and-the-hollow-square": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: Carnaby Street and the Hollow Square",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c012/s002.md"
+    },
+    "/aubrie/jordan-s-world-trek/houghton-street-the-millennium-wheel-and-babbage-s-engine-london": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Houghton Street, the Millennium Wheel, and Babbage's Engine (London)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|12"
+    },
+    "/aubrie/jordan-s-world-trek/houghton-street-the-millennium-wheel-and-babbage-s-engine-london/scene-1-houghton-street-and-the-transatlantic-reunion-call": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Houghton Street and the Transatlantic Reunion Call",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c013/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/houghton-street-the-millennium-wheel-and-babbage-s-engine-london/scene-2-the-thames-riverbus-the-millennium-wheel-and-babbage-s-difference-engine": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The Thames Riverbus, the Millennium Wheel, and Babbage's Difference Engine",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c013/s002.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-wrong-liverpool-and-the-mersey-four-merseyside-england": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Wrong Liverpool and the Mersey Four (Merseyside, England)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|13"
+    },
+    "/aubrie/jordan-s-world-trek/the-wrong-liverpool-and-the-mersey-four-merseyside-england/scene-1-passenger-assist-at-london-euston": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Passenger Assist at London Euston",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c014/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-wrong-liverpool-and-the-mersey-four-merseyside-england/scene-2-wrong-liverpool-everyone": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: Wrong Liverpool, Everyone!",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c014/s002.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-wrong-liverpool-and-the-mersey-four-merseyside-england/scene-3-the-mersey-four-story-and-ferry-cross-the-mersey": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: The Mersey Four Story and Ferry Cross the Mersey",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c014/s003.md"
+    },
+    "/aubrie/jordan-s-world-trek/codebreakers-at-station-x-bletchley-buckinghamshire": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Codebreakers at Station X (Bletchley, Buckinghamshire)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|14"
+    },
+    "/aubrie/jordan-s-world-trek/codebreakers-at-station-x-bletchley-buckinghamshire/scene-1-turing-s-bombe-colossus-mark-2-and-the-neurodivergent-codebreakers": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Turing's Bombe, Colossus Mark 2, and the Neurodivergent Codebreakers",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c015/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-northern-capital-and-the-royal-yacht-edinburgh-scotland": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Northern Capital and the Royal Yacht (Edinburgh, Scotland)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|15"
+    },
+    "/aubrie/jordan-s-world-trek/the-northern-capital-and-the-royal-yacht-edinburgh-scotland/scene-1-waverley-station-edinburgh-castle-and-the-royal-yacht-caledonia": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Waverley Station, Edinburgh Castle, and the Royal Yacht Caledonia",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c016/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-eastern-leap-from-heathrow-london-to-tokyo": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Eastern Leap from Heathrow (London to Tokyo)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|16"
+    },
+    "/aubrie/jordan-s-world-trek/the-eastern-leap-from-heathrow-london-to-tokyo/scene-1-the-eastern-leap-from-heathrow": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Eastern Leap from Heathrow",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c017/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/haneda-airport-and-the-architecture-of-respect-tokyo-japan": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Haneda Airport and the Architecture of Respect (Tokyo, Japan)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|17"
+    },
+    "/aubrie/jordan-s-world-trek/haneda-airport-and-the-architecture-of-respect-tokyo-japan/scene-1-pang-pon-pang-pon-haneda-airport-and-the-architecture-of-respect": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Pang-Pon-Pang-Pon: Haneda Airport and the Architecture of Respect",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c018/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-yamanote-slope-board-and-the-city-that-doesn-t-yell-tokyo": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Yamanote Slope Board and the City That Doesn't Yell (Tokyo)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|18"
+    },
+    "/aubrie/jordan-s-world-trek/the-yamanote-slope-board-and-the-city-that-doesn-t-yell-tokyo/scene-1-the-yamanote-slope-board-and-the-city-that-doesn-t-yell": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Yamanote Slope Board and the City That Doesn't Yell",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c019/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/odaiba-robotics-and-the-edo-sky-spire-tokyo-bay-sumida-ward": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Odaiba Robotics and the Edo Sky Spire (Tokyo Bay & Sumida Ward)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|19"
+    },
+    "/aubrie/jordan-s-world-trek/odaiba-robotics-and-the-edo-sky-spire-tokyo-bay-sumida-ward/scene-1-the-rainbow-bridge-automated-line-and-the-humanoid-robotics-lab": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Rainbow Bridge Automated Line and the Humanoid Robotics Lab",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c020/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/odaiba-robotics-and-the-edo-sky-spire-tokyo-bay-sumida-ward/scene-2-asakusa-lanterns-and-six-hundred-thirty-four-meters-above-edo": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: Asakusa Lanterns and Six Hundred Thirty-Four Meters Above Edo",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c020/s002.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-bullet-train-and-the-thousand-vermilion-gates-tokyo-to-kyoto-osaka": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Bullet Train and the Thousand Vermilion Gates (Tokyo to Kyoto & Osaka)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|20"
+    },
+    "/aubrie/jordan-s-world-trek/the-bullet-train-and-the-thousand-vermilion-gates-tokyo-to-kyoto-osaka/scene-1-the-hassha-melody-on-the-bullet-train-platform": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Hassha Melody on the Bullet Train Platform",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c021/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-bullet-train-and-the-thousand-vermilion-gates-tokyo-to-kyoto-osaka/scene-2-the-thousand-vermilion-torii-and-the-bamboo-sanctuary-kyoto": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The Thousand Vermilion Torii and the Bamboo Sanctuary (Kyoto)",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c021/s002.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-golden-keep-the-whale-shark-tank-and-the-brooks-family-s-osaka": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Golden Keep, the Whale Shark Tank, and the Brooks Family's Osaka",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|21"
+    },
+    "/aubrie/jordan-s-world-trek/the-golden-keep-the-whale-shark-tank-and-the-brooks-family-s-osaka/scene-1-the-golden-keep-elevator-and-the-pacific-ring-whale-shark": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Golden Keep Elevator and the Pacific Ring Whale Shark",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c022/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-golden-keep-the-whale-shark-tank-and-the-brooks-family-s-osaka/scene-2-the-brooks-family-s-osaka-and-a-question-about-the-future": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The Brooks Family's Osaka and a Question About the Future",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c022/s002.md"
+    },
+    "/aubrie/jordan-s-world-trek/voyages-on-the-seto-inland-sea-osaka-south-port-ferry-hoshizora": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Voyages on the Seto Inland Sea (Osaka South Port & Ferry Hoshizora)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|22"
+    },
+    "/aubrie/jordan-s-world-trek/voyages-on-the-seto-inland-sea-osaka-south-port-ferry-hoshizora/scene-1-osaka-south-port-and-boarding-the-starry-sky": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Osaka South Port and Boarding the Starry Sky",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c023/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/voyages-on-the-seto-inland-sea-osaka-south-port-ferry-hoshizora/scene-2-threat-level-zero-hoshizora-no-uta-japanese-version": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: Threat Level Zero: Hoshizora no Uta (Japanese Version)",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c023/s002.md"
+    },
+    "/aubrie/jordan-s-world-trek/voyages-on-the-seto-inland-sea-osaka-south-port-ferry-hoshizora/scene-3-for-you-are-safe-upon-the-sea-hoshizora-no-uta-english-version": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: For You Are Safe Upon the Sea: Hoshizora no Uta (English Version)",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c023/s003.md"
+    },
+    "/aubrie/jordan-s-world-trek/morning-light-on-beppu-bay-and-the-japn-101-pact-beppu-ky-sh": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Morning Light on Beppu Bay and the JAPN 101 Pact (Beppu, Ky\u016bsh\u016b)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|23"
+    },
+    "/aubrie/jordan-s-world-trek/morning-light-on-beppu-bay-and-the-japn-101-pact-beppu-ky-sh/scene-1-morning-light-on-beppu-bay-and-the-japn-101-pact": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Morning Light on Beppu Bay and the JAPN 101 Pact",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c024/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-cobalt-sea-spring-and-geothermal-steam-beppu-ita-prefecture": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Cobalt Sea Spring and Geothermal Steam (Beppu, \u014cita Prefecture)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|24"
+    },
+    "/aubrie/jordan-s-world-trek/the-cobalt-sea-spring-and-geothermal-steam-beppu-ita-prefecture/scene-1-the-seven-geothermal-springs-onsen-tamago-and-the-steam-sanctuary": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Seven Geothermal Springs, Onsen Tamago, and the Steam Sanctuary",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c025/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-garden-terminal-and-smart-card-number-six-singapore-changi-airport": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Garden Terminal and Smart Card Number Six (Singapore Changi Airport)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|25"
+    },
+    "/aubrie/jordan-s-world-trek/the-garden-terminal-and-smart-card-number-six-singapore-changi-airport/scene-1-the-garden-terminal-and-smart-card-number-six": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Garden Terminal and Smart Card Number Six",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c026/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-deterministic-sanctuary-and-zo-systems-logs-marina-bay-singapore": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Deterministic Sanctuary and ZO\u00cb.Systems.Logs (Marina Bay, Singapore)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|26"
+    },
+    "/aubrie/jordan-s-world-trek/the-deterministic-sanctuary-and-zo-systems-logs-marina-bay-singapore/scene-1-the-deterministic-city-and-the-mist-mountain-biome": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Deterministic City and the Mist Mountain Biome",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c027/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-deterministic-sanctuary-and-zo-systems-logs-marina-bay-singapore/scene-2-zo-systems-logs-diagnosed-at-three": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: ZO\u00cb.Systems.Logs (Diagnosed at Three)",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c027/s002.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-equator-wheel-hawker-satay-and-the-three-continent-call-singapore": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Equator Wheel, Hawker Satay, and the Three-Continent Call (Singapore)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|27"
+    },
+    "/aubrie/jordan-s-world-trek/the-equator-wheel-hawker-satay-and-the-three-continent-call-singapore/scene-1-telok-ayer-heritage-market-the-double-helix-bridge-and-the-equator-wheel": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Telok Ayer Heritage Market, the Double-Helix Bridge, and the Equator Wheel",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c028/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-equator-wheel-hawker-satay-and-the-three-continent-call-singapore/scene-2-the-three-continent-video-call": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The Three-Continent Video Call",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c028/s002.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-southernmost-point-of-continental-asia-sentosa-changi-departure": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Southernmost Point of Continental Asia (Sentosa & Changi Departure)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|28"
+    },
+    "/aubrie/jordan-s-world-trek/the-southernmost-point-of-continental-asia-sentosa-changi-departure/scene-1-sentosa-monorail-palawan-boardwalk-and-the-southern-cross-boarding-gate": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Sentosa Monorail, Palawan Boardwalk, and the Southern Cross Boarding Gate",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c029/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/southern-cross-winter-and-the-white-sails-of-sydney-cove-sydney-nsw": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Southern Cross Winter and the White Sails of Sydney Cove (Sydney, NSW)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|29"
+    },
+    "/aubrie/jordan-s-world-trek/southern-cross-winter-and-the-white-sails-of-sydney-cove-sydney-nsw/scene-1-southern-cross-airways-and-smart-card-number-seven": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Southern Cross Airways and Smart Card Number Seven",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c030/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/southern-cross-winter-and-the-white-sails-of-sydney-cove-sydney-nsw/scene-2-under-the-white-sails-and-the-royal-botanic-foreshore": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: Under the White Sails and the Royal Botanic Foreshore",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c030/s002.md"
+    },
+    "/aubrie/jordan-s-world-trek/right-liverpool-everyone-liverpool-new-south-wales": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Right Liverpool, Everyone! (Liverpool, New South Wales)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|30"
+    },
+    "/aubrie/jordan-s-world-trek/right-liverpool-everyone-liverpool-new-south-wales/scene-1-right-liverpool-everyone-liverpool-new-south-wales": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Right Liverpool, Everyone! (Liverpool, New South Wales)",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c031/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-manly-ferry-and-harbour-kangaroos-sydney-harbour-mosman": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Manly Ferry and Harbour Kangaroos (Sydney Harbour & Mosman)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|31"
+    },
+    "/aubrie/jordan-s-world-trek/the-manly-ferry-and-harbour-kangaroos-sydney-harbour-mosman/scene-1-across-sydney-heads-on-the-manly-ferry-and-the-mosman-wildlife-sanctuary": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Across Sydney Heads on the Manly Ferry and the Mosman Wildlife Sanctuary",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c032/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/sarah-s-frontier-the-blue-mountains-and-the-jamison-valley-skyway-katoomba-nsw": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Sarah's Frontier: The Blue Mountains and the Jamison Valley Skyway (Katoomba, NSW)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|32"
+    },
+    "/aubrie/jordan-s-world-trek/sarah-s-frontier-the-blue-mountains-and-the-jamison-valley-skyway-katoomba-nsw/scene-1-the-three-sisters-lookout-and-the-glass-floored-jamison-valley-skyway": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Three Sisters Lookout and the Glass-Floored Jamison Valley Skyway",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c033/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/ulu-u-and-the-three-hour-corrugated-track-to-gallagher-s-roadhouse-petermann-nt": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Ulu\u1e5fu and the Three-Hour Corrugated Track to Gallagher's Roadhouse (Petermann, NT)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|33"
+    },
+    "/aubrie/jordan-s-world-trek/ulu-u-and-the-three-hour-corrugated-track-to-gallagher-s-roadhouse-petermann-nt/scene-1-ulu-u-and-the-three-hour-corrugated-track-to-gallagher-s-roadhouse": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Ulu\u1e5fu and the Three-Hour Corrugated Track to Gallagher's Roadhouse",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c034/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/twenty-eight-degrees-at-dawn-and-bortle-class-one-gallagher-s-roadhouse-nt": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Twenty-Eight Degrees at Dawn and Bortle Class One (Gallagher's Roadhouse, NT)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|34"
+    },
+    "/aubrie/jordan-s-world-trek/twenty-eight-degrees-at-dawn-and-bortle-class-one-gallagher-s-roadhouse-nt/scene-1-twenty-eight-degrees-at-dawn-frost-on-the-tires": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Twenty-Eight Degrees at Dawn (Frost on the Tires)",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c035/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/twenty-eight-degrees-at-dawn-and-bortle-class-one-gallagher-s-roadhouse-nt/scene-2-bortle-class-one-the-galactic-center-overhead": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: Bortle Class One: The Galactic Center Overhead",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c035/s002.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-satellite-phone-at-three-thirty-in-the-morning-petermann-nt": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Satellite Phone at Three-Thirty in the Morning (Petermann, NT)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|35"
+    },
+    "/aubrie/jordan-s-world-trek/the-satellite-phone-at-three-thirty-in-the-morning-petermann-nt/scene-1-the-satellite-phone-at-three-thirty-in-the-morning": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Satellite Phone at Three-Thirty in the Morning",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c036/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-flying-doctor-airstrip-and-the-red-centre-farewell-barbie-petermann-nt": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Flying Doctor Airstrip and the Red Centre Farewell Barbie (Petermann, NT)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|36"
+    },
+    "/aubrie/jordan-s-world-trek/the-flying-doctor-airstrip-and-the-red-centre-farewell-barbie-petermann-nt/scene-1-the-outback-royal-flying-doctor-service-and-campfire-damper": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Outback Royal Flying Doctor Service and Campfire Damper",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c037/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/thirty-five-hours-to-roanoke-the-gate-hug": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Thirty-Five Hours to Roanoke (The Gate Hug)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|37"
+    },
+    "/aubrie/jordan-s-world-trek/thirty-five-hours-to-roanoke-the-gate-hug/scene-1-thirty-five-hours-to-roanoke-the-gate-hug": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Thirty-Five Hours to Roanoke (The Gate Hug)",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c038/s001.md"
     },
     "/aubrie/jordan-s-court-case": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2110,88 +2386,118 @@
         "theme": "raggiesoft-books",
         "filePath": "e005/c002/s002.md"
     },
-    "/aubrie/jordan-s-court-case/no-clipboard-to-hide-behind-welcome-to-geneva-street/scene-3-angles-leverage-and-the-no-jealousy-pact": {
+    "/aubrie/jordan-s-court-case/angles-leverage-and-the-no-jealousy-pact": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Angles, Leverage, and the No-Jealousy Pact",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s003.md"
-    },
-    "/aubrie/jordan-s-court-case/no-clipboard-to-hide-behind-welcome-to-geneva-street/scene-4-new-river-hall-room-323-allegheny-commons-apartment-101": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: New River Hall Room 323 & Allegheny Commons Apartment 101",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s004.md"
-    },
-    "/aubrie/jordan-s-court-case/the-new-normal-6-00-am-the-birth-of-fin": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The New Normal (6:00 AM) & The Birth of Fin#",
+        "title": "Angles, Leverage, and the No-Jealousy Pact",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|2"
     },
-    "/aubrie/jordan-s-court-case/the-new-normal-6-00-am-the-birth-of-fin/scene-1-the-5-45-am-problem": {
+    "/aubrie/jordan-s-court-case/angles-leverage-and-the-no-jealousy-pact/scene-1-angles-leverage-and-the-no-jealousy-pact": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The 5:45 AM Problem",
+        "title": "Scene 1: Angles, Leverage, and the No-Jealousy Pact",
         "theme": "raggiesoft-books",
         "filePath": "e005/c003/s001.md"
     },
-    "/aubrie/jordan-s-court-case/the-new-normal-6-00-am-the-birth-of-fin/scene-2-the-45-minute-wait-on-commonwealth-mall": {
+    "/aubrie/jordan-s-court-case/new-river-hall-room-323-allegheny-commons-apartment-101": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The 45-Minute Wait on Commonwealth Mall",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s002.md"
-    },
-    "/aubrie/jordan-s-court-case/the-new-normal-6-00-am-the-birth-of-fin/scene-3-a-flaw-in-the-system-the-new-normal-6-00-am": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A Flaw in the System: The New Normal (6:00 AM)",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s003.md"
-    },
-    "/aubrie/jordan-s-court-case/the-new-normal-6-00-am-the-birth-of-fin/scene-4-question-the-rules-the-birth-of-fin": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Question The Rules: The Birth of Fin#",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s004.md"
-    },
-    "/aubrie/jordan-s-court-case/the-shot-depo-vanguard-150-home-on-geneva-street": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Shot (Depo-Vanguard 150) & Home on Geneva Street",
+        "title": "New River Hall Room 323 & Allegheny Commons Apartment 101",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|3"
     },
-    "/aubrie/jordan-s-court-case/the-shot-depo-vanguard-150-home-on-geneva-street/scene-1-one-week-to-process-the-shot-depo-vanguard-150": {
+    "/aubrie/jordan-s-court-case/new-river-hall-room-323-allegheny-commons-apartment-101/scene-1-new-river-hall-room-323-allegheny-commons-apartment-101": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: One Week to Process & The Shot (Depo-Vanguard 150)",
+        "title": "Scene 1: New River Hall Room 323 & Allegheny Commons Apartment 101",
         "theme": "raggiesoft-books",
         "filePath": "e005/c004/s001.md"
     },
-    "/aubrie/jordan-s-court-case/the-shot-depo-vanguard-150-home-on-geneva-street/scene-2-home-on-geneva-street": {
+    "/aubrie/fall-semester-2015": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Home on Geneva Street",
+        "title": "Fall Semester 2015",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c004/s002.md"
+        "filePath": "__ERA_TOC__|5"
     },
-    "/aubrie/jordan-s-court-case/friday-9-32-am-the-broken-foundation": {
+    "/aubrie/fall-semester-2015/the-5-45-am-problem-the-new-normal-6-00-am": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The 5:45 AM Problem & The New Normal (6:00 AM)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|0"
+    },
+    "/aubrie/fall-semester-2015/the-5-45-am-problem-the-new-normal-6-00-am/scene-1-the-5-45-am-problem": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The 5:45 AM Problem",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c001/s001.md"
+    },
+    "/aubrie/fall-semester-2015/the-5-45-am-problem-the-new-normal-6-00-am/scene-2-the-45-minute-wait-on-commonwealth-mall": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The 45-Minute Wait on Commonwealth Mall",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c001/s002.md"
+    },
+    "/aubrie/fall-semester-2015/the-5-45-am-problem-the-new-normal-6-00-am/scene-3-a-flaw-in-the-system-the-new-normal-6-00-am": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: A Flaw in the System: The New Normal (6:00 AM)",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c001/s003.md"
+    },
+    "/aubrie/fall-semester-2015/question-the-rules-the-birth-of-fin": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Question The Rules: The Birth of Fin#",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|1"
+    },
+    "/aubrie/fall-semester-2015/question-the-rules-the-birth-of-fin/scene-1-question-the-rules-the-birth-of-fin": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Question The Rules: The Birth of Fin#",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c002/s001.md"
+    },
+    "/aubrie/fall-semester-2015/one-week-to-process-the-shot-depo-vanguard-150": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "One Week to Process & The Shot (Depo-Vanguard 150)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|2"
+    },
+    "/aubrie/fall-semester-2015/one-week-to-process-the-shot-depo-vanguard-150/scene-1-one-week-to-process-the-shot-depo-vanguard-150": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: One Week to Process & The Shot (Depo-Vanguard 150)",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c003/s001.md"
+    },
+    "/aubrie/fall-semester-2015/home-on-geneva-street": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Home on Geneva Street",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|3"
+    },
+    "/aubrie/fall-semester-2015/home-on-geneva-street/scene-1-home-on-geneva-street": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Home on Geneva Street",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c004/s001.md"
+    },
+    "/aubrie/fall-semester-2015/friday-9-32-am-the-broken-foundation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Friday, 9:32 AM (The Broken Foundation)",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|4|4"
+        "filePath": "__CHAP_TOC__|5|4"
     },
-    "/aubrie/jordan-s-court-case/friday-9-32-am-the-broken-foundation/scene-1-friday-9-32-am-the-attack": {
+    "/aubrie/fall-semester-2015/friday-9-32-am-the-broken-foundation/scene-1-friday-9-32-am-the-attack": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 1: Friday, 9:32 AM (The Attack)",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c005/s001.md"
+        "filePath": "e006/c005/s001.md"
     },
-    "/aubrie/jordan-s-court-case/friday-9-32-am-the-broken-foundation/scene-2-massive-stemi-the-extrication-the-wrong-bus": {
+    "/aubrie/fall-semester-2015/friday-9-32-am-the-broken-foundation/scene-2-massive-stemi-the-extrication-the-wrong-bus": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 2: Massive STEMI: The Extrication & The Wrong Bus",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c005/s002.md"
+        "filePath": "e006/c005/s002.md"
     },
-    "/aubrie/jordan-s-court-case/friday-9-32-am-the-broken-foundation/scene-3-the-emergency-room-the-nuclear-medicine-lab": {
+    "/aubrie/fall-semester-2015/friday-9-32-am-the-broken-foundation/scene-3-the-emergency-room-the-nuclear-medicine-lab": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 3: The Emergency Room & The Nuclear Medicine Lab",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c005/s003.md"
+        "filePath": "e006/c005/s003.md"
     }
 }
