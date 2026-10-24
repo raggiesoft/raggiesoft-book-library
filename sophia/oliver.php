@@ -1238,7 +1238,7 @@ html[data-os="android"] .zoe-kernel-log-os-badge::before {
 .zoe-log-entry.zoe-log-level-action { border-left-color: #059669; }
 .zoe-log-entry.zoe-log-level-scheduler { border-left-color: #4f46e5; }
 .zoe-log-gutter { font-size: 0.75rem; color: var(--zkl-gutter); user-select: none; flex-shrink: 0; min-width: 1.6rem; text-align: right; font-variant-numeric: tabular-nums; }
-.zoe-log-main { flex: 1; min-width: 0; overflow-wrap: anywhere; word-break: break-word; }
+.zoe-log-main { flex: 1; min-width: 0; overflow-wrap: break-word; word-break: normal; }
 .zkl-ns { color: var(--zkl-ns); font-weight: 600; }
 .zkl-stream { color: var(--zkl-stream); font-weight: 700; }
 .zkl-punct { color: var(--zkl-punct); font-weight: 700; }
@@ -1255,9 +1255,28 @@ html[data-os="android"] .zoe-kernel-log-os-badge::before {
 .zkl-number { color: var(--zkl-number); font-weight: 700; font-variant-numeric: tabular-nums; }
 .zkl-operator { color: var(--zkl-operator); font-weight: 700; }
 .zkl-timestamp { font-size: 0.76rem; color: var(--zkl-ts-fg); background: var(--zkl-ts-bg); padding: 0.12rem 0.48rem; border-radius: 4px; white-space: nowrap; flex-shrink: 0; font-variant-numeric: tabular-nums; margin-left: auto; }
-@media (max-width: 640px) {
-    .zoe-log-entry { flex-wrap: wrap; gap: 0.4rem; }
-    .zkl-timestamp { margin-left: 2.2rem; }
+@media (max-width: 768px) {
+    .zoe-log-entry {
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 0.45rem 0.6rem;
+        padding: 0.65rem 0.85rem;
+    }
+    .zoe-log-gutter {
+        order: 1;
+        min-width: auto;
+        text-align: left;
+    }
+    .zkl-timestamp {
+        order: 2;
+        margin-left: auto;
+    }
+    .zoe-log-main {
+        order: 3;
+        flex: 0 0 100%;
+        width: 100%;
+        min-width: 100%;
+    }
 }
 
 /* ==========================================================================
