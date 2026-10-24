@@ -1530,23 +1530,29 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c005/s003.md"
     },
-    "/aubrie/spring-semester-2015/the-leviathan-cut-an-80s-education": {
+    "/aubrie/spring-semester-2015/the-leviathan-cut-electric-color-the-call-from-bluewater": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Leviathan Cut & An 80s Education",
+        "title": "The Leviathan Cut, Electric Color, & The Call from Bluewater",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|5"
     },
-    "/aubrie/spring-semester-2015/the-leviathan-cut-an-80s-education/scene-1-the-leviathan-cut-a-sister-s-love": {
+    "/aubrie/spring-semester-2015/the-leviathan-cut-electric-color-the-call-from-bluewater/scene-1-the-leviathan-cut-a-sister-s-love": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 1: The Leviathan Cut (A Sister's Love)",
         "theme": "raggiesoft-books",
         "filePath": "e003/c006/s001.md"
     },
-    "/aubrie/spring-semester-2015/the-leviathan-cut-an-80s-education/scene-2-an-80s-education-electric-color": {
+    "/aubrie/spring-semester-2015/the-leviathan-cut-electric-color-the-call-from-bluewater/scene-2-an-80s-education-electric-color": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 2: An 80s Education (Electric Color)",
         "theme": "raggiesoft-books",
         "filePath": "e003/c006/s002.md"
+    },
+    "/aubrie/spring-semester-2015/the-leviathan-cut-electric-color-the-call-from-bluewater/scene-3-the-call-from-bluewater": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: The Call from Bluewater",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c006/s003.md"
     },
     "/aubrie/spring-semester-2015/hey-cacuho-the-residence-life-conference": {
         "view": "pages/raggiesoft-books/books/viewer",
