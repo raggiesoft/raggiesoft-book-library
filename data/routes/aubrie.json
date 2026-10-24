@@ -12,14 +12,14 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "36.5 MB",
-            "pdf": "16.9 MB",
-            "text_epub": "705 KB",
-            "text_pdf": "2.8 MB",
-            "epub_bytes": 38300816,
-            "pdf_bytes": 17740863,
-            "text_epub_bytes": 722115,
-            "text_pdf_bytes": 2931854
+            "epub": "36.6 MB",
+            "pdf": "17 MB",
+            "text_epub": "730 KB",
+            "text_pdf": "2.9 MB",
+            "epub_bytes": 38326564,
+            "pdf_bytes": 17817547,
+            "text_epub_bytes": 747866,
+            "text_pdf_bytes": 3008615
         }
     },
     "/aubrie": {
@@ -2121,5 +2121,65 @@
         "title": "Scene 4: New River Hall Room 323 & Allegheny Commons Apartment 101",
         "theme": "raggiesoft-books",
         "filePath": "e005/c002/s004.md"
+    },
+    "/aubrie/jordan-s-court-case/the-5-45-am-problem-the-new-normal-6-00-am": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The 5:45 AM Problem & The New Normal (6:00 AM)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|2"
+    },
+    "/aubrie/jordan-s-court-case/the-5-45-am-problem-the-new-normal-6-00-am/scene-1-the-5-45-am-problem": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The 5:45 AM Problem",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c003/s001.md"
+    },
+    "/aubrie/jordan-s-court-case/the-5-45-am-problem-the-new-normal-6-00-am/scene-2-the-45-minute-wait-the-transit-center": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The 45-Minute Wait & The Transit Center",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c003/s002.md"
+    },
+    "/aubrie/jordan-s-court-case/the-5-45-am-problem-the-new-normal-6-00-am/scene-3-a-flaw-in-the-system-the-new-normal-6-00-am": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: A Flaw in the System: The New Normal (6:00 AM)",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c003/s003.md"
+    },
+    "/aubrie/jordan-s-court-case/the-shot-depo-vanguard-150-home-on-geneva-street": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Shot (Depo-Vanguard 150) & Home on Geneva Street",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|3"
+    },
+    "/aubrie/jordan-s-court-case/the-shot-depo-vanguard-150-home-on-geneva-street/scene-1-one-week-to-process-the-shot-depo-vanguard-150": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: One Week to Process & The Shot (Depo-Vanguard 150)",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c004/s001.md"
+    },
+    "/aubrie/jordan-s-court-case/the-shot-depo-vanguard-150-home-on-geneva-street/scene-2-home-on-geneva-street": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: Home on Geneva Street",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c004/s002.md"
+    },
+    "/aubrie/jordan-s-court-case/friday-9-32-am-the-broken-foundation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Friday, 9:32 AM (The Broken Foundation)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|4"
+    },
+    "/aubrie/jordan-s-court-case/friday-9-32-am-the-broken-foundation/scene-1-friday-9-32-am-the-attack": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Friday, 9:32 AM (The Attack)",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c005/s001.md"
+    },
+    "/aubrie/jordan-s-court-case/friday-9-32-am-the-broken-foundation/scene-2-massive-stemi-the-extrication-the-wrong-bus": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: Massive STEMI: The Extrication & The Wrong Bus",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c005/s002.md"
     }
 }
