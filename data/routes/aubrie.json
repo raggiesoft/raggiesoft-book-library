@@ -14,12 +14,12 @@
         "ebook_sizes": {
             "epub": "36.5 MB",
             "pdf": "16.9 MB",
-            "text_epub": "690 KB",
+            "text_epub": "705 KB",
             "text_pdf": "2.8 MB",
-            "epub_bytes": 38285289,
-            "pdf_bytes": 17696009,
-            "text_epub_bytes": 706590,
-            "text_pdf_bytes": 2886155
+            "epub_bytes": 38300878,
+            "pdf_bytes": 17741047,
+            "text_epub_bytes": 722176,
+            "text_pdf_bytes": 2931985
         }
     },
     "/aubrie": {
@@ -2050,46 +2050,76 @@
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|4"
     },
-    "/aubrie/jordan-s-court-case/the-southern-hemisphere": {
+    "/aubrie/jordan-s-court-case/dismissed-with-prejudice-the-montgomery-county-courthouse": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Southern Hemisphere",
+        "title": "Dismissed with Prejudice (The Montgomery County Courthouse)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|0"
     },
-    "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-1-the-first-in-person-gal-interview": {
+    "/aubrie/jordan-s-court-case/dismissed-with-prejudice-the-montgomery-county-courthouse/scene-1-the-first-in-person-gal-interview": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 1: The First In-Person GAL Interview",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/s001.md"
     },
-    "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-2-the-phalanx-the-rule-on-witnesses-and-the-gavel": {
+    "/aubrie/jordan-s-court-case/dismissed-with-prejudice-the-montgomery-county-courthouse/scene-2-the-phalanx-the-rule-on-witnesses-and-the-gavel": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 2: The Phalanx, The Rule on Witnesses, and The Gavel",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/s002.md"
     },
-    "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-3-the-institutional-shield-ms-higgins-and-kelsey-brennan": {
+    "/aubrie/jordan-s-court-case/dismissed-with-prejudice-the-montgomery-county-courthouse/scene-3-the-institutional-shield-ms-higgins-and-kelsey-brennan": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 3: The Institutional Shield: Ms. Higgins and Kelsey Brennan",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/s003.md"
     },
-    "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-4-the-floor-advisors-isabel-dawson-and-henry-walsh": {
+    "/aubrie/jordan-s-court-case/dismissed-with-prejudice-the-montgomery-county-courthouse/scene-4-the-floor-advisors-isabel-dawson-and-henry-walsh": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 4: The Floor Advisors: Isabel Dawson and Henry Walsh",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/s004.md"
     },
-    "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-5-the-benefactor-and-the-outback-daniel-brooks-and-jessica-gallagher": {
+    "/aubrie/jordan-s-court-case/dismissed-with-prejudice-the-montgomery-county-courthouse/scene-5-the-benefactor-and-the-outback-daniel-brooks-and-jessica-gallagher": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 5: The Benefactor and The Outback: Daniel Brooks and Jessica Gallagher",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/s005.md"
     },
-    "/aubrie/jordan-s-court-case/the-southern-hemisphere/scene-6-the-closing-argument-the-gavel-and-the-handcuffs": {
+    "/aubrie/jordan-s-court-case/dismissed-with-prejudice-the-montgomery-county-courthouse/scene-6-the-closing-argument-the-gavel-and-the-handcuffs": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 6: The Closing Argument, The Gavel, and The Handcuffs",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/s006.md"
+    },
+    "/aubrie/jordan-s-court-case/no-clipboard-to-hide-behind-welcome-to-geneva-street": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "No Clipboard to Hide Behind (Welcome to Geneva Street)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|1"
+    },
+    "/aubrie/jordan-s-court-case/no-clipboard-to-hide-behind-welcome-to-geneva-street/scene-1-no-clipboard-to-hide-behind": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: No Clipboard to Hide Behind",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c002/s001.md"
+    },
+    "/aubrie/jordan-s-court-case/no-clipboard-to-hide-behind-welcome-to-geneva-street/scene-2-the-secret-everyone-already-knew": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The Secret Everyone Already Knew",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c002/s002.md"
+    },
+    "/aubrie/jordan-s-court-case/no-clipboard-to-hide-behind-welcome-to-geneva-street/scene-3-angles-leverage-and-the-no-jealousy-pact": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: Angles, Leverage, and the No-Jealousy Pact",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c002/s003.md"
+    },
+    "/aubrie/jordan-s-court-case/no-clipboard-to-hide-behind-welcome-to-geneva-street/scene-4-new-river-hall-room-323-allegheny-commons-apartment-101": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 4: New River Hall Room 323 & Allegheny Commons Apartment 101",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c002/s004.md"
     }
 }
