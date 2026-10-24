@@ -10,7 +10,17 @@
         "footer": "raggiesoft-books/footer-books",
         "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
-        "navbarBrandLink": "/raggiesoft-books"
+        "navbarBrandLink": "/raggiesoft-books",
+        "ebook_sizes": {
+            "epub": "294 KB",
+            "pdf": "836 KB",
+            "text_epub": "294 KB",
+            "text_pdf": "836 KB",
+            "epub_bytes": 300775,
+            "pdf_bytes": 856261,
+            "text_epub_bytes": 300775,
+            "text_pdf_bytes": 856261
+        }
     },
     "/aethel": {
         "view": "pages/raggiesoft-books/books/viewer",

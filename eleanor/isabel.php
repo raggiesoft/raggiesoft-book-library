@@ -132,11 +132,33 @@ $currentPageTheme = $pageConfig['theme'] ?? 'raggiesoft-books';
 
 // Pre-fetch the Katie manifest for SEO calculations and Sidebar rendering
 $toc_manifest = null;
+$ebookSizes = [
+    'epub' => '',
+    'pdf' => '',
+    'text_epub' => '',
+    'text_pdf' => ''
+];
 if ($seriesSlug) {
     // Note: `@` suppresses network/file warnings if the JSON is missing
     $toc_manifestUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/toc.json';
     $toc_manifestContent = @file_get_contents($toc_manifestUrl);
     $toc_manifest = $toc_manifestContent ? json_decode($toc_manifestContent, true) : null;
+
+    // Resolve human-readable eBook file sizes (preferring local route manifest / ebook-sizes.json, falling back to CDN toc.json)
+    if (!empty($routeData['common']['ebook_sizes']) && is_array($routeData['common']['ebook_sizes'])) {
+        $ebookSizes = array_merge($ebookSizes, $routeData['common']['ebook_sizes']);
+    } else {
+        $localSizesFile = $basePath . '/data/ebook-sizes.json';
+        if (file_exists($localSizesFile)) {
+            $allLocalSizes = json_decode((string)@file_get_contents($localSizesFile), true);
+            if (!empty($allLocalSizes[$seriesSlug]) && is_array($allLocalSizes[$seriesSlug])) {
+                $ebookSizes = array_merge($ebookSizes, $allLocalSizes[$seriesSlug]);
+            }
+        }
+    }
+    if (empty($ebookSizes['epub']) && !empty($toc_manifest['ebook_sizes']) && is_array($toc_manifest['ebook_sizes'])) {
+        $ebookSizes = array_merge($ebookSizes, $toc_manifest['ebook_sizes']);
+    }
 }
 
 $siteName = 'Ocean View Archives';

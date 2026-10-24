@@ -10,7 +10,17 @@
         "footer": "raggiesoft-books/footer-books",
         "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
-        "navbarBrandLink": "/raggiesoft-books"
+        "navbarBrandLink": "/raggiesoft-books",
+        "ebook_sizes": {
+            "epub": "9.4 KB",
+            "pdf": "24 KB",
+            "text_epub": "9.4 KB",
+            "text_pdf": "24 KB",
+            "epub_bytes": 9587,
+            "pdf_bytes": 24793,
+            "text_epub_bytes": 9590,
+            "text_pdf_bytes": 24793
+        }
     },
     "/mary-childhood": {
         "view": "pages/raggiesoft-books/books/viewer",

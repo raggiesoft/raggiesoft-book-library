@@ -20,7 +20,7 @@
  */
 
 // Import requisite dependencies and metadata.
-global $toc_manifest, $cdnBaseUrl, $seriesSlug, $Parsedown;
+global $toc_manifest, $cdnBaseUrl, $seriesSlug, $Parsedown, $ebookSizes, $routeData;
 
 // Setup fallback values in case the JSON data is missing expected fields.
 $seriesTitle = $toc_manifest['series_title'] ?? 'Book Series';
@@ -28,6 +28,13 @@ $seriesDescriptionLong = $toc_manifest['series_description_long'] ?? '';
 $seriesDescription = $toc_manifest['series_description'] ?? 'No description available.';
 $seriesImage = $toc_manifest['series_image'] ?? '';
 $tocUrl = '/' . $seriesSlug . '/toc';
+$landingSizes = !empty($ebookSizes) && is_array($ebookSizes)
+    ? $ebookSizes
+    : ($routeData['common']['ebook_sizes'] ?? ($toc_manifest['ebook_sizes'] ?? []));
+$landingEpubSize     = $landingSizes['epub'] ?? '';
+$landingPdfSize      = $landingSizes['pdf'] ?? '';
+$landingTextEpubSize = $landingSizes['text_epub'] ?? '';
+$landingTextPdfSize  = $landingSizes['text_pdf'] ?? '';
 ?>
 <style>
 /* CSS Grid layout for the landing presentation */
@@ -98,23 +105,25 @@ $tocUrl = '/' . $seriesSlug . '/toc';
                 ?>
             </div>
             
-            <!-- Call to action buttons to view the TOC and download eBooks (Illustrated + Metered Plain-Text) -->
+            <!-- Call to action buttons to view the TOC and download eBooks (Illustrated + Text-Only Editions) -->
             <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
                 <a href="<?php echo htmlspecialchars($tocUrl); ?>" class="rs-btn rs-btn-primary" style="font-size: 1.1rem; padding: 0.75rem 2rem; display: inline-flex; align-items: center; gap: 0.5rem;">
                     <i class="ph ph-book-open"></i> View the Table of Contents
                 </a>
-                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.epub"); ?>" target="_blank" class="rs-btn" style="font-size: 1.1rem; padding: 0.75rem 1.5rem; display: inline-flex; align-items: center; gap: 0.5rem;">
-                    <i class="ph ph-download-simple"></i> EPUB
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.epub"); ?>" target="_blank" class="rs-btn" title="Download Illustrated EPUB<?php echo $landingEpubSize ? ' (' . htmlspecialchars($landingEpubSize) . ')' : ''; ?>" style="font-size: 1.05rem; padding: 0.75rem 1.35rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <i class="ph ph-download-simple"></i>
+                    <span>EPUB<?php echo $landingEpubSize ? ' <span style="opacity: 0.82; font-weight: 500; font-size: 0.9em;">(' . htmlspecialchars($landingEpubSize) . ')</span>' : ''; ?></span>
                 </a>
-                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.pdf"); ?>" target="_blank" class="rs-btn" style="font-size: 1.1rem; padding: 0.75rem 1.5rem; display: inline-flex; align-items: center; gap: 0.5rem;">
-                    <i class="ph ph-file-pdf"></i> PDF
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.pdf"); ?>" target="_blank" class="rs-btn" title="Download Illustrated PDF<?php echo $landingPdfSize ? ' (' . htmlspecialchars($landingPdfSize) . ')' : ''; ?>" style="font-size: 1.05rem; padding: 0.75rem 1.35rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <i class="ph ph-file-pdf"></i>
+                    <span>PDF<?php echo $landingPdfSize ? ' <span style="opacity: 0.82; font-weight: 500; font-size: 0.9em;">(' . htmlspecialchars($landingPdfSize) . ')</span>' : ''; ?></span>
                 </a>
             </div>
-            <div style="margin-top: 0.75rem; font-size: 0.85rem; opacity: 0.85; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
-                <span><i class="ph ph-cell-signal-low"></i> On a metered connection? Plain-text (no images):</span>
-                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.epub"); ?>" target="_blank" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">EPUB (Text Only)</a>
+            <div style="margin-top: 0.75rem; font-size: 0.88rem; opacity: 0.9; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                <span><i class="ph ph-file-text"></i> Text-Only Edition (no images):</span>
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.epub"); ?>" target="_blank" title="Download Text-Only EPUB (No Images<?php echo $landingTextEpubSize ? ' — ' . htmlspecialchars($landingTextEpubSize) : ''; ?>)" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">EPUB &mdash; Text Only<?php echo $landingTextEpubSize ? ' (' . htmlspecialchars($landingTextEpubSize) . ')' : ''; ?></a>
                 <span aria-hidden="true">&bull;</span>
-                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.pdf"); ?>" target="_blank" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">PDF (Text Only)</a>
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.pdf"); ?>" target="_blank" title="Download Text-Only PDF (No Images<?php echo $landingTextPdfSize ? ' — ' . htmlspecialchars($landingTextPdfSize) : ''; ?>)" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">PDF &mdash; Text Only<?php echo $landingTextPdfSize ? ' (' . htmlspecialchars($landingTextPdfSize) . ')' : ''; ?></a>
             </div>
         </div>
     </div>

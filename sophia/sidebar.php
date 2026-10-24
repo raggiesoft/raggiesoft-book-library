@@ -26,7 +26,7 @@
  */
 
 // Import legacy global variables required for view rendering
-global $seriesSlug, $routeData, $cdnBaseUrl, $requestUri, $toc_manifest, $pageConfig, $fmTitle;
+global $seriesSlug, $routeData, $cdnBaseUrl, $requestUri, $toc_manifest, $pageConfig, $fmTitle, $ebookSizes;
 
 // Normalize request URI to match route keys even if a trailing slash is present
 $normalizedRequestUri = rtrim($requestUri, '/');
@@ -130,19 +130,33 @@ $sidebarPageTitle = $routeConfig['title'] ?? ($pageConfig['title'] ?? (!empty($f
         <div id="rs-search-results" style="display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 6px; max-height: 350px; overflow-y: auto; z-index: 1000; box-shadow: 0 8px 24px rgba(0,0,0,0.15); margin-top: 4px;"></div>
     </form>
 
-    <!-- E-Book Download Links (Compact 2-column primary row + 1-line Plain-Text Metered strip) -->
-    <?php if (!empty($seriesSlug) && !empty($toc_manifest)): ?>
+    <!-- E-Book Download Links (Illustrated Edition + Text-Only Edition with pleasant human-readable file sizes) -->
+    <?php if (!empty($seriesSlug) && !empty($toc_manifest)):
+        $sbSizes = !empty($ebookSizes) && is_array($ebookSizes)
+            ? $ebookSizes
+            : ($routeData['common']['ebook_sizes'] ?? ($toc_manifest['ebook_sizes'] ?? []));
+        $sbEpubSize     = $sbSizes['epub'] ?? '';
+        $sbPdfSize      = $sbSizes['pdf'] ?? '';
+        $sbTextEpubSize = $sbSizes['text_epub'] ?? '';
+        $sbTextPdfSize  = $sbSizes['text_pdf'] ?? '';
+    ?>
     <div style="margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 0.45rem;">
         <div style="display: flex; gap: 0.5rem;">
-            <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.epub"); ?>" target="_blank" class="rs-btn" title="Download Illustrated EPUB" style="flex: 1; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 0.85rem; padding: 0.5rem;"><i class="ph ph-book-open"></i> EPUB</a>
-            <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.pdf"); ?>" target="_blank" class="rs-btn" title="Download Illustrated PDF" style="flex: 1; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 4px; font-size: 0.85rem; padding: 0.5rem;"><i class="ph ph-file-pdf"></i> PDF</a>
+            <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.epub"); ?>" target="_blank" class="rs-btn" title="Download Illustrated EPUB<?php echo $sbEpubSize ? ' (' . htmlspecialchars($sbEpubSize) . ')' : ''; ?>" style="flex: 1; text-decoration: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; font-size: 0.85rem; padding: 0.45rem 0.4rem; line-height: 1.2;">
+                <span style="display: inline-flex; align-items: center; gap: 4px; font-weight: 600;"><i class="ph ph-book-open"></i> EPUB</span>
+                <?php if ($sbEpubSize): ?><span style="font-size: 0.72rem; opacity: 0.78; font-weight: 500;"><?php echo htmlspecialchars($sbEpubSize); ?></span><?php endif; ?>
+            </a>
+            <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.pdf"); ?>" target="_blank" class="rs-btn" title="Download Illustrated PDF<?php echo $sbPdfSize ? ' (' . htmlspecialchars($sbPdfSize) . ')' : ''; ?>" style="flex: 1; text-decoration: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; font-size: 0.85rem; padding: 0.45rem 0.4rem; line-height: 1.2;">
+                <span style="display: inline-flex; align-items: center; gap: 4px; font-weight: 600;"><i class="ph ph-file-pdf"></i> PDF</span>
+                <?php if ($sbPdfSize): ?><span style="font-size: 0.72rem; opacity: 0.78; font-weight: 500;"><?php echo htmlspecialchars($sbPdfSize); ?></span><?php endif; ?>
+            </a>
         </div>
-        <div style="display: flex; align-items: center; justify-content: space-between; font-size: 0.75rem; opacity: 0.8; padding: 0 0.25rem;">
-            <span><i class="ph ph-cell-signal-low"></i> Text-Only (Metered):</span>
-            <span style="display: inline-flex; align-items: center; gap: 0.35rem;">
-                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.epub"); ?>" target="_blank" title="Download Plain-Text EPUB (No Images)" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 2px;">EPUB</a>
-                <span aria-hidden="true">&bull;</span>
-                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.pdf"); ?>" target="_blank" title="Download Plain-Text PDF (No Images)" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 2px;">PDF</a>
+        <div style="font-size: 0.75rem; opacity: 0.9; padding: 0.4rem 0.5rem; border-radius: 6px; background: var(--rs-surface); border: 1px solid var(--rs-border); display: flex; flex-direction: column; gap: 0.2rem; text-align: center;">
+            <span style="opacity: 0.85;"><i class="ph ph-file-text"></i> Text-Only Edition (No Images):</span>
+            <span style="display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; flex-wrap: wrap;">
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.epub"); ?>" target="_blank" title="Download Text-Only EPUB (No Images<?php echo $sbTextEpubSize ? ' — ' . htmlspecialchars($sbTextEpubSize) : ''; ?>)" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 2px;">EPUB<?php echo $sbTextEpubSize ? ' (' . htmlspecialchars($sbTextEpubSize) . ')' : ''; ?></a>
+                <span aria-hidden="true" style="opacity: 0.6;">&bull;</span>
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.pdf"); ?>" target="_blank" title="Download Text-Only PDF (No Images<?php echo $sbTextPdfSize ? ' — ' . htmlspecialchars($sbTextPdfSize) : ''; ?>)" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 2px;">PDF<?php echo $sbTextPdfSize ? ' (' . htmlspecialchars($sbTextPdfSize) . ')' : ''; ?></a>
             </span>
         </div>
     </div>

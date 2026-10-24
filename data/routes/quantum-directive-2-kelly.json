@@ -10,7 +10,17 @@
         "footer": "raggiesoft-books/footer-books",
         "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
-        "navbarBrandLink": "/raggiesoft-books"
+        "navbarBrandLink": "/raggiesoft-books",
+        "ebook_sizes": {
+            "epub": "80 KB",
+            "pdf": "7.5 MB",
+            "text_epub": "80 KB",
+            "text_pdf": "7.5 MB",
+            "epub_bytes": 81699,
+            "pdf_bytes": 7888871,
+            "text_epub_bytes": 81703,
+            "text_pdf_bytes": 7888871
+        }
     },
     "/quantum-directive-2-kelly": {
         "view": "pages/raggiesoft-books/books/viewer",

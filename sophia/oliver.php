@@ -791,26 +791,37 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
         </article>
         
         <!-- E-Book CTA Card (Dismissible; persisted in reader-settings.showOfflineCta and resettable in Settings) -->
-        <?php if (!$specialPageType): ?>
+        <?php if (!$specialPageType):
+            global $ebookSizes;
+            $oliverSizes = !empty($ebookSizes) && is_array($ebookSizes)
+                ? $ebookSizes
+                : ($routeData['common']['ebook_sizes'] ?? ($toc_manifest['ebook_sizes'] ?? []));
+            $oliverEpubSize     = $oliverSizes['epub'] ?? '';
+            $oliverPdfSize      = $oliverSizes['pdf'] ?? '';
+            $oliverTextEpubSize = $oliverSizes['text_epub'] ?? '';
+            $oliverTextPdfSize  = $oliverSizes['text_pdf'] ?? '';
+        ?>
         <div id="rs-offline-cta-card" class="rs-offline-cta-card" style="position: relative; margin-top: 4rem; padding: 2rem; border: 1px solid var(--rs-border); border-radius: 12px; background: var(--rs-surface); text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
             <button type="button" id="rs-dismiss-offline-cta" class="rs-btn" title="Dismiss card (can be re-enabled in Settings)" aria-label="Dismiss Take this Story Offline card" style="position: absolute; top: 0.75rem; right: 0.75rem; padding: 0.3rem 0.65rem; font-size: 0.8rem; opacity: 0.75; display: inline-flex; align-items: center; gap: 0.25rem;">
                 <i class="ph ph-x"></i> Hide
             </button>
             <h3 style="margin-bottom: 0.75rem; color: var(--rs-primary);">Take this Story Offline</h3>
-            <p style="margin-bottom: 1.25rem; font-size: 1.05rem; opacity: 0.9;">Download the complete, illustrated eBook for your e-reader, tablet, or phone. Yours to keep forever.</p>
+            <p style="margin-bottom: 1.25rem; font-size: 1.05rem; opacity: 0.9;">Download the complete eBook for your e-reader, tablet, or phone in either the full Illustrated Edition or the lightweight Text-Only Edition. Yours to keep forever.</p>
             <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
-                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.epub"); ?>" target="_blank" class="rs-btn rs-btn-primary" style="font-size: 1.05rem; padding: 0.7rem 1.4rem; display: inline-flex; align-items: center; gap: 0.5rem;">
-                    <i class="ph ph-download-simple"></i> Download EPUB
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.epub"); ?>" target="_blank" class="rs-btn rs-btn-primary" title="Download Illustrated EPUB<?php echo $oliverEpubSize ? ' (' . htmlspecialchars($oliverEpubSize) . ')' : ''; ?>" style="font-size: 1.05rem; padding: 0.7rem 1.4rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <i class="ph ph-download-simple"></i>
+                    <span>Download EPUB<?php echo $oliverEpubSize ? ' <span style="opacity: 0.88; font-weight: 500; font-size: 0.92em;">(' . htmlspecialchars($oliverEpubSize) . ')</span>' : ''; ?></span>
                 </a>
-                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.pdf"); ?>" target="_blank" class="rs-btn" style="font-size: 1.05rem; padding: 0.7rem 1.4rem; display: inline-flex; align-items: center; gap: 0.5rem;">
-                    <i class="ph ph-file-pdf"></i> Download PDF
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.pdf"); ?>" target="_blank" class="rs-btn" title="Download Illustrated PDF<?php echo $oliverPdfSize ? ' (' . htmlspecialchars($oliverPdfSize) . ')' : ''; ?>" style="font-size: 1.05rem; padding: 0.7rem 1.4rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <i class="ph ph-file-pdf"></i>
+                    <span>Download PDF<?php echo $oliverPdfSize ? ' <span style="opacity: 0.82; font-weight: 500; font-size: 0.92em;">(' . htmlspecialchars($oliverPdfSize) . ')</span>' : ''; ?></span>
                 </a>
             </div>
-            <div style="margin-top: 1rem; padding-top: 0.85rem; border-top: 1px dashed var(--rs-border); font-size: 0.85rem; opacity: 0.85; display: flex; align-items: center; justify-content: center; gap: 0.5rem; flex-wrap: wrap;">
-                <span><i class="ph ph-cell-signal-low"></i> On a metered connection? Plain-text (no images):</span>
-                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.epub"); ?>" target="_blank" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">EPUB (Text Only)</a>
+            <div style="margin-top: 1rem; padding-top: 0.85rem; border-top: 1px dashed var(--rs-border); font-size: 0.88rem; opacity: 0.9; display: flex; align-items: center; justify-content: center; gap: 0.5rem; flex-wrap: wrap;">
+                <span><i class="ph ph-file-text"></i> Text-Only Edition (no images):</span>
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.epub"); ?>" target="_blank" title="Download Text-Only EPUB (No Images<?php echo $oliverTextEpubSize ? ' — ' . htmlspecialchars($oliverTextEpubSize) : ''; ?>)" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">EPUB &mdash; Text Only<?php echo $oliverTextEpubSize ? ' (' . htmlspecialchars($oliverTextEpubSize) . ')' : ''; ?></a>
                 <span aria-hidden="true">&bull;</span>
-                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.pdf"); ?>" target="_blank" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">PDF (Text Only)</a>
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.pdf"); ?>" target="_blank" title="Download Text-Only PDF (No Images<?php echo $oliverTextPdfSize ? ' — ' . htmlspecialchars($oliverTextPdfSize) : ''; ?>)" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">PDF &mdash; Text Only<?php echo $oliverTextPdfSize ? ' (' . htmlspecialchars($oliverTextPdfSize) . ')' : ''; ?></a>
             </div>
         </div>
         <script>

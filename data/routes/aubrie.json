@@ -10,7 +10,17 @@
         "footer": "raggiesoft-books/footer-books",
         "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
-        "navbarBrandLink": "/raggiesoft-books"
+        "navbarBrandLink": "/raggiesoft-books",
+        "ebook_sizes": {
+            "epub": "36.5 MB",
+            "pdf": "16.9 MB",
+            "text_epub": "690 KB",
+            "text_pdf": "2.8 MB",
+            "epub_bytes": 38285289,
+            "pdf_bytes": 17696009,
+            "text_epub_bytes": 706590,
+            "text_pdf_bytes": 2886155
+        }
     },
     "/aubrie": {
         "view": "pages/raggiesoft-books/books/viewer",

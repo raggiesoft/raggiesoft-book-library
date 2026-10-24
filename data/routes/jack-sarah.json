@@ -10,7 +10,17 @@
         "footer": "raggiesoft-books/footer-books",
         "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
-        "navbarBrandLink": "/raggiesoft-books"
+        "navbarBrandLink": "/raggiesoft-books",
+        "ebook_sizes": {
+            "epub": "188 KB",
+            "pdf": "4.4 MB",
+            "text_epub": "188 KB",
+            "text_pdf": "4.4 MB",
+            "epub_bytes": 192633,
+            "pdf_bytes": 4591370,
+            "text_epub_bytes": 192631,
+            "text_pdf_bytes": 4591370
+        }
     },
     "/jack-sarah": {
         "view": "pages/raggiesoft-books/books/viewer",

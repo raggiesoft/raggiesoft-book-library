@@ -10,7 +10,17 @@
         "footer": "raggiesoft-books/footer-books",
         "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
-        "navbarBrandLink": "/raggiesoft-books"
+        "navbarBrandLink": "/raggiesoft-books",
+        "ebook_sizes": {
+            "epub": "86 KB",
+            "pdf": "230 KB",
+            "text_epub": "86 KB",
+            "text_pdf": "230 KB",
+            "epub_bytes": 87793,
+            "pdf_bytes": 235827,
+            "text_epub_bytes": 87794,
+            "text_pdf_bytes": 235827
+        }
     },
     "/bob-emily": {
         "view": "pages/raggiesoft-books/books/viewer",

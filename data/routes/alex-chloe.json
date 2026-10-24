@@ -10,7 +10,17 @@
         "footer": "raggiesoft-books/footer-books",
         "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
-        "navbarBrandLink": "/raggiesoft-books"
+        "navbarBrandLink": "/raggiesoft-books",
+        "ebook_sizes": {
+            "epub": "669 KB",
+            "pdf": "1.7 MB",
+            "text_epub": "669 KB",
+            "text_pdf": "1.7 MB",
+            "epub_bytes": 685094,
+            "pdf_bytes": 1801861,
+            "text_epub_bytes": 685093,
+            "text_pdf_bytes": 1801861
+        }
     },
     "/alex-chloe": {
         "view": "pages/raggiesoft-books/books/viewer",

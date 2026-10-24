@@ -10,7 +10,17 @@
         "footer": "raggiesoft-books/footer-books",
         "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
-        "navbarBrandLink": "/raggiesoft-books"
+        "navbarBrandLink": "/raggiesoft-books",
+        "ebook_sizes": {
+            "epub": "5.3 KB",
+            "pdf": "3.2 KB",
+            "text_epub": "5.3 KB",
+            "text_pdf": "3.2 KB",
+            "epub_bytes": 5409,
+            "pdf_bytes": 3262,
+            "text_epub_bytes": 5410,
+            "text_pdf_bytes": 3262
+        }
     },
     "/water-planet": {
         "view": "pages/raggiesoft-books/books/viewer",

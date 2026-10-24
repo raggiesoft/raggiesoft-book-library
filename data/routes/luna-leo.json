@@ -10,7 +10,17 @@
         "footer": "raggiesoft-books/footer-books",
         "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
-        "navbarBrandLink": "/raggiesoft-books"
+        "navbarBrandLink": "/raggiesoft-books",
+        "ebook_sizes": {
+            "epub": "10.1 MB",
+            "pdf": "11.8 MB",
+            "text_epub": "789 KB",
+            "text_pdf": "2.4 MB",
+            "epub_bytes": 10560699,
+            "pdf_bytes": 12323502,
+            "text_epub_bytes": 807826,
+            "text_pdf_bytes": 2517079
+        }
     },
     "/luna-leo": {
         "view": "pages/raggiesoft-books/books/viewer",
