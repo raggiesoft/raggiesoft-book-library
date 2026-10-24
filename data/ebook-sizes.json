@@ -42,12 +42,12 @@
     "aubrie": {
         "epub": "36.6 MB",
         "pdf": "17 MB",
-        "text_epub": "730 KB",
+        "text_epub": "744 KB",
         "text_pdf": "2.9 MB",
-        "epub_bytes": 38326564,
-        "pdf_bytes": 17817547,
-        "text_epub_bytes": 747866,
-        "text_pdf_bytes": 3008615
+        "epub_bytes": 38340090,
+        "pdf_bytes": 17853777,
+        "text_epub_bytes": 761392,
+        "text_pdf_bytes": 3044673
     },
     "beth": {
         "epub": "5.3 KB",
@@ -184,10 +184,10 @@
         "pdf": "1.4 MB",
         "text_epub": "496 KB",
         "text_pdf": "1.4 MB",
-        "epub_bytes": 508182,
-        "pdf_bytes": 1452411,
-        "text_epub_bytes": 508175,
-        "text_pdf_bytes": 1452411
+        "epub_bytes": 508184,
+        "pdf_bytes": 1452417,
+        "text_epub_bytes": 508180,
+        "text_pdf_bytes": 1452417
     },
     "pebble-borrow": {
         "epub": "152 KB",

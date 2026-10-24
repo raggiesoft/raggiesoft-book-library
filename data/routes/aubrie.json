@@ -14,12 +14,12 @@
         "ebook_sizes": {
             "epub": "36.6 MB",
             "pdf": "17 MB",
-            "text_epub": "730 KB",
+            "text_epub": "744 KB",
             "text_pdf": "2.9 MB",
-            "epub_bytes": 38326564,
-            "pdf_bytes": 17817547,
-            "text_epub_bytes": 747866,
-            "text_pdf_bytes": 3008615
+            "epub_bytes": 38340090,
+            "pdf_bytes": 17853777,
+            "text_epub_bytes": 761392,
+            "text_pdf_bytes": 3044673
         }
     },
     "/aubrie": {
@@ -2122,29 +2122,35 @@
         "theme": "raggiesoft-books",
         "filePath": "e005/c002/s004.md"
     },
-    "/aubrie/jordan-s-court-case/the-5-45-am-problem-the-new-normal-6-00-am": {
+    "/aubrie/jordan-s-court-case/the-new-normal-6-00-am-the-birth-of-fin": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The 5:45 AM Problem & The New Normal (6:00 AM)",
+        "title": "The New Normal (6:00 AM) & The Birth of Fin#",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|2"
     },
-    "/aubrie/jordan-s-court-case/the-5-45-am-problem-the-new-normal-6-00-am/scene-1-the-5-45-am-problem": {
+    "/aubrie/jordan-s-court-case/the-new-normal-6-00-am-the-birth-of-fin/scene-1-the-5-45-am-problem": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 1: The 5:45 AM Problem",
         "theme": "raggiesoft-books",
         "filePath": "e005/c003/s001.md"
     },
-    "/aubrie/jordan-s-court-case/the-5-45-am-problem-the-new-normal-6-00-am/scene-2-the-45-minute-wait-the-transit-center": {
+    "/aubrie/jordan-s-court-case/the-new-normal-6-00-am-the-birth-of-fin/scene-2-the-45-minute-wait-on-commonwealth-mall": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The 45-Minute Wait & The Transit Center",
+        "title": "Scene 2: The 45-Minute Wait on Commonwealth Mall",
         "theme": "raggiesoft-books",
         "filePath": "e005/c003/s002.md"
     },
-    "/aubrie/jordan-s-court-case/the-5-45-am-problem-the-new-normal-6-00-am/scene-3-a-flaw-in-the-system-the-new-normal-6-00-am": {
+    "/aubrie/jordan-s-court-case/the-new-normal-6-00-am-the-birth-of-fin/scene-3-a-flaw-in-the-system-the-new-normal-6-00-am": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Scene 3: A Flaw in the System: The New Normal (6:00 AM)",
         "theme": "raggiesoft-books",
         "filePath": "e005/c003/s003.md"
+    },
+    "/aubrie/jordan-s-court-case/the-new-normal-6-00-am-the-birth-of-fin/scene-4-question-the-rules-the-birth-of-fin": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 4: Question The Rules: The Birth of Fin#",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c003/s004.md"
     },
     "/aubrie/jordan-s-court-case/the-shot-depo-vanguard-150-home-on-geneva-street": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2181,5 +2187,11 @@
         "title": "Scene 2: Massive STEMI: The Extrication & The Wrong Bus",
         "theme": "raggiesoft-books",
         "filePath": "e005/c005/s002.md"
+    },
+    "/aubrie/jordan-s-court-case/friday-9-32-am-the-broken-foundation/scene-3-the-emergency-room-the-nuclear-medicine-lab": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: The Emergency Room & The Nuclear Medicine Lab",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c005/s003.md"
     }
 }
