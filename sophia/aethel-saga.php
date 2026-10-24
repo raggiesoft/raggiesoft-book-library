@@ -13,7 +13,7 @@
  *       full-screen Stardust Engine Book Reader.
  *     - Uses 100% canonical e###/c###/s### semantic routes (zero legacy b-num/p-num URLs).
  *     - Links directly to Firelight's companion rock-opera album in The Listening Room
- *       (https://music.raggiesoft.com/artists/firelight/2025-silver-gauntlet-of-aethel).
+ *       (https://music.raggiesoft.com/firelight/1987-silver-gauntlet-of-aethel).
  * =============================================================================
  */
 
@@ -198,7 +198,7 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
                 <a href="/aethel/era-1-the-age-of-myth/book-i-the-silver-sun/scene-1-chapter-1-the-architect-s-lesson" class="aethel-btn-outline">
                     <i class="ph-fill ph-sparkle"></i> Read Prologue: &ldquo;The Architect's Lesson&rdquo;
                 </a>
-                <a href="https://music.raggiesoft.com/artists/firelight/2025-silver-gauntlet-of-aethel" data-no-spa="true" target="_blank" rel="noopener" class="aethel-btn-outline">
+                <a href="https://music.raggiesoft.com/firelight/1987-silver-gauntlet-of-aethel" data-no-spa="true" target="_blank" rel="noopener" class="aethel-btn-outline">
                     <i class="ph-fill ph-headphones"></i> Firelight Companion Album (Listening Room)
                 </a>
             </div>

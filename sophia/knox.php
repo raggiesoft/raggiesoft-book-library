@@ -15,7 +15,7 @@
  *     - Links directly to canonical e###/c###/s### routes for both Jessica's Cut
  *       (/quantum-directive-1-jessica) and Kelly's Cut (/quantum-directive-1-kelly)
  *       and hands off soundtrack playback to The Listening Room
- *       (https://music.raggiesoft.com/artists/the-stardust-engine/2017-knox-ost).
+ *       (https://music.raggiesoft.com/the-stardust-engine).
  *     - Strictly enforces WCAG 2.1 AA contrast across both Dark and Light modes.
  * =============================================================================
  */
@@ -293,7 +293,7 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
                 <a href="/quantum-directive-1-kelly" class="knox-btn-secondary">
                     <i class="ph-fill ph-books"></i> Read Kelly's Cut (Parallel Edition)
                 </a>
-                <a href="https://music.raggiesoft.com/artists/the-stardust-engine/2017-knox-ost" data-no-spa="true" target="_blank" rel="noopener" class="knox-btn-secondary">
+                <a href="https://music.raggiesoft.com/the-stardust-engine" data-no-spa="true" target="_blank" rel="noopener" class="knox-btn-secondary">
                     <i class="ph-fill ph-headphones"></i> Official KNOX OST (Listening Room)
                 </a>
             </div>
