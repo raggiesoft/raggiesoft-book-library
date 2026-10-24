@@ -68,9 +68,31 @@ if (!empty($routeData)) {
     $sbRouteKeys = array_keys($routeData);
     $sbSeriesFilter = '/' . ($seriesSlug ?? '');
     
-    // Filter out non-sequential pages (like the root common block or landing page)
-    $sbFilteredKeys = array_filter($sbRouteKeys, function($k) use ($sbSeriesFilter) { 
-        return $k !== 'common' && $k !== $sbSeriesFilter; 
+    // Filter out non-sequential pages (like the root common block, landing page, or intermediate TOC views when reading a scene)
+    $currentFilePath = (string)($routeConfig['filePath'] ?? '');
+    $isReadingScene = (
+        $currentFilePath !== '' &&
+        $currentFilePath !== '__SERIES_LANDING__' &&
+        $currentFilePath !== '__TOC__' &&
+        strpos($currentFilePath, '__ERA_TOC__|') !== 0 &&
+        strpos($currentFilePath, '__CHAP_TOC__|') !== 0
+    );
+    $sbFilteredKeys = array_filter($sbRouteKeys, function($k) use ($sbSeriesFilter, $routeData, $isReadingScene) { 
+        if ($k === 'common' || $k === $sbSeriesFilter) {
+            return false;
+        }
+        if ($isReadingScene) {
+            $fp = (string)($routeData[$k]['filePath'] ?? '');
+            if (
+                $fp === '__SERIES_LANDING__' ||
+                $fp === '__TOC__' ||
+                strpos($fp, '__ERA_TOC__|') === 0 ||
+                strpos($fp, '__CHAP_TOC__|') === 0
+            ) {
+                return false;
+            }
+        }
+        return true; 
     });
     
     // Re-index array to guarantee numerical progression

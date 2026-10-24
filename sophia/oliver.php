@@ -156,9 +156,10 @@ if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $mdContent, $matche
     }
 }
 
-// 3. Render HTML
+// 3. Render HTML & Extract In-Scene `## Heading` (`<h2>`) Sub-Sections for Mini-TOC
 require_once $basePath . '/includes/classes/stardust-parsedown.php';
 $Parsedown = new StardustParsedown('vanilla');
+$sceneSubsections = [];
 if ($specialPageType) {
     ob_start();
     // Dynamically require the correct PHP sub-view
@@ -175,6 +176,33 @@ if ($specialPageType) {
 } else {
     // Parse Standard Markdown
     $htmlContent = $Parsedown->text($mdContent);
+
+    // Detect `## Heading` (`<h2>`) sub-headers (commonly placed after `***` scene breaks)
+    // to inject deterministic anchor IDs and build the In-Scene Mini Table of Contents.
+    $subHeadingCounter = 0;
+    $htmlContent = preg_replace_callback(
+        '/<h2(?:\s+[^>]*)?>(.*?)<\/h2>/is',
+        function ($m) use (&$sceneSubsections, &$subHeadingCounter) {
+            $subHeadingCounter++;
+            $innerHtml = $m[1];
+            $plainLabel = trim(preg_replace('/\s+/', ' ', html_entity_decode(strip_tags($innerHtml), ENT_QUOTES | ENT_HTML5, 'UTF-8')));
+            $slugPart = strtolower(trim((string)preg_replace('/[^a-zA-Z0-9]+/', '-', $plainLabel), '-'));
+            if ($slugPart === '') {
+                $slugPart = 'section';
+            }
+            if (strlen($slugPart) > 48) {
+                $slugPart = rtrim(substr($slugPart, 0, 48), '-');
+            }
+            $secId = 'sec-' . $subHeadingCounter . '-' . $slugPart;
+            $sceneSubsections[] = [
+                'num' => $subHeadingCounter,
+                'id' => $secId,
+                'label' => $plainLabel !== '' ? $plainLabel : ('Section ' . $subHeadingCounter),
+            ];
+            return '<h2 id="' . htmlspecialchars($secId, ENT_QUOTES, 'UTF-8') . '" class="reader-scene-subheading" tabindex="-1">' . $innerHtml . '</h2>';
+        },
+        $htmlContent
+    );
 }
 
 // 4. Sequence Navigation (Provided by Route JSON)
@@ -182,12 +210,28 @@ $prevUrl = $config['prevUrl'] ?? null;
 $nextUrl = $config['nextUrl'] ?? null;
 $sequenceName = $routeData['common']['siteName'] ?? 'Ocean View Archives';
 
-// Fallback logic to generate previous/next if they aren't explicitly in the JSON
+// Fallback logic to generate previous/next if they aren't explicitly in the JSON.
+// When the reader is viewing an actual narrative scene (`!$specialPageType`), filter out
+// intermediate structural TOC routes (`__TOC__`, `__ERA_TOC__`, `__CHAP_TOC__`) so
+// "Previous" and "Next" flow seamlessly from scene to scene across chapter boundaries.
 $routeKeys = array_keys($routeData);
 $seriesSlugForFilter = '/' . ($seriesSlug ?? '');
-// Filter out non-content keys
-$filteredKeys = array_filter($routeKeys, function($k) use ($seriesSlugForFilter) { 
-    return $k !== 'common' && $k !== $seriesSlugForFilter; 
+$filteredKeys = array_filter($routeKeys, function($k) use ($seriesSlugForFilter, $routeData, $specialPageType) { 
+    if ($k === 'common' || $k === $seriesSlugForFilter) {
+        return false;
+    }
+    if (!$specialPageType) {
+        $fp = (string)($routeData[$k]['filePath'] ?? '');
+        if (
+            $fp === '__SERIES_LANDING__' ||
+            $fp === '__TOC__' ||
+            strpos($fp, '__ERA_TOC__|') === 0 ||
+            strpos($fp, '__CHAP_TOC__|') === 0
+        ) {
+            return false;
+        }
+    }
+    return true;
 });
 $filteredKeys = array_values($filteredKeys); // reindex
 $currentIndex = array_search($requestUri, $filteredKeys);
@@ -1014,6 +1058,33 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                     <?php endif; // End if ($firstTrack) ?>
                 <?php endif; ?>
 
+            <?php if (!$specialPageType && !empty($sceneSubsections)): ?>
+            <!-- In-Scene Mini Table of Contents (Constructed from `## Heading` sub-headers at `***` breaks) -->
+            <nav class="reader-scene-mini-toc" aria-label="In-scene sections">
+                <div class="reader-scene-mini-toc-header">
+                    <span class="reader-scene-mini-toc-kicker">
+                        <i class="ph ph-list-bullets" aria-hidden="true"></i>
+                        <span>In This Scene</span>
+                    </span>
+                    <span class="reader-scene-mini-toc-badge">
+                        <?php echo count($sceneSubsections) === 1 ? '1 Section' : (count($sceneSubsections) . ' Sections'); ?>
+                    </span>
+                </div>
+                <ol class="reader-scene-mini-toc-list">
+                    <?php foreach ($sceneSubsections as $subSec): ?>
+                    <li class="reader-scene-mini-toc-item">
+                        <a href="#<?php echo htmlspecialchars($subSec['id'], ENT_QUOTES, 'UTF-8'); ?>"
+                           class="reader-scene-mini-toc-link"
+                           onclick="var targetEl = document.getElementById('<?php echo htmlspecialchars($subSec['id'], ENT_QUOTES, 'UTF-8'); ?>'); if (targetEl) { var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches; targetEl.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth', block: 'start' }); try { targetEl.focus({ preventScroll: true }); } catch (e) {} if (window.history && window.history.replaceState) { window.history.replaceState(null, '', '#<?php echo htmlspecialchars($subSec['id'], ENT_QUOTES, 'UTF-8'); ?>'); } } return false;">
+                            <span class="reader-scene-mini-toc-num" aria-hidden="true"><?php echo str_pad((string)$subSec['num'], 2, '0', STR_PAD_LEFT); ?></span>
+                            <span class="reader-scene-mini-toc-label"><?php echo htmlspecialchars($subSec['label'], ENT_QUOTES, 'UTF-8'); ?></span>
+                        </a>
+                    </li>
+                    <?php endforeach; ?>
+                </ol>
+            </nav>
+            <?php endif; ?>
+
             <!-- Parsedown Content -->
             <?php echo $htmlContent; ?>
         </article>
@@ -1668,6 +1739,128 @@ html[data-os="android"] .zoe-kernel-log-os-badge::before {
 .reader-hero-dot:focus-visible { outline: 2px solid #60a5fa; outline-offset: 2px; }
 @media (prefers-reduced-motion: reduce) {
     .reader-hero-slide, .reader-hero-nav, .reader-hero-dot { transition: none !important; }
+}
+
+/* ==========================================================================
+ * OLIVER READER: IN-SCENE MINI TABLE OF CONTENTS & `## Heading` SUB-HEADERS
+ * ==========================================================================
+ * Styles the `<nav class="reader-scene-mini-toc">` jump-navigation card and
+ * `h2.reader-scene-subheading` section dividers across Light Mode, Sepia Mode,
+ * Dark Mode, and custom narrative themes with strict WCAG 2.1 AA contrast.
+ * ========================================================================== */
+.story-content .reader-scene-mini-toc,
+.story-content .reader-scene-mini-toc *,
+.story-content h2.reader-scene-subheading {
+    text-indent: 0 !important;
+}
+.story-content .reader-scene-mini-toc::first-letter,
+.story-content .reader-scene-mini-toc *::first-letter,
+.story-content h2.reader-scene-subheading::first-letter {
+    float: none !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    margin: 0 !important;
+    font-weight: inherit !important;
+    color: inherit !important;
+}
+.reader-scene-mini-toc {
+    margin: 2rem 0 2.5rem 0;
+    padding: 1rem 1.25rem;
+    border-radius: 12px;
+    border: 1px solid var(--rs-border);
+    border-left: 4px solid var(--rs-primary);
+    background: var(--rs-surface);
+    color: var(--rs-text);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+.reader-scene-mini-toc-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.75rem;
+    padding-bottom: 0.65rem;
+    margin-bottom: 0.65rem;
+    border-bottom: 1px dashed var(--rs-border);
+}
+.reader-scene-mini-toc-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    font-size: 0.78rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--rs-primary);
+}
+.reader-scene-mini-toc-badge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    background: var(--rs-bg);
+    border: 1px solid var(--rs-border);
+    color: var(--rs-text);
+    opacity: 0.85;
+}
+.reader-scene-mini-toc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0.45rem 0.85rem;
+}
+.reader-scene-mini-toc-item {
+    margin: 0;
+    padding: 0;
+}
+.reader-scene-mini-toc-link {
+    display: flex;
+    align-items: baseline;
+    gap: 0.55rem;
+    padding: 0.42rem 0.6rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--rs-text);
+    font-size: 0.9rem;
+    line-height: 1.35;
+    border: 1px solid transparent;
+    transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+.reader-scene-mini-toc-link:hover {
+    background: var(--rs-bg);
+    border-color: var(--rs-border);
+    color: var(--rs-primary);
+}
+.reader-scene-mini-toc-link:focus-visible {
+    outline: 2px solid var(--rs-primary);
+    outline-offset: 2px;
+    background: var(--rs-bg);
+}
+.reader-scene-mini-toc-num {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.76rem;
+    font-weight: 800;
+    color: var(--rs-primary);
+    font-variant-numeric: tabular-nums;
+    flex-shrink: 0;
+}
+.reader-scene-mini-toc-label {
+    font-weight: 600;
+}
+.story-content h2.reader-scene-subheading {
+    scroll-margin-top: 2rem;
+    margin: 2.25rem 0 1.25rem 0;
+    padding: 0.45rem 0 0.55rem 0.85rem;
+    border-left: 3px solid var(--rs-primary);
+    font-size: 1.28rem;
+    font-weight: 700;
+    line-height: 1.35;
+    color: var(--rs-text);
+    outline: none;
+}
+.story-content hr + h2.reader-scene-subheading {
+    margin-top: 1.25rem;
 }
 </style>
 <script>
