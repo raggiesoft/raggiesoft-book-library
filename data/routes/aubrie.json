@@ -1956,6 +1956,36 @@
         "theme": "raggiesoft-books",
         "filePath": "e004/c007/s004.md"
     },
+    "/aubrie/jordan-s-world-trek/the-deterministic-sanctuary-singapore": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Deterministic Sanctuary (Singapore)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|7"
+    },
+    "/aubrie/jordan-s-world-trek/the-deterministic-sanctuary-singapore/scene-1-the-garden-terminal-and-smart-card-number-six": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: The Garden Terminal and Smart Card Number Six",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c008/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-deterministic-sanctuary-singapore/scene-2-the-deterministic-city-and-the-cloud-forest": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The Deterministic City and the Cloud Forest",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c008/s002.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-deterministic-sanctuary-singapore/scene-3-zo-systems-logs-diagnosed-at-three": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: ZO\u00cb.Systems.Logs (Diagnosed at Three)",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c008/s003.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-deterministic-sanctuary-singapore/scene-4-the-three-continent-video-call": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 4: The Three-Continent Video Call",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c008/s004.md"
+    },
     "/aubrie/jordan-s-court-case": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Jordan's Court Case",
