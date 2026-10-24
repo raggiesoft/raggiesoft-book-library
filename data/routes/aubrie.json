@@ -1836,6 +1836,60 @@
         "theme": "raggiesoft-books",
         "filePath": "e004/c003/s004.md"
     },
+    "/aubrie/jordan-s-world-trek/the-red-bus-navigator-london": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Red Bus Navigator (London)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|3"
+    },
+    "/aubrie/jordan-s-world-trek/the-red-bus-navigator-london/scene-1-four-passports-the-green-channel-and-the-heathrow-ambush": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Four Passports, the Green Channel, and the Heathrow Ambush",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c004/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-red-bus-navigator-london/scene-2-the-bloomsbury-negotiation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: The Bloomsbury Negotiation",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c004/s002.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-red-bus-navigator-london/scene-3-chief-navigator-of-the-red-double-deckers": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: Chief Navigator of the Red Double-Deckers",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c004/s003.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-red-bus-navigator-london/scene-4-houghton-street-and-the-transatlantic-reunion-call": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 4: Houghton Street and the Transatlantic Reunion Call",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c004/s004.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-wrong-liverpool-merseyside": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Wrong Liverpool (Merseyside)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|4"
+    },
+    "/aubrie/jordan-s-world-trek/the-wrong-liverpool-merseyside/scene-1-passenger-assist-at-london-euston": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 1: Passenger Assist at London Euston",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c005/s001.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-wrong-liverpool-merseyside/scene-2-wrong-liverpool-everyone": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 2: Wrong Liverpool, Everyone!",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c005/s002.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-wrong-liverpool-merseyside/scene-3-the-eastern-leap-from-heathrow": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 3: The Eastern Leap from Heathrow",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c005/s003.md"
+    },
     "/aubrie/jordan-s-court-case": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Jordan's Court Case",
