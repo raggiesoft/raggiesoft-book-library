@@ -1029,9 +1029,185 @@ body.theme-oceanview .zoe-kernel-log {
 .zkl-dot-red { background: #ef4444; }
 .zkl-dot-amber { background: #f59e0b; }
 .zkl-dot-green { background: #10b981; }
+.zoe-kernel-log-os-badge { display: none; }
+.zoe-kernel-log-win-controls { display: none; }
 .zoe-kernel-log-title { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--zkl-text); }
 .zkl-header-sep { color: var(--zkl-stream); margin: 0 0.25rem; }
 .zoe-kernel-log-meta { font-size: 0.72rem; padding: 0.12rem 0.5rem; border-radius: 999px; background: var(--zkl-ts-bg); color: var(--zkl-ts-fg); flex-shrink: 0; }
+
+/* ==========================================================================
+ * OS-ADAPTIVE WINDOW CHROME FOR ZOË.SYSTEMS.LOGS (`html[data-os="..."]`)
+ * ==========================================================================
+ * Dynamically styles the `.zoe-kernel-log` window header and typography to
+ * match the operating system the reader is viewing the book on:
+ * - `macos` (Default): Left traffic-light dots (red, amber, green), 10px radius, SF Mono
+ * - `windows`: Left `>_` terminal badge, right Windows 11 caption controls (`─`, `□`, `✕`), 8px radius, Cascadia Code / Consolas
+ * - `linux`: Left `$_` prompt badge, right GNOME/Adwaita circular window buttons, Ubuntu Mono
+ * - `ios`: Centered iOS sheet grabber handle + live emerald status indicator, 14px radius, SF Mono
+ * - `android`: Left `▸_` Material terminal chip, 12px Material 3 radius, Roboto Mono
+ * ========================================================================== */
+html[data-os="windows"] .zoe-kernel-log {
+    border-radius: 8px;
+    font-family: "Cascadia Code", "Cascadia Mono", Consolas, "JetBrains Mono", ui-monospace, monospace;
+}
+html[data-os="windows"] .zoe-kernel-log-header {
+    padding: 0 0 0 0.85rem;
+    min-height: 34px;
+}
+html[data-os="windows"] .zoe-kernel-log-dots {
+    display: none !important;
+}
+html[data-os="windows"] .zoe-kernel-log-os-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.1rem 0.38rem;
+    border-radius: 4px;
+    background: var(--zkl-ts-bg);
+    color: var(--zkl-stream);
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    flex-shrink: 0;
+}
+html[data-os="windows"] .zoe-kernel-log-os-badge::before {
+    content: ">_";
+}
+html[data-os="windows"] .zoe-kernel-log-win-controls {
+    display: inline-flex;
+    align-items: stretch;
+    align-self: stretch;
+    margin-left: 0.25rem;
+    flex-shrink: 0;
+}
+html[data-os="windows"] .zkl-win-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    min-height: 34px;
+    font-family: "Segoe Fluent Icons", "Segoe MDL2 Assets", system-ui, sans-serif;
+    font-size: 0.72rem;
+    font-weight: 400;
+    color: var(--zkl-ns);
+    user-select: none;
+    transition: background-color 0.12s ease, color 0.12s ease;
+}
+html[data-os="windows"] .zkl-win-btn:hover {
+    background: rgba(148, 163, 184, 0.18);
+    color: var(--zkl-text);
+}
+html[data-os="windows"] .zkl-win-close:hover {
+    background: #e81123 !important;
+    color: #ffffff !important;
+}
+
+html[data-os="linux"] .zoe-kernel-log {
+    border-radius: 8px;
+    font-family: "Ubuntu Mono", "JetBrains Mono", "Fira Code", "Liberation Mono", monospace;
+}
+html[data-os="linux"] .zoe-kernel-log-dots {
+    display: none !important;
+}
+html[data-os="linux"] .zoe-kernel-log-os-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    background: var(--zkl-ts-bg);
+    color: var(--zkl-bracket);
+    font-size: 0.72rem;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+html[data-os="linux"] .zoe-kernel-log-os-badge::before {
+    content: "$_";
+}
+html[data-os="linux"] .zoe-kernel-log-win-controls {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 0.25rem;
+    flex-shrink: 0;
+}
+html[data-os="linux"] .zkl-win-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--zkl-ts-bg);
+    color: var(--zkl-ns);
+    font-size: 0.65rem;
+    line-height: 1;
+    user-select: none;
+}
+html[data-os="linux"] .zkl-win-close {
+    background: rgba(239, 68, 68, 0.18);
+    color: var(--zkl-exception);
+}
+
+html[data-os="ios"] .zoe-kernel-log {
+    border-radius: 14px;
+    font-family: SFMono-Regular, "SF Mono", ui-monospace, Menlo, monospace;
+}
+html[data-os="ios"] .zoe-kernel-log-header {
+    position: relative;
+    padding-top: 0.8rem;
+}
+html[data-os="ios"] .zoe-kernel-log-header::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 34px;
+    height: 4px;
+    border-radius: 999px;
+    background: var(--zkl-border);
+    opacity: 0.85;
+}
+html[data-os="ios"] .zoe-kernel-log-dots,
+html[data-os="ios"] .zoe-kernel-log-win-controls {
+    display: none !important;
+}
+html[data-os="ios"] .zoe-kernel-log-os-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+    flex-shrink: 0;
+}
+
+html[data-os="android"] .zoe-kernel-log {
+    border-radius: 12px;
+    font-family: "Roboto Mono", "JetBrains Mono", monospace;
+}
+html[data-os="android"] .zoe-kernel-log-dots,
+html[data-os="android"] .zoe-kernel-log-win-controls {
+    display: none !important;
+}
+html[data-os="android"] .zoe-kernel-log-os-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.08rem 0.38rem;
+    border-radius: 6px;
+    background: var(--zkl-ts-bg);
+    color: var(--zkl-stream);
+    font-size: 0.72rem;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+html[data-os="android"] .zoe-kernel-log-os-badge::before {
+    content: "▸_";
+}
 .zoe-kernel-log-body { display: flex; flex-direction: column; }
 .zoe-log-entry {
     display: flex;
@@ -1100,6 +1276,35 @@ body.theme-oceanview .zoe-kernel-log {
     .reader-hero-slide, .reader-hero-nav, .reader-hero-dot { transition: none !important; }
 }
 </style>
+<script>
+(function () {
+    try {
+        var params = new URLSearchParams(window.location.search);
+        var previewOs = (params.get('preview_os') || '').toLowerCase();
+        var validOs = ['macos', 'windows', 'linux', 'ios', 'android'];
+        var resolvedOs = '';
+        if (validOs.indexOf(previewOs) !== -1) {
+            resolvedOs = previewOs;
+        } else {
+            var ua = (navigator.userAgent || '').toLowerCase();
+            var plat = ((navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || '').toLowerCase();
+            var isIpadOs = (plat.indexOf('mac') !== -1 || ua.indexOf('macintosh') !== -1) && navigator.maxTouchPoints && navigator.maxTouchPoints > 1;
+            if (isIpadOs || /iphone|ipad|ipod/.test(ua) || plat.indexOf('ios') !== -1) {
+                resolvedOs = 'ios';
+            } else if (ua.indexOf('android') !== -1 || plat.indexOf('android') !== -1) {
+                resolvedOs = 'android';
+            } else if (plat.indexOf('win') !== -1 || ua.indexOf('windows') !== -1) {
+                resolvedOs = 'windows';
+            } else if (plat.indexOf('linux') !== -1 || ua.indexOf('linux') !== -1 || ua.indexOf('cros') !== -1) {
+                resolvedOs = 'linux';
+            } else {
+                resolvedOs = 'macos';
+            }
+        }
+        document.documentElement.setAttribute('data-os', resolvedOs);
+    } catch (e) {}
+})();
+</script>
 
 
 

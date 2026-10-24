@@ -34,9 +34,34 @@
 // Stardust Engine Library: Global Header Component
 // Allow query string to force the UI into dark mode for testing or user preference overrides.
 $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? ' theme-dark' : '';
+
+/**
+ * ============================================================================
+ * ZERO-FOUC CLIENT OPERATING SYSTEM RESOLVER (`data-os` on `<html>`)
+ * ============================================================================
+ * Detects the viewer's operating system (`macos`, `windows`, `linux`, `ios`,
+ * or `android`) from Client Hints (`Sec-CH-UA-Platform`), `User-Agent`, or an
+ * explicit `?preview_os=` query parameter so that OS-native UI components
+ * (such as Zoë's `ZOË.Systems.Logs` diagnostic terminal window chrome) render
+ * with the viewer's exact OS window decorations on first paint.
+ */
+$detectedClientOs = 'macos';
+$rawUa = strtolower((string)($_SERVER['HTTP_USER_AGENT'] ?? ''));
+$rawChPlatform = strtolower(trim((string)($_SERVER['HTTP_SEC_CH_UA_PLATFORM'] ?? ''), "\"' \t"));
+if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os']), ['macos', 'windows', 'linux', 'ios', 'android'], true)) {
+    $detectedClientOs = strtolower((string)$_GET['preview_os']);
+} elseif ($rawChPlatform === 'windows' || strpos($rawUa, 'windows') !== false) {
+    $detectedClientOs = 'windows';
+} elseif ($rawChPlatform === 'ios' || strpos($rawUa, 'iphone') !== false || strpos($rawUa, 'ipad') !== false || strpos($rawUa, 'ipod') !== false) {
+    $detectedClientOs = 'ios';
+} elseif ($rawChPlatform === 'android' || strpos($rawUa, 'android') !== false) {
+    $detectedClientOs = 'android';
+} elseif ($rawChPlatform === 'linux' || $rawChPlatform === 'chrome os' || $rawChPlatform === 'chromium os' || (strpos($rawUa, 'linux') !== false && strpos($rawUa, 'android') === false)) {
+    $detectedClientOs = 'linux';
+}
 ?>
 <!DOCTYPE html>
-<html lang="en-US" style="color-scheme: light dark;">
+<html lang="en-US" data-os="<?= htmlspecialchars($detectedClientOs) ?>" style="color-scheme: light dark;">
 <head>
     <meta charset="UTF-8">
     <!-- Viewport configuration prevents zooming on input focus, essential for native app feel -->
@@ -164,6 +189,31 @@ $forceDarkClass = (isset($_GET['force_dark']) && $_GET['force_dark'] == '1') ? '
                 if (isPwa) {
                     document.documentElement.classList.add('is-pwa-standalone');
                 }
+
+                // Client-side OS refinement (accurately distinguishes iPadOS desktop-class Safari from macOS)
+                var params = new URLSearchParams(window.location.search);
+                var previewOs = (params.get('preview_os') || '').toLowerCase();
+                var validOs = ['macos', 'windows', 'linux', 'ios', 'android'];
+                var resolvedOs = '';
+                if (validOs.indexOf(previewOs) !== -1) {
+                    resolvedOs = previewOs;
+                } else {
+                    var ua = (navigator.userAgent || '').toLowerCase();
+                    var plat = ((navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || '').toLowerCase();
+                    var isIpadOs = (plat.indexOf('mac') !== -1 || ua.indexOf('macintosh') !== -1) && navigator.maxTouchPoints && navigator.maxTouchPoints > 1;
+                    if (isIpadOs || /iphone|ipad|ipod/.test(ua) || plat.indexOf('ios') !== -1) {
+                        resolvedOs = 'ios';
+                    } else if (ua.indexOf('android') !== -1 || plat.indexOf('android') !== -1) {
+                        resolvedOs = 'android';
+                    } else if (plat.indexOf('win') !== -1 || ua.indexOf('windows') !== -1) {
+                        resolvedOs = 'windows';
+                    } else if (plat.indexOf('linux') !== -1 || ua.indexOf('linux') !== -1 || ua.indexOf('cros') !== -1) {
+                        resolvedOs = 'linux';
+                    } else {
+                        resolvedOs = 'macos';
+                    }
+                }
+                document.documentElement.setAttribute('data-os', resolvedOs);
             } catch (e) {}
         })();
     </script>
