@@ -1017,6 +1017,142 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
             <!-- Parsedown Content -->
             <?php echo $htmlContent; ?>
         </article>
+
+        <?php
+        // =====================================================================
+        // RAGGIESOFT BACKSTAGE (<dialog> API & Correspondence Callout Integration)
+        // =====================================================================
+        // Renders the Backstage Bonus Features / Extracted Correspondence callout
+        // when `backstage:` is present in the scene's YAML frontmatter, and mounts
+        // `<dialog id="rs-backstage-dialog">` so both frontmatter buttons and
+        // inline `https://backstage.raggiesoft.com/...` links open an in-reader
+        // modal with a one-click bounce button to `https://backstage.raggiesoft.com/`.
+        if (!$specialPageType):
+            $rawBackstage = $frontmatter['backstage'] ?? [];
+            $backstageSlugs = is_array($rawBackstage)
+                ? array_values(array_filter(array_map('trim', $rawBackstage)))
+                : (trim((string)$rawBackstage) !== '' ? [trim((string)$rawBackstage)] : []);
+
+            $backstageIndexMap = [];
+            if (!empty($backstageSlugs)) {
+                $localBsIndexCandidates = [
+                    dirname($basePath, 3) . '/raggiesoft-assets/raggiesoft-backstage/api/v1/index.json',
+                    dirname($basePath) . '/backstage/dist/api/v1/index.json',
+                    '/var/www/backstage.raggiesoft.com/api/v1/index.json'
+                ];
+                foreach ($localBsIndexCandidates as $bsIdxFile) {
+                    if (is_file($bsIdxFile)) {
+                        $decodedBs = json_decode(@file_get_contents($bsIdxFile), true);
+                        if (isset($decodedBs['items']) && is_array($decodedBs['items'])) {
+                            $backstageIndexMap = $decodedBs['items'];
+                            break;
+                        }
+                    }
+                }
+                if (empty($backstageIndexMap) && !empty($cdnBaseUrl)) {
+                    $remoteBs = @file_get_contents($cdnBaseUrl . '/raggiesoft-backstage/api/v1/index.json');
+                    if ($remoteBs !== false) {
+                        $decodedBs = json_decode($remoteBs, true);
+                        if (isset($decodedBs['items']) && is_array($decodedBs['items'])) {
+                            $backstageIndexMap = $decodedBs['items'];
+                        }
+                    }
+                }
+            }
+        ?>
+        <?php if (!empty($backstageSlugs)): ?>
+        <section id="rs-backstage-callout" class="rs-backstage-callout" aria-labelledby="rs-backstage-callout-heading" style="margin-top: 2.75rem; padding: 1.5rem 1.75rem; border: 1px solid var(--rs-border); border-left: 5px solid var(--rs-primary); border-radius: 12px; background: var(--rs-surface); box-shadow: 0 4px 18px rgba(0,0,0,0.06);">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.65rem;">
+                <span style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--rs-primary);">
+                    <i class="ph ph-film-slate" aria-hidden="true"></i> RaggieSoft Backstage &bull; Bonus Features &amp; Correspondence
+                </span>
+                <a href="https://backstage.raggiesoft.com" target="_blank" rel="noopener noreferrer" data-backstage-direct="true" style="font-size: 0.82rem; font-weight: 700; color: var(--rs-primary); text-decoration: underline; text-underline-offset: 3px;">
+                    Explore Backstage Hub &nearr;
+                </a>
+            </div>
+            <h3 id="rs-backstage-callout-heading" style="margin: 0 0 0.45rem; font-size: 1.2rem;">
+                Behind-the-Scenes Records &amp; Background Correspondence for This Scene
+            </h3>
+            <p style="margin: 0 0 1.15rem; font-size: 0.95rem; opacity: 0.88;">
+                Read the accompanying in-universe administrative correspondence or behind-the-scenes dossier right here in a quick-view dialog, or bounce over to <strong>RaggieSoft Backstage</strong>.
+            </p>
+            <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+                <?php foreach ($backstageSlugs as $bsSlug):
+                    $cleanSlug = ltrim(preg_replace('#^https?://backstage\.raggiesoft\.com/#i', '', $bsSlug), '/');
+                    $bsMeta = $backstageIndexMap[$cleanSlug] ?? [];
+                    $bsTitle = $bsMeta['title'] ?? ucwords(str_replace(['-', '/'], [' ', ' — '], basename($cleanSlug)));
+                    $bsSubtitle = $bsMeta['subtitle'] ?? '';
+                    $bsDate = $bsMeta['date'] ?? '';
+                    $bsTime = $bsMeta['time'] ?? '';
+                    $bsSender = $bsMeta['sender'] ?? '';
+                    $bsSummary = $bsMeta['summary'] ?? '';
+                    $bsFullUrl = 'https://backstage.raggiesoft.com/' . $cleanSlug;
+                ?>
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding: 1rem 1.15rem; border: 1px solid var(--rs-border); border-radius: 10px; background: var(--rs-bg);">
+                    <div style="flex: 1; min-width: 240px;">
+                        <?php if ($bsDate || $bsSender): ?>
+                        <div style="font-size: 0.78rem; font-weight: 700; opacity: 0.8; margin-bottom: 0.2rem;">
+                            <?php if ($bsDate): ?><span><?php echo htmlspecialchars($bsDate . ($bsTime ? ' • ' . $bsTime : '')); ?></span><?php endif; ?>
+                            <?php if ($bsDate && $bsSender): ?> &bull; <?php endif; ?>
+                            <?php if ($bsSender): ?><span>From: <?php echo htmlspecialchars($bsSender); ?></span><?php endif; ?>
+                        </div>
+                        <?php endif; ?>
+                        <div style="font-weight: 800; font-size: 1.05rem; color: var(--rs-text);">
+                            <?php echo htmlspecialchars($bsTitle); ?>
+                        </div>
+                        <?php if ($bsSubtitle): ?>
+                        <div style="font-size: 0.88rem; font-weight: 600; opacity: 0.9; margin-top: 0.1rem;">
+                            <?php echo htmlspecialchars($bsSubtitle); ?>
+                        </div>
+                        <?php elseif ($bsSummary): ?>
+                        <div style="font-size: 0.88rem; opacity: 0.85; margin-top: 0.15rem;">
+                            <?php echo htmlspecialchars($bsSummary); ?>
+                        </div>
+                        <?php endif; ?>
+                    </div>
+                    <div style="display: flex; align-items: center; gap: 0.55rem; flex-wrap: wrap;">
+                        <button type="button" class="rs-btn rs-btn-primary" data-backstage-slug="<?php echo htmlspecialchars($cleanSlug); ?>" style="padding: 0.5rem 0.95rem; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 0.4rem; cursor: pointer;">
+                            <i class="ph ph-envelope-open" aria-hidden="true"></i>
+                            <span>Read in Dialog</span>
+                        </button>
+                        <a href="<?php echo htmlspecialchars($bsFullUrl); ?>" target="_blank" rel="noopener noreferrer" data-backstage-direct="true" class="rs-btn" style="padding: 0.5rem 0.85rem; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 0.35rem;">
+                            <span>Open in Backstage</span>
+                            <i class="ph ph-arrow-square-out" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+            </div>
+        </section>
+        <?php endif; ?>
+
+        <dialog id="rs-backstage-dialog" aria-labelledby="rs-backstage-dialog-title" style="padding: 0; border: 1px solid var(--rs-border); border-radius: 14px; background: var(--rs-bg); color: var(--rs-text); box-shadow: 0 16px 48px rgba(0,0,0,0.45); max-width: 820px; width: 92%; max-height: 86vh; overflow: hidden;">
+            <div style="display: flex; justify-content: space-between; align-items: center; gap: 1rem; padding: 1rem 1.5rem; border-bottom: 1px solid var(--rs-border); background: var(--rs-surface);">
+                <div>
+                    <div id="rs-backstage-dialog-kicker" style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--rs-primary);">
+                        🎬 RaggieSoft Backstage Archive
+                    </div>
+                    <h3 id="rs-backstage-dialog-title" style="margin: 0.15rem 0 0; font-size: 1.22rem; font-weight: 800;">Backstage Dossier</h3>
+                </div>
+                <button type="button" id="rs-backstage-dialog-close" class="rs-btn" aria-label="Close Backstage dialog" title="Close Backstage dialog" style="padding: 0.45rem 0.75rem; font-size: 1rem; cursor: pointer;">
+                    <i class="ph ph-x" aria-hidden="true"></i> Close
+                </button>
+            </div>
+            <div id="rs-backstage-dialog-meta" style="padding: 0.65rem 1.5rem; border-bottom: 1px solid var(--rs-border); background: var(--rs-surface); font-size: 0.85rem; opacity: 0.9; display: none;"></div>
+            <div id="rs-backstage-dialog-body" class="story-content" style="padding: 1.5rem; overflow-y: auto; max-height: calc(86vh - 165px); font-size: 1.02rem; line-height: 1.68; text-indent: 0;">
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; padding: 0.85rem 1.5rem; border-top: 1px solid var(--rs-border); background: var(--rs-surface); font-size: 0.85rem;">
+                <span style="opacity: 0.82;">100% In-Universe Bonus Feature &bull; <code>backstage.raggiesoft.com</code></span>
+                <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+                    <a id="rs-backstage-dialog-bounce" href="https://backstage.raggiesoft.com" target="_blank" rel="noopener noreferrer" data-backstage-direct="true" class="rs-btn rs-btn-primary" style="padding: 0.45rem 0.95rem; font-size: 0.88rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+                        <i class="ph ph-film-slate" aria-hidden="true"></i>
+                        <span>Bounce to RaggieSoft Backstage</span>
+                        <i class="ph ph-arrow-square-out" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </dialog>
+        <?php endif; ?>
         
         <!-- E-Book CTA Card (Dismissible; persisted in reader-settings.showOfflineCta and resettable in Settings) -->
         <?php if (!$specialPageType):
