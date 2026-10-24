@@ -1860,11 +1860,17 @@
         "theme": "raggiesoft-books",
         "filePath": "e004/c004/s003.md"
     },
-    "/aubrie/jordan-s-world-trek/the-red-bus-navigator-london/scene-4-houghton-street-and-the-transatlantic-reunion-call": {
+    "/aubrie/jordan-s-world-trek/the-red-bus-navigator-london/scene-4-carnaby-street-and-the-hollow-square": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Houghton Street and the Transatlantic Reunion Call",
+        "title": "Scene 4: Carnaby Street and the Hollow Square",
         "theme": "raggiesoft-books",
         "filePath": "e004/c004/s004.md"
+    },
+    "/aubrie/jordan-s-world-trek/the-red-bus-navigator-london/scene-5-houghton-street-and-the-transatlantic-reunion-call": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 5: Houghton Street and the Transatlantic Reunion Call",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c004/s005.md"
     },
     "/aubrie/jordan-s-world-trek/the-wrong-liverpool-merseyside": {
         "view": "pages/raggiesoft-books/books/viewer",
