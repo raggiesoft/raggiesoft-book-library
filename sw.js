@@ -19,9 +19,9 @@
  */
 
 // Cache partition identifiers
-const CACHE_NAME = 'ova-cache-v7';
-const DYNAMIC_CACHE = 'ova-dynamic-v7';
-const IMAGE_CACHE = 'ova-images-v7';
+const CACHE_NAME = 'ova-cache-v8';
+const DYNAMIC_CACHE = 'ova-dynamic-v8';
+const IMAGE_CACHE = 'ova-images-v8';
 
 // Minimum required assets to render the offline application shell
 const PRECACHE_ASSETS = [

@@ -573,17 +573,9 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
 
             <?php endif; // End if(!$specialPageType) ?>
 
-            <!-- Audio Player Integration -->
-            <?php if (!empty($frontmatter['audio'])): ?>
-                    <?php 
-                        // Automatically prepend the artists directory path to simplify YAML frontmatter
-                        $rawAudioPath = ltrim($frontmatter['audio'], '/');
-                        $strippedAudioPath = str_replace('engine-room-records/artists/', '', $rawAudioPath);
-                        if (strpos($rawAudioPath, 'engine-room-records/') === false) {
-                            $rawAudioPath = 'engine-room-records/artists/' . $rawAudioPath;
-                        }
-                        $audioUrl = $cdnBaseUrl . '/' . $rawAudioPath; 
-                        
+            <!-- Audio Player Integration (Supports Single Track, Full Album, Named Playlist, or Inline YAML Queue) -->
+            <?php if (!empty($frontmatter['audio']) || !empty($frontmatter['playlist'])): ?>
+                    <?php
                         // Parse starting timestamp if provided (e.g., "1:30" or "90")
                         $audioStart = 0;
                         if (!empty($frontmatter['audio_start'])) {
@@ -598,63 +590,32 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                             }
                         }
 
-                        // Extract artist and album info from path conventions:
-                        // Expected relative path format: "{artistSlug}/{albumSlug}/web-mp3/{filenameNoExt}.mp3"
-                        $audioParts = explode('/', $strippedAudioPath);
-                        $artistSlug = $audioParts[0] ?? '';
-                        $albumSlug = $audioParts[1] ?? '';
-                        
-                        $filenameWithExt = end($audioParts);
-                        $filenameNoExt = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+                        // Per-request memoization caches to avoid redundant CDN fetches across multi-track queues
+                        $albumMetaCache = [];
+                        $tracksMetaCache = [];
+                        $artistAlbumsMetaCache = [];
 
-                        // Construct canonical deep-links to The Listening Room (music.raggiesoft.com):
-                        // - $listeningRoomTrackUrl deep-links directly to the specific song via ?track={filenameNoExt}
-                        // - $listeningRoomAlbumUrl links directly to the parent album view
-                        // - $listeningRoomArtistUrl links to the artist catalog page
-                        $listeningRoomTrackUrl = 'https://music.raggiesoft.com/' . rawurlencode($artistSlug) . '/' . rawurlencode($albumSlug) . '/?track=' . rawurlencode($filenameNoExt);
-                        $listeningRoomAlbumUrl = 'https://music.raggiesoft.com/' . rawurlencode($artistSlug) . '/' . rawurlencode($albumSlug) . '/';
-                        $listeningRoomArtistUrl = 'https://music.raggiesoft.com/' . rawurlencode($artistSlug) . '/';
-                        
-                        // Default fallback displays before CDN JSON hydration
-                        $audioTitleDisplay = ucwords(str_replace('-', ' ', preg_replace('/^\d+-\d+-/', '', $filenameNoExt)));
-                        $artistDisplay = !empty($frontmatter['pov']) ? $frontmatter['pov'] : 'Narrative Soundtrack';
-                        $albumDisplay = 'Stardust Engine Narratives';
-                        $albumArtUrl = $cdnBaseUrl . '/engine-room-records/artists/' . $artistSlug . '/' . $albumSlug . '/album-art.jpg';
-                        
-                        // Fetch Metadata from CDN JSONs for accurate album & track info
-                        $albumJsonUrl = $cdnBaseUrl . '/engine-room-records/artists/' . $artistSlug . '/' . $albumSlug . '/album.json';
-                        $tracksJsonUrl = $cdnBaseUrl . '/engine-room-records/artists/' . $artistSlug . '/' . $albumSlug . '/tracks.json';
-                        
-                        $albumDataRaw = @file_get_contents($albumJsonUrl);
-                        if ($albumDataRaw) {
-                            $albumData = json_decode($albumDataRaw, true);
-                            if (!empty($albumData['name'])) $albumDisplay = $albumData['name'];
-                            if (!empty($albumData['byArtist']['name'])) $artistDisplay = $albumData['byArtist']['name'];
-                        }
-                        
-                        $tracksDataRaw = @file_get_contents($tracksJsonUrl);
-                        if ($tracksDataRaw) {
-                            $tracksData = json_decode($tracksDataRaw, true);
-                            if (!empty($tracksData['tracks'])) {
-                                foreach ($tracksData['tracks'] as $track) {
-                                    if (($track['fileName'] ?? '') === $filenameNoExt) {
-                                        if (!empty($track['title'])) $audioTitleDisplay = $track['title'];
-                                        break;
-                                    }
-                                }
+                        $fetchAlbumMeta = function ($artistSlug, $albumSlug) use ($cdnBaseUrl, &$albumMetaCache, &$tracksMetaCache, &$artistAlbumsMetaCache) {
+                            $key = $artistSlug . '/' . $albumSlug;
+                            if (!isset($albumMetaCache[$key])) {
+                                $raw = @file_get_contents($cdnBaseUrl . '/engine-room-records/artists/' . $artistSlug . '/' . $albumSlug . '/album.json');
+                                $albumMetaCache[$key] = $raw ? (json_decode($raw, true) ?: []) : [];
                             }
-                        }
-                        
-                        // Extract external DSP & Fourthwall store links from the artist's albums.json
-                        // Supports both associative era maps and {"eras": [...]} wrapper schemas,
-                        // and matches albums by folder, slug, URL basename, or artwork path.
-                        $spotifyUrl = $appleUrl = $amazonUrl = $youtubeUrl = $storeStandardUrl = $storeAudiophileUrl = null;
-                        
-                        $artistAlbumsJsonUrl = $cdnBaseUrl . '/engine-room-records/artists/' . $artistSlug . '/albums.json';
-                        $artistAlbumsRaw = @file_get_contents($artistAlbumsJsonUrl);
-                        if ($artistAlbumsRaw) {
-                            $artistAlbumsData = json_decode($artistAlbumsRaw, true);
-                            if (is_array($artistAlbumsData)) {
+                            if (!isset($tracksMetaCache[$key])) {
+                                $rawT = @file_get_contents($cdnBaseUrl . '/engine-room-records/artists/' . $artistSlug . '/' . $albumSlug . '/tracks.json');
+                                $tracksMetaCache[$key] = $rawT ? (json_decode($rawT, true) ?: []) : [];
+                            }
+                            if (!isset($artistAlbumsMetaCache[$artistSlug])) {
+                                $rawA = @file_get_contents($cdnBaseUrl . '/engine-room-records/artists/' . $artistSlug . '/albums.json');
+                                $artistAlbumsMetaCache[$artistSlug] = $rawA ? (json_decode($rawA, true) ?: []) : [];
+                            }
+
+                            $albumData = $albumMetaCache[$key];
+                            $tracksData = $tracksMetaCache[$key];
+                            $artistAlbumsData = $artistAlbumsMetaCache[$artistSlug];
+
+                            $spotifyUrl = $appleUrl = $amazonUrl = $youtubeUrl = $storeStandardUrl = $storeAudiophileUrl = null;
+                            if (is_array($artistAlbumsData) && !empty($artistAlbumsData)) {
                                 $erasList = (isset($artistAlbumsData['eras']) && is_array($artistAlbumsData['eras']))
                                     ? $artistAlbumsData['eras']
                                     : $artistAlbumsData;
@@ -682,86 +643,354 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                                     }
                                 }
                             }
+
+                            return [
+                                'albumData' => $albumData,
+                                'tracks' => $tracksData['tracks'] ?? [],
+                                'dsp' => [
+                                    'spotifyUrl' => $spotifyUrl,
+                                    'appleUrl' => $appleUrl,
+                                    'amazonUrl' => $amazonUrl,
+                                    'youtubeUrl' => $youtubeUrl,
+                                    'storeStandardUrl' => $storeStandardUrl,
+                                    'storeAudiophileUrl' => $storeAudiophileUrl
+                                ]
+                            ];
+                        };
+
+                        $buildTrackItem = function ($artistSlug, $albumSlug, $filenameNoExt, $actLabel = '') use ($cdnBaseUrl, $frontmatter, $fetchAlbumMeta) {
+                            $meta = $fetchAlbumMeta($artistSlug, $albumSlug);
+                            $albumData = $meta['albumData'];
+                            $tracksList = $meta['tracks'];
+                            $dsp = $meta['dsp'];
+
+                            $albumDisplay = !empty($albumData['name']) ? $albumData['name'] : ucwords(str_replace('-', ' ', preg_replace('/^\d{4}-/', '', $albumSlug)));
+                            $artistDisplay = !empty($albumData['byArtist']['name']) ? $albumData['byArtist']['name'] : (!empty($frontmatter['pov']) ? $frontmatter['pov'] : ucwords(str_replace('-', ' ', $artistSlug)));
+                            $audioTitleDisplay = ucwords(str_replace('-', ' ', preg_replace('/^\d+-\d+-/', '', $filenameNoExt)));
+                            $durationDisplay = '';
+                            $trackNumber = null;
+
+                            foreach ($tracksList as $tIdx => $track) {
+                                if (($track['fileName'] ?? '') === $filenameNoExt) {
+                                    if (!empty($track['title'])) $audioTitleDisplay = $track['title'];
+                                    if (!empty($track['duration'])) $durationDisplay = $track['duration'];
+                                    $trackNumber = $track['track'] ?? ($tIdx + 1);
+                                    break;
+                                }
+                            }
+
+                            $audioUrl = $cdnBaseUrl . '/engine-room-records/artists/' . $artistSlug . '/' . $albumSlug . '/web-mp3/' . $filenameNoExt . '.mp3';
+                            $albumArtUrl = $cdnBaseUrl . '/engine-room-records/artists/' . $artistSlug . '/' . $albumSlug . '/album-art.jpg';
+                            $lyricsUrl = $cdnBaseUrl . '/engine-room-records/artists/' . $artistSlug . '/' . $albumSlug . '/lyrics/' . $filenameNoExt . '.md';
+                            $listeningRoomTrackUrl = 'https://music.raggiesoft.com/artists/' . rawurlencode($artistSlug) . '/' . rawurlencode($albumSlug) . '?track=' . rawurlencode($filenameNoExt);
+                            $listeningRoomAlbumUrl = 'https://music.raggiesoft.com/artists/' . rawurlencode($artistSlug) . '/' . rawurlencode($albumSlug);
+                            $listeningRoomArtistUrl = 'https://music.raggiesoft.com/artists/' . rawurlencode($artistSlug);
+
+                            return [
+                                'title' => $audioTitleDisplay,
+                                'artist' => $artistDisplay,
+                                'artistSlug' => $artistSlug,
+                                'album' => $albumDisplay,
+                                'albumSlug' => $albumSlug,
+                                'fileName' => $filenameNoExt,
+                                'trackNumber' => $trackNumber,
+                                'duration' => $durationDisplay,
+                                'actLabel' => $actLabel,
+                                'audioUrl' => $audioUrl,
+                                'artworkUrl' => $albumArtUrl,
+                                'lyricsUrl' => $lyricsUrl,
+                                'listeningRoomTrackUrl' => $listeningRoomTrackUrl,
+                                'listeningRoomAlbumUrl' => $listeningRoomAlbumUrl,
+                                'listeningRoomArtistUrl' => $listeningRoomArtistUrl,
+                                'spotifyUrl' => $dsp['spotifyUrl'],
+                                'appleUrl' => $dsp['appleUrl'],
+                                'amazonUrl' => $dsp['amazonUrl'],
+                                'youtubeUrl' => $dsp['youtubeUrl'],
+                                'storeStandardUrl' => $dsp['storeStandardUrl'],
+                                'storeAudiophileUrl' => $dsp['storeAudiophileUrl']
+                            ];
+                        };
+
+                        $audioQueue = [];
+                        $queueMode = 'single'; // 'single' | 'album' | 'playlist'
+                        $playlistTitle = !empty($frontmatter['audio_playlist_title']) ? $frontmatter['audio_playlist_title'] : '';
+                        $playlistListeningRoomUrl = '';
+
+                        $expandAudioSpec = function ($spec, $actLabel = '') use (
+                            $cdnBaseUrl,
+                            &$audioQueue,
+                            &$queueMode,
+                            &$playlistTitle,
+                            &$playlistListeningRoomUrl,
+                            $fetchAlbumMeta,
+                            $buildTrackItem,
+                            &$expandAudioSpec
+                        ) {
+                            $clean = trim((string)$spec, " \t\n\r\0\x0B/");
+                            if ($clean === '') return;
+
+                            // Case 1: Named Playlist ("playlists/{slug}" or "engine-room-records/playlists/{slug}")
+                            if (strpos($clean, 'playlists/') === 0 || strpos($clean, 'engine-room-records/playlists/') === 0) {
+                                $plRelative = preg_replace('#^(engine-room-records/)?playlists/#', '', $clean);
+                                $plRelative = preg_replace('#/playlist\.json$#', '', $plRelative);
+                                $plSlug = trim($plRelative, '/');
+                                $plJsonUrl = $cdnBaseUrl . '/engine-room-records/playlists/' . $plSlug . '/playlist.json';
+                                $plRaw = @file_get_contents($plJsonUrl);
+                                if ($plRaw) {
+                                    $plData = json_decode($plRaw, true);
+                                    if (is_array($plData)) {
+                                        $queueMode = 'playlist';
+                                        if (empty($playlistTitle) && !empty($plData['title'])) {
+                                            $playlistTitle = $plData['title'];
+                                        }
+                                        if (empty($playlistListeningRoomUrl) && !empty($plData['listeningRoomUrl'])) {
+                                            $playlistListeningRoomUrl = $plData['listeningRoomUrl'];
+                                        } elseif (empty($playlistListeningRoomUrl)) {
+                                            $playlistListeningRoomUrl = 'https://music.raggiesoft.com/playlists/' . rawurlencode($plSlug);
+                                        }
+                                        if (!empty($plData['tracks']) && is_array($plData['tracks'])) {
+                                            foreach ($plData['tracks'] as $plTrack) {
+                                                if (is_string($plTrack)) {
+                                                    $expandAudioSpec($plTrack);
+                                                } elseif (is_array($plTrack) && !empty($plTrack['path'])) {
+                                                    $expandAudioSpec($plTrack['path'], $plTrack['actLabel'] ?? '');
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                                return;
+                            }
+
+                            $stripped = preg_replace('#^engine-room-records/artists/#', '', $clean);
+                            $parts = array_values(array_filter(explode('/', $stripped), function ($p) { return $p !== ''; }));
+
+                            // Case 2: Full Album ("{artistSlug}/{albumSlug}")
+                            if (count($parts) === 2 && !preg_match('/\.(mp3|ogg|flac|wav)$/i', $parts[1])) {
+                                $artistSlug = $parts[0];
+                                $albumSlug = $parts[1];
+                                if ($queueMode === 'single') {
+                                    $queueMode = 'album';
+                                }
+                                $meta = $fetchAlbumMeta($artistSlug, $albumSlug);
+                                foreach ($meta['tracks'] as $track) {
+                                    $fn = $track['fileName'] ?? '';
+                                    if ($fn !== '') {
+                                        $audioQueue[] = $buildTrackItem($artistSlug, $albumSlug, $fn, $actLabel);
+                                    }
+                                }
+                                return;
+                            }
+
+                            // Case 3: Single Track ("{artistSlug}/{albumSlug}/web-mp3/{filename}.mp3" or "{artistSlug}/{albumSlug}/{filename}.mp3")
+                            if (count($parts) >= 3) {
+                                $artistSlug = $parts[0];
+                                $albumSlug = $parts[1];
+                                $filenameWithExt = end($parts);
+                                $filenameNoExt = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+                                $audioQueue[] = $buildTrackItem($artistSlug, $albumSlug, $filenameNoExt, $actLabel);
+                            }
+                        };
+
+                        if (!empty($frontmatter['playlist'])) {
+                            $plInput = $frontmatter['playlist'];
+                            if (strpos($plInput, 'playlists/') === false) {
+                                $plInput = 'playlists/' . ltrim($plInput, '/');
+                            }
+                            $expandAudioSpec($plInput);
                         }
+
+                        if (!empty($frontmatter['audio'])) {
+                            if (is_array($frontmatter['audio'])) {
+                                if (count($frontmatter['audio']) > 1) {
+                                    $queueMode = 'playlist';
+                                }
+                                foreach ($frontmatter['audio'] as $audioItem) {
+                                    $expandAudioSpec($audioItem);
+                                }
+                            } else {
+                                $expandAudioSpec($frontmatter['audio']);
+                            }
+                        }
+
+                        $queueCount = count($audioQueue);
+                        if ($queueCount > 1 && $queueMode === 'single') {
+                            $queueMode = 'playlist';
+                        }
+
+                        $firstTrack = $audioQueue[0] ?? null;
+                        if ($firstTrack):
+                            $audioTitleDisplay = $firstTrack['title'];
+                            $artistDisplay = $firstTrack['artist'];
+                            $artistSlug = $firstTrack['artistSlug'];
+                            $albumDisplay = $firstTrack['album'];
+                            $albumSlug = $firstTrack['albumSlug'];
+                            $filenameNoExt = $firstTrack['fileName'];
+                            $audioUrl = $firstTrack['audioUrl'];
+                            $albumArtUrl = $firstTrack['artworkUrl'];
+                            $lyricsUrl = $firstTrack['lyricsUrl'];
+                            $listeningRoomTrackUrl = $firstTrack['listeningRoomTrackUrl'];
+                            $listeningRoomAlbumUrl = $firstTrack['listeningRoomAlbumUrl'];
+                            $listeningRoomArtistUrl = $firstTrack['listeningRoomArtistUrl'];
+                            $spotifyUrl = $firstTrack['spotifyUrl'];
+                            $appleUrl = $firstTrack['appleUrl'];
+                            $amazonUrl = $firstTrack['amazonUrl'];
+                            $youtubeUrl = $firstTrack['youtubeUrl'];
+                            $storeStandardUrl = $firstTrack['storeStandardUrl'];
+                            $storeAudiophileUrl = $firstTrack['storeAudiophileUrl'];
+
+                            if ($queueMode === 'playlist') {
+                                $eyebrowLabel = 'Background Playlist • Track 1 of ' . $queueCount . ($playlistTitle !== '' ? ' — ' . $playlistTitle : '');
+                            } elseif ($queueMode === 'album' && $queueCount > 1) {
+                                $eyebrowLabel = 'Background Album • Track 1 of ' . $queueCount;
+                            } else {
+                                $eyebrowLabel = 'Background Audio';
+                            }
                     ?>
                     <div class="reader-audio-player" style="margin-top: 2rem; border: 1px solid var(--rs-border); border-radius: 12px; background: var(--rs-surface); overflow: hidden; max-width: 100%; margin-left: auto; margin-right: auto; text-align: left; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
                         <div style="display: flex; align-items: center; gap: 1.25rem; padding: 1.25rem;">
-                            <a href="<?php echo htmlspecialchars($listeningRoomAlbumUrl); ?>" target="_blank" rel="noopener noreferrer" class="reader-audio-external-link" title="Open album <?php echo htmlspecialchars($albumDisplay); ?> in The Listening Room" aria-label="Open album <?php echo htmlspecialchars($albumDisplay); ?> by <?php echo htmlspecialchars($artistDisplay); ?> in The Listening Room" style="display: block; flex-shrink: 0; border-radius: 6px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
-                                <img src="<?php echo htmlspecialchars($albumArtUrl); ?>" alt="Album cover for <?php echo htmlspecialchars($albumDisplay); ?> by <?php echo htmlspecialchars($artistDisplay); ?>" style="width: 80px; height: 80px; border-radius: 6px; object-fit: cover; display: block;">
+                            <a id="narrative-audio-cover-link" href="<?php echo htmlspecialchars($listeningRoomAlbumUrl); ?>" target="_blank" rel="noopener noreferrer" class="reader-audio-external-link" title="Open album <?php echo htmlspecialchars($albumDisplay); ?> in The Listening Room" aria-label="Open album <?php echo htmlspecialchars($albumDisplay); ?> by <?php echo htmlspecialchars($artistDisplay); ?> in The Listening Room" style="display: block; flex-shrink: 0; border-radius: 6px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                                <img id="narrative-audio-cover-img" src="<?php echo htmlspecialchars($albumArtUrl); ?>" alt="Album cover for <?php echo htmlspecialchars($albumDisplay); ?> by <?php echo htmlspecialchars($artistDisplay); ?>" style="width: 80px; height: 80px; border-radius: 6px; object-fit: cover; display: block;">
                             </a>
                             
                             <div style="flex: 1; overflow: hidden; display: flex; flex-direction: column; min-width: 0;">
-                                <div style="font-size: 0.75rem; opacity: 0.75; text-transform: uppercase; letter-spacing: 1px; line-height: 1; margin-bottom: 0.35rem;">Background Audio</div>
+                                <div id="narrative-audio-eyebrow" style="font-size: 0.75rem; opacity: 0.78; text-transform: uppercase; letter-spacing: 1px; line-height: 1.2; margin-bottom: 0.35rem; font-weight: 600;"><?php echo htmlspecialchars($eyebrowLabel); ?></div>
                                 
                                 <div class="reader-audio-scroll-wrap" style="font-weight: 700; font-size: 1.1rem; line-height: 1.2; margin-bottom: 0.25rem;">
                                     <span class="reader-audio-scroll-text">
-                                        <a href="<?php echo htmlspecialchars($listeningRoomTrackUrl); ?>" target="_blank" rel="noopener noreferrer" class="reader-audio-external-link" title="Listen to &quot;<?php echo htmlspecialchars($audioTitleDisplay); ?>&quot; in The Listening Room" style="color: inherit; text-decoration: underline; text-decoration-color: var(--rs-primary); text-underline-offset: 3px;">
-                                            <?php echo htmlspecialchars($audioTitleDisplay); ?> <i class="ph ph-arrow-square-out" aria-hidden="true" style="font-size: 0.85em; opacity: 0.85;"></i>
+                                        <a id="narrative-audio-title-link" href="<?php echo htmlspecialchars($listeningRoomTrackUrl); ?>" target="_blank" rel="noopener noreferrer" class="reader-audio-external-link" title="Listen to &quot;<?php echo htmlspecialchars($audioTitleDisplay); ?>&quot; in The Listening Room" style="color: inherit; text-decoration: underline; text-decoration-color: var(--rs-primary); text-underline-offset: 3px;">
+                                            <span id="narrative-audio-title-text"><?php echo htmlspecialchars($audioTitleDisplay); ?></span> <i class="ph ph-arrow-square-out" aria-hidden="true" style="font-size: 0.85em; opacity: 0.85;"></i>
                                         </a>
                                     </span>
                                 </div>
                                 
                                 <div class="reader-audio-scroll-wrap" style="font-size: 0.85rem; opacity: 0.85; margin-bottom: 0.75rem;">
                                     <span class="reader-audio-scroll-text">
-                                        <a href="<?php echo htmlspecialchars($listeningRoomArtistUrl); ?>" target="_blank" rel="noopener noreferrer" class="reader-audio-external-link" title="View <?php echo htmlspecialchars($artistDisplay); ?> in The Listening Room" style="color: inherit; text-decoration: none; border-bottom: 1px dotted currentColor;"><?php echo htmlspecialchars($artistDisplay); ?></a>
+                                        <a id="narrative-audio-artist-link" href="<?php echo htmlspecialchars($listeningRoomArtistUrl); ?>" target="_blank" rel="noopener noreferrer" class="reader-audio-external-link" title="View <?php echo htmlspecialchars($artistDisplay); ?> in The Listening Room" style="color: inherit; text-decoration: none; border-bottom: 1px dotted currentColor;"><?php echo htmlspecialchars($artistDisplay); ?></a>
                                         &bull;
-                                        <a href="<?php echo htmlspecialchars($listeningRoomAlbumUrl); ?>" target="_blank" rel="noopener noreferrer" class="reader-audio-external-link" title="Open album <?php echo htmlspecialchars($albumDisplay); ?> in The Listening Room" style="color: inherit; text-decoration: underline; text-underline-offset: 2px;"><i><?php echo htmlspecialchars($albumDisplay); ?></i></a>
+                                        <a id="narrative-audio-album-link" href="<?php echo htmlspecialchars($listeningRoomAlbumUrl); ?>" target="_blank" rel="noopener noreferrer" class="reader-audio-external-link" title="Open album <?php echo htmlspecialchars($albumDisplay); ?> in The Listening Room" style="color: inherit; text-decoration: underline; text-underline-offset: 2px;"><i id="narrative-audio-album-text"><?php echo htmlspecialchars($albumDisplay); ?></i></a>
                                     </span>
                                 </div>
                                 
                                 <!-- Custom HTML5 Audio Player UI -->
-                                <div class="reader-audio-controls-row">
-                                    <audio id="narrative-audio-element" data-title="<?php echo htmlspecialchars($audioTitleDisplay); ?>" data-artist="<?php echo htmlspecialchars($artistDisplay); ?>" data-album="<?php echo htmlspecialchars($albumDisplay); ?>" data-artwork="<?php echo htmlspecialchars($albumArtUrl); ?>" data-listening-room-track-url="<?php echo htmlspecialchars($listeningRoomTrackUrl); ?>" data-listening-room-album-url="<?php echo htmlspecialchars($listeningRoomAlbumUrl); ?>" src="<?php echo htmlspecialchars($audioUrl); ?>" data-start-time="<?php echo $audioStart; ?>" loop preload="metadata" style="display: none;"></audio>
+                                <div class="reader-audio-controls-row" style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                                    <audio id="narrative-audio-element"
+                                           data-title="<?php echo htmlspecialchars($audioTitleDisplay); ?>"
+                                           data-artist="<?php echo htmlspecialchars($artistDisplay); ?>"
+                                           data-album="<?php echo htmlspecialchars($albumDisplay); ?>"
+                                           data-artwork="<?php echo htmlspecialchars($albumArtUrl); ?>"
+                                           data-listening-room-track-url="<?php echo htmlspecialchars($listeningRoomTrackUrl); ?>"
+                                           data-listening-room-album-url="<?php echo htmlspecialchars($listeningRoomAlbumUrl); ?>"
+                                           data-queue-mode="<?php echo htmlspecialchars($queueMode); ?>"
+                                           data-playlist-title="<?php echo htmlspecialchars($playlistTitle); ?>"
+                                           data-playlist-url="<?php echo htmlspecialchars($playlistListeningRoomUrl); ?>"
+                                           data-repeat-mode="<?php echo $queueCount > 1 ? 'all' : 'one'; ?>"
+                                           data-active-index="0"
+                                           data-queue="<?php echo htmlspecialchars(json_encode($audioQueue, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE)); ?>"
+                                           src="<?php echo htmlspecialchars($audioUrl); ?>"
+                                           data-start-time="<?php echo $audioStart; ?>"
+                                           <?php if ($queueCount === 1): ?>loop<?php endif; ?>
+                                           preload="metadata"
+                                           style="display: none;"></audio>
                                     
-                                    <button id="narrative-audio-play-toggle" class="rs-btn" style="border-radius: 50%; width: 36px; height: 36px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid var(--rs-border); background: transparent;" aria-label="Play/Pause" title="Play/Pause">
+                                    <?php if ($queueCount > 1): ?>
+                                    <button type="button" id="narrative-audio-prev" class="rs-btn" style="border-radius: 50%; width: 34px; height: 34px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid var(--rs-border); background: transparent;" aria-label="Previous Track" title="Previous Track">
+                                        <i class="ph ph-skip-back" style="font-size: 1.05rem;" aria-hidden="true"></i>
+                                    </button>
+                                    <?php endif; ?>
+
+                                    <button type="button" id="narrative-audio-play-toggle" class="rs-btn" style="border-radius: 50%; width: 36px; height: 36px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid var(--rs-border); background: transparent;" aria-label="Play/Pause" title="Play/Pause">
                                         <i class="ph ph-play" style="font-size: 1.2rem;" id="narrative-audio-play-icon" aria-hidden="true"></i>
                                     </button>
+
+                                    <?php if ($queueCount > 1): ?>
+                                    <button type="button" id="narrative-audio-next" class="rs-btn" style="border-radius: 50%; width: 34px; height: 34px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid var(--rs-border); background: transparent;" aria-label="Next Track" title="Next Track">
+                                        <i class="ph ph-skip-forward" style="font-size: 1.05rem;" aria-hidden="true"></i>
+                                    </button>
+                                    <?php endif; ?>
                                     
-                                    <div class="reader-audio-scrubber-container">
+                                    <div class="reader-audio-scrubber-container" style="flex: 1; min-width: 140px;">
                                         <span id="narrative-audio-current">0:00</span>
                                         <input type="range" id="narrative-audio-scrubber" value="0" min="0" step="1" aria-label="Seek background audio timeline">
                                         <span id="narrative-audio-duration">0:00</span>
                                     </div>
                                     
-                                    <button id="narrative-audio-loop-toggle" class="rs-btn" style="border-radius: 50%; width: 36px; height: 36px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 2px solid var(--rs-primary); color: var(--rs-primary); background: rgba(0,0,0,0.05);" aria-label="Toggle Repeat: ON" title="Repeat 1 Track: ON">
-                                        <i class="ph ph-repeat-once" style="font-size: 1.2rem;" aria-hidden="true"></i>
+                                    <button type="button" id="narrative-audio-loop-toggle" class="rs-btn" style="border-radius: 50%; width: 36px; height: 36px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 2px solid var(--rs-primary); color: var(--rs-primary); background: rgba(0,0,0,0.05);" aria-label="<?php echo $queueCount > 1 ? 'Toggle Repeat: All Tracks' : 'Toggle Repeat: ON'; ?>" title="<?php echo $queueCount > 1 ? 'Repeat All Tracks: ON' : 'Repeat 1 Track: ON'; ?>">
+                                        <i class="ph <?php echo $queueCount > 1 ? 'ph-repeat' : 'ph-repeat-once'; ?>" style="font-size: 1.2rem;" aria-hidden="true"></i>
                                     </button>
                                     
-                                    <?php $lyricsUrl = $cdnBaseUrl . '/engine-room-records/artists/' . $artistSlug . '/' . $albumSlug . '/lyrics/' . $filenameNoExt . '.md'; ?>
-                                    <button id="narrative-audio-lyrics-toggle" class="rs-btn" style="border-radius: 50%; width: 36px; height: 36px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid var(--rs-border); background: transparent;" aria-label="View Lyrics" title="View Lyrics" data-url="<?php echo htmlspecialchars($lyricsUrl); ?>" data-title="<?php echo htmlspecialchars($audioTitleDisplay); ?>">
+                                    <button type="button" id="narrative-audio-lyrics-toggle" class="rs-btn" style="border-radius: 50%; width: 36px; height: 36px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid var(--rs-border); background: transparent;" aria-label="View Lyrics" title="View Lyrics" data-url="<?php echo htmlspecialchars($lyricsUrl); ?>" data-title="<?php echo htmlspecialchars($audioTitleDisplay); ?>">
                                         <i class="ph ph-music-notes" style="font-size: 1.2rem;" aria-hidden="true"></i>
                                     </button>
 
-                                    <a href="<?php echo htmlspecialchars($listeningRoomTrackUrl); ?>" target="_blank" rel="noopener noreferrer" class="rs-btn reader-audio-external-link" style="border-radius: 50%; width: 36px; height: 36px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid var(--rs-border); background: transparent; color: inherit; text-decoration: none;" aria-label="Open &quot;<?php echo htmlspecialchars($audioTitleDisplay); ?>&quot; in The Listening Room" title="Open &quot;<?php echo htmlspecialchars($audioTitleDisplay); ?>&quot; in The Listening Room">
+                                    <?php if ($queueCount > 1): ?>
+                                    <button type="button" id="narrative-audio-queue-toggle" class="rs-btn" aria-expanded="true" aria-controls="narrative-audio-queue-drawer" title="Toggle Tracklist Queue (<?php echo $queueCount; ?> tracks)" style="height: 36px; padding: 0 0.65rem; border-radius: 999px; display: inline-flex; align-items: center; gap: 0.35rem; flex-shrink: 0; border: 1px solid var(--rs-border); background: transparent; font-size: 0.78rem; font-weight: 700;">
+                                        <i class="ph ph-queue" style="font-size: 1.05rem;" aria-hidden="true"></i>
+                                        <span id="narrative-audio-queue-pos">1 / <?php echo $queueCount; ?></span>
+                                    </button>
+                                    <?php endif; ?>
+
+                                    <a id="narrative-audio-headphones-link" href="<?php echo htmlspecialchars($listeningRoomTrackUrl); ?>" target="_blank" rel="noopener noreferrer" class="rs-btn reader-audio-external-link" style="border-radius: 50%; width: 36px; height: 36px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid var(--rs-border); background: transparent; color: inherit; text-decoration: none;" aria-label="Open &quot;<?php echo htmlspecialchars($audioTitleDisplay); ?>&quot; in The Listening Room" title="Open &quot;<?php echo htmlspecialchars($audioTitleDisplay); ?>&quot; in The Listening Room">
                                         <i class="ph ph-headphones" style="font-size: 1.2rem;" aria-hidden="true"></i>
                                     </a>
                                 </div>
                             </div>
                         </div>
+
+                        <?php if ($queueCount > 1): ?>
+                        <!-- Multi-Track Album / Playlist Queue Drawer -->
+                        <div id="narrative-audio-queue-drawer" role="region" aria-label="<?php echo htmlspecialchars(($queueMode === 'playlist' ? 'Playlist' : 'Album') . ' Track Queue'); ?>" style="border-top: 1px solid var(--rs-border); background: var(--rs-bg); max-height: 220px; overflow-y: auto; padding: 0.4rem 0.65rem;">
+                            <?php foreach ($audioQueue as $qIdx => $qTrack): ?>
+                            <button type="button"
+                                    class="reader-audio-queue-item<?php echo $qIdx === 0 ? ' is-active' : ''; ?>"
+                                    data-queue-index="<?php echo (int)$qIdx; ?>"
+                                    aria-current="<?php echo $qIdx === 0 ? 'true' : 'false'; ?>"
+                                    style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; padding: 0.45rem 0.65rem; border: none; border-radius: 8px; background: <?php echo $qIdx === 0 ? 'rgba(59, 130, 246, 0.12)' : 'transparent'; ?>; color: var(--rs-text); text-align: left; cursor: pointer; font-family: inherit; font-size: 0.85rem; transition: background-color 0.15s ease;">
+                                <span style="display: flex; align-items: center; gap: 0.6rem; min-width: 0; flex: 1;">
+                                    <span class="reader-audio-queue-num" style="font-variant-numeric: tabular-nums; font-weight: 700; opacity: 0.7; min-width: 1.5rem; text-align: right;"><?php echo ($qIdx + 1); ?>.</span>
+                                    <span style="min-width: 0; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                                        <strong style="font-weight: 600;"><?php echo htmlspecialchars($qTrack['title']); ?></strong>
+                                        <?php if (!empty($qTrack['actLabel'])): ?>
+                                            <span style="opacity: 0.72; font-size: 0.78rem;"> &mdash; <?php echo htmlspecialchars($qTrack['actLabel']); ?></span>
+                                        <?php elseif ($queueMode === 'playlist'): ?>
+                                            <span style="opacity: 0.72; font-size: 0.78rem;"> &bull; <?php echo htmlspecialchars($qTrack['artist'] . ' (' . $qTrack['album'] . ')'); ?></span>
+                                        <?php endif; ?>
+                                    </span>
+                                </span>
+                                <?php if (!empty($qTrack['duration'])): ?>
+                                <span style="font-variant-numeric: tabular-nums; font-size: 0.78rem; opacity: 0.75; flex-shrink: 0;"><?php echo htmlspecialchars($qTrack['duration']); ?></span>
+                                <?php endif; ?>
+                            </button>
+                            <?php endforeach; ?>
+                        </div>
+                        <?php endif; ?>
                         
                         <!-- The Listening Room & External Streaming Links -->
                         <div style="background: var(--rs-bg); border-top: 1px solid var(--rs-border); padding: 0.75rem 1rem; display: flex; flex-direction: column; gap: 0.5rem; align-items: center; text-align: center;">
                             <div style="font-size: 0.8rem; opacity: 0.8;">Open this song or full album directly in <strong>The Listening Room</strong>, or stream the high-fidelity mix on your favorite service:</div>
                             <div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
-                                <a href="<?php echo htmlspecialchars($listeningRoomTrackUrl); ?>" target="_blank" rel="noopener noreferrer" title="Listen to &quot;<?php echo htmlspecialchars($audioTitleDisplay); ?>&quot; in The Listening Room" class="rs-btn rs-btn-primary reader-audio-external-link" style="padding: 0.25rem 0.65rem; font-size: 0.8rem;"><i class="ph ph-headphones" aria-hidden="true" style="margin-right: 4px;"></i> Song in Listening Room <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px; opacity: 0.85;"></i></a>
-                                <a href="<?php echo htmlspecialchars($listeningRoomAlbumUrl); ?>" target="_blank" rel="noopener noreferrer" title="Open <?php echo htmlspecialchars($albumDisplay); ?> in The Listening Room" class="rs-btn reader-audio-external-link" style="padding: 0.25rem 0.65rem; font-size: 0.8rem;"><i class="ph ph-vinyl-record" aria-hidden="true" style="margin-right: 4px;"></i> Full Album <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px; opacity: 0.7;"></i></a>
+                                <a id="narrative-audio-lr-song-btn" href="<?php echo htmlspecialchars($listeningRoomTrackUrl); ?>" target="_blank" rel="noopener noreferrer" title="Listen to &quot;<?php echo htmlspecialchars($audioTitleDisplay); ?>&quot; in The Listening Room" class="rs-btn rs-btn-primary reader-audio-external-link" style="padding: 0.25rem 0.65rem; font-size: 0.8rem;"><i class="ph ph-headphones" aria-hidden="true" style="margin-right: 4px;"></i> Song in Listening Room <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px; opacity: 0.85;"></i></a>
+                                <a id="narrative-audio-lr-album-btn" href="<?php echo htmlspecialchars($listeningRoomAlbumUrl); ?>" target="_blank" rel="noopener noreferrer" title="Open <?php echo htmlspecialchars($albumDisplay); ?> in The Listening Room" class="rs-btn reader-audio-external-link" style="padding: 0.25rem 0.65rem; font-size: 0.8rem;"><i class="ph ph-vinyl-record" aria-hidden="true" style="margin-right: 4px;"></i> Full Album <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px; opacity: 0.7;"></i></a>
+                                <?php if (!empty($playlistListeningRoomUrl)): ?>
+                                    <a href="<?php echo htmlspecialchars($playlistListeningRoomUrl); ?>" target="_blank" rel="noopener noreferrer" title="Open Playlist in The Listening Room" class="rs-btn reader-audio-external-link" style="padding: 0.25rem 0.65rem; font-size: 0.8rem;"><i class="ph ph-playlist" aria-hidden="true" style="margin-right: 4px;"></i> Full Playlist <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px; opacity: 0.7;"></i></a>
+                                <?php endif; ?>
                                 <?php if ($spotifyUrl): ?>
-                                    <a href="<?php echo htmlspecialchars($spotifyUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Listen on Spotify" class="rs-btn reader-audio-external-link" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;"><i class="ph ph-spotify-logo" aria-hidden="true" style="margin-right: 4px;"></i> Spotify <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px; opacity: 0.7;"></i></a>
+                                    <a id="narrative-audio-spotify-btn" href="<?php echo htmlspecialchars($spotifyUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Listen on Spotify" class="rs-btn reader-audio-external-link" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;"><i class="ph ph-spotify-logo" aria-hidden="true" style="margin-right: 4px;"></i> Spotify <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px; opacity: 0.7;"></i></a>
                                 <?php endif; ?>
                                 <?php if ($appleUrl): ?>
-                                    <a href="<?php echo htmlspecialchars($appleUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Listen on Apple Music" class="rs-btn reader-audio-external-link" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;"><i class="ph ph-apple-logo" aria-hidden="true" style="margin-right: 4px;"></i> Apple <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px; opacity: 0.7;"></i></a>
+                                    <a id="narrative-audio-apple-btn" href="<?php echo htmlspecialchars($appleUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Listen on Apple Music" class="rs-btn reader-audio-external-link" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;"><i class="ph ph-apple-logo" aria-hidden="true" style="margin-right: 4px;"></i> Apple <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px; opacity: 0.7;"></i></a>
                                 <?php endif; ?>
                                 <?php if ($amazonUrl): ?>
-                                    <a href="<?php echo htmlspecialchars($amazonUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Listen on Amazon Music" class="rs-btn reader-audio-external-link" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;"><i class="ph ph-amazon-logo" aria-hidden="true" style="margin-right: 4px;"></i> Amazon <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px; opacity: 0.7;"></i></a>
+                                    <a id="narrative-audio-amazon-btn" href="<?php echo htmlspecialchars($amazonUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Listen on Amazon Music" class="rs-btn reader-audio-external-link" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;"><i class="ph ph-amazon-logo" aria-hidden="true" style="margin-right: 4px;"></i> Amazon <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px; opacity: 0.7;"></i></a>
                                 <?php endif; ?>
                                 <?php if ($youtubeUrl): ?>
-                                    <a href="<?php echo htmlspecialchars($youtubeUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Listen on YouTube" class="rs-btn reader-audio-external-link" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;"><i class="ph ph-youtube-logo" aria-hidden="true" style="margin-right: 4px;"></i> YouTube <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px; opacity: 0.7;"></i></a>
+                                    <a id="narrative-audio-youtube-btn" href="<?php echo htmlspecialchars($youtubeUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Listen on YouTube" class="rs-btn reader-audio-external-link" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;"><i class="ph ph-youtube-logo" aria-hidden="true" style="margin-right: 4px;"></i> YouTube <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px; opacity: 0.7;"></i></a>
                                 <?php endif; ?>
                                 <?php if ($storeStandardUrl): ?>
-                                    <a href="<?php echo htmlspecialchars($storeStandardUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Buy MP3 / OGG Digital Archive" class="rs-btn" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;"><i class="ph ph-shopping-cart" aria-hidden="true" style="margin-right: 4px;"></i> MP3/OGG <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px; opacity: 0.7;"></i></a>
+                                    <a id="narrative-audio-store-std-btn" href="<?php echo htmlspecialchars($storeStandardUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Buy MP3 / OGG Digital Archive" class="rs-btn" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;"><i class="ph ph-shopping-cart" aria-hidden="true" style="margin-right: 4px;"></i> MP3/OGG <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px; opacity: 0.7;"></i></a>
                                 <?php endif; ?>
                                 <?php if ($storeAudiophileUrl): ?>
-                                    <a href="<?php echo htmlspecialchars($storeAudiophileUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Buy WAV / FLAC Audiophile Archive" class="rs-btn" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;"><i class="ph ph-shopping-bag" aria-hidden="true" style="margin-right: 4px;"></i> WAV/FLAC <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px; opacity: 0.7;"></i></a>
+                                    <a id="narrative-audio-store-aud-btn" href="<?php echo htmlspecialchars($storeAudiophileUrl); ?>" target="_blank" rel="noopener noreferrer nofollow" title="Buy WAV / FLAC Audiophile Archive" class="rs-btn" style="padding: 0.25rem 0.5rem; font-size: 0.8rem;"><i class="ph ph-shopping-bag" aria-hidden="true" style="margin-right: 4px;"></i> WAV/FLAC <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px; opacity: 0.7;"></i></a>
                                 <?php endif; ?>
                             </div>
                         </div>
@@ -775,15 +1004,14 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                         <div id="narrative-lyrics-content" style="padding: 1.5rem; overflow-y: auto; max-height: calc(85vh - 140px); font-size: 1.1rem; line-height: 1.6;">
                         </div>
                         <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; padding: 0.75rem 1.5rem; border-top: 1px solid var(--rs-border); background: var(--rs-surface); font-size: 0.85rem;">
-                            <span style="opacity: 0.8;"><?php echo htmlspecialchars($artistDisplay); ?> &bull; <i><?php echo htmlspecialchars($albumDisplay); ?></i></span>
+                            <span id="narrative-lyrics-footer-meta" style="opacity: 0.8;"><?php echo htmlspecialchars($artistDisplay); ?> &bull; <i><?php echo htmlspecialchars($albumDisplay); ?></i></span>
                             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-                                <a href="<?php echo htmlspecialchars($listeningRoomTrackUrl); ?>" target="_blank" rel="noopener noreferrer" class="rs-btn rs-btn-primary reader-audio-external-link" style="padding: 0.25rem 0.65rem; font-size: 0.8rem;"><i class="ph ph-headphones" aria-hidden="true" style="margin-right: 4px;"></i> Open Song <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px;"></i></a>
-                                <a href="<?php echo htmlspecialchars($listeningRoomAlbumUrl); ?>" target="_blank" rel="noopener noreferrer" class="rs-btn reader-audio-external-link" style="padding: 0.25rem 0.65rem; font-size: 0.8rem;"><i class="ph ph-vinyl-record" aria-hidden="true" style="margin-right: 4px;"></i> Open Album <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px;"></i></a>
+                                <a id="narrative-lyrics-open-song" href="<?php echo htmlspecialchars($listeningRoomTrackUrl); ?>" target="_blank" rel="noopener noreferrer" class="rs-btn rs-btn-primary reader-audio-external-link" style="padding: 0.25rem 0.65rem; font-size: 0.8rem;"><i class="ph ph-headphones" aria-hidden="true" style="margin-right: 4px;"></i> Open Song <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px;"></i></a>
+                                <a id="narrative-lyrics-open-album" href="<?php echo htmlspecialchars($listeningRoomAlbumUrl); ?>" target="_blank" rel="noopener noreferrer" class="rs-btn reader-audio-external-link" style="padding: 0.25rem 0.65rem; font-size: 0.8rem;"><i class="ph ph-vinyl-record" aria-hidden="true" style="margin-right: 4px;"></i> Open Album <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px;"></i></a>
                             </div>
                         </div>
                     </dialog>
-                    
-                    
+                    <?php endif; // End if ($firstTrack) ?>
                 <?php endif; ?>
 
             <!-- Parsedown Content -->

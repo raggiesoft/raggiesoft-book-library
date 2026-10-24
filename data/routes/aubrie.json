@@ -14,12 +14,12 @@
         "ebook_sizes": {
             "epub": "36.6 MB",
             "pdf": "17.2 MB",
-            "text_epub": "788 KB",
+            "text_epub": "792 KB",
             "text_pdf": "3 MB",
-            "epub_bytes": 38385690,
-            "pdf_bytes": 17990445,
-            "text_epub_bytes": 807017,
-            "text_pdf_bytes": 3180445
+            "epub_bytes": 38389760,
+            "pdf_bytes": 18004345,
+            "text_epub_bytes": 811099,
+            "text_pdf_bytes": 3194599
         }
     },
     "/aubrie": {
@@ -1564,11 +1564,17 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c006/s003.md"
     },
-    "/aubrie/spring-semester-2015/the-leviathan-cut-electric-color-the-call-from-bluewater/scene-4-the-call-from-bluewater": {
+    "/aubrie/spring-semester-2015/the-leviathan-cut-electric-color-the-call-from-bluewater/scene-4-starfield-calibration-the-cosmic-tidal-lock": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Call from Bluewater",
+        "title": "Scene 4: Starfield Calibration (The Cosmic Tidal Lock)",
         "theme": "raggiesoft-books",
         "filePath": "e003/c006/s004.md"
+    },
+    "/aubrie/spring-semester-2015/the-leviathan-cut-electric-color-the-call-from-bluewater/scene-5-the-call-from-bluewater": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 5: The Call from Bluewater",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c006/s005.md"
     },
     "/aubrie/spring-semester-2015/hey-cacuho-the-residence-life-conference": {
         "view": "pages/raggiesoft-books/books/viewer",
