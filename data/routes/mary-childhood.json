@@ -13,13 +13,13 @@
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
             "epub": "9.4 KB",
-            "pdf": "24 KB",
+            "pdf": "25 KB",
             "text_epub": "9.4 KB",
-            "text_pdf": "24 KB",
-            "epub_bytes": 9587,
-            "pdf_bytes": 24793,
-            "text_epub_bytes": 9590,
-            "text_pdf_bytes": 24793
+            "text_pdf": "25 KB",
+            "epub_bytes": 9634,
+            "pdf_bytes": 25934,
+            "text_epub_bytes": 9640,
+            "text_pdf_bytes": 25934
         }
     },
     "/mary-childhood": {
@@ -46,17 +46,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/mary-childhood/mary-s-early-years/chapter-1-a-moment-of-peace/scene-1-high-command": {
+    "/mary-childhood/mary-s-early-years/chapter-1-a-moment-of-peace/high-command-the-blanket-tent-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: High Command",
+        "title": "High Command & The Blanket Tent Sanctuary",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s001.md"
-    },
-    "/mary-childhood/mary-s-early-years/chapter-1-a-moment-of-peace/scene-2-untitled-chapter": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Untitled Chapter",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s002.md",
+        "filePath": "e001/c001/p001.md",
         "nextUrl": "/ashley-tower/b001/c001/p001",
         "nextText": "Continue to Ashley Tower"
     }

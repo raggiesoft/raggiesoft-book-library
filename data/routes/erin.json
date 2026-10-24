@@ -16,10 +16,10 @@
             "pdf": "56 KB",
             "text_epub": "18 KB",
             "text_pdf": "56 KB",
-            "epub_bytes": 18503,
-            "pdf_bytes": 57466,
-            "text_epub_bytes": 18505,
-            "text_pdf_bytes": 57466
+            "epub_bytes": 18515,
+            "pdf_bytes": 57422,
+            "text_epub_bytes": 18515,
+            "text_pdf_bytes": 57422
         }
     },
     "/erin": {
@@ -46,17 +46,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/erin/before-the-distance-the-story-of-john-erin/seconds-into-thunder/scene-1-the-three-minute-bell": {
+    "/erin/before-the-distance-the-story-of-john-erin/seconds-into-thunder/part-1-the-three-minute-bell": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Three-Minute Bell",
+        "title": "Part 1: The Three-Minute Bell",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s001.md"
+        "filePath": "e001/c001/p001.md"
     },
-    "/erin/before-the-distance-the-story-of-john-erin/seconds-into-thunder/scene-2-table-four": {
+    "/erin/before-the-distance-the-story-of-john-erin/seconds-into-thunder/part-2-table-four": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Table Four",
+        "title": "Part 2: Table Four",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s002.md"
+        "filePath": "e001/c001/p002.md"
     },
     "/erin/before-the-distance-the-story-of-john-erin/before-the-distance": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -64,17 +64,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|1"
     },
-    "/erin/before-the-distance-the-story-of-john-erin/before-the-distance/scene-1-the-frayed-mask": {
+    "/erin/before-the-distance-the-story-of-john-erin/before-the-distance/part-1-the-frayed-mask": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Frayed Mask",
+        "title": "Part 1: The Frayed Mask",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s001.md"
+        "filePath": "e001/c002/p001.md"
     },
-    "/erin/before-the-distance-the-story-of-john-erin/before-the-distance/scene-2-when-the-steel-doors-close": {
+    "/erin/before-the-distance-the-story-of-john-erin/before-the-distance/part-2-when-the-steel-doors-close": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: When the Steel Doors Close",
+        "title": "Part 2: When the Steel Doors Close",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s002.md"
+        "filePath": "e001/c002/p002.md"
     },
     "/erin/before-the-distance-the-story-of-john-erin/sanctuary-in-the-storm": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -82,11 +82,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|2"
     },
-    "/erin/before-the-distance-the-story-of-john-erin/sanctuary-in-the-storm/scene-1-the-locked-perimeter": {
+    "/erin/before-the-distance-the-story-of-john-erin/sanctuary-in-the-storm/the-locked-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Locked Perimeter",
+        "title": "The Locked Perimeter",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s001.md"
+        "filePath": "e001/c003/p001.md"
     },
     "/erin/before-the-distance-the-story-of-john-erin/not-her": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -94,10 +94,10 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|3"
     },
-    "/erin/before-the-distance-the-story-of-john-erin/not-her/scene-1-the-practiced-smile": {
+    "/erin/before-the-distance-the-story-of-john-erin/not-her/the-practiced-smile": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Practiced Smile",
+        "title": "The Practiced Smile",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s001.md"
+        "filePath": "e001/c004/p001.md"
     }
 }

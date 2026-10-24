@@ -36,24 +36,24 @@ if (!$chap) {
         <h1 style="margin: 0; color: var(--rs-primary);"><?php echo htmlspecialchars($chap['chap_title']); ?></h1>
     </div>
 
-    <!-- Scenes List Container -->
+    <!-- Parts List Container -->
     <div style="background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 8px; padding: 1.5rem;">
         <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
-            <?php if (!empty($chap['scenes'])): ?>
-                <!-- Iterate through all scenes assigned to this chapter -->
-                <?php foreach ($chap['scenes'] as $scene): 
+            <?php if (!empty($chap['parts'])): ?>
+                <!-- Iterate through all parts assigned to this chapter -->
+                <?php foreach ($chap['parts'] as $part): 
                     // Resolve the frontend URL using the file path mapping
-                    $href = $fileToUrl[$scene['file_path']] ?? $scene['file_path'];
+                    $href = $fileToUrl[$part['file_path']] ?? $part['file_path'];
                 ?>
                     <li>
                         <a href="<?php echo htmlspecialchars($href); ?>" style="text-decoration: none; color: var(--rs-primary); display: flex; align-items: center; gap: 0.5rem; font-size: 1.1rem; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
-                            <i class="ph ph-file-text"></i> <?php echo htmlspecialchars($scene['scene_title']); ?>
+                            <i class="ph ph-file-text" aria-hidden="true"></i> <?php echo htmlspecialchars($part['part_title']); ?>
                         </a>
                     </li>
                 <?php endforeach; ?>
             <?php else: ?>
-                <!-- Graceful fallback if a chapter is defined but contains no scenes -->
-                <li style="opacity: 0.5;">No scenes available.</li>
+                <!-- Graceful fallback if a chapter is defined but contains no parts -->
+                <li style="opacity: 0.5;">No parts available yet.</li>
             <?php endif; ?>
         </ul>
     </div>

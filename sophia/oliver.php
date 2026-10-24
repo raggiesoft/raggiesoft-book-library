@@ -59,13 +59,107 @@ if (file_exists($routeFile)) {
     }
 }
 
-// Exit early with an error state if the route does not exist
-if (empty($actualFilePath)) {
-    echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; height: 100dvh; overflow-y: auto;"><div class="book-page"><h1>Chapter Not Found</h1><p>The requested route could not be found in the route map.</p></div></main>
+/**
+ * Renders an accessible, trauma-informed "Chapter or Part Not Found" navigation card
+ * inside `#stardust-reading-pane`, inviting the reader to visit the Book's Homepage,
+ * the Library Catalog (`/library`), or the Ocean View Archives Homepage (`/`).
+ *
+ * @param string     $seriesSlug   Active book slug from the first URL segment (if any).
+ * @param array|null $toc_manifest Loaded series TOC manifest (if any).
+ * @param array      $routeData    Loaded series route manifest (if any).
+ * @param string     $heading      Primary heading text.
+ * @param string     $message      Explanatory message text.
+ */
+if (!function_exists('renderOliverNotFoundCard')) {
+    function renderOliverNotFoundCard(string $seriesSlug, ?array $toc_manifest, array $routeData, string $heading, string $message): void {
+        $hasValidBook = ($seriesSlug !== '' && (!empty($routeData) || !empty($toc_manifest)));
+        $bookTitle = '';
+        if ($hasValidBook) {
+            if (!empty($toc_manifest['series_title'])) {
+                $bookTitle = (string)$toc_manifest['series_title'];
+            } elseif (!empty($routeData['/' . $seriesSlug]['title'])) {
+                $bookTitle = (string)$routeData['/' . $seriesSlug]['title'];
+            } else {
+                $bookTitle = ucwords(str_replace('-', ' ', $seriesSlug));
+            }
+        }
+        $safeSlug = htmlspecialchars($seriesSlug, ENT_QUOTES, 'UTF-8');
+        $safeBookTitle = htmlspecialchars($bookTitle, ENT_QUOTES, 'UTF-8');
+        $safeHeading = htmlspecialchars($heading, ENT_QUOTES, 'UTF-8');
+        $safeMessage = htmlspecialchars($message, ENT_QUOTES, 'UTF-8');
+        ?>
+        <main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; height: 100dvh; overflow-y: auto;">
+            <div class="reader-page" style="max-width: 800px; margin: 0 auto; padding-top: 2rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--rs-border);">
+                    <div style="opacity: 0.78; font-size: 0.9rem;">
+                        <a href="/library" style="text-decoration: none; color: var(--rs-primary);">Library</a>
+                        <?php if ($hasValidBook): ?>
+                            &raquo; <a href="/<?php echo $safeSlug; ?>" style="text-decoration: none; color: var(--rs-primary); font-weight: 600;"><?php echo $safeBookTitle; ?></a>
+                        <?php endif; ?>
+                    </div>
+                    <div>
+                        <button id="stardust-sidebar-toggle" class="rs-btn" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
+                            <i class="ph ph-list" aria-hidden="true"></i> Menu
+                        </button>
+                    </div>
+                </div>
 
-<style>
-#stardust-reading-pane { padding-bottom: 6rem !important; }
-</style>';
+                <section aria-labelledby="not-found-heading" style="background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 12px; padding: 2rem 1.75rem; box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);">
+                    <div style="display: inline-flex; align-items: center; gap: 0.45rem; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--rs-primary); margin-bottom: 0.65rem;">
+                        <i class="ph ph-compass" aria-hidden="true" style="font-size: 1rem;"></i>
+                        <span>Ocean View Archives Navigation</span>
+                    </div>
+                    <h1 id="not-found-heading" style="margin: 0 0 0.75rem 0; font-size: 1.85rem; line-height: 1.25; color: var(--rs-text);">
+                        <?php echo $safeHeading; ?>
+                    </h1>
+                    <p style="margin: 0 0 1.5rem 0; font-size: 1.05rem; line-height: 1.65; color: var(--rs-text); opacity: 0.88;">
+                        <?php echo $safeMessage; ?>
+                    </p>
+
+                    <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                        <?php if ($hasValidBook): ?>
+                            <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+                                <a href="/<?php echo $safeSlug; ?>" class="rs-btn rs-btn-brand" style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.7rem 1.15rem; font-weight: 600;">
+                                    <i class="ph ph-book-open" aria-hidden="true"></i>
+                                    <span><?php echo $safeBookTitle; ?> Homepage</span>
+                                </a>
+                                <a href="/<?php echo $safeSlug; ?>/toc" class="rs-btn" style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.7rem 1.15rem; font-weight: 600;">
+                                    <i class="ph ph-list-bullets" aria-hidden="true"></i>
+                                    <span><?php echo $safeBookTitle; ?> Table of Contents</span>
+                                </a>
+                            </div>
+                        <?php endif; ?>
+
+                        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+                            <a href="/library" class="rs-btn" style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.7rem 1.15rem; font-weight: 600;">
+                                <i class="ph ph-books" aria-hidden="true"></i>
+                                <span>Browse the Library Catalog</span>
+                            </a>
+                            <a href="/" class="rs-btn" style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.7rem 1.15rem; font-weight: 600;">
+                                <i class="ph ph-house" aria-hidden="true"></i>
+                                <span>Ocean View Archives Homepage</span>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <style>
+        #stardust-reading-pane { padding-bottom: 6rem !important; }
+        </style>
+        <?php
+    }
+}
+
+// Exit early with a helpful navigation invitation if the route does not exist
+if (empty($actualFilePath)) {
+    renderOliverNotFoundCard(
+        (string)$seriesSlug,
+        isset($toc_manifest) && is_array($toc_manifest) ? $toc_manifest : null,
+        is_array($routeData) ? $routeData : [],
+        'Chapter or Part Not Found',
+        'This bookmark or link may point to a page that was recently reorganized into a new Chapter or Part. Where would you like to head next?'
+    );
     return;
 }
 
@@ -106,11 +200,13 @@ if ($actualFilePath === '__SERIES_LANDING__') {
 }
 
 if ($mdContent === false && !$specialPageType) {
-    echo '<main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; height: 100dvh; overflow-y: auto;"><div class="book-page"><h1>File Not Found</h1><p>The narrative file could not be loaded from the Vault.</p></div></main>
-
-<style>
-#stardust-reading-pane { padding-bottom: 6rem !important; }
-</style>';
+    renderOliverNotFoundCard(
+        (string)$seriesSlug,
+        isset($toc_manifest) && is_array($toc_manifest) ? $toc_manifest : null,
+        is_array($routeData) ? $routeData : [],
+        'Part Manuscript Not Found',
+        'We could not load this manuscript file from the Ocean View Archives right now. You can return to the book overview, browse the library catalog, or head back to the homepage below.'
+    );
     return;
 }
 
@@ -290,17 +386,19 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
             $seriesTitle = !empty($toc_manifest['series_title']) ? $toc_manifest['series_title'] : (ucwords(str_replace('-', ' ', $seriesSlug)));
             $eraTitle = '';
             $chapTitle = '';
+            $chapPartCount = 1;
             
-            // Search the manifest for hierarchy titles to construct breadcrumbs
+            // Search the manifest for hierarchy titles and part count to construct breadcrumbs & Mini-TOC header
             if ($toc_manifest && isset($toc_manifest['eras'])) {
                 foreach ($toc_manifest['eras'] as $e) {
                     if (isset($e['chapters'])) {
                         foreach ($e['chapters'] as $c) {
-                            if (isset($c['scenes'])) {
-                                foreach ($c['scenes'] as $s) {
-                                    if ($s['file_path'] === $actualFilePath) {
+                            if (!empty($c['parts']) && is_array($c['parts'])) {
+                                foreach ($c['parts'] as $p) {
+                                    if ($p['file_path'] === $actualFilePath) {
                                         $eraTitle = $e['era_title'];
                                         $chapTitle = $c['chap_title'];
+                                        $chapPartCount = count($c['parts']);
                                         break 3;
                                     }
                                 }
@@ -1058,16 +1156,20 @@ if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
                     <?php endif; // End if ($firstTrack) ?>
                 <?php endif; ?>
 
-            <?php if (!$specialPageType && !empty($sceneSubsections)): ?>
-            <!-- In-Scene Mini Table of Contents (Constructed from `## Heading` sub-headers at `***` breaks) -->
-            <nav class="reader-scene-mini-toc" aria-label="In-scene sections">
+            <?php if (!$specialPageType && !empty($sceneSubsections)):
+                $miniTocKickerText = (isset($chapPartCount) && (int)$chapPartCount > 1)
+                    ? 'Scenes in This Part'
+                    : 'Scenes in This Chapter';
+            ?>
+            <!-- In-Part / In-Chapter Scene Mini Table of Contents (Constructed from `## Heading` sub-headers at `***` breaks) -->
+            <nav class="reader-scene-mini-toc" aria-label="<?php echo htmlspecialchars($miniTocKickerText, ENT_QUOTES, 'UTF-8'); ?>">
                 <div class="reader-scene-mini-toc-header">
                     <span class="reader-scene-mini-toc-kicker">
                         <i class="ph ph-list-bullets" aria-hidden="true"></i>
-                        <span>In This Scene</span>
+                        <span><?php echo htmlspecialchars($miniTocKickerText, ENT_QUOTES, 'UTF-8'); ?></span>
                     </span>
                     <span class="reader-scene-mini-toc-badge">
-                        <?php echo count($sceneSubsections) === 1 ? '1 Section' : (count($sceneSubsections) . ' Sections'); ?>
+                        <?php echo count($sceneSubsections) === 1 ? '1 Scene' : (count($sceneSubsections) . ' Scenes'); ?>
                     </span>
                 </div>
                 <ol class="reader-scene-mini-toc-list">

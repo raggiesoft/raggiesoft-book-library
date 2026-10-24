@@ -16,10 +16,10 @@
             "pdf": "199 KB",
             "text_epub": "72 KB",
             "text_pdf": "199 KB",
-            "epub_bytes": 73653,
-            "pdf_bytes": 204145,
-            "text_epub_bytes": 73653,
-            "text_pdf_bytes": 204145
+            "epub_bytes": 73332,
+            "pdf_bytes": 204249,
+            "text_epub_bytes": 73332,
+            "text_pdf_bytes": 204249
         }
     },
     "/drew": {
@@ -46,53 +46,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/drew/book-1-the-hospital-year/chapter-1-the-dojang-incident/scene-1-the-core-check": {
+    "/drew/book-1-the-hospital-year/chapter-1-the-dojang-incident/part-1-the-core-check-unannounced-arrival": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Core Check",
+        "title": "Part 1: The Core Check & Unannounced Arrival",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s001.md"
+        "filePath": "e001/c001/p001.md"
     },
-    "/drew/book-1-the-hospital-year/chapter-1-the-dojang-incident/scene-2-the-rest-of-the-hour": {
+    "/drew/book-1-the-hospital-year/chapter-1-the-dojang-incident/part-2-the-payphone-the-paperwork": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Rest of the Hour",
+        "title": "Part 2: The Payphone & The Paperwork",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s002.md"
-    },
-    "/drew/book-1-the-hospital-year/chapter-1-the-dojang-incident/scene-3-the-front-office": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Front Office",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s003.md"
-    },
-    "/drew/book-1-the-hospital-year/chapter-1-the-dojang-incident/scene-4-unannounced-arrival": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Unannounced Arrival",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s004.md"
-    },
-    "/drew/book-1-the-hospital-year/chapter-1-the-dojang-incident/scene-5-the-payphone": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Payphone",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s005.md"
-    },
-    "/drew/book-1-the-hospital-year/chapter-1-the-dojang-incident/scene-6-the-consultation-room": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Consultation Room",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s006.md"
-    },
-    "/drew/book-1-the-hospital-year/chapter-1-the-dojang-incident/scene-7-the-other-victims": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Other Victims",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s007.md"
-    },
-    "/drew/book-1-the-hospital-year/chapter-1-the-dojang-incident/scene-8-the-paperwork": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Paperwork",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s008.md"
+        "filePath": "e001/c001/p002.md"
     },
     "/drew/book-1-the-hospital-year/chapter-2-the-aftermath": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -100,47 +64,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|1"
     },
-    "/drew/book-1-the-hospital-year/chapter-2-the-aftermath/scene-1-post-op": {
+    "/drew/book-1-the-hospital-year/chapter-2-the-aftermath/part-1-post-op-the-manifesto": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Post-Op",
+        "title": "Part 1: Post-Op & The Manifesto",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s001.md"
+        "filePath": "e001/c002/p001.md"
     },
-    "/drew/book-1-the-hospital-year/chapter-2-the-aftermath/scene-2-the-picu": {
+    "/drew/book-1-the-hospital-year/chapter-2-the-aftermath/part-2-the-sofa-the-coalition": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The PICU",
+        "title": "Part 2: The Sofa & The Coalition",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s002.md"
-    },
-    "/drew/book-1-the-hospital-year/chapter-2-the-aftermath/scene-3-waking-up": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Waking Up",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s003.md"
-    },
-    "/drew/book-1-the-hospital-year/chapter-2-the-aftermath/scene-4-suite-f": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Suite F",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s004.md"
-    },
-    "/drew/book-1-the-hospital-year/chapter-2-the-aftermath/scene-5-the-manifesto": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Manifesto",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s005.md"
-    },
-    "/drew/book-1-the-hospital-year/chapter-2-the-aftermath/scene-6-the-sofa": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Sofa",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s006.md"
-    },
-    "/drew/book-1-the-hospital-year/chapter-2-the-aftermath/scene-7-the-coalition": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Coalition",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s007.md"
+        "filePath": "e001/c002/p002.md"
     },
     "/drew/book-1-the-hospital-year/chapter-3-the-vow": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -148,11 +82,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|2"
     },
-    "/drew/book-1-the-hospital-year/chapter-3-the-vow/scene-1-the-vow": {
+    "/drew/book-1-the-hospital-year/chapter-3-the-vow/the-vow": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Vow",
+        "title": "The Vow",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s001.md"
+        "filePath": "e001/c003/p001.md"
     },
     "/drew/book-1-the-hospital-year/chapter-4-the-racecar": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -160,11 +94,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|3"
     },
-    "/drew/book-1-the-hospital-year/chapter-4-the-racecar/scene-1-the-racecar": {
+    "/drew/book-1-the-hospital-year/chapter-4-the-racecar/the-racecar": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Racecar",
+        "title": "The Racecar",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s001.md"
+        "filePath": "e001/c004/p001.md"
     },
     "/drew/book-1-the-hospital-year/chapter-5-the-hospital-haunt": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -172,11 +106,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|4"
     },
-    "/drew/book-1-the-hospital-year/chapter-5-the-hospital-haunt/scene-1-the-hospital-haunt": {
+    "/drew/book-1-the-hospital-year/chapter-5-the-hospital-haunt/the-hospital-haunt": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Hospital Haunt",
+        "title": "The Hospital Haunt",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s001.md"
+        "filePath": "e001/c005/p001.md"
     },
     "/drew/book-1-the-hospital-year/chapter-6-the-hospital-classroom": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -184,11 +118,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|5"
     },
-    "/drew/book-1-the-hospital-year/chapter-6-the-hospital-classroom/scene-1-the-hospital-classroom": {
+    "/drew/book-1-the-hospital-year/chapter-6-the-hospital-classroom/the-hospital-classroom": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Hospital Classroom",
+        "title": "The Hospital Classroom",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s001.md"
+        "filePath": "e001/c006/p001.md"
     },
     "/drew/book-1-the-hospital-year/chapter-7-the-empty-beds": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -196,11 +130,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|6"
     },
-    "/drew/book-1-the-hospital-year/chapter-7-the-empty-beds/scene-1-the-empty-beds": {
+    "/drew/book-1-the-hospital-year/chapter-7-the-empty-beds/the-empty-beds": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Empty Beds",
+        "title": "The Empty Beds",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s001.md"
+        "filePath": "e001/c007/p001.md"
     },
     "/drew/book-1-the-hospital-year/chapter-8-a-hospital-thanksgiving": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -208,11 +142,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|7"
     },
-    "/drew/book-1-the-hospital-year/chapter-8-a-hospital-thanksgiving/scene-1-a-hospital-thanksgiving": {
+    "/drew/book-1-the-hospital-year/chapter-8-a-hospital-thanksgiving/a-hospital-thanksgiving": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Hospital Thanksgiving",
+        "title": "A Hospital Thanksgiving",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c008/s001.md"
+        "filePath": "e001/c008/p001.md"
     },
     "/drew/book-1-the-hospital-year/chapter-9-the-exhaustion": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -220,11 +154,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|8"
     },
-    "/drew/book-1-the-hospital-year/chapter-9-the-exhaustion/scene-1-the-exhaustion": {
+    "/drew/book-1-the-hospital-year/chapter-9-the-exhaustion/the-exhaustion": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Exhaustion",
+        "title": "The Exhaustion",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c009/s001.md"
+        "filePath": "e001/c009/p001.md"
     },
     "/drew/book-1-the-hospital-year/chapter-10-a-hospital-christmas": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -232,11 +166,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|9"
     },
-    "/drew/book-1-the-hospital-year/chapter-10-a-hospital-christmas/scene-1-a-hospital-christmas": {
+    "/drew/book-1-the-hospital-year/chapter-10-a-hospital-christmas/a-hospital-christmas": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Hospital Christmas",
+        "title": "A Hospital Christmas",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c010/s001.md"
+        "filePath": "e001/c010/p001.md"
     },
     "/drew/book-1-the-hospital-year/chapter-11-pennies-on-the-dollar": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -244,11 +178,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|10"
     },
-    "/drew/book-1-the-hospital-year/chapter-11-pennies-on-the-dollar/scene-1-pennies-on-the-dollar": {
+    "/drew/book-1-the-hospital-year/chapter-11-pennies-on-the-dollar/pennies-on-the-dollar": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Pennies on the Dollar",
+        "title": "Pennies on the Dollar",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c011/s001.md"
+        "filePath": "e001/c011/p001.md"
     },
     "/drew/book-1-the-hospital-year/chapter-12-midnight-on-the-ward": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -256,11 +190,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|11"
     },
-    "/drew/book-1-the-hospital-year/chapter-12-midnight-on-the-ward/scene-1-midnight-on-the-ward": {
+    "/drew/book-1-the-hospital-year/chapter-12-midnight-on-the-ward/midnight-on-the-ward": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Midnight on the Ward",
+        "title": "Midnight on the Ward",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c012/s001.md"
+        "filePath": "e001/c012/p001.md"
     },
     "/drew/book-1-the-hospital-year/chapter-13-going-home": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -268,11 +202,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|12"
     },
-    "/drew/book-1-the-hospital-year/chapter-13-going-home/scene-1-going-home": {
+    "/drew/book-1-the-hospital-year/chapter-13-going-home/going-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Going Home",
+        "title": "Going Home",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c013/s001.md"
+        "filePath": "e001/c013/p001.md"
     },
     "/drew/book-1-the-hospital-year/chapter-14-seven": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -280,11 +214,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|13"
     },
-    "/drew/book-1-the-hospital-year/chapter-14-seven/scene-1-seven": {
+    "/drew/book-1-the-hospital-year/chapter-14-seven/seven": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Seven",
+        "title": "Seven",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c014/s001.md"
+        "filePath": "e001/c014/p001.md"
     },
     "/drew/book-1-the-hospital-year/chapter-15-the-short-bus": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -292,11 +226,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|14"
     },
-    "/drew/book-1-the-hospital-year/chapter-15-the-short-bus/scene-1-the-short-bus": {
+    "/drew/book-1-the-hospital-year/chapter-15-the-short-bus/the-short-bus": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Short Bus",
+        "title": "The Short Bus",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c015/s001.md"
+        "filePath": "e001/c015/p001.md"
     },
     "/drew/book-2-the-fallout": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -310,17 +244,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
-    "/drew/book-2-the-fallout/chapter-1-bankruptcy/scene-1-chapter-7-bankruptcy": {
+    "/drew/book-2-the-fallout/chapter-1-bankruptcy/chapter-7-bankruptcy-the-linoleum-room": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Chapter 7 Bankruptcy",
+        "title": "Chapter 7 Bankruptcy & The Linoleum Room",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s001.md"
-    },
-    "/drew/book-2-the-fallout/chapter-1-bankruptcy/scene-2-the-linoleum-room": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Linoleum Room",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s002.md"
+        "filePath": "e002/c001/p001.md"
     },
     "/drew/book-2-the-fallout/chapter-2-the-mandatory-reporters": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -328,11 +256,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|1"
     },
-    "/drew/book-2-the-fallout/chapter-2-the-mandatory-reporters/scene-1-the-mandatory-reporters": {
+    "/drew/book-2-the-fallout/chapter-2-the-mandatory-reporters/the-mandatory-reporters": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Mandatory Reporters",
+        "title": "The Mandatory Reporters",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s001.md"
+        "filePath": "e002/c002/p001.md"
     },
     "/drew/book-2-the-fallout/chapter-3-the-trap": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -340,11 +268,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|2"
     },
-    "/drew/book-2-the-fallout/chapter-3-the-trap/scene-1-the-trap": {
+    "/drew/book-2-the-fallout/chapter-3-the-trap/the-trap": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Trap",
+        "title": "The Trap",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c003/s001.md"
+        "filePath": "e002/c003/p001.md"
     },
     "/drew/book-3-the-new-normal": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -358,16 +286,10 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|0"
     },
-    "/drew/book-3-the-new-normal/chapter-1-the-emergency/scene-1-the-curtain-compromise": {
+    "/drew/book-3-the-new-normal/chapter-1-the-emergency/the-curtain-compromise-the-emergency": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Curtain Compromise",
+        "title": "The Curtain Compromise & The Emergency",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s001.md"
-    },
-    "/drew/book-3-the-new-normal/chapter-1-the-emergency/scene-2-the-emergency": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Emergency",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s002.md"
+        "filePath": "e003/c001/p001.md"
     }
 }

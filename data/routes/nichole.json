@@ -12,14 +12,14 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "448 KB",
+            "epub": "444 KB",
             "pdf": "1.2 MB",
-            "text_epub": "448 KB",
+            "text_epub": "444 KB",
             "text_pdf": "1.2 MB",
-            "epub_bytes": 458417,
-            "pdf_bytes": 1273304,
-            "text_epub_bytes": 458413,
-            "text_pdf_bytes": 1273304
+            "epub_bytes": 454848,
+            "pdf_bytes": 1273260,
+            "text_epub_bytes": 454853,
+            "text_pdf_bytes": 1273260
         }
     },
     "/nichole": {
@@ -46,59 +46,29 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/nichole/elementary-school/the-newport-vacation/scene-1-the-bachelor-pad": {
+    "/nichole/elementary-school/the-newport-vacation/part-1-the-bachelor-pad-the-pitch": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Bachelor Pad",
+        "title": "Part 1: The Bachelor Pad & The Pitch",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s001.md"
+        "filePath": "e001/c001/p001.md"
     },
-    "/nichole/elementary-school/the-newport-vacation/scene-2-the-night-watch": {
+    "/nichole/elementary-school/the-newport-vacation/part-2-the-circuit-barn-the-park-summit": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Night Watch",
+        "title": "Part 2: The Circuit Barn & The Park Summit",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s002.md"
+        "filePath": "e001/c001/p002.md"
     },
-    "/nichole/elementary-school/the-newport-vacation/scene-3-the-pitch": {
+    "/nichole/elementary-school/the-newport-vacation/part-3-the-quiet-convoy": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Pitch",
+        "title": "Part 3: The Quiet Convoy",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s003.md"
+        "filePath": "e001/c001/p003.md"
     },
-    "/nichole/elementary-school/the-newport-vacation/scene-4-the-circuit-barn": {
+    "/nichole/elementary-school/the-newport-vacation/part-4-bayfront-creamery-the-bennett-beacon": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Circuit Barn",
+        "title": "Part 4: BayFront Creamery & The Bennett Beacon",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s004.md"
-    },
-    "/nichole/elementary-school/the-newport-vacation/scene-5-the-island-tour": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Island Tour",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s005.md"
-    },
-    "/nichole/elementary-school/the-newport-vacation/scene-6-the-park-summit": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Park Summit",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s006.md"
-    },
-    "/nichole/elementary-school/the-newport-vacation/scene-7-the-quiet-convoy": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Quiet Convoy",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s007.md"
-    },
-    "/nichole/elementary-school/the-newport-vacation/scene-8-bayfront-creamery": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: BayFront Creamery",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s008.md"
-    },
-    "/nichole/elementary-school/the-newport-vacation/scene-9-the-bennett-beacon": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Bennett Beacon",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s009.md"
+        "filePath": "e001/c001/p004.md"
     },
     "/nichole/elementary-school/project-alpha": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -106,11 +76,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|1"
     },
-    "/nichole/elementary-school/project-alpha/scene-1-origin-story-project-alpha": {
+    "/nichole/elementary-school/project-alpha/origin-story-project-alpha": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Origin Story: Project Alpha",
+        "title": "Origin Story: Project Alpha",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s001.md"
+        "filePath": "e001/c002/p001.md"
     },
     "/nichole/middle-school": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -124,11 +94,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
-    "/nichole/middle-school/the-test-run/scene-1-the-curb-trap": {
+    "/nichole/middle-school/the-test-run/the-curb-trap": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Curb Trap",
+        "title": "The Curb Trap",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s001.md"
+        "filePath": "e002/c001/p001.md"
     },
     "/nichole/middle-school/the-yellow-wall": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -136,11 +106,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|1"
     },
-    "/nichole/middle-school/the-yellow-wall/scene-1-arrival-at-morrison-middle-school": {
+    "/nichole/middle-school/the-yellow-wall/arrival-at-morrison-middle-school": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Arrival at Morrison Middle School",
+        "title": "Arrival at Morrison Middle School",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s001.md"
+        "filePath": "e002/c002/p001.md"
     },
     "/nichole/middle-school/middle-school-life": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -148,35 +118,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|2"
     },
-    "/nichole/middle-school/middle-school-life/scene-1-the-fire-alarm": {
+    "/nichole/middle-school/middle-school-life/part-1-the-fire-alarm": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Fire Alarm",
+        "title": "Part 1: The Fire Alarm",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c003/s001.md"
+        "filePath": "e002/c003/p001.md"
     },
-    "/nichole/middle-school/middle-school-life/scene-2-the-call": {
+    "/nichole/middle-school/middle-school-life/part-2-the-call": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Call",
+        "title": "Part 2: The Call",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c003/s002.md"
+        "filePath": "e002/c003/p002.md"
     },
-    "/nichole/middle-school/middle-school-life/scene-3-the-federal-hammer-date-november-12-1996-time-3-45-pm-location-1850-delaney-street-virginia-beach": {
+    "/nichole/middle-school/middle-school-life/part-3-1850-delaney-street-virginia-beach-the-architect-and-the-laborer": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Federal Hammer Date: November 12, 1996 Time: 3:45 PM Location: 1850 Delaney Street, Virginia Beach",
+        "title": "Part 3: 1850 Delaney Street, Virginia Beach & The Architect and the Laborer",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c003/s003.md"
-    },
-    "/nichole/middle-school/middle-school-life/scene-4-the-third-wheel": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Third Wheel",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c003/s004.md"
-    },
-    "/nichole/middle-school/middle-school-life/scene-5-the-architect-and-the-laborer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Architect and the Laborer",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c003/s005.md"
+        "filePath": "e002/c003/p003.md"
     },
     "/nichole/freshman-year": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -190,53 +148,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|0"
     },
-    "/nichole/freshman-year/welcome-to-northwood-high-school/scene-1-the-5-am-alarm": {
+    "/nichole/freshman-year/welcome-to-northwood-high-school/part-1-the-5-am-alarm-the-escort": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The 5 AM Alarm",
+        "title": "Part 1: The 5 AM Alarm & The Escort",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s001.md"
+        "filePath": "e003/c001/p001.md"
     },
-    "/nichole/freshman-year/welcome-to-northwood-high-school/scene-2-the-war-room": {
+    "/nichole/freshman-year/welcome-to-northwood-high-school/part-2-the-return-the-hand-off": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The War Room",
+        "title": "Part 2: The Return & The Hand-Off",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s002.md"
-    },
-    "/nichole/freshman-year/welcome-to-northwood-high-school/scene-3-the-soft-trap": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Soft Trap",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s003.md"
-    },
-    "/nichole/freshman-year/welcome-to-northwood-high-school/scene-4-the-reckoning": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Reckoning",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s004.md"
-    },
-    "/nichole/freshman-year/welcome-to-northwood-high-school/scene-5-the-escort": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Escort",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s005.md"
-    },
-    "/nichole/freshman-year/welcome-to-northwood-high-school/scene-6-the-return": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Return",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s006.md"
-    },
-    "/nichole/freshman-year/welcome-to-northwood-high-school/scene-7-the-longest-hour": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Longest Hour",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s007.md"
-    },
-    "/nichole/freshman-year/welcome-to-northwood-high-school/scene-8-the-hand-off": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Hand-Off",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s008.md"
+        "filePath": "e003/c001/p002.md"
     },
     "/nichole/freshman-year/the-smoke-test": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -244,47 +166,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|1"
     },
-    "/nichole/freshman-year/the-smoke-test/scene-1-the-area-of-rescue": {
+    "/nichole/freshman-year/the-smoke-test/the-area-of-rescue-the-return": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Area of Rescue",
+        "title": "The Area of Rescue & The Return",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s001.md"
-    },
-    "/nichole/freshman-year/the-smoke-test/scene-2-the-descent": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Descent",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s002.md"
-    },
-    "/nichole/freshman-year/the-smoke-test/scene-3-the-bus-loop": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Bus Loop",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s003.md"
-    },
-    "/nichole/freshman-year/the-smoke-test/scene-4-the-stand": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Stand",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s004.md"
-    },
-    "/nichole/freshman-year/the-smoke-test/scene-5-the-long-hour": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Long Hour",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s005.md"
-    },
-    "/nichole/freshman-year/the-smoke-test/scene-6-the-all-clear": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The All Clear",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s006.md"
-    },
-    "/nichole/freshman-year/the-smoke-test/scene-7-the-return": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Return",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s007.md"
+        "filePath": "e003/c002/p001.md"
     },
     "/nichole/junior-year": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -298,23 +184,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|0"
     },
-    "/nichole/junior-year/planning-for-the-future/scene-1-transitioning-nichole-s-iep": {
+    "/nichole/junior-year/planning-for-the-future/transitioning-nichole-s-iep-the-offer": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Transitioning Nichole\u2019s IEP",
+        "title": "Transitioning Nichole\u2019s IEP & The Offer",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s001.md"
-    },
-    "/nichole/junior-year/planning-for-the-future/scene-2-the-poverty-trap": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Poverty Trap",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s002.md"
-    },
-    "/nichole/junior-year/planning-for-the-future/scene-3-the-offer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Offer",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s003.md"
+        "filePath": "e004/c001/p001.md"
     },
     "/nichole/junior-year/the-handover": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -322,23 +196,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|1"
     },
-    "/nichole/junior-year/the-handover/scene-1-the-first-shift": {
+    "/nichole/junior-year/the-handover/part-1-the-first-shift": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The First Shift",
+        "title": "Part 1: The First Shift",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s001.md"
+        "filePath": "e004/c002/p001.md"
     },
-    "/nichole/junior-year/the-handover/scene-2-the-certification": {
+    "/nichole/junior-year/the-handover/part-2-the-certification-the-maintenance-crew": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Certification",
+        "title": "Part 2: The Certification & The Maintenance Crew",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s002.md"
-    },
-    "/nichole/junior-year/the-handover/scene-3-the-maintenance-crew": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Maintenance Crew",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s003.md"
+        "filePath": "e004/c002/p002.md"
     },
     "/nichole/senior-year": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -352,29 +220,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|0"
     },
-    "/nichole/senior-year/graduation/scene-1-the-breach": {
+    "/nichole/senior-year/graduation/part-1-the-breach-the-search": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Breach",
+        "title": "Part 1: The Breach & The Search",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s001.md"
+        "filePath": "e005/c001/p001.md"
     },
-    "/nichole/senior-year/graduation/scene-2-the-empty-chair": {
+    "/nichole/senior-year/graduation/part-2-the-promise": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Empty Chair",
+        "title": "Part 2: The Promise",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s002.md"
-    },
-    "/nichole/senior-year/graduation/scene-3-the-search": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Search",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s003.md"
-    },
-    "/nichole/senior-year/graduation/scene-4-the-promise": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Promise",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s004.md"
+        "filePath": "e005/c001/p002.md"
     },
     "/nichole/senior-year/the-reset": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -382,23 +238,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|1"
     },
-    "/nichole/senior-year/the-reset/scene-1-damage-control": {
+    "/nichole/senior-year/the-reset/damage-control-the-war-room": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Damage Control",
+        "title": "Damage Control & The War Room",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s001.md"
-    },
-    "/nichole/senior-year/the-reset/scene-2-the-vow": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Vow",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s002.md"
-    },
-    "/nichole/senior-year/the-reset/scene-3-the-war-room": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The War Room",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s003.md"
+        "filePath": "e005/c002/p001.md"
     },
     "/nichole/college-tours": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -412,17 +256,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|0"
     },
-    "/nichole/college-tours/the-misfit-tour/scene-1-the": {
+    "/nichole/college-tours/the-misfit-tour/the-the-commuter-special": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The \\",
+        "title": "The \\ & The Commuter Special",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s001.md"
-    },
-    "/nichole/college-tours/the-misfit-tour/scene-2-the-commuter-special": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Commuter Special",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s002.md"
+        "filePath": "e006/c001/p001.md"
     },
     "/nichole/college-tours/the-institution": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -430,95 +268,29 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|1"
     },
-    "/nichole/college-tours/the-institution/scene-1-the-valley-of-hope": {
+    "/nichole/college-tours/the-institution/part-1-the-valley-of-hope-the-barracks": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Valley of Hope",
+        "title": "Part 1: The Valley of Hope & The Barracks",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s001.md"
+        "filePath": "e006/c002/p001.md"
     },
-    "/nichole/college-tours/the-institution/scene-2-the-fortress": {
+    "/nichole/college-tours/the-institution/part-2-the-rec-hall-the-safe-house": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Fortress",
+        "title": "Part 2: The Rec Hall & The Safe House",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s002.md"
+        "filePath": "e006/c002/p002.md"
     },
-    "/nichole/college-tours/the-institution/scene-3-the-intake": {
+    "/nichole/college-tours/the-institution/part-3-the-pasture-the-night-watch": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Intake",
+        "title": "Part 3: The Pasture & The Night Watch",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s003.md"
+        "filePath": "e006/c002/p003.md"
     },
-    "/nichole/college-tours/the-institution/scene-4-the-cage": {
+    "/nichole/college-tours/the-institution/part-4-the-morning-report-the-pivot": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Cage",
+        "title": "Part 4: The Morning Report & The Pivot",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s004.md"
-    },
-    "/nichole/college-tours/the-institution/scene-5-the-barracks": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Barracks",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s005.md"
-    },
-    "/nichole/college-tours/the-institution/scene-6-the-rec-hall": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Rec Hall",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s006.md"
-    },
-    "/nichole/college-tours/the-institution/scene-7-the-escape": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Escape",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s007.md"
-    },
-    "/nichole/college-tours/the-institution/scene-8-the-intersection": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Intersection",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s008.md"
-    },
-    "/nichole/college-tours/the-institution/scene-9-the-safe-house": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Safe House",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s009.md"
-    },
-    "/nichole/college-tours/the-institution/scene-10-the-pasture": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Pasture",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s010.md"
-    },
-    "/nichole/college-tours/the-institution/scene-11-the-war-council": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The War Council",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s011.md"
-    },
-    "/nichole/college-tours/the-institution/scene-12-the-nest": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: The Nest",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s012.md"
-    },
-    "/nichole/college-tours/the-institution/scene-13-the-night-watch": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 13: The Night Watch",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s013.md"
-    },
-    "/nichole/college-tours/the-institution/scene-14-the-morning-report": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 14: The Morning Report",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s014.md"
-    },
-    "/nichole/college-tours/the-institution/scene-15-the-pivot": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 15: The Pivot",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s015.md"
+        "filePath": "e006/c002/p004.md"
     },
     "/nichole/college-tours/virginia-dominion-university": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -526,65 +298,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|2"
     },
-    "/nichole/college-tours/virginia-dominion-university/scene-1-the-thirteen-hour-problem": {
+    "/nichole/college-tours/virginia-dominion-university/part-1-the-thirteen-hour-problem-the-tower-of-words": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Thirteen-Hour Problem",
+        "title": "Part 1: The Thirteen-Hour Problem & The Tower of Words",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c003/s001.md"
+        "filePath": "e006/c003/p001.md"
     },
-    "/nichole/college-tours/virginia-dominion-university/scene-2-home-field-advantage": {
+    "/nichole/college-tours/virginia-dominion-university/part-2-the-sanctuary-the-dealbreaker": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Home Field Advantage",
+        "title": "Part 2: The Sanctuary & The Dealbreaker",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c003/s002.md"
+        "filePath": "e006/c003/p002.md"
     },
-    "/nichole/college-tours/virginia-dominion-university/scene-3-the-roll-call": {
+    "/nichole/college-tours/virginia-dominion-university/part-3-the-retreat": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Roll Call",
+        "title": "Part 3: The Retreat",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c003/s003.md"
-    },
-    "/nichole/college-tours/virginia-dominion-university/scene-4-the-tower-of-words": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Tower of Words",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c003/s004.md"
-    },
-    "/nichole/college-tours/virginia-dominion-university/scene-5-the-sanctuary": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Sanctuary",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c003/s005.md"
-    },
-    "/nichole/college-tours/virginia-dominion-university/scene-6-the-life-sciences-hub": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Life Sciences Hub",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c003/s006.md"
-    },
-    "/nichole/college-tours/virginia-dominion-university/scene-7-the-magic-carpet": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Magic Carpet",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c003/s007.md"
-    },
-    "/nichole/college-tours/virginia-dominion-university/scene-8-the-hub": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Hub",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c003/s008.md"
-    },
-    "/nichole/college-tours/virginia-dominion-university/scene-9-the-dealbreaker": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Dealbreaker",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c003/s009.md"
-    },
-    "/nichole/college-tours/virginia-dominion-university/scene-10-the-retreat": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Retreat",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c003/s010.md"
+        "filePath": "e006/c003/p003.md"
     },
     "/nichole/college-tours/trek-up-the-east-coast": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -592,35 +322,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|3"
     },
-    "/nichole/college-tours/trek-up-the-east-coast/scene-1-the-peninsula-run": {
+    "/nichole/college-tours/trek-up-the-east-coast/part-1-the-peninsula-run-the-new-jersey-layover": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Peninsula Run",
+        "title": "Part 1: The Peninsula Run & The New Jersey Layover",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c004/s001.md"
+        "filePath": "e006/c004/p001.md"
     },
-    "/nichole/college-tours/trek-up-the-east-coast/scene-2-the-delaware-trap": {
+    "/nichole/college-tours/trek-up-the-east-coast/part-2-the-machine-at-rest-the-hopeful-morning": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Delaware Trap",
+        "title": "Part 2: The Machine at Rest & The Hopeful Morning",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c004/s002.md"
-    },
-    "/nichole/college-tours/trek-up-the-east-coast/scene-3-the-new-jersey-layover": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The New Jersey Layover",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c004/s003.md"
-    },
-    "/nichole/college-tours/trek-up-the-east-coast/scene-4-the-machine-at-rest": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Machine at Rest",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c004/s004.md"
-    },
-    "/nichole/college-tours/trek-up-the-east-coast/scene-5-the-hopeful-morning": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Hopeful Morning",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c004/s005.md"
+        "filePath": "e006/c004/p002.md"
     },
     "/nichole/college-tours/vermont": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -628,29 +340,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|4"
     },
-    "/nichole/college-tours/vermont/scene-1-the-green-mountain-haul": {
+    "/nichole/college-tours/vermont/part-1-the-green-mountain-haul": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Green Mountain Haul",
+        "title": "Part 1: The Green Mountain Haul",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c005/s001.md"
+        "filePath": "e006/c005/p001.md"
     },
-    "/nichole/college-tours/vermont/scene-2-putney-college-open-house": {
+    "/nichole/college-tours/vermont/part-2-putney-college-open-house": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Putney College Open House",
+        "title": "Part 2: Putney College Open House",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c005/s002.md"
+        "filePath": "e006/c005/p002.md"
     },
-    "/nichole/college-tours/vermont/scene-3-the-drive-back": {
+    "/nichole/college-tours/vermont/part-3-the-drive-back-the-fuel-stop": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Drive Back",
+        "title": "Part 3: The Drive Back & The Fuel Stop",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c005/s003.md"
-    },
-    "/nichole/college-tours/vermont/scene-4-the-fuel-stop": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Fuel Stop",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c005/s004.md"
+        "filePath": "e006/c005/p003.md"
     },
     "/nichole/college-tours/an-ocean-of-an-idea": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -658,35 +364,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|5"
     },
-    "/nichole/college-tours/an-ocean-of-an-idea/scene-1-the-new-jersey-pivot": {
+    "/nichole/college-tours/an-ocean-of-an-idea/part-1-the-new-jersey-pivot": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The New Jersey Pivot",
+        "title": "Part 1: The New Jersey Pivot",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s001.md"
+        "filePath": "e006/c006/p001.md"
     },
-    "/nichole/college-tours/an-ocean-of-an-idea/scene-2-the-juggernaut": {
+    "/nichole/college-tours/an-ocean-of-an-idea/part-2-the-juggernaut-the-ocean-state-option": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Juggernaut",
+        "title": "Part 2: The Juggernaut & The Ocean State Option",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s002.md"
+        "filePath": "e006/c006/p002.md"
     },
-    "/nichole/college-tours/an-ocean-of-an-idea/scene-3-the-diner-debrief": {
+    "/nichole/college-tours/an-ocean-of-an-idea/part-3-the-ocean-state-arrival": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Diner Debrief",
+        "title": "Part 3: The Ocean State Arrival",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s003.md"
-    },
-    "/nichole/college-tours/an-ocean-of-an-idea/scene-4-the-ocean-state-option": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Ocean State Option",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s004.md"
-    },
-    "/nichole/college-tours/an-ocean-of-an-idea/scene-5-the-ocean-state-arrival": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Ocean State Arrival",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s005.md"
+        "filePath": "e006/c006/p003.md"
     },
     "/nichole/college-tours/the-commuter-loop": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -694,53 +388,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|6"
     },
-    "/nichole/college-tours/the-commuter-loop/scene-1-the-holy-cow": {
+    "/nichole/college-tours/the-commuter-loop/part-1-the-holy-cow-the-bull-run": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Holy Cow",
+        "title": "Part 1: The Holy Cow & The Bull Run",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c007/s001.md"
+        "filePath": "e006/c007/p001.md"
     },
-    "/nichole/college-tours/the-commuter-loop/scene-2-the-gateway-connection": {
+    "/nichole/college-tours/the-commuter-loop/part-2-the-braxton-link-the-upgrade": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Gateway Connection",
+        "title": "Part 2: The Braxton Link & The Upgrade",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c007/s002.md"
-    },
-    "/nichole/college-tours/the-commuter-loop/scene-3-the-sea-gate": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Sea Gate",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c007/s003.md"
-    },
-    "/nichole/college-tours/the-commuter-loop/scene-4-the-bull-run": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Bull Run",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c007/s004.md"
-    },
-    "/nichole/college-tours/the-commuter-loop/scene-5-the-braxton-link": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Braxton Link",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c007/s005.md"
-    },
-    "/nichole/college-tours/the-commuter-loop/scene-6-the-library-commons": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Library Commons",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c007/s006.md"
-    },
-    "/nichole/college-tours/the-commuter-loop/scene-7-the-debrief": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Debrief",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c007/s007.md"
-    },
-    "/nichole/college-tours/the-commuter-loop/scene-8-the-upgrade": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Upgrade",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c007/s008.md"
+        "filePath": "e006/c007/p002.md"
     },
     "/nichole/college-tours/the-gap-year-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -748,59 +406,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|7"
     },
-    "/nichole/college-tours/the-gap-year-protocol/scene-1-the-disassembly-date-july-8-2003-time-6-30-pm-location-1850-delaney-street-virginia-beach-virginia": {
+    "/nichole/college-tours/the-gap-year-protocol/part-1-1850-delaney-street-virginia-beach-virginia-the-departure": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Disassembly Date: July 8, 2003 Time: 6:30 PM Location: 1850 Delaney Street, Virginia Beach, Virginia",
+        "title": "Part 1: 1850 Delaney Street, Virginia Beach, Virginia & The Departure",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c008/s001.md"
+        "filePath": "e006/c008/p001.md"
     },
-    "/nichole/college-tours/the-gap-year-protocol/scene-2-the-portsmouth-project": {
+    "/nichole/college-tours/the-gap-year-protocol/part-2-the-visitor-the-hydrostatic-lock": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Portsmouth Project",
+        "title": "Part 2: The Visitor & The Hydrostatic Lock",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c008/s002.md"
+        "filePath": "e006/c008/p002.md"
     },
-    "/nichole/college-tours/the-gap-year-protocol/scene-3-the-fortress-on-west-main": {
+    "/nichole/college-tours/the-gap-year-protocol/part-3-the-milestone-payment-the-credential-hunt": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Fortress on West Main",
+        "title": "Part 3: The Milestone Payment & The Credential Hunt",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c008/s003.md"
-    },
-    "/nichole/college-tours/the-gap-year-protocol/scene-4-the-departure": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Departure",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c008/s004.md"
-    },
-    "/nichole/college-tours/the-gap-year-protocol/scene-5-the-visitor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Visitor",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c008/s005.md"
-    },
-    "/nichole/college-tours/the-gap-year-protocol/scene-6-the-hydrostatic-lock": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Hydrostatic Lock",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c008/s006.md"
-    },
-    "/nichole/college-tours/the-gap-year-protocol/scene-7-the-milestone-payment": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Milestone Payment",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c008/s007.md"
-    },
-    "/nichole/college-tours/the-gap-year-protocol/scene-8-the-fortress-blueprint": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Fortress Blueprint",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c008/s008.md"
-    },
-    "/nichole/college-tours/the-gap-year-protocol/scene-9-the-credential-hunt": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Credential Hunt",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c008/s009.md"
+        "filePath": "e006/c008/p003.md"
     },
     "/nichole/college-tours/the-independent-grid": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -808,71 +430,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|8"
     },
-    "/nichole/college-tours/the-independent-grid/scene-1-the-commute": {
+    "/nichole/college-tours/the-independent-grid/part-1-the-commute-the-mole-lifestyle": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Commute",
+        "title": "Part 1: The Commute & The Mole Lifestyle",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c009/s001.md"
+        "filePath": "e006/c009/p001.md"
     },
-    "/nichole/college-tours/the-independent-grid/scene-2-the-concourse-connection": {
+    "/nichole/college-tours/the-independent-grid/part-2-the-commuter-waiver-the-credential-check": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Concourse Connection",
+        "title": "Part 2: The Commuter Waiver & The Credential Check",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c009/s002.md"
+        "filePath": "e006/c009/p002.md"
     },
-    "/nichole/college-tours/the-independent-grid/scene-3-the-call-of-the-bull": {
+    "/nichole/college-tours/the-independent-grid/part-3-the-detour-and-the-grid-the-debrief": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Call of the Bull",
+        "title": "Part 3: The Detour and The Grid & The Debrief",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c009/s003.md"
-    },
-    "/nichole/college-tours/the-independent-grid/scene-4-the-mole-lifestyle": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Mole Lifestyle",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c009/s004.md"
-    },
-    "/nichole/college-tours/the-independent-grid/scene-5-the-commuter-waiver": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Commuter Waiver",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c009/s005.md"
-    },
-    "/nichole/college-tours/the-independent-grid/scene-6-the-anti-sales-pitch": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Anti-Sales Pitch",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c009/s006.md"
-    },
-    "/nichole/college-tours/the-independent-grid/scene-7-refueling-the-machine": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Refueling the Machine",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c009/s007.md"
-    },
-    "/nichole/college-tours/the-independent-grid/scene-8-the-bull-run": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Bull Run",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c009/s008.md"
-    },
-    "/nichole/college-tours/the-independent-grid/scene-9-the-credential-check": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Credential Check",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c009/s009.md"
-    },
-    "/nichole/college-tours/the-independent-grid/scene-10-the-detour-and-the-grid": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Detour and The Grid",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c009/s010.md"
-    },
-    "/nichole/college-tours/the-independent-grid/scene-11-the-debrief": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The Debrief",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c009/s011.md"
+        "filePath": "e006/c009/p003.md"
     },
     "/nichole/the-gap-year": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -886,53 +460,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|0"
     },
-    "/nichole/the-gap-year/the-fleet-upgrade/scene-1-the-dual-grid-dilemma": {
+    "/nichole/the-gap-year/the-fleet-upgrade/part-1-the-dual-grid-dilemma-the-christmas-compiler": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Dual-Grid Dilemma",
+        "title": "Part 1: The Dual-Grid Dilemma & The Christmas Compiler",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s001.md"
+        "filePath": "e007/c001/p001.md"
     },
-    "/nichole/the-gap-year/the-fleet-upgrade/scene-2-the-medical-handover": {
+    "/nichole/the-gap-year/the-fleet-upgrade/part-2-the-winter-test-the-silent-investor": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Medical Handover",
+        "title": "Part 2: The Winter Test & The Silent Investor",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s002.md"
+        "filePath": "e007/c001/p002.md"
     },
-    "/nichole/the-gap-year/the-fleet-upgrade/scene-3-the-christmas-compiler": {
+    "/nichole/the-gap-year/the-fleet-upgrade/part-3-the-final-transfer": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Christmas Compiler",
+        "title": "Part 3: The Final Transfer",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s003.md"
-    },
-    "/nichole/the-gap-year/the-fleet-upgrade/scene-4-the-winter-test": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Winter Test",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s004.md"
-    },
-    "/nichole/the-gap-year/the-fleet-upgrade/scene-5-the-grid-returns": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Grid Returns",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s005.md"
-    },
-    "/nichole/the-gap-year/the-fleet-upgrade/scene-6-the-long-goodbye": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Long Goodbye",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s006.md"
-    },
-    "/nichole/the-gap-year/the-fleet-upgrade/scene-7-the-silent-investor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Silent Investor",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s007.md"
-    },
-    "/nichole/the-gap-year/the-fleet-upgrade/scene-8-the-final-transfer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Final Transfer",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s008.md"
+        "filePath": "e007/c001/p003.md"
     },
     "/nichole/the-gap-year/the-commuter-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -940,53 +484,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|1"
     },
-    "/nichole/the-gap-year/the-commuter-protocol/scene-1-the-intake": {
+    "/nichole/the-gap-year/the-commuter-protocol/part-1-the-intake-the-liability-lie": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Intake",
+        "title": "Part 1: The Intake & The Liability Lie",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s001.md"
+        "filePath": "e007/c002/p001.md"
     },
-    "/nichole/the-gap-year/the-commuter-protocol/scene-2-the-application": {
+    "/nichole/the-gap-year/the-commuter-protocol/part-2-the-bridge-fund-the-zero-barrier-routine": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Application",
+        "title": "Part 2: The Bridge Fund & The Zero-Barrier Routine",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s002.md"
-    },
-    "/nichole/the-gap-year/the-commuter-protocol/scene-3-the-hardship-loophole": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Hardship Loophole",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s003.md"
-    },
-    "/nichole/the-gap-year/the-commuter-protocol/scene-4-the-liability-lie": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Liability Lie",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s004.md"
-    },
-    "/nichole/the-gap-year/the-commuter-protocol/scene-5-the-bridge-fund": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Bridge Fund",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s005.md"
-    },
-    "/nichole/the-gap-year/the-commuter-protocol/scene-6-the-foundry": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Foundry",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s006.md"
-    },
-    "/nichole/the-gap-year/the-commuter-protocol/scene-7-early-launch": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Early Launch",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s007.md"
-    },
-    "/nichole/the-gap-year/the-commuter-protocol/scene-8-the-zero-barrier-routine": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Zero-Barrier Routine",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s008.md"
+        "filePath": "e007/c002/p002.md"
     },
     "/nichole/the-gap-year/exploring-braxton": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -994,35 +502,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|2"
     },
-    "/nichole/the-gap-year/exploring-braxton/scene-1-the-zero-friction-protocol": {
+    "/nichole/the-gap-year/exploring-braxton/part-1-the-zero-friction-protocol-the-safe-harbor": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Zero-Friction Protocol",
+        "title": "Part 1: The Zero-Friction Protocol & The Safe Harbor",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c003/s001.md"
+        "filePath": "e007/c003/p001.md"
     },
-    "/nichole/the-gap-year/exploring-braxton/scene-2-the-river-and-the-system": {
+    "/nichole/the-gap-year/exploring-braxton/part-2-the-gen-ed-pact": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The River and the System",
+        "title": "Part 2: The Gen-Ed Pact",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c003/s002.md"
-    },
-    "/nichole/the-gap-year/exploring-braxton/scene-3-the-edge-of-the-grid": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Edge of the Grid",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c003/s003.md"
-    },
-    "/nichole/the-gap-year/exploring-braxton/scene-4-the-safe-harbor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Safe Harbor",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c003/s004.md"
-    },
-    "/nichole/the-gap-year/exploring-braxton/scene-5-the-gen-ed-pact": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Gen-Ed Pact",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c003/s005.md"
+        "filePath": "e007/c003/p002.md"
     },
     "/nichole/the-gap-year/the-sync": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1030,11 +520,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|3"
     },
-    "/nichole/the-gap-year/the-sync/scene-1-the-war-room": {
+    "/nichole/the-gap-year/the-sync/the-war-room": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The War Room",
+        "title": "The War Room",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c004/s001.md"
+        "filePath": "e007/c004/p001.md"
     },
     "/nichole/the-gap-year/the-fortress-test": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1042,47 +532,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|4"
     },
-    "/nichole/the-gap-year/the-fortress-test/scene-1-the-severed-link": {
+    "/nichole/the-gap-year/the-fortress-test/the-severed-link-the-sacred-trust": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Severed Link",
+        "title": "The Severed Link & The Sacred Trust",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c005/s001.md"
-    },
-    "/nichole/the-gap-year/the-fortress-test/scene-2-the-siege": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Siege",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c005/s002.md"
-    },
-    "/nichole/the-gap-year/the-fortress-test/scene-3-the-watch": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Watch",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c005/s003.md"
-    },
-    "/nichole/the-gap-year/the-fortress-test/scene-4-the-all-clear": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The All-Clear",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c005/s004.md"
-    },
-    "/nichole/the-gap-year/the-fortress-test/scene-5-the-blueprint": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Blueprint",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c005/s005.md"
-    },
-    "/nichole/the-gap-year/the-fortress-test/scene-6-the-biological-override": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Biological Override",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c005/s006.md"
-    },
-    "/nichole/the-gap-year/the-fortress-test/scene-7-the-sacred-trust": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Sacred Trust",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c005/s007.md"
+        "filePath": "e007/c005/p001.md"
     },
     "/nichole/braxton-freshman": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1096,35 +550,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|0"
     },
-    "/nichole/braxton-freshman/the-first-semester/scene-1-the-sorting-failure": {
+    "/nichole/braxton-freshman/the-first-semester/part-1-the-sorting-failure-the-tactical-retreat": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Sorting Failure",
+        "title": "Part 1: The Sorting Failure & The Tactical Retreat",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s001.md"
+        "filePath": "e008/c001/p001.md"
     },
-    "/nichole/braxton-freshman/the-first-semester/scene-2-the-system-reboot": {
+    "/nichole/braxton-freshman/the-first-semester/part-2-the-fortress-weekend": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The System Reboot",
+        "title": "Part 2: The Fortress Weekend",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s002.md"
-    },
-    "/nichole/braxton-freshman/the-first-semester/scene-3-the-assembly": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Assembly",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s003.md"
-    },
-    "/nichole/braxton-freshman/the-first-semester/scene-4-the-tactical-retreat": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Tactical Retreat",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s004.md"
-    },
-    "/nichole/braxton-freshman/the-first-semester/scene-5-the-fortress-weekend": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Fortress Weekend",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s005.md"
+        "filePath": "e008/c001/p002.md"
     },
     "/nichole/braxton-freshman/the-machine-in-motion": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1132,95 +568,29 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|1"
     },
-    "/nichole/braxton-freshman/the-machine-in-motion/scene-1-the-zero-friction-morning": {
+    "/nichole/braxton-freshman/the-machine-in-motion/part-1-the-zero-friction-morning-the-transit-chase": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Zero-Friction Morning",
+        "title": "Part 1: The Zero-Friction Morning & The Transit Chase",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s001.md"
+        "filePath": "e008/c002/p001.md"
     },
-    "/nichole/braxton-freshman/the-machine-in-motion/scene-2-the-commute": {
+    "/nichole/braxton-freshman/the-machine-in-motion/part-2-the-checkpoint-failure-the-treatment-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Commute",
+        "title": "Part 2: The Checkpoint Failure & The Treatment Protocol",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s002.md"
+        "filePath": "e008/c002/p002.md"
     },
-    "/nichole/braxton-freshman/the-machine-in-motion/scene-3-the-gen-ed-pact": {
+    "/nichole/braxton-freshman/the-machine-in-motion/part-3-the-double-ambush-the-filing": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Gen-Ed Pact",
+        "title": "Part 3: The Double Ambush & The Filing",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s003.md"
+        "filePath": "e008/c002/p003.md"
     },
-    "/nichole/braxton-freshman/the-machine-in-motion/scene-4-the-first-lecture": {
+    "/nichole/braxton-freshman/the-machine-in-motion/part-4-the-loudmouth": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The First Lecture",
+        "title": "Part 4: The Loudmouth",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s004.md"
-    },
-    "/nichole/braxton-freshman/the-machine-in-motion/scene-5-the-clinical-override": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Clinical Override",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s005.md"
-    },
-    "/nichole/braxton-freshman/the-machine-in-motion/scene-6-the-green-light": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Green Light",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s006.md"
-    },
-    "/nichole/braxton-freshman/the-machine-in-motion/scene-7-the-transit-chase": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Transit Chase",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s007.md"
-    },
-    "/nichole/braxton-freshman/the-machine-in-motion/scene-8-the-checkpoint-failure": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Checkpoint Failure",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s008.md"
-    },
-    "/nichole/braxton-freshman/the-machine-in-motion/scene-9-the-realization": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Realization",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s009.md"
-    },
-    "/nichole/braxton-freshman/the-machine-in-motion/scene-10-the-wrap-up": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Wrap Up",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s010.md"
-    },
-    "/nichole/braxton-freshman/the-machine-in-motion/scene-11-the-treatment-protocol": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The Treatment Protocol",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s011.md"
-    },
-    "/nichole/braxton-freshman/the-machine-in-motion/scene-12-the-double-ambush": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: The Double Ambush",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s012.md"
-    },
-    "/nichole/braxton-freshman/the-machine-in-motion/scene-13-the-sub-level-sanctuary": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 13: The Sub-Level Sanctuary",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s013.md"
-    },
-    "/nichole/braxton-freshman/the-machine-in-motion/scene-14-the-filing": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 14: The Filing",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s014.md"
-    },
-    "/nichole/braxton-freshman/the-machine-in-motion/scene-15-the-loudmouth": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 15: The Loudmouth",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s015.md"
+        "filePath": "e008/c002/p004.md"
     },
     "/nichole/braxton-freshman/nichole-adapts": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1228,23 +598,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|2"
     },
-    "/nichole/braxton-freshman/nichole-adapts/scene-1-engine-failure": {
+    "/nichole/braxton-freshman/nichole-adapts/part-1-engine-failure": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Engine Failure",
+        "title": "Part 1: Engine Failure",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s001.md"
+        "filePath": "e008/c003/p001.md"
     },
-    "/nichole/braxton-freshman/nichole-adapts/scene-2-the-malpractice-shield": {
+    "/nichole/braxton-freshman/nichole-adapts/part-2-the-malpractice-shield-the-integration": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Malpractice Shield",
+        "title": "Part 2: The Malpractice Shield & The Integration",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s002.md"
-    },
-    "/nichole/braxton-freshman/nichole-adapts/scene-3-the-integration": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Integration",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s003.md"
+        "filePath": "e008/c003/p002.md"
     },
     "/nichole/braxton-freshman/the-procedure-the-tune-up": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1252,35 +616,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|3"
     },
-    "/nichole/braxton-freshman/the-procedure-the-tune-up/scene-1-the-handover-the-night-before-time-8-00-pm": {
+    "/nichole/braxton-freshman/the-procedure-the-tune-up/part-1-the-handover-the-night-before-time-8-00-pm-the-separation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Handover (The Night Before) Time: 8:00 PM",
+        "title": "Part 1: The Handover (The Night Before) Time: 8:00 PM & The Separation",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s001.md"
+        "filePath": "e008/c004/p001.md"
     },
-    "/nichole/braxton-freshman/the-procedure-the-tune-up/scene-2-the-admission": {
+    "/nichole/braxton-freshman/the-procedure-the-tune-up/part-2-the-war-room": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Admission",
+        "title": "Part 2: The War Room",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s002.md"
-    },
-    "/nichole/braxton-freshman/the-procedure-the-tune-up/scene-3-the-surgical-consult": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Surgical Consult",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s003.md"
-    },
-    "/nichole/braxton-freshman/the-procedure-the-tune-up/scene-4-the-separation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Separation",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s004.md"
-    },
-    "/nichole/braxton-freshman/the-procedure-the-tune-up/scene-5-the-war-room": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The War Room",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s005.md"
+        "filePath": "e008/c004/p002.md"
     },
     "/nichole/braxton-freshman/nichole-s-recovery": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1288,47 +634,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|4"
     },
-    "/nichole/braxton-freshman/nichole-s-recovery/scene-1-the-recovery-room": {
+    "/nichole/braxton-freshman/nichole-s-recovery/part-1-the-recovery-room-the-discharge": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Recovery Room",
+        "title": "Part 1: The Recovery Room & The Discharge",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c005/s001.md"
+        "filePath": "e008/c005/p001.md"
     },
-    "/nichole/braxton-freshman/nichole-s-recovery/scene-2-the-shift-partner": {
+    "/nichole/braxton-freshman/nichole-s-recovery/part-2-the-the-night-shift": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Shift Partner",
+        "title": "Part 2: The \\ & The Night Shift",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c005/s002.md"
+        "filePath": "e008/c005/p002.md"
     },
-    "/nichole/braxton-freshman/nichole-s-recovery/scene-3-the-discharge": {
+    "/nichole/braxton-freshman/nichole-s-recovery/part-3-new-year-s-eve": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Discharge",
+        "title": "Part 3: New Year's Eve",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c005/s003.md"
-    },
-    "/nichole/braxton-freshman/nichole-s-recovery/scene-4-the": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The \\",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c005/s004.md"
-    },
-    "/nichole/braxton-freshman/nichole-s-recovery/scene-5-the-clinical-standard": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Clinical Standard",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c005/s005.md"
-    },
-    "/nichole/braxton-freshman/nichole-s-recovery/scene-6-the-night-shift": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Night Shift",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c005/s006.md"
-    },
-    "/nichole/braxton-freshman/nichole-s-recovery/scene-7-new-year-s-eve": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: New Year's Eve",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c005/s007.md"
+        "filePath": "e008/c005/p003.md"
     },
     "/nichole/braxton-freshman/the-routine": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1336,35 +658,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|5"
     },
-    "/nichole/braxton-freshman/the-routine/scene-1-the-winter-siege": {
+    "/nichole/braxton-freshman/the-routine/part-1-the-winter-siege-the-physical-toll": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Winter Siege",
+        "title": "Part 1: The Winter Siege & The Physical Toll",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c006/s001.md"
+        "filePath": "e008/c006/p001.md"
     },
-    "/nichole/braxton-freshman/the-routine/scene-2-the-fuel-station": {
+    "/nichole/braxton-freshman/the-routine/part-2-the-downgrade": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Fuel Station",
+        "title": "Part 2: The Downgrade",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c006/s002.md"
-    },
-    "/nichole/braxton-freshman/the-routine/scene-3-the-creative-session": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Creative Session",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c006/s003.md"
-    },
-    "/nichole/braxton-freshman/the-routine/scene-4-the-physical-toll": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Physical Toll",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c006/s004.md"
-    },
-    "/nichole/braxton-freshman/the-routine/scene-5-the-downgrade": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Downgrade",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c006/s005.md"
+        "filePath": "e008/c006/p002.md"
     },
     "/nichole/braxton-junior-year": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1378,11 +682,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|0"
     },
-    "/nichole/braxton-junior-year/concept-the-joint-defense/scene-1-the-outcome": {
+    "/nichole/braxton-junior-year/concept-the-joint-defense/the-outcome": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Outcome",
+        "title": "The Outcome",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c001/s001.md"
+        "filePath": "e009/c001/p001.md"
     },
     "/nichole/braxton-senior-year": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1396,17 +700,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|0"
     },
-    "/nichole/braxton-senior-year/graduation/scene-1-the-protocol-negotiation": {
+    "/nichole/braxton-senior-year/graduation/the-protocol-negotiation-the": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Protocol Negotiation",
+        "title": "The Protocol Negotiation & The \\",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c001/s001.md"
-    },
-    "/nichole/braxton-senior-year/graduation/scene-2-the": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The \\",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c001/s002.md"
+        "filePath": "e010/c001/p001.md"
     },
     "/nichole/bennett-dynamics": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1420,23 +718,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|10|0"
     },
-    "/nichole/bennett-dynamics/an-idea/scene-1-the-incorporation": {
+    "/nichole/bennett-dynamics/an-idea/the-incorporation-the-tablet-revolution": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Incorporation",
+        "title": "The Incorporation & The Tablet Revolution",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c001/s001.md"
-    },
-    "/nichole/bennett-dynamics/an-idea/scene-2-the-home-office": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Home Office",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c001/s002.md"
-    },
-    "/nichole/bennett-dynamics/an-idea/scene-3-the-tablet-revolution": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Tablet Revolution",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c001/s003.md"
+        "filePath": "e011/c001/p001.md"
     },
     "/nichole/the-twilight-years": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1450,29 +736,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|11|0"
     },
-    "/nichole/the-twilight-years/the-long-retreat/scene-1-the-last-funeral": {
+    "/nichole/the-twilight-years/the-long-retreat/the-last-funeral-the-return": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Last Funeral",
+        "title": "The Last Funeral & The Return",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c001/s001.md"
-    },
-    "/nichole/the-twilight-years/the-long-retreat/scene-2-the-city-problem": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The City Problem",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c001/s002.md"
-    },
-    "/nichole/the-twilight-years/the-long-retreat/scene-3-the-decision": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Decision",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c001/s003.md"
-    },
-    "/nichole/the-twilight-years/the-long-retreat/scene-4-the-return": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Return",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c001/s004.md"
+        "filePath": "e012/c001/p001.md"
     },
     "/nichole/the-twilight-years/the-slow-rust": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1480,23 +748,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|11|1"
     },
-    "/nichole/the-twilight-years/the-slow-rust/scene-1-the-first-breakdown": {
+    "/nichole/the-twilight-years/the-slow-rust/the-first-breakdown-the-final-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The First Breakdown",
+        "title": "The First Breakdown & The Final Perimeter",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c002/s001.md"
-    },
-    "/nichole/the-twilight-years/the-slow-rust/scene-2-the-shared-breath": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Shared Breath",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c002/s002.md"
-    },
-    "/nichole/the-twilight-years/the-slow-rust/scene-3-the-final-perimeter": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Final Perimeter",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c002/s003.md"
+        "filePath": "e012/c002/p001.md"
     },
     "/nichole/the-end": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1510,17 +766,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|12|0"
     },
-    "/nichole/the-end/the-synchronized-shutdown/scene-1-date-february-14-2058-age-72-location-the-master-suite-95-west-main-road-portsmouth-ri": {
+    "/nichole/the-end/the-synchronized-shutdown/the-master-suite-95-west-main-road-portsmouth-ri-the-legacy": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Date: February 14, 2058 Age: 72 Location: The Master Suite, 95 West Main Road, Portsmouth, RI",
+        "title": "The Master Suite, 95 West Main Road, Portsmouth, RI & The Legacy",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c001/s001.md"
-    },
-    "/nichole/the-end/the-synchronized-shutdown/scene-2-epilogue-the-legacy": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Epilogue: The Legacy",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c001/s002.md"
+        "filePath": "e013/c001/p001.md"
     },
     "/nichole/book-14-silent-whispers": {
         "view": "pages/raggiesoft-books/books/viewer",

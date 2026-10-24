@@ -12,14 +12,14 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "70 KB",
+            "epub": "69 KB",
             "pdf": "198 KB",
-            "text_epub": "70 KB",
+            "text_epub": "69 KB",
             "text_pdf": "198 KB",
-            "epub_bytes": 71648,
-            "pdf_bytes": 202797,
-            "text_epub_bytes": 71654,
-            "text_pdf_bytes": 202797
+            "epub_bytes": 70992,
+            "pdf_bytes": 202768,
+            "text_epub_bytes": 70990,
+            "text_pdf_bytes": 202768
         }
     },
     "/nate": {
@@ -46,11 +46,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/nate/book-the-architecture-of-safe-spaces/chapter-1-the-triplet-anomaly-saturday-april-16-1994/scene-1-the-rhythmic-drumming": {
+    "/nate/book-the-architecture-of-safe-spaces/chapter-1-the-triplet-anomaly-saturday-april-16-1994/the-rhythmic-drumming": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Rhythmic Drumming",
+        "title": "The Rhythmic Drumming",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s001.md"
+        "filePath": "e001/c001/p001.md"
     },
     "/nate/book-the-demolition-of-the-cage": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -64,71 +64,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
-    "/nate/book-the-demolition-of-the-cage/chapter-1-the-line-in-the-sand-friday-november-10-2006/scene-1-the-hydraulic-hiss-and-heavy": {
+    "/nate/book-the-demolition-of-the-cage/chapter-1-the-line-in-the-sand-friday-november-10-2006/part-1-the-hydraulic-hiss-and-heavy-the-transition-from-the-chaotic": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Hydraulic Hiss And Heavy",
+        "title": "Part 1: The Hydraulic Hiss And Heavy & The Transition From The Chaotic",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s001.md"
+        "filePath": "e002/c001/p001.md"
     },
-    "/nate/book-the-demolition-of-the-cage/chapter-1-the-line-in-the-sand-friday-november-10-2006/scene-2-nate-slowly-turned-his-manual": {
+    "/nate/book-the-demolition-of-the-cage/chapter-1-the-line-in-the-sand-friday-november-10-2006/part-2-the-sedan-hummed-steadily-along-evelyn-walked-back-into": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Nate Slowly Turned His Manual",
+        "title": "Part 2: The Sedan Hummed Steadily Along & Evelyn Walked Back Into",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s002.md"
+        "filePath": "e002/c001/p002.md"
     },
-    "/nate/book-the-demolition-of-the-cage/chapter-1-the-line-in-the-sand-friday-november-10-2006/scene-3-the-digital-clock": {
+    "/nate/book-the-demolition-of-the-cage/chapter-1-the-line-in-the-sand-friday-november-10-2006/part-3-the-transition-from-chronic-survival-mode-nate-woke-up": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Digital Clock",
+        "title": "Part 3: The Transition From Chronic Survival-Mode & Nate Woke Up",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s003.md"
-    },
-    "/nate/book-the-demolition-of-the-cage/chapter-1-the-line-in-the-sand-friday-november-10-2006/scene-4-the-transition-from-the-chaotic": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Transition From The Chaotic",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s004.md"
-    },
-    "/nate/book-the-demolition-of-the-cage/chapter-1-the-line-in-the-sand-friday-november-10-2006/scene-5-the-sedan-hummed-steadily-along": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Sedan Hummed Steadily Along",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s005.md"
-    },
-    "/nate/book-the-demolition-of-the-cage/chapter-1-the-line-in-the-sand-friday-november-10-2006/scene-6-evelyn-turned-the-sedan-into": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Evelyn Turned The Sedan Into",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s006.md"
-    },
-    "/nate/book-the-demolition-of-the-cage/chapter-1-the-line-in-the-sand-friday-november-10-2006/scene-7-placeholder-for-local-generation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Placeholder For Local Generation",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s007.md"
-    },
-    "/nate/book-the-demolition-of-the-cage/chapter-1-the-line-in-the-sand-friday-november-10-2006/scene-8-the-hot-water-had-done": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Hot Water Had Done",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s008.md"
-    },
-    "/nate/book-the-demolition-of-the-cage/chapter-1-the-line-in-the-sand-friday-november-10-2006/scene-9-evelyn-walked-back-into": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: Evelyn Walked Back Into",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s009.md"
-    },
-    "/nate/book-the-demolition-of-the-cage/chapter-1-the-line-in-the-sand-friday-november-10-2006/scene-10-the-transition-from-chronic-survival-mode": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Transition From Chronic Survival-Mode",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s010.md"
-    },
-    "/nate/book-the-demolition-of-the-cage/chapter-1-the-line-in-the-sand-friday-november-10-2006/scene-11-nate-woke-up": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: Nate Woke Up",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s011.md"
+        "filePath": "e002/c001/p003.md"
     },
     "/nate/book-the-demolition-of-the-cage/chapter-2-the-reinforcements-saturday-november-11-2006": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -136,35 +88,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|1"
     },
-    "/nate/book-the-demolition-of-the-cage/chapter-2-the-reinforcements-saturday-november-11-2006/scene-1-nate-woke-up": {
+    "/nate/book-the-demolition-of-the-cage/chapter-2-the-reinforcements-saturday-november-11-2006/part-1-nate-woke-up-the-click-of-the-phone": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Nate Woke Up",
+        "title": "Part 1: Nate Woke Up & The Click Of The Phone",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s001.md"
+        "filePath": "e002/c002/p001.md"
     },
-    "/nate/book-the-demolition-of-the-cage/chapter-2-the-reinforcements-saturday-november-11-2006/scene-2-the-fluorescent-lights-of-lambert-st": {
+    "/nate/book-the-demolition-of-the-cage/chapter-2-the-reinforcements-saturday-november-11-2006/part-2-the-crisp-bright-november-air-the-heavy-frosted-glass-doors": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Fluorescent Lights Of Lambert-St",
+        "title": "Part 2: The Crisp Bright November Air & The Heavy Frosted Glass Doors",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s002.md"
-    },
-    "/nate/book-the-demolition-of-the-cage/chapter-2-the-reinforcements-saturday-november-11-2006/scene-3-the-click-of-the-phone": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Click Of The Phone",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s003.md"
-    },
-    "/nate/book-the-demolition-of-the-cage/chapter-2-the-reinforcements-saturday-november-11-2006/scene-4-the-crisp-bright-november-air": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Crisp Bright November Air",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s004.md"
-    },
-    "/nate/book-the-demolition-of-the-cage/chapter-2-the-reinforcements-saturday-november-11-2006/scene-5-the-heavy-frosted-glass-doors": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Heavy Frosted Glass Doors",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s005.md"
+        "filePath": "e002/c002/p002.md"
     },
     "/nate/book-the-demolition-of-the-cage/chapter-3-christmas-holiday-saturday-december-23rd-2026": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -172,29 +106,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|2"
     },
-    "/nate/book-the-demolition-of-the-cage/chapter-3-christmas-holiday-saturday-december-23rd-2026/scene-1-chesapeake-bay-mall-was": {
+    "/nate/book-the-demolition-of-the-cage/chapter-3-christmas-holiday-saturday-december-23rd-2026/part-1-chesapeake-bay-mall-was-the-giant-cheese-covered-pretzel-had": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Chesapeake Bay Mall Was",
+        "title": "Part 1: Chesapeake Bay Mall Was & The Giant Cheese-Covered Pretzel Had",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c003/s001.md"
+        "filePath": "e002/c003/p001.md"
     },
-    "/nate/book-the-demolition-of-the-cage/chapter-3-christmas-holiday-saturday-december-23rd-2026/scene-2-the-glass-elevator-chimed": {
+    "/nate/book-the-demolition-of-the-cage/chapter-3-christmas-holiday-saturday-december-23rd-2026/part-2-the-heavy-glass-doors": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Glass Elevator Chimed",
+        "title": "Part 2: The Heavy Glass Doors",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c003/s002.md"
-    },
-    "/nate/book-the-demolition-of-the-cage/chapter-3-christmas-holiday-saturday-december-23rd-2026/scene-3-the-giant-cheese-covered-pretzel-had": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Giant Cheese-Covered Pretzel Had",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c003/s003.md"
-    },
-    "/nate/book-the-demolition-of-the-cage/chapter-3-christmas-holiday-saturday-december-23rd-2026/scene-4-the-heavy-glass-doors": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Heavy Glass Doors",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c003/s004.md"
+        "filePath": "e002/c003/p002.md"
     },
     "/nate/book-the-architecture-of-a-safe-space": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -208,23 +130,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|0"
     },
-    "/nate/book-the-architecture-of-a-safe-space/chapter-1-the-fortress-thursday-august-23-2007/scene-1-the-hydraulic-hiss": {
+    "/nate/book-the-architecture-of-a-safe-space/chapter-1-the-fortress-thursday-august-23-2007/the-hydraulic-hiss-the-transition-from-the-late-summer": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Hydraulic Hiss",
+        "title": "The Hydraulic Hiss & The Transition From The Late-Summer",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s001.md"
-    },
-    "/nate/book-the-architecture-of-a-safe-space/chapter-1-the-fortress-thursday-august-23-2007/scene-2-the-25-bus-groaned": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The #25 Bus Groaned",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s002.md"
-    },
-    "/nate/book-the-architecture-of-a-safe-space/chapter-1-the-fortress-thursday-august-23-2007/scene-3-the-transition-from-the-late-summer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Transition From The Late-Summer",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s003.md"
+        "filePath": "e003/c001/p001.md"
     },
     "/nate/book-the-architecture-of-a-safe-space/chapter-2-the-logistics-of-trust-friday-august-24-2007": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -232,41 +142,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|1"
     },
-    "/nate/book-the-architecture-of-a-safe-space/chapter-2-the-logistics-of-trust-friday-august-24-2007/scene-1-the-alarm-went-off": {
+    "/nate/book-the-architecture-of-a-safe-space/chapter-2-the-logistics-of-trust-friday-august-24-2007/part-1-the-alarm-went-off-the-1130-am-dismissal-was": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Alarm Went Off",
+        "title": "Part 1: The Alarm Went Off & The 1130 Am Dismissal Was",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s001.md"
+        "filePath": "e003/c002/p001.md"
     },
-    "/nate/book-the-architecture-of-a-safe-space/chapter-2-the-logistics-of-trust-friday-august-24-2007/scene-2-at-exactly-ten-minutes": {
+    "/nate/book-the-architecture-of-a-safe-space/chapter-2-the-logistics-of-trust-friday-august-24-2007/part-2-the-community-college-of-hampton-saturday-morning-was-completely-silent": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: At Exactly Ten Minutes",
+        "title": "Part 2: The Community College Of Hampton & Saturday Morning Was Completely Silent",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s002.md"
-    },
-    "/nate/book-the-architecture-of-a-safe-space/chapter-2-the-logistics-of-trust-friday-august-24-2007/scene-3-the-transition-out": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Transition Out",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s003.md"
-    },
-    "/nate/book-the-architecture-of-a-safe-space/chapter-2-the-logistics-of-trust-friday-august-24-2007/scene-4-the-1130-am-dismissal-was": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The 1130 Am Dismissal Was",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s004.md"
-    },
-    "/nate/book-the-architecture-of-a-safe-space/chapter-2-the-logistics-of-trust-friday-august-24-2007/scene-5-the-community-college-of-hampton": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Community College Of Hampton",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s005.md"
-    },
-    "/nate/book-the-architecture-of-a-safe-space/chapter-2-the-logistics-of-trust-friday-august-24-2007/scene-6-saturday-morning-was-completely-silent": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Saturday Morning Was Completely Silent",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s006.md"
+        "filePath": "e003/c002/p002.md"
     },
     "/nate/book-the-architecture-of-a-safe-space/chapter-3-expanding-the-perimeter-monday-august-27-2007": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -274,10 +160,10 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|2"
     },
-    "/nate/book-the-architecture-of-a-safe-space/chapter-3-expanding-the-perimeter-monday-august-27-2007/scene-1-the-weekend-ended-but": {
+    "/nate/book-the-architecture-of-a-safe-space/chapter-3-expanding-the-perimeter-monday-august-27-2007/the-weekend-ended-but": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Weekend Ended But",
+        "title": "The Weekend Ended But",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s001.md"
+        "filePath": "e003/c003/p001.md"
     }
 }

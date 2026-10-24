@@ -12,14 +12,14 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "80 KB",
-            "pdf": "7.5 MB",
-            "text_epub": "80 KB",
-            "text_pdf": "7.5 MB",
-            "epub_bytes": 81699,
-            "pdf_bytes": 7888871,
-            "text_epub_bytes": 81703,
-            "text_pdf_bytes": 7888871
+            "epub": "77 KB",
+            "pdf": "5.3 MB",
+            "text_epub": "77 KB",
+            "text_pdf": "5.3 MB",
+            "epub_bytes": 79117,
+            "pdf_bytes": 5514637,
+            "text_epub_bytes": 79119,
+            "text_pdf_bytes": 5514641
         }
     },
     "/quantum-directive-2-kelly": {
@@ -46,35 +46,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/quantum-directive-2-kelly/the-anchor/a-fork-in-the-road/scene-1-the-bulletin-board": {
+    "/quantum-directive-2-kelly/the-anchor/a-fork-in-the-road/the-bulletin-board-pager-code-005-1": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Bulletin Board \ud83d\udccc",
+        "title": "The Bulletin Board \ud83d\udccc & Pager Code 005.1 \ud83d\udcdf",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s001.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/a-fork-in-the-road/scene-2-the-perfect-pitch": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Perfect Pitch \ud83d\udcde",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s002.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/a-fork-in-the-road/scene-3-the-first-day": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The First Day \ud83c\udfe2",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s003.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/a-fork-in-the-road/scene-4-lunch-with-the-devs": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Lunch with the Devs \ud83d\udcbb",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s004.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/a-fork-in-the-road/scene-5-pager-code-005-1": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Pager Code 005.1 \ud83d\udcdf",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s005.md"
+        "filePath": "e001/c001/p001.md"
     },
     "/quantum-directive-2-kelly/the-anchor/the-keynote": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -82,65 +58,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|1"
     },
-    "/quantum-directive-2-kelly/the-anchor/the-keynote/scene-1-peace-treaty-before-sunrise": {
+    "/quantum-directive-2-kelly/the-anchor/the-keynote/part-1-peace-treaty-before-sunrise-the-envelope": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Peace Treaty Before Sunrise\u2600\ufe0f",
+        "title": "Part 1: Peace Treaty Before Sunrise\u2600\ufe0f & The Envelope \u2709\ufe0f",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s001.md"
+        "filePath": "e001/c002/p001.md"
     },
-    "/quantum-directive-2-kelly/the-anchor/the-keynote/scene-2-the-aftermath": {
+    "/quantum-directive-2-kelly/the-anchor/the-keynote/part-2-the-story-breaks-out-of-the-loop": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Aftermath \ud83c\udf07",
+        "title": "Part 2: The Story Breaks \ud83d\udcf0 & Out of the Loop \ud83d\udeec",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s002.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/the-keynote/scene-3-the-memo-arrives": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Memo Arrives \ud83d\udcc4",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s003.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/the-keynote/scene-4-three-thousand-miles-of-fury": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Three Thousand Miles of Fury \ud83d\ude20",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s004.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/the-keynote/scene-5-the-anchor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Anchor \u2693",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s005.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/the-keynote/scene-6-a-powerful-ally": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A Powerful Ally \ud83e\udd1d",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s006.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/the-keynote/scene-7-one-of-the-trench-people": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: One of the Trench People \ud83c\udf7d\ufe0f",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s007.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/the-keynote/scene-8-the-envelope": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Envelope \u2709\ufe0f",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s008.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/the-keynote/scene-9-the-story-breaks": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Story Breaks \ud83d\udcf0",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s009.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/the-keynote/scene-10-out-of-the-loop": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: Out of the Loop \ud83d\udeec",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s010.md"
+        "filePath": "e001/c002/p002.md"
     },
     "/quantum-directive-2-kelly/the-anchor/the-implosion": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -148,17 +76,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|2"
     },
-    "/quantum-directive-2-kelly/the-anchor/the-implosion/scene-1-the-last-stand": {
+    "/quantum-directive-2-kelly/the-anchor/the-implosion/the-last-stand-the-verdict": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Last Stand \ud83d\udeb6\u200d\u2642\ufe0f",
+        "title": "The Last Stand \ud83d\udeb6\u200d\u2642\ufe0f & The Verdict \u2696\ufe0f",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s001.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/the-implosion/scene-2-the-verdict": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Verdict \u2696\ufe0f",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s002.md"
+        "filePath": "e001/c003/p001.md"
     },
     "/quantum-directive-2-kelly/the-anchor/closing-the-book": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -166,95 +88,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|3"
     },
-    "/quantum-directive-2-kelly/the-anchor/closing-the-book/scene-1-the-press-conference": {
+    "/quantum-directive-2-kelly/the-anchor/closing-the-book/part-1-the-press-conference-first-steps-first-stumbles": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Press Conference \ud83c\udfa4",
+        "title": "Part 1: The Press Conference \ud83c\udfa4 & First Steps, First Stumbles \ud83d\udc63",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s001.md"
+        "filePath": "e001/c004/p001.md"
     },
-    "/quantum-directive-2-kelly/the-anchor/closing-the-book/scene-2-spilling-the-beans": {
+    "/quantum-directive-2-kelly/the-anchor/closing-the-book/part-2-the-blue-badge-clocking-out-for-the-last-time": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Spilling the Beans \ud83d\udcbb",
+        "title": "Part 2: The Blue Badge \ud83d\udfe6 & Clocking Out for the Last Time \ud83d\udd70\ufe0f",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s002.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/closing-the-book/scene-3-good-news-at-jester-s": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Good News at Jester's \ud83c\udf54",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s003.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/closing-the-book/scene-4-an-unbelievable-offer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: An Unbelievable Offer \ud83e\udd64",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s004.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/closing-the-book/scene-5-the-walk-home": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Walk Home \ud83c\udfe1",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s005.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/closing-the-book/scene-6-a-new-family-plan": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A New Family Plan \ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc66",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s006.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/closing-the-book/scene-7-leaving-on-good-terms": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Leaving on Good Terms \ud83d\udcdd",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s007.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/closing-the-book/scene-8-making-it-official": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: Making it Official \ud83c\udf93",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s008.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/closing-the-book/scene-9-training-day": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: Training Day \ud83d\udc68\u200d\ud83c\udfeb",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s009.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/closing-the-book/scene-10-a-new-wardrobe": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: A New Wardrobe \ud83d\udc54",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s010.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/closing-the-book/scene-11-first-steps-first-stumbles": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: First Steps, First Stumbles \ud83d\udc63",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s011.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/closing-the-book/scene-12-the-blue-badge": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: The Blue Badge \ud83d\udfe6",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s012.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/closing-the-book/scene-13-breaking-the-ice": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 13: Breaking the Ice \ud83e\uddca",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s013.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/closing-the-book/scene-14-the-priceless-photo": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 14: The Priceless Photo \ud83d\uddbc\ufe0f",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s014.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/closing-the-book/scene-15-clocking-out-for-the-last-time": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 15: Clocking Out for the Last Time \ud83d\udd70\ufe0f",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s015.md"
+        "filePath": "e001/c004/p002.md"
     },
     "/quantum-directive-2-kelly/the-anchor/welcome-to-quantum": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -262,29 +106,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|4"
     },
-    "/quantum-directive-2-kelly/the-anchor/welcome-to-quantum/scene-1-your-voices-matter-here": {
+    "/quantum-directive-2-kelly/the-anchor/welcome-to-quantum/your-voices-matter-here-the-first-line-of-code": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Your Voices Matter Here \ud83e\udd1d",
+        "title": "Your Voices Matter Here \ud83e\udd1d & The First Line of Code \u2328\ufe0f",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s001.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/welcome-to-quantum/scene-2-starting-with-why": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Starting with 'Why' \ud83d\udca1",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s002.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/welcome-to-quantum/scene-3-an-overwhelming-good": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: An Overwhelming Good \u221e",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s003.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/welcome-to-quantum/scene-4-the-first-line-of-code": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The First Line of Code \u2328\ufe0f",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s004.md"
+        "filePath": "e001/c005/p001.md"
     },
     "/quantum-directive-2-kelly/the-anchor/the-bridge-to-cupertino": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -292,71 +118,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|5"
     },
-    "/quantum-directive-2-kelly/the-anchor/the-bridge-to-cupertino/scene-1-an-unexpected-invitation": {
+    "/quantum-directive-2-kelly/the-anchor/the-bridge-to-cupertino/part-1-an-unexpected-invitation-welcome-to-cupertino": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: An Unexpected Invitation \u2708\ufe0f",
+        "title": "Part 1: An Unexpected Invitation \u2708\ufe0f & Welcome to Cupertino \u2600\ufe0f",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s001.md"
+        "filePath": "e001/c006/p001.md"
     },
-    "/quantum-directive-2-kelly/the-anchor/the-bridge-to-cupertino/scene-2-jessica-did-her-homework": {
+    "/quantum-directive-2-kelly/the-anchor/the-bridge-to-cupertino/part-2-best-behavior-the-binary-canteen": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Jessica Did Her Homework \ud83d\udcda",
+        "title": "Part 2: Best Behavior \ud83e\udd1d & The Binary Canteen \ud83e\udd6a",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s002.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/the-bridge-to-cupertino/scene-3-a-fortuitous-encounter": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A Fortuitous Encounter \ud83e\udd1d",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s003.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/the-bridge-to-cupertino/scene-4-southbound-on-i-5": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Southbound on I-5 \ud83d\udcbc",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s004.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/the-bridge-to-cupertino/scene-5-the-first-time-flyers-arrival-at-sea": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The First-Time Flyers' Arrival at SEA \u2708\ufe0f",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s005.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/the-bridge-to-cupertino/scene-6-the-bridge-builders": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Bridge Builders \ud83c\udf09",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s006.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/the-bridge-to-cupertino/scene-7-first-class-to-cupertino": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: First Class to Cupertino \u2708\ufe0f",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s007.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/the-bridge-to-cupertino/scene-8-six-years": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: Six Years \ud83e\udd2f",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s008.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/the-bridge-to-cupertino/scene-9-welcome-to-cupertino": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: Welcome to Cupertino \u2600\ufe0f",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s009.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/the-bridge-to-cupertino/scene-10-best-behavior": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: Best Behavior \ud83e\udd1d",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s010.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/the-bridge-to-cupertino/scene-11-the-binary-canteen": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The Binary Canteen \ud83e\udd6a",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s011.md"
+        "filePath": "e001/c006/p002.md"
     },
     "/quantum-directive-2-kelly/the-anchor/inside-infinite-loop": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -364,59 +136,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|6"
     },
-    "/quantum-directive-2-kelly/the-anchor/inside-infinite-loop/scene-1-company-policy": {
+    "/quantum-directive-2-kelly/the-anchor/inside-infinite-loop/part-1-company-policy-the-right-tool-for-the-job": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Company Policy \ud83d\udccb",
+        "title": "Part 1: Company Policy \ud83d\udccb & The Right Tool for the Job \ud83c\udf7d\ufe0f",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s001.md"
+        "filePath": "e001/c007/p001.md"
     },
-    "/quantum-directive-2-kelly/the-anchor/inside-infinite-loop/scene-2-an-uneven-gait": {
+    "/quantum-directive-2-kelly/the-anchor/inside-infinite-loop/part-2-what-s-really-going-on": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: An Uneven Gait \ud83d\udeb6\u200d\u2642\ufe0f",
+        "title": "Part 2: What's Really Going On? \ud83d\udcac",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s002.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/inside-infinite-loop/scene-3-a-necessary-anchor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A Necessary Anchor \u2693",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s003.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/inside-infinite-loop/scene-4-proof-of-work": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Proof of Work \ud83d\udcbb",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s004.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/inside-infinite-loop/scene-5-coding-from-the-couch": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Coding from the Couch \ud83d\udecb\ufe0f",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s005.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/inside-infinite-loop/scene-6-project-chimera": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Project Chimera \ud83e\udd2b",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s006.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/inside-infinite-loop/scene-7-a-sister-s-insistence": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: A Sister's Insistence \u6756",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s007.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/inside-infinite-loop/scene-8-the-right-tool-for-the-job": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Right Tool for the Job \ud83c\udf7d\ufe0f",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s008.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/inside-infinite-loop/scene-9-what-s-really-going-on": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: What's Really Going On? \ud83d\udcac",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s009.md"
+        "filePath": "e001/c007/p002.md"
     },
     "/quantum-directive-2-kelly/the-anchor/a-new-reality": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -424,53 +154,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|7"
     },
-    "/quantum-directive-2-kelly/the-anchor/a-new-reality/scene-1-the-right-tool-for-the-job": {
+    "/quantum-directive-2-kelly/the-anchor/a-new-reality/part-1-the-right-tool-for-the-job-the-bidding-war-begins": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Right Tool for the Job \u267f",
+        "title": "Part 1: The Right Tool for the Job \u267f & The Bidding War Begins \u2696\ufe0f",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c008/s001.md"
+        "filePath": "e001/c008/p001.md"
     },
-    "/quantum-directive-2-kelly/the-anchor/a-new-reality/scene-2-breakfast-at-the-hotel": {
+    "/quantum-directive-2-kelly/the-anchor/a-new-reality/part-2-professional-courtesy": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Breakfast at the Hotel \ud83e\udd5e",
+        "title": "Part 2: Professional Courtesy \ud83e\udd2b",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c008/s002.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/a-new-reality/scene-3-the-bug-bash": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Bug Bash \ud83d\udc1e",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c008/s003.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/a-new-reality/scene-4-lunch-at-caffe-magna": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Lunch at Caffe Magna \ud83c\udf55",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c008/s004.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/a-new-reality/scene-5-the-analysis": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Analysis \ud83e\udde0",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c008/s005.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/a-new-reality/scene-6-the-phone-call": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Phone Call \ud83d\udcde",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c008/s006.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/a-new-reality/scene-7-the-bidding-war-begins": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Bidding War Begins \u2696\ufe0f",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c008/s007.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/a-new-reality/scene-8-professional-courtesy": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: Professional Courtesy \ud83e\udd2b",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c008/s008.md"
+        "filePath": "e001/c008/p002.md"
     },
     "/quantum-directive-2-kelly/the-bidding-war-as-seen-on-devnet": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -490,17 +184,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|1"
     },
-    "/quantum-directive-2-kelly/the-bidding-war-as-seen-on-devnet/the-players/scene-1-the-developer-community": {
+    "/quantum-directive-2-kelly/the-bidding-war-as-seen-on-devnet/the-players/the-developer-community-the-ceos": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Developer Community",
+        "title": "The Developer Community & The CEOs",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s001.md"
-    },
-    "/quantum-directive-2-kelly/the-bidding-war-as-seen-on-devnet/the-players/scene-2-the-ceos": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The CEOs",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s002.md"
+        "filePath": "e002/c002/p001.md"
     },
     "/quantum-directive-2-kelly/the-bidding-war-as-seen-on-devnet/choosing-a-future": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -508,11 +196,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|2"
     },
-    "/quantum-directive-2-kelly/the-bidding-war-as-seen-on-devnet/choosing-a-future/scene-1-all-the-offers-on-the-table": {
+    "/quantum-directive-2-kelly/the-bidding-war-as-seen-on-devnet/choosing-a-future/all-the-offers-on-the-table": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: All the Offers on the Table \ud83d\udcc2",
+        "title": "All the Offers on the Table \ud83d\udcc2",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c003/s001.md"
+        "filePath": "e002/c003/p001.md"
     },
     "/quantum-directive-2-kelly/book-3-the-turning-point": {
         "view": "pages/raggiesoft-books/books/viewer",

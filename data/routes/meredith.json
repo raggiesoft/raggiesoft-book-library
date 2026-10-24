@@ -13,13 +13,13 @@
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
             "epub": "40 KB",
-            "pdf": "118 KB",
+            "pdf": "119 KB",
             "text_epub": "40 KB",
-            "text_pdf": "118 KB",
-            "epub_bytes": 41469,
-            "pdf_bytes": 120758,
-            "text_epub_bytes": 41468,
-            "text_pdf_bytes": 120758
+            "text_pdf": "119 KB",
+            "epub_bytes": 41115,
+            "pdf_bytes": 121729,
+            "text_epub_bytes": 41120,
+            "text_pdf_bytes": 121729
         }
     },
     "/meredith": {
@@ -46,95 +46,29 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/scene-1-the-garage-barracks": {
+    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/part-1-the-garage-barracks-the-color-correction": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Garage Barracks",
+        "title": "Part 1: The Garage Barracks & The Color Correction",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s001.md"
+        "filePath": "e001/c001/p001.md"
     },
-    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/scene-2-the-commute": {
+    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/part-2-sdv-100-the-promenade-at-granby": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Commute",
+        "title": "Part 2: SDV 100 & The Promenade at Granby",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s002.md"
+        "filePath": "e001/c001/p002.md"
     },
-    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/scene-3-the-walker-building-lounge": {
+    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/part-3-the-debrief-the-family-briefing": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Walker Building Lounge",
+        "title": "Part 3: The Debrief & The Family Briefing",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s003.md"
+        "filePath": "e001/c001/p003.md"
     },
-    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/scene-4-the-infolink-update": {
+    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/part-4-the-evening-routine-the-vanguard-rests": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The InfoLink Update",
+        "title": "Part 4: The Evening Routine & The Vanguard Rests",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s004.md"
-    },
-    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/scene-5-the-color-correction": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Color Correction",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s005.md"
-    },
-    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/scene-6-sdv-100": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: SDV 100",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s006.md"
-    },
-    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/scene-7-the-foundation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Foundation",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s007.md"
-    },
-    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/scene-8-the-promenade-at-granby": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Promenade at Granby",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s008.md"
-    },
-    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/scene-9-the-debrief": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Debrief",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s009.md"
-    },
-    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/scene-10-the-salon-debrief": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Salon Debrief",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s010.md"
-    },
-    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/scene-11-the-library-intercept": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The Library Intercept",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s011.md"
-    },
-    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/scene-12-the-family-briefing": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: The Family Briefing",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s012.md"
-    },
-    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/scene-13-the-evening-routine": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 13: The Evening Routine",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s013.md"
-    },
-    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/scene-14-the-summons": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 14: The Summons",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s014.md"
-    },
-    "/meredith/book-4-the-vanguard/chapter-1-the-first-drop-off/scene-15-the-vanguard-rests": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 15: The Vanguard Rests",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s015.md"
+        "filePath": "e001/c001/p004.md"
     },
     "/meredith/book-4-the-vanguard/chapter-2-the-virginia-beach-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -142,22 +76,10 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|1"
     },
-    "/meredith/book-4-the-vanguard/chapter-2-the-virginia-beach-perimeter/scene-1-morning-in-the-barracks": {
+    "/meredith/book-4-the-vanguard/chapter-2-the-virginia-beach-perimeter/morning-in-the-barracks-the-princess-anne-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Morning in the Barracks",
+        "title": "Morning in the Barracks & The Princess Anne Perimeter",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s001.md"
-    },
-    "/meredith/book-4-the-vanguard/chapter-2-the-virginia-beach-perimeter/scene-2-the-acoustic-clarification": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Acoustic Clarification",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s002.md"
-    },
-    "/meredith/book-4-the-vanguard/chapter-2-the-virginia-beach-perimeter/scene-3-the-princess-anne-perimeter": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Princess Anne Perimeter",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s003.md"
+        "filePath": "e001/c002/p001.md"
     }
 }

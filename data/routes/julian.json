@@ -16,10 +16,10 @@
             "pdf": "471 KB",
             "text_epub": "166 KB",
             "text_pdf": "471 KB",
-            "epub_bytes": 169971,
-            "pdf_bytes": 482167,
-            "text_epub_bytes": 169974,
-            "text_pdf_bytes": 482167
+            "epub_bytes": 169685,
+            "pdf_bytes": 482428,
+            "text_epub_bytes": 169681,
+            "text_pdf_bytes": 482428
         }
     },
     "/julian": {
@@ -46,11 +46,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/foreign-language/scene-1-the-8th-grade-iep-meeting": {
+    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/foreign-language/the-8th-grade-iep-meeting": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The 8th Grade IEP Meeting",
+        "title": "The 8th Grade IEP Meeting",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s001.md"
+        "filePath": "e001/c001/p001.md"
     },
     "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-empty-frame": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -58,29 +58,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|1"
     },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-empty-frame/scene-1-the-breach": {
+    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-empty-frame/the-breach-the-garrison": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Breach",
+        "title": "The Breach & The Garrison",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s001.md"
-    },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-empty-frame/scene-2-the-beacon": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Beacon",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s002.md"
-    },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-empty-frame/scene-3-the-winter-palace": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Winter Palace",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s003.md"
-    },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-empty-frame/scene-4-the-garrison": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Garrison",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s004.md"
+        "filePath": "e001/c002/p001.md"
     },
     "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-war-room": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -88,29 +70,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|2"
     },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-war-room/scene-1-the-reinforcements": {
+    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-war-room/part-1-the-reinforcements-the-makeshift-orchestra": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Reinforcements",
+        "title": "Part 1: The Reinforcements & The Makeshift Orchestra",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s001.md"
+        "filePath": "e001/c003/p001.md"
     },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-war-room/scene-2-the-wall-of-sound": {
+    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-war-room/part-2-the-prayer": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Wall of Sound",
+        "title": "Part 2: The Prayer",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s002.md"
-    },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-war-room/scene-3-the-makeshift-orchestra": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Makeshift Orchestra",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s003.md"
-    },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-war-room/scene-4-the-prayer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Prayer",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s004.md"
+        "filePath": "e001/c003/p002.md"
     },
     "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-signal": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -118,41 +88,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|3"
     },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-signal/scene-1-the-override": {
+    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-signal/part-1-the-override-the-near-miss": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Override",
+        "title": "Part 1: The Override & The Near Miss",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s001.md"
+        "filePath": "e001/c004/p001.md"
     },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-signal/scene-2-lost-city": {
+    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-signal/part-2-the-hijack-the-longest-shadow": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Lost City",
+        "title": "Part 2: The Hijack & The Longest Shadow",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s002.md"
-    },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-signal/scene-3-the-near-miss": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Near Miss",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s003.md"
-    },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-signal/scene-4-the-hijack": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Hijack",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s004.md"
-    },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-signal/scene-5-the-escalation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Escalation",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s005.md"
-    },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-signal/scene-6-the-longest-shadow": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Longest Shadow",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s006.md"
+        "filePath": "e001/c004/p002.md"
     },
     "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-ohio-line": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -160,59 +106,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|4"
     },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-ohio-line/scene-1-the-waiting-game": {
+    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-ohio-line/part-1-the-waiting-game-the-silent-alarm": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Waiting Game",
+        "title": "Part 1: The Waiting Game & The Silent Alarm",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s001.md"
+        "filePath": "e001/c005/p001.md"
     },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-ohio-line/scene-2-the-breaking-point": {
+    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-ohio-line/part-2-the-9-1-1-call-the-vector": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Breaking Point",
+        "title": "Part 2: The 9-1-1 Call & The Vector",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s002.md"
+        "filePath": "e001/c005/p002.md"
     },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-ohio-line/scene-3-the-silent-alarm": {
+    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-ohio-line/part-3-the-wall-the-anchor": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Silent Alarm",
+        "title": "Part 3: The Wall & The Anchor",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s003.md"
-    },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-ohio-line/scene-4-the-9-1-1-call": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The 9-1-1 Call",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s004.md"
-    },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-ohio-line/scene-5-the-tape": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Tape",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s005.md"
-    },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-ohio-line/scene-6-the-ghost-exit": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Ghost Exit",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s006.md"
-    },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-ohio-line/scene-7-the-vector": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Vector",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s007.md"
-    },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-ohio-line/scene-8-the-wall": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Wall",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s008.md"
-    },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-ohio-line/scene-9-the-anchor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Anchor",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s009.md"
+        "filePath": "e001/c005/p003.md"
     },
     "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-long-dark": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -220,53 +130,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|5"
     },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-long-dark/scene-1-the-midnight-relay": {
+    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-long-dark/part-1-the-midnight-relay-the-red-tape": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Midnight Relay",
+        "title": "Part 1: The Midnight Relay & The Red Tape",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s001.md"
+        "filePath": "e001/c006/p001.md"
     },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-long-dark/scene-2-the-red-tape": {
+    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-long-dark/part-2-trauma-room-4-the-severed-tie": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Red Tape",
+        "title": "Part 2: Trauma Room 4 & The Severed Tie",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s002.md"
+        "filePath": "e001/c006/p002.md"
     },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-long-dark/scene-3-trauma-room-4": {
+    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-long-dark/part-3-the-loose-ends-the-perimeter-secured": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Trauma Room 4",
+        "title": "Part 3: The Loose Ends & The Perimeter Secured",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s003.md"
-    },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-long-dark/scene-4-the-legacy": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Legacy",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s004.md"
-    },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-long-dark/scene-5-the-severed-tie": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Severed Tie",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s005.md"
-    },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-long-dark/scene-6-the-loose-ends": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Loose Ends",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s006.md"
-    },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-long-dark/scene-7-the-journey-east": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Journey East",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s007.md"
-    },
-    "/julian/era-1-the-winter-palace-the-breach-spring-december-1996/the-long-dark/scene-8-the-perimeter-secured": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Perimeter Secured",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s008.md"
+        "filePath": "e001/c006/p003.md"
     },
     "/julian/era-2-the-paper-shield-the-family-mix-december-1996": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -280,35 +160,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
-    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-winter-palace/scene-1-the-echo": {
+    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-winter-palace/part-1-the-echo-the-perimeter-holds": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Echo",
+        "title": "Part 1: The Echo & The Perimeter Holds",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s001.md"
+        "filePath": "e002/c001/p001.md"
     },
-    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-winter-palace/scene-2-the-hearth": {
+    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-winter-palace/part-2-the-blended-table-the-open-doors": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Hearth",
+        "title": "Part 2: The Blended Table & The Open Doors",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s002.md"
-    },
-    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-winter-palace/scene-3-the-perimeter-holds": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Perimeter Holds",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s003.md"
-    },
-    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-winter-palace/scene-4-the-blended-table": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Blended Table",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s004.md"
-    },
-    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-winter-palace/scene-5-the-open-doors": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Open Doors",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s005.md"
+        "filePath": "e002/c001/p002.md"
     },
     "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -316,17 +178,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|1"
     },
-    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-perimeter/scene-1-the-sunday-vultures": {
+    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-perimeter/the-sunday-vultures-the-safe-harbor": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Sunday Vultures",
+        "title": "The Sunday Vultures & The Safe Harbor",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s001.md"
-    },
-    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-perimeter/scene-2-the-safe-harbor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Safe Harbor",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s002.md"
+        "filePath": "e002/c002/p001.md"
     },
     "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-paper-shield": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -334,29 +190,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|2"
     },
-    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-paper-shield/scene-1-the-blue-line": {
+    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-paper-shield/the-blue-line-the-exposed-aggregate": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Blue Line",
+        "title": "The Blue Line & The Exposed Aggregate",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c003/s001.md"
-    },
-    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-paper-shield/scene-2-the-marble-halls": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Marble Halls",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c003/s002.md"
-    },
-    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-paper-shield/scene-3-the-ink-dries": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Ink Dries",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c003/s003.md"
-    },
-    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-paper-shield/scene-4-the-exposed-aggregate": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Exposed Aggregate",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c003/s004.md"
+        "filePath": "e002/c003/p001.md"
     },
     "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-playback": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -364,11 +202,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|3"
     },
-    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-playback/scene-1-the-playback": {
+    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-playback/the-playback": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Playback",
+        "title": "The Playback",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c004/s001.md"
+        "filePath": "e002/c004/p001.md"
     },
     "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-master-track": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -376,41 +214,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|4"
     },
-    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-master-track/scene-1-the-soundstage": {
+    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-master-track/part-1-the-soundstage-the-language-barrier": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Soundstage",
+        "title": "Part 1: The Soundstage & The Language Barrier",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c005/s001.md"
+        "filePath": "e002/c005/p001.md"
     },
-    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-master-track/scene-2-the-language-barrier": {
+    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-master-track/part-2-laying-the-groundwork-the-night-watch": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Language Barrier",
+        "title": "Part 2: Laying the Groundwork & The Night Watch",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c005/s002.md"
-    },
-    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-master-track/scene-3-laying-the-groundwork": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Laying the Groundwork",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c005/s003.md"
-    },
-    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-master-track/scene-4-the-safe-harbor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Safe Harbor",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c005/s004.md"
-    },
-    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-master-track/scene-5-the-foundation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Foundation",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c005/s005.md"
-    },
-    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-master-track/scene-6-the-night-watch": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Night Watch",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c005/s006.md"
+        "filePath": "e002/c005/p002.md"
     },
     "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-quiet-r-veillon": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -418,23 +232,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|5"
     },
-    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-quiet-r-veillon/scene-1-the-stanstead-shipment": {
+    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-quiet-r-veillon/part-1-the-stanstead-shipment-the-hybrid-tradition": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Stanstead Shipment",
+        "title": "Part 1: The Stanstead Shipment & The Hybrid Tradition",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c006/s001.md"
+        "filePath": "e002/c006/p001.md"
     },
-    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-quiet-r-veillon/scene-2-the-hybrid-tradition": {
+    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-quiet-r-veillon/part-2-the-family-mix": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Hybrid Tradition",
+        "title": "Part 2: The Family Mix",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c006/s002.md"
-    },
-    "/julian/era-2-the-paper-shield-the-family-mix-december-1996/the-quiet-r-veillon/scene-3-the-family-mix": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Family Mix",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c006/s003.md"
+        "filePath": "e002/c006/p002.md"
     },
     "/julian/era-3-the-mother-tongue-spring-1997": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -448,23 +256,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|0"
     },
-    "/julian/era-3-the-mother-tongue-spring-1997/the-substitute/scene-1-the-breach": {
+    "/julian/era-3-the-mother-tongue-spring-1997/the-substitute/the-breach-the-transit-loop": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Breach",
+        "title": "The Breach & The Transit Loop",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s001.md"
-    },
-    "/julian/era-3-the-mother-tongue-spring-1997/the-substitute/scene-2-the-mother-tongue": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Mother Tongue",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s002.md"
-    },
-    "/julian/era-3-the-mother-tongue-spring-1997/the-substitute/scene-3-the-transit-loop": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Transit Loop",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s003.md"
+        "filePath": "e003/c001/p001.md"
     },
     "/julian/era-4-the-menai-strait-august-1998": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -478,47 +274,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|0"
     },
-    "/julian/era-4-the-menai-strait-august-1998/outbound/scene-1-the-i-64-corridor": {
+    "/julian/era-4-the-menai-strait-august-1998/outbound/part-1-the-i-64-corridor-the-ascent": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The I-64 Corridor",
+        "title": "Part 1: The I-64 Corridor & The Ascent",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s001.md"
+        "filePath": "e004/c001/p001.md"
     },
-    "/julian/era-4-the-menai-strait-august-1998/outbound/scene-2-the-pre-clearance": {
+    "/julian/era-4-the-menai-strait-august-1998/outbound/part-2-the-hub-the-red-eye": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Pre-Clearance",
+        "title": "Part 2: The Hub & The Red-Eye",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s002.md"
-    },
-    "/julian/era-4-the-menai-strait-august-1998/outbound/scene-3-the-checkpoint": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Checkpoint",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s003.md"
-    },
-    "/julian/era-4-the-menai-strait-august-1998/outbound/scene-4-the-ascent": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Ascent",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s004.md"
-    },
-    "/julian/era-4-the-menai-strait-august-1998/outbound/scene-5-the-hub": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Hub",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s005.md"
-    },
-    "/julian/era-4-the-menai-strait-august-1998/outbound/scene-6-the-boarding": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Boarding",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s006.md"
-    },
-    "/julian/era-4-the-menai-strait-august-1998/outbound/scene-7-the-red-eye": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Red-Eye",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s007.md"
+        "filePath": "e004/c001/p002.md"
     },
     "/julian/era-4-the-menai-strait-august-1998/the-red-cave": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -526,47 +292,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|1"
     },
-    "/julian/era-4-the-menai-strait-august-1998/the-red-cave/scene-1-the-terminator-line": {
+    "/julian/era-4-the-menai-strait-august-1998/the-red-cave/part-1-the-terminator-line-the-commuter-hop": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Terminator Line",
+        "title": "Part 1: The Terminator Line & The Commuter Hop",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s001.md"
+        "filePath": "e004/c002/p001.md"
     },
-    "/julian/era-4-the-menai-strait-august-1998/the-red-cave/scene-2-the-border": {
+    "/julian/era-4-the-menai-strait-august-1998/the-red-cave/part-2-the-coastal-line-the-time-shift": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Border",
+        "title": "Part 2: The Coastal Line & The Time Shift",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s002.md"
-    },
-    "/julian/era-4-the-menai-strait-august-1998/the-red-cave/scene-3-the-commuter-hop": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Commuter Hop",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s003.md"
-    },
-    "/julian/era-4-the-menai-strait-august-1998/the-red-cave/scene-4-the-coastal-line": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Coastal Line",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s004.md"
-    },
-    "/julian/era-4-the-menai-strait-august-1998/the-red-cave/scene-5-the-threshold": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Threshold",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s005.md"
-    },
-    "/julian/era-4-the-menai-strait-august-1998/the-red-cave/scene-6-the-floorplan": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Floorplan",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s006.md"
-    },
-    "/julian/era-4-the-menai-strait-august-1998/the-red-cave/scene-7-the-time-shift": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Time Shift",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s007.md"
+        "filePath": "e004/c002/p002.md"
     },
     "/julian/era-5-the-solstice-symphony-january-2007": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -580,10 +316,10 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|0"
     },
-    "/julian/era-5-the-solstice-symphony-january-2007/liberation-of-a-winter-s-night/scene-1-the-crown-and-hound": {
+    "/julian/era-5-the-solstice-symphony-january-2007/liberation-of-a-winter-s-night/the-crown-and-hound": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Crown and Hound",
+        "title": "The Crown and Hound",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s001.md"
+        "filePath": "e005/c001/p001.md"
     }
 }

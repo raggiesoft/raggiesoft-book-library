@@ -41,21 +41,21 @@ if (!$era) {
         <?php if (!empty($era['chapters'])): ?>
             <!-- Iterate over each chapter within the era -->
             <?php foreach ($era['chapters'] as $chap): 
-                $sceneCount = !empty($chap['scenes']) && is_array($chap['scenes']) ? count($chap['scenes']) : 0;
+                $partList = !empty($chap['parts']) && is_array($chap['parts']) ? $chap['parts'] : [];
+                $partCount = count($partList);
             ?>
-                <?php if ($sceneCount === 1):
+                <?php if ($partCount === 1):
                     /**
-                     * IDEA 3: SMART SINGLE-SCENE CHAPTER COLLAPSE
-                     * When a Chapter (`cXXX`) contains only 1 scene (`s001.md`), render the
-                     * chapter card as a direct one-click link to that scene rather than a
-                     * nested list containing a single item.
+                     * IDEA 3: SMART SINGLE-PART CHAPTER COLLAPSE
+                     * When a Chapter (`cXXX`) contains only 1 Part (`p001.md`), render the
+                     * chapter card as a direct one-click link rather than a nested list.
                      */
-                    $singleScene = $chap['scenes'][0];
-                    $singleHref = $fileToUrl[$singleScene['file_path']] ?? $singleScene['file_path'];
+                    $singlePart = $partList[0];
+                    $singleHref = $fileToUrl[$singlePart['file_path']] ?? $singlePart['file_path'];
                     $rawChapTitle = (string)($chap['chap_title'] ?? '');
-                    $rawSceneTitle = (string)($singleScene['scene_title'] ?? '');
-                    $cleanSceneSub = trim((string)preg_replace('/^Scene\s+\d+\s*:\s*/i', '', $rawSceneTitle));
-                    $showSceneSub = ($cleanSceneSub !== '' && stripos($rawChapTitle, $cleanSceneSub) === false);
+                    $rawPartTitle = (string)($singlePart['part_title'] ?? '');
+                    $cleanPartSub = trim((string)preg_replace('/^Part\s+\d+\s*:\s*/i', '', $rawPartTitle));
+                    $showPartSub = ($cleanPartSub !== '' && stripos($rawChapTitle, $cleanPartSub) === false && strcasecmp($cleanPartSub, 'Untitled Chapter') !== 0 && !preg_match('/^Part\s+\d+$/i', $cleanPartSub));
                 ?>
                 <div style="background: var(--rs-bg); border: 1px solid var(--rs-border); border-radius: 8px; padding: 1.25rem 1.5rem;">
                     <a href="<?php echo htmlspecialchars($singleHref); ?>"
@@ -65,8 +65,8 @@ if (!$era) {
                         <span style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
                             <i class="ph ph-file-text" aria-hidden="true"></i>
                             <span><?php echo htmlspecialchars($rawChapTitle); ?></span>
-                            <?php if ($showSceneSub): ?>
-                                <span style="font-weight: 500; font-size: 1rem; color: var(--rs-text); opacity: 0.82;">&mdash; <?php echo htmlspecialchars($cleanSceneSub); ?></span>
+                            <?php if ($showPartSub): ?>
+                                <span style="font-weight: 500; font-size: 1rem; color: var(--rs-text); opacity: 0.82;">&mdash; <?php echo htmlspecialchars($cleanPartSub); ?></span>
                             <?php endif; ?>
                         </span>
                         <span style="font-size: 0.85rem; font-weight: 600; color: var(--rs-text); opacity: 0.75; white-space: nowrap; display: inline-flex; align-items: center; gap: 0.3rem;">
@@ -82,26 +82,25 @@ if (!$era) {
                         <span style="display: flex; align-items: center; gap: 0.5rem;">
                             <i class="ph ph-folder" aria-hidden="true"></i> <?php echo htmlspecialchars($chap['chap_title']); ?>
                         </span>
-                        <span style="font-size: 0.8rem; font-weight: 600; opacity: 0.72;"><?php echo (int)$sceneCount; ?> scenes</span>
+                        <span style="font-size: 0.8rem; font-weight: 600; opacity: 0.72;"><?php echo $partCount > 0 ? ((int)$partCount . ' Parts') : 'Coming Soon'; ?></span>
                     </h2>
                     
                     <ul style="list-style: none; padding: 0 0 0 1rem; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
-                        <?php if (!empty($chap['scenes'])): ?>
-                            <!-- Iterate over all scenes (e.g., markdown files) belonging to this chapter -->
-                            <?php foreach ($chap['scenes'] as $scene): 
-                                // Resolve the routable frontend URL for this scene using the pre-computed map.
-                                $href = $fileToUrl[$scene['file_path']] ?? $scene['file_path']; // fallback to file path if mapping missing
+                        <?php if (!empty($partList)): ?>
+                            <!-- Iterate over all parts (pXXX.md files) belonging to this chapter -->
+                            <?php foreach ($partList as $part): 
+                                $href = $fileToUrl[$part['file_path']] ?? $part['file_path'];
                             ?>
                                 <li>
                                     <!-- Render the clickable link to the reading page -->
                                     <a href="<?php echo htmlspecialchars($href); ?>" style="text-decoration: none; color: var(--rs-primary); display: flex; align-items: center; gap: 0.5rem; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
-                                        <i class="ph ph-file-text" aria-hidden="true"></i> <?php echo htmlspecialchars($scene['scene_title']); ?>
+                                        <i class="ph ph-file-text" aria-hidden="true"></i> <?php echo htmlspecialchars($part['part_title']); ?>
                                     </a>
                                 </li>
                             <?php endforeach; ?>
                         <?php else: ?>
                             <!-- Fallback for empty chapters -->
-                            <li style="opacity: 0.5;">No scenes available.</li>
+                            <li style="opacity: 0.5;">No parts available yet.</li>
                         <?php endif; ?>
                     </ul>
                 </div>

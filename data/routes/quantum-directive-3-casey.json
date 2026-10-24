@@ -14,12 +14,12 @@
         "ebook_sizes": {
             "epub": "1.4 MB",
             "pdf": "2.2 MB",
-            "text_epub": "402 KB",
+            "text_epub": "397 KB",
             "text_pdf": "1.2 MB",
-            "epub_bytes": 1462071,
-            "pdf_bytes": 2321004,
-            "text_epub_bytes": 411726,
-            "text_pdf_bytes": 1267782
+            "epub_bytes": 1457239,
+            "pdf_bytes": 2315571,
+            "text_epub_bytes": 406885,
+            "text_pdf_bytes": 1261268
         }
     },
     "/quantum-directive-3-casey": {
@@ -46,29 +46,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-1-the-northern-regional/scene-1-departing-npn": {
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-1-the-northern-regional/departing-npn-the-crown-burger-debrief": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Departing NPN",
+        "title": "Departing NPN & The Crown Burger Debrief",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s001.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-1-the-northern-regional/scene-2-the-northern-regional": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Northern Regional",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s002.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-1-the-northern-regional/scene-3-the-seven-corners-transfer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Seven Corners Transfer",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s003.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-1-the-northern-regional/scene-4-the-crown-burger-debrief": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Crown Burger Debrief",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s004.md"
+        "filePath": "e001/c001/p001.md"
     },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-2-the-open-house": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -76,41 +58,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|1"
     },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-2-the-open-house/scene-1-the-continental-breakfast": {
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-2-the-open-house/the-continental-breakfast-lights-out": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Continental Breakfast",
+        "title": "The Continental Breakfast & Lights Out",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s001.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-2-the-open-house/scene-2-the-architecture-of-the-past": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Architecture of the Past",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s002.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-2-the-open-house/scene-3-the-dormitory-metric": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Dormitory Metric",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s003.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-2-the-open-house/scene-4-early-dismissal": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Early Dismissal",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s004.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-2-the-open-house/scene-5-the-evening-routine": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Evening Routine",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s005.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-2-the-open-house/scene-6-lights-out": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Lights Out",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s006.md"
+        "filePath": "e001/c002/p001.md"
     },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -118,53 +70,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|2"
     },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo/scene-1-the-connecticut-avenue-bypass": {
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo/part-1-the-connecticut-avenue-bypass-the": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Connecticut Avenue Bypass",
+        "title": "Part 1: The Connecticut Avenue Bypass & The",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s001.md"
+        "filePath": "e001/c003/p001.md"
     },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo/scene-2-the-olmsted-walk": {
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo/part-2-rocket-burger-and-the-return-vector-the-gwu-rivalry-and-deep-pressure": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Olmsted Walk",
+        "title": "Part 2: Rocket Burger and the Return Vector & The GWU Rivalry and Deep Pressure",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s002.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo/scene-3-the-pop-up-storm": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Pop-Up Storm",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s003.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo/scene-4-the-wet-weather-metric": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Wet Weather Metric",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s004.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo/scene-5-the-l-enfant-maze": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The L'Enfant Maze",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s005.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo/scene-6-the": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s006.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo/scene-7-rocket-burger-and-the-return-vector": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Rocket Burger and the Return Vector",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s007.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-3-the-national-zoo/scene-8-the-gwu-rivalry-and-deep-pressure": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The GWU Rivalry and Deep Pressure",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s008.md"
+        "filePath": "e001/c003/p002.md"
     },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-4-the-return-vector": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -172,23 +88,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|3"
     },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-4-the-return-vector/scene-1-the-union-station-bottleneck": {
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-4-the-return-vector/the-union-station-bottleneck-the-sibling-anchor": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Union Station Bottleneck",
+        "title": "The Union Station Bottleneck & The Sibling Anchor",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s001.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-4-the-return-vector/scene-2-the-monitor-merrimac-detour": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Monitor-Merrimac Detour",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s002.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-4-the-return-vector/scene-3-the-sibling-anchor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Sibling Anchor",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s003.md"
+        "filePath": "e001/c004/p001.md"
     },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-5-the-morning-after": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -196,17 +100,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|4"
     },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-5-the-morning-after/scene-1-the-lightning-strike": {
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-5-the-morning-after/the-lightning-strike-the-ecology-camp-logistics": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Lightning Strike",
+        "title": "The Lightning Strike & The Ecology Camp Logistics",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s001.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-5-the-morning-after/scene-2-the-ecology-camp-logistics": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Ecology Camp Logistics",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s002.md"
+        "filePath": "e001/c005/p001.md"
     },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-6-the-vdu-deployment": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -214,29 +112,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|5"
     },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-6-the-vdu-deployment/scene-1-the-junior-cohort": {
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-6-the-vdu-deployment/the-junior-cohort-the-assistant-manager": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Junior Cohort",
+        "title": "The Junior Cohort & The Assistant Manager",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s001.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-6-the-vdu-deployment/scene-2-the-ecology-lab": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Ecology Lab",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s002.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-6-the-vdu-deployment/scene-3-the-catalyst": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Catalyst",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s003.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-6-the-vdu-deployment/scene-4-the-assistant-manager": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Assistant Manager",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s004.md"
+        "filePath": "e001/c006/p001.md"
     },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-7-week-1-coastal-ecology": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -244,23 +124,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|6"
     },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-7-week-1-coastal-ecology/scene-1-the-chesapeake-crossing": {
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-7-week-1-coastal-ecology/the-chesapeake-crossing-sample-recovery": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Chesapeake Crossing",
+        "title": "The Chesapeake Crossing & Sample Recovery",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s001.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-7-week-1-coastal-ecology/scene-2-the-squall": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Squall",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s002.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-7-week-1-coastal-ecology/scene-3-sample-recovery": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Sample Recovery",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s003.md"
+        "filePath": "e001/c007/p001.md"
     },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-8-week-2-atmospheric-dynamics": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -268,17 +136,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|7"
     },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-8-week-2-atmospheric-dynamics/scene-1-the-security-gate": {
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-8-week-2-atmospheric-dynamics/the-security-gate-the-full-scale-tunnel": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Security Gate",
+        "title": "The Security Gate & The Full-Scale Tunnel",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c008/s001.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-8-week-2-atmospheric-dynamics/scene-2-the-full-scale-tunnel": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Full-Scale Tunnel",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c008/s002.md"
+        "filePath": "e001/c008/p001.md"
     },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-9-week-3-aerospace": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -286,23 +148,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|8"
     },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-9-week-3-aerospace/scene-1-the-glass-elevator": {
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-9-week-3-aerospace/the-glass-elevator-novascreen-and-the-gift-shop": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Glass Elevator",
+        "title": "The Glass Elevator & NovaScreen and the Gift Shop",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c009/s001.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-9-week-3-aerospace/scene-2-apollo-and-the-cafe": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Apollo and the Cafe",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c009/s002.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-9-week-3-aerospace/scene-3-novascreen-and-the-gift-shop": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: NovaScreen and the Gift Shop",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c009/s003.md"
+        "filePath": "e001/c009/p001.md"
     },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-10-week-4-marine-biology": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -310,23 +160,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|9"
     },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-10-week-4-marine-biology/scene-1-the-soft-opening": {
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-10-week-4-marine-biology/the-soft-opening-the-submission": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Soft Opening",
+        "title": "The Soft Opening & The Submission",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c010/s001.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-10-week-4-marine-biology/scene-2-the-catalyst-challenge": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Catalyst Challenge",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c010/s002.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-10-week-4-marine-biology/scene-3-the-submission": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Submission",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c010/s003.md"
+        "filePath": "e001/c010/p001.md"
     },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-11-northwest-pacific": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -334,35 +172,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|10"
     },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-11-northwest-pacific/scene-1-the-departure": {
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-11-northwest-pacific/the-departure-the-hotel-logistics": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Departure",
+        "title": "The Departure & The Hotel Logistics",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c011/s001.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-11-northwest-pacific/scene-2-the-denver-layover": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Denver Layover",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c011/s002.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-11-northwest-pacific/scene-3-the-ride-free-area": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Ride Free Area",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c011/s003.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-11-northwest-pacific/scene-4-the-topography": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Topography",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c011/s004.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-11-northwest-pacific/scene-5-the-hotel-logistics": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Hotel Logistics",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c011/s005.md"
+        "filePath": "e001/c011/p001.md"
     },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-12-the-open-house": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -370,47 +184,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|11"
     },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-12-the-open-house/scene-1-the-engineering-quad": {
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-12-the-open-house/part-1-the-engineering-quad-the-two-paths": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Engineering Quad",
+        "title": "Part 1: The Engineering Quad & The Two Paths",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c012/s001.md"
+        "filePath": "e001/c012/p001.md"
     },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-12-the-open-house/scene-2-the-quantum-pavilion": {
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-12-the-open-house/part-2-the-logistics-of-care-the-vacation-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Quantum Pavilion",
+        "title": "Part 2: The Logistics of Care & The Vacation Protocol",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c012/s002.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-12-the-open-house/scene-3-the-quantaneers": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Quantaneers",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c012/s003.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-12-the-open-house/scene-4-the-internal-elevators": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Internal Elevators",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c012/s004.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-12-the-open-house/scene-5-the-two-paths": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Two Paths",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c012/s005.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-12-the-open-house/scene-6-the-logistics-of-care": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Logistics of Care",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c012/s006.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-12-the-open-house/scene-7-the-vacation-protocol": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Vacation Protocol",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c012/s007.md"
+        "filePath": "e001/c012/p002.md"
     },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/the-emerald-city": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -418,47 +202,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|12"
     },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/the-emerald-city/scene-1-the-century-spire": {
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/the-emerald-city/part-1-the-century-spire-lake-washington": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Century Spire",
+        "title": "Part 1: The Century Spire & Lake Washington",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c013/s001.md"
+        "filePath": "e001/c013/p001.md"
     },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/the-emerald-city/scene-2-the-planetarium": {
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/the-emerald-city/part-2-the-privacy-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Planetarium",
+        "title": "Part 2: The Privacy Protocol",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c013/s002.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/the-emerald-city/scene-3-the-emperor-of-redmond": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Emperor of Redmond",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c013/s003.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/the-emerald-city/scene-4-the-zenith-motherboard": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Zenith Motherboard",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c013/s004.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/the-emerald-city/scene-5-the-five-megabyte-monolith": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Five-Megabyte Monolith",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c013/s005.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/the-emerald-city/scene-6-lake-washington": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Lake Washington",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c013/s006.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/the-emerald-city/scene-7-the-privacy-protocol": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Privacy Protocol",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c013/s007.md"
+        "filePath": "e001/c013/p002.md"
     },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-14-the-deep-end": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -466,47 +220,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|13"
     },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-14-the-deep-end/scene-1-siren-roasters": {
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-14-the-deep-end/siren-roasters-the-extraction": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Siren Roasters",
+        "title": "Siren Roasters & The Extraction",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c014/s001.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-14-the-deep-end/scene-2-the-underwater-dome": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Underwater Dome",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c014/s002.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-14-the-deep-end/scene-3-the-gift-shop": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Gift Shop",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c014/s003.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-14-the-deep-end/scene-4-the-prospector-s-registry": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Prospector's Registry",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c014/s004.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-14-the-deep-end/scene-5-taps-route-174": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: TAPS Route 174",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c014/s005.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-14-the-deep-end/scene-6-the-great-gallery": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Great Gallery",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c014/s006.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-14-the-deep-end/scene-7-the-extraction": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Extraction",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c014/s007.md"
+        "filePath": "e001/c014/p001.md"
     },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-15-the-pre-dawn-run": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -514,23 +232,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|14"
     },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-15-the-pre-dawn-run/scene-1-the-174-southbound": {
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-15-the-pre-dawn-run/the-174-southbound-the-chicago-layover": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The 174 Southbound",
+        "title": "The 174 Southbound & The Chicago Layover",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c015/s001.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-15-the-pre-dawn-run/scene-2-the-gateway-counter": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Gateway Counter",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c015/s002.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-15-the-pre-dawn-run/scene-3-the-chicago-layover": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Chicago Layover",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c015/s003.md"
+        "filePath": "e001/c015/p001.md"
     },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-16-the-catalyst": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -538,23 +244,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|15"
     },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-16-the-catalyst/scene-1-the-call": {
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-16-the-catalyst/the-call-the-sleepover": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Call",
+        "title": "The Call & The Sleepover",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c016/s001.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-16-the-catalyst/scene-2-the-celebration": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Celebration",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c016/s002.md"
-    },
-    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-16-the-catalyst/scene-3-the-sleepover": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Sleepover",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c016/s003.md"
+        "filePath": "e001/c016/p001.md"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -568,29 +262,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-1-the-semester-baseline/scene-1-the-syllabus": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-1-the-semester-baseline/the-syllabus-the-apartment": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Syllabus",
+        "title": "The Syllabus & The Apartment",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s001.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-1-the-semester-baseline/scene-2-the-library": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Library",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s002.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-1-the-semester-baseline/scene-3-the-integumentary-system": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Integumentary System",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s003.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-1-the-semester-baseline/scene-4-the-apartment": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Apartment",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s004.md"
+        "filePath": "e002/c001/p001.md"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-2-the-reboot": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -598,29 +274,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|1"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-2-the-reboot/scene-1-the-apology": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-2-the-reboot/the-apology-the-dinner": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Apology",
+        "title": "The Apology & The Dinner",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s001.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-2-the-reboot/scene-2-the-text-message": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Text Message",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s002.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-2-the-reboot/scene-3-the-introduction": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Introduction",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s003.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-2-the-reboot/scene-4-the-dinner": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Dinner",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s004.md"
+        "filePath": "e002/c002/p001.md"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-3-the-chesapeake-deployment": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -628,29 +286,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|2"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-3-the-chesapeake-deployment/scene-1-the-chesapeake-deployment": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-3-the-chesapeake-deployment/the-chesapeake-deployment-the-crocodile-tears": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Chesapeake Deployment",
+        "title": "The Chesapeake Deployment & The Crocodile Tears",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c003/s001.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-3-the-chesapeake-deployment/scene-2-the-food-court-de-escalation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Food Court De-Escalation",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c003/s002.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-3-the-chesapeake-deployment/scene-3-the-family-debrief": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Family Debrief",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c003/s003.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-3-the-chesapeake-deployment/scene-4-the-crocodile-tears": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Crocodile Tears",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c003/s004.md"
+        "filePath": "e002/c003/p001.md"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-4-the-patch": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -658,11 +298,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|3"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-4-the-patch/scene-1-the-reunion": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-4-the-patch/the-reunion": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Reunion",
+        "title": "The Reunion",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c004/s001.md"
+        "filePath": "e002/c004/p001.md"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-5-the-delete-key": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -670,17 +310,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|4"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-5-the-delete-key/scene-1-the-ultimatum": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-5-the-delete-key/the-ultimatum-the-compromise": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Ultimatum",
+        "title": "The Ultimatum & The Compromise",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c005/s001.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-5-the-delete-key/scene-2-the-compromise": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Compromise",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c005/s002.md"
+        "filePath": "e002/c005/p001.md"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-6-the-three-way-call": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -688,17 +322,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|5"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-6-the-three-way-call/scene-1-the-holiday-plans": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-6-the-three-way-call/the-holiday-plans-the-invitation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Holiday Plans",
+        "title": "The Holiday Plans & The Invitation",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c006/s001.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-6-the-three-way-call/scene-2-the-invitation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Invitation",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c006/s002.md"
+        "filePath": "e002/c006/p001.md"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-7-the-mask": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -706,23 +334,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|6"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-7-the-mask/scene-1-the-terminal": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-7-the-mask/the-terminal-the-perimeter-shift": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Terminal",
+        "title": "The Terminal & The Perimeter Shift",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c007/s001.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-7-the-mask/scene-2-the-return-to-the-coast": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Return to the Coast",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c007/s002.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-7-the-mask/scene-3-the-perimeter-shift": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Perimeter Shift",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c007/s003.md"
+        "filePath": "e002/c007/p001.md"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-8-the-ambush": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -730,23 +346,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|7"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-8-the-ambush/scene-1-the-morning-anchor": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-8-the-ambush/the-morning-anchor-the-hard-sever": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Morning Anchor",
+        "title": "The Morning Anchor & The Hard Sever",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c008/s001.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-8-the-ambush/scene-2-the-kitchen-ambush": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Kitchen Ambush",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c008/s002.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-8-the-ambush/scene-3-the-hard-sever": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Hard Sever",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c008/s003.md"
+        "filePath": "e002/c008/p001.md"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-9-the-crossroads": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -754,35 +358,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|8"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-9-the-crossroads/scene-1-the-golden-architecture": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-9-the-crossroads/part-1-the-golden-architecture-the-hard-sever": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Golden Architecture",
+        "title": "Part 1: The Golden Architecture & The Hard Sever",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c009/s001.md"
+        "filePath": "e002/c009/p001.md"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-9-the-crossroads/scene-2-the-executive-reality": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-9-the-crossroads/part-2-the-twenty-one-day-bridge-the-birthday-buyout": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Executive Reality",
+        "title": "Part 2: The Twenty-One Day Bridge & The Birthday Buyout",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c009/s002.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-9-the-crossroads/scene-3-the-hard-sever": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Hard Sever",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c009/s003.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-9-the-crossroads/scene-4-the-twenty-one-day-bridge": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Twenty-One Day Bridge",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c009/s004.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-9-the-crossroads/scene-5-the-birthday-buyout": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Birthday Buyout",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c009/s005.md"
+        "filePath": "e002/c009/p002.md"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-10-the-severance": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -790,17 +376,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|9"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-10-the-severance/scene-1-the-checkpoint": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-10-the-severance/the-checkpoint-the-firewall": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Checkpoint",
+        "title": "The Checkpoint & The Firewall",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c010/s001.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-10-the-severance/scene-2-the-firewall": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Firewall",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c010/s002.md"
+        "filePath": "e002/c010/p001.md"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-11-the-executive-ascent": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -808,29 +388,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|10"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-11-the-executive-ascent/scene-1-burton-station-road": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-11-the-executive-ascent/burton-station-road-the-moving-logistics": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Burton Station Road",
+        "title": "Burton Station Road & The Moving Logistics",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c011/s001.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-11-the-executive-ascent/scene-2-the-flight-data": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Flight Data",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c011/s002.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-11-the-executive-ascent/scene-3-the-honorary-sister": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Honorary Sister",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c011/s003.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-11-the-executive-ascent/scene-4-the-moving-logistics": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Moving Logistics",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c011/s004.md"
+        "filePath": "e002/c011/p001.md"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-12-the-executive-departure": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -838,35 +400,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|11"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-12-the-executive-departure/scene-1-the-morning-knock": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-12-the-executive-departure/the-morning-knock-the-i-5-crawl": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Morning Knock",
+        "title": "The Morning Knock & The I-5 Crawl",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c012/s001.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-12-the-executive-departure/scene-2-the-flight-logistics": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Flight Logistics",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c012/s002.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-12-the-executive-departure/scene-3-the-sovereign-airspace": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Sovereign Airspace",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c012/s003.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-12-the-executive-departure/scene-4-the-global-reach": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Global Reach",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c012/s004.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-12-the-executive-departure/scene-5-the-i-5-crawl": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The I-5 Crawl",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c012/s005.md"
+        "filePath": "e002/c012/p001.md"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-13-the-federal-way-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -874,29 +412,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|12"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-13-the-federal-way-perimeter/scene-1-the-social-boundary": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-13-the-federal-way-perimeter/the-social-boundary-the-blackout": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Social Boundary",
+        "title": "The Social Boundary & The Blackout",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c013/s001.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-13-the-federal-way-perimeter/scene-2-comfort-food-and-the-ledger": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Comfort Food and The Ledger",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c013/s002.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-13-the-federal-way-perimeter/scene-3-the-evening-routine": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Evening Routine",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c013/s003.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-13-the-federal-way-perimeter/scene-4-the-blackout": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Blackout",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c013/s004.md"
+        "filePath": "e002/c013/p001.md"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-14-the-blackout": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -904,71 +424,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|13"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-14-the-blackout/scene-1-pantry-logistics": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-14-the-blackout/part-1-pantry-logistics-the-sunday-dispatch": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Pantry Logistics",
+        "title": "Part 1: Pantry Logistics & The Sunday Dispatch",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c014/s001.md"
+        "filePath": "e002/c014/p001.md"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-14-the-blackout/scene-2-circadian-logistics": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-14-the-blackout/part-2-the-redmond-compound-acquisition-the-taps-grid": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Circadian Logistics",
+        "title": "Part 2: The Redmond Compound Acquisition & The TAPS Grid",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c014/s002.md"
+        "filePath": "e002/c014/p002.md"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-14-the-blackout/scene-3-the-eastside-expansion": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-14-the-blackout/part-3-the-sunday-night-reset-the-a-b-block-and-qu-b-cois-french": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Eastside Expansion",
+        "title": "Part 3: The Sunday Night Reset & The A-B Block and Qu\u00e9b\u00e9cois French",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c014/s003.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-14-the-blackout/scene-4-the-tier-one-acquisition": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Tier-One Acquisition",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c014/s004.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-14-the-blackout/scene-5-the-sunday-dispatch": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Sunday Dispatch",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c014/s005.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-14-the-blackout/scene-6-the-redmond-compound-acquisition": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Redmond Compound Acquisition",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c014/s006.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-14-the-blackout/scene-7-the-contract-execution": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Contract Execution",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c014/s007.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-14-the-blackout/scene-8-the-accepted-strike": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Accepted Strike",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c014/s008.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-14-the-blackout/scene-9-the-taps-grid": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The TAPS Grid",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c014/s009.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-14-the-blackout/scene-10-the-sunday-night-reset": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Sunday Night Reset",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c014/s010.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-14-the-blackout/scene-11-the-a-b-block-and-qu-b-cois-french": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The A-B Block and Qu\u00e9b\u00e9cois French",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c014/s011.md"
+        "filePath": "e002/c014/p003.md"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-15-the-holiday-deployment": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -976,29 +448,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|14"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-15-the-holiday-deployment/scene-1-the-pvd-rendezvous": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-15-the-holiday-deployment/the-pvd-rendezvous-the-sea-of-humanity": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The PVD Rendezvous",
+        "title": "The PVD Rendezvous & The Sea of Humanity",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c015/s001.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-15-the-holiday-deployment/scene-2-the-ghost-highway": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Ghost Highway",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c015/s002.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-15-the-holiday-deployment/scene-3-the-mount-hope-arrival": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Mount Hope Arrival",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c015/s003.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-15-the-holiday-deployment/scene-4-the-sea-of-humanity": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Sea of Humanity",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c015/s004.md"
+        "filePath": "e002/c015/p001.md"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-16-the-aquidneck-christmas": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1006,35 +460,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|15"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-16-the-aquidneck-christmas/scene-1-the-morning-pile": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-16-the-aquidneck-christmas/the-morning-pile-the-house-guard-marathon": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Morning Pile",
+        "title": "The Morning Pile & The House Guard Marathon",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c016/s001.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-16-the-aquidneck-christmas/scene-2-the-forty-steps": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Forty Steps",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c016/s002.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-16-the-aquidneck-christmas/scene-3-the-autonomic-check": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Autonomic Check",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c016/s003.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-16-the-aquidneck-christmas/scene-4-r-veillon-under-the-bridge": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: R\u00e9veillon Under the Bridge",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c016/s004.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-16-the-aquidneck-christmas/scene-5-the-house-guard-marathon": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The House Guard Marathon",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c016/s005.md"
+        "filePath": "e002/c016/p001.md"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-17-christmas-day": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1042,29 +472,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|16"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-17-christmas-day/scene-1-the-coffee-milk-christmas": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-17-christmas-day/the-coffee-milk-christmas-the-triple-dog-dare-dinner": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Coffee Milk Christmas",
+        "title": "The Coffee Milk Christmas & The Triple Dog Dare Dinner",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c017/s001.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-17-christmas-day/scene-2-the-gift-exchange": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Gift Exchange",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c017/s002.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-17-christmas-day/scene-3-the-pack-mentality": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Pack Mentality",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c017/s003.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-17-christmas-day/scene-4-the-triple-dog-dare-dinner": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Triple Dog Dare Dinner",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c017/s004.md"
+        "filePath": "e002/c017/p001.md"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-18-boxing-day-in-braxton": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1072,35 +484,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|17"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-18-boxing-day-in-braxton/scene-1-the-braxton-excursion": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-18-boxing-day-in-braxton/the-braxton-excursion-the-transit-contingency": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Braxton Excursion",
+        "title": "The Braxton Excursion & The Transit Contingency",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c018/s001.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-18-boxing-day-in-braxton/scene-2-the-boxing-day-spree": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Boxing Day Spree",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c018/s002.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-18-boxing-day-in-braxton/scene-3-the-neon-syndicate": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Neon Syndicate",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c018/s003.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-18-boxing-day-in-braxton/scene-4-the-food-court-logistics": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Food Court Logistics",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c018/s004.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-18-boxing-day-in-braxton/scene-5-the-transit-contingency": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Transit Contingency",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c018/s005.md"
+        "filePath": "e002/c018/p001.md"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/the-logistics-of-luxury": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1108,29 +496,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|18"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/the-logistics-of-luxury/scene-1-the-logistics-of-luxury": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/the-logistics-of-luxury/the-logistics-of-luxury-the-virginia-beach-arrival": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Logistics of Luxury",
+        "title": "The Logistics of Luxury & The Virginia Beach Arrival",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c019/s001.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/the-logistics-of-luxury/scene-2-the-boarding-protocol": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Boarding Protocol",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c019/s002.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/the-logistics-of-luxury/scene-3-the-airborne-network": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Airborne Network",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c019/s003.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/the-logistics-of-luxury/scene-4-the-virginia-beach-arrival": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Virginia Beach Arrival",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c019/s004.md"
+        "filePath": "e002/c019/p001.md"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-20-the-chesapeake-bay-mall": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1138,23 +508,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|19"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-20-the-chesapeake-bay-mall/scene-1-the-horde": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-20-the-chesapeake-bay-mall/the-horde-the-route-29-trolley": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Horde",
+        "title": "The Horde & The Route 29 Trolley",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c020/s001.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-20-the-chesapeake-bay-mall/scene-2-the-biological-hazard": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Biological Hazard",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c020/s002.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-20-the-chesapeake-bay-mall/scene-3-the-route-29-trolley": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Route 29 Trolley",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c020/s003.md"
+        "filePath": "e002/c020/p001.md"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-21-the-final-countdown": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1162,17 +520,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|20"
     },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-21-the-final-countdown/scene-1-the-final-countdown": {
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-21-the-final-countdown/the-final-countdown-the-dual-departure": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Final Countdown",
+        "title": "The Final Countdown & The Dual Departure",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c021/s001.md"
-    },
-    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-21-the-final-countdown/scene-2-the-dual-departure": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Dual Departure",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c021/s002.md"
+        "filePath": "e002/c021/p001.md"
     },
     "/quantum-directive-3-casey/book-3-the-nclex": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1186,29 +538,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|0"
     },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-1-the-licensure-exam/scene-1-the-scope-of-practice": {
+    "/quantum-directive-3-casey/book-3-the-nclex/chapter-1-the-licensure-exam/the-scope-of-practice-the-pack-conference": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Scope of Practice",
+        "title": "The Scope of Practice & The Pack Conference",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s001.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-1-the-licensure-exam/scene-2-the-pitch": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Pitch",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s002.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-1-the-licensure-exam/scene-3-the-academic-advisor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Academic Advisor",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s003.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-1-the-licensure-exam/scene-4-the-pack-conference": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Pack Conference",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s004.md"
+        "filePath": "e003/c001/p001.md"
     },
     "/quantum-directive-3-casey/book-3-the-nclex/chapter-2-the-invasion": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1216,47 +550,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|1"
     },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-2-the-invasion/scene-1-the-sea-tac-crush-load": {
+    "/quantum-directive-3-casey/book-3-the-nclex/chapter-2-the-invasion/part-1-the-sea-tac-crush-load-the-twelfth-floor": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Sea-Tac Crush-Load",
+        "title": "Part 1: The Sea-Tac Crush-Load & The Twelfth Floor",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s001.md"
+        "filePath": "e003/c002/p001.md"
     },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-2-the-invasion/scene-2-the-route-194-deployment": {
+    "/quantum-directive-3-casey/book-3-the-nclex/chapter-2-the-invasion/part-2-the-banquet-room-interlude-the-bellevue-bidding-war": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Route 194 Deployment",
+        "title": "Part 2: The Banquet Room & Interlude: The Bellevue Bidding War",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s002.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-2-the-invasion/scene-3-checking-in": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Checking In",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s003.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-2-the-invasion/scene-4-the-twelfth-floor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Twelfth Floor",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s004.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-2-the-invasion/scene-5-the-banquet-room": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Banquet Room",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s005.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-2-the-invasion/scene-6-the-bellevue-acquisition": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Bellevue Acquisition",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s006.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-2-the-invasion/scene-7-interlude-the-bellevue-bidding-war": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Interlude: The Bellevue Bidding War",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s007.md"
+        "filePath": "e003/c002/p002.md"
     },
     "/quantum-directive-3-casey/book-3-the-nclex/chapter-3-the-eastside-tour": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1264,29 +568,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|2"
     },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-3-the-eastside-tour/scene-1-the-morning-perimeter": {
+    "/quantum-directive-3-casey/book-3-the-nclex/chapter-3-the-eastside-tour/the-morning-perimeter-the-bellevue-transfer": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Morning Perimeter",
+        "title": "The Morning Perimeter & The Bellevue Transfer",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s001.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-3-the-eastside-tour/scene-2-the-highcliff-announcement": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Highcliff Announcement",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s002.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-3-the-eastside-tour/scene-3-the-redmond-hard-hat-tour": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Redmond Hard Hat Tour",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s003.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-3-the-eastside-tour/scene-4-the-bellevue-transfer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Bellevue Transfer",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s004.md"
+        "filePath": "e003/c003/p001.md"
     },
     "/quantum-directive-3-casey/book-3-the-nclex/chapter-4-the-puget-sound-aquarium": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1294,35 +580,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|3"
     },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-4-the-puget-sound-aquarium/scene-1-the-vip-experience": {
+    "/quantum-directive-3-casey/book-3-the-nclex/chapter-4-the-puget-sound-aquarium/the-vip-experience-the-night-shift": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The VIP Experience",
+        "title": "The VIP Experience & The Night Shift",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c004/s001.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-4-the-puget-sound-aquarium/scene-2-the-deep-ocean-encounters": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Deep Ocean Encounters",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c004/s002.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-4-the-puget-sound-aquarium/scene-3-the-ride-free-area": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Ride Free Area",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c004/s003.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-4-the-puget-sound-aquarium/scene-4-dinner-in-the-sky": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Dinner in the Sky",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c004/s004.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-4-the-puget-sound-aquarium/scene-5-the-night-shift": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Night Shift",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c004/s005.md"
+        "filePath": "e003/c004/p001.md"
     },
     "/quantum-directive-3-casey/book-3-the-nclex/chapter-5-the-evergreen-marine": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1330,47 +592,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|4"
     },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-5-the-evergreen-marine/scene-1-colman-dock": {
+    "/quantum-directive-3-casey/book-3-the-nclex/chapter-5-the-evergreen-marine/part-1-colman-dock-the-private-dining-room": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Colman Dock",
+        "title": "Part 1: Colman Dock & The Private Dining Room",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s001.md"
+        "filePath": "e003/c005/p001.md"
     },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-5-the-evergreen-marine/scene-2-the-crossing": {
+    "/quantum-directive-3-casey/book-3-the-nclex/chapter-5-the-evergreen-marine/part-2-lights-out": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Crossing",
+        "title": "Part 2: Lights Out",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s002.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-5-the-evergreen-marine/scene-3-the-bremerton-boardwalk": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Bremerton Boardwalk",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s003.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-5-the-evergreen-marine/scene-4-the-pacific-fleet-naval-museum": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Pacific Fleet Naval Museum",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s004.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-5-the-evergreen-marine/scene-5-the-sunday-return": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Sunday Return",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s005.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-5-the-evergreen-marine/scene-6-the-private-dining-room": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Private Dining Room",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s006.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-5-the-evergreen-marine/scene-7-lights-out": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Lights Out",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s007.md"
+        "filePath": "e003/c005/p002.md"
     },
     "/quantum-directive-3-casey/book-3-the-nclex/chapter-6-the-sacrifice": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1378,29 +610,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|5"
     },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-6-the-sacrifice/scene-1-the-194-express": {
+    "/quantum-directive-3-casey/book-3-the-nclex/chapter-6-the-sacrifice/the-194-express-the-565": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The 194 Express",
+        "title": "The 194 Express & The 565",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c006/s001.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-6-the-sacrifice/scene-2-decompression": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Decompression",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c006/s002.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-6-the-sacrifice/scene-3-the-bathroom-queue": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Bathroom Queue",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c006/s003.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-6-the-sacrifice/scene-4-the-565": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The 565",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c006/s004.md"
+        "filePath": "e003/c006/p001.md"
     },
     "/quantum-directive-3-casey/book-3-the-nclex/chapter-7-the-may-logistics": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1408,47 +622,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|6"
     },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-7-the-may-logistics/scene-1-the-may-logistics": {
+    "/quantum-directive-3-casey/book-3-the-nclex/chapter-7-the-may-logistics/part-1-the-may-logistics-triage": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The May Logistics",
+        "title": "Part 1: The May Logistics & Triage",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c007/s001.md"
+        "filePath": "e003/c007/p001.md"
     },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-7-the-may-logistics/scene-2-the-snohomish-run": {
+    "/quantum-directive-3-casey/book-3-the-nclex/chapter-7-the-may-logistics/part-2-the-recovery-protocol-bedtime-routine": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Snohomish Run",
+        "title": "Part 2: The Recovery Protocol & Bedtime Routine",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c007/s002.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-7-the-may-logistics/scene-3-tuscany-slice": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Tuscany Slice",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c007/s003.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-7-the-may-logistics/scene-4-the-retreat": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Retreat",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c007/s004.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-7-the-may-logistics/scene-5-triage": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Triage",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c007/s005.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-7-the-may-logistics/scene-6-the-recovery-protocol": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Recovery Protocol",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c007/s006.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-7-the-may-logistics/scene-7-bedtime-routine": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Bedtime Routine",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c007/s007.md"
+        "filePath": "e003/c007/p002.md"
     },
     "/quantum-directive-3-casey/book-3-the-nclex/chapter-8-the-prospector-s-keep": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1456,23 +640,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|7"
     },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-8-the-prospector-s-keep/scene-1-the-brat-diet": {
+    "/quantum-directive-3-casey/book-3-the-nclex/chapter-8-the-prospector-s-keep/the-brat-diet-the-assignment": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The BRAT Diet",
+        "title": "The BRAT Diet & The Assignment",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c008/s001.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-8-the-prospector-s-keep/scene-2-the-bidding-game": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Bidding Game",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c008/s002.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-8-the-prospector-s-keep/scene-3-the-assignment": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Assignment",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c008/s003.md"
+        "filePath": "e003/c008/p001.md"
     },
     "/quantum-directive-3-casey/book-3-the-nclex/chapter-9-a-desperate-escape": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1480,65 +652,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|8"
     },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-9-a-desperate-escape/scene-1-the-motorpool": {
+    "/quantum-directive-3-casey/book-3-the-nclex/chapter-9-a-desperate-escape/part-1-the-motorpool-the-sovereign-tour": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Motorpool",
+        "title": "Part 1: The Motorpool & The Sovereign Tour",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c009/s001.md"
+        "filePath": "e003/c009/p001.md"
     },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-9-a-desperate-escape/scene-2-the-great-hall-reveal": {
+    "/quantum-directive-3-casey/book-3-the-nclex/chapter-9-a-desperate-escape/part-2-the-grand-ballroom-the-birthday-lunch": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Great Hall Reveal",
+        "title": "Part 2: The Grand Ballroom & The Birthday Lunch",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c009/s002.md"
+        "filePath": "e003/c009/p002.md"
     },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-9-a-desperate-escape/scene-3-the-sovereign-tour": {
+    "/quantum-directive-3-casey/book-3-the-nclex/chapter-9-a-desperate-escape/part-3-the-extractions-the-great-hall-cinema": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Sovereign Tour",
+        "title": "Part 3: The Extractions & The Great Hall Cinema",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c009/s003.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-9-a-desperate-escape/scene-4-the-grand-ballroom": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Grand Ballroom",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c009/s004.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-9-a-desperate-escape/scene-5-the-chilkoot-wing": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Chilkoot Wing",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c009/s005.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-9-a-desperate-escape/scene-6-the-summit-suite": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Summit Suite",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c009/s006.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-9-a-desperate-escape/scene-7-the-residential-wing": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Residential Wing",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c009/s007.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-9-a-desperate-escape/scene-8-the-birthday-lunch": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Birthday Lunch",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c009/s008.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-9-a-desperate-escape/scene-9-the-extractions": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Extractions",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c009/s009.md"
-    },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-9-a-desperate-escape/scene-10-the-great-hall-cinema": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Great Hall Cinema",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c009/s010.md"
+        "filePath": "e003/c009/p003.md"
     },
     "/quantum-directive-3-casey/book-3-the-nclex/chapter-10-a-moment-of-peace": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1546,11 +676,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|9"
     },
-    "/quantum-directive-3-casey/book-3-the-nclex/chapter-10-a-moment-of-peace/scene-1-the-departure-logistics": {
+    "/quantum-directive-3-casey/book-3-the-nclex/chapter-10-a-moment-of-peace/the-departure-logistics": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Departure Logistics",
+        "title": "The Departure Logistics",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c010/s001.md"
+        "filePath": "e003/c010/p001.md"
     },
     "/quantum-directive-3-casey/book-4-the-sovereign-empire": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1564,29 +694,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|0"
     },
-    "/quantum-directive-3-casey/book-4-the-sovereign-empire/chapter-1-the-mandate/scene-1-the-deviation": {
+    "/quantum-directive-3-casey/book-4-the-sovereign-empire/chapter-1-the-mandate/the-deviation-the-sovereign-news": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Deviation",
+        "title": "The Deviation & The Sovereign News",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s001.md"
-    },
-    "/quantum-directive-3-casey/book-4-the-sovereign-empire/chapter-1-the-mandate/scene-2-the-pack-dinner": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Pack Dinner",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s002.md"
-    },
-    "/quantum-directive-3-casey/book-4-the-sovereign-empire/chapter-1-the-mandate/scene-3-the-vault": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Vault",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s003.md"
-    },
-    "/quantum-directive-3-casey/book-4-the-sovereign-empire/chapter-1-the-mandate/scene-4-the-sovereign-news": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Sovereign News",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s004.md"
+        "filePath": "e004/c001/p001.md"
     },
     "/quantum-directive-3-casey/book-4-the-sovereign-empire/chapter-2-the-ground-truth": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1594,71 +706,29 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|1"
     },
-    "/quantum-directive-3-casey/book-4-the-sovereign-empire/chapter-2-the-ground-truth/scene-1-the-morning-baseline": {
+    "/quantum-directive-3-casey/book-4-the-sovereign-empire/chapter-2-the-ground-truth/part-1-the-morning-baseline-the-global-broadcast": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Morning Baseline",
+        "title": "Part 1: The Morning Baseline & The Global Broadcast",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s001.md"
+        "filePath": "e004/c002/p001.md"
     },
-    "/quantum-directive-3-casey/book-4-the-sovereign-empire/chapter-2-the-ground-truth/scene-2-the-executive-pre-flight": {
+    "/quantum-directive-3-casey/book-4-the-sovereign-empire/chapter-2-the-ground-truth/part-2-the-shadow-wallet-the-actuarial-risk": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Executive Pre-Flight",
+        "title": "Part 2: The Shadow Wallet & The Actuarial Risk",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s002.md"
+        "filePath": "e004/c002/p002.md"
     },
-    "/quantum-directive-3-casey/book-4-the-sovereign-empire/chapter-2-the-ground-truth/scene-3-the-succession-consensus": {
+    "/quantum-directive-3-casey/book-4-the-sovereign-empire/chapter-2-the-ground-truth/part-3-the-route-230-protocol-the-express-route": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Succession Consensus",
+        "title": "Part 3: The Route 230 Protocol & The Express Route",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s003.md"
+        "filePath": "e004/c002/p003.md"
     },
-    "/quantum-directive-3-casey/book-4-the-sovereign-empire/chapter-2-the-ground-truth/scene-4-the-global-broadcast": {
+    "/quantum-directive-3-casey/book-4-the-sovereign-empire/chapter-2-the-ground-truth/part-4-the-sovereign-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Global Broadcast",
+        "title": "Part 4: The Sovereign Perimeter",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s004.md"
-    },
-    "/quantum-directive-3-casey/book-4-the-sovereign-empire/chapter-2-the-ground-truth/scene-5-the-shadow-wallet": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Shadow Wallet",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s005.md"
-    },
-    "/quantum-directive-3-casey/book-4-the-sovereign-empire/chapter-2-the-ground-truth/scene-6-the-global-desk": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Global Desk",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s006.md"
-    },
-    "/quantum-directive-3-casey/book-4-the-sovereign-empire/chapter-2-the-ground-truth/scene-7-the-actuarial-risk": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Actuarial Risk",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s007.md"
-    },
-    "/quantum-directive-3-casey/book-4-the-sovereign-empire/chapter-2-the-ground-truth/scene-8-the-route-230-protocol": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Route 230 Protocol",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s008.md"
-    },
-    "/quantum-directive-3-casey/book-4-the-sovereign-empire/chapter-2-the-ground-truth/scene-9-the-bellevue-reunion": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Bellevue Reunion",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s009.md"
-    },
-    "/quantum-directive-3-casey/book-4-the-sovereign-empire/chapter-2-the-ground-truth/scene-10-the-express-route": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Express Route",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s010.md"
-    },
-    "/quantum-directive-3-casey/book-4-the-sovereign-empire/chapter-2-the-ground-truth/scene-11-the-sovereign-perimeter": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The Sovereign Perimeter",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s011.md"
+        "filePath": "e004/c002/p004.md"
     },
     "/quantum-directive-3-casey/book-5-the-sovereign-ascension": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1672,23 +742,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|0"
     },
-    "/quantum-directive-3-casey/book-5-the-sovereign-ascension/chapter-1-the-bloodline-convergence/scene-1-the-rotor-wash": {
+    "/quantum-directive-3-casey/book-5-the-sovereign-ascension/chapter-1-the-bloodline-convergence/the-rotor-wash-the-floorboards": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Rotor Wash",
+        "title": "The Rotor Wash & The Floorboards",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s001.md"
-    },
-    "/quantum-directive-3-casey/book-5-the-sovereign-ascension/chapter-1-the-bloodline-convergence/scene-2-the-front-row": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Front Row",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s002.md"
-    },
-    "/quantum-directive-3-casey/book-5-the-sovereign-ascension/chapter-1-the-bloodline-convergence/scene-3-the-floorboards": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Floorboards",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s003.md"
+        "filePath": "e005/c001/p001.md"
     },
     "/quantum-directive-3-casey/book-5-the-sovereign-ascension/chapter-2-the-after-party": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1696,47 +754,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|1"
     },
-    "/quantum-directive-3-casey/book-5-the-sovereign-ascension/chapter-2-the-after-party/scene-1-the-food-truck-festival": {
+    "/quantum-directive-3-casey/book-5-the-sovereign-ascension/chapter-2-the-after-party/part-1-the-food-truck-festival-the-transit-pledge": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Food Truck Festival",
+        "title": "Part 1: The Food Truck Festival & The Transit Pledge",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s001.md"
+        "filePath": "e005/c002/p001.md"
     },
-    "/quantum-directive-3-casey/book-5-the-sovereign-ascension/chapter-2-the-after-party/scene-2-the-zero-proof-pavilion": {
+    "/quantum-directive-3-casey/book-5-the-sovereign-ascension/chapter-2-the-after-party/part-2-the-logistics-of-departure-the-lowland-entitlement": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Zero-Proof Pavilion",
+        "title": "Part 2: The Logistics of Departure & The Lowland Entitlement",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s002.md"
-    },
-    "/quantum-directive-3-casey/book-5-the-sovereign-ascension/chapter-2-the-after-party/scene-3-the-cross-pollination-of-packs": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Cross-Pollination of Packs",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s003.md"
-    },
-    "/quantum-directive-3-casey/book-5-the-sovereign-ascension/chapter-2-the-after-party/scene-4-the-transit-pledge": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Transit Pledge",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s004.md"
-    },
-    "/quantum-directive-3-casey/book-5-the-sovereign-ascension/chapter-2-the-after-party/scene-5-the-logistics-of-departure": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Logistics of Departure",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s005.md"
-    },
-    "/quantum-directive-3-casey/book-5-the-sovereign-ascension/chapter-2-the-after-party/scene-6-the-executive-shutdown": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Executive Shutdown",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s006.md"
-    },
-    "/quantum-directive-3-casey/book-5-the-sovereign-ascension/chapter-2-the-after-party/scene-7-the-lowland-entitlement": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Lowland Entitlement",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s007.md"
+        "filePath": "e005/c002/p002.md"
     },
     "/quantum-directive-3-casey/book-6-the-sovereign-autonomy": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1750,29 +778,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|0"
     },
-    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-1-the-silicon-valley-bypass/scene-1-the-diridon-transfer": {
+    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-1-the-silicon-valley-bypass/the-diridon-transfer-the-keynote-and-the-baypass-question": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Diridon Transfer",
+        "title": "The Diridon Transfer & The Keynote and the BayPass Question",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s001.md"
-    },
-    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-1-the-silicon-valley-bypass/scene-2-the-handler-panic": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Handler Panic",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s002.md"
-    },
-    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-1-the-silicon-valley-bypass/scene-3-the-flashbulb-perimeter": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Flashbulb Perimeter",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s003.md"
-    },
-    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-1-the-silicon-valley-bypass/scene-4-the-keynote-and-the-baypass-question": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Keynote and the BayPass Question",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s004.md"
+        "filePath": "e006/c001/p001.md"
     },
     "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1780,65 +790,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|1"
     },
-    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/scene-1-the-gates-of-dca": {
+    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/part-1-the-gates-of-dca-the-weaponized-ledger": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Gates of DCA",
+        "title": "Part 1: The Gates of DCA & The Weaponized Ledger",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s001.md"
+        "filePath": "e006/c002/p001.md"
     },
-    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/scene-2-the-l-enfant-maze": {
+    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/part-2-the-mar-protocol-the-telescope-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The L'Enfant Maze",
+        "title": "Part 2: The MAR Protocol & The Telescope Protocol",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s002.md"
+        "filePath": "e006/c002/p002.md"
     },
-    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/scene-3-the-witness-table": {
+    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/part-3-the-escalator-trap": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Witness Table",
+        "title": "Part 3: The Escalator Trap",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s003.md"
-    },
-    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/scene-4-the-lpn-protocol-the-galley-question": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The LPN Protocol & The Galley Question",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s004.md"
-    },
-    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/scene-5-the-weaponized-ledger": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Weaponized Ledger",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s005.md"
-    },
-    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/scene-6-the-mar-protocol": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The MAR Protocol",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s006.md"
-    },
-    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/scene-7-the-finch-expedition": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Finch Expedition",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s007.md"
-    },
-    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/scene-8-the-civilian-perimeter": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Civilian Perimeter",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s008.md"
-    },
-    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/scene-9-the-telescope-protocol": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Telescope Protocol",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s009.md"
-    },
-    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol/scene-10-the-escalator-trap": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Escalator Trap",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s010.md"
+        "filePath": "e006/c002/p003.md"
     },
     "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-3-the-connecticut-avenue-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1846,28 +814,10 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|2"
     },
-    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-3-the-connecticut-avenue-protocol/scene-1-the-elstat-briefing": {
+    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-3-the-connecticut-avenue-protocol/the-elstat-briefing-the-front-gate-arrival": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The ELstat Briefing",
+        "title": "The ELstat Briefing & The Front Gate Arrival",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c003/s001.md"
-    },
-    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-3-the-connecticut-avenue-protocol/scene-2-the-topography-trap": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Topography Trap",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c003/s002.md"
-    },
-    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-3-the-connecticut-avenue-protocol/scene-3-the-surface-fleet": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Surface Fleet",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c003/s003.md"
-    },
-    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-3-the-connecticut-avenue-protocol/scene-4-the-front-gate-arrival": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Front Gate Arrival",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c003/s004.md"
+        "filePath": "e006/c003/p001.md"
     }
 }

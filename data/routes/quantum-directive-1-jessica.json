@@ -12,14 +12,14 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "88 KB",
+            "epub": "86 KB",
             "pdf": "253 KB",
-            "text_epub": "88 KB",
+            "text_epub": "86 KB",
             "text_pdf": "253 KB",
-            "epub_bytes": 90479,
-            "pdf_bytes": 259480,
-            "text_epub_bytes": 90477,
-            "text_pdf_bytes": 259480
+            "epub_bytes": 87848,
+            "pdf_bytes": 259351,
+            "text_epub_bytes": 87849,
+            "text_pdf_bytes": 259351
         }
     },
     "/quantum-directive-1-jessica": {
@@ -46,101 +46,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/an-ordinary-july/scene-1-day-to-day-at-quantum": {
+    "/quantum-directive-1-jessica/currents-and-crosswinds/an-ordinary-july/part-1-day-to-day-at-quantum-providence-to-boston": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Day-to-Day at Quantum",
+        "title": "Part 1: Day-to-Day at Quantum & Providence to Boston",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s001.md"
+        "filePath": "e001/c001/p001.md"
     },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/an-ordinary-july/scene-2-the-review-that-isn-t": {
+    "/quantum-directive-1-jessica/currents-and-crosswinds/an-ordinary-july/part-2-the-morning-hand-off-the-debrief": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The \u201cReview\u201d That Isn\u2019t",
+        "title": "Part 2: The Morning Hand-Off & The Debrief",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s002.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/an-ordinary-july/scene-3-across-the-quad": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Across the Quad",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s003.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/an-ordinary-july/scene-4-the-executive-suite": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Executive Suite",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s004.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/an-ordinary-july/scene-5-off-to-bfi": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Off to BFI",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s005.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/an-ordinary-july/scene-6-the-flight-east": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Flight East",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s006.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/an-ordinary-july/scene-7-providence-to-boston": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Providence to Boston",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s007.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/an-ordinary-july/scene-8-the-morning-hand-off": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Morning Hand-Off",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s008.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/an-ordinary-july/scene-9-the-green-room": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Green Room",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s009.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/an-ordinary-july/scene-10-the-cue": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Cue",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s010.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/an-ordinary-july/scene-11-the-reveal": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The Reveal",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s011.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/an-ordinary-july/scene-12-the-introduction": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: The Introduction",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s012.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/an-ordinary-july/scene-13-the-crown-jewel": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 13: The Crown Jewel",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s013.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/an-ordinary-july/scene-14-the-aftermath": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 14: The Aftermath",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s014.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/an-ordinary-july/scene-15-the-fallout": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 15: The Fallout",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s015.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/an-ordinary-july/scene-16-the-debrief": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 16: The Debrief",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s016.md"
+        "filePath": "e001/c001/p002.md"
     },
     "/quantum-directive-1-jessica/currents-and-crosswinds/currents-to-still-water": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -148,47 +64,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|1"
     },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/currents-to-still-water/scene-1-homecoming": {
+    "/quantum-directive-1-jessica/currents-and-crosswinds/currents-to-still-water/homecoming-the-first-autograph": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Homecoming",
+        "title": "Homecoming & The First Autograph",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s001.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/currents-to-still-water/scene-2-part-2-unwelcome-currents": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Part\u202f2: Unwelcome Currents",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s002.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/currents-to-still-water/scene-3-part-3-evening-edition": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Part\u202f3: Evening Edition",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s003.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/currents-to-still-water/scene-4-part-4-the-60-into-town": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Part\u202f4: The \\\\#60 into Town",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s004.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/currents-to-still-water/scene-5-part-5-the-creamery-along-the-wall": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Part\u202f5: The Creamery Along the Wall",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s005.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/currents-to-still-water/scene-6-part-6-breakfast-at-the-creamery": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Part\u202f6: Breakfast at the Creamery",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s006.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/currents-to-still-water/scene-7-the-first-autograph": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The First Autograph",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s007.md"
+        "filePath": "e001/c002/p001.md"
     },
     "/quantum-directive-1-jessica/currents-and-crosswinds/the-spark-of-rebellion": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -196,23 +76,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|2"
     },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-spark-of-rebellion/scene-1-the-morning-commute": {
+    "/quantum-directive-1-jessica/currents-and-crosswinds/the-spark-of-rebellion/the-morning-commute-the-confrontation-at-aurora": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Morning Commute",
+        "title": "The Morning Commute & The Confrontation at Aurora",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s001.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-spark-of-rebellion/scene-2-a-silent-protest": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Silent Protest",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s002.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-spark-of-rebellion/scene-3-the-confrontation-at-aurora": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Confrontation at Aurora",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s003.md"
+        "filePath": "e001/c003/p001.md"
     },
     "/quantum-directive-1-jessica/currents-and-crosswinds/the-war-councils-assemble": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -220,17 +88,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|3"
     },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-war-councils-assemble/scene-1-quantum-s-alliance": {
+    "/quantum-directive-1-jessica/currents-and-crosswinds/the-war-councils-assemble/quantum-s-alliance-aurora-s-rebellion": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Quantum's Alliance",
+        "title": "Quantum's Alliance & Aurora's Rebellion",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s001.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-war-councils-assemble/scene-2-aurora-s-rebellion": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Aurora's Rebellion",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s002.md"
+        "filePath": "e001/c004/p001.md"
     },
     "/quantum-directive-1-jessica/currents-and-crosswinds/the-memo": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -238,17 +100,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|4"
     },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-memo/scene-1-the-leak": {
+    "/quantum-directive-1-jessica/currents-and-crosswinds/the-memo/the-leak-damage-control": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Leak",
+        "title": "The Leak & Damage Control",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s001.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-memo/scene-2-damage-control": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Damage Control",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s002.md"
+        "filePath": "e001/c005/p001.md"
     },
     "/quantum-directive-1-jessica/currents-and-crosswinds/the-exodus": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -256,17 +112,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|5"
     },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-exodus/scene-1-the-intercepted-letter": {
+    "/quantum-directive-1-jessica/currents-and-crosswinds/the-exodus/the-intercepted-letter-the-last-stand": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Intercepted Letter",
+        "title": "The Intercepted Letter & The Last Stand",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s001.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-exodus/scene-2-the-last-stand": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Last Stand",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s002.md"
+        "filePath": "e001/c006/p001.md"
     },
     "/quantum-directive-1-jessica/currents-and-crosswinds/sanctuary-across-the-lake": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -274,23 +124,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|6"
     },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/sanctuary-across-the-lake/scene-1-a-new-alliance": {
+    "/quantum-directive-1-jessica/currents-and-crosswinds/sanctuary-across-the-lake/a-new-alliance-solidarity-in-action": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A New Alliance",
+        "title": "A New Alliance & Solidarity in Action",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s001.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/sanctuary-across-the-lake/scene-2-to-fork-or-not-to-fork": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: To Fork or Not to Fork?",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s002.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/sanctuary-across-the-lake/scene-3-solidarity-in-action": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Solidarity in Action",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s003.md"
+        "filePath": "e001/c007/p001.md"
     },
     "/quantum-directive-1-jessica/currents-and-crosswinds/the-fall-of-aurora": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -298,41 +136,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|7"
     },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-fall-of-aurora/scene-1-the-empty-loft": {
+    "/quantum-directive-1-jessica/currents-and-crosswinds/the-fall-of-aurora/the-empty-loft-the-final-paycheck": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Empty Loft",
+        "title": "The Empty Loft & The Final Paycheck",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c008/s001.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-fall-of-aurora/scene-2-the-board-meeting": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Board Meeting",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c008/s002.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-fall-of-aurora/scene-3-kelly-is-not-for-sale": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Kelly is Not For Sale",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c008/s003.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-fall-of-aurora/scene-4-the-press-conference": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Press Conference",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c008/s004.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-fall-of-aurora/scene-5-spilling-the-beans": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Spilling the Beans",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c008/s005.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-fall-of-aurora/scene-6-the-final-paycheck": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Final Paycheck",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c008/s006.md"
+        "filePath": "e001/c008/p001.md"
     },
     "/quantum-directive-1-jessica/currents-and-crosswinds/the-final-straw": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -340,17 +148,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|8"
     },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-final-straw/scene-1-an-intern-s-story": {
+    "/quantum-directive-1-jessica/currents-and-crosswinds/the-final-straw/an-intern-s-story-a-poisoned-well": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: An Intern's Story",
+        "title": "An Intern's Story & A Poisoned Well",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c009/s001.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-final-straw/scene-2-a-poisoned-well": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Poisoned Well",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c009/s002.md"
+        "filePath": "e001/c009/p001.md"
     },
     "/quantum-directive-1-jessica/currents-and-crosswinds/a-new-beginning": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -358,41 +160,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|9"
     },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/a-new-beginning/scene-1-writing-the-next-chapter": {
+    "/quantum-directive-1-jessica/currents-and-crosswinds/a-new-beginning/writing-the-next-chapter-the-first-line-of-code": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Writing the Next Chapter",
+        "title": "Writing the Next Chapter & The First Line of Code",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c010/s001.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/a-new-beginning/scene-2-kelly-and-ryan-s-first-day": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Kelly and Ryan\u2019s First Day",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c010/s002.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/a-new-beginning/scene-3-break-room": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Break Room",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c010/s003.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/a-new-beginning/scene-4-jessica-s-office": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Jessica's Office",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c010/s004.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/a-new-beginning/scene-5-the-overwhelming-good": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Overwhelming Good",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c010/s005.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/a-new-beginning/scene-6-the-first-line-of-code": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The First Line of Code",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c010/s006.md"
+        "filePath": "e001/c010/p001.md"
     },
     "/quantum-directive-1-jessica/currents-and-crosswinds/the-bridge-to-cupertino": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -400,101 +172,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|10"
     },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-bridge-to-cupertino/scene-1-the-cupertino-trip": {
+    "/quantum-directive-1-jessica/currents-and-crosswinds/the-bridge-to-cupertino/part-1-the-cupertino-trip-the-dev-lab": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Cupertino Trip",
+        "title": "Part 1: The Cupertino Trip & The Dev Lab",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c011/s001.md"
+        "filePath": "e001/c011/p001.md"
     },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-bridge-to-cupertino/scene-2-the-gate-and-the-extended-family": {
+    "/quantum-directive-1-jessica/currents-and-crosswinds/the-bridge-to-cupertino/part-2-a-day-at-work-morning-in-cupertino": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Gate and the Extended Family",
+        "title": "Part 2: A Day at Work & Morning in Cupertino",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c011/s002.md"
+        "filePath": "e001/c011/p002.md"
     },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-bridge-to-cupertino/scene-3-on-the-bridge-to-cupertino": {
+    "/quantum-directive-1-jessica/currents-and-crosswinds/the-bridge-to-cupertino/part-3-a-picnic-with-cousins-the-flight-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: On the Bridge to Cupertino",
+        "title": "Part 3: A Picnic with Cousins & The Flight Home",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c011/s003.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-bridge-to-cupertino/scene-4-the-california-sun": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The California Sun",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c011/s004.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-bridge-to-cupertino/scene-5-inside-infinite-loop": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Inside Infinite Loop",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c011/s005.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-bridge-to-cupertino/scene-6-the-dev-lab": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Dev Lab",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c011/s006.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-bridge-to-cupertino/scene-7-a-day-at-work": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: A Day at Work",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c011/s007.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-bridge-to-cupertino/scene-8-lunch-at-caffe-magna": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: Lunch at Caffe Magna",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c011/s008.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-bridge-to-cupertino/scene-9-the-bug-bash": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Bug Bash",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c011/s009.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-bridge-to-cupertino/scene-10-the-kernel-panic-fix": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Kernel Panic Fix",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c011/s010.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-bridge-to-cupertino/scene-11-a-room-with-a-view": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: A Room with a View",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c011/s011.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-bridge-to-cupertino/scene-12-finders-keepers": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: Finders Keepers",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c011/s012.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-bridge-to-cupertino/scene-13-morning-in-cupertino": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 13: Morning in Cupertino",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c011/s013.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-bridge-to-cupertino/scene-14-a-picnic-with-cousins": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 14: A Picnic with Cousins",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c011/s014.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-bridge-to-cupertino/scene-15-homeward-bound": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 15: Homeward Bound",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c011/s015.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/the-bridge-to-cupertino/scene-16-the-flight-home": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 16: The Flight Home",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c011/s016.md"
+        "filePath": "e001/c011/p003.md"
     },
     "/quantum-directive-1-jessica/currents-and-crosswinds/bidding-for-the-twins": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -502,53 +196,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|11"
     },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/bidding-for-the-twins/scene-1-the-offer": {
+    "/quantum-directive-1-jessica/currents-and-crosswinds/bidding-for-the-twins/the-offer-a-new-role": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Offer",
+        "title": "The Offer & A New Role",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c012/s001.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/bidding-for-the-twins/scene-2-the-bidding-war": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Bidding War",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c012/s002.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/bidding-for-the-twins/scene-3-the-escalation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Escalation",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c012/s003.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/bidding-for-the-twins/scene-4-the-decision": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Decision",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c012/s004.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/bidding-for-the-twins/scene-5-the-dotted-line": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Dotted Line",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c012/s005.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/bidding-for-the-twins/scene-6-the-first-paycheck": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The First Paycheck",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c012/s006.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/bidding-for-the-twins/scene-7-acknowledging-talent": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Acknowledging Talent",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c012/s007.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/bidding-for-the-twins/scene-8-a-new-role": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: A New Role",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c012/s008.md"
+        "filePath": "e001/c012/p001.md"
     },
     "/quantum-directive-1-jessica/currents-and-crosswinds/a-new-family": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -556,29 +208,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|12"
     },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/a-new-family/scene-1-pizza-night": {
+    "/quantum-directive-1-jessica/currents-and-crosswinds/a-new-family/pizza-night-move-in-day": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Pizza Night",
+        "title": "Pizza Night & Move-In Day",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c013/s001.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/a-new-family/scene-2-the-apartment-hunt": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Apartment Hunt",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c013/s002.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/a-new-family/scene-3-the-capitol-hill-grand": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Capitol Hill Grand",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c013/s003.md"
-    },
-    "/quantum-directive-1-jessica/currents-and-crosswinds/a-new-family/scene-4-move-in-day": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Move-In Day",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c013/s004.md"
+        "filePath": "e001/c013/p001.md"
     },
     "/quantum-directive-1-jessica/book-2-silent-whispers": {
         "view": "pages/raggiesoft-books/books/viewer",

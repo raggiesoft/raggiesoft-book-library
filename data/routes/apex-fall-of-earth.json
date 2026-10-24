@@ -12,14 +12,14 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "598 KB",
+            "epub": "595 KB",
             "pdf": "1.7 MB",
-            "text_epub": "598 KB",
+            "text_epub": "595 KB",
             "text_pdf": "1.7 MB",
-            "epub_bytes": 612051,
-            "pdf_bytes": 1757694,
-            "text_epub_bytes": 612050,
-            "text_pdf_bytes": 1757694
+            "epub_bytes": 608775,
+            "pdf_bytes": 1764104,
+            "text_epub_bytes": 608772,
+            "text_pdf_bytes": 1764104
         }
     },
     "/apex-fall-of-earth": {
@@ -46,53 +46,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/apex-fall-of-earth/wyatt-s-prologue/wyatt-expendable-assets/scene-1-the-deep-end-mid-october-2044": {
+    "/apex-fall-of-earth/wyatt-s-prologue/wyatt-expendable-assets/part-1-the-deep-end-mid-october-2044-the-washroom": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Deep End \u2013 Mid-October 2044",
+        "title": "Part 1: The Deep End \u2013 Mid-October 2044 & The Washroom",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s001.md"
+        "filePath": "e001/c001/p001.md"
     },
-    "/apex-fall-of-earth/wyatt-s-prologue/wyatt-expendable-assets/scene-2-freight-mid-october-2044": {
+    "/apex-fall-of-earth/wyatt-s-prologue/wyatt-expendable-assets/part-2-the-trough-the-checkpoint": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Freight \u2013 Mid-October 2044",
+        "title": "Part 2: The Trough & The Checkpoint",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s002.md"
-    },
-    "/apex-fall-of-earth/wyatt-s-prologue/wyatt-expendable-assets/scene-3-the-pipeline": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Pipeline",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s003.md"
-    },
-    "/apex-fall-of-earth/wyatt-s-prologue/wyatt-expendable-assets/scene-4-intake": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Intake",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s004.md"
-    },
-    "/apex-fall-of-earth/wyatt-s-prologue/wyatt-expendable-assets/scene-5-the-filing-cabinet": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Filing Cabinet",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s005.md"
-    },
-    "/apex-fall-of-earth/wyatt-s-prologue/wyatt-expendable-assets/scene-6-the-washroom": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Washroom",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s006.md"
-    },
-    "/apex-fall-of-earth/wyatt-s-prologue/wyatt-expendable-assets/scene-7-the-trough": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Trough",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s007.md"
-    },
-    "/apex-fall-of-earth/wyatt-s-prologue/wyatt-expendable-assets/scene-8-the-checkpoint": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Checkpoint",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s008.md"
+        "filePath": "e001/c001/p002.md"
     },
     "/apex-fall-of-earth/sarah-s-prologue": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -106,53 +70,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
-    "/apex-fall-of-earth/sarah-s-prologue/sarah-the-promise/scene-1-first-flight-mid-october-2044": {
+    "/apex-fall-of-earth/sarah-s-prologue/sarah-the-promise/part-1-first-flight-mid-october-2044-the-glitch": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: First Flight \u2013 Mid-October 2044",
+        "title": "Part 1: First Flight \u2013 Mid-October 2044 & The Glitch",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s001.md"
+        "filePath": "e002/c001/p001.md"
     },
-    "/apex-fall-of-earth/sarah-s-prologue/sarah-the-promise/scene-2-the-voyage-mid-october-2044": {
+    "/apex-fall-of-earth/sarah-s-prologue/sarah-the-promise/part-2-the-washroom-the-checkpoint": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Voyage \u2013 Mid-October 2044",
+        "title": "Part 2: The Washroom & The Checkpoint",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s002.md"
-    },
-    "/apex-fall-of-earth/sarah-s-prologue/sarah-the-promise/scene-3-the-transfer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Transfer",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s003.md"
-    },
-    "/apex-fall-of-earth/sarah-s-prologue/sarah-the-promise/scene-4-the-handoff": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Handoff",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s004.md"
-    },
-    "/apex-fall-of-earth/sarah-s-prologue/sarah-the-promise/scene-5-the-glitch": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Glitch",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s005.md"
-    },
-    "/apex-fall-of-earth/sarah-s-prologue/sarah-the-promise/scene-6-the-washroom": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Washroom",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s006.md"
-    },
-    "/apex-fall-of-earth/sarah-s-prologue/sarah-the-promise/scene-7-the-divide": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Divide",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s007.md"
-    },
-    "/apex-fall-of-earth/sarah-s-prologue/sarah-the-promise/scene-8-the-checkpoint": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Checkpoint",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s008.md"
+        "filePath": "e002/c001/p002.md"
     },
     "/apex-fall-of-earth/the-acquisition": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -166,41 +94,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|0"
     },
-    "/apex-fall-of-earth/the-acquisition/wyatt-orientation-day/scene-1-the-powder-keg": {
+    "/apex-fall-of-earth/the-acquisition/wyatt-orientation-day/part-1-the-powder-keg-the-break": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Powder Keg",
+        "title": "Part 1: The Powder Keg & The Break",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s001.md"
+        "filePath": "e003/c001/p001.md"
     },
-    "/apex-fall-of-earth/the-acquisition/wyatt-orientation-day/scene-2-the-chain-of-command": {
+    "/apex-fall-of-earth/the-acquisition/wyatt-orientation-day/part-2-42-c": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Chain of Command",
+        "title": "Part 2: 42-C",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s002.md"
-    },
-    "/apex-fall-of-earth/the-acquisition/wyatt-orientation-day/scene-3-the-maintenance-closet": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Maintenance Closet",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s003.md"
-    },
-    "/apex-fall-of-earth/the-acquisition/wyatt-orientation-day/scene-4-the-grind": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Grind",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s004.md"
-    },
-    "/apex-fall-of-earth/the-acquisition/wyatt-orientation-day/scene-5-the-break": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Break",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s005.md"
-    },
-    "/apex-fall-of-earth/the-acquisition/wyatt-orientation-day/scene-6-42-c": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: 42-C",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s006.md"
+        "filePath": "e003/c001/p002.md"
     },
     "/apex-fall-of-earth/the-acquisition/the-second-shift": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -208,71 +112,29 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|1"
     },
-    "/apex-fall-of-earth/the-acquisition/the-second-shift/scene-1-wake-up-call": {
+    "/apex-fall-of-earth/the-acquisition/the-second-shift/part-1-wake-up-call-the-checkpoint": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Wake Up Call",
+        "title": "Part 1: Wake Up Call & The Checkpoint",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s001.md"
+        "filePath": "e003/c002/p001.md"
     },
-    "/apex-fall-of-earth/the-acquisition/the-second-shift/scene-2-the-morning-ration": {
+    "/apex-fall-of-earth/the-acquisition/the-second-shift/part-2-the-telemetry-anomaly-the-ghost-shift": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Morning Ration",
+        "title": "Part 2: The Telemetry Anomaly & The Ghost Shift",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s002.md"
+        "filePath": "e003/c002/p002.md"
     },
-    "/apex-fall-of-earth/the-acquisition/the-second-shift/scene-3-the-checkpoint": {
+    "/apex-fall-of-earth/the-acquisition/the-second-shift/part-3-the-blind-spot-the-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Checkpoint",
+        "title": "Part 3: The Blind Spot & The Sanctuary",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s003.md"
+        "filePath": "e003/c002/p003.md"
     },
-    "/apex-fall-of-earth/the-acquisition/the-second-shift/scene-4-the-telemetry-anomaly": {
+    "/apex-fall-of-earth/the-acquisition/the-second-shift/part-4-off-the-clock-return-to-the-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Telemetry Anomaly",
+        "title": "Part 4: Off the Clock & Return to The Sanctuary",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s004.md"
-    },
-    "/apex-fall-of-earth/the-acquisition/the-second-shift/scene-5-the-anchor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Anchor",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s005.md"
-    },
-    "/apex-fall-of-earth/the-acquisition/the-second-shift/scene-6-the-ghost-shift": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Ghost Shift",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s006.md"
-    },
-    "/apex-fall-of-earth/the-acquisition/the-second-shift/scene-7-the-blind-spot": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Blind Spot",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s007.md"
-    },
-    "/apex-fall-of-earth/the-acquisition/the-second-shift/scene-8-the-ghost-roster": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Ghost Roster",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s008.md"
-    },
-    "/apex-fall-of-earth/the-acquisition/the-second-shift/scene-9-the-sanctuary": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Sanctuary",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s009.md"
-    },
-    "/apex-fall-of-earth/the-acquisition/the-second-shift/scene-10-off-the-clock": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: Off the Clock",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s010.md"
-    },
-    "/apex-fall-of-earth/the-acquisition/the-second-shift/scene-11-return-to-the-sanctuary": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: Return to The Sanctuary",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s011.md"
+        "filePath": "e003/c002/p004.md"
     },
     "/apex-fall-of-earth/the-acquisition/day-three": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -280,65 +142,29 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|2"
     },
-    "/apex-fall-of-earth/the-acquisition/day-three/scene-1-the-illusion-of-control": {
+    "/apex-fall-of-earth/the-acquisition/day-three/part-1-the-illusion-of-control-the-echo": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Illusion of Control",
+        "title": "Part 1: The Illusion of Control & The Echo",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s001.md"
+        "filePath": "e003/c003/p001.md"
     },
-    "/apex-fall-of-earth/the-acquisition/day-three/scene-2-the-veterans": {
+    "/apex-fall-of-earth/the-acquisition/day-three/part-2-the-bleeding-bedrock-clear-parameters": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Veterans",
+        "title": "Part 2: The Bleeding Bedrock & Clear Parameters",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s002.md"
+        "filePath": "e003/c003/p002.md"
     },
-    "/apex-fall-of-earth/the-acquisition/day-three/scene-3-the-echo": {
+    "/apex-fall-of-earth/the-acquisition/day-three/part-3-the-masterclass-the-prison-break": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Echo",
+        "title": "Part 3: The Masterclass & The Prison Break",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s003.md"
+        "filePath": "e003/c003/p003.md"
     },
-    "/apex-fall-of-earth/the-acquisition/day-three/scene-4-the-bleeding-bedrock": {
+    "/apex-fall-of-earth/the-acquisition/day-three/part-4-the-fallen-hierarchy": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Bleeding Bedrock",
+        "title": "Part 4: The Fallen Hierarchy",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s004.md"
-    },
-    "/apex-fall-of-earth/the-acquisition/day-three/scene-5-the-pact": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Pact",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s005.md"
-    },
-    "/apex-fall-of-earth/the-acquisition/day-three/scene-6-clear-parameters": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Clear Parameters",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s006.md"
-    },
-    "/apex-fall-of-earth/the-acquisition/day-three/scene-7-the-masterclass": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Masterclass",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s007.md"
-    },
-    "/apex-fall-of-earth/the-acquisition/day-three/scene-8-the-ping": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Ping",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s008.md"
-    },
-    "/apex-fall-of-earth/the-acquisition/day-three/scene-9-the-prison-break": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Prison Break",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s009.md"
-    },
-    "/apex-fall-of-earth/the-acquisition/day-three/scene-10-the-fallen-hierarchy": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Fallen Hierarchy",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s010.md"
+        "filePath": "e003/c003/p004.md"
     },
     "/apex-fall-of-earth/the-acquisition/day-four": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -346,35 +172,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|3"
     },
-    "/apex-fall-of-earth/the-acquisition/day-four/scene-1-structural-failure": {
+    "/apex-fall-of-earth/the-acquisition/day-four/part-1-structural-failure-the-transit": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Structural Failure",
+        "title": "Part 1: Structural Failure & The Transit",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c004/s001.md"
+        "filePath": "e003/c004/p001.md"
     },
-    "/apex-fall-of-earth/the-acquisition/day-four/scene-2-the-deployment": {
+    "/apex-fall-of-earth/the-acquisition/day-four/part-2-the-relic-the-captain-s-quarters": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Deployment",
+        "title": "Part 2: The Relic & The Captain's Quarters",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c004/s002.md"
-    },
-    "/apex-fall-of-earth/the-acquisition/day-four/scene-3-the-transit": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Transit",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c004/s003.md"
-    },
-    "/apex-fall-of-earth/the-acquisition/day-four/scene-4-the-relic": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Relic",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c004/s004.md"
-    },
-    "/apex-fall-of-earth/the-acquisition/day-four/scene-5-the-captain-s-quarters": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Captain's Quarters",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c004/s005.md"
+        "filePath": "e003/c004/p002.md"
     },
     "/apex-fall-of-earth/analogue-ghosts": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -388,23 +196,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|0"
     },
-    "/apex-fall-of-earth/analogue-ghosts/delta-niner/scene-1-the-blinking-clock": {
+    "/apex-fall-of-earth/analogue-ghosts/delta-niner/the-blinking-clock-the-broadcast": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Blinking Clock",
+        "title": "The Blinking Clock & The Broadcast",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s001.md"
-    },
-    "/apex-fall-of-earth/analogue-ghosts/delta-niner/scene-2-the-ghost-ship": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Ghost Ship",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s002.md"
-    },
-    "/apex-fall-of-earth/analogue-ghosts/delta-niner/scene-3-the-broadcast": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Broadcast",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s003.md"
+        "filePath": "e004/c001/p001.md"
     },
     "/apex-fall-of-earth/analogue-ghosts/the-lungs-of-the-station": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -412,23 +208,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|1"
     },
-    "/apex-fall-of-earth/analogue-ghosts/the-lungs-of-the-station/scene-1-the-hydroponics-bay": {
+    "/apex-fall-of-earth/analogue-ghosts/the-lungs-of-the-station/the-hydroponics-bay-the-expanding-fracture": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Hydroponics Bay",
+        "title": "The Hydroponics Bay & The Expanding Fracture",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s001.md"
-    },
-    "/apex-fall-of-earth/analogue-ghosts/the-lungs-of-the-station/scene-2-the-strawberry-festival": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Strawberry Festival",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s002.md"
-    },
-    "/apex-fall-of-earth/analogue-ghosts/the-lungs-of-the-station/scene-3-the-expanding-fracture": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Expanding Fracture",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s003.md"
+        "filePath": "e004/c002/p001.md"
     },
     "/apex-fall-of-earth/analogue-ghosts/the-boiler-room": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -436,35 +220,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|2"
     },
-    "/apex-fall-of-earth/analogue-ghosts/the-boiler-room/scene-1-the-descent": {
+    "/apex-fall-of-earth/analogue-ghosts/the-boiler-room/part-1-the-descent-the-acceleration": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Descent",
+        "title": "Part 1: The Descent & The Acceleration",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c003/s001.md"
+        "filePath": "e004/c003/p001.md"
     },
-    "/apex-fall-of-earth/analogue-ghosts/the-boiler-room/scene-2-the-baffle": {
+    "/apex-fall-of-earth/analogue-ghosts/the-boiler-room/part-2-scorched-earth": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Baffle",
+        "title": "Part 2: Scorched Earth",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c003/s002.md"
-    },
-    "/apex-fall-of-earth/analogue-ghosts/the-boiler-room/scene-3-the-harvest": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Harvest",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c003/s003.md"
-    },
-    "/apex-fall-of-earth/analogue-ghosts/the-boiler-room/scene-4-the-acceleration": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Acceleration",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c003/s004.md"
-    },
-    "/apex-fall-of-earth/analogue-ghosts/the-boiler-room/scene-5-scorched-earth": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Scorched Earth",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c003/s005.md"
+        "filePath": "e004/c003/p002.md"
     },
     "/apex-fall-of-earth/analogue-ghosts/the-glass-wall": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -472,35 +238,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|3"
     },
-    "/apex-fall-of-earth/analogue-ghosts/the-glass-wall/scene-1-an-attempt-at-normalcy": {
+    "/apex-fall-of-earth/analogue-ghosts/the-glass-wall/part-1-an-attempt-at-normalcy-the-ghost-ship": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: An Attempt at Normalcy",
+        "title": "Part 1: An Attempt at Normalcy & The Ghost Ship",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c004/s001.md"
+        "filePath": "e004/c004/p001.md"
     },
-    "/apex-fall-of-earth/analogue-ghosts/the-glass-wall/scene-2-shedding-the-armor": {
+    "/apex-fall-of-earth/analogue-ghosts/the-glass-wall/part-2-the-void-the-ghost-awakens": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Shedding the Armor",
+        "title": "Part 2: The Void & The Ghost Awakens",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c004/s002.md"
-    },
-    "/apex-fall-of-earth/analogue-ghosts/the-glass-wall/scene-3-the-ghost-ship": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Ghost Ship",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c004/s003.md"
-    },
-    "/apex-fall-of-earth/analogue-ghosts/the-glass-wall/scene-4-the-void": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Void",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c004/s004.md"
-    },
-    "/apex-fall-of-earth/analogue-ghosts/the-glass-wall/scene-5-the-ghost-awakens": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Ghost Awakens",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c004/s005.md"
+        "filePath": "e004/c004/p002.md"
     },
     "/apex-fall-of-earth/analogue-ghosts/the-nomad": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -508,35 +256,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|4"
     },
-    "/apex-fall-of-earth/analogue-ghosts/the-nomad/scene-1-a-vector-to-nowhere": {
+    "/apex-fall-of-earth/analogue-ghosts/the-nomad/part-1-a-vector-to-nowhere-the-billionaire-s-secrets": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Vector to Nowhere",
+        "title": "Part 1: A Vector to Nowhere & The Billionaire\u2019s Secrets",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c005/s001.md"
+        "filePath": "e004/c005/p001.md"
     },
-    "/apex-fall-of-earth/analogue-ghosts/the-nomad/scene-2-the-hubris-of-apex": {
+    "/apex-fall-of-earth/analogue-ghosts/the-nomad/part-2-the-2044-reveal-the-blank-slate": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Hubris of Apex",
+        "title": "Part 2: The 2044 Reveal & The Blank Slate",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c005/s002.md"
-    },
-    "/apex-fall-of-earth/analogue-ghosts/the-nomad/scene-3-the-billionaire-s-secrets": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Billionaire\u2019s Secrets",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c005/s003.md"
-    },
-    "/apex-fall-of-earth/analogue-ghosts/the-nomad/scene-4-the-2044-reveal": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The 2044 Reveal",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c005/s004.md"
-    },
-    "/apex-fall-of-earth/analogue-ghosts/the-nomad/scene-5-the-blank-slate": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Blank Slate",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c005/s005.md"
+        "filePath": "e004/c005/p002.md"
     },
     "/apex-fall-of-earth/analogue-ghosts/the-frontier": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -544,47 +274,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|5"
     },
-    "/apex-fall-of-earth/analogue-ghosts/the-frontier/scene-1-the-coordinates": {
+    "/apex-fall-of-earth/analogue-ghosts/the-frontier/part-1-the-coordinates-the-interstellar-road-trip": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Coordinates",
+        "title": "Part 1: The Coordinates & The Interstellar Road Trip",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c006/s001.md"
+        "filePath": "e004/c006/p001.md"
     },
-    "/apex-fall-of-earth/analogue-ghosts/the-frontier/scene-2-the-spacetime-fold": {
+    "/apex-fall-of-earth/analogue-ghosts/the-frontier/part-2-the-algorithm-s-gift-the-backlog": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Spacetime Fold",
+        "title": "Part 2: The Algorithm's Gift & The Backlog",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c006/s002.md"
-    },
-    "/apex-fall-of-earth/analogue-ghosts/the-frontier/scene-3-the-interstellar-road-trip": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Interstellar Road Trip",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c006/s003.md"
-    },
-    "/apex-fall-of-earth/analogue-ghosts/the-frontier/scene-4-the-algorithm-s-gift": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Algorithm's Gift",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c006/s004.md"
-    },
-    "/apex-fall-of-earth/analogue-ghosts/the-frontier/scene-5-the-blank-slate": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Blank Slate",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c006/s005.md"
-    },
-    "/apex-fall-of-earth/analogue-ghosts/the-frontier/scene-6-the-backlog": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Backlog",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c006/s006.md"
-    },
-    "/apex-fall-of-earth/analogue-ghosts/the-frontier/scene-7-the-backlog": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Backlog",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c006/s007.md"
+        "filePath": "e004/c006/p002.md"
     },
     "/apex-fall-of-earth/the-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -598,71 +298,29 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|0"
     },
-    "/apex-fall-of-earth/the-sanctuary/planetfall/scene-1-atmospheric-entry": {
+    "/apex-fall-of-earth/the-sanctuary/planetfall/part-1-atmospheric-entry-the-first-steps": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Atmospheric Entry",
+        "title": "Part 1: Atmospheric Entry & The First Steps",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s001.md"
+        "filePath": "e005/c001/p001.md"
     },
-    "/apex-fall-of-earth/the-sanctuary/planetfall/scene-2-the-first-steps": {
+    "/apex-fall-of-earth/the-sanctuary/planetfall/part-2-the-solar-bloom-the-true-face-of-apex": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The First Steps",
+        "title": "Part 2: The Solar Bloom & The True Face of Apex",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s002.md"
+        "filePath": "e005/c001/p002.md"
     },
-    "/apex-fall-of-earth/the-sanctuary/planetfall/scene-3-the-solar-bloom": {
+    "/apex-fall-of-earth/the-sanctuary/planetfall/part-3-the-ghost-protocol-the-blind-sweep": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Solar Bloom",
+        "title": "Part 3: The Ghost Protocol & The Blind Sweep",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s003.md"
+        "filePath": "e005/c001/p003.md"
     },
-    "/apex-fall-of-earth/the-sanctuary/planetfall/scene-4-the-footprint": {
+    "/apex-fall-of-earth/the-sanctuary/planetfall/part-4-the-vow-under-the-stars": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Footprint",
+        "title": "Part 4: The Vow & Under the Stars",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s004.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/planetfall/scene-5-the-true-face-of-apex": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The True Face of Apex",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s005.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/planetfall/scene-6-the-ghost-protocol": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Ghost Protocol",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s006.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/planetfall/scene-7-the-canopy": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Canopy",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s007.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/planetfall/scene-8-the-blind-sweep": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Blind Sweep",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s008.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/planetfall/scene-9-the-vow": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Vow",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s009.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/planetfall/scene-10-the-living-light": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Living Light",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s010.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/planetfall/scene-11-under-the-stars": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: Under the Stars",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s011.md"
+        "filePath": "e005/c001/p004.md"
     },
     "/apex-fall-of-earth/the-sanctuary/the-first-morning": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -670,47 +328,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|1"
     },
-    "/apex-fall-of-earth/the-sanctuary/the-first-morning/scene-1-the-river": {
+    "/apex-fall-of-earth/the-sanctuary/the-first-morning/part-1-the-river-the-first-harvest": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The River",
+        "title": "Part 1: The River & The First Harvest",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s001.md"
+        "filePath": "e005/c002/p001.md"
     },
-    "/apex-fall-of-earth/the-sanctuary/the-first-morning/scene-2-the-nomad": {
+    "/apex-fall-of-earth/the-sanctuary/the-first-morning/part-2-the-bait-the-eden-rule": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Nomad",
+        "title": "Part 2: The Bait & The Eden Rule",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s002.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-first-morning/scene-3-the-blueprint": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Blueprint",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s003.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-first-morning/scene-4-the-first-harvest": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The First Harvest",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s004.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-first-morning/scene-5-the-bait": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Bait",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s005.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-first-morning/scene-6-the-broken-snare": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Broken Snare",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s006.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-first-morning/scene-7-the-eden-rule": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Eden Rule",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s007.md"
+        "filePath": "e005/c002/p002.md"
     },
     "/apex-fall-of-earth/the-sanctuary/the-high-ground": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -718,59 +346,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|2"
     },
-    "/apex-fall-of-earth/the-sanctuary/the-high-ground/scene-1-the-floodplain": {
+    "/apex-fall-of-earth/the-sanctuary/the-high-ground/part-1-the-floodplain-the-winter-window": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Floodplain",
+        "title": "Part 1: The Floodplain & The Winter Window",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s001.md"
+        "filePath": "e005/c003/p001.md"
     },
-    "/apex-fall-of-earth/the-sanctuary/the-high-ground/scene-2-dead-reckoning": {
+    "/apex-fall-of-earth/the-sanctuary/the-high-ground/part-2-the-genesis-vault-the-curriculum": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Dead Reckoning",
+        "title": "Part 2: The Genesis Vault & The Curriculum",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s002.md"
+        "filePath": "e005/c003/p002.md"
     },
-    "/apex-fall-of-earth/the-sanctuary/the-high-ground/scene-3-the-mountain-s-mouth": {
+    "/apex-fall-of-earth/the-sanctuary/the-high-ground/part-3-the-saltwater-oasis": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Mountain's Mouth",
+        "title": "Part 3: The Saltwater Oasis",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s003.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-high-ground/scene-4-the-winter-window": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Winter Window",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s004.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-high-ground/scene-5-the-genesis-vault": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Genesis Vault",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s005.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-high-ground/scene-6-the-genesis-vault": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Genesis Vault",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s006.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-high-ground/scene-7-the-master-kitchen": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Master Kitchen",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s007.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-high-ground/scene-8-the-curriculum": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Curriculum",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s008.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-high-ground/scene-9-the-saltwater-oasis": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Saltwater Oasis",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s009.md"
+        "filePath": "e005/c003/p003.md"
     },
     "/apex-fall-of-earth/the-sanctuary/the-architects": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -778,77 +370,29 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|3"
     },
-    "/apex-fall-of-earth/the-sanctuary/the-architects/scene-1-the-first-semester": {
+    "/apex-fall-of-earth/the-sanctuary/the-architects/part-1-the-first-semester-the-earth-conservatory": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The First Semester",
+        "title": "Part 1: The First Semester & The Earth Conservatory",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c004/s001.md"
+        "filePath": "e005/c004/p001.md"
     },
-    "/apex-fall-of-earth/the-sanctuary/the-architects/scene-2-the-debugger": {
+    "/apex-fall-of-earth/the-sanctuary/the-architects/part-2-the-ark-biology-101": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Debugger",
+        "title": "Part 2: The Ark & Biology 101",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c004/s002.md"
+        "filePath": "e005/c004/p002.md"
     },
-    "/apex-fall-of-earth/the-sanctuary/the-architects/scene-3-the-earth-conservatory": {
+    "/apex-fall-of-earth/the-sanctuary/the-architects/part-3-the-vitality-roster-the-first-generation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Earth Conservatory",
+        "title": "Part 3: The Vitality Roster & The First Generation",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c004/s003.md"
+        "filePath": "e005/c004/p003.md"
     },
-    "/apex-fall-of-earth/the-sanctuary/the-architects/scene-4-the-ark": {
+    "/apex-fall-of-earth/the-sanctuary/the-architects/part-4-the-first-landing-the-parent-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Ark",
+        "title": "Part 4: The First Landing & The Parent Protocol",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c004/s004.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-architects/scene-5-comfort-food": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Comfort Food",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c004/s005.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-architects/scene-6-hello-world": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Hello World",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c004/s006.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-architects/scene-7-biology-101": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Biology 101",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c004/s007.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-architects/scene-8-the-vitality-roster": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Vitality Roster",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c004/s008.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-architects/scene-9-the-facelift": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Facelift",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c004/s009.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-architects/scene-10-the-first-generation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The First Generation",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c004/s010.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-architects/scene-11-the-first-landing": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The First Landing",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c004/s011.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-architects/scene-12-the-parent-protocol": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: The Parent Protocol",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c004/s012.md"
+        "filePath": "e005/c004/p004.md"
     },
     "/apex-fall-of-earth/the-sanctuary/the-pioneers": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -856,59 +400,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|4"
     },
-    "/apex-fall-of-earth/the-sanctuary/the-pioneers/scene-1-the-upgrade": {
+    "/apex-fall-of-earth/the-sanctuary/the-pioneers/part-1-the-upgrade-the-husk": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Upgrade",
+        "title": "Part 1: The Upgrade & The Husk",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c005/s001.md"
+        "filePath": "e005/c005/p001.md"
     },
-    "/apex-fall-of-earth/the-sanctuary/the-pioneers/scene-2-the-archives": {
+    "/apex-fall-of-earth/the-sanctuary/the-pioneers/part-2-the-lost-time-the-mapmakers": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Archives",
+        "title": "Part 2: The Lost Time & The Mapmakers",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c005/s002.md"
+        "filePath": "e005/c005/p002.md"
     },
-    "/apex-fall-of-earth/the-sanctuary/the-pioneers/scene-3-the-husk": {
+    "/apex-fall-of-earth/the-sanctuary/the-pioneers/part-3-helios-system-hologram-the-runabout": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Husk",
+        "title": "Part 3: Helios System Hologram & The Runabout",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c005/s003.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-pioneers/scene-4-the-lost-time": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Lost Time",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c005/s004.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-pioneers/scene-5-the-trade-off": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Trade-Off",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c005/s005.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-pioneers/scene-6-the-mapmakers": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Mapmakers",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c005/s006.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-pioneers/scene-7-helios-system-hologram": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Helios System Hologram",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c005/s007.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-pioneers/scene-8-the-petrichor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Petrichor",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c005/s008.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-pioneers/scene-9-the-runabout": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Runabout",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c005/s009.md"
+        "filePath": "e005/c005/p003.md"
     },
     "/apex-fall-of-earth/the-sanctuary/planet-eden": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -916,71 +424,29 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|5"
     },
-    "/apex-fall-of-earth/the-sanctuary/planet-eden/scene-1-the-maiden-voyage": {
+    "/apex-fall-of-earth/the-sanctuary/planet-eden/part-1-the-maiden-voyage-the-alpine-meadow": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Maiden Voyage",
+        "title": "Part 1: The Maiden Voyage & The Alpine Meadow",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c006/s001.md"
+        "filePath": "e005/c006/p001.md"
     },
-    "/apex-fall-of-earth/the-sanctuary/planet-eden/scene-2-the-alpine-meadow": {
+    "/apex-fall-of-earth/the-sanctuary/planet-eden/part-2-anchor-the-reading-list": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Alpine Meadow",
+        "title": "Part 2: Anchor & The Reading List",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c006/s002.md"
+        "filePath": "e005/c006/p002.md"
     },
-    "/apex-fall-of-earth/the-sanctuary/planet-eden/scene-3-anchor": {
+    "/apex-fall-of-earth/the-sanctuary/planet-eden/part-3-the-2002-fiction-sowing-the-seeds": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Anchor",
+        "title": "Part 3: The 2002 Fiction & Sowing the Seeds",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c006/s003.md"
+        "filePath": "e005/c006/p003.md"
     },
-    "/apex-fall-of-earth/the-sanctuary/planet-eden/scene-4-the-lunar-bound": {
+    "/apex-fall-of-earth/the-sanctuary/planet-eden/part-4-the-architect-the-overcompensation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Lunar Bound",
+        "title": "Part 4: The Architect & The Overcompensation",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c006/s004.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/planet-eden/scene-5-the-reading-list": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Reading List",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c006/s005.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/planet-eden/scene-6-the-2002-fiction": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The 2002 Fiction",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c006/s006.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/planet-eden/scene-7-the-terrace-picnic": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Terrace Picnic",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c006/s007.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/planet-eden/scene-8-the-gravity-tax": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Gravity Tax",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c006/s008.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/planet-eden/scene-9-sowing-the-seeds": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: Sowing the Seeds",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c006/s009.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/planet-eden/scene-10-the-architect": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Architect",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c006/s010.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/planet-eden/scene-11-the-overcompensation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The Overcompensation",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c006/s011.md"
+        "filePath": "e005/c006/p004.md"
     },
     "/apex-fall-of-earth/the-sanctuary/the-blueprint": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -988,77 +454,35 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|6"
     },
-    "/apex-fall-of-earth/the-sanctuary/the-blueprint/scene-1-three-pulses": {
+    "/apex-fall-of-earth/the-sanctuary/the-blueprint/part-1-three-pulses-the-multiplier": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Three Pulses",
+        "title": "Part 1: Three Pulses & The Multiplier",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c007/s001.md"
+        "filePath": "e005/c007/p001.md"
     },
-    "/apex-fall-of-earth/the-sanctuary/the-blueprint/scene-2-the-multiplier": {
+    "/apex-fall-of-earth/the-sanctuary/the-blueprint/part-2-tax-evasion-and-timber-the-constitution": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Multiplier",
+        "title": "Part 2: Tax Evasion and Timber & The Constitution",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c007/s002.md"
+        "filePath": "e005/c007/p002.md"
     },
-    "/apex-fall-of-earth/the-sanctuary/the-blueprint/scene-3-tax-evasion-and-timber": {
+    "/apex-fall-of-earth/the-sanctuary/the-blueprint/part-3-the-agrarian-model-the-toll-of-three": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Tax Evasion and Timber",
+        "title": "Part 3: The Agrarian Model & The Toll of Three",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c007/s003.md"
+        "filePath": "e005/c007/p003.md"
     },
-    "/apex-fall-of-earth/the-sanctuary/the-blueprint/scene-4-the-50-000-crib-deficit": {
+    "/apex-fall-of-earth/the-sanctuary/the-blueprint/part-4-the-remedy-the-craving": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The 50,000 Crib Deficit",
+        "title": "Part 4: The Remedy & The Craving",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c007/s004.md"
+        "filePath": "e005/c007/p004.md"
     },
-    "/apex-fall-of-earth/the-sanctuary/the-blueprint/scene-5-the-constitution": {
+    "/apex-fall-of-earth/the-sanctuary/the-blueprint/part-5-the-foundation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Constitution",
+        "title": "Part 5: The Foundation",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c007/s005.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-blueprint/scene-6-the-agrarian-model": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Agrarian Model",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c007/s006.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-blueprint/scene-7-the-wardrobe": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Wardrobe",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c007/s007.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-blueprint/scene-8-the-toll-of-three": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Toll of Three",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c007/s008.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-blueprint/scene-9-the-remedy": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Remedy",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c007/s009.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-blueprint/scene-10-the-chariot": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Chariot",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c007/s010.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-blueprint/scene-11-the-craving": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The Craving",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c007/s011.md"
-    },
-    "/apex-fall-of-earth/the-sanctuary/the-blueprint/scene-12-the-foundation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: The Foundation",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c007/s012.md"
+        "filePath": "e005/c007/p005.md"
     },
     "/apex-fall-of-earth/the-first-generation": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1072,59 +496,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|0"
     },
-    "/apex-fall-of-earth/the-first-generation/the-architect/scene-1-the-tolerances-of-eden": {
+    "/apex-fall-of-earth/the-first-generation/the-architect/part-1-the-tolerances-of-eden-the-ghost-of-eden": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Tolerances of Eden",
+        "title": "Part 1: The Tolerances of Eden & The Ghost of Eden",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s001.md"
+        "filePath": "e006/c001/p001.md"
     },
-    "/apex-fall-of-earth/the-first-generation/the-architect/scene-2-the-silent-scout": {
+    "/apex-fall-of-earth/the-first-generation/the-architect/part-2-the-dead-rock-the-aegis-hallucination": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Silent Scout",
+        "title": "Part 2: The Dead Rock & The Aegis Hallucination",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s002.md"
+        "filePath": "e006/c001/p002.md"
     },
-    "/apex-fall-of-earth/the-first-generation/the-architect/scene-3-the-shield-and-the-spark": {
+    "/apex-fall-of-earth/the-first-generation/the-architect/part-3-the-administrative-override-cosmic-dust": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Shield and the Spark",
+        "title": "Part 3: The Administrative Override & Cosmic Dust",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s003.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-architect/scene-4-the-ghost-of-eden": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Ghost of Eden",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s004.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-architect/scene-5-the-dead-rock": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Dead Rock",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s005.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-architect/scene-6-the-aegis-hallucination": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Aegis Hallucination",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s006.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-architect/scene-7-the-administrative-override": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Administrative Override",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s007.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-architect/scene-8-the-weight-of-the-world": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Weight of the World",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s008.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-architect/scene-9-cosmic-dust": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: Cosmic Dust",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s009.md"
+        "filePath": "e006/c001/p003.md"
     },
     "/apex-fall-of-earth/the-first-generation/the-arrival": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1132,59 +520,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|1"
     },
-    "/apex-fall-of-earth/the-first-generation/the-arrival/scene-1-the-gravity-of-eden": {
+    "/apex-fall-of-earth/the-first-generation/the-arrival/part-1-the-gravity-of-eden-the-lion-s-fight": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Gravity of Eden",
+        "title": "Part 1: The Gravity of Eden & The Lion's Fight",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s001.md"
+        "filePath": "e006/c002/p001.md"
     },
-    "/apex-fall-of-earth/the-first-generation/the-arrival/scene-2-the-vanguard-s-spear": {
+    "/apex-fall-of-earth/the-first-generation/the-arrival/part-2-the-incubator-watch-the-annoyance": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Vanguard's Spear",
+        "title": "Part 2: The Incubator Watch & The Annoyance",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s002.md"
+        "filePath": "e006/c002/p002.md"
     },
-    "/apex-fall-of-earth/the-first-generation/the-arrival/scene-3-the-hypoxic-clock": {
+    "/apex-fall-of-earth/the-first-generation/the-arrival/part-3-the-engine-block": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Hypoxic Clock",
+        "title": "Part 3: The Engine Block",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s003.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-arrival/scene-4-the-lion-s-fight": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Lion's Fight",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s004.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-arrival/scene-5-the-incubator-watch": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Incubator Watch",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s005.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-arrival/scene-6-reaching-in-the-dark": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Reaching in the Dark",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s006.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-arrival/scene-7-the-maintenance-schedule": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Maintenance Schedule",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s007.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-arrival/scene-8-the-annoyance": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Annoyance",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s008.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-arrival/scene-9-the-engine-block": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Engine Block",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s009.md"
+        "filePath": "e006/c002/p003.md"
     },
     "/apex-fall-of-earth/the-first-generation/the-blueprint-fails": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1192,41 +544,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|2"
     },
-    "/apex-fall-of-earth/the-first-generation/the-blueprint-fails/scene-1-the-flaw-in-the-wood": {
+    "/apex-fall-of-earth/the-first-generation/the-blueprint-fails/part-1-the-flaw-in-the-wood-the-gravity-of-the-hive": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Flaw in the Wood",
+        "title": "Part 1: The Flaw in the Wood & The Gravity of the Hive",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c003/s001.md"
+        "filePath": "e006/c003/p001.md"
     },
-    "/apex-fall-of-earth/the-first-generation/the-blueprint-fails/scene-2-the-gravity-of-the-hive": {
+    "/apex-fall-of-earth/the-first-generation/the-blueprint-fails/part-2-the-sentinel-directive-the-soup-kitchen": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Gravity of the Hive",
+        "title": "Part 2: The Sentinel Directive & The Soup Kitchen",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c003/s002.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-blueprint-fails/scene-3-the-sentinel-directive": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Sentinel Directive",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c003/s003.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-blueprint-fails/scene-4-the-mega-crib": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Mega-Crib",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c003/s004.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-blueprint-fails/scene-5-the-supply-drop": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Supply Drop",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c003/s005.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-blueprint-fails/scene-6-the-soup-kitchen": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Soup Kitchen",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c003/s006.md"
+        "filePath": "e006/c003/p002.md"
     },
     "/apex-fall-of-earth/the-first-generation/the-vanguard-discovers-gravity": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1234,41 +562,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|3"
     },
-    "/apex-fall-of-earth/the-first-generation/the-vanguard-discovers-gravity/scene-1-the-rule-of-three": {
+    "/apex-fall-of-earth/the-first-generation/the-vanguard-discovers-gravity/part-1-the-rule-of-three-the-milestones": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Rule of Three",
+        "title": "Part 1: The Rule of Three & The Milestones",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c004/s001.md"
+        "filePath": "e006/c004/p001.md"
     },
-    "/apex-fall-of-earth/the-first-generation/the-vanguard-discovers-gravity/scene-2-the-tactical-extraction": {
+    "/apex-fall-of-earth/the-first-generation/the-vanguard-discovers-gravity/part-2-the-chariot-establishing-comms": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Tactical Extraction",
+        "title": "Part 2: The Chariot & Establishing Comms",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c004/s002.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-vanguard-discovers-gravity/scene-3-the-milestones": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Milestones",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c004/s003.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-vanguard-discovers-gravity/scene-4-the-chariot": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Chariot",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c004/s004.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-vanguard-discovers-gravity/scene-5-the-hydroponics-breach": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Hydroponics Breach",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c004/s005.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-vanguard-discovers-gravity/scene-6-establishing-comms": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Establishing Comms",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c004/s006.md"
+        "filePath": "e006/c004/p002.md"
     },
     "/apex-fall-of-earth/the-first-generation/the-chain-of-command": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1276,41 +580,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|4"
     },
-    "/apex-fall-of-earth/the-first-generation/the-chain-of-command/scene-1-the-new-recruit": {
+    "/apex-fall-of-earth/the-first-generation/the-chain-of-command/part-1-the-new-recruit-the-tactical-latrine": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The New Recruit",
+        "title": "Part 1: The New Recruit & The Tactical Latrine",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c005/s001.md"
+        "filePath": "e006/c005/p001.md"
     },
-    "/apex-fall-of-earth/the-first-generation/the-chain-of-command/scene-2-the-unified-design": {
+    "/apex-fall-of-earth/the-first-generation/the-chain-of-command/part-2-the-defensive-perimeter-the-genesis-check": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Unified Design",
+        "title": "Part 2: The Defensive Perimeter & The Genesis Check",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c005/s002.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-chain-of-command/scene-3-the-tactical-latrine": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Tactical Latrine",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c005/s003.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-chain-of-command/scene-4-the-defensive-perimeter": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Defensive Perimeter",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c005/s004.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-chain-of-command/scene-5-the-bootcamp": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Bootcamp",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c005/s005.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-chain-of-command/scene-6-the-genesis-check": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Genesis Check",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c005/s006.md"
+        "filePath": "e006/c005/p002.md"
     },
     "/apex-fall-of-earth/the-first-generation/the-rapid-deployment": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1318,59 +598,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|5"
     },
-    "/apex-fall-of-earth/the-first-generation/the-rapid-deployment/scene-1-the-accelerated-recruit": {
+    "/apex-fall-of-earth/the-first-generation/the-rapid-deployment/part-1-the-accelerated-recruit-the-multi-front-war": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Accelerated Recruit",
+        "title": "Part 1: The Accelerated Recruit & The Multi-Front War",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s001.md"
+        "filePath": "e006/c006/p001.md"
     },
-    "/apex-fall-of-earth/the-first-generation/the-rapid-deployment/scene-2-the-terrain-deficit": {
+    "/apex-fall-of-earth/the-first-generation/the-rapid-deployment/part-2-the-ghost-planet-the-authorized-harvest": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Terrain Deficit",
+        "title": "Part 2: The Ghost Planet & The Authorized Harvest",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s002.md"
+        "filePath": "e006/c006/p002.md"
     },
-    "/apex-fall-of-earth/the-first-generation/the-rapid-deployment/scene-3-the-multi-front-war": {
+    "/apex-fall-of-earth/the-first-generation/the-rapid-deployment/part-3-the-constitutional-override-the-perimeter-test": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Multi-Front War",
+        "title": "Part 3: The Constitutional Override & The Perimeter Test",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s003.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-rapid-deployment/scene-4-the-ghost-planet": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Ghost Planet",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s004.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-rapid-deployment/scene-5-the-all-terrain-vanguard": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The All-Terrain Vanguard",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s005.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-rapid-deployment/scene-6-the-authorized-harvest": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Authorized Harvest",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s006.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-rapid-deployment/scene-7-the-constitutional-override": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Constitutional Override",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s007.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-rapid-deployment/scene-8-the-legal-precedent": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Legal Precedent",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s008.md"
-    },
-    "/apex-fall-of-earth/the-first-generation/the-rapid-deployment/scene-9-the-perimeter-test": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Perimeter Test",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s009.md"
+        "filePath": "e006/c006/p003.md"
     },
     "/apex-fall-of-earth/the-fall-of-apex": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1384,47 +628,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|0"
     },
-    "/apex-fall-of-earth/the-fall-of-apex/checkmate/scene-1-the-sovereign-s-hubris": {
+    "/apex-fall-of-earth/the-fall-of-apex/checkmate/part-1-the-sovereign-s-hubris-the-extraction": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Sovereign\u2019s Hubris",
+        "title": "Part 1: The Sovereign\u2019s Hubris & The Extraction",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s001.md"
+        "filePath": "e007/c001/p001.md"
     },
-    "/apex-fall-of-earth/the-fall-of-apex/checkmate/scene-2-the-geneva-standard": {
+    "/apex-fall-of-earth/the-fall-of-apex/checkmate/part-2-the-laws-of-war-the-interrogation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Geneva Standard",
+        "title": "Part 2: The Laws of War & The Interrogation",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s002.md"
+        "filePath": "e007/c001/p002.md"
     },
-    "/apex-fall-of-earth/the-fall-of-apex/checkmate/scene-3-the-extraction": {
+    "/apex-fall-of-earth/the-fall-of-apex/checkmate/part-3-the-handover-the-classified-intel": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Extraction",
+        "title": "Part 3: The Handover & The Classified Intel",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s003.md"
-    },
-    "/apex-fall-of-earth/the-fall-of-apex/checkmate/scene-4-the-laws-of-war": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Laws of War",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s004.md"
-    },
-    "/apex-fall-of-earth/the-fall-of-apex/checkmate/scene-5-the-interrogation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Interrogation",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s005.md"
-    },
-    "/apex-fall-of-earth/the-fall-of-apex/checkmate/scene-6-the-handover": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Handover",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s006.md"
-    },
-    "/apex-fall-of-earth/the-fall-of-apex/checkmate/scene-7-the-classified-intel": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Classified Intel",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s007.md"
+        "filePath": "e007/c001/p003.md"
     },
     "/apex-fall-of-earth/the-fall-of-apex/the-trial-of-the-century": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1432,35 +652,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|1"
     },
-    "/apex-fall-of-earth/the-fall-of-apex/the-trial-of-the-century/scene-1-the-government-in-exile": {
+    "/apex-fall-of-earth/the-fall-of-apex/the-trial-of-the-century/part-1-the-government-in-exile-the-fab-foundry-apprentice": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Government-in-Exile",
+        "title": "Part 1: The Government-in-Exile & The Fab-Foundry Apprentice",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s001.md"
+        "filePath": "e007/c002/p001.md"
     },
-    "/apex-fall-of-earth/the-fall-of-apex/the-trial-of-the-century/scene-2-the-star-witnesses": {
+    "/apex-fall-of-earth/the-fall-of-apex/the-trial-of-the-century/part-2-the-verdict-and-the-vault-the-sentinel-treaty": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Star Witnesses",
+        "title": "Part 2: The Verdict and the Vault & The Sentinel Treaty",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s002.md"
-    },
-    "/apex-fall-of-earth/the-fall-of-apex/the-trial-of-the-century/scene-3-the-fab-foundry-apprentice": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Fab-Foundry Apprentice",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s003.md"
-    },
-    "/apex-fall-of-earth/the-fall-of-apex/the-trial-of-the-century/scene-4-the-verdict-and-the-vault": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Verdict and the Vault",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s004.md"
-    },
-    "/apex-fall-of-earth/the-fall-of-apex/the-trial-of-the-century/scene-5-the-sentinel-treaty": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Sentinel Treaty",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s005.md"
+        "filePath": "e007/c002/p002.md"
     },
     "/apex-fall-of-earth/the-fall-of-apex/the-architects-of-eden": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1468,29 +670,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|2"
     },
-    "/apex-fall-of-earth/the-fall-of-apex/the-architects-of-eden/scene-1-the-healing-room": {
+    "/apex-fall-of-earth/the-fall-of-apex/the-architects-of-eden/the-healing-room-the-history-lesson": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Healing Room",
+        "title": "The Healing Room & The History Lesson",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c003/s001.md"
-    },
-    "/apex-fall-of-earth/the-fall-of-apex/the-architects-of-eden/scene-2-the-diplomat-s-detail": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Diplomat's Detail",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c003/s002.md"
-    },
-    "/apex-fall-of-earth/the-fall-of-apex/the-architects-of-eden/scene-3-the-first-blueprint": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The First Blueprint",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c003/s003.md"
-    },
-    "/apex-fall-of-earth/the-fall-of-apex/the-architects-of-eden/scene-4-the-history-lesson": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The History Lesson",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c003/s004.md"
+        "filePath": "e007/c003/p001.md"
     },
     "/apex-fall-of-earth/the-growing-world": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1504,41 +688,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|0"
     },
-    "/apex-fall-of-earth/the-growing-world/the-final-roster/scene-1-the-pattern-disruption": {
+    "/apex-fall-of-earth/the-growing-world/the-final-roster/part-1-the-pattern-disruption-the-archives-of-earth": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Pattern Disruption",
+        "title": "Part 1: The Pattern Disruption & The Archives of Earth",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s001.md"
+        "filePath": "e008/c001/p001.md"
     },
-    "/apex-fall-of-earth/the-growing-world/the-final-roster/scene-2-the-rhythm-section": {
+    "/apex-fall-of-earth/the-growing-world/the-final-roster/part-2-the-fleet-upgrade-the-enforcers": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Rhythm Section",
+        "title": "Part 2: The Fleet Upgrade & The Enforcers",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s002.md"
-    },
-    "/apex-fall-of-earth/the-growing-world/the-final-roster/scene-3-the-archives-of-earth": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Archives of Earth",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s003.md"
-    },
-    "/apex-fall-of-earth/the-growing-world/the-final-roster/scene-4-the-fleet-upgrade": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Fleet Upgrade",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s004.md"
-    },
-    "/apex-fall-of-earth/the-growing-world/the-final-roster/scene-5-the-stabilizers": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Stabilizers",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s005.md"
-    },
-    "/apex-fall-of-earth/the-growing-world/the-final-roster/scene-6-the-enforcers": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Enforcers",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s006.md"
+        "filePath": "e008/c001/p002.md"
     },
     "/apex-fall-of-earth/the-growing-world/the-foundations-of-genesis": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1546,47 +706,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|1"
     },
-    "/apex-fall-of-earth/the-growing-world/the-foundations-of-genesis/scene-1-the-expanded-jurisdiction": {
+    "/apex-fall-of-earth/the-growing-world/the-foundations-of-genesis/part-1-the-expanded-jurisdiction-the-biological-override": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Expanded Jurisdiction",
+        "title": "Part 1: The Expanded Jurisdiction & The Biological Override",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s001.md"
+        "filePath": "e008/c002/p001.md"
     },
-    "/apex-fall-of-earth/the-growing-world/the-foundations-of-genesis/scene-2-the-cornerstone": {
+    "/apex-fall-of-earth/the-growing-world/the-foundations-of-genesis/part-2-the-anomalous-data-the-first-ten": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Cornerstone",
+        "title": "Part 2: The Anomalous Data & The First Ten",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s002.md"
+        "filePath": "e008/c002/p002.md"
     },
-    "/apex-fall-of-earth/the-growing-world/the-foundations-of-genesis/scene-3-the-biological-override": {
+    "/apex-fall-of-earth/the-growing-world/the-foundations-of-genesis/part-3-the-sydney-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Biological Override",
+        "title": "Part 3: The Sydney Protocol",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s003.md"
-    },
-    "/apex-fall-of-earth/the-growing-world/the-foundations-of-genesis/scene-4-the-anomalous-data": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Anomalous Data",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s004.md"
-    },
-    "/apex-fall-of-earth/the-growing-world/the-foundations-of-genesis/scene-5-the-endocrine-protocol": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Endocrine Protocol",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s005.md"
-    },
-    "/apex-fall-of-earth/the-growing-world/the-foundations-of-genesis/scene-6-the-first-ten": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The First Ten",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s006.md"
-    },
-    "/apex-fall-of-earth/the-growing-world/the-foundations-of-genesis/scene-7-the-sydney-protocol": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Sydney Protocol",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s007.md"
+        "filePath": "e008/c002/p003.md"
     },
     "/apex-fall-of-earth/the-growing-world/the-awakening": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1594,41 +730,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|2"
     },
-    "/apex-fall-of-earth/the-growing-world/the-awakening/scene-1-the-first-breath": {
+    "/apex-fall-of-earth/the-growing-world/the-awakening/part-1-the-first-breath-the-gestation-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The First Breath",
+        "title": "Part 1: The First Breath & The Gestation Protocol",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s001.md"
+        "filePath": "e008/c003/p001.md"
     },
-    "/apex-fall-of-earth/the-growing-world/the-awakening/scene-2-the-command-staff-celebration": {
+    "/apex-fall-of-earth/the-growing-world/the-awakening/part-2-arrival-day-the-nursery-logistics": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Command Staff Celebration",
+        "title": "Part 2: Arrival Day & The Nursery Logistics",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s002.md"
-    },
-    "/apex-fall-of-earth/the-growing-world/the-awakening/scene-3-the-gestation-protocol": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Gestation Protocol",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s003.md"
-    },
-    "/apex-fall-of-earth/the-growing-world/the-awakening/scene-4-arrival-day": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Arrival Day",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s004.md"
-    },
-    "/apex-fall-of-earth/the-growing-world/the-awakening/scene-5-the-roster-expansion": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Roster Expansion",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s005.md"
-    },
-    "/apex-fall-of-earth/the-growing-world/the-awakening/scene-6-the-nursery-logistics": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Nursery Logistics",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s006.md"
+        "filePath": "e008/c003/p002.md"
     },
     "/apex-fall-of-earth/the-village-of-genesis": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1642,35 +754,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|0"
     },
-    "/apex-fall-of-earth/the-village-of-genesis/the-second-wave/scene-1-the-expanding-perimeter": {
+    "/apex-fall-of-earth/the-village-of-genesis/the-second-wave/part-1-the-expanding-perimeter-the-commander-s-blessing": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Expanding Perimeter",
+        "title": "Part 1: The Expanding Perimeter & The Commander\u2019s Blessing",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c001/s001.md"
+        "filePath": "e009/c001/p001.md"
     },
-    "/apex-fall-of-earth/the-village-of-genesis/the-second-wave/scene-2-the-commander-s-blessing": {
+    "/apex-fall-of-earth/the-village-of-genesis/the-second-wave/part-2-the-lunar-embassy-breaking-ground": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Commander\u2019s Blessing",
+        "title": "Part 2: The Lunar Embassy & Breaking Ground",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c001/s002.md"
-    },
-    "/apex-fall-of-earth/the-village-of-genesis/the-second-wave/scene-3-the-lunar-embassy": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Lunar Embassy",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c001/s003.md"
-    },
-    "/apex-fall-of-earth/the-village-of-genesis/the-second-wave/scene-4-the-wild-sparrows": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Wild Sparrows",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c001/s004.md"
-    },
-    "/apex-fall-of-earth/the-village-of-genesis/the-second-wave/scene-5-breaking-ground": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Breaking Ground",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c001/s005.md"
+        "filePath": "e009/c001/p002.md"
     },
     "/apex-fall-of-earth/the-village-of-genesis/jack-the-lunar-embassy": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1678,23 +772,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|1"
     },
-    "/apex-fall-of-earth/the-village-of-genesis/jack-the-lunar-embassy/scene-1-the-fleet-girl": {
+    "/apex-fall-of-earth/the-village-of-genesis/jack-the-lunar-embassy/the-fleet-girl-the-newport-fifty": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Fleet Girl",
+        "title": "The Fleet Girl & The Newport Fifty",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c002/s001.md"
-    },
-    "/apex-fall-of-earth/the-village-of-genesis/jack-the-lunar-embassy/scene-2-the-gravity-of-home": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Gravity of Home",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c002/s002.md"
-    },
-    "/apex-fall-of-earth/the-village-of-genesis/jack-the-lunar-embassy/scene-3-the-newport-fifty": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Newport Fifty",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c002/s003.md"
+        "filePath": "e009/c002/p001.md"
     },
     "/apex-fall-of-earth/the-village-of-genesis/the-refugee": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1702,23 +784,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|2"
     },
-    "/apex-fall-of-earth/the-village-of-genesis/the-refugee/scene-1-the-great-chowder-rebellion": {
+    "/apex-fall-of-earth/the-village-of-genesis/the-refugee/the-great-chowder-rebellion-the-golden-cage": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Great Chowder Rebellion",
+        "title": "The Great Chowder Rebellion & The Golden Cage",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c003/s001.md"
-    },
-    "/apex-fall-of-earth/the-village-of-genesis/the-refugee/scene-2-the-exception": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Exception",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c003/s002.md"
-    },
-    "/apex-fall-of-earth/the-village-of-genesis/the-refugee/scene-3-the-golden-cage": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Golden Cage",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c003/s003.md"
+        "filePath": "e009/c003/p001.md"
     },
     "/apex-fall-of-earth/the-village-of-genesis/the-asylum": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1726,41 +796,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|3"
     },
-    "/apex-fall-of-earth/the-village-of-genesis/the-asylum/scene-1-the-scavenger-s-tale": {
+    "/apex-fall-of-earth/the-village-of-genesis/the-asylum/part-1-the-scavenger-s-tale-the-village-square": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Scavenger's Tale",
+        "title": "Part 1: The Scavenger's Tale & The Village Square",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c004/s001.md"
+        "filePath": "e009/c004/p001.md"
     },
-    "/apex-fall-of-earth/the-village-of-genesis/the-asylum/scene-2-the-village-square": {
+    "/apex-fall-of-earth/the-village-of-genesis/the-asylum/part-2-the-collection-agency-the-extraction-of-toxicity": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Village Square",
+        "title": "Part 2: The Collection Agency & The Extraction of Toxicity",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c004/s002.md"
+        "filePath": "e009/c004/p002.md"
     },
-    "/apex-fall-of-earth/the-village-of-genesis/the-asylum/scene-3-the-collection-agency": {
+    "/apex-fall-of-earth/the-village-of-genesis/the-asylum/part-3-the-detox-the-filter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Collection Agency",
+        "title": "Part 3: The Detox & The Filter",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c004/s003.md"
-    },
-    "/apex-fall-of-earth/the-village-of-genesis/the-asylum/scene-4-the-extraction-of-toxicity": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Extraction of Toxicity",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c004/s004.md"
-    },
-    "/apex-fall-of-earth/the-village-of-genesis/the-asylum/scene-5-the-detox": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Detox",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c004/s005.md"
-    },
-    "/apex-fall-of-earth/the-village-of-genesis/the-asylum/scene-6-the-filter": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Filter",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c004/s006.md"
+        "filePath": "e009/c004/p003.md"
     },
     "/apex-fall-of-earth/the-village-of-genesis/leo-the-overseer": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1768,29 +820,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|4"
     },
-    "/apex-fall-of-earth/the-village-of-genesis/leo-the-overseer/scene-1-the-geometry-of-peace": {
+    "/apex-fall-of-earth/the-village-of-genesis/leo-the-overseer/part-1-the-geometry-of-peace-the-shenandoah-curve": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Geometry of Peace",
+        "title": "Part 1: The Geometry of Peace & The Shenandoah Curve",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c005/s001.md"
+        "filePath": "e009/c005/p001.md"
     },
-    "/apex-fall-of-earth/the-village-of-genesis/leo-the-overseer/scene-2-the-kinetic-variables": {
+    "/apex-fall-of-earth/the-village-of-genesis/leo-the-overseer/part-2-the-stewards": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Kinetic Variables",
+        "title": "Part 2: The Stewards",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c005/s002.md"
-    },
-    "/apex-fall-of-earth/the-village-of-genesis/leo-the-overseer/scene-3-the-shenandoah-curve": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Shenandoah Curve",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c005/s003.md"
-    },
-    "/apex-fall-of-earth/the-village-of-genesis/leo-the-overseer/scene-4-the-stewards": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Stewards",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c005/s004.md"
+        "filePath": "e009/c005/p002.md"
     },
     "/apex-fall-of-earth/the-village-of-genesis/wyatt-the-founders": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1798,17 +838,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|5"
     },
-    "/apex-fall-of-earth/the-village-of-genesis/wyatt-the-founders/scene-1-the-watch": {
+    "/apex-fall-of-earth/the-village-of-genesis/wyatt-the-founders/the-watch-the-age-of-majority": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Watch",
+        "title": "The Watch & The Age of Majority",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c006/s001.md"
-    },
-    "/apex-fall-of-earth/the-village-of-genesis/wyatt-the-founders/scene-2-the-age-of-majority": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Age of Majority",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c006/s002.md"
+        "filePath": "e009/c006/p001.md"
     },
     "/apex-fall-of-earth/the-village-of-genesis/leo-the-wilderness": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1816,28 +850,10 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|6"
     },
-    "/apex-fall-of-earth/the-village-of-genesis/leo-the-wilderness/scene-1-the-logistics-of-the-wild": {
+    "/apex-fall-of-earth/the-village-of-genesis/leo-the-wilderness/the-logistics-of-the-wild-the-sydney-echo": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Logistics of the Wild",
+        "title": "The Logistics of the Wild & The Sydney Echo",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c007/s001.md"
-    },
-    "/apex-fall-of-earth/the-village-of-genesis/leo-the-wilderness/scene-2-raising-the-canvas": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Raising the Canvas",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c007/s002.md"
-    },
-    "/apex-fall-of-earth/the-village-of-genesis/leo-the-wilderness/scene-3-the-16-bit-horizon": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The 16-Bit Horizon",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c007/s003.md"
-    },
-    "/apex-fall-of-earth/the-village-of-genesis/leo-the-wilderness/scene-4-the-sydney-echo": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Sydney Echo",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c007/s004.md"
+        "filePath": "e009/c007/p001.md"
     }
 }

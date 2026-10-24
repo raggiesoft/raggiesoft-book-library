@@ -12,14 +12,14 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "669 KB",
+            "epub": "657 KB",
             "pdf": "1.7 MB",
-            "text_epub": "669 KB",
+            "text_epub": "657 KB",
             "text_pdf": "1.7 MB",
-            "epub_bytes": 685094,
-            "pdf_bytes": 1801861,
-            "text_epub_bytes": 685093,
-            "text_pdf_bytes": 1801861
+            "epub_bytes": 673146,
+            "pdf_bytes": 1801711,
+            "text_epub_bytes": 673144,
+            "text_pdf_bytes": 1801711
         }
     },
     "/alex-chloe": {
@@ -46,11 +46,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/alex-chloe/alex-s-childhood/the-carter-house/scene-1-the-first-meeting": {
+    "/alex-chloe/alex-s-childhood/the-carter-house/the-first-meeting": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The First Meeting",
+        "title": "The First Meeting",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s001.md"
+        "filePath": "e001/c001/p001.md"
     },
     "/alex-chloe/alex-s-childhood/elementary-school": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -58,47 +58,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|1"
     },
-    "/alex-chloe/alex-s-childhood/elementary-school/scene-1-the-first-day-of-kindergarten": {
+    "/alex-chloe/alex-s-childhood/elementary-school/part-1-the-first-day-of-kindergarten-the-nickname": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The First Day of Kindergarten",
+        "title": "Part 1: The First Day of Kindergarten & The Nickname",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s001.md"
+        "filePath": "e001/c002/p001.md"
     },
-    "/alex-chloe/alex-s-childhood/elementary-school/scene-2-the-afternoon-block": {
+    "/alex-chloe/alex-s-childhood/elementary-school/part-2-a-quiet-place-in-the-chaos-the-grand-prix": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Afternoon Block",
+        "title": "Part 2: A Quiet Place in the Chaos & The Grand Prix",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s002.md"
-    },
-    "/alex-chloe/alex-s-childhood/elementary-school/scene-3-the-eye-of-the-storm": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Eye of the Storm",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s003.md"
-    },
-    "/alex-chloe/alex-s-childhood/elementary-school/scene-4-the-guardian-and-the-architect": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Guardian and the Architect",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s004.md"
-    },
-    "/alex-chloe/alex-s-childhood/elementary-school/scene-5-the-nickname": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Nickname",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s005.md"
-    },
-    "/alex-chloe/alex-s-childhood/elementary-school/scene-6-a-quiet-place-in-the-chaos": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A Quiet Place in the Chaos",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s006.md"
-    },
-    "/alex-chloe/alex-s-childhood/elementary-school/scene-7-the-grand-prix": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Grand Prix",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s007.md"
+        "filePath": "e001/c002/p002.md"
     },
     "/alex-chloe/alex-s-childhood/a-date-with-jennifer": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -106,47 +76,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|2"
     },
-    "/alex-chloe/alex-s-childhood/a-date-with-jennifer/scene-1-the-dare-and-the-setup": {
+    "/alex-chloe/alex-s-childhood/a-date-with-jennifer/part-1-the-dare-and-the-setup-the-fizzle": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Dare and The Setup",
+        "title": "Part 1: The Dare and The Setup & The Fizzle",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s001.md"
+        "filePath": "e001/c003/p001.md"
     },
-    "/alex-chloe/alex-s-childhood/a-date-with-jennifer/scene-2-senior-week": {
+    "/alex-chloe/alex-s-childhood/a-date-with-jennifer/part-2-a-better-kind-of-friendship-the-aftermath-at-school": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Senior Week",
+        "title": "Part 2: A Better Kind of Friendship & The Aftermath at School",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s002.md"
-    },
-    "/alex-chloe/alex-s-childhood/a-date-with-jennifer/scene-3-aftermath-of-a-movie": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Aftermath of a Movie",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s003.md"
-    },
-    "/alex-chloe/alex-s-childhood/a-date-with-jennifer/scene-4-the-antidote": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Antidote",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s004.md"
-    },
-    "/alex-chloe/alex-s-childhood/a-date-with-jennifer/scene-5-the-fizzle": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Fizzle",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s005.md"
-    },
-    "/alex-chloe/alex-s-childhood/a-date-with-jennifer/scene-6-a-better-kind-of-friendship": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A Better Kind of Friendship",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s006.md"
-    },
-    "/alex-chloe/alex-s-childhood/a-date-with-jennifer/scene-7-the-aftermath-at-school": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Aftermath at School",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s007.md"
+        "filePath": "e001/c003/p002.md"
     },
     "/alex-chloe/alex-s-childhood/alex-as-a-teenager": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -154,41 +94,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|3"
     },
-    "/alex-chloe/alex-s-childhood/alex-as-a-teenager/scene-1-a-quiet-place-in-the-chaos": {
+    "/alex-chloe/alex-s-childhood/alex-as-a-teenager/a-quiet-place-in-the-chaos-the-training-montage-the-sign": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Quiet Place in the Chaos",
+        "title": "A Quiet Place in the Chaos & The Training Montage & The Sign",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s001.md"
-    },
-    "/alex-chloe/alex-s-childhood/alex-as-a-teenager/scene-2-the-resonance-cascade": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Resonance Cascade",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s002.md"
-    },
-    "/alex-chloe/alex-s-childhood/alex-as-a-teenager/scene-3-the-codex": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Codex",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s003.md"
-    },
-    "/alex-chloe/alex-s-childhood/alex-as-a-teenager/scene-4-the-declaration": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Declaration",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s004.md"
-    },
-    "/alex-chloe/alex-s-childhood/alex-as-a-teenager/scene-5-the-upgrade": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Upgrade",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s005.md"
-    },
-    "/alex-chloe/alex-s-childhood/alex-as-a-teenager/scene-6-the-training-montage-the-sign": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Training Montage & The Sign",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s006.md"
+        "filePath": "e001/c004/p001.md"
     },
     "/alex-chloe/summer-of-discovery-1999": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -202,101 +112,41 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
-    "/alex-chloe/summer-of-discovery-1999/the-house-next-door/scene-1-an-instant-connection": {
+    "/alex-chloe/summer-of-discovery-1999/the-house-next-door/part-1-an-instant-connection-boardwalk-blasts-budding-bonds": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: An Instant Connection",
+        "title": "Part 1: An Instant Connection & Boardwalk Blasts & Budding Bonds",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s001.md"
+        "filePath": "e002/c001/p001.md"
     },
-    "/alex-chloe/summer-of-discovery-1999/the-house-next-door/scene-2-boardwalk-blasts-budding-bonds": {
+    "/alex-chloe/summer-of-discovery-1999/the-house-next-door/part-2-sandwiches-and-shared-worlds-the-sweetness-of-a-hug": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Boardwalk Blasts & Budding Bonds",
+        "title": "Part 2: Sandwiches and Shared Worlds & The Sweetness of a Hug",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s002.md"
+        "filePath": "e002/c001/p002.md"
     },
-    "/alex-chloe/summer-of-discovery-1999/the-house-next-door/scene-3-sandwiches-and-shared-worlds": {
+    "/alex-chloe/summer-of-discovery-1999/the-house-next-door/part-3-a-day-at-fairlawn-and-shared-stories-a-ramp-of-welcome": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Sandwiches and Shared Worlds",
+        "title": "Part 3: A Day at Fairlawn and Shared Stories & A Ramp of Welcome",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s003.md"
+        "filePath": "e002/c001/p003.md"
     },
-    "/alex-chloe/summer-of-discovery-1999/the-house-next-door/scene-4-the-sweetness-of-a-hug": {
+    "/alex-chloe/summer-of-discovery-1999/the-house-next-door/part-4-electives-echoes-of-french-and-an-informal-tutor-the-first-sleepover": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Sweetness of a Hug",
+        "title": "Part 4: Electives, Echoes of French, and an Informal Tutor & The First Sleepover",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s004.md"
+        "filePath": "e002/c001/p004.md"
     },
-    "/alex-chloe/summer-of-discovery-1999/the-house-next-door/scene-5-a-day-at-fairlawn-and-shared-stories": {
+    "/alex-chloe/summer-of-discovery-1999/the-house-next-door/part-5-the-morning-after-oceanfront-wonders": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A Day at Fairlawn and Shared Stories",
+        "title": "Part 5: The Morning After & Oceanfront Wonders",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s005.md"
+        "filePath": "e002/c001/p005.md"
     },
-    "/alex-chloe/summer-of-discovery-1999/the-house-next-door/scene-6-the-first-boundary": {
+    "/alex-chloe/summer-of-discovery-1999/the-house-next-door/part-6-a-drawer-of-belonging": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The First Boundary",
+        "title": "Part 6: A Drawer of Belonging",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s006.md"
-    },
-    "/alex-chloe/summer-of-discovery-1999/the-house-next-door/scene-7-the-reunion": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Reunion",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s007.md"
-    },
-    "/alex-chloe/summer-of-discovery-1999/the-house-next-door/scene-8-a-ramp-of-welcome": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: A Ramp of Welcome",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s008.md"
-    },
-    "/alex-chloe/summer-of-discovery-1999/the-house-next-door/scene-9-electives-echoes-of-french-and-an-informal-tutor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: Electives, Echoes of French, and an Informal Tutor",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s009.md"
-    },
-    "/alex-chloe/summer-of-discovery-1999/the-house-next-door/scene-10-the-architect-of-the-codex": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Architect of The Codex",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s010.md"
-    },
-    "/alex-chloe/summer-of-discovery-1999/the-house-next-door/scene-11-the-first-sleepover-labor-day-weekend": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The First Sleepover \u2013 Labor Day Weekend",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s011.md"
-    },
-    "/alex-chloe/summer-of-discovery-1999/the-house-next-door/scene-12-the-morning-after-a-new-normal": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: The Morning After \u2013 A New Normal",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s012.md"
-    },
-    "/alex-chloe/summer-of-discovery-1999/the-house-next-door/scene-13-bedtime-and-beach-dreams": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 13: Bedtime and Beach Dreams",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s013.md"
-    },
-    "/alex-chloe/summer-of-discovery-1999/the-house-next-door/scene-14-beach-day-bound-the-last-day-of-freedom": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 14: Beach Day Bound \u2013 The Last Day of Freedom",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s014.md"
-    },
-    "/alex-chloe/summer-of-discovery-1999/the-house-next-door/scene-15-oceanfront-wonders-a-day-of-firsts": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 15: Oceanfront Wonders \u2013 A Day of Firsts",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s015.md"
-    },
-    "/alex-chloe/summer-of-discovery-1999/the-house-next-door/scene-16-a-drawer-of-belonging": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 16: A Drawer of Belonging",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s016.md"
+        "filePath": "e002/c001/p006.md"
     },
     "/alex-chloe/fresh-meat": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -310,113 +160,47 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|0"
     },
-    "/alex-chloe/fresh-meat/welcome-to-high-school/scene-1-the-unofficial-orientation": {
+    "/alex-chloe/fresh-meat/welcome-to-high-school/part-1-the-unofficial-orientation-bonjour-madame-beaumont": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Unofficial Orientation",
+        "title": "Part 1: The Unofficial Orientation & Bonjour, Madame Beaumont",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s001.md"
+        "filePath": "e003/c001/p001.md"
     },
-    "/alex-chloe/fresh-meat/welcome-to-high-school/scene-2-bonjour-madame-beaumont": {
+    "/alex-chloe/fresh-meat/welcome-to-high-school/part-2-the-demarco-decree-the-lingering-aroma-of-justice": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Bonjour, Madame Beaumont",
+        "title": "Part 2: The DeMarco Decree & The Lingering Aroma of Justice",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s002.md"
+        "filePath": "e003/c001/p002.md"
     },
-    "/alex-chloe/fresh-meat/welcome-to-high-school/scene-3-the-demarco-decree": {
+    "/alex-chloe/fresh-meat/welcome-to-high-school/part-3-the-delinquent-the-dumpsters-and-the-deep-fryer-s-due-a-humble-request-and-a-changing-tide": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The DeMarco Decree",
+        "title": "Part 3: The Delinquent, The Dumpsters, and The Deep Fryer's Due & A Humble Request and a Changing Tide",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s003.md"
+        "filePath": "e003/c001/p003.md"
     },
-    "/alex-chloe/fresh-meat/welcome-to-high-school/scene-4-an-aromatic-apprenticeship": {
+    "/alex-chloe/fresh-meat/welcome-to-high-school/part-4-a-different-kind-of-a-quiet-understanding": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: An Aromatic Apprenticeship",
+        "title": "Part 4: A Different Kind of \\ & A Quiet Understanding",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s004.md"
+        "filePath": "e003/c001/p004.md"
     },
-    "/alex-chloe/fresh-meat/welcome-to-high-school/scene-5-the-lingering-aroma-of-justice": {
+    "/alex-chloe/fresh-meat/welcome-to-high-school/part-5-an-interrupted-lesson-and-an-inevitable-summons": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Lingering Aroma of Justice",
+        "title": "Part 5: An Interrupted Lesson and an Inevitable Summons",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s005.md"
+        "filePath": "e003/c001/p005.md"
     },
-    "/alex-chloe/fresh-meat/welcome-to-high-school/scene-6-the-delinquent-the-dumpsters-and-the-deep-fryer-s-due": {
+    "/alex-chloe/fresh-meat/welcome-to-high-school/part-6-cafeteria-justice-multilingual-edition-a-canadian-word": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Delinquent, The Dumpsters, and The Deep Fryer's Due",
+        "title": "Part 6: Cafeteria Justice, Multilingual Edition & A Canadian Word",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s006.md"
+        "filePath": "e003/c001/p006.md"
     },
-    "/alex-chloe/fresh-meat/welcome-to-high-school/scene-7-a-humble-request-and-a-changing-tide": {
+    "/alex-chloe/fresh-meat/welcome-to-high-school/part-7-a-new-tradition-a-cross-border-introduction": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: A Humble Request and a Changing Tide",
+        "title": "Part 7: A New Tradition & A Cross-Border Introduction",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s007.md"
-    },
-    "/alex-chloe/fresh-meat/welcome-to-high-school/scene-8-a-different-kind-of": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: A Different Kind of \\",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s008.md"
-    },
-    "/alex-chloe/fresh-meat/welcome-to-high-school/scene-9-a-quiet-understanding-their-own-conversation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: A Quiet Understanding \u2013 Their Own Conversation",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s009.md"
-    },
-    "/alex-chloe/fresh-meat/welcome-to-high-school/scene-10-an-interrupted-lesson-and-an-inevitable-summons": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: An Interrupted Lesson and an Inevitable Summons",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s010.md"
-    },
-    "/alex-chloe/fresh-meat/welcome-to-high-school/scene-11-cafeteria-justice-multilingual-edition": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: Cafeteria Justice, Multilingual Edition",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s011.md"
-    },
-    "/alex-chloe/fresh-meat/welcome-to-high-school/scene-12-chapter-2-a-first-winter": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: Chapter 2: A First Winter",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s012.md"
-    },
-    "/alex-chloe/fresh-meat/welcome-to-high-school/scene-13-a-canadian-word": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 13: A Canadian Word",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s013.md"
-    },
-    "/alex-chloe/fresh-meat/welcome-to-high-school/scene-14-a-new-tradition": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 14: A New Tradition",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s014.md"
-    },
-    "/alex-chloe/fresh-meat/welcome-to-high-school/scene-15-christmas-eve-on-lisa-court": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 15: Christmas Eve on Lisa Court",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s015.md"
-    },
-    "/alex-chloe/fresh-meat/welcome-to-high-school/scene-16-a-quiet-ritual": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 16: A Quiet Ritual",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s016.md"
-    },
-    "/alex-chloe/fresh-meat/welcome-to-high-school/scene-17-a-christmas-of-firsts": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 17: A Christmas of Firsts",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s017.md"
-    },
-    "/alex-chloe/fresh-meat/welcome-to-high-school/scene-18-a-cross-border-introduction": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 18: A Cross-Border Introduction",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s018.md"
+        "filePath": "e003/c001/p007.md"
     },
     "/alex-chloe/fresh-meat/spring-semester-at-northwood-high": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -424,41 +208,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|1"
     },
-    "/alex-chloe/fresh-meat/spring-semester-at-northwood-high/scene-1-the-gaelic-gambit-and-the-grease-trap-lament": {
+    "/alex-chloe/fresh-meat/spring-semester-at-northwood-high/part-1-the-gaelic-gambit-and-the-grease-trap-lament-a-miller-mason-birthday-extravaganza": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Gaelic Gambit and the Grease Trap Lament",
+        "title": "Part 1: The Gaelic Gambit and the Grease Trap Lament & A Miller-Mason Birthday Extravaganza",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s001.md"
+        "filePath": "e003/c002/p001.md"
     },
-    "/alex-chloe/fresh-meat/spring-semester-at-northwood-high/scene-2-birthday-twins": {
+    "/alex-chloe/fresh-meat/spring-semester-at-northwood-high/part-2-a-change-of-scenery-the-first-step-of-the-adventure": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Birthday Twins",
+        "title": "Part 2: A Change of Scenery & The First Step of the Adventure",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s002.md"
-    },
-    "/alex-chloe/fresh-meat/spring-semester-at-northwood-high/scene-3-a-party-for-two": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A Party for Two",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s003.md"
-    },
-    "/alex-chloe/fresh-meat/spring-semester-at-northwood-high/scene-4-a-miller-mason-birthday-extravaganza": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Miller-Mason Birthday Extravaganza",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s004.md"
-    },
-    "/alex-chloe/fresh-meat/spring-semester-at-northwood-high/scene-5-a-change-of-scenery": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A Change of Scenery",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s005.md"
-    },
-    "/alex-chloe/fresh-meat/spring-semester-at-northwood-high/scene-6-the-first-step-of-the-adventure": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The First Step of the Adventure",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s006.md"
+        "filePath": "e003/c002/p002.md"
     },
     "/alex-chloe/fresh-meat/one-town-two-countries": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -466,77 +226,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|2"
     },
-    "/alex-chloe/fresh-meat/one-town-two-countries/scene-1-the-adventure-becomes-real": {
+    "/alex-chloe/fresh-meat/one-town-two-countries/part-1-the-adventure-becomes-real-one-street-two-countries": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Adventure Becomes Real",
+        "title": "Part 1: The Adventure Becomes Real & One Street, Two Countries",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s001.md"
+        "filePath": "e003/c003/p001.md"
     },
-    "/alex-chloe/fresh-meat/one-town-two-countries/scene-2-the-night-before": {
+    "/alex-chloe/fresh-meat/one-town-two-countries/part-2-a-day-of-two-nations-a-lesson-in-chocolate-and-law": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Night Before",
+        "title": "Part 2: A Day of Two Nations & A Lesson in Chocolate and Law",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s002.md"
+        "filePath": "e003/c003/p002.md"
     },
-    "/alex-chloe/fresh-meat/one-town-two-countries/scene-3-the-journey-north": {
+    "/alex-chloe/fresh-meat/one-town-two-countries/part-3-the-forbidden-fruit": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Journey North",
+        "title": "Part 3: The Forbidden Fruit",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s003.md"
-    },
-    "/alex-chloe/fresh-meat/one-town-two-countries/scene-4-a-familiar-crossing": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Familiar Crossing",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s004.md"
-    },
-    "/alex-chloe/fresh-meat/one-town-two-countries/scene-5-a-town-without-walls": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A Town Without Walls",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s005.md"
-    },
-    "/alex-chloe/fresh-meat/one-town-two-countries/scene-6-one-street-two-countries": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: One Street, Two Countries",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s006.md"
-    },
-    "/alex-chloe/fresh-meat/one-town-two-countries/scene-7-a-day-of-two-nations": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: A Day of Two Nations",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s007.md"
-    },
-    "/alex-chloe/fresh-meat/one-town-two-countries/scene-8-the-montr-al-rule": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Montr\u00e9al Rule",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s008.md"
-    },
-    "/alex-chloe/fresh-meat/one-town-two-countries/scene-9-montr-al": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: Montr\u00e9al",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s009.md"
-    },
-    "/alex-chloe/fresh-meat/one-town-two-countries/scene-10-the-return-journey": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Return Journey",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s010.md"
-    },
-    "/alex-chloe/fresh-meat/one-town-two-countries/scene-11-a-lesson-in-chocolate-and-law": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: A Lesson in Chocolate and Law",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s011.md"
-    },
-    "/alex-chloe/fresh-meat/one-town-two-countries/scene-12-the-forbidden-fruit": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: The Forbidden Fruit",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s012.md"
+        "filePath": "e003/c003/p003.md"
     },
     "/alex-chloe/fresh-meat/la-famille": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -544,29 +250,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|3"
     },
-    "/alex-chloe/fresh-meat/la-famille/scene-1-a-qu-b-cois-welcome": {
+    "/alex-chloe/fresh-meat/la-famille/a-qu-b-cois-welcome-the-last-farewell": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Qu\u00e9b\u00e9cois Welcome",
+        "title": "A Qu\u00e9b\u00e9cois Welcome & The Last Farewell",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c004/s001.md"
-    },
-    "/alex-chloe/fresh-meat/la-famille/scene-2-the-reunion-food-family-and-french": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Reunion \u2013 Food, Family, and French",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c004/s002.md"
-    },
-    "/alex-chloe/fresh-meat/la-famille/scene-3-character-moments-and-interactions": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Character Moments and Interactions",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c004/s003.md"
-    },
-    "/alex-chloe/fresh-meat/la-famille/scene-4-the-last-farewell": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Last Farewell",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c004/s004.md"
+        "filePath": "e003/c004/p001.md"
     },
     "/alex-chloe/sophomore-year": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -580,17 +268,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|0"
     },
-    "/alex-chloe/sophomore-year/a-new-rhythm/scene-1-the-a-b-block": {
+    "/alex-chloe/sophomore-year/a-new-rhythm/the-a-b-block-the-calendar-keeper": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The A/B Block",
+        "title": "The A/B Block & The Calendar Keeper",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s001.md"
-    },
-    "/alex-chloe/sophomore-year/a-new-rhythm/scene-2-the-calendar-keeper": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Calendar Keeper",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s002.md"
+        "filePath": "e004/c001/p001.md"
     },
     "/alex-chloe/sophomore-year/the-longest-two-weeks": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -598,53 +280,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|1"
     },
-    "/alex-chloe/sophomore-year/the-longest-two-weeks/scene-1-a-simple-cough": {
+    "/alex-chloe/sophomore-year/the-longest-two-weeks/a-simple-cough-alex-s-recovery": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Simple Cough",
+        "title": "A Simple Cough & Alex\u2019s Recovery",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s001.md"
-    },
-    "/alex-chloe/sophomore-year/the-longest-two-weeks/scene-2-the-nurse-s-verdict": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Nurse's Verdict",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s002.md"
-    },
-    "/alex-chloe/sophomore-year/the-longest-two-weeks/scene-3-the-hospital": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Hospital",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s003.md"
-    },
-    "/alex-chloe/sophomore-year/the-longest-two-weeks/scene-4-a-turn-for-the-worse": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Turn for the Worse",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s004.md"
-    },
-    "/alex-chloe/sophomore-year/the-longest-two-weeks/scene-5-the-anchor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Anchor",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s005.md"
-    },
-    "/alex-chloe/sophomore-year/the-longest-two-weeks/scene-6-touch-and-go": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Touch and Go",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s006.md"
-    },
-    "/alex-chloe/sophomore-year/the-longest-two-weeks/scene-7-the-road-back": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Road Back",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s007.md"
-    },
-    "/alex-chloe/sophomore-year/the-longest-two-weeks/scene-8-alex-s-recovery": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: Alex\u2019s Recovery",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s008.md"
+        "filePath": "e004/c002/p001.md"
     },
     "/alex-chloe/sophomore-year/a-new-normal": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -652,17 +292,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|2"
     },
-    "/alex-chloe/sophomore-year/a-new-normal/scene-1-re-establishing-a-rhythm": {
+    "/alex-chloe/sophomore-year/a-new-normal/re-establishing-a-rhythm-a-new-low": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Re-establishing a Rhythm",
+        "title": "Re-establishing a Rhythm & A New Low",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c003/s001.md"
-    },
-    "/alex-chloe/sophomore-year/a-new-normal/scene-2-a-new-low": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A New Low",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c003/s002.md"
+        "filePath": "e004/c003/p001.md"
     },
     "/alex-chloe/sophomore-year/the-first-crack": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -670,29 +304,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|3"
     },
-    "/alex-chloe/sophomore-year/the-first-crack/scene-1-the-blast-radius": {
+    "/alex-chloe/sophomore-year/the-first-crack/the-blast-radius-the-unbreakable-bond": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Blast Radius",
+        "title": "The Blast Radius & The Unbreakable Bond",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c004/s001.md"
-    },
-    "/alex-chloe/sophomore-year/the-first-crack/scene-2-the-cold-war": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Cold War",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c004/s002.md"
-    },
-    "/alex-chloe/sophomore-year/the-first-crack/scene-3-the-reconciliation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Reconciliation",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c004/s003.md"
-    },
-    "/alex-chloe/sophomore-year/the-first-crack/scene-4-the-unbreakable-bond": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Unbreakable Bond",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c004/s004.md"
+        "filePath": "e004/c004/p001.md"
     },
     "/alex-chloe/sophomore-year/a-different-kind-of-connection": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -700,29 +316,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|4"
     },
-    "/alex-chloe/sophomore-year/a-different-kind-of-connection/scene-1-the-lab-partner": {
+    "/alex-chloe/sophomore-year/a-different-kind-of-connection/the-lab-partner-the-answer": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Lab Partner",
+        "title": "The Lab Partner & The Answer",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c005/s001.md"
-    },
-    "/alex-chloe/sophomore-year/a-different-kind-of-connection/scene-2-the-study-session": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Study Session",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c005/s002.md"
-    },
-    "/alex-chloe/sophomore-year/a-different-kind-of-connection/scene-3-the-invitation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Invitation",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c005/s003.md"
-    },
-    "/alex-chloe/sophomore-year/a-different-kind-of-connection/scene-4-the-answer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Answer",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c005/s004.md"
+        "filePath": "e004/c005/p001.md"
     },
     "/alex-chloe/juniors-they-are": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -736,29 +334,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|0"
     },
-    "/alex-chloe/juniors-they-are/the-virtual-solution/scene-1-a-compatibility-crisis": {
+    "/alex-chloe/juniors-they-are/the-virtual-solution/a-compatibility-crisis-a-lesson-in-virtualization": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Compatibility Crisis",
+        "title": "A Compatibility Crisis & A Lesson in Virtualization",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s001.md"
-    },
-    "/alex-chloe/juniors-they-are/the-virtual-solution/scene-2-the-justification": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Justification",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s002.md"
-    },
-    "/alex-chloe/juniors-they-are/the-virtual-solution/scene-3-the-unboxing": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Unboxing",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s003.md"
-    },
-    "/alex-chloe/juniors-they-are/the-virtual-solution/scene-4-a-lesson-in-virtualization": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Lesson in Virtualization",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s004.md"
+        "filePath": "e005/c001/p001.md"
     },
     "/alex-chloe/juniors-they-are/spring-break": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -766,41 +346,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|1"
     },
-    "/alex-chloe/juniors-they-are/spring-break/scene-1-parents-make-plans": {
+    "/alex-chloe/juniors-they-are/spring-break/part-1-parents-make-plans-a-quiet-domesticity": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Parents Make Plans",
+        "title": "Part 1: Parents Make Plans & A Quiet Domesticity",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s001.md"
+        "filePath": "e005/c002/p001.md"
     },
-    "/alex-chloe/juniors-they-are/spring-break/scene-2-the-handover": {
+    "/alex-chloe/juniors-they-are/spring-break/part-2-megan-the-return": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Handover",
+        "title": "Part 2: MEGAN!!!! & The Return",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s002.md"
-    },
-    "/alex-chloe/juniors-they-are/spring-break/scene-3-a-quiet-domesticity": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A Quiet Domesticity",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s003.md"
-    },
-    "/alex-chloe/juniors-they-are/spring-break/scene-4-megan": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: MEGAN!!!!",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s004.md"
-    },
-    "/alex-chloe/juniors-they-are/spring-break/scene-5-the-departure-and-the-reflection": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Departure and The Reflection",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s005.md"
-    },
-    "/alex-chloe/juniors-they-are/spring-break/scene-6-the-return": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Return",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s006.md"
+        "filePath": "e005/c002/p002.md"
     },
     "/alex-chloe/seniors-rule-the-school": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -814,35 +370,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|0"
     },
-    "/alex-chloe/seniors-rule-the-school/a-last-first-day-of-school/scene-1-cafeteria-entrance-cafeteria-first-day-fall-2002": {
+    "/alex-chloe/seniors-rule-the-school/a-last-first-day-of-school/part-1-cafeteria-entrance-cafeteria-by-the-dumpsters": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Cafeteria Entrance & Cafeteria \u2013 First Day, Fall 2002",
+        "title": "Part 1: Cafeteria Entrance & Cafeteria & By the Dumpsters",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s001.md"
+        "filePath": "e006/c001/p001.md"
     },
-    "/alex-chloe/seniors-rule-the-school/a-last-first-day-of-school/scene-2-the-first-separation": {
+    "/alex-chloe/seniors-rule-the-school/a-last-first-day-of-school/part-2-a-line-too-far": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The First Separation",
+        "title": "Part 2: A Line too Far",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s002.md"
-    },
-    "/alex-chloe/seniors-rule-the-school/a-last-first-day-of-school/scene-3-main-lobby-front-exit-end-of-first-day-fall-2002": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Main Lobby & Front Exit \u2013 End of First Day, Fall 2002",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s003.md"
-    },
-    "/alex-chloe/seniors-rule-the-school/a-last-first-day-of-school/scene-4-by-the-dumpsters-first-day-of-school-fall-2002-2-13-pm": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: By the Dumpsters \u2013 First Day of School, Fall 2002, 2:13 PM",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s004.md"
-    },
-    "/alex-chloe/seniors-rule-the-school/a-last-first-day-of-school/scene-5-a-line-too-far": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A Line too Far",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s005.md"
+        "filePath": "e006/c001/p002.md"
     },
     "/alex-chloe/seniors-rule-the-school/a-quiet-miracle": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -850,17 +388,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|1"
     },
-    "/alex-chloe/seniors-rule-the-school/a-quiet-miracle/scene-1-the-tada-heard-round-the-lab": {
+    "/alex-chloe/seniors-rule-the-school/a-quiet-miracle/the-tada-heard-round-the-lab-the-missing-semicolon": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The TADA Heard 'Round the Lab",
+        "title": "The TADA Heard 'Round the Lab & The Missing Semicolon",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s001.md"
-    },
-    "/alex-chloe/seniors-rule-the-school/a-quiet-miracle/scene-2-the-missing-semicolon": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Missing Semicolon",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s002.md"
+        "filePath": "e006/c002/p001.md"
     },
     "/alex-chloe/seniors-rule-the-school/the-fork-in-the-road": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -868,11 +400,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|2"
     },
-    "/alex-chloe/seniors-rule-the-school/the-fork-in-the-road/scene-1-the": {
+    "/alex-chloe/seniors-rule-the-school/the-fork-in-the-road/the": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The \\",
+        "title": "The \\",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c003/s001.md"
+        "filePath": "e006/c003/p001.md"
     },
     "/alex-chloe/seniors-rule-the-school/a-different-kind-of-anchor": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -880,17 +412,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|3"
     },
-    "/alex-chloe/seniors-rule-the-school/a-different-kind-of-anchor/scene-1-a-quiet-hurt": {
+    "/alex-chloe/seniors-rule-the-school/a-different-kind-of-anchor/a-quiet-hurt-a-simple-offer": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Quiet Hurt",
+        "title": "A Quiet Hurt & A Simple Offer",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c004/s001.md"
-    },
-    "/alex-chloe/seniors-rule-the-school/a-different-kind-of-anchor/scene-2-a-simple-offer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Simple Offer",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c004/s002.md"
+        "filePath": "e006/c004/p001.md"
     },
     "/alex-chloe/seniors-rule-the-school/the-weight-of-care": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -898,35 +424,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|4"
     },
-    "/alex-chloe/seniors-rule-the-school/the-weight-of-care/scene-1-the-accident": {
+    "/alex-chloe/seniors-rule-the-school/the-weight-of-care/the-accident-a-deeper-understanding": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Accident",
+        "title": "The Accident & A Deeper Understanding",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c005/s001.md"
-    },
-    "/alex-chloe/seniors-rule-the-school/the-weight-of-care/scene-2-the-new-reality": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The New Reality",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c005/s002.md"
-    },
-    "/alex-chloe/seniors-rule-the-school/the-weight-of-care/scene-3-a-new-kind-of-teamwork": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A New Kind of Teamwork",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c005/s003.md"
-    },
-    "/alex-chloe/seniors-rule-the-school/the-weight-of-care/scene-4-private-struggles-and-quiet-dignity": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Private Struggles and Quiet Dignity",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c005/s004.md"
-    },
-    "/alex-chloe/seniors-rule-the-school/the-weight-of-care/scene-5-a-deeper-understanding": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A Deeper Understanding",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c005/s005.md"
+        "filePath": "e006/c005/p001.md"
     },
     "/alex-chloe/seniors-rule-the-school/the-last-dance": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -934,29 +436,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|5"
     },
-    "/alex-chloe/seniors-rule-the-school/the-last-dance/scene-1-the-decision": {
+    "/alex-chloe/seniors-rule-the-school/the-last-dance/the-decision-the-real-victory": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Decision",
+        "title": "The Decision & The Real Victory",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s001.md"
-    },
-    "/alex-chloe/seniors-rule-the-school/the-last-dance/scene-2-the-sabotage": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Sabotage",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s002.md"
-    },
-    "/alex-chloe/seniors-rule-the-school/the-last-dance/scene-3-the-people-s-vote": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The People's Vote",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s003.md"
-    },
-    "/alex-chloe/seniors-rule-the-school/the-last-dance/scene-4-the-real-victory": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Real Victory",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c006/s004.md"
+        "filePath": "e006/c006/p001.md"
     },
     "/alex-chloe/one-last-summer": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -970,29 +454,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|0"
     },
-    "/alex-chloe/one-last-summer/a-pacific-northwest-interlude-summer-after-graduation/scene-1-exploring-seattle-and-lynnwood": {
+    "/alex-chloe/one-last-summer/a-pacific-northwest-interlude-summer-after-graduation/exploring-seattle-and-lynnwood-a-new-threshold-of-trust": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Exploring Seattle and Lynnwood",
+        "title": "Exploring Seattle and Lynnwood & A New Threshold of Trust",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s001.md"
-    },
-    "/alex-chloe/one-last-summer/a-pacific-northwest-interlude-summer-after-graduation/scene-2-a-special-evening": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Special Evening",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s002.md"
-    },
-    "/alex-chloe/one-last-summer/a-pacific-northwest-interlude-summer-after-graduation/scene-3-the-afterglow": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Afterglow",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s003.md"
-    },
-    "/alex-chloe/one-last-summer/a-pacific-northwest-interlude-summer-after-graduation/scene-4-a-new-threshold-of-trust": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A New Threshold of Trust",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s004.md"
+        "filePath": "e007/c001/p001.md"
     },
     "/alex-chloe/one-last-summer/a-very-hard-goodbye": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1000,41 +466,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|1"
     },
-    "/alex-chloe/one-last-summer/a-very-hard-goodbye/scene-1-two-separate-worlds": {
+    "/alex-chloe/one-last-summer/a-very-hard-goodbye/two-separate-worlds-home-safe": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Two Separate Worlds",
+        "title": "Two Separate Worlds & Home Safe",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s001.md"
-    },
-    "/alex-chloe/one-last-summer/a-very-hard-goodbye/scene-2-the-soundtrack-to-a-heartbreak": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Soundtrack to a Heartbreak",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s002.md"
-    },
-    "/alex-chloe/one-last-summer/a-very-hard-goodbye/scene-3-a-night-in-an-empty-room": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A Night in an Empty Room",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s003.md"
-    },
-    "/alex-chloe/one-last-summer/a-very-hard-goodbye/scene-4-the-first-lifeline": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The First Lifeline",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s004.md"
-    },
-    "/alex-chloe/one-last-summer/a-very-hard-goodbye/scene-5-a-voice-across-the-continent": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A Voice Across the Continent",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s005.md"
-    },
-    "/alex-chloe/one-last-summer/a-very-hard-goodbye/scene-6-home-safe": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Home Safe",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s006.md"
+        "filePath": "e007/c002/p001.md"
     },
     "/alex-chloe/separate-coast-separate-lives": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1048,53 +484,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|0"
     },
-    "/alex-chloe/separate-coast-separate-lives/a-community-college-beginning/scene-1-student-development-101": {
+    "/alex-chloe/separate-coast-separate-lives/a-community-college-beginning/part-1-student-development-101-moving-fast": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Student Development 101",
+        "title": "Part 1: Student Development 101 & Moving Fast",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s001.md"
+        "filePath": "e008/c001/p001.md"
     },
-    "/alex-chloe/separate-coast-separate-lives/a-community-college-beginning/scene-2-a-familiar-face": {
+    "/alex-chloe/separate-coast-separate-lives/a-community-college-beginning/part-2-how-i-met-her-mother-the-presentation-and-the-aftermath": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Familiar Face",
+        "title": "Part 2: How I Met Her Mother & The Presentation and the Aftermath",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s002.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/a-community-college-beginning/scene-3-coffee-and-an-open-wound": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Coffee, and an Open Wound",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s003.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/a-community-college-beginning/scene-4-the-promise": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Promise",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s004.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/a-community-college-beginning/scene-5-moving-fast": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Moving Fast",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s005.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/a-community-college-beginning/scene-6-how-i-met-her-mother": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: How I Met Her Mother",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s006.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/a-community-college-beginning/scene-7-a-lifeline-offered": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: A Lifeline Offered",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s007.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/a-community-college-beginning/scene-8-the-presentation-and-the-aftermath": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Presentation and the Aftermath",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s008.md"
+        "filePath": "e008/c001/p002.md"
     },
     "/alex-chloe/separate-coast-separate-lives/the-first-alarm-bell": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1102,53 +502,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|1"
     },
-    "/alex-chloe/separate-coast-separate-lives/the-first-alarm-bell/scene-1-a-doubt-starts-to-form": {
+    "/alex-chloe/separate-coast-separate-lives/the-first-alarm-bell/part-1-a-doubt-starts-to-form-a-debrief-at-lisa-court": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Doubt Starts to Form",
+        "title": "Part 1: A Doubt Starts to Form & A Debrief at Lisa Court",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s001.md"
+        "filePath": "e008/c002/p001.md"
     },
-    "/alex-chloe/separate-coast-separate-lives/the-first-alarm-bell/scene-2-the-refusal": {
+    "/alex-chloe/separate-coast-separate-lives/the-first-alarm-bell/part-2-the-morning-debrief-the-love-bomb": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Refusal",
+        "title": "Part 2: The Morning Debrief & The Love Bomb",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s002.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-first-alarm-bell/scene-3-the-call-for-help": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Call for Help",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s003.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-first-alarm-bell/scene-4-the-confrontation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Confrontation",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s004.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-first-alarm-bell/scene-5-a-debrief-in-the-dark": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A Debrief in the Dark",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s005.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-first-alarm-bell/scene-6-a-debrief-at-lisa-court": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A Debrief at Lisa Court",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s006.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-first-alarm-bell/scene-7-the-morning-debrief": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Morning Debrief",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s007.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-first-alarm-bell/scene-8-the-love-bomb": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Love Bomb",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s008.md"
+        "filePath": "e008/c002/p002.md"
     },
     "/alex-chloe/separate-coast-separate-lives/lingering-connections-looming-threats": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1156,47 +520,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|2"
     },
-    "/alex-chloe/separate-coast-separate-lives/lingering-connections-looming-threats/scene-1-the-video-call-interruption": {
+    "/alex-chloe/separate-coast-separate-lives/lingering-connections-looming-threats/the-video-call-interruption-a-secret-rebellion": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Video Call Interruption",
+        "title": "The Video Call Interruption & A Secret Rebellion",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s001.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/lingering-connections-looming-threats/scene-2-a-dinner-of-dissent": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Dinner of Dissent",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s002.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/lingering-connections-looming-threats/scene-3-the-slow-encroachment": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Slow Encroachment",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s003.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/lingering-connections-looming-threats/scene-4-an-unstable-connection": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: An Unstable Connection",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s004.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/lingering-connections-looming-threats/scene-5-a-lifeline-from-lynnwood": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A Lifeline from Lynnwood",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s005.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/lingering-connections-looming-threats/scene-6-vera-s": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Vera's \\",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s006.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/lingering-connections-looming-threats/scene-7-a-secret-rebellion": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: A Secret Rebellion",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s007.md"
+        "filePath": "e008/c003/p001.md"
     },
     "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1204,143 +532,29 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|3"
     },
-    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/scene-1-the-cavalry-arrives": {
+    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/part-1-the-cavalry-arrives-a-taste-of-normalcy": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Cavalry Arrives",
+        "title": "Part 1: The Cavalry Arrives & A Taste of Normalcy",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s001.md"
+        "filePath": "e008/c004/p001.md"
     },
-    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/scene-2-a-return-to-sanctuary": {
+    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/part-2-a-night-of-healing-the-campus-tour": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Return to Sanctuary",
+        "title": "Part 2: A Night of Healing & The Campus Tour",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s002.md"
+        "filePath": "e008/c004/p002.md"
     },
-    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/scene-3-a-safe-harbor": {
+    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/part-3-the-residential-tour-the-second-video-call": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A Safe Harbor",
+        "title": "Part 3: The Residential Tour & The Second Video Call",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s003.md"
+        "filePath": "e008/c004/p003.md"
     },
-    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/scene-4-a-taste-of-normalcy": {
+    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/part-4-starship-sentinels-the-aftermath": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Taste of Normalcy",
+        "title": "Part 4: Starship Sentinels & The Aftermath",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s004.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/scene-5-a-night-of-healing": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A Night of Healing",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s005.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/scene-6-the-lifeline": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Lifeline",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s006.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/scene-7-the-bedtime-routine": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Bedtime Routine",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s007.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/scene-8-a-safe-place-to-land": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: A Safe Place to Land",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s008.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/scene-9-an-early-start": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: An Early Start",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s009.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/scene-10-opening-remarks": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: Opening Remarks",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s010.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/scene-11-the-campus-tour": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The Campus Tour",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s011.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/scene-12-the-residential-tour": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: The Residential Tour",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s012.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/scene-13-the-thirteenth-floor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 13: The Thirteenth Floor",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s013.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/scene-14-the-famous-fried-chicken": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 14: The Famous Fried Chicken",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s014.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/scene-15-practicing-for-the-future": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 15: Practicing for the Future",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s015.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/scene-16-homework-sanctuary": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 16: Homework Sanctuary",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s016.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/scene-17-the-tender-shack": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 17: The Tender Shack",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s017.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/scene-18-the-second-video-call": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 18: The Second Video Call",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s018.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/scene-19-starship-sentinels": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 19: Starship Sentinels",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s019.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/scene-20-the-second-evening-of-care": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 20: The Second Evening of Care",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s020.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/scene-21-a-morning-of-trust": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 21: A Morning of Trust",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s021.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/scene-22-the-heart-to-heart": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 22: The Heart-to-Heart",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s022.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-vdu-open-house/scene-23-the-aftermath": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 23: The Aftermath",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s023.md"
+        "filePath": "e008/c004/p004.md"
     },
     "/alex-chloe/separate-coast-separate-lives/the-longest-road": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1348,29 +562,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|4"
     },
-    "/alex-chloe/separate-coast-separate-lives/the-longest-road/scene-1-the-vacuum": {
+    "/alex-chloe/separate-coast-separate-lives/the-longest-road/part-1-the-vacuum-across-the-country-on-a-pathfinder": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Vacuum",
+        "title": "Part 1: The Vacuum & Across the Country on a Pathfinder",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c005/s001.md"
+        "filePath": "e008/c005/p001.md"
     },
-    "/alex-chloe/separate-coast-separate-lives/the-longest-road/scene-2-the-thanksgiving-lie": {
+    "/alex-chloe/separate-coast-separate-lives/the-longest-road/part-2-welcome-to-hell-welcome-to-kent": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Thanksgiving Lie",
+        "title": "Part 2: Welcome to Hell, Welcome to Kent",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c005/s002.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-longest-road/scene-3-across-the-country-on-a-pathfinder": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Across the Country on a Pathfinder",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c005/s003.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-longest-road/scene-4-welcome-to-hell-welcome-to-kent": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Welcome to Hell, Welcome to Kent",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c005/s004.md"
+        "filePath": "e008/c005/p002.md"
     },
     "/alex-chloe/separate-coast-separate-lives/help-is-on-the-way": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1378,29 +580,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|5"
     },
-    "/alex-chloe/separate-coast-separate-lives/help-is-on-the-way/scene-1-the-desperate-call": {
+    "/alex-chloe/separate-coast-separate-lives/help-is-on-the-way/part-1-the-desperate-call-race-to-kent": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Desperate Call",
+        "title": "Part 1: The Desperate Call & Race to Kent",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c006/s001.md"
+        "filePath": "e008/c006/p001.md"
     },
-    "/alex-chloe/separate-coast-separate-lives/help-is-on-the-way/scene-2-race-to-kent": {
+    "/alex-chloe/separate-coast-separate-lives/help-is-on-the-way/part-2-confrontation-and-choice-the-drive-to-lynnwood": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Race to Kent",
+        "title": "Part 2: Confrontation and Choice & The Drive to Lynnwood",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c006/s002.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/help-is-on-the-way/scene-3-confrontation-and-choice": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Confrontation and Choice",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c006/s003.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/help-is-on-the-way/scene-4-the-drive-to-lynnwood-safety-and-silence": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Drive to Lynnwood \u2013 Safety and Silence",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c006/s004.md"
+        "filePath": "e008/c006/p002.md"
     },
     "/alex-chloe/separate-coast-separate-lives/a-new-plan": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1408,35 +598,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|6"
     },
-    "/alex-chloe/separate-coast-separate-lives/a-new-plan/scene-1-an-urgent-call-home": {
+    "/alex-chloe/separate-coast-separate-lives/a-new-plan/part-1-an-urgent-call-home-a-healing-nap-and-a-new-plan": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: An Urgent Call Home",
+        "title": "Part 1: An Urgent Call Home & A Healing Nap and a New Plan",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c007/s001.md"
+        "filePath": "e008/c007/p001.md"
     },
-    "/alex-chloe/separate-coast-separate-lives/a-new-plan/scene-2-an-emergency-deep-cleaning-restoring-dignity": {
+    "/alex-chloe/separate-coast-separate-lives/a-new-plan/part-2-a-quiet-thanksgiving": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: An Emergency Deep Cleaning \u2013 Restoring Dignity",
+        "title": "Part 2: A Quiet Thanksgiving",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c007/s002.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/a-new-plan/scene-3-first-meal-in-sanctuary-simple-comforts": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: First Meal in Sanctuary \u2013 Simple Comforts",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c007/s003.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/a-new-plan/scene-4-a-healing-nap-and-a-new-plan": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Healing Nap and a New Plan",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c007/s004.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/a-new-plan/scene-5-a-quiet-thanksgiving": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A Quiet Thanksgiving",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c007/s005.md"
+        "filePath": "e008/c007/p002.md"
     },
     "/alex-chloe/separate-coast-separate-lives/reestablishing-alex-s-agency": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1444,41 +616,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|7"
     },
-    "/alex-chloe/separate-coast-separate-lives/reestablishing-alex-s-agency/scene-1-a-quiet-conversation": {
+    "/alex-chloe/separate-coast-separate-lives/reestablishing-alex-s-agency/part-1-a-quiet-conversation-the-weight-of-certainty": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Quiet Conversation",
+        "title": "Part 1: A Quiet Conversation & The Weight of Certainty",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c008/s001.md"
+        "filePath": "e008/c008/p001.md"
     },
-    "/alex-chloe/separate-coast-separate-lives/reestablishing-alex-s-agency/scene-2-the-clinic-visit-and-a-clean-slate": {
+    "/alex-chloe/separate-coast-separate-lives/reestablishing-alex-s-agency/part-2-homeward-bound-for-graduation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Clinic Visit and a Clean Slate",
+        "title": "Part 2: Homeward Bound for Graduation",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c008/s002.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/reestablishing-alex-s-agency/scene-3-resuming-intimacy-the-afterglow-revisited": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Resuming Intimacy \u2013 The Afterglow Revisited",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c008/s003.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/reestablishing-alex-s-agency/scene-4-the-afterglow-a-new-dawn-a-reclaimed-voice": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Afterglow \u2013 A New Dawn, A Reclaimed Voice",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c008/s004.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/reestablishing-alex-s-agency/scene-5-the-weight-of-certainty": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Weight of Certainty",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c008/s005.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/reestablishing-alex-s-agency/scene-6-homeward-bound-for-graduation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Homeward Bound for Graduation",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c008/s006.md"
+        "filePath": "e008/c008/p002.md"
     },
     "/alex-chloe/separate-coast-separate-lives/the-journey-home": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1486,47 +634,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|8"
     },
-    "/alex-chloe/separate-coast-separate-lives/the-journey-home/scene-1-the-cavalry-arrives": {
+    "/alex-chloe/separate-coast-separate-lives/the-journey-home/part-1-the-cavalry-arrives-magna-cum-laude": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Cavalry Arrives",
+        "title": "Part 1: The Cavalry Arrives & Magna Cum Laude",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c009/s001.md"
+        "filePath": "e008/c009/p001.md"
     },
-    "/alex-chloe/separate-coast-separate-lives/the-journey-home/scene-2-a-gentle-deconstruction": {
+    "/alex-chloe/separate-coast-separate-lives/the-journey-home/part-2-the-three-way-escape-hatch": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Gentle Deconstruction",
+        "title": "Part 2: The Three-Way Escape Hatch",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c009/s002.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-journey-home/scene-3-shipping-a-life": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Shipping a Life",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c009/s003.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-journey-home/scene-4-the-flight-home": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Flight Home",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c009/s004.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-journey-home/scene-5-sanctuary": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Sanctuary",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c009/s005.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-journey-home/scene-6-magna-cum-laude": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Magna Cum Laude",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c009/s006.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/the-journey-home/scene-7-the-three-way-escape-hatch": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Three-Way Escape Hatch",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c009/s007.md"
+        "filePath": "e008/c009/p002.md"
     },
     "/alex-chloe/separate-coast-separate-lives/winter-break-decisions": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1534,107 +652,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|9"
     },
-    "/alex-chloe/separate-coast-separate-lives/winter-break-decisions/scene-1-the-insurance-dilemma-and-a-loving-proposition": {
+    "/alex-chloe/separate-coast-separate-lives/winter-break-decisions/part-1-the-insurance-dilemma-and-a-loving-proposition-a-day-of-two-cultures": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Insurance Dilemma and a Loving Proposition",
+        "title": "Part 1: The Insurance Dilemma and a Loving Proposition & A Day of Two Cultures",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c010/s001.md"
+        "filePath": "e008/c010/p001.md"
     },
-    "/alex-chloe/separate-coast-separate-lives/winter-break-decisions/scene-2-the-doctor-s-verdict": {
+    "/alex-chloe/separate-coast-separate-lives/winter-break-decisions/part-2-le-r-veillon-on-lisa-court-a-rivalry-is-born": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Doctor's Verdict",
+        "title": "Part 2: Le R\u00e9veillon on Lisa Court & A Rivalry is Born",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c010/s002.md"
+        "filePath": "e008/c010/p002.md"
     },
-    "/alex-chloe/separate-coast-separate-lives/winter-break-decisions/scene-3-a-new-foundation": {
+    "/alex-chloe/separate-coast-separate-lives/winter-break-decisions/part-3-a-quiet-a-shared-secret": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A New Foundation",
+        "title": "Part 3: A Quiet \\ & A Shared Secret",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c010/s003.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/winter-break-decisions/scene-4-a-new-normal": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A New Normal",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c010/s004.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/winter-break-decisions/scene-5-a-canadian-landing": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A Canadian Landing",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c010/s005.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/winter-break-decisions/scene-6-a-day-of-two-cultures": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A Day of Two Cultures",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c010/s006.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/winter-break-decisions/scene-7-le-r-veillon-on-lisa-court": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Le R\u00e9veillon on Lisa Court",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c010/s007.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/winter-break-decisions/scene-8-the-aftermath-of-the-feast": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Aftermath of the Feast",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c010/s008.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/winter-break-decisions/scene-9-a-cross-border-christmas": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: A Cross-Border Christmas",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c010/s009.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/winter-break-decisions/scene-10-a-gift-of-togetherness": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: A Gift of Togetherness",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c010/s010.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/winter-break-decisions/scene-11-the-american-christmas-and-a-new-allegiance": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The American Christmas and a New Allegiance",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c010/s011.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/winter-break-decisions/scene-12-a-rivalry-is-born": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: A Rivalry is Born",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c010/s012.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/winter-break-decisions/scene-13-a-quiet": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 13: A Quiet \\",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c010/s013.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/winter-break-decisions/scene-14-a-grocery-store-guardian": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 14: A Grocery Store Guardian",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c010/s014.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/winter-break-decisions/scene-15-confrontation-in-valuemart": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 15: Confrontation in ValueMart",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c010/s015.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/winter-break-decisions/scene-16-the-aftermath": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 16: The Aftermath",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c010/s016.md"
-    },
-    "/alex-chloe/separate-coast-separate-lives/winter-break-decisions/scene-17-a-shared-secret": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 17: A Shared Secret",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c010/s017.md"
+        "filePath": "e008/c010/p003.md"
     },
     "/alex-chloe/a-fresh-start": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1648,17 +682,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|3"
     },
-    "/alex-chloe/a-fresh-start/a-new-beginning/scene-1-gearing-up": {
+    "/alex-chloe/a-fresh-start/a-new-beginning/gearing-up-a-new-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Gearing Up",
+        "title": "Gearing Up & A New Sanctuary",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c001/s001.md"
-    },
-    "/alex-chloe/a-fresh-start/a-new-beginning/scene-2-a-new-sanctuary": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A New Sanctuary",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c001/s002.md"
+        "filePath": "e009/c001/p001.md"
     },
     "/alex-chloe/a-fresh-start/the-final-severance": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1666,29 +694,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|1"
     },
-    "/alex-chloe/a-fresh-start/the-final-severance/scene-1-the-empty-seat": {
+    "/alex-chloe/a-fresh-start/the-final-severance/the-empty-seat-the-letter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Empty Seat",
+        "title": "The Empty Seat & The Letter",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c002/s001.md"
-    },
-    "/alex-chloe/a-fresh-start/the-final-severance/scene-2-the-confrontation-on-lisa-court": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Confrontation on Lisa Court",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c002/s002.md"
-    },
-    "/alex-chloe/a-fresh-start/the-final-severance/scene-3-the-final-desperate-call": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Final, Desperate Call",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c002/s003.md"
-    },
-    "/alex-chloe/a-fresh-start/the-final-severance/scene-4-the-letter": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Letter",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c002/s004.md"
+        "filePath": "e009/c002/p001.md"
     },
     "/alex-chloe/a-fresh-start/the-unraveling-lie": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1696,89 +706,29 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|2"
     },
-    "/alex-chloe/a-fresh-start/the-unraveling-lie/scene-1-a-family-s-resolve": {
+    "/alex-chloe/a-fresh-start/the-unraveling-lie/part-1-a-family-s-resolve-a-new-beginning": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Family's Resolve",
+        "title": "Part 1: A Family's Resolve & A New Beginning",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c003/s001.md"
+        "filePath": "e009/c003/p001.md"
     },
-    "/alex-chloe/a-fresh-start/the-unraveling-lie/scene-2-the-demand": {
+    "/alex-chloe/a-fresh-start/the-unraveling-lie/part-2-vera-s-reckoning-un-avenir-sans-fardeau": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Demand",
+        "title": "Part 2: Vera\u2019s Reckoning & Un Avenir Sans Fardeau",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c003/s002.md"
+        "filePath": "e009/c003/p002.md"
     },
-    "/alex-chloe/a-fresh-start/the-unraveling-lie/scene-3-the-truth-in-a-letter": {
+    "/alex-chloe/a-fresh-start/the-unraveling-lie/part-3-building-the-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Truth in a Letter",
+        "title": "Part 3: Building the Sanctuary",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c003/s003.md"
+        "filePath": "e009/c003/p003.md"
     },
-    "/alex-chloe/a-fresh-start/the-unraveling-lie/scene-4-the-unraveling-and-the-aftermath": {
+    "/alex-chloe/a-fresh-start/a-new-beginning/the-morning-commute-the-breaking-point": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Unraveling and The Aftermath",
+        "title": "The Morning Commute & The Breaking Point",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c003/s004.md"
-    },
-    "/alex-chloe/a-fresh-start/the-unraveling-lie/scene-5-a-new-beginning": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A New Beginning",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c003/s005.md"
-    },
-    "/alex-chloe/a-fresh-start/the-unraveling-lie/scene-6-vera-s-reckoning-a-mother-s-fury-a-daughter-s-ruin": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Vera\u2019s Reckoning \u2013 A Mother's Fury, A Daughter's Ruin",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c003/s006.md"
-    },
-    "/alex-chloe/a-fresh-start/the-unraveling-lie/scene-7-un-avenir-sans-fardeau": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Un Avenir Sans Fardeau",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c003/s007.md"
-    },
-    "/alex-chloe/a-fresh-start/the-unraveling-lie/scene-8-building-the-sanctuary": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: Building the Sanctuary",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c003/s008.md"
-    },
-    "/alex-chloe/a-fresh-start/a-new-beginning/scene-1-the-morning-commute": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Morning Commute",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c004/s001.md"
-    },
-    "/alex-chloe/a-fresh-start/a-new-beginning/scene-2-a-different-first-day": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Different First Day",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c004/s002.md"
-    },
-    "/alex-chloe/a-fresh-start/a-new-beginning/scene-3-the-conversation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Conversation",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c004/s003.md"
-    },
-    "/alex-chloe/a-fresh-start/a-new-beginning/scene-4-an-investment-in-the-future": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: An Investment in the Future",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c004/s004.md"
-    },
-    "/alex-chloe/a-fresh-start/a-new-beginning/scene-5-building-a-foundation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Building a Foundation",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c004/s005.md"
-    },
-    "/alex-chloe/a-fresh-start/a-new-beginning/scene-6-the-breaking-point": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Breaking Point",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c004/s006.md"
+        "filePath": "e009/c004/p001.md"
     },
     "/alex-chloe/a-fresh-start/the-apartment-hunt": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1786,41 +736,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|4"
     },
-    "/alex-chloe/a-fresh-start/the-apartment-hunt/scene-1-the-excitement-and-the-learning-curve": {
+    "/alex-chloe/a-fresh-start/the-apartment-hunt/part-1-the-excitement-and-the-learning-curve-the-discovery": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Excitement and the Learning Curve",
+        "title": "Part 1: The Excitement and the Learning Curve & The Discovery",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c005/s001.md"
+        "filePath": "e009/c005/p001.md"
     },
-    "/alex-chloe/a-fresh-start/the-apartment-hunt/scene-2-the-reality-check": {
+    "/alex-chloe/a-fresh-start/the-apartment-hunt/part-2-project-freedom-shopping-for-a-van": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Reality Check",
+        "title": "Part 2: Project Freedom & Shopping for a Van",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c005/s002.md"
-    },
-    "/alex-chloe/a-fresh-start/the-apartment-hunt/scene-3-the-brush-with-danger": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Brush with Danger",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c005/s003.md"
-    },
-    "/alex-chloe/a-fresh-start/the-apartment-hunt/scene-4-the-discovery": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Discovery",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c005/s004.md"
-    },
-    "/alex-chloe/a-fresh-start/the-apartment-hunt/scene-5-project-freedom": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Project Freedom",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c005/s005.md"
-    },
-    "/alex-chloe/a-fresh-start/the-apartment-hunt/scene-6-shopping-for-a-van": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Shopping for a Van",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c005/s006.md"
+        "filePath": "e009/c005/p002.md"
     },
     "/alex-chloe/a-fresh-start/spring-break": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1828,41 +754,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|5"
     },
-    "/alex-chloe/a-fresh-start/spring-break/scene-1-a-quiet-day-trip": {
+    "/alex-chloe/a-fresh-start/spring-break/a-quiet-day-trip-the-three-musketeers": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Quiet Day Trip",
+        "title": "A Quiet Day Trip & The Three Musketeers",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c006/s001.md"
-    },
-    "/alex-chloe/a-fresh-start/spring-break/scene-2-the-family-investment": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Family Investment",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c006/s002.md"
-    },
-    "/alex-chloe/a-fresh-start/spring-break/scene-3-domestic-details": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Domestic Details",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c006/s003.md"
-    },
-    "/alex-chloe/a-fresh-start/spring-break/scene-4-a-return-to-the-water": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Return to the Water",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c006/s004.md"
-    },
-    "/alex-chloe/a-fresh-start/spring-break/scene-5-the-quiet-before-the-move": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Quiet Before the Move",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c006/s005.md"
-    },
-    "/alex-chloe/a-fresh-start/spring-break/scene-6-the-three-musketeers": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Three Musketeers",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c006/s006.md"
+        "filePath": "e009/c006/p001.md"
     },
     "/alex-chloe/a-fresh-start/a-new-home": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1870,35 +766,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|6"
     },
-    "/alex-chloe/a-fresh-start/a-new-home/scene-1-the-keys": {
+    "/alex-chloe/a-fresh-start/a-new-home/the-keys-a-new-old-trusted-friend": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Keys",
+        "title": "The Keys & A New (Old) Trusted Friend",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c007/s001.md"
-    },
-    "/alex-chloe/a-fresh-start/a-new-home/scene-2-the-first-look": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The First Look",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c007/s002.md"
-    },
-    "/alex-chloe/a-fresh-start/a-new-home/scene-3-the-big-move": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Big Move",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c007/s003.md"
-    },
-    "/alex-chloe/a-fresh-start/a-new-home/scene-4-the-first-night": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The First Night",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c007/s004.md"
-    },
-    "/alex-chloe/a-fresh-start/a-new-home/scene-5-a-new-old-trusted-friend": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A New (Old) Trusted Friend",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c007/s005.md"
+        "filePath": "e009/c007/p001.md"
     },
     "/alex-chloe/a-fresh-start/the-long-wait": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1906,59 +778,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|7"
     },
-    "/alex-chloe/a-fresh-start/the-long-wait/scene-1-a-marathon-not-a-sprint": {
+    "/alex-chloe/a-fresh-start/the-long-wait/part-1-a-marathon-not-a-sprint-a-fragile-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Marathon, Not a Sprint",
+        "title": "Part 1: A Marathon, Not a Sprint & A Fragile Sanctuary",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c008/s001.md"
+        "filePath": "e009/c008/p001.md"
     },
-    "/alex-chloe/a-fresh-start/the-long-wait/scene-2-technological-bandages": {
+    "/alex-chloe/a-fresh-start/the-long-wait/part-2-the-aftermath-the-approval": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Technological Bandages",
+        "title": "Part 2: The Aftermath & The Approval",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c008/s002.md"
-    },
-    "/alex-chloe/a-fresh-start/the-long-wait/scene-3-freedom-arrives": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Freedom Arrives",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c008/s003.md"
-    },
-    "/alex-chloe/a-fresh-start/the-long-wait/scene-4-the-expected-rejection": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Expected Rejection",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c008/s004.md"
-    },
-    "/alex-chloe/a-fresh-start/the-long-wait/scene-5-the-fight-begins": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Fight Begins",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c008/s005.md"
-    },
-    "/alex-chloe/a-fresh-start/the-long-wait/scene-6-a-fragile-sanctuary": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A Fragile Sanctuary",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c008/s006.md"
-    },
-    "/alex-chloe/a-fresh-start/the-long-wait/scene-7-the-aftermath": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Aftermath",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c008/s007.md"
-    },
-    "/alex-chloe/a-fresh-start/the-long-wait/scene-8-the-journey-home": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Journey Home",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c008/s008.md"
-    },
-    "/alex-chloe/a-fresh-start/the-long-wait/scene-9-the-approval": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Approval",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c008/s009.md"
+        "filePath": "e009/c008/p002.md"
     },
     "/alex-chloe/young-adults-new-worlds": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1972,29 +802,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|0"
     },
-    "/alex-chloe/young-adults-new-worlds/standing-tall/scene-1-delivery-day": {
+    "/alex-chloe/young-adults-new-worlds/standing-tall/delivery-day-a-new-day-on-campus": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Delivery Day",
+        "title": "Delivery Day & A New Day on Campus",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c001/s001.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/standing-tall/scene-2-the-first-morning": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The First Morning",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c001/s002.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/standing-tall/scene-3-the-first-movie-night": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The First Movie Night",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c001/s003.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/standing-tall/scene-4-a-new-day-on-campus": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A New Day on Campus",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c001/s004.md"
+        "filePath": "e010/c001/p001.md"
     },
     "/alex-chloe/young-adults-new-worlds/the-final-semester": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2002,35 +814,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|1"
     },
-    "/alex-chloe/young-adults-new-worlds/the-final-semester/scene-1-the-power-couple-of-campus": {
+    "/alex-chloe/young-adults-new-worlds/the-final-semester/the-power-couple-of-campus-graduation-day": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Power Couple of Campus",
+        "title": "The Power Couple of Campus & Graduation Day",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c002/s001.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/the-final-semester/scene-2-an-unwavering-bond": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: An Unwavering Bond",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c002/s002.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/the-final-semester/scene-3-a-healthy-friendship": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A Healthy Friendship",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c002/s003.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/the-final-semester/scene-4-the-final-push": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Final Push",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c002/s004.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/the-final-semester/scene-5-graduation-day": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Graduation Day",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c002/s005.md"
+        "filePath": "e010/c002/p001.md"
     },
     "/alex-chloe/young-adults-new-worlds/the-northern-road": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2038,113 +826,29 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|2"
     },
-    "/alex-chloe/young-adults-new-worlds/the-northern-road/scene-1-the-launch": {
+    "/alex-chloe/young-adults-new-worlds/the-northern-road/part-1-the-launch-a-sweet-discovery": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Launch",
+        "title": "Part 1: The Launch & A Sweet Discovery",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c003/s001.md"
+        "filePath": "e010/c003/p001.md"
     },
-    "/alex-chloe/young-adults-new-worlds/the-northern-road/scene-2-the-journey-north": {
+    "/alex-chloe/young-adults-new-worlds/the-northern-road/part-2-a-walk-through-a-changed-town-tensions-at-the-deli": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Journey North",
+        "title": "Part 2: A Walk Through a Changed Town & Tensions at the Deli",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c003/s002.md"
+        "filePath": "e010/c003/p002.md"
     },
-    "/alex-chloe/young-adults-new-worlds/the-northern-road/scene-3-bienvenue-au-qu-bec": {
+    "/alex-chloe/young-adults-new-worlds/the-northern-road/part-3-a-quiet-day-of-decompression-a-new-dream-on-the-boardwalk": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Bienvenue au Qu\u00e9bec",
+        "title": "Part 3: A Quiet Day of Decompression & A New Dream on the Boardwalk",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c003/s003.md"
+        "filePath": "e010/c003/p003.md"
     },
-    "/alex-chloe/young-adults-new-worlds/the-northern-road/scene-4-an-aunt-s-welcome-and-a-modern-warning": {
+    "/alex-chloe/young-adults-new-worlds/the-northern-road/part-4-the-long-road-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: An Aunt's Welcome and a Modern Warning",
+        "title": "Part 4: The Long Road Home",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c003/s004.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/the-northern-road/scene-5-an-aunt-s-advice-and-a-new-itinerary": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: An Aunt's Advice and a New Itinerary",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c003/s005.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/the-northern-road/scene-6-a-sweet-discovery": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A Sweet Discovery",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c003/s006.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/the-northern-road/scene-7-a-walk-through-a-changed-town": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: A Walk Through a Changed Town",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c003/s007.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/the-northern-road/scene-8-one-last-line-to-cross": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: One Last Line to Cross",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c003/s008.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/the-northern-road/scene-9-a-homecoming-of-the-heart": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: A Homecoming of the Heart",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c003/s009.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/the-northern-road/scene-10-navigating-the-city": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: Navigating the City",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c003/s010.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/the-northern-road/scene-11-tensions-at-the-deli": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: Tensions at the Deli",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c003/s011.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/the-northern-road/scene-12-a-quiet-day-of-decompression": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: A Quiet Day of Decompression",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c003/s012.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/the-northern-road/scene-13-a-family-farewell": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 13: A Family Farewell",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c003/s013.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/the-northern-road/scene-14-one-last-night-in-canada": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 14: One Last Night in Canada",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c003/s014.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/the-northern-road/scene-15-echoes-on-the-line": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 15: Echoes on the Line",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c003/s015.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/the-northern-road/scene-16-a-taste-of-vermont": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 16: A Taste of Vermont",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c003/s016.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/the-northern-road/scene-17-a-new-dream-on-the-boardwalk": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 17: A New Dream on the Boardwalk",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c003/s017.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/the-northern-road/scene-18-the-long-road-home": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 18: The Long Road Home",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c003/s018.md"
+        "filePath": "e010/c003/p004.md"
     },
     "/alex-chloe/young-adults-new-worlds/the-last-summer-in-virginia": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2152,47 +856,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|3"
     },
-    "/alex-chloe/young-adults-new-worlds/the-last-summer-in-virginia/scene-1-operation-pacific-northwest": {
+    "/alex-chloe/young-adults-new-worlds/the-last-summer-in-virginia/part-1-operation-pacific-northwest-the-last-swim": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Operation: Pacific Northwest",
+        "title": "Part 1: Operation: Pacific Northwest & The Last Swim",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c004/s001.md"
+        "filePath": "e010/c004/p001.md"
     },
-    "/alex-chloe/young-adults-new-worlds/the-last-summer-in-virginia/scene-2-the-quantum-opportunity": {
+    "/alex-chloe/young-adults-new-worlds/the-last-summer-in-virginia/part-2-weathering-the-storm": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Quantum Opportunity",
+        "title": "Part 2: Weathering the Storm",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c004/s002.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/the-last-summer-in-virginia/scene-3-the-great-commute-debate": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Great Commute Debate",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c004/s003.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/the-last-summer-in-virginia/scene-4-the-final-summit": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Final Summit",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c004/s004.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/the-last-summer-in-virginia/scene-5-the-confirmation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Confirmation",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c004/s005.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/the-last-summer-in-virginia/scene-6-the-last-swim": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Last Swim",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c004/s006.md"
-    },
-    "/alex-chloe/young-adults-new-worlds/the-last-summer-in-virginia/scene-7-weathering-the-storm": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Weathering the Storm",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c004/s007.md"
+        "filePath": "e010/c004/p002.md"
     },
     "/alex-chloe/forging-a-future": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2206,59 +880,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|10|0"
     },
-    "/alex-chloe/forging-a-future/the-road-west/scene-1-the-launch": {
+    "/alex-chloe/forging-a-future/the-road-west/part-1-the-launch-the-first-adventure": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Launch",
+        "title": "Part 1: The Launch & The First Adventure",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c001/s001.md"
+        "filePath": "e011/c001/p001.md"
     },
-    "/alex-chloe/forging-a-future/the-road-west/scene-2-the-open-road": {
+    "/alex-chloe/forging-a-future/the-road-west/part-2-a-day-in-the-city-the-welcome-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Open Road",
+        "title": "Part 2: A Day in the City & The Welcome Home",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c001/s002.md"
-    },
-    "/alex-chloe/forging-a-future/the-road-west/scene-3-washington": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Washington",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c001/s003.md"
-    },
-    "/alex-chloe/forging-a-future/the-road-west/scene-4-seattle": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Seattle",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c001/s004.md"
-    },
-    "/alex-chloe/forging-a-future/the-road-west/scene-5-home": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Home",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c001/s005.md"
-    },
-    "/alex-chloe/forging-a-future/the-road-west/scene-6-the-unpacking": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Unpacking",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c001/s006.md"
-    },
-    "/alex-chloe/forging-a-future/the-road-west/scene-7-the-first-adventure": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The First Adventure",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c001/s007.md"
-    },
-    "/alex-chloe/forging-a-future/the-road-west/scene-8-a-day-in-the-city": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: A Day in the City",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c001/s008.md"
-    },
-    "/alex-chloe/forging-a-future/the-road-west/scene-9-the-welcome-home": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Welcome Home",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c001/s009.md"
+        "filePath": "e011/c001/p002.md"
     },
     "/alex-chloe/forging-a-future/the-first-ecosystem": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2266,29 +898,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|10|1"
     },
-    "/alex-chloe/forging-a-future/the-first-ecosystem/scene-1-the-micro-test": {
+    "/alex-chloe/forging-a-future/the-first-ecosystem/the-micro-test-a-quiet-success": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Micro-Test",
+        "title": "The Micro-Test & A Quiet Success",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c002/s001.md"
-    },
-    "/alex-chloe/forging-a-future/the-first-ecosystem/scene-2-the-setup": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Setup",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c002/s002.md"
-    },
-    "/alex-chloe/forging-a-future/the-first-ecosystem/scene-3-the-inhabitants": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Inhabitants",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c002/s003.md"
-    },
-    "/alex-chloe/forging-a-future/the-first-ecosystem/scene-4-a-quiet-success": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Quiet Success",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c002/s004.md"
+        "filePath": "e011/c002/p001.md"
     },
     "/alex-chloe/forging-a-future/the-evergreen-project": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2296,47 +910,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|10|2"
     },
-    "/alex-chloe/forging-a-future/the-evergreen-project/scene-1-weekend-warriors": {
+    "/alex-chloe/forging-a-future/the-evergreen-project/weekend-warriors-the-long-road-to-a-dream": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Weekend Warriors",
+        "title": "Weekend Warriors & The Long Road to a Dream",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c003/s001.md"
-    },
-    "/alex-chloe/forging-a-future/the-evergreen-project/scene-2-the-beagle-and-the-blueprint": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Beagle and the Blueprint",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c003/s002.md"
-    },
-    "/alex-chloe/forging-a-future/the-evergreen-project/scene-3-the-first-test-and-a-new-role": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The First Test and a New Role",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c003/s003.md"
-    },
-    "/alex-chloe/forging-a-future/the-evergreen-project/scene-4-the-accessibility-specialist": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Accessibility Specialist",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c003/s004.md"
-    },
-    "/alex-chloe/forging-a-future/the-evergreen-project/scene-5-the-non-profit-architects": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Non-Profit Architects",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c003/s005.md"
-    },
-    "/alex-chloe/forging-a-future/the-evergreen-project/scene-6-the-turning-point": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Turning Point",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c003/s006.md"
-    },
-    "/alex-chloe/forging-a-future/the-evergreen-project/scene-7-the-long-road-to-a-dream": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Long Road to a Dream",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c003/s007.md"
+        "filePath": "e011/c003/p001.md"
     },
     "/alex-chloe/chapter-4-building-the-foundation": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2356,41 +934,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|12|0"
     },
-    "/alex-chloe/canada-winter-games/a-house-divided/scene-1-the-matchup-is-set": {
+    "/alex-chloe/canada-winter-games/a-house-divided/part-1-the-matchup-is-set-the-spoils-of-victory": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Matchup is Set",
+        "title": "Part 1: The Matchup is Set & The Spoils of Victory",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c001/s001.md"
+        "filePath": "e013/c001/p001.md"
     },
-    "/alex-chloe/canada-winter-games/a-house-divided/scene-2-la-taverne-des-voyageurs": {
+    "/alex-chloe/canada-winter-games/a-house-divided/part-2-the-uniform-of-defeat-the-preclearance-predicament": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: La Taverne des Voyageurs",
+        "title": "Part 2: The Uniform of Defeat & The Preclearance Predicament",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c001/s002.md"
-    },
-    "/alex-chloe/canada-winter-games/a-house-divided/scene-3-the-spoils-of-victory": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Spoils of Victory",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c001/s003.md"
-    },
-    "/alex-chloe/canada-winter-games/a-house-divided/scene-4-the-uniform-of-defeat": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Uniform of Defeat",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c001/s004.md"
-    },
-    "/alex-chloe/canada-winter-games/a-house-divided/scene-5-opening-a-cross-border-life": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Opening a Cross-Border Life",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c001/s005.md"
-    },
-    "/alex-chloe/canada-winter-games/a-house-divided/scene-6-the-preclearance-predicament": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Preclearance Predicament",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c001/s006.md"
+        "filePath": "e013/c001/p002.md"
     },
     "/alex-chloe/canada-winter-games/the-weight-of-care-revisited": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2398,53 +952,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|12|1"
     },
-    "/alex-chloe/canada-winter-games/the-weight-of-care-revisited/scene-1-the-accident": {
+    "/alex-chloe/canada-winter-games/the-weight-of-care-revisited/the-accident-the-hospital-revelation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Accident",
+        "title": "The Accident & The Hospital Revelation",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c002/s001.md"
-    },
-    "/alex-chloe/canada-winter-games/the-weight-of-care-revisited/scene-2-a-different-kind-of-hospital-visit": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Different Kind of Hospital Visit",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c002/s002.md"
-    },
-    "/alex-chloe/canada-winter-games/the-weight-of-care-revisited/scene-3-the-long-road-ahead": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Long Road Ahead",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c002/s003.md"
-    },
-    "/alex-chloe/canada-winter-games/the-weight-of-care-revisited/scene-4-setback-one-the-infection": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Setback One - The Infection",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c002/s004.md"
-    },
-    "/alex-chloe/canada-winter-games/the-weight-of-care-revisited/scene-5-setback-two-the-catastrophe": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Setback Two - The Catastrophe",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c002/s005.md"
-    },
-    "/alex-chloe/canada-winter-games/the-weight-of-care-revisited/scene-6-the-depths-of-despair": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Depths of Despair",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c002/s006.md"
-    },
-    "/alex-chloe/canada-winter-games/the-weight-of-care-revisited/scene-7-the-slow-path-to-healing": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Slow Path to Healing",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c002/s007.md"
-    },
-    "/alex-chloe/canada-winter-games/the-weight-of-care-revisited/scene-8-the-hospital-revelation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Hospital Revelation",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c002/s008.md"
+        "filePath": "e013/c002/p001.md"
     },
     "/alex-chloe/no-boundaries": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2458,17 +970,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|13|0"
     },
-    "/alex-chloe/no-boundaries/a-vision-takes-shape/scene-1-the-blueprint-of-home": {
+    "/alex-chloe/no-boundaries/a-vision-takes-shape/the-blueprint-of-home-a-border-of-our-own": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Blueprint of Home",
+        "title": "The Blueprint of Home & A Border of Our Own",
         "theme": "raggiesoft-books",
-        "filePath": "e014/c001/s001.md"
-    },
-    "/alex-chloe/no-boundaries/a-vision-takes-shape/scene-2-a-border-of-our-own": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Border of Our Own",
-        "theme": "raggiesoft-books",
-        "filePath": "e014/c001/s002.md"
+        "filePath": "e014/c001/p001.md"
     },
     "/alex-chloe/no-boundaries/the-northern-annex": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2476,17 +982,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|13|1"
     },
-    "/alex-chloe/no-boundaries/the-northern-annex/scene-1-the-peace-arch-crossing": {
+    "/alex-chloe/no-boundaries/the-northern-annex/the-peace-arch-crossing-the-peak-of-the-city": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Peace Arch Crossing",
+        "title": "The Peace Arch Crossing & The Peak of the City",
         "theme": "raggiesoft-books",
-        "filePath": "e014/c002/s001.md"
-    },
-    "/alex-chloe/no-boundaries/the-northern-annex/scene-2-the-peak-of-the-city": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Peak of the City",
-        "theme": "raggiesoft-books",
-        "filePath": "e014/c002/s002.md"
+        "filePath": "e014/c002/p001.md"
     },
     "/alex-chloe/our-real-beginning": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2500,17 +1000,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|14|0"
     },
-    "/alex-chloe/our-real-beginning/the-vow-revisited/scene-1-the-proposition": {
+    "/alex-chloe/our-real-beginning/the-vow-revisited/the-proposition-the-family-announcement": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Proposition",
+        "title": "The Proposition & The Family Announcement",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c001/s001.md"
-    },
-    "/alex-chloe/our-real-beginning/the-vow-revisited/scene-2-the-family-announcement": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Family Announcement",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c001/s002.md"
+        "filePath": "e015/c001/p001.md"
     },
     "/alex-chloe/our-real-beginning/operation-stanstead-wedding": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2518,65 +1012,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|14|1"
     },
-    "/alex-chloe/our-real-beginning/operation-stanstead-wedding/scene-1-boots-on-the-ground": {
+    "/alex-chloe/our-real-beginning/operation-stanstead-wedding/part-1-boots-on-the-ground-a-brand-is-born": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Boots on the Ground",
+        "title": "Part 1: Boots on the Ground & A Brand is Born",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c002/s001.md"
+        "filePath": "e015/c002/p001.md"
     },
-    "/alex-chloe/our-real-beginning/operation-stanstead-wedding/scene-2-the-attire": {
+    "/alex-chloe/our-real-beginning/operation-stanstead-wedding/part-2-the-art-director-the-point-of-no-return": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Attire",
+        "title": "Part 2: The Art Director & The Point of No Return",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c002/s002.md"
-    },
-    "/alex-chloe/our-real-beginning/operation-stanstead-wedding/scene-3-writing-the-vows": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Writing the Vows",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c002/s003.md"
-    },
-    "/alex-chloe/our-real-beginning/operation-stanstead-wedding/scene-4-the-vow-script": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Vow Script",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c002/s004.md"
-    },
-    "/alex-chloe/our-real-beginning/operation-stanstead-wedding/scene-5-the-birth-of-an-idea": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Birth of an Idea",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c002/s005.md"
-    },
-    "/alex-chloe/our-real-beginning/operation-stanstead-wedding/scene-6-a-prototype-is-born": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A Prototype is Born",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c002/s006.md"
-    },
-    "/alex-chloe/our-real-beginning/operation-stanstead-wedding/scene-7-a-brand-is-born": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: A Brand is Born",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c002/s007.md"
-    },
-    "/alex-chloe/our-real-beginning/operation-stanstead-wedding/scene-8-the-art-director": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Art Director",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c002/s008.md"
-    },
-    "/alex-chloe/our-real-beginning/operation-stanstead-wedding/scene-9-boots-on-the-ground-report": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: Boots on the Ground Report",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c002/s009.md"
-    },
-    "/alex-chloe/our-real-beginning/operation-stanstead-wedding/scene-10-the-point-of-no-return": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Point of No Return",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c002/s010.md"
+        "filePath": "e015/c002/p002.md"
     },
     "/alex-chloe/our-real-beginning/the-homecoming": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2584,29 +1030,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|14|2"
     },
-    "/alex-chloe/our-real-beginning/the-homecoming/scene-1-the-journey-east": {
+    "/alex-chloe/our-real-beginning/the-homecoming/the-journey-east-the-journey-north": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Journey East",
+        "title": "The Journey East & The Journey North",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c003/s001.md"
-    },
-    "/alex-chloe/our-real-beginning/the-homecoming/scene-2-welcome-to-the-virginia-base-camp": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Welcome to the Virginia Base Camp",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c003/s002.md"
-    },
-    "/alex-chloe/our-real-beginning/the-homecoming/scene-3-a-day-in-the-virginia-base-camp": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A Day in the Virginia Base Camp",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c003/s003.md"
-    },
-    "/alex-chloe/our-real-beginning/the-homecoming/scene-4-the-journey-north": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Journey North",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c003/s004.md"
+        "filePath": "e015/c003/p001.md"
     },
     "/alex-chloe/our-real-beginning/le-grand-jour-the-big-day": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2614,77 +1042,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|14|3"
     },
-    "/alex-chloe/our-real-beginning/le-grand-jour-the-big-day/scene-1-les-pr-paratifs": {
+    "/alex-chloe/our-real-beginning/le-grand-jour-the-big-day/part-1-les-pr-paratifs-special-dances": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Les Pr\u00e9paratifs",
+        "title": "Part 1: Les Pr\u00e9paratifs & Special Dances",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c004/s001.md"
+        "filePath": "e015/c004/p001.md"
     },
-    "/alex-chloe/our-real-beginning/le-grand-jour-the-big-day/scene-2-la-c-r-monie": {
+    "/alex-chloe/our-real-beginning/le-grand-jour-the-big-day/part-2-l-unit-ins-parable-la-fin-de-la-soir-e": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: La C\u00e9r\u00e9monie",
+        "title": "Part 2: L'Unit\u00e9 Ins\u00e9parable & La Fin de la Soir\u00e9e",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c004/s002.md"
+        "filePath": "e015/c004/p002.md"
     },
-    "/alex-chloe/our-real-beginning/le-grand-jour-the-big-day/scene-3-la-r-ception": {
+    "/alex-chloe/our-real-beginning/le-grand-jour-the-big-day/part-3-bonus-scene-a-view-from-portsmouth": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: La R\u00e9ception",
+        "title": "Part 3: Bonus Scene: A View from Portsmouth",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c004/s003.md"
-    },
-    "/alex-chloe/our-real-beginning/le-grand-jour-the-big-day/scene-4-la-premi-re-danse": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: La Premi\u00e8re Danse",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c004/s004.md"
-    },
-    "/alex-chloe/our-real-beginning/le-grand-jour-the-big-day/scene-5-special-dances": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Special Dances",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c004/s005.md"
-    },
-    "/alex-chloe/our-real-beginning/le-grand-jour-the-big-day/scene-6-l-unit-ins-parable": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: L'Unit\u00e9 Ins\u00e9parable",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c004/s006.md"
-    },
-    "/alex-chloe/our-real-beginning/le-grand-jour-the-big-day/scene-7-les-discours": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Les Discours",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c004/s007.md"
-    },
-    "/alex-chloe/our-real-beginning/le-grand-jour-the-big-day/scene-8-la-coupe-du-g-teau": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: La Coupe du G\u00e2teau",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c004/s008.md"
-    },
-    "/alex-chloe/our-real-beginning/le-grand-jour-the-big-day/scene-9-la-poutine-c-l-bratoire": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: La Poutine C\u00e9l\u00e9bratoire",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c004/s009.md"
-    },
-    "/alex-chloe/our-real-beginning/le-grand-jour-the-big-day/scene-10-la-derni-re-danse": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: La Derni\u00e8re Danse",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c004/s010.md"
-    },
-    "/alex-chloe/our-real-beginning/le-grand-jour-the-big-day/scene-11-la-fin-de-la-soir-e": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: La Fin de la Soir\u00e9e",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c004/s011.md"
-    },
-    "/alex-chloe/our-real-beginning/le-grand-jour-the-big-day/scene-12-bonus-scene-a-view-from-portsmouth": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: Bonus Scene: A View from Portsmouth",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c004/s012.md"
+        "filePath": "e015/c004/p003.md"
     },
     "/alex-chloe/our-real-beginning/a-day-in-the-townships": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2692,35 +1066,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|14|4"
     },
-    "/alex-chloe/our-real-beginning/a-day-in-the-townships/scene-1-the-morning-after": {
+    "/alex-chloe/our-real-beginning/a-day-in-the-townships/the-morning-after-the-departure": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Morning After",
+        "title": "The Morning After & The Departure",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c005/s001.md"
-    },
-    "/alex-chloe/our-real-beginning/a-day-in-the-townships/scene-2-a-taste-of-the-townships": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Taste of the Townships",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c005/s002.md"
-    },
-    "/alex-chloe/our-real-beginning/a-day-in-the-townships/scene-3-the-promise-to-return": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Promise to Return",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c005/s003.md"
-    },
-    "/alex-chloe/our-real-beginning/a-day-in-the-townships/scene-4-the-honeymoon": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Honeymoon",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c005/s004.md"
-    },
-    "/alex-chloe/our-real-beginning/a-day-in-the-townships/scene-5-the-departure": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Departure",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c005/s005.md"
+        "filePath": "e015/c005/p001.md"
     },
     "/alex-chloe/needs-a-name": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2734,29 +1084,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|15|0"
     },
-    "/alex-chloe/needs-a-name/the-revenge-of-the-brawlers/scene-1-the-boston-showdown": {
+    "/alex-chloe/needs-a-name/the-revenge-of-the-brawlers/the-boston-showdown-breakfast-with-the-enemy": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Boston Showdown",
+        "title": "The Boston Showdown & Breakfast with the Enemy",
         "theme": "raggiesoft-books",
-        "filePath": "e016/c001/s001.md"
-    },
-    "/alex-chloe/needs-a-name/the-revenge-of-the-brawlers/scene-2-the-boston-victory-parade": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Boston Victory Parade",
-        "theme": "raggiesoft-books",
-        "filePath": "e016/c001/s002.md"
-    },
-    "/alex-chloe/needs-a-name/the-revenge-of-the-brawlers/scene-3-the-long-drive-of-shame": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Long Drive of Shame",
-        "theme": "raggiesoft-books",
-        "filePath": "e016/c001/s003.md"
-    },
-    "/alex-chloe/needs-a-name/the-revenge-of-the-brawlers/scene-4-breakfast-with-the-enemy": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Breakfast with the Enemy",
-        "theme": "raggiesoft-books",
-        "filePath": "e016/c001/s004.md"
+        "filePath": "e016/c001/p001.md"
     },
     "/alex-chloe/covid": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2770,71 +1102,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|16|0"
     },
-    "/alex-chloe/covid/the-great-unraveling/scene-1-the-world-shuts-down": {
+    "/alex-chloe/covid/the-great-unraveling/part-1-the-world-shuts-down-the-cross-country-problem": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The World Shuts Down",
+        "title": "Part 1: The World Shuts Down & The Cross-Country Problem",
         "theme": "raggiesoft-books",
-        "filePath": "e017/c001/s001.md"
+        "filePath": "e017/c001/p001.md"
     },
-    "/alex-chloe/covid/the-great-unraveling/scene-2-the-race-to-the-border": {
+    "/alex-chloe/covid/the-great-unraveling/part-2-the-long-road-home-a-full-house": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Race to the Border",
+        "title": "Part 2: The Long Road Home & A Full House",
         "theme": "raggiesoft-books",
-        "filePath": "e017/c001/s002.md"
-    },
-    "/alex-chloe/covid/the-great-unraveling/scene-3-stranded-in-vermont": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Stranded in Vermont",
-        "theme": "raggiesoft-books",
-        "filePath": "e017/c001/s003.md"
-    },
-    "/alex-chloe/covid/the-great-unraveling/scene-4-the-airport-and-the-call": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Airport and the Call",
-        "theme": "raggiesoft-books",
-        "filePath": "e017/c001/s004.md"
-    },
-    "/alex-chloe/covid/the-great-unraveling/scene-5-the-rescue-mission": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Rescue Mission",
-        "theme": "raggiesoft-books",
-        "filePath": "e017/c001/s005.md"
-    },
-    "/alex-chloe/covid/the-great-unraveling/scene-6-a-virginia-haven": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A Virginia Haven",
-        "theme": "raggiesoft-books",
-        "filePath": "e017/c001/s006.md"
-    },
-    "/alex-chloe/covid/the-great-unraveling/scene-7-an-unexpected-family-lockdown": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: An Unexpected Family Lockdown",
-        "theme": "raggiesoft-books",
-        "filePath": "e017/c001/s007.md"
-    },
-    "/alex-chloe/covid/the-great-unraveling/scene-8-the-cross-country-problem": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Cross-Country Problem",
-        "theme": "raggiesoft-books",
-        "filePath": "e017/c001/s008.md"
-    },
-    "/alex-chloe/covid/the-great-unraveling/scene-9-the-long-road-home": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Long Road Home",
-        "theme": "raggiesoft-books",
-        "filePath": "e017/c001/s009.md"
-    },
-    "/alex-chloe/covid/the-great-unraveling/scene-10-a-birthday-in-lockdown": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: A Birthday in Lockdown",
-        "theme": "raggiesoft-books",
-        "filePath": "e017/c001/s010.md"
-    },
-    "/alex-chloe/covid/the-great-unraveling/scene-11-a-full-house": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: A Full House",
-        "theme": "raggiesoft-books",
-        "filePath": "e017/c001/s011.md"
+        "filePath": "e017/c001/p002.md"
     },
     "/alex-chloe/covid/the-longest-two-weeks": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2842,29 +1120,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|16|1"
     },
-    "/alex-chloe/covid/the-longest-two-weeks/scene-1-the-first-sign": {
+    "/alex-chloe/covid/the-longest-two-weeks/the-first-sign-the-fever-breaks": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The First Sign",
+        "title": "The First Sign & The Fever Breaks",
         "theme": "raggiesoft-books",
-        "filePath": "e017/c002/s001.md"
-    },
-    "/alex-chloe/covid/the-longest-two-weeks/scene-2-the-diagnosis": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Diagnosis",
-        "theme": "raggiesoft-books",
-        "filePath": "e017/c002/s002.md"
-    },
-    "/alex-chloe/covid/the-longest-two-weeks/scene-3-the-lockdown-within-the-lockdown": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Lockdown Within the Lockdown",
-        "theme": "raggiesoft-books",
-        "filePath": "e017/c002/s003.md"
-    },
-    "/alex-chloe/covid/the-longest-two-weeks/scene-4-the-fever-breaks": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Fever Breaks",
-        "theme": "raggiesoft-books",
-        "filePath": "e017/c002/s004.md"
+        "filePath": "e017/c002/p001.md"
     },
     "/alex-chloe/covid/a-world-reopened": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2872,17 +1132,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|16|2"
     },
-    "/alex-chloe/covid/a-world-reopened/scene-1-the-new-normal": {
+    "/alex-chloe/covid/a-world-reopened/the-new-normal-the-first-venture-out": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The New Normal",
+        "title": "The New Normal & The First Venture Out",
         "theme": "raggiesoft-books",
-        "filePath": "e017/c003/s001.md"
-    },
-    "/alex-chloe/covid/a-world-reopened/scene-2-the-first-venture-out": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The First Venture Out",
-        "theme": "raggiesoft-books",
-        "filePath": "e017/c003/s002.md"
+        "filePath": "e017/c003/p001.md"
     },
     "/alex-chloe/a-dream-built": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2896,17 +1150,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|17|2"
     },
-    "/alex-chloe/a-dream-built/the-great-focus/scene-1-the-leap-of-faith": {
+    "/alex-chloe/a-dream-built/the-great-focus/the-leap-of-faith-the-grant": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Leap of Faith",
+        "title": "The Leap of Faith & The Grant",
         "theme": "raggiesoft-books",
-        "filePath": "e018/c001/s001.md"
-    },
-    "/alex-chloe/a-dream-built/the-great-focus/scene-2-the-grant": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Grant",
-        "theme": "raggiesoft-books",
-        "filePath": "e018/c001/s002.md"
+        "filePath": "e018/c001/p001.md"
     },
     "/alex-chloe/a-dream-built/a-winter-homecoming": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2914,53 +1162,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|17|1"
     },
-    "/alex-chloe/a-dream-built/a-winter-homecoming/scene-1-a-much-needed-breather": {
+    "/alex-chloe/a-dream-built/a-winter-homecoming/a-much-needed-breather-return-to-lynnwood": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Much-Needed Breather",
+        "title": "A Much-Needed Breather & Return to Lynnwood",
         "theme": "raggiesoft-books",
-        "filePath": "e018/c002/s001.md"
+        "filePath": "e018/c002/p001.md"
     },
-    "/alex-chloe/a-dream-built/a-winter-homecoming/scene-2-the-return": {
+    "/alex-chloe/a-dream-built/the-great-focus/the-call-and-the-land-from-blueprint-to-reality": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Return",
+        "title": "The Call and the Land & From Blueprint to Reality",
         "theme": "raggiesoft-books",
-        "filePath": "e018/c002/s002.md"
-    },
-    "/alex-chloe/a-dream-built/a-winter-homecoming/scene-3-the-boxing-day-mission": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Boxing Day Mission",
-        "theme": "raggiesoft-books",
-        "filePath": "e018/c002/s003.md"
-    },
-    "/alex-chloe/a-dream-built/a-winter-homecoming/scene-4-the-architect-returns": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Architect Returns",
-        "theme": "raggiesoft-books",
-        "filePath": "e018/c002/s004.md"
-    },
-    "/alex-chloe/a-dream-built/a-winter-homecoming/scene-5-a-mission-solidified": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A Mission Solidified",
-        "theme": "raggiesoft-books",
-        "filePath": "e018/c002/s005.md"
-    },
-    "/alex-chloe/a-dream-built/a-winter-homecoming/scene-6-return-to-lynnwood": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Return to Lynnwood",
-        "theme": "raggiesoft-books",
-        "filePath": "e018/c002/s006.md"
-    },
-    "/alex-chloe/a-dream-built/the-great-focus/scene-1-the-call-and-the-land": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Call and the Land",
-        "theme": "raggiesoft-books",
-        "filePath": "e018/c003/s001.md"
-    },
-    "/alex-chloe/a-dream-built/the-great-focus/scene-2-from-blueprint-to-reality": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: From Blueprint to Reality",
-        "theme": "raggiesoft-books",
-        "filePath": "e018/c003/s002.md"
+        "filePath": "e018/c003/p001.md"
     },
     "/alex-chloe/a-dream-built/echoes-and-reunions": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2968,35 +1180,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|17|3"
     },
-    "/alex-chloe/a-dream-built/echoes-and-reunions/scene-1-the-20-year-reunion": {
+    "/alex-chloe/a-dream-built/echoes-and-reunions/the-20-year-reunion-the-flight-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The 20-Year Reunion",
+        "title": "The 20-Year Reunion & The Flight Home",
         "theme": "raggiesoft-books",
-        "filePath": "e018/c004/s001.md"
-    },
-    "/alex-chloe/a-dream-built/echoes-and-reunions/scene-2-a-new-home-base": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A New Home Base",
-        "theme": "raggiesoft-books",
-        "filePath": "e018/c004/s002.md"
-    },
-    "/alex-chloe/a-dream-built/echoes-and-reunions/scene-3-the-debriefing": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Debriefing",
-        "theme": "raggiesoft-books",
-        "filePath": "e018/c004/s003.md"
-    },
-    "/alex-chloe/a-dream-built/echoes-and-reunions/scene-4-the-next-platform": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Next Platform",
-        "theme": "raggiesoft-books",
-        "filePath": "e018/c004/s004.md"
-    },
-    "/alex-chloe/a-dream-built/echoes-and-reunions/scene-5-the-flight-home": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Flight Home",
-        "theme": "raggiesoft-books",
-        "filePath": "e018/c004/s005.md"
+        "filePath": "e018/c004/p001.md"
     },
     "/alex-chloe/a-dream-built/the-new-workshop": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3004,17 +1192,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|17|4"
     },
-    "/alex-chloe/a-dream-built/the-new-workshop/scene-1-a-cross-platform-future": {
+    "/alex-chloe/a-dream-built/the-new-workshop/a-cross-platform-future-the-first-prototype": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Cross-Platform Future",
+        "title": "A Cross-Platform Future & The First Prototype",
         "theme": "raggiesoft-books",
-        "filePath": "e018/c005/s001.md"
-    },
-    "/alex-chloe/a-dream-built/the-new-workshop/scene-2-the-first-prototype": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The First Prototype",
-        "theme": "raggiesoft-books",
-        "filePath": "e018/c005/s002.md"
+        "filePath": "e018/c005/p001.md"
     },
     "/alex-chloe/a-dream-built/from-the-ground-up": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3022,53 +1204,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|17|5"
     },
-    "/alex-chloe/a-dream-built/from-the-ground-up/scene-1-a-montage-of-progress": {
+    "/alex-chloe/a-dream-built/from-the-ground-up/part-1-a-montage-of-progress-a-new-horizon": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Montage of Progress",
+        "title": "Part 1: A Montage of Progress & A New Horizon",
         "theme": "raggiesoft-books",
-        "filePath": "e018/c006/s001.md"
+        "filePath": "e018/c006/p001.md"
     },
-    "/alex-chloe/a-dream-built/from-the-ground-up/scene-2-the-first-enterprise": {
+    "/alex-chloe/a-dream-built/from-the-ground-up/part-2-the-rejection-the-rejection-letter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The First Enterprise",
+        "title": "Part 2: The Rejection & The Rejection Letter",
         "theme": "raggiesoft-books",
-        "filePath": "e018/c006/s002.md"
-    },
-    "/alex-chloe/a-dream-built/from-the-ground-up/scene-3-acceleration": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Acceleration",
-        "theme": "raggiesoft-books",
-        "filePath": "e018/c006/s003.md"
-    },
-    "/alex-chloe/a-dream-built/from-the-ground-up/scene-4-a-living-building": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Living Building",
-        "theme": "raggiesoft-books",
-        "filePath": "e018/c006/s004.md"
-    },
-    "/alex-chloe/a-dream-built/from-the-ground-up/scene-5-the-physical-toll": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Physical Toll",
-        "theme": "raggiesoft-books",
-        "filePath": "e018/c006/s005.md"
-    },
-    "/alex-chloe/a-dream-built/from-the-ground-up/scene-6-a-new-horizon": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A New Horizon",
-        "theme": "raggiesoft-books",
-        "filePath": "e018/c006/s006.md"
-    },
-    "/alex-chloe/a-dream-built/from-the-ground-up/scene-7-the-rejection": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Rejection",
-        "theme": "raggiesoft-books",
-        "filePath": "e018/c006/s007.md"
-    },
-    "/alex-chloe/a-dream-built/from-the-ground-up/scene-8-the-rejection-letter": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Rejection Letter",
-        "theme": "raggiesoft-books",
-        "filePath": "e018/c006/s008.md"
+        "filePath": "e018/c006/p002.md"
     },
     "/alex-chloe/a-dream-built/bridges-of-understanding": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3076,23 +1222,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|17|6"
     },
-    "/alex-chloe/a-dream-built/bridges-of-understanding/scene-1-an-unexpected-encounter": {
+    "/alex-chloe/a-dream-built/bridges-of-understanding/an-unexpected-encounter-the-directors-work": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: An Unexpected Encounter",
+        "title": "An Unexpected Encounter & The Directors\u2019 Work",
         "theme": "raggiesoft-books",
-        "filePath": "e018/c007/s001.md"
-    },
-    "/alex-chloe/a-dream-built/bridges-of-understanding/scene-2-a-family-reunited-a-tour-begins": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Family Reunited, A Tour Begins",
-        "theme": "raggiesoft-books",
-        "filePath": "e018/c007/s002.md"
-    },
-    "/alex-chloe/a-dream-built/bridges-of-understanding/scene-3-the-directors-work": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Directors\u2019 Work",
-        "theme": "raggiesoft-books",
-        "filePath": "e018/c007/s003.md"
+        "filePath": "e018/c007/p001.md"
     },
     "/alex-chloe/the-long-quiet-working-title": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3106,11 +1240,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|18|0"
     },
-    "/alex-chloe/the-long-quiet-working-title/a-future-in-the-townships/scene-1-a-quiet-question": {
+    "/alex-chloe/the-long-quiet-working-title/a-future-in-the-townships/a-quiet-question": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Quiet Question",
+        "title": "A Quiet Question",
         "theme": "raggiesoft-books",
-        "filePath": "e019/c001/s001.md"
+        "filePath": "e019/c001/p001.md"
     },
     "/alex-chloe/the-final-chapter": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3124,41 +1258,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|19|0"
     },
-    "/alex-chloe/the-final-chapter/forever-yours/scene-1-a-conscious-goodbye": {
+    "/alex-chloe/the-final-chapter/forever-yours/part-1-a-conscious-goodbye-the-last-guardian": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Conscious Goodbye",
+        "title": "Part 1: A Conscious Goodbye & The Last Guardian",
         "theme": "raggiesoft-books",
-        "filePath": "e020/c001/s001.md"
+        "filePath": "e020/c001/p001.md"
     },
-    "/alex-chloe/the-final-chapter/forever-yours/scene-2-last-wishes": {
+    "/alex-chloe/the-final-chapter/forever-yours/part-2-a-service-for-three": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Last Wishes",
+        "title": "Part 2: A Service for Three",
         "theme": "raggiesoft-books",
-        "filePath": "e020/c001/s002.md"
-    },
-    "/alex-chloe/the-final-chapter/forever-yours/scene-3-the-last-goodbye": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Last Goodbye",
-        "theme": "raggiesoft-books",
-        "filePath": "e020/c001/s003.md"
-    },
-    "/alex-chloe/the-final-chapter/forever-yours/scene-4-a-promise-kept": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Promise Kept",
-        "theme": "raggiesoft-books",
-        "filePath": "e020/c001/s004.md"
-    },
-    "/alex-chloe/the-final-chapter/forever-yours/scene-5-the-last-guardian": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Last Guardian",
-        "theme": "raggiesoft-books",
-        "filePath": "e020/c001/s005.md"
-    },
-    "/alex-chloe/the-final-chapter/forever-yours/scene-6-a-service-for-three": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A Service for Three",
-        "theme": "raggiesoft-books",
-        "filePath": "e020/c001/s006.md"
+        "filePath": "e020/c001/p002.md"
     },
     "/alex-chloe/book-21-the-turning-point": {
         "view": "pages/raggiesoft-books/books/viewer",

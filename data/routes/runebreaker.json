@@ -46,29 +46,29 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-1-insert-coin-28th-day-of-the-last-frost-year-404-ec/scene-1-main-theme-the-living-room": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-1-insert-coin-28th-day-of-the-last-frost-year-404-ec/part-1-main-theme-the-living-room": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Main Theme (The Living Room)",
+        "title": "Part 1: Main Theme (The Living Room)",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s001.md"
+        "filePath": "e001/c001/p001.md"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-1-insert-coin-28th-day-of-the-last-frost-year-404-ec/scene-2-insert-coin": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-1-insert-coin-28th-day-of-the-last-frost-year-404-ec/part-2-insert-coin": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Insert Coin",
+        "title": "Part 2: Insert Coin",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s002.md"
+        "filePath": "e001/c001/p002.md"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-1-insert-coin-28th-day-of-the-last-frost-year-404-ec/scene-3-static-and-pixels": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-1-insert-coin-28th-day-of-the-last-frost-year-404-ec/part-3-static-and-pixels": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Static and Pixels",
+        "title": "Part 3: Static and Pixels",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s003.md"
+        "filePath": "e001/c001/p003.md"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-1-insert-coin-28th-day-of-the-last-frost-year-404-ec/scene-4-ocea-s-theme-barefoot-on-the-crystal-grass": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-1-insert-coin-28th-day-of-the-last-frost-year-404-ec/part-4-ocea-s-theme-barefoot-on-the-crystal-grass": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Ocea's Theme (Barefoot on the Crystal Grass)",
+        "title": "Part 4: Ocea's Theme (Barefoot on the Crystal Grass)",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s004.md"
+        "filePath": "e001/c001/p004.md"
     },
     "/runebreaker/era-1-the-era-of-the-crystal/chapter-2-half-a-medallion-29th-day-of-the-last-frost-year-404-ec": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -76,35 +76,35 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|1"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-2-half-a-medallion-29th-day-of-the-last-frost-year-404-ec/scene-1-the-crystal-plains": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-2-half-a-medallion-29th-day-of-the-last-frost-year-404-ec/part-1-the-crystal-plains": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Crystal Plains",
+        "title": "Part 1: The Crystal Plains",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s001.md"
+        "filePath": "e001/c002/p001.md"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-2-half-a-medallion-29th-day-of-the-last-frost-year-404-ec/scene-2-sanctuary-village": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-2-half-a-medallion-29th-day-of-the-last-frost-year-404-ec/part-2-sanctuary-village": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Sanctuary Village",
+        "title": "Part 2: Sanctuary Village",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s002.md"
+        "filePath": "e001/c002/p002.md"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-2-half-a-medallion-29th-day-of-the-last-frost-year-404-ec/scene-3-the-crystal-sage": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-2-half-a-medallion-29th-day-of-the-last-frost-year-404-ec/part-3-the-crystal-sage": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Crystal Sage",
+        "title": "Part 3: The Crystal Sage",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s003.md"
+        "filePath": "e001/c002/p003.md"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-2-half-a-medallion-29th-day-of-the-last-frost-year-404-ec/scene-4-half-a-medallion": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-2-half-a-medallion-29th-day-of-the-last-frost-year-404-ec/part-4-half-a-medallion": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Half a Medallion",
+        "title": "Part 4: Half a Medallion",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s004.md"
+        "filePath": "e001/c002/p004.md"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-2-half-a-medallion-29th-day-of-the-last-frost-year-404-ec/scene-5-sanctuary-inn": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-2-half-a-medallion-29th-day-of-the-last-frost-year-404-ec/part-5-sanctuary-inn": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Sanctuary Inn",
+        "title": "Part 5: Sanctuary Inn",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s005.md"
+        "filePath": "e001/c002/p005.md"
     },
     "/runebreaker/era-1-the-era-of-the-crystal/chapter-3-the-analog-jammer-30th-day-of-the-last-frost-year-404-ec": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -112,47 +112,47 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|2"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-3-the-analog-jammer-30th-day-of-the-last-frost-year-404-ec/scene-1-glitch-phantoms": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-3-the-analog-jammer-30th-day-of-the-last-frost-year-404-ec/part-1-glitch-phantoms": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Glitch Phantoms",
+        "title": "Part 1: Glitch Phantoms",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s001.md"
+        "filePath": "e001/c003/p001.md"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-3-the-analog-jammer-30th-day-of-the-last-frost-year-404-ec/scene-2-the-iron-sentinels": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-3-the-analog-jammer-30th-day-of-the-last-frost-year-404-ec/part-2-the-iron-sentinels": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Iron Sentinels",
+        "title": "Part 2: The Iron Sentinels",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s002.md"
+        "filePath": "e001/c003/p002.md"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-3-the-analog-jammer-30th-day-of-the-last-frost-year-404-ec/scene-3-tay-s-theme-the-hollow-apprentice": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-3-the-analog-jammer-30th-day-of-the-last-frost-year-404-ec/part-3-tay-s-theme-the-hollow-apprentice": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Tay's Theme (The Hollow Apprentice)",
+        "title": "Part 3: Tay's Theme (The Hollow Apprentice)",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s003.md"
+        "filePath": "e001/c003/p003.md"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-3-the-analog-jammer-30th-day-of-the-last-frost-year-404-ec/scene-4-the-grand-decree": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-3-the-analog-jammer-30th-day-of-the-last-frost-year-404-ec/part-4-the-grand-decree": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Grand Decree",
+        "title": "Part 4: The Grand Decree",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s004.md"
+        "filePath": "e001/c003/p004.md"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-3-the-analog-jammer-30th-day-of-the-last-frost-year-404-ec/scene-5-golden-data": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-3-the-analog-jammer-30th-day-of-the-last-frost-year-404-ec/part-5-golden-data": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Golden Data",
+        "title": "Part 5: Golden Data",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s005.md"
+        "filePath": "e001/c003/p005.md"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-3-the-analog-jammer-30th-day-of-the-last-frost-year-404-ec/scene-6-the-sabotaged-scroll": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-3-the-analog-jammer-30th-day-of-the-last-frost-year-404-ec/part-6-the-sabotaged-scroll": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Sabotaged Scroll",
+        "title": "Part 6: The Sabotaged Scroll",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s006.md"
+        "filePath": "e001/c003/p006.md"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-3-the-analog-jammer-30th-day-of-the-last-frost-year-404-ec/scene-7-fractures-in-the-armor": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-3-the-analog-jammer-30th-day-of-the-last-frost-year-404-ec/part-7-fractures-in-the-armor": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Fractures in the Armor",
+        "title": "Part 7: Fractures in the Armor",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s007.md"
+        "filePath": "e001/c003/p007.md"
     },
     "/runebreaker/era-1-the-era-of-the-crystal/chapter-4-the-ghost-and-the-gate-31st-day-of-the-last-frost-year-404-ec": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -160,71 +160,71 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|3"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-4-the-ghost-and-the-gate-31st-day-of-the-last-frost-year-404-ec/scene-1-supposed-to-be-dead": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-4-the-ghost-and-the-gate-31st-day-of-the-last-frost-year-404-ec/part-1-supposed-to-be-dead": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Supposed to Be Dead",
+        "title": "Part 1: Supposed to Be Dead",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s001.md"
+        "filePath": "e001/c004/p001.md"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-4-the-ghost-and-the-gate-31st-day-of-the-last-frost-year-404-ec/scene-2-shield-of-normalcy": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-4-the-ghost-and-the-gate-31st-day-of-the-last-frost-year-404-ec/part-2-shield-of-normalcy": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Shield of Normalcy",
+        "title": "Part 2: Shield of Normalcy",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s002.md"
+        "filePath": "e001/c004/p002.md"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-4-the-ghost-and-the-gate-31st-day-of-the-last-frost-year-404-ec/scene-3-a-little-bit-like-home": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-4-the-ghost-and-the-gate-31st-day-of-the-last-frost-year-404-ec/part-3-a-little-bit-like-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A Little Bit Like Home",
+        "title": "Part 3: A Little Bit Like Home",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s003.md"
+        "filePath": "e001/c004/p003.md"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-4-the-ghost-and-the-gate-31st-day-of-the-last-frost-year-404-ec/scene-4-dungeon-escape": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-4-the-ghost-and-the-gate-31st-day-of-the-last-frost-year-404-ec/part-4-dungeon-escape": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Dungeon Escape",
+        "title": "Part 4: Dungeon Escape",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s004.md"
+        "filePath": "e001/c004/p004.md"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-4-the-ghost-and-the-gate-31st-day-of-the-last-frost-year-404-ec/scene-5-guardian-of-the-gate": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-4-the-ghost-and-the-gate-31st-day-of-the-last-frost-year-404-ec/part-5-guardian-of-the-gate": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Guardian of the Gate",
+        "title": "Part 5: Guardian of the Gate",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s005.md"
+        "filePath": "e001/c004/p005.md"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-4-the-ghost-and-the-gate-31st-day-of-the-last-frost-year-404-ec/scene-6-game-over-the-spark-in-the-dark": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-4-the-ghost-and-the-gate-31st-day-of-the-last-frost-year-404-ec/part-6-game-over-the-spark-in-the-dark": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Game Over (The Spark in the Dark)",
+        "title": "Part 6: Game Over (The Spark in the Dark)",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s006.md"
+        "filePath": "e001/c004/p006.md"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-4-the-ghost-and-the-gate-31st-day-of-the-last-frost-year-404-ec/scene-7-the-corrupted-ceremony": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-4-the-ghost-and-the-gate-31st-day-of-the-last-frost-year-404-ec/part-7-the-corrupted-ceremony": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Corrupted Ceremony",
+        "title": "Part 7: The Corrupted Ceremony",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s007.md"
+        "filePath": "e001/c004/p007.md"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-4-the-ghost-and-the-gate-31st-day-of-the-last-frost-year-404-ec/scene-8-the-wizard-s-ruin": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-4-the-ghost-and-the-gate-31st-day-of-the-last-frost-year-404-ec/part-8-the-wizard-s-ruin": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Wizard's Ruin",
+        "title": "Part 8: The Wizard's Ruin",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s008.md"
+        "filePath": "e001/c004/p008.md"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-4-the-ghost-and-the-gate-31st-day-of-the-last-frost-year-404-ec/scene-9-the-wizard-s-lair": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-4-the-ghost-and-the-gate-31st-day-of-the-last-frost-year-404-ec/part-9-the-wizard-s-lair": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Wizard's Lair",
+        "title": "Part 9: The Wizard's Lair",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s009.md"
+        "filePath": "e001/c004/p009.md"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-4-the-ghost-and-the-gate-31st-day-of-the-last-frost-year-404-ec/scene-10-the-true-form": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-4-the-ghost-and-the-gate-31st-day-of-the-last-frost-year-404-ec/part-10-the-true-form": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The True Form",
+        "title": "Part 10: The True Form",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s010.md"
+        "filePath": "e001/c004/p010.md"
     },
-    "/runebreaker/era-1-the-era-of-the-crystal/chapter-4-the-ghost-and-the-gate-31st-day-of-the-last-frost-year-404-ec/scene-11-the-grand-decree-reprise": {
+    "/runebreaker/era-1-the-era-of-the-crystal/chapter-4-the-ghost-and-the-gate-31st-day-of-the-last-frost-year-404-ec/part-11-the-grand-decree-reprise": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The Grand Decree (Reprise)",
+        "title": "Part 11: The Grand Decree (Reprise)",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s011.md"
+        "filePath": "e001/c004/p011.md"
     },
     "/runebreaker/era-2-the-era-of-the-restored-realm": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -238,16 +238,16 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
-    "/runebreaker/era-2-the-era-of-the-restored-realm/chapter-1-save-state-1st-day-of-the-first-dawn-year-1-rr/scene-1-dawn-of-the-new-era": {
+    "/runebreaker/era-2-the-era-of-the-restored-realm/chapter-1-save-state-1st-day-of-the-first-dawn-year-1-rr/part-1-dawn-of-the-new-era": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Dawn of the New Era",
+        "title": "Part 1: Dawn of the New Era",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s001.md"
+        "filePath": "e002/c001/p001.md"
     },
-    "/runebreaker/era-2-the-era-of-the-restored-realm/chapter-1-save-state-1st-day-of-the-first-dawn-year-1-rr/scene-2-save-state-until-next-time": {
+    "/runebreaker/era-2-the-era-of-the-restored-realm/chapter-1-save-state-1st-day-of-the-first-dawn-year-1-rr/part-2-save-state-until-next-time": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Save State (Until Next Time)",
+        "title": "Part 2: Save State (Until Next Time)",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s002.md"
+        "filePath": "e002/c001/p002.md"
     }
 }

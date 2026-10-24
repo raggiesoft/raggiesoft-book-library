@@ -13,13 +13,13 @@
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
             "epub": "10.1 MB",
-            "pdf": "11.8 MB",
-            "text_epub": "789 KB",
-            "text_pdf": "2.4 MB",
-            "epub_bytes": 10560699,
-            "pdf_bytes": 12323502,
-            "text_epub_bytes": 807826,
-            "text_pdf_bytes": 2517079
+            "pdf": "11.6 MB",
+            "text_epub": "777 KB",
+            "text_pdf": "2.3 MB",
+            "epub_bytes": 10548798,
+            "pdf_bytes": 12180058,
+            "text_epub_bytes": 795942,
+            "text_pdf_bytes": 2373369
         }
     },
     "/luna-leo": {
@@ -46,47 +46,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/luna-leo/early-years/birthday-morning-and-the-grandparents-arrival/scene-1-birthday-morning-and-the-grandparents-arrival": {
+    "/luna-leo/early-years/birthday-morning-and-the-grandparents-arrival/birthday-morning-and-the-grandparents-arrival-birthday-cake-and-sweet-memories-on-ludlow-road": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Birthday Morning and the Grandparents' Arrival",
+        "title": "Birthday Morning and the Grandparents' Arrival & Birthday Cake and Sweet Memories on Ludlow Road",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s001.md"
-    },
-    "/luna-leo/early-years/birthday-morning-and-the-grandparents-arrival/scene-2-the-journey-north-and-boston-greetings": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Journey North and Boston Greetings",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s002.md"
-    },
-    "/luna-leo/early-years/birthday-morning-and-the-grandparents-arrival/scene-3-bay-state-marine-center-wonders": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Bay State Marine Center Wonders",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s003.md"
-    },
-    "/luna-leo/early-years/birthday-morning-and-the-grandparents-arrival/scene-4-first-ride-on-the-b": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: First Ride on the B",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s004.md"
-    },
-    "/luna-leo/early-years/birthday-morning-and-the-grandparents-arrival/scene-5-discoveries-and-a-starlight-pavilion": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Discoveries and a Starlight Pavilion",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s005.md"
-    },
-    "/luna-leo/early-years/birthday-morning-and-the-grandparents-arrival/scene-6-the-infamous-bsta-delay-and-homeward-bound": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Infamous BSTA Delay and Homeward Bound",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s006.md"
-    },
-    "/luna-leo/early-years/birthday-morning-and-the-grandparents-arrival/scene-7-birthday-cake-and-sweet-memories-on-ludlow-road": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Birthday Cake and Sweet Memories on Ludlow Road",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s007.md"
+        "filePath": "e001/c001/p001.md"
     },
     "/luna-leo/elementary-and-middle-school": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -100,17 +64,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
-    "/luna-leo/elementary-and-middle-school/breakthrough-for-leo/scene-1-breakthrough-for-leo": {
+    "/luna-leo/elementary-and-middle-school/breakthrough-for-leo/breakthrough-for-leo-student-training-and-education-program": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Breakthrough for Leo",
+        "title": "Breakthrough for Leo & Student Training and Education Program",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s001.md"
-    },
-    "/luna-leo/elementary-and-middle-school/breakthrough-for-leo/scene-2-student-training-and-education-program": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Student Training and Education Program",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s002.md"
+        "filePath": "e002/c001/p001.md"
     },
     "/luna-leo/elementary-and-middle-school/stella-to-the-sore-rescue": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -118,17 +76,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|1"
     },
-    "/luna-leo/elementary-and-middle-school/stella-to-the-sore-rescue/scene-1-stella-to-the-sore-rescue": {
+    "/luna-leo/elementary-and-middle-school/stella-to-the-sore-rescue/part-1-stella-to-the-sore-rescue": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Stella to the Sore Rescue",
+        "title": "Part 1: Stella to the Sore Rescue",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s001.md"
+        "filePath": "e002/c002/p001.md"
     },
-    "/luna-leo/elementary-and-middle-school/stella-to-the-sore-rescue/scene-2-sunday-with-stella": {
+    "/luna-leo/elementary-and-middle-school/stella-to-the-sore-rescue/part-2-sunday-with-stella": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Sunday with Stella",
+        "title": "Part 2: Sunday with Stella",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s002.md"
+        "filePath": "e002/c002/p002.md"
     },
     "/luna-leo/the-equipment-arrivals": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -142,29 +100,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|0"
     },
-    "/luna-leo/the-equipment-arrivals/introduction-and-anticipation/scene-1-introduction-and-anticipation": {
+    "/luna-leo/the-equipment-arrivals/introduction-and-anticipation/introduction-and-anticipation-a-new-soundtrack-and-leo-s-poem": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Introduction and Anticipation",
+        "title": "Introduction and Anticipation & A New Soundtrack and Leo's Poem",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s001.md"
-    },
-    "/luna-leo/the-equipment-arrivals/introduction-and-anticipation/scene-2-leo-s-new-wheelchair-a-world-of-difference": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Leo's New Wheelchair - A World of Difference",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s002.md"
-    },
-    "/luna-leo/the-equipment-arrivals/introduction-and-anticipation/scene-3-quantum-communicators-arrive-finding-their-voices": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Quantum Communicators Arrive - Finding Their Voices",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s003.md"
-    },
-    "/luna-leo/the-equipment-arrivals/introduction-and-anticipation/scene-4-a-new-soundtrack-and-leo-s-poem": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A New Soundtrack and Leo's Poem",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s004.md"
+        "filePath": "e003/c001/p001.md"
     },
     "/luna-leo/twins-summer-with-stella": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -178,17 +118,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|0"
     },
-    "/luna-leo/twins-summer-with-stella/the-demarco-decree/scene-1-the-demarco-decree": {
+    "/luna-leo/twins-summer-with-stella/the-demarco-decree/the-demarco-decree-cafeteria-justice-multilingual-edition": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The DeMarco Decree",
+        "title": "The DeMarco Decree & Cafeteria Justice, Multilingual Edition",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s001.md"
-    },
-    "/luna-leo/twins-summer-with-stella/the-demarco-decree/scene-2-cafeteria-justice-multilingual-edition": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Cafeteria Justice, Multilingual Edition",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s002.md"
+        "filePath": "e004/c001/p001.md"
     },
     "/luna-leo/twins-summer-with-stella/the-record-player-discovery": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -196,11 +130,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|1"
     },
-    "/luna-leo/twins-summer-with-stella/the-record-player-discovery/scene-1-the-record-player-discovery": {
+    "/luna-leo/twins-summer-with-stella/the-record-player-discovery/the-record-player-discovery": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Record Player Discovery",
+        "title": "The Record Player Discovery",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s001.md"
+        "filePath": "e004/c002/p001.md"
     },
     "/luna-leo/twins-summer-with-stella/the-music-store": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -208,11 +142,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|2"
     },
-    "/luna-leo/twins-summer-with-stella/the-music-store/scene-1-the-music-store": {
+    "/luna-leo/twins-summer-with-stella/the-music-store/the-music-store": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Music Store",
+        "title": "The Music Store",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c003/s001.md"
+        "filePath": "e004/c003/p001.md"
     },
     "/luna-leo/twins-summer-with-stella/the-doorbell-rings": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -220,11 +154,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|3"
     },
-    "/luna-leo/twins-summer-with-stella/the-doorbell-rings/scene-1-the-doorbell-rings": {
+    "/luna-leo/twins-summer-with-stella/the-doorbell-rings/the-doorbell-rings": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Doorbell Rings",
+        "title": "The Doorbell Rings",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c004/s001.md"
+        "filePath": "e004/c004/p001.md"
     },
     "/luna-leo/twins-summer-with-stella/legal-issues-settled": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -232,11 +166,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|4"
     },
-    "/luna-leo/twins-summer-with-stella/legal-issues-settled/scene-1-legal-issues-settled": {
+    "/luna-leo/twins-summer-with-stella/legal-issues-settled/legal-issues-settled": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Legal Issues Settled",
+        "title": "Legal Issues Settled",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c005/s001.md"
+        "filePath": "e004/c005/p001.md"
     },
     "/luna-leo/twins-summer-with-stella/programming-the-aac": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -244,11 +178,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|5"
     },
-    "/luna-leo/twins-summer-with-stella/programming-the-aac/scene-1-programming-the-aac": {
+    "/luna-leo/twins-summer-with-stella/programming-the-aac/programming-the-aac": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Programming the AAC",
+        "title": "Programming the AAC",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c006/s001.md"
+        "filePath": "e004/c006/p001.md"
     },
     "/luna-leo/twins-summer-with-stella/weight-of-academic-neglect": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -256,11 +190,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|6"
     },
-    "/luna-leo/twins-summer-with-stella/weight-of-academic-neglect/scene-1-weight-of-academic-neglect": {
+    "/luna-leo/twins-summer-with-stella/weight-of-academic-neglect/weight-of-academic-neglect": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Weight of Academic Neglect",
+        "title": "Weight of Academic Neglect",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c007/s001.md"
+        "filePath": "e004/c007/p001.md"
     },
     "/luna-leo/twins-summer-with-stella/opus-computers-setup": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -268,11 +202,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|7"
     },
-    "/luna-leo/twins-summer-with-stella/opus-computers-setup/scene-1-opus-computers-setup": {
+    "/luna-leo/twins-summer-with-stella/opus-computers-setup/opus-computers-setup": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Opus Computers Setup",
+        "title": "Opus Computers Setup",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c008/s001.md"
+        "filePath": "e004/c008/p001.md"
     },
     "/luna-leo/twins-summer-with-stella/rainy-tuesday-evening": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -280,11 +214,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|8"
     },
-    "/luna-leo/twins-summer-with-stella/rainy-tuesday-evening/scene-1-rainy-tuesday-evening": {
+    "/luna-leo/twins-summer-with-stella/rainy-tuesday-evening/rainy-tuesday-evening": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Rainy Tuesday Evening",
+        "title": "Rainy Tuesday Evening",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c009/s001.md"
+        "filePath": "e004/c009/p001.md"
     },
     "/luna-leo/twins-summer-with-stella/compublue-keymech": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -292,11 +226,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|9"
     },
-    "/luna-leo/twins-summer-with-stella/compublue-keymech/scene-1-compublue-keymech": {
+    "/luna-leo/twins-summer-with-stella/compublue-keymech/compublue-keymech": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: COMPUBLUE KeyMech",
+        "title": "COMPUBLUE KeyMech",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c010/s001.md"
+        "filePath": "e004/c010/p001.md"
     },
     "/luna-leo/twins-summer-with-stella/oregon-trail-preparation": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -304,11 +238,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|10"
     },
-    "/luna-leo/twins-summer-with-stella/oregon-trail-preparation/scene-1-oregon-trail-preparation": {
+    "/luna-leo/twins-summer-with-stella/oregon-trail-preparation/oregon-trail-preparation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Oregon Trail Preparation",
+        "title": "Oregon Trail Preparation",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c011/s001.md"
+        "filePath": "e004/c011/p001.md"
     },
     "/luna-leo/twins-summer-with-stella/saturday-morning-research": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -316,11 +250,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|11"
     },
-    "/luna-leo/twins-summer-with-stella/saturday-morning-research/scene-1-saturday-morning-research": {
+    "/luna-leo/twins-summer-with-stella/saturday-morning-research/saturday-morning-research": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Saturday Morning Research",
+        "title": "Saturday Morning Research",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c012/s001.md"
+        "filePath": "e004/c012/p001.md"
     },
     "/luna-leo/twins-summer-with-stella/printing-the-reports": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -328,11 +262,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|12"
     },
-    "/luna-leo/twins-summer-with-stella/printing-the-reports/scene-1-printing-the-reports": {
+    "/luna-leo/twins-summer-with-stella/printing-the-reports/printing-the-reports": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Printing the Reports",
+        "title": "Printing the Reports",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c013/s001.md"
+        "filePath": "e004/c013/p001.md"
     },
     "/luna-leo/twins-summer-with-stella/therapy-appointment-drive": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -340,11 +274,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|13"
     },
-    "/luna-leo/twins-summer-with-stella/therapy-appointment-drive/scene-1-therapy-appointment-drive": {
+    "/luna-leo/twins-summer-with-stella/therapy-appointment-drive/therapy-appointment-drive": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Therapy Appointment Drive",
+        "title": "Therapy Appointment Drive",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c014/s001.md"
+        "filePath": "e004/c014/p001.md"
     },
     "/luna-leo/twins-summer-with-stella/classic-rock-discoveries": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -352,11 +286,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|14"
     },
-    "/luna-leo/twins-summer-with-stella/classic-rock-discoveries/scene-1-classic-rock-discoveries": {
+    "/luna-leo/twins-summer-with-stella/classic-rock-discoveries/classic-rock-discoveries": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Classic Rock Discoveries",
+        "title": "Classic Rock Discoveries",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c015/s001.md"
+        "filePath": "e004/c015/p001.md"
     },
     "/luna-leo/twins-summer-with-stella/wherever-you-go": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -364,11 +298,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|15"
     },
-    "/luna-leo/twins-summer-with-stella/wherever-you-go/scene-1-wherever-you-go": {
+    "/luna-leo/twins-summer-with-stella/wherever-you-go/wherever-you-go": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Wherever You Go",
+        "title": "Wherever You Go",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c016/s001.md"
+        "filePath": "e004/c016/p001.md"
     },
     "/luna-leo/twins-summer-with-stella/friday-night-lights": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -376,11 +310,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|16"
     },
-    "/luna-leo/twins-summer-with-stella/friday-night-lights/scene-1-friday-night-lights": {
+    "/luna-leo/twins-summer-with-stella/friday-night-lights/friday-night-lights": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Friday Night Lights",
+        "title": "Friday Night Lights",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c017/s001.md"
+        "filePath": "e004/c017/p001.md"
     },
     "/luna-leo/twins-summer-with-stella/charter-bus-to-the-mountains": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -388,35 +322,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|17"
     },
-    "/luna-leo/twins-summer-with-stella/charter-bus-to-the-mountains/scene-1-charter-bus-to-the-mountains": {
+    "/luna-leo/twins-summer-with-stella/charter-bus-to-the-mountains/charter-bus-to-the-mountains-showtime-preparation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Charter Bus to the Mountains",
+        "title": "Charter Bus to the Mountains & Showtime Preparation",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c018/s001.md"
-    },
-    "/luna-leo/twins-summer-with-stella/charter-bus-to-the-mountains/scene-2-motel-check-in-and-push-up-penalties": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Motel Check-In and Push-Up Penalties",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c018/s002.md"
-    },
-    "/luna-leo/twins-summer-with-stella/charter-bus-to-the-mountains/scene-3-waiting-game": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Waiting Game",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c018/s003.md"
-    },
-    "/luna-leo/twins-summer-with-stella/charter-bus-to-the-mountains/scene-4-the-pre-performance-hustle": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Pre-Performance Hustle",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c018/s004.md"
-    },
-    "/luna-leo/twins-summer-with-stella/charter-bus-to-the-mountains/scene-5-showtime-preparation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Showtime Preparation",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c018/s005.md"
+        "filePath": "e004/c018/p001.md"
     },
     "/luna-leo/twins-summer-with-stella/a-form-from-school": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -424,29 +334,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|18"
     },
-    "/luna-leo/twins-summer-with-stella/a-form-from-school/scene-1-a-form-from-school": {
+    "/luna-leo/twins-summer-with-stella/a-form-from-school/part-1-a-form-from-school-the-talk": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Form from School",
+        "title": "Part 1: A Form from School & The Talk",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c019/s001.md"
+        "filePath": "e004/c019/p001.md"
     },
-    "/luna-leo/twins-summer-with-stella/a-form-from-school/scene-2-the-talk": {
+    "/luna-leo/twins-summer-with-stella/a-form-from-school/part-2-mary-is-snubbed": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Talk",
+        "title": "Part 2: Mary is Snubbed",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c019/s002.md"
+        "filePath": "e004/c019/p002.md"
     },
-    "/luna-leo/twins-summer-with-stella/a-form-from-school/scene-3-mary-is-snubbed": {
+    "/luna-leo/twins-summer-with-stella/a-form-from-school/part-3-kevin-is-snubbed": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Mary is Snubbed",
+        "title": "Part 3: Kevin is Snubbed",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c019/s003.md"
-    },
-    "/luna-leo/twins-summer-with-stella/a-form-from-school/scene-4-kevin-is-snubbed": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Kevin is Snubbed",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c019/s004.md"
+        "filePath": "e004/c019/p003.md"
     },
     "/luna-leo/sophomore-year": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -460,53 +364,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|0"
     },
-    "/luna-leo/sophomore-year/the-porter-morning-machine/scene-1-the-porter-morning-machine": {
+    "/luna-leo/sophomore-year/the-porter-morning-machine/part-1-the-porter-morning-machine-the-unwritten-rules": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Porter Morning Machine",
+        "title": "Part 1: The Porter Morning Machine & The Unwritten Rules",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s001.md"
+        "filePath": "e005/c001/p001.md"
     },
-    "/luna-leo/sophomore-year/the-porter-morning-machine/scene-2-the-stand-off": {
+    "/luna-leo/sophomore-year/the-porter-morning-machine/part-2-parallel-lines-the-sanctuary-of-the-stacks": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Stand-Off",
+        "title": "Part 2: Parallel Lines & The Sanctuary of the Stacks",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s002.md"
+        "filePath": "e005/c001/p002.md"
     },
-    "/luna-leo/sophomore-year/the-porter-morning-machine/scene-3-the-unwritten-rules": {
+    "/luna-leo/sophomore-year/the-porter-morning-machine/part-3-the-getaway-driver": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Unwritten Rules",
+        "title": "Part 3: The Getaway Driver",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s003.md"
-    },
-    "/luna-leo/sophomore-year/the-porter-morning-machine/scene-4-parallel-lines": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Parallel Lines",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s004.md"
-    },
-    "/luna-leo/sophomore-year/the-porter-morning-machine/scene-5-dead-language-live-connection": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Dead Language, Live Connection",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s005.md"
-    },
-    "/luna-leo/sophomore-year/the-porter-morning-machine/scene-6-the-cafeteria-court": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Cafeteria Court",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s006.md"
-    },
-    "/luna-leo/sophomore-year/the-porter-morning-machine/scene-7-the-sanctuary-of-the-stacks": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Sanctuary of the Stacks",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s007.md"
-    },
-    "/luna-leo/sophomore-year/the-porter-morning-machine/scene-8-the-getaway-driver": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Getaway Driver",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s008.md"
+        "filePath": "e005/c001/p003.md"
     },
     "/luna-leo/sophomore-year/online-reconnaissance": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -514,35 +388,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|1"
     },
-    "/luna-leo/sophomore-year/online-reconnaissance/scene-1-online-reconnaissance": {
+    "/luna-leo/sophomore-year/online-reconnaissance/online-reconnaissance-built-holt-tough": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Online Reconnaissance",
+        "title": "Online Reconnaissance & Built Holt Tough",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s001.md"
-    },
-    "/luna-leo/sophomore-year/online-reconnaissance/scene-2-olympus-no-go": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Olympus No Go",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s002.md"
-    },
-    "/luna-leo/sophomore-year/online-reconnaissance/scene-3-like-a-rock-no-like-a-financing-offer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Like a Rock? No, Like a Financing Offer",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s003.md"
-    },
-    "/luna-leo/sophomore-year/online-reconnaissance/scene-4-lunch-break": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Lunch Break",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s004.md"
-    },
-    "/luna-leo/sophomore-year/online-reconnaissance/scene-5-built-holt-tough": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Built Holt Tough",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s005.md"
+        "filePath": "e005/c002/p001.md"
     },
     "/luna-leo/sophomore-year/showing-off-the-new-car": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -550,35 +400,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|2"
     },
-    "/luna-leo/sophomore-year/showing-off-the-new-car/scene-1-showing-off-the-new-car": {
+    "/luna-leo/sophomore-year/showing-off-the-new-car/showing-off-the-new-car-range-of-motion": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Showing Off the New Car",
+        "title": "Showing Off the New Car & Range of Motion",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s001.md"
-    },
-    "/luna-leo/sophomore-year/showing-off-the-new-car/scene-2-first-official-trip": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: First Official Trip",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s002.md"
-    },
-    "/luna-leo/sophomore-year/showing-off-the-new-car/scene-3-the-narc-special": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Narc Special",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s003.md"
-    },
-    "/luna-leo/sophomore-year/showing-off-the-new-car/scene-4-the-clinic-hand-off": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Clinic Hand-Off",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s004.md"
-    },
-    "/luna-leo/sophomore-year/showing-off-the-new-car/scene-5-range-of-motion": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Range of Motion",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s005.md"
+        "filePath": "e005/c003/p001.md"
     },
     "/luna-leo/sophomore-year/difficult-news": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -586,17 +412,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|3"
     },
-    "/luna-leo/sophomore-year/difficult-news/scene-1-difficult-news": {
+    "/luna-leo/sophomore-year/difficult-news/difficult-news-the-final-phone-call": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Difficult News",
+        "title": "Difficult News & The Final Phone Call",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c004/s001.md"
-    },
-    "/luna-leo/sophomore-year/difficult-news/scene-2-the-final-phone-call": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Final Phone Call",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c004/s002.md"
+        "filePath": "e005/c004/p001.md"
     },
     "/luna-leo/sophomore-year/turnpike-wonders": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -604,41 +424,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|4"
     },
-    "/luna-leo/sophomore-year/turnpike-wonders/scene-1-turnpike-wonders": {
+    "/luna-leo/sophomore-year/turnpike-wonders/part-1-turnpike-wonders-a-colossal-good-distraction": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Turnpike Wonders",
+        "title": "Part 1: Turnpike Wonders & A Colossal Good Distraction",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c005/s001.md"
+        "filePath": "e005/c005/p001.md"
     },
-    "/luna-leo/sophomore-year/turnpike-wonders/scene-2-mystic-stopover": {
+    "/luna-leo/sophomore-year/turnpike-wonders/part-2-the-jingle-and-the-mansions": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Mystic Stopover",
+        "title": "Part 2: The Jingle and the Mansions",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c005/s002.md"
-    },
-    "/luna-leo/sophomore-year/turnpike-wonders/scene-3-the-newport-expressway": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Newport Expressway",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c005/s003.md"
-    },
-    "/luna-leo/sophomore-year/turnpike-wonders/scene-4-ghosts-of-keystone-motors-of-middletown": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Ghosts of Keystone Motors of Middletown",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c005/s004.md"
-    },
-    "/luna-leo/sophomore-year/turnpike-wonders/scene-5-a-colossal-good-distraction": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A Colossal Good Distraction",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c005/s005.md"
-    },
-    "/luna-leo/sophomore-year/turnpike-wonders/scene-6-the-jingle-and-the-mansions": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Jingle and the Mansions",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c005/s006.md"
+        "filePath": "e005/c005/p002.md"
     },
     "/luna-leo/sophomore-year/programming-the-aac": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -646,35 +442,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|5"
     },
-    "/luna-leo/sophomore-year/programming-the-aac/scene-1-coastal-wonders-marine-center": {
+    "/luna-leo/sophomore-year/programming-the-aac/coastal-wonders-marine-center-the-jingle-and-the-mansions": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Coastal Wonders Marine Center",
+        "title": "Coastal Wonders Marine Center & The Jingle and the Mansions",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c006/s001.md"
-    },
-    "/luna-leo/sophomore-year/programming-the-aac/scene-2-the-newport-expressway": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Newport Expressway",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c006/s002.md"
-    },
-    "/luna-leo/sophomore-year/programming-the-aac/scene-3-ghosts-of-keystone-motors-of-middletown": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Ghosts of Keystone Motors of Middletown",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c006/s003.md"
-    },
-    "/luna-leo/sophomore-year/programming-the-aac/scene-4-a-colossal-good-distraction": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Colossal Good Distraction",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c006/s004.md"
-    },
-    "/luna-leo/sophomore-year/programming-the-aac/scene-5-the-jingle-and-the-mansions": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Jingle and the Mansions",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c006/s005.md"
+        "filePath": "e005/c006/p001.md"
     },
     "/luna-leo/junior-year": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -688,23 +460,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|0"
     },
-    "/luna-leo/junior-year/a-rainy-saturday-session/scene-1-a-rainy-saturday-session": {
+    "/luna-leo/junior-year/a-rainy-saturday-session/part-1-a-rainy-saturday-session": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Rainy Saturday Session",
+        "title": "Part 1: A Rainy Saturday Session",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s001.md"
+        "filePath": "e006/c001/p001.md"
     },
-    "/luna-leo/junior-year/a-rainy-saturday-session/scene-2-the-true-light": {
+    "/luna-leo/junior-year/a-rainy-saturday-session/part-2-the-true-light": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The True Light",
+        "title": "Part 2: The True Light",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s002.md"
+        "filePath": "e006/c001/p002.md"
     },
-    "/luna-leo/junior-year/a-rainy-saturday-session/scene-3-the-signal": {
+    "/luna-leo/junior-year/a-rainy-saturday-session/part-3-the-signal": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Signal",
+        "title": "Part 3: The Signal",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s003.md"
+        "filePath": "e006/c001/p003.md"
     },
     "/luna-leo/junior-year/the-rental-agreement": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -712,35 +484,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|1"
     },
-    "/luna-leo/junior-year/the-rental-agreement/scene-1-the-rental-agreement": {
+    "/luna-leo/junior-year/the-rental-agreement/the-rental-agreement-the-sterling-standard": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Rental Agreement",
+        "title": "The Rental Agreement & The Sterling Standard",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s001.md"
-    },
-    "/luna-leo/junior-year/the-rental-agreement/scene-2-the-embouchure-struggle": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Embouchure Struggle",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s002.md"
-    },
-    "/luna-leo/junior-year/the-rental-agreement/scene-3-the-one-month-trial": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The One-Month Trial",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s003.md"
-    },
-    "/luna-leo/junior-year/the-rental-agreement/scene-4-silver-and-ownership": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Silver and Ownership",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s004.md"
-    },
-    "/luna-leo/junior-year/the-rental-agreement/scene-5-the-sterling-standard": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Sterling Standard",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c002/s005.md"
+        "filePath": "e006/c002/p001.md"
     },
     "/luna-leo/senior-year-and-the-new-beginning": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -754,29 +502,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|0"
     },
-    "/luna-leo/senior-year-and-the-new-beginning/an-unseen-ally/scene-1-an-unseen-ally": {
+    "/luna-leo/senior-year-and-the-new-beginning/an-unseen-ally/part-1-an-unseen-ally-a-grateful-introduction": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: An Unseen Ally",
+        "title": "Part 1: An Unseen Ally & A Grateful Introduction",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s001.md"
+        "filePath": "e007/c001/p001.md"
     },
-    "/luna-leo/senior-year-and-the-new-beginning/an-unseen-ally/scene-2-college-and-elections-assembly": {
+    "/luna-leo/senior-year-and-the-new-beginning/an-unseen-ally/part-2-cafeteria-connection-contact-exchange-and-a-vile-misinterpretation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: College and Elections Assembly",
+        "title": "Part 2: Cafeteria Connection, Contact Exchange, and a Vile Misinterpretation",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s002.md"
-    },
-    "/luna-leo/senior-year-and-the-new-beginning/an-unseen-ally/scene-3-a-grateful-introduction": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A Grateful Introduction",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s003.md"
-    },
-    "/luna-leo/senior-year-and-the-new-beginning/an-unseen-ally/scene-4-cafeteria-connection-contact-exchange-and-a-vile-misinterpretation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Cafeteria Connection, Contact Exchange, and a Vile Misinterpretation",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s004.md"
+        "filePath": "e007/c001/p002.md"
     },
     "/luna-leo/senior-year-and-the-new-beginning/an-afternoon-visit-and-gathering-clouds": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -784,53 +520,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|1"
     },
-    "/luna-leo/senior-year-and-the-new-beginning/an-afternoon-visit-and-gathering-clouds/scene-1-an-afternoon-visit-and-gathering-clouds": {
+    "/luna-leo/senior-year-and-the-new-beginning/an-afternoon-visit-and-gathering-clouds/part-1-an-afternoon-visit-and-gathering-clouds-morning-calm-and-sisterly-smiles": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: An Afternoon Visit and Gathering Clouds",
+        "title": "Part 1: An Afternoon Visit and Gathering Clouds & Morning Calm and Sisterly Smiles",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s001.md"
+        "filePath": "e007/c002/p001.md"
     },
-    "/luna-leo/senior-year-and-the-new-beginning/an-afternoon-visit-and-gathering-clouds/scene-2-an-invitation-in-the-storm-and-stella-s-call": {
+    "/luna-leo/senior-year-and-the-new-beginning/an-afternoon-visit-and-gathering-clouds/part-2-saturday-respite-and-a-planned-weekend-stay-a-sunday-well-spent": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: An Invitation in the Storm \u2013 And Stella's Call",
+        "title": "Part 2: Saturday Respite and a Planned Weekend Stay & A Sunday Well Spent",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s002.md"
+        "filePath": "e007/c002/p002.md"
     },
-    "/luna-leo/senior-year-and-the-new-beginning/an-afternoon-visit-and-gathering-clouds/scene-3-weathering-the-storm-a-best-friend-s-comfort": {
+    "/luna-leo/senior-year-and-the-new-beginning/an-afternoon-visit-and-gathering-clouds/part-3-a-guardian-s-trust": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Weathering the Storm \u2013 A Best Friend's Comfort",
+        "title": "Part 3: A Guardian\u2019s Trust",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s003.md"
-    },
-    "/luna-leo/senior-year-and-the-new-beginning/an-afternoon-visit-and-gathering-clouds/scene-4-morning-calm-and-sisterly-smiles": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Morning Calm and Sisterly Smiles",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s004.md"
-    },
-    "/luna-leo/senior-year-and-the-new-beginning/an-afternoon-visit-and-gathering-clouds/scene-5-saturday-respite-and-a-planned-weekend-stay": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Saturday Respite and a Planned Weekend Stay",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s005.md"
-    },
-    "/luna-leo/senior-year-and-the-new-beginning/an-afternoon-visit-and-gathering-clouds/scene-6-a-sunday-of-simple-comforts-and-vintage-tech": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A Sunday of Simple Comforts and Vintage Tech",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s006.md"
-    },
-    "/luna-leo/senior-year-and-the-new-beginning/an-afternoon-visit-and-gathering-clouds/scene-7-a-sunday-well-spent-comforts-chores-and-continued-connection": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: A Sunday Well Spent \u2013 Comforts, Chores, and Continued Connection",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s007.md"
-    },
-    "/luna-leo/senior-year-and-the-new-beginning/an-afternoon-visit-and-gathering-clouds/scene-8-a-guardian-s-trust": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: A Guardian\u2019s Trust",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s008.md"
+        "filePath": "e007/c002/p003.md"
     },
     "/luna-leo/senior-year-and-the-new-beginning/a-test-of-trust": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -838,11 +544,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|2"
     },
-    "/luna-leo/senior-year-and-the-new-beginning/a-test-of-trust/scene-1-a-test-of-trust": {
+    "/luna-leo/senior-year-and-the-new-beginning/a-test-of-trust/a-test-of-trust": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Test of Trust",
+        "title": "A Test of Trust",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c003/s001.md"
+        "filePath": "e007/c003/p001.md"
     },
     "/luna-leo/senior-year-and-the-new-beginning/the-guardian-s-blessing": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -850,11 +556,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|3"
     },
-    "/luna-leo/senior-year-and-the-new-beginning/the-guardian-s-blessing/scene-1-the-guardian-s-blessing": {
+    "/luna-leo/senior-year-and-the-new-beginning/the-guardian-s-blessing/the-guardian-s-blessing": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Guardian's Blessing",
+        "title": "The Guardian's Blessing",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c004/s001.md"
+        "filePath": "e007/c004/p001.md"
     },
     "/luna-leo/senior-year-and-the-new-beginning/a-quiet-evening-promised": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -862,35 +568,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|4"
     },
-    "/luna-leo/senior-year-and-the-new-beginning/a-quiet-evening-promised/scene-1-calculus-tutoring": {
+    "/luna-leo/senior-year-and-the-new-beginning/a-quiet-evening-promised/part-1-calculus-tutoring-an-unwanted-attempt": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Calculus Tutoring",
+        "title": "Part 1: Calculus Tutoring & An Unwanted Attempt",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c005/s001.md"
+        "filePath": "e007/c005/p001.md"
     },
-    "/luna-leo/senior-year-and-the-new-beginning/a-quiet-evening-promised/scene-2-an-unwanted-attempt": {
+    "/luna-leo/senior-year-and-the-new-beginning/a-quiet-evening-promised/part-2-band-room-practice-saturday-matinee-and-a-souring-mood": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: An Unwanted Attempt",
+        "title": "Part 2: Band Room Practice & Saturday Matinee and a Souring Mood",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c005/s002.md"
-    },
-    "/luna-leo/senior-year-and-the-new-beginning/a-quiet-evening-promised/scene-3-band-room-practice": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Band Room Practice",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c005/s003.md"
-    },
-    "/luna-leo/senior-year-and-the-new-beginning/a-quiet-evening-promised/scene-4-mall-eats-and-movie-anticipation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Mall Eats and Movie Anticipation",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c005/s004.md"
-    },
-    "/luna-leo/senior-year-and-the-new-beginning/a-quiet-evening-promised/scene-5-saturday-matinee-and-a-souring-mood": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Saturday Matinee and a Souring Mood",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c005/s005.md"
+        "filePath": "e007/c005/p002.md"
     },
     "/luna-leo/senior-year-and-the-new-beginning/calculus-tutoring": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -898,47 +586,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|5"
     },
-    "/luna-leo/senior-year-and-the-new-beginning/calculus-tutoring/scene-1-a-quiet-evening-promised": {
+    "/luna-leo/senior-year-and-the-new-beginning/calculus-tutoring/part-1-a-quiet-evening-promised-the-call-for-rescue": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Quiet Evening Promised",
+        "title": "Part 1: A Quiet Evening Promised & The Call for Rescue",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c006/s001.md"
+        "filePath": "e007/c006/p001.md"
     },
-    "/luna-leo/senior-year-and-the-new-beginning/calculus-tutoring/scene-2-the-shift-after-stella-leaves": {
+    "/luna-leo/senior-year-and-the-new-beginning/calculus-tutoring/part-2-extraction-and-stella-s-quiet-wrath-a-quiet-countdown-a-noisy-neighborhood": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Shift \u2013 After Stella Leaves",
+        "title": "Part 2: Extraction and Stella's Quiet Wrath & A Quiet Countdown, A Noisy Neighborhood",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c006/s002.md"
-    },
-    "/luna-leo/senior-year-and-the-new-beginning/calculus-tutoring/scene-3-overload-and-observation-the-decision-forms": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Overload and Observation \u2013 The Decision Forms",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c006/s003.md"
-    },
-    "/luna-leo/senior-year-and-the-new-beginning/calculus-tutoring/scene-4-the-call-for-rescue": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Call for Rescue",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c006/s004.md"
-    },
-    "/luna-leo/senior-year-and-the-new-beginning/calculus-tutoring/scene-5-extraction-and-stella-s-quiet-wrath": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Extraction and Stella's Quiet Wrath",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c006/s005.md"
-    },
-    "/luna-leo/senior-year-and-the-new-beginning/calculus-tutoring/scene-6-the-drive-away-a-fitting-finale": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Drive Away & A Fitting Finale",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c006/s006.md"
-    },
-    "/luna-leo/senior-year-and-the-new-beginning/calculus-tutoring/scene-7-a-quiet-countdown-a-noisy-neighborhood": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: A Quiet Countdown, A Noisy Neighborhood",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c006/s007.md"
+        "filePath": "e007/c006/p002.md"
     },
     "/luna-leo/senior-year-and-the-new-beginning/chapter-7-a-new-ally": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -946,11 +604,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|6"
     },
-    "/luna-leo/senior-year-and-the-new-beginning/chapter-7-a-new-ally/scene-1-happy-new-year": {
+    "/luna-leo/senior-year-and-the-new-beginning/chapter-7-a-new-ally/happy-new-year": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Happy New Year",
+        "title": "Happy New Year",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c007/s001.md"
+        "filePath": "e007/c007/p001.md"
     },
     "/luna-leo/eastbound": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -964,71 +622,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|0"
     },
-    "/luna-leo/eastbound/all-aboard/scene-1-all-aboard": {
+    "/luna-leo/eastbound/all-aboard/part-1-all-aboard-a-necessary-interlude": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: All Aboard",
+        "title": "Part 1: All Aboard & A Necessary Interlude",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s001.md"
+        "filePath": "e008/c001/p001.md"
     },
-    "/luna-leo/eastbound/all-aboard/scene-2-the-journey-north": {
+    "/luna-leo/eastbound/all-aboard/part-2-an-evening-on-the-town-a-fortress-assembles-for-the-night": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Journey North",
+        "title": "Part 2: An Evening on the Town & A Fortress Assembles for the Night",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s002.md"
-    },
-    "/luna-leo/eastbound/all-aboard/scene-3-approaching-union-station": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Approaching Union Station",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s003.md"
-    },
-    "/luna-leo/eastbound/all-aboard/scene-4-the-capital-transit-gauntlet": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Capital Transit Gauntlet",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s004.md"
-    },
-    "/luna-leo/eastbound/all-aboard/scene-5-home-base-on-the-hill": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Home Base on the Hill",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s005.md"
-    },
-    "/luna-leo/eastbound/all-aboard/scene-6-an-afternoon-among-the-animals": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: An Afternoon Among the Animals",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s006.md"
-    },
-    "/luna-leo/eastbound/all-aboard/scene-7-a-necessary-interlude": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: A Necessary Interlude",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s007.md"
-    },
-    "/luna-leo/eastbound/all-aboard/scene-8-an-evening-on-the-town": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: An Evening on the Town",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s008.md"
-    },
-    "/luna-leo/eastbound/all-aboard/scene-9-a-culinary-discovery": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: A Culinary Discovery",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s009.md"
-    },
-    "/luna-leo/eastbound/all-aboard/scene-10-a-sanctuary-of-water": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: A Sanctuary of Water",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s010.md"
-    },
-    "/luna-leo/eastbound/all-aboard/scene-11-a-fortress-assembles-for-the-night": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: A Fortress Assembles for the Night",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s011.md"
+        "filePath": "e008/c001/p002.md"
     },
     "/luna-leo/eastbound/museum-hopping": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1036,59 +640,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|1"
     },
-    "/luna-leo/eastbound/museum-hopping/scene-1-an-afternoon-among-the-animals": {
+    "/luna-leo/eastbound/museum-hopping/part-1-an-afternoon-among-the-animals-a-fortress-assembles-for-the-night": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: An Afternoon Among the Animals",
+        "title": "Part 1: An Afternoon Among the Animals & A Fortress Assembles for the Night",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s001.md"
+        "filePath": "e008/c002/p001.md"
     },
-    "/luna-leo/eastbound/museum-hopping/scene-2-a-necessary-interlude": {
+    "/luna-leo/eastbound/museum-hopping/part-2-a-taste-of-stanstead-the-fortress-reassembled": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Necessary Interlude",
+        "title": "Part 2: A Taste of Stanstead & The Fortress, Reassembled",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s002.md"
-    },
-    "/luna-leo/eastbound/museum-hopping/scene-3-an-evening-on-the-town": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: An Evening on the Town",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s003.md"
-    },
-    "/luna-leo/eastbound/museum-hopping/scene-4-the-fortress-cracks": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Fortress Cracks",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s004.md"
-    },
-    "/luna-leo/eastbound/museum-hopping/scene-5-a-sanctuary-of-water": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A Sanctuary of Water",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s005.md"
-    },
-    "/luna-leo/eastbound/museum-hopping/scene-6-a-fortress-assembles-for-the-night": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A Fortress Assembles for the Night",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s006.md"
-    },
-    "/luna-leo/eastbound/museum-hopping/scene-7-a-taste-of-stanstead": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: A Taste of Stanstead",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s007.md"
-    },
-    "/luna-leo/eastbound/museum-hopping/scene-8-a-fortress-in-the-storm": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: A Fortress in the Storm",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s008.md"
-    },
-    "/luna-leo/eastbound/museum-hopping/scene-9-the-fortress-reassembled": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Fortress, Reassembled",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s009.md"
+        "filePath": "e008/c002/p002.md"
     },
     "/luna-leo/eastbound/the-practice-mission": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1096,59 +658,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|2"
     },
-    "/luna-leo/eastbound/the-practice-mission/scene-1-museum-hopping": {
+    "/luna-leo/eastbound/the-practice-mission/part-1-museum-hopping-a-walk-through-time": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Museum Hopping",
+        "title": "Part 1: Museum Hopping & A Walk Through Time",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s001.md"
+        "filePath": "e008/c003/p001.md"
     },
-    "/luna-leo/eastbound/the-practice-mission/scene-2-wonders-of-flight-and-space": {
+    "/luna-leo/eastbound/the-practice-mission/part-2-a-taste-of-stanstead-the-fortress-reassembled": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Wonders of Flight and Space",
+        "title": "Part 2: A Taste of Stanstead & The Fortress, Reassembled",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s002.md"
-    },
-    "/luna-leo/eastbound/the-practice-mission/scene-3-rocket-burger-refuel": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Rocket Burger Refuel",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s003.md"
-    },
-    "/luna-leo/eastbound/the-practice-mission/scene-4-the-fortress-cracks": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Fortress Cracks",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s004.md"
-    },
-    "/luna-leo/eastbound/the-practice-mission/scene-5-a-fragile-promise": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A Fragile Promise",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s005.md"
-    },
-    "/luna-leo/eastbound/the-practice-mission/scene-6-a-walk-through-time": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A Walk Through Time",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s006.md"
-    },
-    "/luna-leo/eastbound/the-practice-mission/scene-7-a-taste-of-stanstead": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: A Taste of Stanstead",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s007.md"
-    },
-    "/luna-leo/eastbound/the-practice-mission/scene-8-a-fortress-in-the-storm": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: A Fortress in the Storm",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s008.md"
-    },
-    "/luna-leo/eastbound/the-practice-mission/scene-9-the-fortress-reassembled": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Fortress, Reassembled",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c003/s009.md"
+        "filePath": "e008/c003/p002.md"
     },
     "/luna-leo/eastbound/a-layover-in-philly": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1156,53 +676,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|3"
     },
-    "/luna-leo/eastbound/a-layover-in-philly/scene-1-the-practice-mission": {
+    "/luna-leo/eastbound/a-layover-in-philly/the-practice-mission-a-sanctuary-of-calm": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Practice Mission",
+        "title": "The Practice Mission & A Sanctuary of Calm",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s001.md"
-    },
-    "/luna-leo/eastbound/a-layover-in-philly/scene-2-breakfast-in-georgetown": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Breakfast in Georgetown",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s002.md"
-    },
-    "/luna-leo/eastbound/a-layover-in-philly/scene-3-a-walk-by-the-water": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A Walk by the Water",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s003.md"
-    },
-    "/luna-leo/eastbound/a-layover-in-philly/scene-4-a-walk-among-giants": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Walk Among Giants",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s004.md"
-    },
-    "/luna-leo/eastbound/a-layover-in-philly/scene-5-lunch-on-the-mall": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Lunch on the Mall",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s005.md"
-    },
-    "/luna-leo/eastbound/a-layover-in-philly/scene-6-an-afternoon-on-the-potomac": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: An Afternoon on the Potomac",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s006.md"
-    },
-    "/luna-leo/eastbound/a-layover-in-philly/scene-7-an-evening-in": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: An Evening In",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s007.md"
-    },
-    "/luna-leo/eastbound/a-layover-in-philly/scene-8-a-sanctuary-of-calm": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: A Sanctuary of Calm",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c004/s008.md"
+        "filePath": "e008/c004/p001.md"
     },
     "/luna-leo/eastbound/the-journey-west": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1210,53 +688,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|4"
     },
-    "/luna-leo/eastbound/the-journey-west/scene-1-the-journey-continues": {
+    "/luna-leo/eastbound/the-journey-west/the-journey-continues-a-day-in-the-steel-city": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Journey Continues",
+        "title": "The Journey Continues & A Day in the Steel City",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c005/s001.md"
-    },
-    "/luna-leo/eastbound/the-journey-west/scene-2-a-layover-in-philly": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Layover in Philly",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c005/s002.md"
-    },
-    "/luna-leo/eastbound/the-journey-west/scene-3-the-cheesesteak-debate": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Cheesesteak Debate",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c005/s003.md"
-    },
-    "/luna-leo/eastbound/the-journey-west/scene-4-a-journey-through-the-alleghenies": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Journey Through the Alleghenies",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c005/s004.md"
-    },
-    "/luna-leo/eastbound/the-journey-west/scene-5-arrival-in-the-steel-city": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Arrival in the Steel City",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c005/s005.md"
-    },
-    "/luna-leo/eastbound/the-journey-west/scene-6-a-room-with-a-view": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A Room with a View",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c005/s006.md"
-    },
-    "/luna-leo/eastbound/the-journey-west/scene-7-a-desperate-search": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: A Desperate Search",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c005/s007.md"
-    },
-    "/luna-leo/eastbound/the-journey-west/scene-8-a-day-in-the-steel-city": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: A Day in the Steel City",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c005/s008.md"
+        "filePath": "e008/c005/p001.md"
     },
     "/luna-leo/eastbound/the-shadow-on-the-platform": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1264,17 +700,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|5"
     },
-    "/luna-leo/eastbound/the-shadow-on-the-platform/scene-1-a-desperate-search": {
+    "/luna-leo/eastbound/the-shadow-on-the-platform/a-desperate-search-a-day-in-the-steel-city": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Desperate Search",
+        "title": "A Desperate Search & A Day in the Steel City",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c006/s001.md"
-    },
-    "/luna-leo/eastbound/the-shadow-on-the-platform/scene-2-a-day-in-the-steel-city": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Day in the Steel City",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c006/s002.md"
+        "filePath": "e008/c006/p001.md"
     },
     "/luna-leo/eastbound/the-steel-city": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1282,23 +712,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|6"
     },
-    "/luna-leo/eastbound/the-steel-city/scene-1-the-colors-of-the-steel-city": {
+    "/luna-leo/eastbound/the-steel-city/the-colors-of-the-steel-city-a-sanctuary-in-the-steel-city": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Colors of the Steel City",
+        "title": "The Colors of the Steel City & A Sanctuary in the Steel City",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c007/s001.md"
-    },
-    "/luna-leo/eastbound/the-steel-city/scene-2-the-wrong-way": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Wrong Way",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c007/s002.md"
-    },
-    "/luna-leo/eastbound/the-steel-city/scene-3-a-sanctuary-in-the-steel-city": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A Sanctuary in the Steel City",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c007/s003.md"
+        "filePath": "e008/c007/p001.md"
     },
     "/luna-leo/heartland-to-the-peaks": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1312,53 +730,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|0"
     },
-    "/luna-leo/heartland-to-the-peaks/the-windy-city/scene-1-good-morning-chicago": {
+    "/luna-leo/heartland-to-the-peaks/the-windy-city/part-1-good-morning-chicago-deep-dish": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Good Morning, Chicago",
+        "title": "Part 1: Good Morning, Chicago & Deep Dish",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c008/s001.md"
+        "filePath": "e009/c008/p001.md"
     },
-    "/luna-leo/heartland-to-the-peaks/the-windy-city/scene-2-holding-the-line": {
+    "/luna-leo/heartland-to-the-peaks/the-windy-city/part-2-the-cheese-toll-recovery": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Holding the Line",
+        "title": "Part 2: The Cheese Toll & Recovery",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c008/s002.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-windy-city/scene-3-the-zenith-tower": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Zenith Tower",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c008/s003.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-windy-city/scene-4-the-descent": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Descent",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c008/s004.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-windy-city/scene-5-solid-ground": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Solid Ground",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c008/s005.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-windy-city/scene-6-deep-dish": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Deep Dish",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c008/s006.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-windy-city/scene-7-the-cheese-toll": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Cheese Toll",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c008/s007.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-windy-city/scene-8-recovery": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: Recovery",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c008/s008.md"
+        "filePath": "e009/c008/p002.md"
     },
     "/luna-leo/heartland-to-the-peaks/the-heartland": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1366,35 +748,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|1"
     },
-    "/luna-leo/heartland-to-the-peaks/the-heartland/scene-1-the-brat-diet": {
+    "/luna-leo/heartland-to-the-peaks/the-heartland/the-brat-diet-crossing-the-plains": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The BRAT Diet",
+        "title": "The BRAT Diet & Crossing the Plains",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c009/s001.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-heartland/scene-2-fountains-and-fishes": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Fountains and Fishes",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c009/s002.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-heartland/scene-3-boarding-the-pioneer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Boarding the Pioneer",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c009/s003.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-heartland/scene-4-cramped-quarters": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Cramped Quarters",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c009/s004.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-heartland/scene-5-crossing-the-plains": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Crossing the Plains",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c009/s005.md"
+        "filePath": "e009/c009/p001.md"
     },
     "/luna-leo/heartland-to-the-peaks/the-mile-high-city": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1402,35 +760,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|2"
     },
-    "/luna-leo/heartland-to-the-peaks/the-mile-high-city/scene-1-the-mile-high-city": {
+    "/luna-leo/heartland-to-the-peaks/the-mile-high-city/the-mile-high-city-bison-and-oysters": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Mile High City",
+        "title": "The Mile High City & Bison and Oysters",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c010/s001.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-mile-high-city/scene-2-denver-regional-transit": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Denver Regional Transit",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c010/s002.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-mile-high-city/scene-3-the-horizon-suites": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Horizon Suites",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c010/s003.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-mile-high-city/scene-4-the-mallride": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The MallRide",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c010/s004.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-mile-high-city/scene-5-bison-and-oysters": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Bison and Oysters",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c010/s005.md"
+        "filePath": "e009/c010/p001.md"
     },
     "/luna-leo/heartland-to-the-peaks/the-botanic-gardens": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1438,23 +772,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|3"
     },
-    "/luna-leo/heartland-to-the-peaks/the-botanic-gardens/scene-1-the-centennial-botanic-gardens": {
+    "/luna-leo/heartland-to-the-peaks/the-botanic-gardens/the-centennial-botanic-gardens-one-more-night": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Centennial Botanic Gardens",
+        "title": "The Centennial Botanic Gardens & One More Night",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c011/s001.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-botanic-gardens/scene-2-thin-air": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Thin Air",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c011/s002.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-botanic-gardens/scene-3-one-more-night": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: One More Night",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c011/s003.md"
+        "filePath": "e009/c011/p001.md"
     },
     "/luna-leo/heartland-to-the-peaks/the-moffat-tunnel": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1462,47 +784,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|4"
     },
-    "/luna-leo/heartland-to-the-peaks/the-moffat-tunnel/scene-1-night-terrors": {
+    "/luna-leo/heartland-to-the-peaks/the-moffat-tunnel/part-1-night-terrors-the-observation-deck": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Night Terrors",
+        "title": "Part 1: Night Terrors & The Observation Deck",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c012/s001.md"
+        "filePath": "e009/c012/p001.md"
     },
-    "/luna-leo/heartland-to-the-peaks/the-moffat-tunnel/scene-2-the-western-pioneer": {
+    "/luna-leo/heartland-to-the-peaks/the-moffat-tunnel/part-2-dining-car-service-the-utah-border": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Western Pioneer",
+        "title": "Part 2: Dining Car Service & The Utah Border",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c012/s002.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-moffat-tunnel/scene-3-the-climb-to-the-divide": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Climb to the Divide",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c012/s003.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-moffat-tunnel/scene-4-the-canyons-of-the-colorado": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Canyons of the Colorado",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c012/s004.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-moffat-tunnel/scene-5-the-observation-deck": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Observation Deck",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c012/s005.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-moffat-tunnel/scene-6-dining-car-service": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Dining Car Service",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c012/s006.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-moffat-tunnel/scene-7-the-utah-border": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Utah Border",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c012/s007.md"
+        "filePath": "e009/c012/p002.md"
     },
     "/luna-leo/heartland-to-the-peaks/the-salt-lake-stop": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1510,35 +802,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|5"
     },
-    "/luna-leo/heartland-to-the-peaks/the-salt-lake-stop/scene-1-the-salt-lake-stop": {
+    "/luna-leo/heartland-to-the-peaks/the-salt-lake-stop/the-salt-lake-stop-the-sovereign-regency-san-francisco": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Salt Lake Stop",
+        "title": "The Salt Lake Stop & The Sovereign Regency San Francisco",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c013/s001.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-salt-lake-stop/scene-2-the-nevada-desert": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Nevada Desert",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c013/s002.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-salt-lake-stop/scene-3-the-donner-pass": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Donner Pass",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c013/s003.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-salt-lake-stop/scene-4-arrival-in-the-bay": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Arrival in the Bay",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c013/s004.md"
-    },
-    "/luna-leo/heartland-to-the-peaks/the-salt-lake-stop/scene-5-the-sovereign-regency-san-francisco": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Sovereign Regency San Francisco",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c013/s005.md"
+        "filePath": "e009/c013/p001.md"
     },
     "/luna-leo/the-golden-state": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1552,59 +820,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|0"
     },
-    "/luna-leo/the-golden-state/the-city-by-the-bay/scene-1-the-historic-f-line": {
+    "/luna-leo/the-golden-state/the-city-by-the-bay/part-1-the-historic-f-line-the-transbay-tube": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Historic F-Line",
+        "title": "Part 1: The Historic F-Line & The Transbay Tube",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c014/s001.md"
+        "filePath": "e010/c014/p001.md"
     },
-    "/luna-leo/the-golden-state/the-city-by-the-bay/scene-2-ferry-to-the-rock": {
+    "/luna-leo/the-golden-state/the-city-by-the-bay/part-2-east-bay-diner-the-bridge-at-night": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Ferry to The Rock",
+        "title": "Part 2: East Bay Diner & The Bridge at Night",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c014/s002.md"
-    },
-    "/luna-leo/the-golden-state/the-city-by-the-bay/scene-3-inmate-85": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Inmate 85",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c014/s003.md"
-    },
-    "/luna-leo/the-golden-state/the-city-by-the-bay/scene-4-dummy-heads-and-spoons": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Dummy Heads and Spoons",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c014/s004.md"
-    },
-    "/luna-leo/the-golden-state/the-city-by-the-bay/scene-5-west-coast-chowda": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: West Coast Chowda",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c014/s005.md"
-    },
-    "/luna-leo/the-golden-state/the-city-by-the-bay/scene-6-the-crown-point-memorial": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Crown Point Memorial",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c014/s006.md"
-    },
-    "/luna-leo/the-golden-state/the-city-by-the-bay/scene-7-the-transbay-tube": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Transbay Tube",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c014/s007.md"
-    },
-    "/luna-leo/the-golden-state/the-city-by-the-bay/scene-8-east-bay-diner": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: East Bay Diner",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c014/s008.md"
-    },
-    "/luna-leo/the-golden-state/the-city-by-the-bay/scene-9-the-bridge-at-night": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Bridge at Night",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c014/s009.md"
+        "filePath": "e010/c014/p002.md"
     },
     "/luna-leo/the-golden-state/the-sovereign-regency": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1612,41 +838,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|1"
     },
-    "/luna-leo/the-golden-state/the-sovereign-regency/scene-1-the-atrium": {
+    "/luna-leo/the-golden-state/the-sovereign-regency/part-1-the-atrium-the-fourth-of-july-realization": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Atrium",
+        "title": "Part 1: The Atrium & The Fourth of July Realization",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c015/s001.md"
+        "filePath": "e010/c015/p001.md"
     },
-    "/luna-leo/the-golden-state/the-sovereign-regency/scene-2-aac-solidarity": {
+    "/luna-leo/the-golden-state/the-sovereign-regency/part-2-the-team-transfer": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: AAC Solidarity",
+        "title": "Part 2: The Team Transfer",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c015/s002.md"
-    },
-    "/luna-leo/the-golden-state/the-sovereign-regency/scene-3-the-ferry-building": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Ferry Building",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c015/s003.md"
-    },
-    "/luna-leo/the-golden-state/the-sovereign-regency/scene-4-engineering-failures": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Engineering Failures",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c015/s004.md"
-    },
-    "/luna-leo/the-golden-state/the-sovereign-regency/scene-5-the-fourth-of-july-realization": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Fourth of July Realization",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c015/s005.md"
-    },
-    "/luna-leo/the-golden-state/the-sovereign-regency/scene-7-the-team-transfer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Team Transfer",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c015/s007.md"
+        "filePath": "e010/c015/p002.md"
     },
     "/luna-leo/the-golden-state/karl-the-fog": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1654,35 +856,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|2"
     },
-    "/luna-leo/the-golden-state/karl-the-fog/scene-1-the-golden-gate": {
+    "/luna-leo/the-golden-state/karl-the-fog/part-1-the-golden-gate-the-transbay-emergency": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Golden Gate",
+        "title": "Part 1: The Golden Gate & The Transbay Emergency",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c016/s001.md"
+        "filePath": "e010/c016/p001.md"
     },
-    "/luna-leo/the-golden-state/karl-the-fog/scene-2-the-transbay-tube": {
+    "/luna-leo/the-golden-state/karl-the-fog/part-2-the-premonition": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Transbay Tube",
+        "title": "Part 2: The Premonition",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c016/s002.md"
-    },
-    "/luna-leo/the-golden-state/karl-the-fog/scene-3-the-transbay-bus": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Transbay Bus",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c016/s003.md"
-    },
-    "/luna-leo/the-golden-state/karl-the-fog/scene-4-the-transbay-emergency": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Transbay Emergency",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c016/s004.md"
-    },
-    "/luna-leo/the-golden-state/karl-the-fog/scene-5-the-premonition": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Premonition",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c016/s005.md"
+        "filePath": "e010/c016/p002.md"
     },
     "/luna-leo/the-golden-state/the-sub-basement": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1690,47 +874,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|3"
     },
-    "/luna-leo/the-golden-state/the-sub-basement/scene-1-the-lingering-shadows": {
+    "/luna-leo/the-golden-state/the-sub-basement/the-lingering-shadows-retreat": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Lingering Shadows",
+        "title": "The Lingering Shadows & Retreat",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c017/s001.md"
-    },
-    "/luna-leo/the-golden-state/the-sub-basement/scene-2-room-service": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Room Service",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c017/s002.md"
-    },
-    "/luna-leo/the-golden-state/the-sub-basement/scene-3-the-b2-bunker": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The B2 Bunker",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c017/s003.md"
-    },
-    "/luna-leo/the-golden-state/the-sub-basement/scene-4-real-estate-barons": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Real Estate Barons",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c017/s004.md"
-    },
-    "/luna-leo/the-golden-state/the-sub-basement/scene-5-movie-night": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Movie Night",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c017/s005.md"
-    },
-    "/luna-leo/the-golden-state/the-sub-basement/scene-6-distant-thunder": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Distant Thunder",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c017/s006.md"
-    },
-    "/luna-leo/the-golden-state/the-sub-basement/scene-7-retreat": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Retreat",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c017/s007.md"
+        "filePath": "e010/c017/p001.md"
     },
     "/luna-leo/the-golden-state/the-southbound-platform": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1738,41 +886,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|4"
     },
-    "/luna-leo/the-golden-state/the-southbound-platform/scene-1-the-southbound-platform": {
+    "/luna-leo/the-golden-state/the-southbound-platform/the-southbound-platform-the-voyage-inn": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Southbound Platform",
+        "title": "The Southbound Platform & The Voyage Inn",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c018/s001.md"
-    },
-    "/luna-leo/the-golden-state/the-southbound-platform/scene-2-the-lower-level": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Lower Level",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c018/s002.md"
-    },
-    "/luna-leo/the-golden-state/the-southbound-platform/scene-3-the-dining-car": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Dining Car",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c018/s003.md"
-    },
-    "/luna-leo/the-golden-state/the-southbound-platform/scene-4-fresh-air": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Fresh Air",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c018/s004.md"
-    },
-    "/luna-leo/the-golden-state/the-southbound-platform/scene-5-union-station": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Union Station",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c018/s005.md"
-    },
-    "/luna-leo/the-golden-state/the-southbound-platform/scene-6-the-voyage-inn": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Voyage Inn",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c018/s006.md"
+        "filePath": "e010/c018/p001.md"
     },
     "/luna-leo/the-golden-state/global-studios": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1780,47 +898,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|5"
     },
-    "/luna-leo/the-golden-state/global-studios/scene-1-global-city": {
+    "/luna-leo/the-golden-state/global-studios/global-city-the-shipping-box": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Global City",
+        "title": "Global City & The Shipping Box",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c019/s001.md"
-    },
-    "/luna-leo/the-golden-state/global-studios/scene-2-the-starway": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Starway",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c019/s002.md"
-    },
-    "/luna-leo/the-golden-state/global-studios/scene-3-cretaceous-island-the-ride": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Cretaceous Island: The Ride",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c019/s003.md"
-    },
-    "/luna-leo/the-golden-state/global-studios/scene-4-the-studio-tour": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Studio Tour",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c019/s004.md"
-    },
-    "/luna-leo/the-golden-state/global-studios/scene-5-timeline-paradox": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Timeline Paradox",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c019/s005.md"
-    },
-    "/luna-leo/the-golden-state/global-studios/scene-6-aquaworld": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: AquaWorld",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c019/s006.md"
-    },
-    "/luna-leo/the-golden-state/global-studios/scene-7-the-shipping-box": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Shipping Box",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c019/s007.md"
+        "filePath": "e010/c019/p001.md"
     },
     "/luna-leo/the-golden-state/the-enchanted-resort": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1828,53 +910,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|6"
     },
-    "/luna-leo/the-golden-state/the-enchanted-resort/scene-1-the-orange-county-commute": {
+    "/luna-leo/the-golden-state/the-enchanted-resort/part-1-the-orange-county-commute-the-silver-lining": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Orange County Commute",
+        "title": "Part 1: The Orange County Commute & The Silver Lining",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c020/s001.md"
+        "filePath": "e010/c020/p001.md"
     },
-    "/luna-leo/the-golden-state/the-enchanted-resort/scene-2-cosmic-peak": {
+    "/luna-leo/the-golden-state/the-enchanted-resort/part-2-the-evening-news": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Cosmic Peak",
+        "title": "Part 2: The Evening News",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c020/s002.md"
-    },
-    "/luna-leo/the-golden-state/the-enchanted-resort/scene-3-the-storm": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Storm",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c020/s003.md"
-    },
-    "/luna-leo/the-golden-state/the-enchanted-resort/scene-4-the-singing-bird-serenade": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Singing Bird Serenade",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c020/s004.md"
-    },
-    "/luna-leo/the-golden-state/the-enchanted-resort/scene-5-the-ghostly-estate": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Ghostly Estate",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c020/s005.md"
-    },
-    "/luna-leo/the-golden-state/the-enchanted-resort/scene-6-a-sudden-jolt": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A Sudden Jolt",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c020/s006.md"
-    },
-    "/luna-leo/the-golden-state/the-enchanted-resort/scene-7-the-silver-lining": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Silver Lining",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c020/s007.md"
-    },
-    "/luna-leo/the-golden-state/the-enchanted-resort/scene-8-the-evening-news": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Evening News",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c020/s008.md"
+        "filePath": "e010/c020/p002.md"
     },
     "/luna-leo/the-golden-state/hollywood-forever": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1882,11 +928,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|7"
     },
-    "/luna-leo/the-golden-state/hollywood-forever/scene-1-fellowship-with-all-life": {
+    "/luna-leo/the-golden-state/hollywood-forever/fellowship-with-all-life": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Fellowship with All Life",
+        "title": "Fellowship with All Life",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c021/s001.md"
+        "filePath": "e010/c021/p001.md"
     },
     "/luna-leo/emerald-endings": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1900,71 +946,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|10|0"
     },
-    "/luna-leo/emerald-endings/chapter-98-the-confrontation/scene-1-the-shattering": {
+    "/luna-leo/emerald-endings/chapter-98-the-confrontation/part-1-the-shattering-a-sanctuary-in-the-storm": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Shattering",
+        "title": "Part 1: The Shattering & A Sanctuary in the Storm",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c098/s001.md"
+        "filePath": "e011/c098/p001.md"
     },
-    "/luna-leo/emerald-endings/chapter-98-the-confrontation/scene-2-the-long-ride-home": {
+    "/luna-leo/emerald-endings/chapter-98-the-confrontation/part-2-the-long-night-begins-the-feast-of-homecoming": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Long Ride Home",
+        "title": "Part 2: The Long Night Begins & The Feast of Homecoming",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c098/s002.md"
+        "filePath": "e011/c098/p002.md"
     },
-    "/luna-leo/emerald-endings/chapter-98-the-confrontation/scene-3-the-infinite-loop": {
+    "/luna-leo/emerald-endings/chapter-98-the-confrontation/part-3-evening-rituals-and-secure-sleep": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Infinite Loop",
+        "title": "Part 3: Evening Rituals and Secure Sleep",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c098/s003.md"
-    },
-    "/luna-leo/emerald-endings/chapter-98-the-confrontation/scene-4-a-sanctuary-in-the-storm": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Sanctuary in the Storm",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c098/s004.md"
-    },
-    "/luna-leo/emerald-endings/chapter-98-the-confrontation/scene-5-the-long-night-begins": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Long Night Begins",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c098/s005.md"
-    },
-    "/luna-leo/emerald-endings/chapter-98-the-confrontation/scene-6-leo-s-nightmare": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Leo\u2019s Nightmare",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c098/s006.md"
-    },
-    "/luna-leo/emerald-endings/chapter-98-the-confrontation/scene-7-the-morning-after": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Morning After",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c098/s007.md"
-    },
-    "/luna-leo/emerald-endings/chapter-98-the-confrontation/scene-8-a-sanity-of-a-sponge-bath": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: A Sanity of a Sponge Bath",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c098/s008.md"
-    },
-    "/luna-leo/emerald-endings/chapter-98-the-confrontation/scene-9-reckoning-and-reunion": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: Reckoning and Reunion",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c098/s009.md"
-    },
-    "/luna-leo/emerald-endings/chapter-98-the-confrontation/scene-10-the-feast-of-homecoming": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Feast of Homecoming",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c098/s010.md"
-    },
-    "/luna-leo/emerald-endings/chapter-98-the-confrontation/scene-11-evening-rituals-and-secure-sleep": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: Evening Rituals and Secure Sleep",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c098/s011.md"
+        "filePath": "e011/c098/p003.md"
     },
     "/luna-leo/emerald-endings/chapter-99-a-change-of-plans": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1972,95 +970,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|10|1"
     },
-    "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/scene-1-the-shadow-on-the-platform": {
+    "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/part-1-the-shadow-on-the-platform-a-mission-of-agency": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Shadow on the Platform",
+        "title": "Part 1: The Shadow on the Platform & A Mission of Agency",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c099/s001.md"
+        "filePath": "e011/c099/p001.md"
     },
-    "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/scene-2-a-gentle-waking": {
+    "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/part-2-reclaiming-a-sanctuary-a-new-path-forward": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Gentle Waking",
+        "title": "Part 2: Reclaiming a Sanctuary & A New Path Forward",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c099/s002.md"
+        "filePath": "e011/c099/p002.md"
     },
-    "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/scene-3-the-sanctuary-of-breakfast": {
+    "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/part-3-fortress-goes-to-college-the-first-peaceful-sleep": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Sanctuary of Breakfast",
+        "title": "Part 3: Fortress Goes to College & The First Peaceful Sleep",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c099/s003.md"
-    },
-    "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/scene-4-a-mission-of-restoration": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Mission of Restoration",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c099/s004.md"
-    },
-    "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/scene-5-a-voice-of-his-own": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A Voice of His Own",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c099/s005.md"
-    },
-    "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/scene-6-a-mission-of-agency": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A Mission of Agency",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c099/s006.md"
-    },
-    "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/scene-7-reclaiming-a-sanctuary": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Reclaiming a Sanctuary",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c099/s007.md"
-    },
-    "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/scene-8-designing-a-new-sanctuary": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: Designing a New Sanctuary",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c099/s008.md"
-    },
-    "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/scene-9-the-victory-lunch": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Victory Lunch",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c099/s009.md"
-    },
-    "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/scene-10-the-sanctuary-rebuilt": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Sanctuary Rebuilt",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c099/s010.md"
-    },
-    "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/scene-11-the-first-rest": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The First Rest",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c099/s011.md"
-    },
-    "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/scene-12-a-boundary-drawn": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: A Boundary Drawn",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c099/s012.md"
-    },
-    "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/scene-13-a-new-path-forward": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 13: A New Path Forward",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c099/s013.md"
-    },
-    "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/scene-14-fortress-goes-to-college": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 14: Fortress Goes to College",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c099/s014.md"
-    },
-    "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/scene-15-the-first-peaceful-sleep": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 15: The First Peaceful Sleep",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c099/s015.md"
+        "filePath": "e011/c099/p003.md"
     },
     "/luna-leo/the-delores-nightmare": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2074,65 +1000,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|11|0"
     },
-    "/luna-leo/the-delores-nightmare/a-grieving-start/scene-1-a-grieving-start": {
+    "/luna-leo/the-delores-nightmare/a-grieving-start/part-1-a-grieving-start-a-cautious-assessment": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Grieving Start",
+        "title": "Part 1: A Grieving Start & A Cautious Assessment",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c001/s001.md"
+        "filePath": "e012/c001/p001.md"
     },
-    "/luna-leo/the-delores-nightmare/a-grieving-start/scene-2-american-literature": {
+    "/luna-leo/the-delores-nightmare/a-grieving-start/part-2-confronting-quantum-a-long-distance-lifeline": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: American Literature",
+        "title": "Part 2: Confronting Quantum & A Long-Distance Lifeline",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c001/s002.md"
-    },
-    "/luna-leo/the-delores-nightmare/a-grieving-start/scene-3-the-separation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Separation",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c001/s003.md"
-    },
-    "/luna-leo/the-delores-nightmare/a-grieving-start/scene-4-an-unexpected-addition": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: An Unexpected Addition",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c001/s004.md"
-    },
-    "/luna-leo/the-delores-nightmare/a-grieving-start/scene-5-the-first-red-flag": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The First Red Flag",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c001/s005.md"
-    },
-    "/luna-leo/the-delores-nightmare/a-grieving-start/scene-6-a-cautious-assessment": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A Cautious Assessment",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c001/s006.md"
-    },
-    "/luna-leo/the-delores-nightmare/a-grieving-start/scene-7-confronting-quantum": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Confronting Quantum",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c001/s007.md"
-    },
-    "/luna-leo/the-delores-nightmare/a-grieving-start/scene-8-a-cautious-assessment": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: A Cautious Assessment",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c001/s008.md"
-    },
-    "/luna-leo/the-delores-nightmare/a-grieving-start/scene-9-the-ride-home": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Ride Home",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c001/s009.md"
-    },
-    "/luna-leo/the-delores-nightmare/a-grieving-start/scene-10-a-long-distance-lifeline": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: A Long-Distance Lifeline",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c001/s010.md"
+        "filePath": "e012/c001/p002.md"
     },
     "/luna-leo/the-delores-nightmare/the-tutor": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2140,47 +1018,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|11|1"
     },
-    "/luna-leo/the-delores-nightmare/the-tutor/scene-1-the-tutor": {
+    "/luna-leo/the-delores-nightmare/the-tutor/part-1-the-tutor-a-guardian-s-shadow": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Tutor",
+        "title": "Part 1: The Tutor & A Guardian's Shadow",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c002/s001.md"
+        "filePath": "e012/c002/p001.md"
     },
-    "/luna-leo/the-delores-nightmare/the-tutor/scene-2-the-unveiling": {
+    "/luna-leo/the-delores-nightmare/the-tutor/part-2-a-sleepless-resolve-a-fragile-normalcy": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Unveiling",
+        "title": "Part 2: A Sleepless Resolve & A Fragile Normalcy",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c002/s002.md"
-    },
-    "/luna-leo/the-delores-nightmare/the-tutor/scene-3-a-controlled-visit": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A Controlled Visit",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c002/s003.md"
-    },
-    "/luna-leo/the-delores-nightmare/the-tutor/scene-4-an-unsettling-silence": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: An Unsettling Silence",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c002/s004.md"
-    },
-    "/luna-leo/the-delores-nightmare/the-tutor/scene-5-a-guardian-s-shadow": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A Guardian's Shadow",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c002/s005.md"
-    },
-    "/luna-leo/the-delores-nightmare/the-tutor/scene-6-a-sleepless-resolve": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A Sleepless Resolve",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c002/s006.md"
-    },
-    "/luna-leo/the-delores-nightmare/the-tutor/scene-7-a-fragile-normalcy": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: A Fragile Normalcy",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c002/s007.md"
+        "filePath": "e012/c002/p002.md"
     },
     "/luna-leo/the-delores-nightmare/the-hijacked-plan": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2188,65 +1036,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|11|2"
     },
-    "/luna-leo/the-delores-nightmare/the-hijacked-plan/scene-1-the-hijacked-plan": {
+    "/luna-leo/the-delores-nightmare/the-hijacked-plan/part-1-the-hijacked-plan-magnabyte-conflict": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Hijacked Plan",
+        "title": "Part 1: The Hijacked Plan & MagnaByte Conflict",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c003/s001.md"
+        "filePath": "e012/c003/p001.md"
     },
-    "/luna-leo/the-delores-nightmare/the-hijacked-plan/scene-2-the-college-pickup": {
+    "/luna-leo/the-delores-nightmare/the-hijacked-plan/part-2-printer-rage-guardianship-questions-and-a-forceful-kiss-leftovers-bus-schedules-and-locked-doors": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The College Pickup",
+        "title": "Part 2: Printer Rage, Guardianship Questions, and a Forceful Kiss & Leftovers, Bus Schedules, and Locked Doors",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c003/s002.md"
+        "filePath": "e012/c003/p002.md"
     },
-    "/luna-leo/the-delores-nightmare/the-hijacked-plan/scene-3-the-drive-and-arrival": {
+    "/luna-leo/the-delores-nightmare/the-hijacked-plan/part-3-a-day-under-duress-tuesday-morning-departure": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Drive and Arrival",
+        "title": "Part 3: A Day Under Duress & Tuesday Morning Departure",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c003/s003.md"
-    },
-    "/luna-leo/the-delores-nightmare/the-hijacked-plan/scene-4-an-uneasy-evening": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: An Uneasy Evening",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c003/s004.md"
-    },
-    "/luna-leo/the-delores-nightmare/the-hijacked-plan/scene-5-saturday-under-siege": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Saturday Under Siege",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c003/s005.md"
-    },
-    "/luna-leo/the-delores-nightmare/the-hijacked-plan/scene-6-magnabyte-conflict": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: MagnaByte Conflict",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c003/s006.md"
-    },
-    "/luna-leo/the-delores-nightmare/the-hijacked-plan/scene-7-printer-rage-guardianship-questions-and-a-forceful-kiss": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Printer Rage, Guardianship Questions, and a Forceful Kiss",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c003/s007.md"
-    },
-    "/luna-leo/the-delores-nightmare/the-hijacked-plan/scene-8-leftovers-bus-schedules-and-locked-doors": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: Leftovers, Bus Schedules, and Locked Doors",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c003/s008.md"
-    },
-    "/luna-leo/the-delores-nightmare/the-hijacked-plan/scene-9-a-day-under-duress": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: A Day Under Duress",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c003/s009.md"
-    },
-    "/luna-leo/the-delores-nightmare/the-hijacked-plan/scene-10-tuesday-morning-departure": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: Tuesday Morning Departure",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c003/s010.md"
+        "filePath": "e012/c003/p003.md"
     },
     "/luna-leo/the-delores-nightmare/the-trip-proposal": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2254,77 +1060,77 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|11|3"
     },
-    "/luna-leo/the-delores-nightmare/the-trip-proposal/scene-1-the-trip-proposal": {
+    "/luna-leo/the-delores-nightmare/the-trip-proposal/part-1-the-trip-proposal": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Trip Proposal",
+        "title": "Part 1: The Trip Proposal",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/s001.md"
+        "filePath": "e012/c004/p001.md"
     },
-    "/luna-leo/the-delores-nightmare/the-trip-proposal/scene-2-four-days-on-the-bus": {
+    "/luna-leo/the-delores-nightmare/the-trip-proposal/part-2-four-days-on-the-bus": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Four Days on the Bus",
+        "title": "Part 2: Four Days on the Bus",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/s002.md"
+        "filePath": "e012/c004/p002.md"
     },
-    "/luna-leo/the-delores-nightmare/the-trip-proposal/scene-3-the-music-city-realization": {
+    "/luna-leo/the-delores-nightmare/the-trip-proposal/part-3-the-music-city-realization": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Music City Realization",
+        "title": "Part 3: The Music City Realization",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/s003.md"
+        "filePath": "e012/c004/p003.md"
     },
-    "/luna-leo/the-delores-nightmare/the-trip-proposal/scene-4-the-colby-turn": {
+    "/luna-leo/the-delores-nightmare/the-trip-proposal/part-4-the-colby-turn": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Colby Turn",
+        "title": "Part 4: The Colby Turn",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/s004.md"
+        "filePath": "e012/c004/p004.md"
     },
-    "/luna-leo/the-delores-nightmare/the-trip-proposal/scene-5-mile-high": {
+    "/luna-leo/the-delores-nightmare/the-trip-proposal/part-5-mile-high": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Mile High",
+        "title": "Part 5: Mile High",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/s005.md"
+        "filePath": "e012/c004/p005.md"
     },
-    "/luna-leo/the-delores-nightmare/the-trip-proposal/scene-6-pressure-and-lies": {
+    "/luna-leo/the-delores-nightmare/the-trip-proposal/part-6-pressure-and-lies": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Pressure and Lies",
+        "title": "Part 6: Pressure and Lies",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/s006.md"
+        "filePath": "e012/c004/p006.md"
     },
-    "/luna-leo/the-delores-nightmare/the-trip-proposal/scene-7-the-pasco-lock": {
+    "/luna-leo/the-delores-nightmare/the-trip-proposal/part-7-the-pasco-lock": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Pasco Lock",
+        "title": "Part 7: The Pasco Lock",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/s007.md"
+        "filePath": "e012/c004/p007.md"
     },
-    "/luna-leo/the-delores-nightmare/the-trip-proposal/scene-8-arrival-in-the-pacific-northwest": {
+    "/luna-leo/the-delores-nightmare/the-trip-proposal/part-8-arrival-in-the-pacific-northwest": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: Arrival in the Pacific Northwest",
+        "title": "Part 8: Arrival in the Pacific Northwest",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/s008.md"
+        "filePath": "e012/c004/p008.md"
     },
-    "/luna-leo/the-delores-nightmare/the-trip-proposal/scene-9-an-unwelcoming-house": {
+    "/luna-leo/the-delores-nightmare/the-trip-proposal/part-9-an-unwelcoming-house": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: An Unwelcoming House",
+        "title": "Part 9: An Unwelcoming House",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/s009.md"
+        "filePath": "e012/c004/p009.md"
     },
-    "/luna-leo/the-delores-nightmare/the-trip-proposal/scene-10-jet-lag-pancakes-and-a-fragile-plan": {
+    "/luna-leo/the-delores-nightmare/the-trip-proposal/part-10-jet-lag-pancakes-and-a-fragile-plan": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: Jet Lag, Pancakes, and a Fragile Plan",
+        "title": "Part 10: Jet Lag, Pancakes, and a Fragile Plan",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/s010.md"
+        "filePath": "e012/c004/p010.md"
     },
-    "/luna-leo/the-delores-nightmare/the-trip-proposal/scene-11-delores-forces-herself": {
+    "/luna-leo/the-delores-nightmare/the-trip-proposal/part-11-delores-forces-herself": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: Delores Forces Herself",
+        "title": "Part 11: Delores Forces Herself",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/s011.md"
+        "filePath": "e012/c004/p011.md"
     },
-    "/luna-leo/the-delores-nightmare/the-trip-proposal/scene-12-the-breaking-point": {
+    "/luna-leo/the-delores-nightmare/the-trip-proposal/part-12-the-breaking-point": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: The Breaking Point",
+        "title": "Part 12: The Breaking Point",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/s012.md"
+        "filePath": "e012/c004/p012.md"
     },
     "/luna-leo/the-delores-nightmare/escape-through-the-rain": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2332,137 +1138,113 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|11|4"
     },
-    "/luna-leo/the-delores-nightmare/escape-through-the-rain/scene-1-escape-through-the-rain": {
+    "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-1-escape-through-the-rain": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Escape Through the Rain",
+        "title": "Part 1: Escape Through the Rain",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/s001.md"
+        "filePath": "e012/c005/p001.md"
     },
-    "/luna-leo/the-delores-nightmare/escape-through-the-rain/scene-2-carol-looks-for-leo": {
+    "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-2-carol-looks-for-leo": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Carol Looks for Leo",
+        "title": "Part 2: Carol Looks for Leo",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/s002.md"
+        "filePath": "e012/c005/p002.md"
     },
-    "/luna-leo/the-delores-nightmare/escape-through-the-rain/scene-3-the-tty-lifeline": {
+    "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-3-the-tty-lifeline": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The TTY Lifeline",
+        "title": "Part 3: The TTY Lifeline",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/s003.md"
+        "filePath": "e012/c005/p003.md"
     },
-    "/luna-leo/the-delores-nightmare/escape-through-the-rain/scene-4-the-longest-hour": {
+    "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-4-the-longest-hour": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Longest Hour",
+        "title": "Part 4: The Longest Hour",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/s004.md"
+        "filePath": "e012/c005/p004.md"
     },
-    "/luna-leo/the-delores-nightmare/escape-through-the-rain/scene-5-sanctuary-in-a-sterile-room": {
+    "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-5-sanctuary-in-a-sterile-room-the-boarding-pass": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Sanctuary in a Sterile Room",
+        "title": "Part 5: Sanctuary in a Sterile Room & The Boarding Pass",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/s005.md"
+        "filePath": "e012/c005/p005.md"
     },
-    "/luna-leo/the-delores-nightmare/escape-through-the-rain/scene-6-the-first-meal": {
+    "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-6-airside-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The First Meal",
+        "title": "Part 6: Airside Sanctuary",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/s006.md"
+        "filePath": "e012/c005/p006.md"
     },
-    "/luna-leo/the-delores-nightmare/escape-through-the-rain/scene-7-a-virtual-sanctuary": {
+    "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-7-airside-mission-clothing": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: A Virtual Sanctuary",
+        "title": "Part 7: Airside Mission \u2013 Clothing",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/s007.md"
+        "filePath": "e012/c005/p007.md"
     },
-    "/luna-leo/the-delores-nightmare/escape-through-the-rain/scene-8-the-boarding-pass": {
+    "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-8-restoring-dignity": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Boarding Pass",
+        "title": "Part 8: Restoring Dignity",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/s008.md"
+        "filePath": "e012/c005/p008.md"
     },
-    "/luna-leo/the-delores-nightmare/escape-through-the-rain/scene-9-airside-sanctuary": {
+    "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-9-a-song-of-homecoming": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: Airside Sanctuary",
+        "title": "Part 9: A Song of Homecoming",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/s009.md"
+        "filePath": "e012/c005/p009.md"
     },
-    "/luna-leo/the-delores-nightmare/escape-through-the-rain/scene-10-airside-mission-clothing": {
+    "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-10-the-storm-before-the-calm": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: Airside Mission \u2013 Clothing",
+        "title": "Part 10: The Storm Before the Calm",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/s010.md"
+        "filePath": "e012/c005/p010.md"
     },
-    "/luna-leo/the-delores-nightmare/escape-through-the-rain/scene-11-restoring-dignity": {
+    "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-11-flight-1138": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: Restoring Dignity",
+        "title": "Part 11: Flight 1138",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/s011.md"
+        "filePath": "e012/c005/p011.md"
     },
-    "/luna-leo/the-delores-nightmare/escape-through-the-rain/scene-12-a-song-of-homecoming": {
+    "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-12-a-longing-for-simplicity": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: A Song of Homecoming",
+        "title": "Part 12: A Longing for Simplicity",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/s012.md"
+        "filePath": "e012/c005/p012.md"
     },
-    "/luna-leo/the-delores-nightmare/escape-through-the-rain/scene-13-the-storm-before-the-calm": {
+    "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-13-a-midway-dash": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 13: The Storm Before the Calm",
+        "title": "Part 13: A Midway Dash",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/s013.md"
+        "filePath": "e012/c005/p013.md"
     },
-    "/luna-leo/the-delores-nightmare/escape-through-the-rain/scene-14-flight-1138": {
+    "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-14-the-gate-pass": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 14: Flight 1138",
+        "title": "Part 14: The Gate Pass",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/s014.md"
+        "filePath": "e012/c005/p014.md"
     },
-    "/luna-leo/the-delores-nightmare/escape-through-the-rain/scene-15-a-longing-for-simplicity": {
+    "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-15-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 15: A Longing for Simplicity",
+        "title": "Part 15: Sanctuary",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/s015.md"
+        "filePath": "e012/c005/p015.md"
     },
-    "/luna-leo/the-delores-nightmare/escape-through-the-rain/scene-16-a-midway-dash": {
+    "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-16-haven-city": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 16: A Midway Dash",
+        "title": "Part 16: Haven City",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/s016.md"
+        "filePath": "e012/c005/p016.md"
     },
-    "/luna-leo/the-delores-nightmare/escape-through-the-rain/scene-17-the-gate-pass": {
+    "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-17-the-contaminated-sanctuary-later-that-night": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 17: The Gate Pass",
+        "title": "Part 17: The Contaminated Sanctuary & Later That Night",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/s017.md"
+        "filePath": "e012/c005/p017.md"
     },
-    "/luna-leo/the-delores-nightmare/escape-through-the-rain/scene-18-sanctuary": {
+    "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-18-i-ll-drag-you-back": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 18: Sanctuary",
+        "title": "Part 18: I'll Drag You Back",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/s018.md"
-    },
-    "/luna-leo/the-delores-nightmare/escape-through-the-rain/scene-19-haven-city": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 19: Haven City",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c005/s019.md"
-    },
-    "/luna-leo/the-delores-nightmare/escape-through-the-rain/scene-20-the-contaminated-sanctuary": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 20: The Contaminated Sanctuary",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c005/s020.md"
-    },
-    "/luna-leo/the-delores-nightmare/escape-through-the-rain/scene-21-later-that-night": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 21: Later That Night",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c005/s021.md"
-    },
-    "/luna-leo/the-delores-nightmare/escape-through-the-rain/scene-22-i-ll-drag-you-back": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 22: I'll Drag You Back",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c005/s022.md"
+        "filePath": "e012/c005/p018.md"
     },
     "/luna-leo/safe-harbor-stark-reality": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2476,71 +1258,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|12|0"
     },
-    "/luna-leo/safe-harbor-stark-reality/the-first-morning/scene-1-the-first-morning": {
+    "/luna-leo/safe-harbor-stark-reality/the-first-morning/part-1-the-first-morning-the-fortress-assembles-for-the-night": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The First Morning",
+        "title": "Part 1: The First Morning & The Fortress Assembles for the Night",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c003/s001.md"
+        "filePath": "e013/c003/p001.md"
     },
-    "/luna-leo/safe-harbor-stark-reality/the-first-morning/scene-2-designing-the-future": {
+    "/luna-leo/safe-harbor-stark-reality/the-first-morning/part-2-kent-assembling-the-case": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Designing the Future",
+        "title": "Part 2: Kent? & Assembling the Case",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c003/s002.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/the-first-morning/scene-3-a-palette-of-possibilities": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A Palette of Possibilities \ud83c\udfa8",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c003/s003.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/the-first-morning/scene-4-the-first-coat-of-freedom": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The First Coat of Freedom",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c003/s004.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/the-first-morning/scene-5-the-chemical-fire": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Chemical Fire",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c003/s005.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/the-first-morning/scene-6-the-fortress-assembles-for-the-night": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Fortress Assembles for the Night",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c003/s006.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/the-first-morning/scene-7-kent": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Kent?",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c003/s007.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/the-first-morning/scene-8-the-quiet-dawn": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Quiet Dawn",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c003/s008.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/the-first-morning/scene-9-a-breakfast-of-comfort": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: A Breakfast of Comfort",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c003/s009.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/the-first-morning/scene-10-the-final-coat": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Final Coat",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c003/s010.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/the-first-morning/scene-11-assembling-the-case": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: Assembling the Case",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c003/s011.md"
+        "filePath": "e013/c003/p002.md"
     },
     "/luna-leo/safe-harbor-stark-reality/assembling-the-fortress": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2548,29 +1276,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|12|1"
     },
-    "/luna-leo/safe-harbor-stark-reality/assembling-the-fortress/scene-1-assembling-the-fortress": {
+    "/luna-leo/safe-harbor-stark-reality/assembling-the-fortress/assembling-the-fortress-ordering-a-new-voice": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Assembling the Fortress",
+        "title": "Assembling the Fortress & Ordering a New Voice",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c004/s001.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/assembling-the-fortress/scene-2-setting-the-wheels-in-motion": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Setting the Wheels in Motion",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c004/s002.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/assembling-the-fortress/scene-3-official-cooperation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Official Cooperation",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c004/s003.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/assembling-the-fortress/scene-4-ordering-a-new-voice": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Ordering a New Voice",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c004/s004.md"
+        "filePath": "e013/c004/p001.md"
     },
     "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2578,131 +1288,29 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|12|2"
     },
-    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/scene-1-a-new-language-of-home": {
+    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/part-1-a-new-language-of-home-poutine-logistics-and-a-fortress-in-french-class": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A New Language of Home",
+        "title": "Part 1: A New Language of Home & Poutine Logistics and a Fortress in French Class",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c005/s001.md"
+        "filePath": "e013/c005/p001.md"
     },
-    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/scene-2-the-fortress-goes-to-the-mall": {
+    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/part-2-a-tale-of-two-frances-the-final-secret": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Fortress Goes to the Mall",
+        "title": "Part 2: A Tale of Two Frances & The Final Secret",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c005/s002.md"
+        "filePath": "e013/c005/p002.md"
     },
-    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/scene-3-a-new-talker": {
+    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/part-3-the-grand-old-lady-on-the-hill-the-fortress-expanded": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A New Talker!",
+        "title": "Part 3: The Grand Old Lady on the Hill & The Fortress Expanded",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c005/s003.md"
+        "filePath": "e013/c005/p003.md"
     },
-    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/scene-4-a-new-language-of-home": {
+    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/part-4-the-prime-time-r-veillon-the-comfort-of-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A New Language of Home",
+        "title": "Part 4: The Prime-Time R\u00e9veillon & The Comfort of Home",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c005/s004.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/scene-5-operation-conquer-quantum": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Operation: Conquer Quantum",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c005/s005.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/scene-6-poutine-logistics-and-a-fortress-in-french-class": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Poutine Logistics and a Fortress in French Class",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c005/s006.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/scene-7-a-tale-of-two-frances": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: A Tale of Two Frances",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c005/s007.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/scene-8-the-soft-interview": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Soft Interview",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c005/s008.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/scene-9-sacres-and-seafood": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: Sacres and Seafood",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c005/s009.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/scene-10-mon-chum-ma-blonde": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: Mon Chum, Ma Blonde",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c005/s010.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/scene-11-a-grandparent-s-surprise": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: A Grandparent's Surprise",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c005/s011.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/scene-12-the-final-secret": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: The Final Secret",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c005/s012.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/scene-13-the-grand-old-lady-on-the-hill": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 13: The Grand Old Lady on the Hill",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c005/s013.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/scene-14-the-fortress-suite": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 14: The Fortress Suite",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c005/s014.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/scene-15-a-sanctuary-of-pampering": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 15: A Sanctuary of Pampering",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c005/s015.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/scene-16-a-baptism-of-care": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 16: A Baptism of Care",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c005/s016.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/scene-17-the-night-before-the-r-veillon": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 17: The Night Before the R\u00e9veillon",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c005/s017.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/scene-18-a-tradition-adapted": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 18: A Tradition Adapted",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c005/s018.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/scene-19-the-fortress-expanded": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 19: The Fortress Expanded",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c005/s019.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/scene-20-the-prime-time-r-veillon": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 20: The Prime-Time R\u00e9veillon",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c005/s020.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/scene-21-the-comfort-of-home": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 21: The Comfort of Home",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c005/s021.md"
+        "filePath": "e013/c005/p004.md"
     },
     "/luna-leo/safe-harbor-stark-reality/the-morning-after": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2710,53 +1318,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|12|3"
     },
-    "/luna-leo/safe-harbor-stark-reality/the-morning-after/scene-1-the-morning-after": {
+    "/luna-leo/safe-harbor-stark-reality/the-morning-after/the-morning-after-the-holiday-afterglow": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Morning After",
+        "title": "The Morning After & The Holiday Afterglow",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c006/s001.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/the-morning-after/scene-2-an-american-christmas": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: An American Christmas",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c006/s002.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/the-morning-after/scene-3-an-american-christmas-feast": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: An American Christmas Feast",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c006/s003.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/the-morning-after/scene-4-a-moment-to-regulate": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Moment to Regulate",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c006/s004.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/the-morning-after/scene-5-a-fortress-of-love": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A Fortress of Love",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c006/s005.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/the-morning-after/scene-6-an-impromptu-recital": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: An Impromptu Recital",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c006/s006.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/the-morning-after/scene-7-the-long-goodbye": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Long Goodbye",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c006/s007.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/the-morning-after/scene-8-the-holiday-afterglow": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Holiday Afterglow",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c006/s008.md"
+        "filePath": "e013/c006/p001.md"
     },
     "/luna-leo/safe-harbor-stark-reality/a-day-of-quiet": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2764,41 +1330,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|12|4"
     },
-    "/luna-leo/safe-harbor-stark-reality/a-day-of-quiet/scene-1-a-day-of-quiet": {
+    "/luna-leo/safe-harbor-stark-reality/a-day-of-quiet/a-day-of-quiet-a-nightmare-in-the-safe-harbor": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Day of Quiet",
+        "title": "A Day of Quiet & A Nightmare in the Safe Harbor",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c007/s001.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/a-day-of-quiet/scene-2-a-house-full-of-joy": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A House Full of Joy",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c007/s002.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/a-day-of-quiet/scene-3-the-quiet-after": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Quiet After",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c007/s003.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/a-day-of-quiet/scene-4-water-and-trust": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Water and Trust",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c007/s004.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/a-day-of-quiet/scene-5-the-cocoon-of-safety": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Cocoon of Safety",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c007/s005.md"
-    },
-    "/luna-leo/safe-harbor-stark-reality/a-day-of-quiet/scene-6-a-nightmare-in-the-safe-harbor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A Nightmare in the Safe Harbor",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c007/s006.md"
+        "filePath": "e013/c007/p001.md"
     },
     "/luna-leo/safe-harbor-stark-reality/the-day-in-court": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2806,11 +1342,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|12|5"
     },
-    "/luna-leo/safe-harbor-stark-reality/the-day-in-court/scene-1-the-day-in-court": {
+    "/luna-leo/safe-harbor-stark-reality/the-day-in-court/the-day-in-court": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Day in Court",
+        "title": "The Day in Court",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c008/s001.md"
+        "filePath": "e013/c008/p001.md"
     },
     "/luna-leo/the-trial-and-the-toast": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2824,41 +1360,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|13|0"
     },
-    "/luna-leo/the-trial-and-the-toast/the-judge-s-order/scene-1-the-judge-s-order": {
+    "/luna-leo/the-trial-and-the-toast/the-judge-s-order/part-1-the-judge-s-order": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Judge's Order",
+        "title": "Part 1: The Judge's Order",
         "theme": "raggiesoft-books",
-        "filePath": "e014/c001/s001.md"
+        "filePath": "e014/c001/p001.md"
     },
-    "/luna-leo/the-trial-and-the-toast/the-judge-s-order/scene-2-the-longest-morning": {
+    "/luna-leo/the-trial-and-the-toast/the-judge-s-order/part-2-the-longest-morning": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Longest Morning",
+        "title": "Part 2: The Longest Morning",
         "theme": "raggiesoft-books",
-        "filePath": "e014/c001/s002.md"
+        "filePath": "e014/c001/p002.md"
     },
-    "/luna-leo/the-trial-and-the-toast/the-judge-s-order/scene-3-the-new-ms-walker-porter": {
+    "/luna-leo/the-trial-and-the-toast/the-judge-s-order/part-3-the-new-ms-walker-porter-an-impossible-thought": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The New Ms. Walker Porter",
+        "title": "Part 3: The New Ms. Walker Porter & An Impossible Thought",
         "theme": "raggiesoft-books",
-        "filePath": "e014/c001/s003.md"
-    },
-    "/luna-leo/the-trial-and-the-toast/the-judge-s-order/scene-4-a-toast-at-the-tidewater-grill": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Toast at The Tidewater Grill",
-        "theme": "raggiesoft-books",
-        "filePath": "e014/c001/s004.md"
-    },
-    "/luna-leo/the-trial-and-the-toast/the-judge-s-order/scene-5-the-secret-melody": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Secret Melody",
-        "theme": "raggiesoft-books",
-        "filePath": "e014/c001/s005.md"
-    },
-    "/luna-leo/the-trial-and-the-toast/the-judge-s-order/scene-6-an-impossible-thought": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: An Impossible Thought",
-        "theme": "raggiesoft-books",
-        "filePath": "e014/c001/s006.md"
+        "filePath": "e014/c001/p003.md"
     },
     "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2866,77 +1384,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|13|1"
     },
-    "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/scene-1-a-test-and-a-toast": {
+    "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/part-1-a-test-and-a-toast": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Test and a Toast",
+        "title": "Part 1: A Test and a Toast",
         "theme": "raggiesoft-books",
-        "filePath": "e014/c002/s001.md"
+        "filePath": "e014/c002/p001.md"
     },
-    "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/scene-2-the-separation": {
+    "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/part-2-the-separation-the-toasts": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Separation",
+        "title": "Part 2: The Separation & The Toasts",
         "theme": "raggiesoft-books",
-        "filePath": "e014/c002/s002.md"
+        "filePath": "e014/c002/p002.md"
     },
-    "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/scene-3-the-two-rooms": {
+    "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/part-3-the-feast-decompression": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Two Rooms",
+        "title": "Part 3: The Feast & Decompression",
         "theme": "raggiesoft-books",
-        "filePath": "e014/c002/s003.md"
-    },
-    "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/scene-4-the-procession": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Procession",
-        "theme": "raggiesoft-books",
-        "filePath": "e014/c002/s004.md"
-    },
-    "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/scene-5-a-declaration-of-commitment": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A Declaration of Commitment",
-        "theme": "raggiesoft-books",
-        "filePath": "e014/c002/s005.md"
-    },
-    "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/scene-6-the-first-dance": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The First Dance",
-        "theme": "raggiesoft-books",
-        "filePath": "e014/c002/s006.md"
-    },
-    "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/scene-7-a-montage-of-dances": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: A Montage of Dances",
-        "theme": "raggiesoft-books",
-        "filePath": "e014/c002/s007.md"
-    },
-    "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/scene-8-the-toasts": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Toasts",
-        "theme": "raggiesoft-books",
-        "filePath": "e014/c002/s008.md"
-    },
-    "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/scene-9-the-feast": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Feast",
-        "theme": "raggiesoft-books",
-        "filePath": "e014/c002/s009.md"
-    },
-    "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/scene-10-the-cake": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Cake",
-        "theme": "raggiesoft-books",
-        "filePath": "e014/c002/s010.md"
-    },
-    "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/scene-11-the-send-off": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The Send-Off",
-        "theme": "raggiesoft-books",
-        "filePath": "e014/c002/s011.md"
-    },
-    "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/scene-12-decompression": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: Decompression",
-        "theme": "raggiesoft-books",
-        "filePath": "e014/c002/s012.md"
+        "filePath": "e014/c002/p003.md"
     },
     "/luna-leo/the-iron-point-transfer": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2950,47 +1414,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|14|0"
     },
-    "/luna-leo/the-iron-point-transfer/the-weapon/scene-1-the-weapon": {
+    "/luna-leo/the-iron-point-transfer/the-weapon/part-1-the-weapon-the-tape": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Weapon",
+        "title": "Part 1: The Weapon & The Tape",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c001/s001.md"
+        "filePath": "e015/c001/p001.md"
     },
-    "/luna-leo/the-iron-point-transfer/the-weapon/scene-2-the-green-and-gold": {
+    "/luna-leo/the-iron-point-transfer/the-weapon/part-2-the-verdict-the-long-twilight": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Green and Gold",
+        "title": "Part 2: The Verdict & The Long Twilight",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c001/s002.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-weapon/scene-3-the-shibboleth": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Shibboleth",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c001/s003.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-weapon/scene-4-the-tape": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Tape",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c001/s004.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-weapon/scene-5-the-verdict": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Verdict",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c001/s005.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-weapon/scene-6-the-northward-compass": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Northward Compass",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c001/s006.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-weapon/scene-7-the-long-twilight": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Long Twilight",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c001/s007.md"
+        "filePath": "e015/c001/p002.md"
     },
     "/luna-leo/the-iron-point-transfer/the-iron-link": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2998,83 +1432,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|14|1"
     },
-    "/luna-leo/the-iron-point-transfer/the-iron-link/scene-1-the-iron-link": {
+    "/luna-leo/the-iron-point-transfer/the-iron-link/part-1-the-iron-link-the-victory-lap-the-blueprint": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Iron Link",
+        "title": "Part 1: The Iron Link & The Victory Lap & The Blueprint",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c002/s001.md"
+        "filePath": "e015/c002/p001.md"
     },
-    "/luna-leo/the-iron-point-transfer/the-iron-link/scene-2-the-hospitality-standard": {
+    "/luna-leo/the-iron-point-transfer/the-iron-link/part-2-the-subterranean-city-the-foundation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Hospitality Standard",
+        "title": "Part 2: The Subterranean City & The Foundation",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c002/s002.md"
+        "filePath": "e015/c002/p002.md"
     },
-    "/luna-leo/the-iron-point-transfer/the-iron-link/scene-3-the-concourse-encounter": {
+    "/luna-leo/the-iron-point-transfer/the-iron-link/part-3-the-last-train-out-the-lobster-toast": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Concourse Encounter",
+        "title": "Part 3: The Last Train Out & The Lobster Toast",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c002/s003.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-iron-link/scene-4-the-victory-lap-the-blueprint": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Victory Lap & The Blueprint",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c002/s004.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-iron-link/scene-5-the-subterranean-city": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Subterranean City",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c002/s005.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-iron-link/scene-6-the-silver-standard": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Silver Standard",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c002/s006.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-iron-link/scene-7-the-adrenaline-crash": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Adrenaline Crash",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c002/s007.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-iron-link/scene-8-the-foundation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Foundation",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c002/s008.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-iron-link/scene-9-the-last-train-out": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Last Train Out",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c002/s009.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-iron-link/scene-10-the-pulse-of-the-city": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Pulse of the City",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c002/s010.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-iron-link/scene-11-the-cash-hammer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The Cash Hammer",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c002/s011.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-iron-link/scene-12-the-paper-fortress": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: The Paper Fortress",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c002/s012.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-iron-link/scene-13-the-lobster-toast": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 13: The Lobster Toast",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c002/s013.md"
+        "filePath": "e015/c002/p003.md"
     },
     "/luna-leo/the-iron-point-transfer/the-orange-army": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3082,77 +1456,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|14|2"
     },
-    "/luna-leo/the-iron-point-transfer/the-orange-army/scene-1-the-orange-army": {
+    "/luna-leo/the-iron-point-transfer/the-orange-army/part-1-the-orange-army-the-restoration": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Orange Army",
+        "title": "Part 1: The Orange Army & The Restoration",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c003/s001.md"
+        "filePath": "e015/c003/p001.md"
     },
-    "/luna-leo/the-iron-point-transfer/the-orange-army/scene-2": {
+    "/luna-leo/the-iron-point-transfer/the-orange-army/part-2-the-closing-table-the-vessel": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: ",
+        "title": "Part 2: The Closing Table & The Vessel",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c003/s002.md"
+        "filePath": "e015/c003/p002.md"
     },
-    "/luna-leo/the-iron-point-transfer/the-orange-army/scene-3-the-quiet-harbor": {
+    "/luna-leo/the-iron-point-transfer/the-orange-army/part-3-the-final-passenger": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Quiet Harbor",
+        "title": "Part 3: The Final Passenger",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c003/s003.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-orange-army/scene-4-the-blue-line-run": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Blue Line Run",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c003/s004.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-orange-army/scene-5-the-restoration": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Restoration",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c003/s005.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-orange-army/scene-6-the-closing-table": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Closing Table",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c003/s006.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-orange-army/scene-7-the-final-look": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Final Look",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c003/s007.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-orange-army/scene-8-the-iron-record": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Iron Record",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c003/s008.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-orange-army/scene-9-the-engine-stops": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Engine Stops",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c003/s009.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-orange-army/scene-10-the-quiet-departure": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Quiet Departure",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c003/s010.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-orange-army/scene-11-the-vessel": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The Vessel",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c003/s011.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-orange-army/scene-12-the-final-passenger": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: The Final Passenger",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c003/s012.md"
+        "filePath": "e015/c003/p003.md"
     },
     "/luna-leo/the-iron-point-transfer/the-transfer-of-power": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3160,41 +1480,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|14|3"
     },
-    "/luna-leo/the-iron-point-transfer/the-transfer-of-power/scene-1-the-transfer-of-power": {
+    "/luna-leo/the-iron-point-transfer/the-transfer-of-power/part-1-the-transfer-of-power-the-final-crossing": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Transfer of Power",
+        "title": "Part 1: The Transfer of Power & The Final Crossing",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c004/s001.md"
+        "filePath": "e015/c004/p001.md"
     },
-    "/luna-leo/the-iron-point-transfer/the-transfer-of-power/scene-2-the-war-room": {
+    "/luna-leo/the-iron-point-transfer/the-transfer-of-power/part-2-the-arts-box": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The War Room",
+        "title": "Part 2: The ARTS-Box",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c004/s002.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-transfer-of-power/scene-3-the-permission-slip": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Permission Slip",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c004/s003.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-transfer-of-power/scene-4-the-heavy-lift": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Heavy Lift",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c004/s004.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-transfer-of-power/scene-5-the-final-crossing": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Final Crossing",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c004/s005.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-transfer-of-power/scene-6-the-arts-box": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The ARTS-Box",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c004/s006.md"
+        "filePath": "e015/c004/p002.md"
     },
     "/luna-leo/the-iron-point-transfer/the-landing": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3202,59 +1498,29 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|14|4"
     },
-    "/luna-leo/the-iron-point-transfer/the-landing/scene-1-the-landing": {
+    "/luna-leo/the-iron-point-transfer/the-landing/part-1-the-landing": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Landing",
+        "title": "Part 1: The Landing",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c005/s001.md"
+        "filePath": "e015/c005/p001.md"
     },
-    "/luna-leo/the-iron-point-transfer/the-landing/scene-2-the-home-court": {
+    "/luna-leo/the-iron-point-transfer/the-landing/part-2-the-home-court": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Home Court",
+        "title": "Part 2: The Home Court",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c005/s002.md"
+        "filePath": "e015/c005/p002.md"
     },
-    "/luna-leo/the-iron-point-transfer/the-landing/scene-3-the-traffic-report": {
+    "/luna-leo/the-iron-point-transfer/the-landing/part-3-the-traffic-report-the-twin-frequency": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Traffic Report",
+        "title": "Part 3: The Traffic Report & The Twin Frequency",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c005/s003.md"
+        "filePath": "e015/c005/p003.md"
     },
-    "/luna-leo/the-iron-point-transfer/the-landing/scene-4-the-ghost-layout": {
+    "/luna-leo/the-iron-point-transfer/the-landing/part-4-the-wall-test-the-warning-signs": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Ghost Layout",
+        "title": "Part 4: The Wall Test & The Warning Signs",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c005/s004.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-landing/scene-5-the-capital-request": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Capital Request",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c005/s005.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-landing/scene-6-the-ghost-in-the-deed": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Ghost in the Deed",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c005/s006.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-landing/scene-7-the-twin-frequency": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Twin Frequency",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c005/s007.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-landing/scene-8-the-wall-test": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Wall Test",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c005/s008.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-landing/scene-9-the-warning-signs": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Warning Signs",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c005/s009.md"
+        "filePath": "e015/c005/p004.md"
     },
     "/luna-leo/the-iron-point-transfer/the-ticket-kiosk": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3262,53 +1528,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|14|5"
     },
-    "/luna-leo/the-iron-point-transfer/the-ticket-kiosk/scene-1-the-ticket-kiosk": {
+    "/luna-leo/the-iron-point-transfer/the-ticket-kiosk/part-1-the-ticket-kiosk-the-crossing-and-the-calm": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Ticket Kiosk",
+        "title": "Part 1: The Ticket Kiosk & The Crossing and the Calm",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c006/s001.md"
+        "filePath": "e015/c006/p001.md"
     },
-    "/luna-leo/the-iron-point-transfer/the-ticket-kiosk/scene-2-the-commute-to-commerce": {
+    "/luna-leo/the-iron-point-transfer/the-ticket-kiosk/part-2-the-shield-the-return-of-the-fleet": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Commute to Commerce",
+        "title": "Part 2: The Shield & The Return of the Fleet",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c006/s002.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-ticket-kiosk/scene-3-the-showroom": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Showroom",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c006/s003.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-ticket-kiosk/scene-4-the-blue-planet": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Blue Planet",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c006/s004.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-ticket-kiosk/scene-5-the-crossing-and-the-calm": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Crossing and the Calm",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c006/s005.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-ticket-kiosk/scene-6-the-shield": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Shield",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c006/s006.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-ticket-kiosk/scene-7-the-supply-run": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Supply Run",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c006/s007.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-ticket-kiosk/scene-8-the-return-of-the-fleet": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Return of the Fleet",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c006/s008.md"
+        "filePath": "e015/c006/p002.md"
     },
     "/luna-leo/the-iron-point-transfer/the-official-stamp": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3316,53 +1546,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|14|6"
     },
-    "/luna-leo/the-iron-point-transfer/the-official-stamp/scene-1-the-official-stamp": {
+    "/luna-leo/the-iron-point-transfer/the-official-stamp/part-1-the-official-stamp-the-bill": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Official Stamp",
+        "title": "Part 1: The Official Stamp & The Bill",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c007/s001.md"
+        "filePath": "e015/c007/p001.md"
     },
-    "/luna-leo/the-iron-point-transfer/the-official-stamp/scene-2-the-eastern-townships-connection": {
+    "/luna-leo/the-iron-point-transfer/the-official-stamp/part-2-the-textbook-run-the-last-mile-problem": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Eastern Townships Connection",
+        "title": "Part 2: The Textbook Run & The Last Mile Problem",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c007/s002.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-official-stamp/scene-3-the-principal-chair": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Principal Chair",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c007/s003.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-official-stamp/scene-4-the-lock-test": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Lock Test",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c007/s004.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-official-stamp/scene-5-the-master-schedule": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Master Schedule",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c007/s005.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-official-stamp/scene-6-the-bill": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Bill",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c007/s006.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-official-stamp/scene-7-the-textbook-run": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Textbook Run",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c007/s007.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-official-stamp/scene-8-the-last-mile-problem": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Last Mile Problem",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c007/s008.md"
+        "filePath": "e015/c007/p002.md"
     },
     "/luna-leo/the-iron-point-transfer/the-ferry-and-the-fortress": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3370,41 +1564,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|14|7"
     },
-    "/luna-leo/the-iron-point-transfer/the-ferry-and-the-fortress/scene-1-the-ferry-and-the-fortress": {
+    "/luna-leo/the-iron-point-transfer/the-ferry-and-the-fortress/part-1-the-ferry-and-the-fortress-the-clean-break": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Ferry and the Fortress",
+        "title": "Part 1: The Ferry and the Fortress & The Clean Break",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c008/s001.md"
+        "filePath": "e015/c008/p001.md"
     },
-    "/luna-leo/the-iron-point-transfer/the-ferry-and-the-fortress/scene-2-the-gilded-age-tour": {
+    "/luna-leo/the-iron-point-transfer/the-ferry-and-the-fortress/part-2-the-night-watch": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Gilded Age Tour",
+        "title": "Part 2: The Night Watch",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c008/s002.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-ferry-and-the-fortress/scene-3-the-express-return": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Express Return",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c008/s003.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-ferry-and-the-fortress/scene-4-the-calm-before-the-herd": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Calm Before the Herd",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c008/s004.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-ferry-and-the-fortress/scene-5-the-clean-break": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Clean Break",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c008/s005.md"
-    },
-    "/luna-leo/the-iron-point-transfer/the-ferry-and-the-fortress/scene-6-the-night-watch": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Night Watch",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c008/s006.md"
+        "filePath": "e015/c008/p002.md"
     },
     "/luna-leo/finding-a-new-house": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3418,71 +1588,35 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|15|0"
     },
-    "/luna-leo/finding-a-new-house/the-05-30-alarm/scene-1-the-05-30-alarm": {
+    "/luna-leo/finding-a-new-house/the-05-30-alarm/part-1-the-05-30-alarm": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The 05:30 Alarm",
+        "title": "Part 1: The 05:30 Alarm",
         "theme": "raggiesoft-books",
-        "filePath": "e016/c001/s001.md"
+        "filePath": "e016/c001/p001.md"
     },
-    "/luna-leo/finding-a-new-house/the-05-30-alarm/scene-2-the-rainy-day-express": {
+    "/luna-leo/finding-a-new-house/the-05-30-alarm/part-2-the-rainy-day-express": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Rainy Day Express",
+        "title": "Part 2: The Rainy Day Express",
         "theme": "raggiesoft-books",
-        "filePath": "e016/c001/s002.md"
+        "filePath": "e016/c001/p002.md"
     },
-    "/luna-leo/finding-a-new-house/the-05-30-alarm/scene-3-the-split-screen": {
+    "/luna-leo/finding-a-new-house/the-05-30-alarm/part-3-the-split-screen-the-vetting-process": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Split Screen",
+        "title": "Part 3: The Split Screen & The Vetting Process",
         "theme": "raggiesoft-books",
-        "filePath": "e016/c001/s003.md"
+        "filePath": "e016/c001/p003.md"
     },
-    "/luna-leo/finding-a-new-house/the-05-30-alarm/scene-4-the-vetting-process": {
+    "/luna-leo/finding-a-new-house/the-05-30-alarm/part-4-the-dialect-shock-the-audition": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Vetting Process",
+        "title": "Part 4: The Dialect Shock & The Audition",
         "theme": "raggiesoft-books",
-        "filePath": "e016/c001/s004.md"
+        "filePath": "e016/c001/p004.md"
     },
-    "/luna-leo/finding-a-new-house/the-05-30-alarm/scene-5-the-dialect-shock": {
+    "/luna-leo/finding-a-new-house/the-05-30-alarm/part-5-the-library-rendezvous-the-glass-wall": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Dialect Shock",
+        "title": "Part 5: The Library Rendezvous & The Glass Wall",
         "theme": "raggiesoft-books",
-        "filePath": "e016/c001/s005.md"
-    },
-    "/luna-leo/finding-a-new-house/the-05-30-alarm/scene-6-the-machine-shop": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Machine Shop",
-        "theme": "raggiesoft-books",
-        "filePath": "e016/c001/s006.md"
-    },
-    "/luna-leo/finding-a-new-house/the-05-30-alarm/scene-7-the-audition": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Audition",
-        "theme": "raggiesoft-books",
-        "filePath": "e016/c001/s007.md"
-    },
-    "/luna-leo/finding-a-new-house/the-05-30-alarm/scene-8-the-library-rendezvous": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Library Rendezvous",
-        "theme": "raggiesoft-books",
-        "filePath": "e016/c001/s008.md"
-    },
-    "/luna-leo/finding-a-new-house/the-05-30-alarm/scene-9-the-safe-harbor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Safe Harbor",
-        "theme": "raggiesoft-books",
-        "filePath": "e016/c001/s009.md"
-    },
-    "/luna-leo/finding-a-new-house/the-05-30-alarm/scene-10-the-missing-frequency": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Missing Frequency",
-        "theme": "raggiesoft-books",
-        "filePath": "e016/c001/s010.md"
-    },
-    "/luna-leo/finding-a-new-house/the-05-30-alarm/scene-11-the-glass-wall": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The Glass Wall",
-        "theme": "raggiesoft-books",
-        "filePath": "e016/c001/s011.md"
+        "filePath": "e016/c001/p005.md"
     },
     "/luna-leo/finding-a-new-house/the-green-room": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3490,82 +1624,22 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|15|1"
     },
-    "/luna-leo/finding-a-new-house/the-green-room/scene-1-the-green-room": {
+    "/luna-leo/finding-a-new-house/the-green-room/part-1-the-green-room-the-jurisdiction-trap": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Green Room",
+        "title": "Part 1: The Green Room & The Jurisdiction Trap",
         "theme": "raggiesoft-books",
-        "filePath": "e016/c002/s001.md"
+        "filePath": "e016/c002/p001.md"
     },
-    "/luna-leo/finding-a-new-house/the-green-room/scene-2-the-accessible-box": {
+    "/luna-leo/finding-a-new-house/the-green-room/part-2-the-station-assault-the-identity-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Accessible Box",
+        "title": "Part 2: The Station Assault & The Identity Protocol",
         "theme": "raggiesoft-books",
-        "filePath": "e016/c002/s002.md"
+        "filePath": "e016/c002/p002.md"
     },
-    "/luna-leo/finding-a-new-house/the-green-room/scene-3-the-vivaldi": {
+    "/luna-leo/finding-a-new-house/the-green-room/part-3-the-plastic-anchor-the-maiden-voyage": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Vivaldi",
+        "title": "Part 3: The Plastic Anchor & The Maiden Voyage",
         "theme": "raggiesoft-books",
-        "filePath": "e016/c002/s003.md"
-    },
-    "/luna-leo/finding-a-new-house/the-green-room/scene-4-the-snow-convoy": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Snow Convoy",
-        "theme": "raggiesoft-books",
-        "filePath": "e016/c002/s004.md"
-    },
-    "/luna-leo/finding-a-new-house/the-green-room/scene-5-the-sanctuary-protocol": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Sanctuary Protocol",
-        "theme": "raggiesoft-books",
-        "filePath": "e016/c002/s005.md"
-    },
-    "/luna-leo/finding-a-new-house/the-green-room/scene-6-the-jurisdiction-trap": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Jurisdiction Trap",
-        "theme": "raggiesoft-books",
-        "filePath": "e016/c002/s006.md"
-    },
-    "/luna-leo/finding-a-new-house/the-green-room/scene-7-the-station-assault": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Station Assault",
-        "theme": "raggiesoft-books",
-        "filePath": "e016/c002/s007.md"
-    },
-    "/luna-leo/finding-a-new-house/the-green-room/scene-8-the-flight-risk": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Flight Risk",
-        "theme": "raggiesoft-books",
-        "filePath": "e016/c002/s008.md"
-    },
-    "/luna-leo/finding-a-new-house/the-green-room/scene-9-the-identity-crisis": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Identity Crisis",
-        "theme": "raggiesoft-books",
-        "filePath": "e016/c002/s009.md"
-    },
-    "/luna-leo/finding-a-new-house/the-green-room/scene-10-the-identity-protocol": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The Identity Protocol",
-        "theme": "raggiesoft-books",
-        "filePath": "e016/c002/s010.md"
-    },
-    "/luna-leo/finding-a-new-house/the-green-room/scene-11-the-plastic-anchor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The Plastic Anchor",
-        "theme": "raggiesoft-books",
-        "filePath": "e016/c002/s011.md"
-    },
-    "/luna-leo/finding-a-new-house/the-green-room/scene-12-the-ghost-tax": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: The Ghost Tax",
-        "theme": "raggiesoft-books",
-        "filePath": "e016/c002/s012.md"
-    },
-    "/luna-leo/finding-a-new-house/the-green-room/scene-13-the-maiden-voyage": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 13: The Maiden Voyage",
-        "theme": "raggiesoft-books",
-        "filePath": "e016/c002/s013.md"
+        "filePath": "e016/c002/p003.md"
     }
 }

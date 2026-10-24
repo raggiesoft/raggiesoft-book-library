@@ -18,7 +18,7 @@
  *     - If the accordion styling breaks, check the `<style>` block at the bottom; 
  *       it overrides default webkit behaviors for summary markers.
  *     - Ensure the `$toc_manifest` array shape remains consistent with `raggiesoft-deployment-tools/paige.php`. 
- *       Specifically, it expects `['eras'] -> ['chapters'] -> ['scenes']`.
+ *       Specifically, it expects `['eras'] -> ['chapters'] -> ['parts']`.
  * =============================================================================
  */
 
@@ -56,21 +56,22 @@ global $toc_manifest, $cdnBaseUrl, $seriesSlug;
                             <!-- Iterate over chapters within the current era -->
                             <?php foreach ($era['chapters'] as $cIndex => $chap): 
                                 global $fileToUrl;
-                                $sceneCount = !empty($chap['scenes']) && is_array($chap['scenes']) ? count($chap['scenes']) : 0;
+                                $partList = !empty($chap['parts']) && is_array($chap['parts']) ? $chap['parts'] : [];
+                                $partCount = count($partList);
                             ?>
-                                <?php if ($sceneCount === 1): 
+                                <?php if ($partCount === 1): 
                                     /**
-                                     * IDEA 3: SMART SINGLE-SCENE CHAPTER COLLAPSE
-                                     * When a Chapter (`cXXX`) contains only 1 scene (`s001.md`), bypass the
+                                     * IDEA 3: SMART SINGLE-PART CHAPTER COLLAPSE
+                                     * When a Chapter (`cXXX`) contains only 1 Part (`p001.md`), bypass the
                                      * redundant nested `<details>` accordion and render the Chapter as a
-                                     * direct single-click link to that scene.
+                                     * direct single-click link.
                                      */
-                                    $singleScene = $chap['scenes'][0];
-                                    $singleHref = $fileToUrl[$singleScene['file_path']] ?? $singleScene['file_path'];
+                                    $singlePart = $partList[0];
+                                    $singleHref = $fileToUrl[$singlePart['file_path']] ?? $singlePart['file_path'];
                                     $rawChapTitle = (string)($chap['chap_title'] ?? '');
-                                    $rawSceneTitle = (string)($singleScene['scene_title'] ?? '');
-                                    $cleanSceneSub = trim((string)preg_replace('/^Scene\s+\d+\s*:\s*/i', '', $rawSceneTitle));
-                                    $showSceneSub = ($cleanSceneSub !== '' && stripos($rawChapTitle, $cleanSceneSub) === false);
+                                    $rawPartTitle = (string)($singlePart['part_title'] ?? '');
+                                    $cleanPartSub = trim((string)preg_replace('/^Part\s+\d+\s*:\s*/i', '', $rawPartTitle));
+                                    $showPartSub = ($cleanPartSub !== '' && stripos($rawChapTitle, $cleanPartSub) === false && strcasecmp($cleanPartSub, 'Untitled Chapter') !== 0 && !preg_match('/^Part\s+\d+$/i', $cleanPartSub));
                                 ?>
                                 <div class="toc-chapter toc-chapter-single" style="margin-top: 1rem; border-bottom: 1px dashed var(--rs-border);">
                                     <a href="<?php echo htmlspecialchars($singleHref); ?>"
@@ -80,8 +81,8 @@ global $toc_manifest, $cdnBaseUrl, $seriesSlug;
                                         <span style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
                                             <i class="ph ph-file-text" aria-hidden="true"></i>
                                             <span><?php echo htmlspecialchars($rawChapTitle); ?></span>
-                                            <?php if ($showSceneSub): ?>
-                                                <span style="font-weight: 500; font-size: 0.98rem; color: var(--rs-text); opacity: 0.82;">&mdash; <?php echo htmlspecialchars($cleanSceneSub); ?></span>
+                                            <?php if ($showPartSub): ?>
+                                                <span style="font-weight: 500; font-size: 0.98rem; color: var(--rs-text); opacity: 0.82;">&mdash; <?php echo htmlspecialchars($cleanPartSub); ?></span>
                                             <?php endif; ?>
                                         </span>
                                         <span style="font-size: 0.78rem; font-weight: 600; color: var(--rs-text); opacity: 0.72; white-space: nowrap; display: inline-flex; align-items: center; gap: 0.25rem;">
@@ -92,34 +93,32 @@ global $toc_manifest, $cdnBaseUrl, $seriesSlug;
                                 </div>
                                 <?php else: ?>
                                 <details class="toc-chapter" style="margin-top: 1rem;">
-                                    <!-- Native accordion header for multi-scene Chapter -->
+                                    <!-- Native accordion header for multi-part Chapter -->
                                     <summary style="cursor: pointer; list-style: none; font-size: 1.2rem; font-weight: 600; padding: 0.5rem 0; border-bottom: 1px dashed var(--rs-border); display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;">
                                         <span style="display: flex; align-items: center; gap: 0.5rem;">
                                             <i class="ph ph-folder" aria-hidden="true"></i>
                                             <span><?php echo htmlspecialchars($chap['chap_title']); ?></span>
                                         </span>
                                         <span style="font-size: 0.78rem; font-weight: 600; opacity: 0.72; white-space: nowrap;">
-                                            <?php echo (int)$sceneCount; ?> scenes
+                                            <?php echo $partCount > 0 ? ((int)$partCount . ' Parts') : 'Coming Soon'; ?>
                                         </span>
                                     </summary>
                                     
                                     <ul style="list-style: none; padding: 0.5rem 0 0 1.5rem; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
-                                        <?php if (!empty($chap['scenes'])): ?>
+                                        <?php if (!empty($partList)): ?>
                                             
-                                            <!-- Iterate over individual scenes (markdown files) -->
-                                            <?php foreach ($chap['scenes'] as $scene): 
-                                                // Resolve the raw file path to the Stardust semantic URL
-                                                // Default to file_path if the mapping is missing
-                                                $href = $fileToUrl[$scene['file_path']] ?? $scene['file_path'];
+                                            <!-- Iterate over individual parts (pXXX.md files) -->
+                                            <?php foreach ($partList as $part): 
+                                                $href = $fileToUrl[$part['file_path']] ?? $part['file_path'];
                                             ?>
                                                 <li>
                                                     <a href="<?php echo htmlspecialchars($href); ?>" style="text-decoration: none; color: var(--rs-primary); display: flex; align-items: center; gap: 0.5rem; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
-                                                        <i class="ph ph-file-text" aria-hidden="true"></i> <?php echo htmlspecialchars($scene['scene_title']); ?>
+                                                        <i class="ph ph-file-text" aria-hidden="true"></i> <?php echo htmlspecialchars($part['part_title']); ?>
                                                     </a>
                                                 </li>
                                             <?php endforeach; ?>
                                         <?php else: ?>
-                                            <li style="opacity: 0.5;">No scenes available.</li>
+                                            <li style="opacity: 0.5;">No parts available yet.</li>
                                         <?php endif; ?>
                                     </ul>
                                 </details>

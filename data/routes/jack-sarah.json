@@ -12,14 +12,14 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "188 KB",
-            "pdf": "4.4 MB",
-            "text_epub": "188 KB",
-            "text_pdf": "4.4 MB",
-            "epub_bytes": 192633,
-            "pdf_bytes": 4591370,
-            "text_epub_bytes": 192631,
-            "text_pdf_bytes": 4591370
+            "epub": "185 KB",
+            "pdf": "3.2 MB",
+            "text_epub": "185 KB",
+            "text_pdf": "3.2 MB",
+            "epub_bytes": 189661,
+            "pdf_bytes": 3367309,
+            "text_epub_bytes": 189664,
+            "text_pdf_bytes": 3367303
         }
     },
     "/jack-sarah": {
@@ -46,23 +46,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/jack-sarah/life-at-fairlawn/the-end-of-a-war/scene-1-the-discovery": {
+    "/jack-sarah/life-at-fairlawn/the-end-of-a-war/the-discovery-the-alliance": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Discovery \ud83d\udc94",
+        "title": "The Discovery \ud83d\udc94 & The Alliance",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s001.md"
-    },
-    "/jack-sarah/life-at-fairlawn/the-end-of-a-war/scene-2-the-sanctuary": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Sanctuary",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s002.md"
-    },
-    "/jack-sarah/life-at-fairlawn/the-end-of-a-war/scene-3-the-alliance": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Alliance",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s003.md"
+        "filePath": "e001/c001/p001.md"
     },
     "/jack-sarah/life-at-fairlawn/rec-center": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -70,17 +58,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|1"
     },
-    "/jack-sarah/life-at-fairlawn/rec-center/scene-1-hired-at-the-rec-center": {
+    "/jack-sarah/life-at-fairlawn/rec-center/hired-at-the-rec-center-an-official-welcome": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Hired at the Rec Center",
+        "title": "Hired at the Rec Center & An Official Welcome",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s001.md"
-    },
-    "/jack-sarah/life-at-fairlawn/rec-center/scene-2-an-official-welcome": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: An Official Welcome",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s002.md"
+        "filePath": "e001/c002/p001.md"
     },
     "/jack-sarah/life-at-fairlawn/planning-halloween": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -88,17 +70,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|2"
     },
-    "/jack-sarah/life-at-fairlawn/planning-halloween/scene-1-the-tuesday-august-15th-2006-meeting": {
+    "/jack-sarah/life-at-fairlawn/planning-halloween/the-tuesday-august-15th-2006-meeting-the-war-is-over": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Tuesday, August 15th, 2006 Meeting \ud83d\uddd3\ufe0f",
+        "title": "The Tuesday, August 15th, 2006 Meeting \ud83d\uddd3\ufe0f & The War is Over",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s001.md"
-    },
-    "/jack-sarah/life-at-fairlawn/planning-halloween/scene-2-the-war-is-over": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The War is Over",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s002.md"
+        "filePath": "e001/c003/p001.md"
     },
     "/jack-sarah/life-at-fairlawn/an-infernal-halloween": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -106,17 +82,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|3"
     },
-    "/jack-sarah/life-at-fairlawn/an-infernal-halloween/scene-1-a-tuesday-in-hell": {
+    "/jack-sarah/life-at-fairlawn/an-infernal-halloween/a-tuesday-in-hell-off-the-clock": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Tuesday in Hell",
+        "title": "A Tuesday in Hell & Off the Clock",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s001.md"
-    },
-    "/jack-sarah/life-at-fairlawn/an-infernal-halloween/scene-2-off-the-clock": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Off the Clock",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s002.md"
+        "filePath": "e001/c004/p001.md"
     },
     "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -124,71 +94,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|4"
     },
-    "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn/scene-1-the-unfamiliar-code": {
+    "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn/part-1-the-unfamiliar-code-a-safe-harbor": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Unfamiliar Code",
+        "title": "Part 1: The Unfamiliar Code & A Safe Harbor \u2764\ufe0f\u200d\ud83e\ude79",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s001.md"
+        "filePath": "e001/c005/p001.md"
     },
-    "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn/scene-2-the-rescue": {
+    "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn/part-2-a-father-s-understanding-settling-in-for-the-night": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Rescue",
+        "title": "Part 2: A Father's Understanding \ud83d\udc68\u200d\ud83d\udc67\u200d\ud83d\udc66 & Settling in for the Night \ud83d\udc68\u200d\ud83d\udc67\u200d\ud83d\udc66",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s002.md"
-    },
-    "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn/scene-3-code-orange": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Code Orange \u2623\ufe0f",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s003.md"
-    },
-    "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn/scene-4-the-advocate": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Advocate \ud83d\ude91",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s004.md"
-    },
-    "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn/scene-5-the-mission": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Mission \ud83d\ude97",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s005.md"
-    },
-    "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn/scene-6-a-safe-harbor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A Safe Harbor \u2764\ufe0f\u200d\ud83e\ude79",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s006.md"
-    },
-    "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn/scene-7-a-father-s-understanding": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: A Father's Understanding \ud83d\udc68\u200d\ud83d\udc67\u200d\ud83d\udc66",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s007.md"
-    },
-    "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn/scene-8-the-diagnosis": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Diagnosis \ud83e\udec1",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s008.md"
-    },
-    "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn/scene-9-the-transfer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Transfer \ud83d\udc6b",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s009.md"
-    },
-    "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn/scene-10-settling-in": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: Settling In \ud83d\udecf\ufe0f",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s010.md"
-    },
-    "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn/scene-11-settling-in-for-the-night": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: Settling in for the Night \ud83d\udc68\u200d\ud83d\udc67\u200d\ud83d\udc66",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s011.md"
+        "filePath": "e001/c005/p002.md"
     },
     "/jack-sarah/life-at-fairlawn/the-long-night": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -196,35 +112,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|5"
     },
-    "/jack-sarah/life-at-fairlawn/the-long-night/scene-1-the-long-night": {
+    "/jack-sarah/life-at-fairlawn/the-long-night/the-long-night-the-conti-vac": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Long Night \ud83d\ude20",
+        "title": "The Long Night \ud83d\ude20 & The Conti-Vac \ud83d\udca7",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s001.md"
-    },
-    "/jack-sarah/life-at-fairlawn/the-long-night/scene-2-the-turn": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Turn \u23f0",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s002.md"
-    },
-    "/jack-sarah/life-at-fairlawn/the-long-night/scene-3-the-confirmation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Confirmation \u30ec\u30f3\u30c8\u30b2\u30f3",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s003.md"
-    },
-    "/jack-sarah/life-at-fairlawn/the-long-night/scene-4-the-longest-night": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Longest Night \ud83c\udf05",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s004.md"
-    },
-    "/jack-sarah/life-at-fairlawn/the-long-night/scene-5-the-conti-vac": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Conti-Vac \ud83d\udca7",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s005.md"
+        "filePath": "e001/c006/p001.md"
     },
     "/jack-sarah/life-at-fairlawn/a-new-day-in-the-hospital": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -232,53 +124,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|6"
     },
-    "/jack-sarah/life-at-fairlawn/a-new-day-in-the-hospital/scene-1-the-morning-report": {
+    "/jack-sarah/life-at-fairlawn/a-new-day-in-the-hospital/the-morning-report-a-taste-of-victory": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Morning Report",
+        "title": "The Morning Report & A Taste of Victory \ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc67",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s001.md"
-    },
-    "/jack-sarah/life-at-fairlawn/a-new-day-in-the-hospital/scene-2-the-longest-morning": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Longest Morning \ud83e\udd5e",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s002.md"
-    },
-    "/jack-sarah/life-at-fairlawn/a-new-day-in-the-hospital/scene-3-the-breathing-treatment": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Breathing Treatment",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s003.md"
-    },
-    "/jack-sarah/life-at-fairlawn/a-new-day-in-the-hospital/scene-4-a-glimmer-of-hope": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Glimmer of Hope \ud83d\ude2e\u200d\ud83d\udca8",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s004.md"
-    },
-    "/jack-sarah/life-at-fairlawn/a-new-day-in-the-hospital/scene-5-the-fellowship-of-the-silver-gauntlet": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Fellowship of the Silver Gauntlet \ud83c\udfac",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s005.md"
-    },
-    "/jack-sarah/life-at-fairlawn/a-new-day-in-the-hospital/scene-6-a-moment-of-levity": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A Moment of Levity \ud83e\udd23",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s006.md"
-    },
-    "/jack-sarah/life-at-fairlawn/a-new-day-in-the-hospital/scene-7-the-king-of-trash-duty": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The King of Trash Duty \ud83d\uddf3\ufe0f",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s007.md"
-    },
-    "/jack-sarah/life-at-fairlawn/a-new-day-in-the-hospital/scene-8-a-taste-of-victory": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: A Taste of Victory \ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc67",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s008.md"
+        "filePath": "e001/c007/p001.md"
     },
     "/jack-sarah/life-at-fairlawn/the-cost-of-the-crisis": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -286,23 +136,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|7"
     },
-    "/jack-sarah/life-at-fairlawn/the-cost-of-the-crisis/scene-1-an-unsteady-step": {
+    "/jack-sarah/life-at-fairlawn/the-cost-of-the-crisis/an-unsteady-step-the-turning-of-the-tide": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: An Unsteady Step \ud83d\ude1f",
+        "title": "An Unsteady Step \ud83d\ude1f & The Turning of the Tide",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c008/s001.md"
-    },
-    "/jack-sarah/life-at-fairlawn/the-cost-of-the-crisis/scene-2-a-flare-up": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Flare-Up",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c008/s002.md"
-    },
-    "/jack-sarah/life-at-fairlawn/the-cost-of-the-crisis/scene-3-the-turning-of-the-tide": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Turning of the Tide",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c008/s003.md"
+        "filePath": "e001/c008/p001.md"
     },
     "/jack-sarah/life-at-fairlawn/going-home": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -310,23 +148,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|8"
     },
-    "/jack-sarah/life-at-fairlawn/going-home/scene-1-the-last-night": {
+    "/jack-sarah/life-at-fairlawn/going-home/the-last-night-homecoming": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Last Night\u00a0\ud83d\ude34",
+        "title": "The Last Night\u00a0\ud83d\ude34 & Homecoming",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c009/s001.md"
-    },
-    "/jack-sarah/life-at-fairlawn/going-home/scene-2-going-home": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Going Home",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c009/s002.md"
-    },
-    "/jack-sarah/life-at-fairlawn/going-home/scene-3-homecoming": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Homecoming",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c009/s003.md"
+        "filePath": "e001/c009/p001.md"
     },
     "/jack-sarah/life-at-fairlawn/a-day-of-rest": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -334,23 +160,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|9"
     },
-    "/jack-sarah/life-at-fairlawn/a-day-of-rest/scene-1-the-good-news": {
+    "/jack-sarah/life-at-fairlawn/a-day-of-rest/the-good-news-the-promise-of-the-quad": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Good News",
+        "title": "The Good News & The Promise of the Quad",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c010/s001.md"
-    },
-    "/jack-sarah/life-at-fairlawn/a-day-of-rest/scene-2-a-quiet-lunch": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Quiet Lunch\u00a0\ud83e\udd6a",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c010/s002.md"
-    },
-    "/jack-sarah/life-at-fairlawn/a-day-of-rest/scene-3-the-promise-of-the-quad": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Promise of the Quad",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c010/s003.md"
+        "filePath": "e001/c010/p001.md"
     },
     "/jack-sarah/a-trip-to-washington-dc": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -364,17 +178,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
-    "/jack-sarah/a-trip-to-washington-dc/a-healing-journey/scene-1-a-new-beginning-in-fredericksburg": {
+    "/jack-sarah/a-trip-to-washington-dc/a-healing-journey/a-new-beginning-in-fredericksburg-the-first-night": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A New Beginning in Fredericksburg",
+        "title": "A New Beginning in Fredericksburg & The First Night",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s001.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/a-healing-journey/scene-2-the-first-night": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The First Night",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s002.md"
+        "filePath": "e002/c001/p001.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/the-journey-in": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -382,29 +190,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|1"
     },
-    "/jack-sarah/a-trip-to-washington-dc/the-journey-in/scene-1-the-journey-in": {
+    "/jack-sarah/a-trip-to-washington-dc/the-journey-in/the-journey-in-a-new-level-of-trust": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Journey In",
+        "title": "The Journey In & A New Level of Trust",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s001.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/the-journey-in/scene-2-sarah-s-incident": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Sarah\u2019s Incident",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s002.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/the-journey-in/scene-3-tending-to-sarah-s-needs-completing-their-vacation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Tending to Sarah\u2019s Needs & Completing Their Vacation",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s003.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/the-journey-in/scene-4-a-new-level-of-trust": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A New Level of Trust",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s004.md"
+        "filePath": "e002/c002/p001.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/a-trip-made-easier": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -412,11 +202,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|2"
     },
-    "/jack-sarah/a-trip-to-washington-dc/a-trip-made-easier/scene-1-a-trip-made-easier": {
+    "/jack-sarah/a-trip-to-washington-dc/a-trip-made-easier/a-trip-made-easier": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Trip Made Easier",
+        "title": "A Trip Made Easier",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c003/s001.md"
+        "filePath": "e002/c003/p001.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/sarah-with-an-injury": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -424,11 +214,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|3"
     },
-    "/jack-sarah/a-trip-to-washington-dc/sarah-with-an-injury/scene-1-welcome-home-to-a-twisted-ankle": {
+    "/jack-sarah/a-trip-to-washington-dc/sarah-with-an-injury/welcome-home-to-a-twisted-ankle": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Welcome Home to a Twisted Ankle",
+        "title": "Welcome Home to a Twisted Ankle",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c004/s001.md"
+        "filePath": "e002/c004/p001.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/summer-dreams": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -436,11 +226,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|4"
     },
-    "/jack-sarah/a-trip-to-washington-dc/summer-dreams/scene-1-tent-in-a-backyard": {
+    "/jack-sarah/a-trip-to-washington-dc/summer-dreams/tent-in-a-backyard": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Tent in a Backyard",
+        "title": "Tent in a Backyard",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c005/s001.md"
+        "filePath": "e002/c005/p001.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/delores": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -448,47 +238,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|5"
     },
-    "/jack-sarah/a-trip-to-washington-dc/delores/scene-1-university-open-house": {
+    "/jack-sarah/a-trip-to-washington-dc/delores/university-open-house-the-move": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: University Open House",
+        "title": "University Open House & The Move",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c006/s001.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/delores/scene-2-the-tour": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Tour",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c006/s002.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/delores/scene-3-an-unexpected-guide": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: An Unexpected Guide",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c006/s003.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/delores/scene-4-the-conversation-shifts": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Conversation Shifts",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c006/s004.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/delores/scene-5-lunch-in-the-lion-s-den": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Lunch in the Lion's Den",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c006/s005.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/delores/scene-6-a-private-tour": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A Private Tour",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c006/s006.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/delores/scene-7-the-move": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Move",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c006/s007.md"
+        "filePath": "e002/c006/p001.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -496,41 +250,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|6"
     },
-    "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors/scene-1-a-cousin-s-rescue": {
+    "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors/part-1-a-cousin-s-rescue-conversations-on-a-ride-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Cousin's Rescue",
+        "title": "Part 1: A Cousin's Rescue & Conversations on a Ride Home",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c007/s001.md"
+        "filePath": "e002/c007/p001.md"
     },
-    "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors/scene-2-a-rec-center-sanctuary": {
+    "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors/part-2-a-safe-harbor-coffee-date": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Rec Center Sanctuary",
+        "title": "Part 2: A Safe Harbor & Coffee Date",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c007/s002.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors/scene-3-closing-down-a-rec-center": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Closing Down a Rec Center",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c007/s003.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors/scene-4-conversations-on-a-ride-home": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Conversations on a Ride Home",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c007/s004.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors/scene-5-a-safe-harbor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A Safe Harbor",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c007/s005.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors/scene-6-coffee-date": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Coffee Date",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c007/s006.md"
+        "filePath": "e002/c007/p002.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -538,53 +268,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|7"
     },
-    "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/scene-1-an-unassuming-dinner": {
+    "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/part-1-an-unassuming-dinner-the-debrief": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: An Unassuming Dinner",
+        "title": "Part 1: An Unassuming Dinner & The Debrief",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c008/s001.md"
+        "filePath": "e002/c008/p001.md"
     },
-    "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/scene-2-dinner-with-robyn-and-delores": {
+    "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/part-2-a-theory-is-formed-the-new-normal-begins": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Dinner with Robyn and Delores",
+        "title": "Part 2: A Theory is Formed & The New Normal Begins",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c008/s002.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/scene-3-the-interrogation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Interrogation",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c008/s003.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/scene-4-the-manipulation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Manipulation",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c008/s004.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/scene-5-the-escape-and-the-hook": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Escape and the Hook",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c008/s005.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/scene-6-the-debrief": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Debrief",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c008/s006.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/scene-7-a-theory-is-formed": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: A Theory is Formed",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c008/s007.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/scene-8-the-new-normal-begins": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The New Normal Begins",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c008/s008.md"
+        "filePath": "e002/c008/p002.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/planning-sarah-s-birthday": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -592,17 +286,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|8"
     },
-    "/jack-sarah/a-trip-to-washington-dc/planning-sarah-s-birthday/scene-1-a-mission-for-the-sister": {
+    "/jack-sarah/a-trip-to-washington-dc/planning-sarah-s-birthday/a-mission-for-the-sister-a-taste-of-twin-magic": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Mission for the Sister",
+        "title": "A Mission for the Sister & A Taste of Twin Magic",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c009/s001.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/planning-sarah-s-birthday/scene-2-a-taste-of-twin-magic": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Taste of Twin Magic",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c009/s002.md"
+        "filePath": "e002/c009/p001.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -610,65 +298,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|9"
     },
-    "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/scene-1-a-day-of-dread-and-duty": {
+    "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/part-1-a-day-of-dread-and-duty-trial-by-fecal-contamination": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Day of Dread and Duty",
+        "title": "Part 1: A Day of Dread and Duty & Trial by Fecal Contamination",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c010/s001.md"
+        "filePath": "e002/c010/p001.md"
     },
-    "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/scene-2-a-sunday-morning-at-fairlawn": {
+    "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/part-2-the-longest-shift-a-safe-harbor-at-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Sunday Morning at Fairlawn",
+        "title": "Part 2: The Longest Shift & A Safe Harbor at Home",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c010/s002.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/scene-3-a-tale-of-two-siblings": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A Tale of Two Siblings",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c010/s003.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/scene-4-a-shared-break": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Shared Break",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c010/s004.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/scene-5-trial-by-fecal-contamination": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Trial by Fecal Contamination",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c010/s005.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/scene-6-the-longest-shift": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Longest Shift",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c010/s006.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/scene-7-peking-duck-inn": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Peking Duck Inn",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c010/s007.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/scene-8-a-dinner-on-thin-ice": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: A Dinner on Thin Ice",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c010/s008.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/scene-9-the-aftermath": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Aftermath",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c010/s009.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/scene-10-a-safe-harbor-at-home": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: A Safe Harbor at Home",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c010/s010.md"
+        "filePath": "e002/c010/p002.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/confusion-and-stress": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -676,23 +316,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|10"
     },
-    "/jack-sarah/a-trip-to-washington-dc/confusion-and-stress/scene-1-a-morning-shrouded-in-fog": {
+    "/jack-sarah/a-trip-to-washington-dc/confusion-and-stress/a-morning-shrouded-in-fog-a-misfired-warning": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Morning Shrouded in Fog \ud83e\udd63",
+        "title": "A Morning Shrouded in Fog \ud83e\udd63 & A Misfired Warning",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c011/s001.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/confusion-and-stress/scene-2-a-day-of-confusion": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Day of Confusion",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c011/s002.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/confusion-and-stress/scene-3-a-misfired-warning": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A Misfired Warning",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c011/s003.md"
+        "filePath": "e002/c011/p001.md"
     },
     "/jack-sarah/a-trip-to-washington-dc/welcome-to-work": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -700,29 +328,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|11"
     },
-    "/jack-sarah/a-trip-to-washington-dc/welcome-to-work/scene-1-off-to-work": {
+    "/jack-sarah/a-trip-to-washington-dc/welcome-to-work/off-to-work-the-mobile-emergency-room": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Off to Work",
+        "title": "Off to Work & The Mobile Emergency Room",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c012/s001.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/welcome-to-work/scene-2-morning-at-fairlawn": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Morning at Fairlawn",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c012/s002.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/welcome-to-work/scene-3-first-response": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: First Response",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c012/s003.md"
-    },
-    "/jack-sarah/a-trip-to-washington-dc/welcome-to-work/scene-4-the-mobile-emergency-room": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Mobile Emergency Room",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c012/s004.md"
+        "filePath": "e002/c012/p001.md"
     },
     "/jack-sarah/heart-attack": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -736,53 +346,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|0"
     },
-    "/jack-sarah/heart-attack/hospital-arrival/scene-1-arrival-at-the-emergency-room": {
+    "/jack-sarah/heart-attack/hospital-arrival/part-1-arrival-at-the-emergency-room-a-quiet-vigil": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Arrival at the Emergency Room",
+        "title": "Part 1: Arrival at the Emergency Room & A Quiet Vigil",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s001.md"
+        "filePath": "e003/c001/p001.md"
     },
-    "/jack-sarah/heart-attack/hospital-arrival/scene-2-transfer-to-main-hospital": {
+    "/jack-sarah/heart-attack/hospital-arrival/part-2-the-family-visit-the-wait-for-dawn": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Transfer to Main Hospital",
+        "title": "Part 2: The Family Visit & The Wait for Dawn",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s002.md"
-    },
-    "/jack-sarah/heart-attack/hospital-arrival/scene-3-rooming-it-at-the-hospital": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Rooming It at the Hospital",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s003.md"
-    },
-    "/jack-sarah/heart-attack/hospital-arrival/scene-4-back-in-the-room": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Back in the Room",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s004.md"
-    },
-    "/jack-sarah/heart-attack/hospital-arrival/scene-5-a-quiet-vigil": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A Quiet Vigil",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s005.md"
-    },
-    "/jack-sarah/heart-attack/hospital-arrival/scene-6-the-family-visit": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Family Visit",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s006.md"
-    },
-    "/jack-sarah/heart-attack/hospital-arrival/scene-7-the-night-before-surgery": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Night Before Surgery",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s007.md"
-    },
-    "/jack-sarah/heart-attack/hospital-arrival/scene-8-the-wait-for-dawn": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Wait for Dawn",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s008.md"
+        "filePath": "e003/c001/p002.md"
     },
     "/jack-sarah/heart-attack/heart-hospital": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -790,23 +364,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|1"
     },
-    "/jack-sarah/heart-attack/heart-hospital/scene-1-serious-health-discussion": {
+    "/jack-sarah/heart-attack/heart-hospital/part-1-serious-health-discussion-off-to-the-operating-room": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Serious Health Discussion",
+        "title": "Part 1: Serious Health Discussion & Off to the Operating Room",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s001.md"
+        "filePath": "e003/c002/p001.md"
     },
-    "/jack-sarah/heart-attack/heart-hospital/scene-2-off-to-the-operating-room": {
+    "/jack-sarah/heart-attack/heart-hospital/part-2-waking-up-in-the-intensive-care-unit": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Off to the Operating Room",
+        "title": "Part 2: Waking Up in the Intensive Care Unit",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s002.md"
-    },
-    "/jack-sarah/heart-attack/heart-hospital/scene-3-waking-up-in-the-intensive-care-unit": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Waking Up in the Intensive Care Unit",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s003.md"
+        "filePath": "e003/c002/p002.md"
     },
     "/jack-sarah/heart-attack/the-day-of-surgery": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -814,35 +382,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|2"
     },
-    "/jack-sarah/heart-attack/the-day-of-surgery/scene-1-the-last-meal": {
+    "/jack-sarah/heart-attack/the-day-of-surgery/the-last-meal-the-transfer": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Last Meal",
+        "title": "The Last Meal & The Transfer",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s001.md"
-    },
-    "/jack-sarah/heart-attack/the-day-of-surgery/scene-2-the-journey-to-the-or": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Journey to the OR",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s002.md"
-    },
-    "/jack-sarah/heart-attack/the-day-of-surgery/scene-3-a-failed-procedure": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A Failed Procedure",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s003.md"
-    },
-    "/jack-sarah/heart-attack/the-day-of-surgery/scene-4-a-veteran-s-reassurance": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Veteran's Reassurance",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s004.md"
-    },
-    "/jack-sarah/heart-attack/the-day-of-surgery/scene-5-the-transfer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Transfer",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s005.md"
+        "filePath": "e003/c003/p001.md"
     },
     "/jack-sarah/heart-attack/the-road-to-recovery": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -850,17 +394,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|3"
     },
-    "/jack-sarah/heart-attack/the-road-to-recovery/scene-1-rooming-with-sarah-in-the-hospital": {
+    "/jack-sarah/heart-attack/the-road-to-recovery/rooming-with-sarah-in-the-hospital-bed-time-with-sarah": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Rooming with Sarah in the Hospital",
+        "title": "Rooming with Sarah in the Hospital & Bed Time with Sarah",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c004/s001.md"
-    },
-    "/jack-sarah/heart-attack/the-road-to-recovery/scene-2-bed-time-with-sarah": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Bed Time with Sarah",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c004/s002.md"
+        "filePath": "e003/c004/p001.md"
     },
     "/jack-sarah/heart-attack/a-blizzard-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -868,65 +406,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|4"
     },
-    "/jack-sarah/heart-attack/a-blizzard-sanctuary/scene-1-a-visitor-in-the-storm": {
+    "/jack-sarah/heart-attack/a-blizzard-sanctuary/part-1-a-visitor-in-the-storm-a-call-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Visitor in the Storm",
+        "title": "Part 1: A Visitor in the Storm & A Call Home",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s001.md"
+        "filePath": "e003/c005/p001.md"
     },
-    "/jack-sarah/heart-attack/a-blizzard-sanctuary/scene-2-the-first-night": {
+    "/jack-sarah/heart-attack/a-blizzard-sanctuary/part-2-the-anthem-of-aethel-a-new-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The First Night",
+        "title": "Part 2: The Anthem of Aethel \ud83c\udfb6 & A New Home",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s002.md"
-    },
-    "/jack-sarah/heart-attack/a-blizzard-sanctuary/scene-3-the-first-full-day": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The First Full Day",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s003.md"
-    },
-    "/jack-sarah/heart-attack/a-blizzard-sanctuary/scene-4-the-first-walk": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The First Walk",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s004.md"
-    },
-    "/jack-sarah/heart-attack/a-blizzard-sanctuary/scene-5-a-call-home": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A Call Home",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s005.md"
-    },
-    "/jack-sarah/heart-attack/a-blizzard-sanctuary/scene-6-the-anthem-of-aethel": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Anthem of Aethel \ud83c\udfb6",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s006.md"
-    },
-    "/jack-sarah/heart-attack/a-blizzard-sanctuary/scene-7-the-rec-center-rallies": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Rec Center Rallies",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s007.md"
-    },
-    "/jack-sarah/heart-attack/a-blizzard-sanctuary/scene-8-a-mentor-s-visit": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: A Mentor's Visit",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s008.md"
-    },
-    "/jack-sarah/heart-attack/a-blizzard-sanctuary/scene-9-an-unexpected-goodbye": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: An Unexpected Goodbye",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s009.md"
-    },
-    "/jack-sarah/heart-attack/a-blizzard-sanctuary/scene-10-a-new-home": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: A New Home",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s010.md"
+        "filePath": "e003/c005/p002.md"
     },
     "/jack-sarah/heart-attack/recovering-from-a-heart-attack": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -934,17 +424,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|5"
     },
-    "/jack-sarah/heart-attack/recovering-from-a-heart-attack/scene-1-the-new-house": {
+    "/jack-sarah/heart-attack/recovering-from-a-heart-attack/the-new-house-first-night-at-the-house": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The New House",
+        "title": "The New House & First Night at the House",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c006/s001.md"
-    },
-    "/jack-sarah/heart-attack/recovering-from-a-heart-attack/scene-2-first-night-at-the-house": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: First Night at the House",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c006/s002.md"
+        "filePath": "e003/c006/p001.md"
     },
     "/jack-sarah/heart-attack/a-taste-of-home": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -952,17 +436,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|6"
     },
-    "/jack-sarah/heart-attack/a-taste-of-home/scene-1-a-taste-of-home": {
+    "/jack-sarah/heart-attack/a-taste-of-home/a-taste-of-home-a-visit-to-a-second-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Taste of Home",
+        "title": "A Taste of Home & A Visit to a Second Home",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c007/s001.md"
-    },
-    "/jack-sarah/heart-attack/a-taste-of-home/scene-2-a-visit-to-a-second-home": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Visit to a Second Home",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c007/s002.md"
+        "filePath": "e003/c007/p001.md"
     },
     "/jack-sarah/heart-attack/a-final-encounter": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -970,23 +448,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|7"
     },
-    "/jack-sarah/heart-attack/a-final-encounter/scene-1-a-final-encounter": {
+    "/jack-sarah/heart-attack/a-final-encounter/a-final-encounter-room-service": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Final Encounter",
+        "title": "A Final Encounter & Room Service",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c008/s001.md"
-    },
-    "/jack-sarah/heart-attack/a-final-encounter/scene-2-building-a-sanctuary": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Building a Sanctuary",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c008/s002.md"
-    },
-    "/jack-sarah/heart-attack/a-final-encounter/scene-3-room-service": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Room Service",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c008/s003.md"
+        "filePath": "e003/c008/p001.md"
     },
     "/jack-sarah/heart-attack/the-first-tour": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -994,41 +460,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|8"
     },
-    "/jack-sarah/heart-attack/the-first-tour/scene-1-the-first-tour": {
+    "/jack-sarah/heart-attack/the-first-tour/part-1-the-first-tour-a-sanctuary-decorated": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The First Tour",
+        "title": "Part 1: The First Tour & A Sanctuary Decorated",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c009/s001.md"
+        "filePath": "e003/c009/p001.md"
     },
-    "/jack-sarah/heart-attack/the-first-tour/scene-2-a-cheesy-sanctuary": {
+    "/jack-sarah/heart-attack/the-first-tour/part-2-the-biological-deadline": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Cheesy Sanctuary",
+        "title": "Part 2: The Biological Deadline",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c009/s002.md"
-    },
-    "/jack-sarah/heart-attack/the-first-tour/scene-3-a-collector-s-edition": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: A Collector's Edition",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c009/s003.md"
-    },
-    "/jack-sarah/heart-attack/the-first-tour/scene-4-dinner-and-bonus-features": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: Dinner and Bonus Features",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c009/s004.md"
-    },
-    "/jack-sarah/heart-attack/the-first-tour/scene-5-a-sanctuary-decorated": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: A Sanctuary Decorated",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c009/s005.md"
-    },
-    "/jack-sarah/heart-attack/the-first-tour/scene-6-the-biological-deadline": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Biological Deadline",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c009/s006.md"
+        "filePath": "e003/c009/p002.md"
     },
     "/jack-sarah/heart-attack/the-long-road-ahead": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1036,29 +478,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|9"
     },
-    "/jack-sarah/heart-attack/the-long-road-ahead/scene-1-the-windsor-woods-realization": {
+    "/jack-sarah/heart-attack/the-long-road-ahead/the-windsor-woods-realization-a-new-kind-of-housebound": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Windsor Woods Realization",
+        "title": "The Windsor Woods Realization & A New Kind of Housebound",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c010/s001.md"
-    },
-    "/jack-sarah/heart-attack/the-long-road-ahead/scene-2-the-long-walk-home": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Long Walk Home",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c010/s002.md"
-    },
-    "/jack-sarah/heart-attack/the-long-road-ahead/scene-3-the-sister-shield": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Sister-Shield",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c010/s003.md"
-    },
-    "/jack-sarah/heart-attack/the-long-road-ahead/scene-4-a-new-kind-of-housebound": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A New Kind of Housebound",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c010/s004.md"
+        "filePath": "e003/c010/p001.md"
     },
     "/jack-sarah/heart-attack/a-quiet-refusal": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1066,22 +490,10 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|10"
     },
-    "/jack-sarah/heart-attack/a-quiet-refusal/scene-1-a-delayed-rejection": {
+    "/jack-sarah/heart-attack/a-quiet-refusal/a-delayed-rejection-the-midnight-showing": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Delayed Rejection",
+        "title": "A Delayed Rejection & The Midnight Showing",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c011/s001.md"
-    },
-    "/jack-sarah/heart-attack/a-quiet-refusal/scene-2-a-protector-s-concern": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Protector's Concern",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c011/s002.md"
-    },
-    "/jack-sarah/heart-attack/a-quiet-refusal/scene-3-the-midnight-showing": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Midnight Showing",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c011/s003.md"
+        "filePath": "e003/c011/p001.md"
     }
 }

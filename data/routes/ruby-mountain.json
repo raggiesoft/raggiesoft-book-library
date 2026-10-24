@@ -12,14 +12,14 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "233 KB",
+            "epub": "232 KB",
             "pdf": "648 KB",
-            "text_epub": "233 KB",
+            "text_epub": "232 KB",
             "text_pdf": "648 KB",
-            "epub_bytes": 238842,
-            "pdf_bytes": 663805,
-            "text_epub_bytes": 238843,
-            "text_pdf_bytes": 663805
+            "epub_bytes": 237598,
+            "pdf_bytes": 663054,
+            "text_epub_bytes": 237599,
+            "text_pdf_bytes": 663054
         }
     },
     "/ruby-mountain": {
@@ -46,23 +46,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/ruby-mountain/book-the-great-schism/chapter-1-the-eve-of-exile/scene-1-the-traitor": {
+    "/ruby-mountain/book-the-great-schism/chapter-1-the-eve-of-exile/the-traitor-the-migration": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Traitor",
+        "title": "The Traitor & The Migration",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s001.md"
-    },
-    "/ruby-mountain/book-the-great-schism/chapter-1-the-eve-of-exile/scene-2-the-vision": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Vision",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s002.md"
-    },
-    "/ruby-mountain/book-the-great-schism/chapter-1-the-eve-of-exile/scene-3-the-migration": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Migration",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s003.md"
+        "filePath": "e001/c001/p001.md"
     },
     "/ruby-mountain/book-the-great-schism/chapter-2-the-gates-of-exile": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -70,29 +58,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|1"
     },
-    "/ruby-mountain/book-the-great-schism/chapter-2-the-gates-of-exile/scene-1-the-final-ultimatum": {
+    "/ruby-mountain/book-the-great-schism/chapter-2-the-gates-of-exile/the-final-ultimatum-the-assessment": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Final Ultimatum",
+        "title": "The Final Ultimatum & The Assessment",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s001.md"
-    },
-    "/ruby-mountain/book-the-great-schism/chapter-2-the-gates-of-exile/scene-2-the-standoff": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Standoff",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s002.md"
-    },
-    "/ruby-mountain/book-the-great-schism/chapter-2-the-gates-of-exile/scene-3-the-eviction": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Eviction",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s003.md"
-    },
-    "/ruby-mountain/book-the-great-schism/chapter-2-the-gates-of-exile/scene-4-the-assessment": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Assessment",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s004.md"
+        "filePath": "e001/c002/p001.md"
     },
     "/ruby-mountain/book-the-great-schism/chapter-3-the-architecture-of-survival": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -100,17 +70,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|2"
     },
-    "/ruby-mountain/book-the-great-schism/chapter-3-the-architecture-of-survival/scene-1-the-diagnostics": {
+    "/ruby-mountain/book-the-great-schism/chapter-3-the-architecture-of-survival/the-diagnostics-the-truman-execution": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Diagnostics",
+        "title": "The Diagnostics & The Truman Execution",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s001.md"
-    },
-    "/ruby-mountain/book-the-great-schism/chapter-3-the-architecture-of-survival/scene-2-the-truman-execution": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Truman Execution",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s002.md"
+        "filePath": "e001/c003/p001.md"
     },
     "/ruby-mountain/book-vanessa": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -124,41 +88,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
-    "/ruby-mountain/book-vanessa/chapter-1-the-coastal-assessment/scene-1-the-handover": {
+    "/ruby-mountain/book-vanessa/chapter-1-the-coastal-assessment/part-1-the-handover-the-island-anomaly": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Handover",
+        "title": "Part 1: The Handover & The Island Anomaly",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s001.md"
+        "filePath": "e002/c001/p001.md"
     },
-    "/ruby-mountain/book-vanessa/chapter-1-the-coastal-assessment/scene-2-the-baseline": {
+    "/ruby-mountain/book-vanessa/chapter-1-the-coastal-assessment/part-2-the-domestic-delusion-the-autonomous-transfer": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Baseline",
+        "title": "Part 2: The Domestic Delusion & The Autonomous Transfer",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s002.md"
-    },
-    "/ruby-mountain/book-vanessa/chapter-1-the-coastal-assessment/scene-3-the-system-error": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The System Error",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s003.md"
-    },
-    "/ruby-mountain/book-vanessa/chapter-1-the-coastal-assessment/scene-4-the-island-anomaly": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Island Anomaly",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s004.md"
-    },
-    "/ruby-mountain/book-vanessa/chapter-1-the-coastal-assessment/scene-5-the-domestic-delusion": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Domestic Delusion",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s005.md"
-    },
-    "/ruby-mountain/book-vanessa/chapter-1-the-coastal-assessment/scene-6-the-autonomous-transfer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Autonomous Transfer",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s006.md"
+        "filePath": "e002/c001/p002.md"
     },
     "/ruby-mountain/book-johnny-s-rescue": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -172,47 +112,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|0"
     },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-1-sos-from-the-salish-sea/scene-1-the-dial-up-escape": {
+    "/ruby-mountain/book-johnny-s-rescue/chapter-1-sos-from-the-salish-sea/part-1-the-dial-up-escape-the-mountain-mobilizes": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Dial-Up Escape",
+        "title": "Part 1: The Dial-Up Escape & The Mountain Mobilizes",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s001.md"
+        "filePath": "e003/c001/p001.md"
     },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-1-sos-from-the-salish-sea/scene-2-the-coffee-shop-contingency": {
+    "/ruby-mountain/book-johnny-s-rescue/chapter-1-sos-from-the-salish-sea/part-2-the-wrong-schedule-the-terminal": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Coffee Shop Contingency",
+        "title": "Part 2: The Wrong Schedule & The Terminal",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s002.md"
-    },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-1-sos-from-the-salish-sea/scene-3-the-mountain-mobilizes": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Mountain Mobilizes",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s003.md"
-    },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-1-sos-from-the-salish-sea/scene-4-the-wrong-schedule": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Wrong Schedule",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s004.md"
-    },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-1-sos-from-the-salish-sea/scene-5-the-free-passage": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Free Passage",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s005.md"
-    },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-1-sos-from-the-salish-sea/scene-6-the-widening-gap": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Widening Gap",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s006.md"
-    },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-1-sos-from-the-salish-sea/scene-7-the-terminal": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Terminal",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s007.md"
+        "filePath": "e003/c001/p002.md"
     },
     "/ruby-mountain/book-johnny-s-rescue/chapter-2-the-mainland": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -220,47 +130,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|1"
     },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-2-the-mainland/scene-1-the-reunion": {
+    "/ruby-mountain/book-johnny-s-rescue/chapter-2-the-mainland/part-1-the-reunion-the-gateway": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Reunion",
+        "title": "Part 1: The Reunion & The Gateway",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s001.md"
+        "filePath": "e003/c002/p001.md"
     },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-2-the-mainland/scene-2-the-ascent-and-the-truth": {
+    "/ruby-mountain/book-johnny-s-rescue/chapter-2-the-mainland/part-2-prospector-road-the-ticking-clock-johnny-is-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Ascent and the Truth",
+        "title": "Part 2: Prospector Road & The Ticking Clock & Johnny is Home",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s002.md"
-    },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-2-the-mainland/scene-3-the-island-trap": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Island Trap",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s003.md"
-    },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-2-the-mainland/scene-4-the-gateway": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Gateway",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s004.md"
-    },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-2-the-mainland/scene-5-prospector-road-the-ticking-clock": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Prospector Road & The Ticking Clock",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s005.md"
-    },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-2-the-mainland/scene-6-the-rationalization": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Rationalization",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s006.md"
-    },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-2-the-mainland/scene-7-johnny-is-home": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Johnny is Home",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s007.md"
+        "filePath": "e003/c002/p002.md"
     },
     "/ruby-mountain/book-johnny-s-rescue/chapter-3-the-curriculum": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -268,11 +148,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|2"
     },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-3-the-curriculum/scene-1-the-proxy": {
+    "/ruby-mountain/book-johnny-s-rescue/chapter-3-the-curriculum/the-proxy": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Proxy",
+        "title": "The Proxy",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s001.md"
+        "filePath": "e003/c003/p001.md"
     },
     "/ruby-mountain/book-johnny-s-rescue/chapter-4-the-annihilation-of-vanessa-hayes": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -280,35 +160,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|3"
     },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-4-the-annihilation-of-vanessa-hayes/scene-1-pro-se": {
+    "/ruby-mountain/book-johnny-s-rescue/chapter-4-the-annihilation-of-vanessa-hayes/part-1-pro-se-the-federal-trap": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Pro Se",
+        "title": "Part 1: Pro Se & The Federal Trap",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c004/s001.md"
+        "filePath": "e003/c004/p001.md"
     },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-4-the-annihilation-of-vanessa-hayes/scene-2-the-paper-trail": {
+    "/ruby-mountain/book-johnny-s-rescue/chapter-4-the-annihilation-of-vanessa-hayes/part-2-the-recess-the-gavel": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Paper Trail",
+        "title": "Part 2: The Recess & The Gavel",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c004/s002.md"
-    },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-4-the-annihilation-of-vanessa-hayes/scene-3-the-federal-trap": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Federal Trap",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c004/s003.md"
-    },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-4-the-annihilation-of-vanessa-hayes/scene-4-the-recess": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Recess",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c004/s004.md"
-    },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-4-the-annihilation-of-vanessa-hayes/scene-5-the-gavel": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Gavel",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c004/s005.md"
+        "filePath": "e003/c004/p002.md"
     },
     "/ruby-mountain/book-johnny-s-rescue/chapter-5-the-golden-window": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -316,47 +178,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|4"
     },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-5-the-golden-window/scene-1-baseline-telemetry": {
+    "/ruby-mountain/book-johnny-s-rescue/chapter-5-the-golden-window/part-1-baseline-telemetry-the-winter-manifest": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Baseline Telemetry",
+        "title": "Part 1: Baseline Telemetry & The Winter Manifest",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s001.md"
+        "filePath": "e003/c005/p001.md"
     },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-5-the-golden-window/scene-2-the-sovereign-blueprint": {
+    "/ruby-mountain/book-johnny-s-rescue/chapter-5-the-golden-window/part-2-the-legal-nuke-the-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Sovereign Blueprint",
+        "title": "Part 2: The Legal Nuke & The Perimeter",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s002.md"
+        "filePath": "e003/c005/p002.md"
     },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-5-the-golden-window/scene-3-the-winter-manifest": {
+    "/ruby-mountain/book-johnny-s-rescue/chapter-5-the-golden-window/part-3-the-final-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Winter Manifest",
+        "title": "Part 3: The Final Perimeter",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s003.md"
-    },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-5-the-golden-window/scene-4-the-legal-nuke": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Legal Nuke",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s004.md"
-    },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-5-the-golden-window/scene-5-the-anchor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Anchor",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s005.md"
-    },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-5-the-golden-window/scene-6-the-perimeter": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Perimeter",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s006.md"
-    },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-5-the-golden-window/scene-7-the-final-perimeter": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Final Perimeter",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c005/s007.md"
+        "filePath": "e003/c005/p003.md"
     },
     "/ruby-mountain/book-johnny-s-rescue/chapter-6-the-anomaly": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -364,35 +202,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|5"
     },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-6-the-anomaly/scene-1-the-pineapple-express": {
+    "/ruby-mountain/book-johnny-s-rescue/chapter-6-the-anomaly/part-1-the-pineapple-express-the-air-gap": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Pineapple Express",
+        "title": "Part 1: The Pineapple Express & The Air-Gap",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c006/s001.md"
+        "filePath": "e003/c006/p001.md"
     },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-6-the-anomaly/scene-2-the-checkpoint": {
+    "/ruby-mountain/book-johnny-s-rescue/chapter-6-the-anomaly/part-2-the-escort-the-tactical-seed": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Checkpoint",
+        "title": "Part 2: The Escort & The Tactical Seed",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c006/s002.md"
-    },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-6-the-anomaly/scene-3-the-air-gap": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Air-Gap",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c006/s003.md"
-    },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-6-the-anomaly/scene-4-the-escort": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Escort",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c006/s004.md"
-    },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-6-the-anomaly/scene-5-the-tactical-seed": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Tactical Seed",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c006/s005.md"
+        "filePath": "e003/c006/p002.md"
     },
     "/ruby-mountain/book-johnny-s-rescue/chapter-7-the-model-collapse": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -400,17 +220,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|6"
     },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-7-the-model-collapse/scene-1-the-backchannel": {
+    "/ruby-mountain/book-johnny-s-rescue/chapter-7-the-model-collapse/the-backchannel-the-war-council": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Backchannel",
+        "title": "The Backchannel & The War Council",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c007/s001.md"
-    },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-7-the-model-collapse/scene-2-the-war-council": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The War Council",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c007/s002.md"
+        "filePath": "e003/c007/p001.md"
     },
     "/ruby-mountain/book-johnny-s-rescue/chapter-8-the-sovereign-pivot": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -418,23 +232,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|7"
     },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-8-the-sovereign-pivot/scene-1-all-hands": {
+    "/ruby-mountain/book-johnny-s-rescue/chapter-8-the-sovereign-pivot/all-hands-the-line-of-fire": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: All Hands",
+        "title": "All Hands & The Line of Fire",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c008/s001.md"
-    },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-8-the-sovereign-pivot/scene-2-the-rebrand": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Rebrand",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c008/s002.md"
-    },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-8-the-sovereign-pivot/scene-3-the-line-of-fire": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Line of Fire",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c008/s003.md"
+        "filePath": "e003/c008/p001.md"
     },
     "/ruby-mountain/book-johnny-s-rescue/chapter-9-the-redline": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -442,11 +244,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|8"
     },
-    "/ruby-mountain/book-johnny-s-rescue/chapter-9-the-redline/scene-1-the-breaking-point": {
+    "/ruby-mountain/book-johnny-s-rescue/chapter-9-the-redline/the-breaking-point": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Breaking Point",
+        "title": "The Breaking Point",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c009/s001.md"
+        "filePath": "e003/c009/p001.md"
     },
     "/ruby-mountain/book-the-centennial-gala": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -460,35 +262,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|0"
     },
-    "/ruby-mountain/book-the-centennial-gala/chapter-1-the-centennial-eve/scene-1-the-dining-hall-the-iron-shield": {
+    "/ruby-mountain/book-the-centennial-gala/chapter-1-the-centennial-eve/part-1-the-dining-hall-the-iron-shield-the-revelation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Dining Hall & The Iron Shield",
+        "title": "Part 1: The Dining Hall & The Iron Shield & The Revelation",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s001.md"
+        "filePath": "e004/c001/p001.md"
     },
-    "/ruby-mountain/book-the-centennial-gala/chapter-1-the-centennial-eve/scene-2-the-may-variable": {
+    "/ruby-mountain/book-the-centennial-gala/chapter-1-the-centennial-eve/part-2-the-midnight-war-room": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The May Variable",
+        "title": "Part 2: The Midnight War Room",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s002.md"
-    },
-    "/ruby-mountain/book-the-centennial-gala/chapter-1-the-centennial-eve/scene-3-the-switchback-the-sanctuary": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Switchback & The Sanctuary",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s003.md"
-    },
-    "/ruby-mountain/book-the-centennial-gala/chapter-1-the-centennial-eve/scene-4-the-revelation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Revelation",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s004.md"
-    },
-    "/ruby-mountain/book-the-centennial-gala/chapter-1-the-centennial-eve/scene-5-the-midnight-war-room": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Midnight War Room",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s005.md"
+        "filePath": "e004/c001/p002.md"
     },
     "/ruby-mountain/book-the-centennial-gala/chapter-4-the-drawbridge": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -496,41 +280,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|1"
     },
-    "/ruby-mountain/book-the-centennial-gala/chapter-4-the-drawbridge/scene-1-the-waking-fortress": {
+    "/ruby-mountain/book-the-centennial-gala/chapter-4-the-drawbridge/part-1-the-waking-fortress-the-five-mile-moat": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Waking Fortress",
+        "title": "Part 1: The Waking Fortress & The Five-Mile Moat",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s001.md"
+        "filePath": "e004/c002/p001.md"
     },
-    "/ruby-mountain/book-the-centennial-gala/chapter-4-the-drawbridge/scene-2-the-underworld": {
+    "/ruby-mountain/book-the-centennial-gala/chapter-4-the-drawbridge/part-2-the-1903-illusion-the-golden-hour": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Underworld",
+        "title": "Part 2: The 1903 Illusion & The Golden Hour",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s002.md"
-    },
-    "/ruby-mountain/book-the-centennial-gala/chapter-4-the-drawbridge/scene-3-the-heat-of-the-kitchen": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Heat of the Kitchen",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s003.md"
-    },
-    "/ruby-mountain/book-the-centennial-gala/chapter-4-the-drawbridge/scene-4-the-five-mile-moat": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Five-Mile Moat",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s004.md"
-    },
-    "/ruby-mountain/book-the-centennial-gala/chapter-4-the-drawbridge/scene-5-the-1903-illusion": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The 1903 Illusion",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s005.md"
-    },
-    "/ruby-mountain/book-the-centennial-gala/chapter-4-the-drawbridge/scene-6-the-golden-hour": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Golden Hour",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/s006.md"
+        "filePath": "e004/c002/p002.md"
     },
     "/ruby-mountain/book-the-centennial-gala/chapter-5-the-centennial-gala": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -538,35 +298,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|2"
     },
-    "/ruby-mountain/book-the-centennial-gala/chapter-5-the-centennial-gala/scene-1-the-grand-seating": {
+    "/ruby-mountain/book-the-centennial-gala/chapter-5-the-centennial-gala/part-1-the-grand-seating-the-palate-cleanser": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Grand Seating",
+        "title": "Part 1: The Grand Seating & The Palate Cleanser",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c003/s001.md"
+        "filePath": "e004/c003/p001.md"
     },
-    "/ruby-mountain/book-the-centennial-gala/chapter-5-the-centennial-gala/scene-2-the-architecture-of-influence": {
+    "/ruby-mountain/book-the-centennial-gala/chapter-5-the-centennial-gala/part-2-the-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Architecture of Influence",
+        "title": "Part 2: The Sanctuary",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c003/s002.md"
-    },
-    "/ruby-mountain/book-the-centennial-gala/chapter-5-the-centennial-gala/scene-3-the-1-3-billion-dollar-ghost": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The 1.3 Billion Dollar Ghost",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c003/s003.md"
-    },
-    "/ruby-mountain/book-the-centennial-gala/chapter-5-the-centennial-gala/scene-4-the-palate-cleanser": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Palate Cleanser",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c003/s004.md"
-    },
-    "/ruby-mountain/book-the-centennial-gala/chapter-5-the-centennial-gala/scene-5-the-sanctuary": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Sanctuary",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c003/s005.md"
+        "filePath": "e004/c003/p002.md"
     },
     "/ruby-mountain/book-the-centennial-gala/chapter-6-the-evacuation": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -574,35 +316,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|3"
     },
-    "/ruby-mountain/book-the-centennial-gala/chapter-6-the-evacuation/scene-1-the-cascades-concrete": {
+    "/ruby-mountain/book-the-centennial-gala/chapter-6-the-evacuation/part-1-the-cascades-concrete-the-heavy-escort": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Cascades Concrete",
+        "title": "Part 1: The Cascades Concrete & The Heavy Escort",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c004/s001.md"
+        "filePath": "e004/c004/p001.md"
     },
-    "/ruby-mountain/book-the-centennial-gala/chapter-6-the-evacuation/scene-2-the-brutal-awakening": {
+    "/ruby-mountain/book-the-centennial-gala/chapter-6-the-evacuation/part-2-the-handoff-the-steel-drops": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Brutal Awakening",
+        "title": "Part 2: The Handoff & The Steel Drops",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c004/s002.md"
-    },
-    "/ruby-mountain/book-the-centennial-gala/chapter-6-the-evacuation/scene-3-the-heavy-escort": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Heavy Escort",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c004/s003.md"
-    },
-    "/ruby-mountain/book-the-centennial-gala/chapter-6-the-evacuation/scene-4-the-handoff": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Handoff",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c004/s004.md"
-    },
-    "/ruby-mountain/book-the-centennial-gala/chapter-6-the-evacuation/scene-5-the-steel-drops": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Steel Drops",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c004/s005.md"
+        "filePath": "e004/c004/p002.md"
     },
     "/ruby-mountain/book-winter-on-the-mountain": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -616,29 +340,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|0"
     },
-    "/ruby-mountain/book-winter-on-the-mountain/chapter-1-diana-s-lessons/scene-1-the-winter-syllabus": {
+    "/ruby-mountain/book-winter-on-the-mountain/chapter-1-diana-s-lessons/part-1-the-winter-syllabus-the-presentation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Winter Syllabus",
+        "title": "Part 1: The Winter Syllabus & The Presentation",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s001.md"
+        "filePath": "e005/c001/p001.md"
     },
-    "/ruby-mountain/book-winter-on-the-mountain/chapter-1-diana-s-lessons/scene-2-the-practical-lab": {
+    "/ruby-mountain/book-winter-on-the-mountain/chapter-1-diana-s-lessons/part-2-the-pack": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Practical Lab",
+        "title": "Part 2: The Pack",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s002.md"
-    },
-    "/ruby-mountain/book-winter-on-the-mountain/chapter-1-diana-s-lessons/scene-3-the-presentation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Presentation",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s003.md"
-    },
-    "/ruby-mountain/book-winter-on-the-mountain/chapter-1-diana-s-lessons/scene-4-the-pack": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Pack",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/s004.md"
+        "filePath": "e005/c001/p002.md"
     },
     "/ruby-mountain/book-winter-on-the-mountain/chapter-2-the-fortress-within": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -646,11 +358,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|1"
     },
-    "/ruby-mountain/book-winter-on-the-mountain/chapter-2-the-fortress-within/scene-1-the-pajama-protocol": {
+    "/ruby-mountain/book-winter-on-the-mountain/chapter-2-the-fortress-within/the-pajama-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Pajama Protocol",
+        "title": "The Pajama Protocol",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c002/s001.md"
+        "filePath": "e005/c002/p001.md"
     },
     "/ruby-mountain/book-winter-on-the-mountain/chapter-3-cascades-concrete": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -658,71 +370,29 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|2"
     },
-    "/ruby-mountain/book-winter-on-the-mountain/chapter-3-cascades-concrete/scene-1-the-whiteout": {
+    "/ruby-mountain/book-winter-on-the-mountain/chapter-3-cascades-concrete/part-1-the-whiteout-the-anchor-and-the-kitchen": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Whiteout",
+        "title": "Part 1: The Whiteout & The Anchor and the Kitchen",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s001.md"
+        "filePath": "e005/c003/p001.md"
     },
-    "/ruby-mountain/book-winter-on-the-mountain/chapter-3-cascades-concrete/scene-2-the-tether": {
+    "/ruby-mountain/book-winter-on-the-mountain/chapter-3-cascades-concrete/part-2-the-thaw-the-west-wing": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Tether",
+        "title": "Part 2: The Thaw & The West Wing",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s002.md"
+        "filePath": "e005/c003/p002.md"
     },
-    "/ruby-mountain/book-winter-on-the-mountain/chapter-3-cascades-concrete/scene-3-the-anchor-and-the-kitchen": {
+    "/ruby-mountain/book-winter-on-the-mountain/chapter-3-cascades-concrete/part-3-the-heist-the-tripwire": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Anchor and the Kitchen",
+        "title": "Part 3: The Heist & The Tripwire",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s003.md"
+        "filePath": "e005/c003/p003.md"
     },
-    "/ruby-mountain/book-winter-on-the-mountain/chapter-3-cascades-concrete/scene-4-the-thaw": {
+    "/ruby-mountain/book-winter-on-the-mountain/chapter-3-cascades-concrete/part-4-the-ss7-layer-the-legacy-grid": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Thaw",
+        "title": "Part 4: The SS7 Layer & The Legacy Grid",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s004.md"
-    },
-    "/ruby-mountain/book-winter-on-the-mountain/chapter-3-cascades-concrete/scene-5-the-deep-clean": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Deep Clean",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s005.md"
-    },
-    "/ruby-mountain/book-winter-on-the-mountain/chapter-3-cascades-concrete/scene-6-the-west-wing": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The West Wing",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s006.md"
-    },
-    "/ruby-mountain/book-winter-on-the-mountain/chapter-3-cascades-concrete/scene-7-the-heist": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Heist",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s007.md"
-    },
-    "/ruby-mountain/book-winter-on-the-mountain/chapter-3-cascades-concrete/scene-8-the-heart-of-the-keep": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Heart of the Keep",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s008.md"
-    },
-    "/ruby-mountain/book-winter-on-the-mountain/chapter-3-cascades-concrete/scene-9-the-tripwire": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Tripwire",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s009.md"
-    },
-    "/ruby-mountain/book-winter-on-the-mountain/chapter-3-cascades-concrete/scene-10-the-ss7-layer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: The SS7 Layer",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s010.md"
-    },
-    "/ruby-mountain/book-winter-on-the-mountain/chapter-3-cascades-concrete/scene-11-the-legacy-grid": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The Legacy Grid",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c003/s011.md"
+        "filePath": "e005/c003/p004.md"
     },
     "/ruby-mountain/book-winter-on-the-mountain/chapter-4-the-air-gap-transition": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -730,11 +400,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|3"
     },
-    "/ruby-mountain/book-winter-on-the-mountain/chapter-4-the-air-gap-transition/scene-1-logistical-triage": {
+    "/ruby-mountain/book-winter-on-the-mountain/chapter-4-the-air-gap-transition/logistical-triage": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Logistical Triage",
+        "title": "Logistical Triage",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c004/s001.md"
+        "filePath": "e005/c004/p001.md"
     },
     "/ruby-mountain/book-winter-on-the-mountain/chapter-5-the-brotherhood-of-the-air-gap": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -742,11 +412,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|4"
     },
-    "/ruby-mountain/book-winter-on-the-mountain/chapter-5-the-brotherhood-of-the-air-gap/scene-1-the-first-summit": {
+    "/ruby-mountain/book-winter-on-the-mountain/chapter-5-the-brotherhood-of-the-air-gap/the-first-summit": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The First Summit",
+        "title": "The First Summit",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c005/s001.md"
+        "filePath": "e005/c005/p001.md"
     },
     "/ruby-mountain/book-vanessa-s-downfall": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -760,17 +430,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|0"
     },
-    "/ruby-mountain/book-vanessa-s-downfall/chapter-1-the-sovereign-tribunal/scene-1-the-broadcast": {
+    "/ruby-mountain/book-vanessa-s-downfall/chapter-1-the-sovereign-tribunal/the-broadcast-the-sentencing": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Broadcast",
+        "title": "The Broadcast & The Sentencing",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s001.md"
-    },
-    "/ruby-mountain/book-vanessa-s-downfall/chapter-1-the-sovereign-tribunal/scene-2-the-sentencing": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Sentencing",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c001/s002.md"
+        "filePath": "e006/c001/p001.md"
     },
     "/ruby-mountain/book-a-rogue-inspector": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -784,17 +448,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|0"
     },
-    "/ruby-mountain/book-a-rogue-inspector/chapter-1-the-brotherhood-of-the-air-gap/scene-1-a-pulled-permit": {
+    "/ruby-mountain/book-a-rogue-inspector/chapter-1-the-brotherhood-of-the-air-gap/a-pulled-permit-the-vanguard-assembly": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Pulled Permit",
+        "title": "A Pulled Permit & The Vanguard Assembly",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s001.md"
-    },
-    "/ruby-mountain/book-a-rogue-inspector/chapter-1-the-brotherhood-of-the-air-gap/scene-2-the-vanguard-assembly": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Vanguard Assembly",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c001/s002.md"
+        "filePath": "e007/c001/p001.md"
     },
     "/ruby-mountain/book-a-rogue-inspector/chapter-2-the-proxy-war": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -802,17 +460,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|1"
     },
-    "/ruby-mountain/book-a-rogue-inspector/chapter-2-the-proxy-war/scene-1-judicial-fury": {
+    "/ruby-mountain/book-a-rogue-inspector/chapter-2-the-proxy-war/judicial-fury-the-rendezvous": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Judicial Fury",
+        "title": "Judicial Fury & The Rendezvous",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s001.md"
-    },
-    "/ruby-mountain/book-a-rogue-inspector/chapter-2-the-proxy-war/scene-2-the-rendezvous": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Rendezvous",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c002/s002.md"
+        "filePath": "e007/c002/p001.md"
     },
     "/ruby-mountain/book-the-air-gap-chronicles": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -826,17 +478,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|0"
     },
-    "/ruby-mountain/book-the-air-gap-chronicles/chapter-3-mountain-rules/scene-1-the-rookie": {
+    "/ruby-mountain/book-the-air-gap-chronicles/chapter-3-mountain-rules/the-rookie-the-gridmaster": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Rookie",
+        "title": "The Rookie & The Gridmaster",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s001.md"
-    },
-    "/ruby-mountain/book-the-air-gap-chronicles/chapter-3-mountain-rules/scene-2-the-gridmaster": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Gridmaster",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c001/s002.md"
+        "filePath": "e008/c001/p001.md"
     },
     "/ruby-mountain/book-the-air-gap-chronicles/chapter-4-the-911-fallacy": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -844,16 +490,10 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|1"
     },
-    "/ruby-mountain/book-the-air-gap-chronicles/chapter-4-the-911-fallacy/scene-1-the-civilian-instinct": {
+    "/ruby-mountain/book-the-air-gap-chronicles/chapter-4-the-911-fallacy/the-civilian-instinct-the-apex-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Civilian Instinct",
+        "title": "The Civilian Instinct & The Apex Protocol",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s001.md"
-    },
-    "/ruby-mountain/book-the-air-gap-chronicles/chapter-4-the-911-fallacy/scene-2-the-apex-protocol": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Apex Protocol",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/s002.md"
+        "filePath": "e008/c002/p001.md"
     }
 }

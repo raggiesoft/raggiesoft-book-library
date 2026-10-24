@@ -14,12 +14,12 @@
         "ebook_sizes": {
             "epub": "20 MB",
             "pdf": "20.2 MB",
-            "text_epub": "55 KB",
-            "text_pdf": "164 KB",
-            "epub_bytes": 20981938,
-            "pdf_bytes": 21143764,
-            "text_epub_bytes": 56273,
-            "text_pdf_bytes": 167790
+            "text_epub": "54 KB",
+            "text_pdf": "165 KB",
+            "epub_bytes": 20981263,
+            "pdf_bytes": 21144211,
+            "text_epub_bytes": 55591,
+            "text_pdf_bytes": 169054
         }
     },
     "/crimson-node": {
@@ -46,11 +46,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/crimson-node/book-1-the-illusion/chapter-1-the-approach-ndash-friday-april-23-1999/scene-1-anomalies": {
+    "/crimson-node/book-1-the-illusion/chapter-1-the-approach-ndash-friday-april-23-1999/anomalies": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: Anomalies",
+        "title": "Anomalies",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s001.md"
+        "filePath": "e001/c001/p001.md"
     },
     "/crimson-node/book-1-the-illusion/chapter-2-the-core-ecosystem-ndash-friday-april-30-1999": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -58,29 +58,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|1"
     },
-    "/crimson-node/book-1-the-illusion/chapter-2-the-core-ecosystem-ndash-friday-april-30-1999/scene-1-the-commons": {
+    "/crimson-node/book-1-the-illusion/chapter-2-the-core-ecosystem-ndash-friday-april-30-1999/the-commons-the-fallout": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Commons",
+        "title": "The Commons & The Fallout",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s001.md"
-    },
-    "/crimson-node/book-1-the-illusion/chapter-2-the-core-ecosystem-ndash-friday-april-30-1999/scene-2-6th-period-lunch": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: 6th Period Lunch",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s002.md"
-    },
-    "/crimson-node/book-1-the-illusion/chapter-2-the-core-ecosystem-ndash-friday-april-30-1999/scene-3-the-omni-q-incident": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Omni-Q Incident",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s003.md"
-    },
-    "/crimson-node/book-1-the-illusion/chapter-2-the-core-ecosystem-ndash-friday-april-30-1999/scene-4-the-fallout": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Fallout",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s004.md"
+        "filePath": "e001/c002/p001.md"
     },
     "/crimson-node/book-1-the-illusion/chapter-3-the-triple-birthday-ndash-sunday-may-2-1999": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -88,53 +70,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|2"
     },
-    "/crimson-node/book-1-the-illusion/chapter-3-the-triple-birthday-ndash-sunday-may-2-1999/scene-1-the-morning-routine": {
+    "/crimson-node/book-1-the-illusion/chapter-3-the-triple-birthday-ndash-sunday-may-2-1999/part-1-the-morning-routine-player-two": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Morning Routine",
+        "title": "Part 1: The Morning Routine & Player Two",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s001.md"
+        "filePath": "e001/c003/p001.md"
     },
-    "/crimson-node/book-1-the-illusion/chapter-3-the-triple-birthday-ndash-sunday-may-2-1999/scene-2-the-breakfast-spread": {
+    "/crimson-node/book-1-the-illusion/chapter-3-the-triple-birthday-ndash-sunday-may-2-1999/part-2-the-legal-baseline-the-triad": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Breakfast Spread",
+        "title": "Part 2: The Legal Baseline & The Triad",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s002.md"
-    },
-    "/crimson-node/book-1-the-illusion/chapter-3-the-triple-birthday-ndash-sunday-may-2-1999/scene-3-the-stadium-seating": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Stadium Seating",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s003.md"
-    },
-    "/crimson-node/book-1-the-illusion/chapter-3-the-triple-birthday-ndash-sunday-may-2-1999/scene-4-the-majesty-express": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Majesty Express",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s004.md"
-    },
-    "/crimson-node/book-1-the-illusion/chapter-3-the-triple-birthday-ndash-sunday-may-2-1999/scene-5-the-simulation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Simulation",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s005.md"
-    },
-    "/crimson-node/book-1-the-illusion/chapter-3-the-triple-birthday-ndash-sunday-may-2-1999/scene-6-player-two": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Player Two",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s006.md"
-    },
-    "/crimson-node/book-1-the-illusion/chapter-3-the-triple-birthday-ndash-sunday-may-2-1999/scene-7-the-legal-baseline": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Legal Baseline",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s007.md"
-    },
-    "/crimson-node/book-1-the-illusion/chapter-3-the-triple-birthday-ndash-sunday-may-2-1999/scene-8-the-triad": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Triad",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/s008.md"
+        "filePath": "e001/c003/p002.md"
     },
     "/crimson-node/book-1-the-illusion/chapter-4-the-failed-apology-ndash-monday-may-3-1999": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -142,47 +88,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|3"
     },
-    "/crimson-node/book-1-the-illusion/chapter-4-the-failed-apology-ndash-monday-may-3-1999/scene-1-the-band-room-hallway": {
+    "/crimson-node/book-1-the-illusion/chapter-4-the-failed-apology-ndash-monday-may-3-1999/part-1-the-band-room-hallway-the-charlottesville-plan": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Band Room Hallway",
+        "title": "Part 1: The Band Room Hallway & The Charlottesville Plan",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s001.md"
+        "filePath": "e001/c004/p001.md"
     },
-    "/crimson-node/book-1-the-illusion/chapter-4-the-failed-apology-ndash-monday-may-3-1999/scene-2-the-principal-s-office": {
+    "/crimson-node/book-1-the-illusion/chapter-4-the-failed-apology-ndash-monday-may-3-1999/part-2-the-final-transfer": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Principal's Office",
+        "title": "Part 2: The Final Transfer",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s002.md"
-    },
-    "/crimson-node/book-1-the-illusion/chapter-4-the-failed-apology-ndash-monday-may-3-1999/scene-3-interlude-the-phone-call": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Interlude \u2013 The Phone Call",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s003.md"
-    },
-    "/crimson-node/book-1-the-illusion/chapter-4-the-failed-apology-ndash-monday-may-3-1999/scene-4-the-rumor-mill-6th-period-lunch": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Rumor Mill \u2013 6th Period Lunch",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s004.md"
-    },
-    "/crimson-node/book-1-the-illusion/chapter-4-the-failed-apology-ndash-monday-may-3-1999/scene-5-the-iss-trailer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The ISS Trailer",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s005.md"
-    },
-    "/crimson-node/book-1-the-illusion/chapter-4-the-failed-apology-ndash-monday-may-3-1999/scene-6-the-charlottesville-plan": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Charlottesville Plan",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s006.md"
-    },
-    "/crimson-node/book-1-the-illusion/chapter-4-the-failed-apology-ndash-monday-may-3-1999/scene-7-the-final-transfer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Final Transfer",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/s007.md"
+        "filePath": "e001/c004/p002.md"
     },
     "/crimson-node/book-1-the-illusion/interlude-the-reckoning": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -190,35 +106,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|4"
     },
-    "/crimson-node/book-1-the-illusion/interlude-the-reckoning/scene-1-the-new-hierarchy": {
+    "/crimson-node/book-1-the-illusion/interlude-the-reckoning/the-new-hierarchy-the-thunderstorm": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The New Hierarchy",
+        "title": "The New Hierarchy & The Thunderstorm",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s001.md"
-    },
-    "/crimson-node/book-1-the-illusion/interlude-the-reckoning/scene-2-the-empathy-drill": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Empathy Drill",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s002.md"
-    },
-    "/crimson-node/book-1-the-illusion/interlude-the-reckoning/scene-3-the-ghost-letter": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Ghost Letter",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s003.md"
-    },
-    "/crimson-node/book-1-the-illusion/interlude-the-reckoning/scene-4-the-empty-frame": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Empty Frame",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s004.md"
-    },
-    "/crimson-node/book-1-the-illusion/interlude-the-reckoning/scene-5-the-thunderstorm": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Thunderstorm",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/s005.md"
+        "filePath": "e001/c005/p001.md"
     },
     "/crimson-node/book-1-the-illusion/chapter-6-the-senior-prom-ndash-may-1999": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -226,35 +118,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|5"
     },
-    "/crimson-node/book-1-the-illusion/chapter-6-the-senior-prom-ndash-may-1999/scene-1-the-request": {
+    "/crimson-node/book-1-the-illusion/chapter-6-the-senior-prom-ndash-may-1999/part-1-the-request-the-assault": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Request",
+        "title": "Part 1: The Request & The Assault",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s001.md"
+        "filePath": "e001/c006/p001.md"
     },
-    "/crimson-node/book-1-the-illusion/chapter-6-the-senior-prom-ndash-may-1999/scene-2-chesapeake-bay-mall": {
+    "/crimson-node/book-1-the-illusion/chapter-6-the-senior-prom-ndash-may-1999/part-2-the-aftermath": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Chesapeake Bay Mall",
+        "title": "Part 2: The Aftermath",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s002.md"
-    },
-    "/crimson-node/book-1-the-illusion/chapter-6-the-senior-prom-ndash-may-1999/scene-3-the-preparation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Preparation",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s003.md"
-    },
-    "/crimson-node/book-1-the-illusion/chapter-6-the-senior-prom-ndash-may-1999/scene-4-the-assault": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Assault",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s004.md"
-    },
-    "/crimson-node/book-1-the-illusion/chapter-6-the-senior-prom-ndash-may-1999/scene-5-the-aftermath": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Aftermath",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/s005.md"
+        "filePath": "e001/c006/p002.md"
     },
     "/crimson-node/book-1-the-illusion/chapter-7-the-blueprint": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -262,17 +136,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|6"
     },
-    "/crimson-node/book-1-the-illusion/chapter-7-the-blueprint/scene-1-a-new-day": {
+    "/crimson-node/book-1-the-illusion/chapter-7-the-blueprint/a-new-day-the-plan": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A New Day",
+        "title": "A New Day & The Plan",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s001.md"
-    },
-    "/crimson-node/book-1-the-illusion/chapter-7-the-blueprint/scene-2-the-plan": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Plan",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c007/s002.md"
+        "filePath": "e001/c007/p001.md"
     },
     "/crimson-node/book-1-the-illusion/chapter-8-the-administration": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -280,22 +148,10 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|7"
     },
-    "/crimson-node/book-1-the-illusion/chapter-8-the-administration/scene-1-the-drop-off": {
+    "/crimson-node/book-1-the-illusion/chapter-8-the-administration/the-drop-off-the-victory": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Drop-Off",
+        "title": "The Drop-Off & The Victory",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c008/s001.md"
-    },
-    "/crimson-node/book-1-the-illusion/chapter-8-the-administration/scene-2-the-municipal-center": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Municipal Center",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c008/s002.md"
-    },
-    "/crimson-node/book-1-the-illusion/chapter-8-the-administration/scene-3-the-victory": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Victory",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c008/s003.md"
+        "filePath": "e001/c008/p001.md"
     }
 }

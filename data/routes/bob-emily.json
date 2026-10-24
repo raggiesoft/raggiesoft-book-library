@@ -12,14 +12,14 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "86 KB",
+            "epub": "84 KB",
             "pdf": "230 KB",
-            "text_epub": "86 KB",
+            "text_epub": "84 KB",
             "text_pdf": "230 KB",
-            "epub_bytes": 87793,
-            "pdf_bytes": 235827,
-            "text_epub_bytes": 87794,
-            "text_pdf_bytes": 235827
+            "epub_bytes": 85615,
+            "pdf_bytes": 235362,
+            "text_epub_bytes": 85613,
+            "text_pdf_bytes": 235362
         }
     },
     "/bob-emily": {
@@ -46,47 +46,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/bob-emily/life-without-a-father/the-longest-day/scene-1-the-final-promise": {
+    "/bob-emily/life-without-a-father/the-longest-day/the-final-promise-a-new-plan-of-action": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Final Promise",
+        "title": "The Final Promise & A New Plan of Action",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s001.md"
-    },
-    "/bob-emily/life-without-a-father/the-longest-day/scene-2-the-hallway-war": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Hallway War",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s002.md"
-    },
-    "/bob-emily/life-without-a-father/the-longest-day/scene-3-the-choice": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Choice",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s003.md"
-    },
-    "/bob-emily/life-without-a-father/the-longest-day/scene-4-the-pact-in-the-back-seat": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Pact in the Back Seat",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s004.md"
-    },
-    "/bob-emily/life-without-a-father/the-longest-day/scene-5-the-line-is-drawn": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Line is Drawn",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s005.md"
-    },
-    "/bob-emily/life-without-a-father/the-longest-day/scene-6-a-shared-sanctuary": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: A Shared Sanctuary",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s006.md"
-    },
-    "/bob-emily/life-without-a-father/the-longest-day/scene-7-a-new-plan-of-action": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: A New Plan of Action",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/s007.md"
+        "filePath": "e001/c001/p001.md"
     },
     "/bob-emily/life-without-a-father/the-new-normal": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -94,95 +58,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|1"
     },
-    "/bob-emily/life-without-a-father/the-new-normal/scene-1-the-first-day": {
+    "/bob-emily/life-without-a-father/the-new-normal/part-1-the-first-day-a-failure-to-communicate": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The First Day",
+        "title": "Part 1: The First Day & A Failure to Communicate",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s001.md"
+        "filePath": "e001/c002/p001.md"
     },
-    "/bob-emily/life-without-a-father/the-new-normal/scene-2-meeting-with-the-principal": {
+    "/bob-emily/life-without-a-father/the-new-normal/part-2-the-teacher-s-apology-a-message-in-muscle": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Meeting with the Principal",
+        "title": "Part 2: The Teacher's Apology & A Message in Muscle",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s002.md"
+        "filePath": "e001/c002/p002.md"
     },
-    "/bob-emily/life-without-a-father/the-new-normal/scene-3-planning-with-the-counselor": {
+    "/bob-emily/life-without-a-father/the-new-normal/part-3-the-gable-report-the-emily-jenkins-rule": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Planning with the Counselor",
+        "title": "Part 3: The Gable Report & The Emily Jenkins Rule",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s003.md"
-    },
-    "/bob-emily/life-without-a-father/the-new-normal/scene-4-the-first-class": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The First Class",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s004.md"
-    },
-    "/bob-emily/life-without-a-father/the-new-normal/scene-5-bus-orientation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Bus Orientation",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s005.md"
-    },
-    "/bob-emily/life-without-a-father/the-new-normal/scene-6-emily-s-rejects-a-suitor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Emily\u2019s Rejects a Suitor",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s006.md"
-    },
-    "/bob-emily/life-without-a-father/the-new-normal/scene-7-a-failure-to-communicate": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: A Failure to Communicate",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s007.md"
-    },
-    "/bob-emily/life-without-a-father/the-new-normal/scene-8-the-teacher-s-apology": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Teacher's Apology",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s008.md"
-    },
-    "/bob-emily/life-without-a-father/the-new-normal/scene-9-the-principal-s-wrath": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 9: The Principal's Wrath",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s009.md"
-    },
-    "/bob-emily/life-without-a-father/the-new-normal/scene-10-reaffirming-the-sanctuary": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 10: Reaffirming the Sanctuary",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s010.md"
-    },
-    "/bob-emily/life-without-a-father/the-new-normal/scene-11-the-grounding-walk": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 11: The Grounding Walk",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s011.md"
-    },
-    "/bob-emily/life-without-a-father/the-new-normal/scene-12-the-reckoning": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 12: The Reckoning",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s012.md"
-    },
-    "/bob-emily/life-without-a-father/the-new-normal/scene-13-a-message-in-muscle": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 13: A Message in Muscle",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s013.md"
-    },
-    "/bob-emily/life-without-a-father/the-new-normal/scene-14-the-gable-report": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 14: The Gable Report",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s014.md"
-    },
-    "/bob-emily/life-without-a-father/the-new-normal/scene-15-the-emily-jenkins-rule": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 15: The Emily Jenkins Rule",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/s015.md"
+        "filePath": "e001/c002/p003.md"
     },
     "/bob-emily/assault": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -196,35 +88,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
-    "/bob-emily/assault/the-locker/scene-1-the-assault": {
+    "/bob-emily/assault/the-locker/the-assault-the-perp-walk": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Assault",
+        "title": "The Assault & The Perp Walk",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s001.md"
-    },
-    "/bob-emily/assault/the-locker/scene-2-the-discovery": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Discovery",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s002.md"
-    },
-    "/bob-emily/assault/the-locker/scene-3-the-investigation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Investigation",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s003.md"
-    },
-    "/bob-emily/assault/the-locker/scene-4-the-arrest": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Arrest",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s004.md"
-    },
-    "/bob-emily/assault/the-locker/scene-5-the-perp-walk": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Perp Walk",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/s005.md"
+        "filePath": "e002/c001/p001.md"
     },
     "/bob-emily/assault/the-hospital": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -232,53 +100,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|1"
     },
-    "/bob-emily/assault/the-hospital/scene-1-the-long-wait": {
+    "/bob-emily/assault/the-hospital/the-long-wait-chapter-notes-the-planetarium-promise": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Long Wait",
+        "title": "The Long Wait & Chapter Notes: The Planetarium Promise",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s001.md"
-    },
-    "/bob-emily/assault/the-hospital/scene-2-emily-explains-everything": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: Emily Explains Everything",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s002.md"
-    },
-    "/bob-emily/assault/the-hospital/scene-3-waking-up": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: Waking Up",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s003.md"
-    },
-    "/bob-emily/assault/the-hospital/scene-4-the-daily-vigil": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Daily Vigil",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s004.md"
-    },
-    "/bob-emily/assault/the-hospital/scene-5-the-storm-arrives": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Storm Arrives",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s005.md"
-    },
-    "/bob-emily/assault/the-hospital/scene-6-the-longest-night": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Longest Night",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s006.md"
-    },
-    "/bob-emily/assault/the-hospital/scene-7-discharge-day": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: Discharge Day",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s007.md"
-    },
-    "/bob-emily/assault/the-hospital/scene-8-chapter-notes-the-planetarium-promise": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: Chapter Notes: The Planetarium Promise",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c002/s008.md"
+        "filePath": "e002/c002/p001.md"
     },
     "/bob-emily/bob-healing": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -292,53 +118,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|0"
     },
-    "/bob-emily/bob-healing/bob-s-new-reality/scene-1-the-first-day-home": {
+    "/bob-emily/bob-healing/bob-s-new-reality/the-first-day-home-cleared-for-travel": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The First Day Home",
+        "title": "The First Day Home & Cleared for Travel",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s001.md"
-    },
-    "/bob-emily/bob-healing/bob-s-new-reality/scene-2-the-call-to-madison": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Call to Madison",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s002.md"
-    },
-    "/bob-emily/bob-healing/bob-s-new-reality/scene-3-the-dress-rehearsal": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Dress Rehearsal",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s003.md"
-    },
-    "/bob-emily/bob-healing/bob-s-new-reality/scene-4-a-spark-of-hope": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: A Spark of Hope",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s004.md"
-    },
-    "/bob-emily/bob-healing/bob-s-new-reality/scene-5-the-green-light": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Green Light",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s005.md"
-    },
-    "/bob-emily/bob-healing/bob-s-new-reality/scene-6-homecoming": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: Homecoming",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s006.md"
-    },
-    "/bob-emily/bob-healing/bob-s-new-reality/scene-7-the-first-carry": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The First Carry",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s007.md"
-    },
-    "/bob-emily/bob-healing/bob-s-new-reality/scene-8-cleared-for-travel": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: Cleared for Travel",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/s008.md"
+        "filePath": "e003/c001/p001.md"
     },
     "/bob-emily/bob-healing/bob-and-emily-see-the-stars": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -346,35 +130,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|1"
     },
-    "/bob-emily/bob-healing/bob-and-emily-see-the-stars/scene-1-a-trip-to-the-stars": {
+    "/bob-emily/bob-healing/bob-and-emily-see-the-stars/a-trip-to-the-stars-bluewater-transit-steps-up-to-the-plate": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Trip to the Stars",
+        "title": "A Trip to the Stars & Bluewater Transit Steps Up to the Plate",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s001.md"
-    },
-    "/bob-emily/bob-healing/bob-and-emily-see-the-stars/scene-2-a-double-honor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: A Double Honor",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s002.md"
-    },
-    "/bob-emily/bob-healing/bob-and-emily-see-the-stars/scene-3-the-deepest-of-space": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Deepest of Space",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s003.md"
-    },
-    "/bob-emily/bob-healing/bob-and-emily-see-the-stars/scene-4-the-journey-home": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Journey Home",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s004.md"
-    },
-    "/bob-emily/bob-healing/bob-and-emily-see-the-stars/scene-5-chapter-notes-bluewater-transit-steps-up-to-the-plate": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: Chapter Notes: Bluewater Transit Steps Up to the Plate",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/s005.md"
+        "filePath": "e003/c002/p001.md"
     },
     "/bob-emily/bob-healing/finishing-the-semester-strong": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -382,41 +142,11 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|2"
     },
-    "/bob-emily/bob-healing/finishing-the-semester-strong/scene-1-a-hard-limit": {
+    "/bob-emily/bob-healing/finishing-the-semester-strong/a-hard-limit-the-graduation-pact": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: A Hard Limit",
+        "title": "A Hard Limit & The Graduation Pact",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s001.md"
-    },
-    "/bob-emily/bob-healing/finishing-the-semester-strong/scene-2-the-accommodations-meeting": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Accommodations Meeting",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s002.md"
-    },
-    "/bob-emily/bob-healing/finishing-the-semester-strong/scene-3-the-testing-lab": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Testing Lab",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s003.md"
-    },
-    "/bob-emily/bob-healing/finishing-the-semester-strong/scene-4-the-waiting-game": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Waiting Game",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s004.md"
-    },
-    "/bob-emily/bob-healing/finishing-the-semester-strong/scene-5-the-final-sprint": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Final Sprint",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s005.md"
-    },
-    "/bob-emily/bob-healing/finishing-the-semester-strong/scene-6-the-graduation-pact": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Graduation Pact",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/s006.md"
+        "filePath": "e003/c003/p001.md"
     },
     "/bob-emily/summer-2015": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -430,52 +160,16 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|0"
     },
-    "/bob-emily/summer-2015/a-tale-of-two-sanctuaries/scene-1-the-christiansburg-connection": {
+    "/bob-emily/summer-2015/a-tale-of-two-sanctuaries/part-1-the-christiansburg-connection-the-best-news": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 1: The Christiansburg Connection",
+        "title": "Part 1: The Christiansburg Connection & The Best News",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s001.md"
+        "filePath": "e004/c001/p001.md"
     },
-    "/bob-emily/summer-2015/a-tale-of-two-sanctuaries/scene-2-the-ironclad-will": {
+    "/bob-emily/summer-2015/a-tale-of-two-sanctuaries/part-2-the-schedule-and-the-ride-the-last-drop-of-summer": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: The Ironclad Will",
+        "title": "Part 2: The Schedule and the Ride & The Last Drop of Summer",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s002.md"
-    },
-    "/bob-emily/summer-2015/a-tale-of-two-sanctuaries/scene-3-the-bluewater-star-party": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Bluewater Star Party",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s003.md"
-    },
-    "/bob-emily/summer-2015/a-tale-of-two-sanctuaries/scene-4-the-best-news": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 4: The Best News",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s004.md"
-    },
-    "/bob-emily/summer-2015/a-tale-of-two-sanctuaries/scene-5-the-schedule-and-the-ride": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 5: The Schedule and the Ride",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s005.md"
-    },
-    "/bob-emily/summer-2015/a-tale-of-two-sanctuaries/scene-6-the-backyard-feast": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 6: The Backyard Feast",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s006.md"
-    },
-    "/bob-emily/summer-2015/a-tale-of-two-sanctuaries/scene-7-the-last-drop-of-summer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 7: The Last Drop of Summer",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s007.md"
-    },
-    "/bob-emily/summer-2015/a-tale-of-two-sanctuaries/scene-8-the-last-drop-of-summer": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 8: The Last Drop of Summer",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/s008.md"
+        "filePath": "e004/c001/p002.md"
     }
 }
