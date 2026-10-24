@@ -14,12 +14,12 @@
         "ebook_sizes": {
             "epub": "36.6 MB",
             "pdf": "17.2 MB",
-            "text_epub": "786 KB",
+            "text_epub": "788 KB",
             "text_pdf": "3 MB",
-            "epub_bytes": 38383451,
-            "pdf_bytes": 17983224,
-            "text_epub_bytes": 804792,
-            "text_pdf_bytes": 3173427
+            "epub_bytes": 38385690,
+            "pdf_bytes": 17990445,
+            "text_epub_bytes": 807017,
+            "text_pdf_bytes": 3180445
         }
     },
     "/aubrie": {
@@ -1552,17 +1552,23 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c006/s001.md"
     },
-    "/aubrie/spring-semester-2015/the-leviathan-cut-electric-color-the-call-from-bluewater/scene-2-an-80s-education-electric-color": {
+    "/aubrie/spring-semester-2015/the-leviathan-cut-electric-color-the-call-from-bluewater/scene-2-an-80s-education-the-brooks-mix": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 2: An 80s Education (Electric Color)",
+        "title": "Scene 2: An 80s Education (The Brooks Mix)",
         "theme": "raggiesoft-books",
         "filePath": "e003/c006/s002.md"
     },
-    "/aubrie/spring-semester-2015/the-leviathan-cut-electric-color-the-call-from-bluewater/scene-3-the-call-from-bluewater": {
+    "/aubrie/spring-semester-2015/the-leviathan-cut-electric-color-the-call-from-bluewater/scene-3-electric-color": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Scene 3: The Call from Bluewater",
+        "title": "Scene 3: Electric Color",
         "theme": "raggiesoft-books",
         "filePath": "e003/c006/s003.md"
+    },
+    "/aubrie/spring-semester-2015/the-leviathan-cut-electric-color-the-call-from-bluewater/scene-4-the-call-from-bluewater": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Scene 4: The Call from Bluewater",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c006/s004.md"
     },
     "/aubrie/spring-semester-2015/hey-cacuho-the-residence-life-conference": {
         "view": "pages/raggiesoft-books/books/viewer",
