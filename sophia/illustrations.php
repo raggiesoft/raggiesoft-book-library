@@ -10,20 +10,19 @@
  *   `/includes/components/illustrations-toc.php`
  * ============================================================================
  */
+global $toc_manifest, $cdnBaseUrl, $seriesSlug, $fileToUrl;
+$seriesTitleForIllus = $toc_manifest['series_title'] ?? ucwords(str_replace('-', ' ', (string)$seriesSlug));
 ?>
-<div class="toc-header">
-    <p class="toc-eyebrow">
-        <a href="/<?= htmlspecialchars($seriesSlug) ?>" style="color: var(--accent); text-decoration: none;">
-            <?= htmlspecialchars($toc_manifest['series_title'] ?? ucwords(str_replace('-', ' ', $seriesSlug))) ?>
-        </a>
-    </p>
-    <h1 class="toc-title">Table of Illustrations</h1>
-    <p style="margin: 0.5rem 0 0; font-size: 0.96rem; color: var(--text-muted, #c9beb5);">
-        Visual scene index and high-resolution artwork gallery for <strong><?= htmlspecialchars($toc_manifest['series_title'] ?? ucwords(str_replace('-', ' ', $seriesSlug))) ?></strong>.
-    </p>
-</div>
+<div class="book-page" style="max-width: 960px; margin: 0 auto;">
+    <div style="margin-bottom: 1.5rem; border-bottom: 2px solid var(--rs-border); padding-bottom: 1rem;">
+        <h1 style="margin: 0 0 0.45rem 0; color: var(--rs-primary);">Table of Illustrations</h1>
+        <p style="margin: 0; font-size: 0.96rem; opacity: 0.85;">
+            Visual scene index and high-resolution artwork gallery for <strong><?= htmlspecialchars($seriesTitleForIllus) ?></strong>.
+        </p>
+    </div>
 
-<?php
-$illustrationsTocMode = 'page';
-require __DIR__ . '/../includes/components/illustrations-toc.php';
-?>
+    <?php
+    $illustrationsTocMode = 'page';
+    require __DIR__ . '/../includes/components/illustrations-toc.php';
+    ?>
+</div>

@@ -24,9 +24,8 @@
  * MODERN WEB GUIDANCE ARCHITECTURE:
  * - `css-layout`:
  *   - Responsive CSS Grid (`repeat(auto-fill, minmax(min(100%, 280px), 1fr))`)
- *     paired with `grid-template-rows: subgrid` (and same-cascade fallback
- *     `grid-template-rows: auto 1fr auto`) so card media headers, bodies, and
- *     action footers align cleanly across every row.
+ *     with `grid-template-rows: auto 1fr auto` so card media headers, bodies,
+ *     and action footers align cleanly across every row.
  *   - `aspect-ratio: 16 / 9; inline-size: 100%; block-size: auto; display: block;`
  *     on `<img>` thumbnails to prevent layout shift and baseline descender gaps.
  *   - `flex-wrap: wrap; flex-wrap: balance;` on the Era quick-jump pill bar.
@@ -49,6 +48,7 @@ $activeSeriesTitle = $toc_manifest['series_title'] ?? ucwords(str_replace('-', '
 
 /**
  * Helper: Normalize an illustration source path into a full CDN or absolute URL.
+ * Expands `{{CDN}}` / `{{cms}}` macros and strips `#fullwidth` display fragments.
  */
 if (!function_exists('resolveNarrativeIllustrationUrl')) {
     function resolveNarrativeIllustrationUrl(string $rawSrc, string $cdnBase): string {
@@ -56,10 +56,25 @@ if (!function_exists('resolveNarrativeIllustrationUrl')) {
         if ($src === '') {
             return '';
         }
+        // Strip Markdown layout fragments such as #fullwidth
+        $src = (string)preg_replace('/#.*$/', '', $src);
+        // Strip {{CDN}}, {{cms}}, or leading CDN origin so we can normalize relative paths
+        $src = str_replace(['{{CDN}}', '{{cms}}', $cdnBase, 'https://assets.raggiesoft.com'], '', $src);
         if (preg_match('/^https?:\/\//i', $src)) {
             return $src;
         }
-        return $cdnBase . '/' . ltrim($src, '/');
+        $cleanRel = ltrim($src, '/');
+        if ($cleanRel === '') {
+            return '';
+        }
+        if (
+            strpos($cleanRel, 'raggiesoft-books/') !== 0 &&
+            strpos($cleanRel, 'raggiesoft-lore/') !== 0 &&
+            strpos($cleanRel, 'engine-room-records/') !== 0
+        ) {
+            $cleanRel = 'raggiesoft-books/images/scenes/' . $cleanRel;
+        }
+        return $cdnBase . '/' . $cleanRel;
     }
 }
 
@@ -106,6 +121,27 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
                             continue;
                         }
 
+                        // Deduplicate images within the same part after normalizing URLs
+                        $normalizedPartImages = [];
+                        $seenUrls = [];
+                        foreach ($partImages as $imgMeta) {
+                            $rawSrc = is_array($imgMeta) ? ($imgMeta['src'] ?? '') : (string)$imgMeta;
+                            $rawAlt = is_array($imgMeta) ? ($imgMeta['alt'] ?? '') : '';
+                            $fullImgUrl = resolveNarrativeIllustrationUrl($rawSrc, $cdnBase);
+                            if ($fullImgUrl === '' || in_array($fullImgUrl, $seenUrls, true)) {
+                                continue;
+                            }
+                            $seenUrls[] = $fullImgUrl;
+                            $normalizedPartImages[] = [
+                                'src' => $fullImgUrl,
+                                'alt' => $rawAlt
+                            ];
+                        }
+
+                        if (empty($normalizedPartImages)) {
+                            continue;
+                        }
+
                         $totalIllustratedPartsCount++;
                         $partFilePath = $part['file_path'] ?? '';
                         $partUrl = $part['url'] ?? ($fileToUrl[$partFilePath] ?? '#');
@@ -114,24 +150,17 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
                         $partStartTime = $part['start_time'] ?? '';
                         $partLocation = $part['location'] ?? '';
 
-                        foreach ($partImages as $imgIdx => $imgMeta) {
-                            $rawSrc = is_array($imgMeta) ? ($imgMeta['src'] ?? '') : (string)$imgMeta;
-                            $rawAlt = is_array($imgMeta) ? ($imgMeta['alt'] ?? '') : '';
-                            $fullImgUrl = resolveNarrativeIllustrationUrl($rawSrc, $cdnBase);
-                            if ($fullImgUrl === '') {
-                                continue;
-                            }
-
+                        foreach ($normalizedPartImages as $imgIdx => $normImg) {
                             $globalIllustrationNumber++;
                             $totalIllustrationsCount++;
 
                             $eraItems[] = [
                                 'number'       => $globalIllustrationNumber,
                                 'img_index'    => $imgIdx + 1,
-                                'img_total'    => count($partImages),
-                                'src'          => $fullImgUrl,
-                                'alt'          => $rawAlt !== '' ? $rawAlt : "{$partTitle} ({$chapTitle})",
-                                'caption'      => $rawAlt,
+                                'img_total'    => count($normalizedPartImages),
+                                'src'          => $normImg['src'],
+                                'alt'          => $normImg['alt'] !== '' ? $normImg['alt'] : "{$partTitle} ({$chapTitle})",
+                                'caption'      => $normImg['alt'],
                                 'part_title'   => $partTitle,
                                 'part_url'     => $partUrl,
                                 'chap_num'     => $chapNum,
@@ -167,9 +196,11 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
 <style>
 /* ============================================================================
  * TABLE OF ILLUSTRATIONS COMPONENT STYLES (Dark & Light Mode + WCAG 2.1 AA)
+ * Uses Ocean View Archives CSS variables (--rs-primary, --rs-bg, --rs-surface,
+ * --rs-border, --rs-text) for seamless multi-theme support.
  * ============================================================================ */
 .illus-toc-wrapper {
-    margin-block: 1.5rem 2.5rem;
+    margin-block: 1.25rem 2.5rem;
 }
 
 .illus-toc-summary-bar {
@@ -180,9 +211,9 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
     gap: 1rem;
     padding: 1rem 1.25rem;
     border-radius: 0.75rem;
-    background: var(--bg-surface, rgba(255, 255, 255, 0.04));
-    border: 1px solid var(--border-color, rgba(227, 178, 124, 0.22));
-    margin-block-end: 1.5rem;
+    background: var(--rs-surface, rgba(255, 255, 255, 0.04));
+    border: 1px solid var(--rs-border, rgba(227, 178, 124, 0.22));
+    margin-block-end: 1.25rem;
 }
 
 .illus-toc-stats {
@@ -191,7 +222,7 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
     align-items: center;
     gap: 0.75rem 1.25rem;
     font-size: 0.92rem;
-    color: var(--text-main, #f4efe6);
+    color: var(--rs-text, #f4efe6);
 }
 
 .illus-toc-stat-pill {
@@ -202,7 +233,7 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
 }
 
 .illus-toc-stat-pill i {
-    color: var(--accent, #e3b27c);
+    color: var(--rs-primary, #e3b27c);
     font-size: 1.1rem;
 }
 
@@ -212,7 +243,7 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
     flex-wrap: wrap;
     flex-wrap: balance;
     gap: 0.5rem;
-    margin-block-end: 1.75rem;
+    margin-block-end: 1.5rem;
 }
 
 .illus-toc-era-pill {
@@ -224,17 +255,17 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
     font-size: 0.82rem;
     font-weight: 600;
     text-decoration: none;
-    color: var(--text-main, #f4efe6);
-    background: var(--bg-surface, rgba(255, 255, 255, 0.04));
-    border: 1px solid var(--border-color, rgba(227, 178, 124, 0.25));
-    transition: border-color 0.15s ease, background-color 0.15s ease, transform 0.15s ease;
+    color: var(--rs-text, #f4efe6);
+    background: var(--rs-surface, rgba(255, 255, 255, 0.04));
+    border: 1px solid var(--rs-border, rgba(227, 178, 124, 0.25));
+    transition: border-color 0.15s ease, background-color 0.15s ease;
 }
 
 .illus-toc-era-pill:hover,
 .illus-toc-era-pill:focus-visible {
-    border-color: var(--accent, #e3b27c);
+    border-color: var(--rs-primary, #e3b27c);
     background: rgba(227, 178, 124, 0.14);
-    color: var(--text-main, #ffffff);
+    color: var(--rs-primary, #e3b27c);
     outline: 2px solid transparent;
 }
 
@@ -247,15 +278,15 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
     border-radius: 999px;
     font-size: 0.74rem;
     background: rgba(227, 178, 124, 0.2);
-    color: var(--accent, #e3b27c);
+    color: var(--rs-primary, #e3b27c);
 }
 
 /* Deferred offscreen rendering strictly for below-the-fold Era sections */
 .illus-toc-era-section {
-    margin-block-end: 2rem;
+    margin-block-end: 1.75rem;
     border-radius: 0.85rem;
-    border: 1px solid var(--border-color, rgba(227, 178, 124, 0.2));
-    background: var(--bg-surface, rgba(255, 255, 255, 0.02));
+    border: 1px solid var(--rs-border, rgba(227, 178, 124, 0.2));
+    background: var(--rs-surface, rgba(255, 255, 255, 0.02));
     overflow: clip;
 }
 
@@ -273,8 +304,8 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
     padding: 1rem 1.25rem;
     cursor: pointer;
     user-select: none;
-    background: rgba(227, 178, 124, 0.07);
-    border-block-end: 1px solid var(--border-color, rgba(227, 178, 124, 0.16));
+    background: var(--rs-bg, rgba(227, 178, 124, 0.07));
+    border-block-end: 1px solid var(--rs-border, rgba(227, 178, 124, 0.16));
     list-style: none;
 }
 
@@ -287,9 +318,9 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
     align-items: center;
     gap: 0.65rem;
     margin: 0;
-    font-size: 1.12rem;
+    font-size: 1.15rem;
     font-weight: 700;
-    color: var(--text-main, #f4efe6);
+    color: var(--rs-text, #f4efe6);
 }
 
 .illus-toc-era-badge {
@@ -298,46 +329,47 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
     padding: 0.25rem 0.65rem;
     border-radius: 999px;
     background: rgba(227, 178, 124, 0.18);
-    color: var(--accent, #e3b27c);
+    color: var(--rs-primary, #e3b27c);
 }
 
-/* Responsive CSS Grid + Subgrid per modern-web-guidance css-layout */
+/* Responsive CSS Grid card gallery */
 .illus-toc-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 290px), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 285px), 1fr));
     gap: 1.25rem;
     padding: 1.25rem;
+    align-items: stretch;
 }
 
 .illus-toc-card {
     display: grid;
-    grid-row: span 3;
-    /* Fallback in the same cascade layer before subgrid */
     grid-template-rows: auto 1fr auto;
-    grid-template-rows: subgrid;
     gap: 0;
     border-radius: 0.75rem;
-    border: 1px solid var(--border-color, rgba(227, 178, 124, 0.22));
-    background: var(--bg-main, rgba(18, 14, 16, 0.75));
+    border: 1px solid var(--rs-border, rgba(227, 178, 124, 0.22));
+    background: var(--rs-bg, rgba(18, 14, 16, 0.75));
     overflow: clip;
-    transition: border-color 0.18s ease, box-shadow 0.18s ease, transform 0.18s ease;
+    transition: border-color 0.18s ease, box-shadow 0.18s ease;
 }
 
 .illus-toc-card:hover,
 .illus-toc-card:focus-within {
-    border-color: var(--accent, #e3b27c);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+    border-color: var(--rs-primary, #e3b27c);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
 
 .illus-toc-media-wrap {
     position: relative;
     background: rgba(0, 0, 0, 0.35);
-    border-block-end: 1px solid var(--border-color, rgba(227, 178, 124, 0.16));
+    border-block-end: 1px solid var(--rs-border, rgba(227, 178, 124, 0.16));
     overflow: clip;
+    aspect-ratio: 16 / 9;
 }
 
 .illus-toc-media-link {
     display: block;
+    inline-size: 100%;
+    block-size: 100%;
     text-decoration: none;
 }
 
@@ -345,7 +377,7 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
 .illus-toc-thumb {
     display: block;
     inline-size: 100%;
-    block-size: auto;
+    block-size: 100%;
     aspect-ratio: 16 / 9;
     object-fit: cover;
     transition: transform 0.25s ease;
@@ -392,7 +424,7 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
 
 .illus-toc-zoom-btn:hover,
 .illus-toc-zoom-btn:focus-visible {
-    background: rgba(227, 178, 124, 0.92);
+    background: var(--rs-primary, #e3b27c);
     color: #1a1215;
     border-color: #ffffff;
     outline: 2px solid transparent;
@@ -410,7 +442,7 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    color: var(--accent, #e3b27c);
+    color: var(--rs-primary, #e3b27c);
 }
 
 .illus-toc-part-title {
@@ -421,13 +453,13 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
 }
 
 .illus-toc-part-title a {
-    color: var(--text-main, #f4efe6);
+    color: var(--rs-text, #f4efe6);
     text-decoration: none;
 }
 
 .illus-toc-part-title a:hover,
 .illus-toc-part-title a:focus-visible {
-    color: var(--accent, #e3b27c);
+    color: var(--rs-primary, #e3b27c);
     text-decoration: underline;
 }
 
@@ -436,7 +468,8 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
     flex-wrap: wrap;
     gap: 0.35rem 0.75rem;
     font-size: 0.76rem;
-    color: var(--text-muted, #b9ada3);
+    color: var(--rs-text, #f4efe6);
+    opacity: 0.78;
 }
 
 /* Multi-line truncation with both -webkit-line-clamp and standard line-clamp */
@@ -444,7 +477,8 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
     margin: 0.25rem 0 0;
     font-size: 0.83rem;
     line-height: 1.48;
-    color: var(--text-muted, #c9beb5);
+    color: var(--rs-text, #f4efe6);
+    opacity: 0.86;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -458,8 +492,8 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
     justify-content: space-between;
     gap: 0.5rem;
     padding: 0.7rem 1.05rem;
-    border-block-start: 1px solid var(--border-color, rgba(227, 178, 124, 0.14));
-    background: rgba(255, 255, 255, 0.015);
+    border-block-start: 1px solid var(--rs-border, rgba(227, 178, 124, 0.14));
+    background: var(--rs-surface, rgba(255, 255, 255, 0.02));
 }
 
 .illus-toc-read-link {
@@ -468,7 +502,7 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
     gap: 0.35rem;
     font-size: 0.82rem;
     font-weight: 700;
-    color: var(--accent, #e3b27c);
+    color: var(--rs-primary, #e3b27c);
     text-decoration: none;
 }
 
@@ -484,9 +518,9 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
     inline-size: 100%;
     padding: 0;
     border-radius: 0.85rem;
-    border: 1px solid var(--border-color, rgba(227, 178, 124, 0.4));
-    background: var(--bg-surface, #181215);
-    color: var(--text-main, #f4efe6);
+    border: 1px solid var(--rs-border, rgba(227, 178, 124, 0.4));
+    background: var(--rs-surface, #181215);
+    color: var(--rs-text, #f4efe6);
     box-shadow: 0 24px 64px rgba(0, 0, 0, 0.75);
 }
 
@@ -507,7 +541,7 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
     justify-content: space-between;
     gap: 1rem;
     padding: 0.9rem 1.25rem;
-    border-block-end: 1px solid var(--border-color, rgba(227, 178, 124, 0.22));
+    border-block-end: 1px solid var(--rs-border, rgba(227, 178, 124, 0.22));
 }
 
 .illus-lightbox-title {
@@ -523,9 +557,9 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
     inline-size: 2.1rem;
     block-size: 2.1rem;
     border-radius: 0.45rem;
-    border: 1px solid var(--border-color, rgba(227, 178, 124, 0.35));
+    border: 1px solid var(--rs-border, rgba(227, 178, 124, 0.35));
     background: transparent;
-    color: var(--text-main, #f4efe6);
+    color: var(--rs-text, #f4efe6);
     cursor: pointer;
     font-size: 1.1rem;
 }
@@ -556,7 +590,8 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
     margin: 0;
     font-size: 0.9rem;
     line-height: 1.55;
-    color: var(--text-muted, #d4c9be);
+    color: var(--rs-text, #f4efe6);
+    opacity: 0.9;
 }
 
 .illus-lightbox-footer {
@@ -566,17 +601,7 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
     justify-content: space-between;
     gap: 0.75rem;
     padding: 0.85rem 1.25rem;
-    border-block-start: 1px solid var(--border-color, rgba(227, 178, 124, 0.22));
-}
-
-@media (prefers-color-scheme: light) {
-    .illus-toc-card {
-        background: var(--bg-surface, #ffffff);
-    }
-    .illus-toc-caption,
-    .illus-toc-meta-line {
-        color: var(--text-muted, #4a4039);
-    }
+    border-block-start: 1px solid var(--rs-border, rgba(227, 178, 124, 0.22));
 }
 </style>
 
@@ -645,7 +670,7 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
             <details class="illus-toc-era-section<?= $deferredClass ?>" id="<?= htmlspecialchars($eraGroup['era_anchor']) ?>" open>
                 <summary class="illus-toc-era-summary">
                     <h2 class="illus-toc-era-heading">
-                        <i class="ph ph-PaintBrush-broad ph-image" aria-hidden="true" style="color: var(--accent);"></i>
+                        <i class="ph ph-image" aria-hidden="true" style="color: var(--rs-primary);"></i>
                         <span><?= htmlspecialchars($eraGroup['era_title']) ?></span>
                     </h2>
                     <span class="illus-toc-era-badge">
@@ -751,7 +776,7 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
                     <p id="ova-illus-lightbox-caption" class="illus-lightbox-caption"></p>
                 </div>
                 <div class="illus-lightbox-footer">
-                    <span style="font-size: 0.8rem; color: var(--text-muted);">Press <kbd>Esc</kbd> or click outside to close</span>
+                    <span style="font-size: 0.8rem; opacity: 0.78;">Press <kbd>Esc</kbd> or click outside to close</span>
                     <a id="ova-illus-lightbox-link" href="#" class="illus-toc-read-link">
                         <span>Read Full Scene in Context</span>
                         <i class="ph ph-arrow-right" aria-hidden="true"></i>

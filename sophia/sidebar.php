@@ -111,7 +111,9 @@ if (!empty($routeData)) {
 }
 
 // Resolve the active page title to display beneath the series header in mixed case (NOT all caps)
+$sidebarSeriesTitle = $toc_manifest['series_title'] ?? (ucfirst($seriesSlug) . ' Narrative');
 $sidebarPageTitle = $routeConfig['title'] ?? ($pageConfig['title'] ?? (!empty($fmTitle) ? $fmTitle : 'Navigation'));
+$sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/') . '$/i', '', (string)$sidebarPageTitle);
 ?>
 
 <!-- Slide-out sidebar container -->
@@ -124,7 +126,6 @@ $sidebarPageTitle = $routeConfig['title'] ?? ($pageConfig['title'] ?? (!empty($f
     -->
     <div class="sidebar-series-header" style="text-align: center; margin-bottom: 1.25rem;">
         <h3 style="margin: 0 0 0.25rem 0; color: var(--rs-primary); font-size: 1.25rem; font-weight: 700; line-height: 1.3;"><?php 
-            $sidebarSeriesTitle = $toc_manifest['series_title'] ?? (ucfirst($seriesSlug) . ' Narrative');
             echo htmlspecialchars($sidebarSeriesTitle); 
         ?></h3>
         <p style="margin: 0; opacity: 0.8; font-size: 0.85rem; font-weight: 600; line-height: 1.4;"><?php echo htmlspecialchars($sidebarPageTitle); ?></p>
