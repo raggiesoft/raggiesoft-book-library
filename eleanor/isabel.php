@@ -211,8 +211,8 @@ if (!empty($seriesSlug)) {
 } else if ($isHome) {
     $siteName = 'Ocean View Archives | RaggieSoft Media';
     $ogTitle = 'Ocean View Archives | RaggieSoft Media';
-    $ogDescription = 'The official literary imprint of RaggieSoft Media. Discover Contemporary Fiction, Project: KNOX, and The Silver Gauntlet of Aethel.';
-    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/og/contemporary_v2.jpg';
+    $ogDescription = 'The official literary imprint of RaggieSoft Media. Featuring The Eleventh Child: The Story of Jordan and the Contemporary Fiction Library.';
+    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/aubrie.jpg';
 }
 
 // Intercept specific Markdown pages to extract explicit OpenGraph overrides from their YAML frontmatter

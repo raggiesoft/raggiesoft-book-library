@@ -59,7 +59,7 @@ $volumeCount = count($books);
       "@type": "CollectionPage",
       "name": "Ocean View Archives — Literary Imprint & Book Reader Hub",
       "url": "https://books.raggiesoft.com",
-      "description": "Directory of literary works, including Contemporary Fiction, Project: KNOX (The Quantum Directive), and The Silver Gauntlet of Aethel."
+      "description": "Directory of literary works, prominently featuring The Eleventh Child: The Story of Jordan and the Contemporary Fiction Library."
     }
   ]
 }
@@ -401,11 +401,14 @@ $volumeCount = count($books);
             </p>
 
             <div class="ova-hero-actions">
-                <a href="/library" class="ova-btn-bronze">
+                <a href="/aubrie" class="ova-btn-bronze">
+                    <i class="ph-fill ph-star"></i> Featured Novel: The Eleventh Child
+                </a>
+                <a href="/library" class="ova-btn-ghost">
                     <i class="ph-fill ph-books"></i> Browse the Full Library<?= $volumeCount > 0 ? ' (' . $volumeCount . ' Volumes)' : '' ?>
                 </a>
-                <a href="#imprint-universes" class="ova-btn-ghost">
-                    <i class="ph-fill ph-compass"></i> Explore Flagship Universes
+                <a href="/aubrie/illustrations" class="ova-btn-ghost">
+                    <i class="ph-fill ph-images"></i> Table of Illustrations
                 </a>
             </div>
         </div>
@@ -473,14 +476,14 @@ $volumeCount = count($books);
         </section>
 
         <!-- 
-          FLAGSHIP LITERARY UNIVERSES
-          Showcases the 3 core Ocean View Archives collection pillars:
-          Contemporary Fiction (/library), Project: KNOX (/knox), and The Silver Gauntlet of Aethel (/aethel-saga).
+          FLAGSHIP FEATURED SHOWCASE & LITERARY UNIVERSES
+          Features The Eleventh Child: The Story of Jordan (/aubrie) and its Table of Illustrations (/aubrie/illustrations)
+          as the premier technical and narrative showcase of the RaggieSoft Book Reader alongside Contemporary Fiction (/library).
         -->
         <section id="imprint-universes" aria-labelledby="ova-collections-heading">
             <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.1rem;">
                 <h2 id="ova-collections-heading" style="font-size: 1.35rem; font-weight: 800; color: var(--rs-heading); margin: 0; display: flex; align-items: center; gap: 0.5rem;">
-                    <i class="ph-fill ph-compass" style="color: var(--rs-primary);"></i> Flagship Literary Universes
+                    <i class="ph-fill ph-sparkle" style="color: var(--rs-primary);"></i> Featured Showcase &amp; Collections
                 </h2>
                 <a href="/library" style="font-size: 0.9rem; font-weight: 700; color: var(--rs-primary); text-decoration: none;">
                     View All Volumes in the Library &rarr;
@@ -488,7 +491,49 @@ $volumeCount = count($books);
             </div>
 
             <div class="ova-universes-grid">
-                <!-- 1. Contemporary Fiction -->
+                <!-- 1. Featured Flagship Novel: The Eleventh Child -->
+                <article class="ova-universe-card">
+                    <div class="ova-universe-media">
+                        <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/images/covers/og/aubrie.jpg"
+                             alt="The Eleventh Child: The Story of Jordan — Flagship Novel &amp; Reader Tech Demo"
+                             loading="lazy">
+                    </div>
+                    <div class="ova-universe-body">
+                        <div>
+                            <span class="ova-universe-tag">Featured Novel &amp; Reader Tech Demo</span>
+                            <h3 class="ova-universe-title">The Eleventh Child</h3>
+                            <p class="ova-universe-desc">
+                                The Story of Jordan. Follow eighteen-year-old non-speaking freshman Jordan Shawn Kelly as he escapes a lifetime of erasure and builds an unbreakable found family at CPI. Showcases inline <code>&lt;aac&gt;</code> speech synthesis, <code>ZOË.Systems.Logs</code> telemetry, and synchronized music cues.
+                            </p>
+                        </div>
+                        <a href="/aubrie" class="ova-universe-link">
+                            <i class="ph-fill ph-book-open-text"></i> Read The Eleventh Child
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 2. The Eleventh Child: Table of Illustrations -->
+                <article class="ova-universe-card">
+                    <div class="ova-universe-media">
+                        <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/images/scenes/aubrie/e004/c010/s004/roa-gate-hug.jpg"
+                             alt="Table of Illustrations — The Eleventh Child Visual Scene Index"
+                             loading="lazy">
+                    </div>
+                    <div class="ova-universe-body">
+                        <div>
+                            <span class="ova-universe-tag">Visual Scene Index &amp; Lightbox</span>
+                            <h3 class="ova-universe-title">Table of Illustrations</h3>
+                            <p class="ova-universe-desc">
+                                Explore every high-resolution 16:9 scene illustration across all six eras of <em>The Eleventh Child</em>, complete with instant era jump-pills, full-screen lightbox inspection, and direct links to each illustrated moment in the novel.
+                            </p>
+                        </div>
+                        <a href="/aubrie/illustrations" class="ova-universe-link">
+                            <i class="ph-fill ph-images"></i> Browse All Illustrations
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 3. Contemporary Fiction Library -->
                 <article class="ova-universe-card">
                     <div class="ova-universe-media">
                         <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/images/og/contemporary_v2.jpg"
@@ -498,55 +543,13 @@ $volumeCount = count($books);
                     <div class="ova-universe-body">
                         <div>
                             <span class="ova-universe-tag">Coastal Virginia &amp; CPI Sanctuary</span>
-                            <h3 class="ova-universe-title">Contemporary Fiction</h3>
+                            <h3 class="ova-universe-title">Contemporary Fiction Library</h3>
                             <p class="ova-universe-desc">
                                 Standalone, grounded narratives set across Virginia. Explore stories of fierce sibling loyalty, authentic disability &amp; neurodivergent representation, and found families building perimeters against an unforgiving world.
                             </p>
                         </div>
                         <a href="/library" class="ova-universe-link">
-                            <i class="ph-fill ph-books"></i> Browse the Contemporary Library
-                        </a>
-                    </div>
-                </article>
-
-                <!-- 2. Project: KNOX -->
-                <article class="ova-universe-card">
-                    <div class="ova-universe-media">
-                        <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/engine-room-records/artists/the-stardust-engine/2017-knox-ost/social-preview.jpg"
-                             alt="Project: KNOX — The Quantum Directive"
-                             loading="lazy">
-                    </div>
-                    <div class="ova-universe-body">
-                        <div>
-                            <span class="ova-universe-tag">Sci-Fi Espionage &amp; Parallel Cuts</span>
-                            <h3 class="ova-universe-title">Project: KNOX</h3>
-                            <p class="ova-universe-desc">
-                                On a planet crushed by high gravity in the Telsan Gap, twins Anya and Kael Rostova evade the monolithic Axiom Archival Division. Includes both Jessica's Cut and Kelly's Cut of <em>The Quantum Directive</em>.
-                            </p>
-                        </div>
-                        <a href="/knox" class="ova-universe-link">
-                            <i class="ph-fill ph-planet"></i> Access Project: KNOX Dossier
-                        </a>
-                    </div>
-                </article>
-
-                <!-- 3. The Silver Gauntlet of Aethel -->
-                <article class="ova-universe-card">
-                    <div class="ova-universe-media">
-                        <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/aethel/images/aethel-hero.jpg"
-                             alt="The Silver Gauntlet of Aethel"
-                             loading="lazy">
-                    </div>
-                    <div class="ova-universe-body">
-                        <div>
-                            <span class="ova-universe-tag">Four-Era Epic Fantasy Saga</span>
-                            <h3 class="ova-universe-title">The Silver Gauntlet of Aethel</h3>
-                            <p class="ova-universe-desc">
-                                A love letter to 1980s fantasy adventure and movie soundtracks. Follow twins Kaelan and Kaela across four mythic eras in a broken world where an ancient debt must be paid in fire.
-                            </p>
-                        </div>
-                        <a href="/aethel-saga" class="ova-universe-link">
-                            <i class="ph-fill ph-sword"></i> Explore The Aethel Saga
+                            <i class="ph-fill ph-books"></i> Browse the Full Library
                         </a>
                     </div>
                 </article>
