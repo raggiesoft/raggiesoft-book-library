@@ -14,12 +14,12 @@
         "ebook_sizes": {
             "epub": "13.5 MB",
             "pdf": "15.3 MB",
-            "text_epub": "986 KB",
+            "text_epub": "985 KB",
             "text_pdf": "2.7 MB",
-            "epub_bytes": 14123508,
-            "pdf_bytes": 16027149,
-            "text_epub_bytes": 1009333,
-            "text_pdf_bytes": 2850078
+            "epub_bytes": 14122854,
+            "pdf_bytes": 16025609,
+            "text_epub_bytes": 1008677,
+            "text_pdf_bytes": 2848528
         },
         "illustration_count": 18
     },
