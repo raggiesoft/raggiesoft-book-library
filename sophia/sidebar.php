@@ -74,6 +74,7 @@ if (!empty($routeData)) {
         $currentFilePath !== '' &&
         $currentFilePath !== '__SERIES_LANDING__' &&
         $currentFilePath !== '__TOC__' &&
+        $currentFilePath !== '__ILLUSTRATIONS__' &&
         strpos($currentFilePath, '__ERA_TOC__|') !== 0 &&
         strpos($currentFilePath, '__CHAP_TOC__|') !== 0
     );
@@ -86,6 +87,7 @@ if (!empty($routeData)) {
             if (
                 $fp === '__SERIES_LANDING__' ||
                 $fp === '__TOC__' ||
+                $fp === '__ILLUSTRATIONS__' ||
                 strpos($fp, '__ERA_TOC__|') === 0 ||
                 strpos($fp, '__CHAP_TOC__|') === 0
             ) {
@@ -195,6 +197,17 @@ $sidebarPageTitle = $routeConfig['title'] ?? ($pageConfig['title'] ?? (!empty($f
         </a>
         <a href="/<?php echo htmlspecialchars($seriesSlug); ?>/toc" class="sidebar-nav-link" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; padding: 0.75rem 0.5rem; border-radius: 6px; color: var(--rs-text); font-weight: 500;">
             <i class="ph ph-list" style="font-size: 1.25rem;"></i> Table of Contents
+        </a>
+        <?php
+        $sbIllusCount = (int)($toc_manifest['illustration_count'] ?? ($routeData['common']['illustration_count'] ?? 0));
+        ?>
+        <a href="/<?php echo htmlspecialchars($seriesSlug); ?>/illustrations" class="sidebar-nav-link" style="display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; text-decoration: none; padding: 0.75rem 0.5rem; border-radius: 6px; color: var(--rs-text); font-weight: 500;">
+            <span style="display: inline-flex; align-items: center; gap: 0.75rem;">
+                <i class="ph ph-images" style="font-size: 1.25rem;"></i> Table of Illustrations
+            </span>
+            <?php if ($sbIllusCount > 0): ?>
+                <span style="font-size: 0.72rem; font-weight: 700; padding: 0.12rem 0.48rem; border-radius: 999px; background: rgba(227, 178, 124, 0.2); color: var(--rs-primary);"><?php echo $sbIllusCount; ?></span>
+            <?php endif; ?>
         </a>
         
         <hr style="border:0; border-top:1px solid var(--rs-border); margin: 10px 0;">

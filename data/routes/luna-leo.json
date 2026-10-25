@@ -20,7 +20,8 @@
             "pdf_bytes": 12180058,
             "text_epub_bytes": 795942,
             "text_pdf_bytes": 2373369
-        }
+        },
+        "illustration_count": 3
     },
     "/luna-leo": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -33,6 +34,12 @@
         "title": "Table of Contents - Luna & Leo",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/luna-leo/illustrations": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Illustrations - Luna & Leo",
+        "theme": "raggiesoft-books",
+        "filePath": "__ILLUSTRATIONS__"
     },
     "/luna-leo/early-years": {
         "view": "pages/raggiesoft-books/books/viewer",

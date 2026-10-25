@@ -20,7 +20,8 @@
             "pdf_bytes": 5514637,
             "text_epub_bytes": 79119,
             "text_pdf_bytes": 5514641
-        }
+        },
+        "illustration_count": 0
     },
     "/quantum-directive-2-kelly": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -33,6 +34,12 @@
         "title": "Table of Contents - The Quantum Directive: Kelly's Cut",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/quantum-directive-2-kelly/illustrations": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Illustrations - The Quantum Directive: Kelly's Cut",
+        "theme": "raggiesoft-books",
+        "filePath": "__ILLUSTRATIONS__"
     },
     "/quantum-directive-2-kelly/the-anchor": {
         "view": "pages/raggiesoft-books/books/viewer",

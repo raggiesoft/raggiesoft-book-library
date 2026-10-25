@@ -20,7 +20,8 @@
             "pdf_bytes": 202768,
             "text_epub_bytes": 70990,
             "text_pdf_bytes": 202768
-        }
+        },
+        "illustration_count": 0
     },
     "/nate": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -33,6 +34,12 @@
         "title": "Table of Contents - Nate",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/nate/illustrations": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Illustrations - Nate",
+        "theme": "raggiesoft-books",
+        "filePath": "__ILLUSTRATIONS__"
     },
     "/nate/book-the-architecture-of-safe-spaces": {
         "view": "pages/raggiesoft-books/books/viewer",

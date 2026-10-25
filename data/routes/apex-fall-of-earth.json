@@ -20,7 +20,8 @@
             "pdf_bytes": 1764104,
             "text_epub_bytes": 608772,
             "text_pdf_bytes": 1764104
-        }
+        },
+        "illustration_count": 0
     },
     "/apex-fall-of-earth": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -33,6 +34,12 @@
         "title": "Table of Contents - Apex: Fall of Earth",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/apex-fall-of-earth/illustrations": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Illustrations - Apex: Fall of Earth",
+        "theme": "raggiesoft-books",
+        "filePath": "__ILLUSTRATIONS__"
     },
     "/apex-fall-of-earth/wyatt-s-prologue": {
         "view": "pages/raggiesoft-books/books/viewer",

@@ -20,7 +20,8 @@
             "pdf_bytes": 3367309,
             "text_epub_bytes": 189664,
             "text_pdf_bytes": 3367303
-        }
+        },
+        "illustration_count": 0
     },
     "/jack-sarah": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -33,6 +34,12 @@
         "title": "Table of Contents - Jack & Sarah",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/jack-sarah/illustrations": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Illustrations - Jack & Sarah",
+        "theme": "raggiesoft-books",
+        "filePath": "__ILLUSTRATIONS__"
     },
     "/jack-sarah/life-at-fairlawn": {
         "view": "pages/raggiesoft-books/books/viewer",

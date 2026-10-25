@@ -139,9 +139,15 @@ $ebookSizes = [
     'text_pdf' => ''
 ];
 if ($seriesSlug) {
-    // Note: `@` suppresses network/file warnings if the JSON is missing
-    $toc_manifestUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/toc.json';
-    $toc_manifestContent = @file_get_contents($toc_manifestUrl);
+    // Prefer local workspace toc.json when available in dev/staging, falling back to CDN
+    $localTocPath = dirname($basePath, 3) . '/raggiesoft-assets/raggiesoft-books/books/' . $seriesSlug . '/toc.json';
+    if (is_file($localTocPath)) {
+        $toc_manifestContent = @file_get_contents($localTocPath);
+    } else {
+        // Note: `@` suppresses network/file warnings if the JSON is missing
+        $toc_manifestUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/toc.json';
+        $toc_manifestContent = @file_get_contents($toc_manifestUrl);
+    }
     $toc_manifest = $toc_manifestContent ? json_decode($toc_manifestContent, true) : null;
 
     // Resolve human-readable eBook file sizes (preferring local route manifest / ebook-sizes.json, falling back to CDN toc.json)
@@ -171,7 +177,7 @@ if (!empty($pageConfig['title'])) {
     // Resolve series title from manifest, falling back to a formatted slug
     $seriesTitle = !empty($toc_manifest['series_title']) ? $toc_manifest['series_title'] : (ucwords(str_replace('-', ' ', $seriesSlug)));
     
-    if ($cleanSceneTitle === $seriesTitle || $cleanSceneTitle === "Table of Contents - $seriesTitle") {
+    if ($cleanSceneTitle === $seriesTitle || $cleanSceneTitle === "Table of Contents - $seriesTitle" || $cleanSceneTitle === "Table of Illustrations - $seriesTitle") {
         $siteName = $cleanSceneTitle . ' | Ocean View Archives';
     } else {
         $siteName = $cleanSceneTitle . ' | ' . $seriesTitle;
@@ -215,7 +221,7 @@ if (!empty($pageConfig['filePath'])) {
     $actualFilePath = $pageConfig['filePath'];
     
     // Identify non-physical structural files to prevent unnecessary CDN requests
-    $isSpecial = in_array($actualFilePath, ['__SERIES_LANDING__', '__TOC__']) || strpos($actualFilePath, '__ERA_TOC__|') === 0 || strpos($actualFilePath, '__CHAP_TOC__|') === 0;
+    $isSpecial = in_array($actualFilePath, ['__SERIES_LANDING__', '__TOC__', '__ILLUSTRATIONS__']) || strpos($actualFilePath, '__ERA_TOC__|') === 0 || strpos($actualFilePath, '__CHAP_TOC__|') === 0;
     
     if (!$isSpecial) {
         $mdUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/' . $actualFilePath;

@@ -51,11 +51,12 @@ if (!$era) {
                      * chapter card as a direct one-click link rather than a nested list.
                      */
                     $singlePart = $partList[0];
-                    $singleHref = $fileToUrl[$singlePart['file_path']] ?? $singlePart['file_path'];
+                    $singleHref = $fileToUrl[$singlePart['file_path']] ?? ($singlePart['url'] ?? $singlePart['file_path']);
                     $rawChapTitle = (string)($chap['chap_title'] ?? '');
                     $rawPartTitle = (string)($singlePart['part_title'] ?? '');
                     $cleanPartSub = trim((string)preg_replace('/^Part\s+\d+\s*:\s*/i', '', $rawPartTitle));
                     $showPartSub = ($cleanPartSub !== '' && stripos($rawChapTitle, $cleanPartSub) === false && strcasecmp($cleanPartSub, 'Untitled Chapter') !== 0 && !preg_match('/^Part\s+\d+$/i', $cleanPartSub));
+                    $singleHasImage = !empty($singlePart['image']) || !empty($singlePart['images']);
                 ?>
                 <div style="background: var(--rs-bg); border: 1px solid var(--rs-border); border-radius: 8px; padding: 1.25rem 1.5rem;">
                     <a href="<?php echo htmlspecialchars($singleHref); ?>"
@@ -67,6 +68,12 @@ if (!$era) {
                             <span><?php echo htmlspecialchars($rawChapTitle); ?></span>
                             <?php if ($showPartSub): ?>
                                 <span style="font-weight: 500; font-size: 1rem; color: var(--rs-text); opacity: 0.82;">&mdash; <?php echo htmlspecialchars($cleanPartSub); ?></span>
+                            <?php endif; ?>
+                            <?php if ($singleHasImage): ?>
+                                <span title="Illustrated Scene" style="font-size: 0.75rem; font-weight: 600; padding: 0.12rem 0.45rem; border-radius: 999px; background: rgba(227, 178, 124, 0.16); color: var(--rs-primary); display: inline-flex; align-items: center; gap: 0.25rem;">
+                                    <i class="ph ph-image" aria-hidden="true"></i>
+                                    <span>Illustrated</span>
+                                </span>
                             <?php endif; ?>
                         </span>
                         <span style="font-size: 0.85rem; font-weight: 600; color: var(--rs-text); opacity: 0.75; white-space: nowrap; display: inline-flex; align-items: center; gap: 0.3rem;">
@@ -89,12 +96,20 @@ if (!$era) {
                         <?php if (!empty($partList)): ?>
                             <!-- Iterate over all parts (pXXX.md files) belonging to this chapter -->
                             <?php foreach ($partList as $part): 
-                                $href = $fileToUrl[$part['file_path']] ?? $part['file_path'];
+                                $href = $fileToUrl[$part['file_path']] ?? ($part['url'] ?? $part['file_path']);
+                                $partHasImage = !empty($part['image']) || !empty($part['images']);
                             ?>
                                 <li>
                                     <!-- Render the clickable link to the reading page -->
-                                    <a href="<?php echo htmlspecialchars($href); ?>" style="text-decoration: none; color: var(--rs-primary); display: flex; align-items: center; gap: 0.5rem; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
-                                        <i class="ph ph-file-text" aria-hidden="true"></i> <?php echo htmlspecialchars($part['part_title']); ?>
+                                    <a href="<?php echo htmlspecialchars($href); ?>" style="text-decoration: none; color: var(--rs-primary); display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+                                        <i class="ph ph-file-text" aria-hidden="true"></i>
+                                        <span><?php echo htmlspecialchars($part['part_title']); ?></span>
+                                        <?php if ($partHasImage): ?>
+                                            <span title="Illustrated Scene" style="font-size: 0.72rem; font-weight: 600; padding: 0.1rem 0.42rem; border-radius: 999px; background: rgba(227, 178, 124, 0.16); color: var(--rs-primary); display: inline-flex; align-items: center; gap: 0.22rem;">
+                                                <i class="ph ph-image" aria-hidden="true"></i>
+                                                <span>Illustrated</span>
+                                            </span>
+                                        <?php endif; ?>
                                     </a>
                                 </li>
                             <?php endforeach; ?>

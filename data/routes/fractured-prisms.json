@@ -20,7 +20,8 @@
             "pdf_bytes": 16540,
             "text_epub_bytes": 8788,
             "text_pdf_bytes": 16540
-        }
+        },
+        "illustration_count": 0
     },
     "/fractured-prisms": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -33,6 +34,12 @@
         "title": "Table of Contents - Fractured Prisms",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/fractured-prisms/illustrations": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Illustrations - Fractured Prisms",
+        "theme": "raggiesoft-books",
+        "filePath": "__ILLUSTRATIONS__"
     },
     "/fractured-prisms/book-1-shadows-fall": {
         "view": "pages/raggiesoft-books/books/viewer",

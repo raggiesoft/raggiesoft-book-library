@@ -20,7 +20,8 @@
             "pdf_bytes": 41824,
             "text_epub_bytes": 14621,
             "text_pdf_bytes": 41824
-        }
+        },
+        "illustration_count": 0
     },
     "/runebreaker": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -33,6 +34,12 @@
         "title": "Table of Contents - Runebreaker: The Dream Kingdom",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/runebreaker/illustrations": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Illustrations - Runebreaker: The Dream Kingdom",
+        "theme": "raggiesoft-books",
+        "filePath": "__ILLUSTRATIONS__"
     },
     "/runebreaker/era-1-the-era-of-the-crystal": {
         "view": "pages/raggiesoft-books/books/viewer",

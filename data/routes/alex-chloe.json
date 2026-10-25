@@ -20,7 +20,8 @@
             "pdf_bytes": 1801711,
             "text_epub_bytes": 673144,
             "text_pdf_bytes": 1801711
-        }
+        },
+        "illustration_count": 0
     },
     "/alex-chloe": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -33,6 +34,12 @@
         "title": "Table of Contents - Beyond Words",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/alex-chloe/illustrations": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Illustrations - Beyond Words",
+        "theme": "raggiesoft-books",
+        "filePath": "__ILLUSTRATIONS__"
     },
     "/alex-chloe/alex-s-childhood": {
         "view": "pages/raggiesoft-books/books/viewer",

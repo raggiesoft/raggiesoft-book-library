@@ -20,7 +20,8 @@
             "pdf_bytes": 204249,
             "text_epub_bytes": 73332,
             "text_pdf_bytes": 204249
-        }
+        },
+        "illustration_count": 0
     },
     "/drew": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -33,6 +34,12 @@
         "title": "Table of Contents - The Drew Narrative",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/drew/illustrations": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Illustrations - The Drew Narrative",
+        "theme": "raggiesoft-books",
+        "filePath": "__ILLUSTRATIONS__"
     },
     "/drew/book-1-the-hospital-year": {
         "view": "pages/raggiesoft-books/books/viewer",

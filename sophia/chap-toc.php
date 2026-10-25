@@ -43,11 +43,19 @@ if (!$chap) {
                 <!-- Iterate through all parts assigned to this chapter -->
                 <?php foreach ($chap['parts'] as $part): 
                     // Resolve the frontend URL using the file path mapping
-                    $href = $fileToUrl[$part['file_path']] ?? $part['file_path'];
+                    $href = $fileToUrl[$part['file_path']] ?? ($part['url'] ?? $part['file_path']);
+                    $partHasImage = !empty($part['image']) || !empty($part['images']);
                 ?>
                     <li>
-                        <a href="<?php echo htmlspecialchars($href); ?>" style="text-decoration: none; color: var(--rs-primary); display: flex; align-items: center; gap: 0.5rem; font-size: 1.1rem; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
-                            <i class="ph ph-file-text" aria-hidden="true"></i> <?php echo htmlspecialchars($part['part_title']); ?>
+                        <a href="<?php echo htmlspecialchars($href); ?>" style="text-decoration: none; color: var(--rs-primary); display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; font-size: 1.1rem; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+                            <i class="ph ph-file-text" aria-hidden="true"></i>
+                            <span><?php echo htmlspecialchars($part['part_title']); ?></span>
+                            <?php if ($partHasImage): ?>
+                                <span title="Illustrated Scene" style="font-size: 0.75rem; font-weight: 600; padding: 0.12rem 0.45rem; border-radius: 999px; background: rgba(227, 178, 124, 0.16); color: var(--rs-primary); display: inline-flex; align-items: center; gap: 0.22rem;">
+                                    <i class="ph ph-image" aria-hidden="true"></i>
+                                    <span>Illustrated</span>
+                                </span>
+                            <?php endif; ?>
                         </a>
                     </li>
                 <?php endforeach; ?>

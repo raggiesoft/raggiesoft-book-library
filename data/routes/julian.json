@@ -20,7 +20,8 @@
             "pdf_bytes": 482428,
             "text_epub_bytes": 169681,
             "text_pdf_bytes": 482428
-        }
+        },
+        "illustration_count": 0
     },
     "/julian": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -33,6 +34,12 @@
         "title": "Table of Contents - Upon This Winter's Night: The Story of Julian Rowlands",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/julian/illustrations": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Illustrations - Upon This Winter's Night: The Story of Julian Rowlands",
+        "theme": "raggiesoft-books",
+        "filePath": "__ILLUSTRATIONS__"
     },
     "/julian/era-1-the-winter-palace-the-breach-spring-december-1996": {
         "view": "pages/raggiesoft-books/books/viewer",

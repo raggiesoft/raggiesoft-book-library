@@ -20,7 +20,8 @@
             "pdf_bytes": 241676,
             "text_epub_bytes": 84495,
             "text_pdf_bytes": 241676
-        }
+        },
+        "illustration_count": 0
     },
     "/ashley-tower": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -33,6 +34,12 @@
         "title": "Table of Contents - Fortress in the Clouds",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/ashley-tower/illustrations": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Illustrations - Fortress in the Clouds",
+        "theme": "raggiesoft-books",
+        "filePath": "__ILLUSTRATIONS__"
     },
     "/ashley-tower/book-1-the-ascent": {
         "view": "pages/raggiesoft-books/books/viewer",

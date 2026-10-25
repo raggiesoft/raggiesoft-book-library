@@ -170,11 +170,13 @@ $specialPageIndex1 = 0;
 $specialPageIndex2 = 0;
 $mdContent = '';
 
-// Handle programmatic view routing for tables of contents and landing pages
+// Handle programmatic view routing for tables of contents, illustrations, and landing pages
 if ($actualFilePath === '__SERIES_LANDING__') {
     $specialPageType = 'landing';
 } elseif ($actualFilePath === '__TOC__') {
     $specialPageType = 'toc';
+} elseif ($actualFilePath === '__ILLUSTRATIONS__') {
+    $specialPageType = 'illustrations';
 } elseif (strpos($actualFilePath, '__ERA_TOC__|') === 0) {
     $p = explode('|', $actualFilePath);
     $specialPageType = 'era_toc';
@@ -263,6 +265,8 @@ if ($specialPageType) {
         require_once __DIR__ . '/landing.php';
     } elseif ($specialPageType === 'toc') {
         require_once __DIR__ . '/toc.php';
+    } elseif ($specialPageType === 'illustrations') {
+        require_once __DIR__ . '/illustrations.php';
     } elseif ($specialPageType === 'era_toc') {
         require_once __DIR__ . '/era-toc.php';
     } elseif ($specialPageType === 'chap_toc') {
@@ -308,7 +312,7 @@ $sequenceName = $routeData['common']['siteName'] ?? 'Ocean View Archives';
 
 // Fallback logic to generate previous/next if they aren't explicitly in the JSON.
 // When the reader is viewing an actual narrative scene (`!$specialPageType`), filter out
-// intermediate structural TOC routes (`__TOC__`, `__ERA_TOC__`, `__CHAP_TOC__`) so
+// intermediate structural TOC routes (`__TOC__`, `__ILLUSTRATIONS__`, `__ERA_TOC__`, `__CHAP_TOC__`) so
 // "Previous" and "Next" flow seamlessly from scene to scene across chapter boundaries.
 $routeKeys = array_keys($routeData);
 $seriesSlugForFilter = '/' . ($seriesSlug ?? '');
@@ -321,6 +325,7 @@ $filteredKeys = array_filter($routeKeys, function($k) use ($seriesSlugForFilter,
         if (
             $fp === '__SERIES_LANDING__' ||
             $fp === '__TOC__' ||
+            $fp === '__ILLUSTRATIONS__' ||
             strpos($fp, '__ERA_TOC__|') === 0 ||
             strpos($fp, '__CHAP_TOC__|') === 0
         ) {

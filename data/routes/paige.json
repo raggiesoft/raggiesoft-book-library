@@ -20,7 +20,8 @@
             "pdf_bytes": 1455612,
             "text_epub_bytes": 503836,
             "text_pdf_bytes": 1455612
-        }
+        },
+        "illustration_count": 0
     },
     "/paige": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -33,6 +34,12 @@
         "title": "Table of Contents - Paige",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/paige/illustrations": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Illustrations - Paige",
+        "theme": "raggiesoft-books",
+        "filePath": "__ILLUSTRATIONS__"
     },
     "/paige/freshman-year": {
         "view": "pages/raggiesoft-books/books/viewer",

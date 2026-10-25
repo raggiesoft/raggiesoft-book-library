@@ -20,7 +20,8 @@
             "pdf_bytes": 415749,
             "text_epub_bytes": 155170,
             "text_pdf_bytes": 415749
-        }
+        },
+        "illustration_count": 0
     },
     "/pebble-borrow": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -33,6 +34,12 @@
         "title": "Table of Contents - Pebble Borrow",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/pebble-borrow/illustrations": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Illustrations - Pebble Borrow",
+        "theme": "raggiesoft-books",
+        "filePath": "__ILLUSTRATIONS__"
     },
     "/pebble-borrow/book-1-echoes-of-the-past": {
         "view": "pages/raggiesoft-books/books/viewer",

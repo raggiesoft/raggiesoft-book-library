@@ -20,7 +20,8 @@
             "pdf_bytes": 121729,
             "text_epub_bytes": 41120,
             "text_pdf_bytes": 121729
-        }
+        },
+        "illustration_count": 0
     },
     "/meredith": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -33,6 +34,12 @@
         "title": "Table of Contents - Meredith",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/meredith/illustrations": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Illustrations - Meredith",
+        "theme": "raggiesoft-books",
+        "filePath": "__ILLUSTRATIONS__"
     },
     "/meredith/book-4-the-vanguard": {
         "view": "pages/raggiesoft-books/books/viewer",

@@ -105,11 +105,21 @@ $landingTextPdfSize  = $landingSizes['text_pdf'] ?? '';
                 ?>
             </div>
             
-            <!-- Call to action buttons to view the TOC and download eBooks (Illustrated + Text-Only Editions) -->
+            <!-- Call to action buttons to view the TOC, Table of Illustrations, and download eBooks (Illustrated + Text-Only Editions) -->
+            <?php
+            $landingIllusCount = (int)($toc_manifest['illustration_count'] ?? ($routeData['common']['illustration_count'] ?? 0));
+            $illustrationsUrl = '/' . $seriesSlug . '/illustrations';
+            ?>
             <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
                 <a href="<?php echo htmlspecialchars($tocUrl); ?>" class="rs-btn rs-btn-primary" style="font-size: 1.1rem; padding: 0.75rem 2rem; display: inline-flex; align-items: center; gap: 0.5rem;">
                     <i class="ph ph-book-open"></i> View the Table of Contents
                 </a>
+                <?php if ($landingIllusCount > 0): ?>
+                <a href="<?php echo htmlspecialchars($illustrationsUrl); ?>" class="rs-btn" style="font-size: 1.05rem; padding: 0.75rem 1.35rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <i class="ph ph-images"></i>
+                    <span>Table of Illustrations <span style="opacity: 0.85; font-weight: 600; font-size: 0.9em;">(<?php echo $landingIllusCount; ?>)</span></span>
+                </a>
+                <?php endif; ?>
                 <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.epub"); ?>" target="_blank" class="rs-btn" title="Download Illustrated EPUB<?php echo $landingEpubSize ? ' (' . htmlspecialchars($landingEpubSize) . ')' : ''; ?>" style="font-size: 1.05rem; padding: 0.75rem 1.35rem; display: inline-flex; align-items: center; gap: 0.5rem;">
                     <i class="ph ph-download-simple"></i>
                     <span>EPUB<?php echo $landingEpubSize ? ' <span style="opacity: 0.82; font-weight: 500; font-size: 0.9em;">(' . htmlspecialchars($landingEpubSize) . ')</span>' : ''; ?></span>

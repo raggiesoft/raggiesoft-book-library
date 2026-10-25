@@ -20,7 +20,8 @@
             "pdf_bytes": 194611,
             "text_epub_bytes": 66696,
             "text_pdf_bytes": 194611
-        }
+        },
+        "illustration_count": 0
     },
     "/samantha": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -33,6 +34,12 @@
         "title": "Table of Contents - Samantha",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/samantha/illustrations": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Illustrations - Samantha",
+        "theme": "raggiesoft-books",
+        "filePath": "__ILLUSTRATIONS__"
     },
     "/samantha/book-1-toby-s-6th-grade": {
         "view": "pages/raggiesoft-books/books/viewer",

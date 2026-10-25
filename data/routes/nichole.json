@@ -20,7 +20,8 @@
             "pdf_bytes": 1273260,
             "text_epub_bytes": 454853,
             "text_pdf_bytes": 1273260
-        }
+        },
+        "illustration_count": 0
     },
     "/nichole": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -33,6 +34,12 @@
         "title": "Table of Contents - Nichole",
         "theme": "raggiesoft-books",
         "filePath": "__TOC__"
+    },
+    "/nichole/illustrations": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Illustrations - Nichole",
+        "theme": "raggiesoft-books",
+        "filePath": "__ILLUSTRATIONS__"
     },
     "/nichole/elementary-school": {
         "view": "pages/raggiesoft-books/books/viewer",
