@@ -12,16 +12,16 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "51.5 MB",
-            "pdf": "37.9 MB",
-            "text_epub": "915 KB",
+            "epub": "55 MB",
+            "pdf": "41.5 MB",
+            "text_epub": "922 KB",
             "text_pdf": "3.4 MB",
-            "epub_bytes": 54003342,
-            "pdf_bytes": 39766392,
-            "text_epub_bytes": 936557,
-            "text_pdf_bytes": 3585391
+            "epub_bytes": 57695702,
+            "pdf_bytes": 43488526,
+            "text_epub_bytes": 943832,
+            "text_pdf_bytes": 3607894
         },
-        "illustration_count": 48
+        "illustration_count": 52
     },
     "/aubrie": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1415,9 +1415,9 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|0"
     },
-    "/aubrie/summer-2016/the-u-s-11-compound-the-sunken-sanctuary/the-u-s-11-compound-the-sunken-sanctuary": {
+    "/aubrie/summer-2016/the-u-s-11-compound-the-sunken-sanctuary/the-u-s-11-compound-the-sunken-sanctuary-the-wedding-blueprint": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The U.S. 11 Compound & The Sunken Sanctuary",
+        "title": "The U.S. 11 Compound, The Sunken Sanctuary, & The Wedding Blueprint",
         "theme": "raggiesoft-books",
         "filePath": "e008/c001/p001.md"
     },
@@ -1427,9 +1427,9 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|1"
     },
-    "/aubrie/summer-2016/the-double-wedding-the-legal-seal/part-1-the-morning-of-the-gathering-the-vows": {
+    "/aubrie/summer-2016/the-double-wedding-the-legal-seal/part-1-the-morning-of-the-final-touches-the-gathering-the-vows": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Morning Of, The Gathering, & The Vows",
+        "title": "Part 1: The Morning Of, The Final Touches, The Gathering, & The Vows",
         "theme": "raggiesoft-books",
         "filePath": "e008/c002/p001.md"
     },
