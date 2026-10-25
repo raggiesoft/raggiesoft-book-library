@@ -41,13 +41,13 @@
     },
     "aubrie": {
         "epub": "46.7 MB",
-        "pdf": "32.7 MB",
-        "text_epub": "859 KB",
-        "text_pdf": "3.2 MB",
-        "epub_bytes": 48974726,
-        "pdf_bytes": 34244573,
-        "text_epub_bytes": 879180,
-        "text_pdf_bytes": 3406049
+        "pdf": "32.8 MB",
+        "text_epub": "896 KB",
+        "text_pdf": "3.4 MB",
+        "epub_bytes": 49013508,
+        "pdf_bytes": 34358024,
+        "text_epub_bytes": 917966,
+        "text_pdf_bytes": 3519660
     },
     "beth": {
         "epub": "5.3 KB",
@@ -231,13 +231,13 @@
     },
     "rachel": {
         "epub": "13.5 MB",
-        "pdf": "15.2 MB",
-        "text_epub": "975 KB",
+        "pdf": "15.3 MB",
+        "text_epub": "986 KB",
         "text_pdf": "2.7 MB",
-        "epub_bytes": 14112826,
-        "pdf_bytes": 15978888,
-        "text_epub_bytes": 998655,
-        "text_pdf_bytes": 2801968
+        "epub_bytes": 14123424,
+        "pdf_bytes": 16015134,
+        "text_epub_bytes": 1009252,
+        "text_pdf_bytes": 2838101
     },
     "ruby-mountain": {
         "epub": "232 KB",

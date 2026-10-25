@@ -13,13 +13,13 @@
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
             "epub": "46.7 MB",
-            "pdf": "32.7 MB",
-            "text_epub": "859 KB",
-            "text_pdf": "3.2 MB",
-            "epub_bytes": 48974726,
-            "pdf_bytes": 34244573,
-            "text_epub_bytes": 879180,
-            "text_pdf_bytes": 3406049
+            "pdf": "32.8 MB",
+            "text_epub": "896 KB",
+            "text_pdf": "3.4 MB",
+            "epub_bytes": 49013508,
+            "pdf_bytes": 34358024,
+            "text_epub_bytes": 917966,
+            "text_pdf_bytes": 3519660
         },
         "illustration_count": 42
     },
@@ -1318,5 +1318,107 @@
         "title": "Part 2: Jordan Shawn Kelly & The Double Wedding Proposal",
         "theme": "raggiesoft-books",
         "filePath": "e006/c009/p002.md"
+    },
+    "/aubrie/episode-7-spring-2016": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Episode 7: Spring 2016",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|6"
+    },
+    "/aubrie/episode-7-spring-2016/chapter-1-off-precautions-megan-s-first-night": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: Off Precautions & Megan's First Night",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|0"
+    },
+    "/aubrie/episode-7-spring-2016/chapter-1-off-precautions-megan-s-first-night/twelve-weeks-clear-the-eighth-point-of-the-constellation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Twelve Weeks Clear & The Eighth Point of the Constellation",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c001/p001.md"
+    },
+    "/aubrie/episode-7-spring-2016/chapter-2-hey-saacurc-the-bear-and-the-bug": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: HEY SAACURC! & The Bear and the Bug",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|1"
+    },
+    "/aubrie/episode-7-spring-2016/chapter-2-hey-saacurc-the-bear-and-the-bug/the-bear-the-bug-and-the-forger": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Bear, The Bug, and The Forger",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c002/p001.md"
+    },
+    "/aubrie/episode-7-spring-2016/chapter-3-the-electric-alert-the-box-office-showdown": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The Electric Alert & The Box Office Showdown",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|2"
+    },
+    "/aubrie/episode-7-spring-2016/chapter-3-the-electric-alert-the-box-office-showdown/part-1-the-electric-alert-the-10-00-am-rush": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Electric Alert & The 10:00 AM Rush",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c003/p001.md"
+    },
+    "/aubrie/episode-7-spring-2016/chapter-3-the-electric-alert-the-box-office-showdown/part-2-the-letter-from-home-the-box-office-confrontation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Letter From Home & The Box Office Confrontation",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c003/p002.md"
+    },
+    "/aubrie/episode-7-spring-2016/chapter-4-live-at-the-crucible-senior-commencement": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4: Live at The Crucible & Senior Commencement",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|3"
+    },
+    "/aubrie/episode-7-spring-2016/chapter-4-live-at-the-crucible-senior-commencement/part-1-the-crucible-shuttle-forger-tailgate-ignition": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Crucible Shuttle, Forger Tailgate, & Ignition",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c004/p001.md"
+    },
+    "/aubrie/episode-7-spring-2016/chapter-4-live-at-the-crucible-senior-commencement/part-2-electric-color-in-the-dark-the-departure-loop": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Electric Color in the Dark & The Departure Loop",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c004/p002.md"
+    },
+    "/aubrie/episode-8-summer-2016": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Episode 8: Summer 2016",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|7"
+    },
+    "/aubrie/episode-8-summer-2016/chapter-1-the-u-s-11-compound-the-sunken-sanctuary": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The U.S. 11 Compound & The Sunken Sanctuary",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|0"
+    },
+    "/aubrie/episode-8-summer-2016/chapter-1-the-u-s-11-compound-the-sunken-sanctuary/the-u-s-11-compound-the-sunken-sanctuary": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The U.S. 11 Compound & The Sunken Sanctuary",
+        "theme": "raggiesoft-books",
+        "filePath": "e008/c001/p001.md"
+    },
+    "/aubrie/episode-8-summer-2016/chapter-2-the-double-wedding-the-legal-seal": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Double Wedding & The Legal Seal",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|1"
+    },
+    "/aubrie/episode-8-summer-2016/chapter-2-the-double-wedding-the-legal-seal/part-1-the-morning-of-the-gathering-the-vows": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Morning Of, The Gathering, & The Vows",
+        "theme": "raggiesoft-books",
+        "filePath": "e008/c002/p001.md"
+    },
+    "/aubrie/episode-8-summer-2016/chapter-2-the-double-wedding-the-legal-seal/part-2-the-legal-seal-the-reception-the-first-night": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Legal Seal, The Reception, & The First Night",
+        "theme": "raggiesoft-books",
+        "filePath": "e008/c002/p002.md"
     }
 }
