@@ -16,10 +16,10 @@
             "pdf": "32.8 MB",
             "text_epub": "898 KB",
             "text_pdf": "3.4 MB",
-            "epub_bytes": 49015377,
-            "pdf_bytes": 34365460,
-            "text_epub_bytes": 919843,
-            "text_pdf_bytes": 3526921
+            "epub_bytes": 49015371,
+            "pdf_bytes": 34365446,
+            "text_epub_bytes": 919844,
+            "text_pdf_bytes": 3526879
         },
         "illustration_count": 42
     },
@@ -1369,7 +1369,7 @@
     },
     "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Live at The Crucible & Senior Commencement",
+        "title": "Live at the Crucible & Senior Commencement",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|3"
     },
