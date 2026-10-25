@@ -44,10 +44,10 @@
         "pdf": "32.8 MB",
         "text_epub": "902 KB",
         "text_pdf": "3.4 MB",
-        "epub_bytes": 49019648,
-        "pdf_bytes": 34380442,
-        "text_epub_bytes": 924150,
-        "text_pdf_bytes": 3542139
+        "epub_bytes": 49018952,
+        "pdf_bytes": 34378533,
+        "text_epub_bytes": 923440,
+        "text_pdf_bytes": 3540622
     },
     "beth": {
         "epub": "5.3 KB",
@@ -234,10 +234,10 @@
         "pdf": "15.3 MB",
         "text_epub": "985 KB",
         "text_pdf": "2.7 MB",
-        "epub_bytes": 14122952,
-        "pdf_bytes": 16025871,
-        "text_epub_bytes": 1008782,
-        "text_pdf_bytes": 2848791
+        "epub_bytes": 14122843,
+        "pdf_bytes": 16024991,
+        "text_epub_bytes": 1008672,
+        "text_pdf_bytes": 2848054
     },
     "ruby-mountain": {
         "epub": "232 KB",
