@@ -12,16 +12,16 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "60 MB",
-            "pdf": "47.1 MB",
-            "text_epub": "929 KB",
+            "epub": "60.8 MB",
+            "pdf": "48.1 MB",
+            "text_epub": "935 KB",
             "text_pdf": "3.5 MB",
-            "epub_bytes": 62965113,
-            "pdf_bytes": 49397464,
-            "text_epub_bytes": 951474,
-            "text_pdf_bytes": 3633613
+            "epub_bytes": 63759908,
+            "pdf_bytes": 50470554,
+            "text_epub_bytes": 957834,
+            "text_pdf_bytes": 3654537
         },
-        "illustration_count": 58
+        "illustration_count": 59
     },
     "/aubrie": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1439,9 +1439,9 @@
         "theme": "raggiesoft-books",
         "filePath": "e008/c002/p001.md"
     },
-    "/aubrie/summer-2016/the-double-wedding-the-legal-seal/part-2-the-legal-seal-the-reception-the-first-night": {
+    "/aubrie/summer-2016/the-double-wedding-the-legal-seal/part-2-the-legal-seal-the-grand-ballroom-reception-his-chariot-of-choice": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Legal Seal, The Reception, & The First Night",
+        "title": "Part 2: The Legal Seal, The Grand Ballroom Reception, & His Chariot of Choice",
         "theme": "raggiesoft-books",
         "filePath": "e008/c002/p002.md"
     }
