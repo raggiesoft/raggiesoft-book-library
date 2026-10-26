@@ -12,16 +12,16 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "54.9 MB",
-            "pdf": "41.4 MB",
-            "text_epub": "925 KB",
+            "epub": "55.8 MB",
+            "pdf": "42.4 MB",
+            "text_epub": "928 KB",
             "text_pdf": "3.5 MB",
-            "epub_bytes": 57597963,
-            "pdf_bytes": 43411241,
-            "text_epub_bytes": 947452,
-            "text_pdf_bytes": 3620573
+            "epub_bytes": 58499787,
+            "pdf_bytes": 44411834,
+            "text_epub_bytes": 949931,
+            "text_pdf_bytes": 3630999
         },
-        "illustration_count": 52
+        "illustration_count": 53
     },
     "/aubrie": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1385,23 +1385,29 @@
         "theme": "raggiesoft-books",
         "filePath": "e007/c004/p002.md"
     },
-    "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-3-acts-ii-iii-iv-fifty-two-to-nothing-escape-velocity-ad-astra-the-twin-moons": {
+    "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-3-act-ii-not-your-doll-fifty-two-to-nothing-the-vault": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Acts II, III & IV: Fifty-Two to Nothing, Escape Velocity (Ad Astra) & The Twin Moons",
+        "title": "Part 3: Act II: Not Your Doll, Fifty-Two to Nothing & The Vault",
         "theme": "raggiesoft-books",
         "filePath": "e007/c004/p003.md"
     },
-    "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-4-acts-v-vi-brother-s-keeper-the-summer-festival-announcement-saturday-night-lights": {
+    "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-4-acts-iii-iv-escape-velocity-ad-astra-cosmic-tidal-lock-mile-marker-98": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: Acts V & VI: Brother's Keeper, The Summer Festival Announcement, & Saturday Night Lights",
+        "title": "Part 4: Acts III & IV: Escape Velocity (Ad Astra), Cosmic Tidal Lock & Mile Marker 98",
         "theme": "raggiesoft-books",
         "filePath": "e007/c004/p004.md"
     },
-    "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-5-act-vii-electric-color-live-at-the-crucible-the-departure-loop": {
+    "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-5-acts-v-vi-brother-s-keeper-the-summer-festival-announcement-saturday-night-lights": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: Act VII: Electric Color (Live at the Crucible) & The Departure Loop",
+        "title": "Part 5: Acts V & VI: Brother's Keeper, The Summer Festival Announcement, & Saturday Night Lights",
         "theme": "raggiesoft-books",
         "filePath": "e007/c004/p005.md"
+    },
+    "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-6-act-vii-electric-color-live-at-the-crucible-the-departure-loop": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: Act VII: Electric Color (Live at the Crucible) & The Departure Loop",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c004/p006.md"
     },
     "/aubrie/summer-2016": {
         "view": "pages/raggiesoft-books/books/viewer",
