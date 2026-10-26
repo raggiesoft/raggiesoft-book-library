@@ -14,12 +14,12 @@
         "ebook_sizes": {
             "epub": "54.9 MB",
             "pdf": "41.4 MB",
-            "text_epub": "922 KB",
-            "text_pdf": "3.4 MB",
-            "epub_bytes": 57594336,
-            "pdf_bytes": 43399916,
-            "text_epub_bytes": 943827,
-            "text_pdf_bytes": 3607898
+            "text_epub": "925 KB",
+            "text_pdf": "3.5 MB",
+            "epub_bytes": 57597963,
+            "pdf_bytes": 43411241,
+            "text_epub_bytes": 947452,
+            "text_pdf_bytes": 3620573
         },
         "illustration_count": 52
     },
@@ -1385,21 +1385,21 @@
         "theme": "raggiesoft-books",
         "filePath": "e007/c004/p002.md"
     },
-    "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-3-acts-ii-iii-fifty-two-to-nothing-the-vault": {
+    "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-3-acts-ii-iii-iv-fifty-two-to-nothing-escape-velocity-ad-astra-the-twin-moons": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Acts II & III: Fifty-Two to Nothing & The Vault",
+        "title": "Part 3: Acts II, III & IV: Fifty-Two to Nothing, Escape Velocity (Ad Astra) & The Twin Moons",
         "theme": "raggiesoft-books",
         "filePath": "e007/c004/p003.md"
     },
-    "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-4-acts-iv-v-brother-s-keeper-the-summer-festival-announcement-saturday-night-lights": {
+    "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-4-acts-v-vi-brother-s-keeper-the-summer-festival-announcement-saturday-night-lights": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: Acts IV & V: Brother's Keeper, The Summer Festival Announcement, & Saturday Night Lights",
+        "title": "Part 4: Acts V & VI: Brother's Keeper, The Summer Festival Announcement, & Saturday Night Lights",
         "theme": "raggiesoft-books",
         "filePath": "e007/c004/p004.md"
     },
-    "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-5-act-vi-electric-color-live-at-the-crucible-the-departure-loop": {
+    "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-5-act-vii-electric-color-live-at-the-crucible-the-departure-loop": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: Act VI: Electric Color (Live at the Crucible) & The Departure Loop",
+        "title": "Part 5: Act VII: Electric Color (Live at the Crucible) & The Departure Loop",
         "theme": "raggiesoft-books",
         "filePath": "e007/c004/p005.md"
     },
