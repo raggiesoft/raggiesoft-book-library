@@ -36,6 +36,13 @@ header('Content-Type: text/html; charset=utf-8');
 // Strip any query parameters to match exact semantic route paths
 $requestUri = strtok($_SERVER['REQUEST_URI'], '?');
 
+// Normalize legacy `/books/<series>` deep-links (e.g., `/books/stardust-engine`, `/books/erin`)
+// to the canonical root-level series route (`/<series>`) with a permanent 301 redirect.
+if (preg_match('#^/books/(.+)$#', $requestUri, $legacyBookMatch)) {
+    header('Location: /' . ltrim($legacyBookMatch[1], '/'), true, 301);
+    exit;
+}
+
 // Resolve the absolute base directory of the server to ensure reliable includes
 $basePath = realpath(__DIR__ . '/../');
 

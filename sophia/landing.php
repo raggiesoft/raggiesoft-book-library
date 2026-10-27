@@ -135,6 +135,40 @@ $landingTextPdfSize  = $landingSizes['text_pdf'] ?? '';
                 <span aria-hidden="true">&bull;</span>
                 <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.pdf"); ?>" target="_blank" title="Download Text-Only PDF (No Images<?php echo $landingTextPdfSize ? ' — ' . htmlspecialchars($landingTextPdfSize) : ''; ?>)" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">PDF &mdash; Text Only<?php echo $landingTextPdfSize ? ' (' . htmlspecialchars($landingTextPdfSize) . ')' : ''; ?></a>
             </div>
+
+            <?php if ($seriesSlug === 'stardust-engine' || $seriesSlug === 'erin'): ?>
+            <!-- Companion Cosmic Portal & Listening Room Integration Box -->
+            <div style="margin-top: 1.75rem; padding: 1.25rem 1.35rem; border-radius: 12px; background: var(--rs-surface); border: 1px solid var(--rs-border); border-left: 5px solid var(--rs-primary);">
+                <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--rs-primary); margin-bottom: 0.35rem;">
+                    <i class="ph-fill ph-planet"></i> Connected Stardust Engine Ecosystem
+                </div>
+                <h3 style="font-size: 1.15rem; font-weight: 800; margin: 0 0 0.5rem 0; color: var(--rs-heading);">
+                    Intermingle with <code>stardust.raggiesoft.com</code> &amp; The Listening Room
+                </h3>
+                <p style="font-size: 0.92rem; line-height: 1.6; margin: 0 0 1rem 0; color: var(--rs-text); opacity: 0.92;">
+                    This companion novel is synchronized 1:1 with the official cosmic portal of <strong>The Stardust Engine</strong> and all 21 studio, live, and archival albums in <strong>The Listening Room</strong>.
+                </p>
+                <div style="display: flex; gap: 0.65rem; flex-wrap: wrap;">
+                    <a href="https://stardust.raggiesoft.com" data-no-spa="true" target="_blank" rel="noopener noreferrer" class="rs-btn rs-btn-primary" style="font-size: 0.9rem; padding: 0.55rem 1rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+                        <i class="ph-fill ph-rocket-launch"></i> Official Band Portal (stardust.raggiesoft.com)
+                    </a>
+                    <a href="https://stardust.raggiesoft.com/novel" data-no-spa="true" target="_blank" rel="noopener noreferrer" class="rs-btn" style="font-size: 0.9rem; padding: 0.55rem 1rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+                        <i class="ph-fill ph-planet"></i> Read in Cosmic Exoplanet / Deep Space View
+                    </a>
+                    <a href="https://music.raggiesoft.com/artists/the-stardust-engine" data-no-spa="true" target="_blank" rel="noopener noreferrer" class="rs-btn" style="font-size: 0.9rem; padding: 0.55rem 1rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+                        <i class="ph-fill ph-headphones"></i> Stream Discography in The Listening Room
+                    </a>
+                    <?php if ($seriesSlug === 'stardust-engine'): ?>
+                    <a href="/stardust-engine/book-6-reignition-live-at-the-crucible-2015-2016/chapter-1-live-at-the-crucible-may-21-2016" class="rs-btn" style="font-size: 0.9rem; padding: 0.55rem 1rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+                        <i class="ph-fill ph-guitar"></i> Jump to Book 6: Live at the Crucible (Ryan's POV)
+                    </a>
+                    <a href="/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement" class="rs-btn" style="font-size: 0.9rem; padding: 0.55rem 1rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+                        <i class="ph-fill ph-arrows-left-right"></i> Compare with Jordan's POV (Section 104, Row A)
+                    </a>
+                    <?php endif; ?>
+                </div>
+            </div>
+            <?php endif; ?>
         </div>
     </div>
 

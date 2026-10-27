@@ -533,7 +533,28 @@ $volumeCount = count($books);
                     </div>
                 </article>
 
-                <!-- 3. Contemporary Fiction Library -->
+                <!-- 3. The Stardust Engine: The Story of the Iron Five -->
+                <article class="ova-universe-card">
+                    <div class="ova-universe-media">
+                        <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/images/covers/og/stardust-engine.jpg"
+                             alt="The Stardust Engine: The Story of the Iron Five — Companion Band Novel"
+                             loading="lazy">
+                    </div>
+                    <div class="ova-universe-body">
+                        <div>
+                            <span class="ova-universe-tag">Companion Rock-Opera Novel &bull; Ryan's POV</span>
+                            <h3 class="ova-universe-title">The Stardust Engine</h3>
+                            <p class="ova-universe-desc">
+                                The thirty-year story of the Iron Five (Ryan, Cassidy, and Holly O'Connell &amp; twins Evan and Tyler Wright) told from Ryan's perspective&mdash;including the 6-part May 21, 2016 <em>Live at the Crucible</em> homecoming concert synchronized with <a href="https://stardust.raggiesoft.com" data-no-spa="true" style="color: var(--rs-primary); font-weight: 700;">stardust.raggiesoft.com</a>.
+                            </p>
+                        </div>
+                        <a href="/stardust-engine" class="ova-universe-link">
+                            <i class="ph-fill ph-rocket-launch"></i> Read The Stardust Engine
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 4. Contemporary Fiction Library -->
                 <article class="ova-universe-card">
                     <div class="ova-universe-media">
                         <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/images/og/contemporary_v2.jpg"
