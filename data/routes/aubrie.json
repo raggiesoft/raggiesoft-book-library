@@ -13,13 +13,13 @@
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
             "epub": "61.7 MB",
-            "pdf": "49 MB",
+            "pdf": "49.2 MB",
             "text_epub": "943 KB",
             "text_pdf": "3.5 MB",
-            "epub_bytes": 64649109,
-            "pdf_bytes": 51409040,
-            "text_epub_bytes": 965203,
-            "text_pdf_bytes": 3680887
+            "epub_bytes": 64696714,
+            "pdf_bytes": 51624895,
+            "text_epub_bytes": 965233,
+            "text_pdf_bytes": 3680909
         },
         "illustration_count": 60
     },
