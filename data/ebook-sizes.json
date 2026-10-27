@@ -41,13 +41,13 @@
     },
     "aubrie": {
         "epub": "60.8 MB",
-        "pdf": "48.1 MB",
-        "text_epub": "940 KB",
+        "pdf": "48.2 MB",
+        "text_epub": "941 KB",
         "text_pdf": "3.5 MB",
-        "epub_bytes": 63764405,
-        "pdf_bytes": 50487304,
-        "text_epub_bytes": 962385,
-        "text_pdf_bytes": 3672070
+        "epub_bytes": 63766026,
+        "pdf_bytes": 50492015,
+        "text_epub_bytes": 963906,
+        "text_pdf_bytes": 3676482
     },
     "beth": {
         "epub": "5.3 KB",
@@ -90,14 +90,14 @@
         "text_pdf_bytes": 204249
     },
     "erin": {
-        "epub": "18 KB",
-        "pdf": "56 KB",
-        "text_epub": "18 KB",
-        "text_pdf": "56 KB",
-        "epub_bytes": 18515,
-        "pdf_bytes": 57422,
-        "text_epub_bytes": 18515,
-        "text_pdf_bytes": 57422
+        "epub": "19 KB",
+        "pdf": "70 KB",
+        "text_epub": "19 KB",
+        "text_pdf": "70 KB",
+        "epub_bytes": 19943,
+        "pdf_bytes": 72158,
+        "text_epub_bytes": 19945,
+        "text_pdf_bytes": 72158
     },
     "fractured-prisms": {
         "epub": "8.6 KB",
@@ -272,12 +272,12 @@
     "stardust-engine": {
         "epub": "9.9 MB",
         "pdf": "11 MB",
-        "text_epub": "37 KB",
-        "text_pdf": "133 KB",
-        "epub_bytes": 10376203,
-        "pdf_bytes": 11497545,
-        "text_epub_bytes": 37509,
-        "text_pdf_bytes": 136592
+        "text_epub": "44 KB",
+        "text_pdf": "156 KB",
+        "epub_bytes": 10383809,
+        "pdf_bytes": 11520752,
+        "text_epub_bytes": 45023,
+        "text_pdf_bytes": 159417
     },
     "water-planet": {
         "epub": "5.3 KB",
