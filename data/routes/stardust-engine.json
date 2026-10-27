@@ -12,16 +12,16 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "9.4 KB",
-            "pdf": "25 KB",
-            "text_epub": "9.4 KB",
-            "text_pdf": "25 KB",
-            "epub_bytes": 9661,
-            "pdf_bytes": 25515,
-            "text_epub_bytes": 9662,
-            "text_pdf_bytes": 25515
+            "epub": "9.9 MB",
+            "pdf": "11 MB",
+            "text_epub": "36 KB",
+            "text_pdf": "125 KB",
+            "epub_bytes": 10375459,
+            "pdf_bytes": 11489777,
+            "text_epub_bytes": 36743,
+            "text_pdf_bytes": 128291
         },
-        "illustration_count": 0
+        "illustration_count": 12
     },
     "/stardust-engine": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -41,70 +41,118 @@
         "theme": "raggiesoft-books",
         "filePath": "__ILLUSTRATIONS__"
     },
-    "/stardust-engine/book-1-cpi-the-forgers": {
+    "/stardust-engine/book-1-cpi-electric-color-1986-1989": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 1: CPI & The Forgers",
+        "title": "Book 1: CPI & Electric Color (1986\u20131989)",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|0"
     },
-    "/stardust-engine/book-1-cpi-the-forgers/chapter-1-into-the-unknown": {
+    "/stardust-engine/book-1-cpi-electric-color-1986-1989/chapter-1-progress-street-the-forger-s-call-1986": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1: Into the Unknown",
+        "title": "Chapter 1: Progress Street & The Forger's Call (1986)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/stardust-engine/book-2-the-crash-of-90": {
+    "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1990": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 2: The Crash of '90",
+        "title": "Book 2: Live in Chicago & Mile Marker 98 (1990)",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|1"
     },
-    "/stardust-engine/book-2-the-crash-of-90/chapter-1-the-arrival": {
+    "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1990/chapter-1-mile-marker-98-december-10-1990": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1: The Arrival",
+        "title": "Chapter 1: Mile Marker 98 (December 10, 1990)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
-    "/stardust-engine/book-3-the-friction-catastrophe": {
+    "/stardust-engine/book-3-the-friction-catastrophe-the-warehouse-tapes-1992-1995": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 3: The Friction Catastrophe",
+        "title": "Book 3: The Friction Catastrophe & The Warehouse Tapes (1992\u20131995)",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|2"
     },
-    "/stardust-engine/book-3-the-friction-catastrophe/chapter-1-revelations": {
+    "/stardust-engine/book-3-the-friction-catastrophe-the-warehouse-tapes-1992-1995/chapter-1-the-cage-the-warehouse-tapes-1992-1995": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1: Revelations",
+        "title": "Chapter 1: The Cage & The Warehouse Tapes (1992\u20131995)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|0"
     },
-    "/stardust-engine/book-4-ad-astra": {
+    "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1996-2005": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 4: Ad Astra",
+        "title": "Book 4: Ad Astra, Hard Reset & The Stadium Years (1996\u20132005)",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|3"
     },
-    "/stardust-engine/book-4-ad-astra/chapter-1-escape-velocity-ndash-1995": {
+    "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1996-2005/chapter-1-escape-velocity-ad-astra-main-engine-cutoff-1995-1997": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1: Escape Velocity &ndash; 1995",
+        "title": "Chapter 1: Escape Velocity (Ad Astra) & Main Engine Cutoff (1995\u20131997)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|0"
     },
-    "/stardust-engine/book-4-ad-astra/chapter-1-escape-velocity-ndash-1995/the-magnum-opus-ndash-12-00-pm": {
+    "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1996-2005/chapter-1-escape-velocity-ad-astra-main-engine-cutoff-1995-1997/main-engine-cutoff-the-magnum-opus": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Magnum Opus &ndash; 12:00 PM",
+        "title": "Main Engine Cutoff & The Magnum Opus",
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/p001.md"
     },
-    "/stardust-engine/book-5-the-150m-refusal": {
+    "/stardust-engine/book-5-burnout-hiatus-our-own-frequency-the-150m-refusal-2005-2014": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 5: The $150M Refusal",
+        "title": "Book 5: Burnout Hiatus, Our Own Frequency & The $150M Refusal (2005\u20132014)",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|4"
     },
-    "/stardust-engine/book-5-the-150m-refusal/chapter-1-a-desperate-escape": {
+    "/stardust-engine/book-5-burnout-hiatus-our-own-frequency-the-150m-refusal-2005-2014/chapter-1-our-own-frequency-the-150m-refusal-2008-2014": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1: A Desperate Escape",
+        "title": "Chapter 1: Our Own Frequency & The $150M Refusal (2008\u20132014)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|0"
+    },
+    "/stardust-engine/book-6-reignition-live-at-the-crucible-2015-2016": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 6: Reignition & Live at the Crucible (2015\u20132016)",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|5"
+    },
+    "/stardust-engine/book-6-reignition-live-at-the-crucible-2015-2016/chapter-1-live-at-the-crucible-may-21-2016": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: Live at the Crucible (May 21, 2016)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|0"
+    },
+    "/stardust-engine/book-6-reignition-live-at-the-crucible-2015-2016/chapter-1-live-at-the-crucible-may-21-2016/part-1-protocol-t-10-the-15m-lockout-operation-anvil": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Protocol T-10, The $15M Lockout & Operation Anvil",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c001/p001.md"
+    },
+    "/stardust-engine/book-6-reignition-live-at-the-crucible-2015-2016/chapter-1-live-at-the-crucible-may-21-2016/part-2-act-i-the-anvil-strike-the-marching-forgers": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Act I: The Anvil Strike & The Marching Forgers",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c001/p002.md"
+    },
+    "/stardust-engine/book-6-reignition-live-at-the-crucible-2015-2016/chapter-1-live-at-the-crucible-may-21-2016/part-3-act-ii-the-orbital-crew-not-your-doll-fifty-two-to-nothing": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Act II: The Orbital Crew, Not Your Doll & Fifty-Two to Nothing",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c001/p003.md"
+    },
+    "/stardust-engine/book-6-reignition-live-at-the-crucible-2015-2016/chapter-1-live-at-the-crucible-may-21-2016/part-4-acts-iii-iv-ad-astra-cosmic-tidal-lock-mile-marker-98": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Acts III & IV: Ad Astra, Cosmic Tidal Lock & Mile Marker 98",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c001/p004.md"
+    },
+    "/stardust-engine/book-6-reignition-live-at-the-crucible-2015-2016/chapter-1-live-at-the-crucible-may-21-2016/part-5-acts-v-vi-brother-s-keeper-the-summer-festival-saturday-night-lights": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Acts V & VI: Brother's Keeper, The Summer Festival & Saturday Night Lights",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c001/p005.md"
+    },
+    "/stardust-engine/book-6-reignition-live-at-the-crucible-2015-2016/chapter-1-live-at-the-crucible-may-21-2016/part-6-act-vii-electric-color-lights-out-on-progress-street": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: Act VII: Electric Color & Lights Out on Progress Street",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c001/p006.md"
     }
 }
