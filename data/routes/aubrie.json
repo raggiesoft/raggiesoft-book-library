@@ -14,12 +14,12 @@
         "ebook_sizes": {
             "epub": "61.7 MB",
             "pdf": "49.3 MB",
-            "text_epub": "943 KB",
+            "text_epub": "948 KB",
             "text_pdf": "3.5 MB",
-            "epub_bytes": 64688305,
-            "pdf_bytes": 51645830,
-            "text_epub_bytes": 966112,
-            "text_pdf_bytes": 3684052
+            "epub_bytes": 64692740,
+            "pdf_bytes": 51658229,
+            "text_epub_bytes": 970545,
+            "text_pdf_bytes": 3697418
         },
         "illustration_count": 60
     },
@@ -466,6 +466,12 @@
         "title": "Part 6: The Digital Wall & A Continent of Their Own",
         "theme": "raggiesoft-books",
         "filePath": "e001/c007/p006.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/jordan-s-independence-day-the-fall-break-relay/part-7-mark-s-hometown-trail-the-blue-ridge-regional-aquatic-center-a-neighbor-s-wave-on-the-huckleberry-trail": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Mark's Hometown Trail, The Blue Ridge Regional Aquatic Center & A Neighbor's Wave on the Huckleberry Trail",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c007/p007.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-thanksgiving-exodus-sanctuary-on-geneva-street": {
         "view": "pages/raggiesoft-books/books/viewer",

@@ -12,14 +12,14 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "492 KB",
+            "epub": "496 KB",
             "pdf": "1.4 MB",
-            "text_epub": "492 KB",
+            "text_epub": "496 KB",
             "text_pdf": "1.4 MB",
-            "epub_bytes": 503837,
-            "pdf_bytes": 1455612,
-            "text_epub_bytes": 503836,
-            "text_pdf_bytes": 1455612
+            "epub_bytes": 507402,
+            "pdf_bytes": 1469151,
+            "text_epub_bytes": 507398,
+            "text_pdf_bytes": 1469151
         },
         "illustration_count": 0
     },
@@ -731,10 +731,16 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|6"
     },
-    "/paige/system-integration/the-closed-circuit/the-intruder-the-exception": {
+    "/paige/system-integration/the-closed-circuit/part-1-the-intruder-the-exception": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Intruder & The Exception",
+        "title": "Part 1: The Intruder & The Exception",
         "theme": "raggiesoft-books",
         "filePath": "e005/c007/p001.md"
+    },
+    "/paige/system-integration/the-closed-circuit/part-2-the-thermal-hydro-protocol-the-blue-ridge-regional-aquatic-center-the-huckleberry-trail": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Thermal Hydro-Protocol: The Blue Ridge Regional Aquatic Center & The Huckleberry Trail",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c007/p002.md"
     }
 }
