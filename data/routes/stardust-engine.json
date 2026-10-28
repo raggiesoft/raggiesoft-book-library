@@ -12,16 +12,16 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "12.8 MB",
-            "pdf": "14.3 MB",
-            "text_epub": "127 KB",
-            "text_pdf": "393 KB",
-            "epub_bytes": 13399513,
-            "pdf_bytes": 14970369,
-            "text_epub_bytes": 130444,
-            "text_pdf_bytes": 402400
+            "epub": "13.8 MB",
+            "pdf": "15.4 MB",
+            "text_epub": "128 KB",
+            "text_pdf": "394 KB",
+            "epub_bytes": 14494018,
+            "pdf_bytes": 16098420,
+            "text_epub_bytes": 130653,
+            "text_pdf_bytes": 403891
         },
-        "illustration_count": 19
+        "illustration_count": 20
     },
     "/stardust-engine": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -245,57 +245,57 @@
         "theme": "raggiesoft-books",
         "filePath": "e006/c001/p008.md"
     },
-    "/stardust-engine/book-7-the-nine-figure-refusal-the-transfer-protocol-september-2018": {
+    "/stardust-engine/book-7-the-nine-figure-refusal-the-jessica-miller-center-2018-2019": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 7: The Nine-Figure Refusal & The Transfer Protocol (September 2018)",
+        "title": "Book 7: The Nine-Figure Refusal & The Jessica Miller Center (2018\u20132019)",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|6"
     },
-    "/stardust-engine/book-7-the-nine-figure-refusal-the-transfer-protocol-september-2018/chapter-1-the-approach-vector-september-13-2018": {
+    "/stardust-engine/book-7-the-nine-figure-refusal-the-jessica-miller-center-2018-2019/chapter-1-the-approach-vector-september-13-2018": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 1: The Approach Vector (September 13, 2018)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|0"
     },
-    "/stardust-engine/book-7-the-nine-figure-refusal-the-transfer-protocol-september-2018/chapter-1-the-approach-vector-september-13-2018/the-approach-vector-september-13-2018": {
+    "/stardust-engine/book-7-the-nine-figure-refusal-the-jessica-miller-center-2018-2019/chapter-1-the-approach-vector-september-13-2018/the-approach-vector-september-13-2018": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Approach Vector (September 13, 2018)",
         "theme": "raggiesoft-books",
         "filePath": "e007/c001/p001.md"
     },
-    "/stardust-engine/book-7-the-nine-figure-refusal-the-transfer-protocol-september-2018/chapter-2-omni-global-media-clause-88-the-twin-protocol-september-14-19-2018": {
+    "/stardust-engine/book-7-the-nine-figure-refusal-the-jessica-miller-center-2018-2019/chapter-2-omni-global-media-clause-88-the-twin-protocol-september-14-19-2018": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: Omni-Global Media, Clause 88 & The Twin Protocol (September 14\u201319, 2018)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|1"
     },
-    "/stardust-engine/book-7-the-nine-figure-refusal-the-transfer-protocol-september-2018/chapter-2-omni-global-media-clause-88-the-twin-protocol-september-14-19-2018/omni-global-media-clause-88-the-twin-protocol-september-14-19-2018": {
+    "/stardust-engine/book-7-the-nine-figure-refusal-the-jessica-miller-center-2018-2019/chapter-2-omni-global-media-clause-88-the-twin-protocol-september-14-19-2018/omni-global-media-clause-88-the-twin-protocol-september-14-19-2018": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Omni-Global Media, Clause 88 & The Twin Protocol (September 14\u201319, 2018)",
         "theme": "raggiesoft-books",
         "filePath": "e007/c002/p001.md"
     },
-    "/stardust-engine/book-7-the-nine-figure-refusal-the-transfer-protocol-september-2018/chapter-3-the-summit-the-retrofit-the-sting-operation-september-14-25-2018": {
+    "/stardust-engine/book-7-the-nine-figure-refusal-the-jessica-miller-center-2018-2019/chapter-3-the-summit-the-retrofit-the-sting-operation-september-14-25-2018": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 3: The Summit, The Retrofit & The Sting Operation (September 14\u201325, 2018)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|2"
     },
-    "/stardust-engine/book-7-the-nine-figure-refusal-the-transfer-protocol-september-2018/chapter-3-the-summit-the-retrofit-the-sting-operation-september-14-25-2018/the-summit-the-retrofit-the-sting-operation-september-14-25-2018": {
+    "/stardust-engine/book-7-the-nine-figure-refusal-the-jessica-miller-center-2018-2019/chapter-3-the-summit-the-retrofit-the-sting-operation-september-14-25-2018/the-summit-the-retrofit-the-sting-operation-september-14-25-2018": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Summit, The Retrofit & The Sting Operation (September 14\u201325, 2018)",
         "theme": "raggiesoft-books",
         "filePath": "e007/c003/p001.md"
     },
-    "/stardust-engine/book-7-the-nine-figure-refusal-the-transfer-protocol-september-2018/chapter-4-the-transfer-protocol-september-27-2018": {
+    "/stardust-engine/book-7-the-nine-figure-refusal-the-jessica-miller-center-2018-2019/chapter-4-the-jessica-miller-center-the-frost-interview-december-2018-february-2019": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 4: The Transfer Protocol (September 27, 2018)",
+        "title": "Chapter 4: The Jessica Miller Center & The Frost Interview (December 2018\u2013February 2019)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|3"
     },
-    "/stardust-engine/book-7-the-nine-figure-refusal-the-transfer-protocol-september-2018/chapter-4-the-transfer-protocol-september-27-2018/the-transfer-protocol-september-27-2018": {
+    "/stardust-engine/book-7-the-nine-figure-refusal-the-jessica-miller-center-2018-2019/chapter-4-the-jessica-miller-center-the-frost-interview-december-2018-february-2019/the-jessica-miller-center-the-frost-interview-december-2018-february-2019": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Transfer Protocol (September 27, 2018)",
+        "title": "The Jessica Miller Center & The Frost Interview (December 2018\u2013February 2019)",
         "theme": "raggiesoft-books",
         "filePath": "e007/c004/p001.md"
     }
