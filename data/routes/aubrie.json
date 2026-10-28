@@ -14,12 +14,12 @@
         "ebook_sizes": {
             "epub": "61.7 MB",
             "pdf": "49.3 MB",
-            "text_epub": "948 KB",
+            "text_epub": "953 KB",
             "text_pdf": "3.5 MB",
-            "epub_bytes": 64692746,
-            "pdf_bytes": 51658077,
-            "text_epub_bytes": 970519,
-            "text_pdf_bytes": 3697595
+            "epub_bytes": 64698134,
+            "pdf_bytes": 51675195,
+            "text_epub_bytes": 975857,
+            "text_pdf_bytes": 3714593
         },
         "illustration_count": 60
     },
@@ -1420,6 +1420,12 @@
         "title": "Part 7: Electric Color (Live at the Crucible) & The Ride Home",
         "theme": "raggiesoft-books",
         "filePath": "e007/c004/p007.md"
+    },
+    "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-8-the-cove-95-5-f-two-wheelchairs-at-the-blue-ridge-regional-aquatic-center": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Cove (95.5\u00b0F): Two Wheelchairs at the Blue Ridge Regional Aquatic Center",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c004/p008.md"
     },
     "/aubrie/summer-2016": {
         "view": "pages/raggiesoft-books/books/viewer",
