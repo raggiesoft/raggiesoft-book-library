@@ -14,12 +14,12 @@
         "ebook_sizes": {
             "epub": "13.8 MB",
             "pdf": "15.4 MB",
-            "text_epub": "138 KB",
-            "text_pdf": "425 KB",
-            "epub_bytes": 14504691,
-            "pdf_bytes": 16128874,
-            "text_epub_bytes": 141244,
-            "text_pdf_bytes": 435522
+            "text_epub": "143 KB",
+            "text_pdf": "440 KB",
+            "epub_bytes": 14510110,
+            "pdf_bytes": 16143837,
+            "text_epub_bytes": 146570,
+            "text_pdf_bytes": 450666
         },
         "illustration_count": 20
     },
@@ -281,9 +281,9 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|2"
     },
-    "/stardust-engine/book-7-the-nine-figure-refusal-the-jessica-miller-center-2018-2019/chapter-3-the-summit-the-retrofit-the-sting-operation-september-14-25-2018/the-summit-the-retrofit-the-sting-operation-september-14-25-2018": {
+    "/stardust-engine/book-7-the-nine-figure-refusal-the-jessica-miller-center-2018-2019/chapter-3-the-summit-the-retrofit-the-sting-operation-september-14-25-2018/the-summit-the-retrofit-the-sting-the-arts-sleeper-problem-september-14-27-2018": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Summit, The Retrofit & The Sting Operation (September 14\u201325, 2018)",
+        "title": "The Summit, The Retrofit, The Sting & The ARTS Sleeper Problem (September 14\u201327, 2018)",
         "theme": "raggiesoft-books",
         "filePath": "e007/c003/p001.md"
     },
