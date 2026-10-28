@@ -12,14 +12,14 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "10.8 MB",
-            "pdf": "12.2 MB",
-            "text_epub": "76 KB",
-            "text_pdf": "246 KB",
-            "epub_bytes": 11336230,
-            "pdf_bytes": 12758285,
-            "text_epub_bytes": 77386,
-            "text_pdf_bytes": 252358
+            "epub": "10.9 MB",
+            "pdf": "12.3 MB",
+            "text_epub": "127 KB",
+            "text_pdf": "391 KB",
+            "epub_bytes": 11388596,
+            "pdf_bytes": 12906682,
+            "text_epub_bytes": 129750,
+            "text_pdf_bytes": 400625
         },
         "illustration_count": 13
     },
@@ -41,23 +41,47 @@
         "theme": "raggiesoft-books",
         "filePath": "__ILLUSTRATIONS__"
     },
-    "/stardust-engine/book-1-cpi-electric-color-1986-1989": {
+    "/stardust-engine/book-1-analog-heart-teenager-in-the-valley-1978-1989": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 1: CPI & Electric Color (1986\u20131989)",
+        "title": "Book 1: Analog Heart & Teenager in the Valley (1978\u20131989)",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|0"
     },
-    "/stardust-engine/book-1-cpi-electric-color-1986-1989/chapter-1-progress-street-the-forger-s-call-1986": {
+    "/stardust-engine/book-1-analog-heart-teenager-in-the-valley-1978-1989/chapter-1-the-noise-floor-september-1978": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1: Progress Street & The Forger's Call (1986)",
+        "title": "Chapter 1: The Noise Floor (September 1978)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/stardust-engine/book-1-cpi-electric-color-1986-1989/chapter-1-progress-street-the-forger-s-call-1986/progress-street-ignition-the-apex-signing-1986-1989": {
+    "/stardust-engine/book-1-analog-heart-teenager-in-the-valley-1978-1989/chapter-1-the-noise-floor-september-1978/high-fidelity-safe-harbor-the-circuit": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Progress Street, 'Ignition,' & The Apex Signing (1986\u20131989)",
+        "title": "High Fidelity, Safe Harbor & The Circuit",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p001.md"
+    },
+    "/stardust-engine/book-1-analog-heart-teenager-in-the-valley-1978-1989/chapter-2-the-analog-years-the-sonic-signature-1979-1985": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Analog Years & The Sonic Signature (1979\u20131985)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|1"
+    },
+    "/stardust-engine/book-1-analog-heart-teenager-in-the-valley-1978-1989/chapter-2-the-analog-years-the-sonic-signature-1979-1985/the-analog-years-the-sonic-signature-1979-1985": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Analog Years & The Sonic Signature (1979\u20131985)",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c002/p001.md"
+    },
+    "/stardust-engine/book-1-analog-heart-teenager-in-the-valley-1978-1989/chapter-3-ignition-the-1-00-cross-license-the-apex-years-1986-1989": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: 'Ignition,' The $1.00 Cross-License & The Apex Years (1986\u20131989)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|2"
+    },
+    "/stardust-engine/book-1-analog-heart-teenager-in-the-valley-1978-1989/chapter-3-ignition-the-1-00-cross-license-the-apex-years-1986-1989/ignition-the-1-00-cross-license-the-apex-years-1986-1989": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "'Ignition,' The $1.00 Cross-License & The Apex Years (1986\u20131989)",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c003/p001.md"
     },
     "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1990": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -77,23 +101,35 @@
         "theme": "raggiesoft-books",
         "filePath": "e002/c001/p001.md"
     },
-    "/stardust-engine/book-3-the-friction-catastrophe-the-warehouse-tapes-1992-1995": {
+    "/stardust-engine/book-3-the-friction-narrative-the-warehouse-tapes-1992-1995": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 3: The Friction Catastrophe & The Warehouse Tapes (1992\u20131995)",
+        "title": "Book 3: The Friction Narrative & The Warehouse Tapes (1992\u20131995)",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|2"
     },
-    "/stardust-engine/book-3-the-friction-catastrophe-the-warehouse-tapes-1992-1995/chapter-1-the-cage-the-warehouse-tapes-1992-1995": {
+    "/stardust-engine/book-3-the-friction-narrative-the-warehouse-tapes-1992-1995/chapter-1-the-beverly-hills-mansion-the-hostage-photo-september-1992": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1: The Cage & The Warehouse Tapes (1992\u20131995)",
+        "title": "Chapter 1: The Beverly Hills Mansion & The Hostage Photo (September 1992)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|0"
     },
-    "/stardust-engine/book-3-the-friction-catastrophe-the-warehouse-tapes-1992-1995/chapter-1-the-cage-the-warehouse-tapes-1992-1995/the-beverly-hills-mansion-trap-the-friction-catastrophe-the-warehouse-tapes-1992-1995": {
+    "/stardust-engine/book-3-the-friction-narrative-the-warehouse-tapes-1992-1995/chapter-1-the-beverly-hills-mansion-the-hostage-photo-september-1992/the-beverly-hills-mansion-the-hostage-photo-september-1992": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Beverly Hills Mansion Trap, The Friction Catastrophe & The Warehouse Tapes (1992\u20131995)",
+        "title": "The Beverly Hills Mansion & The Hostage Photo (September 1992)",
         "theme": "raggiesoft-books",
         "filePath": "e003/c001/p001.md"
+    },
+    "/stardust-engine/book-3-the-friction-narrative-the-warehouse-tapes-1992-1995/chapter-2-the-subpoena-the-felony-trial-the-wilderness-1992-1995": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Subpoena, The Felony Trial & The Wilderness (1992\u20131995)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|1"
+    },
+    "/stardust-engine/book-3-the-friction-narrative-the-warehouse-tapes-1992-1995/chapter-2-the-subpoena-the-felony-trial-the-wilderness-1992-1995/the-subpoena-the-felony-trial-the-wilderness-1992-1995": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Subpoena, The Felony Trial & The Wilderness (1992\u20131995)",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c002/p001.md"
     },
     "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1996-2005": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -208,5 +244,59 @@
         "title": "Part 8: The Morning After: 95.5\u00b0F at the Blue Ridge Regional Aquatic Center",
         "theme": "raggiesoft-books",
         "filePath": "e006/c001/p008.md"
+    },
+    "/stardust-engine/book-7-the-nine-figure-refusal-the-transfer-protocol-september-2018": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 7: The Nine-Figure Refusal & The Transfer Protocol (September 2018)",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|6"
+    },
+    "/stardust-engine/book-7-the-nine-figure-refusal-the-transfer-protocol-september-2018/chapter-1-the-approach-vector-september-13-2018": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: The Approach Vector (September 13, 2018)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|0"
+    },
+    "/stardust-engine/book-7-the-nine-figure-refusal-the-transfer-protocol-september-2018/chapter-1-the-approach-vector-september-13-2018/the-approach-vector-september-13-2018": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Approach Vector (September 13, 2018)",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c001/p001.md"
+    },
+    "/stardust-engine/book-7-the-nine-figure-refusal-the-transfer-protocol-september-2018/chapter-2-omni-global-media-clause-88-the-twin-protocol-september-14-19-2018": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: Omni-Global Media, Clause 88 & The Twin Protocol (September 14\u201319, 2018)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|1"
+    },
+    "/stardust-engine/book-7-the-nine-figure-refusal-the-transfer-protocol-september-2018/chapter-2-omni-global-media-clause-88-the-twin-protocol-september-14-19-2018/omni-global-media-clause-88-the-twin-protocol-september-14-19-2018": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Omni-Global Media, Clause 88 & The Twin Protocol (September 14\u201319, 2018)",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c002/p001.md"
+    },
+    "/stardust-engine/book-7-the-nine-figure-refusal-the-transfer-protocol-september-2018/chapter-3-the-summit-the-retrofit-the-sting-operation-september-14-25-2018": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The Summit, The Retrofit & The Sting Operation (September 14\u201325, 2018)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|2"
+    },
+    "/stardust-engine/book-7-the-nine-figure-refusal-the-transfer-protocol-september-2018/chapter-3-the-summit-the-retrofit-the-sting-operation-september-14-25-2018/the-summit-the-retrofit-the-sting-operation-september-14-25-2018": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Summit, The Retrofit & The Sting Operation (September 14\u201325, 2018)",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c003/p001.md"
+    },
+    "/stardust-engine/book-7-the-nine-figure-refusal-the-transfer-protocol-september-2018/chapter-4-the-transfer-protocol-september-27-2018": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4: The Transfer Protocol (September 27, 2018)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|3"
+    },
+    "/stardust-engine/book-7-the-nine-figure-refusal-the-transfer-protocol-september-2018/chapter-4-the-transfer-protocol-september-27-2018/the-transfer-protocol-september-27-2018": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Transfer Protocol (September 27, 2018)",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c004/p001.md"
     }
 }

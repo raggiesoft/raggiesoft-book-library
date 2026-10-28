@@ -44,10 +44,10 @@
         "pdf": "49.3 MB",
         "text_epub": "969 KB",
         "text_pdf": "3.6 MB",
-        "epub_bytes": 64714915,
-        "pdf_bytes": 51728785,
-        "text_epub_bytes": 992468,
-        "text_pdf_bytes": 3768342
+        "epub_bytes": 64714921,
+        "pdf_bytes": 51728805,
+        "text_epub_bytes": 992475,
+        "text_pdf_bytes": 3768356
     },
     "beth": {
         "epub": "5.3 KB",
@@ -270,14 +270,14 @@
         "text_pdf_bytes": 194611
     },
     "stardust-engine": {
-        "epub": "10.8 MB",
-        "pdf": "12.2 MB",
-        "text_epub": "76 KB",
-        "text_pdf": "246 KB",
-        "epub_bytes": 11336230,
-        "pdf_bytes": 12758285,
-        "text_epub_bytes": 77386,
-        "text_pdf_bytes": 252358
+        "epub": "10.9 MB",
+        "pdf": "12.3 MB",
+        "text_epub": "127 KB",
+        "text_pdf": "391 KB",
+        "epub_bytes": 11388596,
+        "pdf_bytes": 12906682,
+        "text_epub_bytes": 129750,
+        "text_pdf_bytes": 400625
     },
     "water-planet": {
         "epub": "5.3 KB",
