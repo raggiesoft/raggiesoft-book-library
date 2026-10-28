@@ -14,12 +14,12 @@
         "ebook_sizes": {
             "epub": "61.7 MB",
             "pdf": "49.3 MB",
-            "text_epub": "953 KB",
-            "text_pdf": "3.5 MB",
-            "epub_bytes": 64698135,
-            "pdf_bytes": 51675220,
-            "text_epub_bytes": 975861,
-            "text_pdf_bytes": 3714634
+            "text_epub": "966 KB",
+            "text_pdf": "3.6 MB",
+            "epub_bytes": 64711299,
+            "pdf_bytes": 51717537,
+            "text_epub_bytes": 988909,
+            "text_pdf_bytes": 3756487
         },
         "illustration_count": 60
     },
@@ -376,6 +376,12 @@
         "title": "Part 7: The Nightly Pact & The First Night of the Pact",
         "theme": "raggiesoft-books",
         "filePath": "e001/c005/p007.md"
+    },
+    "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict-the-nightly-pact/part-8-the-standing-man-s-raincoat-a-manual-chair-in-the-storm": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 8: The Standing Man's Raincoat & A Manual Chair in the Storm",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c005/p008.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/homecoming-the-safe-harbor": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -827,17 +833,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|5"
     },
-    "/aubrie/spring-semester-2015/the-s-s-freedom-closing-the-old-lady/part-1-three-hundred-and-fifty-pounds-of-freedom-stripping-room-214": {
+    "/aubrie/spring-semester-2015/the-s-s-freedom-closing-the-old-lady/part-1-three-hundred-and-fifty-pounds-of-freedom-maiden-voyage-of-the-s-s-freedom": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Three Hundred and Fifty Pounds of Freedom & Stripping Room 214",
+        "title": "Part 1: Three Hundred and Fifty Pounds of Freedom & Maiden Voyage of the S.S. Freedom",
         "theme": "raggiesoft-books",
         "filePath": "e003/c006/p001.md"
     },
-    "/aubrie/spring-semester-2015/the-s-s-freedom-closing-the-old-lady/part-2-a-long-hug-in-the-hallway-ready-for-the-world": {
+    "/aubrie/spring-semester-2015/the-s-s-freedom-closing-the-old-lady/part-2-wet-weather-rigging-piloting-the-s-s-freedom-through-the-storm": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: A Long Hug in the Hallway & Ready for the World",
+        "title": "Part 2: Wet-Weather Rigging & Piloting the S.S. Freedom Through the Storm",
         "theme": "raggiesoft-books",
         "filePath": "e003/c006/p002.md"
+    },
+    "/aubrie/spring-semester-2015/the-s-s-freedom-closing-the-old-lady/part-3-stripping-room-214-a-long-hug-in-the-hallway-ready-for-the-world": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Stripping Room 214, A Long Hug in the Hallway & Ready for the World",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c006/p003.md"
     },
     "/aubrie/jordan-s-world-trek": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1138,6 +1150,12 @@
         "title": "Part 5: Home on Geneva Street",
         "theme": "raggiesoft-books",
         "filePath": "e006/c001/p005.md"
+    },
+    "/aubrie/fall-semester-2015/the-5-45-am-problem-the-birth-of-fin-home-on-geneva-street/part-6-the-keystone-bridge-in-the-rain-route-1-home-to-geneva-street": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The Keystone Bridge in the Rain & Route 1 Home to Geneva Street",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c001/p006.md"
     },
     "/aubrie/fall-semester-2015/the-paper-invasion-notice-cp87a-fall-break-2015": {
         "view": "pages/raggiesoft-books/books/viewer",

@@ -14,12 +14,12 @@
         "ebook_sizes": {
             "epub": "10.8 MB",
             "pdf": "12.1 MB",
-            "text_epub": "58 KB",
-            "text_pdf": "199 KB",
-            "epub_bytes": 11318240,
-            "pdf_bytes": 12709335,
-            "text_epub_bytes": 59403,
-            "text_pdf_bytes": 203457
+            "text_epub": "61 KB",
+            "text_pdf": "209 KB",
+            "epub_bytes": 11321466,
+            "pdf_bytes": 12719388,
+            "text_epub_bytes": 62622,
+            "text_pdf_bytes": 213860
         },
         "illustration_count": 13
     },
@@ -119,11 +119,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|0"
     },
-    "/stardust-engine/book-5-burnout-hiatus-our-own-frequency-neon-on-the-huckleberry-trail-2005-2014/chapter-1-our-own-frequency-the-blue-ridge-regional-aquatic-center-neon-on-the-huckleberry-trail-2008-2014/the-blue-ridge-regional-aquatic-center-the-150m-refusal-the-birth-of-neon-on-the-huckleberry-trail": {
+    "/stardust-engine/book-5-burnout-hiatus-our-own-frequency-neon-on-the-huckleberry-trail-2005-2014/chapter-1-our-own-frequency-the-blue-ridge-regional-aquatic-center-neon-on-the-huckleberry-trail-2008-2014/part-1-the-blue-ridge-regional-aquatic-center-the-150m-refusal-the-birth-of-neon-on-the-huckleberry-trail": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Blue Ridge Regional Aquatic Center, The $150M Refusal & The Birth of Neon on the Huckleberry Trail",
+        "title": "Part 1: The Blue Ridge Regional Aquatic Center, The $150M Refusal & The Birth of Neon on the Huckleberry Trail",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/p001.md"
+    },
+    "/stardust-engine/book-5-burnout-hiatus-our-own-frequency-neon-on-the-huckleberry-trail-2005-2014/chapter-1-our-own-frequency-the-blue-ridge-regional-aquatic-center-neon-on-the-huckleberry-trail-2008-2014/part-2-forty-one-degrees-in-the-rain-the-rlfd30-kneeling-ramp-ninety-five-point-five-in-the-cove": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Forty-One Degrees in the Rain, The RLFD30 Kneeling Ramp & Ninety-Five Point Five in The Cove",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c001/p002.md"
     },
     "/stardust-engine/book-6-reignition-live-at-the-crucible-2015-2016": {
         "view": "pages/raggiesoft-books/books/viewer",
