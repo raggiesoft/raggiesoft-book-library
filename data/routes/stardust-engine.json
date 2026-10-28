@@ -15,11 +15,11 @@
             "epub": "10.8 MB",
             "pdf": "12.1 MB",
             "text_epub": "46 KB",
-            "text_pdf": "161 KB",
-            "epub_bytes": 11315132,
-            "pdf_bytes": 12655988,
-            "text_epub_bytes": 46973,
-            "text_pdf_bytes": 164672
+            "text_pdf": "164 KB",
+            "epub_bytes": 11306213,
+            "pdf_bytes": 12673507,
+            "text_epub_bytes": 47378,
+            "text_pdf_bytes": 167603
         },
         "illustration_count": 13
     },
@@ -155,16 +155,22 @@
         "theme": "raggiesoft-books",
         "filePath": "e006/c001/p004.md"
     },
-    "/stardust-engine/book-6-reignition-live-at-the-crucible-2015-2016/chapter-1-live-at-the-crucible-may-21-2016/part-5-acts-v-vi-brother-s-keeper-the-summer-festival-saturday-night-lights": {
+    "/stardust-engine/book-6-reignition-live-at-the-crucible-2015-2016/chapter-1-live-at-the-crucible-may-21-2016/part-5-act-v-our-own-frequency-brother-s-keeper-the-summer-festival": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: Acts V & VI: Brother's Keeper, The Summer Festival & Saturday Night Lights",
+        "title": "Part 5: Act V: Our Own Frequency, Brother's Keeper & The Summer Festival",
         "theme": "raggiesoft-books",
         "filePath": "e006/c001/p005.md"
     },
-    "/stardust-engine/book-6-reignition-live-at-the-crucible-2015-2016/chapter-1-live-at-the-crucible-may-21-2016/part-6-act-vii-electric-color-lights-out-on-progress-street": {
+    "/stardust-engine/book-6-reignition-live-at-the-crucible-2015-2016/chapter-1-live-at-the-crucible-may-21-2016/part-6-act-vi-neon-on-the-huckleberry-trail-saturday-night-lights": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: Act VII: Electric Color & Lights Out on Progress Street",
+        "title": "Part 6: Act VI: Neon on the Huckleberry Trail & Saturday Night Lights",
         "theme": "raggiesoft-books",
         "filePath": "e006/c001/p006.md"
+    },
+    "/stardust-engine/book-6-reignition-live-at-the-crucible-2015-2016/chapter-1-live-at-the-crucible-may-21-2016/part-7-act-vii-electric-color-lights-out-on-progress-street": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Act VII: Electric Color & Lights Out on Progress Street",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c001/p007.md"
     }
 }

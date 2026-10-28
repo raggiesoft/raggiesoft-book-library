@@ -13,13 +13,13 @@
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
             "epub": "61.7 MB",
-            "pdf": "49.2 MB",
+            "pdf": "49.3 MB",
             "text_epub": "943 KB",
             "text_pdf": "3.5 MB",
-            "epub_bytes": 64696714,
-            "pdf_bytes": 51624895,
-            "text_epub_bytes": 965233,
-            "text_pdf_bytes": 3680909
+            "epub_bytes": 64687943,
+            "pdf_bytes": 51644420,
+            "text_epub_bytes": 965800,
+            "text_pdf_bytes": 3683209
         },
         "illustration_count": 60
     },
@@ -1397,17 +1397,23 @@
         "theme": "raggiesoft-books",
         "filePath": "e007/c004/p004.md"
     },
-    "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-5-brother-s-keeper-the-summer-festival-announcement-saturday-night-lights": {
+    "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-5-our-own-frequency-brother-s-keeper-the-summer-festival-announcement": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: Brother's Keeper, The Summer Festival Announcement, & Saturday Night Lights",
+        "title": "Part 5: Our Own Frequency, Brother's Keeper & The Summer Festival Announcement",
         "theme": "raggiesoft-books",
         "filePath": "e007/c004/p005.md"
     },
-    "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-6-electric-color-live-at-the-crucible-the-ride-home": {
+    "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-6-neon-on-the-huckleberry-trail-saturday-night-lights-my-anchor-holds": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: Electric Color (Live at the Crucible) & The Ride Home",
+        "title": "Part 6: Neon on the Huckleberry Trail, Saturday Night Lights & My Anchor Holds",
         "theme": "raggiesoft-books",
         "filePath": "e007/c004/p006.md"
+    },
+    "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-7-electric-color-live-at-the-crucible-the-ride-home": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Electric Color (Live at the Crucible) & The Ride Home",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c004/p007.md"
     },
     "/aubrie/summer-2016": {
         "view": "pages/raggiesoft-books/books/viewer",
