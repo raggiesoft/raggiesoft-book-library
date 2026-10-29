@@ -42,12 +42,12 @@
     "aubrie": {
         "epub": "66 MB",
         "pdf": "53.5 MB",
-        "text_epub": "1000 KB",
+        "text_epub": "1001 KB",
         "text_pdf": "3.7 MB",
-        "epub_bytes": 69241099,
-        "pdf_bytes": 56088317,
-        "text_epub_bytes": 1023797,
-        "text_pdf_bytes": 3850960
+        "epub_bytes": 69241961,
+        "pdf_bytes": 56100692,
+        "text_epub_bytes": 1024667,
+        "text_pdf_bytes": 3863284
     },
     "beth": {
         "epub": "5.3 KB",
