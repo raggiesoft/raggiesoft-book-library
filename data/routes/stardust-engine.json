@@ -14,12 +14,12 @@
         "ebook_sizes": {
             "epub": "14.7 MB",
             "pdf": "16.3 MB",
-            "text_epub": "145 KB",
-            "text_pdf": "447 KB",
-            "epub_bytes": 15439440,
-            "pdf_bytes": 17081770,
-            "text_epub_bytes": 148844,
-            "text_pdf_bytes": 457619
+            "text_epub": "154 KB",
+            "text_pdf": "472 KB",
+            "epub_bytes": 15448454,
+            "pdf_bytes": 17108053,
+            "text_epub_bytes": 157857,
+            "text_pdf_bytes": 482866
         },
         "illustration_count": 21
     },
@@ -89,17 +89,29 @@
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|1"
     },
-    "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1990/chapter-1-mile-marker-98-december-10-1990": {
+    "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1990/chapter-1-live-in-chicago-the-thirty-minute-box-the-backstage-vow-october-12-1990": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1: Mile Marker 98 (December 10, 1990)",
+        "title": "Chapter 1: Live in Chicago \u2014 The Thirty-Minute Box & The Backstage Vow (October 12, 1990)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
-    "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1990/chapter-1-mile-marker-98-december-10-1990/mile-marker-98-protocol-t-10-1990": {
+    "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1990/chapter-1-live-in-chicago-the-thirty-minute-box-the-backstage-vow-october-12-1990/live-in-chicago-the-thirty-minute-box-the-backstage-vow-1990": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Live in Chicago: The Thirty-Minute Box & The Backstage Vow (1990)",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c001/p001.md"
+    },
+    "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1990/chapter-2-mile-marker-98-protocol-t-10-december-10-1990": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: Mile Marker 98 & Protocol T-10 (December 10, 1990)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|1"
+    },
+    "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1990/chapter-2-mile-marker-98-protocol-t-10-december-10-1990/mile-marker-98-protocol-t-10-1990": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Mile Marker 98 & Protocol T-10 (1990)",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/p001.md"
+        "filePath": "e002/c002/p001.md"
     },
     "/stardust-engine/book-3-the-friction-narrative-the-warehouse-tapes-1992-1995": {
         "view": "pages/raggiesoft-books/books/viewer",
