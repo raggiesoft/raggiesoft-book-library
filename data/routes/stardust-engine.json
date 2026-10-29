@@ -14,12 +14,12 @@
         "ebook_sizes": {
             "epub": "14.7 MB",
             "pdf": "16.3 MB",
-            "text_epub": "154 KB",
-            "text_pdf": "472 KB",
-            "epub_bytes": 15448454,
-            "pdf_bytes": 17108053,
-            "text_epub_bytes": 157857,
-            "text_pdf_bytes": 482866
+            "text_epub": "156 KB",
+            "text_pdf": "476 KB",
+            "epub_bytes": 15450091,
+            "pdf_bytes": 17112021,
+            "text_epub_bytes": 159492,
+            "text_pdf_bytes": 487820
         },
         "illustration_count": 21
     },
@@ -83,31 +83,31 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c003/p001.md"
     },
-    "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1990": {
+    "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1989-1990": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 2: Live in Chicago & Mile Marker 98 (1990)",
+        "title": "Book 2: Live in Chicago & Mile Marker 98 (1989\u20131990)",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|1"
     },
-    "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1990/chapter-1-live-in-chicago-the-thirty-minute-box-the-backstage-vow-october-12-1990": {
+    "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1989-1990/chapter-1-live-in-chicago-the-thirty-minute-box-the-backstage-vow-october-14-1989": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1: Live in Chicago \u2014 The Thirty-Minute Box & The Backstage Vow (October 12, 1990)",
+        "title": "Chapter 1: Live in Chicago \u2014 The Thirty-Minute Box & The Backstage Vow (October 14, 1989)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
-    "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1990/chapter-1-live-in-chicago-the-thirty-minute-box-the-backstage-vow-october-12-1990/live-in-chicago-the-thirty-minute-box-the-backstage-vow-1990": {
+    "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1989-1990/chapter-1-live-in-chicago-the-thirty-minute-box-the-backstage-vow-october-14-1989/the-thirty-minute-box-the-onstage-anchor-the-backstage-vow": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Live in Chicago: The Thirty-Minute Box & The Backstage Vow (1990)",
+        "title": "The Thirty-Minute Box, The Onstage Anchor & The Backstage Vow",
         "theme": "raggiesoft-books",
         "filePath": "e002/c001/p001.md"
     },
-    "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1990/chapter-2-mile-marker-98-protocol-t-10-december-10-1990": {
+    "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1989-1990/chapter-2-mile-marker-98-protocol-t-10-december-10-1990": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: Mile Marker 98 & Protocol T-10 (December 10, 1990)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|1"
     },
-    "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1990/chapter-2-mile-marker-98-protocol-t-10-december-10-1990/mile-marker-98-protocol-t-10-1990": {
+    "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1989-1990/chapter-2-mile-marker-98-protocol-t-10-december-10-1990/mile-marker-98-protocol-t-10-1990": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Mile Marker 98 & Protocol T-10 (1990)",
         "theme": "raggiesoft-books",
