@@ -12,16 +12,16 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "64.8 MB",
-            "pdf": "52.8 MB",
-            "text_epub": "970 KB",
-            "text_pdf": "3.6 MB",
-            "epub_bytes": 67997075,
-            "pdf_bytes": 55363289,
-            "text_epub_bytes": 992961,
-            "text_pdf_bytes": 3769437
+            "epub": "66 MB",
+            "pdf": "53.5 MB",
+            "text_epub": "999 KB",
+            "text_pdf": "3.7 MB",
+            "epub_bytes": 69224527,
+            "pdf_bytes": 56076524,
+            "text_epub_bytes": 1023387,
+            "text_pdf_bytes": 3849762
         },
-        "illustration_count": 65
+        "illustration_count": 72
     },
     "/aubrie": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -41,1444 +41,1510 @@
         "theme": "raggiesoft-books",
         "filePath": "__ILLUSTRATIONS__"
     },
+    "/aubrie/the-eleventh-child-the-virginia-beach-years": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Eleventh Child, The Virginia Beach Years",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|0"
+    },
+    "/aubrie/the-eleventh-child-the-virginia-beach-years/the-ninth-grade-loophole-the-quiet-corner": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Ninth-Grade Loophole & The Quiet Corner",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|0"
+    },
+    "/aubrie/the-eleventh-child-the-virginia-beach-years/the-ninth-grade-loophole-the-quiet-corner/part-1-the-ninth-grade-loophole-the-opt-out-stamp": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Ninth-Grade Loophole & The Opt-Out Stamp",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/p001.md"
+    },
+    "/aubrie/the-eleventh-child-the-virginia-beach-years/the-ninth-grade-loophole-the-quiet-corner/part-2-the-opt-out-library-the-girl-with-hazel-eyes": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Opt-Out Library & The Girl with Hazel Eyes",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/p002.md"
+    },
+    "/aubrie/the-eleventh-child-the-virginia-beach-years/the-ninth-grade-loophole-the-quiet-corner/part-3-two-inches-apart": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Two Inches Apart",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/p003.md"
+    },
+    "/aubrie/the-eleventh-child-the-virginia-beach-years/the-ninth-grade-loophole-the-quiet-corner/part-4-the-landline-tirade-the-lie": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The Landline Tirade & The Lie",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/p004.md"
+    },
     "/aubrie/the-eleventh-child-off-to-college": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Eleventh Child, Off to College",
         "theme": "raggiesoft-books",
-        "filePath": "__ERA_TOC__|0"
+        "filePath": "__ERA_TOC__|1"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude-early-move-in": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Administrative Prelude & Early Move-In",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|0|0"
+        "filePath": "__CHAP_TOC__|1|0"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude-early-move-in/part-1-an-extension-of-me": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: An Extension of Me",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/p001.md"
+        "filePath": "e002/c001/p001.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude-early-move-in/part-2-the-drive-the-shared-bed": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Drive & The Shared Bed",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/p002.md"
+        "filePath": "e002/c001/p002.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude-early-move-in/part-3-the-poly-pass-educational-accessibility": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Poly Pass & Educational Accessibility",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/p003.md"
+        "filePath": "e002/c001/p003.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude-early-move-in/part-4-all-the-way": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: All the Way",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/p004.md"
+        "filePath": "e002/c001/p004.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude-early-move-in/part-5-the-routine": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: The Routine",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/p005.md"
+        "filePath": "e002/c001/p005.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude-early-move-in/part-6-one-last-night": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 6: One Last Night",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/p006.md"
+        "filePath": "e002/c001/p006.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude-early-move-in/part-7-eleanor-bennett-commonwealth-hall": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 7: Eleanor Bennett Commonwealth Hall",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/p007.md"
+        "filePath": "e002/c001/p007.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude-early-move-in/part-8-room-214-the-awkward-outlet": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 8: Room 214 & The Awkward Outlet",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/p008.md"
+        "filePath": "e002/c001/p008.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-administrative-prelude-early-move-in/part-9-stranded": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 9: Stranded",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/p009.md"
+        "filePath": "e002/c001/p009.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-mix-up-the-naming-of-jordan": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Mix-Up & The Naming of Jordan",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|0|1"
+        "filePath": "__CHAP_TOC__|1|1"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-mix-up-the-naming-of-jordan/part-1-morning-noise": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Morning Noise",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/p001.md"
+        "filePath": "e002/c002/p001.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-mix-up-the-naming-of-jordan/part-2-a-clerical-error": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: A Clerical Error",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/p002.md"
+        "filePath": "e002/c002/p002.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-mix-up-the-naming-of-jordan/part-3-system-crash": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: System.Crash",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/p003.md"
+        "filePath": "e002/c002/p003.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-mix-up-the-naming-of-jordan/part-4-the-anchor-holds-the-hall-director": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Anchor Holds & The Hall Director",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/p004.md"
+        "filePath": "e002/c002/p004.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-mix-up-the-naming-of-jordan/part-5-a-joke-that-stuck-making-it-official": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: A Joke That Stuck & Making It Official",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/p005.md"
+        "filePath": "e002/c002/p005.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-mix-up-the-naming-of-jordan/part-6-interlude-across-the-firewall": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 6: Interlude: Across the Firewall",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/p006.md"
+        "filePath": "e002/c002/p006.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-mix-up-the-naming-of-jordan/part-7-interlude-the-floor-two-inquiry": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 7: Interlude: The Floor Two Inquiry",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/p007.md"
+        "filePath": "e002/c002/p007.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-mix-up-the-naming-of-jordan/part-8-the-provisional-agreement-the-first-choice": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 8: The Provisional Agreement & The First Choice",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/p008.md"
+        "filePath": "e002/c002/p008.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-mix-up-the-naming-of-jordan/part-9-the-kincaid-hall-tea-rebellion": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 9: The Kincaid Hall Tea Rebellion",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/p009.md"
+        "filePath": "e002/c002/p009.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-mix-up-the-naming-of-jordan/part-10-the-first-assist-the-new-voice": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 10: The First Assist & The New Voice",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/p010.md"
+        "filePath": "e002/c002/p010.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-mix-up-the-naming-of-jordan/part-11-the-antidote-the-trust-fall": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 11: The Antidote & The Trust Fall",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/p011.md"
+        "filePath": "e002/c002/p011.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor-first-days-of-class": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Real Harbor & First Days of Class",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|0|2"
+        "filePath": "__CHAP_TOC__|1|2"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor-first-days-of-class/part-1-the-awakening": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Awakening",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/p001.md"
+        "filePath": "e002/c003/p001.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor-first-days-of-class/part-2-no-privacy": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: No Privacy",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/p002.md"
+        "filePath": "e002/c003/p002.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor-first-days-of-class/part-3-worlds-aligned-the-campus-topography": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Worlds Aligned & The Campus Topography",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/p003.md"
+        "filePath": "e002/c003/p003.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor-first-days-of-class/part-4-a-different-kind-of-constellation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: A Different Kind of Constellation",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/p004.md"
+        "filePath": "e002/c003/p004.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor-first-days-of-class/part-5-the-safe-harbor-s-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: The Safe Harbor's Perimeter",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/p005.md"
+        "filePath": "e002/c003/p005.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor-first-days-of-class/part-6-kincaid-hall": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 6: Kincaid Hall",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/p006.md"
+        "filePath": "e002/c003/p006.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor-first-days-of-class/part-7-the-interception": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 7: The Interception",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/p007.md"
+        "filePath": "e002/c003/p007.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor-first-days-of-class/part-8-the-view-from-the-fifth-floor": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 8: The View from the Fifth Floor",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/p008.md"
+        "filePath": "e002/c003/p008.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor-first-days-of-class/part-9-morning-divergence-the-ascent": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 9: Morning Divergence & The Ascent",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/p009.md"
+        "filePath": "e002/c003/p009.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor-first-days-of-class/part-10-western-civilization-the-taste-of-freedom": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 10: Western Civilization & The Taste of Freedom",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/p010.md"
+        "filePath": "e002/c003/p010.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor-first-days-of-class/part-11-the-true-assessment-afternoon-anchors": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 11: The True Assessment & Afternoon Anchors",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/p011.md"
+        "filePath": "e002/c003/p011.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor-first-days-of-class/part-12-the-girls-of-505": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 12: The Girls of 505",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/p012.md"
+        "filePath": "e002/c003/p012.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-first-real-harbor-first-days-of-class/part-13-evening-data-the-open-doors": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 13: Evening Data & The Open Doors",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/p013.md"
+        "filePath": "e002/c003/p013.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust-the-pepper-plaza-expedition": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Anatomy of Trust & The Pepper Plaza Expedition",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|0|3"
+        "filePath": "__CHAP_TOC__|1|3"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust-the-pepper-plaza-expedition/part-1-the-mega-meetup-the-mega-group-lunch": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Mega-Meetup & The Mega-Group Lunch",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/p001.md"
+        "filePath": "e002/c004/p001.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust-the-pepper-plaza-expedition/part-2-the-fifth-floor-hunch": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Fifth Floor Hunch",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/p002.md"
+        "filePath": "e002/c004/p002.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust-the-pepper-plaza-expedition/part-3-an-unconventional-study-session": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: An Unconventional Study Session",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/p003.md"
+        "filePath": "e002/c004/p003.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust-the-pepper-plaza-expedition/part-4-the-kincaid-hall-collision": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Kincaid Hall Collision",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/p004.md"
+        "filePath": "e002/c004/p004.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust-the-pepper-plaza-expedition/part-5-the-war-room-the-australian-voice": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: The War Room & The Australian Voice",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/p005.md"
+        "filePath": "e002/c004/p005.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust-the-pepper-plaza-expedition/part-6-primary-care-the-good-faith-offer": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 6: Primary Care & The Good Faith Offer",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/p006.md"
+        "filePath": "e002/c004/p006.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust-the-pepper-plaza-expedition/part-7-route-1-to-pepper-plaza-the-prescription": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 7: Route 1 to Pepper Plaza & The Prescription",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/p007.md"
+        "filePath": "e002/c004/p007.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust-the-pepper-plaza-expedition/part-8-the-audiologist-s-verdict-the-ride-home-in-high-definition": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 8: The Audiologist's Verdict & The Ride Home in High Definition",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/p008.md"
+        "filePath": "e002/c004/p008.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust-the-pepper-plaza-expedition/part-9-dinner-with-isabel-taking-out-the-trash": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 9: Dinner with Isabel & Taking Out the Trash",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/p009.md"
+        "filePath": "e002/c004/p009.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-anatomy-of-trust-the-pepper-plaza-expedition/part-10-face-to-face": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 10: Face to Face",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/p010.md"
+        "filePath": "e002/c004/p010.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict-the-nightly-pact": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Post-Census Verdict & The Nightly Pact",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|0|4"
+        "filePath": "__CHAP_TOC__|1|4"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict-the-nightly-pact/part-1-strategic-analysis-the-main-event": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Strategic Analysis & The Main Event",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c005/p001.md"
+        "filePath": "e002/c005/p001.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict-the-nightly-pact/part-2-interlude-mutiny-at-mcconnell-transit-center": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Interlude: Mutiny at McConnell Transit Center",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c005/p002.md"
+        "filePath": "e002/c005/p002.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict-the-nightly-pact/part-3-interlude-the-post-census-verdict": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Interlude: The Post-Census Verdict",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c005/p003.md"
+        "filePath": "e002/c005/p003.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict-the-nightly-pact/part-4-interlude-relief-at-the-45-pulse": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: Interlude: Relief at the :45 Pulse",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c005/p004.md"
+        "filePath": "e002/c005/p004.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict-the-nightly-pact/part-5-the-suite-arrangement-consent-form-one-hundred-and-five-percent": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: The Suite Arrangement Consent Form & One Hundred and Five Percent",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c005/p005.md"
+        "filePath": "e002/c005/p005.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict-the-nightly-pact/part-6-fire-alarm-in-the-dormitory": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 6: Fire Alarm in the Dormitory",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c005/p006.md"
+        "filePath": "e002/c005/p006.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict-the-nightly-pact/part-7-the-nightly-pact-the-first-night-of-the-pact": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 7: The Nightly Pact & The First Night of the Pact",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c005/p007.md"
+        "filePath": "e002/c005/p007.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-post-census-verdict-the-nightly-pact/part-8-the-standing-man-s-raincoat-a-manual-chair-in-the-storm": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 8: The Standing Man's Raincoat & A Manual Chair in the Storm",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c005/p008.md"
+        "filePath": "e002/c005/p008.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/homecoming-the-safe-harbor": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Homecoming & The Safe Harbor",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|0|5"
+        "filePath": "__CHAP_TOC__|1|5"
     },
     "/aubrie/the-eleventh-child-off-to-college/homecoming-the-safe-harbor/part-1-the-door-decorating-contest-game-day": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Door Decorating Contest & Game Day",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c006/p001.md"
+        "filePath": "e002/c006/p001.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/homecoming-the-safe-harbor/part-2-the-pre-game-the-first-quarter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Pre-Game & The First Quarter",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c006/p002.md"
+        "filePath": "e002/c006/p002.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/homecoming-the-safe-harbor/part-3-the-second-quarter-the-retreat": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Second Quarter & The Retreat",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c006/p003.md"
+        "filePath": "e002/c006/p003.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/homecoming-the-safe-harbor/part-4-the-fortress-of-truth": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Fortress of Truth",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c006/p004.md"
+        "filePath": "e002/c006/p004.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/homecoming-the-safe-harbor/part-5-the-fortress-at-night": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: The Fortress at Night",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c006/p005.md"
+        "filePath": "e002/c006/p005.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/homecoming-the-safe-harbor/part-6-interlude-overnight-desk-duty": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 6: Interlude: Overnight Desk Duty",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c006/p006.md"
+        "filePath": "e002/c006/p006.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/homecoming-the-safe-harbor/part-7-a-hug-in-the-hallway-a-safe-place-on-the-first-floor": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 7: A Hug in the Hallway & A Safe Place on the First Floor",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c006/p007.md"
+        "filePath": "e002/c006/p007.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/jordan-s-independence-day-the-fall-break-relay": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Jordan's Independence Day & The Fall Break Relay",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|0|6"
+        "filePath": "__CHAP_TOC__|1|6"
     },
     "/aubrie/the-eleventh-child-off-to-college/jordan-s-independence-day-the-fall-break-relay/part-1-the-coming-storm": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Coming Storm",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c007/p001.md"
+        "filePath": "e002/c007/p001.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/jordan-s-independence-day-the-fall-break-relay/part-2-the-confrontation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Confrontation",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c007/p002.md"
+        "filePath": "e002/c007/p002.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/jordan-s-independence-day-the-fall-break-relay/part-3-the-choice": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Choice",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c007/p003.md"
+        "filePath": "e002/c007/p003.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/jordan-s-independence-day-the-fall-break-relay/part-4-the-cut-cord": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Cut Cord",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c007/p004.md"
+        "filePath": "e002/c007/p004.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/jordan-s-independence-day-the-fall-break-relay/part-5-the-new-lifeline-and-a-winter-pact-the-thanksgiving-ultimatum": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: The New Lifeline and a Winter Pact & The Thanksgiving Ultimatum",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c007/p005.md"
+        "filePath": "e002/c007/p005.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/jordan-s-independence-day-the-fall-break-relay/part-6-the-digital-wall-a-continent-of-their-own": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 6: The Digital Wall & A Continent of Their Own",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c007/p006.md"
+        "filePath": "e002/c007/p006.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/jordan-s-independence-day-the-fall-break-relay/part-7-mark-s-hometown-trail-the-blue-ridge-regional-aquatic-center-a-neighbor-s-wave-on-the-huckleberry-trail": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 7: Mark's Hometown Trail, The Blue Ridge Regional Aquatic Center & A Neighbor's Wave on the Huckleberry Trail",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c007/p007.md"
+        "filePath": "e002/c007/p007.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-thanksgiving-exodus-sanctuary-on-geneva-street": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Thanksgiving Exodus & Sanctuary on Geneva Street",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|0|7"
+        "filePath": "__CHAP_TOC__|1|7"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-thanksgiving-exodus-sanctuary-on-geneva-street/part-1-setting-the-board-the-maroon-express": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Setting the Board & The Maroon Express",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c008/p001.md"
+        "filePath": "e002/c008/p001.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-thanksgiving-exodus-sanctuary-on-geneva-street/part-2-geneva-street-settling-into-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Geneva Street & Settling into Sanctuary",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c008/p002.md"
+        "filePath": "e002/c008/p002.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-thanksgiving-exodus-sanctuary-on-geneva-street/part-3-interlude-the-unwelcome-arrival-checkmate-at-dispatch": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Interlude: The Unwelcome Arrival & Checkmate at Dispatch",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c008/p003.md"
+        "filePath": "e002/c008/p003.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-thanksgiving-exodus-sanctuary-on-geneva-street/part-4-all-time-quarterback-the-turkey-brawl": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: All-Time Quarterback & The Turkey Brawl",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c008/p004.md"
+        "filePath": "e002/c008/p004.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/operation-black-friday-the-family-charter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Operation Black Friday & The Family Charter",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|0|8"
+        "filePath": "__CHAP_TOC__|1|8"
     },
     "/aubrie/the-eleventh-child-off-to-college/operation-black-friday-the-family-charter/part-1-the-mission-briefing-truth-or-dare": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Mission Briefing & Truth or Dare",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c009/p001.md"
+        "filePath": "e002/c009/p001.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/operation-black-friday-the-family-charter/part-2-the-serious-talk-the-family-charter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Serious Talk & The Family Charter",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c009/p002.md"
+        "filePath": "e002/c009/p002.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-new-normal-end-of-first-semester": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The New Normal & End of First Semester",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|0|9"
+        "filePath": "__CHAP_TOC__|1|9"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-new-normal-end-of-first-semester/part-1-return-to-the-old-lady-a-double-birthday-conspiracy": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Return to The Old Lady & A Double Birthday Conspiracy",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c010/p001.md"
+        "filePath": "e002/c010/p001.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-new-normal-end-of-first-semester/part-2-a-preventable-crisis": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: A Preventable Crisis",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c010/p002.md"
+        "filePath": "e002/c010/p002.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-new-normal-end-of-first-semester/part-3-the-second-drill": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Second Drill",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c010/p003.md"
+        "filePath": "e002/c010/p003.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-new-normal-end-of-first-semester/part-4-the-final-exam-departure-for-winter-break": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Final Exam & Departure for Winter Break",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c010/p004.md"
+        "filePath": "e002/c010/p004.md"
     },
     "/aubrie/the-eleventh-child-off-to-college/the-new-normal-end-of-first-semester/part-5-interlude-a-dangerous-idea": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: Interlude: A Dangerous Idea",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c010/p005.md"
+        "filePath": "e002/c010/p005.md"
     },
     "/aubrie/a-new-winter-break-tradition": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Winter Break Tradition",
         "theme": "raggiesoft-books",
-        "filePath": "__ERA_TOC__|1"
+        "filePath": "__ERA_TOC__|2"
     },
     "/aubrie/a-new-winter-break-tradition/a-winter-wonderland-in-the-basement-the-winter-solstice": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Winter Wonderland in the Basement & The Winter Solstice",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|1|0"
+        "filePath": "__CHAP_TOC__|2|0"
     },
     "/aubrie/a-new-winter-break-tradition/a-winter-wonderland-in-the-basement-the-winter-solstice/part-1-the-fortress-upgrades-hunkering-down": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Fortress Upgrades & Hunkering Down",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/p001.md"
+        "filePath": "e003/c001/p001.md"
     },
     "/aubrie/a-new-winter-break-tradition/a-winter-wonderland-in-the-basement-the-winter-solstice/part-2-forty-six-inches": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Forty-Six Inches",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/p002.md"
+        "filePath": "e003/c001/p002.md"
     },
     "/aubrie/a-new-winter-break-tradition/a-winter-wonderland-in-the-basement-the-winter-solstice/part-3-interlude-the-unbudgeted-blizzard": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Interlude: The Unbudgeted Blizzard",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/p003.md"
+        "filePath": "e003/c001/p003.md"
     },
     "/aubrie/a-new-winter-break-tradition/a-winter-wonderland-in-the-basement-the-winter-solstice/part-4-blueprints-for-mobility": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: Blueprints for Mobility",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/p004.md"
+        "filePath": "e003/c001/p004.md"
     },
     "/aubrie/a-new-winter-break-tradition/a-winter-wonderland-in-the-basement-the-winter-solstice/part-5-solar-noon-on-the-winter-solstice": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: Solar Noon on the Winter Solstice",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/p005.md"
+        "filePath": "e003/c001/p005.md"
     },
     "/aubrie/a-new-winter-break-tradition/the-road-to-christmas-adventures-in-southwestern-virginia": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Road to Christmas & Adventures in Southwestern Virginia",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|1|1"
+        "filePath": "__CHAP_TOC__|2|1"
     },
     "/aubrie/a-new-winter-break-tradition/the-road-to-christmas-adventures-in-southwestern-virginia/part-1-the-mall-gauntlet-the-first-christmas-present": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Mall Gauntlet & The First Christmas Present",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c002/p001.md"
+        "filePath": "e003/c002/p001.md"
     },
     "/aubrie/a-new-winter-break-tradition/the-road-to-christmas-adventures-in-southwestern-virginia/part-2-a-trip-to-bluewater-the-heart-hum": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: A Trip to Bluewater & The Heart-Hum",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c002/p002.md"
+        "filePath": "e003/c002/p002.md"
     },
     "/aubrie/a-new-winter-break-tradition/the-road-to-christmas-adventures-in-southwestern-virginia/part-3-lunch-at-annabel-s-deli": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Lunch at Annabel's Deli",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c002/p003.md"
+        "filePath": "e003/c002/p003.md"
     },
     "/aubrie/a-new-winter-break-tradition/the-road-to-christmas-adventures-in-southwestern-virginia/part-4-an-afternoon-in-radford-dinner-at-luigi-s-trattoria": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: An Afternoon in Radford & Dinner at Luigi's Trattoria",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c002/p004.md"
+        "filePath": "e003/c002/p004.md"
     },
     "/aubrie/a-new-winter-break-tradition/the-road-to-christmas-adventures-in-southwestern-virginia/part-5-the-long-ride-home-the-unwinding": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: The Long Ride Home & The Unwinding",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c002/p005.md"
+        "filePath": "e003/c002/p005.md"
     },
     "/aubrie/a-new-winter-break-tradition/jordan-s-first-christmas-boxing-day-in-bluewater": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Jordan's First Christmas & Boxing Day in Bluewater",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|1|2"
+        "filePath": "__CHAP_TOC__|2|2"
     },
     "/aubrie/a-new-winter-break-tradition/jordan-s-first-christmas-boxing-day-in-bluewater/part-1-stockings-on-the-bookshelf-jordan-kelly": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Stockings on the Bookshelf & 'Jordan Kelly'",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c003/p001.md"
+        "filePath": "e003/c003/p001.md"
     },
     "/aubrie/a-new-winter-break-tradition/jordan-s-first-christmas-boxing-day-in-bluewater/part-2-the-someday-promise-the-bluewater-town-plaza-plan": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Someday Promise & The Bluewater Town Plaza Plan",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c003/p002.md"
+        "filePath": "e003/c003/p002.md"
     },
     "/aubrie/a-new-winter-break-tradition/jordan-s-first-christmas-boxing-day-in-bluewater/part-3-lunch-at-the-corner-bistro-the-cushion-the-triumphant-return": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Lunch at The Corner Bistro & The Cushion & The Triumphant Return",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c003/p003.md"
+        "filePath": "e003/c003/p003.md"
     },
     "/aubrie/a-new-winter-break-tradition/the-seminole-trail-the-dawson-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Seminole Trail & The Dawson Sanctuary",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|1|3"
+        "filePath": "__CHAP_TOC__|2|3"
     },
     "/aubrie/a-new-winter-break-tradition/the-seminole-trail-the-dawson-sanctuary/part-1-gridlock-on-i-81-the-route-460-pivot-elana-stephen-stella": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Gridlock on I-81 & The Route 460 Pivot & Elana, Stephen, & Stella",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c004/p001.md"
+        "filePath": "e003/c004/p001.md"
     },
     "/aubrie/a-new-winter-break-tradition/the-seminole-trail-the-dawson-sanctuary/part-2-the-architecture-of-care-fall-2015-south-on-29-west-on-460": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Architecture of Care & Fall 2015 & South on 29, West on 460",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c004/p002.md"
+        "filePath": "e003/c004/p002.md"
     },
     "/aubrie/a-new-winter-break-tradition/jordan-s-first-new-year-s-silver-star-service-breaking-ground": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Jordan's First New Year's, Silver Star Service, & Breaking Ground",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|1|4"
+        "filePath": "__CHAP_TOC__|2|4"
     },
     "/aubrie/a-new-winter-break-tradition/jordan-s-first-new-year-s-silver-star-service-breaking-ground/part-1-midnight-in-london-booms-in-the-light": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Midnight in London & Booms in the Light",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c005/p001.md"
+        "filePath": "e003/c005/p001.md"
     },
     "/aubrie/a-new-winter-break-tradition/jordan-s-first-new-year-s-silver-star-service-breaking-ground/part-2-first-time-in-a-terminal-the-auger-and-the-blueprint": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: First Time in a Terminal & The Auger and the Blueprint",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c005/p002.md"
+        "filePath": "e003/c005/p002.md"
     },
     "/aubrie/a-new-winter-break-tradition/jordan-s-first-new-year-s-silver-star-service-breaking-ground/part-3-landfall-in-southampton-the-sunday-plan": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Landfall in Southampton & The Sunday Plan",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c005/p003.md"
+        "filePath": "e003/c005/p003.md"
     },
     "/aubrie/spring-semester-2015": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Spring Semester 2015",
         "theme": "raggiesoft-books",
-        "filePath": "__ERA_TOC__|2"
+        "filePath": "__ERA_TOC__|3"
     },
     "/aubrie/spring-semester-2015/return-to-the-old-lady-the-new-pact": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Return to The Old Lady & The New Pact",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|0"
+        "filePath": "__CHAP_TOC__|3|0"
     },
     "/aubrie/spring-semester-2015/return-to-the-old-lady-the-new-pact/part-1-the-sunday-maroon-express-the-co-ed-pilot-proposal": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Sunday Maroon Express & The Co-Ed Pilot Proposal",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/p001.md"
+        "filePath": "e004/c001/p001.md"
     },
     "/aubrie/spring-semester-2015/return-to-the-old-lady-the-new-pact/part-2-introducing-garrett-to-suite-214-216-this-side-of-heaven": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Introducing Garrett to Suite 214/216 & This Side of Heaven",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/p002.md"
+        "filePath": "e004/c001/p002.md"
     },
     "/aubrie/spring-semester-2015/return-to-the-old-lady-the-new-pact/part-3-the-proposal-in-room-214-the-first-night-of-the-new-pact": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Proposal in Room 214 & The First Night of the New Pact",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/p003.md"
+        "filePath": "e004/c001/p003.md"
     },
     "/aubrie/spring-semester-2015/a-spring-in-motion-the-world-trek-blueprint-operation-file-first": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Spring in Motion, The World Trek Blueprint, & Operation 'File First'",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|1"
+        "filePath": "__CHAP_TOC__|3|1"
     },
     "/aubrie/spring-semester-2015/a-spring-in-motion-the-world-trek-blueprint-operation-file-first/part-1-the-alaskan-king-discovery-the-roster-of-eighteen": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Alaskan King Discovery & The Roster of Eighteen",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/p001.md"
+        "filePath": "e004/c002/p001.md"
     },
     "/aubrie/spring-semester-2015/a-spring-in-motion-the-world-trek-blueprint-operation-file-first/part-2-operation-file-first-sixteen-passports": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Operation 'File First' & Sixteen Passports",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/p002.md"
+        "filePath": "e004/c002/p002.md"
     },
     "/aubrie/spring-semester-2015/the-leviathan-cut-electric-color-the-call-from-bluewater": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Leviathan Cut, Electric Color, & The Call from Bluewater",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|2"
+        "filePath": "__CHAP_TOC__|3|2"
     },
     "/aubrie/spring-semester-2015/the-leviathan-cut-electric-color-the-call-from-bluewater/part-1-the-leviathan-cut-a-sister-s-love": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Leviathan Cut (A Sister's Love)",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c003/p001.md"
+        "filePath": "e004/c003/p001.md"
     },
     "/aubrie/spring-semester-2015/the-leviathan-cut-electric-color-the-call-from-bluewater/part-2-an-80s-education-the-brooks-mix": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: An 80s Education (The Brooks Mix)",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c003/p002.md"
+        "filePath": "e004/c003/p002.md"
     },
     "/aubrie/spring-semester-2015/the-leviathan-cut-electric-color-the-call-from-bluewater/part-3-electric-color": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Electric Color",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c003/p003.md"
+        "filePath": "e004/c003/p003.md"
     },
     "/aubrie/spring-semester-2015/the-leviathan-cut-electric-color-the-call-from-bluewater/part-4-starfield-calibration-the-call-from-bluewater": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: Starfield Calibration & The Call from Bluewater",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c003/p004.md"
+        "filePath": "e004/c003/p004.md"
     },
     "/aubrie/spring-semester-2015/hey-cacuho-the-residence-life-conference": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "HEY CACUHO! The Residence Life Conference",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|3"
+        "filePath": "__CHAP_TOC__|3|3"
     },
     "/aubrie/spring-semester-2015/hey-cacuho-the-residence-life-conference/part-1-sending-off-the-ras-the-empty-room-across-the-hall": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Sending Off the RAs & The Empty Room Across the Hall",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c004/p001.md"
+        "filePath": "e004/c004/p001.md"
     },
     "/aubrie/spring-semester-2015/hey-cacuho-the-residence-life-conference/part-2-breakout-session-4b-breaking-the-binary-corridor": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Breakout Session 4B: Breaking the Binary Corridor",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c004/p002.md"
+        "filePath": "e004/c004/p002.md"
     },
     "/aubrie/spring-semester-2015/hey-cacuho-the-residence-life-conference/part-3-hey-cacuho-clothespins-and-the-gamble-aria-nightmare": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: HEY CACUHO! Clothespins and the Gamble Aria Nightmare",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c004/p003.md"
+        "filePath": "e004/c004/p003.md"
     },
     "/aubrie/spring-semester-2015/the-stalker-at-the-desk-the-bluewater-bunker": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Stalker at the Desk & The Bluewater Bunker",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|4"
+        "filePath": "__CHAP_TOC__|3|4"
     },
     "/aubrie/spring-semester-2015/the-stalker-at-the-desk-the-bluewater-bunker/part-1-the-investigator-at-the-front-desk-convoy-to-bluewater": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Investigator at the Front Desk & Convoy to Bluewater",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c005/p001.md"
+        "filePath": "e004/c005/p001.md"
     },
     "/aubrie/spring-semester-2015/the-stalker-at-the-desk-the-bluewater-bunker/part-2-making-it-work-in-bluewater-the-heart-hum": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Making It Work in Bluewater & The Heart-Hum",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c005/p002.md"
+        "filePath": "e004/c005/p002.md"
     },
     "/aubrie/spring-semester-2015/the-s-s-freedom-closing-the-old-lady": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The S.S. Freedom & Closing the Old Lady",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|2|5"
+        "filePath": "__CHAP_TOC__|3|5"
     },
     "/aubrie/spring-semester-2015/the-s-s-freedom-closing-the-old-lady/part-1-three-hundred-and-fifty-pounds-of-freedom-maiden-voyage-of-the-s-s-freedom": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Three Hundred and Fifty Pounds of Freedom & Maiden Voyage of the S.S. Freedom",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c006/p001.md"
+        "filePath": "e004/c006/p001.md"
     },
     "/aubrie/spring-semester-2015/the-s-s-freedom-closing-the-old-lady/part-2-wet-weather-rigging-piloting-the-s-s-freedom-through-the-storm": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Wet-Weather Rigging & Piloting the S.S. Freedom Through the Storm",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c006/p002.md"
+        "filePath": "e004/c006/p002.md"
     },
     "/aubrie/spring-semester-2015/the-s-s-freedom-closing-the-old-lady/part-3-stripping-room-214-a-long-hug-in-the-hallway-ready-for-the-world": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Stripping Room 214, A Long Hug in the Hallway & Ready for the World",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c006/p003.md"
+        "filePath": "e004/c006/p003.md"
     },
     "/aubrie/jordan-s-world-trek": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Jordan's World Trek",
         "theme": "raggiesoft-books",
-        "filePath": "__ERA_TOC__|3"
+        "filePath": "__ERA_TOC__|4"
     },
     "/aubrie/jordan-s-world-trek/leg-1-the-northern-ascent-christiansburg-to-gander": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Leg 1: The Northern Ascent (Christiansburg to Gander)",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|3|0"
+        "filePath": "__CHAP_TOC__|4|0"
     },
     "/aubrie/jordan-s-world-trek/leg-1-the-northern-ascent-christiansburg-to-gander/part-1-the-vanguard-awakes-the-security-checkpoint": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Vanguard Awakes & The Security Checkpoint",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/p001.md"
+        "filePath": "e005/c001/p001.md"
     },
     "/aubrie/jordan-s-world-trek/leg-1-the-northern-ascent-christiansburg-to-gander/part-2-the-ten-thousand-foot-rule-the-border-briefing": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Ten-Thousand Foot Rule & The Border Briefing",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/p002.md"
+        "filePath": "e005/c001/p002.md"
     },
     "/aubrie/jordan-s-world-trek/leg-1-the-northern-ascent-christiansburg-to-gander/part-3-the-outback-lift-the-epassport-bottleneck": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Outback Lift & The ePassport Bottleneck",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/p003.md"
+        "filePath": "e005/c001/p003.md"
     },
     "/aubrie/jordan-s-world-trek/leg-1-the-northern-ascent-christiansburg-to-gander/part-4-the-yellow-ribbon-welcome-the-room-214-reunion": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Yellow Ribbon Welcome & The Room 214 Reunion",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/p004.md"
+        "filePath": "e005/c001/p004.md"
     },
     "/aubrie/jordan-s-world-trek/leg-2-safe-haven-on-the-rock-newfoundland-canada": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Leg 2: Safe Haven on the Rock (Newfoundland, Canada)",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|3|1"
+        "filePath": "__CHAP_TOC__|4|1"
     },
     "/aubrie/jordan-s-world-trek/leg-2-safe-haven-on-the-rock-newfoundland-canada/part-1-the-gander-morning-iceberg-alley-st-john-s": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Gander Morning, Iceberg Alley, & St. John's",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/p001.md"
+        "filePath": "e005/c002/p001.md"
     },
     "/aubrie/jordan-s-world-trek/leg-2-safe-haven-on-the-rock-newfoundland-canada/part-2-gander-heritage-boardwalk-the-crossroads-of-the-world": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Gander Heritage Boardwalk & The Crossroads of the World",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/p002.md"
+        "filePath": "e005/c002/p002.md"
     },
     "/aubrie/jordan-s-world-trek/leg-3-midnight-sun-azure-lagoon-the-golden-circle-iceland": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Leg 3: Midnight Sun, Azure Lagoon, & The Golden Circle (Iceland)",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|3|2"
+        "filePath": "__CHAP_TOC__|4|2"
     },
     "/aubrie/jordan-s-world-trek/leg-3-midnight-sun-azure-lagoon-the-golden-circle-iceland/part-1-midnight-sun-and-the-yellow-bus-grid": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Midnight Sun and the Yellow Bus Grid",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c003/p001.md"
+        "filePath": "e005/c003/p001.md"
     },
     "/aubrie/jordan-s-world-trek/leg-3-midnight-sun-azure-lagoon-the-golden-circle-iceland/part-2-zero-gravity-in-the-azure-lagoon-the-victorian-grid-briefing": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Zero Gravity in the Azure Lagoon & The Victorian Grid Briefing",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c003/p002.md"
+        "filePath": "e005/c003/p002.md"
     },
     "/aubrie/jordan-s-world-trek/leg-4-the-victorian-grid-the-wrong-liverpool-station-x-united-kingdom": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Leg 4: The Victorian Grid, The Wrong Liverpool, & Station X (United Kingdom)",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|3|3"
+        "filePath": "__CHAP_TOC__|4|3"
     },
     "/aubrie/jordan-s-world-trek/leg-4-the-victorian-grid-the-wrong-liverpool-station-x-united-kingdom/part-1-the-heathrow-ambush-chief-navigator-of-the-red-buses": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Heathrow Ambush & Chief Navigator of the Red Buses",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c004/p001.md"
+        "filePath": "e005/c004/p001.md"
     },
     "/aubrie/jordan-s-world-trek/leg-4-the-victorian-grid-the-wrong-liverpool-station-x-united-kingdom/part-2-carnaby-street-the-thames-riverbus-babbage-s-engine": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Carnaby Street, the Thames Riverbus, & Babbage's Engine",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c004/p002.md"
+        "filePath": "e005/c004/p002.md"
     },
     "/aubrie/jordan-s-world-trek/leg-4-the-victorian-grid-the-wrong-liverpool-station-x-united-kingdom/part-3-london-euston-edinburgh-castle-the-royal-yacht": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: London Euston, Edinburgh Castle, & The Royal Yacht",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c004/p003.md"
+        "filePath": "e005/c004/p003.md"
     },
     "/aubrie/jordan-s-world-trek/leg-4-the-victorian-grid-the-wrong-liverpool-station-x-united-kingdom/part-4-the-eastern-leap-from-heathrow": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Eastern Leap from Heathrow",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c004/p004.md"
+        "filePath": "e005/c004/p004.md"
     },
     "/aubrie/jordan-s-world-trek/leg-5-the-architecture-of-respect-tokyo-kyoto-osaka": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Leg 5: The Architecture of Respect (Tokyo, Kyoto, & Osaka)",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|3|4"
+        "filePath": "__CHAP_TOC__|4|4"
     },
     "/aubrie/jordan-s-world-trek/leg-5-the-architecture-of-respect-tokyo-kyoto-osaka/part-1-haneda-airport-asakusa-lanterns-tokyo-skytree": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Haneda Airport, Asakusa Lanterns, & Tokyo Skytree",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c005/p001.md"
+        "filePath": "e005/c005/p001.md"
     },
     "/aubrie/jordan-s-world-trek/leg-5-the-architecture-of-respect-tokyo-kyoto-osaka/part-2-the-hassha-melody-kyoto-the-brooks-family-s-osaka": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Hassha Melody, Kyoto, & The Brooks Family's Osaka",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c005/p002.md"
+        "filePath": "e005/c005/p002.md"
     },
     "/aubrie/jordan-s-world-trek/leg-6-starry-skies-on-the-seto-inland-sea-beppu-bay-ky-sh": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Leg 6: Starry Skies on the Seto Inland Sea & Beppu Bay (Ky\u016bsh\u016b)",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|3|5"
+        "filePath": "__CHAP_TOC__|4|5"
     },
     "/aubrie/jordan-s-world-trek/leg-6-starry-skies-on-the-seto-inland-sea-beppu-bay-ky-sh/part-1-osaka-south-port-and-boarding-the-starry-sky": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Osaka South Port and Boarding the Starry Sky",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c006/p001.md"
+        "filePath": "e005/c006/p001.md"
     },
     "/aubrie/jordan-s-world-trek/leg-6-starry-skies-on-the-seto-inland-sea-beppu-bay-ky-sh/part-2-threat-level-zero-hoshizora-no-uta-japanese-version": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Threat Level Zero: Hoshizora no Uta (Japanese Version)",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c006/p002.md"
+        "filePath": "e005/c006/p002.md"
     },
     "/aubrie/jordan-s-world-trek/leg-6-starry-skies-on-the-seto-inland-sea-beppu-bay-ky-sh/part-3-for-you-are-safe-upon-the-sea-hoshizora-no-uta-english-version": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: For You Are Safe Upon the Sea: Hoshizora no Uta (English Version)",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c006/p003.md"
+        "filePath": "e005/c006/p003.md"
     },
     "/aubrie/jordan-s-world-trek/leg-6-starry-skies-on-the-seto-inland-sea-beppu-bay-ky-sh/part-4-morning-light-on-beppu-bay-the-seven-geothermal-springs": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: Morning Light on Beppu Bay & The Seven Geothermal Springs",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c006/p004.md"
+        "filePath": "e005/c006/p004.md"
     },
     "/aubrie/jordan-s-world-trek/leg-7-the-deterministic-sanctuary-zo-systems-logs-singapore": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Leg 7: The Deterministic Sanctuary & ZO\u00cb.Systems.Logs (Singapore)",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|3|6"
+        "filePath": "__CHAP_TOC__|4|6"
     },
     "/aubrie/jordan-s-world-trek/leg-7-the-deterministic-sanctuary-zo-systems-logs-singapore/part-1-changi-airport-telok-ayer-the-equator-wheel": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Changi Airport, Telok Ayer, & The Equator Wheel",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c007/p001.md"
+        "filePath": "e005/c007/p001.md"
     },
     "/aubrie/jordan-s-world-trek/leg-7-the-deterministic-sanctuary-zo-systems-logs-singapore/part-2-the-three-continent-video-call-sentosa-monorail": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Three-Continent Video Call & Sentosa Monorail",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c007/p002.md"
+        "filePath": "e005/c007/p002.md"
     },
     "/aubrie/jordan-s-world-trek/leg-8-southern-cross-winter-the-red-centre-home-to-roanoke-australia": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Leg 8: Southern Cross Winter, The Red Centre, & Home to Roanoke (Australia)",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|3|7"
+        "filePath": "__CHAP_TOC__|4|7"
     },
     "/aubrie/jordan-s-world-trek/leg-8-southern-cross-winter-the-red-centre-home-to-roanoke-australia/part-1-sydney-harbour-the-three-sisters-the-jamison-skyway": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Sydney Harbour, The Three Sisters, & The Jamison Skyway",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c008/p001.md"
+        "filePath": "e005/c008/p001.md"
     },
     "/aubrie/jordan-s-world-trek/leg-8-southern-cross-winter-the-red-centre-home-to-roanoke-australia/part-2-ulu-u-the-track-to-gallagher-s-roadhouse": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Ulu\u1e5fu & The Track to Gallagher's Roadhouse",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c008/p002.md"
+        "filePath": "e005/c008/p002.md"
     },
     "/aubrie/jordan-s-world-trek/leg-8-southern-cross-winter-the-red-centre-home-to-roanoke-australia/part-3-frost-on-the-tires-the-royal-flying-doctor-service": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Frost on the Tires & The Royal Flying Doctor Service",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c008/p003.md"
+        "filePath": "e005/c008/p003.md"
     },
     "/aubrie/jordan-s-world-trek/leg-8-southern-cross-winter-the-red-centre-home-to-roanoke-australia/part-4-thirty-five-hours-to-roanoke-the-gate-hug": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: Thirty-Five Hours to Roanoke (The Gate Hug)",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c008/p004.md"
+        "filePath": "e005/c008/p004.md"
     },
     "/aubrie/jordan-s-court-case": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Jordan's Court Case",
         "theme": "raggiesoft-books",
-        "filePath": "__ERA_TOC__|4"
+        "filePath": "__ERA_TOC__|5"
     },
     "/aubrie/jordan-s-court-case/dismissed-with-prejudice-the-montgomery-county-courthouse": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Dismissed with Prejudice (The Montgomery County Courthouse)",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|4|0"
+        "filePath": "__CHAP_TOC__|5|0"
     },
     "/aubrie/jordan-s-court-case/dismissed-with-prejudice-the-montgomery-county-courthouse/part-1-the-gal-interview-the-phalanx-the-gavel": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The GAL Interview, The Phalanx, & The Gavel",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/p001.md"
+        "filePath": "e006/c001/p001.md"
     },
     "/aubrie/jordan-s-court-case/dismissed-with-prejudice-the-montgomery-county-courthouse/part-2-the-institutional-shield-testimony-on-the-stand": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Institutional Shield & Testimony on the Stand",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/p002.md"
+        "filePath": "e006/c001/p002.md"
     },
     "/aubrie/jordan-s-court-case/dismissed-with-prejudice-the-montgomery-county-courthouse/part-3-the-closing-argument-the-gavel-and-the-handcuffs": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Closing Argument, The Gavel, and The Handcuffs",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/p003.md"
+        "filePath": "e006/c001/p003.md"
     },
     "/aubrie/jordan-s-court-case/welcome-to-geneva-street-the-no-jealousy-pact": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Welcome to Geneva Street & The No-Jealousy Pact",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|4|1"
+        "filePath": "__CHAP_TOC__|5|1"
     },
     "/aubrie/jordan-s-court-case/welcome-to-geneva-street-the-no-jealousy-pact/part-1-no-clipboard-to-hide-behind": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: No Clipboard to Hide Behind",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c002/p001.md"
+        "filePath": "e006/c002/p001.md"
     },
     "/aubrie/jordan-s-court-case/welcome-to-geneva-street-the-no-jealousy-pact/part-2-the-secret-everyone-already-knew": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Secret Everyone Already Knew",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c002/p002.md"
+        "filePath": "e006/c002/p002.md"
     },
     "/aubrie/jordan-s-court-case/welcome-to-geneva-street-the-no-jealousy-pact/part-3-angles-leverage-and-the-no-jealousy-pact": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Angles, Leverage, and the No-Jealousy Pact",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c002/p003.md"
+        "filePath": "e006/c002/p003.md"
     },
     "/aubrie/jordan-s-court-case/welcome-to-geneva-street-the-no-jealousy-pact/part-4-new-river-hall-room-323-allegheny-commons-apartment-101": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: New River Hall Room 323 & Allegheny Commons Apartment 101",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c002/p004.md"
+        "filePath": "e006/c002/p004.md"
     },
     "/aubrie/fall-semester-2015": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Fall Semester 2015",
         "theme": "raggiesoft-books",
-        "filePath": "__ERA_TOC__|5"
+        "filePath": "__ERA_TOC__|6"
     },
     "/aubrie/fall-semester-2015/the-5-45-am-problem-the-birth-of-fin-home-on-geneva-street": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The 5:45 AM Problem, The Birth of Fin#, & Home on Geneva Street",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|5|0"
+        "filePath": "__CHAP_TOC__|6|0"
     },
     "/aubrie/fall-semester-2015/the-5-45-am-problem-the-birth-of-fin-home-on-geneva-street/part-1-the-5-45-am-problem-the-45-minute-wait-on-commonwealth-mall": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The 5:45 AM Problem & The 45-Minute Wait on Commonwealth Mall",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/p001.md"
+        "filePath": "e007/c001/p001.md"
     },
     "/aubrie/fall-semester-2015/the-5-45-am-problem-the-birth-of-fin-home-on-geneva-street/part-2-the-new-normal-6-00-am-the-sociology-fortress": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The New Normal (6:00 AM) & The Sociology Fortress",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/p002.md"
+        "filePath": "e007/c001/p002.md"
     },
     "/aubrie/fall-semester-2015/the-5-45-am-problem-the-birth-of-fin-home-on-geneva-street/part-3-question-the-rules-the-birth-of-fin": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Question The Rules: The Birth of Fin#",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/p003.md"
+        "filePath": "e007/c001/p003.md"
     },
     "/aubrie/fall-semester-2015/the-5-45-am-problem-the-birth-of-fin-home-on-geneva-street/part-4-one-week-to-process-updating-the-medical-registry": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: One Week to Process & Updating the Medical Registry",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/p004.md"
+        "filePath": "e007/c001/p004.md"
     },
     "/aubrie/fall-semester-2015/the-5-45-am-problem-the-birth-of-fin-home-on-geneva-street/part-5-home-on-geneva-street": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: Home on Geneva Street",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/p005.md"
+        "filePath": "e007/c001/p005.md"
     },
     "/aubrie/fall-semester-2015/the-5-45-am-problem-the-birth-of-fin-home-on-geneva-street/part-6-the-keystone-bridge-in-the-rain-route-1-home-to-geneva-street": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 6: The Keystone Bridge in the Rain & Route 1 Home to Geneva Street",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/p006.md"
+        "filePath": "e007/c001/p006.md"
     },
     "/aubrie/fall-semester-2015/the-paper-invasion-notice-cp87a-fall-break-2015": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Paper Invasion (Notice CP87A) & Fall Break 2015",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|5|1"
+        "filePath": "__CHAP_TOC__|6|1"
     },
     "/aubrie/fall-semester-2015/the-paper-invasion-notice-cp87a-fall-break-2015/part-1-the-envelope-on-the-table-notice-cp87a-the-paper-invasion": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Envelope on the Table & Notice CP87A (The Paper Invasion)",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c002/p001.md"
+        "filePath": "e007/c002/p001.md"
     },
     "/aubrie/fall-semester-2015/the-paper-invasion-notice-cp87a-fall-break-2015/part-2-the-i-64-concurrency-the-twelve-hour-leviathan-cut": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The I-64 Concurrency & The Twelve-Hour Leviathan Cut",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c002/p002.md"
+        "filePath": "e007/c002/p002.md"
     },
     "/aubrie/fall-semester-2015/friday-9-32-am-the-broken-foundation-the-failed-angioplasty": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Friday, 9:32 AM: The Broken Foundation & The Failed Angioplasty",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|5|2"
+        "filePath": "__CHAP_TOC__|6|2"
     },
     "/aubrie/fall-semester-2015/friday-9-32-am-the-broken-foundation-the-failed-angioplasty/part-1-friday-9-32-am-the-attack-the-wrong-bus-on-commonwealth-mall": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Friday, 9:32 AM (The Attack) & The Wrong Bus on Commonwealth Mall",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c003/p001.md"
+        "filePath": "e007/c003/p001.md"
     },
     "/aubrie/fall-semester-2015/friday-9-32-am-the-broken-foundation-the-failed-angioplasty/part-2-the-emergency-room-cardiac-trauma-bay-3-room-312-strict-npo": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Emergency Room (Cardiac Trauma Bay 3) & Room 312 (Strict NPO)",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c003/p002.md"
+        "filePath": "e007/c003/p002.md"
     },
     "/aubrie/fall-semester-2015/friday-9-32-am-the-broken-foundation-the-failed-angioplasty/part-3-the-fork-in-the-road-99-calcified-the-failed-angioplasty": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Fork in the Road & 99% Calcified: The Failed Angioplasty",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c003/p003.md"
+        "filePath": "e007/c003/p003.md"
     },
     "/aubrie/fall-semester-2015/friday-9-32-am-the-broken-foundation-the-failed-angioplasty/part-4-the-verdict-open-heart-bypass-the-longest-wait": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Verdict (Open-Heart Bypass) & The Longest Wait",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c003/p004.md"
+        "filePath": "e007/c003/p004.md"
     },
     "/aubrie/fall-semester-2015/friday-9-32-am-the-broken-foundation-the-failed-angioplasty/part-5-the-first-watch-the-midnight-vitals-check": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: The First Watch & The Midnight Vitals Check",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c003/p005.md"
+        "filePath": "e007/c003/p005.md"
     },
     "/aubrie/fall-semester-2015/the-forty-eight-hour-wait-transfer-to-star-city-general": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Forty-Eight Hour Wait & Transfer to Star City General",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|5|3"
+        "filePath": "__CHAP_TOC__|6|3"
     },
     "/aubrie/fall-semester-2015/the-forty-eight-hour-wait-transfer-to-star-city-general/part-1-weaning-the-radial-band-the-call-from-star-city": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Weaning the Radial Band & The Call from Star City",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c004/p001.md"
+        "filePath": "e007/c004/p001.md"
     },
     "/aubrie/fall-semester-2015/the-forty-eight-hour-wait-transfer-to-star-city-general/part-2-the-rubber-duck-convoy-zo-s-confession": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The 'Rubber Duck' Convoy & Zo\u00eb's Confession",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c004/p002.md"
+        "filePath": "e007/c004/p002.md"
     },
     "/aubrie/fall-semester-2015/open-heart-bypass-the-blizzard-fortress-a-cvicu-romance": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Open-Heart Bypass, The Blizzard Fortress, & A CVICU Romance",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|5|4"
+        "filePath": "__CHAP_TOC__|6|4"
     },
     "/aubrie/fall-semester-2015/open-heart-bypass-the-blizzard-fortress-a-cvicu-romance/part-1-the-pre-op-goodbye-the-coming-storm-zo-s-early-arrival": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Pre-Op Goodbye & The Coming Storm & Zo\u00eb's Early Arrival",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c005/p001.md"
+        "filePath": "e007/c005/p001.md"
     },
     "/aubrie/fall-semester-2015/open-heart-bypass-the-blizzard-fortress-a-cvicu-romance/part-2-the-incentive-spirometer-parallel-sanctuaries": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Incentive Spirometer & Parallel Sanctuaries",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c005/p002.md"
+        "filePath": "e007/c005/p002.md"
     },
     "/aubrie/fall-semester-2015/open-heart-bypass-the-blizzard-fortress-a-cvicu-romance/part-3-a-cvicu-romance-protocol-intimacy-v2": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: A CVICU Romance (Protocol: Intimacy.v2)",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c005/p003.md"
+        "filePath": "e007/c005/p003.md"
     },
     "/aubrie/fall-semester-2015/open-heart-bypass-the-blizzard-fortress-a-cvicu-romance/part-4-the-diuretic-the-psychological-deadlock": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Diuretic & The Psychological Deadlock",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c005/p004.md"
+        "filePath": "e007/c005/p004.md"
     },
     "/aubrie/fall-semester-2015/open-heart-bypass-the-blizzard-fortress-a-cvicu-romance/part-5-protocol-change-ensuite-the-bed-scale-338-0-lbs": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: Protocol.Change(EnSuite) & The Bed Scale (338.0 lbs)",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c005/p005.md"
+        "filePath": "e007/c005/p005.md"
     },
     "/aubrie/fall-semester-2015/return-to-the-sanctuary-thanksgiving-goodbye-alex": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Return to the Sanctuary, Thanksgiving, & Goodbye Alex",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|5|5"
+        "filePath": "__CHAP_TOC__|6|5"
     },
     "/aubrie/fall-semester-2015/return-to-the-sanctuary-thanksgiving-goodbye-alex/part-1-the-discharge-argument-the-slammed-door-goodbye-alex": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Discharge Argument & The Slammed Door (Goodbye, Alex)",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c006/p001.md"
+        "filePath": "e007/c006/p001.md"
     },
     "/aubrie/fall-semester-2015/return-to-the-sanctuary-thanksgiving-goodbye-alex/part-2-the-black-friday-compromise-scenic-road-trip": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Black Friday Compromise & Scenic Road Trip",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c006/p002.md"
+        "filePath": "e007/c006/p002.md"
     },
     "/aubrie/fall-semester-2015/enter-megan-a-new-caregiver-a-new-routine": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Enter Megan: A New Caregiver & A New Routine",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|5|6"
+        "filePath": "__CHAP_TOC__|6|6"
     },
     "/aubrie/fall-semester-2015/enter-megan-a-new-caregiver-a-new-routine/part-1-the-caregiver-handoff-enter-megan-work-buddies": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Caregiver Handoff (Enter Megan) & Work Buddies",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c007/p001.md"
+        "filePath": "e007/c007/p001.md"
     },
     "/aubrie/fall-semester-2015/enter-megan-a-new-caregiver-a-new-routine/part-2-the-accessibility-map-proposal-the-smokin-anvil": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Accessibility Map Proposal & The Smokin' Anvil",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c007/p002.md"
+        "filePath": "e007/c007/p002.md"
     },
     "/aubrie/fall-semester-2015/the-comeback-the-breaking-point-the-new-safe-person": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Comeback, The Breaking Point, & The New Safe Person",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|5|7"
+        "filePath": "__CHAP_TOC__|6|7"
     },
     "/aubrie/fall-semester-2015/the-comeback-the-breaking-point-the-new-safe-person/part-1-morning-prep-on-geneva-street-return-to-walton-hall": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Morning Prep on Geneva Street & Return to Walton Hall",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c008/p001.md"
+        "filePath": "e007/c008/p001.md"
     },
     "/aubrie/fall-semester-2015/the-comeback-the-breaking-point-the-new-safe-person/part-2-the-system-crash-the-breaking-point": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The System Crash (The Breaking Point)",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c008/p002.md"
+        "filePath": "e007/c008/p002.md"
     },
     "/aubrie/fall-semester-2015/the-comeback-the-breaking-point-the-new-safe-person/part-3-the-new-safe-person-the-solo-corporate-mixer": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The New Safe Person & The Solo Corporate Mixer",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c008/p003.md"
+        "filePath": "e007/c008/p003.md"
     },
     "/aubrie/fall-semester-2015/the-christmas-night-invitation-the-first-kiss-jordan-shawn-kelly": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Christmas Night Invitation, The First Kiss, & Jordan Shawn Kelly",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|5|8"
+        "filePath": "__CHAP_TOC__|6|8"
     },
     "/aubrie/fall-semester-2015/the-christmas-night-invitation-the-first-kiss-jordan-shawn-kelly/part-1-the-christmas-night-invitation-boxing-day-breakfast": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Christmas Night Invitation & Boxing Day Breakfast",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c009/p001.md"
+        "filePath": "e007/c009/p001.md"
     },
     "/aubrie/fall-semester-2015/the-christmas-night-invitation-the-first-kiss-jordan-shawn-kelly/part-2-jordan-shawn-kelly-the-double-wedding-proposal": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Jordan Shawn Kelly & The Double Wedding Proposal",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c009/p002.md"
+        "filePath": "e007/c009/p002.md"
     },
     "/aubrie/spring-semester-2016": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Spring Semester 2016",
         "theme": "raggiesoft-books",
-        "filePath": "__ERA_TOC__|6"
+        "filePath": "__ERA_TOC__|7"
     },
     "/aubrie/spring-semester-2016/off-precautions-megan-s-first-night": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Off Precautions & Megan's First Night",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|6|0"
+        "filePath": "__CHAP_TOC__|7|0"
     },
     "/aubrie/spring-semester-2016/off-precautions-megan-s-first-night/twelve-weeks-clear-the-eighth-point-of-the-constellation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Twelve Weeks Clear & The Eighth Point of the Constellation",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c001/p001.md"
+        "filePath": "e008/c001/p001.md"
     },
     "/aubrie/spring-semester-2016/hey-saacurc-the-bear-and-the-bug": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "HEY SAACURC! & The Bear and the Bug",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|6|1"
+        "filePath": "__CHAP_TOC__|7|1"
     },
     "/aubrie/spring-semester-2016/hey-saacurc-the-bear-and-the-bug/the-friday-arrival-the-bus-to-christiansburg": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Friday Arrival & The Bus to Christiansburg",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c002/p001.md"
+        "filePath": "e008/c002/p001.md"
     },
     "/aubrie/spring-semester-2016/the-electric-alert-the-box-office-showdown": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Electric Alert & The Box Office Showdown",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|6|2"
+        "filePath": "__CHAP_TOC__|7|2"
     },
     "/aubrie/spring-semester-2016/the-electric-alert-the-box-office-showdown/part-1-the-electric-alert-the-10-00-am-rush": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Electric Alert & The 10:00 AM Rush",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c003/p001.md"
+        "filePath": "e008/c003/p001.md"
     },
     "/aubrie/spring-semester-2016/the-electric-alert-the-box-office-showdown/part-2-the-letter-from-home-the-box-office-confrontation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Letter From Home & The Box Office Confrontation",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c003/p002.md"
+        "filePath": "e008/c003/p002.md"
     },
     "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Live at the Crucible & Senior Commencement",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|6|3"
+        "filePath": "__CHAP_TOC__|7|3"
     },
     "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-1-the-crucible-shuttle-the-forger-nation-tailgate": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Crucible Shuttle & The Forger Nation Tailgate",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c004/p001.md"
+        "filePath": "e008/c004/p001.md"
     },
     "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-2-the-anvil-strike-the-marching-forgers": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Anvil Strike & The Marching Forgers",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c004/p002.md"
+        "filePath": "e008/c004/p002.md"
     },
     "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-3-not-your-doll-fifty-two-to-nothing": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Not Your Doll & Fifty-Two to Nothing",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c004/p003.md"
+        "filePath": "e008/c004/p003.md"
     },
     "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-4-escape-velocity-ad-astra-tidal-lock-mile-marker-98": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: Escape Velocity (Ad Astra), Tidal Lock & Mile Marker 98",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c004/p004.md"
+        "filePath": "e008/c004/p004.md"
     },
     "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-5-our-own-frequency-brother-s-keeper-the-summer-festival-announcement": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: Our Own Frequency, Brother's Keeper & The Summer Festival Announcement",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c004/p005.md"
+        "filePath": "e008/c004/p005.md"
     },
     "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-6-neon-on-the-huckleberry-trail-saturday-night-lights-my-anchor-holds": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 6: Neon on the Huckleberry Trail, Saturday Night Lights & My Anchor Holds",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c004/p006.md"
+        "filePath": "e008/c004/p006.md"
     },
     "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-7-electric-color-live-at-the-crucible-the-ride-home": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 7: Electric Color (Live at the Crucible) & The Ride Home",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c004/p007.md"
+        "filePath": "e008/c004/p007.md"
     },
     "/aubrie/spring-semester-2016/live-at-the-crucible-senior-commencement/part-8-the-cove-95-5-f-two-wheelchairs-at-the-blue-ridge-regional-aquatic-center": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 8: The Cove (95.5\u00b0F): Two Wheelchairs at the Blue Ridge Regional Aquatic Center",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c004/p008.md"
+        "filePath": "e008/c004/p008.md"
     },
     "/aubrie/summer-2016": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Summer 2016",
         "theme": "raggiesoft-books",
-        "filePath": "__ERA_TOC__|7"
+        "filePath": "__ERA_TOC__|8"
     },
     "/aubrie/summer-2016/the-u-s-11-compound-the-sunken-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The U.S. 11 Compound & The Sunken Sanctuary",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|7|0"
+        "filePath": "__CHAP_TOC__|8|0"
     },
     "/aubrie/summer-2016/the-u-s-11-compound-the-sunken-sanctuary/the-u-s-11-compound-the-sunken-sanctuary-the-wedding-blueprint": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The U.S. 11 Compound, The Sunken Sanctuary, & The Wedding Blueprint",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c001/p001.md"
+        "filePath": "e009/c001/p001.md"
     },
     "/aubrie/summer-2016/the-double-wedding-the-legal-seal": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Double Wedding & The Legal Seal",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|7|1"
+        "filePath": "__CHAP_TOC__|8|1"
     },
     "/aubrie/summer-2016/the-double-wedding-the-legal-seal/part-1-the-morning-of-the-final-touches-the-gathering-the-vows": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Morning Of, The Final Touches, The Gathering, & The Vows",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c002/p001.md"
+        "filePath": "e009/c002/p001.md"
     },
     "/aubrie/summer-2016/the-double-wedding-the-legal-seal/part-2-the-legal-seal-the-grand-ballroom-reception-his-chariot-of-choice": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Legal Seal, The Grand Ballroom Reception, & His Chariot of Choice",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c002/p002.md"
+        "filePath": "e009/c002/p002.md"
+    },
+    "/aubrie/fall-semester-2016": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Fall Semester 2016",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|9"
+    },
+    "/aubrie/fall-semester-2016/a-familiar-face-the-hug-four-years-in-the-making": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Familiar Face & The Hug Four Years in the Making",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|9|0"
+    },
+    "/aubrie/fall-semester-2016/a-familiar-face-the-hug-four-years-in-the-making/part-1-the-hallway-freeze-the-fortress-of-proof": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Hallway Freeze & The Fortress of Proof",
+        "theme": "raggiesoft-books",
+        "filePath": "e010/c001/p001.md"
+    },
+    "/aubrie/fall-semester-2016/a-familiar-face-the-hug-four-years-in-the-making/part-2-his-wife-s-insistence-the-hug-four-years-in-the-making": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: His Wife's Insistence & The Hug Four Years in the Making",
+        "theme": "raggiesoft-books",
+        "filePath": "e010/c001/p002.md"
+    },
+    "/aubrie/fall-semester-2016/a-familiar-face-the-hug-four-years-in-the-making/part-3-the-separation-crash-the-forge-hall-extraction-the-new-social-script": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Separation Crash, The Forge Hall Extraction, & The New Social Script",
+        "theme": "raggiesoft-books",
+        "filePath": "e010/c001/p003.md"
     }
 }

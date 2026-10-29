@@ -515,7 +515,7 @@ $volumeCount = count($books);
                 <!-- 2. The Eleventh Child: Table of Illustrations -->
                 <article class="ova-universe-card">
                     <div class="ova-universe-media">
-                        <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/images/scenes/aubrie/e004/c010/s004/roa-gate-hug.jpg"
+                        <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/images/scenes/aubrie/e005/c010/s004/roa-gate-hug.jpg"
                              alt="Table of Illustrations — The Eleventh Child Visual Scene Index"
                              loading="lazy">
                     </div>

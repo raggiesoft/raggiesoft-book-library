@@ -40,14 +40,14 @@
         "text_pdf_bytes": 241676
     },
     "aubrie": {
-        "epub": "64.8 MB",
-        "pdf": "52.8 MB",
-        "text_epub": "970 KB",
-        "text_pdf": "3.6 MB",
-        "epub_bytes": 67997075,
-        "pdf_bytes": 55363289,
-        "text_epub_bytes": 992961,
-        "text_pdf_bytes": 3769437
+        "epub": "66 MB",
+        "pdf": "53.5 MB",
+        "text_epub": "999 KB",
+        "text_pdf": "3.7 MB",
+        "epub_bytes": 69224527,
+        "pdf_bytes": 56076524,
+        "text_epub_bytes": 1023387,
+        "text_pdf_bytes": 3849762
     },
     "beth": {
         "epub": "5.3 KB",
@@ -274,9 +274,9 @@
         "pdf": "16.3 MB",
         "text_epub": "145 KB",
         "text_pdf": "447 KB",
-        "epub_bytes": 15439424,
+        "epub_bytes": 15439423,
         "pdf_bytes": 17081679,
-        "text_epub_bytes": 148828,
+        "text_epub_bytes": 148830,
         "text_pdf_bytes": 457536
     },
     "water-planet": {
