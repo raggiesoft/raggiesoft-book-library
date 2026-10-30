@@ -12,16 +12,16 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "574 KB",
-            "pdf": "356 KB",
-            "text_epub": "37 KB",
-            "text_pdf": "123 KB",
-            "epub_bytes": 588182,
-            "pdf_bytes": 364327,
-            "text_epub_bytes": 38175,
-            "text_pdf_bytes": 126379
+            "epub": "2.3 MB",
+            "pdf": "1.1 MB",
+            "text_epub": "45 KB",
+            "text_pdf": "149 KB",
+            "epub_bytes": 2374904,
+            "pdf_bytes": 1164539,
+            "text_epub_bytes": 45744,
+            "text_pdf_bytes": 152781
         },
-        "illustration_count": 2
+        "illustration_count": 7
     },
     "/ad-astra": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -77,11 +77,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|2"
     },
-    "/ad-astra/prologue-escape-velocity-movements-i-iii-earth-to-the-stars/movement-iii-the-cosmos-zero-g-hugs-the-nebula-stream/zero-g-hugs-the-nebula-stream-at-continuum-factor-8-4": {
+    "/ad-astra/prologue-escape-velocity-movements-i-iii-earth-to-the-stars/movement-iii-the-cosmos-zero-g-hugs-the-nebula-stream/part-1-day-1-in-the-continuum-zero-g-hugs-unbuckling-the-tether": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Zero-G Hugs & The Nebula Stream at Continuum Factor 8.4",
+        "title": "Part 1: Day 1 in the Continuum: Zero-G Hugs & Unbuckling the Tether",
         "theme": "raggiesoft-books",
         "filePath": "e001/c003/p001.md"
+    },
+    "/ad-astra/prologue-escape-velocity-movements-i-iii-earth-to-the-stars/movement-iii-the-cosmos-zero-g-hugs-the-nebula-stream/part-2-days-2-3-in-the-continuum-pilot-shift-swaps-onboard-studio-jam-calibrating-to-0-90g": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Days 2\u20133 in the Continuum: Pilot Shift Swaps, Onboard Studio Jam & Calibrating to 0.90G",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c003/p002.md"
     },
     "/ad-astra/book-1-sanctuary-on-caelum-iv-movement-iv-stardate-49601": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -123,7 +129,19 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Hailing Frequencies at 120 BPM",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c003/p001.md",
+        "filePath": "e002/c003/p001.md"
+    },
+    "/ad-astra/book-1-sanctuary-on-caelum-iv-movement-iv-stardate-49601/chapter-4-the-48-hour-orbit-stardate-49601-5": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 4: The 48-Hour Orbit (Stardate 49601.5)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|3"
+    },
+    "/ad-astra/book-1-sanctuary-on-caelum-iv-movement-iv-stardate-49601/chapter-4-the-48-hour-orbit-stardate-49601-5/the-48-hour-orbit-sun-cycle-ring-night-the-umbral-hush": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The 48-Hour Orbit: Sun-Cycle, Ring-Night & The Umbral Hush",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c004/p001.md",
         "nextUrl": "/stardust-engine",
         "nextText": "Return to Earth: The Stardust Engine (1978\u20132018)"
     }
