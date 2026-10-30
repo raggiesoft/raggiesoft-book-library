@@ -14,12 +14,12 @@
         "ebook_sizes": {
             "epub": "17.1 MB",
             "pdf": "18.8 MB",
-            "text_epub": "175 KB",
-            "text_pdf": "536 KB",
-            "epub_bytes": 17913130,
-            "pdf_bytes": 19665473,
-            "text_epub_bytes": 179676,
-            "text_pdf_bytes": 548673
+            "text_epub": "180 KB",
+            "text_pdf": "547 KB",
+            "epub_bytes": 17917432,
+            "pdf_bytes": 19678086,
+            "text_epub_bytes": 184000,
+            "text_pdf_bytes": 560541
         },
         "illustration_count": 25
     },
@@ -161,13 +161,13 @@
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/p001.md"
     },
-    "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1995-2004/chapter-2-job-shadowing-the-manager-a-day-in-the-life-of-holly-o-connell-october-18-2002": {
+    "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1995-2004/chapter-2-job-shadowing-the-manager-a-day-in-the-life-of-holly-o-connell-october-15-1999": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 2: Job Shadowing the Manager \u2014 A Day in the Life of Holly O'Connell (October 18, 2002)",
+        "title": "Chapter 2: Job Shadowing the Manager \u2014 A Day in the Life of Holly O'Connell (October 15, 1999)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|1"
     },
-    "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1995-2004/chapter-2-job-shadowing-the-manager-a-day-in-the-life-of-holly-o-connell-october-18-2002/job-shadowing-the-manager-a-day-in-the-life-of-holly-o-connell": {
+    "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1995-2004/chapter-2-job-shadowing-the-manager-a-day-in-the-life-of-holly-o-connell-october-15-1999/job-shadowing-the-manager-a-day-in-the-life-of-holly-o-connell": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Job Shadowing the Manager \u2014 A Day in the Life of Holly O'Connell",
         "theme": "raggiesoft-books",

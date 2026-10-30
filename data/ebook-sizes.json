@@ -282,12 +282,12 @@
     "stardust-engine": {
         "epub": "17.1 MB",
         "pdf": "18.8 MB",
-        "text_epub": "175 KB",
-        "text_pdf": "536 KB",
-        "epub_bytes": 17913130,
-        "pdf_bytes": 19665473,
-        "text_epub_bytes": 179676,
-        "text_pdf_bytes": 548673
+        "text_epub": "180 KB",
+        "text_pdf": "547 KB",
+        "epub_bytes": 17917432,
+        "pdf_bytes": 19678086,
+        "text_epub_bytes": 184000,
+        "text_pdf_bytes": 560541
     },
     "water-planet": {
         "epub": "5.3 KB",
