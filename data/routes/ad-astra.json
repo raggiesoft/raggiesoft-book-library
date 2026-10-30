@@ -1,0 +1,88 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "oceanview",
+        "siteName": "Ocean View Archives",
+        "isSequential": true,
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books",
+        "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
+        "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
+        "navbarBrandLink": "/raggiesoft-books",
+        "ebook_sizes": {
+            "epub": "311 KB",
+            "pdf": "197 KB",
+            "text_epub": "20 KB",
+            "text_pdf": "73 KB",
+            "epub_bytes": 318680,
+            "pdf_bytes": 201386,
+            "text_epub_bytes": 20702,
+            "text_pdf_bytes": 75234
+        },
+        "illustration_count": 1
+    },
+    "/ad-astra": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Escape Velocity: Ad Astra",
+        "theme": "raggiesoft-books",
+        "filePath": "__SERIES_LANDING__"
+    },
+    "/ad-astra/toc": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Contents - Escape Velocity: Ad Astra",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
+    },
+    "/ad-astra/illustrations": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Illustrations - Escape Velocity: Ad Astra",
+        "theme": "raggiesoft-books",
+        "filePath": "__ILLUSTRATIONS__"
+    },
+    "/ad-astra/book-1-sanctuary-on-caelum-iv-stardate-49601": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book 1: Sanctuary on Caelum-IV (Stardate 49601)",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|0"
+    },
+    "/ad-astra/book-1-sanctuary-on-caelum-iv-stardate-49601/chapter-1-aft-cargo-hatch-open-stardate-49601-0": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: Aft Cargo Hatch Open (Stardate 49601.0)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|0"
+    },
+    "/ad-astra/book-1-sanctuary-on-caelum-iv-stardate-49601/chapter-1-aft-cargo-hatch-open-stardate-49601-0/aft-cargo-hatch-open": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Aft Cargo Hatch Open",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/p001.md"
+    },
+    "/ad-astra/book-1-sanctuary-on-caelum-iv-stardate-49601/chapter-2-the-acoustic-forest-basaltic-shore-stardate-49601-4": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Acoustic Forest & Basaltic Shore (Stardate 49601.4)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|1"
+    },
+    "/ad-astra/book-1-sanctuary-on-caelum-iv-stardate-49601/chapter-2-the-acoustic-forest-basaltic-shore-stardate-49601-4/the-acoustic-forest-basaltic-shore": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Acoustic Forest & Basaltic Shore",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c002/p001.md"
+    },
+    "/ad-astra/book-1-sanctuary-on-caelum-iv-stardate-49601/chapter-3-hailing-frequencies-at-120-bpm-stardate-49601-8": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: Hailing Frequencies at 120 BPM (Stardate 49601.8)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|2"
+    },
+    "/ad-astra/book-1-sanctuary-on-caelum-iv-stardate-49601/chapter-3-hailing-frequencies-at-120-bpm-stardate-49601-8/hailing-frequencies-at-120-bpm": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Hailing Frequencies at 120 BPM",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c003/p001.md",
+        "nextUrl": "/stardust-engine",
+        "nextText": "Return to Earth: The Stardust Engine (1978\u20132018)"
+    }
+}

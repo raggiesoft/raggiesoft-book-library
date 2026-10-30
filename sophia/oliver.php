@@ -345,7 +345,10 @@ $overviewUrl = '/' . $seriesSlug;
 $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
 $narrativeTheme = $frontmatter['theme'] ?? null;
 
-// Fallback to series-level theme defined in landing.md frontmatter for landing/TOC views
+// Fallback to series-level theme defined in ovab.json (`series_theme`) or landing.md frontmatter for landing/TOC views
+if (empty($narrativeTheme) && !empty($toc_manifest['series_theme'])) {
+    $narrativeTheme = preg_replace('/[^a-zA-Z0-9_-]/', '', (string)$toc_manifest['series_theme']);
+}
 if (empty($narrativeTheme) && !empty($toc_manifest['series_description_long'])) {
     if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $toc_manifest['series_description_long'], $descMatches)) {
         if (preg_match('/^theme:\s*["\']?([a-zA-Z0-9_-]+)["\']?\s*$/m', $descMatches[1], $themeMatch)) {

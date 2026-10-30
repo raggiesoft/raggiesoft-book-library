@@ -36,9 +36,10 @@ header('Content-Type: text/html; charset=utf-8');
 // Strip any query parameters to match exact semantic route paths
 $requestUri = strtok($_SERVER['REQUEST_URI'], '?');
 
-// Normalize legacy `/books/<series>` deep-links (e.g., `/books/stardust-engine`, `/books/erin`)
-// to the canonical root-level series route (`/<series>`) with a permanent 301 redirect.
-if (preg_match('#^/books/(.+)$#', $requestUri, $legacyBookMatch)) {
+// Normalize legacy `/books/<series>` or `/raggiesoft-books/<series>` deep-links
+// (e.g., `/books/stardust-engine`, `/raggiesoft-books/ad-astra`) to the canonical
+// root-level series route (`/<series>`) with a permanent 301 redirect.
+if (preg_match('#^/(?:raggiesoft-)?books/(.+)$#', $requestUri, $legacyBookMatch)) {
     header('Location: /' . ltrim($legacyBookMatch[1], '/'), true, 301);
     exit;
 }
@@ -59,9 +60,9 @@ $pageConfig = [
 $settingsFile = $basePath . '/data/settings.json';
 if (file_exists($settingsFile)) {
     $settings = json_decode(file_get_contents($settingsFile), true);
-    // Coalesce fallback values to prevent undefined variables
-    $cdnBaseUrl = $settings['cdnBaseUrl'] ?? 'https://assets.raggiesoft.com';
-    $siteName = $settings['siteName'] ?? 'Ocean View Archives';
+    // Coalesce fallback values to prevent undefined or empty variables
+    $cdnBaseUrl = !empty($settings['cdnBaseUrl']) ? rtrim($settings['cdnBaseUrl'], '/') : 'https://assets.raggiesoft.com';
+    $siteName = !empty($settings['siteName']) ? $settings['siteName'] : 'Ocean View Archives';
 } else {
     $cdnBaseUrl = 'https://assets.raggiesoft.com';
     $siteName = 'Ocean View Archives';

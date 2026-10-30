@@ -554,7 +554,28 @@ $volumeCount = count($books);
                     </div>
                 </article>
 
-                <!-- 4. Contemporary Fiction Library -->
+                <!-- 4. Escape Velocity: Ad Astra (Caelum-IV Chronicles — Stardate 49601) -->
+                <article class="ova-universe-card">
+                    <div class="ova-universe-media">
+                        <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/images/covers/og/ad-astra.jpg"
+                             alt="Escape Velocity: Ad Astra — Caelum-IV Planetary Survey &amp; Chronicles (Stardate 49601)"
+                             loading="lazy">
+                    </div>
+                    <div class="ova-universe-body">
+                        <div>
+                            <span class="ova-universe-tag">Caelum-IV Sanctuary &bull; Stardate 49601.0</span>
+                            <h3 class="ova-universe-title">Escape Velocity: Ad Astra</h3>
+                            <p class="ova-universe-desc">
+                                Stepping out of the open cargo hatch of the <em>U.S.S. Aethelgard</em> during Movement IV of <em>&ldquo;Escape Velocity (Ad Astra),&rdquo;</em> Cassidy, Ryan, Holly, and the Wright twins explore the tidally locked, purple-ocean moon <strong>Caelum-IV</strong> (<a href="https://nebulae.raggiesoft.com" data-no-spa="true" style="color: var(--rs-primary); font-weight: 700;">nebulae.raggiesoft.com</a>).
+                            </p>
+                        </div>
+                        <a href="/ad-astra" class="ova-universe-link">
+                            <i class="ph-fill ph-planet"></i> Read Escape Velocity: Ad Astra
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 5. Contemporary Fiction Library -->
                 <article class="ova-universe-card">
                     <div class="ova-universe-media">
                         <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/images/og/contemporary_v2.jpg"
