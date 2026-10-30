@@ -155,11 +155,11 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
         $resolvedThemeCss = 'oceanview';
     }
     ?>
-    <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-grid.css">
+    <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-grid.css?v=20261029f">
     <link rel="stylesheet" href="<?= $assetsUrl ?>/raggiesoft-books/library/css/stardust-engine.min.css?v=<?php echo time(); ?>">
     <link rel="stylesheet" href="<?= $assetsUrl ?>/raggiesoft-books/library/css/theme-<?= htmlspecialchars($resolvedThemeCss) ?>.min.css">
-    <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-network.css?v=20261017m">
-    <script src="<?= $assetsUrl ?>/common/js/raggiesoft-network.js?v=20261017m" defer></script>
+    <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-network.css?v=20261029f">
+    <script src="<?= $assetsUrl ?>/common/js/raggiesoft-network.js?v=20261029f" defer></script>
     <style>
         /* Native PWA Immersion Guard: Hide cross-site network bar in installed PWA display modes */
         @media (display-mode: standalone),
