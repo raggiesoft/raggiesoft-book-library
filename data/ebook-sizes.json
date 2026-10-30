@@ -1,13 +1,13 @@
 {
     "ad-astra": {
-        "epub": "3.6 MB",
-        "pdf": "1.9 MB",
-        "text_epub": "76 KB",
-        "text_pdf": "250 KB",
-        "epub_bytes": 3748274,
-        "pdf_bytes": 1956078,
-        "text_epub_bytes": 78291,
-        "text_pdf_bytes": 255659
+        "epub": "3.8 MB",
+        "pdf": "2.1 MB",
+        "text_epub": "83 KB",
+        "text_pdf": "271 KB",
+        "epub_bytes": 3951618,
+        "pdf_bytes": 2175766,
+        "text_epub_bytes": 85395,
+        "text_pdf_bytes": 277807
     },
     "aethel": {
         "epub": "295 KB",
@@ -280,14 +280,14 @@
         "text_pdf_bytes": 194611
     },
     "stardust-engine": {
-        "epub": "16.9 MB",
-        "pdf": "18.5 MB",
-        "text_epub": "167 KB",
-        "text_pdf": "511 KB",
-        "epub_bytes": 17693834,
-        "pdf_bytes": 19429516,
-        "text_epub_bytes": 171155,
-        "text_pdf_bytes": 523461
+        "epub": "17.1 MB",
+        "pdf": "18.8 MB",
+        "text_epub": "175 KB",
+        "text_pdf": "536 KB",
+        "epub_bytes": 17913130,
+        "pdf_bytes": 19665473,
+        "text_epub_bytes": 179676,
+        "text_pdf_bytes": 548673
     },
     "water-planet": {
         "epub": "5.3 KB",

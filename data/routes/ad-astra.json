@@ -12,16 +12,16 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "3.6 MB",
-            "pdf": "1.9 MB",
-            "text_epub": "76 KB",
-            "text_pdf": "250 KB",
-            "epub_bytes": 3748274,
-            "pdf_bytes": 1956078,
-            "text_epub_bytes": 78291,
-            "text_pdf_bytes": 255659
+            "epub": "3.8 MB",
+            "pdf": "2.1 MB",
+            "text_epub": "83 KB",
+            "text_pdf": "271 KB",
+            "epub_bytes": 3951618,
+            "pdf_bytes": 2175766,
+            "text_epub_bytes": 85395,
+            "text_pdf_bytes": 277807
         },
-        "illustration_count": 12
+        "illustration_count": 13
     },
     "/ad-astra": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -201,7 +201,19 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Mother-Grove Amphitheater, The Unburied Leitmotif & The Starfield Calibration Sessions",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c009/p001.md",
+        "filePath": "e002/c009/p001.md"
+    },
+    "/ad-astra/book-1-sanctuary-on-caelum-iv-movement-iv-stardate-49601/chapter-10-job-shadowing-the-mission-commander-a-day-in-the-life-of-holly-on-caelum-iv-stardate-49604-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 10: Job Shadowing the Mission Commander \u2014 A Day in the Life of Holly on Caelum-IV (Stardate 49604.2)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|9"
+    },
+    "/ad-astra/book-1-sanctuary-on-caelum-iv-movement-iv-stardate-49601/chapter-10-job-shadowing-the-mission-commander-a-day-in-the-life-of-holly-on-caelum-iv-stardate-49604-2/job-shadowing-the-mission-commander-a-day-in-the-life-of-holly-on-caelum-iv": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Job Shadowing the Mission Commander \u2014 A Day in the Life of Holly on Caelum-IV",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c010/p001.md",
         "nextUrl": "/stardust-engine",
         "nextText": "Return to Earth: The Stardust Engine (1978\u20132018)"
     }

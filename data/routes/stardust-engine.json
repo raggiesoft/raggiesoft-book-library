@@ -12,16 +12,16 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "16.9 MB",
-            "pdf": "18.5 MB",
-            "text_epub": "167 KB",
-            "text_pdf": "511 KB",
-            "epub_bytes": 17693834,
-            "pdf_bytes": 19429516,
-            "text_epub_bytes": 171155,
-            "text_pdf_bytes": 523461
+            "epub": "17.1 MB",
+            "pdf": "18.8 MB",
+            "text_epub": "175 KB",
+            "text_pdf": "536 KB",
+            "epub_bytes": 17913130,
+            "pdf_bytes": 19665473,
+            "text_epub_bytes": 179676,
+            "text_pdf_bytes": 548673
         },
-        "illustration_count": 24
+        "illustration_count": 25
     },
     "/stardust-engine": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -143,35 +143,47 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c002/p001.md"
     },
-    "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1996-2005": {
+    "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1995-2004": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book 4: Ad Astra, Hard Reset & The Stadium Years (1996\u20132005)",
+        "title": "Book 4: Ad Astra, Hard Reset & The Stadium Years (1995\u20132004)",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|3"
     },
-    "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1996-2005/chapter-1-escape-velocity-ad-astra-main-engine-cutoff-1995-1997": {
+    "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1995-2004/chapter-1-escape-velocity-ad-astra-main-engine-cutoff-1995-1997": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 1: Escape Velocity (Ad Astra) & Main Engine Cutoff (1995\u20131997)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|0"
     },
-    "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1996-2005/chapter-1-escape-velocity-ad-astra-main-engine-cutoff-1995-1997/main-engine-cutoff-the-magnum-opus": {
+    "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1995-2004/chapter-1-escape-velocity-ad-astra-main-engine-cutoff-1995-1997/main-engine-cutoff-the-magnum-opus": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Main Engine Cutoff & The Magnum Opus",
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/p001.md"
     },
-    "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1996-2005/chapter-2-writing-before-the-distance-on-progress-street-2004": {
+    "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1995-2004/chapter-2-job-shadowing-the-manager-a-day-in-the-life-of-holly-o-connell-october-18-2002": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 2: Writing Before the Distance on Progress Street (2004)",
+        "title": "Chapter 2: Job Shadowing the Manager \u2014 A Day in the Life of Holly O'Connell (October 18, 2002)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|1"
     },
-    "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1996-2005/chapter-2-writing-before-the-distance-on-progress-street-2004/two-blocks-from-commonwealth-mall": {
+    "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1995-2004/chapter-2-job-shadowing-the-manager-a-day-in-the-life-of-holly-o-connell-october-18-2002/job-shadowing-the-manager-a-day-in-the-life-of-holly-o-connell": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Job Shadowing the Manager \u2014 A Day in the Life of Holly O'Connell",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c002/p001.md"
+    },
+    "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1995-2004/chapter-3-writing-before-the-distance-on-progress-street-2004": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: Writing Before the Distance on Progress Street (2004)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|2"
+    },
+    "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1995-2004/chapter-3-writing-before-the-distance-on-progress-street-2004/two-blocks-from-commonwealth-mall": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Two Blocks from Commonwealth Mall",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/p001.md"
+        "filePath": "e004/c003/p001.md"
     },
     "/stardust-engine/book-5-burnout-hiatus-our-own-frequency-neon-on-the-huckleberry-trail-2005-2014": {
         "view": "pages/raggiesoft-books/books/viewer",
