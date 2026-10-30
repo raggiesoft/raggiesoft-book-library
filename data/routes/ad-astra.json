@@ -12,16 +12,16 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "2.6 MB",
-            "pdf": "1.3 MB",
-            "text_epub": "55 KB",
-            "text_pdf": "179 KB",
-            "epub_bytes": 2730065,
-            "pdf_bytes": 1345411,
-            "text_epub_bytes": 56452,
-            "text_pdf_bytes": 183244
+            "epub": "3.6 MB",
+            "pdf": "1.9 MB",
+            "text_epub": "73 KB",
+            "text_pdf": "236 KB",
+            "epub_bytes": 3744646,
+            "pdf_bytes": 1941678,
+            "text_epub_bytes": 74687,
+            "text_pdf_bytes": 241381
         },
-        "illustration_count": 8
+        "illustration_count": 12
     },
     "/ad-astra": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -153,7 +153,55 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "0.88G Calibration, Water Scans & The Purple Sea",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c005/p001.md",
+        "filePath": "e002/c005/p001.md"
+    },
+    "/ad-astra/book-1-sanctuary-on-caelum-iv-movement-iv-stardate-49601/chapter-6-the-singing-lava-tubes-the-95-5-f-obsidian-cove-stardate-49602-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 6: The Singing Lava-Tubes & The 95.5\u00b0F Obsidian Cove (Stardate 49602.3)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|5"
+    },
+    "/ad-astra/book-1-sanctuary-on-caelum-iv-movement-iv-stardate-49601/chapter-6-the-singing-lava-tubes-the-95-5-f-obsidian-cove-stardate-49602-3/the-singing-lava-tubes-the-95-5-f-obsidian-cove": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Singing Lava-Tubes & The 95.5\u00b0F Obsidian Cove",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c006/p001.md"
+    },
+    "/ad-astra/book-1-sanctuary-on-caelum-iv-movement-iv-stardate-49601/chapter-7-warm-ring-shadow-rain-sanctuary-hot-chocolate-the-family-stateroom-stardate-49602-6": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 7: Warm Ring-Shadow Rain, Sanctuary Hot Chocolate & The Family Stateroom (Stardate 49602.6)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|6"
+    },
+    "/ad-astra/book-1-sanctuary-on-caelum-iv-movement-iv-stardate-49601/chapter-7-warm-ring-shadow-rain-sanctuary-hot-chocolate-the-family-stateroom-stardate-49602-6/warm-ring-shadow-rain-sanctuary-hot-chocolate-the-family-stateroom": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Warm Ring-Shadow Rain, Sanctuary Hot Chocolate & The Family Stateroom",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c007/p001.md"
+    },
+    "/ad-astra/book-1-sanctuary-on-caelum-iv-movement-iv-stardate-49601/chapter-8-syzygy-low-tide-the-three-hour-glass-reef-window-stardate-49603-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 8: Syzygy Low Tide & The Three-Hour Glass Reef Window (Stardate 49603.1)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|7"
+    },
+    "/ad-astra/book-1-sanctuary-on-caelum-iv-movement-iv-stardate-49601/chapter-8-syzygy-low-tide-the-three-hour-glass-reef-window-stardate-49603-1/syzygy-low-tide-the-three-hour-glass-reef-window": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Syzygy Low Tide & The Three-Hour Glass Reef Window",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c008/p001.md"
+    },
+    "/ad-astra/book-1-sanctuary-on-caelum-iv-movement-iv-stardate-49601/chapter-9-the-mother-grove-amphitheater-the-unburied-leitmotif-stardate-49603-5": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 9: The Mother-Grove Amphitheater & The Unburied Leitmotif (Stardate 49603.5)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|8"
+    },
+    "/ad-astra/book-1-sanctuary-on-caelum-iv-movement-iv-stardate-49601/chapter-9-the-mother-grove-amphitheater-the-unburied-leitmotif-stardate-49603-5/the-mother-grove-amphitheater-the-unburied-leitmotif": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Mother-Grove Amphitheater & The Unburied Leitmotif",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c009/p001.md",
         "nextUrl": "/stardust-engine",
         "nextText": "Return to Earth: The Stardust Engine (1978\u20132018)"
     }
