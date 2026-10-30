@@ -14,12 +14,12 @@
         "ebook_sizes": {
             "epub": "13.5 MB",
             "pdf": "15.3 MB",
-            "text_epub": "985 KB",
-            "text_pdf": "2.7 MB",
-            "epub_bytes": 14122860,
-            "pdf_bytes": 16025093,
-            "text_epub_bytes": 1008691,
-            "text_pdf_bytes": 2848155
+            "text_epub": "1009 KB",
+            "text_pdf": "2.8 MB",
+            "epub_bytes": 14146971,
+            "pdf_bytes": 16090882,
+            "text_epub_bytes": 1032801,
+            "text_pdf_bytes": 2914090
         },
         "illustration_count": 18
     },
@@ -1523,196 +1523,280 @@
         "theme": "raggiesoft-books",
         "filePath": "e017/c005/p003.md"
     },
-    "/rachel/the-eastern-anchor": {
+    "/rachel/the-shallow-end": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Eastern Anchor",
+        "title": "The Shallow End",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|17"
     },
-    "/rachel/the-eastern-anchor/the-foundation": {
+    "/rachel/the-shallow-end/the-foundation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Foundation",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|17|0"
     },
-    "/rachel/the-eastern-anchor/the-foundation/the-tarmac-and-the-tear-the-decoy-protocol": {
+    "/rachel/the-shallow-end/the-foundation/the-tarmac-and-the-tear-the-decoy-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Tarmac and the Tear & The Decoy Protocol",
         "theme": "raggiesoft-books",
         "filePath": "e018/c001/p001.md"
     },
-    "/rachel/the-eastern-anchor/the-blueprint-and-the-sabomnim": {
+    "/rachel/the-shallow-end/the-blueprint-and-the-sabomnim": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Blueprint and the Sabomnim",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|17|1"
     },
-    "/rachel/the-eastern-anchor/the-blueprint-and-the-sabomnim/part-1-the-transition-wake-up-the-reunion-at-the-register": {
+    "/rachel/the-shallow-end/the-blueprint-and-the-sabomnim/part-1-the-transition-wake-up-the-reunion-at-the-register": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Transition Wake-Up & The Reunion at the Register",
         "theme": "raggiesoft-books",
         "filePath": "e018/c002/p001.md"
     },
-    "/rachel/the-eastern-anchor/the-blueprint-and-the-sabomnim/part-2-the-alumni-roster-the-woven-stripe": {
+    "/rachel/the-shallow-end/the-blueprint-and-the-sabomnim/part-2-the-alumni-roster-the-woven-stripe": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Alumni Roster & The Woven Stripe",
         "theme": "raggiesoft-books",
         "filePath": "e018/c002/p002.md"
     },
-    "/rachel/the-eastern-anchor/the-blueprint-and-the-sabomnim/part-3-the-sea-of-truth-the-criollo-drive-ascent": {
+    "/rachel/the-shallow-end/the-blueprint-and-the-sabomnim/part-3-the-sea-of-truth-the-criollo-drive-ascent": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Sea of Truth & The Criollo Drive Ascent",
         "theme": "raggiesoft-books",
         "filePath": "e018/c002/p003.md"
     },
-    "/rachel/the-eastern-anchor/the-sunday-reset": {
+    "/rachel/the-shallow-end/the-sunday-reset": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Sunday Reset",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|17|2"
     },
-    "/rachel/the-eastern-anchor/the-sunday-reset/the-three-day-math-the-evolution-of-the-anchor": {
+    "/rachel/the-shallow-end/the-sunday-reset/the-three-day-math-the-evolution-of-the-anchor": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Three-Day Math & The Evolution of the Anchor",
         "theme": "raggiesoft-books",
         "filePath": "e018/c003/p001.md"
     },
-    "/rachel/the-eastern-anchor/the-digital-sos": {
+    "/rachel/the-shallow-end/the-open-door-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Digital SOS",
+        "title": "The Open-Door Sanctuary",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|17|3"
     },
-    "/rachel/the-eastern-anchor/the-digital-sos/part-1-the-command-center-the-blackwater-extraction": {
+    "/rachel/the-shallow-end/the-open-door-sanctuary/part-1-the-keys-to-3701-the-dollar-lease": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Command Center & The Blackwater Extraction",
+        "title": "Part 1: The Keys to 3701 & The Dollar Lease",
         "theme": "raggiesoft-books",
         "filePath": "e018/c004/p001.md"
     },
-    "/rachel/the-eastern-anchor/the-digital-sos/part-2-the-evasive-route-the-1802-perimeter": {
+    "/rachel/the-shallow-end/the-open-door-sanctuary/part-2-the-three-room-geometry-the-open-door-policy-the-midnight-blue-belts": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Evasive Route & The 1802 Perimeter",
+        "title": "Part 2: The Three-Room Geometry, The Open-Door Policy, & The Midnight Blue Belts",
         "theme": "raggiesoft-books",
         "filePath": "e018/c004/p002.md"
     },
-    "/rachel/the-eastern-anchor/the-digital-sos/part-3-the-legal-definition-the-weight-of-the-anchor": {
+    "/rachel/the-shallow-end/the-route-25-loop-the-shallow-end": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Route 25 Loop & The Shallow End",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|17|4"
+    },
+    "/rachel/the-shallow-end/the-route-25-loop-the-shallow-end/part-1-first-contact-the-engineered-route-25-commute": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: First Contact & The Engineered Route 25 Commute",
+        "theme": "raggiesoft-books",
+        "filePath": "e018/c005/p001.md"
+    },
+    "/rachel/the-shallow-end/the-route-25-loop-the-shallow-end/part-2": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: \\",
+        "theme": "raggiesoft-books",
+        "filePath": "e018/c005/p002.md"
+    },
+    "/rachel/the-shallow-end/twin-magic-the-chesapeake-bay-aquarium": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Twin Magic & The Chesapeake Bay Aquarium",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|17|5"
+    },
+    "/rachel/the-shallow-end/twin-magic-the-chesapeake-bay-aquarium/part-1-twin-magic-at-susquehanna-drive": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Twin Magic at Susquehanna Drive",
+        "theme": "raggiesoft-books",
+        "filePath": "e018/c006/p001.md"
+    },
+    "/rachel/the-shallow-end/twin-magic-the-chesapeake-bay-aquarium/part-2-the-chesapeake-bay-aquarium": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Chesapeake Bay Aquarium",
+        "theme": "raggiesoft-books",
+        "filePath": "e018/c006/p002.md"
+    },
+    "/rachel/the-shallow-end/unhandled-exception-the-living-firewall": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Unhandled Exception & The Living Firewall",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|17|6"
+    },
+    "/rachel/the-shallow-end/unhandled-exception-the-living-firewall/part-1-the-susquehanna-cutoff-unhandled-exception": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Susquehanna Cutoff & Unhandled Exception",
+        "theme": "raggiesoft-books",
+        "filePath": "e018/c007/p001.md"
+    },
+    "/rachel/the-shallow-end/unhandled-exception-the-living-firewall/part-2-reclaiming-the-narrative-the-living-firewall": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Reclaiming the Narrative: The Living Firewall",
+        "theme": "raggiesoft-books",
+        "filePath": "e018/c007/p002.md"
+    },
+    "/rachel/the-eastern-anchor": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Eastern Anchor",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|18"
+    },
+    "/rachel/the-eastern-anchor/the-passcode-the-blackwater-extraction": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Passcode & The Blackwater Extraction",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|18|0"
+    },
+    "/rachel/the-eastern-anchor/the-passcode-the-blackwater-extraction/part-1-the-passcode-the-blackwater-extraction": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Passcode & The Blackwater Extraction",
+        "theme": "raggiesoft-books",
+        "filePath": "e019/c001/p001.md"
+    },
+    "/rachel/the-eastern-anchor/the-passcode-the-blackwater-extraction/part-2-the-evasive-route-the-1802-perimeter": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Evasive Route & The 1802 Perimeter",
+        "theme": "raggiesoft-books",
+        "filePath": "e019/c001/p002.md"
+    },
+    "/rachel/the-eastern-anchor/the-passcode-the-blackwater-extraction/part-3-the-legal-definition-the-weight-of-the-anchor": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Legal Definition & The Weight of the Anchor",
         "theme": "raggiesoft-books",
-        "filePath": "e018/c004/p003.md"
+        "filePath": "e019/c001/p003.md"
     },
     "/rachel/the-eastern-anchor/the-fortress": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fortress",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|17|4"
+        "filePath": "__CHAP_TOC__|18|1"
     },
     "/rachel/the-eastern-anchor/the-fortress/part-1-the-lifelong-partner-shedding-the-name": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Lifelong Partner & Shedding the Name",
         "theme": "raggiesoft-books",
-        "filePath": "e018/c005/p001.md"
+        "filePath": "e019/c002/p001.md"
     },
-    "/rachel/the-eastern-anchor/the-fortress/part-2-the-dollar-lease": {
+    "/rachel/the-eastern-anchor/the-fortress/part-2-the-amended-dollar-lease": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Dollar Lease",
+        "title": "Part 2: The Amended Dollar Lease",
         "theme": "raggiesoft-books",
-        "filePath": "e018/c005/p002.md"
+        "filePath": "e019/c002/p002.md"
     },
     "/rachel/the-eastern-anchor/the-deployment": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Deployment",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|17|5"
+        "filePath": "__CHAP_TOC__|18|2"
     },
     "/rachel/the-eastern-anchor/the-deployment/the-west-coast-wake-up": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The West Coast Wake-Up",
         "theme": "raggiesoft-books",
-        "filePath": "e018/c006/p001.md"
+        "filePath": "e019/c003/p001.md"
     },
     "/rachel/the-director-s-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Director's Perimeter",
         "theme": "raggiesoft-books",
-        "filePath": "__ERA_TOC__|18"
+        "filePath": "__ERA_TOC__|19"
     },
     "/rachel/the-director-s-perimeter/the-capture": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Capture",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|18|0"
+        "filePath": "__CHAP_TOC__|19|0"
     },
     "/rachel/the-director-s-perimeter/the-capture/the-sme-directive": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The SME Directive",
         "theme": "raggiesoft-books",
-        "filePath": "e019/c001/p001.md"
+        "filePath": "e020/c001/p001.md"
     },
     "/rachel/the-director-s-perimeter/the-moosewood-anomaly": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Moosewood Anomaly",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|18|1"
+        "filePath": "__CHAP_TOC__|19|1"
     },
-    "/rachel/the-director-s-perimeter/the-moosewood-anomaly/the-twenty-first-milestone-the-evasive-route": {
+    "/rachel/the-director-s-perimeter/the-moosewood-anomaly/the-twenty-third-milestone-the-evasive-route": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Twenty-First Milestone & The Evasive Route",
+        "title": "The Twenty-Third Milestone & The Evasive Route",
         "theme": "raggiesoft-books",
-        "filePath": "e019/c002/p001.md"
+        "filePath": "e020/c002/p001.md"
     },
     "/rachel/the-director-s-perimeter/the-tactical-acquisition": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Tactical Acquisition",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|18|2"
+        "filePath": "__CHAP_TOC__|19|2"
     },
     "/rachel/the-director-s-perimeter/the-tactical-acquisition/the-route-36-commute-the-corporate-guillotine": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Route 36 Commute & The Corporate Guillotine",
         "theme": "raggiesoft-books",
-        "filePath": "e019/c003/p001.md"
+        "filePath": "e020/c003/p001.md"
     },
     "/rachel/the-director-s-perimeter/ground-zero": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Ground Zero",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|18|3"
+        "filePath": "__CHAP_TOC__|19|3"
     },
-    "/rachel/the-director-s-perimeter/ground-zero/the-demolition-directive-the-intact-architecture": {
+    "/rachel/the-director-s-perimeter/ground-zero/part-1-the-demolition-directive-the-intact-architecture": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Demolition Directive & The Intact Architecture",
+        "title": "Part 1: The Demolition Directive & The Intact Architecture",
         "theme": "raggiesoft-books",
-        "filePath": "e019/c004/p001.md"
+        "filePath": "e020/c004/p001.md"
+    },
+    "/rachel/the-director-s-perimeter/ground-zero/part-2-the-june-upgrade": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The June Upgrade",
+        "theme": "raggiesoft-books",
+        "filePath": "e020/c004/p002.md"
     },
     "/rachel/the-mountain-conference-saacurc-2016": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Mountain Conference (SAACURC 2016)",
         "theme": "raggiesoft-books",
-        "filePath": "__ERA_TOC__|19"
+        "filePath": "__ERA_TOC__|20"
     },
     "/rachel/the-mountain-conference-saacurc-2016/the-bear-the-bug-and-the-forger": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bear, The Bug, and The Forger",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|19|0"
+        "filePath": "__CHAP_TOC__|20|0"
     },
     "/rachel/the-mountain-conference-saacurc-2016/the-bear-the-bug-and-the-forger/part-1-friday-arrival-the-commonwealth-mall-curb-the-ada-suite-at-the-hotel-at-poly": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Friday Arrival, The Commonwealth Mall Curb, & The ADA Suite at The Hotel at Poly",
         "theme": "raggiesoft-books",
-        "filePath": "e020/c001/p001.md"
+        "filePath": "e021/c001/p001.md"
     },
     "/rachel/the-mountain-conference-saacurc-2016/the-bear-the-bug-and-the-forger/part-2-saturday-at-saacurc-the-clothespin-gauntlet-the-gih-pilot-roundtable": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Saturday at SAACURC: The Clothespin Gauntlet & The GIH Pilot Roundtable",
         "theme": "raggiesoft-books",
-        "filePath": "e020/c001/p002.md"
+        "filePath": "e021/c001/p002.md"
     },
     "/rachel/the-mountain-conference-saacurc-2016/the-bear-the-bug-and-the-forger/part-3-sunday-wrap-up-closing-lunch-awards-ceremony-home-to-norfolk": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Sunday Wrap-Up: Closing Lunch, Awards Ceremony, & Home to Norfolk",
         "theme": "raggiesoft-books",
-        "filePath": "e020/c001/p003.md"
+        "filePath": "e021/c001/p003.md"
     }
 }
