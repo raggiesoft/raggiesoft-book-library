@@ -14,12 +14,12 @@
         "ebook_sizes": {
             "epub": "3.6 MB",
             "pdf": "1.9 MB",
-            "text_epub": "73 KB",
-            "text_pdf": "236 KB",
-            "epub_bytes": 3744646,
-            "pdf_bytes": 1941678,
-            "text_epub_bytes": 74687,
-            "text_pdf_bytes": 241381
+            "text_epub": "76 KB",
+            "text_pdf": "250 KB",
+            "epub_bytes": 3748274,
+            "pdf_bytes": 1956078,
+            "text_epub_bytes": 78291,
+            "text_pdf_bytes": 255659
         },
         "illustration_count": 12
     },
@@ -191,15 +191,15 @@
         "theme": "raggiesoft-books",
         "filePath": "e002/c008/p001.md"
     },
-    "/ad-astra/book-1-sanctuary-on-caelum-iv-movement-iv-stardate-49601/chapter-9-the-mother-grove-amphitheater-the-unburied-leitmotif-stardate-49603-5": {
+    "/ad-astra/book-1-sanctuary-on-caelum-iv-movement-iv-stardate-49601/chapter-9-the-mother-grove-amphitheater-the-unburied-leitmotif-the-starfield-calibration-sessions-stardate-49603-5": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 9: The Mother-Grove Amphitheater & The Unburied Leitmotif (Stardate 49603.5)",
+        "title": "Chapter 9: The Mother-Grove Amphitheater, The Unburied Leitmotif & The Starfield Calibration Sessions (Stardate 49603.5)",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|8"
     },
-    "/ad-astra/book-1-sanctuary-on-caelum-iv-movement-iv-stardate-49601/chapter-9-the-mother-grove-amphitheater-the-unburied-leitmotif-stardate-49603-5/the-mother-grove-amphitheater-the-unburied-leitmotif": {
+    "/ad-astra/book-1-sanctuary-on-caelum-iv-movement-iv-stardate-49601/chapter-9-the-mother-grove-amphitheater-the-unburied-leitmotif-the-starfield-calibration-sessions-stardate-49603-5/the-mother-grove-amphitheater-the-unburied-leitmotif-the-starfield-calibration-sessions": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Mother-Grove Amphitheater & The Unburied Leitmotif",
+        "title": "The Mother-Grove Amphitheater, The Unburied Leitmotif & The Starfield Calibration Sessions",
         "theme": "raggiesoft-books",
         "filePath": "e002/c009/p001.md",
         "nextUrl": "/stardust-engine",
