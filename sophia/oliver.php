@@ -361,7 +361,67 @@ if (empty($narrativeTheme) && !empty($toc_manifest['series_description_long'])) 
 if (isset($_GET['preview_theme']) && !empty($_GET['preview_theme'])) {
     $narrativeTheme = preg_replace('/[^a-zA-Z0-9_-]/', '', $_GET['preview_theme']);
 }
+
+$oliverCanonicalUrl = 'https://books.raggiesoft.com' . (parse_url($_SERVER['REQUEST_URI'] ?? ('/' . $seriesSlug), PHP_URL_PATH) ?: ('/' . $seriesSlug));
+$oliverBookSeriesSchema = [
+    '@context' => 'https://schema.org',
+    '@graph' => [
+        [
+            '@type' => 'BookSeries',
+            '@id' => 'https://books.raggiesoft.com/' . $seriesSlug . '#bookseries',
+            'name' => $seriesName ?? ucwords(str_replace('-', ' ', $seriesSlug)),
+            'url' => 'https://books.raggiesoft.com/' . $seriesSlug,
+            'inLanguage' => 'en-US',
+            'license' => 'https://creativecommons.org/licenses/by-sa/4.0/',
+            'image' => $cdnBaseUrl . '/raggiesoft-books/images/covers/2x3/' . $seriesSlug . '.jpg',
+            'author' => [
+                '@type' => 'Person',
+                '@id' => 'https://michaelpragsdale.com/#michael-ragsdale',
+                'name' => 'Michael P. Ragsdale',
+                'url' => 'https://michaelpragsdale.com',
+            ],
+            'publisher' => [
+                '@type' => 'Organization',
+                '@id' => 'https://raggiesoft.com/#organization',
+                'name' => 'Ocean View Archives (RaggieSoft)',
+                'url' => 'https://books.raggiesoft.com',
+            ],
+        ],
+        [
+            '@type' => $isOverviewPage ? 'CollectionPage' : 'Chapter',
+            '@id' => $oliverCanonicalUrl . '#chapter',
+            'name' => $title,
+            'url' => $oliverCanonicalUrl,
+            'inLanguage' => 'en-US',
+            'license' => 'https://creativecommons.org/licenses/by-sa/4.0/',
+            'isPartOf' => [
+                '@id' => 'https://books.raggiesoft.com/' . $seriesSlug . '#bookseries',
+            ],
+            'author' => [
+                '@id' => 'https://michaelpragsdale.com/#michael-ragsdale',
+            ],
+        ],
+    ],
+];
+if ($seriesSlug === 'ad-astra') {
+    $oliverBookSeriesSchema['@graph'][0]['mentions'] = [
+        [
+            '@type' => 'WebSite',
+            'name' => 'RaggieSoft Nebulae — Caelum-IV Planetary Survey',
+            'url' => 'https://nebulae.raggiesoft.com',
+        ],
+        [
+            '@type' => 'Article',
+            '@id' => 'https://raggiesoft.com/in-memoriam#article',
+            'headline' => 'In Memoriam: Sir Patrick Stewart (1940–2026) — Second Star to the Right',
+            'url' => 'https://raggiesoft.com/in-memoriam',
+        ],
+    ];
+}
 ?>
+<script type="application/ld+json">
+<?php echo json_encode($oliverBookSeriesSchema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
+</script>
 <?php if ($narrativeTheme): ?>
     <!-- Ambient CSS Themes and Animations -->
     <meta name="stardust-narrative-theme" content="<?php echo htmlspecialchars($narrativeTheme); ?>">

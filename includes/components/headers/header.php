@@ -145,8 +145,54 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
     <?php endif; ?>
     
     <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Ocean View Archives — RaggieSoft Book Reader">
 
     <?php $assetsUrl = $cdnBaseUrl ?? 'https://assets.raggiesoft.com'; ?>
+    <?php
+    $booksCanonicalUrl = $ogUrl ?? ('https://' . ($_SERVER['HTTP_HOST'] ?? 'books.raggiesoft.com') . (parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/'));
+    $booksJsonLd = [
+        '@context' => 'https://schema.org',
+        '@graph' => [
+            [
+                '@type' => 'Organization',
+                '@id' => 'https://raggiesoft.com/#organization',
+                'name' => 'RaggieSoft',
+                'alternateName' => ['Ocean View Archives', 'RaggieSoft Media'],
+                'url' => 'https://raggiesoft.com',
+                'founder' => [
+                    '@type' => 'Person',
+                    '@id' => 'https://michaelpragsdale.com/#michael-ragsdale',
+                    'name' => 'Michael P. Ragsdale',
+                    'url' => 'https://michaelpragsdale.com'
+                ]
+            ],
+            [
+                '@type' => 'WebSite',
+                '@id' => 'https://books.raggiesoft.com/#website',
+                'url' => 'https://books.raggiesoft.com',
+                'name' => 'Ocean View Archives — RaggieSoft Book Reader',
+                'inLanguage' => 'en-US',
+                'publisher' => [
+                    '@id' => 'https://raggiesoft.com/#organization'
+                ]
+            ],
+            [
+                '@type' => 'WebPage',
+                '@id' => $booksCanonicalUrl . '#webpage',
+                'url' => $booksCanonicalUrl,
+                'name' => $ogTitle ?? $siteName ?? 'Ocean View Archives',
+                'description' => $ogDescription ?? 'Read CC BY-SA 4.0 serialized novels, lore archives, and interactive literature by Michael P. Ragsdale in the RaggieSoft Book Reader.',
+                'inLanguage' => 'en-US',
+                'isPartOf' => [
+                    '@id' => 'https://books.raggiesoft.com/#website'
+                ]
+            ]
+        ]
+    ];
+    ?>
+    <script type="application/ld+json">
+<?php echo json_encode($booksJsonLd, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
+    </script>
     
     <!-- Core CSS Pipelines -->
     <?php
