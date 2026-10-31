@@ -12,16 +12,16 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "19.9 MB",
-            "pdf": "22.1 MB",
-            "text_epub": "1014 KB",
+            "epub": "20.6 MB",
+            "pdf": "22.8 MB",
+            "text_epub": "1012 KB",
             "text_pdf": "2.8 MB",
-            "epub_bytes": 20832838,
-            "pdf_bytes": 23138460,
-            "text_epub_bytes": 1038487,
-            "text_pdf_bytes": 2933157
+            "epub_bytes": 21556773,
+            "pdf_bytes": 23915407,
+            "text_epub_bytes": 1036495,
+            "text_pdf_bytes": 2926992
         },
-        "illustration_count": 27
+        "illustration_count": 28
     },
     "/rachel": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1601,9 +1601,9 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|17|4"
     },
-    "/rachel/the-shallow-end/the-route-25-loop-the-shallow-end/part-1-ms-doris-the-stalwart-advantage-the-penny-s-run": {
+    "/rachel/the-shallow-end/the-route-25-loop-the-shallow-end/part-1-ms-doris-route-25-the-penny-s-run": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Ms. Doris, The Stalwart Advantage, & The Penny's Run",
+        "title": "Part 1: Ms. Doris, Route 25, & The Penny's Run",
         "theme": "raggiesoft-books",
         "filePath": "e018/c005/p001.md"
     },
@@ -1649,9 +1649,9 @@
         "theme": "raggiesoft-books",
         "filePath": "e018/c007/p001.md"
     },
-    "/rachel/the-shallow-end/unhandled-exception-the-living-firewall/part-2-reclaiming-the-narrative-the-living-firewall": {
+    "/rachel/the-shallow-end/unhandled-exception-the-living-firewall/part-2-3-13-pm-refusing-to-let-go": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Reclaiming the Narrative: The Living Firewall",
+        "title": "Part 2: 3:13 PM: Refusing to Let Go",
         "theme": "raggiesoft-books",
         "filePath": "e018/c007/p002.md"
     },
