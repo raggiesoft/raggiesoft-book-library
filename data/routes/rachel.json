@@ -12,16 +12,16 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "17.7 MB",
-            "pdf": "19.7 MB",
-            "text_epub": "1010 KB",
+            "epub": "19.1 MB",
+            "pdf": "21.4 MB",
+            "text_epub": "1013 KB",
             "text_pdf": "2.8 MB",
-            "epub_bytes": 18555368,
-            "pdf_bytes": 20682457,
-            "text_epub_bytes": 1034168,
-            "text_pdf_bytes": 2917874
+            "epub_bytes": 20046121,
+            "pdf_bytes": 22414678,
+            "text_epub_bytes": 1037461,
+            "text_pdf_bytes": 2929107
         },
-        "illustration_count": 24
+        "illustration_count": 26
     },
     "/rachel": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1601,17 +1601,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|17|4"
     },
-    "/rachel/the-shallow-end/the-route-25-loop-the-shallow-end/part-1-first-contact-the-engineered-route-25-commute": {
+    "/rachel/the-shallow-end/the-route-25-loop-the-shallow-end/part-1-ms-doris-the-stalwart-advantage-the-penny-s-run": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: First Contact & The Engineered Route 25 Commute",
+        "title": "Part 1: Ms. Doris, The Stalwart Advantage, & The Penny's Run",
         "theme": "raggiesoft-books",
         "filePath": "e018/c005/p001.md"
     },
-    "/rachel/the-shallow-end/the-route-25-loop-the-shallow-end/part-2": {
+    "/rachel/the-shallow-end/the-route-25-loop-the-shallow-end/part-2-first-contact-the-first-embrace-the-route-25-equation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: \\",
+        "title": "Part 2: First Contact, The First Embrace, & The Route 25 Equation",
         "theme": "raggiesoft-books",
         "filePath": "e018/c005/p002.md"
+    },
+    "/rachel/the-shallow-end/the-route-25-loop-the-shallow-end/part-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: \\",
+        "theme": "raggiesoft-books",
+        "filePath": "e018/c005/p003.md"
     },
     "/rachel/the-shallow-end/twin-magic-the-chesapeake-bay-aquarium": {
         "view": "pages/raggiesoft-books/books/viewer",
