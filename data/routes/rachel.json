@@ -14,12 +14,12 @@
         "ebook_sizes": {
             "epub": "27.1 MB",
             "pdf": "29.8 MB",
-            "text_epub": "1013 KB",
+            "text_epub": "1014 KB",
             "text_pdf": "2.8 MB",
-            "epub_bytes": 28364427,
-            "pdf_bytes": 31213494,
-            "text_epub_bytes": 1036866,
-            "text_pdf_bytes": 2927667
+            "epub_bytes": 28365771,
+            "pdf_bytes": 31217427,
+            "text_epub_bytes": 1038254,
+            "text_pdf_bytes": 2931832
         },
         "illustration_count": 46
     },
@@ -1613,9 +1613,9 @@
         "theme": "raggiesoft-books",
         "filePath": "e018/c005/p002.md"
     },
-    "/rachel/the-shallow-end/the-route-25-loop-the-shallow-end/part-3": {
+    "/rachel/the-shallow-end/the-route-25-loop-the-shallow-end/part-3-monday-lunch": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: \\",
+        "title": "Part 3: Monday Lunch, \\",
         "theme": "raggiesoft-books",
         "filePath": "e018/c005/p003.md"
     },
