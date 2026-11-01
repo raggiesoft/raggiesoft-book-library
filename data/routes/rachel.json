@@ -14,12 +14,12 @@
         "ebook_sizes": {
             "epub": "27.1 MB",
             "pdf": "29.8 MB",
-            "text_epub": "1014 KB",
+            "text_epub": "1015 KB",
             "text_pdf": "2.8 MB",
-            "epub_bytes": 28365919,
-            "pdf_bytes": 31217978,
-            "text_epub_bytes": 1038395,
-            "text_pdf_bytes": 2932226
+            "epub_bytes": 28366871,
+            "pdf_bytes": 31220831,
+            "text_epub_bytes": 1039327,
+            "text_pdf_bytes": 2934424
         },
         "illustration_count": 46
     },
@@ -1613,9 +1613,9 @@
         "theme": "raggiesoft-books",
         "filePath": "e018/c005/p002.md"
     },
-    "/rachel/the-shallow-end/the-route-25-loop-the-shallow-end/part-3-monday-lunch": {
+    "/rachel/the-shallow-end/the-route-25-loop-the-shallow-end/part-3-monday-lunch-mask-what-mask-the-rules-of-the-shallow-end": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Monday Lunch, \\",
+        "title": "Part 3: Monday Lunch, 'Mask, What Mask?' & The Rules of the Shallow End",
         "theme": "raggiesoft-books",
         "filePath": "e018/c005/p003.md"
     },
