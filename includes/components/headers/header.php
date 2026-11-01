@@ -77,6 +77,9 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
     
     <!-- PWA iOS Specific Configuration -->
     <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Ocean View">
     
     <!-- iOS Splash Screens (Exhaustive list to cover all device form factors) -->
     <link rel="apple-touch-startup-image" href="https://assets.raggiesoft.com/raggiesoft-books/images/pwa-icons/apple-splash-1668-2388.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
@@ -216,10 +219,36 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
             .rs-mobile-network-section {
                 display: none !important;
             }
+            /* Offset the reading pane and off-canvas sidebar below iOS Dynamic Island / status bar */
+            .reader-page {
+                padding-top: max(1.5rem, calc(env(safe-area-inset-top, 0px) + 1rem)) !important;
+            }
+            html[data-os="ios"] .reader-page {
+                padding-top: max(3.75rem, calc(env(safe-area-inset-top, 0px) + 0.85rem)) !important;
+            }
         }
         html.is-pwa-standalone .rs-network-bar,
         html.is-pwa-standalone .rs-mobile-network-section {
             display: none !important;
+        }
+        html.is-pwa-standalone .reader-page {
+            padding-top: max(1.5rem, calc(env(safe-area-inset-top, 0px) + 1rem)) !important;
+        }
+        html[data-os="ios"].is-pwa-standalone .reader-page {
+            padding-top: max(3.75rem, calc(env(safe-area-inset-top, 0px) + 0.85rem)) !important;
+        }
+        @media (max-width: 991px) {
+            #stardust-sidebar.reader-sidebar,
+            .reader-sidebar {
+                padding-top: max(1.5rem, calc(env(safe-area-inset-top, 0px) + 1rem)) !important;
+                padding-bottom: calc(5.5rem + env(safe-area-inset-bottom, 0px)) !important;
+                padding-left: max(1.25rem, env(safe-area-inset-left, 0px)) !important;
+                padding-right: 1.25rem !important;
+            }
+            html[data-os="ios"].is-pwa-standalone #stardust-sidebar.reader-sidebar,
+            html[data-os="ios"].is-pwa-standalone .reader-sidebar {
+                padding-top: max(3.75rem, calc(env(safe-area-inset-top, 0px) + 1rem)) !important;
+            }
         }
     </style>
     <script>

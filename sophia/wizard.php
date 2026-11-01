@@ -23,7 +23,7 @@
 // Sophia's Welcome Wizard (Standalone View)
 global $cdnBaseUrl;
 ?>
-<div class="stardust-mobile-scroll" style="flex: 1; background: var(--rs-bg); padding: 2rem 1rem 6rem 1rem; display: flex; justify-content: center; align-items: flex-start;">
+<div class="stardust-mobile-scroll" style="flex: 1; background: var(--rs-bg); padding: calc(2rem + env(safe-area-inset-top, 0px)) 1rem 6rem 1rem; display: flex; justify-content: center; align-items: flex-start;">
     <div id="reader-wizard-dialog" data-cdn-url="<?php echo htmlspecialchars($cdnBaseUrl); ?>" class="wizard-dialog">
     <div class="wizard-container">
         <!-- Left Sidebar Graphic (Image handled by CSS/JS) -->

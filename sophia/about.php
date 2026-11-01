@@ -21,7 +21,7 @@
 // Sophia's About View (Standalone)
 global $cdnBaseUrl;
 ?>
-<div class="stardust-mobile-scroll" style="flex: 1; background: var(--rs-bg); padding: 1rem 1rem 6rem 1rem;">
+<div class="stardust-mobile-scroll" style="flex: 1; background: var(--rs-bg); padding: calc(1.25rem + env(safe-area-inset-top, 0px)) 1rem 6rem 1rem;">
             <!-- This section honors the lore that Isabel built this reader to preserve the family's narratives -->
         <div style="background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 2rem;">
             <h2 style="font-size: 1.25rem; font-weight: 700; color: var(--rs-heading); margin-top: 0; margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.5rem;">

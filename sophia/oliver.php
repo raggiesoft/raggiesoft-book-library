@@ -89,16 +89,16 @@ if (!function_exists('renderOliverNotFoundCard')) {
         $safeMessage = htmlspecialchars($message, ENT_QUOTES, 'UTF-8');
         ?>
         <main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; height: 100dvh; overflow-y: auto;">
-            <div class="reader-page" style="max-width: 800px; margin: 0 auto; padding-top: 2rem;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--rs-border);">
-                    <div style="opacity: 0.78; font-size: 0.9rem;">
+            <div class="book-page reader-page" style="max-width: 800px; margin: 0 auto; padding-top: max(2rem, calc(env(safe-area-inset-top, 0px) + 1rem));">
+                <div class="reader-nav" style="display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--rs-border);">
+                    <div style="opacity: 0.78; font-size: 0.9rem; min-width: 0; flex: 1;">
                         <a href="/library" style="text-decoration: none; color: var(--rs-primary);">Library</a>
                         <?php if ($hasValidBook): ?>
                             &raquo; <a href="/<?php echo $safeSlug; ?>" style="text-decoration: none; color: var(--rs-primary); font-weight: 600;"><?php echo $safeBookTitle; ?></a>
                         <?php endif; ?>
                     </div>
-                    <div>
-                        <button id="stardust-sidebar-toggle" class="rs-btn" style="padding: 0.5rem 1rem; font-size: 0.85rem;">
+                    <div style="flex-shrink: 0;">
+                        <button id="stardust-sidebar-toggle" class="rs-btn" style="padding: 0.5rem 1rem; font-size: 0.85rem; white-space: nowrap;">
                             <i class="ph ph-list" aria-hidden="true"></i> Menu
                         </button>
                     </div>
@@ -445,8 +445,8 @@ if ($seriesSlug === 'ad-astra') {
 <main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; height: 100dvh; overflow-y: auto;">
     <div class="book-page reader-page">
         <!-- Breadcrumbs & Nav -->
-        <div class="reader-nav" style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-            <div style="opacity: 0.7; font-size: 0.9rem;">
+        <div class="reader-nav" style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; gap: 0.75rem;">
+            <div style="opacity: 0.7; font-size: 0.9rem; min-width: 0; flex: 1;">
             <?php 
             global $toc_manifest, $seriesSlug, $pageConfig;
             $actualFilePath = $pageConfig["filePath"] ?? "";
@@ -479,8 +479,8 @@ if ($seriesSlug === 'ad-astra') {
             <a href="/library" style="text-decoration: none;">Library</a>
             &raquo; <strong style="color: var(--rs-text); font-weight: 600;"><?php echo htmlspecialchars($seriesTitle); ?></strong>
             </div>
-            <div style="display: flex; gap: 1rem;">
-                <button id="stardust-sidebar-toggle" class="rs-btn" style="padding: 0.5rem 1rem; font-size: 0.85rem;"><i class="ph ph-list"></i> Menu</button>
+            <div style="display: flex; gap: 1rem; flex-shrink: 0;">
+                <button id="stardust-sidebar-toggle" class="rs-btn" style="padding: 0.5rem 1rem; font-size: 0.85rem; white-space: nowrap;"><i class="ph ph-list" aria-hidden="true"></i> Menu</button>
             </div>
         </div>
 
