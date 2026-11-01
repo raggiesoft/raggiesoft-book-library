@@ -195,7 +195,9 @@ if (!empty($pageConfig['title'])) {
 // Setup baseline OpenGraph variables for social sharing (Twitter, Facebook, Discord, etc.)
 $ogUrl = 'https://' . $_SERVER['HTTP_HOST'] . $requestUri;
 $ogTitle = $siteName;
-$ogDescription = !empty($toc_manifest['series_description']) ? $toc_manifest['series_description'] : 'Read this story on the Raggiesoft Ocean View Archives.';
+$ogDescription = !empty($toc_manifest['series_short_description'])
+    ? $toc_manifest['series_short_description']
+    : (!empty($toc_manifest['series_description']) ? $toc_manifest['series_description'] : 'Read this story on the Raggiesoft Ocean View Archives.');
 $ogImage = '';
 
 // Determine context-appropriate OpenGraph imagery based on the active route type

@@ -28,9 +28,12 @@
 // Import necessary variables provided by the Stardust routing engine (Isabel)
 global $cdnBaseUrl, $siteName, $requestUri;
 
-// Fetch the master catalog directly from the CDN to populate volume count & resume card metadata
+// Fetch the master catalog (preferring local workspace catalog.json when available, falling back to CDN)
+$localCatalogPath = dirname(__DIR__, 4) . '/raggiesoft-assets/raggiesoft-books/books/catalog.json';
 $catalogUrl = $cdnBaseUrl . '/raggiesoft-books/books/catalog.json';
-$catalogData = @file_get_contents($catalogUrl);
+$catalogData = is_file($localCatalogPath)
+    ? @file_get_contents($localCatalogPath)
+    : @file_get_contents($catalogUrl);
 $books = [];
 
 if ($catalogData) {

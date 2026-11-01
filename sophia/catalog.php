@@ -35,10 +35,13 @@
 // Sophia's Catalog View (Standalone Library View)
 global $cdnBaseUrl, $siteName, $requestUri;
 
-// Fetch the master catalog directly from the CDN
+// Fetch the master catalog (preferring local workspace catalog.json when available, falling back to CDN)
 // Utilizing error suppression (@) to prevent catastrophic UI failure on network issues.
+$localCatalogPath = dirname(__DIR__, 4) . '/raggiesoft-assets/raggiesoft-books/books/catalog.json';
 $catalogUrl = $cdnBaseUrl . '/raggiesoft-books/books/catalog.json';
-$catalogData = @file_get_contents($catalogUrl);
+$catalogData = is_file($localCatalogPath)
+    ? @file_get_contents($localCatalogPath)
+    : @file_get_contents($catalogUrl);
 $books = [];
 
 if ($catalogData) {
@@ -140,7 +143,9 @@ if ($catalogData) {
                         <?php foreach ($books as $book): 
                             $slug = $book['slug'] ?? '';
                             $title = $book['title'] ?? 'Unknown Archive';
-                            $desc = $book['description'] ?? '';
+                            $desc = !empty($book['short_description'])
+                                ? $book['short_description']
+                                : ($book['description'] ?? '');
                             $imgSrc = !empty($book['image']) ? $cdnBaseUrl . $book['image'] : $cdnBaseUrl . '/raggiesoft-books/images/book-placeholder.jpg';
                             $readLink = '/' . $slug . '/';
                         ?>
@@ -152,12 +157,12 @@ if ($catalogData) {
                                 <img src="<?php echo htmlspecialchars($imgSrc); ?>" alt="<?php echo htmlspecialchars($title); ?>" style="width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none;">
                             </div>
                             
-                            <!-- Title & Subtitle -->
+                            <!-- Title & Quick-Glance Short Description -->
                             <div style="padding: 0 0.25rem; pointer-events: none;">
-                                <h2 style="font-size: 1rem; font-weight: 700; margin: 0 0 0.25rem 0; color: var(--rs-heading); line-height: 1.2; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">
+                                <h2 style="font-size: 1rem; font-weight: 700; margin: 0 0 0.25rem 0; color: var(--rs-heading); line-height: 1.2; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; line-clamp: 2; overflow: clip;">
                                     <?php echo htmlspecialchars($title); ?>
                                 </h2>
-                                <p style="font-size: 0.8rem; opacity: 0.6; margin: 0; line-height: 1.3;">
+                                <p style="font-size: 0.8rem; opacity: 0.6; margin: 0; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; line-clamp: 5; overflow: clip;">
                                     <?php echo htmlspecialchars($desc); ?>
                                 </p>
                             </div>
