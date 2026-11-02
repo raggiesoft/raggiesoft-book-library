@@ -12,16 +12,16 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "1.4 MB",
-            "pdf": "2.2 MB",
-            "text_epub": "397 KB",
+            "epub": "3.1 MB",
+            "pdf": "4 MB",
+            "text_epub": "398 KB",
             "text_pdf": "1.2 MB",
-            "epub_bytes": 1457239,
-            "pdf_bytes": 2315571,
-            "text_epub_bytes": 406885,
-            "text_pdf_bytes": 1261268
+            "epub_bytes": 3276121,
+            "pdf_bytes": 4170769,
+            "text_epub_bytes": 407511,
+            "text_pdf_bytes": 1263296
         },
-        "illustration_count": 1
+        "illustration_count": 3
     },
     "/quantum-directive-3-casey": {
         "view": "pages/raggiesoft-books/books/viewer",
