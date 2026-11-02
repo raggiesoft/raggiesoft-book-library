@@ -12,14 +12,14 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "70.1 MB",
-            "pdf": "74 MB",
+            "epub": "70 MB",
+            "pdf": "73.9 MB",
             "text_epub": "1.1 MB",
             "text_pdf": "3.1 MB",
-            "epub_bytes": 73472543,
-            "pdf_bytes": 77583424,
-            "text_epub_bytes": 1133497,
-            "text_pdf_bytes": 3217610
+            "epub_bytes": 73386234,
+            "pdf_bytes": 77512987,
+            "text_epub_bytes": 1133954,
+            "text_pdf_bytes": 3218925
         },
         "illustration_count": 124
     },
@@ -95,9 +95,9 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|3"
     },
-    "/rachel/the-delaney-street-years/summer-camp-at-virginia-dominion-university/the-brick-walkways-of-summer-camp-mapping-vdu-with-rachel-and-jessica": {
+    "/rachel/the-delaney-street-years/summer-camp-at-virginia-dominion-university/dominion-mall-the-summer-camp-map-mapping-vdu-with-rachel-and-jessica": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Brick Walkways of Summer Camp: Mapping VDU with Rachel and Jessica",
+        "title": "Dominion Mall & The Summer Camp Map: Mapping VDU with Rachel and Jessica",
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/p001.md"
     },
@@ -1043,9 +1043,9 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|12|0"
     },
-    "/rachel/michael-s-senior-year/the-high-school-field-trip-to-vdu/walking-the-old-camp-paths-alone-the-promise-to-reunite-first": {
+    "/rachel/michael-s-senior-year/the-high-school-field-trip-to-vdu/walking-the-old-camp-paths-with-northwood-high-the-promise-to-reunite-first": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Walking the Old Camp Paths Alone & The Promise to Reunite First",
+        "title": "Walking the Old Camp Paths with Northwood High & The Promise to Reunite First",
         "theme": "raggiesoft-books",
         "filePath": "e013/c001/p001.md"
     },
