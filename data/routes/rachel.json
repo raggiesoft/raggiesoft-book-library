@@ -12,16 +12,16 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "49.2 MB",
-            "pdf": "52.5 MB",
+            "epub": "50 MB",
+            "pdf": "53.2 MB",
             "text_epub": "1021 KB",
             "text_pdf": "2.8 MB",
-            "epub_bytes": 51587343,
-            "pdf_bytes": 55046866,
-            "text_epub_bytes": 1045010,
-            "text_pdf_bytes": 2949805
+            "epub_bytes": 52418883,
+            "pdf_bytes": 55803455,
+            "text_epub_bytes": 1045415,
+            "text_pdf_bytes": 2951651
         },
-        "illustration_count": 85
+        "illustration_count": 93
     },
     "/rachel": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1625,9 +1625,9 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|17|5"
     },
-    "/rachel/the-shallow-end/twin-magic-the-chesapeake-bay-aquarium/part-1-twin-magic-at-susquehanna-drive": {
+    "/rachel/the-shallow-end/twin-magic-the-chesapeake-bay-aquarium/part-1-twin-magic-at-susquehanna-drive-the-hidden-birth-mark": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Twin Magic at Susquehanna Drive",
+        "title": "Part 1: Twin Magic at Susquehanna Drive & The Hidden Birth Mark",
         "theme": "raggiesoft-books",
         "filePath": "e018/c006/p001.md"
     },
