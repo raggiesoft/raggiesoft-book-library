@@ -12,16 +12,16 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "55.3 MB",
-            "pdf": "58.7 MB",
+            "epub": "59.3 MB",
+            "pdf": "62.9 MB",
             "text_epub": "1 MB",
             "text_pdf": "2.9 MB",
-            "epub_bytes": 57950004,
-            "pdf_bytes": 61552731,
-            "text_epub_bytes": 1068607,
-            "text_pdf_bytes": 3029172
+            "epub_bytes": 62131036,
+            "pdf_bytes": 65935424,
+            "text_epub_bytes": 1087584,
+            "text_pdf_bytes": 3085829
         },
-        "illustration_count": 101
+        "illustration_count": 107
     },
     "/rachel": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1805,76 +1805,136 @@
         "theme": "raggiesoft-books",
         "filePath": "e021/c001/p003.md"
     },
+    "/rachel/the-2020-horizon-avalon-february-2020": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The 2020 Horizon Avalon (February 2020)",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|21"
+    },
+    "/rachel/the-2020-horizon-avalon-february-2020/anchor-federal-credit-union-the-five-accounts": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Anchor Federal Credit Union & The Five Accounts",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|21|0"
+    },
+    "/rachel/the-2020-horizon-avalon-february-2020/anchor-federal-credit-union-the-five-accounts/part-1-january-2020-train-tickets-the-rainy-bus-stop-anchor-federal-credit-union": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: January 2020 Train Tickets, The Rainy Bus Stop, & Anchor Federal Credit Union",
+        "theme": "raggiesoft-books",
+        "filePath": "e022/c001/p001.md"
+    },
+    "/rachel/the-2020-horizon-avalon-february-2020/anchor-federal-credit-union-the-five-accounts/part-2-command-center-reconnaissance-comparing-four-family-sedans": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Command Center Reconnaissance: Comparing Four Family Sedans",
+        "theme": "raggiesoft-books",
+        "filePath": "e022/c001/p002.md"
+    },
+    "/rachel/the-2020-horizon-avalon-february-2020/the-dealership-gauntlet-you-and-the-missus-the-four-square-trap-the-addendum-markup": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Dealership Gauntlet: 'You and the Missus,' The Four-Square Trap, & The Addendum Markup",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|21|1"
+    },
+    "/rachel/the-2020-horizon-avalon-february-2020/the-dealership-gauntlet-you-and-the-missus-the-four-square-trap-the-addendum-markup/part-1-stop-1-holt-automotive-holding-hands-the-husband-wife-assumption-dismissing-rachel-s-voice": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Stop 1 (Holt Automotive): Holding Hands, The 'Husband & Wife' Assumption, & Dismissing Rachel's Voice",
+        "theme": "raggiesoft-books",
+        "filePath": "e022/c002/p001.md"
+    },
+    "/rachel/the-2020-horizon-avalon-february-2020/the-dealership-gauntlet-you-and-the-missus-the-four-square-trap-the-addendum-markup/part-2-stops-2-3-summit-motors-coastal-horizon-the-four-square-financing-trap-test-driving-the-avalon-reverse-engineering-the-out-the-door-price": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Stops 2 & 3 (Summit Motors & Coastal Horizon): The Four-Square Financing Trap, Test-Driving the Avalon, & Reverse-Engineering the Out-the-Door Price",
+        "theme": "raggiesoft-books",
+        "filePath": "e022/c002/p002.md"
+    },
+    "/rachel/the-2020-horizon-avalon-february-2020/bayside-horizon-equal-co-owners-cashier-s-check-two-sets-of-keys": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Bayside Horizon: Equal Co-Owners, Cashier's Check, & Two Sets of Keys",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|21|2"
+    },
+    "/rachel/the-2020-horizon-avalon-february-2020/bayside-horizon-equal-co-owners-cashier-s-check-two-sets-of-keys/part-1-stop-4-bayside-horizon-treating-brother-sister-as-equals-the-clean-out-the-door-buyer-s-order": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Stop 4 (Bayside Horizon): Treating Brother & Sister as Equals & The Clean Out-the-Door Buyer's Order",
+        "theme": "raggiesoft-books",
+        "filePath": "e022/c003/p001.md"
+    },
+    "/rachel/the-2020-horizon-avalon-february-2020/bayside-horizon-equal-co-owners-cashier-s-check-two-sets-of-keys/part-2-the-cashier-s-check-joint-virginia-title-vsa-17a-driving-home-before-the-world-changes": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Cashier's Check, Joint Virginia Title (VSA 17A), & Driving Home Before the World Changes",
+        "theme": "raggiesoft-books",
+        "filePath": "e022/c003/p002.md"
+    },
     "/rachel/code-susquehanna": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Code Susquehanna",
         "theme": "raggiesoft-books",
-        "filePath": "__ERA_TOC__|21"
+        "filePath": "__ERA_TOC__|22"
     },
     "/rachel/code-susquehanna/the-wall-behind-the-desk-spring-2024-fall-2025": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Wall Behind the Desk (Spring 2024 \u2013 Fall 2025)",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|21|0"
+        "filePath": "__CHAP_TOC__|22|0"
     },
     "/rachel/code-susquehanna/the-wall-behind-the-desk-spring-2024-fall-2025/part-1-5-55-pm-five-minutes-to-clock-out-the-parking-lot-hand-off": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: 5:55 PM: Five Minutes to Clock-Out & The Parking Lot Hand-Off",
         "theme": "raggiesoft-books",
-        "filePath": "e022/c001/p001.md"
+        "filePath": "e023/c001/p001.md"
     },
     "/rachel/code-susquehanna/the-wall-behind-the-desk-spring-2024-fall-2025/part-2-6-25-pm-crying-in-rachel-s-arms-the-secret-pact": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: 6:25 PM: Crying in Rachel's Arms & The Secret Pact",
         "theme": "raggiesoft-books",
-        "filePath": "e022/c001/p002.md"
+        "filePath": "e023/c001/p002.md"
     },
     "/rachel/code-susquehanna/the-wall-behind-the-desk-spring-2024-fall-2025/part-3-april-19-2024-ms-susan-the-mutual-double-take-anthony-s-tape-review": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: April 19, 2024: Ms. Susan, The Mutual Double-Take, & Anthony's Tape Review",
         "theme": "raggiesoft-books",
-        "filePath": "e022/c001/p003.md"
+        "filePath": "e023/c001/p003.md"
     },
     "/rachel/code-susquehanna/twin-b-the-qu-b-cois-firewall-august-2026": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Twin B & The Qu\u00e9b\u00e9cois Firewall (August 2026)",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|21|1"
+        "filePath": "__CHAP_TOC__|22|1"
     },
     "/rachel/code-susquehanna/twin-b-the-qu-b-cois-firewall-august-2026/part-1-7-29-pm-the-identical-twin-digital-ambush-rebooting-into-safe-mode": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: 7:29 PM: The Identical-Twin Digital Ambush & Rebooting into Safe Mode",
         "theme": "raggiesoft-books",
-        "filePath": "e022/c002/p001.md"
+        "filePath": "e023/c002/p001.md"
     },
     "/rachel/code-susquehanna/twin-b-the-qu-b-cois-firewall-august-2026/part-2-engineering-the-teflon-protocol-the-corporate-we-the-88-mph-paradox": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Engineering the Teflon Protocol, The Corporate We, & The 88 MPH Paradox",
         "theme": "raggiesoft-books",
-        "filePath": "e022/c002/p002.md"
+        "filePath": "e023/c002/p002.md"
     },
     "/rachel/code-susquehanna/7-16-pm-unhandled-exception-october-2-2026": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "7:16 PM: Unhandled Exception (October 2, 2026)",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|21|2"
+        "filePath": "__CHAP_TOC__|22|2"
     },
     "/rachel/code-susquehanna/7-16-pm-unhandled-exception-october-2-2026/part-1-7-16-pm-code-susquehanna-twin-a-unhandled-exception-on-the-desk-speaker": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: 7:16 PM: Code Susquehanna \u2014 Twin A & 'Unhandled Exception' on the Desk Speaker",
         "theme": "raggiesoft-books",
-        "filePath": "e022/c003/p001.md"
+        "filePath": "e023/c003/p001.md"
     },
     "/rachel/code-susquehanna/7-16-pm-unhandled-exception-october-2-2026/part-2-7-20-pm-8-00-pm-status-yellow-the-back-office-count-the-deliberate-look-away": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: 7:20 PM \u2013 8:00 PM: Status Yellow, The Back Office Count, & The Deliberate Look Away",
         "theme": "raggiesoft-books",
-        "filePath": "e022/c003/p002.md"
+        "filePath": "e023/c003/p002.md"
     },
     "/rachel/code-susquehanna/7-16-pm-unhandled-exception-october-2-2026/part-3-9-00-pm-the-only-vault-in-the-universe": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: 9:00 PM: The Only Vault in the Universe",
         "theme": "raggiesoft-books",
-        "filePath": "e022/c003/p003.md"
+        "filePath": "e023/c003/p003.md"
     }
 }
