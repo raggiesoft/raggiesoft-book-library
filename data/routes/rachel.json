@@ -12,16 +12,16 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "50 MB",
-            "pdf": "53.3 MB",
+            "epub": "54 MB",
+            "pdf": "57.5 MB",
             "text_epub": "1 MB",
             "text_pdf": "2.9 MB",
-            "epub_bytes": 52440519,
-            "pdf_bytes": 55874828,
-            "text_epub_bytes": 1066691,
-            "text_pdf_bytes": 3021236
+            "epub_bytes": 56640409,
+            "pdf_bytes": 60301947,
+            "text_epub_bytes": 1067115,
+            "text_pdf_bytes": 3022320
         },
-        "illustration_count": 97
+        "illustration_count": 99
     },
     "/rachel": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1847,10 +1847,22 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|21|2"
     },
-    "/rachel/code-susquehanna/7-16-pm-unhandled-exception-october-2-2026/code-susquehanna-twin-a-the-desk-speaker-holding-the-line-at-status-yellow": {
+    "/rachel/code-susquehanna/7-16-pm-unhandled-exception-october-2-2026/part-1-7-16-pm-code-susquehanna-twin-a-unhandled-exception-on-the-desk-speaker": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Code Susquehanna \u2014 Twin A, The Desk Speaker, & Holding the Line at Status Yellow",
+        "title": "Part 1: 7:16 PM: Code Susquehanna \u2014 Twin A & 'Unhandled Exception' on the Desk Speaker",
         "theme": "raggiesoft-books",
         "filePath": "e022/c003/p001.md"
+    },
+    "/rachel/code-susquehanna/7-16-pm-unhandled-exception-october-2-2026/part-2-7-20-pm-8-00-pm-status-yellow-the-back-office-count-the-deliberate-look-away": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: 7:20 PM \u2013 8:00 PM: Status Yellow, The Back Office Count, & The Deliberate Look Away",
+        "theme": "raggiesoft-books",
+        "filePath": "e022/c003/p002.md"
+    },
+    "/rachel/code-susquehanna/7-16-pm-unhandled-exception-october-2-2026/part-3-9-00-pm-the-only-vault-in-the-universe": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: 9:00 PM: The Only Vault in the Universe",
+        "theme": "raggiesoft-books",
+        "filePath": "e022/c003/p003.md"
     }
 }
