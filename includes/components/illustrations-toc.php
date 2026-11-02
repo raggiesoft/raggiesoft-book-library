@@ -518,10 +518,10 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
     text-decoration: underline;
 }
 
-/* Native <dialog> Lightbox Modal */
+/* Native <dialog> Lightbox Modal (Zero-Scroll Viewport Fit + Prev/Next/Up Navigation) */
 .illus-lightbox-dialog {
-    max-inline-size: min(94vw, 1100px);
-    max-block-size: 92vh;
+    max-inline-size: min(92vw, 980px);
+    max-block-size: min(90dvh, 840px);
     inline-size: 100%;
     padding: 0;
     border-radius: 0.85rem;
@@ -529,9 +529,16 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
     background: var(--rs-surface, #181215);
     color: var(--rs-text, #f4efe6);
     box-shadow: 0 24px 64px rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+}
+
+.illus-lightbox-dialog:modal {
+    overscroll-behavior: contain;
 }
 
 .illus-lightbox-dialog::backdrop {
+    overflow: hidden;
+    overscroll-behavior: contain;
     background: rgba(8, 6, 8, 0.82);
     backdrop-filter: blur(5px);
 }
@@ -539,25 +546,29 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
 .illus-lightbox-inner {
     display: flex;
     flex-direction: column;
-    max-block-size: 92vh;
+    max-block-size: min(90dvh, 840px);
+    overflow: hidden;
 }
 
 .illus-lightbox-header {
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
-    padding: 0.9rem 1.25rem;
+    gap: 0.85rem;
+    padding: 0.75rem 1.15rem;
     border-block-end: 1px solid var(--rs-border, rgba(227, 178, 124, 0.22));
 }
 
 .illus-lightbox-title {
     margin: 0;
-    font-size: 1.05rem;
+    font-size: 1rem;
     font-weight: 700;
+    line-height: 1.3;
 }
 
 .illus-lightbox-close {
+    flex-shrink: 0;
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -577,38 +588,97 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
 }
 
 .illus-lightbox-body {
-    padding: 1.25rem;
-    overflow-y: auto;
+    flex: 1 1 auto;
+    min-block-size: 0;
+    padding: 0.8rem 1.15rem;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    gap: 0.65rem;
 }
 
 .illus-lightbox-img {
     display: block;
-    inline-size: 100%;
-    max-block-size: 62vh;
+    inline-size: auto;
+    max-inline-size: 100%;
+    max-block-size: clamp(180px, 48dvh, 460px);
+    flex: 0 1 auto;
+    min-block-size: 0;
     object-fit: contain;
     border-radius: 0.5rem;
     background: #0b080a;
 }
 
 .illus-lightbox-caption {
+    flex-shrink: 0;
+    inline-size: 100%;
     margin: 0;
-    font-size: 0.9rem;
-    line-height: 1.55;
+    font-size: 0.86rem;
+    line-height: 1.48;
     color: var(--rs-text, #f4efe6);
-    opacity: 0.9;
+    opacity: 0.92;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: clip;
 }
 
 .illus-lightbox-footer {
+    flex-shrink: 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 0.75rem;
-    padding: 0.85rem 1.25rem;
+    gap: 0.65rem;
+    padding: 0.7rem 1.15rem;
     border-block-start: 1px solid var(--rs-border, rgba(227, 178, 124, 0.22));
+}
+
+.illus-lightbox-nav-group {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.45rem;
+}
+
+.illus-lightbox-nav-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.32rem;
+    padding: 0.36rem 0.72rem;
+    border-radius: 0.45rem;
+    border: 1px solid var(--rs-border, rgba(227, 178, 124, 0.35));
+    background: rgba(255, 255, 255, 0.04);
+    color: var(--rs-text, #f4efe6);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.illus-lightbox-nav-btn:hover:not(:disabled),
+.illus-lightbox-nav-btn:focus-visible:not(:disabled) {
+    background: rgba(227, 178, 124, 0.2);
+    border-color: var(--rs-primary, #e3b27c);
+    color: var(--rs-primary, #e3b27c);
+}
+
+.illus-lightbox-nav-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.illus-lightbox-counter {
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 0.24rem 0.55rem;
+    border-radius: 999px;
+    background: rgba(227, 178, 124, 0.14);
+    color: var(--rs-primary, #e3b27c);
 }
 </style>
 
@@ -807,24 +877,40 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
             </details>
         <?php endforeach; ?>
 
-        <!-- Native <dialog> Lightbox Modal (invoked via .showModal()) -->
-        <dialog id="ova-illus-lightbox" class="illus-lightbox-dialog" aria-labelledby="ova-illus-lightbox-title">
+        <!-- Native <dialog> Lightbox Modal (invoked via .showModal() with closedby="any" + Prev/Next/Up navigation) -->
+        <dialog id="ova-illus-lightbox" class="illus-lightbox-dialog" closedby="any" aria-labelledby="ova-illus-lightbox-title">
             <div class="illus-lightbox-inner">
                 <div class="illus-lightbox-header">
-                    <div>
+                    <div style="min-inline-size: 0;">
                         <div id="ova-illus-lightbox-chap" class="illus-toc-chap-eyebrow"></div>
                         <h3 id="ova-illus-lightbox-title" class="illus-lightbox-title"></h3>
                     </div>
-                    <button type="button" id="ova-illus-lightbox-close" class="illus-lightbox-close" aria-label="Close illustration preview">
-                        <i class="ph ph-x" aria-hidden="true"></i>
-                    </button>
+                    <div style="display: inline-flex; align-items: center; gap: 0.5rem; flex-shrink: 0;">
+                        <a href="/illustrations" id="ova-illus-lightbox-up" class="illus-lightbox-nav-btn" title="Up to All-Narratives Illustrations Gallery">
+                            <i class="ph ph-arrow-up" aria-hidden="true"></i>
+                            <span>All Narratives</span>
+                        </a>
+                        <button type="button" id="ova-illus-lightbox-close" class="illus-lightbox-close" aria-label="Close illustration preview">
+                            <i class="ph ph-x" aria-hidden="true"></i>
+                        </button>
+                    </div>
                 </div>
                 <div class="illus-lightbox-body">
                     <img id="ova-illus-lightbox-img" class="illus-lightbox-img" src="" alt="">
                     <p id="ova-illus-lightbox-caption" class="illus-lightbox-caption"></p>
                 </div>
                 <div class="illus-lightbox-footer">
-                    <span style="font-size: 0.8rem; opacity: 0.78;">Press <kbd>Esc</kbd> or click outside to close</span>
+                    <div class="illus-lightbox-nav-group" role="group" aria-label="Navigate between illustrations">
+                        <button type="button" id="ova-illus-lightbox-prev" class="illus-lightbox-nav-btn" aria-label="Previous illustration">
+                            <i class="ph ph-caret-left" aria-hidden="true"></i>
+                            <span>Previous</span>
+                        </button>
+                        <span id="ova-illus-lightbox-counter" class="illus-lightbox-counter" aria-live="polite">1 / 1</span>
+                        <button type="button" id="ova-illus-lightbox-next" class="illus-lightbox-nav-btn" aria-label="Next illustration">
+                            <span>Next</span>
+                            <i class="ph ph-caret-right" aria-hidden="true"></i>
+                        </button>
+                    </div>
                     <a id="ova-illus-lightbox-link" href="#" class="illus-toc-read-link">
                         <span>Read Full Scene in Context</span>
                         <i class="ph ph-arrow-right" aria-hidden="true"></i>
@@ -845,26 +931,86 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
             const captionEl = document.getElementById('ova-illus-lightbox-caption');
             const linkEl = document.getElementById('ova-illus-lightbox-link');
             const closeBtn = document.getElementById('ova-illus-lightbox-close');
+            const prevBtn = document.getElementById('ova-illus-lightbox-prev');
+            const nextBtn = document.getElementById('ova-illus-lightbox-next');
+            const counterEl = document.getElementById('ova-illus-lightbox-counter');
 
-            document.querySelectorAll('.illus-toc-zoom-btn').forEach(function(btn) {
-                btn.addEventListener('click', function() {
-                    const src = btn.getAttribute('data-illus-src') || '';
-                    const title = btn.getAttribute('data-illus-title') || '';
-                    const chap = btn.getAttribute('data-illus-chap') || '';
-                    const caption = btn.getAttribute('data-illus-caption') || '';
-                    const url = btn.getAttribute('data-illus-url') || '#';
+            const allZoomBtns = Array.from(document.querySelectorAll('.illus-toc-zoom-btn'));
+            let currentZoomBtn = null;
 
-                    imgEl.src = src;
-                    imgEl.alt = caption || title;
-                    titleEl.textContent = title;
-                    chapEl.textContent = chap;
-                    captionEl.textContent = caption;
-                    linkEl.href = url;
-
-                    if (typeof dialog.showModal === 'function') {
-                        dialog.showModal();
-                    }
+            function getVisibleZoomBtns() {
+                return allZoomBtns.filter(function(b) {
+                    const card = b.closest('.illus-toc-card');
+                    return !card || card.style.display !== 'none';
                 });
+            }
+
+            function showIllustrationForButton(btn) {
+                if (!btn) return;
+                currentZoomBtn = btn;
+                const src = btn.getAttribute('data-illus-src') || '';
+                const title = btn.getAttribute('data-illus-title') || '';
+                const chap = btn.getAttribute('data-illus-chap') || '';
+                const caption = btn.getAttribute('data-illus-caption') || '';
+                const url = btn.getAttribute('data-illus-url') || '#';
+
+                imgEl.src = src;
+                imgEl.alt = caption || title;
+                titleEl.textContent = title;
+                chapEl.textContent = chap;
+                captionEl.textContent = caption;
+                linkEl.href = url;
+
+                const visibleBtns = getVisibleZoomBtns();
+                const idx = visibleBtns.indexOf(btn);
+                const total = visibleBtns.length;
+                if (counterEl) {
+                    counterEl.textContent = (idx >= 0 ? (idx + 1) : 1) + ' / ' + Math.max(1, total);
+                }
+                if (prevBtn) prevBtn.disabled = total <= 1;
+                if (nextBtn) nextBtn.disabled = total <= 1;
+
+                if (!dialog.open && typeof dialog.showModal === 'function') {
+                    dialog.showModal();
+                }
+            }
+
+            function stepIllustration(delta) {
+                const visibleBtns = getVisibleZoomBtns();
+                if (visibleBtns.length === 0) return;
+                let idx = visibleBtns.indexOf(currentZoomBtn);
+                if (idx === -1) idx = 0;
+                const nextIdx = (idx + delta + visibleBtns.length) % visibleBtns.length;
+                showIllustrationForButton(visibleBtns[nextIdx]);
+            }
+
+            allZoomBtns.forEach(function(btn) {
+                btn.addEventListener('click', function() {
+                    showIllustrationForButton(btn);
+                });
+            });
+
+            if (prevBtn) {
+                prevBtn.addEventListener('click', function() {
+                    stepIllustration(-1);
+                });
+            }
+
+            if (nextBtn) {
+                nextBtn.addEventListener('click', function() {
+                    stepIllustration(1);
+                });
+            }
+
+            document.addEventListener('keydown', function(e) {
+                if (!dialog.open) return;
+                if (e.key === 'ArrowLeft') {
+                    e.preventDefault();
+                    stepIllustration(-1);
+                } else if (e.key === 'ArrowRight') {
+                    e.preventDefault();
+                    stepIllustration(1);
+                }
             });
 
             if (closeBtn) {
@@ -873,11 +1019,21 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
                 });
             }
 
-            dialog.addEventListener('click', function(e) {
-                if (e.target === dialog) {
+            // Fallback for browsers without declarative <dialog closedby="any"> support (e.g. Safari)
+            if (!('closedBy' in HTMLDialogElement.prototype)) {
+                dialog.addEventListener('click', function(event) {
+                    if (event.target !== dialog) return;
+                    const rect = dialog.getBoundingClientRect();
+                    const isDialogContent = (
+                        rect.top <= event.clientY &&
+                        event.clientY <= rect.top + rect.height &&
+                        rect.left <= event.clientX &&
+                        event.clientX <= rect.left + rect.width
+                    );
+                    if (isDialogContent) return;
                     dialog.close();
-                }
-            });
+                });
+            }
 
             // Exact Era Jump Navigation:
             // Unlocks deferred content-visibility on preceding Era sections prior to scrolling

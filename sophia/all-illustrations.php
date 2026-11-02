@@ -407,6 +407,57 @@ foreach ($catalogEntries as $catEntry) {
         color: var(--rs-text);
         cursor: pointer;
     }
+
+    #lib-illus-lightbox {
+        max-inline-size: min(92vw, 980px);
+        max-block-size: min(90dvh, 840px);
+        inline-size: 100%;
+        border: 1px solid rgba(227, 178, 124, 0.45);
+        border-radius: 14px;
+        background: #0b131e;
+        color: #f8fafc;
+        padding: 0;
+        box-shadow: 0 24px 60px rgba(0, 0, 0, 0.75);
+        overflow: hidden;
+    }
+
+    #lib-illus-lightbox:modal {
+        overscroll-behavior: contain;
+    }
+
+    #lib-illus-lightbox::backdrop {
+        overflow: hidden;
+        overscroll-behavior: contain;
+        background: rgba(8, 6, 8, 0.82);
+        backdrop-filter: blur(5px);
+    }
+
+    .lib-illus-lb-nav-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.32rem;
+        padding: 0.38rem 0.75rem;
+        border-radius: 7px;
+        border: 1px solid rgba(227, 178, 124, 0.45);
+        background: rgba(255, 255, 255, 0.06);
+        color: #f8fafc !important;
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .lib-illus-lb-nav-btn:hover:not(:disabled),
+    .lib-illus-lb-nav-btn:focus-visible:not(:disabled) {
+        background: rgba(227, 178, 124, 0.22);
+        border-color: #E3B27C;
+        color: #F4CFA0 !important;
+    }
+
+    .lib-illus-lb-nav-btn:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+    }
 </style>
 
 <div class="stardust-mobile-scroll" id="stardust-main-content" style="flex: 1; background: var(--rs-bg); padding-bottom: 6rem;">
@@ -510,6 +561,8 @@ foreach ($catalogEntries as $catEntry) {
                                         data-lightbox-title="<?= htmlspecialchars($plate['part_title']) ?>"
                                         data-lightbox-kicker="<?= htmlspecialchars($bItem['title'] . ' • ' . $plate['chap_title']) ?>"
                                         data-lightbox-url="<?= htmlspecialchars($plate['part_url']) ?>"
+                                        data-lightbox-book-slug="<?= htmlspecialchars($bItem['slug']) ?>"
+                                        data-lightbox-book-title="<?= htmlspecialchars($bItem['title']) ?>"
                                         aria-label="Inspect full-screen illustration for <?= htmlspecialchars($plate['part_title']) ?>">
                                     <img src="<?= htmlspecialchars($plate['src']) ?>"
                                          alt="<?= htmlspecialchars($plate['alt']) ?>"
@@ -548,7 +601,9 @@ foreach ($catalogEntries as $catEntry) {
                                                 data-lightbox-alt="<?= htmlspecialchars($plate['alt']) ?>"
                                                 data-lightbox-title="<?= htmlspecialchars($plate['part_title']) ?>"
                                                 data-lightbox-kicker="<?= htmlspecialchars($bItem['title'] . ' • ' . $plate['chap_title']) ?>"
-                                                data-lightbox-url="<?= htmlspecialchars($plate['part_url']) ?>">
+                                                data-lightbox-url="<?= htmlspecialchars($plate['part_url']) ?>"
+                                                data-lightbox-book-slug="<?= htmlspecialchars($bItem['slug']) ?>"
+                                                data-lightbox-book-title="<?= htmlspecialchars($bItem['title']) ?>">
                                             <i class="ph-bold ph-corners-out"></i> Enlarge
                                         </button>
                                     </div>
@@ -562,26 +617,45 @@ foreach ($catalogEntries as $catEntry) {
     </div>
 </div>
 
-<!-- Native <dialog> Lightbox for Library-Wide Table of Illustrations -->
-<dialog id="lib-illus-lightbox" aria-label="Full-screen illustration viewer" style="max-width: min(94vw, 1180px); width: 100%; border: 1px solid rgba(227,178,124,0.45); border-radius: 14px; background: #0b131e; color: #f8fafc; padding: 0; box-shadow: 0 24px 60px rgba(0,0,0,0.75);">
-    <div style="display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 0.9rem 1.2rem; border-bottom: 1px solid rgba(255,255,255,0.12);">
-        <div>
-            <div id="lib-illus-lb-kicker" style="font-size: 0.74rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #E3B27C;"></div>
-            <h2 id="lib-illus-lb-title" style="font-size: 1.1rem; font-weight: 800; margin: 0.1rem 0 0; color: #ffffff;"></h2>
+<!-- Native <dialog> Lightbox for Library-Wide Table of Illustrations (Zero-Scroll + Prev/Next/Up Navigation) -->
+<dialog id="lib-illus-lightbox" closedby="any" aria-labelledby="lib-illus-lb-title">
+    <div style="display: flex; flex-direction: column; max-block-size: min(90dvh, 840px); overflow: hidden;">
+        <div style="flex-shrink: 0; display: flex; align-items: center; justify-content: space-between; gap: 0.85rem; padding: 0.75rem 1.15rem; border-bottom: 1px solid rgba(255,255,255,0.12);">
+            <div style="min-inline-size: 0;">
+                <div id="lib-illus-lb-kicker" style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: #E3B27C;"></div>
+                <h2 id="lib-illus-lb-title" style="font-size: 1.02rem; font-weight: 800; margin: 0.1rem 0 0; color: #ffffff; line-height: 1.3;"></h2>
+            </div>
+            <div style="display: inline-flex; align-items: center; gap: 0.5rem; flex-shrink: 0;">
+                <a id="lib-illus-lb-up" href="/rachel/illustrations" class="lib-illus-lb-nav-btn" title="Up to Book's Dedicated Gallery">
+                    <i class="ph-bold ph-arrow-up"></i>
+                    <span id="lib-illus-lb-up-label">Up to Book Gallery</span>
+                </a>
+                <button type="button" id="lib-illus-lb-close" aria-label="Close lightbox" style="background: rgba(255,255,255,0.1); color: #ffffff; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; padding: 0.38rem 0.68rem; font-weight: 700; cursor: pointer;">
+                    <i class="ph-bold ph-x"></i>
+                </button>
+            </div>
         </div>
-        <div style="display: flex; align-items: center; gap: 0.6rem;">
-            <a id="lib-illus-lb-link" href="#" style="display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.45rem 0.85rem; border-radius: 8px; background: #E3B27C; color: #09222a !important; font-weight: 800; font-size: 0.82rem; text-decoration: none;">
-                <i class="ph-fill ph-book-open-text"></i> Read Scene &rarr;
+        <div style="flex: 1 1 auto; min-block-size: 0; padding: 0.8rem 1.15rem; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.65rem; background: #050911;">
+            <img id="lib-illus-lb-img" src="" alt="" style="display: block; inline-size: auto; max-inline-size: 100%; max-block-size: clamp(180px, 48dvh, 460px); flex: 0 1 auto; min-block-size: 0; object-fit: contain; border-radius: 6px;">
+            <p id="lib-illus-lb-caption" style="flex-shrink: 0; inline-size: 100%; margin: 0; font-size: 0.86rem; line-height: 1.48; color: #e2e8f0; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: clip;"></p>
+        </div>
+        <div style="flex-shrink: 0; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.65rem; padding: 0.7rem 1.15rem; border-top: 1px solid rgba(255,255,255,0.12);">
+            <div style="display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0.45rem;" role="group" aria-label="Navigate between illustrations">
+                <button type="button" id="lib-illus-lb-prev" class="lib-illus-lb-nav-btn" aria-label="Previous illustration">
+                    <i class="ph-bold ph-caret-left"></i>
+                    <span>Previous</span>
+                </button>
+                <span id="lib-illus-lb-counter" style="font-size: 0.78rem; font-weight: 700; padding: 0.24rem 0.55rem; border-radius: 999px; background: rgba(227, 178, 124, 0.16); color: #F4CFA0;" aria-live="polite">1 / 1</span>
+                <button type="button" id="lib-illus-lb-next" class="lib-illus-lb-nav-btn" aria-label="Next illustration">
+                    <span>Next</span>
+                    <i class="ph-bold ph-caret-right"></i>
+                </button>
+            </div>
+            <a id="lib-illus-lb-link" href="#" style="display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.42rem 0.85rem; border-radius: 8px; background: #E3B27C; color: #09222a !important; font-weight: 800; font-size: 0.82rem; text-decoration: none;">
+                <i class="ph-fill ph-book-open-text"></i> Read Full Scene in Context &rarr;
             </a>
-            <button type="button" id="lib-illus-lb-close" aria-label="Close lightbox" style="background: rgba(255,255,255,0.1); color: #ffffff; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; padding: 0.42rem 0.75rem; font-weight: 700; cursor: pointer;">
-                <i class="ph-bold ph-x"></i> Close
-            </button>
         </div>
     </div>
-    <div style="background: #050911; display: flex; align-items: center; justify-content: center; max-height: 74vh; overflow: hidden;">
-        <img id="lib-illus-lb-img" src="" alt="" style="max-width: 100%; max-height: 74vh; width: auto; height: auto; object-fit: contain; display: block;">
-    </div>
-    <div id="lib-illus-lb-caption" style="padding: 0.85rem 1.2rem; font-size: 0.88rem; line-height: 1.55; color: #e2e8f0; border-top: 1px solid rgba(255,255,255,0.1);"></div>
 </dialog>
 
 <script>
@@ -634,34 +708,117 @@ foreach ($catalogEntries as $catEntry) {
         searchInput.addEventListener('input', applyFilters);
     }
 
-    // Lightbox controller
+    // Lightbox controller with Previous / Next / Up navigation
     const dialog = document.getElementById('lib-illus-lightbox');
     const lbImg = document.getElementById('lib-illus-lb-img');
     const lbTitle = document.getElementById('lib-illus-lb-title');
     const lbKicker = document.getElementById('lib-illus-lb-kicker');
     const lbCaption = document.getElementById('lib-illus-lb-caption');
     const lbLink = document.getElementById('lib-illus-lb-link');
+    const lbUp = document.getElementById('lib-illus-lb-up');
+    const lbUpLabel = document.getElementById('lib-illus-lb-up-label');
+    const lbPrev = document.getElementById('lib-illus-lb-prev');
+    const lbNext = document.getElementById('lib-illus-lb-next');
+    const lbCounter = document.getElementById('lib-illus-lb-counter');
     const lbClose = document.getElementById('lib-illus-lb-close');
+
+    const allCardThumbs = Array.from(document.querySelectorAll('.lib-illus-thumb-btn'));
+    let currentThumbBtn = null;
+
+    function getVisibleThumbs() {
+        return allCardThumbs.filter((btn) => {
+            const card = btn.closest('.lib-illus-card');
+            const sec = btn.closest('.lib-illus-book-section');
+            return (!card || card.style.display !== 'none') && (!sec || sec.style.display !== 'none');
+        });
+    }
+
+    function openLightboxForThumb(thumbBtn) {
+        if (!thumbBtn || !dialog) return;
+        currentThumbBtn = thumbBtn;
+        lbImg.src = thumbBtn.getAttribute('data-lightbox-src') || '';
+        lbImg.alt = thumbBtn.getAttribute('data-lightbox-alt') || '';
+        lbTitle.textContent = thumbBtn.getAttribute('data-lightbox-title') || '';
+        lbKicker.textContent = thumbBtn.getAttribute('data-lightbox-kicker') || '';
+        lbCaption.textContent = thumbBtn.getAttribute('data-lightbox-alt') || '';
+        lbLink.href = thumbBtn.getAttribute('data-lightbox-url') || '#';
+
+        const bookSlug = thumbBtn.getAttribute('data-lightbox-book-slug') || '';
+        const bookTitle = thumbBtn.getAttribute('data-lightbox-book-title') || 'Book';
+        if (lbUp) {
+            lbUp.href = bookSlug ? ('/' + bookSlug + '/illustrations') : '/illustrations';
+        }
+        if (lbUpLabel) {
+            lbUpLabel.textContent = 'Up to ' + bookTitle;
+        }
+
+        const visible = getVisibleThumbs();
+        const idx = visible.indexOf(thumbBtn);
+        const total = visible.length;
+        if (lbCounter) {
+            lbCounter.textContent = (idx >= 0 ? (idx + 1) : 1) + ' / ' + Math.max(1, total);
+        }
+        if (lbPrev) lbPrev.disabled = total <= 1;
+        if (lbNext) lbNext.disabled = total <= 1;
+
+        if (!dialog.open && typeof dialog.showModal === 'function') {
+            dialog.showModal();
+        }
+    }
+
+    function stepLibraryIllustration(delta) {
+        const visible = getVisibleThumbs();
+        if (visible.length === 0) return;
+        let idx = visible.indexOf(currentThumbBtn);
+        if (idx === -1) idx = 0;
+        const nextIdx = (idx + delta + visible.length) % visible.length;
+        openLightboxForThumb(visible[nextIdx]);
+    }
 
     document.addEventListener('click', (e) => {
         const trigger = e.target.closest('[data-lightbox-src]');
         if (!trigger || !dialog) return;
         e.preventDefault();
-        lbImg.src = trigger.getAttribute('data-lightbox-src') || '';
-        lbImg.alt = trigger.getAttribute('data-lightbox-alt') || '';
-        lbTitle.textContent = trigger.getAttribute('data-lightbox-title') || '';
-        lbKicker.textContent = trigger.getAttribute('data-lightbox-kicker') || '';
-        lbCaption.textContent = trigger.getAttribute('data-lightbox-alt') || '';
-        lbLink.href = trigger.getAttribute('data-lightbox-url') || '#';
-        if (typeof dialog.showModal === 'function') {
-            dialog.showModal();
+        const card = trigger.closest('.lib-illus-card');
+        const canonicalThumb = card ? card.querySelector('.lib-illus-thumb-btn') : trigger;
+        openLightboxForThumb(canonicalThumb || trigger);
+    });
+
+    if (lbPrev) {
+        lbPrev.addEventListener('click', () => stepLibraryIllustration(-1));
+    }
+    if (lbNext) {
+        lbNext.addEventListener('click', () => stepLibraryIllustration(1));
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (!dialog || !dialog.open) return;
+        if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            stepLibraryIllustration(-1);
+        } else if (e.key === 'ArrowRight') {
+            e.preventDefault();
+            stepLibraryIllustration(1);
         }
     });
 
     if (lbClose && dialog) {
         lbClose.addEventListener('click', () => dialog.close());
-        dialog.addEventListener('click', (e) => {
-            if (e.target === dialog) dialog.close();
+    }
+
+    // Fallback for browsers without declarative <dialog closedby="any"> support (e.g. Safari)
+    if (dialog && !('closedBy' in HTMLDialogElement.prototype)) {
+        dialog.addEventListener('click', (event) => {
+            if (event.target !== dialog) return;
+            const rect = dialog.getBoundingClientRect();
+            const isDialogContent = (
+                rect.top <= event.clientY &&
+                event.clientY <= rect.top + rect.height &&
+                rect.left <= event.clientX &&
+                event.clientX <= rect.left + rect.width
+            );
+            if (isDialogContent) return;
+            dialog.close();
         });
     }
 })();
