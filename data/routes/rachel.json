@@ -13,15 +13,15 @@
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
             "epub": "50 MB",
-            "pdf": "53.2 MB",
-            "text_epub": "1021 KB",
-            "text_pdf": "2.8 MB",
-            "epub_bytes": 52418883,
-            "pdf_bytes": 55803455,
-            "text_epub_bytes": 1045415,
-            "text_pdf_bytes": 2951651
+            "pdf": "53.3 MB",
+            "text_epub": "1 MB",
+            "text_pdf": "2.9 MB",
+            "epub_bytes": 52440519,
+            "pdf_bytes": 55874828,
+            "text_epub_bytes": 1066691,
+            "text_pdf_bytes": 3021236
         },
-        "illustration_count": 93
+        "illustration_count": 97
     },
     "/rachel": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1804,5 +1804,53 @@
         "title": "Part 3: Sunday Wrap-Up: Closing Lunch, Awards Ceremony, & Home to Norfolk",
         "theme": "raggiesoft-books",
         "filePath": "e021/c001/p003.md"
+    },
+    "/rachel/code-susquehanna": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Code Susquehanna",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|21"
+    },
+    "/rachel/code-susquehanna/the-wall-behind-the-desk-spring-2024-fall-2025": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Wall Behind the Desk (Spring 2024 \u2013 Fall 2025)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|21|0"
+    },
+    "/rachel/code-susquehanna/the-wall-behind-the-desk-spring-2024-fall-2025/ms-susan-the-mutual-double-take-the-secret-only-rachel-carries": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Ms. Susan, The Mutual Double-Take, & The Secret Only Rachel Carries",
+        "theme": "raggiesoft-books",
+        "filePath": "e022/c001/p001.md"
+    },
+    "/rachel/code-susquehanna/twin-b-the-qu-b-cois-firewall-august-2026": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Twin B & The Qu\u00e9b\u00e9cois Firewall (August 2026)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|21|1"
+    },
+    "/rachel/code-susquehanna/twin-b-the-qu-b-cois-firewall-august-2026/part-1-7-29-pm-the-identical-twin-digital-ambush-rebooting-into-safe-mode": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: 7:29 PM: The Identical-Twin Digital Ambush & Rebooting into Safe Mode",
+        "theme": "raggiesoft-books",
+        "filePath": "e022/c002/p001.md"
+    },
+    "/rachel/code-susquehanna/twin-b-the-qu-b-cois-firewall-august-2026/part-2-engineering-the-teflon-protocol-the-corporate-we-the-88-mph-paradox": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Engineering the Teflon Protocol, The Corporate We, & The 88 MPH Paradox",
+        "theme": "raggiesoft-books",
+        "filePath": "e022/c002/p002.md"
+    },
+    "/rachel/code-susquehanna/7-16-pm-unhandled-exception-october-2-2026": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "7:16 PM: Unhandled Exception (October 2, 2026)",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|21|2"
+    },
+    "/rachel/code-susquehanna/7-16-pm-unhandled-exception-october-2-2026/code-susquehanna-twin-a-the-desk-speaker-holding-the-line-at-status-yellow": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Code Susquehanna \u2014 Twin A, The Desk Speaker, & Holding the Line at Status Yellow",
+        "theme": "raggiesoft-books",
+        "filePath": "e022/c003/p001.md"
     }
 }
