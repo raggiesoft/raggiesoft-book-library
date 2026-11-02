@@ -12,16 +12,16 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "65.3 MB",
-            "pdf": "69.1 MB",
+            "epub": "67 MB",
+            "pdf": "70.9 MB",
             "text_epub": "1.1 MB",
-            "text_pdf": "3 MB",
-            "epub_bytes": 68451376,
-            "pdf_bytes": 72433698,
-            "text_epub_bytes": 1126182,
-            "text_pdf_bytes": 3194613
+            "text_pdf": "3.1 MB",
+            "epub_bytes": 70264036,
+            "pdf_bytes": 74325704,
+            "text_epub_bytes": 1129056,
+            "text_pdf_bytes": 3203746
         },
-        "illustration_count": 116
+        "illustration_count": 120
     },
     "/rachel": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1787,11 +1787,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|20|0"
     },
-    "/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/from-cchr-to-vdu-the-upperclass-gih-pilot-apartment/upperclass-credits-from-cchr-signing-up-for-vdu-s-gender-inclusive-housing-pilot-in-a-heartbeat": {
+    "/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/from-cchr-to-vdu-the-upperclass-gih-pilot-apartment/part-1-upperclass-credits-from-cchr-signing-up-for-vdu-s-gender-inclusive-housing-pilot-in-a-heartbeat": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Upperclass Credits from CCHR & Signing Up for VDU's Gender-Inclusive Housing Pilot in a Heartbeat",
+        "title": "Part 1: Upperclass Credits from CCHR & Signing Up for VDU's Gender-Inclusive Housing Pilot in a Heartbeat",
         "theme": "raggiesoft-books",
         "filePath": "e021/c001/p001.md"
+    },
+    "/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/from-cchr-to-vdu-the-upperclass-gih-pilot-apartment/part-2-the-building-s-first-gih-pair-double-takes-from-housing-the-1st-floor-laundry-room": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Building's First GIH Pair, Double-Takes from Housing, & The 1st-Floor Laundry Room",
+        "theme": "raggiesoft-books",
+        "filePath": "e021/c001/p002.md"
     },
     "/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/bilateral-achilles-heel-cord-lengthening-cleared-for-cpi": {
         "view": "pages/raggiesoft-books/books/viewer",
