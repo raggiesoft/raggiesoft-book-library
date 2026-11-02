@@ -16,10 +16,10 @@
             "pdf": "74 MB",
             "text_epub": "1.1 MB",
             "text_pdf": "3.1 MB",
-            "epub_bytes": 73472615,
-            "pdf_bytes": 77583134,
-            "text_epub_bytes": 1133531,
-            "text_pdf_bytes": 3217498
+            "epub_bytes": 73472543,
+            "pdf_bytes": 77583424,
+            "text_epub_bytes": 1133497,
+            "text_pdf_bytes": 3217610
         },
         "illustration_count": 124
     },
@@ -88,6 +88,18 @@
         "title": "Part 2: Not Proper & The Father's Perspective",
         "theme": "raggiesoft-books",
         "filePath": "e001/c003/p002.md"
+    },
+    "/rachel/the-delaney-street-years/summer-camp-at-virginia-dominion-university": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Summer Camp at Virginia Dominion University",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|3"
+    },
+    "/rachel/the-delaney-street-years/summer-camp-at-virginia-dominion-university/the-brick-walkways-of-summer-camp-mapping-vdu-with-rachel-and-jessica": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Brick Walkways of Summer Camp: Mapping VDU with Rachel and Jessica",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c004/p001.md"
     },
     "/rachel/the-saltwater-summer": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -490,18 +502,6 @@
         "title": "The Sleepover Calculation",
         "theme": "raggiesoft-books",
         "filePath": "e004/c003/p001.md"
-    },
-    "/rachel/middle-school/summer-camp-at-virginia-dominion-university": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Summer Camp at Virginia Dominion University",
-        "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|3|3"
-    },
-    "/rachel/middle-school/summer-camp-at-virginia-dominion-university/the-brick-walkways-of-summer-camp-mapping-vdu-with-rachel-and-jessica": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Brick Walkways of Summer Camp: Mapping VDU with Rachel and Jessica",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c004/p001.md"
     },
     "/rachel/high-school": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1037,75 +1037,75 @@
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|12"
     },
+    "/rachel/michael-s-senior-year/the-high-school-field-trip-to-vdu": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The High School Field Trip to VDU",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|12|0"
+    },
+    "/rachel/michael-s-senior-year/the-high-school-field-trip-to-vdu/walking-the-old-camp-paths-alone-the-promise-to-reunite-first": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Walking the Old Camp Paths Alone & The Promise to Reunite First",
+        "theme": "raggiesoft-books",
+        "filePath": "e013/c001/p001.md"
+    },
     "/rachel/michael-s-senior-year/the-empty-shell": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Empty Shell",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|12|0"
+        "filePath": "__CHAP_TOC__|12|1"
     },
     "/rachel/michael-s-senior-year/the-empty-shell/part-1-the-last-morning-the-baldwin-briefing": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Last Morning & The Baldwin Briefing",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c001/p001.md"
+        "filePath": "e013/c002/p001.md"
     },
     "/rachel/michael-s-senior-year/the-empty-shell/part-2-the-frictionless-trap-the-logistical-paradox": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Frictionless Trap & The Logistical Paradox",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c001/p002.md"
+        "filePath": "e013/c002/p002.md"
     },
     "/rachel/michael-s-senior-year/the-empty-shell/part-3-the-extraction-plan-the-bare-mechanics": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Extraction Plan & The Bare Mechanics",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c001/p003.md"
+        "filePath": "e013/c002/p003.md"
     },
     "/rachel/michael-s-senior-year/the-digital-mirage": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Digital Mirage",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|12|1"
+        "filePath": "__CHAP_TOC__|12|2"
     },
     "/rachel/michael-s-senior-year/the-digital-mirage/part-1-the-best-tech-ambush-the-hardware-check": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Best Tech Ambush & The Hardware Check",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c002/p001.md"
+        "filePath": "e013/c003/p001.md"
     },
     "/rachel/michael-s-senior-year/the-digital-mirage/part-2-the-holding-pattern-the-on-us-override": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Holding Pattern & The On-Us Override",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c002/p002.md"
+        "filePath": "e013/c003/p002.md"
     },
     "/rachel/michael-s-senior-year/the-digital-mirage/part-3-the-initial-provisioning-the-new-parameter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Initial Provisioning & The New Parameter",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c002/p003.md"
+        "filePath": "e013/c003/p003.md"
     },
     "/rachel/michael-s-senior-year/the-extraction": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Extraction",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|12|2"
+        "filePath": "__CHAP_TOC__|12|3"
     },
     "/rachel/michael-s-senior-year/the-extraction/the-morning-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Morning Perimeter",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c003/p001.md"
-    },
-    "/rachel/michael-s-senior-year/the-high-school-field-trip-to-vdu": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The High School Field Trip to VDU",
-        "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|12|3"
-    },
-    "/rachel/michael-s-senior-year/the-high-school-field-trip-to-vdu/walking-the-old-camp-paths-alone-the-promise-to-reunite-first": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Walking the Old Camp Paths Alone & The Promise to Reunite First",
         "theme": "raggiesoft-books",
         "filePath": "e013/c004/p001.md"
     },
