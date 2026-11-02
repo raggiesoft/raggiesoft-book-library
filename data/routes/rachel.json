@@ -12,16 +12,16 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "54 MB",
-            "pdf": "57.5 MB",
+            "epub": "55.3 MB",
+            "pdf": "59 MB",
             "text_epub": "1 MB",
             "text_pdf": "2.9 MB",
-            "epub_bytes": 56640409,
-            "pdf_bytes": 60301947,
-            "text_epub_bytes": 1067115,
-            "text_pdf_bytes": 3022320
+            "epub_bytes": 58019533,
+            "pdf_bytes": 61842117,
+            "text_epub_bytes": 1070071,
+            "text_pdf_bytes": 3032940
         },
-        "illustration_count": 99
+        "illustration_count": 101
     },
     "/rachel": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1817,11 +1817,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|21|0"
     },
-    "/rachel/code-susquehanna/the-wall-behind-the-desk-spring-2024-fall-2025/ms-susan-the-mutual-double-take-the-secret-only-rachel-carries": {
+    "/rachel/code-susquehanna/the-wall-behind-the-desk-spring-2024-fall-2025/part-1-5-55-pm-five-minutes-to-clock-out-the-parking-lot-hand-off": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Ms. Susan, The Mutual Double-Take, & The Secret Only Rachel Carries",
+        "title": "Part 1: 5:55 PM: Five Minutes to Clock-Out & The Parking Lot Hand-Off",
         "theme": "raggiesoft-books",
         "filePath": "e022/c001/p001.md"
+    },
+    "/rachel/code-susquehanna/the-wall-behind-the-desk-spring-2024-fall-2025/part-2-6-25-pm-crying-in-rachel-s-arms-the-secret-pact": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: 6:25 PM: Crying in Rachel's Arms & The Secret Pact",
+        "theme": "raggiesoft-books",
+        "filePath": "e022/c001/p002.md"
+    },
+    "/rachel/code-susquehanna/the-wall-behind-the-desk-spring-2024-fall-2025/part-3-april-19-2024-ms-susan-the-mutual-double-take-anthony-s-tape-review": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: April 19, 2024: Ms. Susan, The Mutual Double-Take, & Anthony's Tape Review",
+        "theme": "raggiesoft-books",
+        "filePath": "e022/c001/p003.md"
     },
     "/rachel/code-susquehanna/twin-b-the-qu-b-cois-firewall-august-2026": {
         "view": "pages/raggiesoft-books/books/viewer",
