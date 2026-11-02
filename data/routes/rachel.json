@@ -12,16 +12,16 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "71.7 MB",
-            "pdf": "75.8 MB",
+            "epub": "74.6 MB",
+            "pdf": "78.7 MB",
             "text_epub": "1.1 MB",
             "text_pdf": "3.1 MB",
-            "epub_bytes": 75196941,
-            "pdf_bytes": 79437827,
-            "text_epub_bytes": 1145565,
-            "text_pdf_bytes": 3251475
+            "epub_bytes": 78249170,
+            "pdf_bytes": 82553749,
+            "text_epub_bytes": 1150135,
+            "text_pdf_bytes": 3266675
         },
-        "illustration_count": 126
+        "illustration_count": 128
     },
     "/rachel": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1847,6 +1847,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e021/c001/p003.md"
     },
+    "/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/from-cchr-to-vdu-the-upperclass-gih-pilot-apartment/part-4-our-shared-academic-track-information-systems-technology-haunted-by-the-past-sitting-side-by-side": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Our Shared Academic Track: Information Systems & Technology, Haunted by the Past, & Sitting Side-by-Side",
+        "theme": "raggiesoft-books",
+        "filePath": "e021/c001/p004.md"
+    },
     "/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/bilateral-achilles-heel-cord-lengthening-cleared-for-cpi": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Bilateral Achilles Heel Cord Lengthening & Cleared for CPI",
@@ -1871,21 +1877,21 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|21|0"
     },
-    "/rachel/the-mountain-conference-saacurc-2016/the-bear-the-bug-and-the-forger/part-1-friday-arrival-the-commonwealth-mall-curb-the-ada-suite-at-the-hotel-at-poly": {
+    "/rachel/the-mountain-conference-saacurc-2016/the-bear-the-bug-and-the-forger/part-1-friday-arrival-struggling-up-the-steep-hills-of-cpi-two-queen-beds-at-the-hotel-at-poly": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Friday Arrival, The Commonwealth Mall Curb, & The ADA Suite at The Hotel at Poly",
+        "title": "Part 1: Friday Arrival, Struggling Up the Steep Hills of CPI, & Two Queen Beds at The Hotel at Poly",
         "theme": "raggiesoft-books",
         "filePath": "e022/c001/p001.md"
     },
-    "/rachel/the-mountain-conference-saacurc-2016/the-bear-the-bug-and-the-forger/part-2-saturday-at-saacurc-the-clothespin-gauntlet-the-gih-pilot-roundtable": {
+    "/rachel/the-mountain-conference-saacurc-2016/the-bear-the-bug-and-the-forger/part-2-saturday-at-saacurc-visiting-school-colors-the-clothespin-gauntlet-the-gih-pilot-roundtable": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Saturday at SAACURC: The Clothespin Gauntlet & The GIH Pilot Roundtable",
+        "title": "Part 2: Saturday at SAACURC: Visiting School Colors, The Clothespin Gauntlet, & The GIH Pilot Roundtable",
         "theme": "raggiesoft-books",
         "filePath": "e022/c001/p002.md"
     },
-    "/rachel/the-mountain-conference-saacurc-2016/the-bear-the-bug-and-the-forger/part-3-sunday-wrap-up-closing-lunch-awards-ceremony-home-to-norfolk": {
+    "/rachel/the-mountain-conference-saacurc-2016/the-bear-the-bug-and-the-forger/part-3-sunday-wrap-up-closing-banquet-the-saacurc-documentation-plaque-back-to-flat-vdu": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Sunday Wrap-Up: Closing Lunch, Awards Ceremony, & Home to Norfolk",
+        "title": "Part 3: Sunday Wrap-Up: Closing Banquet, The SAACURC Documentation Plaque, & Back to Flat VDU",
         "theme": "raggiesoft-books",
         "filePath": "e022/c001/p003.md"
     },
