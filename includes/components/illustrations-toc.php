@@ -288,11 +288,18 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
     border: 1px solid var(--rs-border, rgba(227, 178, 124, 0.2));
     background: var(--rs-surface, rgba(255, 255, 255, 0.02));
     overflow: clip;
+    scroll-margin-block-start: 1.5rem;
 }
 
 .illus-toc-era-deferred {
     content-visibility: auto;
-    contain-intrinsic-size: auto none auto 420px;
+    contain-intrinsic-size: auto none auto var(--era-intrinsic-size, 420px);
+}
+
+.illus-toc-era-pill[aria-current="true"] {
+    border-color: var(--rs-primary, #e3b27c);
+    background: rgba(227, 178, 124, 0.18);
+    color: var(--rs-primary, #e3b27c);
 }
 
 .illus-toc-era-summary {
@@ -636,24 +643,50 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
                     <span><?= count($illustratedEras) ?> <?= count($illustratedEras) === 1 ? 'Era' : 'Eras' ?></span>
                 </span>
             </div>
-            <?php if ($illustrationsTocMode === 'embedded'): ?>
-                <a href="/<?= htmlspecialchars($activeSeriesSlug) ?>/illustrations" class="illus-toc-read-link">
-                    <i class="ph ph-arrows-out" aria-hidden="true"></i>
-                    <span>Open Dedicated Illustrations Gallery &rarr;</span>
+            <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.85rem;">
+                <a href="/illustrations" class="illus-toc-read-link" style="opacity: 0.92;">
+                    <i class="ph ph-books" aria-hidden="true"></i>
+                    <span>All-Novel Illustrations Index</span>
                 </a>
-            <?php else: ?>
-                <a href="/<?= htmlspecialchars($activeSeriesSlug) ?>/toc" class="illus-toc-read-link">
-                    <i class="ph ph-list-bullets" aria-hidden="true"></i>
-                    <span>View Full Chapter Table of Contents &rarr;</span>
-                </a>
-            <?php endif; ?>
+                <?php if ($illustrationsTocMode === 'embedded'): ?>
+                    <a href="/<?= htmlspecialchars($activeSeriesSlug) ?>/illustrations" class="illus-toc-read-link">
+                        <i class="ph ph-arrows-out" aria-hidden="true"></i>
+                        <span>Open Dedicated Illustrations Gallery &rarr;</span>
+                    </a>
+                <?php else: ?>
+                    <a href="/<?= htmlspecialchars($activeSeriesSlug) ?>/toc" class="illus-toc-read-link">
+                        <i class="ph ph-list-bullets" aria-hidden="true"></i>
+                        <span>View Full Chapter Table of Contents &rarr;</span>
+                    </a>
+                <?php endif; ?>
+            </div>
         </div>
+
+        <!-- Instant Search Input for Long Book Galleries -->
+        <?php if ($totalIllustrationsCount > 8): ?>
+            <div style="margin-block-end: 1rem; display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center;">
+                <div style="position: relative; flex: 1; min-width: 240px;">
+                    <i class="ph ph-magnifying-glass" aria-hidden="true" style="position: absolute; left: 0.85rem; top: 50%; transform: translateY(-50%); color: var(--rs-text); opacity: 0.65;"></i>
+                    <input
+                        type="search"
+                        id="illus-toc-filter-input"
+                        placeholder="Filter <?= intval($totalIllustrationsCount) ?> illustrations in <?= htmlspecialchars($activeSeriesTitle) ?> by scene, date, location, or caption..."
+                        aria-label="Filter illustrations in <?= htmlspecialchars($activeSeriesTitle) ?>"
+                        style="width: 100%; padding: 0.6rem 0.9rem 0.6rem 2.35rem; border-radius: 0.6rem; border: 1px solid var(--rs-border, rgba(227, 178, 124, 0.28)); background: var(--rs-surface, rgba(255, 255, 255, 0.04)); color: var(--rs-text, #f4efe6); font-size: 0.88rem;"
+                    >
+                </div>
+                <span id="illus-toc-filter-status" style="font-size: 0.82rem; font-weight: 600; color: var(--rs-text); opacity: 0.8;" aria-live="polite"></span>
+            </div>
+        <?php endif; ?>
 
         <!-- Era Quick-Jump Filter Pills (flex-wrap: balance) -->
         <?php if (count($illustratedEras) > 1): ?>
             <nav class="illus-toc-era-pills" aria-label="Jump to Era Illustrations">
                 <?php foreach ($illustratedEras as $eraGroup): ?>
-                    <a href="#<?= htmlspecialchars($eraGroup['era_anchor']) ?>" class="illus-toc-era-pill">
+                    <a href="#<?= htmlspecialchars($eraGroup['era_anchor']) ?>"
+                       class="illus-toc-era-pill"
+                       data-no-spa="true"
+                       data-era-target="<?= htmlspecialchars($eraGroup['era_anchor']) ?>">
                         <span><?= htmlspecialchars($eraGroup['era_title']) ?></span>
                         <span class="illus-toc-era-pill-count"><?= count($eraGroup['items']) ?></span>
                     </a>
@@ -665,9 +698,15 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
         <?php foreach ($illustratedEras as $eraGalleryIndex => $eraGroup): ?>
             <?php
             // Apply content-visibility: auto strictly to below-the-fold Era sections ($eraGalleryIndex > 0)
+            // while computing a realistic per-Era intrinsic height so scroll geometry remains accurate.
             $deferredClass = ($eraGalleryIndex > 0) ? ' illus-toc-era-deferred' : '';
+            $estimatedRows = max(1, (int)ceil(count($eraGroup['items']) / 2));
+            $estimatedHeightPx = 84 + ($estimatedRows * 410);
             ?>
-            <details class="illus-toc-era-section<?= $deferredClass ?>" id="<?= htmlspecialchars($eraGroup['era_anchor']) ?>" open>
+            <details class="illus-toc-era-section<?= $deferredClass ?>"
+                     id="<?= htmlspecialchars($eraGroup['era_anchor']) ?>"
+                     style="--era-intrinsic-size: <?= $estimatedHeightPx ?>px;"
+                     open>
                 <summary class="illus-toc-era-summary">
                     <h2 class="illus-toc-era-heading">
                         <i class="ph ph-image" aria-hidden="true" style="color: var(--rs-primary);"></i>
@@ -683,8 +722,17 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
                         <?php
                         $isAboveFoldCard = ($eraGalleryIndex === 0 && $item['number'] <= 4);
                         $loadingAttr = $isAboveFoldCard ? 'eager' : 'lazy';
+                        $cardSearchHaystack = strtolower(
+                            $eraGroup['era_title'] . ' ' .
+                            $item['chap_title'] . ' ' .
+                            $item['part_title'] . ' ' .
+                            $item['date'] . ' ' .
+                            $item['location'] . ' ' .
+                            $item['caption'] . ' ' .
+                            $item['alt']
+                        );
                         ?>
-                        <article class="illus-toc-card">
+                        <article class="illus-toc-card" data-illus-search="<?= htmlspecialchars($cardSearchHaystack) ?>">
                             <!-- Row 1: 16:9 Thumbnail Header -->
                             <div class="illus-toc-media-wrap">
                                 <a href="<?= htmlspecialchars($item['part_url']) ?>" class="illus-toc-media-link" aria-label="Read <?= htmlspecialchars($item['part_title']) ?>">
@@ -830,6 +878,96 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
                     dialog.close();
                 }
             });
+
+            // Exact Era Jump Navigation:
+            // Unlocks deferred content-visibility on preceding Era sections prior to scrolling
+            // so smooth scrolling across 15+ Eras in long galleries (e.g. /rachel/illustrations)
+            // never stops short of the target section.
+            const eraSections = Array.from(document.querySelectorAll('.illus-toc-era-section'));
+            const eraPills = Array.from(document.querySelectorAll('.illus-toc-era-pill'));
+
+            function scrollToEraSection(targetId, updateHistory) {
+                const targetEl = document.getElementById(targetId);
+                if (!targetEl) return;
+
+                // Unlock content-visibility and ensure <details open> on all sections up to targetEl
+                for (let i = 0; i < eraSections.length; i++) {
+                    const sec = eraSections[i];
+                    sec.open = true;
+                    sec.classList.remove('illus-toc-era-deferred');
+                    sec.style.contentVisibility = 'visible';
+                    if (sec === targetEl) break;
+                }
+
+                eraPills.forEach(function(pill) {
+                    pill.setAttribute('aria-current', pill.getAttribute('data-era-target') === targetId ? 'true' : 'false');
+                });
+
+                // Force synchronous layout calculation before initiating scroll
+                void targetEl.getBoundingClientRect();
+                targetEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+                // Post-scroll layout verification pass to guarantee exact alignment even if lazy images decode
+                setTimeout(function() {
+                    const rect = targetEl.getBoundingClientRect();
+                    if (Math.abs(rect.top) > 120) {
+                        targetEl.scrollIntoView({ behavior: 'instant', block: 'start' });
+                    }
+                }, 420);
+
+                if (updateHistory && history.replaceState) {
+                    history.replaceState(null, '', '#' + targetId);
+                }
+            }
+
+            eraPills.forEach(function(pill) {
+                pill.addEventListener('click', function(e) {
+                    const targetId = pill.getAttribute('data-era-target') || (pill.getAttribute('href') || '').replace(/^#/, '');
+                    if (!targetId) return;
+                    e.preventDefault();
+                    e.stopPropagation();
+                    scrollToEraSection(targetId, true);
+                });
+            });
+
+            if (window.location.hash && window.location.hash.indexOf('#illus-era-') === 0) {
+                const initialId = window.location.hash.substring(1);
+                setTimeout(function() {
+                    scrollToEraSection(initialId, false);
+                }, 60);
+            }
+
+            // Instant keyword filter for long book galleries
+            const filterInput = document.getElementById('illus-toc-filter-input');
+            const filterStatus = document.getElementById('illus-toc-filter-status');
+            if (filterInput) {
+                filterInput.addEventListener('input', function() {
+                    const q = (filterInput.value || '').trim().toLowerCase();
+                    let matchedCount = 0;
+                    eraSections.forEach(function(sec) {
+                        sec.classList.remove('illus-toc-era-deferred');
+                        sec.style.contentVisibility = 'visible';
+                        const cards = Array.from(sec.querySelectorAll('.illus-toc-card'));
+                        let eraMatches = 0;
+                        cards.forEach(function(card) {
+                            const hay = card.getAttribute('data-illus-search') || '';
+                            const isMatch = (q === '' || hay.indexOf(q) !== -1);
+                            card.style.display = isMatch ? '' : 'none';
+                            if (isMatch) {
+                                eraMatches++;
+                                matchedCount++;
+                            }
+                        });
+                        sec.style.display = eraMatches > 0 ? '' : 'none';
+                        if (eraMatches > 0) sec.open = true;
+                    });
+                    if (filterStatus) {
+                        filterStatus.textContent = q === ''
+                            ? ''
+                            : (matchedCount + ' ' + (matchedCount === 1 ? 'match' : 'matches'));
+                    }
+                });
+            }
         })();
         </script>
     <?php endif; ?>

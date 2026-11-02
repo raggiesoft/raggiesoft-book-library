@@ -65,6 +65,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e002/c001/p001.md"
     },
+    "/pebble-borrow/the-motel-on-the-highway/the-threshold/part-1-out-of-the-storm": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Out of the Storm",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c001/p001.md"
+    },
     "/pebble-borrow/the-motel-on-the-highway/setting-the-scene": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Setting the Scene",
@@ -269,6 +275,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e008/c002/p001.md"
     },
+    "/pebble-borrow/the-general-s-arrival/the-holy-grail-of-geothermal-energy/part-1-0700-hours-the-first-refusal": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "0700 Hours: The First Refusal",
+        "theme": "raggiesoft-books",
+        "filePath": "e008/c002/p001.md"
+    },
     "/pebble-borrow/the-general-s-arrival/0830-hours-the-four-star-directive": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "0830 Hours: The Four-Star Directive",
@@ -276,6 +288,12 @@
         "filePath": "__CHAP_TOC__|7|2"
     },
     "/pebble-borrow/the-general-s-arrival/0830-hours-the-four-star-directive/the-net-closes": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Net Closes",
+        "theme": "raggiesoft-books",
+        "filePath": "e008/c003/p001.md"
+    },
+    "/pebble-borrow/the-general-s-arrival/0830-hours-the-four-star-directive/part-1-the-net-closes": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Net Closes",
         "theme": "raggiesoft-books",
@@ -294,6 +312,12 @@
         "filePath": "__CHAP_TOC__|7|4"
     },
     "/pebble-borrow/the-general-s-arrival/1015-hours-the-commander-in-chief/the-breach": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Breach",
+        "theme": "raggiesoft-books",
+        "filePath": "e008/c005/p001.md"
+    },
+    "/pebble-borrow/the-general-s-arrival/1015-hours-the-commander-in-chief/part-1-the-breach": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Breach",
         "theme": "raggiesoft-books",

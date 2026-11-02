@@ -59,6 +59,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p001.md"
     },
+    "/ruby-mountain/book-the-great-schism/chapter-1-the-eve-of-exile/part-1-the-traitor-the-migration": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Traitor & The Migration",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/p001.md"
+    },
     "/ruby-mountain/book-the-great-schism/chapter-2-the-gates-of-exile": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: The Gates of Exile",
@@ -71,6 +77,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c002/p001.md"
     },
+    "/ruby-mountain/book-the-great-schism/chapter-2-the-gates-of-exile/part-1-the-final-ultimatum-the-assessment": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Final Ultimatum & The Assessment",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c002/p001.md"
+    },
     "/ruby-mountain/book-the-great-schism/chapter-3-the-architecture-of-survival": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 3: The Architecture of Survival",
@@ -78,6 +90,12 @@
         "filePath": "__CHAP_TOC__|0|2"
     },
     "/ruby-mountain/book-the-great-schism/chapter-3-the-architecture-of-survival/the-diagnostics-the-truman-execution": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Diagnostics & The Truman Execution",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c003/p001.md"
+    },
+    "/ruby-mountain/book-the-great-schism/chapter-3-the-architecture-of-survival/part-1-the-diagnostics-the-truman-execution": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Diagnostics & The Truman Execution",
         "theme": "raggiesoft-books",
@@ -161,6 +179,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c003/p001.md"
     },
+    "/ruby-mountain/book-johnny-s-rescue/chapter-3-the-curriculum/part-1-the-proxy": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Proxy",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c003/p001.md"
+    },
     "/ruby-mountain/book-johnny-s-rescue/chapter-4-the-annihilation-of-vanessa-hayes": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 4: The Annihilation of Vanessa Hayes",
@@ -233,6 +257,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c007/p001.md"
     },
+    "/ruby-mountain/book-johnny-s-rescue/chapter-7-the-model-collapse/part-1-the-backchannel-the-war-council": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Backchannel & The War Council",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c007/p001.md"
+    },
     "/ruby-mountain/book-johnny-s-rescue/chapter-8-the-sovereign-pivot": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 8: The Sovereign Pivot",
@@ -245,6 +275,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c008/p001.md"
     },
+    "/ruby-mountain/book-johnny-s-rescue/chapter-8-the-sovereign-pivot/part-1-all-hands-the-line-of-fire": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "All Hands & The Line of Fire",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c008/p001.md"
+    },
     "/ruby-mountain/book-johnny-s-rescue/chapter-9-the-redline": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 9: The Redline",
@@ -252,6 +288,12 @@
         "filePath": "__CHAP_TOC__|2|8"
     },
     "/ruby-mountain/book-johnny-s-rescue/chapter-9-the-redline/the-breaking-point": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Breaking Point",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c009/p001.md"
+    },
+    "/ruby-mountain/book-johnny-s-rescue/chapter-9-the-redline/part-1-the-breaking-point": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Breaking Point",
         "theme": "raggiesoft-books",
@@ -371,6 +413,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e005/c002/p001.md"
     },
+    "/ruby-mountain/book-winter-on-the-mountain/chapter-2-the-fortress-within/part-1-the-pajama-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Pajama Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c002/p001.md"
+    },
     "/ruby-mountain/book-winter-on-the-mountain/chapter-3-cascades-concrete": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 3: Cascades Concrete",
@@ -413,6 +461,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e005/c004/p001.md"
     },
+    "/ruby-mountain/book-winter-on-the-mountain/chapter-4-the-air-gap-transition/part-1-logistical-triage": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Logistical Triage",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c004/p001.md"
+    },
     "/ruby-mountain/book-winter-on-the-mountain/chapter-5-the-brotherhood-of-the-air-gap": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 5: The Brotherhood of the Air-Gap",
@@ -420,6 +474,12 @@
         "filePath": "__CHAP_TOC__|4|4"
     },
     "/ruby-mountain/book-winter-on-the-mountain/chapter-5-the-brotherhood-of-the-air-gap/the-first-summit": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The First Summit",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c005/p001.md"
+    },
+    "/ruby-mountain/book-winter-on-the-mountain/chapter-5-the-brotherhood-of-the-air-gap/part-1-the-first-summit": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Summit",
         "theme": "raggiesoft-books",
@@ -443,6 +503,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e006/c001/p001.md"
     },
+    "/ruby-mountain/book-vanessa-s-downfall/chapter-1-the-sovereign-tribunal/part-1-the-broadcast-the-sentencing": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Broadcast & The Sentencing",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c001/p001.md"
+    },
     "/ruby-mountain/book-a-rogue-inspector": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book: A Rogue Inspector",
@@ -461,6 +527,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e007/c001/p001.md"
     },
+    "/ruby-mountain/book-a-rogue-inspector/chapter-1-the-brotherhood-of-the-air-gap/part-1-a-pulled-permit-the-vanguard-assembly": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Pulled Permit & The Vanguard Assembly",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c001/p001.md"
+    },
     "/ruby-mountain/book-a-rogue-inspector/chapter-2-the-proxy-war": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: The Proxy War",
@@ -468,6 +540,12 @@
         "filePath": "__CHAP_TOC__|6|1"
     },
     "/ruby-mountain/book-a-rogue-inspector/chapter-2-the-proxy-war/judicial-fury-the-rendezvous": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Judicial Fury & The Rendezvous",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c002/p001.md"
+    },
+    "/ruby-mountain/book-a-rogue-inspector/chapter-2-the-proxy-war/part-1-judicial-fury-the-rendezvous": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Judicial Fury & The Rendezvous",
         "theme": "raggiesoft-books",
@@ -491,6 +569,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e008/c001/p001.md"
     },
+    "/ruby-mountain/book-the-air-gap-chronicles/chapter-3-mountain-rules/part-1-the-rookie-the-gridmaster": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Rookie & The Gridmaster",
+        "theme": "raggiesoft-books",
+        "filePath": "e008/c001/p001.md"
+    },
     "/ruby-mountain/book-the-air-gap-chronicles/chapter-4-the-911-fallacy": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 4: The 911 Fallacy",
@@ -498,6 +582,12 @@
         "filePath": "__CHAP_TOC__|7|1"
     },
     "/ruby-mountain/book-the-air-gap-chronicles/chapter-4-the-911-fallacy/the-civilian-instinct-the-apex-protocol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Civilian Instinct & The Apex Protocol",
+        "theme": "raggiesoft-books",
+        "filePath": "e008/c002/p001.md"
+    },
+    "/ruby-mountain/book-the-air-gap-chronicles/chapter-4-the-911-fallacy/part-1-the-civilian-instinct-the-apex-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Civilian Instinct & The Apex Protocol",
         "theme": "raggiesoft-books",

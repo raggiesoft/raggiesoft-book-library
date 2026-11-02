@@ -59,6 +59,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p001.md"
     },
+    "/crimson-node/book-1-the-illusion/chapter-1-the-approach-ndash-friday-april-23-1999/part-1-anomalies": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Anomalies",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/p001.md"
+    },
     "/crimson-node/book-1-the-illusion/chapter-2-the-core-ecosystem-ndash-friday-april-30-1999": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: The Core Ecosystem &ndash; Friday, April 30, 1999",
@@ -66,6 +72,12 @@
         "filePath": "__CHAP_TOC__|0|1"
     },
     "/crimson-node/book-1-the-illusion/chapter-2-the-core-ecosystem-ndash-friday-april-30-1999/the-commons-the-fallout": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Commons & The Fallout",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c002/p001.md"
+    },
+    "/crimson-node/book-1-the-illusion/chapter-2-the-core-ecosystem-ndash-friday-april-30-1999/part-1-the-commons-the-fallout": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Commons & The Fallout",
         "theme": "raggiesoft-books",
@@ -119,6 +131,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c005/p001.md"
     },
+    "/crimson-node/book-1-the-illusion/interlude-the-reckoning/part-1-the-new-hierarchy-the-thunderstorm": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The New Hierarchy & The Thunderstorm",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c005/p001.md"
+    },
     "/crimson-node/book-1-the-illusion/chapter-6-the-senior-prom-ndash-may-1999": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 6: The Senior Prom &ndash; May 1999",
@@ -149,6 +167,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c007/p001.md"
     },
+    "/crimson-node/book-1-the-illusion/chapter-7-the-blueprint/part-1-a-new-day-the-plan": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A New Day & The Plan",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c007/p001.md"
+    },
     "/crimson-node/book-1-the-illusion/chapter-8-the-administration": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 8: The Administration",
@@ -156,6 +180,12 @@
         "filePath": "__CHAP_TOC__|0|7"
     },
     "/crimson-node/book-1-the-illusion/chapter-8-the-administration/the-drop-off-the-victory": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Drop-Off & The Victory",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c008/p001.md"
+    },
+    "/crimson-node/book-1-the-illusion/chapter-8-the-administration/part-1-the-drop-off-the-victory": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Drop-Off & The Victory",
         "theme": "raggiesoft-books",

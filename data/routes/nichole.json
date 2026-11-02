@@ -89,6 +89,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c002/p001.md"
     },
+    "/nichole/elementary-school/project-alpha/part-1-origin-story-project-alpha": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Origin Story: Project Alpha",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c002/p001.md"
+    },
     "/nichole/middle-school": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Middle School",
@@ -107,6 +113,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e002/c001/p001.md"
     },
+    "/nichole/middle-school/the-test-run/part-1-the-curb-trap": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Curb Trap",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c001/p001.md"
+    },
     "/nichole/middle-school/the-yellow-wall": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Yellow Wall",
@@ -114,6 +126,12 @@
         "filePath": "__CHAP_TOC__|1|1"
     },
     "/nichole/middle-school/the-yellow-wall/arrival-at-morrison-middle-school": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Arrival at Morrison Middle School",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c002/p001.md"
+    },
+    "/nichole/middle-school/the-yellow-wall/part-1-arrival-at-morrison-middle-school": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Arrival at Morrison Middle School",
         "theme": "raggiesoft-books",
@@ -179,6 +197,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c002/p001.md"
     },
+    "/nichole/freshman-year/the-smoke-test/part-1-the-area-of-rescue-the-return": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Area of Rescue & The Return",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c002/p001.md"
+    },
     "/nichole/junior-year": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Junior Year",
@@ -192,6 +216,12 @@
         "filePath": "__CHAP_TOC__|3|0"
     },
     "/nichole/junior-year/planning-for-the-future/transitioning-nichole-s-iep-the-offer": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Transitioning Nichole\u2019s IEP & The Offer",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c001/p001.md"
+    },
+    "/nichole/junior-year/planning-for-the-future/part-1-transitioning-nichole-s-iep-the-offer": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Transitioning Nichole\u2019s IEP & The Offer",
         "theme": "raggiesoft-books",
@@ -251,6 +281,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e005/c002/p001.md"
     },
+    "/nichole/senior-year/the-reset/part-1-damage-control-the-war-room": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Damage Control & The War Room",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c002/p001.md"
+    },
     "/nichole/college-tours": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "College Tours",
@@ -264,6 +300,12 @@
         "filePath": "__CHAP_TOC__|5|0"
     },
     "/nichole/college-tours/the-misfit-tour/the-the-commuter-special": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The \\ & The Commuter Special",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c001/p001.md"
+    },
+    "/nichole/college-tours/the-misfit-tour/part-1-the-the-commuter-special": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The \\ & The Commuter Special",
         "theme": "raggiesoft-books",
@@ -533,6 +575,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e007/c004/p001.md"
     },
+    "/nichole/the-gap-year/the-sync/part-1-the-war-room": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The War Room",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c004/p001.md"
+    },
     "/nichole/the-gap-year/the-fortress-test": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fortress Test",
@@ -540,6 +588,12 @@
         "filePath": "__CHAP_TOC__|6|4"
     },
     "/nichole/the-gap-year/the-fortress-test/the-severed-link-the-sacred-trust": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Severed Link & The Sacred Trust",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c005/p001.md"
+    },
+    "/nichole/the-gap-year/the-fortress-test/part-1-the-severed-link-the-sacred-trust": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Severed Link & The Sacred Trust",
         "theme": "raggiesoft-books",
@@ -695,6 +749,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e009/c001/p001.md"
     },
+    "/nichole/braxton-junior-year/concept-the-joint-defense/part-1-the-outcome": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Outcome",
+        "theme": "raggiesoft-books",
+        "filePath": "e009/c001/p001.md"
+    },
     "/nichole/braxton-senior-year": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Braxton Senior Year",
@@ -708,6 +768,12 @@
         "filePath": "__CHAP_TOC__|9|0"
     },
     "/nichole/braxton-senior-year/graduation/the-protocol-negotiation-the": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Protocol Negotiation & The \\",
+        "theme": "raggiesoft-books",
+        "filePath": "e010/c001/p001.md"
+    },
+    "/nichole/braxton-senior-year/graduation/part-1-the-protocol-negotiation-the": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Protocol Negotiation & The \\",
         "theme": "raggiesoft-books",
@@ -731,6 +797,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e011/c001/p001.md"
     },
+    "/nichole/bennett-dynamics/an-idea/part-1-the-incorporation-the-tablet-revolution": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Incorporation & The Tablet Revolution",
+        "theme": "raggiesoft-books",
+        "filePath": "e011/c001/p001.md"
+    },
     "/nichole/the-twilight-years": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Twilight Years",
@@ -749,6 +821,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e012/c001/p001.md"
     },
+    "/nichole/the-twilight-years/the-long-retreat/part-1-the-last-funeral-the-return": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Last Funeral & The Return",
+        "theme": "raggiesoft-books",
+        "filePath": "e012/c001/p001.md"
+    },
     "/nichole/the-twilight-years/the-slow-rust": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Slow Rust",
@@ -756,6 +834,12 @@
         "filePath": "__CHAP_TOC__|11|1"
     },
     "/nichole/the-twilight-years/the-slow-rust/the-first-breakdown-the-final-perimeter": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The First Breakdown & The Final Perimeter",
+        "theme": "raggiesoft-books",
+        "filePath": "e012/c002/p001.md"
+    },
+    "/nichole/the-twilight-years/the-slow-rust/part-1-the-first-breakdown-the-final-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Breakdown & The Final Perimeter",
         "theme": "raggiesoft-books",
@@ -774,6 +858,12 @@
         "filePath": "__CHAP_TOC__|12|0"
     },
     "/nichole/the-end/the-synchronized-shutdown/the-master-suite-95-west-main-road-portsmouth-ri-the-legacy": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Master Suite, 95 West Main Road, Portsmouth, RI & The Legacy",
+        "theme": "raggiesoft-books",
+        "filePath": "e013/c001/p001.md"
+    },
+    "/nichole/the-end/the-synchronized-shutdown/part-1-the-master-suite-95-west-main-road-portsmouth-ri-the-legacy": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Master Suite, 95 West Main Road, Portsmouth, RI & The Legacy",
         "theme": "raggiesoft-books",

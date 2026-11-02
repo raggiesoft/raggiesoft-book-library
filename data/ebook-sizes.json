@@ -52,12 +52,12 @@
     "aubrie": {
         "epub": "66 MB",
         "pdf": "53.5 MB",
-        "text_epub": "1002 KB",
+        "text_epub": "1003 KB",
         "text_pdf": "3.7 MB",
-        "epub_bytes": 69243535,
-        "pdf_bytes": 56105297,
-        "text_epub_bytes": 1026232,
-        "text_pdf_bytes": 3867944
+        "epub_bytes": 69244144,
+        "pdf_bytes": 56106487,
+        "text_epub_bytes": 1026849,
+        "text_pdf_bytes": 3869228
     },
     "beth": {
         "epub": "5.3 KB",
@@ -101,13 +101,13 @@
     },
     "erin": {
         "epub": "20 KB",
-        "pdf": "71 KB",
+        "pdf": "72 KB",
         "text_epub": "20 KB",
-        "text_pdf": "71 KB",
-        "epub_bytes": 20273,
-        "pdf_bytes": 73061,
-        "text_epub_bytes": 20272,
-        "text_pdf_bytes": 73061
+        "text_pdf": "72 KB",
+        "epub_bytes": 20323,
+        "pdf_bytes": 73855,
+        "text_epub_bytes": 20317,
+        "text_pdf_bytes": 73855
     },
     "fractured-prisms": {
         "epub": "8.6 KB",
@@ -241,13 +241,13 @@
     },
     "rachel": {
         "epub": "74.6 MB",
-        "pdf": "78.7 MB",
+        "pdf": "78.9 MB",
         "text_epub": "1.1 MB",
         "text_pdf": "3.1 MB",
-        "epub_bytes": 78251170,
-        "pdf_bytes": 82559778,
-        "text_epub_bytes": 1152036,
-        "text_pdf_bytes": 3271831
+        "epub_bytes": 78243262,
+        "pdf_bytes": 82726784,
+        "text_epub_bytes": 1152882,
+        "text_pdf_bytes": 3273428
     },
     "ruby-mountain": {
         "epub": "232 KB",

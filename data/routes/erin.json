@@ -13,13 +13,13 @@
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
             "epub": "20 KB",
-            "pdf": "71 KB",
+            "pdf": "72 KB",
             "text_epub": "20 KB",
-            "text_pdf": "71 KB",
-            "epub_bytes": 20273,
-            "pdf_bytes": 73061,
-            "text_epub_bytes": 20272,
-            "text_pdf_bytes": 73061
+            "text_pdf": "72 KB",
+            "epub_bytes": 20323,
+            "pdf_bytes": 73855,
+            "text_epub_bytes": 20317,
+            "text_pdf_bytes": 73855
         },
         "illustration_count": 0
     },
@@ -95,6 +95,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c003/p001.md"
     },
+    "/erin/before-the-distance-the-story-of-john-erin/sanctuary-in-the-storm/part-1-the-locked-perimeter": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Locked Perimeter",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c003/p001.md"
+    },
     "/erin/before-the-distance-the-story-of-john-erin/not-her": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Not Her",
@@ -102,6 +108,12 @@
         "filePath": "__CHAP_TOC__|0|3"
     },
     "/erin/before-the-distance-the-story-of-john-erin/not-her/the-practiced-smile": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Practiced Smile",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c004/p001.md"
+    },
+    "/erin/before-the-distance-the-story-of-john-erin/not-her/part-1-the-practiced-smile": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Practiced Smile",
         "theme": "raggiesoft-books",

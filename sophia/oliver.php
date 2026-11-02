@@ -56,6 +56,14 @@ if (file_exists($routeFile)) {
         if (isset($config['filePath'])) {
             $actualFilePath = $config['filePath'];
         }
+    } elseif (strpos($requestUri, '/part-1-') !== false) {
+        $strippedPart1Uri = preg_replace('#/part-1-([^/]+)$#', '/$1', $requestUri);
+        if (isset($routeData[$strippedPart1Uri])) {
+            $config = $routeData[$strippedPart1Uri];
+            if (isset($config['filePath'])) {
+                $actualFilePath = $config['filePath'];
+            }
+        }
     }
 }
 
@@ -300,6 +308,177 @@ if ($specialPageType) {
                 'label' => $plainLabel !== '' ? $plainLabel : ('Section ' . $subHeadingCounter),
             ];
             return '<h2 id="' . htmlspecialchars($secId, ENT_QUOTES, 'UTF-8') . '" class="reader-scene-subheading" tabindex="-1">' . $innerHtml . '</h2>';
+        },
+        $htmlContent
+    );
+
+    // Enrich inline Markdown links (`<a href="...">`) with Wikipedia-style page preview metadata
+    // (`data-rs-preview` + `interestfor` popover hint) for both Desktop hover/focus and Touch-First tap-to-preview.
+    $linkPreviewsFile = $basePath . '/data/link-previews.json';
+    $linkPreviewsMap = is_file($linkPreviewsFile)
+        ? (json_decode((string)@file_get_contents($linkPreviewsFile), true) ?: [])
+        : [];
+    $localAssetsRoot = dirname($basePath, 3) . '/raggiesoft-assets';
+    $wikiLinkCounter = 0;
+
+    $htmlContent = preg_replace_callback(
+        '/<a\s+([^>]*?)href=(["\'])([^"\']+)\2([^>]*)>(.*?)<\/a>/is',
+        function ($m) use (&$wikiLinkCounter, $linkPreviewsMap, $cdnBaseUrl, $localAssetsRoot) {
+            $beforeHref = $m[1];
+            $quote = $m[2];
+            $rawHref = trim(html_entity_decode($m[3], ENT_QUOTES | ENT_HTML5, 'UTF-8'));
+            $afterHref = $m[4];
+            $innerHtml = $m[5];
+
+            // Skip empty, same-page hash, mailto, or non-prose links
+            if ($rawHref === '' || strpos($rawHref, '#') === 0 || strpos($rawHref, 'mailto:') === 0 || strpos($rawHref, 'javascript:') === 0) {
+                return $m[0];
+            }
+
+            $parsed = @parse_url($rawHref);
+            $host = strtolower($parsed['host'] ?? '');
+            $path = '/' . ltrim($parsed['path'] ?? '', '/');
+            $path = ($path !== '/') ? rtrim($path, '/') : '/';
+            $query = $parsed['query'] ?? '';
+            $fragment = isset($parsed['fragment']) && $parsed['fragment'] !== '' ? ('#' . $parsed['fragment']) : '';
+
+            $previewPayload = null;
+            $finalHref = $rawHref;
+            $isExternal = false;
+
+            // Case 1: Ocean View Archives internal book/chapter/scene link (books.raggiesoft.com or root-relative)
+            if ($host === '' || $host === 'books.raggiesoft.com') {
+                $lookupPath = preg_replace('#^/(?:raggiesoft-)?books/#', '/', $path);
+                $finalHref = $lookupPath . ($query !== '' ? '?' . $query : '') . $fragment;
+                $entry = $linkPreviewsMap[$lookupPath] ?? null;
+                if (!$entry && strpos($lookupPath, '/part-1-') !== false) {
+                    $strippedPath = preg_replace('#/part-1-([^/]+)$#', '/$1', $lookupPath);
+                    if (isset($linkPreviewsMap[$strippedPath])) {
+                        $entry = $linkPreviewsMap[$strippedPath];
+                        $finalHref = $strippedPath . ($query !== '' ? '?' . $query : '') . $fragment;
+                    }
+                }
+                if ($entry) {
+                    $imgSrc = $entry['image'] ?? '';
+                    if ($imgSrc !== '' && strpos($imgSrc, 'http') !== 0) {
+                        $imgSrc = rtrim($cdnBaseUrl, '/') . '/' . ltrim($imgSrc, '/');
+                    }
+                    $kindLabel = ($entry['kind'] ?? 'scene') === 'gallery'
+                        ? 'Open Illustrations Gallery →'
+                        : (($entry['kind'] ?? 'scene') === 'book' ? 'Open Novel Overview →' : 'Read Scene →');
+                    $previewPayload = [
+                        'kind' => $entry['kind'] ?? 'scene',
+                        'kicker' => $entry['kicker'] ?? 'Ocean View Archives',
+                        'title' => $entry['title'] ?? strip_tags($innerHtml),
+                        'date' => $entry['date'] ?? '',
+                        'location' => $entry['location'] ?? '',
+                        'image' => $imgSrc,
+                        'excerpt' => $entry['excerpt'] ?? '',
+                        'url' => $finalHref,
+                        'cta' => $kindLabel,
+                        'external' => false
+                    ];
+                }
+            }
+            // Case 2: The Listening Room companion audio link (music.raggiesoft.com)
+            elseif ($host === 'music.raggiesoft.com') {
+                $isExternal = true;
+                $seg = array_values(array_filter(explode('/', trim($path, '/'))));
+                $artistSlug = $seg[0] ?? '';
+                $albumSlug = $seg[1] ?? '';
+                $trackSlug = '';
+                if ($query !== '') {
+                    parse_str($query, $qVars);
+                    if (!empty($qVars['track'])) {
+                        $trackSlug = (string)$qVars['track'];
+                    }
+                }
+                $artistLabel = $artistSlug !== ''
+                    ? ucwords(str_replace('-', ' ', $artistSlug))
+                    : 'Engine Room Records';
+                if ($artistSlug === 'the-stardust-engine') {
+                    $artistLabel = 'The Stardust Engine';
+                } elseif ($artistSlug === 'the-architects') {
+                    $artistLabel = 'The Architects';
+                }
+                $albumLabel = $albumSlug !== ''
+                    ? ucwords(str_replace('-', ' ', preg_replace('/^\d{4}-/', '', $albumSlug)))
+                    : 'Discography';
+                $albumYear = '';
+                if (preg_match('/^(\d{4})-/', $albumSlug, $ym)) {
+                    $albumYear = $ym[1];
+                }
+                $trackTitle = $trackSlug !== ''
+                    ? ucwords(str_replace('-', ' ', $trackSlug))
+                    : trim(strip_tags($innerHtml));
+
+                $musicImg = rtrim($cdnBaseUrl, '/') . '/raggiesoft-books/images/covers/og/stardust-engine.jpg';
+                if ($artistSlug !== '' && $albumSlug !== '') {
+                    $relSocial = "/engine-room-records/artists/{$artistSlug}/{$albumSlug}/social-preview.jpg";
+                    $relCover = "/engine-room-records/artists/{$artistSlug}/{$albumSlug}/album-art.jpg";
+                    if (is_file($localAssetsRoot . $relSocial)) {
+                        $musicImg = rtrim($cdnBaseUrl, '/') . $relSocial;
+                    } elseif (is_file($localAssetsRoot . $relCover)) {
+                        $musicImg = rtrim($cdnBaseUrl, '/') . $relCover;
+                    }
+                }
+
+                $previewPayload = [
+                    'kind' => 'music',
+                    'kicker' => 'The Listening Room • ' . $artistLabel,
+                    'title' => $trackTitle !== '' ? $trackTitle : $albumLabel,
+                    'date' => $albumYear !== '' ? "Released {$albumYear}" : 'Engine Room Records',
+                    'location' => $albumLabel,
+                    'image' => $musicImg,
+                    'excerpt' => 'Stream this track in The Listening Room with synchronized lyrics, studio liner notes, and lossless master playback.',
+                    'url' => $rawHref,
+                    'cta' => 'Listen in The Listening Room ↗',
+                    'external' => true
+                ];
+            }
+            // Case 3: Companion RaggieSoft Universe Properties (stardust, engineroom, lore, nebulae)
+            elseif (in_array($host, ['stardust.raggiesoft.com', 'engineroom.raggiesoft.com', 'lore.raggiesoft.com', 'nebulae.raggiesoft.com'], true)) {
+                $isExternal = true;
+                $siteTitleMap = [
+                    'stardust.raggiesoft.com' => 'The Stardust Engine Official Portal',
+                    'engineroom.raggiesoft.com' => 'Engine Room Records Archive',
+                    'lore.raggiesoft.com' => 'RaggieSoft Lore & Technical Manual',
+                    'nebulae.raggiesoft.com' => 'Caelum-IV Planetary Survey (Nebulae)'
+                ];
+                $previewPayload = [
+                    'kind' => 'companion',
+                    'kicker' => $siteTitleMap[$host] ?? 'RaggieSoft Universe',
+                    'title' => trim(strip_tags($innerHtml)) ?: ($siteTitleMap[$host] ?? $host),
+                    'date' => 'Companion Archive',
+                    'location' => $host,
+                    'image' => rtrim($cdnBaseUrl, '/') . '/raggiesoft-books/images/covers/og/stardust-engine.jpg',
+                    'excerpt' => 'Explore the official in-universe companion portal with interactive tour archives, schematics, and lore.',
+                    'url' => $rawHref,
+                    'cta' => 'Open Companion Portal ↗',
+                    'external' => true
+                ];
+            }
+
+            if (!$previewPayload) {
+                return $m[0];
+            }
+
+            $wikiLinkCounter++;
+            $linkId = 'rs-wiki-link-' . $wikiLinkCounter;
+            $jsonAttr = htmlspecialchars(json_encode($previewPayload, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE), ENT_QUOTES, 'UTF-8');
+            $safeHref = htmlspecialchars($finalHref, ENT_QUOTES, 'UTF-8');
+
+            $combinedAttrs = trim($beforeHref . ' ' . $afterHref);
+            if (preg_match('/\bclass=(["\'])(.*?)\1/i', $combinedAttrs)) {
+                $combinedAttrs = preg_replace('/\bclass=(["\'])(.*?)\1/i', 'class=$1$2 rs-wiki-link$1', $combinedAttrs, 1);
+            } else {
+                $combinedAttrs .= ' class="rs-wiki-link"';
+            }
+            if ($isExternal && stripos($combinedAttrs, 'data-no-spa') === false) {
+                $combinedAttrs .= ' data-no-spa="true" target="_blank" rel="noopener"';
+            }
+
+            return '<a id="' . $linkId . '" href="' . $safeHref . '" ' . trim($combinedAttrs) . ' data-rs-preview="' . $jsonAttr . '">' . $innerHtml . '</a>';
         },
         $htmlContent
     );
@@ -2032,7 +2211,194 @@ html[data-os="android"] .zoe-kernel-log-os-badge::before {
 .story-content hr + h2.reader-scene-subheading {
     margin-top: 1.25rem;
 }
+
+/* ==========================================================================
+ * WIKIPEDIA-STYLE PAGE PREVIEW HOVERCARDS (Desktop Hover/Focus + Touch-First)
+ * ==========================================================================
+ * Implements Wikipedia-style inline link previews inside `.markdown-body`
+ * following WCAG 1.4.13 (Dismissible, Hoverable, Persistent) and modern CSS
+ * interest-delay tokens (`--interest-delay-start`, `--interest-delay-end`).
+ * ========================================================================== */
+.story-content a.rs-wiki-link {
+    --interest-delay-start: 0.2s;
+    --interest-delay-end: 0.18s;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
+    transition: background-color 0.15s ease, color 0.15s ease;
+    border-radius: 3px;
+}
+
+.story-content a.rs-wiki-link:hover,
+.story-content a.rs-wiki-link:focus-visible,
+.story-content a.rs-wiki-link.is-preview-active {
+    background-color: rgba(227, 178, 124, 0.16);
+    text-decoration-style: solid;
+}
+
+.rs-wiki-preview-card {
+    position: fixed;
+    z-index: 9999;
+    width: min(360px, calc(100vw - 24px));
+    background: var(--rs-surface, #131c27);
+    color: var(--rs-text, #f1f5f9);
+    border: 1px solid var(--rs-border, rgba(227, 178, 124, 0.38));
+    border-radius: 14px;
+    box-shadow: 0 18px 42px rgba(0, 0, 0, 0.38), 0 4px 12px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transform: translateY(4px);
+    pointer-events: none;
+    transition: opacity 0.16s ease, transform 0.16s ease;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    text-indent: 0 !important;
+}
+
+.rs-wiki-preview-card.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+.rs-wiki-preview-media {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: #0b131e;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid var(--rs-border, rgba(227, 178, 124, 0.25));
+}
+
+.rs-wiki-preview-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin: 0 !important;
+    border-radius: 0 !important;
+}
+
+.rs-wiki-preview-close {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background: rgba(9, 20, 30, 0.82);
+    color: #ffffff;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.9rem;
+    backdrop-filter: blur(6px);
+}
+
+@media (hover: none), (pointer: coarse) {
+    .rs-wiki-preview-close {
+        display: inline-flex;
+    }
+}
+
+.rs-wiki-preview-body {
+    padding: 0.9rem 1rem 0.95rem;
+}
+
+.rs-wiki-preview-kicker {
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--rs-primary, #E3B27C);
+    margin: 0 0 0.2rem 0;
+    line-height: 1.3;
+}
+
+.rs-wiki-preview-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-size: 1.05rem;
+    font-weight: 800;
+    color: var(--rs-heading, var(--rs-text, #ffffff));
+    margin: 0 0 0.35rem 0;
+    line-height: 1.28;
+}
+
+.rs-wiki-preview-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.7rem;
+    font-size: 0.74rem;
+    font-weight: 600;
+    color: var(--rs-text);
+    opacity: 0.82;
+    margin-bottom: 0.45rem;
+}
+
+.rs-wiki-preview-excerpt {
+    font-size: 0.83rem;
+    line-height: 1.48;
+    color: var(--rs-text);
+    opacity: 0.92;
+    margin: 0 0 0.75rem 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.rs-wiki-preview-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    padding-top: 0.55rem;
+    border-top: 1px solid var(--rs-border, rgba(227, 178, 124, 0.22));
+}
+
+.rs-wiki-preview-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.42rem 0.85rem;
+    border-radius: 8px;
+    background: var(--rs-primary, #0F4C5C);
+    color: #ffffff !important;
+    font-size: 0.8rem;
+    font-weight: 800;
+    text-decoration: none !important;
+}
+
+.rs-wiki-preview-hint {
+    font-size: 0.7rem;
+    color: var(--rs-text);
+    opacity: 0.7;
+}
 </style>
+
+<!-- Wikipedia-Style Page Preview Hovercard (Shared Singleton for Desktop Hover/Focus & Touch-First Tap) -->
+<div id="rs-wiki-preview-card" class="rs-wiki-preview-card" role="dialog" aria-modal="false" aria-label="Link page preview" aria-hidden="true">
+    <div class="rs-wiki-preview-media" id="rs-wiki-preview-media">
+        <img id="rs-wiki-preview-img" src="" alt="" loading="lazy" decoding="async">
+        <button type="button" class="rs-wiki-preview-close" id="rs-wiki-preview-close" aria-label="Close page preview">
+            <i class="ph-bold ph-x" aria-hidden="true"></i>
+        </button>
+    </div>
+    <div class="rs-wiki-preview-body">
+        <div class="rs-wiki-preview-kicker" id="rs-wiki-preview-kicker"></div>
+        <div class="rs-wiki-preview-title" id="rs-wiki-preview-title"></div>
+        <div class="rs-wiki-preview-meta" id="rs-wiki-preview-meta"></div>
+        <p class="rs-wiki-preview-excerpt" id="rs-wiki-preview-excerpt"></p>
+        <div class="rs-wiki-preview-footer">
+            <a id="rs-wiki-preview-cta" href="#" class="rs-wiki-preview-cta">Read Scene &rarr;</a>
+            <span class="rs-wiki-preview-hint" id="rs-wiki-preview-hint">Press Esc to close</span>
+        </div>
+    </div>
+</div>
 <script>
 (function () {
     try {
@@ -2060,6 +2426,230 @@ html[data-os="android"] .zoe-kernel-log-os-badge::before {
         }
         document.documentElement.setAttribute('data-os', resolvedOs);
     } catch (e) {}
+
+    // Wikipedia-Style Inline Link Preview Hovercard Controller (Desktop Hover/Focus + Touch-First Two-Tap)
+    const card = document.getElementById('rs-wiki-preview-card');
+    if (!card || card.dataset.bound === 'true') return;
+    card.dataset.bound = 'true';
+
+    const mediaWrap = document.getElementById('rs-wiki-preview-media');
+    const imgEl = document.getElementById('rs-wiki-preview-img');
+    const kickerEl = document.getElementById('rs-wiki-preview-kicker');
+    const titleEl = document.getElementById('rs-wiki-preview-title');
+    const metaEl = document.getElementById('rs-wiki-preview-meta');
+    const excerptEl = document.getElementById('rs-wiki-preview-excerpt');
+    const ctaEl = document.getElementById('rs-wiki-preview-cta');
+    const hintEl = document.getElementById('rs-wiki-preview-hint');
+    const closeBtn = document.getElementById('rs-wiki-preview-close');
+
+    let activeAnchor = null;
+    let showTimer = null;
+    let hideTimer = null;
+    let lastTouchTime = 0;
+
+    function isTouchFirstEnvironment() {
+        if (Date.now() - lastTouchTime < 1200) return true;
+        return window.matchMedia && window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+    }
+
+    function positionCard(anchor) {
+        if (!anchor || !card) return;
+        const rect = anchor.getBoundingClientRect();
+        const vw = window.innerWidth;
+        const vh = window.innerHeight;
+        const cardWidth = Math.min(360, vw - 24);
+        const cardHeight = card.offsetHeight || 290;
+
+        let left = rect.left + (rect.width / 2) - (cardWidth / 2);
+        left = Math.max(12, Math.min(left, vw - cardWidth - 12));
+
+        let top = rect.bottom + 10;
+        if (top + cardHeight > vh - 16 && rect.top - cardHeight - 10 > 12) {
+            top = rect.top - cardHeight - 10;
+        } else if (top + cardHeight > vh - 16) {
+            top = Math.max(12, vh - cardHeight - 16);
+        }
+
+        card.style.left = Math.round(left) + 'px';
+        card.style.top = Math.round(top) + 'px';
+    }
+
+    function openPreviewForLink(anchor, viaTouch) {
+        if (!anchor) return;
+        const raw = anchor.getAttribute('data-rs-preview');
+        if (!raw) return;
+        let data = null;
+        try {
+            data = JSON.parse(raw);
+        } catch (err) {
+            return;
+        }
+        if (!data) return;
+
+        clearTimeout(showTimer);
+        clearTimeout(hideTimer);
+
+        if (activeAnchor && activeAnchor !== anchor) {
+            activeAnchor.classList.remove('is-preview-active');
+        }
+        activeAnchor = anchor;
+        activeAnchor.classList.add('is-preview-active');
+
+        if (data.image) {
+            mediaWrap.style.display = '';
+            imgEl.src = data.image;
+            imgEl.alt = data.title || '';
+        } else {
+            mediaWrap.style.display = 'none';
+            imgEl.src = '';
+        }
+
+        kickerEl.textContent = data.kicker || 'Ocean View Archives';
+        titleEl.textContent = data.title || anchor.textContent || '';
+
+        metaEl.innerHTML = '';
+        if (data.date) {
+            const dSpan = document.createElement('span');
+            dSpan.textContent = '📅 ' + data.date;
+            metaEl.appendChild(dSpan);
+        }
+        if (data.location) {
+            const lSpan = document.createElement('span');
+            lSpan.textContent = '📍 ' + data.location;
+            metaEl.appendChild(lSpan);
+        }
+        metaEl.style.display = (data.date || data.location) ? 'flex' : 'none';
+
+        excerptEl.textContent = data.excerpt || '';
+        excerptEl.style.display = data.excerpt ? '' : 'none';
+
+        ctaEl.textContent = data.cta || 'Read Scene →';
+        ctaEl.href = data.url || anchor.getAttribute('href') || '#';
+        if (data.external) {
+            ctaEl.setAttribute('data-no-spa', 'true');
+            ctaEl.setAttribute('target', '_blank');
+            ctaEl.setAttribute('rel', 'noopener');
+        } else {
+            ctaEl.removeAttribute('data-no-spa');
+            ctaEl.removeAttribute('target');
+            ctaEl.removeAttribute('rel');
+        }
+
+        hintEl.textContent = viaTouch ? 'Tap link again to open' : 'Press Esc to close';
+
+        card.classList.add('is-visible');
+        card.setAttribute('aria-hidden', 'false');
+        positionCard(anchor);
+    }
+
+    function closePreview() {
+        clearTimeout(showTimer);
+        clearTimeout(hideTimer);
+        if (activeAnchor) {
+            activeAnchor.classList.remove('is-preview-active');
+            activeAnchor = null;
+        }
+        card.classList.remove('is-visible');
+        card.setAttribute('aria-hidden', 'true');
+    }
+
+    function scheduleHide() {
+        clearTimeout(showTimer);
+        clearTimeout(hideTimer);
+        hideTimer = setTimeout(closePreview, 180);
+    }
+
+    // Track touch interactions so hybrid or touch-first devices use two-tap preview
+    document.addEventListener('touchstart', function () {
+        lastTouchTime = Date.now();
+    }, { passive: true, capture: true });
+
+    // Desktop Hover & Keyboard Focus
+    document.querySelectorAll('.story-content a.rs-wiki-link').forEach(function (link) {
+        link.addEventListener('mouseenter', function () {
+            if (isTouchFirstEnvironment()) return;
+            clearTimeout(hideTimer);
+            showTimer = setTimeout(function () {
+                openPreviewForLink(link, false);
+            }, 190);
+        });
+
+        link.addEventListener('mouseleave', function () {
+            if (isTouchFirstEnvironment()) return;
+            scheduleHide();
+        });
+
+        link.addEventListener('focus', function () {
+            if (isTouchFirstEnvironment()) return;
+            clearTimeout(hideTimer);
+            openPreviewForLink(link, false);
+        });
+
+        link.addEventListener('blur', function () {
+            if (isTouchFirstEnvironment()) return;
+            scheduleHide();
+        });
+
+        // Touch-first two-step tap handler (runs in capture phase before stardust-spa.min.js)
+        link.addEventListener('click', function (e) {
+            if (!isTouchFirstEnvironment()) {
+                closePreview();
+                return;
+            }
+            if (activeAnchor !== link || !card.classList.contains('is-visible')) {
+                e.preventDefault();
+                e.stopPropagation();
+                openPreviewForLink(link, true);
+            } else {
+                closePreview();
+            }
+        }, true);
+    });
+
+    // Keep card open while pointer hovers inside card (WCAG 1.4.13 Hoverable)
+    card.addEventListener('mouseenter', function () {
+        clearTimeout(hideTimer);
+    });
+    card.addEventListener('mouseleave', function () {
+        if (!isTouchFirstEnvironment()) {
+            scheduleHide();
+        }
+    });
+
+    if (closeBtn) {
+        closeBtn.addEventListener('click', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+            closePreview();
+        });
+    }
+
+    ctaEl.addEventListener('click', function () {
+        closePreview();
+    });
+
+    // Light-dismiss when tapping outside the card or pressing Escape
+    document.addEventListener('click', function (e) {
+        if (!card.classList.contains('is-visible')) return;
+        if (card.contains(e.target)) return;
+        if (activeAnchor && activeAnchor.contains(e.target)) return;
+        closePreview();
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && card.classList.contains('is-visible')) {
+            closePreview();
+        }
+    });
+
+    const readingPane = document.getElementById('stardust-reading-pane');
+    if (readingPane) {
+        readingPane.addEventListener('scroll', function () {
+            if (card.classList.contains('is-visible') && activeAnchor) {
+                positionCard(activeAnchor);
+            }
+        }, { passive: true });
+    }
 })();
 </script>
 

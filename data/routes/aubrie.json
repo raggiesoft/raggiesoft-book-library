@@ -14,12 +14,12 @@
         "ebook_sizes": {
             "epub": "66 MB",
             "pdf": "53.5 MB",
-            "text_epub": "1002 KB",
+            "text_epub": "1003 KB",
             "text_pdf": "3.7 MB",
-            "epub_bytes": 69243535,
-            "pdf_bytes": 56105297,
-            "text_epub_bytes": 1026232,
-            "text_pdf_bytes": 3867944
+            "epub_bytes": 69244144,
+            "pdf_bytes": 56106487,
+            "text_epub_bytes": 1026849,
+            "text_pdf_bytes": 3869228
         },
         "illustration_count": 72
     },
@@ -1397,6 +1397,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e008/c001/p001.md"
     },
+    "/aubrie/spring-semester-2016/off-precautions-megan-s-first-night/part-1-twelve-weeks-clear-the-eighth-point-of-the-constellation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Twelve Weeks Clear & The Eighth Point of the Constellation",
+        "theme": "raggiesoft-books",
+        "filePath": "e008/c001/p001.md"
+    },
     "/aubrie/spring-semester-2016/hey-saacurc-the-bear-and-the-bug": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "HEY SAACURC! & The Bear and the Bug",
@@ -1404,6 +1410,12 @@
         "filePath": "__CHAP_TOC__|7|1"
     },
     "/aubrie/spring-semester-2016/hey-saacurc-the-bear-and-the-bug/the-friday-arrival-the-bus-to-christiansburg": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Friday Arrival & The Bus to Christiansburg",
+        "theme": "raggiesoft-books",
+        "filePath": "e008/c002/p001.md"
+    },
+    "/aubrie/spring-semester-2016/hey-saacurc-the-bear-and-the-bug/part-1-the-friday-arrival-the-bus-to-christiansburg": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Friday Arrival & The Bus to Christiansburg",
         "theme": "raggiesoft-books",
@@ -1494,6 +1506,12 @@
         "filePath": "__CHAP_TOC__|8|0"
     },
     "/aubrie/summer-2016/the-u-s-11-compound-the-sunken-sanctuary/the-u-s-11-compound-the-sunken-sanctuary-the-wedding-blueprint": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The U.S. 11 Compound, The Sunken Sanctuary, & The Wedding Blueprint",
+        "theme": "raggiesoft-books",
+        "filePath": "e009/c001/p001.md"
+    },
+    "/aubrie/summer-2016/the-u-s-11-compound-the-sunken-sanctuary/part-1-the-u-s-11-compound-the-sunken-sanctuary-the-wedding-blueprint": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The U.S. 11 Compound, The Sunken Sanctuary, & The Wedding Blueprint",
         "theme": "raggiesoft-books",

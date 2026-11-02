@@ -79,6 +79,12 @@ if (preg_match('#^/([^/]+)#', $requestUri, $matches)) {
         $routeData = json_decode(file_get_contents($routeFile), true) ?? [];
         $common = $routeData['common'] ?? [];
         $routeSpecific = $routeData[$requestUri] ?? [];
+        if (empty($routeSpecific) && strpos($requestUri, '/part-1-') !== false) {
+            $strippedPart1Uri = preg_replace('#/part-1-([^/]+)$#', '/$1', $requestUri);
+            if (!empty($routeData[$strippedPart1Uri])) {
+                $routeSpecific = $routeData[$strippedPart1Uri];
+            }
+        }
         
         // Merge configurations hierarchically: Specific overrides Common overrides Default
         $pageConfig = array_merge($pageConfig, $common, $routeSpecific);
@@ -90,10 +96,15 @@ $isCatalog = false;
 $isHome = false;
 $isKnox = false;
 $isAethelSaga = false;
+$isAllIllustrations = false;
 if ($requestUri === '/' || $requestUri === '/isabel.php' || $requestUri === '/index.php') {
     $isHome = true;
     $seriesSlug = ''; // Clear slug to avoid conflicts
     $pageConfig['title'] = 'Home';
+} else if ($requestUri === '/illustrations' || $requestUri === '/table-of-illustrations') {
+    $isAllIllustrations = true;
+    $seriesSlug = '';
+    $pageConfig['title'] = 'Library Table of Illustrations';
 } else if ($requestUri === '/library' || $requestUri === '/catalog') {
     $isCatalog = true;
     $seriesSlug = ''; // Clear slug
@@ -218,10 +229,15 @@ if (!empty($seriesSlug)) {
     $ogTitle = 'The Silver Gauntlet of Aethel | Ocean View Archives';
     $ogDescription = 'Two twins. One broken world. Follow Kaelan and Kaela across the four mythic eras of Aethel inside the Ocean View Archives.';
     $ogImage = $cdnBaseUrl . '/raggiesoft-books/aethel/images/aethel-hero.jpg';
+} else if ($isAllIllustrations) {
+    $siteName = 'Library Table of Illustrations | Ocean View Archives';
+    $ogTitle = 'Library Table of Illustrations | Ocean View Archives';
+    $ogDescription = 'Browse all 250+ illustrated scenes across The Rachel Narrative, The Eleventh Child, and the Ocean View Archives library.';
+    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/rachel.jpg';
 } else if ($isHome) {
     $siteName = 'Ocean View Archives | RaggieSoft Media';
     $ogTitle = 'Ocean View Archives | RaggieSoft Media';
-    $ogDescription = 'The official literary imprint of RaggieSoft Media. Featuring The Eleventh Child: The Story of Jordan and the Contemporary Fiction Library.';
+    $ogDescription = 'The official literary imprint of RaggieSoft Media. Featuring The Eleventh Child, The Rachel Narrative, and the Contemporary Fiction Library.';
     $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/aubrie.jpg';
 }
 
@@ -335,6 +351,8 @@ echo '<div id="stardust-main-wrapper">';
 // Execute the final View routing based on established state
 if ($isHome) {
     require_once $basePath . '/sophia/home.php';
+} else if ($isAllIllustrations) {
+    require_once $basePath . '/sophia/all-illustrations.php';
 } else if ($isCatalog) {
     require_once $basePath . '/sophia/catalog.php';
 } else if ($isKnox) {

@@ -59,6 +59,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p001.md"
     },
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-1-the-northern-regional/part-1-departing-npn-the-crown-burger-debrief": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Departing NPN & The Crown Burger Debrief",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/p001.md"
+    },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-2-the-open-house": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: The Open House",
@@ -66,6 +72,12 @@
         "filePath": "__CHAP_TOC__|0|1"
     },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-2-the-open-house/the-continental-breakfast-lights-out": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Continental Breakfast & Lights Out",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c002/p001.md"
+    },
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-2-the-open-house/part-1-the-continental-breakfast-lights-out": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Continental Breakfast & Lights Out",
         "theme": "raggiesoft-books",
@@ -101,6 +113,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c004/p001.md"
     },
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-4-the-return-vector/part-1-the-union-station-bottleneck-the-sibling-anchor": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Union Station Bottleneck & The Sibling Anchor",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c004/p001.md"
+    },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-5-the-morning-after": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 5: The Morning After",
@@ -108,6 +126,12 @@
         "filePath": "__CHAP_TOC__|0|4"
     },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-5-the-morning-after/the-lightning-strike-the-ecology-camp-logistics": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Lightning Strike & The Ecology Camp Logistics",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c005/p001.md"
+    },
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-5-the-morning-after/part-1-the-lightning-strike-the-ecology-camp-logistics": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Lightning Strike & The Ecology Camp Logistics",
         "theme": "raggiesoft-books",
@@ -125,6 +149,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c006/p001.md"
     },
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-6-the-vdu-deployment/part-1-the-junior-cohort-the-assistant-manager": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Junior Cohort & The Assistant Manager",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c006/p001.md"
+    },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-7-week-1-coastal-ecology": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 7: Week 1 - Coastal Ecology",
@@ -132,6 +162,12 @@
         "filePath": "__CHAP_TOC__|0|6"
     },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-7-week-1-coastal-ecology/the-chesapeake-crossing-sample-recovery": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Chesapeake Crossing & Sample Recovery",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c007/p001.md"
+    },
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-7-week-1-coastal-ecology/part-1-the-chesapeake-crossing-sample-recovery": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Chesapeake Crossing & Sample Recovery",
         "theme": "raggiesoft-books",
@@ -149,6 +185,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c008/p001.md"
     },
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-8-week-2-atmospheric-dynamics/part-1-the-security-gate-the-full-scale-tunnel": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Security Gate & The Full-Scale Tunnel",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c008/p001.md"
+    },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-9-week-3-aerospace": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 9: Week 3 - Aerospace",
@@ -156,6 +198,12 @@
         "filePath": "__CHAP_TOC__|0|8"
     },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-9-week-3-aerospace/the-glass-elevator-novascreen-and-the-gift-shop": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Glass Elevator & NovaScreen and the Gift Shop",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c009/p001.md"
+    },
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-9-week-3-aerospace/part-1-the-glass-elevator-novascreen-and-the-gift-shop": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Glass Elevator & NovaScreen and the Gift Shop",
         "theme": "raggiesoft-books",
@@ -173,6 +221,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c010/p001.md"
     },
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-10-week-4-marine-biology/part-1-the-soft-opening-the-submission": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Soft Opening & The Submission",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c010/p001.md"
+    },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-11-northwest-pacific": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 11: Northwest Pacific",
@@ -180,6 +234,12 @@
         "filePath": "__CHAP_TOC__|0|10"
     },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-11-northwest-pacific/the-departure-the-hotel-logistics": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Departure & The Hotel Logistics",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c011/p001.md"
+    },
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-11-northwest-pacific/part-1-the-departure-the-hotel-logistics": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Departure & The Hotel Logistics",
         "theme": "raggiesoft-books",
@@ -233,6 +293,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c014/p001.md"
     },
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-14-the-deep-end/part-1-siren-roasters-the-extraction": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Siren Roasters & The Extraction",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c014/p001.md"
+    },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-15-the-pre-dawn-run": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 15: The Pre-Dawn Run",
@@ -245,6 +311,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c015/p001.md"
     },
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-15-the-pre-dawn-run/part-1-the-174-southbound-the-chicago-layover": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The 174 Southbound & The Chicago Layover",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c015/p001.md"
+    },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-16-the-catalyst": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 16: The Catalyst",
@@ -252,6 +324,12 @@
         "filePath": "__CHAP_TOC__|0|15"
     },
     "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-16-the-catalyst/the-call-the-sleepover": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Call & The Sleepover",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c016/p001.md"
+    },
+    "/quantum-directive-3-casey/book-1-the-george-wythe-expedition/chapter-16-the-catalyst/part-1-the-call-the-sleepover": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Call & The Sleepover",
         "theme": "raggiesoft-books",
@@ -275,6 +353,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e002/c001/p001.md"
     },
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-1-the-semester-baseline/part-1-the-syllabus-the-apartment": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Syllabus & The Apartment",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c001/p001.md"
+    },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-2-the-reboot": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: The Reboot",
@@ -282,6 +366,12 @@
         "filePath": "__CHAP_TOC__|1|1"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-2-the-reboot/the-apology-the-dinner": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Apology & The Dinner",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c002/p001.md"
+    },
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-2-the-reboot/part-1-the-apology-the-dinner": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Apology & The Dinner",
         "theme": "raggiesoft-books",
@@ -299,6 +389,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e002/c003/p001.md"
     },
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-3-the-chesapeake-deployment/part-1-the-chesapeake-deployment-the-crocodile-tears": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Chesapeake Deployment & The Crocodile Tears",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c003/p001.md"
+    },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-4-the-patch": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 4: The Patch",
@@ -306,6 +402,12 @@
         "filePath": "__CHAP_TOC__|1|3"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-4-the-patch/the-reunion": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Reunion",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c004/p001.md"
+    },
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-4-the-patch/part-1-the-reunion": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Reunion",
         "theme": "raggiesoft-books",
@@ -323,6 +425,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e002/c005/p001.md"
     },
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-5-the-delete-key/part-1-the-ultimatum-the-compromise": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Ultimatum & The Compromise",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c005/p001.md"
+    },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-6-the-three-way-call": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 6: The Three-Way Call",
@@ -330,6 +438,12 @@
         "filePath": "__CHAP_TOC__|1|5"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-6-the-three-way-call/the-holiday-plans-the-invitation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Holiday Plans & The Invitation",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c006/p001.md"
+    },
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-6-the-three-way-call/part-1-the-holiday-plans-the-invitation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Holiday Plans & The Invitation",
         "theme": "raggiesoft-books",
@@ -347,6 +461,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e002/c007/p001.md"
     },
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-7-the-mask/part-1-the-terminal-the-perimeter-shift": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Terminal & The Perimeter Shift",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c007/p001.md"
+    },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-8-the-ambush": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 8: The Ambush",
@@ -354,6 +474,12 @@
         "filePath": "__CHAP_TOC__|1|7"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-8-the-ambush/the-morning-anchor-the-hard-sever": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Morning Anchor & The Hard Sever",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c008/p001.md"
+    },
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-8-the-ambush/part-1-the-morning-anchor-the-hard-sever": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Morning Anchor & The Hard Sever",
         "theme": "raggiesoft-books",
@@ -389,6 +515,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e002/c010/p001.md"
     },
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-10-the-severance/part-1-the-checkpoint-the-firewall": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Checkpoint & The Firewall",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c010/p001.md"
+    },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-11-the-executive-ascent": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 11: The Executive Ascent",
@@ -396,6 +528,12 @@
         "filePath": "__CHAP_TOC__|1|10"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-11-the-executive-ascent/burton-station-road-the-moving-logistics": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Burton Station Road & The Moving Logistics",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c011/p001.md"
+    },
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-11-the-executive-ascent/part-1-burton-station-road-the-moving-logistics": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Burton Station Road & The Moving Logistics",
         "theme": "raggiesoft-books",
@@ -413,6 +551,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e002/c012/p001.md"
     },
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-12-the-executive-departure/part-1-the-morning-knock-the-i-5-crawl": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Morning Knock & The I-5 Crawl",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c012/p001.md"
+    },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-13-the-federal-way-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 13: The Federal Way Perimeter",
@@ -420,6 +564,12 @@
         "filePath": "__CHAP_TOC__|1|12"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-13-the-federal-way-perimeter/the-social-boundary-the-blackout": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Social Boundary & The Blackout",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c013/p001.md"
+    },
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-13-the-federal-way-perimeter/part-1-the-social-boundary-the-blackout": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Social Boundary & The Blackout",
         "theme": "raggiesoft-books",
@@ -461,6 +611,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e002/c015/p001.md"
     },
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-15-the-holiday-deployment/part-1-the-pvd-rendezvous-the-sea-of-humanity": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The PVD Rendezvous & The Sea of Humanity",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c015/p001.md"
+    },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-16-the-aquidneck-christmas": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 16: The Aquidneck Christmas",
@@ -468,6 +624,12 @@
         "filePath": "__CHAP_TOC__|1|15"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-16-the-aquidneck-christmas/the-morning-pile-the-house-guard-marathon": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Morning Pile & The House Guard Marathon",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c016/p001.md"
+    },
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-16-the-aquidneck-christmas/part-1-the-morning-pile-the-house-guard-marathon": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Morning Pile & The House Guard Marathon",
         "theme": "raggiesoft-books",
@@ -485,6 +647,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e002/c017/p001.md"
     },
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-17-christmas-day/part-1-the-coffee-milk-christmas-the-triple-dog-dare-dinner": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Coffee Milk Christmas & The Triple Dog Dare Dinner",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c017/p001.md"
+    },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-18-boxing-day-in-braxton": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 18: Boxing Day in Braxton",
@@ -492,6 +660,12 @@
         "filePath": "__CHAP_TOC__|1|17"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-18-boxing-day-in-braxton/the-braxton-excursion-the-transit-contingency": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Braxton Excursion & The Transit Contingency",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c018/p001.md"
+    },
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-18-boxing-day-in-braxton/part-1-the-braxton-excursion-the-transit-contingency": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Braxton Excursion & The Transit Contingency",
         "theme": "raggiesoft-books",
@@ -509,6 +683,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e002/c019/p001.md"
     },
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/the-logistics-of-luxury/part-1-the-logistics-of-luxury-the-virginia-beach-arrival": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Logistics of Luxury & The Virginia Beach Arrival",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c019/p001.md"
+    },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-20-the-chesapeake-bay-mall": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 20: The Chesapeake Bay Mall",
@@ -521,6 +701,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e002/c020/p001.md"
     },
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-20-the-chesapeake-bay-mall/part-1-the-horde-the-route-29-trolley": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Horde & The Route 29 Trolley",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c020/p001.md"
+    },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-21-the-final-countdown": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 21: The Final Countdown",
@@ -528,6 +714,12 @@
         "filePath": "__CHAP_TOC__|1|20"
     },
     "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-21-the-final-countdown/the-final-countdown-the-dual-departure": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Final Countdown & The Dual Departure",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c021/p001.md"
+    },
+    "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-21-the-final-countdown/part-1-the-final-countdown-the-dual-departure": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Final Countdown & The Dual Departure",
         "theme": "raggiesoft-books",
@@ -546,6 +738,12 @@
         "filePath": "__CHAP_TOC__|2|0"
     },
     "/quantum-directive-3-casey/book-3-the-nclex/chapter-1-the-licensure-exam/the-scope-of-practice-the-pack-conference": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Scope of Practice & The Pack Conference",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c001/p001.md"
+    },
+    "/quantum-directive-3-casey/book-3-the-nclex/chapter-1-the-licensure-exam/part-1-the-scope-of-practice-the-pack-conference": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Scope of Practice & The Pack Conference",
         "theme": "raggiesoft-books",
@@ -581,6 +779,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c003/p001.md"
     },
+    "/quantum-directive-3-casey/book-3-the-nclex/chapter-3-the-eastside-tour/part-1-the-morning-perimeter-the-bellevue-transfer": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Morning Perimeter & The Bellevue Transfer",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c003/p001.md"
+    },
     "/quantum-directive-3-casey/book-3-the-nclex/chapter-4-the-puget-sound-aquarium": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 4: The Puget Sound Aquarium",
@@ -588,6 +792,12 @@
         "filePath": "__CHAP_TOC__|2|3"
     },
     "/quantum-directive-3-casey/book-3-the-nclex/chapter-4-the-puget-sound-aquarium/the-vip-experience-the-night-shift": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The VIP Experience & The Night Shift",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c004/p001.md"
+    },
+    "/quantum-directive-3-casey/book-3-the-nclex/chapter-4-the-puget-sound-aquarium/part-1-the-vip-experience-the-night-shift": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The VIP Experience & The Night Shift",
         "theme": "raggiesoft-books",
@@ -623,6 +833,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c006/p001.md"
     },
+    "/quantum-directive-3-casey/book-3-the-nclex/chapter-6-the-sacrifice/part-1-the-194-express-the-565": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The 194 Express & The 565",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c006/p001.md"
+    },
     "/quantum-directive-3-casey/book-3-the-nclex/chapter-7-the-may-logistics": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 7: The May Logistics",
@@ -648,6 +864,12 @@
         "filePath": "__CHAP_TOC__|2|7"
     },
     "/quantum-directive-3-casey/book-3-the-nclex/chapter-8-the-prospector-s-keep/the-brat-diet-the-assignment": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The BRAT Diet & The Assignment",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c008/p001.md"
+    },
+    "/quantum-directive-3-casey/book-3-the-nclex/chapter-8-the-prospector-s-keep/part-1-the-brat-diet-the-assignment": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The BRAT Diet & The Assignment",
         "theme": "raggiesoft-books",
@@ -689,6 +911,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c010/p001.md"
     },
+    "/quantum-directive-3-casey/book-3-the-nclex/chapter-10-a-moment-of-peace/part-1-the-departure-logistics": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Departure Logistics",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c010/p001.md"
+    },
     "/quantum-directive-3-casey/book-4-the-sovereign-empire": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 4: The Sovereign Empire",
@@ -702,6 +930,12 @@
         "filePath": "__CHAP_TOC__|3|0"
     },
     "/quantum-directive-3-casey/book-4-the-sovereign-empire/chapter-1-the-mandate/the-deviation-the-sovereign-news": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Deviation & The Sovereign News",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c001/p001.md"
+    },
+    "/quantum-directive-3-casey/book-4-the-sovereign-empire/chapter-1-the-mandate/part-1-the-deviation-the-sovereign-news": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Deviation & The Sovereign News",
         "theme": "raggiesoft-books",
@@ -755,6 +989,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/p001.md"
     },
+    "/quantum-directive-3-casey/book-5-the-sovereign-ascension/chapter-1-the-bloodline-convergence/part-1-the-rotor-wash-the-floorboards": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Rotor Wash & The Floorboards",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c001/p001.md"
+    },
     "/quantum-directive-3-casey/book-5-the-sovereign-ascension/chapter-2-the-after-party": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: The After Party",
@@ -791,6 +1031,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e006/c001/p001.md"
     },
+    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-1-the-silicon-valley-bypass/part-1-the-diridon-transfer-the-keynote-and-the-baypass-question": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Diridon Transfer & The Keynote and the BayPass Question",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c001/p001.md"
+    },
     "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-2-the-fenwick-bridge-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: The Fenwick Bridge Protocol",
@@ -822,6 +1068,12 @@
         "filePath": "__CHAP_TOC__|5|2"
     },
     "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-3-the-connecticut-avenue-protocol/the-elstat-briefing-the-front-gate-arrival": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The ELstat Briefing & The Front Gate Arrival",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c003/p001.md"
+    },
+    "/quantum-directive-3-casey/book-6-the-sovereign-autonomy/chapter-3-the-connecticut-avenue-protocol/part-1-the-elstat-briefing-the-front-gate-arrival": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The ELstat Briefing & The Front Gate Arrival",
         "theme": "raggiesoft-books",

@@ -59,6 +59,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p001.md"
     },
+    "/alex-chloe/alex-s-childhood/the-carter-house/part-1-the-first-meeting": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The First Meeting",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/p001.md"
+    },
     "/alex-chloe/alex-s-childhood/elementary-school": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Elementary School",
@@ -102,6 +108,12 @@
         "filePath": "__CHAP_TOC__|0|3"
     },
     "/alex-chloe/alex-s-childhood/alex-as-a-teenager/a-quiet-place-in-the-chaos-the-training-montage-the-sign": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Quiet Place in the Chaos & The Training Montage & The Sign",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c004/p001.md"
+    },
+    "/alex-chloe/alex-s-childhood/alex-as-a-teenager/part-1-a-quiet-place-in-the-chaos-the-training-montage-the-sign": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Quiet Place in the Chaos & The Training Montage & The Sign",
         "theme": "raggiesoft-books",
@@ -263,6 +275,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c004/p001.md"
     },
+    "/alex-chloe/fresh-meat/la-famille/part-1-a-qu-b-cois-welcome-the-last-farewell": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Qu\u00e9b\u00e9cois Welcome & The Last Farewell",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c004/p001.md"
+    },
     "/alex-chloe/sophomore-year": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Sophomore Year",
@@ -281,6 +299,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/p001.md"
     },
+    "/alex-chloe/sophomore-year/a-new-rhythm/part-1-the-a-b-block-the-calendar-keeper": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The A/B Block & The Calendar Keeper",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c001/p001.md"
+    },
     "/alex-chloe/sophomore-year/the-longest-two-weeks": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Longest Two Weeks",
@@ -288,6 +312,12 @@
         "filePath": "__CHAP_TOC__|3|1"
     },
     "/alex-chloe/sophomore-year/the-longest-two-weeks/a-simple-cough-alex-s-recovery": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Simple Cough & Alex\u2019s Recovery",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c002/p001.md"
+    },
+    "/alex-chloe/sophomore-year/the-longest-two-weeks/part-1-a-simple-cough-alex-s-recovery": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Simple Cough & Alex\u2019s Recovery",
         "theme": "raggiesoft-books",
@@ -305,6 +335,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e004/c003/p001.md"
     },
+    "/alex-chloe/sophomore-year/a-new-normal/part-1-re-establishing-a-rhythm-a-new-low": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Re-establishing a Rhythm & A New Low",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c003/p001.md"
+    },
     "/alex-chloe/sophomore-year/the-first-crack": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The First Crack",
@@ -317,6 +353,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e004/c004/p001.md"
     },
+    "/alex-chloe/sophomore-year/the-first-crack/part-1-the-blast-radius-the-unbreakable-bond": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Blast Radius & The Unbreakable Bond",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c004/p001.md"
+    },
     "/alex-chloe/sophomore-year/a-different-kind-of-connection": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Different Kind of Connection",
@@ -324,6 +366,12 @@
         "filePath": "__CHAP_TOC__|3|4"
     },
     "/alex-chloe/sophomore-year/a-different-kind-of-connection/the-lab-partner-the-answer": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Lab Partner & The Answer",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c005/p001.md"
+    },
+    "/alex-chloe/sophomore-year/a-different-kind-of-connection/part-1-the-lab-partner-the-answer": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Lab Partner & The Answer",
         "theme": "raggiesoft-books",
@@ -342,6 +390,12 @@
         "filePath": "__CHAP_TOC__|4|0"
     },
     "/alex-chloe/juniors-they-are/the-virtual-solution/a-compatibility-crisis-a-lesson-in-virtualization": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Compatibility Crisis & A Lesson in Virtualization",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c001/p001.md"
+    },
+    "/alex-chloe/juniors-they-are/the-virtual-solution/part-1-a-compatibility-crisis-a-lesson-in-virtualization": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Compatibility Crisis & A Lesson in Virtualization",
         "theme": "raggiesoft-books",
@@ -401,6 +455,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e006/c002/p001.md"
     },
+    "/alex-chloe/seniors-rule-the-school/a-quiet-miracle/part-1-the-tada-heard-round-the-lab-the-missing-semicolon": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The TADA Heard 'Round the Lab & The Missing Semicolon",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c002/p001.md"
+    },
     "/alex-chloe/seniors-rule-the-school/the-fork-in-the-road": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Fork in the Road",
@@ -408,6 +468,12 @@
         "filePath": "__CHAP_TOC__|5|2"
     },
     "/alex-chloe/seniors-rule-the-school/the-fork-in-the-road/the": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The \\",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c003/p001.md"
+    },
+    "/alex-chloe/seniors-rule-the-school/the-fork-in-the-road/part-1-the": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The \\",
         "theme": "raggiesoft-books",
@@ -425,6 +491,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e006/c004/p001.md"
     },
+    "/alex-chloe/seniors-rule-the-school/a-different-kind-of-anchor/part-1-a-quiet-hurt-a-simple-offer": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Quiet Hurt & A Simple Offer",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c004/p001.md"
+    },
     "/alex-chloe/seniors-rule-the-school/the-weight-of-care": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Weight of Care",
@@ -437,6 +509,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e006/c005/p001.md"
     },
+    "/alex-chloe/seniors-rule-the-school/the-weight-of-care/part-1-the-accident-a-deeper-understanding": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Accident & A Deeper Understanding",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c005/p001.md"
+    },
     "/alex-chloe/seniors-rule-the-school/the-last-dance": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Last Dance",
@@ -444,6 +522,12 @@
         "filePath": "__CHAP_TOC__|5|5"
     },
     "/alex-chloe/seniors-rule-the-school/the-last-dance/the-decision-the-real-victory": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Decision & The Real Victory",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c006/p001.md"
+    },
+    "/alex-chloe/seniors-rule-the-school/the-last-dance/part-1-the-decision-the-real-victory": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Decision & The Real Victory",
         "theme": "raggiesoft-books",
@@ -467,6 +551,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e007/c001/p001.md"
     },
+    "/alex-chloe/one-last-summer/a-pacific-northwest-interlude-summer-after-graduation/part-1-exploring-seattle-and-lynnwood-a-new-threshold-of-trust": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Exploring Seattle and Lynnwood & A New Threshold of Trust",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c001/p001.md"
+    },
     "/alex-chloe/one-last-summer/a-very-hard-goodbye": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Very Hard Goodbye",
@@ -474,6 +564,12 @@
         "filePath": "__CHAP_TOC__|6|1"
     },
     "/alex-chloe/one-last-summer/a-very-hard-goodbye/two-separate-worlds-home-safe": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Two Separate Worlds & Home Safe",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c002/p001.md"
+    },
+    "/alex-chloe/one-last-summer/a-very-hard-goodbye/part-1-two-separate-worlds-home-safe": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Two Separate Worlds & Home Safe",
         "theme": "raggiesoft-books",
@@ -528,6 +624,12 @@
         "filePath": "__CHAP_TOC__|7|2"
     },
     "/alex-chloe/separate-coast-separate-lives/lingering-connections-looming-threats/the-video-call-interruption-a-secret-rebellion": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Video Call Interruption & A Secret Rebellion",
+        "theme": "raggiesoft-books",
+        "filePath": "e008/c003/p001.md"
+    },
+    "/alex-chloe/separate-coast-separate-lives/lingering-connections-looming-threats/part-1-the-video-call-interruption-a-secret-rebellion": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Video Call Interruption & A Secret Rebellion",
         "theme": "raggiesoft-books",
@@ -695,6 +797,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e009/c001/p001.md"
     },
+    "/alex-chloe/a-fresh-start/a-new-beginning/part-1-gearing-up-a-new-sanctuary": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Gearing Up & A New Sanctuary",
+        "theme": "raggiesoft-books",
+        "filePath": "e009/c001/p001.md"
+    },
     "/alex-chloe/a-fresh-start/the-final-severance": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Final Severance",
@@ -702,6 +810,12 @@
         "filePath": "__CHAP_TOC__|8|1"
     },
     "/alex-chloe/a-fresh-start/the-final-severance/the-empty-seat-the-letter": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Empty Seat & The Letter",
+        "theme": "raggiesoft-books",
+        "filePath": "e009/c002/p001.md"
+    },
+    "/alex-chloe/a-fresh-start/the-final-severance/part-1-the-empty-seat-the-letter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Empty Seat & The Letter",
         "theme": "raggiesoft-books",
@@ -737,6 +851,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e009/c004/p001.md"
     },
+    "/alex-chloe/a-fresh-start/a-new-beginning/part-1-the-morning-commute-the-breaking-point": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Morning Commute & The Breaking Point",
+        "theme": "raggiesoft-books",
+        "filePath": "e009/c004/p001.md"
+    },
     "/alex-chloe/a-fresh-start/the-apartment-hunt": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Apartment Hunt",
@@ -767,6 +887,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e009/c006/p001.md"
     },
+    "/alex-chloe/a-fresh-start/spring-break/part-1-a-quiet-day-trip-the-three-musketeers": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Quiet Day Trip & The Three Musketeers",
+        "theme": "raggiesoft-books",
+        "filePath": "e009/c006/p001.md"
+    },
     "/alex-chloe/a-fresh-start/a-new-home": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Home",
@@ -774,6 +900,12 @@
         "filePath": "__CHAP_TOC__|8|6"
     },
     "/alex-chloe/a-fresh-start/a-new-home/the-keys-a-new-old-trusted-friend": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Keys & A New (Old) Trusted Friend",
+        "theme": "raggiesoft-books",
+        "filePath": "e009/c007/p001.md"
+    },
+    "/alex-chloe/a-fresh-start/a-new-home/part-1-the-keys-a-new-old-trusted-friend": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Keys & A New (Old) Trusted Friend",
         "theme": "raggiesoft-books",
@@ -815,6 +947,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e010/c001/p001.md"
     },
+    "/alex-chloe/young-adults-new-worlds/standing-tall/part-1-delivery-day-a-new-day-on-campus": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Delivery Day & A New Day on Campus",
+        "theme": "raggiesoft-books",
+        "filePath": "e010/c001/p001.md"
+    },
     "/alex-chloe/young-adults-new-worlds/the-final-semester": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Final Semester",
@@ -822,6 +960,12 @@
         "filePath": "__CHAP_TOC__|9|1"
     },
     "/alex-chloe/young-adults-new-worlds/the-final-semester/the-power-couple-of-campus-graduation-day": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Power Couple of Campus & Graduation Day",
+        "theme": "raggiesoft-books",
+        "filePath": "e010/c002/p001.md"
+    },
+    "/alex-chloe/young-adults-new-worlds/the-final-semester/part-1-the-power-couple-of-campus-graduation-day": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Power Couple of Campus & Graduation Day",
         "theme": "raggiesoft-books",
@@ -911,6 +1055,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e011/c002/p001.md"
     },
+    "/alex-chloe/forging-a-future/the-first-ecosystem/part-1-the-micro-test-a-quiet-success": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Micro-Test & A Quiet Success",
+        "theme": "raggiesoft-books",
+        "filePath": "e011/c002/p001.md"
+    },
     "/alex-chloe/forging-a-future/the-evergreen-project": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Evergreen Project",
@@ -918,6 +1068,12 @@
         "filePath": "__CHAP_TOC__|10|2"
     },
     "/alex-chloe/forging-a-future/the-evergreen-project/weekend-warriors-the-long-road-to-a-dream": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Weekend Warriors & The Long Road to a Dream",
+        "theme": "raggiesoft-books",
+        "filePath": "e011/c003/p001.md"
+    },
+    "/alex-chloe/forging-a-future/the-evergreen-project/part-1-weekend-warriors-the-long-road-to-a-dream": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Weekend Warriors & The Long Road to a Dream",
         "theme": "raggiesoft-books",
@@ -965,6 +1121,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e013/c002/p001.md"
     },
+    "/alex-chloe/canada-winter-games/the-weight-of-care-revisited/part-1-the-accident-the-hospital-revelation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Accident & The Hospital Revelation",
+        "theme": "raggiesoft-books",
+        "filePath": "e013/c002/p001.md"
+    },
     "/alex-chloe/no-boundaries": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "No Boundaries",
@@ -983,6 +1145,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e014/c001/p001.md"
     },
+    "/alex-chloe/no-boundaries/a-vision-takes-shape/part-1-the-blueprint-of-home-a-border-of-our-own": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Blueprint of Home & A Border of Our Own",
+        "theme": "raggiesoft-books",
+        "filePath": "e014/c001/p001.md"
+    },
     "/alex-chloe/no-boundaries/the-northern-annex": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Northern Annex",
@@ -990,6 +1158,12 @@
         "filePath": "__CHAP_TOC__|13|1"
     },
     "/alex-chloe/no-boundaries/the-northern-annex/the-peace-arch-crossing-the-peak-of-the-city": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Peace Arch Crossing & The Peak of the City",
+        "theme": "raggiesoft-books",
+        "filePath": "e014/c002/p001.md"
+    },
+    "/alex-chloe/no-boundaries/the-northern-annex/part-1-the-peace-arch-crossing-the-peak-of-the-city": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Peace Arch Crossing & The Peak of the City",
         "theme": "raggiesoft-books",
@@ -1008,6 +1182,12 @@
         "filePath": "__CHAP_TOC__|14|0"
     },
     "/alex-chloe/our-real-beginning/the-vow-revisited/the-proposition-the-family-announcement": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Proposition & The Family Announcement",
+        "theme": "raggiesoft-books",
+        "filePath": "e015/c001/p001.md"
+    },
+    "/alex-chloe/our-real-beginning/the-vow-revisited/part-1-the-proposition-the-family-announcement": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Proposition & The Family Announcement",
         "theme": "raggiesoft-books",
@@ -1038,6 +1218,12 @@
         "filePath": "__CHAP_TOC__|14|2"
     },
     "/alex-chloe/our-real-beginning/the-homecoming/the-journey-east-the-journey-north": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Journey East & The Journey North",
+        "theme": "raggiesoft-books",
+        "filePath": "e015/c003/p001.md"
+    },
+    "/alex-chloe/our-real-beginning/the-homecoming/part-1-the-journey-east-the-journey-north": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Journey East & The Journey North",
         "theme": "raggiesoft-books",
@@ -1079,6 +1265,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e015/c005/p001.md"
     },
+    "/alex-chloe/our-real-beginning/a-day-in-the-townships/part-1-the-morning-after-the-departure": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Morning After & The Departure",
+        "theme": "raggiesoft-books",
+        "filePath": "e015/c005/p001.md"
+    },
     "/alex-chloe/needs-a-name": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Needs a Name",
@@ -1092,6 +1284,12 @@
         "filePath": "__CHAP_TOC__|15|0"
     },
     "/alex-chloe/needs-a-name/the-revenge-of-the-brawlers/the-boston-showdown-breakfast-with-the-enemy": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Boston Showdown & Breakfast with the Enemy",
+        "theme": "raggiesoft-books",
+        "filePath": "e016/c001/p001.md"
+    },
+    "/alex-chloe/needs-a-name/the-revenge-of-the-brawlers/part-1-the-boston-showdown-breakfast-with-the-enemy": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Boston Showdown & Breakfast with the Enemy",
         "theme": "raggiesoft-books",
@@ -1133,6 +1331,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e017/c002/p001.md"
     },
+    "/alex-chloe/covid/the-longest-two-weeks/part-1-the-first-sign-the-fever-breaks": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The First Sign & The Fever Breaks",
+        "theme": "raggiesoft-books",
+        "filePath": "e017/c002/p001.md"
+    },
     "/alex-chloe/covid/a-world-reopened": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A World Reopened",
@@ -1140,6 +1344,12 @@
         "filePath": "__CHAP_TOC__|16|2"
     },
     "/alex-chloe/covid/a-world-reopened/the-new-normal-the-first-venture-out": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The New Normal & The First Venture Out",
+        "theme": "raggiesoft-books",
+        "filePath": "e017/c003/p001.md"
+    },
+    "/alex-chloe/covid/a-world-reopened/part-1-the-new-normal-the-first-venture-out": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The New Normal & The First Venture Out",
         "theme": "raggiesoft-books",
@@ -1163,6 +1373,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e018/c001/p001.md"
     },
+    "/alex-chloe/a-dream-built/the-great-focus/part-1-the-leap-of-faith-the-grant": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Leap of Faith & The Grant",
+        "theme": "raggiesoft-books",
+        "filePath": "e018/c001/p001.md"
+    },
     "/alex-chloe/a-dream-built/a-winter-homecoming": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Winter Homecoming",
@@ -1175,7 +1391,19 @@
         "theme": "raggiesoft-books",
         "filePath": "e018/c002/p001.md"
     },
+    "/alex-chloe/a-dream-built/a-winter-homecoming/part-1-a-much-needed-breather-return-to-lynnwood": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Much-Needed Breather & Return to Lynnwood",
+        "theme": "raggiesoft-books",
+        "filePath": "e018/c002/p001.md"
+    },
     "/alex-chloe/a-dream-built/the-great-focus/the-call-and-the-land-from-blueprint-to-reality": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Call and the Land & From Blueprint to Reality",
+        "theme": "raggiesoft-books",
+        "filePath": "e018/c003/p001.md"
+    },
+    "/alex-chloe/a-dream-built/the-great-focus/part-1-the-call-and-the-land-from-blueprint-to-reality": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Call and the Land & From Blueprint to Reality",
         "theme": "raggiesoft-books",
@@ -1193,6 +1421,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e018/c004/p001.md"
     },
+    "/alex-chloe/a-dream-built/echoes-and-reunions/part-1-the-20-year-reunion-the-flight-home": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The 20-Year Reunion & The Flight Home",
+        "theme": "raggiesoft-books",
+        "filePath": "e018/c004/p001.md"
+    },
     "/alex-chloe/a-dream-built/the-new-workshop": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The New Workshop",
@@ -1200,6 +1434,12 @@
         "filePath": "__CHAP_TOC__|17|4"
     },
     "/alex-chloe/a-dream-built/the-new-workshop/a-cross-platform-future-the-first-prototype": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Cross-Platform Future & The First Prototype",
+        "theme": "raggiesoft-books",
+        "filePath": "e018/c005/p001.md"
+    },
+    "/alex-chloe/a-dream-built/the-new-workshop/part-1-a-cross-platform-future-the-first-prototype": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Cross-Platform Future & The First Prototype",
         "theme": "raggiesoft-books",
@@ -1235,6 +1475,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e018/c007/p001.md"
     },
+    "/alex-chloe/a-dream-built/bridges-of-understanding/part-1-an-unexpected-encounter-the-directors-work": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "An Unexpected Encounter & The Directors\u2019 Work",
+        "theme": "raggiesoft-books",
+        "filePath": "e018/c007/p001.md"
+    },
     "/alex-chloe/the-long-quiet-working-title": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Long Quiet *(Working Title)*",
@@ -1248,6 +1494,12 @@
         "filePath": "__CHAP_TOC__|18|0"
     },
     "/alex-chloe/the-long-quiet-working-title/a-future-in-the-townships/a-quiet-question": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Quiet Question",
+        "theme": "raggiesoft-books",
+        "filePath": "e019/c001/p001.md"
+    },
+    "/alex-chloe/the-long-quiet-working-title/a-future-in-the-townships/part-1-a-quiet-question": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Quiet Question",
         "theme": "raggiesoft-books",

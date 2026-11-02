@@ -209,6 +209,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/p001.md"
     },
+    "/apex-fall-of-earth/analogue-ghosts/delta-niner/part-1-the-blinking-clock-the-broadcast": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Blinking Clock & The Broadcast",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c001/p001.md"
+    },
     "/apex-fall-of-earth/analogue-ghosts/the-lungs-of-the-station": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Lungs of the Station",
@@ -216,6 +222,12 @@
         "filePath": "__CHAP_TOC__|3|1"
     },
     "/apex-fall-of-earth/analogue-ghosts/the-lungs-of-the-station/the-hydroponics-bay-the-expanding-fracture": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Hydroponics Bay & The Expanding Fracture",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c002/p001.md"
+    },
+    "/apex-fall-of-earth/analogue-ghosts/the-lungs-of-the-station/part-1-the-hydroponics-bay-the-expanding-fracture": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Hydroponics Bay & The Expanding Fracture",
         "theme": "raggiesoft-books",
@@ -683,6 +695,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e007/c003/p001.md"
     },
+    "/apex-fall-of-earth/the-fall-of-apex/the-architects-of-eden/part-1-the-healing-room-the-history-lesson": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Healing Room & The History Lesson",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c003/p001.md"
+    },
     "/apex-fall-of-earth/the-growing-world": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Growing World",
@@ -785,6 +803,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e009/c002/p001.md"
     },
+    "/apex-fall-of-earth/the-village-of-genesis/jack-the-lunar-embassy/part-1-the-fleet-girl-the-newport-fifty": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Fleet Girl & The Newport Fifty",
+        "theme": "raggiesoft-books",
+        "filePath": "e009/c002/p001.md"
+    },
     "/apex-fall-of-earth/the-village-of-genesis/the-refugee": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Refugee",
@@ -792,6 +816,12 @@
         "filePath": "__CHAP_TOC__|8|2"
     },
     "/apex-fall-of-earth/the-village-of-genesis/the-refugee/the-great-chowder-rebellion-the-golden-cage": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Great Chowder Rebellion & The Golden Cage",
+        "theme": "raggiesoft-books",
+        "filePath": "e009/c003/p001.md"
+    },
+    "/apex-fall-of-earth/the-village-of-genesis/the-refugee/part-1-the-great-chowder-rebellion-the-golden-cage": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Great Chowder Rebellion & The Golden Cage",
         "theme": "raggiesoft-books",
@@ -851,6 +881,12 @@
         "theme": "raggiesoft-books",
         "filePath": "e009/c006/p001.md"
     },
+    "/apex-fall-of-earth/the-village-of-genesis/wyatt-the-founders/part-1-the-watch-the-age-of-majority": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Watch & The Age of Majority",
+        "theme": "raggiesoft-books",
+        "filePath": "e009/c006/p001.md"
+    },
     "/apex-fall-of-earth/the-village-of-genesis/leo-the-wilderness": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Leo \u2013 The Wilderness",
@@ -858,6 +894,12 @@
         "filePath": "__CHAP_TOC__|8|6"
     },
     "/apex-fall-of-earth/the-village-of-genesis/leo-the-wilderness/the-logistics-of-the-wild-the-sydney-echo": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Logistics of the Wild & The Sydney Echo",
+        "theme": "raggiesoft-books",
+        "filePath": "e009/c007/p001.md"
+    },
+    "/apex-fall-of-earth/the-village-of-genesis/leo-the-wilderness/part-1-the-logistics-of-the-wild-the-sydney-echo": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Logistics of the Wild & The Sydney Echo",
         "theme": "raggiesoft-books",

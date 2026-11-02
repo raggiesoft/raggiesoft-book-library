@@ -62,7 +62,7 @@ $volumeCount = count($books);
       "@type": "CollectionPage",
       "name": "Ocean View Archives — Literary Imprint & Book Reader Hub",
       "url": "https://books.raggiesoft.com",
-      "description": "Directory of literary works, prominently featuring The Eleventh Child: The Story of Jordan and the Contemporary Fiction Library."
+      "description": "Directory of literary works, prominently co-featuring The Eleventh Child: The Story of Jordan, The Rachel Narrative, and the Library-Wide Table of Illustrations."
     }
   ]
 }
@@ -327,6 +327,30 @@ $volumeCount = count($books);
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     }
 
+    .ova-universe-sublink {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.4rem;
+        width: 100%;
+        margin-top: 0.5rem;
+        padding: 0.52rem 0.9rem;
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 0.82rem;
+        text-decoration: none;
+        background: var(--rs-bg);
+        color: var(--rs-heading) !important;
+        border: 1px solid var(--rs-border);
+        transition: border-color 0.15s ease, color 0.15s ease;
+    }
+
+    .ova-universe-sublink:hover,
+    .ova-universe-sublink:focus-visible {
+        border-color: var(--rs-primary);
+        color: var(--rs-primary) !important;
+    }
+
     /* 3-Pillar Reader Architecture Features */
     .ova-features-grid {
         display: grid;
@@ -405,13 +429,16 @@ $volumeCount = count($books);
 
             <div class="ova-hero-actions">
                 <a href="/aubrie" class="ova-btn-bronze">
-                    <i class="ph-fill ph-star"></i> Featured Novel: The Eleventh Child
+                    <i class="ph-fill ph-star"></i> Featured: The Eleventh Child
+                </a>
+                <a href="/rachel" class="ova-btn-bronze">
+                    <i class="ph-fill ph-star"></i> Featured: The Rachel Narrative
+                </a>
+                <a href="/illustrations" class="ova-btn-ghost">
+                    <i class="ph-fill ph-images"></i> Library-Wide Table of Illustrations
                 </a>
                 <a href="/library" class="ova-btn-ghost">
                     <i class="ph-fill ph-books"></i> Browse the Full Library<?= $volumeCount > 0 ? ' (' . $volumeCount . ' Volumes)' : '' ?>
-                </a>
-                <a href="/aubrie/illustrations" class="ova-btn-ghost">
-                    <i class="ph-fill ph-images"></i> Table of Illustrations
                 </a>
             </div>
         </div>
@@ -462,12 +489,15 @@ $volumeCount = count($books);
                     Enter the Ocean View Library
                 </h2>
                 <p style="font-size: 0.94rem; line-height: 1.55; color: var(--rs-text); opacity: 0.9; margin: 0;">
-                    Browse all <?= $volumeCount > 0 ? $volumeCount : '14' ?> standalone volumes, search characters and scenes instantly, or organize your personal reading shelves.
+                    Browse all <?= $volumeCount > 0 ? $volumeCount : '14' ?> standalone volumes, explore the Library-Wide Table of Illustrations across all novels, or organize your personal reading shelves.
                 </p>
             </div>
             <div class="ova-library-gateway-actions">
                 <a href="/library" class="ova-gateway-primary-btn">
                     <i class="ph-fill ph-books"></i> Open the Library
+                </a>
+                <a href="/illustrations" class="ova-gateway-secondary-btn">
+                    <i class="ph-fill ph-images"></i> All-Novel Illustrations
                 </a>
                 <a href="/bookmarks" class="ova-gateway-secondary-btn">
                     <i class="ph-fill ph-bookmark"></i> Bookmarks
@@ -480,8 +510,8 @@ $volumeCount = count($books);
 
         <!-- 
           FLAGSHIP FEATURED SHOWCASE & LITERARY UNIVERSES
-          Features The Eleventh Child: The Story of Jordan (/aubrie) and its Table of Illustrations (/aubrie/illustrations)
-          as the premier technical and narrative showcase of the RaggieSoft Book Reader alongside Contemporary Fiction (/library).
+          Co-features The Eleventh Child (/aubrie) and The Rachel Narrative (/rachel) with shared top billing,
+          alongside the Library-Wide Table of Illustrations (/illustrations) across all illustrated novels.
         -->
         <section id="imprint-universes" aria-labelledby="ova-collections-heading">
             <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.1rem;">
@@ -494,49 +524,82 @@ $volumeCount = count($books);
             </div>
 
             <div class="ova-universes-grid">
-                <!-- 1. Featured Flagship Novel: The Eleventh Child -->
+                <!-- 1. Co-Flagship Novel: The Eleventh Child -->
                 <article class="ova-universe-card">
                     <div class="ova-universe-media">
                         <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/images/covers/og/aubrie.jpg"
-                             alt="The Eleventh Child: The Story of Jordan — Flagship Novel &amp; Reader Tech Demo"
+                             alt="The Eleventh Child: The Story of Jordan — Co-Flagship Novel &amp; Reader Tech Demo"
                              loading="lazy">
                     </div>
                     <div class="ova-universe-body">
                         <div>
-                            <span class="ova-universe-tag">Featured Novel &amp; Reader Tech Demo</span>
+                            <span class="ova-universe-tag">Co-Flagship Novel &bull; 72 Illustrations</span>
                             <h3 class="ova-universe-title">The Eleventh Child</h3>
                             <p class="ova-universe-desc">
                                 The Story of Jordan. Follow eighteen-year-old non-speaking freshman Jordan Shawn Kelly as he escapes a lifetime of erasure and builds an unbreakable found family at CPI. Showcases inline <code>&lt;aac&gt;</code> speech synthesis, <code>ZOË.Systems.Logs</code> telemetry, and synchronized music cues.
                             </p>
                         </div>
-                        <a href="/aubrie" class="ova-universe-link">
-                            <i class="ph-fill ph-book-open-text"></i> Read The Eleventh Child
-                        </a>
+                        <div>
+                            <a href="/aubrie" class="ova-universe-link">
+                                <i class="ph-fill ph-book-open-text"></i> Read The Eleventh Child
+                            </a>
+                            <a href="/aubrie/illustrations" class="ova-universe-sublink">
+                                <i class="ph-fill ph-images"></i> Book Illustrations (72 Plates)
+                            </a>
+                        </div>
                     </div>
                 </article>
 
-                <!-- 2. The Eleventh Child: Table of Illustrations -->
+                <!-- 2. Co-Flagship Novel: The Rachel Narrative -->
                 <article class="ova-universe-card">
                     <div class="ova-universe-media">
-                        <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/images/scenes/aubrie/e005/c010/s004/roa-gate-hug.jpg"
-                             alt="Table of Illustrations — The Eleventh Child Visual Scene Index"
+                        <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/images/covers/og/rachel.jpg"
+                             alt="The Rachel Narrative — Co-Flagship Novel of Sibling Devotion &amp; Sanctuary"
                              loading="lazy">
                     </div>
                     <div class="ova-universe-body">
                         <div>
-                            <span class="ova-universe-tag">Visual Scene Index &amp; Lightbox</span>
-                            <h3 class="ova-universe-title">Table of Illustrations</h3>
+                            <span class="ova-universe-tag">Co-Flagship Novel &bull; 128 Illustrations</span>
+                            <h3 class="ova-universe-title">The Rachel Narrative</h3>
                             <p class="ova-universe-desc">
-                                Explore every high-resolution 16:9 scene illustration across all six eras of <em>The Eleventh Child</em>, complete with instant era jump-pills, full-screen lightbox inspection, and direct links to each illustrated moment in the novel.
+                                Thirty years of unshakeable sibling devotion. From a living room sofa in 1995 and the blue minivan sanctuary of Ocean View to the Ironstone halls of Commonwealth Polytechnic Institute, follow Rachel and Michael (&ldquo;Bug and Bear&rdquo;) as they choose each other above all else.
                             </p>
                         </div>
-                        <a href="/aubrie/illustrations" class="ova-universe-link">
-                            <i class="ph-fill ph-images"></i> Browse All Illustrations
-                        </a>
+                        <div>
+                            <a href="/rachel" class="ova-universe-link">
+                                <i class="ph-fill ph-book-open-text"></i> Read The Rachel Narrative
+                            </a>
+                            <a href="/rachel/illustrations" class="ova-universe-sublink">
+                                <i class="ph-fill ph-images"></i> Book Illustrations (128 Plates)
+                            </a>
+                        </div>
                     </div>
                 </article>
 
-                <!-- 3. The Stardust Engine: The Story of the Iron Five -->
+                <!-- 3. Library-Wide Table of Illustrations (All Novels) -->
+                <article class="ova-universe-card">
+                    <div class="ova-universe-media">
+                        <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/images/scenes/rachel/b021/feb_2016_saacurc_kincaid_student_center_school_colors_clothespins.jpg"
+                             alt="Library-Wide Table of Illustrations — Visual Index Across All Ocean View Archives Novels"
+                             loading="lazy">
+                    </div>
+                    <div class="ova-universe-body">
+                        <div>
+                            <span class="ova-universe-tag">All-Novel Visual Index &bull; 253 Plates</span>
+                            <h3 class="ova-universe-title">Library-Wide Table of Illustrations</h3>
+                            <p class="ova-universe-desc">
+                                Explore every high-resolution 16:9 chapter plate and inline archival illustration across <strong>all</strong> illustrated Ocean View Archives novels&mdash;including <em>The Rachel Narrative</em>, <em>The Eleventh Child</em>, <em>The Stardust Engine</em>, and <em>Escape Velocity: Ad Astra</em>&mdash;with book filter pills, instant search, and lightbox inspection.
+                            </p>
+                        </div>
+                        <div>
+                            <a href="/illustrations" class="ova-universe-link">
+                                <i class="ph-fill ph-images"></i> Browse All 253 Library Illustrations
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4. The Stardust Engine: The Story of the Iron Five -->
                 <article class="ova-universe-card">
                     <div class="ova-universe-media">
                         <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/images/covers/og/stardust-engine.jpg"
@@ -551,13 +614,18 @@ $volumeCount = count($books);
                                 The thirty-year story of the Iron Five (Ryan, Cassidy, and Holly O'Connell &amp; twins Evan and Tyler Wright) told from Ryan's perspective&mdash;including the 6-part May 21, 2016 <em>Live at the Crucible</em> homecoming concert synchronized with <a href="https://stardust.raggiesoft.com" data-no-spa="true" style="color: var(--rs-primary); font-weight: 700;">stardust.raggiesoft.com</a>.
                             </p>
                         </div>
-                        <a href="/stardust-engine" class="ova-universe-link">
-                            <i class="ph-fill ph-rocket-launch"></i> Read The Stardust Engine
-                        </a>
+                        <div>
+                            <a href="/stardust-engine" class="ova-universe-link">
+                                <i class="ph-fill ph-rocket-launch"></i> Read The Stardust Engine
+                            </a>
+                            <a href="/stardust-engine/illustrations" class="ova-universe-sublink">
+                                <i class="ph-fill ph-images"></i> Book Illustrations (25 Plates)
+                            </a>
+                        </div>
                     </div>
                 </article>
 
-                <!-- 4. Escape Velocity: Ad Astra (Caelum-IV Chronicles — Stardate 49601) -->
+                <!-- 5. Escape Velocity: Ad Astra (Caelum-IV Chronicles — Stardate 49601) -->
                 <article class="ova-universe-card">
                     <div class="ova-universe-media">
                         <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/images/covers/og/ad-astra.jpg"
@@ -572,13 +640,18 @@ $volumeCount = count($books);
                                 Stepping out of the open cargo hatch of the <em>U.S.S. Aethelgard</em> during Movement IV of <em>&ldquo;Escape Velocity (Ad Astra),&rdquo;</em> Cassidy, Ryan, Holly, and the Wright twins explore the tidally locked, purple-ocean moon <strong>Caelum-IV</strong> (<a href="https://nebulae.raggiesoft.com" data-no-spa="true" style="color: var(--rs-primary); font-weight: 700;">nebulae.raggiesoft.com</a>).
                             </p>
                         </div>
-                        <a href="/ad-astra" class="ova-universe-link">
-                            <i class="ph-fill ph-planet"></i> Read Escape Velocity: Ad Astra
-                        </a>
+                        <div>
+                            <a href="/ad-astra" class="ova-universe-link">
+                                <i class="ph-fill ph-planet"></i> Read Escape Velocity: Ad Astra
+                            </a>
+                            <a href="/ad-astra/illustrations" class="ova-universe-sublink">
+                                <i class="ph-fill ph-images"></i> Book Illustrations (13 Plates)
+                            </a>
+                        </div>
                     </div>
                 </article>
 
-                <!-- 5. Contemporary Fiction Library -->
+                <!-- 6. Contemporary Fiction Library -->
                 <article class="ova-universe-card">
                     <div class="ova-universe-media">
                         <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/images/og/contemporary_v2.jpg"
