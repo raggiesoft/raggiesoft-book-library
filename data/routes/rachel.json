@@ -12,16 +12,16 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "67 MB",
-            "pdf": "70.9 MB",
+            "epub": "70.1 MB",
+            "pdf": "74 MB",
             "text_epub": "1.1 MB",
             "text_pdf": "3.1 MB",
-            "epub_bytes": 70264036,
-            "pdf_bytes": 74325704,
-            "text_epub_bytes": 1129056,
-            "text_pdf_bytes": 3203746
+            "epub_bytes": 73472615,
+            "pdf_bytes": 77583134,
+            "text_epub_bytes": 1133531,
+            "text_pdf_bytes": 3217498
         },
-        "illustration_count": 120
+        "illustration_count": 124
     },
     "/rachel": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -490,6 +490,18 @@
         "title": "The Sleepover Calculation",
         "theme": "raggiesoft-books",
         "filePath": "e004/c003/p001.md"
+    },
+    "/rachel/middle-school/summer-camp-at-virginia-dominion-university": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Summer Camp at Virginia Dominion University",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|3"
+    },
+    "/rachel/middle-school/summer-camp-at-virginia-dominion-university/the-brick-walkways-of-summer-camp-mapping-vdu-with-rachel-and-jessica": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Brick Walkways of Summer Camp: Mapping VDU with Rachel and Jessica",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c004/p001.md"
     },
     "/rachel/high-school": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1084,6 +1096,18 @@
         "title": "The Morning Perimeter",
         "theme": "raggiesoft-books",
         "filePath": "e013/c003/p001.md"
+    },
+    "/rachel/michael-s-senior-year/the-high-school-field-trip-to-vdu": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The High School Field Trip to VDU",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|12|3"
+    },
+    "/rachel/michael-s-senior-year/the-high-school-field-trip-to-vdu/walking-the-old-camp-paths-alone-the-promise-to-reunite-first": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Walking the Old Camp Paths Alone & The Promise to Reunite First",
+        "theme": "raggiesoft-books",
+        "filePath": "e013/c004/p001.md"
     },
     "/rachel/delores": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1787,17 +1811,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|20|0"
     },
-    "/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/from-cchr-to-vdu-the-upperclass-gih-pilot-apartment/part-1-upperclass-credits-from-cchr-signing-up-for-vdu-s-gender-inclusive-housing-pilot-in-a-heartbeat": {
+    "/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/from-cchr-to-vdu-the-upperclass-gih-pilot-apartment/part-1-the-spring-campus-tour-remembering-summer-camp-asking-housing-about-the-gih-pilot": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Upperclass Credits from CCHR & Signing Up for VDU's Gender-Inclusive Housing Pilot in a Heartbeat",
+        "title": "Part 1: The Spring Campus Tour, Remembering Summer Camp, & Asking Housing About the GIH Pilot",
         "theme": "raggiesoft-books",
         "filePath": "e021/c001/p001.md"
     },
-    "/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/from-cchr-to-vdu-the-upperclass-gih-pilot-apartment/part-2-the-building-s-first-gih-pair-double-takes-from-housing-the-1st-floor-laundry-room": {
+    "/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/from-cchr-to-vdu-the-upperclass-gih-pilot-apartment/part-2-move-in-day-at-1016-hampton-house-building-2-the-2-bed-2-bath-floor-plan-alternating-beds": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Building's First GIH Pair, Double-Takes from Housing, & The 1st-Floor Laundry Room",
+        "title": "Part 2: Move-In Day at 1016 Hampton House ('Building 2'), The 2 Bed / 2 Bath Floor Plan, & Alternating Beds",
         "theme": "raggiesoft-books",
         "filePath": "e021/c001/p002.md"
+    },
+    "/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/from-cchr-to-vdu-the-upperclass-gih-pilot-apartment/part-3-the-only-gih-pair-in-building-2-hampton-house-the-ra-s-look-in-the-hallway-the-1st-floor-laundry-room": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Only GIH Pair in Building 2 (Hampton House), The RA's Look in the Hallway, & The 1st-Floor Laundry Room",
+        "theme": "raggiesoft-books",
+        "filePath": "e021/c001/p003.md"
     },
     "/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/bilateral-achilles-heel-cord-lengthening-cleared-for-cpi": {
         "view": "pages/raggiesoft-books/books/viewer",
