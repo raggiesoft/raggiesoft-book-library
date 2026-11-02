@@ -240,14 +240,14 @@
         "text_pdf_bytes": 1261268
     },
     "rachel": {
-        "epub": "70 MB",
-        "pdf": "74 MB",
+        "epub": "71.6 MB",
+        "pdf": "75.6 MB",
         "text_epub": "1.1 MB",
         "text_pdf": "3.1 MB",
-        "epub_bytes": 73368064,
-        "pdf_bytes": 77553481,
-        "text_epub_bytes": 1134909,
-        "text_pdf_bytes": 3220415
+        "epub_bytes": 75040459,
+        "pdf_bytes": 79281119,
+        "text_epub_bytes": 1145536,
+        "text_pdf_bytes": 3251337
     },
     "ruby-mountain": {
         "epub": "232 KB",
