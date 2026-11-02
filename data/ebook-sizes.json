@@ -244,10 +244,10 @@
         "pdf": "78.6 MB",
         "text_epub": "1.1 MB",
         "text_pdf": "3.1 MB",
-        "epub_bytes": 77982358,
-        "pdf_bytes": 82391446,
-        "text_epub_bytes": 1153943,
-        "text_pdf_bytes": 3215958
+        "epub_bytes": 77981864,
+        "pdf_bytes": 82390650,
+        "text_epub_bytes": 1153476,
+        "text_pdf_bytes": 3215262
     },
     "ruby-mountain": {
         "epub": "232 KB",
