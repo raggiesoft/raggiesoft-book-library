@@ -116,58 +116,102 @@ $sidebarPageTitle = $routeConfig['title'] ?? ($pageConfig['title'] ?? (!empty($f
 $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/') . '$/i', '', (string)$sidebarPageTitle);
 ?>
 
-<!-- Slide-out sidebar container -->
+<!-- Slide-out sidebar container (Optimized for zero-scroll fit on iPad Landscape & Desktop) -->
 <aside id="stardust-sidebar" class="reader-sidebar">
 
-    <!-- Co-Branded Book Reader App + Ocean View Archives Imprint Badge -->
-    <a href="/" style="display: flex; align-items: center; gap: 0.65rem; text-decoration: none; padding: 0.55rem 0.65rem; margin-bottom: 1rem; border-radius: 10px; background: var(--rs-surface); border: 1px solid var(--rs-border); box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
-        <img src="/icons/icon-192.png?v=4" alt="RaggieSoft Book Reader App Icon" style="width: 38px; height: 38px; border-radius: 9px; flex-shrink: 0; border: 1px solid rgba(227, 178, 124, 0.55); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+    <!-- 1. Co-Branded Book Reader App + Ocean View Archives Imprint Badge -->
+    <a href="/" style="display: flex; align-items: center; gap: 0.6rem; text-decoration: none; padding: 0.45rem 0.6rem; margin-bottom: 0.65rem; border-radius: 10px; background: var(--rs-surface); border: 1px solid var(--rs-border); box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
+        <img src="/icons/icon-192.png?v=4" alt="RaggieSoft Book Reader App Icon" style="width: 34px; height: 34px; border-radius: 8px; flex-shrink: 0; border: 1px solid rgba(227, 178, 124, 0.55); box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
         <div style="display: flex; flex-direction: column; min-width: 0; text-align: left;">
-            <span style="font-size: 0.88rem; font-weight: 800; color: var(--rs-heading); line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">RaggieSoft Book Reader</span>
-            <span style="display: inline-flex; align-items: center; gap: 0.28rem; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--rs-primary); margin-top: 0.1rem;">
-                <img src="<?php echo htmlspecialchars($cdnBaseUrl); ?>/raggiesoft-books/images/logos/oceanview-archives.svg" alt="" aria-hidden="true" style="width: 12px; height: 12px; object-fit: contain;">
+            <span style="font-size: 0.84rem; font-weight: 800; color: var(--rs-heading); line-height: 1.18; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">RaggieSoft Book Reader</span>
+            <span style="display: inline-flex; align-items: center; gap: 0.25rem; font-size: 0.62rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--rs-primary); margin-top: 0.08rem;">
+                <img src="<?php echo htmlspecialchars($cdnBaseUrl); ?>/raggiesoft-books/images/logos/oceanview-archives.svg" alt="" aria-hidden="true" style="width: 11px; height: 11px; object-fit: contain;">
                 <span>Ocean View Archives</span>
             </span>
         </div>
     </a>
     
-    <!-- 
-      Contextual Series Header
-      Anchored prominently at the top of the sidebar to immediately establish reading context.
-      Displays the series title followed by the current page/scene title in standard mixed case.
-    -->
-    <div class="sidebar-series-header" style="text-align: center; margin-bottom: 1.25rem;">
-        <h3 style="margin: 0 0 0.25rem 0; color: var(--rs-primary); font-size: 1.25rem; font-weight: 700; line-height: 1.3;"><?php 
+    <!-- 2. Contextual Series Header (Compact 1-Line Clamped Subtitle) -->
+    <div class="sidebar-series-header" style="text-align: left; padding: 0 0.15rem; margin-bottom: 0.65rem;">
+        <a href="<?php echo htmlspecialchars($sbUpUrl); ?>" style="text-decoration: none; display: block; margin: 0 0 0.15rem 0; color: var(--rs-primary); font-size: 1.05rem; font-weight: 800; line-height: 1.25; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><?php 
             echo htmlspecialchars($sidebarSeriesTitle); 
-        ?></h3>
-        <p style="margin: 0; opacity: 0.8; font-size: 0.85rem; font-weight: 600; line-height: 1.4;"><?php echo htmlspecialchars($sidebarPageTitle); ?></p>
+        ?></a>
+        <p title="<?php echo htmlspecialchars($sidebarPageTitle); ?>" style="margin: 0; opacity: 0.78; font-size: 0.78rem; font-weight: 600; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><?php echo htmlspecialchars($sidebarPageTitle); ?></p>
     </div>
 
-    <hr style="border:0; border-top:1px solid var(--rs-border); margin: 0 0 1.25rem 0;">
-
-    <!-- Quick Access Actions Grid -->
-    <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-bottom: 1.25rem;">
-        <div style="display: flex; gap: 0.5rem;">
-            <a href="/" class="rs-btn rs-btn-brand" style="flex: 1; text-align: center; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 4px;"><i class="ph ph-house"></i> Home</a>
-            <a href="/library" class="rs-btn" style="flex: 1; text-align: center; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 4px;"><i class="ph ph-books"></i> Library</a>
-        </div>
-        <div style="display: flex; gap: 0.5rem;">
-            <button id="reader-bookmark-btn" class="rs-btn" style="flex: 1; display: flex; align-items: center; justify-content: center; gap: 4px;"><i class="ph ph-bookmark"></i> Bookmark</button>
-            <!-- Triggers global settings modal -->
-            <a href="/settings" class="rs-btn" style="flex: 1; text-align: center; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 4px;"><i class="ph ph-gear"></i> Settings</a>
-        </div>
+    <!-- 3. Single-Row Quick Access Toolbar (Home, Library, Bookmark, Settings) -->
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.35rem; margin-bottom: 0.65rem;">
+        <a href="/" class="rs-btn rs-btn-brand" title="Book Reader Home" style="text-align: center; text-decoration: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 0.38rem 0.2rem; font-size: 0.72rem; font-weight: 700; border-radius: 7px;">
+            <i class="ph ph-house" style="font-size: 1rem;"></i>
+            <span>Home</span>
+        </a>
+        <a href="/library" class="rs-btn" title="Full Book Library" style="text-align: center; text-decoration: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 0.38rem 0.2rem; font-size: 0.72rem; font-weight: 600; border-radius: 7px;">
+            <i class="ph ph-books" style="font-size: 1rem;"></i>
+            <span>Library</span>
+        </a>
+        <button id="reader-bookmark-btn" class="rs-btn" title="Bookmark This Part" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 0.38rem 0.2rem; font-size: 0.72rem; font-weight: 600; border-radius: 7px;">
+            <i class="ph ph-bookmark" style="font-size: 1rem;"></i>
+            <span>Save</span>
+        </button>
+        <a href="/settings" class="rs-btn" title="Reader Typography & Theme Settings" style="text-align: center; text-decoration: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 0.38rem 0.2rem; font-size: 0.72rem; font-weight: 600; border-radius: 7px;">
+            <i class="ph ph-gear" style="font-size: 1rem;"></i>
+            <span>Settings</span>
+        </a>
     </div>
 
-    <!-- 
-      Instant Search Bar
-      Acts as a standard form fallback, but enhanced via JS for instant typeahead 
-    -->
-    <form action="/search" method="GET" class="search-container" style="position: relative; margin-bottom: 1.25rem;">
-        <input type="text" id="rs-book-search" name="q" placeholder="Search the universe..." style="width: 100%; padding: 0.75rem 1rem; border-radius: 6px; border: 1px solid var(--rs-border); background: var(--rs-surface); color: var(--rs-text); font-size: 0.95rem;">
-        <div id="rs-search-results" style="display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 6px; max-height: 350px; overflow-y: auto; z-index: 1000; box-shadow: 0 8px 24px rgba(0,0,0,0.15); margin-top: 4px;"></div>
+    <!-- 4. Compact Instant Search Bar -->
+    <form action="/search" method="GET" class="search-container" style="position: relative; margin-bottom: 0.65rem;">
+        <input type="text" id="rs-book-search" name="q" placeholder="Search the universe..." style="width: 100%; padding: 0.5rem 0.75rem; border-radius: 7px; border: 1px solid var(--rs-border); background: var(--rs-surface); color: var(--rs-text); font-size: 0.86rem;">
+        <div id="rs-search-results" style="display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 6px; max-height: 320px; overflow-y: auto; z-index: 1000; box-shadow: 0 8px 24px rgba(0,0,0,0.15); margin-top: 4px;"></div>
     </form>
 
-    <!-- E-Book Download Links (Illustrated Edition + Text-Only Edition with pleasant human-readable file sizes) -->
+    <hr style="border:0; border-top:1px solid var(--rs-border); margin: 0 0 0.5rem 0;">
+    
+    <!-- 5. Primary Contextual Book Navigation (De-duplicated) -->
+    <nav class="toc-nav" style="display: flex; flex-direction: column; gap: 0.2rem;">
+        <a href="<?php echo htmlspecialchars($sbUpUrl); ?>" class="sidebar-nav-link" style="display: flex; align-items: center; gap: 0.6rem; text-decoration: none; padding: 0.45rem 0.55rem; border-radius: 6px; color: var(--rs-text); font-size: 0.88rem; font-weight: 600;">
+            <i class="ph ph-book-open" style="font-size: 1.1rem;"></i> Series Overview
+        </a>
+        <a href="/<?php echo htmlspecialchars($seriesSlug); ?>/toc" class="sidebar-nav-link" style="display: flex; align-items: center; gap: 0.6rem; text-decoration: none; padding: 0.45rem 0.55rem; border-radius: 6px; color: var(--rs-text); font-size: 0.88rem; font-weight: 600;">
+            <i class="ph ph-list" style="font-size: 1.1rem;"></i> Table of Contents
+        </a>
+        <?php
+        $sbIllusCount = (int)($toc_manifest['illustration_count'] ?? ($routeData['common']['illustration_count'] ?? 0));
+        ?>
+        <a href="/<?php echo htmlspecialchars($seriesSlug); ?>/illustrations" class="sidebar-nav-link" style="display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; text-decoration: none; padding: 0.45rem 0.55rem; border-radius: 6px; color: var(--rs-text); font-size: 0.88rem; font-weight: 600;">
+            <span style="display: inline-flex; align-items: center; gap: 0.6rem;">
+                <i class="ph ph-images" style="font-size: 1.1rem;"></i> Table of Illustrations
+            </span>
+            <?php if ($sbIllusCount > 0): ?>
+                <span style="font-size: 0.7rem; font-weight: 700; padding: 0.1rem 0.45rem; border-radius: 999px; background: rgba(227, 178, 124, 0.2); color: var(--rs-primary);"><?php echo $sbIllusCount; ?></span>
+            <?php endif; ?>
+        </a>
+        
+        <!-- 6. Side-by-Side Previous / Next Part Flipper -->
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; margin-top: 0.45rem; padding-top: 0.5rem; border-top: 1px solid var(--rs-border);">
+            <?php if ($sbPrevUrl): ?>
+                <a href="<?php echo htmlspecialchars($sbPrevUrl); ?>" class="rs-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.3rem; text-decoration: none; padding: 0.42rem 0.4rem; border-radius: 7px; color: var(--rs-text); font-size: 0.8rem; font-weight: 600;">
+                    <i class="ph ph-caret-left" style="font-size: 0.95rem;"></i> Prev Part
+                </a>
+            <?php else: ?>
+                <span class="rs-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.3rem; padding: 0.42rem 0.4rem; border-radius: 7px; color: var(--rs-text); opacity: 0.4; cursor: not-allowed; font-size: 0.8rem; font-weight: 600;">
+                    <i class="ph ph-caret-left" style="font-size: 0.95rem;"></i> Prev Part
+                </span>
+            <?php endif; ?>
+
+            <?php if ($sbNextUrl): ?>
+                <a href="<?php echo htmlspecialchars($sbNextUrl); ?>" class="rs-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.3rem; text-decoration: none; padding: 0.42rem 0.4rem; border-radius: 7px; color: var(--rs-text); font-size: 0.8rem; font-weight: 600;">
+                    Next Part <i class="ph ph-caret-right" style="font-size: 0.95rem;"></i>
+                </a>
+            <?php else: ?>
+                <span class="rs-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.3rem; padding: 0.42rem 0.4rem; border-radius: 7px; color: var(--rs-text); opacity: 0.4; cursor: not-allowed; font-size: 0.8rem; font-weight: 600;">
+                    Next Part <i class="ph ph-caret-right" style="font-size: 0.95rem;"></i>
+                </span>
+            <?php endif; ?>
+        </div>
+    </nav>
+
+    <!-- 7. Compact E-Book Editions Strip (Illustrated + Text-Only) -->
     <?php if (!empty($seriesSlug) && !empty($toc_manifest)):
         $sbSizes = !empty($ebookSizes) && is_array($ebookSizes)
             ? $ebookSizes
@@ -177,76 +221,28 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
         $sbTextEpubSize = $sbSizes['text_epub'] ?? '';
         $sbTextPdfSize  = $sbSizes['text_pdf'] ?? '';
     ?>
-    <div style="margin-bottom: 1.25rem; display: flex; flex-direction: column; gap: 0.45rem;">
-        <div style="display: flex; gap: 0.5rem;">
-            <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.epub"); ?>" target="_blank" class="rs-btn" title="Download Illustrated EPUB<?php echo $sbEpubSize ? ' (' . htmlspecialchars($sbEpubSize) . ')' : ''; ?>" style="flex: 1; text-decoration: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; font-size: 0.85rem; padding: 0.45rem 0.4rem; line-height: 1.2;">
-                <span style="display: inline-flex; align-items: center; gap: 4px; font-weight: 600;"><i class="ph ph-book-open"></i> EPUB</span>
-                <?php if ($sbEpubSize): ?><span style="font-size: 0.72rem; opacity: 0.78; font-weight: 500;"><?php echo htmlspecialchars($sbEpubSize); ?></span><?php endif; ?>
-            </a>
-            <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.pdf"); ?>" target="_blank" class="rs-btn" title="Download Illustrated PDF<?php echo $sbPdfSize ? ' (' . htmlspecialchars($sbPdfSize) . ')' : ''; ?>" style="flex: 1; text-decoration: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; font-size: 0.85rem; padding: 0.45rem 0.4rem; line-height: 1.2;">
-                <span style="display: inline-flex; align-items: center; gap: 4px; font-weight: 600;"><i class="ph ph-file-pdf"></i> PDF</span>
-                <?php if ($sbPdfSize): ?><span style="font-size: 0.72rem; opacity: 0.78; font-weight: 500;"><?php echo htmlspecialchars($sbPdfSize); ?></span><?php endif; ?>
-            </a>
+    <div style="margin-top: 0.65rem; padding: 0.5rem 0.6rem; border-radius: 8px; background: var(--rs-surface); border: 1px solid var(--rs-border); display: flex; flex-direction: column; gap: 0.35rem;">
+        <div style="display: flex; align-items: center; justify-content: space-between; gap: 0.35rem;">
+            <span style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.78;"><i class="ph ph-download-simple"></i> E-Book</span>
+            <div style="display: inline-flex; gap: 0.35rem;">
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.epub"); ?>" target="_blank" title="Download Illustrated EPUB<?php echo $sbEpubSize ? ' (' . htmlspecialchars($sbEpubSize) . ')' : ''; ?>" style="text-decoration: none; font-size: 0.74rem; font-weight: 700; padding: 0.18rem 0.48rem; border-radius: 5px; background: var(--rs-bg); border: 1px solid var(--rs-border); color: var(--rs-heading);">
+                    EPUB<?php echo $sbEpubSize ? ' <span style="opacity:0.7;font-weight:500;">(' . htmlspecialchars($sbEpubSize) . ')</span>' : ''; ?>
+                </a>
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.pdf"); ?>" target="_blank" title="Download Illustrated PDF<?php echo $sbPdfSize ? ' (' . htmlspecialchars($sbPdfSize) . ')' : ''; ?>" style="text-decoration: none; font-size: 0.74rem; font-weight: 700; padding: 0.18rem 0.48rem; border-radius: 5px; background: var(--rs-bg); border: 1px solid var(--rs-border); color: var(--rs-heading);">
+                    PDF<?php echo $sbPdfSize ? ' <span style="opacity:0.7;font-weight:500;">(' . htmlspecialchars($sbPdfSize) . ')</span>' : ''; ?>
+                </a>
+            </div>
         </div>
-        <div style="font-size: 0.75rem; opacity: 0.9; padding: 0.4rem 0.5rem; border-radius: 6px; background: var(--rs-surface); border: 1px solid var(--rs-border); display: flex; flex-direction: column; gap: 0.2rem; text-align: center;">
-            <span style="opacity: 0.85;"><i class="ph ph-file-text"></i> Text-Only Edition (No Images):</span>
-            <span style="display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; flex-wrap: wrap;">
-                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.epub"); ?>" target="_blank" title="Download Text-Only EPUB (No Images<?php echo $sbTextEpubSize ? ' — ' . htmlspecialchars($sbTextEpubSize) : ''; ?>)" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 2px;">EPUB<?php echo $sbTextEpubSize ? ' (' . htmlspecialchars($sbTextEpubSize) . ')' : ''; ?></a>
-                <span aria-hidden="true" style="opacity: 0.6;">&bull;</span>
-                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.pdf"); ?>" target="_blank" title="Download Text-Only PDF (No Images<?php echo $sbTextPdfSize ? ' — ' . htmlspecialchars($sbTextPdfSize) : ''; ?>)" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 2px;">PDF<?php echo $sbTextPdfSize ? ' (' . htmlspecialchars($sbTextPdfSize) . ')' : ''; ?></a>
+        <div style="font-size: 0.68rem; opacity: 0.85; display: flex; align-items: center; justify-content: space-between; gap: 0.3rem; border-top: 1px dashed var(--rs-border); padding-top: 0.28rem;">
+            <span>Text-Only:</span>
+            <span style="display: inline-flex; align-items: center; gap: 0.35rem;">
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.epub"); ?>" target="_blank" style="color: var(--rs-primary); font-weight: 600; text-decoration: none;">EPUB<?php echo $sbTextEpubSize ? ' (' . htmlspecialchars($sbTextEpubSize) . ')' : ''; ?></a>
+                <span aria-hidden="true" style="opacity: 0.5;">&bull;</span>
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.pdf"); ?>" target="_blank" style="color: var(--rs-primary); font-weight: 600; text-decoration: none;">PDF<?php echo $sbTextPdfSize ? ' (' . htmlspecialchars($sbTextPdfSize) . ')' : ''; ?></a>
             </span>
         </div>
     </div>
-    <hr style="border:0; border-top:1px solid var(--rs-border); margin: 0 0 1.25rem 0;">
     <?php endif; ?>
-    
-    <!-- Primary Contextual Navigation Links -->
-    <nav class="toc-nav" style="display: flex; flex-direction: column; gap: 0.5rem;">
-        <a href="/library" class="sidebar-nav-link" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; padding: 0.75rem 0.5rem; border-radius: 6px; color: var(--rs-text); font-weight: 500;">
-            <i class="ph ph-books" style="font-size: 1.25rem;"></i> Library
-        </a>
-        <a href="<?php echo htmlspecialchars($sbUpUrl); ?>" class="sidebar-nav-link" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; padding: 0.75rem 0.5rem; border-radius: 6px; color: var(--rs-text); font-weight: 500;">
-            <i class="ph ph-book-open" style="font-size: 1.25rem;"></i> Series Overview
-        </a>
-        <a href="/<?php echo htmlspecialchars($seriesSlug); ?>/toc" class="sidebar-nav-link" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; padding: 0.75rem 0.5rem; border-radius: 6px; color: var(--rs-text); font-weight: 500;">
-            <i class="ph ph-list" style="font-size: 1.25rem;"></i> Table of Contents
-        </a>
-        <?php
-        $sbIllusCount = (int)($toc_manifest['illustration_count'] ?? ($routeData['common']['illustration_count'] ?? 0));
-        ?>
-        <a href="/<?php echo htmlspecialchars($seriesSlug); ?>/illustrations" class="sidebar-nav-link" style="display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; text-decoration: none; padding: 0.75rem 0.5rem; border-radius: 6px; color: var(--rs-text); font-weight: 500;">
-            <span style="display: inline-flex; align-items: center; gap: 0.75rem;">
-                <i class="ph ph-images" style="font-size: 1.25rem;"></i> Table of Illustrations
-            </span>
-            <?php if ($sbIllusCount > 0): ?>
-                <span style="font-size: 0.72rem; font-weight: 700; padding: 0.12rem 0.48rem; border-radius: 999px; background: rgba(227, 178, 124, 0.2); color: var(--rs-primary);"><?php echo $sbIllusCount; ?></span>
-            <?php endif; ?>
-        </a>
-        
-        <hr style="border:0; border-top:1px solid var(--rs-border); margin: 10px 0;">
-        
-        <!-- Render "Previous Part" conditionally if calculated -->
-        <?php if ($sbPrevUrl): ?>
-            <a href="<?php echo htmlspecialchars($sbPrevUrl); ?>" class="sidebar-nav-link" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; padding: 0.75rem 0.5rem; border-radius: 6px; color: var(--rs-text); font-weight: 500;">
-                <i class="ph ph-caret-left" style="font-size: 1.25rem;"></i> Previous Part
-            </a>
-        <?php else: ?>
-            <span style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 0.5rem; color: var(--rs-text); opacity: 0.5; cursor: not-allowed; font-weight: 500;">
-                <i class="ph ph-caret-left" style="font-size: 1.25rem;"></i> Previous Part
-            </span>
-        <?php endif; ?>
-
-        <!-- Render "Next Part" conditionally if calculated -->
-        <?php if ($sbNextUrl): ?>
-            <a href="<?php echo htmlspecialchars($sbNextUrl); ?>" class="sidebar-nav-link" style="display: flex; align-items: center; gap: 0.75rem; text-decoration: none; padding: 0.75rem 0.5rem; border-radius: 6px; color: var(--rs-text); font-weight: 500;">
-                <i class="ph ph-caret-right" style="font-size: 1.25rem;"></i> Next Part
-            </a>
-        <?php else: ?>
-            <span style="display: flex; align-items: center; gap: 0.75rem; padding: 0.75rem 0.5rem; color: var(--rs-text); opacity: 0.5; cursor: not-allowed; font-weight: 500;">
-                <i class="ph ph-caret-right" style="font-size: 1.25rem;"></i> Next Part
-            </span>
-        <?php endif; ?>
-    </nav>
 </aside>
 
 <!-- Hover Styles for Sidebar Links -->

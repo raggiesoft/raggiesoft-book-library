@@ -197,6 +197,11 @@ $headerAssetsUrl = !empty($cdnBaseUrl) ? rtrim($cdnBaseUrl, '/') : 'https://asse
             display: none;
         }
     }
+    @media (min-width: 768px) {
+        .ios-tab-bar {
+            display: none !important;
+        }
+    }
 </style>
 
 <header id="stardust-header" class="rs-book-app-header" aria-label="RaggieSoft Book Reader Application Header">

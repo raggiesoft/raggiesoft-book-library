@@ -19,9 +19,9 @@
  */
 
 // Cache partition identifiers
-const CACHE_NAME = 'ova-cache-v13';
-const DYNAMIC_CACHE = 'ova-dynamic-v13';
-const IMAGE_CACHE = 'ova-images-v13';
+const CACHE_NAME = 'ova-cache-v14';
+const DYNAMIC_CACHE = 'ova-dynamic-v14';
+const IMAGE_CACHE = 'ova-images-v14';
 
 // Minimum required assets to render the offline application shell
 // Note: /manifest.json is intentionally excluded from PRECACHE_ASSETS and bypassed in fetch

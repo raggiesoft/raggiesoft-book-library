@@ -76,9 +76,9 @@ $volumeCount = count($books);
         background: linear-gradient(145deg, #092c36 0%, #0F4C5C 60%, #0a3642 100%);
         color: #ffffff;
         border-bottom: 4px solid #E3B27C;
-        padding: calc(2.25rem + env(safe-area-inset-top, 0px)) 1.5rem 2.5rem;
+        padding: calc(2rem + env(safe-area-inset-top, 0px)) 1.5rem 2.35rem;
         position: relative;
-        overflow: hidden;
+        flex-shrink: 0;
     }
 
     .ova-imprint-hero-inner {
@@ -97,7 +97,7 @@ $volumeCount = count($books);
         align-items: center;
         justify-content: center;
         gap: 1.15rem;
-        margin-bottom: 1.15rem;
+        margin-bottom: 1rem;
         flex-wrap: wrap;
     }
 
@@ -109,9 +109,9 @@ $volumeCount = count($books);
     }
 
     .ova-app-icon-hero {
-        width: 104px;
-        height: 104px;
-        border-radius: 24px;
+        width: 96px;
+        height: 96px;
+        border-radius: 22px;
         object-fit: cover;
         border: 2px solid #E3B27C;
         box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45), 0 0 20px rgba(227, 178, 124, 0.22);
@@ -119,8 +119,8 @@ $volumeCount = count($books);
     }
 
     .ova-crest-img {
-        width: 104px;
-        height: 104px;
+        width: 96px;
+        height: 96px;
         object-fit: contain;
         filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.4));
     }
@@ -149,35 +149,37 @@ $volumeCount = count($books);
         margin-bottom: 1.2rem;
     }
 
-    /* Mode-Aware PWA Elevation (Option 3):
-       When running as an installed PWA (`html.is-pwa-standalone`), elevate the
-       Active Reading Session card to the very top of the home view above the Hero. */
-    #stardust-main-content {
-        display: flex;
-        flex-direction: column;
-    }
-
+    /* Welcoming Hero Active Reading Session Card:
+       Sits natively inside the Hero banner so returning readers immediately see
+       their active book and "Resume Reading" button above the fold with zero layout clipping. */
     #rs-home-jump-back-outer {
         width: 100%;
-        order: 2;
+        max-width: 860px;
+        margin: 0 auto 1.35rem;
     }
 
-    .ova-imprint-hero {
-        order: 1;
+    #rs-home-jump-back {
+        background: rgba(9, 30, 38, 0.84);
+        border: 1.5px solid rgba(227, 178, 124, 0.72);
+        border-radius: 16px;
+        padding: 1rem 1.25rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.32);
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
     }
 
     .ova-home-body-container {
-        order: 3;
         width: 100%;
         max-width: 1140px;
         margin: 0 auto;
         padding: 2.25rem 1.5rem 1rem;
-    }
-
-    html.is-pwa-standalone #rs-home-jump-back-outer {
-        order: 0;
-        background: linear-gradient(180deg, rgba(9, 44, 54, 0.42) 0%, transparent 100%);
-        border-bottom: 1px solid rgba(227, 178, 124, 0.22);
+        flex-shrink: 0;
     }
 
     .ova-imprint-badge {
@@ -520,6 +522,37 @@ $volumeCount = count($books);
                 A grounded, unshakeable literary sanctuary built to preserve and bind the history of the pack. Read serialized contemporary novels, sci-fi directives, and fantasy sagas inside the distraction-free <strong>RaggieSoft Book Reader</strong>&mdash;complete with offline caching, dyslexia-friendly typography, and companion soundtracks.
             </p>
 
+            <!-- 
+              WELCOMING CONTINUE READING CARD (EMBEDDED INSIDE HERO)
+              Hidden by default; appears right inside the welcoming Hero banner if the reader
+              has an active 'rs-last-read' book in localStorage.
+            -->
+            <div id="rs-home-jump-back-outer" style="display: none;">
+                <div id="rs-home-jump-back">
+                    <div style="display: flex; gap: 1rem; align-items: center; min-width: 220px; flex: 1;">
+                        <div style="width: 58px; height: 87px; flex-shrink: 0; border-radius: 7px; overflow: hidden; border: 1px solid rgba(227, 178, 124, 0.55); box-shadow: 0 4px 12px rgba(0,0,0,0.35);">
+                            <img id="rs-jump-cover" src="" alt="Cover" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div>
+                            <span style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: #f6d5a8; margin-bottom: 0.2rem;">
+                                <img src="/icons/icon-192.png?v=4" alt="" aria-hidden="true" style="width: 16px; height: 16px; border-radius: 4px;">
+                                <span>Welcome Back &bull; Active Reading Session</span>
+                            </span>
+                            <h2 id="rs-jump-series" style="font-size: 1.2rem; margin: 0 0 0.15rem 0; font-weight: 800; color: #ffffff;">Loading...</h2>
+                            <p id="rs-jump-part" style="font-size: 0.86rem; color: #cbd5e1; margin: 0;">Pick up right where you left off</p>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center;">
+                        <a id="rs-jump-btn" href="#" class="ova-btn-bronze">
+                            <i class="ph-fill ph-book-open"></i> Resume Reading
+                        </a>
+                        <a href="/library" class="ova-btn-ghost">
+                            <i class="ph-fill ph-books"></i> Full Library
+                        </a>
+                    </div>
+                </div>
+            </div>
+
             <div class="ova-hero-actions">
                 <a href="/aubrie" class="ova-btn-bronze">
                     <i class="ph-fill ph-star"></i> Featured: The Eleventh Child
@@ -537,39 +570,6 @@ $volumeCount = count($books);
         </div>
     </section>
 
-    <!-- 
-      OPTIONAL CONTINUE READING BAR (ELEVATED ABOVE HERO IN INSTALLED PWA MODE)
-      Hidden by default; only appears if the reader has an active 'rs-last-read' book in localStorage.
-      In installed PWA mode (`html.is-pwa-standalone`), CSS `order: 0` places this right at the top of the screen!
-    -->
-    <div id="rs-home-jump-back-outer" style="display: none;">
-        <div style="max-width: 1140px; margin: 0 auto; padding: 1.5rem 1.5rem 0;">
-            <div id="rs-home-jump-back" style="background: var(--rs-surface); border: 1.5px solid rgba(227, 178, 124, 0.45); border-radius: 14px; padding: 1.15rem 1.25rem; display: flex; flex-wrap: wrap; gap: 1rem; box-shadow: 0 6px 18px rgba(0,0,0,0.12); align-items: center; justify-content: space-between;">
-                <div style="display: flex; gap: 1rem; align-items: center; min-width: 240px; flex: 1;">
-                    <div style="width: 64px; height: 96px; flex-shrink: 0; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.18);">
-                        <img id="rs-jump-cover" src="" alt="Cover" style="width: 100%; height: 100%; object-fit: cover;">
-                    </div>
-                    <div>
-                        <span style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--rs-primary); margin-bottom: 0.25rem;">
-                            <img src="/icons/icon-192.png?v=4" alt="" aria-hidden="true" style="width: 16px; height: 16px; border-radius: 4px;">
-                            <span>Book Reader &bull; Active Reading Session</span>
-                        </span>
-                        <h2 id="rs-jump-series" style="font-size: 1.2rem; margin: 0 0 0.2rem 0; font-weight: 800; color: var(--rs-heading);">Loading...</h2>
-                        <p id="rs-jump-part" style="font-size: 0.88rem; color: var(--rs-text); opacity: 0.85; margin: 0;">Pick up right where you left off</p>
-                    </div>
-                </div>
-                <div style="display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center;">
-                    <a id="rs-jump-btn" href="#" class="ova-gateway-primary-btn">
-                        <i class="ph-fill ph-book-open"></i> Resume Reading
-                    </a>
-                    <a href="/library" class="ova-gateway-secondary-btn">
-                        <i class="ph-fill ph-books"></i> Full Library
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-    
     <!-- 
       HOME PAGE CONTENT CONTAINER
     -->
