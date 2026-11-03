@@ -17,19 +17,19 @@
             "text_epub": "65 KB",
             "text_pdf": "194 KB",
             "package_7z": "52 KB",
-            "epub_bytes": 11277928,
-            "pdf_bytes": 12395345,
-            "text_epub_bytes": 66313,
-            "text_pdf_bytes": 198296,
-            "package_7z_bytes": 53237
+            "epub_bytes": 11277968,
+            "pdf_bytes": 12395038,
+            "text_epub_bytes": 66351,
+            "text_pdf_bytes": 198187,
+            "package_7z_bytes": 53186
         },
         "illustration_count": 17,
         "word_stats": {
-            "story_word_count": 23934,
+            "story_word_count": 23970,
             "lore_word_count": 121,
-            "combined_word_count": 24055,
+            "combined_word_count": 24091,
             "story_page_count": 87,
-            "combined_page_count": 87,
+            "combined_page_count": 88,
             "reading_hours": 1.6,
             "reading_minutes": 96,
             "novel_equivalent": 0.3,
@@ -270,15 +270,15 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|3"
     },
-    "/katie/sixteen-summer-sanctuary/sixteen-on-four-wheels-finding-dates/part-1-part-1-navigating-northwood-high-on-four-wheels-the-homecoming-pact": {
+    "/katie/sixteen-summer-sanctuary/sixteen-on-four-wheels-finding-dates/part-1-part-1-navigating-northwood-high-on-four-wheels-two-first-dates-why-we-ride-on-saturday": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Part 1: Navigating Northwood High on Four Wheels & The Homecoming Pact",
+        "title": "Part 1: Part 1: Navigating Northwood High on Four Wheels, Two First Dates, & Why We Ride on Saturday",
         "theme": "raggiesoft-books",
         "filePath": "e003/c004/p001.md"
     },
-    "/katie/sixteen-summer-sanctuary/sixteen-on-four-wheels-finding-dates/part-2-part-2-asking-out-heather-and-ryan-the-double-date-at-emerald-creek-mall": {
+    "/katie/sixteen-summer-sanctuary/sixteen-on-four-wheels-finding-dates/part-2-part-2-cousin-wesley-ryan-s-escalator-exit-two-dates-at-emerald-creek-mall": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Part 2: Asking Out Heather and Ryan & The Double Date at Emerald Creek Mall",
+        "title": "Part 2: Part 2: Cousin Wesley, Ryan's Escalator Exit, & Two Dates at Emerald Creek Mall",
         "theme": "raggiesoft-books",
         "filePath": "e003/c004/p002.md"
     }
