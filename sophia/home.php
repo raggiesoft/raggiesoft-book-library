@@ -48,12 +48,12 @@ $rawStatsJson = is_file($localStatsPath)
     ? @file_get_contents($localStatsPath)
     : @file_get_contents($cdnStatsUrl);
 $libraryStats = $rawStatsJson ? (json_decode($rawStatsJson, true) ?? []) : [];
-$homeTotals = $libraryStats['totals'] ?? [];
-$homeStoryWords = (int)($homeTotals['story_word_count'] ?? 0);
-$homeLoreWords = (int)($homeTotals['lore_word_count'] ?? 0);
-$homeCombinedWords = (int)($homeTotals['combined_word_count'] ?? ($homeStoryWords + $homeLoreWords));
-$homeTotalPages = (int)($homeTotals['estimated_total_pages'] ?? ($homeCombinedWords > 0 ? ceil($homeCombinedWords / 275) : 0));
-$homeNovelEquivs = (float)($homeTotals['standard_90k_novel_equivalents_story'] ?? ($homeStoryWords > 0 ? round($homeStoryWords / 90000, 1) : 0));
+$homeTotals = $libraryStats['totals'] ?? $libraryStats;
+$homeStoryWords = (int)($homeTotals['total_story_words'] ?? ($homeTotals['story_word_count'] ?? 0));
+$homeLoreWords = (int)($homeTotals['total_curated_lore_words'] ?? ($homeTotals['lore_word_count'] ?? 0));
+$homeCombinedWords = (int)($homeTotals['total_combined_words'] ?? ($homeTotals['combined_word_count'] ?? ($homeStoryWords + $homeLoreWords)));
+$homeTotalPages = (int)($homeTotals['total_combined_pages'] ?? ($homeTotals['estimated_total_pages'] ?? ($homeCombinedWords > 0 ? ceil($homeCombinedWords / 275) : 0)));
+$homeNovelEquivs = (float)($homeTotals['total_novel_equivalents'] ?? ($homeTotals['standard_90k_novel_equivalents_story'] ?? ($homeStoryWords > 0 ? round($homeStoryWords / 90000, 1) : 0)));
 ?>
 
 <!-- ARCHITECTURE: Semantic Publisher & CollectionPage JSON-LD metadata -->

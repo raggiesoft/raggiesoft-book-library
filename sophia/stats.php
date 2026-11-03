@@ -171,33 +171,47 @@ foreach ($booksList as $bItem) {
     }
     .ova-scale-tiers-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
-        gap: 0.75rem;
+        grid-template-columns: repeat(6, minmax(0, 1fr));
+        gap: 0.65rem;
         margin-top: 0.9rem;
+    }
+    @media (max-width: 1120px) {
+        .ova-scale-tiers-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+    }
+    @media (max-width: 639px) {
+        .ova-scale-tiers-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
     }
     .ova-scale-tier-box {
         background: var(--rs-bg);
         border: 1px solid var(--rs-border);
         border-radius: 10px;
-        padding: 0.75rem 0.9rem;
+        padding: 0.7rem 0.75rem;
+        min-width: 0;
     }
     .ova-scale-tier-name {
-        font-size: 0.82rem;
+        font-size: 0.78rem;
         font-weight: 800;
         color: var(--rs-primary);
         margin-bottom: 0.15rem;
+        line-height: 1.25;
     }
     .ova-scale-tier-range {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         font-weight: 800;
         color: var(--rs-heading);
         font-variant-numeric: tabular-nums;
+        line-height: 1.25;
     }
     .ova-scale-tier-note {
-        font-size: 0.75rem;
+        font-size: 0.72rem;
         color: var(--rs-text);
         opacity: 0.82;
-        margin-top: 0.15rem;
+        margin-top: 0.18rem;
+        line-height: 1.3;
     }
 
     .ova-stats-toolbar {
@@ -239,42 +253,62 @@ foreach ($booksList as $bItem) {
         background: var(--rs-surface);
         color: var(--rs-text);
         font-size: 0.86rem;
-        min-width: 240px;
+        min-width: 220px;
+        max-width: 100%;
     }
 
     .ova-stats-table-wrap {
         width: 100%;
-        overflow-x: auto;
         background: var(--rs-surface);
         border: 1px solid var(--rs-border);
         border-radius: 14px;
+        overflow: hidden;
     }
     .ova-stats-table {
         width: 100%;
+        table-layout: fixed;
         border-collapse: collapse;
-        font-size: 0.88rem;
+        font-size: 0.85rem;
         font-variant-numeric: tabular-nums;
     }
     .ova-stats-table th {
         text-align: left;
-        padding: 0.85rem 1rem;
-        font-size: 0.74rem;
+        padding: 0.75rem 0.65rem;
+        font-size: 0.7rem;
         font-weight: 800;
         text-transform: uppercase;
-        letter-spacing: 0.07em;
+        letter-spacing: 0.05em;
         color: var(--rs-primary);
         border-bottom: 2px solid var(--rs-border);
-        white-space: nowrap;
+        line-height: 1.25;
+        vertical-align: bottom;
     }
+    .ova-stats-table th.col-rank { width: 38px; text-align: center; }
+    .ova-stats-table th.col-vol  { width: 29%; }
+    .ova-stats-table th.col-story { width: 11%; }
+    .ova-stats-table th.col-lore  { width: 11%; }
+    .ova-stats-table th.col-total { width: 12%; }
+    .ova-stats-table th.col-pages { width: 13%; }
+    .ova-stats-table th.col-scale { width: 24%; }
+
     .ova-stats-table th.num,
     .ova-stats-table td.num {
         text-align: right;
     }
     .ova-stats-table td {
-        padding: 0.85rem 1rem;
+        padding: 0.8rem 0.65rem;
         border-bottom: 1px solid var(--rs-border);
         vertical-align: middle;
         color: var(--rs-text);
+        overflow-wrap: break-word;
+    }
+    .ova-stats-table td.cell-rank {
+        text-align: center;
+        font-weight: 800;
+        opacity: 0.65;
+    }
+    .ova-stats-table tbody tr:last-child td {
+        border-bottom: none;
     }
     .ova-stats-table tbody tr:hover {
         background: rgba(227, 178, 124, 0.06);
@@ -282,12 +316,12 @@ foreach ($booksList as $bItem) {
     .ova-stats-book-cell {
         display: flex;
         align-items: center;
-        gap: 0.75rem;
-        min-width: 230px;
+        gap: 0.65rem;
+        min-width: 0;
     }
     .ova-stats-book-thumb {
-        width: 38px;
-        height: 57px;
+        width: 36px;
+        height: 54px;
         border-radius: 5px;
         object-fit: cover;
         flex-shrink: 0;
@@ -295,24 +329,25 @@ foreach ($booksList as $bItem) {
     }
     .ova-stats-book-link {
         font-weight: 800;
-        font-size: 0.95rem;
+        font-size: 0.92rem;
         color: var(--rs-heading);
         text-decoration: none;
         display: block;
+        line-height: 1.25;
     }
     .ova-stats-book-link:hover {
         color: var(--rs-primary);
         text-decoration: underline;
     }
     .ova-stats-book-meta {
-        font-size: 0.75rem;
-        opacity: 0.78;
+        font-size: 0.73rem;
+        opacity: 0.8;
         margin-top: 0.15rem;
+        line-height: 1.3;
     }
     .ova-stats-bar-track {
         width: 100%;
-        min-width: 130px;
-        height: 8px;
+        height: 7px;
         background: var(--rs-bg);
         border-radius: 999px;
         overflow: hidden;
@@ -330,14 +365,108 @@ foreach ($booksList as $bItem) {
     }
     .ova-scale-badge {
         display: inline-block;
-        padding: 0.2rem 0.55rem;
+        padding: 0.18rem 0.5rem;
         border-radius: 999px;
-        font-size: 0.72rem;
+        font-size: 0.7rem;
         font-weight: 800;
         background: rgba(227, 178, 124, 0.16);
         color: var(--rs-heading);
         border: 1px solid rgba(227, 178, 124, 0.45);
-        white-space: nowrap;
+        max-width: 100%;
+    }
+    .ova-mobile-rank-pill {
+        display: none;
+    }
+
+    /* =========================================================================
+       MOBILE & COMPACT TABLET CARD LAYOUT (< 860px)
+       Transforms each table row into a native zero-horizontal-scroll card so
+       no columns are ever clipped on phones or split-screen tablets.
+       ========================================================================= */
+    @media (max-width: 859px) {
+        .ova-stats-search-input {
+            width: 100%;
+        }
+        .ova-stats-table,
+        .ova-stats-table tbody {
+            display: block;
+            width: 100%;
+        }
+        .ova-stats-table thead {
+            display: none;
+        }
+        .ova-stats-table tbody tr.ova-stats-row {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 0.55rem;
+            padding: 0.95rem 1rem;
+            border-bottom: 1px solid var(--rs-border);
+        }
+        .ova-stats-table td {
+            border-bottom: none;
+            padding: 0;
+        }
+        .ova-stats-table td.cell-rank {
+            display: none;
+        }
+        .ova-mobile-rank-pill {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.68rem;
+            font-weight: 800;
+            padding: 0.08rem 0.42rem;
+            border-radius: 6px;
+            background: rgba(227, 178, 124, 0.18);
+            color: var(--rs-primary);
+            margin-right: 0.35rem;
+            vertical-align: middle;
+        }
+        .ova-stats-table td.cell-vol {
+            grid-column: 1 / -1;
+            margin-bottom: 0.25rem;
+        }
+        .ova-stats-table td.cell-metric {
+            text-align: left !important;
+            background: var(--rs-bg);
+            border: 1px solid var(--rs-border);
+            border-radius: 8px;
+            padding: 0.45rem 0.55rem;
+        }
+        .ova-stats-table td.cell-metric::before {
+            content: attr(data-label);
+            display: block;
+            font-size: 0.63rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--rs-primary);
+            margin-bottom: 0.12rem;
+        }
+        .ova-stats-table td.cell-pages,
+        .ova-stats-table td.cell-scale {
+            grid-column: 1 / -1;
+            text-align: left !important;
+        }
+        .ova-stats-table td.cell-pages {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 0.4rem;
+            font-size: 0.8rem;
+            padding-top: 0.2rem;
+        }
+        .ova-stats-table td.cell-pages::before {
+            content: "Print & Reading Estimate:";
+            font-size: 0.72rem;
+            font-weight: 700;
+            opacity: 0.75;
+        }
+        .ova-stats-table td.cell-scale {
+            padding-top: 0.35rem;
+            border-top: 1px dashed var(--rs-border);
+        }
     }
 </style>
 
@@ -474,14 +603,13 @@ foreach ($booksList as $bItem) {
                 <table class="ova-stats-table" id="ova-stats-ledger-table">
                     <thead>
                         <tr>
-                            <th style="width: 44px;">#</th>
-                            <th>Novel Volume</th>
-                            <th class="num">Story Prose</th>
-                            <th class="num">Series &amp; Album Lore</th>
-                            <th class="num">Combined Total</th>
-                            <th class="num">Est. Pages</th>
-                            <th class="num">Reading Time</th>
-                            <th>Contemporary Publishing Scale</th>
+                            <th class="col-rank">#</th>
+                            <th class="col-vol">Novel Volume</th>
+                            <th class="num col-story">Story Prose</th>
+                            <th class="num col-lore">Series Lore</th>
+                            <th class="num col-total">Combined Total</th>
+                            <th class="num col-pages">Pages &amp; Time</th>
+                            <th class="col-scale">Contemporary Publishing Scale</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -518,12 +646,14 @@ foreach ($booksList as $bItem) {
                                 : ($rHours >= 1.0 ? number_format($rHours, 1) . ' hrs' : $rMins . ' min');
                         ?>
                         <tr class="ova-stats-row" data-tier="<?= htmlspecialchars($tierKey) ?>" data-search="<?= htmlspecialchars(strtolower($bTitle . ' ' . $bSlug . ' ' . $badge . ' ' . $note)) ?>">
-                            <td style="font-weight: 800; opacity: 0.65;"><?= $idx + 1 ?></td>
-                            <td>
+                            <td class="cell-rank"><?= $idx + 1 ?></td>
+                            <td class="cell-vol">
                                 <div class="ova-stats-book-cell">
                                     <img src="<?= htmlspecialchars($bImg) ?>" alt="" class="ova-stats-book-thumb" loading="lazy">
                                     <div style="flex: 1; min-width: 0;">
-                                        <a href="/<?= htmlspecialchars($bSlug) ?>" class="ova-stats-book-link"><?= htmlspecialchars($bTitle) ?></a>
+                                        <a href="/<?= htmlspecialchars($bSlug) ?>" class="ova-stats-book-link">
+                                            <span class="ova-mobile-rank-pill">#<?= $idx + 1 ?></span><?= htmlspecialchars($bTitle) ?>
+                                        </a>
                                         <div class="ova-stats-book-meta">
                                             <?= $erasCnt ?> <?= $erasCnt === 1 ? 'Era' : 'Eras' ?> &bull;
                                             <?= $chapsCnt ?> <?= $chapsCnt === 1 ? 'Chap' : 'Chaps' ?> &bull;
@@ -539,27 +669,27 @@ foreach ($booksList as $bItem) {
                                     </div>
                                 </div>
                             </td>
-                            <td class="num" style="font-weight: 800; color: var(--rs-heading);">
+                            <td class="num cell-metric" data-label="Story Prose" style="font-weight: 800; color: var(--rs-heading);">
                                 <?= number_format($sWords) ?>
                             </td>
-                            <td class="num" style="color: var(--rs-text); opacity: 0.9;">
+                            <td class="num cell-metric" data-label="Series Lore" style="color: var(--rs-text); opacity: 0.9;">
                                 <?= number_format($lWords) ?>
                             </td>
-                            <td class="num" style="font-weight: 800; color: var(--rs-primary);">
+                            <td class="num cell-metric" data-label="Combined Total" style="font-weight: 800; color: var(--rs-primary);">
                                 <?= number_format($cWords) ?>
                             </td>
-                            <td class="num">
-                                ~<?= number_format($cPages) ?> pp
-                                <?php if ($sPages > 0 && $sPages !== $cPages): ?>
-                                    <div style="font-size: 0.72rem; opacity: 0.72;">(<?= number_format($sPages) ?> story)</div>
-                                <?php endif; ?>
+                            <td class="num cell-pages">
+                                <div>
+                                    <span style="font-weight: 700; color: var(--rs-heading);">~<?= number_format($cPages) ?> pp</span>
+                                    <span style="opacity: 0.78;"> &bull; <?= htmlspecialchars($timeLabel) ?></span>
+                                    <?php if ($sPages > 0 && $sPages !== $cPages): ?>
+                                        <div style="font-size: 0.72rem; opacity: 0.72;">(<?= number_format($sPages) ?> story pp)</div>
+                                    <?php endif; ?>
+                                </div>
                             </td>
-                            <td class="num" style="white-space: nowrap;">
-                                <?= htmlspecialchars($timeLabel) ?>
-                            </td>
-                            <td>
+                            <td class="cell-scale">
                                 <span class="ova-scale-badge"><?= htmlspecialchars($badge) ?></span>
-                                <div style="font-size: 0.75rem; opacity: 0.8; margin-top: 0.2rem; line-height: 1.35;">
+                                <div style="font-size: 0.74rem; opacity: 0.82; margin-top: 0.22rem; line-height: 1.35;">
                                     <?= htmlspecialchars($note) ?>
                                 </div>
                             </td>
@@ -634,3 +764,4 @@ foreach ($booksList as $bItem) {
     }
 })();
 </script>
+

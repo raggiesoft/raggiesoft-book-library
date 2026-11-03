@@ -113,11 +113,11 @@ $landingTextPdfSize  = $landingSizes['text_pdf'] ?? '';
             $landingStoryWords = (int)($landingWordStats['story_word_count'] ?? 0);
             $landingLoreWords = (int)($landingWordStats['lore_word_count'] ?? 0);
             $landingCombinedWords = (int)($landingWordStats['combined_word_count'] ?? ($landingStoryWords + $landingLoreWords));
-            $landingStoryPages = (int)($landingWordStats['estimated_story_pages'] ?? ($landingStoryWords > 0 ? ceil($landingStoryWords / 275) : 0));
-            $landingTotalPages = (int)($landingWordStats['estimated_total_pages'] ?? ($landingCombinedWords > 0 ? ceil($landingCombinedWords / 275) : 0));
-            $landingReadingHours = (float)($landingWordStats['reading_hours_story'] ?? ($landingStoryWords > 0 ? round($landingStoryWords / (250 * 60), 1) : 0));
-            $landingScaleLabel = (string)($landingWordStats['scale_label'] ?? '');
-            $landingScaleBenchmark = (string)($landingWordStats['scale_benchmark'] ?? '');
+            $landingStoryPages = (int)($landingWordStats['story_page_count'] ?? ($landingWordStats['estimated_story_pages'] ?? ($landingStoryWords > 0 ? ceil($landingStoryWords / 275) : 0)));
+            $landingTotalPages = (int)($landingWordStats['combined_page_count'] ?? ($landingWordStats['estimated_total_pages'] ?? ($landingCombinedWords > 0 ? ceil($landingCombinedWords / 275) : 0)));
+            $landingReadingHours = (float)($landingWordStats['reading_hours'] ?? ($landingWordStats['reading_hours_story'] ?? ($landingStoryWords > 0 ? round($landingStoryWords / (250 * 60), 1) : 0)));
+            $landingScaleLabel = (string)($landingWordStats['scale_category'] ?? ($landingWordStats['scale_label'] ?? ($landingWordStats['scale_badge'] ?? '')));
+            $landingScaleBenchmark = (string)($landingWordStats['benchmark_note'] ?? ($landingWordStats['scale_benchmark'] ?? ''));
             ?>
             <?php if ($landingCombinedWords > 0): ?>
             <!-- Dynamic Manuscript & Lore Scale Telemetry Card (Compiled by paige.php) -->
