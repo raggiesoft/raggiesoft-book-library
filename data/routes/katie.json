@@ -14,32 +14,32 @@
         "ebook_sizes": {
             "epub": "10.8 MB",
             "pdf": "11.8 MB",
-            "text_epub": "70 KB",
-            "text_pdf": "205 KB",
-            "package_7z": "55 KB",
-            "epub_bytes": 11283588,
-            "pdf_bytes": 12407433,
-            "text_epub_bytes": 71821,
-            "text_pdf_bytes": 209742,
-            "package_7z_bytes": 56544
+            "text_epub": "75 KB",
+            "text_pdf": "218 KB",
+            "package_7z": "59 KB",
+            "epub_bytes": 11288458,
+            "pdf_bytes": 12421271,
+            "text_epub_bytes": 76645,
+            "text_pdf_bytes": 222802,
+            "package_7z_bytes": 60183
         },
-        "illustration_count": 18,
+        "illustration_count": 19,
         "word_stats": {
-            "story_word_count": 25716,
+            "story_word_count": 27789,
             "lore_word_count": 121,
-            "combined_word_count": 25837,
-            "story_page_count": 94,
-            "combined_page_count": 94,
-            "reading_hours": 1.7,
-            "reading_minutes": 103,
+            "combined_word_count": 27910,
+            "story_page_count": 101,
+            "combined_page_count": 101,
+            "reading_hours": 1.9,
+            "reading_minutes": 111,
             "novel_equivalent": 0.3,
             "scale_category": "Novella",
             "scale_badge": "Novella",
             "benchmark_note": "Standard contemporary novella length (17,500\u201340,000 words)",
             "era_count": 4,
             "chapter_count": 11,
-            "part_count": 18,
-            "illustration_count": 18
+            "part_count": 19,
+            "illustration_count": 19
         }
     },
     "/katie": {
@@ -294,16 +294,16 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|0"
     },
-    "/katie/seventeen-senior-year/drunken-new-year/the-gas-station-run-the-locked-bedroom-door-why-i-never-had-a-twenty-first-birthday-drink": {
+    "/katie/seventeen-senior-year/drunken-new-year/part-1-part-1-the-gas-station-run-a-box-of-dry-cereal-why-i-never-had-a-twenty-first-birthday-drink": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Gas-Station Run, The Locked Bedroom Door, & Why I Never Had a Twenty-First Birthday Drink",
+        "title": "Part 1: Part 1: The Gas-Station Run, A Box of Dry Cereal, & Why I Never Had a Twenty-First Birthday Drink",
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/p001.md"
     },
-    "/katie/seventeen-senior-year/drunken-new-year/part-1-the-gas-station-run-the-locked-bedroom-door-why-i-never-had-a-twenty-first-birthday-drink": {
+    "/katie/seventeen-senior-year/drunken-new-year/part-2-part-2-the-drunken-new-year-lie-heather-s-bitter-goodbye-twin-sisters-always-stay": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Gas-Station Run, The Locked Bedroom Door, & Why I Never Had a Twenty-First Birthday Drink",
+        "title": "Part 2: Part 2: The Drunken New Year Lie, Heather's Bitter Goodbye, & Twin Sisters Always Stay",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/p001.md"
+        "filePath": "e004/c001/p002.md"
     }
 }
