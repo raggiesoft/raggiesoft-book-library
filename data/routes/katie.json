@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "6.5 MB",
-            "pdf": "6.8 MB",
-            "text_epub": "37 KB",
-            "text_pdf": "106 KB",
-            "package_7z": "28 KB",
-            "epub_bytes": 6770776,
-            "pdf_bytes": 7154351,
-            "text_epub_bytes": 37869,
-            "text_pdf_bytes": 108942,
-            "package_7z_bytes": 28541
+            "epub": "7.9 MB",
+            "pdf": "8.5 MB",
+            "text_epub": "40 KB",
+            "text_pdf": "118 KB",
+            "package_7z": "31 KB",
+            "epub_bytes": 8292952,
+            "pdf_bytes": 8870346,
+            "text_epub_bytes": 41323,
+            "text_pdf_bytes": 120975,
+            "package_7z_bytes": 31592
         },
-        "illustration_count": 9,
+        "illustration_count": 11,
         "word_stats": {
-            "story_word_count": 11934,
+            "story_word_count": 13087,
             "lore_word_count": 121,
-            "combined_word_count": 12055,
-            "story_page_count": 43,
-            "combined_page_count": 44,
-            "reading_hours": 0.8,
-            "reading_minutes": 48,
-            "novel_equivalent": 0.13,
+            "combined_word_count": 13208,
+            "story_page_count": 48,
+            "combined_page_count": 48,
+            "reading_hours": 0.9,
+            "reading_minutes": 52,
+            "novel_equivalent": 0.15,
             "scale_category": "Short Fiction & Novelette",
             "scale_badge": "Short Fiction",
             "benchmark_note": "Short story / novelette companion (< 17,500 words)",
             "era_count": 3,
             "chapter_count": 8,
-            "part_count": 9,
-            "illustration_count": 9
+            "part_count": 11,
+            "illustration_count": 11
         }
     },
     "/katie": {
@@ -210,16 +210,28 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|1"
     },
-    "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-1-part-1-the-i-95-haul-the-cchr-library-books-the-last-straw": {
+    "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-1-part-1-the-i-95-haul-the-quantum-basic-library-book-ditching-captain-barnaby": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Part 1: The I-95 Haul, The CCHR Library Books, & The Last Straw",
+        "title": "Part 1: Part 1: The I-95 Haul, The Quantum Basic Library Book, & Ditching Captain Barnaby",
         "theme": "raggiesoft-books",
         "filePath": "e003/c002/p001.md"
     },
-    "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-2-part-2-back-on-dry-land-the-divorce-lawyer-the-pcp-borrowed-time": {
+    "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-2-part-2-the-nassau-pier-guest-services-the-last-straw": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Part 2: Back on Dry Land \u2014 The Divorce Lawyer, The PCP, & Borrowed Time",
+        "title": "Part 2: Part 2: The Nassau Pier, Guest Services, & The Last Straw",
         "theme": "raggiesoft-books",
         "filePath": "e003/c002/p002.md"
+    },
+    "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-3-part-3-stateroom-6004-the-loaner-wheelchairs-pizza-for-three-on-the-aft-deck": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Part 3: Stateroom 6004, The Loaner Wheelchairs, & Pizza for Three on the Aft Deck",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c002/p003.md"
+    },
+    "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-4-part-4-back-on-dry-land-the-reluctant-ride-home-the-divorce-lawyer-borrowed-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Part 4: Back on Dry Land \u2014 The Reluctant Ride Home, The Divorce Lawyer, & Borrowed Time",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c002/p004.md"
     }
 }
