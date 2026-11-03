@@ -16,14 +16,31 @@
             "pdf": "1.2 MB",
             "text_epub": "444 KB",
             "text_pdf": "1.2 MB",
-            "package_7z": "319 KB",
+            "package_7z": "320 KB",
             "epub_bytes": 454866,
             "pdf_bytes": 1273223,
             "text_epub_bytes": 454871,
             "text_pdf_bytes": 1273223,
-            "package_7z_bytes": 327156
+            "package_7z_bytes": 327999
         },
-        "illustration_count": 0
+        "illustration_count": 0,
+        "word_stats": {
+            "story_word_count": 186535,
+            "lore_word_count": 133,
+            "combined_word_count": 186668,
+            "story_page_count": 678,
+            "combined_page_count": 679,
+            "reading_hours": 12.4,
+            "reading_minutes": 746,
+            "novel_equivalent": 2.1,
+            "scale_category": "Epic Full-Length Novel",
+            "scale_badge": "Epic Novel",
+            "benchmark_note": "2.1\u00d7 a standard 90,000-word contemporary novel (Epic 110k\u2013200k tier)",
+            "era_count": 14,
+            "chapter_count": 37,
+            "part_count": 73,
+            "illustration_count": 0
+        }
     },
     "/nichole": {
         "view": "pages/raggiesoft-books/books/viewer",

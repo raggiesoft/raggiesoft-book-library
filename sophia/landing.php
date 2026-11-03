@@ -109,7 +109,55 @@ $landingTextPdfSize  = $landingSizes['text_pdf'] ?? '';
             <?php
             $landingIllusCount = (int)($toc_manifest['illustration_count'] ?? ($routeData['common']['illustration_count'] ?? 0));
             $illustrationsUrl = '/' . $seriesSlug . '/illustrations';
+            $landingWordStats = $toc_manifest['word_stats'] ?? ($routeData['common']['word_stats'] ?? []);
+            $landingStoryWords = (int)($landingWordStats['story_word_count'] ?? 0);
+            $landingLoreWords = (int)($landingWordStats['lore_word_count'] ?? 0);
+            $landingCombinedWords = (int)($landingWordStats['combined_word_count'] ?? ($landingStoryWords + $landingLoreWords));
+            $landingStoryPages = (int)($landingWordStats['estimated_story_pages'] ?? ($landingStoryWords > 0 ? ceil($landingStoryWords / 275) : 0));
+            $landingTotalPages = (int)($landingWordStats['estimated_total_pages'] ?? ($landingCombinedWords > 0 ? ceil($landingCombinedWords / 275) : 0));
+            $landingReadingHours = (float)($landingWordStats['reading_hours_story'] ?? ($landingStoryWords > 0 ? round($landingStoryWords / (250 * 60), 1) : 0));
+            $landingScaleLabel = (string)($landingWordStats['scale_label'] ?? '');
+            $landingScaleBenchmark = (string)($landingWordStats['scale_benchmark'] ?? '');
             ?>
+            <?php if ($landingCombinedWords > 0): ?>
+            <!-- Dynamic Manuscript & Lore Scale Telemetry Card (Compiled by paige.php) -->
+            <div style="margin-bottom: 1.75rem; padding: 1.15rem 1.3rem; border-radius: 12px; background: var(--rs-surface); border: 1px solid var(--rs-border); border-left: 4px solid var(--rs-primary);">
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
+                    <div style="font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--rs-primary); display: inline-flex; align-items: center; gap: 0.35rem;">
+                        <i class="ph-fill ph-chart-bar"></i>
+                        <span>Live Manuscript &amp; Lore Scale</span>
+                    </div>
+                    <?php if ($landingScaleLabel !== ''): ?>
+                    <span style="font-size: 0.74rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 999px; background: rgba(227, 178, 124, 0.16); color: var(--rs-primary);">
+                        <?php echo htmlspecialchars($landingScaleLabel); ?>
+                    </span>
+                    <?php endif; ?>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: 0.85rem; margin-bottom: 0.7rem;">
+                    <div>
+                        <div style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.72;">Story Prose</div>
+                        <div style="font-size: 1.2rem; font-weight: 800; color: var(--rs-heading); font-variant-numeric: tabular-nums;"><?php echo number_format($landingStoryWords); ?> <span style="font-size: 0.75rem; font-weight: 600; opacity: 0.75;">words</span></div>
+                        <div style="font-size: 0.75rem; opacity: 0.75;">~<?php echo number_format($landingStoryPages); ?> print pages &bull; ~<?php echo number_format($landingReadingHours, 1); ?> hrs</div>
+                    </div>
+                    <?php if ($landingLoreWords > 0): ?>
+                    <div>
+                        <div style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.72;">Curated Lore &amp; Liner Notes</div>
+                        <div style="font-size: 1.2rem; font-weight: 800; color: var(--rs-heading); font-variant-numeric: tabular-nums;">+<?php echo number_format($landingLoreWords); ?> <span style="font-size: 0.75rem; font-weight: 600; opacity: 0.75;">words</span></div>
+                        <div style="font-size: 0.75rem; opacity: 0.75;">Archives, dossiers &amp; liner notes</div>
+                    </div>
+                    <div>
+                        <div style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.72;">Combined Volume Total</div>
+                        <div style="font-size: 1.2rem; font-weight: 800; color: var(--rs-primary); font-variant-numeric: tabular-nums;"><?php echo number_format($landingCombinedWords); ?> <span style="font-size: 0.75rem; font-weight: 600; opacity: 0.85;">words</span></div>
+                        <div style="font-size: 0.75rem; opacity: 0.75;">~<?php echo number_format($landingTotalPages); ?> combined pages</div>
+                    </div>
+                    <?php endif; ?>
+                </div>
+                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; font-size: 0.78rem; padding-top: 0.55rem; border-top: 1px dashed var(--rs-border); opacity: 0.88;">
+                    <span><?php echo htmlspecialchars($landingScaleBenchmark); ?></span>
+                    <a href="/stats" style="color: var(--rs-primary); font-weight: 700; text-decoration: none; white-space: nowrap;">Compare Across All 30 Volumes &rarr;</a>
+                </div>
+            </div>
+            <?php endif; ?>
             <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
                 <a href="<?php echo htmlspecialchars($tocUrl); ?>" class="rs-btn rs-btn-primary" style="font-size: 1.1rem; padding: 0.75rem 2rem; display: inline-flex; align-items: center; gap: 0.5rem;">
                     <i class="ph ph-book-open"></i> View the Table of Contents

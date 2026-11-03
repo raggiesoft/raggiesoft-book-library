@@ -31,10 +31,20 @@ global $toc_manifest, $cdnBaseUrl, $seriesSlug;
 -->
 <?php
 $tocTotalIllustrations = (int)($toc_manifest['illustration_count'] ?? 0);
+$tocWordStats = $toc_manifest['word_stats'] ?? [];
+$tocStoryWords = (int)($tocWordStats['story_word_count'] ?? 0);
+$tocStoryPages = (int)($tocWordStats['estimated_story_pages'] ?? ($tocStoryWords > 0 ? ceil($tocStoryWords / 275) : 0));
 ?>
 <div class="book-page" style="max-width: 960px; margin: 0 auto;">
     <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--rs-border); padding-bottom: 1rem;">
-        <h1 style="margin: 0; color: var(--rs-primary);">Table of Contents</h1>
+        <div>
+            <h1 style="margin: 0; color: var(--rs-primary);">Table of Contents</h1>
+            <?php if ($tocStoryWords > 0): ?>
+                <div style="font-size: 0.85rem; font-weight: 600; opacity: 0.82; margin-top: 0.25rem; font-variant-numeric: tabular-nums;">
+                    <?php echo number_format($tocStoryWords); ?> story words &bull; ~<?php echo number_format($tocStoryPages); ?> print pages &bull; <a href="/stats" style="color: var(--rs-primary); text-decoration: none; font-weight: 700;">Library Scale Stats &rarr;</a>
+                </div>
+            <?php endif; ?>
+        </div>
         <a href="/<?php echo htmlspecialchars($seriesSlug); ?>/illustrations" class="rs-btn" style="text-decoration: none; display: inline-flex; align-items: center; gap: 0.5rem; font-weight: 600; padding: 0.55rem 1rem;">
             <i class="ph ph-images" aria-hidden="true"></i>
             <span>Table of Illustrations<?php echo $tocTotalIllustrations > 0 ? ' (' . $tocTotalIllustrations . ')' : ''; ?></span>
@@ -69,6 +79,7 @@ $tocTotalIllustrations = (int)($toc_manifest['illustration_count'] ?? 0);
             <!-- Iterate over top-level eras in the novel -->
             <?php foreach ($toc_manifest['eras'] as $eIndex => $era):
                 $eraIllusCount = (int)($era['illustration_count'] ?? 0);
+                $eraWordCount = (int)($era['word_count'] ?? 0);
             ?>
                 <details class="toc-book" style="background: var(--rs-bg); border: 1px solid var(--rs-border); border-radius: 8px; overflow: hidden;">
                     <!-- Native accordion header for the Era -->
@@ -76,6 +87,11 @@ $tocTotalIllustrations = (int)($toc_manifest['illustration_count'] ?? 0);
                         <div style="display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;">
                             <h2 style="margin: 0; font-size: 1.5rem; color: var(--rs-text);"><?php echo htmlspecialchars($era['era_title']); ?></h2>
                             <div style="display: inline-flex; align-items: center; gap: 0.65rem;">
+                                <?php if ($eraWordCount > 0): ?>
+                                    <span style="font-size: 0.76rem; font-weight: 700; padding: 0.2rem 0.55rem; border-radius: 999px; background: var(--rs-surface); border: 1px solid var(--rs-border); color: var(--rs-text); opacity: 0.85; white-space: nowrap; font-variant-numeric: tabular-nums;">
+                                        <?php echo number_format($eraWordCount); ?> words
+                                    </span>
+                                <?php endif; ?>
                                 <?php if ($eraIllusCount > 0): ?>
                                     <span style="font-size: 0.78rem; font-weight: 600; padding: 0.2rem 0.55rem; border-radius: 999px; background: rgba(227, 178, 124, 0.16); color: var(--rs-primary); display: inline-flex; align-items: center; gap: 0.3rem; white-space: nowrap;">
                                         <i class="ph ph-image" aria-hidden="true"></i>
@@ -115,6 +131,8 @@ $tocTotalIllustrations = (int)($toc_manifest['illustration_count'] ?? 0);
                                     $cleanPartSub = trim((string)preg_replace('/^Part\s+\d+\s*:\s*/i', '', $rawPartTitle));
                                     $showPartSub = ($cleanPartSub !== '' && stripos($rawChapTitle, $cleanPartSub) === false && strcasecmp($cleanPartSub, 'Untitled Chapter') !== 0 && !preg_match('/^Part\s+\d+$/i', $cleanPartSub));
                                     $singleHasImage = !empty($singlePart['image']) || !empty($singlePart['images']);
+                                    $singlePartWords = (int)($singlePart['word_count'] ?? 0);
+                                    $singlePartMins = (int)($singlePart['reading_minutes'] ?? ($singlePartWords > 0 ? max(1, ceil($singlePartWords / 250)) : 0));
                                 ?>
                                 <div class="toc-chapter toc-chapter-single" style="margin-top: 1rem; border-bottom: 1px dashed var(--rs-border);">
                                     <a href="<?php echo htmlspecialchars($singleHref); ?>"
@@ -134,8 +152,12 @@ $tocTotalIllustrations = (int)($toc_manifest['illustration_count'] ?? 0);
                                                 </span>
                                             <?php endif; ?>
                                         </span>
-                                        <span style="font-size: 0.78rem; font-weight: 600; color: var(--rs-text); opacity: 0.72; white-space: nowrap; display: inline-flex; align-items: center; gap: 0.25rem;">
-                                            <span>Read</span>
+                                        <span style="font-size: 0.78rem; font-weight: 600; color: var(--rs-text); opacity: 0.72; white-space: nowrap; display: inline-flex; align-items: center; gap: 0.45rem; font-variant-numeric: tabular-nums;">
+                                            <?php if ($singlePartWords > 0): ?>
+                                                <span><?php echo number_format($singlePartWords); ?>w &bull; <?php echo $singlePartMins; ?>m</span>
+                                            <?php else: ?>
+                                                <span>Read</span>
+                                            <?php endif; ?>
                                             <i class="ph ph-arrow-right" aria-hidden="true"></i>
                                         </span>
                                     </a>
@@ -166,15 +188,24 @@ $tocTotalIllustrations = (int)($toc_manifest['illustration_count'] ?? 0);
                                             <?php foreach ($partList as $part): 
                                                 $href = $fileToUrl[$part['file_path']] ?? ($part['url'] ?? $part['file_path']);
                                                 $partHasImage = !empty($part['image']) || !empty($part['images']);
+                                                $partWords = (int)($part['word_count'] ?? 0);
+                                                $partMins = (int)($part['reading_minutes'] ?? ($partWords > 0 ? max(1, ceil($partWords / 250)) : 0));
                                             ?>
                                                 <li>
-                                                    <a href="<?php echo htmlspecialchars($href); ?>" style="text-decoration: none; color: var(--rs-primary); display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
-                                                        <i class="ph ph-file-text" aria-hidden="true"></i>
-                                                        <span><?php echo htmlspecialchars($part['part_title']); ?></span>
-                                                        <?php if ($partHasImage): ?>
-                                                            <span title="Illustrated Scene" style="font-size: 0.72rem; font-weight: 600; padding: 0.1rem 0.42rem; border-radius: 999px; background: rgba(227, 178, 124, 0.16); color: var(--rs-primary); display: inline-flex; align-items: center; gap: 0.22rem;">
-                                                                <i class="ph ph-image" aria-hidden="true"></i>
-                                                                <span>Illustrated</span>
+                                                    <a href="<?php echo htmlspecialchars($href); ?>" style="text-decoration: none; color: var(--rs-primary); display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; flex-wrap: wrap; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
+                                                        <span style="display: inline-flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                                                            <i class="ph ph-file-text" aria-hidden="true"></i>
+                                                            <span><?php echo htmlspecialchars($part['part_title']); ?></span>
+                                                            <?php if ($partHasImage): ?>
+                                                                <span title="Illustrated Scene" style="font-size: 0.72rem; font-weight: 600; padding: 0.1rem 0.42rem; border-radius: 999px; background: rgba(227, 178, 124, 0.16); color: var(--rs-primary); display: inline-flex; align-items: center; gap: 0.22rem;">
+                                                                    <i class="ph ph-image" aria-hidden="true"></i>
+                                                                    <span>Illustrated</span>
+                                                                </span>
+                                                            <?php endif; ?>
+                                                        </span>
+                                                        <?php if ($partWords > 0): ?>
+                                                            <span style="font-size: 0.74rem; font-weight: 600; color: var(--rs-text); opacity: 0.68; white-space: nowrap; font-variant-numeric: tabular-nums;">
+                                                                <?php echo number_format($partWords); ?>w &bull; <?php echo $partMins; ?>m
                                                             </span>
                                                         <?php endif; ?>
                                                     </a>

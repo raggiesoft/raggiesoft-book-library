@@ -16,14 +16,31 @@
             "pdf": "4 MB",
             "text_epub": "398 KB",
             "text_pdf": "1.2 MB",
-            "package_7z": "293 KB",
+            "package_7z": "294 KB",
             "epub_bytes": 3276147,
             "pdf_bytes": 4170889,
             "text_epub_bytes": 407529,
             "text_pdf_bytes": 1263465,
-            "package_7z_bytes": 299865
+            "package_7z_bytes": 300724
         },
-        "illustration_count": 3
+        "illustration_count": 3,
+        "word_stats": {
+            "story_word_count": 169175,
+            "lore_word_count": 42703,
+            "combined_word_count": 211878,
+            "story_page_count": 615,
+            "combined_page_count": 770,
+            "reading_hours": 11.3,
+            "reading_minutes": 677,
+            "novel_equivalent": 1.9,
+            "scale_category": "Epic Full-Length Novel",
+            "scale_badge": "Epic Novel",
+            "benchmark_note": "1.9\u00d7 a standard 90,000-word contemporary novel (Epic 110k\u2013200k tier)",
+            "era_count": 6,
+            "chapter_count": 54,
+            "part_count": 71,
+            "illustration_count": 3
+        }
     },
     "/quantum-directive-3-casey": {
         "view": "pages/raggiesoft-books/books/viewer",

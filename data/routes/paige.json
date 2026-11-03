@@ -16,14 +16,31 @@
             "pdf": "1.4 MB",
             "text_epub": "496 KB",
             "text_pdf": "1.4 MB",
-            "package_7z": "360 KB",
+            "package_7z": "361 KB",
             "epub_bytes": 507402,
             "pdf_bytes": 1469151,
             "text_epub_bytes": 507398,
             "text_pdf_bytes": 1469151,
-            "package_7z_bytes": 368776
+            "package_7z_bytes": 369556
         },
-        "illustration_count": 0
+        "illustration_count": 0,
+        "word_stats": {
+            "story_word_count": 213138,
+            "lore_word_count": 132,
+            "combined_word_count": 213270,
+            "story_page_count": 775,
+            "combined_page_count": 776,
+            "reading_hours": 14.2,
+            "reading_minutes": 853,
+            "novel_equivalent": 2.4,
+            "scale_category": "Multi-Volume Epic Omnibus",
+            "scale_badge": "Multi-Volume Omnibus",
+            "benchmark_note": "2.4\u00d7 a standard 90,000-word contemporary novel (~2-volume print series)",
+            "era_count": 5,
+            "chapter_count": 36,
+            "part_count": 76,
+            "illustration_count": 0
+        }
     },
     "/paige": {
         "view": "pages/raggiesoft-books/books/viewer",

@@ -16,14 +16,31 @@
             "pdf": "16 KB",
             "text_epub": "8.6 KB",
             "text_pdf": "16 KB",
-            "package_7z": "1.8 KB",
+            "package_7z": "2 KB",
             "epub_bytes": 8786,
             "pdf_bytes": 16540,
             "text_epub_bytes": 8788,
             "text_pdf_bytes": 16540,
-            "package_7z_bytes": 1823
+            "package_7z_bytes": 2008
         },
-        "illustration_count": 0
+        "illustration_count": 0,
+        "word_stats": {
+            "story_word_count": 0,
+            "lore_word_count": 1597,
+            "combined_word_count": 1597,
+            "story_page_count": 0,
+            "combined_page_count": 6,
+            "reading_hours": 0,
+            "reading_minutes": 0,
+            "novel_equivalent": 0,
+            "scale_category": "Lore & Outline Archive",
+            "scale_badge": "Lore & Outline",
+            "benchmark_note": "In-development series outline & canonical lore treatment",
+            "era_count": 5,
+            "chapter_count": 18,
+            "part_count": 0,
+            "illustration_count": 0
+        }
     },
     "/fractured-prisms": {
         "view": "pages/raggiesoft-books/books/viewer",

@@ -16,14 +16,31 @@
             "pdf": "5.3 MB",
             "text_epub": "77 KB",
             "text_pdf": "5.3 MB",
-            "package_7z": "59 KB",
+            "package_7z": "60 KB",
             "epub_bytes": 79117,
             "pdf_bytes": 5514637,
             "text_epub_bytes": 79119,
             "text_pdf_bytes": 5514641,
-            "package_7z_bytes": 60637
+            "package_7z_bytes": 60971
         },
-        "illustration_count": 0
+        "illustration_count": 0,
+        "word_stats": {
+            "story_word_count": 29911,
+            "lore_word_count": 138,
+            "combined_word_count": 30049,
+            "story_page_count": 109,
+            "combined_page_count": 109,
+            "reading_hours": 2,
+            "reading_minutes": 120,
+            "novel_equivalent": 0.3,
+            "scale_category": "Novella",
+            "scale_badge": "Novella",
+            "benchmark_note": "Standard contemporary novella length (17,500\u201340,000 words)",
+            "era_count": 3,
+            "chapter_count": 11,
+            "part_count": 15,
+            "illustration_count": 0
+        }
     },
     "/quantum-directive-2-kelly": {
         "view": "pages/raggiesoft-books/books/viewer",

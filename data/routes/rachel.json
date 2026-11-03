@@ -16,14 +16,31 @@
             "pdf": "79.3 MB",
             "text_epub": "1.1 MB",
             "text_pdf": "3.1 MB",
-            "package_7z": "776 KB",
+            "package_7z": "778 KB",
             "epub_bytes": 78735994,
             "pdf_bytes": 83189384,
             "text_epub_bytes": 1152961,
             "text_pdf_bytes": 3212558,
-            "package_7z_bytes": 794595
+            "package_7z_bytes": 796688
         },
-        "illustration_count": 129
+        "illustration_count": 129,
+        "word_stats": {
+            "story_word_count": 492271,
+            "lore_word_count": 78061,
+            "combined_word_count": 570332,
+            "story_page_count": 1790,
+            "combined_page_count": 2074,
+            "reading_hours": 32.8,
+            "reading_minutes": 1969,
+            "novel_equivalent": 5.5,
+            "scale_category": "Multi-Volume Epic Omnibus",
+            "scale_badge": "Multi-Volume Omnibus",
+            "benchmark_note": "5.5\u00d7 a standard 90,000-word contemporary novel (~5-volume print series)",
+            "era_count": 26,
+            "chapter_count": 106,
+            "part_count": 211,
+            "illustration_count": 129
+        }
     },
     "/rachel": {
         "view": "pages/raggiesoft-books/books/viewer",

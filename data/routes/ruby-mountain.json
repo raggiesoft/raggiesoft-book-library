@@ -16,14 +16,31 @@
             "pdf": "648 KB",
             "text_epub": "232 KB",
             "text_pdf": "648 KB",
-            "package_7z": "167 KB",
+            "package_7z": "168 KB",
             "epub_bytes": 237598,
             "pdf_bytes": 663054,
             "text_epub_bytes": 237599,
             "text_pdf_bytes": 663054,
-            "package_7z_bytes": 171483
+            "package_7z_bytes": 172116
         },
-        "illustration_count": 0
+        "illustration_count": 0,
+        "word_stats": {
+            "story_word_count": 94109,
+            "lore_word_count": 19833,
+            "combined_word_count": 113942,
+            "story_page_count": 342,
+            "combined_page_count": 414,
+            "reading_hours": 6.3,
+            "reading_minutes": 376,
+            "novel_equivalent": 1,
+            "scale_category": "Full-Length Contemporary Novel",
+            "scale_badge": "Full-Length Novel",
+            "benchmark_note": "1.0\u00d7 a standard 90,000-word contemporary novel (70k\u2013110k trade benchmark)",
+            "era_count": 8,
+            "chapter_count": 27,
+            "part_count": 42,
+            "illustration_count": 0
+        }
     },
     "/ruby-mountain": {
         "view": "pages/raggiesoft-books/books/viewer",

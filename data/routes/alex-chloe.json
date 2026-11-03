@@ -16,14 +16,31 @@
             "pdf": "1.7 MB",
             "text_epub": "657 KB",
             "text_pdf": "1.7 MB",
-            "package_7z": "451 KB",
+            "package_7z": "452 KB",
             "epub_bytes": 673146,
             "pdf_bytes": 1801711,
             "text_epub_bytes": 673144,
             "text_pdf_bytes": 1801711,
-            "package_7z_bytes": 462083
+            "package_7z_bytes": 463316
         },
-        "illustration_count": 0
+        "illustration_count": 0,
+        "word_stats": {
+            "story_word_count": 275129,
+            "lore_word_count": 30798,
+            "combined_word_count": 305927,
+            "story_page_count": 1000,
+            "combined_page_count": 1112,
+            "reading_hours": 18.3,
+            "reading_minutes": 1101,
+            "novel_equivalent": 3.1,
+            "scale_category": "Multi-Volume Epic Omnibus",
+            "scale_badge": "Multi-Volume Omnibus",
+            "benchmark_note": "3.1\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
+            "era_count": 21,
+            "chapter_count": 73,
+            "part_count": 117,
+            "illustration_count": 0
+        }
     },
     "/alex-chloe": {
         "view": "pages/raggiesoft-books/books/viewer",

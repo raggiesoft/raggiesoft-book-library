@@ -21,9 +21,26 @@
             "pdf_bytes": 482428,
             "text_epub_bytes": 169681,
             "text_pdf_bytes": 482428,
-            "package_7z_bytes": 125696
+            "package_7z_bytes": 126109
         },
-        "illustration_count": 0
+        "illustration_count": 0,
+        "word_stats": {
+            "story_word_count": 68046,
+            "lore_word_count": 162,
+            "combined_word_count": 68208,
+            "story_page_count": 247,
+            "combined_page_count": 248,
+            "reading_hours": 4.5,
+            "reading_minutes": 272,
+            "novel_equivalent": 0.8,
+            "scale_category": "Compact Novel",
+            "scale_badge": "Compact Novel",
+            "benchmark_note": "Compact single-volume trade paperback length (40,000\u201370,000 words)",
+            "era_count": 5,
+            "chapter_count": 16,
+            "part_count": 27,
+            "illustration_count": 0
+        }
     },
     "/julian": {
         "view": "pages/raggiesoft-books/books/viewer",

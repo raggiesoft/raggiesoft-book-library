@@ -47,6 +47,15 @@ $books = [];
 if ($catalogData) {
     $books = json_decode($catalogData, true) ?? [];
 }
+
+// Compute live aggregate word and page counts from catalog.json (populated dynamically by paige.php)
+$catalogTotalStoryWords = 0;
+$catalogTotalCombinedWords = 0;
+foreach ($books as $bItem) {
+    $ws = $bItem['word_stats'] ?? [];
+    $catalogTotalStoryWords += (int)($ws['story_word_count'] ?? 0);
+    $catalogTotalCombinedWords += (int)($ws['combined_word_count'] ?? ($ws['story_word_count'] ?? 0));
+}
 ?>
 
 <div class="stardust-mobile-scroll" style="flex: 1; background: var(--rs-bg); padding-bottom: 4rem;">
@@ -55,16 +64,20 @@ if ($catalogData) {
     <div style="max-width: 1200px; margin: 0 auto; padding: calc(1.5rem + env(safe-area-inset-top, 0px)) 1.5rem 1rem;">
         
         <!-- Top Bar: Title & Settings -->
-        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1.5rem;">
+        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem;">
             <div>
                 <h1 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-size: 2.5rem; font-weight: 800; color: var(--rs-heading); letter-spacing: -0.5px; margin: 0; line-height: 1.1;">
                     Library
                 </h1>
                 <p style="font-size: 1rem; color: var(--rs-primary); margin: 0.25rem 0 0 0; font-weight: 600;">
-                    Ocean View Archives
+                    Ocean View Archives<?php if ($catalogTotalStoryWords > 0): ?> &bull; <span style="font-weight: 700; color: var(--rs-text); opacity: 0.85;"><?= count($books) ?> Volumes &bull; <?= number_format($catalogTotalStoryWords) ?> Story Words</span><?php endif; ?>
                 </p>
             </div>
-            <div style="display: flex; gap: 0.5rem; align-items: center;">
+            <div style="display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap;">
+                <a href="/stats" class="rs-btn" style="text-decoration: none; background: var(--rs-surface); color: var(--rs-heading); border: 1px solid var(--rs-border); padding: 0.45rem 0.85rem; border-radius: 8px; font-weight: 700; font-size: 0.84rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+                    <i class="ph-fill ph-chart-bar" style="color: var(--rs-primary);"></i>
+                    <span>Word Counts &amp; Scale</span>
+                </a>
                 <!-- Collection Organization Toggle Buttons -->
                 <button id="rs-organize-btn" class="rs-btn" style="background: transparent; color: var(--rs-primary); border: none; padding: 0.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;" title="Organize Library">
                     <i class="ph ph-folder" style="font-size: 1.75rem;"></i>
@@ -148,6 +161,10 @@ if ($catalogData) {
                                 : ($book['description'] ?? '');
                             $imgSrc = !empty($book['image']) ? $cdnBaseUrl . $book['image'] : $cdnBaseUrl . '/raggiesoft-books/images/book-placeholder.jpg';
                             $readLink = '/' . $slug . '/';
+                            $bookWordStats = $book['word_stats'] ?? [];
+                            $bookStoryWords = (int)($bookWordStats['story_word_count'] ?? 0);
+                            $bookStoryPages = (int)($bookWordStats['estimated_story_pages'] ?? ($bookStoryWords > 0 ? ceil($bookStoryWords / 275) : 0));
+                            $bookScaleBadge = (string)($bookWordStats['scale_badge'] ?? '');
                         ?>
                         
                         <!-- Individual Book Card -->
@@ -155,13 +172,23 @@ if ($catalogData) {
                             <!-- Cover Image -->
                             <div style="width: 100%; aspect-ratio: 2/3; background-color: var(--rs-surface); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); position: relative; margin-bottom: 0.75rem; border: 1px solid rgba(255,255,255,0.05);">
                                 <img src="<?php echo htmlspecialchars($imgSrc); ?>" alt="<?php echo htmlspecialchars($title); ?>" style="width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none;">
+                                <?php if ($bookStoryWords > 0): ?>
+                                <div style="position: absolute; bottom: 0.45rem; right: 0.45rem; background: rgba(9, 20, 32, 0.86); color: #f8fafc; border: 1px solid rgba(227, 178, 124, 0.55); border-radius: 6px; padding: 0.16rem 0.42rem; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.02em; font-variant-numeric: tabular-nums; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); pointer-events: none;">
+                                    <?= $bookStoryWords >= 1000 ? number_format($bookStoryWords / 1000, 1) . 'k' : number_format($bookStoryWords) ?> words
+                                </div>
+                                <?php endif; ?>
                             </div>
                             
                             <!-- Title & Quick-Glance Short Description -->
                             <div style="padding: 0 0.25rem; pointer-events: none;">
-                                <h2 style="font-size: 1rem; font-weight: 700; margin: 0 0 0.25rem 0; color: var(--rs-heading); line-height: 1.2; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; line-clamp: 2; overflow: clip;">
+                                <h2 style="font-size: 1rem; font-weight: 700; margin: 0 0 0.2rem 0; color: var(--rs-heading); line-height: 1.2; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; line-clamp: 2; overflow: clip;">
                                     <?php echo htmlspecialchars($title); ?>
                                 </h2>
+                                <?php if ($bookStoryWords > 0): ?>
+                                <div style="font-size: 0.72rem; font-weight: 700; color: var(--rs-primary); margin-bottom: 0.25rem; font-variant-numeric: tabular-nums;">
+                                    ~<?= number_format($bookStoryPages) ?> pages<?= $bookScaleBadge !== '' ? ' &bull; ' . htmlspecialchars($bookScaleBadge) : '' ?>
+                                </div>
+                                <?php endif; ?>
                                 <p style="font-size: 0.8rem; opacity: 0.6; margin: 0; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; line-clamp: 5; overflow: clip;">
                                     <?php echo htmlspecialchars($desc); ?>
                                 </p>

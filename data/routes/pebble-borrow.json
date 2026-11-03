@@ -21,9 +21,26 @@
             "pdf_bytes": 415749,
             "text_epub_bytes": 155170,
             "text_pdf_bytes": 415749,
-            "package_7z_bytes": 111677
+            "package_7z_bytes": 112016
         },
-        "illustration_count": 0
+        "illustration_count": 0,
+        "word_stats": {
+            "story_word_count": 57383,
+            "lore_word_count": 135,
+            "combined_word_count": 57518,
+            "story_page_count": 209,
+            "combined_page_count": 209,
+            "reading_hours": 3.8,
+            "reading_minutes": 230,
+            "novel_equivalent": 0.6,
+            "scale_category": "Compact Novel",
+            "scale_badge": "Compact Novel",
+            "benchmark_note": "Compact single-volume trade paperback length (40,000\u201370,000 words)",
+            "era_count": 24,
+            "chapter_count": 89,
+            "part_count": 17,
+            "illustration_count": 0
+        }
     },
     "/pebble-borrow": {
         "view": "pages/raggiesoft-books/books/viewer",

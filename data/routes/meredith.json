@@ -21,9 +21,26 @@
             "pdf_bytes": 121729,
             "text_epub_bytes": 41120,
             "text_pdf_bytes": 121729,
-            "package_7z_bytes": 32292
+            "package_7z_bytes": 32521
         },
-        "illustration_count": 0
+        "illustration_count": 0,
+        "word_stats": {
+            "story_word_count": 15246,
+            "lore_word_count": 2463,
+            "combined_word_count": 17709,
+            "story_page_count": 55,
+            "combined_page_count": 64,
+            "reading_hours": 1,
+            "reading_minutes": 61,
+            "novel_equivalent": 0.17,
+            "scale_category": "Short Fiction & Novelette",
+            "scale_badge": "Short Fiction",
+            "benchmark_note": "Short story / novelette companion (< 17,500 words)",
+            "era_count": 1,
+            "chapter_count": 2,
+            "part_count": 5,
+            "illustration_count": 0
+        }
     },
     "/meredith": {
         "view": "pages/raggiesoft-books/books/viewer",

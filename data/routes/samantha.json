@@ -21,9 +21,26 @@
             "pdf_bytes": 194611,
             "text_epub_bytes": 66696,
             "text_pdf_bytes": 194611,
-            "package_7z_bytes": 50277
+            "package_7z_bytes": 50596
         },
-        "illustration_count": 0
+        "illustration_count": 0,
+        "word_stats": {
+            "story_word_count": 25132,
+            "lore_word_count": 1431,
+            "combined_word_count": 26563,
+            "story_page_count": 91,
+            "combined_page_count": 97,
+            "reading_hours": 1.7,
+            "reading_minutes": 101,
+            "novel_equivalent": 0.3,
+            "scale_category": "Novella",
+            "scale_badge": "Novella",
+            "benchmark_note": "Standard contemporary novella length (17,500\u201340,000 words)",
+            "era_count": 4,
+            "chapter_count": 8,
+            "part_count": 11,
+            "illustration_count": 0
+        }
     },
     "/samantha": {
         "view": "pages/raggiesoft-books/books/viewer",

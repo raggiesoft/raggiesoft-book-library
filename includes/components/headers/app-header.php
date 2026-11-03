@@ -232,6 +232,10 @@ $headerAssetsUrl = !empty($cdnBaseUrl) ? rtrim($cdnBaseUrl, '/') : 'https://asse
                 <i class="ph-fill ph-images"></i>
                 <span>Illustrations</span>
             </a>
+            <a href="/stats" class="rs-book-header-link <?= ($headerActivePath === '/stats' || $headerActivePath === '/word-counts' || $headerActivePath === '/library-stats') ? 'is-active' : '' ?>" <?= ($headerActivePath === '/stats' || $headerActivePath === '/word-counts' || $headerActivePath === '/library-stats') ? 'aria-current="page"' : '' ?> title="Live Library Word Counts &amp; Publishing Scale Benchmarks">
+                <i class="ph-fill ph-chart-bar"></i>
+                <span>Stats</span>
+            </a>
             <a href="/bookmarks" class="rs-book-header-link <?= $headerActivePath === '/bookmarks' ? 'is-active' : '' ?>" <?= $headerActivePath === '/bookmarks' ? 'aria-current="page"' : '' ?>>
                 <i class="ph-fill ph-bookmark"></i>
                 <span>Bookmarks</span>

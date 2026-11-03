@@ -16,14 +16,31 @@
             "pdf": "53.5 MB",
             "text_epub": "1003 KB",
             "text_pdf": "3.7 MB",
-            "package_7z": "714 KB",
+            "package_7z": "716 KB",
             "epub_bytes": 69244077,
             "pdf_bytes": 56106461,
             "text_epub_bytes": 1026776,
             "text_pdf_bytes": 3869214,
-            "package_7z_bytes": 731466
+            "package_7z_bytes": 733151
         },
-        "illustration_count": 72
+        "illustration_count": 72,
+        "word_stats": {
+            "story_word_count": 412289,
+            "lore_word_count": 60376,
+            "combined_word_count": 472665,
+            "story_page_count": 1499,
+            "combined_page_count": 1719,
+            "reading_hours": 27.5,
+            "reading_minutes": 1649,
+            "novel_equivalent": 4.6,
+            "scale_category": "Multi-Volume Epic Omnibus",
+            "scale_badge": "Multi-Volume Omnibus",
+            "benchmark_note": "4.6\u00d7 a standard 90,000-word contemporary novel (~5-volume print series)",
+            "era_count": 10,
+            "chapter_count": 48,
+            "part_count": 193,
+            "illustration_count": 72
+        }
     },
     "/aubrie": {
         "view": "pages/raggiesoft-books/books/viewer",

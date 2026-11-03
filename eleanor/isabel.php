@@ -100,6 +100,7 @@ $isHome = false;
 $isKnox = false;
 $isAethelSaga = false;
 $isAllIllustrations = false;
+$isStats = false;
 if ($requestUri === '/' || $requestUri === '/isabel.php' || $requestUri === '/index.php') {
     $isHome = true;
     $seriesSlug = ''; // Clear slug to avoid conflicts
@@ -108,6 +109,10 @@ if ($requestUri === '/' || $requestUri === '/isabel.php' || $requestUri === '/in
     $isAllIllustrations = true;
     $seriesSlug = '';
     $pageConfig['title'] = 'Library Table of Illustrations';
+} else if ($requestUri === '/stats' || $requestUri === '/word-counts' || $requestUri === '/library-stats') {
+    $isStats = true;
+    $seriesSlug = '';
+    $pageConfig['title'] = 'Library Word Count & Scale Stats';
 } else if ($requestUri === '/library' || $requestUri === '/catalog') {
     $isCatalog = true;
     $seriesSlug = ''; // Clear slug
@@ -237,6 +242,11 @@ if (!empty($seriesSlug)) {
     $ogTitle = 'Library Table of Illustrations | Ocean View Archives';
     $ogDescription = 'Browse all 250+ illustrated scenes across The Rachel Narrative, The Eleventh Child, and the Ocean View Archives library.';
     $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/rachel.jpg';
+} else if ($isStats) {
+    $siteName = 'Library Word Count & Publishing Scale | Ocean View Archives';
+    $ogTitle = 'Library Word Count & Publishing Scale | Ocean View Archives';
+    $ogDescription = 'Live, auto-updated manuscript word counts, curated lore word counts, estimated page counts, and contemporary publishing scale benchmarks across all 30 Ocean View Archives volumes.';
+    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/rachel.jpg';
 } else if ($isHome) {
     $siteName = 'RaggieSoft Book Reader — Ocean View Archives';
     $ogTitle = 'RaggieSoft Book Reader — Ocean View Archives';
@@ -357,6 +367,8 @@ if ($isHome) {
     require_once $basePath . '/sophia/home.php';
 } else if ($isAllIllustrations) {
     require_once $basePath . '/sophia/all-illustrations.php';
+} else if ($isStats) {
+    require_once $basePath . '/sophia/stats.php';
 } else if ($isCatalog) {
     require_once $basePath . '/sophia/catalog.php';
 } else if ($isKnox) {

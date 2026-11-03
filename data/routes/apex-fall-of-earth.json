@@ -16,14 +16,31 @@
             "pdf": "1.7 MB",
             "text_epub": "595 KB",
             "text_pdf": "1.7 MB",
-            "package_7z": "416 KB",
+            "package_7z": "417 KB",
             "epub_bytes": 608775,
             "pdf_bytes": 1764104,
             "text_epub_bytes": 608772,
             "text_pdf_bytes": 1764104,
-            "package_7z_bytes": 425672
+            "package_7z_bytes": 426533
         },
-        "illustration_count": 0
+        "illustration_count": 0,
+        "word_stats": {
+            "story_word_count": 261029,
+            "lore_word_count": 148,
+            "combined_word_count": 261177,
+            "story_page_count": 949,
+            "combined_page_count": 950,
+            "reading_hours": 17.4,
+            "reading_minutes": 1044,
+            "novel_equivalent": 2.9,
+            "scale_category": "Multi-Volume Epic Omnibus",
+            "scale_badge": "Multi-Volume Omnibus",
+            "benchmark_note": "2.9\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
+            "era_count": 9,
+            "chapter_count": 38,
+            "part_count": 90,
+            "illustration_count": 0
+        }
     },
     "/apex-fall-of-earth": {
         "view": "pages/raggiesoft-books/books/viewer",

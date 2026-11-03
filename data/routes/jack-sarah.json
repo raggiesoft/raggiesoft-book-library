@@ -16,14 +16,31 @@
             "pdf": "3.2 MB",
             "text_epub": "185 KB",
             "text_pdf": "3.2 MB",
-            "package_7z": "141 KB",
+            "package_7z": "142 KB",
             "epub_bytes": 189673,
             "pdf_bytes": 3367309,
             "text_epub_bytes": 189671,
             "text_pdf_bytes": 3367313,
-            "package_7z_bytes": 144368
+            "package_7z_bytes": 144949
         },
-        "illustration_count": 0
+        "illustration_count": 0,
+        "word_stats": {
+            "story_word_count": 81433,
+            "lore_word_count": 138,
+            "combined_word_count": 81571,
+            "story_page_count": 296,
+            "combined_page_count": 297,
+            "reading_hours": 5.4,
+            "reading_minutes": 326,
+            "novel_equivalent": 0.9,
+            "scale_category": "Full-Length Contemporary Novel",
+            "scale_badge": "Full-Length Novel",
+            "benchmark_note": "0.9\u00d7 a standard 90,000-word contemporary novel (70k\u2013110k trade benchmark)",
+            "era_count": 3,
+            "chapter_count": 33,
+            "part_count": 41,
+            "illustration_count": 0
+        }
     },
     "/jack-sarah": {
         "view": "pages/raggiesoft-books/books/viewer",

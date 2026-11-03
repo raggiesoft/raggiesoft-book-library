@@ -21,9 +21,26 @@
             "pdf_bytes": 21143357,
             "text_epub_bytes": 55576,
             "text_pdf_bytes": 168226,
-            "package_7z_bytes": 44844
+            "package_7z_bytes": 45138
         },
-        "illustration_count": 9
+        "illustration_count": 9,
+        "word_stats": {
+            "story_word_count": 20942,
+            "lore_word_count": 27244,
+            "combined_word_count": 48186,
+            "story_page_count": 76,
+            "combined_page_count": 175,
+            "reading_hours": 1.4,
+            "reading_minutes": 84,
+            "novel_equivalent": 0.2,
+            "scale_category": "Novella",
+            "scale_badge": "Novella",
+            "benchmark_note": "Standard contemporary novella length (17,500\u201340,000 words)",
+            "era_count": 1,
+            "chapter_count": 8,
+            "part_count": 11,
+            "illustration_count": 9
+        }
     },
     "/crimson-node": {
         "view": "pages/raggiesoft-books/books/viewer",

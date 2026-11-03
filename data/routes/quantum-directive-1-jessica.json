@@ -21,9 +21,26 @@
             "pdf_bytes": 259351,
             "text_epub_bytes": 87849,
             "text_pdf_bytes": 259351,
-            "package_7z_bytes": 70472
+            "package_7z_bytes": 70784
         },
-        "illustration_count": 0
+        "illustration_count": 0,
+        "word_stats": {
+            "story_word_count": 34858,
+            "lore_word_count": 133,
+            "combined_word_count": 34991,
+            "story_page_count": 127,
+            "combined_page_count": 127,
+            "reading_hours": 2.3,
+            "reading_minutes": 139,
+            "novel_equivalent": 0.4,
+            "scale_category": "Novella",
+            "scale_badge": "Novella",
+            "benchmark_note": "Standard contemporary novella length (17,500\u201340,000 words)",
+            "era_count": 2,
+            "chapter_count": 15,
+            "part_count": 16,
+            "illustration_count": 0
+        }
     },
     "/quantum-directive-1-jessica": {
         "view": "pages/raggiesoft-books/books/viewer",

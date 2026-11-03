@@ -16,14 +16,31 @@
             "pdf": "25 KB",
             "text_epub": "9.4 KB",
             "text_pdf": "25 KB",
-            "package_7z": "4.6 KB",
+            "package_7z": "4.8 KB",
             "epub_bytes": 9634,
             "pdf_bytes": 25934,
             "text_epub_bytes": 9640,
             "text_pdf_bytes": 25934,
-            "package_7z_bytes": 4714
+            "package_7z_bytes": 4900
         },
-        "illustration_count": 0
+        "illustration_count": 0,
+        "word_stats": {
+            "story_word_count": 1337,
+            "lore_word_count": 114,
+            "combined_word_count": 1451,
+            "story_page_count": 5,
+            "combined_page_count": 5,
+            "reading_hours": 0.1,
+            "reading_minutes": 5,
+            "novel_equivalent": 0.01,
+            "scale_category": "Short Fiction & Novelette",
+            "scale_badge": "Short Fiction",
+            "benchmark_note": "Short story / novelette companion (< 17,500 words)",
+            "era_count": 1,
+            "chapter_count": 1,
+            "part_count": 1,
+            "illustration_count": 0
+        }
     },
     "/mary-childhood": {
         "view": "pages/raggiesoft-books/books/viewer",
