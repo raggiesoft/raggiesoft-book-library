@@ -155,7 +155,7 @@ $landingTextPdfSize  = $landingSizes['text_pdf'] ?? '';
                     <a href="https://stardust.raggiesoft.com/novel" data-no-spa="true" target="_blank" rel="noopener noreferrer" class="rs-btn" style="font-size: 0.9rem; padding: 0.55rem 1rem; display: inline-flex; align-items: center; gap: 0.4rem;">
                         <i class="ph-fill ph-planet"></i> Read in Cosmic Exoplanet / Deep Space View
                     </a>
-                    <a href="https://music.raggiesoft.com/artists/the-stardust-engine" data-no-spa="true" target="_blank" rel="noopener noreferrer" class="rs-btn" style="font-size: 0.9rem; padding: 0.55rem 1rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+                    <a href="https://music.raggiesoft.com/the-stardust-engine" data-no-spa="true" target="_blank" rel="noopener noreferrer" class="rs-btn" style="font-size: 0.9rem; padding: 0.55rem 1rem; display: inline-flex; align-items: center; gap: 0.4rem;">
                         <i class="ph-fill ph-headphones"></i> Stream Discography in The Listening Room
                     </a>
                     <?php if ($seriesSlug === 'stardust-engine'): ?>
