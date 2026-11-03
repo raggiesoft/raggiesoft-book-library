@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "10.9 MB",
+            "epub": "10.8 MB",
             "pdf": "11.8 MB",
-            "text_epub": "55 KB",
-            "text_pdf": "165 KB",
-            "package_7z": "44 KB",
-            "epub_bytes": 11437750,
-            "pdf_bytes": 12332674,
-            "text_epub_bytes": 56695,
-            "text_pdf_bytes": 169320,
-            "package_7z_bytes": 45159
+            "text_epub": "65 KB",
+            "text_pdf": "194 KB",
+            "package_7z": "52 KB",
+            "epub_bytes": 11277928,
+            "pdf_bytes": 12395345,
+            "text_epub_bytes": 66313,
+            "text_pdf_bytes": 198296,
+            "package_7z_bytes": 53237
         },
-        "illustration_count": 15,
+        "illustration_count": 17,
         "word_stats": {
-            "story_word_count": 19636,
+            "story_word_count": 23934,
             "lore_word_count": 121,
-            "combined_word_count": 19757,
-            "story_page_count": 71,
-            "combined_page_count": 72,
-            "reading_hours": 1.3,
-            "reading_minutes": 79,
-            "novel_equivalent": 0.2,
+            "combined_word_count": 24055,
+            "story_page_count": 87,
+            "combined_page_count": 87,
+            "reading_hours": 1.6,
+            "reading_minutes": 96,
+            "novel_equivalent": 0.3,
             "scale_category": "Novella",
             "scale_badge": "Novella",
             "benchmark_note": "Standard contemporary novella length (17,500\u201340,000 words)",
             "era_count": 3,
-            "chapter_count": 9,
-            "part_count": 15,
-            "illustration_count": 15
+            "chapter_count": 10,
+            "part_count": 17,
+            "illustration_count": 17
         }
     },
     "/katie": {
@@ -258,10 +258,28 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c003/p002.md"
     },
-    "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-3-part-3-two-folding-wheelchairs-in-the-trunk-downsizing-to-military-highway-cvta-route-15": {
+    "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-3-part-3-two-compact-power-wheelchairs-in-the-trunk-downsizing-to-military-highway-cvta-route-15": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Part 3: Two Folding Wheelchairs in the Trunk, Downsizing to Military Highway, & CVTA Route 15",
+        "title": "Part 3: Part 3: Two Compact Power Wheelchairs in the Trunk, Downsizing to Military Highway, & CVTA Route 15",
         "theme": "raggiesoft-books",
         "filePath": "e003/c003/p003.md"
+    },
+    "/katie/sixteen-summer-sanctuary/sixteen-on-four-wheels-finding-dates": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Sixteen on Four Wheels & Finding Dates",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|3"
+    },
+    "/katie/sixteen-summer-sanctuary/sixteen-on-four-wheels-finding-dates/part-1-part-1-navigating-northwood-high-on-four-wheels-the-homecoming-pact": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Part 1: Navigating Northwood High on Four Wheels & The Homecoming Pact",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c004/p001.md"
+    },
+    "/katie/sixteen-summer-sanctuary/sixteen-on-four-wheels-finding-dates/part-2-part-2-asking-out-heather-and-ryan-the-double-date-at-emerald-creek-mall": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Part 2: Asking Out Heather and Ryan & The Double Date at Emerald Creek Mall",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c004/p002.md"
     }
 }
