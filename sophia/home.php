@@ -679,8 +679,9 @@ $volumeCount = count($books);
           Explains the accessibility, offline PWA, and musical companion features of the platform.
         -->
         <section aria-labelledby="ova-reader-features-heading">
-            <h2 id="ova-reader-features-heading" style="font-size: 1.35rem; font-weight: 800; color: var(--rs-heading); margin: 0 0 1rem 0; display: flex; align-items: center; gap: 0.5rem;">
-                <i class="ph-fill ph-book-open-text" style="color: var(--rs-primary);"></i> Built for Accessible, Distraction-Free Reading
+            <h2 id="ova-reader-features-heading" style="font-size: 1.35rem; font-weight: 800; color: var(--rs-heading); margin: 0 0 1rem 0; display: flex; align-items: center; gap: 0.65rem;">
+                <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/images/pwa-icons/icon-192.png?v=3" alt="RaggieSoft Book Reader App Icon" style="width: 36px; height: 36px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.25);">
+                <span>RaggieSoft Book Reader &mdash; Built for Accessible, Distraction-Free Reading</span>
             </h2>
             <div class="ova-features-grid">
                 <div class="ova-feature-card">
@@ -696,7 +697,7 @@ $volumeCount = count($books);
                         <i class="ph-fill ph-cloud-arrow-down" style="color: var(--rs-primary);"></i> Offline-First PWA Architecture
                     </h3>
                     <p class="ova-feature-desc">
-                        Install Ocean View Archives to your home screen for a full-screen native app experience. Your active chapter and scroll position are saved locally in your browser with zero tracking databases.
+                        Install <strong>Book Reader</strong> to your home screen for a full-screen native app experience. Your active chapter and scroll position are saved locally in your browser with zero tracking databases.
                     </p>
                 </div>
                 <div class="ova-feature-card">
