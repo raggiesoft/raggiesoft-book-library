@@ -13,25 +13,25 @@
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
             "epub": "10.8 MB",
-            "pdf": "11.8 MB",
-            "text_epub": "75 KB",
-            "text_pdf": "218 KB",
-            "package_7z": "59 KB",
-            "epub_bytes": 11288458,
-            "pdf_bytes": 12421271,
-            "text_epub_bytes": 76645,
-            "text_pdf_bytes": 222802,
-            "package_7z_bytes": 60183
+            "pdf": "11.9 MB",
+            "text_epub": "78 KB",
+            "text_pdf": "229 KB",
+            "package_7z": "62 KB",
+            "epub_bytes": 11292133,
+            "pdf_bytes": 12431969,
+            "text_epub_bytes": 80347,
+            "text_pdf_bytes": 234413,
+            "package_7z_bytes": 63105
         },
         "illustration_count": 19,
         "word_stats": {
-            "story_word_count": 27789,
+            "story_word_count": 29678,
             "lore_word_count": 121,
-            "combined_word_count": 27910,
-            "story_page_count": 101,
-            "combined_page_count": 101,
-            "reading_hours": 1.9,
-            "reading_minutes": 111,
+            "combined_word_count": 29799,
+            "story_page_count": 108,
+            "combined_page_count": 108,
+            "reading_hours": 2,
+            "reading_minutes": 119,
             "novel_equivalent": 0.3,
             "scale_category": "Novella",
             "scale_badge": "Novella",
@@ -252,9 +252,9 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c003/p001.md"
     },
-    "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-2-part-2-the-test-results-dr-chen-s-prognosis-for-our-arms-and-legs": {
+    "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-2-part-2-when-borrowed-time-runs-out-the-collapse-at-school-the-clinic-emergency-time-for-powerchairs": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Part 2: The Test Results & Dr. Chen's Prognosis for Our Arms and Legs",
+        "title": "Part 2: Part 2: When Borrowed Time Runs Out \u2014 The Collapse at School, The Clinic Emergency, & Time for Powerchairs",
         "theme": "raggiesoft-books",
         "filePath": "e003/c003/p002.md"
     },
