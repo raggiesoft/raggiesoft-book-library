@@ -838,7 +838,7 @@ $homeNovelEquivs = (float)($homeTotals['total_novel_equivalents'] ?? ($homeTotal
             <div class="ova-features-grid">
                 <div class="ova-feature-card">
                     <h3 class="ova-feature-title">
-                        <i class="ph-fill ph-text-aa" style="color: var(--rs-primary);"></i> Section 508 &amp; Dyslexia Typography
+                        <i class="ph-fill ph-text-aa" style="color: var(--rs-primary);"></i> Accessible &amp; Dyslexia-Friendly Typography
                     </h3>
                     <p class="ova-feature-desc">
                         Switch effortlessly between <em>Atkinson Hyperlegible</em>, <em>OpenDyslexic</em>, <em>Lora</em>, and <em>Georgia</em> with customizable font scaling, line spacing, and high-contrast Light, Dark, and Sepia themes.
@@ -846,10 +846,10 @@ $homeNovelEquivs = (float)($homeTotals['total_novel_equivalents'] ?? ($homeTotal
                 </div>
                 <div class="ova-feature-card">
                     <h3 class="ova-feature-title">
-                        <i class="ph-fill ph-cloud-arrow-down" style="color: var(--rs-primary);"></i> Offline-First PWA Architecture
+                        <i class="ph-fill ph-cloud-arrow-down" style="color: var(--rs-primary);"></i> Read Anywhere, Online or Offline
                     </h3>
                     <p class="ova-feature-desc">
-                        Install <strong>Book Reader</strong> to your home screen for a full-screen native app experience. Your active chapter and scroll position are saved locally in your browser with zero tracking databases.
+                        Install <strong>Book Reader</strong> to your home screen or desktop for a full-screen reading experience. Your active chapter and reading position are saved privately on your device with no account required.
                     </p>
                 </div>
                 <div class="ova-feature-card">
@@ -864,21 +864,21 @@ $homeNovelEquivs = (float)($homeTotals['total_novel_equivalents'] ?? ($homeTotal
         </section>
 
         <!-- 
-          AUTOMATED TYPESETTING VIA PAIGE & THE STARDUST ENGINE
-          Explains how raw manuscripts are compiled into this zero-database PWA.
+          EDITORIAL CARE & TYPESETTING
+          Explains how manuscripts are curated and presented across the Ocean View Archives.
         -->
         <section class="ova-pipeline-banner" aria-labelledby="ova-typesetting-heading">
             <div style="flex: 1; min-width: 260px;">
                 <h2 id="ova-typesetting-heading" style="font-size: 1.1rem; font-weight: 800; color: var(--rs-heading); margin: 0 0 0.4rem 0; display: flex; align-items: center; gap: 0.45rem;">
-                    <i class="ph-fill ph-sparkle" style="color: var(--rs-primary);"></i> Automated Typesetting via Paige (<code>paige.php</code>) &amp; The Stardust Engine
+                    <i class="ph-fill ph-sparkle" style="color: var(--rs-primary);"></i> Curated &amp; Typeset by the Ocean View Archives Editorial Team
                 </h2>
                 <p style="font-size: 0.92rem; line-height: 1.6; color: var(--rs-text); opacity: 0.9; margin: 0;">
-                    Ocean View Archives runs on a 100% zero-database, Git-backed literary pipeline. Canonical Markdown manuscripts (<code>e###/c###/s###.md</code>) are ingested, validated, and indexed into structured JSON manifests and client-side search indexes by <strong>Paige</strong> (Literary Editor &amp; Safe Person), then rendered by the OVA Siblings (Eleanor, Isabel, Sophia, and Oliver).
+                    Every novel and short story in the Ocean View Archives is carefully edited, typeset, and organized into chapters, character guides, and illustrated galleries so you can explore each universe at your own pace.
                 </p>
             </div>
             <div>
-                <a href="https://michaelpragsdale.com/build-team/paige" data-no-spa="true" style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.6rem 1.1rem; border-radius: 8px; border: 1px solid var(--rs-border); background: var(--rs-bg); color: var(--rs-heading); font-weight: 700; font-size: 0.88rem; text-decoration: none;">
-                    <i class="ph-fill ph-terminal-window"></i> Meet Paige (Build Team)
+                <a href="/library" style="display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.6rem 1.1rem; border-radius: 8px; border: 1px solid var(--rs-border); background: var(--rs-bg); color: var(--rs-heading); font-weight: 700; font-size: 0.88rem; text-decoration: none;">
+                    <i class="ph-fill ph-books"></i> Explore All Books
                 </a>
             </div>
         </section>
