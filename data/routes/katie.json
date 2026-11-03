@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "9.9 MB",
-            "pdf": "10.8 MB",
-            "text_epub": "51 KB",
-            "text_pdf": "149 KB",
-            "package_7z": "40 KB",
-            "epub_bytes": 10401234,
-            "pdf_bytes": 11277389,
-            "text_epub_bytes": 52011,
-            "text_pdf_bytes": 152118,
-            "package_7z_bytes": 41013
+            "epub": "10.9 MB",
+            "pdf": "11.8 MB",
+            "text_epub": "55 KB",
+            "text_pdf": "165 KB",
+            "package_7z": "44 KB",
+            "epub_bytes": 11437750,
+            "pdf_bytes": 12332674,
+            "text_epub_bytes": 56695,
+            "text_pdf_bytes": 169320,
+            "package_7z_bytes": 45159
         },
-        "illustration_count": 14,
+        "illustration_count": 15,
         "word_stats": {
-            "story_word_count": 17706,
+            "story_word_count": 19636,
             "lore_word_count": 121,
-            "combined_word_count": 17827,
-            "story_page_count": 64,
-            "combined_page_count": 65,
-            "reading_hours": 1.2,
-            "reading_minutes": 71,
+            "combined_word_count": 19757,
+            "story_page_count": 71,
+            "combined_page_count": 72,
+            "reading_hours": 1.3,
+            "reading_minutes": 79,
             "novel_equivalent": 0.2,
             "scale_category": "Novella",
             "scale_badge": "Novella",
             "benchmark_note": "Standard contemporary novella length (17,500\u201340,000 words)",
             "era_count": 3,
             "chapter_count": 9,
-            "part_count": 14,
-            "illustration_count": 14
+            "part_count": 15,
+            "illustration_count": 15
         }
     },
     "/katie": {
@@ -257,5 +257,11 @@
         "title": "Part 2: Part 2: The Test Results & Dr. Chen's Prognosis for Our Arms and Legs",
         "theme": "raggiesoft-books",
         "filePath": "e003/c003/p002.md"
+    },
+    "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-3-part-3-two-folding-wheelchairs-in-the-trunk-downsizing-to-military-highway-cvta-route-15": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Part 3: Two Folding Wheelchairs in the Trunk, Downsizing to Military Highway, & CVTA Route 15",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c003/p003.md"
     }
 }
