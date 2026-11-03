@@ -19,9 +19,9 @@
  */
 
 // Cache partition identifiers
-const CACHE_NAME = 'ova-cache-v12';
-const DYNAMIC_CACHE = 'ova-dynamic-v12';
-const IMAGE_CACHE = 'ova-images-v12';
+const CACHE_NAME = 'ova-cache-v13';
+const DYNAMIC_CACHE = 'ova-dynamic-v13';
+const IMAGE_CACHE = 'ova-images-v13';
 
 // Minimum required assets to render the offline application shell
 // Note: /manifest.json is intentionally excluded from PRECACHE_ASSETS and bypassed in fetch
@@ -112,8 +112,9 @@ self.addEventListener('fetch', event => {
     }
 
     // 2. Network First Strategy for Dynamic Data (HTML Pages, JSON APIs)
+    // Bypass HTTP disk cache on HTML/JSON requests so deployed page changes appear immediately.
     event.respondWith(
-        fetch(event.request).then(response => {
+        fetch(event.request, { cache: 'no-cache' }).then(response => {
             // If the network succeeds, cache the fresh response for future offline use.
             const responseClone = response.clone();
             caches.open(DYNAMIC_CACHE).then(cache => {

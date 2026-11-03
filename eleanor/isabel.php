@@ -32,6 +32,9 @@
 // Stardust Engine Library: Master Router
 // The OVA Siblings: Eleanor (Public Entry), Isabel (Router), Sophia (Protected Vault), Oliver (Viewer)
 header('Content-Type: text/html; charset=utf-8');
+header('Cache-Control: no-cache, no-store, must-revalidate');
+header('Pragma: no-cache');
+header('Expires: 0');
 
 // Strip any query parameters to match exact semantic route paths
 $requestUri = strtok($_SERVER['REQUEST_URI'], '?');

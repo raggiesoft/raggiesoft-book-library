@@ -238,3 +238,4 @@ $headerAssetsUrl = !empty($cdnBaseUrl) ? rtrim($cdnBaseUrl, '/') : 'https://asse
         </nav>
     </div>
 </header>
+
