@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "8.6 MB",
-            "pdf": "9.2 MB",
-            "text_epub": "46 KB",
-            "text_pdf": "134 KB",
-            "package_7z": "36 KB",
-            "epub_bytes": 9027326,
-            "pdf_bytes": 9679229,
-            "text_epub_bytes": 46774,
-            "text_pdf_bytes": 136882,
-            "package_7z_bytes": 36392
+            "epub": "9.9 MB",
+            "pdf": "10.8 MB",
+            "text_epub": "50 KB",
+            "text_pdf": "147 KB",
+            "package_7z": "40 KB",
+            "epub_bytes": 10400706,
+            "pdf_bytes": 11276208,
+            "text_epub_bytes": 51479,
+            "text_pdf_bytes": 150698,
+            "package_7z_bytes": 40543
         },
-        "illustration_count": 12,
+        "illustration_count": 14,
         "word_stats": {
-            "story_word_count": 15609,
+            "story_word_count": 17470,
             "lore_word_count": 121,
-            "combined_word_count": 15730,
-            "story_page_count": 57,
-            "combined_page_count": 57,
-            "reading_hours": 1,
-            "reading_minutes": 62,
-            "novel_equivalent": 0.17,
+            "combined_word_count": 17591,
+            "story_page_count": 64,
+            "combined_page_count": 64,
+            "reading_hours": 1.2,
+            "reading_minutes": 70,
+            "novel_equivalent": 0.19,
             "scale_category": "Short Fiction & Novelette",
             "scale_badge": "Short Fiction",
             "benchmark_note": "Short story / novelette companion (< 17,500 words)",
             "era_count": 3,
-            "chapter_count": 8,
-            "part_count": 12,
-            "illustration_count": 12
+            "chapter_count": 9,
+            "part_count": 14,
+            "illustration_count": 14
         }
     },
     "/katie": {
@@ -239,5 +239,23 @@
         "title": "Part 5: Part 5: Monday Morning in Virginia Beach \u2014 The Divorce Lawyer, The PCP, & Borrowed Time",
         "theme": "raggiesoft-books",
         "filePath": "e003/c002/p005.md"
+    },
+    "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Junior Year at Northwood High & The Prognosis",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|2"
+    },
+    "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-1-part-1-the-fault-grounds-filing-the-protective-order-junior-year-at-northwood-high-school": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Part 1: The Fault-Grounds Filing, The Protective Order, & Junior Year at Northwood High School",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c003/p001.md"
+    },
+    "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-2-part-2-the-test-results-dr-chen-s-prognosis-for-our-arms-and-legs": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Part 2: The Test Results & Dr. Chen's Prognosis for Our Arms and Legs",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c003/p002.md"
     }
 }
