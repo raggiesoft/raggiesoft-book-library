@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "7.9 MB",
-            "pdf": "8.5 MB",
-            "text_epub": "40 KB",
-            "text_pdf": "118 KB",
-            "package_7z": "31 KB",
-            "epub_bytes": 8292952,
-            "pdf_bytes": 8870346,
-            "text_epub_bytes": 41323,
-            "text_pdf_bytes": 120975,
-            "package_7z_bytes": 31592
+            "epub": "8.7 MB",
+            "pdf": "9.3 MB",
+            "text_epub": "44 KB",
+            "text_pdf": "128 KB",
+            "package_7z": "34 KB",
+            "epub_bytes": 9083325,
+            "pdf_bytes": 9789168,
+            "text_epub_bytes": 44702,
+            "text_pdf_bytes": 130950,
+            "package_7z_bytes": 34605
         },
-        "illustration_count": 11,
+        "illustration_count": 12,
         "word_stats": {
-            "story_word_count": 13087,
+            "story_word_count": 14650,
             "lore_word_count": 121,
-            "combined_word_count": 13208,
-            "story_page_count": 48,
-            "combined_page_count": 48,
-            "reading_hours": 0.9,
-            "reading_minutes": 52,
-            "novel_equivalent": 0.15,
+            "combined_word_count": 14771,
+            "story_page_count": 53,
+            "combined_page_count": 54,
+            "reading_hours": 1,
+            "reading_minutes": 59,
+            "novel_equivalent": 0.16,
             "scale_category": "Short Fiction & Novelette",
             "scale_badge": "Short Fiction",
             "benchmark_note": "Short story / novelette companion (< 17,500 words)",
             "era_count": 3,
             "chapter_count": 8,
-            "part_count": 11,
-            "illustration_count": 11
+            "part_count": 12,
+            "illustration_count": 12
         }
     },
     "/katie": {
@@ -228,10 +228,16 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c002/p003.md"
     },
-    "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-4-part-4-back-on-dry-land-the-reluctant-ride-home-the-divorce-lawyer-borrowed-time": {
+    "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-4-part-4-back-on-dry-land-the-twelve-hour-drive-up-i-95": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: Part 4: Back on Dry Land \u2014 The Reluctant Ride Home, The Divorce Lawyer, & Borrowed Time",
+        "title": "Part 4: Part 4: Back on Dry Land & The Twelve-Hour Drive Up I-95",
         "theme": "raggiesoft-books",
         "filePath": "e003/c002/p004.md"
+    },
+    "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-5-part-5-monday-morning-in-virginia-beach-the-divorce-lawyer-the-pcp-borrowed-time": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Part 5: Monday Morning in Virginia Beach \u2014 The Divorce Lawyer, The PCP, & Borrowed Time",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c002/p005.md"
     }
 }
