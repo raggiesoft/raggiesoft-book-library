@@ -19,18 +19,21 @@
  */
 
 // Cache partition identifiers
-const CACHE_NAME = 'ova-cache-v11';
-const DYNAMIC_CACHE = 'ova-dynamic-v11';
-const IMAGE_CACHE = 'ova-images-v11';
+const CACHE_NAME = 'ova-cache-v12';
+const DYNAMIC_CACHE = 'ova-dynamic-v12';
+const IMAGE_CACHE = 'ova-images-v12';
 
 // Minimum required assets to render the offline application shell
+// Note: /manifest.json is intentionally excluded from PRECACHE_ASSETS and bypassed in fetch
+// so Chrome/Safari ManifestUpdateManager always fetches the live manifest and icons directly.
 const PRECACHE_ASSETS = [
     '/',
     '/library',
-    '/manifest.json',
     '/scripts/pwa.js?v=20261017m',
-    '/favicon.ico?v=3',
-    'https://assets.raggiesoft.com/raggiesoft-books/images/pwa-icons/icon.svg?v=3'
+    '/favicon.ico?v=4',
+    '/icons/icon-192.png?v=4',
+    '/icons/icon-512.png?v=4',
+    '/icons/icon.svg?v=4'
 ];
 
 /**
@@ -76,6 +79,12 @@ self.addEventListener('fetch', event => {
     if (event.request.method !== 'GET') return;
 
     const url = new URL(event.request.url);
+
+    // Never intercept the Service Worker script or Web App Manifest so Chromium's
+    // ManifestUpdateManager always reads the latest live manifest & icons on launch.
+    if (url.pathname === '/sw.js' || url.pathname === '/manifest.json') {
+        return;
+    }
 
     // 1. Cache First Strategy for Static Resources (Images, Fonts, Scripts, Styles)
     if (url.hostname.includes('assets.raggiesoft.com') || url.hostname.includes('fonts.googleapis.com') || url.hostname.includes('fonts.gstatic.com') || event.request.destination === 'image' || event.request.destination === 'style' || event.request.destination === 'script') {

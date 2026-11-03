@@ -235,9 +235,9 @@ if (!empty($seriesSlug)) {
     $ogDescription = 'Browse all 250+ illustrated scenes across The Rachel Narrative, The Eleventh Child, and the Ocean View Archives library.';
     $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/rachel.jpg';
 } else if ($isHome) {
-    $siteName = 'Ocean View Archives | RaggieSoft Media';
-    $ogTitle = 'Ocean View Archives | RaggieSoft Media';
-    $ogDescription = 'The official literary imprint of RaggieSoft Media. Featuring The Eleventh Child, The Rachel Narrative, and the Contemporary Fiction Library.';
+    $siteName = 'RaggieSoft Book Reader — Ocean View Archives';
+    $ogTitle = 'RaggieSoft Book Reader — Ocean View Archives';
+    $ogDescription = 'The official literary imprint of RaggieSoft Media inside the RaggieSoft Book Reader. Featuring The Eleventh Child, The Rachel Narrative, and the Contemporary Fiction Library.';
     $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/aubrie.jpg';
 }
 
@@ -335,8 +335,9 @@ if (!empty($pageConfig['filePath'])) {
     }
 }
 
-// Prevent injection of the global hub header to preserve screen real estate for readers
-$currentHeaderMenu = null;
+// Inject the Co-Branded Top Application Header Bar on all platform screens,
+// while preserving 100% vertical height inside individual book reading panes (where sidebar.php displays the badge)
+$currentHeaderMenu = empty($seriesSlug) ? ($basePath . '/includes/components/headers/app-header.php') : null;
 
 // Include the Global HTML Header (Opens HTML, Head, Body, and the primary wrapper)
 require_once $basePath . '/includes/components/headers/header.php';

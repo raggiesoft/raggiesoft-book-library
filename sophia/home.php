@@ -92,11 +92,92 @@ $volumeCount = count($books);
         z-index: 2;
     }
 
+    .ova-cobrand-lockup {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.15rem;
+        margin-bottom: 1.15rem;
+        flex-wrap: wrap;
+    }
+
+    .ova-cobrand-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.4rem;
+    }
+
+    .ova-app-icon-hero {
+        width: 104px;
+        height: 104px;
+        border-radius: 24px;
+        object-fit: cover;
+        border: 2px solid #E3B27C;
+        box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45), 0 0 20px rgba(227, 178, 124, 0.22);
+        background: #0b142a;
+    }
+
     .ova-crest-img {
-        width: 140px;
-        height: auto;
-        margin-bottom: 1rem;
-        filter: drop-shadow(0 6px 16px rgba(0, 0, 0, 0.35));
+        width: 104px;
+        height: 104px;
+        object-fit: contain;
+        filter: drop-shadow(0 8px 20px rgba(0, 0, 0, 0.4));
+    }
+
+    .ova-cobrand-caption {
+        font-size: 0.68rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: #f6d5a8;
+        opacity: 0.92;
+    }
+
+    .ova-cobrand-plus {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 999px;
+        background: rgba(9, 44, 54, 0.78);
+        border: 1px solid rgba(227, 178, 124, 0.55);
+        color: #E3B27C;
+        font-weight: 800;
+        font-size: 0.95rem;
+        margin-bottom: 1.2rem;
+    }
+
+    /* Mode-Aware PWA Elevation (Option 3):
+       When running as an installed PWA (`html.is-pwa-standalone`), elevate the
+       Active Reading Session card to the very top of the home view above the Hero. */
+    #stardust-main-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #rs-home-jump-back-outer {
+        width: 100%;
+        order: 2;
+    }
+
+    .ova-imprint-hero {
+        order: 1;
+    }
+
+    .ova-home-body-container {
+        order: 3;
+        width: 100%;
+        max-width: 1140px;
+        margin: 0 auto;
+        padding: 2.25rem 1.5rem 1rem;
+    }
+
+    html.is-pwa-standalone #rs-home-jump-back-outer {
+        order: 0;
+        background: linear-gradient(180deg, rgba(9, 44, 54, 0.42) 0%, transparent 100%);
+        border-bottom: 1px solid rgba(227, 178, 124, 0.22);
     }
 
     .ova-imprint-badge {
@@ -408,23 +489,35 @@ $volumeCount = count($books);
 <div class="stardust-mobile-scroll" id="stardust-main-content" style="flex: 1; background: var(--rs-bg); padding-bottom: 6rem;">
 
     <!-- 
-      OCEAN VIEW ARCHIVES IMPRINT INTRODUCTION HERO
-      Introduces visitors to the literary imprint with a prominent direct button to the Library.
+      OCEAN VIEW ARCHIVES + RAGGIESOFT BOOK READER CO-BRANDED HERO
+      Showcases both the RaggieSoft Book Reader App Icon and the Ocean View Archives Imprint Crest.
     -->
-    <section class="ova-imprint-hero" aria-label="Ocean View Archives Literary Imprint Introduction">
+    <section class="ova-imprint-hero" aria-label="Ocean View Archives and RaggieSoft Book Reader Introduction">
         <div class="ova-imprint-hero-inner">
-            <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/images/logos/oceanview-archives.svg"
-                 alt="Ocean View Archives Crest"
-                 class="ova-crest-img">
+            <div class="ova-cobrand-lockup" role="group" aria-label="RaggieSoft Book Reader App and Ocean View Archives Imprint">
+                <div class="ova-cobrand-item">
+                    <img src="/icons/icon-512.png?v=4"
+                         alt="RaggieSoft Book Reader App Icon"
+                         class="ova-app-icon-hero">
+                    <span class="ova-cobrand-caption">Book Reader App</span>
+                </div>
+                <span class="ova-cobrand-plus" aria-hidden="true">&times;</span>
+                <div class="ova-cobrand-item">
+                    <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/images/logos/oceanview-archives.svg"
+                         alt="Ocean View Archives Imprint Crest"
+                         class="ova-crest-img">
+                    <span class="ova-cobrand-caption">Publishing Imprint</span>
+                </div>
+            </div>
 
             <div class="ova-imprint-badge">
-                <i class="ph-fill ph-books"></i> Official Literary Imprint of RaggieSoft Media
+                <i class="ph-fill ph-book-open-text"></i> RaggieSoft Book Reader &bull; Official Literary Imprint of RaggieSoft Media
             </div>
 
             <h1 class="ova-imprint-title">Ocean View Archives</h1>
 
             <p class="ova-imprint-lead">
-                A grounded, unshakeable literary sanctuary built to preserve and bind the history of the pack. Read serialized contemporary novels, sci-fi directives, and fantasy sagas inside the distraction-free <strong>Stardust Engine Book Reader PWA</strong>&mdash;complete with offline caching, dyslexia-friendly typography, and companion soundtracks.
+                A grounded, unshakeable literary sanctuary built to preserve and bind the history of the pack. Read serialized contemporary novels, sci-fi directives, and fantasy sagas inside the distraction-free <strong>RaggieSoft Book Reader</strong>&mdash;complete with offline caching, dyslexia-friendly typography, and companion soundtracks.
             </p>
 
             <div class="ova-hero-actions">
@@ -443,28 +536,26 @@ $volumeCount = count($books);
             </div>
         </div>
     </section>
-    
-    <!-- 
-      HOME PAGE CONTENT CONTAINER
-    -->
-    <div style="max-width: 1140px; margin: 0 auto; padding: 2.25rem 1.5rem 1rem;">
 
-        <!-- 
-          OPTIONAL CONTINUE READING BAR
-          Hidden by default; only appears if the reader has an active 'rs-last-read' book in localStorage.
-        -->
-        <div id="rs-home-jump-back" style="display: none; margin-bottom: 2.25rem;">
-            <div style="background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 14px; padding: 1.15rem 1.25rem; display: flex; flex-wrap: wrap; gap: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05); align-items: center; justify-content: space-between;">
+    <!-- 
+      OPTIONAL CONTINUE READING BAR (ELEVATED ABOVE HERO IN INSTALLED PWA MODE)
+      Hidden by default; only appears if the reader has an active 'rs-last-read' book in localStorage.
+      In installed PWA mode (`html.is-pwa-standalone`), CSS `order: 0` places this right at the top of the screen!
+    -->
+    <div id="rs-home-jump-back-outer" style="display: none;">
+        <div style="max-width: 1140px; margin: 0 auto; padding: 1.5rem 1.5rem 0;">
+            <div id="rs-home-jump-back" style="background: var(--rs-surface); border: 1.5px solid rgba(227, 178, 124, 0.45); border-radius: 14px; padding: 1.15rem 1.25rem; display: flex; flex-wrap: wrap; gap: 1rem; box-shadow: 0 6px 18px rgba(0,0,0,0.12); align-items: center; justify-content: space-between;">
                 <div style="display: flex; gap: 1rem; align-items: center; min-width: 240px; flex: 1;">
-                    <div style="width: 64px; height: 96px; flex-shrink: 0; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.12);">
+                    <div style="width: 64px; height: 96px; flex-shrink: 0; border-radius: 6px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.18);">
                         <img id="rs-jump-cover" src="" alt="Cover" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div>
-                        <span style="display: inline-block; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--rs-primary); margin-bottom: 0.2rem;">
-                            <i class="ph-fill ph-bookmark-simple"></i> Active Reading Session
+                        <span style="display: inline-flex; align-items: center; gap: 0.4rem; font-size: 0.72rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--rs-primary); margin-bottom: 0.25rem;">
+                            <img src="/icons/icon-192.png?v=4" alt="" aria-hidden="true" style="width: 16px; height: 16px; border-radius: 4px;">
+                            <span>Book Reader &bull; Active Reading Session</span>
                         </span>
-                        <h2 id="rs-jump-series" style="font-size: 1.15rem; margin: 0 0 0.2rem 0; font-weight: 800; color: var(--rs-heading);">Loading...</h2>
-                        <p id="rs-jump-part" style="font-size: 0.88rem; color: var(--rs-text); opacity: 0.8; margin: 0;">Pick up right where you left off</p>
+                        <h2 id="rs-jump-series" style="font-size: 1.2rem; margin: 0 0 0.2rem 0; font-weight: 800; color: var(--rs-heading);">Loading...</h2>
+                        <p id="rs-jump-part" style="font-size: 0.88rem; color: var(--rs-text); opacity: 0.85; margin: 0;">Pick up right where you left off</p>
                     </div>
                 </div>
                 <div style="display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center;">
@@ -477,6 +568,12 @@ $volumeCount = count($books);
                 </div>
             </div>
         </div>
+    </div>
+    
+    <!-- 
+      HOME PAGE CONTENT CONTAINER
+    -->
+    <div class="ova-home-body-container">
 
         <!-- 
           PROMINENT FULL LIBRARY GATEWAY BANNER
@@ -680,7 +777,7 @@ $volumeCount = count($books);
         -->
         <section aria-labelledby="ova-reader-features-heading">
             <h2 id="ova-reader-features-heading" style="font-size: 1.35rem; font-weight: 800; color: var(--rs-heading); margin: 0 0 1rem 0; display: flex; align-items: center; gap: 0.65rem;">
-                <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/images/pwa-icons/icon-192.png?v=3" alt="RaggieSoft Book Reader App Icon" style="width: 36px; height: 36px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.25);">
+                <img src="/icons/icon-192.png?v=4" alt="RaggieSoft Book Reader App Icon" style="width: 36px; height: 36px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.25);">
                 <span>RaggieSoft Book Reader &mdash; Built for Accessible, Distraction-Free Reading</span>
             </h2>
             <div class="ova-features-grid">
@@ -761,9 +858,9 @@ $volumeCount = count($books);
             const seriesSlug = parts[0];
             const seriesData = catalog.find(b => b.slug === seriesSlug);
             if (seriesData) {
-                const jumpBack = document.getElementById('rs-home-jump-back');
-                if (jumpBack) {
-                    jumpBack.style.display = 'block';
+                const jumpBackOuter = document.getElementById('rs-home-jump-back-outer');
+                if (jumpBackOuter) {
+                    jumpBackOuter.style.display = 'block';
                     document.getElementById('rs-jump-series').textContent = seriesData.title;
                     document.getElementById('rs-jump-cover').src = "<?php echo $cdnBaseUrl; ?>" + seriesData.image;
                     document.getElementById('rs-jump-btn').href = lastRead;

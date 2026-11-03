@@ -118,6 +118,18 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
 
 <!-- Slide-out sidebar container -->
 <aside id="stardust-sidebar" class="reader-sidebar">
+
+    <!-- Co-Branded Book Reader App + Ocean View Archives Imprint Badge -->
+    <a href="/" style="display: flex; align-items: center; gap: 0.65rem; text-decoration: none; padding: 0.55rem 0.65rem; margin-bottom: 1rem; border-radius: 10px; background: var(--rs-surface); border: 1px solid var(--rs-border); box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+        <img src="/icons/icon-192.png?v=4" alt="RaggieSoft Book Reader App Icon" style="width: 38px; height: 38px; border-radius: 9px; flex-shrink: 0; border: 1px solid rgba(227, 178, 124, 0.55); box-shadow: 0 2px 6px rgba(0,0,0,0.2);">
+        <div style="display: flex; flex-direction: column; min-width: 0; text-align: left;">
+            <span style="font-size: 0.88rem; font-weight: 800; color: var(--rs-heading); line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">RaggieSoft Book Reader</span>
+            <span style="display: inline-flex; align-items: center; gap: 0.28rem; font-size: 0.65rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--rs-primary); margin-top: 0.1rem;">
+                <img src="<?php echo htmlspecialchars($cdnBaseUrl); ?>/raggiesoft-books/images/logos/oceanview-archives.svg" alt="" aria-hidden="true" style="width: 12px; height: 12px; object-fit: contain;">
+                <span>Ocean View Archives</span>
+            </span>
+        </div>
+    </a>
     
     <!-- 
       Contextual Series Header

@@ -80,7 +80,7 @@ if ($catalogData) {
         <div id="rs-pwa-install-banner" style="display: none; background: var(--rs-primary, #0056b3); color: white; border-radius: 12px; padding: 1rem; margin-bottom: 2rem; align-items: flex-start; justify-content: space-between; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
             <div style="display: flex; align-items: flex-start; gap: 1rem; flex: 1;">
                 <div style="width: 48px; height: 48px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0;">
-                    <img src="https://assets.raggiesoft.com/raggiesoft-books/images/pwa-icons/icon-192.png" alt="App Icon" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="/icons/icon-192.png?v=4" alt="RaggieSoft Book Reader App Icon" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <div style="flex: 1;">
                     <h3 style="margin: 0; font-size: 1rem; font-weight: 700;">Install the App</h3>

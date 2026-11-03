@@ -71,10 +71,11 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
     <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
     
-    <link rel="icon" href="/favicon.ico?v=3" sizes="32x32">
-    <link rel="icon" href="https://assets.raggiesoft.com/raggiesoft-books/images/pwa-icons/icon.svg?v=3" type="image/svg+xml">
-    <link rel="icon" type="image/png" sizes="192x192" href="https://assets.raggiesoft.com/raggiesoft-books/images/pwa-icons/icon-192.png?v=3">
-    <link rel="apple-touch-icon" href="https://assets.raggiesoft.com/raggiesoft-books/images/pwa-icons/apple-icon-180.png?v=3">
+    <link rel="icon" href="/favicon.ico?v=4" sizes="32x32">
+    <link rel="icon" href="/icons/icon.svg?v=4" type="image/svg+xml">
+    <link rel="icon" type="image/png" sizes="192x192" href="/icons/icon-192.png?v=4">
+    <link rel="icon" type="image/png" sizes="512x512" href="/icons/icon-512.png?v=4">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180.png?v=4">
     
     <!-- PWA iOS Specific Configuration -->
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -230,7 +231,7 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
     <link rel="apple-touch-startup-image" href="https://assets.raggiesoft.com/raggiesoft-books/images/pwa-icons/apple-splash-dark-640-1136.jpg?v=3" media="(prefers-color-scheme: dark) and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
     <link rel="apple-touch-startup-image" href="https://assets.raggiesoft.com/raggiesoft-books/images/pwa-icons/apple-splash-dark-1136-640.jpg?v=3" media="(prefers-color-scheme: dark) and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
     
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/manifest.json?v=4">
     <title><?= htmlspecialchars($siteName ?? 'Ocean View Archives') ?></title>
     
     <!-- OpenGraph & Twitter Metadata generation based on injected PHP variables -->

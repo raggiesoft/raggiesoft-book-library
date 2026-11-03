@@ -262,4 +262,13 @@ for (w, h) in splash_resolutions:
 print(f"Generated {len(splash_resolutions)} Light and {len(splash_resolutions)} Dark Book Reader splash screens in {cdn_pwa_dir}")
 EOF
 
+mkdir -p icons
+cp "../../../raggiesoft-assets/raggiesoft-books/images/pwa-icons/icon-192.png" \
+   "../../../raggiesoft-assets/raggiesoft-books/images/pwa-icons/icon-512.png" \
+   "../../../raggiesoft-assets/raggiesoft-books/images/pwa-icons/manifest-icon-192.maskable.png" \
+   "../../../raggiesoft-assets/raggiesoft-books/images/pwa-icons/manifest-icon-512.maskable.png" \
+   "../../../raggiesoft-assets/raggiesoft-books/images/pwa-icons/apple-icon-180.png" \
+   "../../../raggiesoft-assets/raggiesoft-books/images/pwa-icons/icon.svg" \
+   icons/
+
 echo "Book Reader PWA assets generated successfully!"
