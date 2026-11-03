@@ -15,23 +15,23 @@
             "epub": "4.4 MB",
             "pdf": "4.5 MB",
             "text_epub": "25 KB",
-            "text_pdf": "72 KB",
-            "package_7z": "18 KB",
-            "epub_bytes": 4615347,
-            "pdf_bytes": 4755224,
-            "text_epub_bytes": 25372,
-            "text_pdf_bytes": 73963,
-            "package_7z_bytes": 18763
+            "text_pdf": "74 KB",
+            "package_7z": "19 KB",
+            "epub_bytes": 4615542,
+            "pdf_bytes": 4756916,
+            "text_epub_bytes": 25577,
+            "text_pdf_bytes": 75431,
+            "package_7z_bytes": 18973
         },
         "illustration_count": 6,
         "word_stats": {
-            "story_word_count": 7346,
+            "story_word_count": 7409,
             "lore_word_count": 107,
-            "combined_word_count": 7453,
+            "combined_word_count": 7516,
             "story_page_count": 27,
             "combined_page_count": 27,
             "reading_hours": 0.5,
-            "reading_minutes": 29,
+            "reading_minutes": 30,
             "novel_equivalent": 0.08,
             "scale_category": "Short Fiction & Novelette",
             "scale_badge": "Short Fiction",
@@ -108,15 +108,15 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|2"
     },
-    "/katie/early-childhood/big-family-christmas/the-newport-news-train-the-downstairs-sofa-bed": {
+    "/katie/early-childhood/big-family-christmas/the-newport-news-arts-train-the-downstairs-sofa-bed": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Newport News Train & The Downstairs Sofa Bed",
+        "title": "The Newport News ARTS Train & The Downstairs Sofa Bed",
         "theme": "raggiesoft-books",
         "filePath": "e001/c003/p001.md"
     },
-    "/katie/early-childhood/big-family-christmas/part-1-the-newport-news-train-the-downstairs-sofa-bed": {
+    "/katie/early-childhood/big-family-christmas/part-1-the-newport-news-arts-train-the-downstairs-sofa-bed": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Newport News Train & The Downstairs Sofa Bed",
+        "title": "The Newport News ARTS Train & The Downstairs Sofa Bed",
         "theme": "raggiesoft-books",
         "filePath": "e001/c003/p001.md"
     },
