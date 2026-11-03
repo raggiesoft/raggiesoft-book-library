@@ -1,0 +1,183 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "oceanview",
+        "siteName": "Ocean View Archives",
+        "isSequential": true,
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books",
+        "navbarBrandLogo": "/raggiesoft-books/images/logos/oceanview-archives.svg",
+        "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
+        "navbarBrandLink": "/raggiesoft-books",
+        "ebook_sizes": {
+            "epub": "4.4 MB",
+            "pdf": "4.5 MB",
+            "text_epub": "25 KB",
+            "text_pdf": "72 KB",
+            "package_7z": "18 KB",
+            "epub_bytes": 4615347,
+            "pdf_bytes": 4755224,
+            "text_epub_bytes": 25372,
+            "text_pdf_bytes": 73963,
+            "package_7z_bytes": 18763
+        },
+        "illustration_count": 6,
+        "word_stats": {
+            "story_word_count": 7346,
+            "lore_word_count": 107,
+            "combined_word_count": 7453,
+            "story_page_count": 27,
+            "combined_page_count": 27,
+            "reading_hours": 0.5,
+            "reading_minutes": 29,
+            "novel_equivalent": 0.08,
+            "scale_category": "Short Fiction & Novelette",
+            "scale_badge": "Short Fiction",
+            "benchmark_note": "Short story / novelette companion (< 17,500 words)",
+            "era_count": 2,
+            "chapter_count": 6,
+            "part_count": 6,
+            "illustration_count": 6
+        }
+    },
+    "/katie": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Katie & Nathaniel",
+        "theme": "raggiesoft-books",
+        "filePath": "__SERIES_LANDING__"
+    },
+    "/katie/toc": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Contents - Katie & Nathaniel",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
+    },
+    "/katie/illustrations": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Illustrations - Katie & Nathaniel",
+        "theme": "raggiesoft-books",
+        "filePath": "__ILLUSTRATIONS__"
+    },
+    "/katie/early-childhood": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Early Childhood",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|0"
+    },
+    "/katie/early-childhood/the-great-afternoon": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Great Afternoon",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|0"
+    },
+    "/katie/early-childhood/the-great-afternoon/cartoons-are-for-life-the-secret-password-the-afternoon-sanctuary": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Cartoons Are for Life: The Secret Password & The Afternoon Sanctuary",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/p001.md"
+    },
+    "/katie/early-childhood/the-great-afternoon/part-1-cartoons-are-for-life-the-secret-password-the-afternoon-sanctuary": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Cartoons Are for Life: The Secret Password & The Afternoon Sanctuary",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/p001.md"
+    },
+    "/katie/early-childhood/summer-camp-at-virginia-dominion-university": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Summer Camp at Virginia Dominion University",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|1"
+    },
+    "/katie/early-childhood/summer-camp-at-virginia-dominion-university/the-parallel-pair-dominion-mall-the-vdu-fieldhouse": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Parallel Pair: Dominion Mall & The VDU Fieldhouse",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c002/p001.md"
+    },
+    "/katie/early-childhood/summer-camp-at-virginia-dominion-university/part-1-the-parallel-pair-dominion-mall-the-vdu-fieldhouse": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Parallel Pair: Dominion Mall & The VDU Fieldhouse",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c002/p001.md"
+    },
+    "/katie/early-childhood/big-family-christmas": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Big Family Christmas",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|2"
+    },
+    "/katie/early-childhood/big-family-christmas/the-newport-news-train-the-downstairs-sofa-bed": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Newport News Train & The Downstairs Sofa Bed",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c003/p001.md"
+    },
+    "/katie/early-childhood/big-family-christmas/part-1-the-newport-news-train-the-downstairs-sofa-bed": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Newport News Train & The Downstairs Sofa Bed",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c003/p001.md"
+    },
+    "/katie/middle-school-the-blizzard-of-96": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Middle School & The Blizzard of '96",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|1"
+    },
+    "/katie/middle-school-the-blizzard-of-96/the-blizzard-of-96": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Blizzard of '96",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|0"
+    },
+    "/katie/middle-school-the-blizzard-of-96/the-blizzard-of-96/snow-day-in-virginia-beach-the-backyard-promise": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Snow Day in Virginia Beach & The Backyard Promise",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c001/p001.md"
+    },
+    "/katie/middle-school-the-blizzard-of-96/the-blizzard-of-96/part-1-snow-day-in-virginia-beach-the-backyard-promise": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Snow Day in Virginia Beach & The Backyard Promise",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c001/p001.md"
+    },
+    "/katie/middle-school-the-blizzard-of-96/katie-is-dumped": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Katie Is Dumped",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|1"
+    },
+    "/katie/middle-school-the-blizzard-of-96/katie-is-dumped/no-more-fighting-the-dinner-dance-promise": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "No More Fighting & The Dinner Dance Promise",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c002/p001.md"
+    },
+    "/katie/middle-school-the-blizzard-of-96/katie-is-dumped/part-1-no-more-fighting-the-dinner-dance-promise": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "No More Fighting & The Dinner Dance Promise",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c002/p001.md"
+    },
+    "/katie/middle-school-the-blizzard-of-96/the-pretend-boyfriend-twins-day": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Pretend Boyfriend & Twins' Day",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|2"
+    },
+    "/katie/middle-school-the-blizzard-of-96/the-pretend-boyfriend-twins-day/twin-brothers-always-stay-spirit-week-the-living-room-sofa": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Twin Brothers Always Stay: Spirit Week & The Living Room Sofa",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c003/p001.md"
+    },
+    "/katie/middle-school-the-blizzard-of-96/the-pretend-boyfriend-twins-day/part-1-twin-brothers-always-stay-spirit-week-the-living-room-sofa": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Twin Brothers Always Stay: Spirit Week & The Living Room Sofa",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c003/p001.md"
+    }
+}

@@ -688,7 +688,7 @@ $homeNovelEquivs = (float)($homeTotals['total_novel_equivalents'] ?? ($homeTotal
                             <span class="ova-universe-tag">Co-Flagship Novel &bull; 72 Illustrations</span>
                             <h3 class="ova-universe-title">The Eleventh Child</h3>
                             <p class="ova-universe-desc">
-                                The Story of Jordan. Follow eighteen-year-old non-speaking freshman Jordan Shawn Kelly as he escapes a lifetime of erasure and builds an unbreakable found family at CPI. Showcases inline <code>&lt;aac&gt;</code> speech synthesis, <code>ZOË.Systems.Logs</code> telemetry, and synchronized music cues.
+                                The Story of Jordan. Follow eighteen-year-old non-speaking freshman Jordan Shawn Kelly as he escapes a lifetime of erasure and builds an unbreakable found family at CPI. Showcases interactive tablet speech synthesis, live system status logs, and synchronized music cues.
                             </p>
                         </div>
                         <div>
