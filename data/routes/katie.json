@@ -14,32 +14,32 @@
         "ebook_sizes": {
             "epub": "10.8 MB",
             "pdf": "11.8 MB",
-            "text_epub": "65 KB",
-            "text_pdf": "194 KB",
-            "package_7z": "52 KB",
-            "epub_bytes": 11277968,
-            "pdf_bytes": 12395038,
-            "text_epub_bytes": 66351,
-            "text_pdf_bytes": 198187,
-            "package_7z_bytes": 53186
+            "text_epub": "70 KB",
+            "text_pdf": "205 KB",
+            "package_7z": "55 KB",
+            "epub_bytes": 11283588,
+            "pdf_bytes": 12407433,
+            "text_epub_bytes": 71821,
+            "text_pdf_bytes": 209742,
+            "package_7z_bytes": 56544
         },
-        "illustration_count": 17,
+        "illustration_count": 18,
         "word_stats": {
-            "story_word_count": 23970,
+            "story_word_count": 25716,
             "lore_word_count": 121,
-            "combined_word_count": 24091,
-            "story_page_count": 87,
-            "combined_page_count": 88,
-            "reading_hours": 1.6,
-            "reading_minutes": 96,
+            "combined_word_count": 25837,
+            "story_page_count": 94,
+            "combined_page_count": 94,
+            "reading_hours": 1.7,
+            "reading_minutes": 103,
             "novel_equivalent": 0.3,
             "scale_category": "Novella",
             "scale_badge": "Novella",
             "benchmark_note": "Standard contemporary novella length (17,500\u201340,000 words)",
-            "era_count": 3,
-            "chapter_count": 10,
-            "part_count": 17,
-            "illustration_count": 17
+            "era_count": 4,
+            "chapter_count": 11,
+            "part_count": 18,
+            "illustration_count": 18
         }
     },
     "/katie": {
@@ -281,5 +281,29 @@
         "title": "Part 2: Part 2: Cousin Wesley, Ryan's Escalator Exit, & Two Dates at Emerald Creek Mall",
         "theme": "raggiesoft-books",
         "filePath": "e003/c004/p002.md"
+    },
+    "/katie/seventeen-senior-year": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Seventeen & Senior Year",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|3"
+    },
+    "/katie/seventeen-senior-year/drunken-new-year": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Drunken New Year",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|0"
+    },
+    "/katie/seventeen-senior-year/drunken-new-year/the-gas-station-run-the-locked-bedroom-door-why-i-never-had-a-twenty-first-birthday-drink": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Gas-Station Run, The Locked Bedroom Door, & Why I Never Had a Twenty-First Birthday Drink",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c001/p001.md"
+    },
+    "/katie/seventeen-senior-year/drunken-new-year/part-1-the-gas-station-run-the-locked-bedroom-door-why-i-never-had-a-twenty-first-birthday-drink": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Gas-Station Run, The Locked Bedroom Door, & Why I Never Had a Twenty-First Birthday Drink",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c001/p001.md"
     }
 }
