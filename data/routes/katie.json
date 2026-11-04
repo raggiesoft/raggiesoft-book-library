@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "16.1 MB",
-            "pdf": "17.6 MB",
-            "text_epub": "116 KB",
-            "text_pdf": "319 KB",
-            "package_7z": "91 KB",
-            "epub_bytes": 16920084,
-            "pdf_bytes": 18502657,
-            "text_epub_bytes": 118572,
-            "text_pdf_bytes": 327162,
-            "package_7z_bytes": 93082
+            "epub": "16.9 MB",
+            "pdf": "18 MB",
+            "text_epub": "138 KB",
+            "text_pdf": "379 KB",
+            "package_7z": "108 KB",
+            "epub_bytes": 17706558,
+            "pdf_bytes": 18880916,
+            "text_epub_bytes": 141754,
+            "text_pdf_bytes": 388502,
+            "package_7z_bytes": 110651
         },
-        "illustration_count": 29,
+        "illustration_count": 32,
         "word_stats": {
-            "story_word_count": 44886,
+            "story_word_count": 55226,
             "lore_word_count": 121,
-            "combined_word_count": 45007,
-            "story_page_count": 163,
-            "combined_page_count": 164,
-            "reading_hours": 3,
-            "reading_minutes": 180,
-            "novel_equivalent": 0.5,
+            "combined_word_count": 55347,
+            "story_page_count": 201,
+            "combined_page_count": 201,
+            "reading_hours": 3.7,
+            "reading_minutes": 221,
+            "novel_equivalent": 0.6,
             "scale_category": "Compact Novel",
             "scale_badge": "Compact Novel",
             "benchmark_note": "Compact single-volume trade paperback length (40,000\u201370,000 words)",
             "era_count": 6,
-            "chapter_count": 15,
-            "part_count": 26,
-            "illustration_count": 29
+            "chapter_count": 16,
+            "part_count": 29,
+            "illustration_count": 32
         }
     },
     "/katie": {
@@ -306,17 +306,47 @@
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/p002.md"
     },
-    "/katie/era-5": {
+    "/katie/west-ocean-view-the-end-of-hell": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Era 5",
+        "title": "West Ocean View & The End of Hell",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|4"
     },
-    "/katie/era-5/chapter-1": {
+    "/katie/west-ocean-view-the-end-of-hell/my-brother-only-the-speak-now-vow": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 1",
+        "title": "My Brother Only & The Speak Now Vow",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|0"
+    },
+    "/katie/west-ocean-view-the-end-of-hell/my-brother-only-the-speak-now-vow/ocean-view-station-the-green-sofa-confrontation-speak-now-or-forever-hold-your-peace": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Ocean View Station, The Green Sofa Confrontation, & Speak Now or Forever Hold Your Peace",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c001/p001.md"
+    },
+    "/katie/west-ocean-view-the-end-of-hell/my-brother-only-the-speak-now-vow/part-1-ocean-view-station-the-green-sofa-confrontation-speak-now-or-forever-hold-your-peace": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Ocean View Station, The Green Sofa Confrontation, & Speak Now or Forever Hold Your Peace",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c001/p001.md"
+    },
+    "/katie/west-ocean-view-the-end-of-hell/the-end-of-hell-reclaiming-apartment-3": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The End of Hell & Reclaiming Apartment 3",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|1"
+    },
+    "/katie/west-ocean-view-the-end-of-hell/the-end-of-hell-reclaiming-apartment-3/part-1-a-sister-s-worst-nightmare-tiffany-forces-a-choice-scrubbing-out-the-filth": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Sister's Worst Nightmare, Tiffany Forces a Choice, & Scrubbing Out the Filth",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c002/p001.md"
+    },
+    "/katie/west-ocean-view-the-end-of-hell/the-end-of-hell-reclaiming-apartment-3/part-2-the-8-13-am-bus-to-cchr-all-new-queen-bedding-dad-s-pickup-truck-the-hallway-closet-sanctuary": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The 8:13 AM Bus to CCHR, All-New Queen Bedding, Dad's Pickup Truck, & The Hallway Closet Sanctuary",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c002/p002.md"
     },
     "/katie/the-senator-from-virginia": {
         "view": "pages/raggiesoft-books/books/viewer",
