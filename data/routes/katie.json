@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "12.4 MB",
-            "pdf": "14 MB",
-            "text_epub": "80 KB",
-            "text_pdf": "224 KB",
-            "package_7z": "63 KB",
-            "epub_bytes": 13042681,
-            "pdf_bytes": 14683334,
-            "text_epub_bytes": 82103,
-            "text_pdf_bytes": 229572,
-            "package_7z_bytes": 65002
+            "epub": "14.6 MB",
+            "pdf": "16.5 MB",
+            "text_epub": "90 KB",
+            "text_pdf": "249 KB",
+            "package_7z": "71 KB",
+            "epub_bytes": 15308852,
+            "pdf_bytes": 17302475,
+            "text_epub_bytes": 92528,
+            "text_pdf_bytes": 254657,
+            "package_7z_bytes": 72496
         },
-        "illustration_count": 20,
+        "illustration_count": 23,
         "word_stats": {
-            "story_word_count": 30774,
+            "story_word_count": 34502,
             "lore_word_count": 121,
-            "combined_word_count": 30895,
-            "story_page_count": 112,
-            "combined_page_count": 112,
-            "reading_hours": 2.1,
-            "reading_minutes": 123,
-            "novel_equivalent": 0.3,
+            "combined_word_count": 34623,
+            "story_page_count": 125,
+            "combined_page_count": 126,
+            "reading_hours": 2.3,
+            "reading_minutes": 138,
+            "novel_equivalent": 0.4,
             "scale_category": "Novella",
             "scale_badge": "Novella",
             "benchmark_note": "Standard contemporary novella length (17,500\u201340,000 words)",
-            "era_count": 4,
-            "chapter_count": 11,
-            "part_count": 19,
-            "illustration_count": 20
+            "era_count": 5,
+            "chapter_count": 12,
+            "part_count": 21,
+            "illustration_count": 23
         }
     },
     "/katie": {
@@ -305,5 +305,29 @@
         "title": "Part 2: The Drunken New Year Lie, Heather's Bitter Goodbye, & Twin Sisters Always Stay",
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/p002.md"
+    },
+    "/katie/the-senator-from-virginia": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Senator from Virginia",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|4"
+    },
+    "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "First Train from Norfolk & Swearing In on the Constitution",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|0"
+    },
+    "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution/part-1-three-business-class-tickets-for-free-caf-car-drinks-the-mobile-lift-at-alexandria": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Three Business Class Tickets for Free Caf\u00e9 Car Drinks & The Mobile Lift at Alexandria",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c001/p001.md"
+    },
+    "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution/part-2-the-yellow-line-over-the-fenwick-bridge-the-full-chair-portrait-swearing-in-on-the-constitution": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Yellow Line Over the Fenwick Bridge, The Full-Chair Portrait, & Swearing In on the Constitution",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c001/p002.md"
     }
 }
