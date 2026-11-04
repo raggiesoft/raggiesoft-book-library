@@ -14,14 +14,14 @@
         "ebook_sizes": {
             "epub": "16.1 MB",
             "pdf": "17.6 MB",
-            "text_epub": "115 KB",
+            "text_epub": "116 KB",
             "text_pdf": "319 KB",
             "package_7z": "91 KB",
-            "epub_bytes": 16919560,
-            "pdf_bytes": 18502722,
-            "text_epub_bytes": 118052,
-            "text_pdf_bytes": 326609,
-            "package_7z_bytes": 93047
+            "epub_bytes": 16920084,
+            "pdf_bytes": 18502657,
+            "text_epub_bytes": 118572,
+            "text_pdf_bytes": 327162,
+            "package_7z_bytes": 93082
         },
         "illustration_count": 29,
         "word_stats": {
@@ -36,8 +36,8 @@
             "scale_category": "Compact Novel",
             "scale_badge": "Compact Novel",
             "benchmark_note": "Compact single-volume trade paperback length (40,000\u201370,000 words)",
-            "era_count": 5,
-            "chapter_count": 14,
+            "era_count": 6,
+            "chapter_count": 15,
             "part_count": 26,
             "illustration_count": 29
         }
@@ -306,70 +306,82 @@
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/p002.md"
     },
+    "/katie/era-5": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Era 5",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|4"
+    },
+    "/katie/era-5/chapter-1": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|0"
+    },
     "/katie/the-senator-from-virginia": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Senator from Virginia",
         "theme": "raggiesoft-books",
-        "filePath": "__ERA_TOC__|4"
+        "filePath": "__ERA_TOC__|5"
     },
     "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Election Night, The Decision Desk Call, & The Referendum Mandate",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|4|0"
+        "filePath": "__CHAP_TOC__|5|0"
     },
     "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate/part-1-polls-close-at-seven-the-8-42-pm-decision-desk-call-victory-in-virginia-beach": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Polls Close at Seven, The 8:42 PM Decision Desk Call, & Victory in Virginia Beach",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/p001.md"
+        "filePath": "e006/c001/p001.md"
     },
     "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate/part-2-the-morning-after-in-kempsville-the-school-tax-referendum-jess-s-open-letter-on-the-grid": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Morning After in Kempsville, The School Tax Referendum, & Jess's Open Letter on The Grid",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/p002.md"
+        "filePath": "e006/c001/p002.md"
     },
     "/katie/the-senator-from-virginia/the-minified-zip-file-the-raw-html-takedown-resigning-from-richmond": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Minified ZIP File, The Raw HTML Takedown, & Resigning from Richmond",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|4|1"
+        "filePath": "__CHAP_TOC__|5|1"
     },
     "/katie/the-senator-from-virginia/the-minified-zip-file-the-raw-html-takedown-resigning-from-richmond/part-1-the-minified-zip-trick-barely-commented-code-the-live-wcag-takedown": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Minified ZIP Trick, Barely Commented Code, & The Live WCAG Takedown",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c002/p001.md"
+        "filePath": "e006/c002/p001.md"
     },
     "/katie/the-senator-from-virginia/the-minified-zip-file-the-raw-html-takedown-resigning-from-richmond/part-2-article-iv-section-4-hand-delivering-her-resignation-in-richmond-the-writ-of-special-election": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Article IV Section 4, Hand-Delivering Her Resignation in Richmond, & The Writ of Special Election",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c002/p002.md"
+        "filePath": "e006/c002/p002.md"
     },
     "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "First Train from Norfolk & Swearing In on the Constitution",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|4|2"
+        "filePath": "__CHAP_TOC__|5|2"
     },
     "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution/part-1-three-business-class-tickets-for-free-caf-car-drinks-the-mobile-lift-at-alexandria": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Three Business Class Tickets for Free Caf\u00e9 Car Drinks & The Mobile Lift at Alexandria",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c003/p001.md"
+        "filePath": "e006/c003/p001.md"
     },
     "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution/part-2-the-yellow-line-over-the-fenwick-bridge-the-full-chair-portrait-swearing-in-on-the-constitution": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Yellow Line Over the Fenwick Bridge, The Full-Chair Portrait, & Swearing In on the Constitution",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c003/p002.md"
+        "filePath": "e006/c003/p002.md"
     },
     "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution/part-3-the-first-invite-to-cocktails-a-known-side-effect-of-death-home-to-sunset-drive": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The First Invite to Cocktails, A Known Side Effect of Death, & Home to Sunset Drive",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c003/p003.md"
+        "filePath": "e006/c003/p003.md"
     }
 }
