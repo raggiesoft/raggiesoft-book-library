@@ -14,14 +14,14 @@
         "ebook_sizes": {
             "epub": "11.6 MB",
             "pdf": "12.9 MB",
-            "text_epub": "80 KB",
+            "text_epub": "79 KB",
             "text_pdf": "222 KB",
             "package_7z": "63 KB",
-            "epub_bytes": 12172705,
-            "pdf_bytes": 13546617,
-            "text_epub_bytes": 81517,
-            "text_pdf_bytes": 227798,
-            "package_7z_bytes": 64285
+            "epub_bytes": 12172585,
+            "pdf_bytes": 13546511,
+            "text_epub_bytes": 81388,
+            "text_pdf_bytes": 227658,
+            "package_7z_bytes": 64274
         },
         "illustration_count": 19,
         "word_stats": {
@@ -210,33 +210,33 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|1"
     },
-    "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-1-part-1-the-i-95-haul-the-quantum-basic-library-book-ditching-captain-barnaby": {
+    "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-1-the-i-95-haul-the-quantum-basic-library-book-ditching-captain-barnaby": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Part 1: The I-95 Haul, The Quantum Basic Library Book, & Ditching Captain Barnaby",
+        "title": "Part 1: The I-95 Haul, The Quantum Basic Library Book, & Ditching Captain Barnaby",
         "theme": "raggiesoft-books",
         "filePath": "e003/c002/p001.md"
     },
-    "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-2-part-2-the-nassau-pier-guest-services-the-last-straw": {
+    "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-2-the-nassau-pier-guest-services-the-last-straw": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Part 2: The Nassau Pier, Guest Services, & The Last Straw",
+        "title": "Part 2: The Nassau Pier, Guest Services, & The Last Straw",
         "theme": "raggiesoft-books",
         "filePath": "e003/c002/p002.md"
     },
-    "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-3-part-3-stateroom-6004-the-loaner-wheelchairs-pizza-for-three-on-the-aft-deck": {
+    "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-3-stateroom-6004-the-loaner-wheelchairs-pizza-for-three-on-the-aft-deck": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Part 3: Stateroom 6004, The Loaner Wheelchairs, & Pizza for Three on the Aft Deck",
+        "title": "Part 3: Stateroom 6004, The Loaner Wheelchairs, & Pizza for Three on the Aft Deck",
         "theme": "raggiesoft-books",
         "filePath": "e003/c002/p003.md"
     },
-    "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-4-part-4-back-on-dry-land-the-twelve-hour-drive-up-i-95": {
+    "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-4-back-on-dry-land-the-twelve-hour-drive-up-i-95": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: Part 4: Back on Dry Land & The Twelve-Hour Drive Up I-95",
+        "title": "Part 4: Back on Dry Land & The Twelve-Hour Drive Up I-95",
         "theme": "raggiesoft-books",
         "filePath": "e003/c002/p004.md"
     },
-    "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-5-part-5-monday-morning-in-virginia-beach-the-divorce-lawyer-the-pcp-borrowed-time": {
+    "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-5-monday-morning-in-virginia-beach-the-divorce-lawyer-the-pcp-borrowed-time": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: Part 5: Monday Morning in Virginia Beach \u2014 The Divorce Lawyer, The PCP, & Borrowed Time",
+        "title": "Part 5: Monday Morning in Virginia Beach \u2014 The Divorce Lawyer, The PCP, & Borrowed Time",
         "theme": "raggiesoft-books",
         "filePath": "e003/c002/p005.md"
     },
@@ -246,21 +246,21 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|2"
     },
-    "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-1-part-1-the-fault-grounds-filing-the-protective-order-junior-year-at-northwood-high-school": {
+    "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-1-the-fault-grounds-filing-the-protective-order-junior-year-at-northwood-high-school": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Part 1: The Fault-Grounds Filing, The Protective Order, & Junior Year at Northwood High School",
+        "title": "Part 1: The Fault-Grounds Filing, The Protective Order, & Junior Year at Northwood High School",
         "theme": "raggiesoft-books",
         "filePath": "e003/c003/p001.md"
     },
-    "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-2-part-2-when-borrowed-time-runs-out-the-collapse-at-school-the-emergency-room-escalation-time-for-powerchairs": {
+    "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-2-when-borrowed-time-runs-out-the-collapse-at-school-the-emergency-room-escalation-time-for-powerchairs": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Part 2: When Borrowed Time Runs Out \u2014 The Collapse at School, The Emergency Room Escalation, & Time for Powerchairs",
+        "title": "Part 2: When Borrowed Time Runs Out \u2014 The Collapse at School, The Emergency Room Escalation, & Time for Powerchairs",
         "theme": "raggiesoft-books",
         "filePath": "e003/c003/p002.md"
     },
-    "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-3-part-3-two-compact-power-wheelchairs-in-the-trunk-downsizing-to-military-highway-cvta-route-15": {
+    "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-3-two-compact-power-wheelchairs-in-the-trunk-downsizing-to-military-highway-cvta-route-15": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Part 3: Two Compact Power Wheelchairs in the Trunk, Downsizing to Military Highway, & CVTA Route 15",
+        "title": "Part 3: Two Compact Power Wheelchairs in the Trunk, Downsizing to Military Highway, & CVTA Route 15",
         "theme": "raggiesoft-books",
         "filePath": "e003/c003/p003.md"
     },
@@ -270,15 +270,15 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|3"
     },
-    "/katie/sixteen-summer-sanctuary/sixteen-on-four-wheels-finding-dates/part-1-part-1-navigating-northwood-high-on-four-wheels-two-first-dates-why-we-ride-on-saturday": {
+    "/katie/sixteen-summer-sanctuary/sixteen-on-four-wheels-finding-dates/part-1-navigating-northwood-high-on-four-wheels-two-first-dates-why-we-ride-on-saturday": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Part 1: Navigating Northwood High on Four Wheels, Two First Dates, & Why We Ride on Saturday",
+        "title": "Part 1: Navigating Northwood High on Four Wheels, Two First Dates, & Why We Ride on Saturday",
         "theme": "raggiesoft-books",
         "filePath": "e003/c004/p001.md"
     },
-    "/katie/sixteen-summer-sanctuary/sixteen-on-four-wheels-finding-dates/part-2-part-2-cousin-wesley-ryan-s-escalator-exit-two-dates-at-emerald-creek-mall": {
+    "/katie/sixteen-summer-sanctuary/sixteen-on-four-wheels-finding-dates/part-2-cousin-wesley-ryan-s-escalator-exit-two-dates-at-emerald-creek-mall": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Part 2: Cousin Wesley, Ryan's Escalator Exit, & Two Dates at Emerald Creek Mall",
+        "title": "Part 2: Cousin Wesley, Ryan's Escalator Exit, & Two Dates at Emerald Creek Mall",
         "theme": "raggiesoft-books",
         "filePath": "e003/c004/p002.md"
     },
@@ -294,15 +294,15 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|0"
     },
-    "/katie/seventeen-senior-year/drunken-new-year/part-1-part-1-the-gas-station-run-a-box-of-dry-cereal-why-i-never-had-a-twenty-first-birthday-drink": {
+    "/katie/seventeen-senior-year/drunken-new-year/part-1-the-gas-station-run-a-box-of-dry-cereal-why-i-never-had-a-twenty-first-birthday-drink": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Part 1: The Gas-Station Run, A Box of Dry Cereal, & Why I Never Had a Twenty-First Birthday Drink",
+        "title": "Part 1: The Gas-Station Run, A Box of Dry Cereal, & Why I Never Had a Twenty-First Birthday Drink",
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/p001.md"
     },
-    "/katie/seventeen-senior-year/drunken-new-year/part-2-part-2-the-drunken-new-year-lie-heather-s-bitter-goodbye-twin-sisters-always-stay": {
+    "/katie/seventeen-senior-year/drunken-new-year/part-2-the-drunken-new-year-lie-heather-s-bitter-goodbye-twin-sisters-always-stay": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Part 2: The Drunken New Year Lie, Heather's Bitter Goodbye, & Twin Sisters Always Stay",
+        "title": "Part 2: The Drunken New Year Lie, Heather's Bitter Goodbye, & Twin Sisters Always Stay",
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/p002.md"
     }
