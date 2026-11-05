@@ -14,24 +14,24 @@
         "ebook_sizes": {
             "epub": "17.7 MB",
             "pdf": "18.6 MB",
-            "text_epub": "169 KB",
-            "text_pdf": "464 KB",
-            "package_7z": "132 KB",
-            "epub_bytes": 18564546,
-            "pdf_bytes": 19487689,
-            "text_epub_bytes": 172946,
-            "text_pdf_bytes": 475167,
-            "package_7z_bytes": 135632
+            "text_epub": "170 KB",
+            "text_pdf": "468 KB",
+            "package_7z": "133 KB",
+            "epub_bytes": 18565695,
+            "pdf_bytes": 19491121,
+            "text_epub_bytes": 174093,
+            "text_pdf_bytes": 478779,
+            "package_7z_bytes": 136530
         },
         "illustration_count": 37,
         "word_stats": {
-            "story_word_count": 69322,
+            "story_word_count": 69943,
             "lore_word_count": 121,
-            "combined_word_count": 69443,
-            "story_page_count": 252,
-            "combined_page_count": 253,
-            "reading_hours": 4.6,
-            "reading_minutes": 277,
+            "combined_word_count": 70064,
+            "story_page_count": 254,
+            "combined_page_count": 255,
+            "reading_hours": 4.7,
+            "reading_minutes": 280,
             "novel_equivalent": 0.8,
             "scale_category": "Compact Novel",
             "scale_badge": "Compact Novel",
@@ -384,15 +384,15 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|3"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/house-bill-663-the-speech-that-broke-the-internet/pull-my-pants-down-to-prove-i-m-female-delegate-katie-prairie-the-24-hour-viral-firestorm-in-richmond": {
+    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/house-bill-663-the-speech-that-broke-the-internet/pull-my-pants-down-to-prove-i-m-female-from-local-evening-news-to-meet-the-nation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Pull My Pants Down to Prove I'm Female? Delegate Katie Prairie & The 24-Hour Viral Firestorm in Richmond",
+        "title": "Pull My Pants Down to Prove I'm Female? From Local Evening News to Meet the Nation",
         "theme": "raggiesoft-books",
         "filePath": "e005/c004/p001.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/house-bill-663-the-speech-that-broke-the-internet/part-1-pull-my-pants-down-to-prove-i-m-female-delegate-katie-prairie-the-24-hour-viral-firestorm-in-richmond": {
+    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/house-bill-663-the-speech-that-broke-the-internet/part-1-pull-my-pants-down-to-prove-i-m-female-from-local-evening-news-to-meet-the-nation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Pull My Pants Down to Prove I'm Female? Delegate Katie Prairie & The 24-Hour Viral Firestorm in Richmond",
+        "title": "Pull My Pants Down to Prove I'm Female? From Local Evening News to Meet the Nation",
         "theme": "raggiesoft-books",
         "filePath": "e005/c004/p001.md"
     },
