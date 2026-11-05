@@ -12,26 +12,26 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "17.4 MB",
-            "pdf": "18.2 MB",
-            "text_epub": "139 KB",
-            "text_pdf": "382 KB",
-            "package_7z": "109 KB",
-            "epub_bytes": 18217950,
-            "pdf_bytes": 19093243,
-            "text_epub_bytes": 142826,
-            "text_pdf_bytes": 391396,
-            "package_7z_bytes": 112022
+            "epub": "17.6 MB",
+            "pdf": "18.3 MB",
+            "text_epub": "140 KB",
+            "text_pdf": "384 KB",
+            "package_7z": "110 KB",
+            "epub_bytes": 18457869,
+            "pdf_bytes": 19198163,
+            "text_epub_bytes": 143502,
+            "text_pdf_bytes": 393558,
+            "package_7z_bytes": 112657
         },
-        "illustration_count": 36,
+        "illustration_count": 37,
         "word_stats": {
-            "story_word_count": 55706,
+            "story_word_count": 56081,
             "lore_word_count": 121,
-            "combined_word_count": 55827,
-            "story_page_count": 203,
-            "combined_page_count": 203,
+            "combined_word_count": 56202,
+            "story_page_count": 204,
+            "combined_page_count": 204,
             "reading_hours": 3.7,
-            "reading_minutes": 223,
+            "reading_minutes": 224,
             "novel_equivalent": 0.6,
             "scale_category": "Compact Novel",
             "scale_badge": "Compact Novel",
@@ -39,7 +39,7 @@
             "era_count": 6,
             "chapter_count": 16,
             "part_count": 29,
-            "illustration_count": 36
+            "illustration_count": 37
         }
     },
     "/katie": {
