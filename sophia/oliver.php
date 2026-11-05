@@ -1720,6 +1720,12 @@ if ($seriesSlug === 'ad-astra') {
                 .bottom-nav-container { flex-direction: column-reverse; gap: 2rem !important; }
             }
         </style>
+        <?php
+        // Shared Native <dialog> Lightbox Modal (DRY component shared with Table of Illustrations)
+        // Enables clicking or pressing Enter/Space on any inline or hero story image in a chapter
+        // to inspect the full-size illustration in `#ova-illus-lightbox`.
+        require $basePath . '/includes/components/illustration-lightbox-dialog.php';
+        ?>
         <?php endif; ?>
 
     </div>
