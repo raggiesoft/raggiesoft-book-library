@@ -13,32 +13,32 @@
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
             "epub": "17.7 MB",
-            "pdf": "18.5 MB",
-            "text_epub": "153 KB",
-            "text_pdf": "418 KB",
-            "package_7z": "120 KB",
-            "epub_bytes": 18547802,
-            "pdf_bytes": 19440215,
-            "text_epub_bytes": 156215,
-            "text_pdf_bytes": 428125,
-            "package_7z_bytes": 122610
+            "pdf": "18.6 MB",
+            "text_epub": "159 KB",
+            "text_pdf": "438 KB",
+            "package_7z": "125 KB",
+            "epub_bytes": 18554679,
+            "pdf_bytes": 19460957,
+            "text_epub_bytes": 163064,
+            "text_pdf_bytes": 448294,
+            "package_7z_bytes": 127981
         },
         "illustration_count": 37,
         "word_stats": {
-            "story_word_count": 61872,
+            "story_word_count": 65049,
             "lore_word_count": 121,
-            "combined_word_count": 61993,
-            "story_page_count": 225,
-            "combined_page_count": 225,
-            "reading_hours": 4.1,
-            "reading_minutes": 247,
+            "combined_word_count": 65170,
+            "story_page_count": 237,
+            "combined_page_count": 237,
+            "reading_hours": 4.3,
+            "reading_minutes": 260,
             "novel_equivalent": 0.7,
             "scale_category": "Compact Novel",
             "scale_badge": "Compact Novel",
             "benchmark_note": "Compact single-volume trade paperback length (40,000\u201370,000 words)",
             "era_count": 6,
-            "chapter_count": 16,
-            "part_count": 31,
+            "chapter_count": 17,
+            "part_count": 32,
             "illustration_count": 37
         }
     },
@@ -359,6 +359,24 @@
         "title": "Part 4: The Seattle Transit Blog Inspiration & Quietly Launching Ideas for Coastal Virginia Transit",
         "theme": "raggiesoft-books",
         "filePath": "e005/c002/p004.md"
+    },
+    "/katie/west-ocean-view-the-end-of-hell/do-better-challenging-cvta-s-complacency-the-2008-mayoral-invitation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Do Better: Challenging CVTA's Complacency & The 2008 Mayoral Invitation",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|2"
+    },
+    "/katie/west-ocean-view-the-end-of-hell/do-better-challenging-cvta-s-complacency-the-2008-mayoral-invitation/does-the-bus-run-calling-out-cvta-s-complacency-the-2008-regional-mayoral-challenge": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Does the Bus Run? Calling Out CVTA's Complacency & The 2008 Regional Mayoral Challenge",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c003/p001.md"
+    },
+    "/katie/west-ocean-view-the-end-of-hell/do-better-challenging-cvta-s-complacency-the-2008-mayoral-invitation/part-1-does-the-bus-run-calling-out-cvta-s-complacency-the-2008-regional-mayoral-challenge": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Does the Bus Run? Calling Out CVTA's Complacency & The 2008 Regional Mayoral Challenge",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c003/p001.md"
     },
     "/katie/the-senator-from-virginia": {
         "view": "pages/raggiesoft-books/books/viewer",
