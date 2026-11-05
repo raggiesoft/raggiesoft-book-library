@@ -14,31 +14,31 @@
         "ebook_sizes": {
             "epub": "17.6 MB",
             "pdf": "18.3 MB",
-            "text_epub": "142 KB",
-            "text_pdf": "388 KB",
-            "package_7z": "111 KB",
-            "epub_bytes": 18459417,
-            "pdf_bytes": 19201796,
-            "text_epub_bytes": 144931,
-            "text_pdf_bytes": 397002,
-            "package_7z_bytes": 113925
+            "text_epub": "146 KB",
+            "text_pdf": "399 KB",
+            "package_7z": "115 KB",
+            "epub_bytes": 18463710,
+            "pdf_bytes": 19215047,
+            "text_epub_bytes": 149140,
+            "text_pdf_bytes": 409043,
+            "package_7z_bytes": 117262
         },
         "illustration_count": 37,
         "word_stats": {
-            "story_word_count": 56824,
+            "story_word_count": 58877,
             "lore_word_count": 121,
-            "combined_word_count": 56945,
-            "story_page_count": 207,
-            "combined_page_count": 207,
-            "reading_hours": 3.8,
-            "reading_minutes": 227,
-            "novel_equivalent": 0.6,
+            "combined_word_count": 58998,
+            "story_page_count": 214,
+            "combined_page_count": 215,
+            "reading_hours": 3.9,
+            "reading_minutes": 236,
+            "novel_equivalent": 0.7,
             "scale_category": "Compact Novel",
             "scale_badge": "Compact Novel",
             "benchmark_note": "Compact single-volume trade paperback length (40,000\u201370,000 words)",
             "era_count": 6,
             "chapter_count": 16,
-            "part_count": 29,
+            "part_count": 30,
             "illustration_count": 37
         }
     },
@@ -347,6 +347,12 @@
         "title": "Part 2: The 8:13 AM Bus to CCHR, All-New Queen Bedding, Dad's Pickup Truck, & The Hallway Closet Sanctuary",
         "theme": "raggiesoft-books",
         "filePath": "e005/c002/p002.md"
+    },
+    "/katie/west-ocean-view-the-end-of-hell/the-end-of-hell-reclaiming-apartment-3/part-3-thanksgiving-dinner-at-dad-s-house-the-black-friday-closet-project-the-secret-on-the-closet-floor": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Thanksgiving Dinner at Dad's House, The Black Friday Closet Project, & The Secret on the Closet Floor",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c002/p003.md"
     },
     "/katie/the-senator-from-virginia": {
         "view": "pages/raggiesoft-books/books/viewer",
