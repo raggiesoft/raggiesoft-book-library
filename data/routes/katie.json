@@ -14,31 +14,31 @@
         "ebook_sizes": {
             "epub": "17.7 MB",
             "pdf": "18.6 MB",
-            "text_epub": "184 KB",
-            "text_pdf": "508 KB",
-            "package_7z": "144 KB",
-            "epub_bytes": 18579938,
-            "pdf_bytes": 19532499,
-            "text_epub_bytes": 188328,
-            "text_pdf_bytes": 520681,
-            "package_7z_bytes": 147139
+            "text_epub": "190 KB",
+            "text_pdf": "524 KB",
+            "package_7z": "148 KB",
+            "epub_bytes": 18585699,
+            "pdf_bytes": 19548451,
+            "text_epub_bytes": 194098,
+            "text_pdf_bytes": 536575,
+            "package_7z_bytes": 151303
         },
         "illustration_count": 37,
         "word_stats": {
-            "story_word_count": 76157,
+            "story_word_count": 78743,
             "lore_word_count": 121,
-            "combined_word_count": 76278,
-            "story_page_count": 277,
-            "combined_page_count": 277,
-            "reading_hours": 5.1,
-            "reading_minutes": 305,
-            "novel_equivalent": 0.8,
+            "combined_word_count": 78864,
+            "story_page_count": 286,
+            "combined_page_count": 287,
+            "reading_hours": 5.2,
+            "reading_minutes": 315,
+            "novel_equivalent": 0.9,
             "scale_category": "Full-Length Contemporary Novel",
             "scale_badge": "Full-Length Novel",
-            "benchmark_note": "0.8\u00d7 a standard 90,000-word contemporary novel (70k\u2013110k trade benchmark)",
+            "benchmark_note": "0.9\u00d7 a standard 90,000-word contemporary novel (70k\u2013110k trade benchmark)",
             "era_count": 6,
             "chapter_count": 19,
-            "part_count": 36,
+            "part_count": 37,
             "illustration_count": 37
         }
     },
@@ -366,17 +366,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|2"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/do-better-challenging-cvta-s-complacency-the-2008-mayoral-invitation/does-the-bus-run-calling-out-cvta-s-complacency-the-2008-regional-mayoral-challenge": {
+    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/do-better-challenging-cvta-s-complacency-the-2008-mayoral-invitation/part-1-does-the-bus-run-calling-out-cvta-s-complacency-the-2008-regional-mayoral-challenge": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Does the Bus Run? Calling Out CVTA's Complacency & The 2008 Regional Mayoral Challenge",
+        "title": "Part 1: Does the Bus Run? Calling Out CVTA's Complacency & The 2008 Regional Mayoral Challenge",
         "theme": "raggiesoft-books",
         "filePath": "e005/c003/p001.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/do-better-challenging-cvta-s-complacency-the-2008-mayoral-invitation/part-1-does-the-bus-run-calling-out-cvta-s-complacency-the-2008-regional-mayoral-challenge": {
+    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/do-better-challenging-cvta-s-complacency-the-2008-mayoral-invitation/part-2-stopped-at-the-third-floor-gallery-by-capitol-police-seated-on-the-house-floor-near-delegate-ronald-villa-the-spark-to-run": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Does the Bus Run? Calling Out CVTA's Complacency & The 2008 Regional Mayoral Challenge",
+        "title": "Part 2: Stopped at the Third-Floor Gallery by Capitol Police, Seated on the House Floor Near Delegate Ronald Villa, & The Spark to Run",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c003/p001.md"
+        "filePath": "e005/c003/p002.md"
     },
     "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/freshman-session-on-west-broad-street-riding-jrtc-route-6-to-the-capitol": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -402,9 +402,9 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|4"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/house-bill-663/part-1-line-18-the-third-floor-public-gallery-a-question-on-the-house-floor": {
+    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/house-bill-663/part-1-line-18-seated-by-delegate-ronald-villa-on-the-floor-a-question-across-the-chamber": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Line 18, The Third-Floor Public Gallery, & A Question on the House Floor",
+        "title": "Part 1: Line 18, Seated by Delegate Ronald Villa on the Floor, & A Question Across the Chamber",
         "theme": "raggiesoft-books",
         "filePath": "e005/c005/p001.md"
     },
