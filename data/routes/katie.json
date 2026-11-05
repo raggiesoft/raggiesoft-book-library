@@ -14,31 +14,31 @@
         "ebook_sizes": {
             "epub": "17.7 MB",
             "pdf": "18.6 MB",
-            "text_epub": "173 KB",
-            "text_pdf": "477 KB",
-            "package_7z": "135 KB",
-            "epub_bytes": 18568339,
-            "pdf_bytes": 19500416,
-            "text_epub_bytes": 176732,
-            "text_pdf_bytes": 488524,
-            "package_7z_bytes": 138601
+            "text_epub": "184 KB",
+            "text_pdf": "508 KB",
+            "package_7z": "144 KB",
+            "epub_bytes": 18579938,
+            "pdf_bytes": 19532499,
+            "text_epub_bytes": 188328,
+            "text_pdf_bytes": 520681,
+            "package_7z_bytes": 147139
         },
         "illustration_count": 37,
         "word_stats": {
-            "story_word_count": 71337,
+            "story_word_count": 76157,
             "lore_word_count": 121,
-            "combined_word_count": 71458,
-            "story_page_count": 259,
-            "combined_page_count": 260,
-            "reading_hours": 4.8,
-            "reading_minutes": 285,
+            "combined_word_count": 76278,
+            "story_page_count": 277,
+            "combined_page_count": 277,
+            "reading_hours": 5.1,
+            "reading_minutes": 305,
             "novel_equivalent": 0.8,
             "scale_category": "Full-Length Contemporary Novel",
             "scale_badge": "Full-Length Novel",
             "benchmark_note": "0.8\u00d7 a standard 90,000-word contemporary novel (70k\u2013110k trade benchmark)",
             "era_count": 6,
-            "chapter_count": 18,
-            "part_count": 34,
+            "chapter_count": 19,
+            "part_count": 36,
             "illustration_count": 37
         }
     },
@@ -378,23 +378,41 @@
         "theme": "raggiesoft-books",
         "filePath": "e005/c003/p001.md"
     },
+    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/freshman-session-on-west-broad-street-riding-jrtc-route-6-to-the-capitol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Freshman Session on West Broad Street & Riding JRTC Route 6 to the Capitol",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|3"
+    },
+    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/freshman-session-on-west-broad-street-riding-jrtc-route-6-to-the-capitol/part-1-the-west-broad-street-loft-unpacking-our-shared-queen-bed-weekend-reconnaissance-on-jrtc-route-6": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The West Broad Street Loft, Unpacking Our Shared Queen Bed, & Weekend Reconnaissance on JRTC Route 6",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c004/p001.md"
+    },
+    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/freshman-session-on-west-broad-street-riding-jrtc-route-6-to-the-capitol/part-2-gold-license-plates-vs-jrtc-route-6-turning-down-the-parking-deck-pass-the-60-inch-ada-restroom-showdown": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Gold License Plates vs. JRTC Route 6, Turning Down the Parking Deck Pass, & The 60-Inch ADA Restroom Showdown",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c004/p002.md"
+    },
     "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/house-bill-663": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "House Bill 663",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|4|3"
+        "filePath": "__CHAP_TOC__|4|4"
     },
     "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/house-bill-663/part-1-line-18-the-third-floor-public-gallery-a-question-on-the-house-floor": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Line 18, The Third-Floor Public Gallery, & A Question on the House Floor",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c004/p001.md"
+        "filePath": "e005/c005/p001.md"
     },
     "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/house-bill-663/part-2-thursday-evening-at-six-friday-on-capitol-square-sunday-morning-on-meet-the-nation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Thursday Evening at Six, Friday on Capitol Square, & Sunday Morning on Meet the Nation",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c004/p002.md"
+        "filePath": "e005/c005/p002.md"
     },
     "/katie/the-senator-from-virginia": {
         "view": "pages/raggiesoft-books/books/viewer",
