@@ -14,31 +14,31 @@
         "ebook_sizes": {
             "epub": "17.7 MB",
             "pdf": "18.6 MB",
-            "text_epub": "161 KB",
-            "text_pdf": "442 KB",
-            "package_7z": "126 KB",
-            "epub_bytes": 18556347,
-            "pdf_bytes": 19465221,
-            "text_epub_bytes": 164743,
-            "text_pdf_bytes": 452594,
-            "package_7z_bytes": 129361
+            "text_epub": "169 KB",
+            "text_pdf": "464 KB",
+            "package_7z": "132 KB",
+            "epub_bytes": 18564546,
+            "pdf_bytes": 19487689,
+            "text_epub_bytes": 172946,
+            "text_pdf_bytes": 475167,
+            "package_7z_bytes": 135632
         },
         "illustration_count": 37,
         "word_stats": {
-            "story_word_count": 65932,
+            "story_word_count": 69322,
             "lore_word_count": 121,
-            "combined_word_count": 66053,
-            "story_page_count": 240,
-            "combined_page_count": 240,
-            "reading_hours": 4.4,
-            "reading_minutes": 264,
-            "novel_equivalent": 0.7,
+            "combined_word_count": 69443,
+            "story_page_count": 252,
+            "combined_page_count": 253,
+            "reading_hours": 4.6,
+            "reading_minutes": 277,
+            "novel_equivalent": 0.8,
             "scale_category": "Compact Novel",
             "scale_badge": "Compact Novel",
             "benchmark_note": "Compact single-volume trade paperback length (40,000\u201370,000 words)",
             "era_count": 6,
-            "chapter_count": 17,
-            "part_count": 32,
+            "chapter_count": 18,
+            "part_count": 33,
             "illustration_count": 37
         }
     },
@@ -306,77 +306,95 @@
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/p002.md"
     },
-    "/katie/west-ocean-view-the-end-of-hell": {
+    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "West Ocean View & The End of Hell",
+        "title": "West Ocean View, Ideas for CVTA, & The Delegate from Virginia Beach",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|4"
     },
-    "/katie/west-ocean-view-the-end-of-hell/my-brother-only-the-speak-now-vow": {
+    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/my-brother-only-the-speak-now-vow": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "My Brother Only & The Speak Now Vow",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|0"
     },
-    "/katie/west-ocean-view-the-end-of-hell/my-brother-only-the-speak-now-vow/ocean-view-station-the-green-sofa-confrontation-speak-now-or-forever-hold-your-peace": {
+    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/my-brother-only-the-speak-now-vow/ocean-view-station-the-green-sofa-confrontation-speak-now-or-forever-hold-your-peace": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Ocean View Station, The Green Sofa Confrontation, & Speak Now or Forever Hold Your Peace",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/p001.md"
     },
-    "/katie/west-ocean-view-the-end-of-hell/my-brother-only-the-speak-now-vow/part-1-ocean-view-station-the-green-sofa-confrontation-speak-now-or-forever-hold-your-peace": {
+    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/my-brother-only-the-speak-now-vow/part-1-ocean-view-station-the-green-sofa-confrontation-speak-now-or-forever-hold-your-peace": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Ocean View Station, The Green Sofa Confrontation, & Speak Now or Forever Hold Your Peace",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/p001.md"
     },
-    "/katie/west-ocean-view-the-end-of-hell/the-end-of-hell-reclaiming-apartment-3": {
+    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/the-end-of-hell-reclaiming-apartment-3": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The End of Hell & Reclaiming Apartment 3",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|1"
     },
-    "/katie/west-ocean-view-the-end-of-hell/the-end-of-hell-reclaiming-apartment-3/part-1-a-sister-s-worst-nightmare-tiffany-forces-a-choice-scrubbing-out-the-filth": {
+    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/the-end-of-hell-reclaiming-apartment-3/part-1-a-sister-s-worst-nightmare-tiffany-forces-a-choice-scrubbing-out-the-filth": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Sister's Worst Nightmare, Tiffany Forces a Choice, & Scrubbing Out the Filth",
         "theme": "raggiesoft-books",
         "filePath": "e005/c002/p001.md"
     },
-    "/katie/west-ocean-view-the-end-of-hell/the-end-of-hell-reclaiming-apartment-3/part-2-the-8-13-am-bus-to-cchr-all-new-queen-bedding-dad-s-pickup-truck-the-hallway-closet-sanctuary": {
+    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/the-end-of-hell-reclaiming-apartment-3/part-2-the-8-13-am-bus-to-cchr-all-new-queen-bedding-dad-s-pickup-truck-the-hallway-closet-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The 8:13 AM Bus to CCHR, All-New Queen Bedding, Dad's Pickup Truck, & The Hallway Closet Sanctuary",
         "theme": "raggiesoft-books",
         "filePath": "e005/c002/p002.md"
     },
-    "/katie/west-ocean-view-the-end-of-hell/the-end-of-hell-reclaiming-apartment-3/part-3-thanksgiving-dinner-at-dad-s-house-the-black-friday-closet-project-the-secret-on-the-closet-floor": {
+    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/the-end-of-hell-reclaiming-apartment-3/part-3-thanksgiving-dinner-at-dad-s-house-the-black-friday-closet-project-the-secret-on-the-closet-floor": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Thanksgiving Dinner at Dad's House, The Black Friday Closet Project, & The Secret on the Closet Floor",
         "theme": "raggiesoft-books",
         "filePath": "e005/c002/p003.md"
     },
-    "/katie/west-ocean-view-the-end-of-hell/the-end-of-hell-reclaiming-apartment-3/part-4-the-seattle-transit-blog-inspiration-quietly-launching-ideas-for-coastal-virginia-transit": {
+    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/the-end-of-hell-reclaiming-apartment-3/part-4-the-seattle-transit-blog-inspiration-quietly-launching-ideas-for-coastal-virginia-transit": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Seattle Transit Blog Inspiration & Quietly Launching Ideas for Coastal Virginia Transit",
         "theme": "raggiesoft-books",
         "filePath": "e005/c002/p004.md"
     },
-    "/katie/west-ocean-view-the-end-of-hell/do-better-challenging-cvta-s-complacency-the-2008-mayoral-invitation": {
+    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/do-better-challenging-cvta-s-complacency-the-2008-mayoral-invitation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Do Better: Challenging CVTA's Complacency & The 2008 Mayoral Invitation",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|2"
     },
-    "/katie/west-ocean-view-the-end-of-hell/do-better-challenging-cvta-s-complacency-the-2008-mayoral-invitation/does-the-bus-run-calling-out-cvta-s-complacency-the-2008-regional-mayoral-challenge": {
+    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/do-better-challenging-cvta-s-complacency-the-2008-mayoral-invitation/does-the-bus-run-calling-out-cvta-s-complacency-the-2008-regional-mayoral-challenge": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Does the Bus Run? Calling Out CVTA's Complacency & The 2008 Regional Mayoral Challenge",
         "theme": "raggiesoft-books",
         "filePath": "e005/c003/p001.md"
     },
-    "/katie/west-ocean-view-the-end-of-hell/do-better-challenging-cvta-s-complacency-the-2008-mayoral-invitation/part-1-does-the-bus-run-calling-out-cvta-s-complacency-the-2008-regional-mayoral-challenge": {
+    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/do-better-challenging-cvta-s-complacency-the-2008-mayoral-invitation/part-1-does-the-bus-run-calling-out-cvta-s-complacency-the-2008-regional-mayoral-challenge": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Does the Bus Run? Calling Out CVTA's Complacency & The 2008 Regional Mayoral Challenge",
         "theme": "raggiesoft-books",
         "filePath": "e005/c003/p001.md"
+    },
+    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/house-bill-663-the-speech-that-broke-the-internet": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "House Bill 663 & The Speech That Broke the Internet",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|4|3"
+    },
+    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/house-bill-663-the-speech-that-broke-the-internet/pull-my-pants-down-to-prove-i-m-female-delegate-katie-prairie-the-24-hour-viral-firestorm-in-richmond": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Pull My Pants Down to Prove I'm Female? Delegate Katie Prairie & The 24-Hour Viral Firestorm in Richmond",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c004/p001.md"
+    },
+    "/katie/west-ocean-view-ideas-for-cvta-the-delegate-from-virginia-beach/house-bill-663-the-speech-that-broke-the-internet/part-1-pull-my-pants-down-to-prove-i-m-female-delegate-katie-prairie-the-24-hour-viral-firestorm-in-richmond": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Pull My Pants Down to Prove I'm Female? Delegate Katie Prairie & The 24-Hour Viral Firestorm in Richmond",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c004/p001.md"
     },
     "/katie/the-senator-from-virginia": {
         "view": "pages/raggiesoft-books/books/viewer",
