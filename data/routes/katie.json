@@ -14,31 +14,31 @@
         "ebook_sizes": {
             "epub": "17.8 MB",
             "pdf": "18.8 MB",
-            "text_epub": "256 KB",
-            "text_pdf": "712 KB",
-            "package_7z": "196 KB",
-            "epub_bytes": 18653904,
-            "pdf_bytes": 19742872,
-            "text_epub_bytes": 262050,
-            "text_pdf_bytes": 729222,
-            "package_7z_bytes": 200669
+            "text_epub": "261 KB",
+            "text_pdf": "726 KB",
+            "package_7z": "200 KB",
+            "epub_bytes": 18659575,
+            "pdf_bytes": 19757802,
+            "text_epub_bytes": 267608,
+            "text_pdf_bytes": 743451,
+            "package_7z_bytes": 204906
         },
         "illustration_count": 41,
         "word_stats": {
-            "story_word_count": 108443,
+            "story_word_count": 110847,
             "lore_word_count": 121,
-            "combined_word_count": 108564,
-            "story_page_count": 394,
-            "combined_page_count": 395,
-            "reading_hours": 7.2,
-            "reading_minutes": 434,
+            "combined_word_count": 110968,
+            "story_page_count": 403,
+            "combined_page_count": 404,
+            "reading_hours": 7.4,
+            "reading_minutes": 443,
             "novel_equivalent": 1.2,
-            "scale_category": "Full-Length Contemporary Novel",
-            "scale_badge": "Full-Length Novel",
-            "benchmark_note": "1.2\u00d7 a standard 90,000-word contemporary novel (70k\u2013110k trade benchmark)",
+            "scale_category": "Epic Full-Length Novel",
+            "scale_badge": "Epic Novel",
+            "benchmark_note": "1.2\u00d7 a standard 90,000-word contemporary novel (Epic 110k\u2013200k tier)",
             "era_count": 6,
             "chapter_count": 22,
-            "part_count": 50,
+            "part_count": 51,
             "illustration_count": 41
         }
     },
@@ -354,29 +354,35 @@
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|4"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-speak-now-or-forever-hold-your-peace-katie-s-move-to-williamsburg": {
+    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-katie-s-move-to-williamsburg": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Ocean View Station, Speak Now or Forever Hold Your Peace, & Katie's Move to Williamsburg",
+        "title": "Ocean View Station, Dirty Old Tonomy Hill, & Katie's Move to Williamsburg",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|0"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-speak-now-or-forever-hold-your-peace-katie-s-move-to-williamsburg/part-1-ocean-view-station-the-green-sofa-confrontation-speak-now-or-forever-hold-your-peace": {
+    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-katie-s-move-to-williamsburg/part-1-ocean-view-station-the-green-sofa-confrontation-speak-now-or-forever-hold-your-peace": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Ocean View Station, The Green Sofa Confrontation, & Speak Now or Forever Hold Your Peace",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/p001.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-speak-now-or-forever-hold-your-peace-katie-s-move-to-williamsburg/part-2-riding-route-1-back-to-west-ghent-meeting-brandon-mercer-at-the-admiral-center-taking-things-slow": {
+    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-katie-s-move-to-williamsburg/part-2-riding-route-1-back-to-west-ghent-meeting-brandon-mercer-at-the-admiral-center-taking-things-slow": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Riding Route 1 Back to West Ghent, Meeting Brandon Mercer at The Admiral Center, & Taking Things Slow",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/p002.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-speak-now-or-forever-hold-your-peace-katie-s-move-to-williamsburg/part-3-five-months-of-patience-winning-over-nate-and-dad-katie-s-move-to-williamsburg": {
+    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-katie-s-move-to-williamsburg/part-3-the-worst-christmas-ever-pathfinder-to-newport-dirty-old-tonomy-hill-chelsea-s-christmas-eve-nightmare": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Five Months of Patience, Winning Over Nate and Dad, & Katie's Move to Williamsburg",
+        "title": "Part 3: The Worst Christmas Ever: Pathfinder to Newport, Dirty Old Tonomy Hill, & Chelsea's Christmas Eve Nightmare",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/p003.md"
+    },
+    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-katie-s-move-to-williamsburg/part-4-five-months-of-patience-winning-over-nate-and-dad-katie-s-move-to-williamsburg": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Five Months of Patience, Winning Over Nate and Dad, & Katie's Move to Williamsburg",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c001/p004.md"
     },
     "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/the-end-of-hell-reclaiming-apartment-3": {
         "view": "pages/raggiesoft-books/books/viewer",
