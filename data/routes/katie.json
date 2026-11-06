@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "22 MB",
-            "pdf": "23.7 MB",
-            "text_epub": "262 KB",
-            "text_pdf": "729 KB",
-            "package_7z": "201 KB",
-            "epub_bytes": 23117041,
-            "pdf_bytes": 24868214,
-            "text_epub_bytes": 268781,
-            "text_pdf_bytes": 746588,
-            "package_7z_bytes": 206051
+            "epub": "22.3 MB",
+            "pdf": "23.8 MB",
+            "text_epub": "269 KB",
+            "text_pdf": "747 KB",
+            "package_7z": "206 KB",
+            "epub_bytes": 23359012,
+            "pdf_bytes": 24983170,
+            "text_epub_bytes": 275291,
+            "text_pdf_bytes": 764745,
+            "package_7z_bytes": 210902
         },
-        "illustration_count": 38,
+        "illustration_count": 39,
         "word_stats": {
-            "story_word_count": 111404,
+            "story_word_count": 114260,
             "lore_word_count": 121,
-            "combined_word_count": 111525,
-            "story_page_count": 405,
-            "combined_page_count": 406,
-            "reading_hours": 7.4,
-            "reading_minutes": 446,
-            "novel_equivalent": 1.2,
+            "combined_word_count": 114381,
+            "story_page_count": 415,
+            "combined_page_count": 416,
+            "reading_hours": 7.6,
+            "reading_minutes": 457,
+            "novel_equivalent": 1.3,
             "scale_category": "Epic Full-Length Novel",
             "scale_badge": "Epic Novel",
-            "benchmark_note": "1.2\u00d7 a standard 90,000-word contemporary novel (Epic 110k\u2013200k tier)",
+            "benchmark_note": "1.3\u00d7 a standard 90,000-word contemporary novel (Epic 110k\u2013200k tier)",
             "era_count": 6,
             "chapter_count": 22,
-            "part_count": 51,
-            "illustration_count": 38
+            "part_count": 52,
+            "illustration_count": 39
         }
     },
     "/katie": {
@@ -354,35 +354,41 @@
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|4"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-katie-s-move-to-williamsburg": {
+    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Ocean View Station, Dirty Old Tonomy Hill, & Katie's Move to Williamsburg",
+        "title": "Ocean View Station, Dirty Old Tonomy Hill, & Five Buses from Williamsburg",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|0"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-katie-s-move-to-williamsburg/part-1-ocean-view-station-the-green-sofa-confrontation-speak-now-or-forever-hold-your-peace": {
+    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg/part-1-ocean-view-station-the-green-sofa-confrontation-speak-now-or-forever-hold-your-peace": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Ocean View Station, The Green Sofa Confrontation, & Speak Now or Forever Hold Your Peace",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/p001.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-katie-s-move-to-williamsburg/part-2-riding-route-1-back-to-west-ghent-meeting-brandon-mercer-at-the-admiral-center-taking-things-slow": {
+    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg/part-2-riding-route-1-back-to-west-ghent-meeting-brandon-mercer-at-the-admiral-center-taking-things-slow": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Riding Route 1 Back to West Ghent, Meeting Brandon Mercer at The Admiral Center, & Taking Things Slow",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/p002.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-katie-s-move-to-williamsburg/part-3-patience-at-katie-s-pace-winning-over-nate-and-dad-katie-s-move-to-williamsburg": {
+    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg/part-3-patience-at-katie-s-pace-winning-over-nate-and-dad-katie-s-move-to-williamsburg": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Patience at Katie's Pace, Winning Over Nate and Dad, & Katie's Move to Williamsburg",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/p003.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-katie-s-move-to-williamsburg/part-4-the-worst-christmas-ever-eighteen-stops-to-dirty-old-tonomy-hill-four-days-with-cousin-chelsea-the-west-main-road-shortcut-home": {
+    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg/part-4-the-worst-christmas-ever-eighteen-stops-to-dirty-old-tonomy-hill-four-days-with-cousin-chelsea-the-west-main-road-shortcut-home": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Worst Christmas Ever: Eighteen Stops to Dirty Old Tonomy Hill, Four Days with Cousin Chelsea, & The West Main Road Shortcut Home",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/p004.md"
+    },
+    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg/part-5-five-buses-from-williamsburg-the-ninety-second-window-crown-burger-the-last-route-61-across-the-water": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Five Buses from Williamsburg \u2014 The Ninety-Second Window, Crown Burger, & The Last Route 61 Across the Water",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c001/p005.md"
     },
     "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/the-end-of-hell-reclaiming-apartment-3": {
         "view": "pages/raggiesoft-books/books/viewer",
