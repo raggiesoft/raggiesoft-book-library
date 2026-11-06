@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "17.7 MB",
+            "epub": "17.8 MB",
             "pdf": "18.7 MB",
-            "text_epub": "212 KB",
-            "text_pdf": "588 KB",
-            "package_7z": "164 KB",
-            "epub_bytes": 18608788,
-            "pdf_bytes": 19613682,
-            "text_epub_bytes": 217181,
-            "text_pdf_bytes": 601756,
-            "package_7z_bytes": 167868
+            "text_epub": "219 KB",
+            "text_pdf": "607 KB",
+            "package_7z": "169 KB",
+            "epub_bytes": 18616273,
+            "pdf_bytes": 19634736,
+            "text_epub_bytes": 224569,
+            "text_pdf_bytes": 621909,
+            "package_7z_bytes": 173159
         },
-        "illustration_count": 37,
+        "illustration_count": 39,
         "word_stats": {
-            "story_word_count": 88902,
+            "story_word_count": 91915,
             "lore_word_count": 121,
-            "combined_word_count": 89023,
-            "story_page_count": 323,
-            "combined_page_count": 324,
-            "reading_hours": 5.9,
-            "reading_minutes": 356,
+            "combined_word_count": 92036,
+            "story_page_count": 334,
+            "combined_page_count": 335,
+            "reading_hours": 6.1,
+            "reading_minutes": 368,
             "novel_equivalent": 1,
             "scale_category": "Full-Length Contemporary Novel",
             "scale_badge": "Full-Length Novel",
             "benchmark_note": "1.0\u00d7 a standard 90,000-word contemporary novel (70k\u2013110k trade benchmark)",
             "era_count": 6,
-            "chapter_count": 20,
-            "part_count": 41,
-            "illustration_count": 37
+            "chapter_count": 21,
+            "part_count": 43,
+            "illustration_count": 39
         }
     },
     "/katie": {
@@ -282,29 +282,47 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c004/p002.md"
     },
-    "/katie/seventeen-senior-year": {
+    "/katie/seventeen-senior-year-greenway-court": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Seventeen & Senior Year",
+        "title": "Seventeen, Senior Year, & Greenway Court",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|3"
     },
-    "/katie/seventeen-senior-year/drunken-new-year": {
+    "/katie/seventeen-senior-year-greenway-court/drunken-new-year": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Drunken New Year",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|0"
     },
-    "/katie/seventeen-senior-year/drunken-new-year/part-1-the-gas-station-run-a-box-of-dry-cereal-why-i-never-had-a-twenty-first-birthday-drink": {
+    "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-1-the-gas-station-run-a-box-of-dry-cereal-why-i-never-had-a-twenty-first-birthday-drink": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Gas-Station Run, A Box of Dry Cereal, & Why I Never Had a Twenty-First Birthday Drink",
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/p001.md"
     },
-    "/katie/seventeen-senior-year/drunken-new-year/part-2-the-drunken-new-year-lie-heather-s-bitter-goodbye-twin-sisters-always-stay": {
+    "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-2-the-drunken-new-year-lie-heather-s-bitter-goodbye-twin-sisters-always-stay": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Drunken New Year Lie, Heather's Bitter Goodbye, & Twin Sisters Always Stay",
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/p002.md"
+    },
+    "/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Greenway Court, Apartment A6 & The Square Closet Sanctuary",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|1"
+    },
+    "/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary/part-1-apartment-a6-on-greenway-court-dad-s-microwave-cart-across-the-hall-neighbors": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Apartment A6 on Greenway Court, Dad's Microwave Cart, & Across-the-Hall Neighbors",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c002/p001.md"
+    },
+    "/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary/part-2-brenda-in-the-back-alley-hiding-in-the-square-closet-a-happy-year-together": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Brenda in the Back Alley, Hiding in the Square Closet, & A Happy Year Together",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c002/p002.md"
     },
     "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia": {
         "view": "pages/raggiesoft-books/books/viewer",
