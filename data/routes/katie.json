@@ -13,32 +13,32 @@
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
             "epub": "17.8 MB",
-            "pdf": "18.7 MB",
-            "text_epub": "228 KB",
-            "text_pdf": "631 KB",
-            "package_7z": "175 KB",
-            "epub_bytes": 18624905,
-            "pdf_bytes": 19659985,
-            "text_epub_bytes": 233052,
-            "text_pdf_bytes": 646363,
-            "package_7z_bytes": 179543
+            "pdf": "18.8 MB",
+            "text_epub": "245 KB",
+            "text_pdf": "682 KB",
+            "package_7z": "188 KB",
+            "epub_bytes": 18642964,
+            "pdf_bytes": 19711967,
+            "text_epub_bytes": 251111,
+            "text_pdf_bytes": 698041,
+            "package_7z_bytes": 193002
         },
         "illustration_count": 41,
         "word_stats": {
-            "story_word_count": 95645,
+            "story_word_count": 103500,
             "lore_word_count": 121,
-            "combined_word_count": 95766,
-            "story_page_count": 348,
-            "combined_page_count": 348,
-            "reading_hours": 6.4,
-            "reading_minutes": 383,
-            "novel_equivalent": 1.1,
+            "combined_word_count": 103621,
+            "story_page_count": 376,
+            "combined_page_count": 377,
+            "reading_hours": 6.9,
+            "reading_minutes": 414,
+            "novel_equivalent": 1.2,
             "scale_category": "Full-Length Contemporary Novel",
             "scale_badge": "Full-Length Novel",
-            "benchmark_note": "1.1\u00d7 a standard 90,000-word contemporary novel (70k\u2013110k trade benchmark)",
+            "benchmark_note": "1.2\u00d7 a standard 90,000-word contemporary novel (70k\u2013110k trade benchmark)",
             "era_count": 6,
             "chapter_count": 22,
-            "part_count": 45,
+            "part_count": 47,
             "illustration_count": 41
         }
     },
@@ -408,23 +408,35 @@
         "theme": "raggiesoft-books",
         "filePath": "e005/c003/p001.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/do-better-the-four-bus-loop-kempsville-city-council-the-path-to-the-85th-house-district/part-2-the-four-bus-mayoral-loop-the-5-48-pm-municipal-center-curfew-trap-winning-the-kempsville-city-council-seat": {
+    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/do-better-the-four-bus-loop-kempsville-city-council-the-path-to-the-85th-house-district/part-2-the-four-bus-mayoral-loop-silenced-at-eighteenth-street-choosing-to-run-for-the-kempsville-seat": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Four-Bus Mayoral Loop, The 5:48 PM Municipal Center Curfew Trap, & Winning the Kempsville City Council Seat",
+        "title": "Part 2: The Four-Bus Mayoral Loop, Silenced at Eighteenth Street, & Choosing to Run for the Kempsville Seat",
         "theme": "raggiesoft-books",
         "filePath": "e005/c003/p002.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/do-better-the-four-bus-loop-kempsville-city-council-the-path-to-the-85th-house-district/part-3-stopped-at-the-third-floor-gallery-by-capitol-police-seated-on-the-house-floor-near-delegate-ronald-villa-the-spark-to-run": {
+    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/do-better-the-four-bus-loop-kempsville-city-council-the-path-to-the-85th-house-district/part-3-the-empty-podium-on-whro-tv-15-the-8-24-pm-three-bus-sprint-home-the-front-page-metro-headline": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Stopped at the Third-Floor Gallery by Capitol Police, Seated on the House Floor Near Delegate Ronald Villa, & The Spark to Run",
+        "title": "Part 3: The Empty Podium on WHRO TV-15, The 8:24 PM Three-Bus Sprint Home, & The Front-Page Metro Headline",
         "theme": "raggiesoft-books",
         "filePath": "e005/c003/p003.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/do-better-the-four-bus-loop-kempsville-city-council-the-path-to-the-85th-house-district/part-4-telling-dad-at-our-kempsville-kitchen-table-the-125-signature-ballot-petition-at-cchr-winning-the-eighty-fifth-house-district": {
+    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/do-better-the-four-bus-loop-kempsville-city-council-the-path-to-the-85th-house-district/part-4-the-wnis-790-am-disability-attack-the-94-1-landslide-the-eighteenth-street-reckoning": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: Telling Dad at Our Kempsville Kitchen Table, The 125-Signature Ballot Petition at CCHR, & Winning the Eighty-Fifth House District",
+        "title": "Part 4: The WNIS 790 AM Disability Attack, The 94.1% Landslide, & The Eighteenth Street Reckoning",
         "theme": "raggiesoft-books",
         "filePath": "e005/c003/p004.md"
+    },
+    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/do-better-the-four-bus-loop-kempsville-city-council-the-path-to-the-85th-house-district/part-5-stopped-at-the-third-floor-gallery-by-capitol-police-seated-on-the-house-floor-near-delegate-ronald-villa-the-spark-to-run": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Stopped at the Third-Floor Gallery by Capitol Police, Seated on the House Floor Near Delegate Ronald Villa, & The Spark to Run",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c003/p005.md"
+    },
+    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/do-better-the-four-bus-loop-kempsville-city-council-the-path-to-the-85th-house-district/part-6-telling-dad-at-our-kempsville-kitchen-table-the-125-signature-ballot-petition-at-cchr-winning-the-eighty-fifth-house-district": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: Telling Dad at Our Kempsville Kitchen Table, The 125-Signature Ballot Petition at CCHR, & Winning the Eighty-Fifth House District",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c003/p006.md"
     },
     "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/freshman-session-on-west-broad-street-riding-jrtc-route-6-to-the-capitol": {
         "view": "pages/raggiesoft-books/books/viewer",
