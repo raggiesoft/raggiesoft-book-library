@@ -14,24 +14,24 @@
         "ebook_sizes": {
             "epub": "17.8 MB",
             "pdf": "18.8 MB",
-            "text_epub": "261 KB",
-            "text_pdf": "726 KB",
-            "package_7z": "200 KB",
-            "epub_bytes": 18659575,
-            "pdf_bytes": 19757802,
-            "text_epub_bytes": 267608,
-            "text_pdf_bytes": 743451,
-            "package_7z_bytes": 204906
+            "text_epub": "262 KB",
+            "text_pdf": "728 KB",
+            "package_7z": "201 KB",
+            "epub_bytes": 18660367,
+            "pdf_bytes": 19759616,
+            "text_epub_bytes": 268432,
+            "text_pdf_bytes": 745916,
+            "package_7z_bytes": 205527
         },
         "illustration_count": 41,
         "word_stats": {
-            "story_word_count": 110847,
+            "story_word_count": 111222,
             "lore_word_count": 121,
-            "combined_word_count": 110968,
-            "story_page_count": 403,
-            "combined_page_count": 404,
+            "combined_word_count": 111343,
+            "story_page_count": 404,
+            "combined_page_count": 405,
             "reading_hours": 7.4,
-            "reading_minutes": 443,
+            "reading_minutes": 445,
             "novel_equivalent": 1.2,
             "scale_category": "Epic Full-Length Novel",
             "scale_badge": "Epic Novel",
@@ -372,15 +372,15 @@
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/p002.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-katie-s-move-to-williamsburg/part-3-the-worst-christmas-ever-pathfinder-to-newport-dirty-old-tonomy-hill-chelsea-s-christmas-eve-nightmare": {
+    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-katie-s-move-to-williamsburg/part-3-patience-at-katie-s-pace-winning-over-nate-and-dad-katie-s-move-to-williamsburg": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Worst Christmas Ever: Pathfinder to Newport, Dirty Old Tonomy Hill, & Chelsea's Christmas Eve Nightmare",
+        "title": "Part 3: Patience at Katie's Pace, Winning Over Nate and Dad, & Katie's Move to Williamsburg",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/p003.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-katie-s-move-to-williamsburg/part-4-five-months-of-patience-winning-over-nate-and-dad-katie-s-move-to-williamsburg": {
+    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-katie-s-move-to-williamsburg/part-4-the-worst-christmas-ever-eighteen-stops-to-dirty-old-tonomy-hill-four-days-with-cousin-chelsea-the-west-main-road-shortcut-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: Five Months of Patience, Winning Over Nate and Dad, & Katie's Move to Williamsburg",
+        "title": "Part 4: The Worst Christmas Ever: Eighteen Stops to Dirty Old Tonomy Hill, Four Days with Cousin Chelsea, & The West Main Road Shortcut Home",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/p004.md"
     },

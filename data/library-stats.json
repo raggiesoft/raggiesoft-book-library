@@ -1,27 +1,27 @@
 {
-    "generated_at": "2026-11-06T03:55:54+00:00",
+    "generated_at": "2026-11-06T04:11:13+00:00",
     "volume_count": 31,
     "active_story_volume_count": 28,
     "total_eras": 198,
     "total_chapters": 818,
     "total_parts": 1404,
     "total_illustrations": 296,
-    "total_story_words": 3252729,
+    "total_story_words": 3253104,
     "total_book_lore_words": 315277,
-    "total_shared_universe_lore_words": 161825,
-    "total_curated_lore_words": 477102,
+    "total_shared_universe_lore_words": 161826,
+    "total_curated_lore_words": 477103,
     "total_lyrics_words": 132581,
-    "total_combined_words": 3729831,
-    "total_combined_with_lyrics_words": 3862412,
-    "total_story_pages": 11828,
-    "total_combined_pages": 13563,
-    "total_reading_hours": 216.8,
+    "total_combined_words": 3730207,
+    "total_combined_with_lyrics_words": 3862788,
+    "total_story_pages": 11829,
+    "total_combined_pages": 13564,
+    "total_reading_hours": 216.9,
     "total_novel_equivalents": 36.1,
     "total_combined_novel_equivalents": 41.4,
     "shared_lore_breakdown": [
         {
             "label": "Universal Lore Archive (CPI, Transit, Cities & Institutions)",
-            "words": 75077
+            "words": 75078
         },
         {
             "label": "Amaya Rios & The Wall of Twenty Lore Dossier",
@@ -60,7 +60,7 @@
                 "pdf_bytes": 84073571,
                 "text_epub_bytes": 1161639,
                 "text_pdf_bytes": 3238691,
-                "package_7z_bytes": 803224
+                "package_7z_bytes": 803216
             },
             "word_stats": {
                 "story_word_count": 496186,
@@ -95,7 +95,7 @@
                 "pdf_bytes": 56106461,
                 "text_epub_bytes": 1026776,
                 "text_pdf_bytes": 3869214,
-                "package_7z_bytes": 733155
+                "package_7z_bytes": 733156
             },
             "word_stats": {
                 "story_word_count": 412289,
@@ -130,7 +130,7 @@
                 "pdf_bytes": 12180023,
                 "text_epub_bytes": 795940,
                 "text_pdf_bytes": 2373352,
-                "package_7z_bytes": 569269
+                "package_7z_bytes": 569272
             },
             "word_stats": {
                 "story_word_count": 334895,
@@ -165,7 +165,7 @@
                 "pdf_bytes": 1801711,
                 "text_epub_bytes": 673144,
                 "text_pdf_bytes": 1801711,
-                "package_7z_bytes": 463316
+                "package_7z_bytes": 463310
             },
             "word_stats": {
                 "story_word_count": 275129,
@@ -200,7 +200,7 @@
                 "pdf_bytes": 1764104,
                 "text_epub_bytes": 608772,
                 "text_pdf_bytes": 1764104,
-                "package_7z_bytes": 426531
+                "package_7z_bytes": 426532
             },
             "word_stats": {
                 "story_word_count": 261029,
@@ -235,7 +235,7 @@
                 "pdf_bytes": 1469151,
                 "text_epub_bytes": 507398,
                 "text_pdf_bytes": 1469151,
-                "package_7z_bytes": 369553
+                "package_7z_bytes": 369558
             },
             "word_stats": {
                 "story_word_count": 213138,
@@ -270,7 +270,7 @@
                 "pdf_bytes": 1273223,
                 "text_epub_bytes": 454871,
                 "text_pdf_bytes": 1273223,
-                "package_7z_bytes": 327994
+                "package_7z_bytes": 327996
             },
             "word_stats": {
                 "story_word_count": 186535,
@@ -305,7 +305,7 @@
                 "pdf_bytes": 4170889,
                 "text_epub_bytes": 407529,
                 "text_pdf_bytes": 1263465,
-                "package_7z_bytes": 300724
+                "package_7z_bytes": 300715
             },
             "word_stats": {
                 "story_word_count": 169175,
@@ -340,7 +340,7 @@
                 "pdf_bytes": 858237,
                 "text_epub_bytes": 301711,
                 "text_pdf_bytes": 858237,
-                "package_7z_bytes": 228963
+                "package_7z_bytes": 228973
             },
             "word_stats": {
                 "story_word_count": 132610,
@@ -368,23 +368,23 @@
             "ebook_sizes": {
                 "epub": "17.8 MB",
                 "pdf": "18.8 MB",
-                "text_epub": "256 KB",
-                "text_pdf": "712 KB",
-                "package_7z": "200 KB",
-                "epub_bytes": 18653904,
-                "pdf_bytes": 19742872,
-                "text_epub_bytes": 262050,
-                "text_pdf_bytes": 729222,
-                "package_7z_bytes": 204906
+                "text_epub": "261 KB",
+                "text_pdf": "726 KB",
+                "package_7z": "201 KB",
+                "epub_bytes": 18659575,
+                "pdf_bytes": 19757802,
+                "text_epub_bytes": 267608,
+                "text_pdf_bytes": 743451,
+                "package_7z_bytes": 205527
             },
             "word_stats": {
-                "story_word_count": 110847,
+                "story_word_count": 111222,
                 "lore_word_count": 121,
-                "combined_word_count": 110968,
-                "story_page_count": 403,
-                "combined_page_count": 404,
+                "combined_word_count": 111343,
+                "story_page_count": 404,
+                "combined_page_count": 405,
                 "reading_hours": 7.4,
-                "reading_minutes": 443,
+                "reading_minutes": 445,
                 "novel_equivalent": 1.2,
                 "scale_category": "Epic Full-Length Novel",
                 "scale_badge": "Epic Novel",
@@ -410,7 +410,7 @@
                 "pdf_bytes": 663054,
                 "text_epub_bytes": 237599,
                 "text_pdf_bytes": 663054,
-                "package_7z_bytes": 172120
+                "package_7z_bytes": 172114
             },
             "word_stats": {
                 "story_word_count": 94109,
@@ -445,7 +445,7 @@
                 "pdf_bytes": 3367309,
                 "text_epub_bytes": 189671,
                 "text_pdf_bytes": 3367313,
-                "package_7z_bytes": 144954
+                "package_7z_bytes": 144950
             },
             "word_stats": {
                 "story_word_count": 81433,
@@ -480,7 +480,7 @@
                 "pdf_bytes": 482428,
                 "text_epub_bytes": 169681,
                 "text_pdf_bytes": 482428,
-                "package_7z_bytes": 126110
+                "package_7z_bytes": 126116
             },
             "word_stats": {
                 "story_word_count": 68046,
@@ -515,7 +515,7 @@
                 "pdf_bytes": 19678008,
                 "text_epub_bytes": 183949,
                 "text_pdf_bytes": 560495,
-                "package_7z_bytes": 139061
+                "package_7z_bytes": 139064
             },
             "word_stats": {
                 "story_word_count": 63093,
@@ -550,7 +550,7 @@
                 "pdf_bytes": 415749,
                 "text_epub_bytes": 155170,
                 "text_pdf_bytes": 415749,
-                "package_7z_bytes": 112007
+                "package_7z_bytes": 112017
             },
             "word_stats": {
                 "story_word_count": 57383,
@@ -585,7 +585,7 @@
                 "pdf_bytes": 259351,
                 "text_epub_bytes": 87849,
                 "text_pdf_bytes": 259351,
-                "package_7z_bytes": 70792
+                "package_7z_bytes": 70789
             },
             "word_stats": {
                 "story_word_count": 34858,
@@ -620,7 +620,7 @@
                 "pdf_bytes": 235362,
                 "text_epub_bytes": 85613,
                 "text_pdf_bytes": 235362,
-                "package_7z_bytes": 63757
+                "package_7z_bytes": 63756
             },
             "word_stats": {
                 "story_word_count": 33772,
@@ -655,7 +655,7 @@
                 "pdf_bytes": 241676,
                 "text_epub_bytes": 84495,
                 "text_pdf_bytes": 241676,
-                "package_7z_bytes": 68205
+                "package_7z_bytes": 68201
             },
             "word_stats": {
                 "story_word_count": 32393,
@@ -690,7 +690,7 @@
                 "pdf_bytes": 5514637,
                 "text_epub_bytes": 79119,
                 "text_pdf_bytes": 5514641,
-                "package_7z_bytes": 60966
+                "package_7z_bytes": 60971
             },
             "word_stats": {
                 "story_word_count": 29911,
@@ -725,7 +725,7 @@
                 "pdf_bytes": 2175766,
                 "text_epub_bytes": 85395,
                 "text_pdf_bytes": 277807,
-                "package_7z_bytes": 68656
+                "package_7z_bytes": 68663
             },
             "word_stats": {
                 "story_word_count": 28819,
@@ -760,7 +760,7 @@
                 "pdf_bytes": 206051,
                 "text_epub_bytes": 74040,
                 "text_pdf_bytes": 206051,
-                "package_7z_bytes": 57794
+                "package_7z_bytes": 57796
             },
             "word_stats": {
                 "story_word_count": 28751,
@@ -795,7 +795,7 @@
                 "pdf_bytes": 202768,
                 "text_epub_bytes": 70990,
                 "text_pdf_bytes": 202768,
-                "package_7z_bytes": 53971
+                "package_7z_bytes": 53972
             },
             "word_stats": {
                 "story_word_count": 26090,
@@ -830,7 +830,7 @@
                 "pdf_bytes": 194611,
                 "text_epub_bytes": 66696,
                 "text_pdf_bytes": 194611,
-                "package_7z_bytes": 50598
+                "package_7z_bytes": 50592
             },
             "word_stats": {
                 "story_word_count": 25132,
@@ -865,7 +865,7 @@
                 "pdf_bytes": 21143357,
                 "text_epub_bytes": 55576,
                 "text_pdf_bytes": 168226,
-                "package_7z_bytes": 45140
+                "package_7z_bytes": 45136
             },
             "word_stats": {
                 "story_word_count": 20942,
@@ -935,7 +935,7 @@
                 "pdf_bytes": 41824,
                 "text_epub_bytes": 14621,
                 "text_pdf_bytes": 41824,
-                "package_7z_bytes": 35534
+                "package_7z_bytes": 35539
             },
             "word_stats": {
                 "story_word_count": 14030,
@@ -970,7 +970,7 @@
                 "pdf_bytes": 73850,
                 "text_epub_bytes": 20317,
                 "text_pdf_bytes": 73850,
-                "package_7z_bytes": 15358
+                "package_7z_bytes": 15359
             },
             "word_stats": {
                 "story_word_count": 5551,
@@ -1005,7 +1005,7 @@
                 "pdf_bytes": 25934,
                 "text_epub_bytes": 9640,
                 "text_pdf_bytes": 25934,
-                "package_7z_bytes": 4901
+                "package_7z_bytes": 4900
             },
             "word_stats": {
                 "story_word_count": 1337,
@@ -1075,7 +1075,7 @@
                 "pdf_bytes": 3540,
                 "text_epub_bytes": 5403,
                 "text_pdf_bytes": 3540,
-                "package_7z_bytes": 1196
+                "package_7z_bytes": 1194
             },
             "word_stats": {
                 "story_word_count": 0,
@@ -1110,7 +1110,7 @@
                 "pdf_bytes": 16540,
                 "text_epub_bytes": 8788,
                 "text_pdf_bytes": 16540,
-                "package_7z_bytes": 2007
+                "package_7z_bytes": 2019
             },
             "word_stats": {
                 "story_word_count": 0,
