@@ -14,32 +14,32 @@
         "ebook_sizes": {
             "epub": "17.8 MB",
             "pdf": "18.7 MB",
-            "text_epub": "219 KB",
-            "text_pdf": "608 KB",
-            "package_7z": "169 KB",
-            "epub_bytes": 18616338,
-            "pdf_bytes": 19634570,
-            "text_epub_bytes": 224638,
-            "text_pdf_bytes": 622109,
-            "package_7z_bytes": 173240
+            "text_epub": "227 KB",
+            "text_pdf": "631 KB",
+            "package_7z": "175 KB",
+            "epub_bytes": 18624802,
+            "pdf_bytes": 19659755,
+            "text_epub_bytes": 232956,
+            "text_pdf_bytes": 646188,
+            "package_7z_bytes": 179487
         },
-        "illustration_count": 39,
+        "illustration_count": 41,
         "word_stats": {
-            "story_word_count": 91949,
+            "story_word_count": 95601,
             "lore_word_count": 121,
-            "combined_word_count": 92070,
-            "story_page_count": 334,
-            "combined_page_count": 335,
-            "reading_hours": 6.1,
-            "reading_minutes": 368,
-            "novel_equivalent": 1,
+            "combined_word_count": 95722,
+            "story_page_count": 348,
+            "combined_page_count": 348,
+            "reading_hours": 6.4,
+            "reading_minutes": 382,
+            "novel_equivalent": 1.1,
             "scale_category": "Full-Length Contemporary Novel",
             "scale_badge": "Full-Length Novel",
-            "benchmark_note": "1.0\u00d7 a standard 90,000-word contemporary novel (70k\u2013110k trade benchmark)",
+            "benchmark_note": "1.1\u00d7 a standard 90,000-word contemporary novel (70k\u2013110k trade benchmark)",
             "era_count": 6,
-            "chapter_count": 21,
-            "part_count": 43,
-            "illustration_count": 39
+            "chapter_count": 22,
+            "part_count": 45,
+            "illustration_count": 41
         }
     },
     "/katie": {
@@ -323,6 +323,24 @@
         "title": "Part 2: Brenda in the Back Alley, Hiding in the Square Closet, & A Happy Year Together",
         "theme": "raggiesoft-books",
         "filePath": "e004/c002/p002.md"
+    },
+    "/katie/seventeen-senior-year-greenway-court/the-admiral-center-bookstore-meeting-tiffany": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Admiral Center Bookstore & Meeting Tiffany",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|2"
+    },
+    "/katie/seventeen-senior-year-greenway-court/the-admiral-center-bookstore-meeting-tiffany/part-1-death-by-cascading-style-sheets-iced-cocoa-at-chapters-co": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Death by Cascading Style Sheets & Iced Cocoa at Chapters & Co.",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c003/p001.md"
+    },
+    "/katie/seventeen-senior-year-greenway-court/the-admiral-center-bookstore-meeting-tiffany/part-2-saturday-pizza-in-apartment-a6-katie-s-wholehearted-blessing": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Saturday Pizza in Apartment A6 & Katie's Wholehearted Blessing",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c003/p002.md"
     },
     "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia": {
         "view": "pages/raggiesoft-books/books/viewer",
