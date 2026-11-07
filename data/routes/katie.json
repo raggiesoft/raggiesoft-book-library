@@ -13,32 +13,32 @@
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
             "epub": "21.3 MB",
-            "pdf": "10 MB",
-            "text_epub": "356 KB",
-            "text_pdf": "965 KB",
-            "package_7z": "268 KB",
-            "epub_bytes": 22340424,
-            "pdf_bytes": 10531931,
-            "text_epub_bytes": 364963,
-            "text_pdf_bytes": 988554,
-            "package_7z_bytes": 274899
+            "pdf": "10.1 MB",
+            "text_epub": "364 KB",
+            "text_pdf": "985 KB",
+            "package_7z": "274 KB",
+            "epub_bytes": 22348303,
+            "pdf_bytes": 10552709,
+            "text_epub_bytes": 372840,
+            "text_pdf_bytes": 1008859,
+            "package_7z_bytes": 280607
         },
         "illustration_count": 80,
         "word_stats": {
-            "story_word_count": 150269,
+            "story_word_count": 153147,
             "lore_word_count": 121,
-            "combined_word_count": 150390,
-            "story_page_count": 546,
-            "combined_page_count": 547,
-            "reading_hours": 10,
-            "reading_minutes": 601,
+            "combined_word_count": 153268,
+            "story_page_count": 557,
+            "combined_page_count": 557,
+            "reading_hours": 10.2,
+            "reading_minutes": 613,
             "novel_equivalent": 1.7,
             "scale_category": "Epic Full-Length Novel",
             "scale_badge": "Epic Novel",
             "benchmark_note": "1.7\u00d7 a standard 90,000-word contemporary novel (Epic 110k\u2013200k tier)",
             "era_count": 10,
-            "chapter_count": 27,
-            "part_count": 59,
+            "chapter_count": 29,
+            "part_count": 62,
             "illustration_count": 80
         }
     },
@@ -432,29 +432,59 @@
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|5"
     },
-    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/cantor-hall-the-chickenshit-report-the-night-the-keycards-got-shuffled": {
+    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/voc-eval-in-cantor-dorm-two-weeks-of-butt-heads-the-hall-pass-prison": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Cantor Hall, The Chickenshit Report, & The Night the Keycards Got Shuffled",
+        "title": "Voc Eval in Cantor Dorm, Two Weeks of Butt-Heads, & The Hall Pass Prison",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|0"
     },
-    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/cantor-hall-the-chickenshit-report-the-night-the-keycards-got-shuffled/part-1-sunday-check-in-at-cantor-hall-the-opposite-gender-dorm-rule-learning-dorms-aren-t-made-for-twins": {
+    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/voc-eval-in-cantor-dorm-two-weeks-of-butt-heads-the-hall-pass-prison/part-1-sunday-check-in-at-cantor-dorm-the-opposite-gender-dorm-rule-expelling-the-creepy-roommate": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Sunday Check-In at Cantor Hall, The Opposite-Gender Dorm Rule, & Learning Dorms Aren't Made for Twins",
+        "title": "Part 1: Sunday Check-In at Cantor Dorm, The Opposite-Gender Dorm Rule, & Expelling the Creepy Roommate",
         "theme": "raggiesoft-books",
         "filePath": "e006/c001/p001.md"
     },
-    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/cantor-hall-the-chickenshit-report-the-night-the-keycards-got-shuffled/part-2-four-months-into-php-the-emergency-in-the-therapeutic-pool-the-chickenshit-report": {
+    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/voc-eval-in-cantor-dorm-two-weeks-of-butt-heads-the-hall-pass-prison/part-2-two-weeks-of-voc-eval-refusing-to-go-our-separate-sibling-ways-the-hall-pass-prison": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Four Months into PHP, The Emergency in the Therapeutic Pool, & The Chickenshit Report",
+        "title": "Part 2: Two Weeks of Voc Eval, Refusing to Go Our Separate Sibling Ways, & The Hall Pass Prison",
         "theme": "raggiesoft-books",
         "filePath": "e006/c001/p002.md"
     },
-    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/cantor-hall-the-chickenshit-report-the-night-the-keycards-got-shuffled/part-3-the-dorm-keycard-mix-up-sharing-a-single-twin-bed-protecting-natalie": {
+    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/barnett-dorm-quantum-os-2000-professional-the-chickenshit-report": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Dorm Keycard Mix-Up, Sharing a Single Twin Bed, & Protecting Natalie",
+        "title": "Barnett Dorm, Quantum OS 2000 Professional, & The Chickenshit Report",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/p003.md"
+        "filePath": "__CHAP_TOC__|5|1"
+    },
+    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/barnett-dorm-quantum-os-2000-professional-the-chickenshit-report/part-1-moving-to-barnett-dorm-level-3-sign-out-privileges-quantum-os-2000-professional-meeting-tina-jim-and-sheila": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Moving to Barnett Dorm, Level 3 Sign-Out Privileges, Quantum OS 2000 Professional, & Meeting Tina, Jim, and Sheila",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c002/p001.md"
+    },
+    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/barnett-dorm-quantum-os-2000-professional-the-chickenshit-report/part-2-four-months-into-php-the-emergency-in-the-therapeutic-pool-the-chickenshit-report": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Four Months into PHP, The Emergency in the Therapeutic Pool, & The Chickenshit Report",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c002/p002.md"
+    },
+    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/the-stolen-admin-login-a-weekend-on-tina-s-daybed-in-luray-graduating-for-good": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Stolen Admin Login, A Weekend on Tina's Daybed in Luray, & Graduating for Good",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|2"
+    },
+    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/the-stolen-admin-login-a-weekend-on-tina-s-daybed-in-luray-graduating-for-good/part-1-the-stolen-admin-login-blind-red-tape-room-reassignments-a-sleepless-night-for-natalie": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The Stolen Admin Login, Blind Red-Tape Room Reassignments, & A Sleepless Night for Natalie",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c003/p001.md"
+    },
+    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/the-stolen-admin-login-a-weekend-on-tina-s-daybed-in-luray-graduating-for-good/part-2-sharing-the-daybed-at-tina-s-house-in-luray-debating-dropping-out-graduating-to-our-own-home": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Sharing the Daybed at Tina's House in Luray, Debating Dropping Out, & Graduating to Our Own Home",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c003/p002.md"
     },
     "/katie/back-home-in-virginia-beach-the-kempsville-city-council": {
         "view": "pages/raggiesoft-books/books/viewer",
