@@ -14,14 +14,14 @@
         "ebook_sizes": {
             "epub": "21.3 MB",
             "pdf": "10 MB",
-            "text_epub": "318 KB",
-            "text_pdf": "880 KB",
-            "package_7z": "246 KB",
-            "epub_bytes": 22301087,
-            "pdf_bytes": 10443635,
-            "text_epub_bytes": 325702,
-            "text_pdf_bytes": 901195,
-            "package_7z_bytes": 252376
+            "text_epub": "324 KB",
+            "text_pdf": "882 KB",
+            "package_7z": "247 KB",
+            "epub_bytes": 22307429,
+            "pdf_bytes": 10447104,
+            "text_epub_bytes": 331995,
+            "text_pdf_bytes": 903323,
+            "package_7z_bytes": 252652
         },
         "illustration_count": 80,
         "word_stats": {
@@ -36,8 +36,8 @@
             "scale_category": "Epic Full-Length Novel",
             "scale_badge": "Epic Novel",
             "benchmark_note": "1.5\u00d7 a standard 90,000-word contemporary novel (Epic 110k\u2013200k tier)",
-            "era_count": 6,
-            "chapter_count": 23,
+            "era_count": 9,
+            "chapter_count": 26,
             "part_count": 56,
             "illustration_count": 80
         }
@@ -348,268 +348,316 @@
         "theme": "raggiesoft-books",
         "filePath": "e004/c003/p003.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia": {
+    "/katie/west-ocean-view-reclaiming-our-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "West Ocean View, Ideas for CVTA, & From City Council to the Senate of Virginia",
+        "title": "West Ocean View & Reclaiming Our Sanctuary",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|4"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg": {
+    "/katie/west-ocean-view-reclaiming-our-sanctuary/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Ocean View Station, Dirty Old Tonomy Hill, & Five Buses from Williamsburg",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|0"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg/part-1-ocean-view-station-the-green-sofa-confrontation-speak-now-or-forever-hold-your-peace": {
+    "/katie/west-ocean-view-reclaiming-our-sanctuary/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg/part-1-ocean-view-station-the-green-sofa-confrontation-speak-now-or-forever-hold-your-peace": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Ocean View Station, The Green Sofa Confrontation, & Speak Now or Forever Hold Your Peace",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/p001.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg/part-2-riding-route-1-back-to-west-ghent-meeting-brandon-mercer-at-the-admiral-center-taking-things-slow": {
+    "/katie/west-ocean-view-reclaiming-our-sanctuary/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg/part-2-riding-route-1-back-to-west-ghent-meeting-brandon-mercer-at-the-admiral-center-taking-things-slow": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Riding Route 1 Back to West Ghent, Meeting Brandon Mercer at The Admiral Center, & Taking Things Slow",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/p002.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg/part-3-patience-at-katie-s-pace-winning-over-nate-and-dad-katie-s-move-to-williamsburg": {
+    "/katie/west-ocean-view-reclaiming-our-sanctuary/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg/part-3-patience-at-katie-s-pace-winning-over-nate-and-dad-katie-s-move-to-williamsburg": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Patience at Katie's Pace, Winning Over Nate and Dad, & Katie's Move to Williamsburg",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/p003.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg/part-4-the-worst-christmas-ever-eighteen-stops-to-dirty-old-tonomy-hill-four-days-with-cousin-chelsea-the-west-main-road-shortcut-home": {
+    "/katie/west-ocean-view-reclaiming-our-sanctuary/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg/part-4-the-worst-christmas-ever-eighteen-stops-to-dirty-old-tonomy-hill-four-days-with-cousin-chelsea-the-west-main-road-shortcut-home": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Worst Christmas Ever: Eighteen Stops to Dirty Old Tonomy Hill, Four Days with Cousin Chelsea, & The West Main Road Shortcut Home",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/p004.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg/part-5-five-buses-from-williamsburg-the-ninety-second-window-crown-burger-the-last-route-61-across-the-water": {
+    "/katie/west-ocean-view-reclaiming-our-sanctuary/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg/part-5-five-buses-from-williamsburg-the-ninety-second-window-crown-burger-the-last-route-61-across-the-water": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: Five Buses from Williamsburg \u2014 The Ninety-Second Window, Crown Burger, & The Last Route 61 Across the Water",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/p005.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/the-end-of-hell-reclaiming-apartment-3": {
+    "/katie/west-ocean-view-reclaiming-our-sanctuary/the-end-of-hell-reclaiming-apartment-3": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The End of Hell & Reclaiming Apartment 3",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|1"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/the-end-of-hell-reclaiming-apartment-3/part-1-a-sister-s-worst-nightmare-tiffany-forces-a-choice-scrubbing-out-the-filth": {
+    "/katie/west-ocean-view-reclaiming-our-sanctuary/the-end-of-hell-reclaiming-apartment-3/part-1-a-sister-s-worst-nightmare-tiffany-forces-a-choice-scrubbing-out-the-filth": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Sister's Worst Nightmare, Tiffany Forces a Choice, & Scrubbing Out the Filth",
         "theme": "raggiesoft-books",
         "filePath": "e005/c002/p001.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/the-end-of-hell-reclaiming-apartment-3/part-2-the-8-13-am-bus-to-cchr-all-new-queen-bedding-dad-s-pickup-truck-the-hallway-closet-sanctuary": {
+    "/katie/west-ocean-view-reclaiming-our-sanctuary/the-end-of-hell-reclaiming-apartment-3/part-2-the-8-13-am-bus-to-cchr-all-new-queen-bedding-dad-s-pickup-truck-the-hallway-closet-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The 8:13 AM Bus to CCHR, All-New Queen Bedding, Dad's Pickup Truck, & The Hallway Closet Sanctuary",
         "theme": "raggiesoft-books",
         "filePath": "e005/c002/p002.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/the-end-of-hell-reclaiming-apartment-3/part-3-the-goyeau-street-tunnel-bus-the-federal-courthouse-on-granby-street-protected-non-traveling-complainant": {
+    "/katie/west-ocean-view-reclaiming-our-sanctuary/the-end-of-hell-reclaiming-apartment-3/part-3-the-goyeau-street-tunnel-bus-the-federal-courthouse-on-granby-street-protected-non-traveling-complainant": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Goyeau Street Tunnel Bus, The Federal Courthouse on Granby Street, & Protected Non-Traveling Complainant",
         "theme": "raggiesoft-books",
         "filePath": "e005/c002/p003.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/the-end-of-hell-reclaiming-apartment-3/part-4-thanksgiving-dinner-at-dad-s-house-the-black-friday-closet-project-the-secret-on-the-closet-floor": {
+    "/katie/west-ocean-view-reclaiming-our-sanctuary/the-end-of-hell-reclaiming-apartment-3/part-4-thanksgiving-dinner-at-dad-s-house-the-black-friday-closet-project-the-secret-on-the-closet-floor": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: Thanksgiving Dinner at Dad's House, The Black Friday Closet Project, & The Secret on the Closet Floor",
         "theme": "raggiesoft-books",
         "filePath": "e005/c002/p004.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/the-end-of-hell-reclaiming-apartment-3/part-5-the-seattle-transit-blog-inspiration-quietly-launching-ideas-for-coastal-virginia-transit": {
+    "/katie/west-ocean-view-reclaiming-our-sanctuary/the-end-of-hell-reclaiming-apartment-3/part-5-the-seattle-transit-blog-inspiration-quietly-launching-ideas-for-coastal-virginia-transit": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: The Seattle Transit Blog Inspiration & Quietly Launching Ideas for Coastal Virginia Transit",
         "theme": "raggiesoft-books",
         "filePath": "e005/c002/p005.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/do-better-the-four-bus-loop-kempsville-city-council-the-path-to-the-85th-house-district": {
+    "/katie/back-home-in-virginia-beach-the-kempsville-city-council": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Do Better: The Four-Bus Loop, Kempsville City Council, & The Path to the 85th House District",
+        "title": "Back Home in Virginia Beach & The Kempsville City Council",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|4|2"
+        "filePath": "__ERA_TOC__|5"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/do-better-the-four-bus-loop-kempsville-city-council-the-path-to-the-85th-house-district/part-1-does-the-bus-run-calling-out-cvta-s-complacency-the-2008-regional-mayoral-challenge": {
+    "/katie/back-home-in-virginia-beach-the-kempsville-city-council/do-better-ideas-for-cvta-the-four-bus-mayoral-loop": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Do Better: Ideas for CVTA & The Four-Bus Mayoral Loop",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|5|0"
+    },
+    "/katie/back-home-in-virginia-beach-the-kempsville-city-council/do-better-ideas-for-cvta-the-four-bus-mayoral-loop/part-1-does-the-bus-run-calling-out-cvta-s-complacency-the-2008-regional-mayoral-challenge": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Does the Bus Run? Calling Out CVTA's Complacency & The 2008 Regional Mayoral Challenge",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c003/p001.md"
+        "filePath": "e006/c001/p001.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/do-better-the-four-bus-loop-kempsville-city-council-the-path-to-the-85th-house-district/part-2-the-four-bus-mayoral-loop-silenced-at-eighteenth-street-choosing-to-run-for-the-kempsville-seat": {
+    "/katie/back-home-in-virginia-beach-the-kempsville-city-council/do-better-ideas-for-cvta-the-four-bus-mayoral-loop/part-2-the-four-bus-mayoral-loop-silenced-at-eighteenth-street-choosing-to-run-for-the-kempsville-seat": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Four-Bus Mayoral Loop, Silenced at Eighteenth Street, & Choosing to Run for the Kempsville Seat",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c003/p002.md"
+        "filePath": "e006/c001/p002.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/do-better-the-four-bus-loop-kempsville-city-council-the-path-to-the-85th-house-district/part-3-the-empty-podium-on-whrc-tv-15-the-8-24-pm-three-bus-sprint-home-the-front-page-metro-headline": {
+    "/katie/back-home-in-virginia-beach-the-kempsville-city-council/the-empty-podium-on-whrc-tv-15-the-94-1-landslide-councilwoman-prairie": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Empty Podium on WHRC TV-15, The 8:24 PM Three-Bus Sprint Home, & The Front-Page Metro Headline",
+        "title": "The Empty Podium on WHRC TV-15, The 94.1% Landslide, & Councilwoman Prairie",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c003/p003.md"
+        "filePath": "__CHAP_TOC__|5|1"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/do-better-the-four-bus-loop-kempsville-city-council-the-path-to-the-85th-house-district/part-4-the-wtga-790-am-disability-attack-the-94-1-landslide-the-eighteenth-street-reckoning": {
+    "/katie/back-home-in-virginia-beach-the-kempsville-city-council/the-empty-podium-on-whrc-tv-15-the-94-1-landslide-councilwoman-prairie/part-1-the-empty-podium-on-whrc-tv-15-the-8-24-pm-three-bus-sprint-home-the-front-page-metro-headline": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The WTGA 790 AM Disability Attack, The 94.1% Landslide, & The Eighteenth Street Reckoning",
+        "title": "Part 1: The Empty Podium on WHRC TV-15, The 8:24 PM Three-Bus Sprint Home, & The Front-Page Metro Headline",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c003/p004.md"
+        "filePath": "e006/c002/p001.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/do-better-the-four-bus-loop-kempsville-city-council-the-path-to-the-85th-house-district/part-5-stopped-at-the-third-floor-gallery-by-capitol-police-seated-on-the-house-floor-near-delegate-ronald-villa-the-spark-to-run": {
+    "/katie/back-home-in-virginia-beach-the-kempsville-city-council/the-empty-podium-on-whrc-tv-15-the-94-1-landslide-councilwoman-prairie/part-2-the-wtga-790-am-disability-attack-the-94-1-landslide-the-eighteenth-street-reckoning": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: Stopped at the Third-Floor Gallery by Capitol Police, Seated on the House Floor Near Delegate Ronald Villa, & The Spark to Run",
+        "title": "Part 2: The WTGA 790 AM Disability Attack, The 94.1% Landslide, & The Eighteenth Street Reckoning",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c003/p005.md"
+        "filePath": "e006/c002/p002.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/do-better-the-four-bus-loop-kempsville-city-council-the-path-to-the-85th-house-district/part-6-telling-dad-at-our-kempsville-kitchen-table-the-125-signature-ballot-petition-at-cchr-winning-the-eighty-fifth-house-district": {
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: Telling Dad at Our Kempsville Kitchen Table, The 125-Signature Ballot Petition at CCHR, & Winning the Eighty-Fifth House District",
+        "title": "The Gentlewoman from Virginia Beach: The House of Delegates",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c003/p006.md"
+        "filePath": "__ERA_TOC__|6"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/freshman-session-on-west-broad-street-riding-jrtc-route-6-to-the-capitol": {
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/stopped-at-the-third-floor-gallery-seated-by-delegate-ronald-villa-winning-the-85th-district": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Stopped at the Third-Floor Gallery, Seated by Delegate Ronald Villa, & Winning the 85th District",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|0"
+    },
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/stopped-at-the-third-floor-gallery-seated-by-delegate-ronald-villa-winning-the-85th-district/part-1-stopped-at-the-third-floor-gallery-by-capitol-police-seated-on-the-house-floor-near-delegate-ronald-villa-the-spark-to-run": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Stopped at the Third-Floor Gallery by Capitol Police, Seated on the House Floor Near Delegate Ronald Villa, & The Spark to Run",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c001/p001.md"
+    },
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/stopped-at-the-third-floor-gallery-seated-by-delegate-ronald-villa-winning-the-85th-district/part-2-telling-dad-at-our-kempsville-kitchen-table-the-125-signature-ballot-petition-at-cchr-winning-the-eighty-fifth-house-district": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Telling Dad at Our Kempsville Kitchen Table, The 125-Signature Ballot Petition at CCHR, & Winning the Eighty-Fifth House District",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c001/p002.md"
+    },
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/freshman-session-on-west-broad-street-riding-jrtc-route-6-to-the-capitol": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Freshman Session on West Broad Street & Riding JRTC Route 6 to the Capitol",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|4|3"
+        "filePath": "__CHAP_TOC__|6|1"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/freshman-session-on-west-broad-street-riding-jrtc-route-6-to-the-capitol/part-1-the-west-broad-street-loft-unpacking-our-shared-queen-bed-weekend-reconnaissance-on-jrtc-route-6": {
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/freshman-session-on-west-broad-street-riding-jrtc-route-6-to-the-capitol/part-1-the-west-broad-street-loft-unpacking-our-shared-queen-bed-weekend-reconnaissance-on-jrtc-route-6": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The West Broad Street Loft, Unpacking Our Shared Queen Bed, & Weekend Reconnaissance on JRTC Route 6",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c004/p001.md"
+        "filePath": "e007/c002/p001.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/freshman-session-on-west-broad-street-riding-jrtc-route-6-to-the-capitol/part-2-gold-license-plates-vs-jrtc-route-6-turning-down-the-parking-deck-pass-the-60-inch-ada-restroom-showdown": {
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/freshman-session-on-west-broad-street-riding-jrtc-route-6-to-the-capitol/part-2-gold-license-plates-vs-jrtc-route-6-turning-down-the-parking-deck-pass-the-60-inch-ada-restroom-showdown": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Gold License Plates vs. JRTC Route 6, Turning Down the Parking Deck Pass, & The 60-Inch ADA Restroom Showdown",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c004/p002.md"
+        "filePath": "e007/c002/p002.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/house-bill-663": {
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/house-bill-663-live-on-meet-the-nation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "House Bill 663",
+        "title": "House Bill 663 & Live on Meet the Nation",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|4|4"
+        "filePath": "__CHAP_TOC__|6|2"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/house-bill-663/part-1-line-18-seated-by-delegate-ronald-villa-on-the-floor-a-question-across-the-chamber": {
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/house-bill-663-live-on-meet-the-nation/part-1-line-18-seated-by-delegate-ronald-villa-on-the-floor-a-question-across-the-chamber": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Line 18, Seated by Delegate Ronald Villa on the Floor, & A Question Across the Chamber",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c005/p001.md"
+        "filePath": "e007/c003/p001.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/house-bill-663/part-2-the-speakerphone-exclusive-two-meltdowns-in-room-518-the-6-05-am-train-to-meet-the-nation": {
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/house-bill-663-live-on-meet-the-nation/part-2-the-speakerphone-exclusive-two-meltdowns-in-room-518-the-6-05-am-train-to-meet-the-nation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Speakerphone Exclusive, Two Meltdowns in Room 518, & The 6:05 AM Train to Meet the Nation",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c005/p002.md"
+        "filePath": "e007/c003/p002.md"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/across-the-rotunda-why-run-for-state-senate-the-7th-district-race-madam-chair": {
+    "/katie/across-the-rotunda-the-senate-of-virginia": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Across the Rotunda: Why Run for State Senate, The 7th District Race, & Madam Chair",
+        "title": "Across the Rotunda: The Senate of Virginia",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|4|5"
+        "filePath": "__ERA_TOC__|7"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/across-the-rotunda-why-run-for-state-senate-the-7th-district-race-madam-chair/part-1-watching-senator-ward-kill-our-bills-across-the-rotunda-brainstorming-the-7th-senate-district-with-dad-the-250-signature-rule": {
+    "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Watching Senator Ward Kill Our Bills Across the Rotunda, Brainstorming the 7th Senate District with Dad, & The 250-Signature Rule",
+        "title": "Watching Senator Ward Kill Our Bills Across the Rotunda & The 250-Signature Petition",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c006/p001.md"
+        "filePath": "__CHAP_TOC__|7|0"
     },
-    "/katie/west-ocean-view-ideas-for-cvta-from-city-council-to-the-senate-of-virginia/across-the-rotunda-why-run-for-state-senate-the-7th-district-race-madam-chair/part-2-flipping-the-seventh-senate-district-custom-milling-the-mahogany-senate-ramp-swearing-in-as-madam-chair": {
+    "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition/watching-senator-ward-kill-our-bills-across-the-rotunda-brainstorming-the-7th-senate-district-with-dad-the-250-signature-rule": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Flipping the Seventh Senate District, Custom-Milling the Mahogany Senate Ramp, & Swearing In as Madam Chair",
+        "title": "Watching Senator Ward Kill Our Bills Across the Rotunda, Brainstorming the 7th Senate District with Dad, & The 250-Signature Rule",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c006/p002.md"
+        "filePath": "e008/c001/p001.md"
+    },
+    "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition/part-1-watching-senator-ward-kill-our-bills-across-the-rotunda-brainstorming-the-7th-senate-district-with-dad-the-250-signature-rule": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Watching Senator Ward Kill Our Bills Across the Rotunda, Brainstorming the 7th Senate District with Dad, & The 250-Signature Rule",
+        "theme": "raggiesoft-books",
+        "filePath": "e008/c001/p001.md"
+    },
+    "/katie/across-the-rotunda-the-senate-of-virginia/flipping-the-seventh-senate-district-the-mahogany-senate-ramp-madam-chair": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Flipping the Seventh Senate District, The Mahogany Senate Ramp, & Madam Chair",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|7|1"
+    },
+    "/katie/across-the-rotunda-the-senate-of-virginia/flipping-the-seventh-senate-district-the-mahogany-senate-ramp-madam-chair/flipping-the-seventh-senate-district-custom-milling-the-mahogany-senate-ramp-swearing-in-as-madam-chair": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Flipping the Seventh Senate District, Custom-Milling the Mahogany Senate Ramp, & Swearing In as Madam Chair",
+        "theme": "raggiesoft-books",
+        "filePath": "e008/c002/p001.md"
+    },
+    "/katie/across-the-rotunda-the-senate-of-virginia/flipping-the-seventh-senate-district-the-mahogany-senate-ramp-madam-chair/part-1-flipping-the-seventh-senate-district-custom-milling-the-mahogany-senate-ramp-swearing-in-as-madam-chair": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Flipping the Seventh Senate District, Custom-Milling the Mahogany Senate Ramp, & Swearing In as Madam Chair",
+        "theme": "raggiesoft-books",
+        "filePath": "e008/c002/p001.md"
     },
     "/katie/the-senator-from-virginia": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Senator from Virginia",
         "theme": "raggiesoft-books",
-        "filePath": "__ERA_TOC__|5"
+        "filePath": "__ERA_TOC__|8"
     },
     "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Election Night, The Decision Desk Call, & The Referendum Mandate",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|5|0"
+        "filePath": "__CHAP_TOC__|8|0"
     },
     "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate/part-1-polls-close-at-seven-the-8-42-pm-decision-desk-call-victory-in-virginia-beach": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Polls Close at Seven, The 8:42 PM Decision Desk Call, & Victory in Virginia Beach",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/p001.md"
+        "filePath": "e009/c001/p001.md"
     },
     "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate/part-2-the-morning-after-in-kempsville-the-school-tax-referendum-jess-s-open-letter-on-the-grid": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Morning After in Kempsville, The School Tax Referendum, & Jess's Open Letter on The Grid",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/p002.md"
+        "filePath": "e009/c001/p002.md"
     },
     "/katie/the-senator-from-virginia/the-minified-zip-file-the-raw-html-takedown-resigning-from-richmond": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Minified ZIP File, The Raw HTML Takedown, & Resigning from Richmond",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|5|1"
+        "filePath": "__CHAP_TOC__|8|1"
     },
     "/katie/the-senator-from-virginia/the-minified-zip-file-the-raw-html-takedown-resigning-from-richmond/part-1-the-minified-zip-trick-barely-commented-code-the-live-wcag-takedown": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Minified ZIP Trick, Barely Commented Code, & The Live WCAG Takedown",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c002/p001.md"
+        "filePath": "e009/c002/p001.md"
     },
     "/katie/the-senator-from-virginia/the-minified-zip-file-the-raw-html-takedown-resigning-from-richmond/part-2-article-iv-section-4-hand-delivering-her-resignation-in-richmond-the-writ-of-special-election": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Article IV Section 4, Hand-Delivering Her Resignation in Richmond, & The Writ of Special Election",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c002/p002.md"
+        "filePath": "e009/c002/p002.md"
     },
     "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "First Train from Norfolk & Swearing In on the Constitution",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|5|2"
+        "filePath": "__CHAP_TOC__|8|2"
     },
     "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution/part-1-three-business-class-tickets-for-free-caf-car-drinks-the-mobile-lift-at-alexandria": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Three Business Class Tickets for Free Caf\u00e9 Car Drinks & The Mobile Lift at Alexandria",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c003/p001.md"
+        "filePath": "e009/c003/p001.md"
     },
     "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution/part-2-the-yellow-line-over-the-fenwick-bridge-the-full-chair-portrait-swearing-in-on-the-constitution": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Yellow Line Over the Fenwick Bridge, The Full-Chair Portrait, & Swearing In on the Constitution",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c003/p002.md"
+        "filePath": "e009/c003/p002.md"
     },
     "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution/part-3-the-first-invite-to-cocktails-a-known-side-effect-of-death-home-to-sunset-drive": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The First Invite to Cocktails, A Known Side Effect of Death, & Home to Sunset Drive",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c003/p003.md"
+        "filePath": "e009/c003/p003.md"
     },
     "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-suite-756-at-timberline-shopping-center-three-convictions-in-the-senate": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Norfolk Carrier Leak, Suite 756 at Timberline Shopping Center, & Three Convictions in the Senate",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|5|3"
+        "filePath": "__CHAP_TOC__|8|3"
     },
     "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-suite-756-at-timberline-shopping-center-three-convictions-in-the-senate/part-1-the-south-lawn-tirade-the-norfolk-carrier-leak-why-the-order-of-the-trials-matters": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The South Lawn Tirade, The Norfolk Carrier Leak, & Why the Order of the Trials Matters",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c004/p001.md"
+        "filePath": "e009/c004/p001.md"
     },
     "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-suite-756-at-timberline-shopping-center-three-convictions-in-the-senate/part-2-route-36-to-timberline-shopping-center-lunch-at-don-miller-subs-retro-games-at-neat-stuff-suite-756": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Route 36 to Timberline Shopping Center, Lunch at Don Miller Subs, Retro Games at Neat Stuff, & Suite 756",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c004/p002.md"
+        "filePath": "e009/c004/p002.md"
     },
     "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-suite-756-at-timberline-shopping-center-three-convictions-in-the-senate/part-3-the-words-of-mason-madison-and-lincoln-three-guilty-votes-in-forty-eight-hours-swearing-in-president-clara-morales": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Words of Mason, Madison, and Lincoln, Three Guilty Votes in Forty-Eight Hours, & Swearing In President Clara Morales",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c004/p003.md"
+        "filePath": "e009/c004/p003.md"
     }
 }
