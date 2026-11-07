@@ -12,33 +12,33 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "496 KB",
+            "epub": "498 KB",
             "pdf": "1.4 MB",
-            "text_epub": "496 KB",
+            "text_epub": "498 KB",
             "text_pdf": "1.4 MB",
-            "package_7z": "361 KB",
-            "epub_bytes": 507402,
-            "pdf_bytes": 1469151,
-            "text_epub_bytes": 507398,
-            "text_pdf_bytes": 1469151,
-            "package_7z_bytes": 369560
+            "package_7z": "363 KB",
+            "epub_bytes": 510116,
+            "pdf_bytes": 1476863,
+            "text_epub_bytes": 510114,
+            "text_pdf_bytes": 1476863,
+            "package_7z_bytes": 371671
         },
         "illustration_count": 0,
         "word_stats": {
-            "story_word_count": 213138,
+            "story_word_count": 214112,
             "lore_word_count": 132,
-            "combined_word_count": 213270,
-            "story_page_count": 775,
-            "combined_page_count": 776,
-            "reading_hours": 14.2,
-            "reading_minutes": 853,
+            "combined_word_count": 214244,
+            "story_page_count": 779,
+            "combined_page_count": 779,
+            "reading_hours": 14.3,
+            "reading_minutes": 856,
             "novel_equivalent": 2.4,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
             "benchmark_note": "2.4\u00d7 a standard 90,000-word contemporary novel (~2-volume print series)",
             "era_count": 5,
             "chapter_count": 36,
-            "part_count": 76,
+            "part_count": 77,
             "illustration_count": 0
         }
     },
@@ -833,5 +833,11 @@
         "title": "Part 2: The Thermal Hydro-Protocol: The Blue Ridge Regional Aquatic Center & The Huckleberry Trail",
         "theme": "raggiesoft-books",
         "filePath": "e005/c007/p002.md"
+    },
+    "/paige/system-integration/the-closed-circuit/part-3-virginia-transit-legislative-day-the-bathroom-police-bill-room-518": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Virginia Transit Legislative Day, The Bathroom Police Bill, & Room 518",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c007/p003.md"
     }
 }

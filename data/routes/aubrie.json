@@ -14,31 +14,31 @@
         "ebook_sizes": {
             "epub": "66 MB",
             "pdf": "53.5 MB",
-            "text_epub": "1003 KB",
+            "text_epub": "1006 KB",
             "text_pdf": "3.7 MB",
-            "package_7z": "716 KB",
-            "epub_bytes": 69244077,
-            "pdf_bytes": 56106461,
-            "text_epub_bytes": 1026776,
-            "text_pdf_bytes": 3869214,
-            "package_7z_bytes": 733151
+            "package_7z": "718 KB",
+            "epub_bytes": 69247504,
+            "pdf_bytes": 56115949,
+            "text_epub_bytes": 1030258,
+            "text_pdf_bytes": 3878902,
+            "package_7z_bytes": 735612
         },
         "illustration_count": 72,
         "word_stats": {
-            "story_word_count": 412289,
+            "story_word_count": 413574,
             "lore_word_count": 60376,
-            "combined_word_count": 472665,
-            "story_page_count": 1499,
-            "combined_page_count": 1719,
-            "reading_hours": 27.5,
-            "reading_minutes": 1649,
+            "combined_word_count": 473950,
+            "story_page_count": 1504,
+            "combined_page_count": 1723,
+            "reading_hours": 27.6,
+            "reading_minutes": 1654,
             "novel_equivalent": 4.6,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
             "benchmark_note": "4.6\u00d7 a standard 90,000-word contemporary novel (~5-volume print series)",
             "era_count": 10,
             "chapter_count": 48,
-            "part_count": 193,
+            "part_count": 194,
             "illustration_count": 72
         }
     },
@@ -1410,17 +1410,17 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|7|0"
     },
-    "/aubrie/spring-semester-2016/off-precautions-megan-s-first-night/twelve-weeks-clear-the-eighth-point-of-the-constellation": {
+    "/aubrie/spring-semester-2016/off-precautions-megan-s-first-night/part-1-twelve-weeks-clear-the-eighth-point-of-the-constellation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Twelve Weeks Clear & The Eighth Point of the Constellation",
+        "title": "Part 1: Twelve Weeks Clear & The Eighth Point of the Constellation",
         "theme": "raggiesoft-books",
         "filePath": "e008/c001/p001.md"
     },
-    "/aubrie/spring-semester-2016/off-precautions-megan-s-first-night/part-1-twelve-weeks-clear-the-eighth-point-of-the-constellation": {
+    "/aubrie/spring-semester-2016/off-precautions-megan-s-first-night/part-2-virginia-transit-legislative-day-house-bill-663-delegate-katie-prairie-in-room-518": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Twelve Weeks Clear & The Eighth Point of the Constellation",
+        "title": "Part 2: Virginia Transit Legislative Day, House Bill 663, & Delegate Katie Prairie in Room 518",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c001/p001.md"
+        "filePath": "e008/c001/p002.md"
     },
     "/aubrie/spring-semester-2016/hey-saacurc-the-bear-and-the-bug": {
         "view": "pages/raggiesoft-books/books/viewer",
