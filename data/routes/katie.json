@@ -14,24 +14,24 @@
         "ebook_sizes": {
             "epub": "21.3 MB",
             "pdf": "10 MB",
-            "text_epub": "332 KB",
-            "text_pdf": "902 KB",
-            "package_7z": "252 KB",
-            "epub_bytes": 22315349,
-            "pdf_bytes": 10468136,
-            "text_epub_bytes": 339902,
-            "text_pdf_bytes": 923859,
-            "package_7z_bytes": 257910
+            "text_epub": "334 KB",
+            "text_pdf": "909 KB",
+            "package_7z": "253 KB",
+            "epub_bytes": 22317711,
+            "pdf_bytes": 10474703,
+            "text_epub_bytes": 342265,
+            "text_pdf_bytes": 930416,
+            "package_7z_bytes": 259506
         },
         "illustration_count": 80,
         "word_stats": {
-            "story_word_count": 140145,
+            "story_word_count": 141105,
             "lore_word_count": 121,
-            "combined_word_count": 140266,
-            "story_page_count": 510,
-            "combined_page_count": 510,
-            "reading_hours": 9.3,
-            "reading_minutes": 561,
+            "combined_word_count": 141226,
+            "story_page_count": 513,
+            "combined_page_count": 514,
+            "reading_hours": 9.4,
+            "reading_minutes": 564,
             "novel_equivalent": 1.6,
             "scale_category": "Epic Full-Length Novel",
             "scale_badge": "Epic Novel",
@@ -522,9 +522,9 @@
         "theme": "raggiesoft-books",
         "filePath": "e007/c003/p001.md"
     },
-    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/house-bill-663-live-on-meet-the-nation/part-2-the-speakerphone-exclusive-two-meltdowns-in-room-518-the-6-05-am-train-to-meet-the-nation": {
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/house-bill-663-live-on-meet-the-nation/part-2-transit-legislative-day-with-michael-rachel-two-meltdowns-in-room-518-the-6-05-am-train-to-meet-the-nation": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Speakerphone Exclusive, Two Meltdowns in Room 518, & The 6:05 AM Train to Meet the Nation",
+        "title": "Part 2: Transit Legislative Day with Michael & Rachel, Two Meltdowns in Room 518, & The 6:05 AM Train to Meet the Nation",
         "theme": "raggiesoft-books",
         "filePath": "e007/c003/p002.md"
     },
