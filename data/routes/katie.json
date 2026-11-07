@@ -14,31 +14,31 @@
         "ebook_sizes": {
             "epub": "22.3 MB",
             "pdf": "23.9 MB",
-            "text_epub": "293 KB",
-            "text_pdf": "814 KB",
-            "package_7z": "224 KB",
-            "epub_bytes": 23384004,
-            "pdf_bytes": 25051700,
-            "text_epub_bytes": 300066,
-            "text_pdf_bytes": 833286,
-            "package_7z_bytes": 228934
+            "text_epub": "301 KB",
+            "text_pdf": "837 KB",
+            "package_7z": "230 KB",
+            "epub_bytes": 23392594,
+            "pdf_bytes": 25075152,
+            "text_epub_bytes": 308661,
+            "text_pdf_bytes": 856720,
+            "package_7z_bytes": 235191
         },
         "illustration_count": 39,
         "word_stats": {
-            "story_word_count": 125141,
+            "story_word_count": 128593,
             "lore_word_count": 121,
-            "combined_word_count": 125262,
-            "story_page_count": 455,
-            "combined_page_count": 455,
-            "reading_hours": 8.3,
-            "reading_minutes": 501,
+            "combined_word_count": 128714,
+            "story_page_count": 468,
+            "combined_page_count": 468,
+            "reading_hours": 8.6,
+            "reading_minutes": 514,
             "novel_equivalent": 1.4,
             "scale_category": "Epic Full-Length Novel",
             "scale_badge": "Epic Novel",
             "benchmark_note": "1.4\u00d7 a standard 90,000-word contemporary novel (Epic 110k\u2013200k tier)",
             "era_count": 6,
             "chapter_count": 23,
-            "part_count": 55,
+            "part_count": 56,
             "illustration_count": 39
         }
     },
@@ -588,22 +588,28 @@
         "theme": "raggiesoft-books",
         "filePath": "e006/c003/p003.md"
     },
-    "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-madison-lincoln-three-convictions-in-the-senate": {
+    "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-suite-756-at-timberline-shopping-center-three-convictions-in-the-senate": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Norfolk Carrier Leak, Madison & Lincoln, & Three Convictions in the Senate",
+        "title": "The Norfolk Carrier Leak, Suite 756 at Timberline Shopping Center, & Three Convictions in the Senate",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|3"
     },
-    "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-madison-lincoln-three-convictions-in-the-senate/part-1-the-south-lawn-tirade-the-norfolk-carrier-leak-why-the-order-of-the-trials-matters": {
+    "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-suite-756-at-timberline-shopping-center-three-convictions-in-the-senate/part-1-the-south-lawn-tirade-the-norfolk-carrier-leak-why-the-order-of-the-trials-matters": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The South Lawn Tirade, The Norfolk Carrier Leak, & Why the Order of the Trials Matters",
         "theme": "raggiesoft-books",
         "filePath": "e006/c004/p001.md"
     },
-    "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-madison-lincoln-three-convictions-in-the-senate/part-2-the-words-of-mason-madison-and-lincoln-three-guilty-votes-in-forty-eight-hours-swearing-in-president-clara-morales": {
+    "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-suite-756-at-timberline-shopping-center-three-convictions-in-the-senate/part-2-route-36-to-timberline-shopping-center-lunch-at-don-miller-subs-retro-games-at-neat-stuff-suite-756": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Words of Mason, Madison, and Lincoln, Three Guilty Votes in Forty-Eight Hours, & Swearing In President Clara Morales",
+        "title": "Part 2: Route 36 to Timberline Shopping Center, Lunch at Don Miller Subs, Retro Games at Neat Stuff, & Suite 756",
         "theme": "raggiesoft-books",
         "filePath": "e006/c004/p002.md"
+    },
+    "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-suite-756-at-timberline-shopping-center-three-convictions-in-the-senate/part-3-the-words-of-mason-madison-and-lincoln-three-guilty-votes-in-forty-eight-hours-swearing-in-president-clara-morales": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Words of Mason, Madison, and Lincoln, Three Guilty Votes in Forty-Eight Hours, & Swearing In President Clara Morales",
+        "theme": "raggiesoft-books",
+        "filePath": "e006/c004/p003.md"
     }
 }
