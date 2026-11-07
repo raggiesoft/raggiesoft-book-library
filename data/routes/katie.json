@@ -14,24 +14,24 @@
         "ebook_sizes": {
             "epub": "21.3 MB",
             "pdf": "10.1 MB",
-            "text_epub": "368 KB",
-            "text_pdf": "997 KB",
-            "package_7z": "277 KB",
-            "epub_bytes": 22352503,
-            "pdf_bytes": 10564622,
-            "text_epub_bytes": 377038,
-            "text_pdf_bytes": 1021095,
-            "package_7z_bytes": 283602
+            "text_epub": "369 KB",
+            "text_pdf": "1000 KB",
+            "package_7z": "278 KB",
+            "epub_bytes": 22353655,
+            "pdf_bytes": 10567496,
+            "text_epub_bytes": 378190,
+            "text_pdf_bytes": 1023938,
+            "package_7z_bytes": 284551
         },
         "illustration_count": 80,
         "word_stats": {
-            "story_word_count": 155197,
+            "story_word_count": 155786,
             "lore_word_count": 121,
-            "combined_word_count": 155318,
-            "story_page_count": 564,
-            "combined_page_count": 565,
-            "reading_hours": 10.3,
-            "reading_minutes": 621,
+            "combined_word_count": 155907,
+            "story_page_count": 566,
+            "combined_page_count": 567,
+            "reading_hours": 10.4,
+            "reading_minutes": 623,
             "novel_equivalent": 1.7,
             "scale_category": "Epic Full-Length Novel",
             "scale_badge": "Epic Novel",
@@ -432,55 +432,55 @@
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|5"
     },
-    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/voc-eval-in-barnett-hall-two-weeks-of-butt-heads-the-hall-pass-prison": {
+    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/voc-eval-in-barton-hall-two-weeks-of-butt-heads-the-hall-pass-prison": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Voc Eval in Barnett Hall, Two Weeks of Butt-Heads, & The Hall Pass Prison",
+        "title": "Voc Eval in Barton Hall, Two Weeks of Butt-Heads, & The Hall Pass Prison",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|0"
     },
-    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/voc-eval-in-barnett-hall-two-weeks-of-butt-heads-the-hall-pass-prison/part-1-sunday-check-in-at-barnett-hall-the-opposite-gender-dorm-rule-expelling-the-creepy-roommate": {
+    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/voc-eval-in-barton-hall-two-weeks-of-butt-heads-the-hall-pass-prison/part-1-sunday-check-in-at-barton-hall-the-opposite-gender-dorm-rule-expelling-the-creepy-roommate": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Sunday Check-In at Barnett Hall, The Opposite-Gender Dorm Rule, & Expelling the Creepy Roommate",
+        "title": "Part 1: Sunday Check-In at Barton Hall, The Opposite-Gender Dorm Rule, & Expelling the Creepy Roommate",
         "theme": "raggiesoft-books",
         "filePath": "e006/c001/p001.md"
     },
-    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/voc-eval-in-barnett-hall-two-weeks-of-butt-heads-the-hall-pass-prison/part-2-two-weeks-of-voc-eval-refusing-to-go-our-separate-sibling-ways-the-hall-pass-prison": {
+    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/voc-eval-in-barton-hall-two-weeks-of-butt-heads-the-hall-pass-prison/part-2-two-weeks-of-voc-eval-refusing-to-be-pushed-around-or-separated-the-hall-pass-prison": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Two Weeks of Voc Eval, Refusing to Go Our Separate Sibling Ways, & The Hall Pass Prison",
+        "title": "Part 2: Two Weeks of Voc Eval, Refusing to Be Pushed Around or Separated, & The Hall Pass Prison",
         "theme": "raggiesoft-books",
         "filePath": "e006/c001/p002.md"
     },
-    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/carter-ashley-hall-quantum-os-2000-professional-the-chickenshit-report": {
+    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/cantor-hall-quantum-os-2000-professional-the-chickenshit-report": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Carter-Ashley Hall, Quantum OS 2000 Professional, & The Chickenshit Report",
+        "title": "Cantor Hall, Quantum OS 2000 Professional, & The Chickenshit Report",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|1"
     },
-    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/carter-ashley-hall-quantum-os-2000-professional-the-chickenshit-report/part-1-moving-to-carter-ashley-hall-level-3-sign-out-privileges-quantum-os-2000-professional-meeting-tina-jim-and-sheila": {
+    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/cantor-hall-quantum-os-2000-professional-the-chickenshit-report/part-1-moving-to-cantor-hall-level-3-sign-out-privileges-quantum-os-2000-professional-meeting-tina-jim-and-sheila": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Moving to Carter-Ashley Hall, Level 3 Sign-Out Privileges, Quantum OS 2000 Professional, & Meeting Tina, Jim, and Sheila",
+        "title": "Part 1: Moving to Cantor Hall, Level 3 Sign-Out Privileges, Quantum OS 2000 Professional, & Meeting Tina, Jim, and Sheila",
         "theme": "raggiesoft-books",
         "filePath": "e006/c002/p001.md"
     },
-    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/carter-ashley-hall-quantum-os-2000-professional-the-chickenshit-report/part-2-four-months-into-php-the-emergency-in-the-therapeutic-pool-the-chickenshit-report": {
+    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/cantor-hall-quantum-os-2000-professional-the-chickenshit-report/part-2-four-months-into-php-the-emergency-in-the-therapeutic-pool-the-chickenshit-report": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Four Months into PHP, The Emergency in the Therapeutic Pool, & The Chickenshit Report",
         "theme": "raggiesoft-books",
         "filePath": "e006/c002/p002.md"
     },
-    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/the-carter-ashley-room-mix-up-a-weekend-on-tina-s-daybed-in-luray-graduating-for-good": {
+    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/the-cantor-hall-room-mix-up-a-weekend-on-tina-s-daybed-in-luray-graduating-for-good": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Carter-Ashley Room Mix-Up, A Weekend on Tina's Daybed in Luray, & Graduating for Good",
+        "title": "The Cantor Hall Room Mix-Up, A Weekend on Tina's Daybed in Luray, & Graduating for Good",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|2"
     },
-    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/the-carter-ashley-room-mix-up-a-weekend-on-tina-s-daybed-in-luray-graduating-for-good/part-1-the-carter-ashley-room-mix-up-blind-red-tape-room-reassignments-a-sleepless-night-for-natalie": {
+    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/the-cantor-hall-room-mix-up-a-weekend-on-tina-s-daybed-in-luray-graduating-for-good/part-1-the-cantor-hall-room-mix-up-blind-red-tape-room-reassignments-a-sleepless-night-for-natalie": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Carter-Ashley Room Mix-Up, Blind Red-Tape Room Reassignments, & A Sleepless Night for Natalie",
+        "title": "Part 1: The Cantor Hall Room Mix-Up, Blind Red-Tape Room Reassignments, & A Sleepless Night for Natalie",
         "theme": "raggiesoft-books",
         "filePath": "e006/c003/p001.md"
     },
-    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/the-carter-ashley-room-mix-up-a-weekend-on-tina-s-daybed-in-luray-graduating-for-good/part-2-sharing-the-daybed-at-tina-s-house-in-luray-debating-dropping-out-graduating-to-our-own-home": {
+    "/katie/roosevelt-rehabilitation-center-one-year-in-separate-dorms/the-cantor-hall-room-mix-up-a-weekend-on-tina-s-daybed-in-luray-graduating-for-good/part-2-sharing-the-daybed-at-tina-s-house-in-luray-debating-dropping-out-graduating-to-our-own-home": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Sharing the Daybed at Tina's House in Luray, Debating Dropping Out, & Graduating to Our Own Home",
         "theme": "raggiesoft-books",
