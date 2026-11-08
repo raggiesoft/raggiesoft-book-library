@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "26.5 MB",
-            "pdf": "16.1 MB",
-            "text_epub": "378 KB",
-            "text_pdf": "1020 KB",
-            "package_7z": "284 KB",
-            "epub_bytes": 27767071,
-            "pdf_bytes": 16885621,
-            "text_epub_bytes": 386883,
-            "text_pdf_bytes": 1044459,
-            "package_7z_bytes": 291014
+            "epub": "31.8 MB",
+            "pdf": "22.4 MB",
+            "text_epub": "400 KB",
+            "text_pdf": "1.1 MB",
+            "package_7z": "300 KB",
+            "epub_bytes": 33394941,
+            "pdf_bytes": 23526038,
+            "text_epub_bytes": 409612,
+            "text_pdf_bytes": 1106525,
+            "package_7z_bytes": 307195
         },
-        "illustration_count": 87,
+        "illustration_count": 94,
         "word_stats": {
-            "story_word_count": 158894,
+            "story_word_count": 167844,
             "lore_word_count": 121,
-            "combined_word_count": 159015,
-            "story_page_count": 578,
-            "combined_page_count": 578,
-            "reading_hours": 10.6,
-            "reading_minutes": 636,
-            "novel_equivalent": 1.8,
+            "combined_word_count": 167965,
+            "story_page_count": 610,
+            "combined_page_count": 611,
+            "reading_hours": 11.2,
+            "reading_minutes": 671,
+            "novel_equivalent": 1.9,
             "scale_category": "Epic Full-Length Novel",
             "scale_badge": "Epic Novel",
-            "benchmark_note": "1.8\u00d7 a standard 90,000-word contemporary novel (Epic 110k\u2013200k tier)",
+            "benchmark_note": "1.9\u00d7 a standard 90,000-word contemporary novel (Epic 110k\u2013200k tier)",
             "era_count": 11,
-            "chapter_count": 30,
-            "part_count": 63,
-            "illustration_count": 87
+            "chapter_count": 33,
+            "part_count": 70,
+            "illustration_count": 94
         }
     },
     "/katie": {
@@ -486,29 +486,89 @@
         "theme": "raggiesoft-books",
         "filePath": "e006/c003/p002.md"
     },
-    "/katie/unofficial-homeowners-back-home-in-virginia-beach": {
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Unofficial Homeowners: Back Home in Virginia Beach",
+        "title": "Unofficial Homeowners: Back Home in Virginia Beach (2007\u20132008)",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|6"
     },
-    "/katie/unofficial-homeowners-back-home-in-virginia-beach/one-bedroom-one-office-the-closet-sanctuary": {
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-yearly-passes-at-fairlawn": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "One Bedroom, One Office, & The Closet Sanctuary",
+        "title": "Arvin Road, Crossing Without a Crosswalk, & Yearly Passes at Fairlawn",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|0"
     },
-    "/katie/unofficial-homeowners-back-home-in-virginia-beach/one-bedroom-one-office-the-closet-sanctuary/unofficial-homeowners-one-bedroom-and-one-office-the-closet-we-both-know-we-ll-use": {
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-yearly-passes-at-fairlawn/part-1-unofficial-homeowners-one-bedroom-and-one-office-the-closet-we-both-know-we-ll-use": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Unofficial Homeowners, One Bedroom and One Office, & The Closet We Both Know We'll Use",
+        "title": "Part 1: Unofficial Homeowners, One Bedroom and One Office, & The Closet We Both Know We'll Use",
         "theme": "raggiesoft-books",
         "filePath": "e007/c001/p001.md"
     },
-    "/katie/unofficial-homeowners-back-home-in-virginia-beach/one-bedroom-one-office-the-closet-sanctuary/part-1-unofficial-homeowners-one-bedroom-and-one-office-the-closet-we-both-know-we-ll-use": {
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-yearly-passes-at-fairlawn/part-2-skin-to-skin-in-the-closet-no-crosswalks-at-military-and-indian-river-two-wheelchairs-at-market-square": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Unofficial Homeowners, One Bedroom and One Office, & The Closet We Both Know We'll Use",
+        "title": "Part 2: Skin to Skin in the Closet, No Crosswalks at Military and Indian River, & Two Wheelchairs at Market Square",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c001/p001.md"
+        "filePath": "e007/c001/p002.md"
+    },
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-yearly-passes-at-fairlawn/part-3-the-07-bus-from-glenrock-mall-yearly-memberships-at-fairlawn-rec-center-the-1977-building-s-quirks": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The :07 Bus From Glenrock Mall, Yearly Memberships at Fairlawn Rec Center, & The 1977 Building's Quirks",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c001/p003.md"
+    },
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/a-near-miss-at-dying-glenrock-mall-locking-down-whois-forming-our-virginia-llc": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Near-Miss at Dying Glenrock Mall, Locking Down WHOIS, & Forming Our Virginia LLC",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|1"
+    },
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/a-near-miss-at-dying-glenrock-mall-locking-down-whois-forming-our-virginia-llc/part-1-a-dying-single-story-mall-spotting-brenda-in-the-concourse-the-whois-wake-up-call": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Dying Single-Story Mall, Spotting Brenda in the Concourse, & The WHOIS Wake-Up Call",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c002/p001.md"
+    },
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/a-near-miss-at-dying-glenrock-mall-locking-down-whois-forming-our-virginia-llc/part-2-dad-s-legal-consultation-our-virginia-llc-a-virtual-mailbox-at-the-parcel-center": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Dad's Legal Consultation, Our Virginia LLC, & A Virtual Mailbox at The Parcel Center",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c002/p002.md"
+    },
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-senator-james-west-s-white-house-tickets-the-spark-to-run-for-city-council": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Twenty-Two in Alexandria: Riding DMV Transit, Senator James West's White House Tickets, & The Spark to Run for City Council",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|2"
+    },
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-senator-james-west-s-white-house-tickets-the-spark-to-run-for-city-council/part-1-accessible-taxi-to-newport-news-the-arts-train-to-alexandria-riding-northern-virginia-transit-on-our-twenty-second-birthday": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Accessible Taxi to Newport News, The ARTS Train to Alexandria, & Riding Northern Virginia Transit on Our Twenty-Second Birthday",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c003/p001.md"
+    },
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-senator-james-west-s-white-house-tickets-the-spark-to-run-for-city-council/part-2-senator-james-west-s-tickets-to-the-white-house-watching-the-u-s-senate-from-the-gallery-why-can-t-we-ride-the-bus-to-city-hall": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Senator James West's Tickets to the White House, Watching the U.S. Senate From the Gallery, & Why Can't We Ride the Bus to City Hall?",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c003/p002.md"
+    },
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/associate-degrees-in-hand-not-the-right-skill-match-launching-prairie-twin-interactive-from-arvin-road": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Associate Degrees in Hand, 'Not the Right Skill Match,' & Launching Prairie Twin Interactive From Arvin Road",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|6|3"
+    },
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/associate-degrees-in-hand-not-the-right-skill-match-launching-prairie-twin-interactive-from-arvin-road/associate-degrees-in-hand-not-the-right-skill-match-putting-our-virginia-llc-to-work": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Associate Degrees in Hand, 'Not the Right Skill Match,' & Putting Our Virginia LLC to Work",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c004/p001.md"
+    },
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/associate-degrees-in-hand-not-the-right-skill-match-launching-prairie-twin-interactive-from-arvin-road/part-1-associate-degrees-in-hand-not-the-right-skill-match-putting-our-virginia-llc-to-work": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Associate Degrees in Hand, 'Not the Right Skill Match,' & Putting Our Virginia LLC to Work",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c004/p001.md"
     },
     "/katie/do-better-ideas-for-cvta-the-kempsville-city-council": {
         "view": "pages/raggiesoft-books/books/viewer",
