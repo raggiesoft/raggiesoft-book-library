@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "40.1 MB",
-            "pdf": "33.1 MB",
-            "text_epub": "427 KB",
+            "epub": "41 MB",
+            "pdf": "33.9 MB",
+            "text_epub": "431 KB",
             "text_pdf": "1.1 MB",
-            "package_7z": "320 KB",
-            "epub_bytes": 42090892,
-            "pdf_bytes": 34715405,
-            "text_epub_bytes": 436893,
-            "text_pdf_bytes": 1185402,
-            "package_7z_bytes": 327876
+            "package_7z": "323 KB",
+            "epub_bytes": 42942544,
+            "pdf_bytes": 35579376,
+            "text_epub_bytes": 441395,
+            "text_pdf_bytes": 1198118,
+            "package_7z_bytes": 331050
         },
-        "illustration_count": 104,
+        "illustration_count": 105,
         "word_stats": {
-            "story_word_count": 179494,
+            "story_word_count": 181296,
             "lore_word_count": 121,
-            "combined_word_count": 179615,
-            "story_page_count": 653,
-            "combined_page_count": 653,
-            "reading_hours": 12,
-            "reading_minutes": 718,
+            "combined_word_count": 181417,
+            "story_page_count": 659,
+            "combined_page_count": 660,
+            "reading_hours": 12.1,
+            "reading_minutes": 725,
             "novel_equivalent": 2,
             "scale_category": "Epic Full-Length Novel",
             "scale_badge": "Epic Novel",
             "benchmark_note": "2.0\u00d7 a standard 90,000-word contemporary novel (Epic 110k\u2013200k tier)",
             "era_count": 11,
             "chapter_count": 33,
-            "part_count": 75,
-            "illustration_count": 104
+            "part_count": 76,
+            "illustration_count": 105
         }
     },
     "/katie": {
@@ -425,6 +425,12 @@
         "title": "Part 5: The Seattle Transit Blog Inspiration & Quietly Launching Ideas for Coastal Virginia Transit",
         "theme": "raggiesoft-books",
         "filePath": "e005/c002/p005.md"
+    },
+    "/katie/west-ocean-view-reclaiming-our-sanctuary/the-end-of-hell-reclaiming-apartment-3/part-6-the-cchr-disability-counselor-the-glossy-fishersville-pitch-why-brother-and-sister-should-get-to-share-a-dorm-room": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: The CCHR Disability Counselor, The Glossy Fishersville Pitch, & Why Brother and Sister Should Get to Share a Dorm Room",
+        "theme": "raggiesoft-books",
+        "filePath": "e005/c002/p006.md"
     },
     "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good": {
         "view": "pages/raggiesoft-books/books/viewer",
