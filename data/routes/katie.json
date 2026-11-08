@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "39.5 MB",
-            "pdf": "32.4 MB",
-            "text_epub": "419 KB",
+            "epub": "40.1 MB",
+            "pdf": "33.1 MB",
+            "text_epub": "426 KB",
             "text_pdf": "1.1 MB",
-            "package_7z": "315 KB",
-            "epub_bytes": 41408067,
-            "pdf_bytes": 34013954,
-            "text_epub_bytes": 429158,
-            "text_pdf_bytes": 1163170,
-            "package_7z_bytes": 322364
+            "package_7z": "320 KB",
+            "epub_bytes": 42090444,
+            "pdf_bytes": 34712782,
+            "text_epub_bytes": 436460,
+            "text_pdf_bytes": 1184306,
+            "package_7z_bytes": 327557
         },
-        "illustration_count": 103,
+        "illustration_count": 104,
         "word_stats": {
-            "story_word_count": 176154,
+            "story_word_count": 179255,
             "lore_word_count": 121,
-            "combined_word_count": 176275,
-            "story_page_count": 641,
-            "combined_page_count": 641,
-            "reading_hours": 11.7,
-            "reading_minutes": 705,
+            "combined_word_count": 179376,
+            "story_page_count": 652,
+            "combined_page_count": 652,
+            "reading_hours": 12,
+            "reading_minutes": 717,
             "novel_equivalent": 2,
             "scale_category": "Epic Full-Length Novel",
             "scale_badge": "Epic Novel",
             "benchmark_note": "2.0\u00d7 a standard 90,000-word contemporary novel (Epic 110k\u2013200k tier)",
             "era_count": 11,
             "chapter_count": 33,
-            "part_count": 74,
-            "illustration_count": 103
+            "part_count": 75,
+            "illustration_count": 104
         }
     },
     "/katie": {
@@ -780,29 +780,35 @@
         "theme": "raggiesoft-books",
         "filePath": "e011/c002/p002.md"
     },
-    "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution": {
+    "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "First Train from Norfolk & Swearing In on the Constitution",
+        "title": "First Train from Norfolk, Swearing In on the Constitution, & Strings Attached for RRC",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|10|2"
     },
-    "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution/part-1-three-business-class-tickets-for-free-caf-car-drinks-the-mobile-lift-at-alexandria": {
+    "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc/part-1-three-business-class-tickets-for-free-caf-car-drinks-the-mobile-lift-at-alexandria": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Three Business Class Tickets for Free Caf\u00e9 Car Drinks & The Mobile Lift at Alexandria",
         "theme": "raggiesoft-books",
         "filePath": "e011/c003/p001.md"
     },
-    "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution/part-2-the-yellow-line-over-the-fenwick-bridge-the-full-chair-portrait-swearing-in-on-the-constitution": {
+    "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc/part-2-the-yellow-line-over-the-fenwick-bridge-the-full-chair-portrait-swearing-in-on-the-constitution": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Yellow Line Over the Fenwick Bridge, The Full-Chair Portrait, & Swearing In on the Constitution",
         "theme": "raggiesoft-books",
         "filePath": "e011/c003/p002.md"
     },
-    "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution/part-3-the-first-invite-to-cocktails-a-known-side-effect-of-death-home-to-sunset-drive": {
+    "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc/part-3-the-first-invite-to-cocktails-a-known-side-effect-of-death-home-to-sunset-drive": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The First Invite to Cocktails, A Known Side Effect of Death, & Home to Sunset Drive",
         "theme": "raggiesoft-books",
         "filePath": "e011/c003/p003.md"
+    },
+    "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc/part-4-34-c-f-r-section-361-38-two-twelve-day-dropouts-in-room-511-strings-attached-at-the-subcommittee-hearing": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: 34 C.F.R. Section 361.38, Two Twelve-Day Dropouts in Room 511, & Strings Attached at the Subcommittee Hearing",
+        "theme": "raggiesoft-books",
+        "filePath": "e011/c003/p004.md"
     },
     "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-suite-756-at-timberline-shopping-center-three-convictions-in-the-senate": {
         "view": "pages/raggiesoft-books/books/viewer",
