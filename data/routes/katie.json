@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "32.6 MB",
-            "pdf": "23.6 MB",
-            "text_epub": "404 KB",
+            "epub": "33.3 MB",
+            "pdf": "24.6 MB",
+            "text_epub": "407 KB",
             "text_pdf": "1.1 MB",
-            "package_7z": "303 KB",
-            "epub_bytes": 34228957,
-            "pdf_bytes": 24707920,
-            "text_epub_bytes": 413993,
-            "text_pdf_bytes": 1121034,
-            "package_7z_bytes": 310379
+            "package_7z": "306 KB",
+            "epub_bytes": 34964959,
+            "pdf_bytes": 25808795,
+            "text_epub_bytes": 417068,
+            "text_pdf_bytes": 1130291,
+            "package_7z_bytes": 312880
         },
-        "illustration_count": 95,
+        "illustration_count": 96,
         "word_stats": {
-            "story_word_count": 169696,
+            "story_word_count": 170977,
             "lore_word_count": 121,
-            "combined_word_count": 169817,
-            "story_page_count": 617,
-            "combined_page_count": 618,
-            "reading_hours": 11.3,
-            "reading_minutes": 679,
+            "combined_word_count": 171098,
+            "story_page_count": 622,
+            "combined_page_count": 622,
+            "reading_hours": 11.4,
+            "reading_minutes": 684,
             "novel_equivalent": 1.9,
             "scale_category": "Epic Full-Length Novel",
             "scale_badge": "Epic Novel",
             "benchmark_note": "1.9\u00d7 a standard 90,000-word contemporary novel (Epic 110k\u2013200k tier)",
             "era_count": 11,
             "chapter_count": 33,
-            "part_count": 71,
-            "illustration_count": 95
+            "part_count": 72,
+            "illustration_count": 96
         }
     },
     "/katie": {
@@ -540,23 +540,29 @@
         "theme": "raggiesoft-books",
         "filePath": "e007/c002/p002.md"
     },
-    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-senator-james-west-s-white-house-tickets-the-spark-to-run-for-city-council": {
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-senator-james-west-s-white-house-tickets-the-spark-to-run-for-city-council-two-blue-passports": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Twenty-Two in Alexandria: Riding DMV Transit, Senator James West's White House Tickets, & The Spark to Run for City Council",
+        "title": "Twenty-Two in Alexandria: Riding DMV Transit, Senator James West's White House Tickets, The Spark to Run for City Council, & Two Blue Passports",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|2"
     },
-    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-senator-james-west-s-white-house-tickets-the-spark-to-run-for-city-council/part-1-accessible-taxi-to-newport-news-the-arts-train-to-alexandria-riding-northern-virginia-transit-on-our-twenty-second-birthday": {
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-senator-james-west-s-white-house-tickets-the-spark-to-run-for-city-council-two-blue-passports/part-1-accessible-taxi-to-newport-news-the-arts-train-to-alexandria-riding-northern-virginia-transit-on-our-twenty-second-birthday": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Accessible Taxi to Newport News, The ARTS Train to Alexandria, & Riding Northern Virginia Transit on Our Twenty-Second Birthday",
         "theme": "raggiesoft-books",
         "filePath": "e007/c003/p001.md"
     },
-    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-senator-james-west-s-white-house-tickets-the-spark-to-run-for-city-council/part-2-senator-james-west-s-tickets-to-the-white-house-watching-the-u-s-senate-from-the-gallery-why-can-t-we-ride-the-bus-to-city-hall": {
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-senator-james-west-s-white-house-tickets-the-spark-to-run-for-city-council-two-blue-passports/part-2-senator-james-west-s-tickets-to-the-white-house-watching-the-u-s-senate-from-the-gallery-why-can-t-we-ride-the-bus-to-city-hall": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Senator James West's Tickets to the White House, Watching the U.S. Senate From the Gallery, & Why Can't We Ride the Bus to City Hall?",
         "theme": "raggiesoft-books",
         "filePath": "e007/c003/p002.md"
+    },
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-senator-james-west-s-white-house-tickets-the-spark-to-run-for-city-council-two-blue-passports/part-3-what-s-this-it-s-an-id-card-form-ds-11-at-the-post-office-two-navy-blue-u-s-passports": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: \"What's This? It's an ID Card!\", Form DS-11 at the Post Office, & Two Navy-Blue U.S. Passports",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c003/p003.md"
     },
     "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/associate-degrees-in-hand-not-the-right-skill-match-launching-prairie-twin-interactive-from-arvin-road": {
         "view": "pages/raggiesoft-books/books/viewer",
