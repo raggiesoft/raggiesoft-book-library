@@ -658,7 +658,7 @@ if ($seriesSlug === 'ad-astra') {
 <?php if ($narrativeTheme): ?>
     <!-- Ambient CSS Themes and Animations -->
     <meta name="stardust-narrative-theme" content="<?php echo htmlspecialchars($narrativeTheme); ?>">
-    <link id="narrative-theme-css" rel="stylesheet" href="<?php echo htmlspecialchars($cdnBaseUrl . '/raggiesoft-books/css/themes/' . $narrativeTheme . '.css?v=20261026b'); ?>" disabled>
+    <link id="narrative-theme-css" rel="stylesheet" href="<?php echo htmlspecialchars($cdnBaseUrl . '/raggiesoft-books/css/themes/' . $narrativeTheme . '.css?v=20261108a'); ?>" disabled>
     
     <?php if ($narrativeTheme === 'dark-rain'): ?>
     <!-- Procedural Rain Generation for 'dark-rain' theme -->
