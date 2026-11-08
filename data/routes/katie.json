@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "31.9 MB",
-            "pdf": "22.6 MB",
-            "text_epub": "400 KB",
+            "epub": "32.6 MB",
+            "pdf": "23.6 MB",
+            "text_epub": "403 KB",
             "text_pdf": "1.1 MB",
-            "package_7z": "300 KB",
-            "epub_bytes": 33463360,
-            "pdf_bytes": 23714129,
-            "text_epub_bytes": 409820,
-            "text_pdf_bytes": 1106905,
-            "package_7z_bytes": 307421
+            "package_7z": "302 KB",
+            "epub_bytes": 34227539,
+            "pdf_bytes": 24700856,
+            "text_epub_bytes": 412504,
+            "text_pdf_bytes": 1115327,
+            "package_7z_bytes": 309343
         },
-        "illustration_count": 94,
+        "illustration_count": 95,
         "word_stats": {
-            "story_word_count": 167911,
+            "story_word_count": 169066,
             "lore_word_count": 121,
-            "combined_word_count": 168032,
-            "story_page_count": 611,
-            "combined_page_count": 611,
-            "reading_hours": 11.2,
-            "reading_minutes": 672,
+            "combined_word_count": 169187,
+            "story_page_count": 615,
+            "combined_page_count": 615,
+            "reading_hours": 11.3,
+            "reading_minutes": 676,
             "novel_equivalent": 1.9,
             "scale_category": "Epic Full-Length Novel",
             "scale_badge": "Epic Novel",
             "benchmark_note": "1.9\u00d7 a standard 90,000-word contemporary novel (Epic 110k\u2013200k tier)",
             "era_count": 11,
             "chapter_count": 33,
-            "part_count": 70,
-            "illustration_count": 94
+            "part_count": 71,
+            "illustration_count": 95
         }
     },
     "/katie": {
@@ -492,29 +492,35 @@
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|6"
     },
-    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-yearly-passes-at-fairlawn": {
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-horizontal-ids-on-route-12-yearly-passes-at-fairlawn": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Arvin Road, Crossing Without a Crosswalk, & Yearly Passes at Fairlawn",
+        "title": "Arvin Road, Crossing Without a Crosswalk, Horizontal IDs on Route 12, & Yearly Passes at Fairlawn",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|0"
     },
-    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-yearly-passes-at-fairlawn/part-1-unofficial-homeowners-one-bedroom-and-one-office-the-closet-we-both-know-we-ll-use": {
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-horizontal-ids-on-route-12-yearly-passes-at-fairlawn/part-1-unofficial-homeowners-one-bedroom-and-one-office-the-closet-we-both-know-we-ll-use": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Unofficial Homeowners, One Bedroom and One Office, & The Closet We Both Know We'll Use",
         "theme": "raggiesoft-books",
         "filePath": "e007/c001/p001.md"
     },
-    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-yearly-passes-at-fairlawn/part-2-skin-to-skin-in-the-closet-no-crosswalks-at-military-and-indian-river-two-wheelchairs-at-market-square": {
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-horizontal-ids-on-route-12-yearly-passes-at-fairlawn/part-2-skin-to-skin-in-the-closet-no-crosswalks-at-military-and-indian-river-two-wheelchairs-at-market-square": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Skin to Skin in the Closet, No Crosswalks at Military and Indian River, & Two Wheelchairs at Market Square",
         "theme": "raggiesoft-books",
         "filePath": "e007/c001/p002.md"
     },
-    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-yearly-passes-at-fairlawn/part-3-the-07-bus-from-glenrock-mall-yearly-memberships-at-fairlawn-rec-center-the-1977-building-s-quirks": {
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-horizontal-ids-on-route-12-yearly-passes-at-fairlawn/part-3-crossing-both-roads-for-route-12-buckner-boulevard-dmv-horizontal-state-ids-on-the-spot": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The :07 Bus From Glenrock Mall, Yearly Memberships at Fairlawn Rec Center, & The 1977 Building's Quirks",
+        "title": "Part 3: Crossing Both Roads for Route 12, Buckner Boulevard DMV, & Horizontal State IDs on the Spot",
         "theme": "raggiesoft-books",
         "filePath": "e007/c001/p003.md"
+    },
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-horizontal-ids-on-route-12-yearly-passes-at-fairlawn/part-4-the-07-bus-from-glenrock-mall-yearly-memberships-at-fairlawn-rec-center-the-1977-building-s-quirks": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: The :07 Bus From Glenrock Mall, Yearly Memberships at Fairlawn Rec Center, & The 1977 Building's Quirks",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c001/p004.md"
     },
     "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/a-near-miss-at-dying-glenrock-mall-locking-down-whois-forming-our-virginia-llc": {
         "view": "pages/raggiesoft-books/books/viewer",
