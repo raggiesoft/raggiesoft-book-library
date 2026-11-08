@@ -12,33 +12,33 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "33.3 MB",
+            "epub": "33.4 MB",
             "pdf": "24.6 MB",
-            "text_epub": "407 KB",
+            "text_epub": "415 KB",
             "text_pdf": "1.1 MB",
-            "package_7z": "306 KB",
-            "epub_bytes": 34964959,
-            "pdf_bytes": 25808795,
-            "text_epub_bytes": 417068,
-            "text_pdf_bytes": 1130291,
-            "package_7z_bytes": 312880
+            "package_7z": "311 KB",
+            "epub_bytes": 34973469,
+            "pdf_bytes": 25833433,
+            "text_epub_bytes": 425036,
+            "text_pdf_bytes": 1151593,
+            "package_7z_bytes": 318780
         },
         "illustration_count": 96,
         "word_stats": {
-            "story_word_count": 170977,
+            "story_word_count": 174126,
             "lore_word_count": 121,
-            "combined_word_count": 171098,
-            "story_page_count": 622,
-            "combined_page_count": 622,
-            "reading_hours": 11.4,
-            "reading_minutes": 684,
+            "combined_word_count": 174247,
+            "story_page_count": 633,
+            "combined_page_count": 634,
+            "reading_hours": 11.6,
+            "reading_minutes": 697,
             "novel_equivalent": 1.9,
             "scale_category": "Epic Full-Length Novel",
             "scale_badge": "Epic Novel",
             "benchmark_note": "1.9\u00d7 a standard 90,000-word contemporary novel (Epic 110k\u2013200k tier)",
             "era_count": 11,
             "chapter_count": 33,
-            "part_count": 72,
+            "part_count": 74,
             "illustration_count": 96
         }
     },
@@ -540,29 +540,41 @@
         "theme": "raggiesoft-books",
         "filePath": "e007/c002/p002.md"
     },
-    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-senator-james-west-s-white-house-tickets-the-spark-to-run-for-city-council-two-blue-passports": {
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-touring-the-white-house-the-u-s-capitol-meeting-senator-james-west-the-spark-to-run-for-city-council-two-blue-passports": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Twenty-Two in Alexandria: Riding DMV Transit, Senator James West's White House Tickets, The Spark to Run for City Council, & Two Blue Passports",
+        "title": "Twenty-Two in Alexandria: Riding DMV Transit, Touring the White House & the U.S. Capitol, Meeting Senator James West, The Spark to Run for City Council, & Two Blue Passports",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|2"
     },
-    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-senator-james-west-s-white-house-tickets-the-spark-to-run-for-city-council-two-blue-passports/part-1-accessible-taxi-to-newport-news-the-arts-train-to-alexandria-riding-northern-virginia-transit-on-our-twenty-second-birthday": {
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-touring-the-white-house-the-u-s-capitol-meeting-senator-james-west-the-spark-to-run-for-city-council-two-blue-passports/part-1-accessible-taxi-to-newport-news-the-arts-train-to-alexandria-riding-northern-virginia-transit-on-our-twenty-second-birthday": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Accessible Taxi to Newport News, The ARTS Train to Alexandria, & Riding Northern Virginia Transit on Our Twenty-Second Birthday",
         "theme": "raggiesoft-books",
         "filePath": "e007/c003/p001.md"
     },
-    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-senator-james-west-s-white-house-tickets-the-spark-to-run-for-city-council-two-blue-passports/part-2-senator-james-west-s-tickets-to-the-white-house-watching-the-u-s-senate-from-the-gallery-why-can-t-we-ride-the-bus-to-city-hall": {
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-touring-the-white-house-the-u-s-capitol-meeting-senator-james-west-the-spark-to-run-for-city-council-two-blue-passports/part-2-unclipping-our-backpacks-where-is-president-george-w-walker-today-the-white-house-tour-that-sparked-a-political-calling": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Senator James West's Tickets to the White House, Watching the U.S. Senate From the Gallery, & Why Can't We Ride the Bus to City Hall?",
+        "title": "Part 2: Unclipping Our Backpacks, Where Is President George W. Walker Today?, & The White House Tour That Sparked a Political Calling",
         "theme": "raggiesoft-books",
         "filePath": "e007/c003/p002.md"
     },
-    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-senator-james-west-s-white-house-tickets-the-spark-to-run-for-city-council-two-blue-passports/part-3-what-s-this-it-s-an-id-card-form-ds-11-at-the-post-office-two-navy-blue-u-s-passports": {
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-touring-the-white-house-the-u-s-capitol-meeting-senator-james-west-the-spark-to-run-for-city-council-two-blue-passports/part-3-beneath-the-capitol-dome-touring-the-crypt-the-rotunda-national-statuary-hall-the-historic-old-senate-chamber": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: \"What's This? It's an ID Card!\", Form DS-11 at the Post Office, & Two Navy-Blue U.S. Passports",
+        "title": "Part 3: Beneath the Capitol Dome: Touring the Crypt, the Rotunda, National Statuary Hall, & the Historic Old Senate Chamber",
         "theme": "raggiesoft-books",
         "filePath": "e007/c003/p003.md"
+    },
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-touring-the-white-house-the-u-s-capitol-meeting-senator-james-west-the-spark-to-run-for-city-council-two-blue-passports/part-4-meeting-senator-james-west-watching-the-u-s-senate-from-the-gallery-why-can-t-we-ride-the-bus-to-city-hall": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Meeting Senator James West, Watching the U.S. Senate From the Gallery, & Why Can't We Ride the Bus to City Hall?",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c003/p004.md"
+    },
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-touring-the-white-house-the-u-s-capitol-meeting-senator-james-west-the-spark-to-run-for-city-council-two-blue-passports/part-5-what-s-this-it-s-an-id-card-form-ds-11-at-the-post-office-two-navy-blue-u-s-passports": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: \"What's This? It's an ID Card!\", Form DS-11 at the Post Office, & Two Navy-Blue U.S. Passports",
+        "theme": "raggiesoft-books",
+        "filePath": "e007/c003/p005.md"
     },
     "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/associate-degrees-in-hand-not-the-right-skill-match-launching-prairie-twin-interactive-from-arvin-road": {
         "view": "pages/raggiesoft-books/books/viewer",
