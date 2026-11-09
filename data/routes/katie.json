@@ -14,28 +14,28 @@
         "ebook_sizes": {
             "epub": "46.2 MB",
             "pdf": "40.2 MB",
-            "text_epub": "499 KB",
+            "text_epub": "502 KB",
             "text_pdf": "1.3 MB",
-            "package_7z": "375 KB",
-            "epub_bytes": 48489507,
-            "pdf_bytes": 42194346,
-            "text_epub_bytes": 510699,
-            "text_pdf_bytes": 1390491,
-            "package_7z_bytes": 383709
+            "package_7z": "377 KB",
+            "epub_bytes": 48492612,
+            "pdf_bytes": 42203056,
+            "text_epub_bytes": 513787,
+            "text_pdf_bytes": 1399669,
+            "package_7z_bytes": 385879
         },
         "illustration_count": 113,
         "word_stats": {
-            "story_word_count": 211388,
-            "lore_word_count": 51833,
-            "combined_word_count": 263221,
-            "story_page_count": 769,
-            "combined_page_count": 957,
-            "reading_hours": 14.1,
-            "reading_minutes": 846,
-            "novel_equivalent": 2.3,
+            "story_word_count": 212780,
+            "lore_word_count": 52454,
+            "combined_word_count": 265234,
+            "story_page_count": 774,
+            "combined_page_count": 964,
+            "reading_hours": 14.2,
+            "reading_minutes": 851,
+            "novel_equivalent": 2.4,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
-            "benchmark_note": "2.3\u00d7 a standard 90,000-word contemporary novel (~2-volume print series)",
+            "benchmark_note": "2.4\u00d7 a standard 90,000-word contemporary novel (~2-volume print series)",
             "era_count": 11,
             "chapter_count": 34,
             "part_count": 83,
@@ -882,9 +882,9 @@
         "theme": "raggiesoft-books",
         "filePath": "e011/c004/p002.md"
     },
-    "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-suite-756-at-timberline-shopping-center-three-convictions-in-the-senate/part-3-the-words-of-mason-madison-and-lincoln-three-guilty-votes-in-forty-eight-hours-swearing-in-president-clara-morales": {
+    "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-suite-756-at-timberline-shopping-center-three-convictions-in-the-senate/part-3-the-words-of-mason-madison-and-lincoln-three-guilty-votes-from-capitol-police-protection-back-to-normal-life-at-pleasure-house-road": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Words of Mason, Madison, and Lincoln, Three Guilty Votes in Forty-Eight Hours, & Swearing In President Clara Morales",
+        "title": "Part 3: The Words of Mason, Madison, and Lincoln, Three Guilty Votes, & From Capitol Police Protection Back to Normal Life at Pleasure House Road",
         "theme": "raggiesoft-books",
         "filePath": "e011/c004/p003.md"
     }
