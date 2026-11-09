@@ -67,6 +67,9 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
     <!-- Viewport configuration prevents zooming on input focus, essential for native app feel -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
     
+    <!-- Declare support for both light and dark color schemes to prevent FOUC -->
+    <meta name="color-scheme" content="light dark">
+
     <!-- Dynamic theme colors based on OS preference -->
     <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
     <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
@@ -484,9 +487,9 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
             }
 
             const stored = localStorage.getItem('reader-settings');
+            const themes = ['theme-auto', 'theme-light', 'theme-sepia', 'theme-dark', 'theme-dark-sepia', 'theme-sepia-system'];
             if (stored) {
                 const settings = JSON.parse(stored);
-                const themes = ['theme-auto', 'theme-light', 'theme-sepia', 'theme-dark', 'theme-dark-sepia', 'theme-sepia-system'];
                 const activeTheme = settings.theme || 'auto';
                 document.body.classList.remove(...themes);
                 document.body.classList.add('theme-' + activeTheme);
@@ -498,6 +501,8 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
 
                 const resolvedSize = (settings.fontSize && !isNaN(parseFloat(settings.fontSize))) ? parseFloat(settings.fontSize) : 1.15;
                 document.documentElement.style.setProperty('--rs-font-size', resolvedSize + 'rem');
+            } else {
+                document.body.classList.add('theme-auto');
             }
             const lh = localStorage.getItem('rs-line-height') || '1.8';
             document.documentElement.style.setProperty('--rs-line-height', lh);

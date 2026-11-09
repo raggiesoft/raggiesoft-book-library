@@ -30,36 +30,146 @@ if ($headerActivePath === '' || $headerActivePath === '/index.php' || $headerAct
 $headerAssetsUrl = !empty($cdnBaseUrl) ? rtrim($cdnBaseUrl, '/') : 'https://assets.raggiesoft.com';
 ?>
 <style>
-    .rs-book-app-header {
+    /* =========================================================================
+       PERSISTENT CO-BRANDED APPLICATION HEADER BAR (#stardust-header.rs-book-app-header)
+       =========================================================================
+       Architectural & Accessibility Notes:
+       1. Uses `#stardust-header.rs-book-app-header` (ID + class specificity)
+          so that legacy `#stardust-header { background: var(--rs-surface); }`
+          rules in `stardust-engine.min.css` never override the header's
+          theme-coordinated surface and text variables.
+       2. Binds background, border, brand title/subtitle, crest badge, and
+          navigation link colors to atomic `--rs-hdr-*` custom properties on the
+          header root so background and foreground colors switch together across
+          all 6 reading themes (`auto`, `sepia-system`, `light`, `sepia`, `dark`,
+          `dark-sepia`) with >= 7:1 WCAG AAA text contrast and >= 3:1 UI state
+          contrast.
+       ========================================================================= */
+    #stardust-header.rs-book-app-header {
+        --rs-hdr-bg: rgba(9, 34, 42, 0.96);
+        --rs-hdr-border: rgba(227, 178, 124, 0.35);
+        --rs-hdr-title: #f8fafc;
+        --rs-hdr-subtitle: #E3B27C;
+        --rs-hdr-crest-bg: transparent;
+        --rs-hdr-link: #f1f5f9;
+        --rs-hdr-hover-bg: rgba(227, 178, 124, 0.2);
+        --rs-hdr-hover-fg: #ffffff;
+        --rs-hdr-active-bg: #E3B27C;
+        --rs-hdr-active-fg: #09222a;
+        --rs-hdr-focus-ring: #E3B27C;
+
         position: sticky;
         top: 0;
         z-index: 40;
-        background: rgba(11, 20, 35, 0.92);
-        border-bottom: 1px solid rgba(227, 178, 124, 0.28);
-        padding: max(0.55rem, calc(env(safe-area-inset-top, 0px) + 0.4rem)) 1rem 0.55rem;
+        display: block !important;
+        width: 100%;
+        height: auto !important;
+        min-height: 60px;
+        background: var(--rs-hdr-bg) !important;
+        border-bottom: 1px solid var(--rs-hdr-border) !important;
+        padding: max(0.55rem, calc(env(safe-area-inset-top, 0px) + 0.4rem)) 1rem 0.55rem !important;
         backdrop-filter: saturate(180%) blur(14px);
         -webkit-backdrop-filter: saturate(180%) blur(14px);
         flex-shrink: 0;
     }
-    html[data-os="ios"].is-pwa-standalone .rs-book-app-header {
-        padding-top: max(3.25rem, calc(env(safe-area-inset-top, 0px) + 0.5rem));
+
+    html[data-os="ios"].is-pwa-standalone #stardust-header.rs-book-app-header {
+        padding-top: max(3.25rem, calc(env(safe-area-inset-top, 0px) + 0.5rem)) !important;
     }
-    body.theme-light .rs-book-app-header {
-        background: rgba(255, 255, 255, 0.94);
-        border-bottom: 1px solid #cbd5e1;
+
+    /* Dark Sepia (`theme-dark-sepia` and `theme-sepia-system` under OS Dark Mode) */
+    body.theme-dark-sepia #stardust-header.rs-book-app-header {
+        --rs-hdr-bg: rgba(31, 27, 22, 0.96);
+        --rs-hdr-border: #4a4135;
+        --rs-hdr-title: #f4ecd8;
+        --rs-hdr-subtitle: #E3B27C;
+        --rs-hdr-crest-bg: transparent;
+        --rs-hdr-link: #e0d5c1;
+        --rs-hdr-hover-bg: rgba(227, 178, 124, 0.2);
+        --rs-hdr-hover-fg: #ffffff;
+        --rs-hdr-active-bg: #E3B27C;
+        --rs-hdr-active-fg: #1f1b16;
+        --rs-hdr-focus-ring: #E3B27C;
     }
-    body.theme-sepia .rs-book-app-header {
-        background: rgba(244, 236, 216, 0.95);
-        border-bottom: 1px solid #d3c4a9;
-    }
-    @media (prefers-color-scheme: light) {
-        body.theme-auto .rs-book-app-header,
-        body.theme-oceanview:not(.theme-dark) .rs-book-app-header {
-            background: rgba(9, 44, 54, 0.96);
-            border-bottom: 1px solid rgba(227, 178, 124, 0.38);
+    @media (prefers-color-scheme: dark) {
+        body.theme-sepia-system #stardust-header.rs-book-app-header {
+            --rs-hdr-bg: rgba(31, 27, 22, 0.96);
+            --rs-hdr-border: #4a4135;
+            --rs-hdr-title: #f4ecd8;
+            --rs-hdr-subtitle: #E3B27C;
+            --rs-hdr-crest-bg: transparent;
+            --rs-hdr-link: #e0d5c1;
+            --rs-hdr-hover-bg: rgba(227, 178, 124, 0.2);
+            --rs-hdr-hover-fg: #ffffff;
+            --rs-hdr-active-bg: #E3B27C;
+            --rs-hdr-active-fg: #1f1b16;
+            --rs-hdr-focus-ring: #E3B27C;
         }
     }
+
+    /* Crisp Light (`theme-light` and `theme-auto` under OS Light Mode) */
+    body.theme-light #stardust-header.rs-book-app-header {
+        --rs-hdr-bg: rgba(255, 255, 255, 0.96);
+        --rs-hdr-border: #cbd5e1;
+        --rs-hdr-title: #0f172a;
+        --rs-hdr-subtitle: #0F4C5C;
+        --rs-hdr-crest-bg: #092c36;
+        --rs-hdr-link: #1e293b;
+        --rs-hdr-hover-bg: #e2e8f0;
+        --rs-hdr-hover-fg: #0f172a;
+        --rs-hdr-active-bg: #0F4C5C;
+        --rs-hdr-active-fg: #ffffff;
+        --rs-hdr-focus-ring: #0F4C5C;
+    }
+    @media (prefers-color-scheme: light) {
+        body.theme-auto #stardust-header.rs-book-app-header,
+        body:not(.theme-dark):not(.theme-dark-sepia):not(.theme-sepia):not(.theme-sepia-system):not(.theme-night) #stardust-header.rs-book-app-header {
+            --rs-hdr-bg: rgba(255, 255, 255, 0.96);
+            --rs-hdr-border: #cbd5e1;
+            --rs-hdr-title: #0f172a;
+            --rs-hdr-subtitle: #0F4C5C;
+            --rs-hdr-crest-bg: #092c36;
+            --rs-hdr-link: #1e293b;
+            --rs-hdr-hover-bg: #e2e8f0;
+            --rs-hdr-hover-fg: #0f172a;
+            --rs-hdr-active-bg: #0F4C5C;
+            --rs-hdr-active-fg: #ffffff;
+            --rs-hdr-focus-ring: #0F4C5C;
+        }
+    }
+
+    /* Classic Sepia & Adaptive Sepia under OS Light Mode (`theme-sepia` & light `theme-sepia-system`) */
+    body.theme-sepia #stardust-header.rs-book-app-header {
+        --rs-hdr-bg: rgba(244, 236, 216, 0.96);
+        --rs-hdr-border: #c8b798;
+        --rs-hdr-title: #2c2013;
+        --rs-hdr-subtitle: #0F4C5C;
+        --rs-hdr-crest-bg: #092c36;
+        --rs-hdr-link: #3e2f1d;
+        --rs-hdr-hover-bg: #e4d5b7;
+        --rs-hdr-hover-fg: #1f160d;
+        --rs-hdr-active-bg: #0F4C5C;
+        --rs-hdr-active-fg: #ffffff;
+        --rs-hdr-focus-ring: #0F4C5C;
+    }
+    @media (prefers-color-scheme: light) {
+        body.theme-sepia-system #stardust-header.rs-book-app-header {
+            --rs-hdr-bg: rgba(244, 236, 216, 0.96);
+            --rs-hdr-border: #c8b798;
+            --rs-hdr-title: #2c2013;
+            --rs-hdr-subtitle: #0F4C5C;
+            --rs-hdr-crest-bg: #092c36;
+            --rs-hdr-link: #3e2f1d;
+            --rs-hdr-hover-bg: #e4d5b7;
+            --rs-hdr-hover-fg: #1f160d;
+            --rs-hdr-active-bg: #0F4C5C;
+            --rs-hdr-active-fg: #ffffff;
+            --rs-hdr-focus-ring: #0F4C5C;
+        }
+    }
+
     .rs-book-app-header-inner {
+        width: 100%;
         max-width: 1200px;
         margin: 0 auto;
         display: flex;
@@ -80,8 +190,9 @@ $headerAssetsUrl = !empty($cdnBaseUrl) ? rtrim($cdnBaseUrl, '/') : 'https://asse
     .rs-book-brand-link:hover {
         text-decoration: none !important;
     }
-    .rs-book-brand-link:focus-visible {
-        outline: 2px solid #E3B27C;
+    .rs-book-brand-link:focus-visible,
+    .rs-book-header-link:focus-visible {
+        outline: 2px solid var(--rs-hdr-focus-ring);
         outline-offset: 2px;
     }
     .rs-book-brand-icon-wrap {
@@ -110,24 +221,18 @@ $headerAssetsUrl = !empty($cdnBaseUrl) ? rtrim($cdnBaseUrl, '/') : 'https://asse
         flex-direction: column;
         min-width: 0;
     }
-    .rs-book-brand-title {
+    #stardust-header.rs-book-app-header .rs-book-brand-title {
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
         font-size: 0.98rem;
         font-weight: 800;
         letter-spacing: -0.01em;
-        color: #f8fafc;
+        color: var(--rs-hdr-title) !important;
         line-height: 1.2;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    body.theme-light .rs-book-brand-title {
-        color: #0f172a;
-    }
-    body.theme-sepia .rs-book-brand-title {
-        color: #3e3122;
-    }
-    .rs-book-brand-subtitle {
+    #stardust-header.rs-book-app-header .rs-book-brand-subtitle {
         display: inline-flex;
         align-items: center;
         gap: 0.32rem;
@@ -135,28 +240,25 @@ $headerAssetsUrl = !empty($cdnBaseUrl) ? rtrim($cdnBaseUrl, '/') : 'https://asse
         font-weight: 700;
         text-transform: uppercase;
         letter-spacing: 0.08em;
-        color: #E3B27C;
+        color: var(--rs-hdr-subtitle) !important;
         margin-top: 0.1rem;
         white-space: nowrap;
     }
-    body.theme-light .rs-book-brand-subtitle {
-        color: #0F4C5C;
-    }
-    body.theme-sepia .rs-book-brand-subtitle {
-        color: #5c4b37;
-    }
-    .rs-book-brand-subtitle img {
-        width: 14px;
-        height: 14px;
+    #stardust-header.rs-book-app-header .rs-book-brand-subtitle img {
+        width: 16px;
+        height: 16px;
         object-fit: contain;
         flex-shrink: 0;
+        background: var(--rs-hdr-crest-bg);
+        border-radius: 50%;
+        padding: 1px;
     }
     .rs-book-header-nav {
         display: flex;
         align-items: center;
         gap: 0.35rem;
     }
-    .rs-book-header-link {
+    #stardust-header.rs-book-app-header .rs-book-header-link {
         display: inline-flex;
         align-items: center;
         gap: 0.35rem;
@@ -164,34 +266,34 @@ $headerAssetsUrl = !empty($cdnBaseUrl) ? rtrim($cdnBaseUrl, '/') : 'https://asse
         border-radius: 8px;
         font-size: 0.82rem;
         font-weight: 700;
-        color: #e2e8f0 !important;
+        color: var(--rs-hdr-link) !important;
         text-decoration: none !important;
         transition: background-color 0.15s ease, color 0.15s ease;
     }
-    body.theme-light .rs-book-header-link {
-        color: #334155 !important;
-    }
-    body.theme-sepia .rs-book-header-link {
-        color: #4a3b2c !important;
-    }
-    .rs-book-header-link:hover {
-        background: rgba(227, 178, 124, 0.16);
-        color: #ffffff !important;
+    #stardust-header.rs-book-app-header .rs-book-header-link:hover {
+        background: var(--rs-hdr-hover-bg) !important;
+        color: var(--rs-hdr-hover-fg) !important;
         text-decoration: none !important;
     }
-    body.theme-light .rs-book-header-link:hover {
-        background: #f1f5f9;
-        color: #0f172a !important;
+    #stardust-header.rs-book-app-header .rs-book-header-link.is-active {
+        background: var(--rs-hdr-active-bg) !important;
+        color: var(--rs-hdr-active-fg) !important;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
     }
-    .rs-book-header-link.is-active {
-        background: #E3B27C;
-        color: #09222a !important;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+    /* Windows High Contrast / Forced Colors Mode Fallback */
+    @media (forced-colors: active) {
+        #stardust-header.rs-book-app-header {
+            background: Canvas !important;
+            border-bottom: 1px solid CanvasText !important;
+        }
+        #stardust-header.rs-book-app-header .rs-book-header-link.is-active {
+            background: Highlight !important;
+            color: HighlightText !important;
+            outline: 2px solid CanvasText;
+        }
     }
-    body.theme-light .rs-book-header-link.is-active {
-        background: #0F4C5C;
-        color: #ffffff !important;
-    }
+
     @media (max-width: 767px) {
         .rs-book-header-nav {
             display: none;
