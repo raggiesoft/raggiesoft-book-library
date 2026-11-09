@@ -14,32 +14,32 @@
         "ebook_sizes": {
             "epub": "42.1 MB",
             "pdf": "35.2 MB",
-            "text_epub": "448 KB",
+            "text_epub": "456 KB",
             "text_pdf": "1.2 MB",
-            "package_7z": "338 KB",
-            "epub_bytes": 44104134,
-            "pdf_bytes": 36885813,
-            "text_epub_bytes": 458240,
-            "text_pdf_bytes": 1247313,
-            "package_7z_bytes": 346121
+            "package_7z": "344 KB",
+            "epub_bytes": 44113564,
+            "pdf_bytes": 36912054,
+            "text_epub_bytes": 467372,
+            "text_pdf_bytes": 1272479,
+            "package_7z_bytes": 352433
         },
-        "illustration_count": 107,
+        "illustration_count": 108,
         "word_stats": {
-            "story_word_count": 189340,
-            "lore_word_count": 46063,
-            "combined_word_count": 235403,
-            "story_page_count": 689,
-            "combined_page_count": 856,
-            "reading_hours": 12.6,
-            "reading_minutes": 757,
+            "story_word_count": 193241,
+            "lore_word_count": 46844,
+            "combined_word_count": 240085,
+            "story_page_count": 703,
+            "combined_page_count": 873,
+            "reading_hours": 12.9,
+            "reading_minutes": 773,
             "novel_equivalent": 2.1,
             "scale_category": "Epic Full-Length Novel",
             "scale_badge": "Epic Novel",
             "benchmark_note": "2.1\u00d7 a standard 90,000-word contemporary novel (Epic 110k\u2013200k tier)",
             "era_count": 11,
             "chapter_count": 33,
-            "part_count": 77,
-            "illustration_count": 107
+            "part_count": 78,
+            "illustration_count": 108
         }
     },
     "/katie": {
@@ -767,6 +767,12 @@
         "title": "Part 2: The Morning After in Kempsville, The School Tax Referendum, & Jess's Open Letter on The Grid",
         "theme": "raggiesoft-books",
         "filePath": "e011/c001/p002.md"
+    },
+    "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate/part-3-u-s-senate-new-member-orientation-senator-tess-dunmore-s-ramp-making-the-vice-president-swear-her-in": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: U.S. Senate New Member Orientation, Senator Tess Dunmore's Ramp, & Making the Vice President Swear Her In",
+        "theme": "raggiesoft-books",
+        "filePath": "e011/c001/p003.md"
     },
     "/katie/the-senator-from-virginia/the-minified-zip-file-the-raw-html-takedown-resigning-from-richmond": {
         "view": "pages/raggiesoft-books/books/viewer",
