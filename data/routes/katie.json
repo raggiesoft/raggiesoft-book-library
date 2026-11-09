@@ -12,26 +12,26 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "46.3 MB",
-            "pdf": "40.7 MB",
-            "text_epub": "513 KB",
+            "epub": "47 MB",
+            "pdf": "41.8 MB",
+            "text_epub": "516 KB",
             "text_pdf": "1.4 MB",
-            "package_7z": "385 KB",
-            "epub_bytes": 48536422,
-            "pdf_bytes": 42709364,
-            "text_epub_bytes": 525194,
-            "text_pdf_bytes": 1429397,
-            "package_7z_bytes": 394093
+            "package_7z": "387 KB",
+            "epub_bytes": 49293694,
+            "pdf_bytes": 43855901,
+            "text_epub_bytes": 528268,
+            "text_pdf_bytes": 1438877,
+            "package_7z_bytes": 396252
         },
-        "illustration_count": 113,
+        "illustration_count": 114,
         "word_stats": {
-            "story_word_count": 217718,
-            "lore_word_count": 55016,
-            "combined_word_count": 272734,
-            "story_page_count": 792,
-            "combined_page_count": 992,
-            "reading_hours": 14.5,
-            "reading_minutes": 871,
+            "story_word_count": 219196,
+            "lore_word_count": 55189,
+            "combined_word_count": 274385,
+            "story_page_count": 797,
+            "combined_page_count": 998,
+            "reading_hours": 14.6,
+            "reading_minutes": 877,
             "novel_equivalent": 2.4,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
@@ -39,7 +39,7 @@
             "era_count": 11,
             "chapter_count": 34,
             "part_count": 83,
-            "illustration_count": 113
+            "illustration_count": 114
         }
     },
     "/katie": {
@@ -510,9 +510,9 @@
         "theme": "raggiesoft-books",
         "filePath": "e007/c001/p001.md"
     },
-    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-horizontal-ids-on-route-12-yearly-passes-at-fairlawn/part-2-skin-to-skin-in-the-closet-no-crosswalks-at-military-and-indian-river-two-wheelchairs-at-market-square": {
+    "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-horizontal-ids-on-route-12-yearly-passes-at-fairlawn/part-2-dr-carter-s-exam-room-skin-to-skin-in-the-closet-no-crosswalks-at-military-and-indian-river": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Skin to Skin in the Closet, No Crosswalks at Military and Indian River, & Two Wheelchairs at Market Square",
+        "title": "Part 2: Dr. Carter's Exam Room, Skin to Skin in the Closet, & No Crosswalks at Military and Indian River",
         "theme": "raggiesoft-books",
         "filePath": "e007/c001/p002.md"
     },
