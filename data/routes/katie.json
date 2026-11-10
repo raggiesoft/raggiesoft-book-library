@@ -14,24 +14,24 @@
         "ebook_sizes": {
             "epub": "50.1 MB",
             "pdf": "45.6 MB",
-            "text_epub": "547 KB",
+            "text_epub": "543 KB",
             "text_pdf": "1.5 MB",
-            "package_7z": "410 KB",
-            "epub_bytes": 52543590,
-            "pdf_bytes": 47793357,
-            "text_epub_bytes": 559697,
-            "text_pdf_bytes": 1527275,
-            "package_7z_bytes": 420060
+            "package_7z": "407 KB",
+            "epub_bytes": 52539789,
+            "pdf_bytes": 47786349,
+            "text_epub_bytes": 555982,
+            "text_pdf_bytes": 1520986,
+            "package_7z_bytes": 417273
         },
         "illustration_count": 118,
         "word_stats": {
-            "story_word_count": 232745,
-            "lore_word_count": 57477,
-            "combined_word_count": 290222,
-            "story_page_count": 846,
-            "combined_page_count": 1055,
+            "story_word_count": 231945,
+            "lore_word_count": 57542,
+            "combined_word_count": 289487,
+            "story_page_count": 843,
+            "combined_page_count": 1053,
             "reading_hours": 15.5,
-            "reading_minutes": 931,
+            "reading_minutes": 928,
             "novel_equivalent": 2.6,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
@@ -900,21 +900,21 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|10|4"
     },
-    "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-1-the-washington-pilgrimage-that-wasn-t-secret-service-disqualifications-curbside-walkouts-governor-caldwell-s-route-15-meltdown": {
+    "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-1-marker-0812-at-military-indian-river-senator-julian-vance-governor-harrison-caldwell": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Washington Pilgrimage That Wasn't: Secret Service Disqualifications, Curbside Walkouts, & Governor Caldwell's Route 15 Meltdown",
+        "title": "Part 1: Marker #0812 at Military & Indian River: Senator Julian Vance & Governor Harrison Caldwell",
         "theme": "raggiesoft-books",
         "filePath": "e011/c005/p001.md"
     },
-    "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-2-the-performative-panderer-on-route-25-how-congressman-devon-pierce-screwed-up-in-front-of-the-cchr-riders": {
+    "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-2-the-second-tuesday-on-the-loop-representative-devon-pierce-on-route-15-the-surge-route-25": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Performative Panderer on Route 25: How Congressman Devon Pierce Screwed Up in Front of the CCHR Riders",
+        "title": "Part 2: The Second Tuesday on the Loop: Representative Devon Pierce on Route 15, The Surge, & Route 25",
         "theme": "raggiesoft-books",
         "filePath": "e011/c005/p002.md"
     },
-    "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-3-the-unannounced-passenger-the-video-title-that-decided-2044": {
+    "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-3-the-thursday-morning-loop-governor-elena-delgado-the-six-o-clock-upload": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Unannounced Passenger & The Video Title That Decided 2044",
+        "title": "Part 3: The Thursday Morning Loop: Governor Elena Delgado & The Six O'Clock Upload",
         "theme": "raggiesoft-books",
         "filePath": "e011/c005/p003.md"
     }
