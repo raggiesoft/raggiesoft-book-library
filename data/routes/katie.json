@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "47 MB",
-            "pdf": "41.8 MB",
-            "text_epub": "516 KB",
+            "epub": "47.9 MB",
+            "pdf": "42.7 MB",
+            "text_epub": "522 KB",
             "text_pdf": "1.4 MB",
-            "package_7z": "388 KB",
-            "epub_bytes": 49294001,
-            "pdf_bytes": 43856162,
-            "text_epub_bytes": 528562,
-            "text_pdf_bytes": 1438965,
-            "package_7z_bytes": 397027
+            "package_7z": "392 KB",
+            "epub_bytes": 50194195,
+            "pdf_bytes": 44783875,
+            "text_epub_bytes": 534466,
+            "text_pdf_bytes": 1455443,
+            "package_7z_bytes": 401438
         },
-        "illustration_count": 114,
+        "illustration_count": 115,
         "word_stats": {
-            "story_word_count": 219322,
-            "lore_word_count": 55759,
-            "combined_word_count": 275081,
-            "story_page_count": 798,
-            "combined_page_count": 1000,
-            "reading_hours": 14.6,
-            "reading_minutes": 877,
-            "novel_equivalent": 2.4,
+            "story_word_count": 221923,
+            "lore_word_count": 56305,
+            "combined_word_count": 278228,
+            "story_page_count": 807,
+            "combined_page_count": 1012,
+            "reading_hours": 14.8,
+            "reading_minutes": 888,
+            "novel_equivalent": 2.5,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
-            "benchmark_note": "2.4\u00d7 a standard 90,000-word contemporary novel (~2-volume print series)",
+            "benchmark_note": "2.5\u00d7 a standard 90,000-word contemporary novel (~2-volume print series)",
             "era_count": 11,
             "chapter_count": 34,
-            "part_count": 83,
-            "illustration_count": 114
+            "part_count": 84,
+            "illustration_count": 115
         }
     },
     "/katie": {
@@ -318,11 +318,17 @@
         "theme": "raggiesoft-books",
         "filePath": "e004/c002/p001.md"
     },
-    "/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary/part-2-brenda-in-the-back-alley-hiding-in-the-square-closet-a-happy-year-together": {
+    "/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary/part-2-brenda-in-the-back-alley-discovering-the-square-closet-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Brenda in the Back Alley, Hiding in the Square Closet, & A Happy Year Together",
+        "title": "Part 2: Brenda in the Back Alley & Discovering the Square Closet Sanctuary",
         "theme": "raggiesoft-books",
         "filePath": "e004/c002/p002.md"
+    },
+    "/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary/part-3-hurricane-isabel-two-layers-of-sandbags-at-greenway-court-two-weeks-at-dad-s-house-on-arvin-road": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Hurricane Isabel, Two Layers of Sandbags at Greenway Court, & Two Weeks at Dad's House on Arvin Road",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c002/p003.md"
     },
     "/katie/seventeen-senior-year-greenway-court/the-admiral-center-bookstore-meeting-tiffany": {
         "view": "pages/raggiesoft-books/books/viewer",

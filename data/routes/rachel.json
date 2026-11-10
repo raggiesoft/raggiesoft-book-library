@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "75.4 MB",
-            "pdf": "79.5 MB",
+            "epub": "76.1 MB",
+            "pdf": "80.2 MB",
             "text_epub": "1.1 MB",
             "text_pdf": "3.1 MB",
-            "package_7z": "785 KB",
-            "epub_bytes": 79066448,
-            "pdf_bytes": 83353167,
-            "text_epub_bytes": 1162117,
-            "text_pdf_bytes": 3239540,
-            "package_7z_bytes": 803568
+            "package_7z": "789 KB",
+            "epub_bytes": 79785837,
+            "pdf_bytes": 84117541,
+            "text_epub_bytes": 1167146,
+            "text_pdf_bytes": 3253544,
+            "package_7z_bytes": 807460
         },
-        "illustration_count": 130,
+        "illustration_count": 131,
         "word_stats": {
-            "story_word_count": 496333,
+            "story_word_count": 498439,
             "lore_word_count": 78061,
-            "combined_word_count": 574394,
-            "story_page_count": 1805,
-            "combined_page_count": 2089,
-            "reading_hours": 33.1,
-            "reading_minutes": 1985,
+            "combined_word_count": 576500,
+            "story_page_count": 1813,
+            "combined_page_count": 2096,
+            "reading_hours": 33.2,
+            "reading_minutes": 1994,
             "novel_equivalent": 5.5,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
             "benchmark_note": "5.5\u00d7 a standard 90,000-word contemporary novel (~6-volume print series)",
             "era_count": 26,
-            "chapter_count": 106,
-            "part_count": 211,
-            "illustration_count": 130
+            "chapter_count": 107,
+            "part_count": 212,
+            "illustration_count": 131
         }
     },
     "/rachel": {
@@ -1319,6 +1319,24 @@
         "title": "The Morning Perimeter",
         "theme": "raggiesoft-books",
         "filePath": "e013/c004/p001.md"
+    },
+    "/rachel/michael-s-senior-year/hurricane-isabel-the-three-bus-evacuation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Hurricane Isabel & The Three-Bus Evacuation",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|12|4"
+    },
+    "/rachel/michael-s-senior-year/hurricane-isabel-the-three-bus-evacuation/three-buses-to-kemps-river-drive-crown-burger-sharing-cousin-maria-s-twin-bed": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Three Buses to Kemps River Drive, Crown Burger, & Sharing Cousin Maria's Twin Bed",
+        "theme": "raggiesoft-books",
+        "filePath": "e013/c005/p001.md"
+    },
+    "/rachel/michael-s-senior-year/hurricane-isabel-the-three-bus-evacuation/part-1-three-buses-to-kemps-river-drive-crown-burger-sharing-cousin-maria-s-twin-bed": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Three Buses to Kemps River Drive, Crown Burger, & Sharing Cousin Maria's Twin Bed",
+        "theme": "raggiesoft-books",
+        "filePath": "e013/c005/p001.md"
     },
     "/rachel/delores": {
         "view": "pages/raggiesoft-books/books/viewer",
