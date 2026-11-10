@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "47.8 MB",
-            "pdf": "42.7 MB",
-            "text_epub": "526 KB",
+            "epub": "48.6 MB",
+            "pdf": "43.6 MB",
+            "text_epub": "538 KB",
             "text_pdf": "1.4 MB",
-            "package_7z": "395 KB",
-            "epub_bytes": 50157562,
-            "pdf_bytes": 44784393,
-            "text_epub_bytes": 538382,
-            "text_pdf_bytes": 1466448,
-            "package_7z_bytes": 404233
+            "package_7z": "403 KB",
+            "epub_bytes": 50949093,
+            "pdf_bytes": 45757024,
+            "text_epub_bytes": 550434,
+            "text_pdf_bytes": 1500571,
+            "package_7z_bytes": 412802
         },
-        "illustration_count": 115,
+        "illustration_count": 116,
         "word_stats": {
-            "story_word_count": 223781,
-            "lore_word_count": 56945,
-            "combined_word_count": 280726,
-            "story_page_count": 814,
-            "combined_page_count": 1021,
-            "reading_hours": 14.9,
-            "reading_minutes": 895,
+            "story_word_count": 228927,
+            "lore_word_count": 57137,
+            "combined_word_count": 286064,
+            "story_page_count": 832,
+            "combined_page_count": 1040,
+            "reading_hours": 15.3,
+            "reading_minutes": 916,
             "novel_equivalent": 2.5,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
-            "benchmark_note": "2.5\u00d7 a standard 90,000-word contemporary novel (~2-volume print series)",
+            "benchmark_note": "2.5\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
             "era_count": 11,
-            "chapter_count": 34,
-            "part_count": 84,
-            "illustration_count": 115
+            "chapter_count": 35,
+            "part_count": 85,
+            "illustration_count": 116
         }
     },
     "/katie": {
@@ -893,5 +893,23 @@
         "title": "Part 3: The Words of Mason, Madison, and Lincoln, Three Guilty Votes, & From Capitol Police Protection Back to Normal Life at Pleasure House Road",
         "theme": "raggiesoft-books",
         "filePath": "e011/c004/p003.md"
+    },
+    "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Three Senate Terms, Refusing the 2044 Nomination, & The Stop #0812 Four-Seat Presidential Endorsement Loop",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|10|4"
+    },
+    "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/stop-0812-at-military-indian-river-route-15-the-surge-light-rail-800-route-25-to-cchr-route-12-back-home": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Stop #0812 at Military & Indian River: Route 15, The Surge Light Rail (800), Route 25 to CCHR, & Route 12 Back Home",
+        "theme": "raggiesoft-books",
+        "filePath": "e011/c005/p001.md"
+    },
+    "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-1-stop-0812-at-military-indian-river-route-15-the-surge-light-rail-800-route-25-to-cchr-route-12-back-home": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Stop #0812 at Military & Indian River: Route 15, The Surge Light Rail (800), Route 25 to CCHR, & Route 12 Back Home",
+        "theme": "raggiesoft-books",
+        "filePath": "e011/c005/p001.md"
     }
 }
