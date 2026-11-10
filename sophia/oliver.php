@@ -1616,7 +1616,7 @@ if ($seriesSlug === 'ad-astra') {
             <div id="rs-backstage-dialog-body" class="story-content" style="padding: 1.5rem; overflow-y: auto; max-height: calc(86vh - 165px); font-size: 1.02rem; line-height: 1.68; text-indent: 0;">
             </div>
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; padding: 0.85rem 1.5rem; border-top: 1px solid var(--rs-border); background: var(--rs-surface); font-size: 0.85rem;">
-                <span style="opacity: 0.82;">100% In-Universe Bonus Feature &bull; <code>backstage.raggiesoft.com</code></span>
+                <span style="opacity: 0.82;">100% In-Universe Bonus Feature &bull; RaggieSoft Backstage Archive</span>
                 <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
                     <a id="rs-backstage-dialog-bounce" href="https://backstage.raggiesoft.com" target="_blank" rel="noopener noreferrer" data-backstage-direct="true" class="rs-btn rs-btn-primary" style="padding: 0.45rem 0.95rem; font-size: 0.88rem; display: inline-flex; align-items: center; gap: 0.4rem;">
                         <i class="ph ph-film-slate" aria-hidden="true"></i>
