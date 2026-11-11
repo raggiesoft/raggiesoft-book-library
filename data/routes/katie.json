@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "50.8 MB",
-            "pdf": "46.5 MB",
-            "text_epub": "547 KB",
+            "epub": "51.1 MB",
+            "pdf": "46.7 MB",
+            "text_epub": "561 KB",
             "text_pdf": "1.5 MB",
-            "package_7z": "411 KB",
-            "epub_bytes": 53301666,
-            "pdf_bytes": 48768732,
-            "text_epub_bytes": 560393,
-            "text_pdf_bytes": 1534580,
-            "package_7z_bytes": 420364
+            "package_7z": "420 KB",
+            "epub_bytes": 53579536,
+            "pdf_bytes": 48922013,
+            "text_epub_bytes": 574400,
+            "text_pdf_bytes": 1574316,
+            "package_7z_bytes": 430158
         },
-        "illustration_count": 119,
+        "illustration_count": 120,
         "word_stats": {
-            "story_word_count": 234334,
-            "lore_word_count": 57953,
-            "combined_word_count": 292287,
-            "story_page_count": 852,
-            "combined_page_count": 1063,
-            "reading_hours": 15.6,
-            "reading_minutes": 937,
-            "novel_equivalent": 2.6,
+            "story_word_count": 240064,
+            "lore_word_count": 58810,
+            "combined_word_count": 298874,
+            "story_page_count": 873,
+            "combined_page_count": 1087,
+            "reading_hours": 16,
+            "reading_minutes": 960,
+            "novel_equivalent": 2.7,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
-            "benchmark_note": "2.6\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
+            "benchmark_note": "2.7\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
             "era_count": 11,
-            "chapter_count": 35,
-            "part_count": 88,
-            "illustration_count": 119
+            "chapter_count": 36,
+            "part_count": 89,
+            "illustration_count": 120
         }
     },
     "/katie": {
@@ -894,34 +894,52 @@
         "theme": "raggiesoft-books",
         "filePath": "e011/c004/p003.md"
     },
+    "/katie/the-senator-from-virginia/street-clothes-on-the-route-250-connector-unannounced-in-fishersville-calling-the-governor": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Street Clothes on the Route 250 Connector, Unannounced in Fishersville, & Calling the Governor",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|10|4"
+    },
+    "/katie/the-senator-from-virginia/street-clothes-on-the-route-250-connector-unannounced-in-fishersville-calling-the-governor/arts-train-51-to-staunton-street-clothes-on-the-route-250-connector-calling-governor-langford-from-fishersville": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "ARTS Train 51 to Staunton, Street Clothes on the Route 250 Connector, & Calling Governor Langford From Fishersville",
+        "theme": "raggiesoft-books",
+        "filePath": "e011/c005/p001.md"
+    },
+    "/katie/the-senator-from-virginia/street-clothes-on-the-route-250-connector-unannounced-in-fishersville-calling-the-governor/part-1-arts-train-51-to-staunton-street-clothes-on-the-route-250-connector-calling-governor-langford-from-fishersville": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "ARTS Train 51 to Staunton, Street Clothes on the Route 250 Connector, & Calling Governor Langford From Fishersville",
+        "theme": "raggiesoft-books",
+        "filePath": "e011/c005/p001.md"
+    },
     "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Three Senate Terms, Refusing the 2044 Nomination, & The Stop #0812 Four-Seat Presidential Endorsement Loop",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|10|4"
+        "filePath": "__CHAP_TOC__|10|5"
     },
     "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-1-the-biggest-prize-in-the-primary-sam-mandy-sarah-s-bus-loop-plan-stop-0812": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Biggest Prize in the Primary: Sam, Mandy, & Sarah's Bus-Loop Plan & Stop #0812",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c005/p001.md"
+        "filePath": "e011/c006/p001.md"
     },
     "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-2-the-first-tuesday-on-the-loop-governor-harrison-caldwell-on-routes-15-800-25-12": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The First Tuesday on the Loop: Governor Harrison Caldwell on Routes 15, 800, 25, & 12",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c005/p002.md"
+        "filePath": "e011/c006/p002.md"
     },
     "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-3-the-second-tuesday-on-the-loop-representative-devon-pierce-on-routes-15-800-25-12": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Second Tuesday on the Loop: Representative Devon Pierce on Routes 15, 800, 25, & 12",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c005/p003.md"
+        "filePath": "e011/c006/p003.md"
     },
     "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-4-the-thursday-morning-loop-governor-elena-delgado-the-six-o-clock-upload": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Thursday Morning Loop: Governor Elena Delgado & The Six O'Clock Upload",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c005/p004.md"
+        "filePath": "e011/c006/p004.md"
     }
 }
