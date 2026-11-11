@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "54.2 MB",
-            "pdf": "49.9 MB",
-            "text_epub": "593 KB",
+            "epub": "55 MB",
+            "pdf": "51 MB",
+            "text_epub": "600 KB",
             "text_pdf": "1.6 MB",
-            "package_7z": "443 KB",
-            "epub_bytes": 56795148,
-            "pdf_bytes": 52302607,
-            "text_epub_bytes": 607242,
-            "text_pdf_bytes": 1664316,
-            "package_7z_bytes": 453990
+            "package_7z": "448 KB",
+            "epub_bytes": 57689816,
+            "pdf_bytes": 53492275,
+            "text_epub_bytes": 614194,
+            "text_pdf_bytes": 1682976,
+            "package_7z_bytes": 459149
         },
-        "illustration_count": 125,
+        "illustration_count": 126,
         "word_stats": {
-            "story_word_count": 253284,
-            "lore_word_count": 63176,
-            "combined_word_count": 316460,
-            "story_page_count": 921,
-            "combined_page_count": 1151,
-            "reading_hours": 16.9,
-            "reading_minutes": 1013,
+            "story_word_count": 256242,
+            "lore_word_count": 64133,
+            "combined_word_count": 320375,
+            "story_page_count": 932,
+            "combined_page_count": 1165,
+            "reading_hours": 17.1,
+            "reading_minutes": 1025,
             "novel_equivalent": 2.8,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
             "benchmark_note": "2.8\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
             "era_count": 11,
             "chapter_count": 37,
-            "part_count": 93,
-            "illustration_count": 125
+            "part_count": 94,
+            "illustration_count": 126
         }
     },
     "/katie": {
@@ -948,28 +948,34 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|10|6"
     },
-    "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-1-the-biggest-prize-in-the-primary-sam-mandy-sarah-s-bus-loop-plan-stop-0812": {
+    "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-1-refusing-the-2045-presidency-from-home-five-statutory-shields-against-the-bubble-out-of-the-closet-into-our-four-person-nest": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Biggest Prize in the Primary: Sam, Mandy, & Sarah's Bus-Loop Plan & Stop #0812",
+        "title": "Part 1: Refusing the 2045 Presidency From Home, Five Statutory Shields Against the Bubble, & Out of the Closet Into Our Four-Person Nest",
         "theme": "raggiesoft-books",
         "filePath": "e011/c007/p001.md"
     },
-    "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-2-the-first-tuesday-on-the-loop-governor-harrison-caldwell-on-routes-15-800-25-12": {
+    "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-2-the-biggest-prize-in-the-primary-sam-mandy-sarah-s-bus-loop-plan-stop-0812": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The First Tuesday on the Loop: Governor Harrison Caldwell on Routes 15, 800, 25, & 12",
+        "title": "Part 2: The Biggest Prize in the Primary: Sam, Mandy, & Sarah's Bus-Loop Plan & Stop #0812",
         "theme": "raggiesoft-books",
         "filePath": "e011/c007/p002.md"
     },
-    "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-3-the-second-tuesday-on-the-loop-representative-devon-pierce-on-routes-15-800-25-12": {
+    "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-3-the-first-tuesday-on-the-loop-governor-harrison-caldwell-on-routes-15-800-25-12": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Second Tuesday on the Loop: Representative Devon Pierce on Routes 15, 800, 25, & 12",
+        "title": "Part 3: The First Tuesday on the Loop: Governor Harrison Caldwell on Routes 15, 800, 25, & 12",
         "theme": "raggiesoft-books",
         "filePath": "e011/c007/p003.md"
     },
-    "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-4-the-thursday-morning-loop-governor-elena-delgado-the-six-o-clock-upload": {
+    "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-4-the-second-tuesday-on-the-loop-representative-devon-pierce-on-routes-15-800-25-12": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Thursday Morning Loop: Governor Elena Delgado & The Six O'Clock Upload",
+        "title": "Part 4: The Second Tuesday on the Loop: Representative Devon Pierce on Routes 15, 800, 25, & 12",
         "theme": "raggiesoft-books",
         "filePath": "e011/c007/p004.md"
+    },
+    "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-5-the-thursday-morning-loop-governor-elena-delgado-the-six-o-clock-upload": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: The Thursday Morning Loop: Governor Elena Delgado & The Six O'Clock Upload",
+        "theme": "raggiesoft-books",
+        "filePath": "e011/c007/p005.md"
     }
 }
