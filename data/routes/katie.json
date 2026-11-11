@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "51.3 MB",
-            "pdf": "46.8 MB",
-            "text_epub": "570 KB",
+            "epub": "52.8 MB",
+            "pdf": "48.4 MB",
+            "text_epub": "578 KB",
             "text_pdf": "1.5 MB",
-            "package_7z": "426 KB",
-            "epub_bytes": 53816656,
-            "pdf_bytes": 49042749,
-            "text_epub_bytes": 583752,
-            "text_pdf_bytes": 1600954,
-            "package_7z_bytes": 436720
+            "package_7z": "433 KB",
+            "epub_bytes": 55365324,
+            "pdf_bytes": 50715741,
+            "text_epub_bytes": 592213,
+            "text_pdf_bytes": 1622993,
+            "package_7z_bytes": 443181
         },
-        "illustration_count": 121,
+        "illustration_count": 123,
         "word_stats": {
-            "story_word_count": 244066,
-            "lore_word_count": 61037,
-            "combined_word_count": 305103,
-            "story_page_count": 888,
-            "combined_page_count": 1109,
-            "reading_hours": 16.3,
-            "reading_minutes": 976,
+            "story_word_count": 247277,
+            "lore_word_count": 61175,
+            "combined_word_count": 308452,
+            "story_page_count": 899,
+            "combined_page_count": 1122,
+            "reading_hours": 16.5,
+            "reading_minutes": 989,
             "novel_equivalent": 2.7,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
             "benchmark_note": "2.7\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
             "era_count": 11,
             "chapter_count": 36,
-            "part_count": 90,
-            "illustration_count": 121
+            "part_count": 91,
+            "illustration_count": 123
         }
     },
     "/katie": {
@@ -263,6 +263,12 @@
         "title": "Part 3: Two Compact Power Wheelchairs in the Trunk, Downsizing to Military Highway, & CVTA Route 15",
         "theme": "raggiesoft-books",
         "filePath": "e003/c003/p003.md"
+    },
+    "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-4-purple-day-lunch-josh-riley-s-lane-toll-the-demarco-periwinkle-tag-team": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Purple Day Lunch, Josh Riley's Lane Toll, & The DeMarco\u2013Periwinkle Tag-Team",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c003/p004.md"
     },
     "/katie/sixteen-summer-sanctuary/sixteen-on-four-wheels-finding-dates": {
         "view": "pages/raggiesoft-books/books/viewer",
