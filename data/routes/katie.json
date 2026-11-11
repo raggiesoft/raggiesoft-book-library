@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "53.6 MB",
-            "pdf": "49.3 MB",
-            "text_epub": "584 KB",
+            "epub": "54.2 MB",
+            "pdf": "49.9 MB",
+            "text_epub": "592 KB",
             "text_pdf": "1.6 MB",
-            "package_7z": "437 KB",
-            "epub_bytes": 56173688,
-            "pdf_bytes": 51660232,
-            "text_epub_bytes": 598155,
-            "text_pdf_bytes": 1638192,
-            "package_7z_bytes": 447586
+            "package_7z": "442 KB",
+            "epub_bytes": 56793934,
+            "pdf_bytes": 52299236,
+            "text_epub_bytes": 606061,
+            "text_pdf_bytes": 1660873,
+            "package_7z_bytes": 453102
         },
-        "illustration_count": 124,
+        "illustration_count": 125,
         "word_stats": {
-            "story_word_count": 249688,
-            "lore_word_count": 62616,
-            "combined_word_count": 312304,
-            "story_page_count": 908,
-            "combined_page_count": 1136,
-            "reading_hours": 16.6,
-            "reading_minutes": 999,
+            "story_word_count": 252793,
+            "lore_word_count": 62977,
+            "combined_word_count": 315770,
+            "story_page_count": 919,
+            "combined_page_count": 1148,
+            "reading_hours": 16.9,
+            "reading_minutes": 1011,
             "novel_equivalent": 2.8,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
             "benchmark_note": "2.8\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
             "era_count": 11,
-            "chapter_count": 36,
-            "part_count": 92,
-            "illustration_count": 124
+            "chapter_count": 37,
+            "part_count": 93,
+            "illustration_count": 125
         }
     },
     "/katie": {
@@ -924,34 +924,52 @@
         "theme": "raggiesoft-books",
         "filePath": "e011/c005/p001.md"
     },
+    "/katie/the-senator-from-virginia/joint-base-andrews-to-chambers-field-flying-home-on-air-force-one": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Joint Base Andrews to Chambers Field: Flying Home on Air Force One",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|10|5"
+    },
+    "/katie/the-senator-from-virginia/joint-base-andrews-to-chambers-field-flying-home-on-air-force-one/chambers-field-four-hundred-million-restored-on-pier-12-tapping-in-at-king-street-the-next-morning": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chambers Field, Four Hundred Million Restored on Pier 12, & Tapping In at King Street the Next Morning",
+        "theme": "raggiesoft-books",
+        "filePath": "e011/c006/p001.md"
+    },
+    "/katie/the-senator-from-virginia/joint-base-andrews-to-chambers-field-flying-home-on-air-force-one/part-1-chambers-field-four-hundred-million-restored-on-pier-12-tapping-in-at-king-street-the-next-morning": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chambers Field, Four Hundred Million Restored on Pier 12, & Tapping In at King Street the Next Morning",
+        "theme": "raggiesoft-books",
+        "filePath": "e011/c006/p001.md"
+    },
     "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Three Senate Terms, Refusing the 2044 Nomination, & The Stop #0812 Four-Seat Presidential Endorsement Loop",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|10|5"
+        "filePath": "__CHAP_TOC__|10|6"
     },
     "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-1-the-biggest-prize-in-the-primary-sam-mandy-sarah-s-bus-loop-plan-stop-0812": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Biggest Prize in the Primary: Sam, Mandy, & Sarah's Bus-Loop Plan & Stop #0812",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c006/p001.md"
+        "filePath": "e011/c007/p001.md"
     },
     "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-2-the-first-tuesday-on-the-loop-governor-harrison-caldwell-on-routes-15-800-25-12": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The First Tuesday on the Loop: Governor Harrison Caldwell on Routes 15, 800, 25, & 12",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c006/p002.md"
+        "filePath": "e011/c007/p002.md"
     },
     "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-3-the-second-tuesday-on-the-loop-representative-devon-pierce-on-routes-15-800-25-12": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Second Tuesday on the Loop: Representative Devon Pierce on Routes 15, 800, 25, & 12",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c006/p003.md"
+        "filePath": "e011/c007/p003.md"
     },
     "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-4-the-thursday-morning-loop-governor-elena-delgado-the-six-o-clock-upload": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Thursday Morning Loop: Governor Elena Delgado & The Six O'Clock Upload",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c006/p004.md"
+        "filePath": "e011/c007/p004.md"
     }
 }
