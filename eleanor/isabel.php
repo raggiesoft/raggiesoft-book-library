@@ -47,6 +47,58 @@ if (preg_match('#^/(?:raggiesoft-)?books/(.+)$#', $requestUri, $legacyBookMatch)
     exit;
 }
 
+/**
+ * Legacy Part-Slug Redirect Map (`$legacyPartRedirects`)
+ * -----------------------------------------------------------------------------
+ * Architectural Purpose:
+ *     Preserves external bookmarks, search-engine citations, and historical deep-links
+ *     whenever a Part's YAML `title:` is updated to strip real-world street numbers
+ *     or real-world university building names (such as Old Dominion University's
+ *     `1016 Hampton House`, replaced in-universe by Virginia Dominion University's
+ *     `Harbor House`).
+ *
+ * Maintenance Note:
+ *     Keys and target paths omit trailing slashes; `$normalizedRequestUri` trims any
+ *     trailing slash prior to lookup so both `/path` and `/path/` issue a clean
+ *     HTTP 301 Permanent Redirect before route JSON resolution executes.
+ */
+$legacyPartRedirects = [
+    // Katie & Nathaniel (Era 10, Chapter 3, Part 2): Stripped street number from Victoria Boulevard
+    '/katie/across-the-rotunda-the-senate-of-virginia/the-accessibility-project-riding-every-bus-across-the-commonwealth-for-the-united-states-senate/part-2-the-jammed-ramp-at-3400-victoria-boulevard-shoreline-transit-across-the-bay-wearing-the-nfa-s-f-grade-in-fairfax'
+        => '/katie/across-the-rotunda-the-senate-of-virginia/the-accessibility-project-riding-every-bus-across-the-commonwealth-for-the-united-states-senate/part-2-the-jammed-ramp-on-victoria-boulevard-shoreline-transit-across-the-bay-wearing-the-nfa-s-f-grade-in-fairfax',
+
+    // Nichole (Era 2, Chapter 3, Part 3 & Era 6, Chapter 8, Part 1): Stripped street number from Delaney Street
+    '/nichole/middle-school/middle-school-life/part-3-1850-delaney-street-virginia-beach-the-architect-and-the-laborer'
+        => '/nichole/middle-school/middle-school-life/part-3-delaney-street-virginia-beach-the-architect-and-the-laborer',
+    '/nichole/college-tours/the-gap-year-protocol/part-1-1850-delaney-street-virginia-beach-virginia-the-departure'
+        => '/nichole/college-tours/the-gap-year-protocol/part-1-delaney-street-virginia-beach-virginia-the-departure',
+
+    // Nichole (Era 13, Chapter 1, Part 1 — single-part chapter emits both canonical and `/part-1-` alias routes)
+    '/nichole/the-end/the-synchronized-shutdown/the-master-suite-95-west-main-road-portsmouth-ri-the-legacy'
+        => '/nichole/the-end/the-synchronized-shutdown/the-master-suite-west-main-road-portsmouth-ri-the-legacy',
+    '/nichole/the-end/the-synchronized-shutdown/part-1-the-master-suite-95-west-main-road-portsmouth-ri-the-legacy'
+        => '/nichole/the-end/the-synchronized-shutdown/part-1-the-master-suite-west-main-road-portsmouth-ri-the-legacy',
+
+    // Rachel (Era 18, Chapter 4, Part 1 & Era 19, Chapter 1, Part 2): Stripped house numbers from Canadian Arch & Rich Court
+    '/rachel/the-shallow-end/the-open-door-sanctuary/part-1-the-keys-to-3701-the-dollar-lease'
+        => '/rachel/the-shallow-end/the-open-door-sanctuary/part-1-the-keys-to-canadian-arch-the-dollar-lease',
+    '/rachel/the-eastern-anchor/the-passcode-the-blackwater-extraction/part-2-the-evasive-route-the-1802-perimeter'
+        => '/rachel/the-eastern-anchor/the-passcode-the-blackwater-extraction/part-2-the-evasive-route-the-rich-court-perimeter',
+
+    // Rachel (Era 21, Chapter 1, Parts 2 & 3): Replaced real-world ODU `1016 Hampton House` with fictional VDU `Harbor House`
+    '/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/from-cchr-to-vdu-the-upperclass-gih-pilot-apartment/part-2-move-in-day-at-1016-hampton-house-building-2-the-2-bed-2-bath-floor-plan-alternating-beds'
+        => '/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/from-cchr-to-vdu-the-upperclass-gih-pilot-apartment/part-2-move-in-day-at-harbor-house-building-2-the-2-bed-2-bath-floor-plan-alternating-beds',
+    '/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/from-cchr-to-vdu-the-upperclass-gih-pilot-apartment/part-3-the-only-gih-pair-in-building-2-hampton-house-the-ra-s-look-in-the-hallway-the-1st-floor-laundry-room'
+        => '/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/from-cchr-to-vdu-the-upperclass-gih-pilot-apartment/part-3-the-only-gih-pair-in-building-2-harbor-house-the-ra-s-look-in-the-hallway-the-1st-floor-laundry-room',
+];
+
+// Normalize trailing slash (while preserving root `/`) and execute O(1) hash lookup for renamed Part slugs
+$normalizedRequestUri = ($requestUri !== '/') ? rtrim($requestUri, '/') : '/';
+if (isset($legacyPartRedirects[$normalizedRequestUri])) {
+    header('Location: ' . $legacyPartRedirects[$normalizedRequestUri], true, 301);
+    exit;
+}
+
 // Resolve the absolute base directory of the server to ensure reliable includes
 $basePath = realpath(__DIR__ . '/../');
 

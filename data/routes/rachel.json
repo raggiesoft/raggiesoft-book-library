@@ -12,22 +12,22 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "76 MB",
-            "pdf": "80.2 MB",
+            "epub": "76.1 MB",
+            "pdf": "80.3 MB",
             "text_epub": "1.1 MB",
             "text_pdf": "3.1 MB",
             "package_7z": "789 KB",
-            "epub_bytes": 79698200,
-            "pdf_bytes": 84047594,
-            "text_epub_bytes": 1167408,
-            "text_pdf_bytes": 3254367,
-            "package_7z_bytes": 807674
+            "epub_bytes": 79791575,
+            "pdf_bytes": 84152377,
+            "text_epub_bytes": 1167217,
+            "text_pdf_bytes": 3253698,
+            "package_7z_bytes": 807552
         },
         "illustration_count": 131,
         "word_stats": {
-            "story_word_count": 498587,
+            "story_word_count": 498553,
             "lore_word_count": 78061,
-            "combined_word_count": 576648,
+            "combined_word_count": 576614,
             "story_page_count": 1813,
             "combined_page_count": 2097,
             "reading_hours": 33.2,
@@ -1878,9 +1878,9 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|17|3"
     },
-    "/rachel/the-shallow-end/the-open-door-sanctuary/part-1-the-keys-to-3701-the-dollar-lease": {
+    "/rachel/the-shallow-end/the-open-door-sanctuary/part-1-the-keys-to-canadian-arch-the-dollar-lease": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The Keys to 3701 & The Dollar Lease",
+        "title": "Part 1: The Keys to Canadian Arch & The Dollar Lease",
         "theme": "raggiesoft-books",
         "filePath": "e018/c004/p001.md"
     },
@@ -1968,9 +1968,9 @@
         "theme": "raggiesoft-books",
         "filePath": "e019/c001/p001.md"
     },
-    "/rachel/the-eastern-anchor/the-passcode-the-blackwater-extraction/part-2-the-evasive-route-the-1802-perimeter": {
+    "/rachel/the-eastern-anchor/the-passcode-the-blackwater-extraction/part-2-the-evasive-route-the-rich-court-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The Evasive Route & The 1802 Perimeter",
+        "title": "Part 2: The Evasive Route & The Rich Court Perimeter",
         "theme": "raggiesoft-books",
         "filePath": "e019/c001/p002.md"
     },
@@ -2130,15 +2130,15 @@
         "theme": "raggiesoft-books",
         "filePath": "e021/c001/p001.md"
     },
-    "/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/from-cchr-to-vdu-the-upperclass-gih-pilot-apartment/part-2-move-in-day-at-1016-hampton-house-building-2-the-2-bed-2-bath-floor-plan-alternating-beds": {
+    "/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/from-cchr-to-vdu-the-upperclass-gih-pilot-apartment/part-2-move-in-day-at-harbor-house-building-2-the-2-bed-2-bath-floor-plan-alternating-beds": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Move-In Day at 1016 Hampton House ('Building 2'), The 2 Bed / 2 Bath Floor Plan, & Alternating Beds",
+        "title": "Part 2: Move-In Day at Harbor House ('Building 2'), The 2 Bed / 2 Bath Floor Plan, & Alternating Beds",
         "theme": "raggiesoft-books",
         "filePath": "e021/c001/p002.md"
     },
-    "/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/from-cchr-to-vdu-the-upperclass-gih-pilot-apartment/part-3-the-only-gih-pair-in-building-2-hampton-house-the-ra-s-look-in-the-hallway-the-1st-floor-laundry-room": {
+    "/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/from-cchr-to-vdu-the-upperclass-gih-pilot-apartment/part-3-the-only-gih-pair-in-building-2-harbor-house-the-ra-s-look-in-the-hallway-the-1st-floor-laundry-room": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Only GIH Pair in Building 2 (Hampton House), The RA's Look in the Hallway, & The 1st-Floor Laundry Room",
+        "title": "Part 3: The Only GIH Pair in Building 2 (Harbor House), The RA's Look in the Hallway, & The 1st-Floor Laundry Room",
         "theme": "raggiesoft-books",
         "filePath": "e021/c001/p003.md"
     },

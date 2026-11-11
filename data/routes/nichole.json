@@ -17,17 +17,17 @@
             "text_epub": "444 KB",
             "text_pdf": "1.2 MB",
             "package_7z": "320 KB",
-            "epub_bytes": 454850,
-            "pdf_bytes": 1272981,
-            "text_epub_bytes": 454849,
-            "text_pdf_bytes": 1272981,
-            "package_7z_bytes": 327965
+            "epub_bytes": 454745,
+            "pdf_bytes": 1272762,
+            "text_epub_bytes": 454741,
+            "text_pdf_bytes": 1272762,
+            "package_7z_bytes": 327994
         },
         "illustration_count": 0,
         "word_stats": {
-            "story_word_count": 186535,
+            "story_word_count": 186518,
             "lore_word_count": 133,
-            "combined_word_count": 186668,
+            "combined_word_count": 186651,
             "story_page_count": 678,
             "combined_page_count": 679,
             "reading_hours": 12.4,
@@ -174,9 +174,9 @@
         "theme": "raggiesoft-books",
         "filePath": "e002/c003/p002.md"
     },
-    "/nichole/middle-school/middle-school-life/part-3-1850-delaney-street-virginia-beach-the-architect-and-the-laborer": {
+    "/nichole/middle-school/middle-school-life/part-3-delaney-street-virginia-beach-the-architect-and-the-laborer": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: 1850 Delaney Street, Virginia Beach & The Architect and the Laborer",
+        "title": "Part 3: Delaney Street, Virginia Beach & The Architect and the Laborer",
         "theme": "raggiesoft-books",
         "filePath": "e002/c003/p003.md"
     },
@@ -474,9 +474,9 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|7"
     },
-    "/nichole/college-tours/the-gap-year-protocol/part-1-1850-delaney-street-virginia-beach-virginia-the-departure": {
+    "/nichole/college-tours/the-gap-year-protocol/part-1-delaney-street-virginia-beach-virginia-the-departure": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: 1850 Delaney Street, Virginia Beach, Virginia & The Departure",
+        "title": "Part 1: Delaney Street, Virginia Beach, Virginia & The Departure",
         "theme": "raggiesoft-books",
         "filePath": "e006/c008/p001.md"
     },
@@ -876,15 +876,15 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|12|0"
     },
-    "/nichole/the-end/the-synchronized-shutdown/the-master-suite-95-west-main-road-portsmouth-ri-the-legacy": {
+    "/nichole/the-end/the-synchronized-shutdown/the-master-suite-west-main-road-portsmouth-ri-the-legacy": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Master Suite, 95 West Main Road, Portsmouth, RI & The Legacy",
+        "title": "The Master Suite, West Main Road, Portsmouth, RI & The Legacy",
         "theme": "raggiesoft-books",
         "filePath": "e013/c001/p001.md"
     },
-    "/nichole/the-end/the-synchronized-shutdown/part-1-the-master-suite-95-west-main-road-portsmouth-ri-the-legacy": {
+    "/nichole/the-end/the-synchronized-shutdown/part-1-the-master-suite-west-main-road-portsmouth-ri-the-legacy": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Master Suite, 95 West Main Road, Portsmouth, RI & The Legacy",
+        "title": "The Master Suite, West Main Road, Portsmouth, RI & The Legacy",
         "theme": "raggiesoft-books",
         "filePath": "e013/c001/p001.md"
     },
