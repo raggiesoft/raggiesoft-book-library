@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "51.1 MB",
-            "pdf": "46.7 MB",
-            "text_epub": "561 KB",
+            "epub": "51.3 MB",
+            "pdf": "46.8 MB",
+            "text_epub": "569 KB",
             "text_pdf": "1.5 MB",
-            "package_7z": "420 KB",
-            "epub_bytes": 53579134,
-            "pdf_bytes": 48921432,
-            "text_epub_bytes": 573995,
-            "text_pdf_bytes": 1573319,
-            "package_7z_bytes": 430080
+            "package_7z": "426 KB",
+            "epub_bytes": 53815593,
+            "pdf_bytes": 49039349,
+            "text_epub_bytes": 582660,
+            "text_pdf_bytes": 1598010,
+            "package_7z_bytes": 436124
         },
-        "illustration_count": 120,
+        "illustration_count": 121,
         "word_stats": {
-            "story_word_count": 239982,
-            "lore_word_count": 59606,
-            "combined_word_count": 299588,
-            "story_page_count": 873,
-            "combined_page_count": 1089,
-            "reading_hours": 16,
-            "reading_minutes": 960,
+            "story_word_count": 243465,
+            "lore_word_count": 60398,
+            "combined_word_count": 303863,
+            "story_page_count": 885,
+            "combined_page_count": 1105,
+            "reading_hours": 16.2,
+            "reading_minutes": 974,
             "novel_equivalent": 2.7,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
             "benchmark_note": "2.7\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
             "era_count": 11,
             "chapter_count": 36,
-            "part_count": 89,
-            "illustration_count": 120
+            "part_count": 90,
+            "illustration_count": 121
         }
     },
     "/katie": {
@@ -815,6 +815,12 @@
         "title": "Part 3: U.S. Senate New Member Orientation, Senator Tess Dunmore's Ramp, & Making the Vice President Swear Her In",
         "theme": "raggiesoft-books",
         "filePath": "e011/c001/p003.md"
+    },
+    "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate/part-4-opposing-leader-schuman-the-211-204-lame-duck-false-dawn-in-the-dirksen-basement-home-across-the-fenwick-bridge": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Opposing Leader Schuman, The 211\u2013204 Lame-Duck False Dawn in the Dirksen Basement, & Home Across the Fenwick Bridge",
+        "theme": "raggiesoft-books",
+        "filePath": "e011/c001/p004.md"
     },
     "/katie/the-senator-from-virginia/the-minified-zip-file-the-raw-html-takedown-resigning-from-richmond": {
         "view": "pages/raggiesoft-books/books/viewer",
