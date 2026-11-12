@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "58 MB",
-            "pdf": "53.7 MB",
-            "text_epub": "633 KB",
-            "text_pdf": "1.7 MB",
-            "package_7z": "473 KB",
-            "epub_bytes": 60813421,
-            "pdf_bytes": 56301826,
-            "text_epub_bytes": 648252,
-            "text_pdf_bytes": 1773147,
-            "package_7z_bytes": 484127
+            "epub": "59.3 MB",
+            "pdf": "54 MB",
+            "text_epub": "661 KB",
+            "text_pdf": "1.8 MB",
+            "package_7z": "493 KB",
+            "epub_bytes": 62180905,
+            "pdf_bytes": 56635660,
+            "text_epub_bytes": 676982,
+            "text_pdf_bytes": 1847467,
+            "package_7z_bytes": 504822
         },
-        "illustration_count": 132,
+        "illustration_count": 138,
         "word_stats": {
-            "story_word_count": 270476,
-            "lore_word_count": 67403,
-            "combined_word_count": 337879,
-            "story_page_count": 984,
-            "combined_page_count": 1229,
-            "reading_hours": 18,
-            "reading_minutes": 1082,
-            "novel_equivalent": 3,
+            "story_word_count": 281792,
+            "lore_word_count": 67633,
+            "combined_word_count": 349425,
+            "story_page_count": 1025,
+            "combined_page_count": 1271,
+            "reading_hours": 18.8,
+            "reading_minutes": 1127,
+            "novel_equivalent": 3.1,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
-            "benchmark_note": "3.0\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
+            "benchmark_note": "3.1\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
             "era_count": 11,
-            "chapter_count": 39,
-            "part_count": 99,
-            "illustration_count": 132
+            "chapter_count": 40,
+            "part_count": 103,
+            "illustration_count": 138
         }
     },
     "/katie": {
@@ -522,21 +522,21 @@
         "theme": "raggiesoft-books",
         "filePath": "e006/c002/p002.md"
     },
-    "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/the-dormitory-room-mix-up-tina-s-daybed-in-luray-leaving-rrc-after-twelve-days": {
+    "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/the-dormitory-room-mix-up-a-safe-closet-in-luray-leaving-rrc-after-twelve-days": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Dormitory Room Mix-Up, Tina's Daybed in Luray, & Leaving RRC After Twelve Days",
+        "title": "The Dormitory Room Mix-Up, A Safe Closet in Luray, & Leaving RRC After Twelve Days",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|5|2"
     },
-    "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/the-dormitory-room-mix-up-tina-s-daybed-in-luray-leaving-rrc-after-twelve-days/part-1-the-dormitory-room-mix-up-blind-red-tape-room-reassignments-a-sleepless-night-for-natalie": {
+    "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/the-dormitory-room-mix-up-a-safe-closet-in-luray-leaving-rrc-after-twelve-days/part-1-the-dormitory-room-mix-up-blind-red-tape-room-reassignments-a-sleepless-night-for-natalie": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Dormitory Room Mix-Up, Blind Red-Tape Room Reassignments, & A Sleepless Night for Natalie",
         "theme": "raggiesoft-books",
         "filePath": "e006/c003/p001.md"
     },
-    "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/the-dormitory-room-mix-up-tina-s-daybed-in-luray-leaving-rrc-after-twelve-days/part-2-sharing-the-daybed-at-tina-s-house-in-luray-walking-out-after-twelve-days-coming-home-to-kempsville": {
+    "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/the-dormitory-room-mix-up-a-safe-closet-in-luray-leaving-rrc-after-twelve-days/part-2-a-safe-closet-at-tina-s-house-in-luray-walking-out-after-twelve-days-coming-home-to-kempsville": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Sharing the Daybed at Tina's House in Luray, Walking Out After Twelve Days, & Coming Home to Kempsville",
+        "title": "Part 2: A Safe Closet at Tina's House in Luray, Walking Out After Twelve Days, & Coming Home to Kempsville",
         "theme": "raggiesoft-books",
         "filePath": "e006/c003/p002.md"
     },
@@ -720,9 +720,9 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|1"
     },
-    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/freshman-session-on-west-broad-street-riding-jrtc-route-6-to-the-capitol/part-1-the-west-broad-street-loft-unpacking-our-shared-queen-bed-weekend-reconnaissance-on-jrtc-route-6": {
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/freshman-session-on-west-broad-street-riding-jrtc-route-6-to-the-capitol/part-1-the-west-broad-street-loft-making-up-the-decoy-bed-for-our-closet-sanctuary-weekend-reconnaissance-on-jrtc-route-6": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: The West Broad Street Loft, Unpacking Our Shared Queen Bed, & Weekend Reconnaissance on JRTC Route 6",
+        "title": "Part 1: The West Broad Street Loft, Making Up the Decoy Bed for Our Closet Sanctuary, & Weekend Reconnaissance on JRTC Route 6",
         "theme": "raggiesoft-books",
         "filePath": "e009/c002/p001.md"
     },
@@ -761,6 +761,36 @@
         "title": "Part 4: Via Southside Plaza, Speaking Up at the Altar, Taking Brittany to Meet the Nation, & Left Onto Macgregory Street",
         "theme": "raggiesoft-books",
         "filePath": "e009/c003/p004.md"
+    },
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-rescuing-cousin-chelsea-from-mount-regalis-out-of-the-closet-into-our-four-person-nest": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Keeping Our High-School Promise, Rescuing Cousin Chelsea From Mount Regalis, & Out of the Closet Into Our Four-Person Nest",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|8|3"
+    },
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-rescuing-cousin-chelsea-from-mount-regalis-out-of-the-closet-into-our-four-person-nest/part-1-sine-die-welcoming-brittany-home-to-arvin-road-route-20-to-the-coastal-adult-learning-center-three-cousins-in-the-closet": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Sine Die, Welcoming Brittany Home to Arvin Road, Route 20 to the Coastal Adult Learning Center, & Three Cousins in the Closet",
+        "theme": "raggiesoft-books",
+        "filePath": "e009/c004/p001.md"
+    },
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-rescuing-cousin-chelsea-from-mount-regalis-out-of-the-closet-into-our-four-person-nest/part-2-turned-away-at-the-royal-gate-riding-bta-route-99-up-mount-regalis-catching-the-two-faced-manager-red-handed-no-known-living-family": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Turned Away at the Royal Gate, Riding BTA Route 99 Up Mount Regalis, Catching the Two-Faced Manager Red-Handed, & 'No Known Living Family'",
+        "theme": "raggiesoft-books",
+        "filePath": "e009/c004/p002.md"
+    },
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-rescuing-cousin-chelsea-from-mount-regalis-out-of-the-closet-into-our-four-person-nest/part-3-ten-minutes-in-braxton-probate-court-forcing-open-the-royal-gate-with-a-sheriff-s-escort-goodbye-to-newport-over-i-895": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Ten Minutes in Braxton Probate Court, Forcing Open the Royal Gate With a Sheriff's Escort, & Goodbye to Newport Over I-895",
+        "theme": "raggiesoft-books",
+        "filePath": "e009/c004/p003.md"
+    },
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-rescuing-cousin-chelsea-from-mount-regalis-out-of-the-closet-into-our-four-person-nest/part-4-brittany-on-the-closet-floor-beside-us-eight-months-of-herbal-tea-and-twenty-minute-tries-finally-sleeping-in-our-four-person-nest": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Brittany on the Closet Floor Beside Us, Eight Months of Herbal Tea and Twenty-Minute Tries, & Finally Sleeping in Our Four-Person Nest",
+        "theme": "raggiesoft-books",
+        "filePath": "e009/c004/p004.md"
     },
     "/katie/across-the-rotunda-the-senate-of-virginia": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -900,9 +930,9 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|10|2"
     },
-    "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc/part-1-three-business-class-tickets-for-free-caf-car-drinks-the-mobile-lift-at-alexandria": {
+    "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc/part-1-five-business-class-tickets-for-free-caf-car-drinks-the-mobile-lift-at-alexandria": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Three Business Class Tickets for Free Caf\u00e9 Car Drinks & The Mobile Lift at Alexandria",
+        "title": "Part 1: Five Business Class Tickets for Free Caf\u00e9 Car Drinks & The Mobile Lift at Alexandria",
         "theme": "raggiesoft-books",
         "filePath": "e011/c003/p001.md"
     },
