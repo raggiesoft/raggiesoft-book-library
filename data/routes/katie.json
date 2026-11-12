@@ -12,24 +12,24 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "56.9 MB",
-            "pdf": "53.1 MB",
+            "epub": "57 MB",
+            "pdf": "53.2 MB",
             "text_epub": "611 KB",
             "text_pdf": "1.6 MB",
-            "package_7z": "456 KB",
-            "epub_bytes": 59634427,
-            "pdf_bytes": 55725902,
-            "text_epub_bytes": 625921,
-            "text_pdf_bytes": 1712759,
-            "package_7z_bytes": 467410
+            "package_7z": "457 KB",
+            "epub_bytes": 59727998,
+            "pdf_bytes": 55774672,
+            "text_epub_bytes": 626123,
+            "text_pdf_bytes": 1715104,
+            "package_7z_bytes": 467700
         },
         "illustration_count": 128,
         "word_stats": {
-            "story_word_count": 261179,
-            "lore_word_count": 65101,
-            "combined_word_count": 326280,
+            "story_word_count": 261341,
+            "lore_word_count": 65441,
+            "combined_word_count": 326782,
             "story_page_count": 950,
-            "combined_page_count": 1186,
+            "combined_page_count": 1188,
             "reading_hours": 17.4,
             "reading_minutes": 1045,
             "novel_equivalent": 2.9,
@@ -294,15 +294,15 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|4"
     },
-    "/katie/sixteen-summer-sanctuary/the-uncut-curb-at-smoker-s-corner/the-uncut-yellow-curb-on-lions-way-the-stairway-a-lift-manifest-why-brittany-turned-down-the-cigarette": {
+    "/katie/sixteen-summer-sanctuary/the-uncut-curb-at-smoker-s-corner/the-handicap-lot-edge-the-crosswalk-to-grass-on-lions-way-why-brittany-turned-down-the-cigarette": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Uncut Yellow Curb on Lions Way, The Stairway A Lift Manifest, & Why Brittany Turned Down the Cigarette",
+        "title": "The Handicap Lot Edge, The Crosswalk to Grass on Lions Way, & Why Brittany Turned Down the Cigarette",
         "theme": "raggiesoft-books",
         "filePath": "e003/c005/p001.md"
     },
-    "/katie/sixteen-summer-sanctuary/the-uncut-curb-at-smoker-s-corner/part-1-the-uncut-yellow-curb-on-lions-way-the-stairway-a-lift-manifest-why-brittany-turned-down-the-cigarette": {
+    "/katie/sixteen-summer-sanctuary/the-uncut-curb-at-smoker-s-corner/part-1-the-handicap-lot-edge-the-crosswalk-to-grass-on-lions-way-why-brittany-turned-down-the-cigarette": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Uncut Yellow Curb on Lions Way, The Stairway A Lift Manifest, & Why Brittany Turned Down the Cigarette",
+        "title": "The Handicap Lot Edge, The Crosswalk to Grass on Lions Way, & Why Brittany Turned Down the Cigarette",
         "theme": "raggiesoft-books",
         "filePath": "e003/c005/p001.md"
     },
