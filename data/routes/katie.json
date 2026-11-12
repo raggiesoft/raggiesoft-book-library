@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "56.1 MB",
-            "pdf": "52.8 MB",
-            "text_epub": "600 KB",
+            "epub": "56.9 MB",
+            "pdf": "53.1 MB",
+            "text_epub": "611 KB",
             "text_pdf": "1.6 MB",
-            "package_7z": "448 KB",
-            "epub_bytes": 58868178,
-            "pdf_bytes": 55357041,
-            "text_epub_bytes": 614187,
-            "text_pdf_bytes": 1682944,
-            "package_7z_bytes": 459159
+            "package_7z": "456 KB",
+            "epub_bytes": 59634427,
+            "pdf_bytes": 55725902,
+            "text_epub_bytes": 625921,
+            "text_pdf_bytes": 1712759,
+            "package_7z_bytes": 467410
         },
-        "illustration_count": 126,
+        "illustration_count": 128,
         "word_stats": {
-            "story_word_count": 256235,
-            "lore_word_count": 64133,
-            "combined_word_count": 320368,
-            "story_page_count": 932,
-            "combined_page_count": 1165,
-            "reading_hours": 17.1,
-            "reading_minutes": 1025,
-            "novel_equivalent": 2.8,
+            "story_word_count": 261179,
+            "lore_word_count": 65101,
+            "combined_word_count": 326280,
+            "story_page_count": 950,
+            "combined_page_count": 1186,
+            "reading_hours": 17.4,
+            "reading_minutes": 1045,
+            "novel_equivalent": 2.9,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
-            "benchmark_note": "2.8\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
+            "benchmark_note": "2.9\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
             "era_count": 11,
-            "chapter_count": 37,
-            "part_count": 94,
-            "illustration_count": 126
+            "chapter_count": 38,
+            "part_count": 96,
+            "illustration_count": 128
         }
     },
     "/katie": {
@@ -186,23 +186,23 @@
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|2"
     },
-    "/katie/sixteen-summer-sanctuary/bonding-with-my-sister": {
+    "/katie/sixteen-summer-sanctuary/earlton-court-bonding-with-my-sister": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Bonding With My Sister",
+        "title": "Earlton Court & Bonding With My Sister",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|2|0"
     },
-    "/katie/sixteen-summer-sanctuary/bonding-with-my-sister/summer-sanctuary-hearthstone-pizza-the-sunlit-valley-katie-s-room": {
+    "/katie/sixteen-summer-sanctuary/earlton-court-bonding-with-my-sister/part-1-through-smoker-s-corner-to-earlton-court-aunt-karen-s-couch-our-promise-for-three": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Summer Sanctuary: Hearthstone Pizza, The Sunlit Valley, & Katie's Room",
+        "title": "Part 1: Through Smoker's Corner to Earlton Court, Aunt Karen's Couch, & Our Promise for Three",
         "theme": "raggiesoft-books",
         "filePath": "e003/c001/p001.md"
     },
-    "/katie/sixteen-summer-sanctuary/bonding-with-my-sister/part-1-summer-sanctuary-hearthstone-pizza-the-sunlit-valley-katie-s-room": {
+    "/katie/sixteen-summer-sanctuary/earlton-court-bonding-with-my-sister/part-2-summer-sanctuary-hearthstone-pizza-the-sunlit-valley-katie-s-room": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Summer Sanctuary: Hearthstone Pizza, The Sunlit Valley, & Katie's Room",
+        "title": "Part 2: Summer Sanctuary: Hearthstone Pizza, The Sunlit Valley, & Katie's Room",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/p001.md"
+        "filePath": "e003/c001/p002.md"
     },
     "/katie/sixteen-summer-sanctuary/end-of-summer-cruise": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -287,6 +287,24 @@
         "title": "Part 2: Cousin Wesley, Ryan's Escalator Exit, & Two Dates at Emerald Creek Mall",
         "theme": "raggiesoft-books",
         "filePath": "e003/c004/p002.md"
+    },
+    "/katie/sixteen-summer-sanctuary/the-uncut-curb-at-smoker-s-corner": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Uncut Curb at Smoker's Corner",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|4"
+    },
+    "/katie/sixteen-summer-sanctuary/the-uncut-curb-at-smoker-s-corner/the-uncut-yellow-curb-on-lions-way-the-stairway-a-lift-manifest-why-brittany-turned-down-the-cigarette": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Uncut Yellow Curb on Lions Way, The Stairway A Lift Manifest, & Why Brittany Turned Down the Cigarette",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c005/p001.md"
+    },
+    "/katie/sixteen-summer-sanctuary/the-uncut-curb-at-smoker-s-corner/part-1-the-uncut-yellow-curb-on-lions-way-the-stairway-a-lift-manifest-why-brittany-turned-down-the-cigarette": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Uncut Yellow Curb on Lions Way, The Stairway A Lift Manifest, & Why Brittany Turned Down the Cigarette",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c005/p001.md"
     },
     "/katie/seventeen-senior-year-greenway-court": {
         "view": "pages/raggiesoft-books/books/viewer",
