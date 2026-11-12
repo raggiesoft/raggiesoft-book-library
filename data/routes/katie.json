@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "57.2 MB",
-            "pdf": "53.3 MB",
-            "text_epub": "617 KB",
-            "text_pdf": "1.6 MB",
-            "package_7z": "461 KB",
-            "epub_bytes": 60027463,
-            "pdf_bytes": 55922081,
-            "text_epub_bytes": 631752,
-            "text_pdf_bytes": 1728861,
-            "package_7z_bytes": 471955
+            "epub": "58 MB",
+            "pdf": "53.7 MB",
+            "text_epub": "627 KB",
+            "text_pdf": "1.7 MB",
+            "package_7z": "469 KB",
+            "epub_bytes": 60807110,
+            "pdf_bytes": 56285930,
+            "text_epub_bytes": 641922,
+            "text_pdf_bytes": 1756502,
+            "package_7z_bytes": 479785
         },
-        "illustration_count": 129,
+        "illustration_count": 132,
         "word_stats": {
-            "story_word_count": 263513,
-            "lore_word_count": 65682,
-            "combined_word_count": 329195,
-            "story_page_count": 958,
-            "combined_page_count": 1197,
-            "reading_hours": 17.6,
-            "reading_minutes": 1054,
-            "novel_equivalent": 2.9,
+            "story_word_count": 267438,
+            "lore_word_count": 66434,
+            "combined_word_count": 333872,
+            "story_page_count": 973,
+            "combined_page_count": 1214,
+            "reading_hours": 17.8,
+            "reading_minutes": 1070,
+            "novel_equivalent": 3,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
-            "benchmark_note": "2.9\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
+            "benchmark_note": "3.0\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
             "era_count": 11,
             "chapter_count": 39,
-            "part_count": 97,
-            "illustration_count": 129
+            "part_count": 99,
+            "illustration_count": 132
         }
     },
     "/katie": {
@@ -744,11 +744,23 @@
         "theme": "raggiesoft-books",
         "filePath": "e009/c003/p001.md"
     },
-    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/house-bill-663-live-on-meet-the-nation/part-2-transit-legislative-day-with-michael-rachel-two-meltdowns-in-room-518-the-6-05-am-train-to-meet-the-nation": {
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/house-bill-663-live-on-meet-the-nation/part-2-transit-legislative-day-in-room-518-the-six-o-clock-news-two-meltdowns-answered-by-page-forty-two": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Transit Legislative Day with Michael & Rachel, Two Meltdowns in Room 518, & The 6:05 AM Train to Meet the Nation",
+        "title": "Part 2: Transit Legislative Day in Room 518, The Six-O'Clock News, & Two Meltdowns Answered by Page Forty-Two",
         "theme": "raggiesoft-books",
         "filePath": "e009/c003/p002.md"
+    },
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/house-bill-663-live-on-meet-the-nation/part-3-hold-the-elevator-reuniting-with-cousin-brittany-in-room-518-friday-night-on-jrtc-route-6-why-nate-must-speak": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Hold the Elevator!, Reuniting With Cousin Brittany in Room 518, Friday Night on JRTC Route 6, & Why Nate Must Speak",
+        "theme": "raggiesoft-books",
+        "filePath": "e009/c003/p003.md"
+    },
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/house-bill-663-live-on-meet-the-nation/part-4-via-southside-plaza-speaking-up-at-the-altar-taking-brittany-to-meet-the-nation-left-onto-macgregory-street": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Via Southside Plaza, Speaking Up at the Altar, Taking Brittany to Meet the Nation, & Left Onto Macgregory Street",
+        "theme": "raggiesoft-books",
+        "filePath": "e009/c003/p004.md"
     },
     "/katie/across-the-rotunda-the-senate-of-virginia": {
         "view": "pages/raggiesoft-books/books/viewer",
