@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "57 MB",
-            "pdf": "53.2 MB",
-            "text_epub": "611 KB",
+            "epub": "57.2 MB",
+            "pdf": "53.3 MB",
+            "text_epub": "617 KB",
             "text_pdf": "1.6 MB",
-            "package_7z": "457 KB",
-            "epub_bytes": 59727998,
-            "pdf_bytes": 55774672,
-            "text_epub_bytes": 626123,
-            "text_pdf_bytes": 1715104,
-            "package_7z_bytes": 467700
+            "package_7z": "461 KB",
+            "epub_bytes": 60028558,
+            "pdf_bytes": 55921883,
+            "text_epub_bytes": 631462,
+            "text_pdf_bytes": 1728336,
+            "package_7z_bytes": 471599
         },
-        "illustration_count": 128,
+        "illustration_count": 129,
         "word_stats": {
-            "story_word_count": 261341,
-            "lore_word_count": 65441,
-            "combined_word_count": 326782,
-            "story_page_count": 950,
-            "combined_page_count": 1188,
-            "reading_hours": 17.4,
-            "reading_minutes": 1045,
+            "story_word_count": 263352,
+            "lore_word_count": 65606,
+            "combined_word_count": 328958,
+            "story_page_count": 958,
+            "combined_page_count": 1196,
+            "reading_hours": 17.6,
+            "reading_minutes": 1053,
             "novel_equivalent": 2.9,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
             "benchmark_note": "2.9\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
             "era_count": 11,
-            "chapter_count": 38,
-            "part_count": 96,
-            "illustration_count": 128
+            "chapter_count": 39,
+            "part_count": 97,
+            "illustration_count": 129
         }
     },
     "/katie": {
@@ -120,65 +120,83 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c003/p001.md"
     },
-    "/katie/middle-school-the-blizzard-of-96": {
+    "/katie/the-blizzard-of-96-middle-school-freshman-year": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Middle School & The Blizzard of '96",
+        "title": "The Blizzard of '96, Middle School, & Freshman Year",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|1"
     },
-    "/katie/middle-school-the-blizzard-of-96/the-blizzard-of-96": {
+    "/katie/the-blizzard-of-96-middle-school-freshman-year/the-blizzard-of-96": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Blizzard of '96",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
-    "/katie/middle-school-the-blizzard-of-96/the-blizzard-of-96/part-1-snow-day-in-virginia-beach-the-backyard-promise": {
+    "/katie/the-blizzard-of-96-middle-school-freshman-year/the-blizzard-of-96/part-1-snow-day-in-virginia-beach-the-backyard-promise": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Snow Day in Virginia Beach & The Backyard Promise",
         "theme": "raggiesoft-books",
         "filePath": "e002/c001/p001.md"
     },
-    "/katie/middle-school-the-blizzard-of-96/the-blizzard-of-96/part-2-sleet-on-the-glass-glaze-ice-across-tidewater-brittany-s-first-group-cuddle": {
+    "/katie/the-blizzard-of-96-middle-school-freshman-year/the-blizzard-of-96/part-2-sleet-on-the-glass-glaze-ice-across-tidewater-brittany-s-first-group-cuddle": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Sleet on the Glass, Glaze Ice Across Tidewater, & Brittany's First Group Cuddle",
         "theme": "raggiesoft-books",
         "filePath": "e002/c001/p002.md"
     },
-    "/katie/middle-school-the-blizzard-of-96/katie-is-dumped": {
+    "/katie/the-blizzard-of-96-middle-school-freshman-year/katie-is-dumped": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Katie Is Dumped",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|1"
     },
-    "/katie/middle-school-the-blizzard-of-96/katie-is-dumped/no-more-fighting-the-dinner-dance-promise": {
+    "/katie/the-blizzard-of-96-middle-school-freshman-year/katie-is-dumped/no-more-fighting-the-dinner-dance-promise": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "No More Fighting & The Dinner Dance Promise",
         "theme": "raggiesoft-books",
         "filePath": "e002/c002/p001.md"
     },
-    "/katie/middle-school-the-blizzard-of-96/katie-is-dumped/part-1-no-more-fighting-the-dinner-dance-promise": {
+    "/katie/the-blizzard-of-96-middle-school-freshman-year/katie-is-dumped/part-1-no-more-fighting-the-dinner-dance-promise": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "No More Fighting & The Dinner Dance Promise",
         "theme": "raggiesoft-books",
         "filePath": "e002/c002/p001.md"
     },
-    "/katie/middle-school-the-blizzard-of-96/the-pretend-boyfriend-twins-day": {
+    "/katie/the-blizzard-of-96-middle-school-freshman-year/the-pretend-boyfriend-twins-day": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Pretend Boyfriend & Twins' Day",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|2"
     },
-    "/katie/middle-school-the-blizzard-of-96/the-pretend-boyfriend-twins-day/twin-brothers-always-stay-spirit-week-the-living-room-sofa": {
+    "/katie/the-blizzard-of-96-middle-school-freshman-year/the-pretend-boyfriend-twins-day/twin-brothers-always-stay-spirit-week-the-living-room-sofa": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Twin Brothers Always Stay: Spirit Week & The Living Room Sofa",
         "theme": "raggiesoft-books",
         "filePath": "e002/c003/p001.md"
     },
-    "/katie/middle-school-the-blizzard-of-96/the-pretend-boyfriend-twins-day/part-1-twin-brothers-always-stay-spirit-week-the-living-room-sofa": {
+    "/katie/the-blizzard-of-96-middle-school-freshman-year/the-pretend-boyfriend-twins-day/part-1-twin-brothers-always-stay-spirit-week-the-living-room-sofa": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Twin Brothers Always Stay: Spirit Week & The Living Room Sofa",
         "theme": "raggiesoft-books",
         "filePath": "e002/c003/p001.md"
+    },
+    "/katie/the-blizzard-of-96-middle-school-freshman-year/freshman-lunch-chicken-patty-bites-the-demarco-decree": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Freshman Lunch, Chicken Patty Bites, & The DeMarco Decree",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|3"
+    },
+    "/katie/the-blizzard-of-96-middle-school-freshman-year/freshman-lunch-chicken-patty-bites-the-demarco-decree/cramping-fingers-cut-up-chicken-patty-bites-two-fifteen-at-the-dumpsters": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Cramping Fingers, Cut-Up Chicken Patty Bites, & Two-Fifteen at the Dumpsters",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c004/p001.md"
+    },
+    "/katie/the-blizzard-of-96-middle-school-freshman-year/freshman-lunch-chicken-patty-bites-the-demarco-decree/part-1-cramping-fingers-cut-up-chicken-patty-bites-two-fifteen-at-the-dumpsters": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Cramping Fingers, Cut-Up Chicken Patty Bites, & Two-Fifteen at the Dumpsters",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c004/p001.md"
     },
     "/katie/sixteen-summer-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
