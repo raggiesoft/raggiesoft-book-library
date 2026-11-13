@@ -14,31 +14,31 @@
         "ebook_sizes": {
             "epub": "59.4 MB",
             "pdf": "54.2 MB",
-            "text_epub": "673 KB",
+            "text_epub": "686 KB",
             "text_pdf": "1.8 MB",
-            "package_7z": "501 KB",
-            "epub_bytes": 62312467,
-            "pdf_bytes": 56796732,
-            "text_epub_bytes": 688810,
-            "text_pdf_bytes": 1880639,
-            "package_7z_bytes": 513471
+            "package_7z": "511 KB",
+            "epub_bytes": 62325793,
+            "pdf_bytes": 56831937,
+            "text_epub_bytes": 702134,
+            "text_pdf_bytes": 1916112,
+            "package_7z_bytes": 522789
         },
         "illustration_count": 138,
         "word_stats": {
-            "story_word_count": 287024,
-            "lore_word_count": 68439,
-            "combined_word_count": 355463,
-            "story_page_count": 1044,
-            "combined_page_count": 1293,
-            "reading_hours": 19.1,
-            "reading_minutes": 1148,
+            "story_word_count": 292195,
+            "lore_word_count": 68805,
+            "combined_word_count": 361000,
+            "story_page_count": 1063,
+            "combined_page_count": 1313,
+            "reading_hours": 19.5,
+            "reading_minutes": 1169,
             "novel_equivalent": 3.2,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
             "benchmark_note": "3.2\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
             "era_count": 11,
-            "chapter_count": 40,
-            "part_count": 105,
+            "chapter_count": 43,
+            "part_count": 108,
             "illustration_count": 138
         }
     },
@@ -120,83 +120,137 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c003/p001.md"
     },
-    "/katie/the-blizzard-of-96-middle-school-freshman-year": {
+    "/katie/early-childhood/all-summer-down-on-blackwater-road": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Blizzard of '96, Middle School, & Freshman Year",
+        "title": "All Summer Down on Blackwater Road",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|3"
+    },
+    "/katie/early-childhood/all-summer-down-on-blackwater-road/two-sisters-through-the-screen-door-uncle-steve-s-red-cedar-post-all-summer-sheltered-on-blackwater-road": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Two Sisters Through the Screen Door, Uncle Steve's Red Cedar Post, & All Summer Sheltered on Blackwater Road",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c004/p001.md"
+    },
+    "/katie/early-childhood/all-summer-down-on-blackwater-road/part-1-two-sisters-through-the-screen-door-uncle-steve-s-red-cedar-post-all-summer-sheltered-on-blackwater-road": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Two Sisters Through the Screen Door, Uncle Steve's Red Cedar Post, & All Summer Sheltered on Blackwater Road",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c004/p001.md"
+    },
+    "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Blizzard of '96, Blackwater Summers, Middle School, & Freshman Year",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|1"
     },
-    "/katie/the-blizzard-of-96-middle-school-freshman-year/the-blizzard-of-96": {
+    "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/the-blizzard-of-96": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Blizzard of '96",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|0"
     },
-    "/katie/the-blizzard-of-96-middle-school-freshman-year/the-blizzard-of-96/part-1-snow-day-in-virginia-beach-the-backyard-promise": {
+    "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/the-blizzard-of-96/part-1-snow-day-in-virginia-beach-the-backyard-promise": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Snow Day in Virginia Beach & The Backyard Promise",
         "theme": "raggiesoft-books",
         "filePath": "e002/c001/p001.md"
     },
-    "/katie/the-blizzard-of-96-middle-school-freshman-year/the-blizzard-of-96/part-2-sleet-on-the-glass-glaze-ice-across-tidewater-brittany-s-first-group-cuddle": {
+    "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/the-blizzard-of-96/part-2-sleet-on-the-glass-glaze-ice-across-tidewater-brittany-s-first-group-cuddle": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Sleet on the Glass, Glaze Ice Across Tidewater, & Brittany's First Group Cuddle",
         "theme": "raggiesoft-books",
         "filePath": "e002/c001/p002.md"
     },
-    "/katie/the-blizzard-of-96-middle-school-freshman-year/katie-is-dumped": {
+    "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/katie-is-dumped": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Katie Is Dumped",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|1"
     },
-    "/katie/the-blizzard-of-96-middle-school-freshman-year/katie-is-dumped/no-more-fighting-the-dinner-dance-promise": {
+    "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/katie-is-dumped/no-more-fighting-the-dinner-dance-promise": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "No More Fighting & The Dinner Dance Promise",
         "theme": "raggiesoft-books",
         "filePath": "e002/c002/p001.md"
     },
-    "/katie/the-blizzard-of-96-middle-school-freshman-year/katie-is-dumped/part-1-no-more-fighting-the-dinner-dance-promise": {
+    "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/katie-is-dumped/part-1-no-more-fighting-the-dinner-dance-promise": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "No More Fighting & The Dinner Dance Promise",
         "theme": "raggiesoft-books",
         "filePath": "e002/c002/p001.md"
     },
-    "/katie/the-blizzard-of-96-middle-school-freshman-year/the-pretend-boyfriend-twins-day": {
+    "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/the-pretend-boyfriend-twins-day": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Pretend Boyfriend & Twins' Day",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|2"
     },
-    "/katie/the-blizzard-of-96-middle-school-freshman-year/the-pretend-boyfriend-twins-day/twin-brothers-always-stay-spirit-week-the-living-room-sofa": {
+    "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/the-pretend-boyfriend-twins-day/twin-brothers-always-stay-spirit-week-the-living-room-sofa": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Twin Brothers Always Stay: Spirit Week & The Living Room Sofa",
         "theme": "raggiesoft-books",
         "filePath": "e002/c003/p001.md"
     },
-    "/katie/the-blizzard-of-96-middle-school-freshman-year/the-pretend-boyfriend-twins-day/part-1-twin-brothers-always-stay-spirit-week-the-living-room-sofa": {
+    "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/the-pretend-boyfriend-twins-day/part-1-twin-brothers-always-stay-spirit-week-the-living-room-sofa": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Twin Brothers Always Stay: Spirit Week & The Living Room Sofa",
         "theme": "raggiesoft-books",
         "filePath": "e002/c003/p001.md"
     },
-    "/katie/the-blizzard-of-96-middle-school-freshman-year/freshman-lunch-chicken-patty-bites-the-demarco-decree": {
+    "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/summer-1998-on-blackwater-road-what-s-inside-the-cabinet-bleak-numbers-on-the-ledger": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Freshman Lunch, Chicken Patty Bites, & The DeMarco Decree",
+        "title": "Summer 1998 on Blackwater Road: What's Inside the Cabinet & Bleak Numbers on the Ledger",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|1|3"
     },
-    "/katie/the-blizzard-of-96-middle-school-freshman-year/freshman-lunch-chicken-patty-bites-the-demarco-decree/cramping-fingers-cut-up-chicken-patty-bites-two-fifteen-at-the-dumpsters": {
+    "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/summer-1998-on-blackwater-road-what-s-inside-the-cabinet-bleak-numbers-on-the-ledger/tropical-brochures-on-the-counter-aunt-karen-and-dad-s-gentle-truth-bleak-numbers-on-the-farm-ledger": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Cramping Fingers, Cut-Up Chicken Patty Bites, & Two-Fifteen at the Dumpsters",
+        "title": "Tropical Brochures on the Counter, Aunt Karen and Dad's Gentle Truth, & Bleak Numbers on the Farm Ledger",
         "theme": "raggiesoft-books",
         "filePath": "e002/c004/p001.md"
     },
-    "/katie/the-blizzard-of-96-middle-school-freshman-year/freshman-lunch-chicken-patty-bites-the-demarco-decree/part-1-cramping-fingers-cut-up-chicken-patty-bites-two-fifteen-at-the-dumpsters": {
+    "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/summer-1998-on-blackwater-road-what-s-inside-the-cabinet-bleak-numbers-on-the-ledger/part-1-tropical-brochures-on-the-counter-aunt-karen-and-dad-s-gentle-truth-bleak-numbers-on-the-farm-ledger": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Tropical Brochures on the Counter, Aunt Karen and Dad's Gentle Truth, & Bleak Numbers on the Farm Ledger",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c004/p001.md"
+    },
+    "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/two-dollars-a-bushel-one-last-harvest-goodbye-to-blackwater-road": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Two Dollars a Bushel: One Last Harvest & Goodbye to Blackwater Road",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|4"
+    },
+    "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/two-dollars-a-bushel-one-last-harvest-goodbye-to-blackwater-road/two-dollars-and-ten-cents-a-bushel-unhooked-soybean-drills-one-last-sunset-across-the-wheat-stubble": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Two Dollars and Ten Cents a Bushel, Unhooked Soybean Drills, & One Last Sunset Across the Wheat Stubble",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c005/p001.md"
+    },
+    "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/two-dollars-a-bushel-one-last-harvest-goodbye-to-blackwater-road/part-1-two-dollars-and-ten-cents-a-bushel-unhooked-soybean-drills-one-last-sunset-across-the-wheat-stubble": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Two Dollars and Ten Cents a Bushel, Unhooked Soybean Drills, & One Last Sunset Across the Wheat Stubble",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c005/p001.md"
+    },
+    "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/freshman-lunch-chicken-patty-bites-the-demarco-decree": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Freshman Lunch, Chicken Patty Bites, & The DeMarco Decree",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|5"
+    },
+    "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/freshman-lunch-chicken-patty-bites-the-demarco-decree/cramping-fingers-cut-up-chicken-patty-bites-two-fifteen-at-the-dumpsters": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Cramping Fingers, Cut-Up Chicken Patty Bites, & Two-Fifteen at the Dumpsters",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c004/p001.md"
+        "filePath": "e002/c006/p001.md"
+    },
+    "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/freshman-lunch-chicken-patty-bites-the-demarco-decree/part-1-cramping-fingers-cut-up-chicken-patty-bites-two-fifteen-at-the-dumpsters": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Cramping Fingers, Cut-Up Chicken Patty Bites, & Two-Fifteen at the Dumpsters",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c006/p001.md"
     },
     "/katie/sixteen-summer-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
