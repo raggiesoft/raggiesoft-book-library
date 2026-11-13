@@ -17,17 +17,17 @@
             "text_epub": "686 KB",
             "text_pdf": "1.8 MB",
             "package_7z": "511 KB",
-            "epub_bytes": 62326324,
-            "pdf_bytes": 56833150,
+            "epub_bytes": 62326322,
+            "pdf_bytes": 56833180,
             "text_epub_bytes": 702671,
-            "text_pdf_bytes": 1917040,
-            "package_7z_bytes": 523188
+            "text_pdf_bytes": 1917070,
+            "package_7z_bytes": 523080
         },
         "illustration_count": 138,
         "word_stats": {
-            "story_word_count": 292444,
+            "story_word_count": 292451,
             "lore_word_count": 69002,
-            "combined_word_count": 361446,
+            "combined_word_count": 361453,
             "story_page_count": 1063,
             "combined_page_count": 1314,
             "reading_hours": 19.5,
