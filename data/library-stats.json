@@ -1,23 +1,23 @@
 {
-    "generated_at": "2026-11-13T02:12:41+00:00",
+    "generated_at": "2026-11-14T02:48:57+00:00",
     "volume_count": 31,
     "active_story_volume_count": 28,
     "total_eras": 203,
     "total_chapters": 840,
-    "total_parts": 1465,
-    "total_illustrations": 394,
-    "total_story_words": 3441865,
-    "total_book_lore_words": 385609,
+    "total_parts": 1461,
+    "total_illustrations": 380,
+    "total_story_words": 3422190,
+    "total_book_lore_words": 382614,
     "total_shared_universe_lore_words": 166613,
-    "total_curated_lore_words": 552222,
+    "total_curated_lore_words": 549227,
     "total_lyrics_words": 144028,
-    "total_combined_words": 3994087,
-    "total_combined_with_lyrics_words": 4138115,
-    "total_story_pages": 12516,
-    "total_combined_pages": 14524,
-    "total_reading_hours": 229.5,
-    "total_novel_equivalents": 38.2,
-    "total_combined_novel_equivalents": 44.4,
+    "total_combined_words": 3971417,
+    "total_combined_with_lyrics_words": 4115445,
+    "total_story_pages": 12444,
+    "total_combined_pages": 14442,
+    "total_reading_hours": 228.1,
+    "total_novel_equivalents": 38,
+    "total_combined_novel_equivalents": 44.1,
     "shared_lore_breakdown": [
         {
             "label": "Universal Lore Archive (CPI, Transit, Cities & Institutions)",
@@ -60,7 +60,7 @@
                 "pdf_bytes": 84152358,
                 "text_epub_bytes": 1167211,
                 "text_pdf_bytes": 3253711,
-                "package_7z_bytes": 807556
+                "package_7z_bytes": 807561
             },
             "word_stats": {
                 "story_word_count": 498551,
@@ -95,7 +95,7 @@
                 "pdf_bytes": 56110642,
                 "text_epub_bytes": 1030010,
                 "text_pdf_bytes": 3873509,
-                "package_7z_bytes": 735534
+                "package_7z_bytes": 735531
             },
             "word_stats": {
                 "story_word_count": 413615,
@@ -151,41 +151,6 @@
             }
         },
         {
-            "slug": "katie",
-            "title": "Katie & Nathaniel",
-            "image": "/raggiesoft-books/images/covers/2x3/katie.jpg",
-            "short_description": "From childhood cartoon passwords and square-closet sanctuaries in Virginia Beach to Coastal Virginia Transit buses, walking out of Roosevelt Rehabilitation Center after twelve days, and serving in the Virginia General Assembly and the United States Senate, autistic fraternal twins Katie and Nathaniel (\"Nate\") Prairie never leave each other behind.",
-            "ebook_sizes": {
-                "epub": "59.4 MB",
-                "pdf": "54.2 MB",
-                "text_epub": "686 KB",
-                "text_pdf": "1.8 MB",
-                "package_7z": "512 KB",
-                "epub_bytes": 62326322,
-                "pdf_bytes": 56833180,
-                "text_epub_bytes": 702671,
-                "text_pdf_bytes": 1917070,
-                "package_7z_bytes": 524487
-            },
-            "word_stats": {
-                "story_word_count": 293304,
-                "lore_word_count": 69395,
-                "combined_word_count": 362699,
-                "story_page_count": 1067,
-                "combined_page_count": 1319,
-                "reading_hours": 19.6,
-                "reading_minutes": 1173,
-                "novel_equivalent": 3.3,
-                "scale_category": "Multi-Volume Epic Omnibus",
-                "scale_badge": "Multi-Volume Omnibus",
-                "benchmark_note": "3.3× a standard 90,000-word contemporary novel (~3-volume print series)",
-                "era_count": 11,
-                "chapter_count": 43,
-                "part_count": 108,
-                "illustration_count": 138
-            }
-        },
-        {
             "slug": "alex-chloe",
             "title": "Beyond Words",
             "image": "/raggiesoft-books/images/covers/2x3/alex-chloe.jpg",
@@ -200,7 +165,7 @@
                 "pdf_bytes": 1801709,
                 "text_epub_bytes": 673136,
                 "text_pdf_bytes": 1801709,
-                "package_7z_bytes": 463338
+                "package_7z_bytes": 463339
             },
             "word_stats": {
                 "story_word_count": 275128,
@@ -221,6 +186,41 @@
             }
         },
         {
+            "slug": "katie",
+            "title": "Katie & Nathaniel",
+            "image": "/raggiesoft-books/images/covers/2x3/katie.jpg",
+            "short_description": "From childhood cartoon passwords and square-closet sanctuaries in Virginia Beach to Coastal Virginia Transit buses, walking out of Roosevelt Rehabilitation Center after twelve days, and serving in the Virginia General Assembly and the United States Senate, autistic fraternal twins Katie and Nathaniel (\"Nate\") Prairie never leave each other behind.",
+            "ebook_sizes": {
+                "epub": "59.4 MB",
+                "pdf": "54.2 MB",
+                "text_epub": "688 KB",
+                "text_pdf": "1.8 MB",
+                "package_7z": "483 KB",
+                "epub_bytes": 62328473,
+                "pdf_bytes": 56838360,
+                "text_epub_bytes": 704765,
+                "text_pdf_bytes": 1922986,
+                "package_7z_bytes": 494563
+            },
+            "word_stats": {
+                "story_word_count": 273629,
+                "lore_word_count": 66400,
+                "combined_word_count": 340029,
+                "story_page_count": 995,
+                "combined_page_count": 1236,
+                "reading_hours": 18.2,
+                "reading_minutes": 1095,
+                "novel_equivalent": 3,
+                "scale_category": "Multi-Volume Epic Omnibus",
+                "scale_badge": "Multi-Volume Omnibus",
+                "benchmark_note": "3.0× a standard 90,000-word contemporary novel (~3-volume print series)",
+                "era_count": 11,
+                "chapter_count": 43,
+                "part_count": 104,
+                "illustration_count": 124
+            }
+        },
+        {
             "slug": "apex-fall-of-earth",
             "title": "Apex: Fall of Earth",
             "image": "/raggiesoft-books/images/covers/2x3/apex-fall-of-earth.jpg",
@@ -235,7 +235,7 @@
                 "pdf_bytes": 1764104,
                 "text_epub_bytes": 608772,
                 "text_pdf_bytes": 1764104,
-                "package_7z_bytes": 426526
+                "package_7z_bytes": 426525
             },
             "word_stats": {
                 "story_word_count": 261029,
@@ -270,7 +270,7 @@
                 "pdf_bytes": 1475296,
                 "text_epub_bytes": 510178,
                 "text_pdf_bytes": 1475296,
-                "package_7z_bytes": 371752
+                "package_7z_bytes": 371757
             },
             "word_stats": {
                 "story_word_count": 214143,
@@ -305,7 +305,7 @@
                 "pdf_bytes": 1272780,
                 "text_epub_bytes": 454748,
                 "text_pdf_bytes": 1272780,
-                "package_7z_bytes": 327999
+                "package_7z_bytes": 328009
             },
             "word_stats": {
                 "story_word_count": 186519,
@@ -340,7 +340,7 @@
                 "pdf_bytes": 4170889,
                 "text_epub_bytes": 407529,
                 "text_pdf_bytes": 1263465,
-                "package_7z_bytes": 300719
+                "package_7z_bytes": 300728
             },
             "word_stats": {
                 "story_word_count": 169175,
@@ -375,7 +375,7 @@
                 "pdf_bytes": 858237,
                 "text_epub_bytes": 301711,
                 "text_pdf_bytes": 858237,
-                "package_7z_bytes": 228974
+                "package_7z_bytes": 228976
             },
             "word_stats": {
                 "story_word_count": 132610,
@@ -410,7 +410,7 @@
                 "pdf_bytes": 663054,
                 "text_epub_bytes": 237599,
                 "text_pdf_bytes": 663054,
-                "package_7z_bytes": 172114
+                "package_7z_bytes": 172109
             },
             "word_stats": {
                 "story_word_count": 94109,
@@ -445,7 +445,7 @@
                 "pdf_bytes": 3367309,
                 "text_epub_bytes": 189671,
                 "text_pdf_bytes": 3367313,
-                "package_7z_bytes": 144950
+                "package_7z_bytes": 144953
             },
             "word_stats": {
                 "story_word_count": 81433,
@@ -480,7 +480,7 @@
                 "pdf_bytes": 482428,
                 "text_epub_bytes": 169681,
                 "text_pdf_bytes": 482428,
-                "package_7z_bytes": 126116
+                "package_7z_bytes": 126118
             },
             "word_stats": {
                 "story_word_count": 68046,
@@ -515,7 +515,7 @@
                 "pdf_bytes": 19691323,
                 "text_epub_bytes": 189100,
                 "text_pdf_bytes": 573976,
-                "package_7z_bytes": 142855
+                "package_7z_bytes": 142857
             },
             "word_stats": {
                 "story_word_count": 65118,
@@ -550,7 +550,7 @@
                 "pdf_bytes": 415749,
                 "text_epub_bytes": 155170,
                 "text_pdf_bytes": 415749,
-                "package_7z_bytes": 112011
+                "package_7z_bytes": 112010
             },
             "word_stats": {
                 "story_word_count": 57383,
@@ -585,7 +585,7 @@
                 "pdf_bytes": 259351,
                 "text_epub_bytes": 87849,
                 "text_pdf_bytes": 259351,
-                "package_7z_bytes": 70784
+                "package_7z_bytes": 70791
             },
             "word_stats": {
                 "story_word_count": 34858,
@@ -655,7 +655,7 @@
                 "pdf_bytes": 241676,
                 "text_epub_bytes": 84495,
                 "text_pdf_bytes": 241676,
-                "package_7z_bytes": 68204
+                "package_7z_bytes": 68203
             },
             "word_stats": {
                 "story_word_count": 32393,
@@ -690,7 +690,7 @@
                 "pdf_bytes": 5514555,
                 "text_epub_bytes": 79111,
                 "text_pdf_bytes": 5514555,
-                "package_7z_bytes": 60950
+                "package_7z_bytes": 60955
             },
             "word_stats": {
                 "story_word_count": 29910,
@@ -725,7 +725,7 @@
                 "pdf_bytes": 2175257,
                 "text_epub_bytes": 85320,
                 "text_pdf_bytes": 277257,
-                "package_7z_bytes": 68605
+                "package_7z_bytes": 68612
             },
             "word_stats": {
                 "story_word_count": 28808,
@@ -760,7 +760,7 @@
                 "pdf_bytes": 206049,
                 "text_epub_bytes": 74039,
                 "text_pdf_bytes": 206049,
-                "package_7z_bytes": 57805
+                "package_7z_bytes": 57801
             },
             "word_stats": {
                 "story_word_count": 28754,
@@ -795,7 +795,7 @@
                 "pdf_bytes": 202768,
                 "text_epub_bytes": 70990,
                 "text_pdf_bytes": 202768,
-                "package_7z_bytes": 53972
+                "package_7z_bytes": 53973
             },
             "word_stats": {
                 "story_word_count": 26090,
@@ -830,7 +830,7 @@
                 "pdf_bytes": 194536,
                 "text_epub_bytes": 66662,
                 "text_pdf_bytes": 194536,
-                "package_7z_bytes": 50586
+                "package_7z_bytes": 50589
             },
             "word_stats": {
                 "story_word_count": 25121,
@@ -900,7 +900,7 @@
                 "pdf_bytes": 121729,
                 "text_epub_bytes": 41112,
                 "text_pdf_bytes": 121729,
-                "package_7z_bytes": 32504
+                "package_7z_bytes": 32503
             },
             "word_stats": {
                 "story_word_count": 15245,
@@ -935,7 +935,7 @@
                 "pdf_bytes": 41824,
                 "text_epub_bytes": 14621,
                 "text_pdf_bytes": 41824,
-                "package_7z_bytes": 35535
+                "package_7z_bytes": 35541
             },
             "word_stats": {
                 "story_word_count": 14030,
@@ -970,7 +970,7 @@
                 "pdf_bytes": 73850,
                 "text_epub_bytes": 20317,
                 "text_pdf_bytes": 73850,
-                "package_7z_bytes": 15359
+                "package_7z_bytes": 15360
             },
             "word_stats": {
                 "story_word_count": 5551,
@@ -1075,7 +1075,7 @@
                 "pdf_bytes": 3540,
                 "text_epub_bytes": 5403,
                 "text_pdf_bytes": 3540,
-                "package_7z_bytes": 1194
+                "package_7z_bytes": 1195
             },
             "word_stats": {
                 "story_word_count": 0,

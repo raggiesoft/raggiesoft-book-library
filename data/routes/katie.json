@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "59.4 MB",
-            "pdf": "54.2 MB",
-            "text_epub": "688 KB",
-            "text_pdf": "1.8 MB",
-            "package_7z": "512 KB",
-            "epub_bytes": 62328473,
-            "pdf_bytes": 56838360,
-            "text_epub_bytes": 704765,
-            "text_pdf_bytes": 1922986,
-            "package_7z_bytes": 524487
+            "epub": "55.6 MB",
+            "pdf": "52.1 MB",
+            "text_epub": "651 KB",
+            "text_pdf": "1.7 MB",
+            "package_7z": "483 KB",
+            "epub_bytes": 58349112,
+            "pdf_bytes": 54660257,
+            "text_epub_bytes": 666391,
+            "text_pdf_bytes": 1813610,
+            "package_7z_bytes": 494563
         },
-        "illustration_count": 138,
+        "illustration_count": 124,
         "word_stats": {
-            "story_word_count": 293304,
-            "lore_word_count": 69395,
-            "combined_word_count": 362699,
-            "story_page_count": 1067,
-            "combined_page_count": 1319,
-            "reading_hours": 19.6,
-            "reading_minutes": 1173,
-            "novel_equivalent": 3.3,
+            "story_word_count": 273629,
+            "lore_word_count": 66400,
+            "combined_word_count": 340029,
+            "story_page_count": 995,
+            "combined_page_count": 1236,
+            "reading_hours": 18.2,
+            "reading_minutes": 1095,
+            "novel_equivalent": 3,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
-            "benchmark_note": "3.3\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
+            "benchmark_note": "3.0\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
             "era_count": 11,
             "chapter_count": 43,
-            "part_count": 108,
-            "illustration_count": 138
+            "part_count": 104,
+            "illustration_count": 124
         }
     },
     "/katie": {
@@ -426,113 +426,89 @@
         "theme": "raggiesoft-books",
         "filePath": "e004/c002/p003.md"
     },
-    "/katie/seventeen-senior-year-greenway-court/the-admiral-center-bookstore-meeting-tiffany": {
+    "/katie/seventeen-senior-year-greenway-court/the-admiral-center-patio-moving-together-to-williamsburg": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Admiral Center Bookstore & Meeting Tiffany",
+        "title": "The Admiral Center Patio & Moving Together to Williamsburg",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|3|2"
     },
-    "/katie/seventeen-senior-year-greenway-court/the-admiral-center-bookstore-meeting-tiffany/part-1-death-by-cascading-style-sheets-iced-cocoa-at-chapters-co": {
+    "/katie/seventeen-senior-year-greenway-court/the-admiral-center-patio-moving-together-to-williamsburg/part-1-spilled-hot-chocolate-on-the-admiral-center-patio-brandon-mercer-presents-himself-as-a-gentleman": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Death by Cascading Style Sheets & Iced Cocoa at Chapters & Co.",
+        "title": "Part 1: Spilled Hot Chocolate on The Admiral Center Patio & Brandon Mercer Presents Himself as a Gentleman",
         "theme": "raggiesoft-books",
         "filePath": "e004/c003/p001.md"
     },
-    "/katie/seventeen-senior-year-greenway-court/the-admiral-center-bookstore-meeting-tiffany/part-2-saturday-pizza-in-apartment-a6-katie-s-wholehearted-blessing": {
+    "/katie/seventeen-senior-year-greenway-court/the-admiral-center-patio-moving-together-to-williamsburg/part-2-a-non-negotiable-package-deal-dad-s-calling-cards-moving-together-to-williamsburg": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Saturday Pizza in Apartment A6 & Katie's Wholehearted Blessing",
+        "title": "Part 2: A Non-Negotiable Package Deal, Dad's Calling Cards, & Moving Together to Williamsburg",
         "theme": "raggiesoft-books",
         "filePath": "e004/c003/p002.md"
     },
-    "/katie/seventeen-senior-year-greenway-court/the-admiral-center-bookstore-meeting-tiffany/part-3-tiffany-s-pitch-for-our-own-place-in-ocean-view-the-promise-of-brother-and-sister-weekends": {
+    "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Tiffany's Pitch for Our Own Place in Ocean View & The Promise of Brother-and-Sister Weekends",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c003/p003.md"
-    },
-    "/katie/west-ocean-view-reclaiming-our-sanctuary": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "West Ocean View & Reclaiming Our Sanctuary",
+        "title": "Six Buses from Williamsburg, Sea Breeze West, & Coming Home to Arvin Road",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|4"
     },
-    "/katie/west-ocean-view-reclaiming-our-sanctuary/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg": {
+    "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/north-henry-street-six-buses-from-williamsburg-the-goyeau-street-tunnel-file": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Ocean View Station, Dirty Old Tonomy Hill, & Five Buses from Williamsburg",
+        "title": "North Henry Street, Six Buses from Williamsburg, & The Goyeau Street Tunnel File",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|0"
     },
-    "/katie/west-ocean-view-reclaiming-our-sanctuary/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg/part-1-ocean-view-station-the-green-sofa-confrontation-speak-now-or-forever-hold-your-peace": {
+    "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/north-henry-street-six-buses-from-williamsburg-the-goyeau-street-tunnel-file/part-1-closed-bedroom-doors-the-three-by-six-closet-sanctuary-unwritten-couple-rules": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Ocean View Station, The Green Sofa Confrontation, & Speak Now or Forever Hold Your Peace",
+        "title": "Part 1: Closed Bedroom Doors, The Three-by-Six Closet Sanctuary, & Unwritten Couple Rules",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/p001.md"
     },
-    "/katie/west-ocean-view-reclaiming-our-sanctuary/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg/part-2-riding-route-1-back-to-west-ghent-meeting-brandon-mercer-at-the-admiral-center-taking-things-slow": {
+    "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/north-henry-street-six-buses-from-williamsburg-the-goyeau-street-tunnel-file/part-2-six-buses-from-williamsburg-the-blind-leap-at-boundary-street-crown-burger-open-radio-on-route-20-dad-at-indian-river-road": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Riding Route 1 Back to West Ghent, Meeting Brandon Mercer at The Admiral Center, & Taking Things Slow",
+        "title": "Part 2: Six Buses from Williamsburg \u2014 The Blind Leap at Boundary Street, Crown Burger, Open Radio on Route 20, & Dad at Indian River Road",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/p002.md"
     },
-    "/katie/west-ocean-view-reclaiming-our-sanctuary/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg/part-3-patience-at-katie-s-pace-winning-over-nate-and-dad-katie-s-move-to-williamsburg": {
+    "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/north-henry-street-six-buses-from-williamsburg-the-goyeau-street-tunnel-file/part-3-the-goyeau-street-tunnel-bus-the-trashed-ticket-on-east-jefferson-avenue-protected-non-traveling-complainant": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Patience at Katie's Pace, Winning Over Nate and Dad, & Katie's Move to Williamsburg",
+        "title": "Part 3: The Goyeau Street Tunnel Bus, The Trashed Ticket on East Jefferson Avenue, & Protected Non-Traveling Complainant",
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/p003.md"
     },
-    "/katie/west-ocean-view-reclaiming-our-sanctuary/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg/part-4-the-worst-christmas-ever-eighteen-stops-to-dirty-old-tonomy-hill-four-days-with-cousin-chelsea-the-west-main-road-shortcut-home": {
+    "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: The Worst Christmas Ever: Eighteen Stops to Dirty Old Tonomy Hill, Four Days with Cousin Chelsea, & The West Main Road Shortcut Home",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/p004.md"
-    },
-    "/katie/west-ocean-view-reclaiming-our-sanctuary/ocean-view-station-dirty-old-tonomy-hill-five-buses-from-williamsburg/part-5-five-buses-from-williamsburg-the-ninety-second-window-crown-burger-the-last-route-61-across-the-water": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: Five Buses from Williamsburg \u2014 The Ninety-Second Window, Crown Burger, & The Last Route 61 Across the Water",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/p005.md"
-    },
-    "/katie/west-ocean-view-reclaiming-our-sanctuary/the-end-of-hell-reclaiming-apartment-3": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The End of Hell & Reclaiming Apartment 3",
+        "title": "Tiffany's Sea Breeze West Apartment, Dirty Old Tonomy Hill, & Coming Home to Arvin Road",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|4|1"
     },
-    "/katie/west-ocean-view-reclaiming-our-sanctuary/the-end-of-hell-reclaiming-apartment-3/part-1-a-sister-s-worst-nightmare-tiffany-forces-a-choice-scrubbing-out-the-filth": {
+    "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road/part-1-chapters-co-after-williamsburg-tiffany-sloan-invites-both-twins-into-sea-breeze-west": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: A Sister's Worst Nightmare, Tiffany Forces a Choice, & Scrubbing Out the Filth",
+        "title": "Part 1: Chapters & Co. After Williamsburg & Tiffany Sloan Invites Both Twins Into Sea Breeze West",
         "theme": "raggiesoft-books",
         "filePath": "e005/c002/p001.md"
     },
-    "/katie/west-ocean-view-reclaiming-our-sanctuary/the-end-of-hell-reclaiming-apartment-3/part-2-the-8-13-am-bus-to-cchr-all-new-queen-bedding-dad-s-pickup-truck-the-hallway-closet-sanctuary": {
+    "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road/part-2-the-worst-christmas-ever-eighteen-stops-to-dirty-old-tonomy-hill-four-days-with-cousin-chelsea-the-west-main-road-shortcut-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: The 8:13 AM Bus to CCHR, All-New Queen Bedding, Dad's Pickup Truck, & The Hallway Closet Sanctuary",
+        "title": "Part 2: The Worst Christmas Ever: Eighteen Stops to Dirty Old Tonomy Hill, Four Days with Cousin Chelsea, & The West Main Road Shortcut Home",
         "theme": "raggiesoft-books",
         "filePath": "e005/c002/p002.md"
     },
-    "/katie/west-ocean-view-reclaiming-our-sanctuary/the-end-of-hell-reclaiming-apartment-3/part-3-the-goyeau-street-tunnel-bus-the-federal-courthouse-on-granby-street-protected-non-traveling-complainant": {
+    "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road/part-3-milk-isn-t-allowed-in-this-fridge-tiffany-s-sunday-morning-accusation-yes-or-no-questions-through-tears": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Goyeau Street Tunnel Bus, The Federal Courthouse on Granby Street, & Protected Non-Traveling Complainant",
+        "title": "Part 3: Milk Isn't Allowed in This Fridge, Tiffany's Sunday Morning Accusation, & Yes-or-No Questions Through Tears",
         "theme": "raggiesoft-books",
         "filePath": "e005/c002/p003.md"
     },
-    "/katie/west-ocean-view-reclaiming-our-sanctuary/the-end-of-hell-reclaiming-apartment-3/part-4-thanksgiving-dinner-at-dad-s-house-the-black-friday-closet-project-the-secret-on-the-closet-floor": {
+    "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road/part-4-thanksgiving-dinner-home-on-arvin-road-the-black-friday-closet-sanctuary-quietly-launching-ideas-for-coastal-virginia-transit": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: Thanksgiving Dinner at Dad's House, The Black Friday Closet Project, & The Secret on the Closet Floor",
+        "title": "Part 4: Thanksgiving Dinner Home on Arvin Road, The Black Friday Closet Sanctuary, & Quietly Launching Ideas for Coastal Virginia Transit",
         "theme": "raggiesoft-books",
         "filePath": "e005/c002/p004.md"
     },
-    "/katie/west-ocean-view-reclaiming-our-sanctuary/the-end-of-hell-reclaiming-apartment-3/part-5-the-seattle-transit-blog-inspiration-quietly-launching-ideas-for-coastal-virginia-transit": {
+    "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road/part-5-the-cchr-disability-counselor-the-glossy-fishersville-pitch-why-brother-and-sister-should-get-to-share-a-dorm-room": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: The Seattle Transit Blog Inspiration & Quietly Launching Ideas for Coastal Virginia Transit",
+        "title": "Part 5: The CCHR Disability Counselor, The Glossy Fishersville Pitch, & Why Brother and Sister Should Get to Share a Dorm Room",
         "theme": "raggiesoft-books",
         "filePath": "e005/c002/p005.md"
-    },
-    "/katie/west-ocean-view-reclaiming-our-sanctuary/the-end-of-hell-reclaiming-apartment-3/part-6-the-cchr-disability-counselor-the-glossy-fishersville-pitch-why-brother-and-sister-should-get-to-share-a-dorm-room": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: The CCHR Disability Counselor, The Glossy Fishersville Pitch, & Why Brother and Sister Should Get to Share a Dorm Room",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/p006.md"
     },
     "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good": {
         "view": "pages/raggiesoft-books/books/viewer",
