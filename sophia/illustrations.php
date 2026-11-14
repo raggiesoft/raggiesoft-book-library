@@ -16,7 +16,7 @@ $seriesTitleForIllus = $toc_manifest['series_title'] ?? ucwords(str_replace('-',
 <div class="book-page" style="max-width: 960px; margin: 0 auto;">
     <div style="margin-bottom: 1.5rem; border-bottom: 2px solid var(--rs-border); padding-bottom: 1rem;">
         <h1 style="margin: 0 0 0.45rem 0; color: var(--rs-primary);">Table of Illustrations</h1>
-        <p style="margin: 0; font-size: 0.96rem; opacity: 0.85;">
+        <p style="margin: 0; font-size: 0.96rem; color: var(--rs-text-muted);">
             Visual scene index and high-resolution artwork gallery for <strong><?= htmlspecialchars($seriesTitleForIllus) ?></strong>.
         </p>
     </div>

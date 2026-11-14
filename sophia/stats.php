@@ -208,8 +208,7 @@ foreach ($booksList as $bItem) {
     }
     .ova-scale-tier-note {
         font-size: 0.72rem;
-        color: var(--rs-text);
-        opacity: 0.82;
+        color: var(--rs-text-muted);
         margin-top: 0.18rem;
         line-height: 1.3;
     }
@@ -243,7 +242,7 @@ foreach ($booksList as $bItem) {
     }
     .ova-stats-filter-btn.is-active {
         background: var(--rs-primary);
-        color: #ffffff;
+        color: var(--rs-on-primary, #ffffff);
         border-color: var(--rs-primary);
     }
     .ova-stats-search-input {
@@ -305,7 +304,7 @@ foreach ($booksList as $bItem) {
     .ova-stats-table td.cell-rank {
         text-align: center;
         font-weight: 800;
-        opacity: 0.65;
+        color: var(--rs-text-muted);
     }
     .ova-stats-table tbody tr:last-child td {
         border-bottom: none;
@@ -341,7 +340,7 @@ foreach ($booksList as $bItem) {
     }
     .ova-stats-book-meta {
         font-size: 0.73rem;
-        opacity: 0.8;
+        color: var(--rs-text-muted);
         margin-top: 0.15rem;
         line-height: 1.3;
     }
@@ -360,7 +359,7 @@ foreach ($booksList as $bItem) {
         height: 100%;
     }
     .ova-stats-bar-lore {
-        background: #E3B27C;
+        background: var(--rs-secondary);
         height: 100%;
     }
     .ova-scale-badge {
@@ -461,7 +460,7 @@ foreach ($booksList as $bItem) {
             content: "Print & Reading Estimate:";
             font-size: 0.72rem;
             font-weight: 700;
-            opacity: 0.75;
+            color: var(--rs-text-muted);
         }
         .ova-stats-table td.cell-scale {
             padding-top: 0.35rem;
@@ -475,7 +474,7 @@ foreach ($booksList as $bItem) {
     <section class="ova-stats-hero" aria-labelledby="ova-stats-main-heading">
         <div class="ova-stats-hero-inner">
             <div class="ova-stats-kicker">
-                <i class="ph-fill ph-chart-bar"></i> Live Dynamic Telemetry &bull; Updated Automatically by Paige
+                <i class="ph-fill ph-chart-bar"></i> Live Dynamic Telemetry &bull; Updated Automatically
             </div>
             <h1 id="ova-stats-main-heading" class="ova-stats-title">
                 Library Word Count &amp; Publishing Scale Ledger
@@ -539,7 +538,7 @@ foreach ($booksList as $bItem) {
                 <h2 id="ova-scale-ref-heading" style="font-size: 1.15rem; font-weight: 800; color: var(--rs-heading); margin: 0;">
                     <i class="ph-fill ph-ruler" style="color: var(--rs-primary);"></i> Standard Contemporary Publishing Length Classifications
                 </h2>
-                <span style="font-size: 0.8rem; color: var(--rs-text); opacity: 0.8;">
+                <span style="font-size: 0.8rem; color: var(--rs-text-muted);">
                     Page counts calculated at the standard 275 words/page trade paperback typesetting rate
                 </span>
             </div>
@@ -584,8 +583,8 @@ foreach ($booksList as $bItem) {
                     <h2 id="ova-novel-ledger-heading" style="font-size: 1.35rem; font-weight: 800; color: var(--rs-heading); margin: 0 0 0.25rem 0;">
                         Volume-by-Volume Word Count &amp; Scale Breakdown (<?= $volumeCount ?> Volumes)
                     </h2>
-                    <p style="font-size: 0.85rem; color: var(--rs-text); opacity: 0.82; margin: 0;">
-                        Showing <span style="color: var(--rs-primary); font-weight: 700;">■ Story Prose</span> + <span style="color: #d99b52; font-weight: 700;">■ Series &amp; Companion Album Lore</span> for each volume.
+                    <p style="font-size: 0.85rem; color: var(--rs-text-muted); margin: 0;">
+                        Showing <span style="color: var(--rs-primary); font-weight: 700;">■ Story Prose</span> + <span style="color: var(--rs-secondary); font-weight: 700;">■ Series &amp; Companion Album Lore</span> for each volume.
                     </p>
                 </div>
                 <div style="display: flex; flex-wrap: wrap; gap: 0.65rem; align-items: center;">
@@ -681,15 +680,15 @@ foreach ($booksList as $bItem) {
                             <td class="num cell-pages">
                                 <div>
                                     <span style="font-weight: 700; color: var(--rs-heading);">~<?= number_format($cPages) ?> pp</span>
-                                    <span style="opacity: 0.78;"> &bull; <?= htmlspecialchars($timeLabel) ?></span>
+                                    <span style="color: var(--rs-text-muted);"> &bull; <?= htmlspecialchars($timeLabel) ?></span>
                                     <?php if ($sPages > 0 && $sPages !== $cPages): ?>
-                                        <div style="font-size: 0.72rem; opacity: 0.72;">(<?= number_format($sPages) ?> story pp)</div>
+                                        <div style="font-size: 0.72rem; color: var(--rs-text-muted);">(<?= number_format($sPages) ?> story pp)</div>
                                     <?php endif; ?>
                                 </div>
                             </td>
                             <td class="cell-scale">
                                 <span class="ova-scale-badge"><?= htmlspecialchars($badge) ?></span>
-                                <div style="font-size: 0.74rem; opacity: 0.82; margin-top: 0.22rem; line-height: 1.35;">
+                                <div style="font-size: 0.74rem; color: var(--rs-text-muted); margin-top: 0.22rem; line-height: 1.35;">
                                     <?= htmlspecialchars($note) ?>
                                 </div>
                             </td>
@@ -706,7 +705,7 @@ foreach ($booksList as $bItem) {
             <h2 id="ova-shared-lore-heading" style="font-size: 1.3rem; font-weight: 800; color: var(--rs-heading); margin: 0 0 0.35rem 0;">
                 <i class="ph-fill ph-globe-hemisphere-west" style="color: var(--rs-primary);"></i> Shared Universe Lore &amp; Engine Room Records Music Archive
             </h2>
-            <p style="font-size: 0.88rem; color: var(--rs-text); opacity: 0.85; margin: 0 0 1rem 0;">
+            <p style="font-size: 0.88rem; color: var(--rs-text-muted); margin: 0 0 1rem 0;">
                 Cross-series worldbuilding archives, institutional charters, transit networks, and companion soundtrack lyrics shared across the RaggieSoft universe.
             </p>
             <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 0.9rem;">
@@ -716,7 +715,7 @@ foreach ($booksList as $bItem) {
                         <?= htmlspecialchars((string)($sItem['label'] ?? '')) ?>
                     </div>
                     <div style="font-size: 1.25rem; font-weight: 900; color: var(--rs-primary); font-variant-numeric: tabular-nums;">
-                        <?= number_format((int)($sItem['words'] ?? 0)) ?> <span style="font-size: 0.75rem; font-weight: 700; opacity: 0.8;">words</span>
+                        <?= number_format((int)($sItem['words'] ?? 0)) ?> <span style="font-size: 0.75rem; font-weight: 700; color: var(--rs-text-muted);">words</span>
                     </div>
                 </div>
                 <?php endforeach; ?>
@@ -724,7 +723,7 @@ foreach ($booksList as $bItem) {
         </section>
         <?php endif; ?>
 
-        <div style="padding-top: 1rem; border-top: 1px solid var(--rs-border); font-size: 0.8rem; color: var(--rs-text); opacity: 0.78; line-height: 1.5; text-align: center;">
+        <div style="padding-top: 1rem; border-top: 1px solid var(--rs-border); font-size: 0.8rem; color: var(--rs-text-muted); line-height: 1.5; text-align: center;">
             <strong>Work of Fiction Disclaimer:</strong> All novels, characters, bands, universities (including Commonwealth Polytechnic Institute / CPI), corporations (including OmniCorp, Axiom, Apex Records, Prairie Coachworks, and Sainte-Claire), transit agencies (Blue Ridge Transit), and events depicted in the Ocean View Archives are works of fiction. Any resemblance to actual persons, living or dead, businesses, institutions, or events is purely coincidental.
         </div>
     </div>

@@ -314,7 +314,7 @@ $homeNovelEquivs = (float)($homeTotals['total_novel_equivalents'] ?? ($homeTotal
         font-size: 0.95rem;
         text-decoration: none;
         background: var(--rs-primary);
-        color: #ffffff !important;
+        color: var(--rs-on-primary, #ffffff) !important;
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
     }
 
@@ -420,7 +420,7 @@ $homeNovelEquivs = (float)($homeTotals['total_novel_equivalents'] ?? ($homeTotal
         font-size: 0.9rem;
         text-decoration: none;
         background: var(--rs-primary);
-        color: #ffffff !important;
+        color: var(--rs-on-primary, #ffffff) !important;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
     }
 
@@ -485,7 +485,7 @@ $homeNovelEquivs = (float)($homeTotals['total_novel_equivalents'] ?? ($homeTotal
     .ova-pipeline-banner {
         background: var(--rs-surface);
         border: 1px solid var(--rs-border);
-        border-left: 4px solid #0F4C5C;
+        border-left: 4px solid var(--rs-primary);
         border-radius: 12px;
         padding: 1.5rem;
         margin-bottom: 2.5rem;
@@ -634,22 +634,22 @@ $homeNovelEquivs = (float)($homeTotals['total_novel_equivalents'] ?? ($homeTotal
             <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 1.35rem; flex: 1;">
                 <div>
                     <div style="font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--rs-primary);">Story Manuscripts</div>
-                    <div style="font-size: 1.35rem; font-weight: 800; color: var(--rs-heading); font-variant-numeric: tabular-nums;"><?= number_format($homeStoryWords) ?> <span style="font-size: 0.78rem; font-weight: 600; opacity: 0.75;">words</span></div>
+                    <div style="font-size: 1.35rem; font-weight: 800; color: var(--rs-heading); font-variant-numeric: tabular-nums;"><?= number_format($homeStoryWords) ?> <span style="font-size: 0.78rem; font-weight: 600; color: var(--rs-text-muted);">words</span></div>
                 </div>
                 <div style="width: 1px; height: 32px; background: var(--rs-border);"></div>
                 <div>
                     <div style="font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--rs-primary);">Curated Lore &amp; Liner Notes</div>
-                    <div style="font-size: 1.35rem; font-weight: 800; color: var(--rs-heading); font-variant-numeric: tabular-nums;"><?= number_format($homeLoreWords) ?> <span style="font-size: 0.78rem; font-weight: 600; opacity: 0.75;">words</span></div>
+                    <div style="font-size: 1.35rem; font-weight: 800; color: var(--rs-heading); font-variant-numeric: tabular-nums;"><?= number_format($homeLoreWords) ?> <span style="font-size: 0.78rem; font-weight: 600; color: var(--rs-text-muted);">words</span></div>
                 </div>
                 <div style="width: 1px; height: 32px; background: var(--rs-border);"></div>
                 <div>
                     <div style="font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--rs-primary);">Combined Corpus</div>
-                    <div style="font-size: 1.35rem; font-weight: 800; color: var(--rs-heading); font-variant-numeric: tabular-nums;"><?= number_format($homeCombinedWords) ?> <span style="font-size: 0.78rem; font-weight: 600; opacity: 0.75;">words (~<?= number_format($homeTotalPages) ?> pages)</span></div>
+                    <div style="font-size: 1.35rem; font-weight: 800; color: var(--rs-heading); font-variant-numeric: tabular-nums;"><?= number_format($homeCombinedWords) ?> <span style="font-size: 0.78rem; font-weight: 600; color: var(--rs-text-muted);">words (~<?= number_format($homeTotalPages) ?> pages)</span></div>
                 </div>
                 <div style="width: 1px; height: 32px; background: var(--rs-border);"></div>
                 <div>
                     <div style="font-size: 0.7rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--rs-primary);">Contemporary Scale</div>
-                    <div style="font-size: 1.05rem; font-weight: 800; color: var(--rs-heading);">&asymp; <?= number_format($homeNovelEquivs, 1) ?>&times; <span style="font-size: 0.82rem; font-weight: 600; opacity: 0.82;">standard 90k novels</span></div>
+                    <div style="font-size: 1.05rem; font-weight: 800; color: var(--rs-heading);">&asymp; <?= number_format($homeNovelEquivs, 1) ?>&times; <span style="font-size: 0.82rem; font-weight: 600; color: var(--rs-text-muted);">standard 90k novels</span></div>
                 </div>
             </div>
             <div>
@@ -883,7 +883,7 @@ $homeNovelEquivs = (float)($homeTotals['total_novel_equivalents'] ?? ($homeTotal
             </div>
         </section>
 
-        <div style="margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--rs-border); font-size: 0.8rem; color: var(--rs-text); opacity: 0.78; line-height: 1.5; text-align: center;">
+        <div style="margin-top: 2rem; padding-top: 1.25rem; border-top: 1px solid var(--rs-border); font-size: 0.8rem; color: var(--rs-text-muted); line-height: 1.5; text-align: center;">
             <strong>Work of Fiction Disclaimer:</strong> All novels, characters, bands, universities (including Commonwealth Polytechnic Institute / CPI), corporations (including OmniCorp, Axiom, Apex Records, Prairie Coachworks, and Sainte-Claire), transit agencies (Blue Ridge Transit), and events depicted in the Ocean View Archives are works of fiction. Any resemblance to actual persons, living or dead, businesses, institutions, or events is purely coincidental.
         </div>
 

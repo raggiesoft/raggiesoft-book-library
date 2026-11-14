@@ -257,7 +257,7 @@ foreach ($catalogEntries as $catEntry) {
 
     .lib-illus-pill[aria-pressed="true"] {
         background: var(--rs-primary);
-        color: #ffffff;
+        color: var(--rs-on-primary, #ffffff);
         border-color: var(--rs-primary);
     }
 
@@ -489,14 +489,14 @@ foreach ($catalogEntries as $catEntry) {
         <div class="lib-illus-toolbar" role="region" aria-label="Filter and search illustrations">
             <div class="lib-illus-controls-row">
                 <div class="lib-illus-search-wrap">
-                    <i class="ph-bold ph-magnifying-glass" style="position: absolute; left: 0.8rem; top: 50%; transform: translateY(-50%); color: var(--rs-text); opacity: 0.65;"></i>
+                    <i class="ph-bold ph-magnifying-glass" style="position: absolute; left: 0.8rem; top: 50%; transform: translateY(-50%); color: var(--rs-text-muted);"></i>
                     <input type="search"
                            id="lib-illus-search"
                            class="lib-illus-search-input"
                            placeholder="Search <?= number_format($totalLibraryIllustrations) ?> illustrations by character, scene, date, or location..."
                            aria-label="Search illustrations across all novels">
                 </div>
-                <div id="lib-illus-status" style="font-size: 0.84rem; font-weight: 700; color: var(--rs-text); opacity: 0.85;" aria-live="polite">
+                <div id="lib-illus-status" style="font-size: 0.84rem; font-weight: 700; color: var(--rs-text-muted);" aria-live="polite">
                     Showing all <?= number_format($totalLibraryIllustrations) ?> illustrations
                 </div>
             </div>
@@ -580,7 +580,7 @@ foreach ($catalogEntries as $catEntry) {
                                             </a>
                                         </h3>
                                         <?php if ($plate['time'] !== '' || $plate['location'] !== ''): ?>
-                                            <div style="font-size: 0.76rem; color: var(--rs-text); opacity: 0.8; margin-bottom: 0.4rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
+                                            <div style="font-size: 0.76rem; color: var(--rs-text-muted); margin-bottom: 0.4rem; display: flex; flex-wrap: wrap; gap: 0.5rem;">
                                                 <?php if ($plate['time'] !== ''): ?>
                                                     <span><i class="ph-fill ph-calendar-blank"></i> <?= htmlspecialchars($plate['time']) ?></span>
                                                 <?php endif; ?>

@@ -63,7 +63,7 @@ if ($catalogData) {
         <!-- This empty div will be populated dynamically by the JavaScript below -->
         <div id="rs-bookmarks-list">
             <!-- Fallback message shown if no bookmarks are found in localStorage -->
-            <p id="rs-bookmarks-empty" style="opacity: 0.7; font-size: 1rem;">No bookmarks saved yet. While reading, tap the bookmark icon in the sidebar to save your place.</p>
+            <p id="rs-bookmarks-empty" style="color: var(--rs-text-muted); font-size: 1rem;">No bookmarks saved yet. While reading, tap the bookmark icon in the sidebar to save your place.</p>
         </div>
 
     </div>
@@ -124,8 +124,8 @@ if ($catalogData) {
                 </div>
                 <!-- Bookmark Details (Series Title and Chapter/Page Name) -->
                 <div>
-                    <h3 style="font-size: 1.1rem; margin: 0 0 0.25rem 0; font-weight: 700;">${seriesData.title}</h3>
-                    <p style="font-size: 0.9rem; opacity: 0.7; margin: 0;">${bm.title}</p>
+                    <h3 style="font-size: 1.1rem; margin: 0 0 0.25rem 0; font-weight: 700; color: var(--rs-heading);">${seriesData.title}</h3>
+                    <p style="font-size: 0.9rem; color: var(--rs-text-muted); margin: 0;">${bm.title}</p>
                 </div>
             `;
             

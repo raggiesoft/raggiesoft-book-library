@@ -67,16 +67,16 @@ if (!$era) {
                             <i class="ph ph-file-text" aria-hidden="true"></i>
                             <span><?php echo htmlspecialchars($rawChapTitle); ?></span>
                             <?php if ($showPartSub): ?>
-                                <span style="font-weight: 500; font-size: 1rem; color: var(--rs-text); opacity: 0.82;">&mdash; <?php echo htmlspecialchars($cleanPartSub); ?></span>
+                                <span style="font-weight: 500; font-size: 1rem; color: var(--rs-text-muted);">&mdash; <?php echo htmlspecialchars($cleanPartSub); ?></span>
                             <?php endif; ?>
                             <?php if ($singleHasImage): ?>
-                                <span title="Illustrated Scene" style="font-size: 0.75rem; font-weight: 600; padding: 0.12rem 0.45rem; border-radius: 999px; background: rgba(227, 178, 124, 0.16); color: var(--rs-primary); display: inline-flex; align-items: center; gap: 0.25rem;">
+                                <span title="Illustrated Scene" style="font-size: 0.75rem; font-weight: 600; padding: 0.12rem 0.45rem; border-radius: 999px; background: var(--rs-bg-alt); border: 1px solid var(--rs-border); color: var(--rs-primary); display: inline-flex; align-items: center; gap: 0.25rem;">
                                     <i class="ph ph-image" aria-hidden="true"></i>
                                     <span>Illustrated</span>
                                 </span>
                             <?php endif; ?>
                         </span>
-                        <span style="font-size: 0.85rem; font-weight: 600; color: var(--rs-text); opacity: 0.75; white-space: nowrap; display: inline-flex; align-items: center; gap: 0.3rem;">
+                        <span style="font-size: 0.85rem; font-weight: 600; color: var(--rs-text-muted); white-space: nowrap; display: inline-flex; align-items: center; gap: 0.3rem;">
                             <span>Read Chapter</span>
                             <i class="ph ph-arrow-right" aria-hidden="true"></i>
                         </span>
@@ -89,7 +89,7 @@ if (!$era) {
                         <span style="display: flex; align-items: center; gap: 0.5rem;">
                             <i class="ph ph-folder" aria-hidden="true"></i> <?php echo htmlspecialchars($chap['chap_title']); ?>
                         </span>
-                        <span style="font-size: 0.8rem; font-weight: 600; opacity: 0.72;"><?php echo $partCount > 0 ? ((int)$partCount . ' Parts') : 'Coming Soon'; ?></span>
+                        <span style="font-size: 0.8rem; font-weight: 600; color: var(--rs-text-muted);"><?php echo $partCount > 0 ? ((int)$partCount . ' Parts') : 'Coming Soon'; ?></span>
                     </h2>
                     
                     <ul style="list-style: none; padding: 0 0 0 1rem; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
@@ -105,7 +105,7 @@ if (!$era) {
                                         <i class="ph ph-file-text" aria-hidden="true"></i>
                                         <span><?php echo htmlspecialchars($part['part_title']); ?></span>
                                         <?php if ($partHasImage): ?>
-                                            <span title="Illustrated Scene" style="font-size: 0.72rem; font-weight: 600; padding: 0.1rem 0.42rem; border-radius: 999px; background: rgba(227, 178, 124, 0.16); color: var(--rs-primary); display: inline-flex; align-items: center; gap: 0.22rem;">
+                                            <span title="Illustrated Scene" style="font-size: 0.72rem; font-weight: 600; padding: 0.1rem 0.42rem; border-radius: 999px; background: var(--rs-bg-alt); border: 1px solid var(--rs-border); color: var(--rs-primary); display: inline-flex; align-items: center; gap: 0.22rem;">
                                                 <i class="ph ph-image" aria-hidden="true"></i>
                                                 <span>Illustrated</span>
                                             </span>
@@ -115,7 +115,7 @@ if (!$era) {
                             <?php endforeach; ?>
                         <?php else: ?>
                             <!-- Fallback for empty chapters -->
-                            <li style="opacity: 0.5;">No parts available yet.</li>
+                            <li style="color: var(--rs-text-muted);">No parts available yet.</li>
                         <?php endif; ?>
                     </ul>
                 </div>
@@ -123,7 +123,7 @@ if (!$era) {
             <?php endforeach; ?>
         <?php else: ?>
             <!-- Fallback for eras without any chapters defined -->
-            <p style="opacity: 0.5;">No chapters available.</p>
+            <p style="color: var(--rs-text-muted);">No chapters available.</p>
         <?php endif; ?>
     </div>
 </div>

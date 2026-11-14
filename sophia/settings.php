@@ -212,31 +212,31 @@ global $cdnBaseUrl, $siteName, $requestUri;
                 
                 <!-- External links borrowing from raggiesoft-hub -->
                 <a href="https://raggiesoft.com/about/terms" target="_blank" class="rs-btn" style="text-align: left; display: flex; align-items: center; gap: 0.5rem; background: var(--rs-bg); border: 1px solid var(--rs-border); color: var(--rs-text); justify-content: flex-start;">
-                    <i class="ph ph-scroll"></i> Terms of Service <i class="ph ph-arrow-square-out" style="margin-left: auto; opacity: 0.5;"></i>
+                    <i class="ph ph-scroll"></i> Terms of Service <i class="ph ph-arrow-square-out" style="margin-left: auto; color: var(--rs-text-muted);"></i>
                 </a>
                 
                 <a href="https://raggiesoft.com/about/privacy" target="_blank" class="rs-btn" style="text-align: left; display: flex; align-items: center; gap: 0.5rem; background: var(--rs-bg); border: 1px solid var(--rs-border); color: var(--rs-text); justify-content: flex-start;">
-                    <i class="ph ph-shield-check"></i> Privacy Policy <i class="ph ph-arrow-square-out" style="margin-left: auto; opacity: 0.5;"></i>
+                    <i class="ph ph-shield-check"></i> Privacy Policy <i class="ph ph-arrow-square-out" style="margin-left: auto; color: var(--rs-text-muted);"></i>
                 </a>
                 
                 <a href="https://raggiesoft.com/about/ai-disclaimer" target="_blank" class="rs-btn" style="text-align: left; display: flex; align-items: center; gap: 0.5rem; background: var(--rs-bg); border: 1px solid var(--rs-border); color: var(--rs-text); justify-content: flex-start;">
-                    <i class="ph ph-robot"></i> AI Disclaimer <i class="ph ph-arrow-square-out" style="margin-left: auto; opacity: 0.5;"></i>
+                    <i class="ph ph-robot"></i> AI Disclaimer <i class="ph ph-arrow-square-out" style="margin-left: auto; color: var(--rs-text-muted);"></i>
                 </a>
 
                 
                 <!-- Licensing & Copyright Information -->
                 <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--rs-border);">
                     <h4 style="margin: 0 0 0.5rem 0; font-size: 1rem; color: var(--rs-primary);">Copyright & Licensing (Stardust Engine v0.1.0)</h4>
-                    <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 0.5rem;">
+                    <p style="font-size: 0.9rem; color: var(--rs-text-muted); margin-bottom: 0.5rem;">
                         <strong>Book Content:</strong> Licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" style="color: inherit; font-weight: bold;">CC BY-SA 4.0</a>.
                     </p>
-                    <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 0.5rem;">
+                    <p style="font-size: 0.9rem; color: var(--rs-text-muted); margin-bottom: 0.5rem;">
                         <strong>Reader Software:</strong> Released under the <a href="https://opensource.org/licenses/MIT" target="_blank" style="color: inherit; font-weight: bold;">MIT License</a>.
                     </p>
-                    <p style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 0.75rem;">
+                    <p style="font-size: 0.9rem; color: var(--rs-text-muted); margin-bottom: 0.75rem;">
                         <strong>Copyright:</strong> &copy; <?php echo date('Y'); ?> RaggieSoft. All rights reserved.
                     </p>
-                    <p style="font-size: 0.82rem; opacity: 0.78; line-height: 1.5; margin-bottom: 0;">
+                    <p style="font-size: 0.82rem; color: var(--rs-text-muted); line-height: 1.5; margin-bottom: 0;">
                         <strong>Work of Fiction Disclaimer:</strong> All novels, stories, characters, bands, universities (including Commonwealth Polytechnic Institute / CPI), corporations (including OmniCorp and Apex Records), and events in the Ocean View Archives and across the RaggieSoft network are works of fiction. Any resemblance to actual persons, living or dead, businesses, institutions, or events is purely coincidental.
                     </p>
                 </div>
@@ -550,6 +550,9 @@ global $cdnBaseUrl, $siteName, $requestUri;
     function applyThemeGlobally(theme) {
         document.body.classList.remove('theme-auto', 'theme-light', 'theme-sepia', 'theme-dark', 'theme-dark-sepia', 'theme-sepia-system');
         document.body.classList.add('theme-' + theme);
+        document.documentElement.style.colorScheme = (theme === 'light' || theme === 'sepia')
+            ? 'light'
+            : ((theme === 'dark' || theme === 'dark-sepia') ? 'dark' : 'light dark');
         if (typeof window.applyReaderTheme === 'function') {
             window.applyReaderTheme(theme);
         }

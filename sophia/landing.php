@@ -191,7 +191,7 @@ $landingTextPdfSize  = $landingSizes['text_pdf'] ?? '';
                     <i class="ph-fill ph-planet"></i> Connected Stardust Engine Ecosystem
                 </div>
                 <h3 style="font-size: 1.15rem; font-weight: 800; margin: 0 0 0.5rem 0; color: var(--rs-heading);">
-                    Intermingle with <code>stardust.raggiesoft.com</code> &amp; The Listening Room
+                    Explore <strong>stardust.raggiesoft.com</strong> &amp; The Listening Room
                 </h3>
                 <p style="font-size: 0.92rem; line-height: 1.6; margin: 0 0 1rem 0; color: var(--rs-text); opacity: 0.92;">
                     This companion novel is synchronized 1:1 with the official cosmic portal of <strong>The Stardust Engine</strong> and all 21 studio, live, and archival albums in <strong>The Listening Room</strong>.

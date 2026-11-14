@@ -83,12 +83,12 @@ document.addEventListener('DOMContentLoaded', () => {
     function showIosInstallHint() {
         const hintHtml = `
             <div id="ios-install-hint" style="position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: var(--rs-surface); border: 1px solid var(--rs-border); padding: 15px 20px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.2); z-index: 10000; display: flex; flex-direction: column; align-items: center; gap: 10px; width: 90%; max-width: 320px; text-align: center; font-family: 'Inter', sans-serif;">
-                <button id="close-ios-hint" style="position: absolute; top: 8px; right: 8px; background: none; border: none; font-size: 1.2rem; cursor: pointer; color: var(--rs-text); opacity: 0.6;"><i class="ph ph-x"></i></button>
+                <button id="close-ios-hint" aria-label="Dismiss installation notice" style="position: absolute; top: 8px; right: 8px; background: none; border: none; font-size: 1.2rem; cursor: pointer; color: var(--rs-text-muted);"><i class="ph ph-x"></i></button>
                 <i class="ph ph-compass" style="font-size: 2rem; color: var(--rs-primary);"></i>
                 <div style="font-size: 0.95rem; line-height: 1.4; color: var(--rs-text);">
                     Install <strong>Ocean View Archives</strong> for offline reading.
                 </div>
-                <div style="font-size: 0.85rem; opacity: 0.8; color: var(--rs-text);">
+                <div style="font-size: 0.85rem; color: var(--rs-text-muted);">
                     Tap <i class="ph ph-export" style="vertical-align: middle;"></i> and then <strong>Add to Home Screen</strong>.
                 </div>
             </div>

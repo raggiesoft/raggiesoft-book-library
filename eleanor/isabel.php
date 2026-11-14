@@ -407,9 +407,9 @@ $currentHeaderMenu = empty($seriesSlug) ? ($basePath . '/includes/components/hea
 // Include the Global HTML Header (Opens HTML, Head, Body, and the primary wrapper)
 require_once $basePath . '/includes/components/headers/header.php';
 
-// Inject Stardust-specific styling and logic scripts
-echo '<link rel="stylesheet" href="' . $cdnBaseUrl . '/raggiesoft-books/css/reader.css?v=' . time() . '">';
-echo '<script src="' . $cdnBaseUrl . '/raggiesoft-books/js/reader.js?v=' . time() . '" defer></script>';
+// Inject Stardust-specific styling and logic scripts with deterministic cache-busting version
+echo '<link rel="stylesheet" href="' . $cdnBaseUrl . '/raggiesoft-books/css/reader.css?v=20261114a">';
+echo '<script src="' . $cdnBaseUrl . '/raggiesoft-books/js/reader.js?v=20261114a" defer></script>';
 
 // Open the primary application boundary
 echo '<div id="stardust-main-wrapper">';

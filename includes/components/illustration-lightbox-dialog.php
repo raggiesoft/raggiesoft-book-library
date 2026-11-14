@@ -188,7 +188,7 @@ if (!empty($activeSeriesSlug)) {
     padding: 0.36rem 0.72rem;
     border-radius: 0.45rem;
     border: 1px solid var(--rs-border, rgba(227, 178, 124, 0.35));
-    background: rgba(255, 255, 255, 0.04);
+    background: var(--rs-bg);
     color: var(--rs-text, #f4efe6);
     font-size: 0.8rem;
     font-weight: 700;

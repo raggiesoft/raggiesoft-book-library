@@ -40,7 +40,7 @@ $tocStoryPages = (int)($tocWordStats['estimated_story_pages'] ?? ($tocStoryWords
         <div>
             <h1 style="margin: 0; color: var(--rs-primary);">Table of Contents</h1>
             <?php if ($tocStoryWords > 0): ?>
-                <div style="font-size: 0.85rem; font-weight: 600; opacity: 0.82; margin-top: 0.25rem; font-variant-numeric: tabular-nums;">
+                <div style="font-size: 0.85rem; font-weight: 600; color: var(--rs-text-muted); margin-top: 0.25rem; font-variant-numeric: tabular-nums;">
                     <?php echo number_format($tocStoryWords); ?> story words &bull; ~<?php echo number_format($tocStoryPages); ?> print pages &bull; <a href="/stats" style="color: var(--rs-primary); text-decoration: none; font-weight: 700;">Library Scale Stats &rarr;</a>
                 </div>
             <?php endif; ?>
@@ -59,7 +59,7 @@ $tocStoryPages = (int)($tocWordStats['estimated_story_pages'] ?? ($tocStoryWords
                     <i class="ph ph-images" aria-hidden="true" style="font-size: 1.35rem;"></i>
                     <span>Table of Illustrations &mdash; Visual Scene Index (<?php echo $tocTotalIllustrations; ?>)</span>
                 </span>
-                <span style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; font-weight: 600; color: var(--rs-text); opacity: 0.85;">
+                <span style="display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.85rem; font-weight: 600; color: var(--rs-text-muted);">
                     <span>Browse Artwork</span>
                     <i class="ph ph-caret-down toc-caret" style="font-size: 1.15rem;"></i>
                 </span>
@@ -102,7 +102,7 @@ $tocStoryPages = (int)($tocWordStats['estimated_story_pages'] ?? ($tocStoryWords
                             </div>
                         </div>
                         <?php if (!empty($era['era_description'])): ?>
-                            <p style="margin: 0; font-size: 1rem; opacity: 0.8;"><?php echo htmlspecialchars($era['era_description']); ?></p>
+                            <p style="margin: 0; font-size: 1rem; color: var(--rs-text-muted);"><?php echo htmlspecialchars($era['era_description']); ?></p>
                         <?php endif; ?>
                     </summary>
                     
@@ -143,16 +143,16 @@ $tocStoryPages = (int)($tocWordStats['estimated_story_pages'] ?? ($tocStoryWords
                                             <i class="ph ph-file-text" aria-hidden="true"></i>
                                             <span><?php echo htmlspecialchars($rawChapTitle); ?></span>
                                             <?php if ($showPartSub): ?>
-                                                <span style="font-weight: 500; font-size: 0.98rem; color: var(--rs-text); opacity: 0.82;">&mdash; <?php echo htmlspecialchars($cleanPartSub); ?></span>
+                                                <span style="font-weight: 500; font-size: 0.98rem; color: var(--rs-text-muted);">&mdash; <?php echo htmlspecialchars($cleanPartSub); ?></span>
                                             <?php endif; ?>
                                             <?php if ($singleHasImage): ?>
-                                                <span title="Illustrated Scene" style="font-size: 0.75rem; font-weight: 600; padding: 0.12rem 0.45rem; border-radius: 999px; background: rgba(227, 178, 124, 0.16); color: var(--rs-primary); display: inline-flex; align-items: center; gap: 0.25rem;">
+                                                <span title="Illustrated Scene" style="font-size: 0.75rem; font-weight: 600; padding: 0.12rem 0.45rem; border-radius: 999px; background: var(--rs-bg-alt); border: 1px solid var(--rs-border); color: var(--rs-primary); display: inline-flex; align-items: center; gap: 0.25rem;">
                                                     <i class="ph ph-image" aria-hidden="true"></i>
                                                     <span>Illustrated</span>
                                                 </span>
                                             <?php endif; ?>
                                         </span>
-                                        <span style="font-size: 0.78rem; font-weight: 600; color: var(--rs-text); opacity: 0.72; white-space: nowrap; display: inline-flex; align-items: center; gap: 0.45rem; font-variant-numeric: tabular-nums;">
+                                        <span style="font-size: 0.78rem; font-weight: 600; color: var(--rs-text-muted); white-space: nowrap; display: inline-flex; align-items: center; gap: 0.45rem; font-variant-numeric: tabular-nums;">
                                             <?php if ($singlePartWords > 0): ?>
                                                 <span><?php echo number_format($singlePartWords); ?>w &bull; <?php echo $singlePartMins; ?>m</span>
                                             <?php else: ?>
@@ -176,7 +176,7 @@ $tocStoryPages = (int)($tocWordStats['estimated_story_pages'] ?? ($tocStoryWords
                                                 </span>
                                             <?php endif; ?>
                                         </span>
-                                        <span style="font-size: 0.78rem; font-weight: 600; opacity: 0.72; white-space: nowrap;">
+                                        <span style="font-size: 0.78rem; font-weight: 600; color: var(--rs-text-muted); white-space: nowrap;">
                                             <?php echo $partCount > 0 ? ((int)$partCount . ' Parts') : 'Coming Soon'; ?>
                                         </span>
                                     </summary>
@@ -197,14 +197,14 @@ $tocStoryPages = (int)($tocWordStats['estimated_story_pages'] ?? ($tocStoryWords
                                                             <i class="ph ph-file-text" aria-hidden="true"></i>
                                                             <span><?php echo htmlspecialchars($part['part_title']); ?></span>
                                                             <?php if ($partHasImage): ?>
-                                                                <span title="Illustrated Scene" style="font-size: 0.72rem; font-weight: 600; padding: 0.1rem 0.42rem; border-radius: 999px; background: rgba(227, 178, 124, 0.16); color: var(--rs-primary); display: inline-flex; align-items: center; gap: 0.22rem;">
+                                                                <span title="Illustrated Scene" style="font-size: 0.72rem; font-weight: 600; padding: 0.1rem 0.42rem; border-radius: 999px; background: var(--rs-bg-alt); border: 1px solid var(--rs-border); color: var(--rs-primary); display: inline-flex; align-items: center; gap: 0.22rem;">
                                                                     <i class="ph ph-image" aria-hidden="true"></i>
                                                                     <span>Illustrated</span>
                                                                 </span>
                                                             <?php endif; ?>
                                                         </span>
                                                         <?php if ($partWords > 0): ?>
-                                                            <span style="font-size: 0.74rem; font-weight: 600; color: var(--rs-text); opacity: 0.68; white-space: nowrap; font-variant-numeric: tabular-nums;">
+                                                            <span style="font-size: 0.74rem; font-weight: 600; color: var(--rs-text-muted); white-space: nowrap; font-variant-numeric: tabular-nums;">
                                                                 <?php echo number_format($partWords); ?>w &bull; <?php echo $partMins; ?>m
                                                             </span>
                                                         <?php endif; ?>
@@ -212,14 +212,14 @@ $tocStoryPages = (int)($tocWordStats['estimated_story_pages'] ?? ($tocStoryWords
                                                 </li>
                                             <?php endforeach; ?>
                                         <?php else: ?>
-                                            <li style="opacity: 0.5;">No parts available yet.</li>
+                                            <li style="color: var(--rs-text-muted);">No parts available yet.</li>
                                         <?php endif; ?>
                                     </ul>
                                 </details>
                                 <?php endif; ?>
                             <?php endforeach; ?>
                         <?php else: ?>
-                            <p style="margin-top: 1rem; opacity: 0.5;">No chapters available.</p>
+                            <p style="margin-top: 1rem; color: var(--rs-text-muted);">No chapters available.</p>
                         <?php endif; ?>
                     </div>
                 </details>

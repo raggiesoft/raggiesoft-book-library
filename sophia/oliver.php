@@ -99,7 +99,7 @@ if (!function_exists('renderOliverNotFoundCard')) {
         <main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; height: 100dvh; overflow-y: auto;">
             <div class="book-page reader-page" style="max-width: 800px; margin: 0 auto; padding-top: max(2rem, calc(env(safe-area-inset-top, 0px) + 1rem));">
                 <div class="reader-nav" style="display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid var(--rs-border);">
-                    <div style="opacity: 0.78; font-size: 0.9rem; min-width: 0; flex: 1;">
+                    <div style="color: var(--rs-text-muted); font-size: 0.9rem; min-width: 0; flex: 1;">
                         <a href="/library" style="text-decoration: none; color: var(--rs-primary);">Library</a>
                         <?php if ($hasValidBook): ?>
                             &raquo; <a href="/<?php echo $safeSlug; ?>" style="text-decoration: none; color: var(--rs-primary); font-weight: 600;"><?php echo $safeBookTitle; ?></a>
@@ -658,7 +658,7 @@ if ($seriesSlug === 'ad-astra') {
 <?php if ($narrativeTheme): ?>
     <!-- Ambient CSS Themes and Animations -->
     <meta name="stardust-narrative-theme" content="<?php echo htmlspecialchars($narrativeTheme); ?>">
-    <link id="narrative-theme-css" rel="stylesheet" href="<?php echo htmlspecialchars($cdnBaseUrl . '/raggiesoft-books/css/themes/' . $narrativeTheme . '.css?v=20261108a'); ?>" disabled>
+    <link id="narrative-theme-css" rel="stylesheet" href="<?php echo htmlspecialchars($cdnBaseUrl . '/raggiesoft-books/css/themes/' . $narrativeTheme . '.css?v=20261114a'); ?>" disabled>
     
     <?php if ($narrativeTheme === 'dark-rain'): ?>
     <!-- Procedural Rain Generation for 'dark-rain' theme -->
@@ -679,7 +679,7 @@ if ($seriesSlug === 'ad-astra') {
     <div class="book-page reader-page">
         <!-- Breadcrumbs & Nav -->
         <div class="reader-nav" style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; gap: 0.75rem;">
-            <div style="opacity: 0.7; font-size: 0.9rem; min-width: 0; flex: 1;">
+            <div style="color: var(--rs-text-muted); font-size: 0.9rem; min-width: 0; flex: 1;">
             <?php 
             global $toc_manifest, $seriesSlug, $pageConfig;
             $actualFilePath = $pageConfig["filePath"] ?? "";
@@ -947,7 +947,7 @@ if ($seriesSlug === 'ad-astra') {
                 
                 <!-- Temporal Metadata Rendering -->
                 <?php if (!empty($frontmatter['stardate']) || !empty($frontmatter['realm_time']) || !empty($frontmatter['date']) || !empty($frontmatter['start_time']) || !empty($frontmatter['pov']) || !empty($frontmatter['location']) || !empty($frontmatter['characters'])): ?>
-                    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; opacity: 0.7; font-size: 0.85rem; font-weight: 600;">
+                    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; color: var(--rs-text-muted); font-size: 0.85rem; font-weight: 600;">
                         <?php if (!empty($frontmatter['stardate'])): ?>
                             <span style="display: flex; align-items: center; gap: 4px;" title="Stardate">
                                 <i class="ph ph-planet"></i> 
@@ -1297,17 +1297,17 @@ if ($seriesSlug === 'ad-astra') {
                             </a>
                             
                             <div style="flex: 1; overflow: hidden; display: flex; flex-direction: column; min-width: 0;">
-                                <div id="narrative-audio-eyebrow" style="font-size: 0.75rem; opacity: 0.78; text-transform: uppercase; letter-spacing: 1px; line-height: 1.2; margin-bottom: 0.35rem; font-weight: 600;"><?php echo htmlspecialchars($eyebrowLabel); ?></div>
+                                <div id="narrative-audio-eyebrow" style="font-size: 0.75rem; color: var(--rs-text-muted); text-transform: uppercase; letter-spacing: 1px; line-height: 1.2; margin-bottom: 0.35rem; font-weight: 600;"><?php echo htmlspecialchars($eyebrowLabel); ?></div>
                                 
                                 <div class="reader-audio-scroll-wrap" style="font-weight: 700; font-size: 1.1rem; line-height: 1.2; margin-bottom: 0.25rem;">
                                     <span class="reader-audio-scroll-text">
                                         <a id="narrative-audio-title-link" href="<?php echo htmlspecialchars($listeningRoomTrackUrl); ?>" target="_blank" rel="noopener noreferrer" class="reader-audio-external-link" title="Listen to &quot;<?php echo htmlspecialchars($audioTitleDisplay); ?>&quot; in The Listening Room" style="color: inherit; text-decoration: underline; text-decoration-color: var(--rs-primary); text-underline-offset: 3px;">
-                                            <span id="narrative-audio-title-text"><?php echo htmlspecialchars($audioTitleDisplay); ?></span> <i class="ph ph-arrow-square-out" aria-hidden="true" style="font-size: 0.85em; opacity: 0.85;"></i>
+                                            <span id="narrative-audio-title-text"><?php echo htmlspecialchars($audioTitleDisplay); ?></span> <i class="ph ph-arrow-square-out" aria-hidden="true" style="font-size: 0.85em; color: var(--rs-text-muted);"></i>
                                         </a>
                                     </span>
                                 </div>
                                 
-                                <div class="reader-audio-scroll-wrap" style="font-size: 0.85rem; opacity: 0.85; margin-bottom: 0.75rem;">
+                                <div class="reader-audio-scroll-wrap" style="font-size: 0.85rem; color: var(--rs-text-muted); margin-bottom: 0.75rem;">
                                     <span class="reader-audio-scroll-text">
                                         <a id="narrative-audio-artist-link" href="<?php echo htmlspecialchars($listeningRoomArtistUrl); ?>" target="_blank" rel="noopener noreferrer" class="reader-audio-external-link" title="View <?php echo htmlspecialchars($artistDisplay); ?> in The Listening Room" style="color: inherit; text-decoration: none; border-bottom: 1px dotted currentColor;"><?php echo htmlspecialchars($artistDisplay); ?></a>
                                         &bull;
@@ -1390,18 +1390,18 @@ if ($seriesSlug === 'ad-astra') {
                                     aria-current="<?php echo $qIdx === 0 ? 'true' : 'false'; ?>"
                                     style="width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 0.75rem; padding: 0.45rem 0.65rem; border: none; border-radius: 8px; background: <?php echo $qIdx === 0 ? 'rgba(59, 130, 246, 0.12)' : 'transparent'; ?>; color: var(--rs-text); text-align: left; cursor: pointer; font-family: inherit; font-size: 0.85rem; transition: background-color 0.15s ease;">
                                 <span style="display: flex; align-items: center; gap: 0.6rem; min-width: 0; flex: 1;">
-                                    <span class="reader-audio-queue-num" style="font-variant-numeric: tabular-nums; font-weight: 700; opacity: 0.7; min-width: 1.5rem; text-align: right;"><?php echo ($qIdx + 1); ?>.</span>
+                                    <span class="reader-audio-queue-num" style="font-variant-numeric: tabular-nums; font-weight: 700; color: var(--rs-text-muted); min-width: 1.5rem; text-align: right;"><?php echo ($qIdx + 1); ?>.</span>
                                     <span style="min-width: 0; flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
                                         <strong style="font-weight: 600;"><?php echo htmlspecialchars($qTrack['title']); ?></strong>
                                         <?php if (!empty($qTrack['actLabel'])): ?>
-                                            <span style="opacity: 0.72; font-size: 0.78rem;"> &mdash; <?php echo htmlspecialchars($qTrack['actLabel']); ?></span>
+                                            <span style="color: var(--rs-text-muted); font-size: 0.78rem;"> &mdash; <?php echo htmlspecialchars($qTrack['actLabel']); ?></span>
                                         <?php elseif ($queueMode === 'playlist'): ?>
-                                            <span style="opacity: 0.72; font-size: 0.78rem;"> &bull; <?php echo htmlspecialchars($qTrack['artist'] . ' (' . $qTrack['album'] . ')'); ?></span>
+                                            <span style="color: var(--rs-text-muted); font-size: 0.78rem;"> &bull; <?php echo htmlspecialchars($qTrack['artist'] . ' (' . $qTrack['album'] . ')'); ?></span>
                                         <?php endif; ?>
                                     </span>
                                 </span>
                                 <?php if (!empty($qTrack['duration'])): ?>
-                                <span style="font-variant-numeric: tabular-nums; font-size: 0.78rem; opacity: 0.75; flex-shrink: 0;"><?php echo htmlspecialchars($qTrack['duration']); ?></span>
+                                <span style="font-variant-numeric: tabular-nums; font-size: 0.78rem; color: var(--rs-text-muted); flex-shrink: 0;"><?php echo htmlspecialchars($qTrack['duration']); ?></span>
                                 <?php endif; ?>
                             </button>
                             <?php endforeach; ?>
@@ -1410,7 +1410,7 @@ if ($seriesSlug === 'ad-astra') {
                         
                         <!-- The Listening Room & External Streaming Links -->
                         <div style="background: var(--rs-bg); border-top: 1px solid var(--rs-border); padding: 0.75rem 1rem; display: flex; flex-direction: column; gap: 0.5rem; align-items: center; text-align: center;">
-                            <div style="font-size: 0.8rem; opacity: 0.8;">Open this song or full album directly in <strong>The Listening Room</strong>, or stream the high-fidelity mix on your favorite service:</div>
+                            <div style="font-size: 0.8rem; color: var(--rs-text-muted);">Open this song or full album directly in <strong>The Listening Room</strong>, or stream the high-fidelity mix on your favorite service:</div>
                             <div style="display: flex; gap: 0.5rem; justify-content: center; flex-wrap: wrap;">
                                 <a id="narrative-audio-lr-song-btn" href="<?php echo htmlspecialchars($listeningRoomTrackUrl); ?>" target="_blank" rel="noopener noreferrer" title="Listen to &quot;<?php echo htmlspecialchars($audioTitleDisplay); ?>&quot; in The Listening Room" class="rs-btn rs-btn-primary reader-audio-external-link" style="padding: 0.25rem 0.65rem; font-size: 0.8rem;"><i class="ph ph-headphones" aria-hidden="true" style="margin-right: 4px;"></i> Song in Listening Room <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px; opacity: 0.85;"></i></a>
                                 <a id="narrative-audio-lr-album-btn" href="<?php echo htmlspecialchars($listeningRoomAlbumUrl); ?>" target="_blank" rel="noopener noreferrer" title="Open <?php echo htmlspecialchars($albumDisplay); ?> in The Listening Room" class="rs-btn reader-audio-external-link" style="padding: 0.25rem 0.65rem; font-size: 0.8rem;"><i class="ph ph-vinyl-record" aria-hidden="true" style="margin-right: 4px;"></i> Full Album <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px; opacity: 0.7;"></i></a>
@@ -1447,7 +1447,7 @@ if ($seriesSlug === 'ad-astra') {
                         <div id="narrative-lyrics-content" style="padding: 1.5rem; overflow-y: auto; max-height: calc(85vh - 140px); font-size: 1.1rem; line-height: 1.6;">
                         </div>
                         <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; padding: 0.75rem 1.5rem; border-top: 1px solid var(--rs-border); background: var(--rs-surface); font-size: 0.85rem;">
-                            <span id="narrative-lyrics-footer-meta" style="opacity: 0.8;"><?php echo htmlspecialchars($artistDisplay); ?> &bull; <i><?php echo htmlspecialchars($albumDisplay); ?></i></span>
+                            <span id="narrative-lyrics-footer-meta" style="color: var(--rs-text-muted);"><?php echo htmlspecialchars($artistDisplay); ?> &bull; <i><?php echo htmlspecialchars($albumDisplay); ?></i></span>
                             <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
                                 <a id="narrative-lyrics-open-song" href="<?php echo htmlspecialchars($listeningRoomTrackUrl); ?>" target="_blank" rel="noopener noreferrer" class="rs-btn rs-btn-primary reader-audio-external-link" style="padding: 0.25rem 0.65rem; font-size: 0.8rem;"><i class="ph ph-headphones" aria-hidden="true" style="margin-right: 4px;"></i> Open Song <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px;"></i></a>
                                 <a id="narrative-lyrics-open-album" href="<?php echo htmlspecialchars($listeningRoomAlbumUrl); ?>" target="_blank" rel="noopener noreferrer" class="rs-btn reader-audio-external-link" style="padding: 0.25rem 0.65rem; font-size: 0.8rem;"><i class="ph ph-vinyl-record" aria-hidden="true" style="margin-right: 4px;"></i> Open Album <i class="ph ph-arrow-square-out" aria-hidden="true" style="margin-left: 4px;"></i></a>
@@ -1565,7 +1565,7 @@ if ($seriesSlug === 'ad-astra') {
                 <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; padding: 1rem 1.15rem; border: 1px solid var(--rs-border); border-radius: 10px; background: var(--rs-bg);">
                     <div style="flex: 1; min-width: 240px;">
                         <?php if ($bsDate || $bsSender): ?>
-                        <div style="font-size: 0.78rem; font-weight: 700; opacity: 0.8; margin-bottom: 0.2rem;">
+                        <div style="font-size: 0.78rem; font-weight: 700; color: var(--rs-text-muted); margin-bottom: 0.2rem;">
                             <?php if ($bsDate): ?><span><?php echo htmlspecialchars($bsDate . ($bsTime ? ' • ' . $bsTime : '')); ?></span><?php endif; ?>
                             <?php if ($bsDate && $bsSender): ?> &bull; <?php endif; ?>
                             <?php if ($bsSender): ?><span>From: <?php echo htmlspecialchars($bsSender); ?></span><?php endif; ?>
@@ -1616,7 +1616,7 @@ if ($seriesSlug === 'ad-astra') {
             <div id="rs-backstage-dialog-body" class="story-content" style="padding: 1.5rem; overflow-y: auto; max-height: calc(86vh - 165px); font-size: 1.02rem; line-height: 1.68; text-indent: 0;">
             </div>
             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.75rem; padding: 0.85rem 1.5rem; border-top: 1px solid var(--rs-border); background: var(--rs-surface); font-size: 0.85rem;">
-                <span style="opacity: 0.82;">100% In-Universe Bonus Feature &bull; RaggieSoft Backstage Archive</span>
+                <span style="color: var(--rs-text-muted);">100% In-Universe Bonus Feature &bull; RaggieSoft Backstage Archive</span>
                 <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
                     <a id="rs-backstage-dialog-bounce" href="https://backstage.raggiesoft.com" target="_blank" rel="noopener noreferrer" data-backstage-direct="true" class="rs-btn rs-btn-primary" style="padding: 0.45rem 0.95rem; font-size: 0.88rem; display: inline-flex; align-items: center; gap: 0.4rem;">
                         <i class="ph ph-film-slate" aria-hidden="true"></i>
@@ -1759,10 +1759,10 @@ if ($seriesSlug === 'ad-astra') {
     --zkl-bg: #f8fafc;
     --zkl-header-bg: #eef2f6;
     --zkl-border: #cbd5e1;
-    --zkl-row-border: rgba(148, 163, 184, 0.22);
-    --zkl-row-hover: rgba(15, 23, 42, 0.035);
+    --zkl-row-border: rgba(148, 163, 184, 0.24);
+    --zkl-row-hover: rgba(15, 23, 42, 0.04);
     --zkl-text: #0f172a;
-    --zkl-gutter: #64748b;
+    --zkl-gutter: #475569;
     --zkl-ns: #475569;
     --zkl-stream: #0369a1;
     --zkl-punct: #475569;
@@ -1772,14 +1772,14 @@ if ($seriesSlug === 'ad-astra') {
     --zkl-exception: #b91c1c;
     --zkl-thread-fg: #1e40af;
     --zkl-thread-bg: rgba(30, 64, 175, 0.09);
-    --zkl-bracket: #15803d;
+    --zkl-bracket: #166534;
     --zkl-string: #9a3412;
     --zkl-label: #6d28d9;
-    --zkl-diagnostic: #0f766e;
+    --zkl-diagnostic: #115e59;
     --zkl-function: #7e22ce;
-    --zkl-identifier: #0e7490;
+    --zkl-identifier: #155e75;
     --zkl-constant: #be123c;
-    --zkl-number: #b45309;
+    --zkl-number: #92400e;
     --zkl-operator: #334155;
     --zkl-ts-fg: #334155;
     --zkl-ts-bg: #e2e8f0;
@@ -1798,13 +1798,27 @@ body.theme-sepia .zoe-kernel-log {
     --zkl-bg: #f6efe0;
     --zkl-header-bg: #ebe1cc;
     --zkl-border: #d3c4a8;
+    --zkl-gutter: #4a3b2c;
+    --zkl-ns: #4a3b2c;
+    --zkl-punct: #4a3b2c;
     --zkl-ts-bg: #e6dac2;
     --zkl-ts-fg: #3e3122;
 }
+@media (prefers-color-scheme: light) {
+    body.theme-sepia-system .zoe-kernel-log {
+        --zkl-bg: #f6efe0;
+        --zkl-header-bg: #ebe1cc;
+        --zkl-border: #d3c4a8;
+        --zkl-gutter: #4a3b2c;
+        --zkl-ns: #4a3b2c;
+        --zkl-punct: #4a3b2c;
+        --zkl-ts-bg: #e6dac2;
+        --zkl-ts-fg: #3e3122;
+    }
+}
 body.theme-dark .zoe-kernel-log,
 body.theme-dark-sepia .zoe-kernel-log,
-body.theme-night .zoe-kernel-log,
-body.theme-oceanview .zoe-kernel-log {
+body.theme-night:not(.theme-light):not(.theme-sepia):not(.theme-auto):not(.theme-sepia-system) .zoe-kernel-log {
     --zkl-bg: #0b1120;
     --zkl-header-bg: #111827;
     --zkl-border: #1e293b;
@@ -2394,8 +2408,7 @@ html[data-os="android"] .zoe-kernel-log-os-badge::before {
     gap: 0.35rem 0.7rem;
     font-size: 0.74rem;
     font-weight: 600;
-    color: var(--rs-text);
-    opacity: 0.82;
+    color: var(--rs-text-muted);
     margin-bottom: 0.45rem;
 }
 
@@ -2403,7 +2416,6 @@ html[data-os="android"] .zoe-kernel-log-os-badge::before {
     font-size: 0.83rem;
     line-height: 1.48;
     color: var(--rs-text);
-    opacity: 0.92;
     margin: 0 0 0.75rem 0;
     display: -webkit-box;
     -webkit-line-clamp: 3;
@@ -2427,7 +2439,7 @@ html[data-os="android"] .zoe-kernel-log-os-badge::before {
     padding: 0.42rem 0.85rem;
     border-radius: 8px;
     background: var(--rs-primary, #0F4C5C);
-    color: #ffffff !important;
+    color: var(--rs-on-primary, #ffffff) !important;
     font-size: 0.8rem;
     font-weight: 800;
     text-decoration: none !important;
@@ -2435,8 +2447,7 @@ html[data-os="android"] .zoe-kernel-log-os-badge::before {
 
 .rs-wiki-preview-hint {
     font-size: 0.7rem;
-    color: var(--rs-text);
-    opacity: 0.7;
+    color: var(--rs-text-muted);
 }
 </style>
 

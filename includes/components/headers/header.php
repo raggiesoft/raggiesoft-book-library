@@ -70,9 +70,9 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
     <!-- Declare support for both light and dark color schemes to prevent FOUC -->
     <meta name="color-scheme" content="light dark">
 
-    <!-- Dynamic theme colors based on OS preference -->
-    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
-    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <!-- Dynamic theme colors based on OS preference (aligned with Ocean View Archives surfaces) -->
+    <meta name="theme-color" content="#0b111b" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#f8f9fa" media="(prefers-color-scheme: light)">
     
     <link rel="icon" href="/favicon.ico?v=4" sizes="32x32">
     <link rel="icon" href="/icons/icon.svg?v=4" type="image/svg+xml">
@@ -316,8 +316,8 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
     }
     ?>
     <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-grid.css?v=20261029f">
-    <link rel="stylesheet" href="<?= $assetsUrl ?>/raggiesoft-books/library/css/stardust-engine.min.css?v=<?php echo time(); ?>">
-    <link rel="stylesheet" href="<?= $assetsUrl ?>/raggiesoft-books/library/css/theme-<?= htmlspecialchars($resolvedThemeCss) ?>.min.css">
+    <link rel="stylesheet" href="<?= $assetsUrl ?>/raggiesoft-books/library/css/stardust-engine.min.css?v=20261114a">
+    <link rel="stylesheet" href="<?= $assetsUrl ?>/raggiesoft-books/library/css/theme-<?= htmlspecialchars($resolvedThemeCss) ?>.min.css?v=20261114a">
     <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-network.css?v=20261029f">
     <script src="<?= $assetsUrl ?>/common/js/raggiesoft-network.js?v=20261029f" defer></script>
     <style>
@@ -459,7 +459,7 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
       gtag('config', '<?= htmlspecialchars($gaTrackingId) ?>');
     </script>
     <?php endif; ?>
-    <script src="/scripts/pwa.js?v=20261017m"></script>
+    <script src="/scripts/pwa.js?v=20261114a"></script>
 </head>
 
 <body class="theme-<?= htmlspecialchars($currentPageTheme ?? 'oceanview') ?><?= $forceDarkClass ?>">
@@ -488,11 +488,10 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
 
             const stored = localStorage.getItem('reader-settings');
             const themes = ['theme-auto', 'theme-light', 'theme-sepia', 'theme-dark', 'theme-dark-sepia', 'theme-sepia-system'];
+            let activeTheme = 'auto';
             if (stored) {
                 const settings = JSON.parse(stored);
-                const activeTheme = settings.theme || 'auto';
-                document.body.classList.remove(...themes);
-                document.body.classList.add('theme-' + activeTheme);
+                activeTheme = settings.theme || 'auto';
 
                 const fontKey = normalizeFontKey(settings.fontFamily);
                 const resolvedFont = fontMap[fontKey] || fontMap['system'];
@@ -501,9 +500,13 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
 
                 const resolvedSize = (settings.fontSize && !isNaN(parseFloat(settings.fontSize))) ? parseFloat(settings.fontSize) : 1.15;
                 document.documentElement.style.setProperty('--rs-font-size', resolvedSize + 'rem');
-            } else {
-                document.body.classList.add('theme-auto');
             }
+            document.body.classList.remove(...themes);
+            document.body.classList.add('theme-' + activeTheme);
+            document.documentElement.style.colorScheme = (activeTheme === 'light' || activeTheme === 'sepia')
+                ? 'light'
+                : ((activeTheme === 'dark' || activeTheme === 'dark-sepia') ? 'dark' : 'light dark');
+
             const lh = localStorage.getItem('rs-line-height') || '1.8';
             document.documentElement.style.setProperty('--rs-line-height', lh);
         } catch(e) {}
@@ -511,7 +514,7 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
     </script>
     
     <!-- Accessibility focus anchor -->
-    <a href="#stardust-main-content" class="visually-hidden-focusable" style="position: absolute; z-index: 9999; padding: 1rem; background: var(--rs-primary); color: white; text-decoration: none; border-radius: 4px; left: 1rem; top: 1rem;">Skip to main content</a>
+    <a href="#stardust-main-content" class="visually-hidden-focusable" style="position: absolute; z-index: 9999; padding: 1rem; background: var(--rs-primary); color: var(--rs-on-primary, #ffffff); text-decoration: none; border-radius: 4px; left: 1rem; top: 1rem; font-weight: 700;">Skip to main content</a>
 
     <!-- Omnidirectional RaggieSoft Ecosystem Network Bar (Outside SPA Zone so it persists across book navigations) -->
     <nav class="rs-network-bar" aria-label="RaggieSoft Ecosystem Network">

@@ -149,7 +149,7 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
     .aethel-era-card {
         background: var(--rs-surface);
         border: 1px solid var(--rs-border);
-        border-top: 4px solid #d97706;
+        border-top: 4px solid var(--rs-secondary);
         border-radius: 12px;
         padding: 1.5rem;
         display: flex;
@@ -170,7 +170,7 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
         font-size: 0.9rem;
         text-decoration: none;
         background: var(--rs-primary);
-        color: #ffffff !important;
+        color: var(--rs-on-primary, #ffffff) !important;
     }
 </style>
 
@@ -207,8 +207,8 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
 
     <!-- PROLOGUE EXCERPT -->
     <section class="aethel-section" id="prologue" aria-labelledby="aethel-prologue-heading">
-        <div style="background: var(--rs-surface); border: 1px solid var(--rs-border); border-left: 5px solid #d97706; border-radius: 12px; padding: 1.75rem;">
-            <h2 id="aethel-prologue-heading" style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.75; margin: 0 0 0.75rem 0;">
+        <div style="background: var(--rs-surface); border: 1px solid var(--rs-border); border-left: 5px solid var(--rs-secondary); border-radius: 12px; padding: 1.75rem;">
+            <h2 id="aethel-prologue-heading" style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--rs-text-muted); margin: 0 0 0.75rem 0;">
                 Prologue Excerpt &bull; Era I: The Solar Garden
             </h2>
             <blockquote style="font-family: Georgia, serif; font-size: 1.2rem; font-style: italic; line-height: 1.7; margin: 0 0 1rem 0; color: var(--rs-heading);">
@@ -226,17 +226,17 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
             <h2 id="aethel-eras-heading" style="font-family: 'Playfair Display', Georgia, serif; font-size: 2rem; font-weight: 800; color: var(--rs-heading); margin: 0 0 0.35rem 0;">
                 The Four Canonical Eras
             </h2>
-            <p style="opacity: 0.8; margin: 0;">Every era is compiled from canonical <code>e001</code>&ndash;<code>e004</code> manuscripts by Paige (<code>paige.php</code>).</p>
+            <p style="color: var(--rs-text-muted); margin: 0;">Explore all four canonical eras of the saga in chronological reading order.</p>
         </div>
 
         <div class="aethel-era-grid">
             <article class="aethel-era-card">
                 <div>
-                    <i class="ph-fill ph-sun-horizon" style="font-size: 2.25rem; color: #d97706; display: block; margin-bottom: 0.75rem;"></i>
+                    <i class="ph-fill ph-sun-horizon" style="font-size: 2.25rem; color: var(--rs-secondary); display: block; margin-bottom: 0.75rem;"></i>
                     <h3 style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.3rem; font-weight: 700; color: var(--rs-heading); margin: 0 0 0.5rem 0;">
                         Era 1: The Age of Myth
                     </h3>
-                    <p style="font-size: 0.92rem; line-height: 1.6; margin: 0; opacity: 0.88;">
+                    <p style="font-size: 0.92rem; line-height: 1.6; margin: 0; color: var(--rs-text);">
                         <em>Book I: The Silver Sun.</em> The Architect's Lesson, the tuning of the solar flare, and the cosmic betrayal that shattered the sky.
                     </p>
                 </div>
@@ -247,11 +247,11 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
 
             <article class="aethel-era-card">
                 <div>
-                    <i class="ph-fill ph-snowflake" style="font-size: 2.25rem; color: #38bdf8; display: block; margin-bottom: 0.75rem;"></i>
+                    <i class="ph-fill ph-snowflake" style="font-size: 2.25rem; color: var(--rs-primary); display: block; margin-bottom: 0.75rem;"></i>
                     <h3 style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.3rem; font-weight: 700; color: var(--rs-heading); margin: 0 0 0.5rem 0;">
                         Era 2: The Age of Silence
                     </h3>
-                    <p style="font-size: 0.92rem; line-height: 1.6; margin: 0; opacity: 0.88;">
+                    <p style="font-size: 0.92rem; line-height: 1.6; margin: 0; color: var(--rs-text);">
                         <em>The Sundering of Sunstead &amp; The Shadow's Heart.</em> Twins Kaelan and Kaela awaken in a sunless realm to stand against the Gloom.
                     </p>
                 </div>
@@ -262,11 +262,11 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
 
             <article class="aethel-era-card">
                 <div>
-                    <i class="ph-fill ph-waves" style="font-size: 2.25rem; color: #0284c7; display: block; margin-bottom: 0.75rem;"></i>
+                    <i class="ph-fill ph-waves" style="font-size: 2.25rem; color: var(--rs-primary); display: block; margin-bottom: 0.75rem;"></i>
                     <h3 style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.3rem; font-weight: 700; color: var(--rs-heading); margin: 0 0 0.5rem 0;">
                         Era 3: The Age of Tides
                     </h3>
-                    <p style="font-size: 0.92rem; line-height: 1.6; margin: 0; opacity: 0.88;">
+                    <p style="font-size: 0.92rem; line-height: 1.6; margin: 0; color: var(--rs-text);">
                         <em>The Glass Sea &amp; The Star-Eater.</em> The voyage across the endless ocean into the Silent Sector and the Ribcage of the Gods.
                     </p>
                 </div>
@@ -277,11 +277,11 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
 
             <article class="aethel-era-card">
                 <div>
-                    <i class="ph-fill ph-flame" style="font-size: 2.25rem; color: #dc2626; display: block; margin-bottom: 0.75rem;"></i>
+                    <i class="ph-fill ph-flame" style="font-size: 2.25rem; color: var(--rs-secondary); display: block; margin-bottom: 0.75rem;"></i>
                     <h3 style="font-family: 'Playfair Display', Georgia, serif; font-size: 1.3rem; font-weight: 700; color: var(--rs-heading); margin: 0 0 0.5rem 0;">
                         Era 4: The Iron Heart
                     </h3>
-                    <p style="font-size: 0.92rem; line-height: 1.6; margin: 0; opacity: 0.88;">
+                    <p style="font-size: 0.92rem; line-height: 1.6; margin: 0; color: var(--rs-text);">
                         <em>The Magnetic North, The Pilgrimage &amp; The Zero Point.</em> The final confrontation across the clockwork ocean to settle the ancient debt.
                     </p>
                 </div>

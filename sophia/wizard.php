@@ -113,7 +113,7 @@ global $cdnBaseUrl;
                         <input type="checkbox" id="wizard-custom-theme-toggle" checked style="width: 1.25rem; height: 1.25rem; accent-color: var(--rs-primary);">
                         <label for="wizard-custom-theme-toggle" style="font-size: 1rem; font-weight: 600; cursor: pointer;">Allow Custom Story Themes</label>
                     </div>
-                    <p style="font-size: 0.9rem; opacity: 0.8; margin: 0; margin-top: 0.5rem; padding-left: 2rem;">If unchecked, the archives will always use the color mode you selected in Step 2.</p>
+                    <p style="font-size: 0.9rem; color: var(--rs-text-muted); margin: 0; margin-top: 0.5rem; padding-left: 2rem;">If unchecked, the archives will always use the color mode you selected in Step 2.</p>
                 </div>
             </div>
 

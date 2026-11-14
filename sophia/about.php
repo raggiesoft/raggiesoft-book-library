@@ -78,35 +78,35 @@ global $cdnBaseUrl;
             </h3>
             
             <div style="display: flex; flex-direction: column; gap: 0.75rem;">
-                <a href="/accessibility" style="display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: var(--rs-text); padding: 0.75rem; border-radius: 8px; background: rgba(0,0,0,0.03);">
+                <a href="/accessibility" style="display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: var(--rs-text); padding: 0.75rem; border-radius: 8px; background: var(--rs-bg); border: 1px solid var(--rs-border);">
                     <span style="display: flex; align-items: center; gap: 0.75rem;"><i class="ph ph-wheelchair" style="font-size: 1.25rem; color: var(--rs-primary);"></i> Accessibility Commitment</span>
-                    <i class="ph ph-caret-right" style="opacity: 0.5;"></i>
+                    <i class="ph ph-caret-right" style="color: var(--rs-text-muted);"></i>
                 </a>
                 
-                <a href="https://raggiesoft.com/about/terms" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: var(--rs-text); padding: 0.75rem; border-radius: 8px; background: rgba(0,0,0,0.03);">
+                <a href="https://raggiesoft.com/about/terms" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: var(--rs-text); padding: 0.75rem; border-radius: 8px; background: var(--rs-bg); border: 1px solid var(--rs-border);">
                     <span style="display: flex; align-items: center; gap: 0.75rem;"><i class="ph ph-scroll" style="font-size: 1.25rem; color: var(--rs-primary);"></i> Terms of Service</span>
-                    <i class="ph ph-arrow-up-right" style="opacity: 0.5;"></i>
+                    <i class="ph ph-arrow-up-right" style="color: var(--rs-text-muted);"></i>
                 </a>
                 
-                <a href="https://raggiesoft.com/about/privacy" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: var(--rs-text); padding: 0.75rem; border-radius: 8px; background: rgba(0,0,0,0.03);">
+                <a href="https://raggiesoft.com/about/privacy" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: var(--rs-text); padding: 0.75rem; border-radius: 8px; background: var(--rs-bg); border: 1px solid var(--rs-border);">
                     <span style="display: flex; align-items: center; gap: 0.75rem;"><i class="ph ph-lock-key" style="font-size: 1.25rem; color: var(--rs-primary);"></i> Privacy Policy</span>
-                    <i class="ph ph-arrow-up-right" style="opacity: 0.5;"></i>
+                    <i class="ph ph-arrow-up-right" style="color: var(--rs-text-muted);"></i>
                 </a>
                 
-                <a href="https://raggiesoft.com/about/ai-disclaimer" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: var(--rs-text); padding: 0.75rem; border-radius: 8px; background: rgba(0,0,0,0.03);">
+                <a href="https://raggiesoft.com/about/ai-disclaimer" target="_blank" rel="noopener noreferrer" style="display: flex; align-items: center; justify-content: space-between; text-decoration: none; color: var(--rs-text); padding: 0.75rem; border-radius: 8px; background: var(--rs-bg); border: 1px solid var(--rs-border);">
                     <span style="display: flex; align-items: center; gap: 0.75rem;"><i class="ph ph-robot" style="font-size: 1.25rem; color: var(--rs-primary);"></i> AI Disclaimer</span>
-                    <i class="ph ph-arrow-up-right" style="opacity: 0.5;"></i>
+                    <i class="ph ph-arrow-up-right" style="color: var(--rs-text-muted);"></i>
                 </a>
             </div>
             
             <hr style="border: 0; border-top: 1px solid var(--rs-border); margin: 1.5rem 0;">
             
-            <div style="font-size: 0.85rem; color: var(--rs-text); opacity: 0.85; line-height: 1.6; text-align: center;">
-                <p style="margin: 0 0 0.5rem 0; font-weight: 600;">Stardust Engine v0.1.0</p>
+            <div style="font-size: 0.85rem; color: var(--rs-text-muted); line-height: 1.6; text-align: center;">
+                <p style="margin: 0 0 0.5rem 0; font-weight: 600; color: var(--rs-text);">Stardust Engine v0.1.0</p>
                 <p style="margin: 0 0 0.5rem 0;">Copyright &copy; <?php echo date("Y"); ?> RaggieSoft. All rights reserved.</p>
                 <p style="margin: 0;"><strong>Code License:</strong> MIT</p>
                 <p style="margin: 0 0 0.75rem 0;"><strong>Narrative Content License:</strong> CC BY-SA 4.0</p>
-                <p style="margin: 0; font-size: 0.8rem; opacity: 0.85; max-width: 680px; margin-left: auto; margin-right: auto;">
+                <p style="margin: 0; font-size: 0.8rem; max-width: 680px; margin-left: auto; margin-right: auto;">
                     <strong>Work of Fiction Disclaimer:</strong> All novels, stories, characters (including the developer personas above), bands, universities (including CPI), corporations (including OmniCorp and Apex Records), and events in the Ocean View Archives are works of fiction. Any resemblance to actual persons, living or dead, businesses, institutions, or events is purely coincidental.
                 </p>
             </div>

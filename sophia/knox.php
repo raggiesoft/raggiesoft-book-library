@@ -165,6 +165,27 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
         gap: 1.5rem;
     }
 
+    .knox-portal-wrap {
+        --knox-danger: #b91c1c;
+        --knox-success: #166534;
+        --knox-info: #0369a1;
+    }
+
+    body.theme-dark .knox-portal-wrap,
+    body.theme-dark-sepia .knox-portal-wrap {
+        --knox-danger: #f87171;
+        --knox-success: #4ade80;
+        --knox-info: #38bdf8;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        body:not(.theme-light):not(.theme-sepia) .knox-portal-wrap {
+            --knox-danger: #f87171;
+            --knox-success: #4ade80;
+            --knox-info: #38bdf8;
+        }
+    }
+
     .knox-card {
         background: var(--rs-surface);
         border: 1px solid var(--rs-border);
@@ -175,14 +196,14 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
 
     .knox-dossier-card {
         background: var(--rs-surface);
-        border: 2px solid #dc2626;
+        border: 2px solid var(--knox-danger);
         border-radius: 12px;
         overflow: hidden;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
     }
 
     .knox-dossier-card.is-decrypted {
-        border-color: #16a34a;
+        border-color: var(--knox-success);
     }
 
     .knox-dossier-header {
@@ -331,7 +352,7 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
 
                 <!-- Axiom View -->
                 <div id="axiom-profile" style="padding: 1.5rem;">
-                    <h3 style="font-family: ui-monospace, monospace; font-size: 1.15rem; color: #dc2626; margin: 0 0 0.75rem 0;">
+                    <h3 style="font-family: ui-monospace, monospace; font-size: 1.15rem; color: var(--knox-danger); margin: 0 0 0.75rem 0;">
                         SUBJECT: K.N.O.X.
                     </h3>
                     <ul class="knox-mono-list">
@@ -348,7 +369,7 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
 
                 <!-- Decrypted Reality View -->
                 <div id="reality-profile" style="padding: 1.5rem; display: none;">
-                    <h3 style="font-family: ui-monospace, monospace; font-size: 1.15rem; color: #16a34a; margin: 0 0 0.75rem 0;">
+                    <h3 style="font-family: ui-monospace, monospace; font-size: 1.15rem; color: var(--knox-success); margin: 0 0 0.75rem 0;">
                         REALITY: THE ROSTOVA TWINS
                     </h3>
                     <ul class="knox-mono-list">
@@ -378,30 +399,30 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
             <h2 id="telsan-gap-heading" style="font-size: 1.75rem; font-weight: 800; color: var(--rs-heading); margin: 0 0 0.35rem 0;">
                 The Telsan Gap
             </h2>
-            <p style="opacity: 0.8; margin: 0;">A patch of unaligned dark space. A navigational hazard. A home.</p>
+            <p style="color: var(--rs-text-muted); margin: 0;">A patch of unaligned dark space. A navigational hazard. A home.</p>
         </div>
 
         <div class="knox-grid-3">
             <article class="knox-card">
                 <i class="ph-fill ph-buildings" style="font-size: 2.25rem; color: var(--rs-primary); display: block; margin-bottom: 0.75rem;"></i>
                 <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--rs-heading); margin: 0 0 0.5rem 0;">The Spire</h3>
-                <p style="font-size: 0.95rem; line-height: 1.6; margin: 0; opacity: 0.88;">
+                <p style="font-size: 0.95rem; line-height: 1.6; margin: 0; color: var(--rs-text);">
                     A 16-kilometer-high obsidian tower piercing the sky. The seat of the Axiom Corporation's power, built on the industrial rot of Port Telsus.
                 </p>
             </article>
 
             <article class="knox-card">
-                <i class="ph-fill ph-tree-evergreen" style="font-size: 2.25rem; color: #16a34a; display: block; margin-bottom: 0.75rem;"></i>
+                <i class="ph-fill ph-tree-evergreen" style="font-size: 2.25rem; color: var(--knox-success); display: block; margin-bottom: 0.75rem;"></i>
                 <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--rs-heading); margin: 0 0 0.5rem 0;">The Weave</h3>
-                <p style="font-size: 0.95rem; line-height: 1.6; margin: 0; opacity: 0.88;">
+                <p style="font-size: 0.95rem; line-height: 1.6; margin: 0; color: var(--rs-text);">
                     A vertical jungle of kilometer-high trees. To the Axiom, it is the &ldquo;Green Hell.&rdquo; To the natives, it is a symbiotic ecosystem that provides life.
                 </p>
             </article>
 
             <article class="knox-card">
-                <i class="ph-fill ph-diamond" style="font-size: 2.25rem; color: #38bdf8; display: block; margin-bottom: 0.75rem;"></i>
+                <i class="ph-fill ph-diamond" style="font-size: 2.25rem; color: var(--knox-info); display: block; margin-bottom: 0.75rem;"></i>
                 <h3 style="font-size: 1.2rem; font-weight: 700; color: var(--rs-heading); margin: 0 0 0.5rem 0;">The Moss</h3>
-                <p style="font-size: 0.95rem; line-height: 1.6; margin: 0; opacity: 0.88;">
+                <p style="font-size: 0.95rem; line-height: 1.6; margin: 0; color: var(--rs-text);">
                     Glimmer Moss. Rare. Bioluminescent. Capable of quantum entanglement. The only resource valuable enough to keep the twins alive.
                 </p>
             </article>
@@ -415,25 +436,25 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
         </h2>
         <div class="knox-grid-3">
             <article class="knox-card" style="text-align: center;">
-                <span class="knox-pill" style="color: #16a34a;">OPERATIVE: GHOST</span>
+                <span class="knox-pill" style="color: var(--knox-success);">OPERATIVE: GHOST</span>
                 <h3 style="font-family: ui-monospace, monospace; font-size: 1.35rem; color: var(--rs-heading); margin: 0 0 0.5rem 0;">ANYA</h3>
-                <p style="font-size: 0.92rem; line-height: 1.6; margin: 0; opacity: 0.88;">
+                <p style="font-size: 0.92rem; line-height: 1.6; margin: 0; color: var(--rs-text);">
                     &ldquo;The Invisibility Cloak.&rdquo; She doesn't fight; she vanishes. The master of fieldcraft who turns the vertical jungle itself into a perimeter.
                 </p>
             </article>
 
             <article class="knox-card" style="text-align: center;">
-                <span class="knox-pill" style="color: #16a34a;">OPERATIVE: TOYMAKER</span>
+                <span class="knox-pill" style="color: var(--knox-success);">OPERATIVE: TOYMAKER</span>
                 <h3 style="font-family: ui-monospace, monospace; font-size: 1.35rem; color: var(--rs-heading); margin: 0 0 0.5rem 0;">KAEL</h3>
-                <p style="font-size: 0.92rem; line-height: 1.6; margin: 0; opacity: 0.88;">
+                <p style="font-size: 0.92rem; line-height: 1.6; margin: 0; color: var(--rs-text);">
                     &ldquo;The Architect.&rdquo; He builds the acoustic and chemical charges that dismantle Axiom infrastructure. Chemistry, fabrication, and the voice of reason.
                 </p>
             </article>
 
             <article class="knox-card" style="text-align: center;">
-                <span class="knox-pill" style="color: #dc2626;">SIGNAL: NO CARRIER</span>
+                <span class="knox-pill" style="color: var(--knox-danger);">SIGNAL: NO CARRIER</span>
                 <h3 style="font-family: ui-monospace, monospace; font-size: 1.35rem; color: var(--rs-heading); margin: 0 0 0.5rem 0; letter-spacing: 0.15em;">ROOK</h3>
-                <p style="font-size: 0.92rem; line-height: 1.6; margin: 0; opacity: 0.88;">
+                <p style="font-size: 0.92rem; line-height: 1.6; margin: 0; color: var(--rs-text);">
                     &ldquo;The Voice in the Static.&rdquo; Dock Master. Ally. Encrypted intermediary routing the twins through Port Telsus's blind spots.
                 </p>
             </article>

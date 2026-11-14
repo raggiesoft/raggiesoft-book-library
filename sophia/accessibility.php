@@ -35,7 +35,7 @@ global $cdnBaseUrl, $siteName, $requestUri;
         <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem;">
             <div>
                 <!-- Navigation Breadcrumb allowing users to return to the parent Settings view -->
-                <a href="/settings" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--rs-text); text-decoration: none; font-weight: 600; opacity: 0.7; margin-bottom: 1rem;"><i class="ph ph-arrow-left"></i> Back to Settings</a>
+                <a href="/settings" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--rs-text-muted); text-decoration: none; font-weight: 600; margin-bottom: 1rem;"><i class="ph ph-arrow-left"></i> Back to Settings</a>
                 
                 <p style="font-size: 1.1rem; color: var(--rs-primary); margin: 0 0 0.25rem 0; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
                     Our Commitment

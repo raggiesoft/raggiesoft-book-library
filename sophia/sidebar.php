@@ -136,7 +136,7 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
         <a href="<?php echo htmlspecialchars($sbUpUrl); ?>" style="text-decoration: none; display: block; margin: 0 0 0.15rem 0; color: var(--rs-primary); font-size: 1.05rem; font-weight: 800; line-height: 1.25; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><?php 
             echo htmlspecialchars($sidebarSeriesTitle); 
         ?></a>
-        <p title="<?php echo htmlspecialchars($sidebarPageTitle); ?>" style="margin: 0; opacity: 0.78; font-size: 0.78rem; font-weight: 600; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><?php echo htmlspecialchars($sidebarPageTitle); ?></p>
+        <p title="<?php echo htmlspecialchars($sidebarPageTitle); ?>" style="margin: 0; color: var(--rs-text-muted); font-size: 0.78rem; font-weight: 600; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><?php echo htmlspecialchars($sidebarPageTitle); ?></p>
     </div>
 
     <!-- 3. Single-Row Quick Access Toolbar (Home, Library, Bookmark, Settings) -->
@@ -183,7 +183,7 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
                 <i class="ph ph-images" style="font-size: 1.1rem;"></i> Table of Illustrations
             </span>
             <?php if ($sbIllusCount > 0): ?>
-                <span style="font-size: 0.7rem; font-weight: 700; padding: 0.1rem 0.45rem; border-radius: 999px; background: rgba(227, 178, 124, 0.2); color: var(--rs-primary);"><?php echo $sbIllusCount; ?></span>
+                <span style="font-size: 0.7rem; font-weight: 700; padding: 0.1rem 0.45rem; border-radius: 999px; background: var(--rs-bg-alt); border: 1px solid var(--rs-border); color: var(--rs-primary);"><?php echo $sbIllusCount; ?></span>
             <?php endif; ?>
         </a>
         
@@ -223,21 +223,21 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
     ?>
     <div style="margin-top: 0.65rem; padding: 0.5rem 0.6rem; border-radius: 8px; background: var(--rs-surface); border: 1px solid var(--rs-border); display: flex; flex-direction: column; gap: 0.35rem;">
         <div style="display: flex; align-items: center; justify-content: space-between; gap: 0.35rem;">
-            <span style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.78;"><i class="ph ph-download-simple"></i> E-Book</span>
+            <span style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--rs-text-muted);"><i class="ph ph-download-simple"></i> E-Book</span>
             <div style="display: inline-flex; gap: 0.35rem;">
                 <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.epub"); ?>" target="_blank" title="Download Illustrated EPUB<?php echo $sbEpubSize ? ' (' . htmlspecialchars($sbEpubSize) . ')' : ''; ?>" style="text-decoration: none; font-size: 0.74rem; font-weight: 700; padding: 0.18rem 0.48rem; border-radius: 5px; background: var(--rs-bg); border: 1px solid var(--rs-border); color: var(--rs-heading);">
-                    EPUB<?php echo $sbEpubSize ? ' <span style="opacity:0.7;font-weight:500;">(' . htmlspecialchars($sbEpubSize) . ')</span>' : ''; ?>
+                    EPUB<?php echo $sbEpubSize ? ' <span style="color: var(--rs-text-muted); font-weight: 500;">(' . htmlspecialchars($sbEpubSize) . ')</span>' : ''; ?>
                 </a>
                 <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.pdf"); ?>" target="_blank" title="Download Illustrated PDF<?php echo $sbPdfSize ? ' (' . htmlspecialchars($sbPdfSize) . ')' : ''; ?>" style="text-decoration: none; font-size: 0.74rem; font-weight: 700; padding: 0.18rem 0.48rem; border-radius: 5px; background: var(--rs-bg); border: 1px solid var(--rs-border); color: var(--rs-heading);">
-                    PDF<?php echo $sbPdfSize ? ' <span style="opacity:0.7;font-weight:500;">(' . htmlspecialchars($sbPdfSize) . ')</span>' : ''; ?>
+                    PDF<?php echo $sbPdfSize ? ' <span style="color: var(--rs-text-muted); font-weight: 500;">(' . htmlspecialchars($sbPdfSize) . ')</span>' : ''; ?>
                 </a>
             </div>
         </div>
-        <div style="font-size: 0.68rem; opacity: 0.85; display: flex; align-items: center; justify-content: space-between; gap: 0.3rem; border-top: 1px dashed var(--rs-border); padding-top: 0.28rem;">
+        <div style="font-size: 0.68rem; color: var(--rs-text-muted); display: flex; align-items: center; justify-content: space-between; gap: 0.3rem; border-top: 1px dashed var(--rs-border); padding-top: 0.28rem;">
             <span>Text-Only:</span>
             <span style="display: inline-flex; align-items: center; gap: 0.35rem;">
                 <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.epub"); ?>" target="_blank" style="color: var(--rs-primary); font-weight: 600; text-decoration: none;">EPUB<?php echo $sbTextEpubSize ? ' (' . htmlspecialchars($sbTextEpubSize) . ')' : ''; ?></a>
-                <span aria-hidden="true" style="opacity: 0.5;">&bull;</span>
+                <span aria-hidden="true" style="color: var(--rs-text-muted);">&bull;</span>
                 <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.pdf"); ?>" target="_blank" style="color: var(--rs-primary); font-weight: 600; text-decoration: none;">PDF<?php echo $sbTextPdfSize ? ' (' . htmlspecialchars($sbTextPdfSize) . ')' : ''; ?></a>
             </span>
         </div>
@@ -248,7 +248,7 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
 <!-- Hover Styles for Sidebar Links -->
 <style>
     .sidebar-nav-link:hover {
-        background: var(--rs-border);
+        background: var(--rs-bg-alt);
         color: var(--rs-primary) !important;
     }
 </style>
@@ -313,11 +313,11 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
                 
                 div.innerHTML = `
                     <div style="font-weight: 600; font-size: 0.9rem; margin-bottom: 2px;">${item.series}: ${item.title}</div>
-                    <div style="font-size: 0.75rem; opacity: 0.7; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${item.book} &middot; ${item.chapter}</div>
+                    <div style="font-size: 0.75rem; color: var(--rs-text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${item.book} &middot; ${item.chapter}</div>
                 `;
                 
                 // Add simple hover states dynamically
-                div.addEventListener('mouseenter', () => div.style.background = 'var(--rs-border)');
+                div.addEventListener('mouseenter', () => div.style.background = 'var(--rs-bg-alt)');
                 div.addEventListener('mouseleave', () => div.style.background = 'transparent');
                 
                 resultsContainer.appendChild(div);
@@ -325,7 +325,7 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
             resultsContainer.style.display = 'block';
         } else {
             // Handle no-results state gracefully
-            resultsContainer.innerHTML = '<div style="padding: 0.75rem 1rem; font-size: 0.85rem; opacity: 0.7;">No results found in the archives.</div>';
+            resultsContainer.innerHTML = '<div style="padding: 0.75rem 1rem; font-size: 0.85rem; color: var(--rs-text-muted);">No results found in the archives.</div>';
             resultsContainer.style.display = 'block';
         }
     });

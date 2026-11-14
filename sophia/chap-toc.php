@@ -32,7 +32,7 @@ if (!$chap) {
 <div class="book-page" style="max-width: 800px; margin: 0 auto;">
     <!-- Chapter Header block, providing context via the parent Era title -->
     <div style="margin-bottom: 2rem; border-bottom: 2px solid var(--rs-border); padding-bottom: 1rem;">
-        <div style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 0.5rem;"><?php echo htmlspecialchars($era['era_title']); ?></div>
+        <div style="font-size: 0.9rem; color: var(--rs-text-muted); margin-bottom: 0.5rem;"><?php echo htmlspecialchars($era['era_title']); ?></div>
         <h1 style="margin: 0; color: var(--rs-primary);"><?php echo htmlspecialchars($chap['chap_title']); ?></h1>
     </div>
 
@@ -51,7 +51,7 @@ if (!$chap) {
                             <i class="ph ph-file-text" aria-hidden="true"></i>
                             <span><?php echo htmlspecialchars($part['part_title']); ?></span>
                             <?php if ($partHasImage): ?>
-                                <span title="Illustrated Scene" style="font-size: 0.75rem; font-weight: 600; padding: 0.12rem 0.45rem; border-radius: 999px; background: rgba(227, 178, 124, 0.16); color: var(--rs-primary); display: inline-flex; align-items: center; gap: 0.22rem;">
+                                <span title="Illustrated Scene" style="font-size: 0.75rem; font-weight: 600; padding: 0.12rem 0.45rem; border-radius: 999px; background: var(--rs-bg-alt); border: 1px solid var(--rs-border); color: var(--rs-primary); display: inline-flex; align-items: center; gap: 0.22rem;">
                                     <i class="ph ph-image" aria-hidden="true"></i>
                                     <span>Illustrated</span>
                                 </span>
@@ -61,7 +61,7 @@ if (!$chap) {
                 <?php endforeach; ?>
             <?php else: ?>
                 <!-- Graceful fallback if a chapter is defined but contains no parts -->
-                <li style="opacity: 0.5;">No parts available yet.</li>
+                <li style="color: var(--rs-text-muted);">No parts available yet.</li>
             <?php endif; ?>
         </ul>
     </div>

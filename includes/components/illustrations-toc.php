@@ -432,7 +432,7 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
 .illus-toc-zoom-btn:hover,
 .illus-toc-zoom-btn:focus-visible {
     background: var(--rs-primary, #e3b27c);
-    color: #1a1215;
+    color: var(--rs-on-primary, #1a1215);
     border-color: #ffffff;
     outline: 2px solid transparent;
 }
@@ -475,8 +475,7 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
     flex-wrap: wrap;
     gap: 0.35rem 0.75rem;
     font-size: 0.76rem;
-    color: var(--rs-text, #f4efe6);
-    opacity: 0.78;
+    color: var(--rs-text-muted);
 }
 
 /* Multi-line truncation with both -webkit-line-clamp and standard line-clamp */
@@ -484,8 +483,7 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
     margin: 0.25rem 0 0;
     font-size: 0.83rem;
     line-height: 1.48;
-    color: var(--rs-text, #f4efe6);
-    opacity: 0.86;
+    color: var(--rs-text-muted);
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
@@ -573,7 +571,7 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
         <?php if ($totalIllustrationsCount > 8): ?>
             <div style="margin-block-end: 1rem; display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center;">
                 <div style="position: relative; flex: 1; min-width: 240px;">
-                    <i class="ph ph-magnifying-glass" aria-hidden="true" style="position: absolute; left: 0.85rem; top: 50%; transform: translateY(-50%); color: var(--rs-text); opacity: 0.65;"></i>
+                    <i class="ph ph-magnifying-glass" aria-hidden="true" style="position: absolute; left: 0.85rem; top: 50%; transform: translateY(-50%); color: var(--rs-text-muted);"></i>
                     <input
                         type="search"
                         id="illus-toc-filter-input"
@@ -582,7 +580,7 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
                         style="width: 100%; padding: 0.6rem 0.9rem 0.6rem 2.35rem; border-radius: 0.6rem; border: 1px solid var(--rs-border, rgba(227, 178, 124, 0.28)); background: var(--rs-surface, rgba(255, 255, 255, 0.04)); color: var(--rs-text, #f4efe6); font-size: 0.88rem;"
                     >
                 </div>
-                <span id="illus-toc-filter-status" style="font-size: 0.82rem; font-weight: 600; color: var(--rs-text); opacity: 0.8;" aria-live="polite"></span>
+                <span id="illus-toc-filter-status" style="font-size: 0.82rem; font-weight: 600; color: var(--rs-text-muted);" aria-live="polite"></span>
             </div>
         <?php endif; ?>
 

@@ -70,7 +70,7 @@ foreach ($books as $bItem) {
                     Library
                 </h1>
                 <p style="font-size: 1rem; color: var(--rs-primary); margin: 0.25rem 0 0 0; font-weight: 600;">
-                    Ocean View Archives<?php if ($catalogTotalStoryWords > 0): ?> &bull; <span style="font-weight: 700; color: var(--rs-text); opacity: 0.85;"><?= count($books) ?> Volumes &bull; <?= number_format($catalogTotalStoryWords) ?> Story Words</span><?php endif; ?>
+                    Ocean View Archives<?php if ($catalogTotalStoryWords > 0): ?> &bull; <span style="font-weight: 700; color: var(--rs-text-muted);"><?= count($books) ?> Volumes &bull; <?= number_format($catalogTotalStoryWords) ?> Story Words</span><?php endif; ?>
                 </p>
             </div>
             <div style="display: flex; gap: 0.5rem; align-items: center; flex-wrap: wrap;">
@@ -82,7 +82,7 @@ foreach ($books as $bItem) {
                 <button id="rs-organize-btn" class="rs-btn" style="background: transparent; color: var(--rs-primary); border: none; padding: 0.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;" title="Organize Library">
                     <i class="ph ph-folder" style="font-size: 1.75rem;"></i>
                 </button>
-                <button id="rs-organize-done-btn" class="rs-btn" style="display: none; background: var(--rs-primary); color: white; border: none; padding: 0.4rem 1rem; border-radius: 6px; font-weight: bold; font-size: 0.85rem; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+                <button id="rs-organize-done-btn" class="rs-btn" style="display: none; background: var(--rs-primary); color: var(--rs-on-primary, #ffffff); border: none; padding: 0.4rem 1rem; border-radius: 6px; font-weight: bold; font-size: 0.85rem; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
                     Done
                 </button>
             </div>
@@ -90,18 +90,18 @@ foreach ($books as $bItem) {
 
         <!-- Add to Home Screen Banner -->
         <!-- Displayed specifically for iOS/Mobile users not running in standalone mode -->
-        <div id="rs-pwa-install-banner" style="display: none; background: var(--rs-primary, #0056b3); color: white; border-radius: 12px; padding: 1rem; margin-bottom: 2rem; align-items: flex-start; justify-content: space-between; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+        <div id="rs-pwa-install-banner" style="display: none; background: var(--rs-primary, #0F4C5C); color: var(--rs-on-primary, #ffffff); border-radius: 12px; padding: 1rem; margin-bottom: 2rem; align-items: flex-start; justify-content: space-between; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
             <div style="display: flex; align-items: flex-start; gap: 1rem; flex: 1;">
-                <div style="width: 48px; height: 48px; background: white; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0;">
+                <div style="width: 48px; height: 48px; background: #ffffff; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0;">
                     <img src="/icons/icon-192.png?v=4" alt="RaggieSoft Book Reader App Icon" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <div style="flex: 1;">
-                    <h3 style="margin: 0; font-size: 1rem; font-weight: 700;">Install the App</h3>
-                    <p style="margin: 0; font-size: 0.85rem; opacity: 0.9;">Tap Share &gt; Add to Home Screen</p>
-                    <button id="rs-pwa-install-btn" style="display: none; margin-top: 0.5rem; background: white; color: var(--rs-primary, #0056b3); border: none; padding: 0.4rem 1rem; border-radius: 6px; font-weight: bold; font-size: 0.85rem; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">Install Now</button>
+                    <h3 style="margin: 0; font-size: 1rem; font-weight: 700; color: var(--rs-on-primary, #ffffff);">Install the App</h3>
+                    <p style="margin: 0; font-size: 0.85rem; color: var(--rs-on-primary, #ffffff);">Tap Share &gt; Add to Home Screen</p>
+                    <button id="rs-pwa-install-btn" style="display: none; margin-top: 0.5rem; background: var(--rs-surface); color: var(--rs-heading); border: 1px solid var(--rs-border); padding: 0.4rem 1rem; border-radius: 6px; font-weight: bold; font-size: 0.85rem; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">Install Now</button>
                 </div>
             </div>
-            <button id="rs-pwa-close-banner" style="background: rgba(255,255,255,0.2); border: none; color: white; width: 32px; height: 32px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-left: 0.5rem;">
+            <button id="rs-pwa-close-banner" aria-label="Dismiss install banner" style="background: rgba(0,0,0,0.22); border: none; color: var(--rs-on-primary, #ffffff); width: 32px; height: 32px; border-radius: 50%; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-left: 0.5rem;">
                 <i class="ph ph-x" style="font-weight: bold;"></i>
             </button>
         </div>
@@ -110,8 +110,8 @@ foreach ($books as $bItem) {
         <!-- Drives the instant client-side search component -->
         <div style="position: relative; width: 100%; margin-bottom: 2rem;">
             <div style="position: relative; display: flex; align-items: center;">
-                <i class="ph ph-magnifying-glass" style="position: absolute; left: 1rem; color: var(--rs-text); opacity: 0.5; font-size: 1.25rem;"></i>
-                <input type="text" id="rs-book-search" placeholder="Search titles, characters, or lore..." style="width: 100%; padding: 0.85rem 1rem 0.85rem 2.75rem; border-radius: 12px; border: none; background: var(--rs-surface); color: var(--rs-text); font-size: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06); outline: none; -webkit-appearance: none;">
+                <i class="ph ph-magnifying-glass" style="position: absolute; left: 1rem; color: var(--rs-text-muted); font-size: 1.25rem;"></i>
+                <input type="text" id="rs-book-search" placeholder="Search titles, characters, or lore..." style="width: 100%; padding: 0.85rem 1rem 0.85rem 2.75rem; border-radius: 12px; border: 1px solid var(--rs-border); background: var(--rs-surface); color: var(--rs-text); font-size: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06); outline: none; -webkit-appearance: none;">
             </div>
             <div id="rs-search-results" style="display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 12px; max-height: 350px; overflow-y: auto; z-index: 1000; box-shadow: 0 8px 30px rgba(0,0,0,0.12); margin-top: 8px;"></div>
         </div>
@@ -123,9 +123,9 @@ foreach ($books as $bItem) {
         
         <?php if (empty($books)): ?>
             <!-- Fallback state when CDN is unreachable or catalog is empty -->
-            <div style="text-align: center; padding: 4rem 0; opacity: 0.7;">
+            <div style="text-align: center; padding: 4rem 0; color: var(--rs-text-muted);">
                 <i class="ph ph-books" style="font-size: 4rem; color: var(--rs-primary); margin-bottom: 1rem;"></i>
-                <h2>Library Offline</h2>
+                <h2 style="color: var(--rs-heading);">Library Offline</h2>
                 <p>The system is currently compiling the archives. Please check back later.</p>
             </div>
         <?php else: ?>
@@ -136,7 +136,7 @@ foreach ($books as $bItem) {
                     <div class="rs-collection-block" style="margin-bottom: 2rem;">
                         <div class="rs-collection-header" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
                             <h2 class="rs-collection-title" style="font-size: 1.25rem; font-weight: 700; margin: 0; color: var(--rs-heading);">New Collection</h2>
-                            <button class="rs-btn rs-delete-collection-btn" style="background: transparent; color: var(--rs-red, #ff3b30); border: none; padding: 0.2rem; cursor: pointer; display: none;"><i class="ph ph-trash"></i></button>
+                            <button class="rs-btn rs-delete-collection-btn" aria-label="Delete collection" style="background: transparent; color: var(--rs-primary); border: none; padding: 0.2rem; cursor: pointer; display: none;"><i class="ph ph-trash"></i></button>
                         </div>
                         <div class="rs-book-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1.5rem 1rem; min-height: 240px; border: 2px dashed transparent; border-radius: 12px; padding: 0.5rem; transition: border-color 0.2s ease;">
                             <!-- Books go here -->
@@ -189,7 +189,7 @@ foreach ($books as $bItem) {
                                     ~<?= number_format($bookStoryPages) ?> pages<?= $bookScaleBadge !== '' ? ' &bull; ' . htmlspecialchars($bookScaleBadge) : '' ?>
                                 </div>
                                 <?php endif; ?>
-                                <p style="font-size: 0.8rem; opacity: 0.6; margin: 0; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; line-clamp: 5; overflow: clip;">
+                                <p style="font-size: 0.8rem; color: var(--rs-text-muted); margin: 0; line-height: 1.35; display: -webkit-box; -webkit-line-clamp: 5; -webkit-box-orient: vertical; line-clamp: 5; overflow: clip;">
                                     <?php echo htmlspecialchars($desc); ?>
                                 </p>
                             </div>
@@ -499,7 +499,7 @@ foreach ($books as $bItem) {
                     div.style = "display: block; padding: 1rem; border-bottom: 1px solid var(--rs-border); text-decoration: none; color: var(--rs-text); cursor: pointer;";
                     div.innerHTML = `
                         <div style="font-weight: 600; font-size: 0.95rem; margin-bottom: 4px; color: var(--rs-heading);">${item.series}: ${item.title}</div>
-                        <div style="font-size: 0.8rem; opacity: 0.7; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${item.book} &middot; ${item.chapter}</div>
+                        <div style="font-size: 0.8rem; color: var(--rs-text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${item.book} &middot; ${item.chapter}</div>
                     `;
                     div.addEventListener('mouseenter', () => div.style.background = 'var(--rs-bg)');
                     div.addEventListener('mouseleave', () => div.style.background = 'transparent');
@@ -508,7 +508,7 @@ foreach ($books as $bItem) {
                 });
                 resultsContainer.style.display = 'block';
             } else {
-                resultsContainer.innerHTML = '<div style="padding: 1rem; font-size: 0.9rem; opacity: 0.7; text-align: center;">No lore found matching your search.</div>';
+                resultsContainer.innerHTML = '<div style="padding: 1rem; font-size: 0.9rem; color: var(--rs-text-muted); text-align: center;">No lore found matching your search.</div>';
                 resultsContainer.style.display = 'block';
             }
         });
