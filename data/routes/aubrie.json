@@ -21,7 +21,7 @@
             "pdf_bytes": 56110642,
             "text_epub_bytes": 1030010,
             "text_pdf_bytes": 3873509,
-            "package_7z_bytes": 735533
+            "package_7z_bytes": 735543
         },
         "illustration_count": 72,
         "word_stats": {
@@ -1434,12 +1434,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e008/c002/p001.md"
     },
-    "/aubrie/spring-semester-2016/hey-saacurc-the-bear-and-the-bug/part-1-the-friday-arrival-the-bus-to-christiansburg": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Friday Arrival & The Bus to Christiansburg",
-        "theme": "raggiesoft-books",
-        "filePath": "e008/c002/p001.md"
-    },
     "/aubrie/spring-semester-2016/the-electric-alert-the-box-office-showdown": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Electric Alert & The Box Office Showdown",
@@ -1525,12 +1519,6 @@
         "filePath": "__CHAP_TOC__|8|0"
     },
     "/aubrie/summer-2016/the-u-s-11-compound-the-sunken-sanctuary/the-u-s-11-compound-the-sunken-sanctuary-the-wedding-blueprint": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The U.S. 11 Compound, The Sunken Sanctuary, & The Wedding Blueprint",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c001/p001.md"
-    },
-    "/aubrie/summer-2016/the-u-s-11-compound-the-sunken-sanctuary/part-1-the-u-s-11-compound-the-sunken-sanctuary-the-wedding-blueprint": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The U.S. 11 Compound, The Sunken Sanctuary, & The Wedding Blueprint",
         "theme": "raggiesoft-books",

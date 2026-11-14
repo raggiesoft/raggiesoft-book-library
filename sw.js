@@ -19,9 +19,9 @@
  */
 
 // Cache partition identifiers
-const CACHE_NAME = 'ova-cache-v15';
-const DYNAMIC_CACHE = 'ova-dynamic-v15';
-const IMAGE_CACHE = 'ova-images-v15';
+const CACHE_NAME = 'ova-cache-v16';
+const DYNAMIC_CACHE = 'ova-dynamic-v16';
+const IMAGE_CACHE = 'ova-images-v16';
 
 // Minimum required assets to render the offline application shell
 // Note: /manifest.json is intentionally excluded from PRECACHE_ASSETS and bypassed in fetch
@@ -80,9 +80,15 @@ self.addEventListener('fetch', event => {
 
     const url = new URL(event.request.url);
 
-    // Never intercept the Service Worker script or Web App Manifest so Chromium's
-    // ManifestUpdateManager always reads the latest live manifest & icons on launch.
-    if (url.pathname === '/sw.js' || url.pathname === '/manifest.json') {
+    // Never intercept the Service Worker script, Web App Manifest, robots.txt, or XML sitemaps
+    // so browsers and search crawlers always read live canonical responses directly from the server.
+    if (
+        url.pathname === '/sw.js' ||
+        url.pathname === '/manifest.json' ||
+        url.pathname === '/robots.txt' ||
+        url.pathname === '/sitemap.xml' ||
+        url.pathname.startsWith('/sitemaps/')
+    ) {
         return;
     }
 

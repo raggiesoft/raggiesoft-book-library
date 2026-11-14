@@ -21,7 +21,7 @@
             "pdf_bytes": 5514555,
             "text_epub_bytes": 79111,
             "text_pdf_bytes": 5514555,
-            "package_7z_bytes": 60951
+            "package_7z_bytes": 60950
         },
         "illustration_count": 0,
         "word_stats": {
@@ -78,12 +78,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p001.md"
     },
-    "/quantum-directive-2-kelly/the-anchor/a-fork-in-the-road/part-1-the-bulletin-board-pager-code-005-1": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Bulletin Board \ud83d\udccc & Pager Code 005.1 \ud83d\udcdf",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/p001.md"
-    },
     "/quantum-directive-2-kelly/the-anchor/the-keynote": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Keynote",
@@ -114,12 +108,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c003/p001.md"
     },
-    "/quantum-directive-2-kelly/the-anchor/the-implosion/part-1-the-last-stand-the-verdict": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Last Stand \ud83d\udeb6\u200d\u2642\ufe0f & The Verdict \u2696\ufe0f",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/p001.md"
-    },
     "/quantum-directive-2-kelly/the-anchor/closing-the-book": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Closing the Book",
@@ -145,12 +133,6 @@
         "filePath": "__CHAP_TOC__|0|4"
     },
     "/quantum-directive-2-kelly/the-anchor/welcome-to-quantum/your-voices-matter-here-the-first-line-of-code": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Your Voices Matter Here \ud83e\udd1d & The First Line of Code \u2328\ufe0f",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/p001.md"
-    },
-    "/quantum-directive-2-kelly/the-anchor/welcome-to-quantum/part-1-your-voices-matter-here-the-first-line-of-code": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Your Voices Matter Here \ud83e\udd1d & The First Line of Code \u2328\ufe0f",
         "theme": "raggiesoft-books",
@@ -234,12 +216,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e002/c002/p001.md"
     },
-    "/quantum-directive-2-kelly/the-bidding-war-as-seen-on-devnet/the-players/part-1-the-developer-community-the-ceos": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Developer Community & The CEOs",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c002/p001.md"
-    },
     "/quantum-directive-2-kelly/the-bidding-war-as-seen-on-devnet/choosing-a-future": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Choosing a Future",
@@ -247,12 +223,6 @@
         "filePath": "__CHAP_TOC__|1|2"
     },
     "/quantum-directive-2-kelly/the-bidding-war-as-seen-on-devnet/choosing-a-future/all-the-offers-on-the-table": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "All the Offers on the Table \ud83d\udcc2",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c003/p001.md"
-    },
-    "/quantum-directive-2-kelly/the-bidding-war-as-seen-on-devnet/choosing-a-future/part-1-all-the-offers-on-the-table": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "All the Offers on the Table \ud83d\udcc2",
         "theme": "raggiesoft-books",

@@ -21,7 +21,7 @@
             "pdf_bytes": 241676,
             "text_epub_bytes": 84495,
             "text_pdf_bytes": 241676,
-            "package_7z_bytes": 68200
+            "package_7z_bytes": 68199
         },
         "illustration_count": 0,
         "word_stats": {
@@ -78,12 +78,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p001.md"
     },
-    "/ashley-tower/book-1-the-ascent/chapter-1-the-gathering-storm-tuesday-february-9-2021/part-1-best-laid-plans-7-30-pm-the-ten-o-clock-news-10-00-pm": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Best Laid Plans \u2013 7:30 PM & The Ten O'Clock News \u2013 10:00 PM",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/p001.md"
-    },
     "/ashley-tower/book-1-the-ascent/chapter-2-the-routine-wednesday-february-10-2021": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: The Routine \u2013 Wednesday, February 10, 2021",
@@ -91,12 +85,6 @@
         "filePath": "__CHAP_TOC__|0|1"
     },
     "/ashley-tower/book-1-the-ascent/chapter-2-the-routine-wednesday-february-10-2021/the-departure-7-00-am-the-inventory-6-30-pm": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Departure \u2013 7:00 AM & The Inventory \u2013 6:30 PM",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/p001.md"
-    },
-    "/ashley-tower/book-1-the-ascent/chapter-2-the-routine-wednesday-february-10-2021/part-1-the-departure-7-00-am-the-inventory-6-30-pm": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Departure \u2013 7:00 AM & The Inventory \u2013 6:30 PM",
         "theme": "raggiesoft-books",
@@ -114,12 +102,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c003/p001.md"
     },
-    "/ashley-tower/book-1-the-ascent/chapter-3-the-ice-thursday-february-11-2021/part-1-the-video-link-7-00-am": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Video Link \u2013 7:00 AM",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/p001.md"
-    },
     "/ashley-tower/book-1-the-ascent/chapter-4-landing-at-tki-friday-february-12-2021": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 4: Landing at TKI \u2013 Friday, February 12, 2021",
@@ -127,12 +109,6 @@
         "filePath": "__CHAP_TOC__|0|3"
     },
     "/ashley-tower/book-1-the-ascent/chapter-4-landing-at-tki-friday-february-12-2021/interlude-the-vanguard-lands-10-15-am": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Interlude: The Vanguard Lands \u2013 10:15 AM",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/p001.md"
-    },
-    "/ashley-tower/book-1-the-ascent/chapter-4-landing-at-tki-friday-february-12-2021/part-1-interlude-the-vanguard-lands-10-15-am": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Interlude: The Vanguard Lands \u2013 10:15 AM",
         "theme": "raggiesoft-books",
@@ -150,12 +126,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c005/p001.md"
     },
-    "/ashley-tower/book-1-the-ascent/chapter-5-the-deep-freeze-saturday-february-13-2021/part-1-the-agony-of-proximity-8-30-am": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Agony of Proximity \u2013 8:30 AM",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c005/p001.md"
-    },
     "/ashley-tower/book-1-the-ascent/chapter-6-the-gridline-sunday-february-14-2021": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 6: The Gridline \u2013 Sunday, February 14, 2021",
@@ -163,12 +133,6 @@
         "filePath": "__CHAP_TOC__|0|5"
     },
     "/ashley-tower/book-1-the-ascent/chapter-6-the-gridline-sunday-february-14-2021/gentlemen-only-6-45-pm": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Gentlemen Only \u2013 6:45 PM",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c006/p001.md"
-    },
-    "/ashley-tower/book-1-the-ascent/chapter-6-the-gridline-sunday-february-14-2021/part-1-gentlemen-only-6-45-pm": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Gentlemen Only \u2013 6:45 PM",
         "theme": "raggiesoft-books",
@@ -222,12 +186,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c009/p001.md"
     },
-    "/ashley-tower/book-1-the-ascent/chapter-9-the-breach-thursday-february-18-2021/part-1-the-arrival-8-15-am-sanctuary-9-30-am": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Arrival \u2013 8:15 AM & Sanctuary \u2013 9:30 AM",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c009/p001.md"
-    },
     "/ashley-tower/book-2-the-sterling-inheritance": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book 2: The Sterling Inheritance",
@@ -265,12 +223,6 @@
         "filePath": "__CHAP_TOC__|1|1"
     },
     "/ashley-tower/book-2-the-sterling-inheritance/chapter-2-the-sunday-morning-choice-sunday-february-21-2021/the-water-walls-7-00-am": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Water Walls \u2013 7:00 AM",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c002/p001.md"
-    },
-    "/ashley-tower/book-2-the-sterling-inheritance/chapter-2-the-sunday-morning-choice-sunday-february-21-2021/part-1-the-water-walls-7-00-am": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Water Walls \u2013 7:00 AM",
         "theme": "raggiesoft-books",

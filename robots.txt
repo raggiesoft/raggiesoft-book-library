@@ -1,0 +1,10 @@
+# Ocean View Archives — RaggieSoft Book Reader (https://books.raggiesoft.com)
+# Free CC BY-SA 4.0 serialized novels, scene illustrations, and lore archives by Michael P. Ragsdale.
+User-agent: *
+Allow: /
+Disallow: /bookmarks
+Disallow: /settings
+Disallow: /welcome
+Disallow: /setup
+
+Sitemap: https://books.raggiesoft.com/sitemap.xml

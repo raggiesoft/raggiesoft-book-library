@@ -79,8 +79,8 @@ foreach ($books as $bItem) {
                     <span>Word Counts &amp; Scale</span>
                 </a>
                 <!-- Collection Organization Toggle Buttons -->
-                <button id="rs-organize-btn" class="rs-btn" style="background: transparent; color: var(--rs-primary); border: none; padding: 0.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;" title="Organize Library">
-                    <i class="ph ph-folder" style="font-size: 1.75rem;"></i>
+                <button id="rs-organize-btn" type="button" aria-label="Organize library collections" class="rs-btn" style="background: transparent; color: var(--rs-primary); border: none; padding: 0.5rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer;" title="Organize Library">
+                    <i class="ph ph-folder" aria-hidden="true" style="font-size: 1.75rem;"></i>
                 </button>
                 <button id="rs-organize-done-btn" class="rs-btn" style="display: none; background: var(--rs-primary); color: var(--rs-on-primary, #ffffff); border: none; padding: 0.4rem 1rem; border-radius: 6px; font-weight: bold; font-size: 0.85rem; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
                     Done
@@ -106,15 +106,15 @@ foreach ($books as $bItem) {
             </button>
         </div>
 
-        <!-- Full Width Search Bar -->
+        <!-- Full Width Semantic Search Landmark -->
         <!-- Drives the instant client-side search component -->
-        <div style="position: relative; width: 100%; margin-bottom: 2rem;">
+        <search style="position: relative; width: 100%; margin-bottom: 2rem; display: block;">
             <div style="position: relative; display: flex; align-items: center;">
-                <i class="ph ph-magnifying-glass" style="position: absolute; left: 1rem; color: var(--rs-text-muted); font-size: 1.25rem;"></i>
-                <input type="text" id="rs-book-search" placeholder="Search titles, characters, or lore..." style="width: 100%; padding: 0.85rem 1rem 0.85rem 2.75rem; border-radius: 12px; border: 1px solid var(--rs-border); background: var(--rs-surface); color: var(--rs-text); font-size: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06); outline: none; -webkit-appearance: none;">
+                <i class="ph ph-magnifying-glass" aria-hidden="true" style="position: absolute; left: 1rem; color: var(--rs-text-muted); font-size: 1.25rem;"></i>
+                <input type="search" id="rs-book-search" aria-label="Search titles, characters, or lore" placeholder="Search titles, characters, or lore..." style="width: 100%; padding: 0.85rem 1rem 0.85rem 2.75rem; border-radius: 12px; border: 1px solid var(--rs-border); background: var(--rs-surface); color: var(--rs-text); font-size: 1rem; box-shadow: 0 2px 8px rgba(0,0,0,0.06); outline: none; -webkit-appearance: none;">
             </div>
             <div id="rs-search-results" style="display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 12px; max-height: 350px; overflow-y: auto; z-index: 1000; box-shadow: 0 8px 30px rgba(0,0,0,0.12); margin-top: 8px;"></div>
-        </div>
+        </search>
         
     </div>
 
@@ -153,14 +153,15 @@ foreach ($books as $bItem) {
                     </div>
                     <div id="rs-default-pool" class="rs-book-grid" style="display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 1.5rem 1rem; min-height: 240px; border: 2px dashed transparent; border-radius: 12px; padding: 0.5rem; margin: -0.5rem; transition: border-color 0.2s ease;">
                         
-                        <?php foreach ($books as $book): 
+                        <?php foreach ($books as $bookIdx => $book): 
                             $slug = $book['slug'] ?? '';
                             $title = $book['title'] ?? 'Unknown Archive';
                             $desc = !empty($book['short_description'])
                                 ? $book['short_description']
                                 : ($book['description'] ?? '');
                             $imgSrc = !empty($book['image']) ? $cdnBaseUrl . $book['image'] : $cdnBaseUrl . '/raggiesoft-books/images/book-placeholder.jpg';
-                            $readLink = '/' . $slug . '/';
+                            // Canonical root-level series URL (no trailing slash) so crawlers resolve in 0 redirects
+                            $readLink = '/' . $slug;
                             $bookWordStats = $book['word_stats'] ?? [];
                             $bookStoryWords = (int)($bookWordStats['story_word_count'] ?? 0);
                             $bookStoryPages = (int)($bookWordStats['estimated_story_pages'] ?? ($bookStoryWords > 0 ? ceil($bookStoryWords / 275) : 0));
@@ -171,7 +172,7 @@ foreach ($books as $bItem) {
                         <a href="<?php echo htmlspecialchars($readLink); ?>" class="rs-book-card" data-slug="<?php echo htmlspecialchars($slug); ?>" style="text-decoration: none; color: inherit; display: flex; flex-direction: column; transition: transform 0.2s ease;">
                             <!-- Cover Image -->
                             <div style="width: 100%; aspect-ratio: 2/3; background-color: var(--rs-surface); border-radius: 8px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.08); position: relative; margin-bottom: 0.75rem; border: 1px solid rgba(255,255,255,0.05);">
-                                <img src="<?php echo htmlspecialchars($imgSrc); ?>" alt="<?php echo htmlspecialchars($title); ?>" style="width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none;">
+                                <img src="<?php echo htmlspecialchars($imgSrc); ?>" alt="<?php echo htmlspecialchars($title); ?>" width="400" height="600" <?php if ($bookIdx === 0): ?>fetchpriority="high"<?php elseif ($bookIdx >= 6): ?>loading="lazy"<?php endif; ?> decoding="async" style="width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none;">
                                 <?php if ($bookStoryWords > 0): ?>
                                 <div style="position: absolute; bottom: 0.45rem; right: 0.45rem; background: rgba(9, 20, 32, 0.86); color: #f8fafc; border: 1px solid rgba(227, 178, 124, 0.55); border-radius: 6px; padding: 0.16rem 0.42rem; font-size: 0.68rem; font-weight: 800; letter-spacing: 0.02em; font-variant-numeric: tabular-nums; backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); pointer-events: none;">
                                     <?= $bookStoryWords >= 1000 ? number_format($bookStoryWords / 1000, 1) . 'k' : number_format($bookStoryWords) ?> words

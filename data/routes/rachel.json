@@ -21,7 +21,7 @@
             "pdf_bytes": 84152358,
             "text_epub_bytes": 1167211,
             "text_pdf_bytes": 3253711,
-            "package_7z_bytes": 807566
+            "package_7z_bytes": 807547
         },
         "illustration_count": 131,
         "word_stats": {
@@ -78,12 +78,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p001.md"
     },
-    "/rachel/the-delaney-street-years/the-sabertooth-kitty/part-1-the-sensory-avalanche": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Sensory Avalanche",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/p001.md"
-    },
     "/rachel/the-delaney-street-years/the-lower-bunk": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Lower Bunk",
@@ -91,12 +85,6 @@
         "filePath": "__CHAP_TOC__|0|1"
     },
     "/rachel/the-delaney-street-years/the-lower-bunk/sanctuary-the-new-arrangement": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Sanctuary & The New Arrangement",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/p001.md"
-    },
-    "/rachel/the-delaney-street-years/the-lower-bunk/part-1-sanctuary-the-new-arrangement": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Sanctuary & The New Arrangement",
         "theme": "raggiesoft-books",
@@ -127,12 +115,6 @@
         "filePath": "__CHAP_TOC__|0|3"
     },
     "/rachel/the-delaney-street-years/summer-camp-at-virginia-dominion-university/dominion-mall-the-summer-camp-map-mapping-vdu-with-rachel-and-jessica": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Dominion Mall & The Summer Camp Map: Mapping VDU with Rachel and Jessica",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c004/p001.md"
-    },
-    "/rachel/the-delaney-street-years/summer-camp-at-virginia-dominion-university/part-1-dominion-mall-the-summer-camp-map-mapping-vdu-with-rachel-and-jessica": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Dominion Mall & The Summer Camp Map: Mapping VDU with Rachel and Jessica",
         "theme": "raggiesoft-books",
@@ -169,12 +151,6 @@
         "filePath": "__CHAP_TOC__|1|1"
     },
     "/rachel/the-saltwater-summer/the-catalyst-saturday-august-12th-1995/the-inventory-the-genesis-of-hatred": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Inventory & The Genesis of Hatred",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c002/p001.md"
-    },
-    "/rachel/the-saltwater-summer/the-catalyst-saturday-august-12th-1995/part-1-the-inventory-the-genesis-of-hatred": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Inventory & The Genesis of Hatred",
         "theme": "raggiesoft-books",
@@ -432,12 +408,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c005/p001.md"
     },
-    "/rachel/base-camp/the-chimney-sweep/part-1-the-autumn-shift-fortifying-the-perimeter": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Autumn Shift & Fortifying the Perimeter",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c005/p001.md"
-    },
     "/rachel/base-camp/the-foreclosure": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Foreclosure",
@@ -450,12 +420,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c006/p001.md"
     },
-    "/rachel/base-camp/the-foreclosure/part-1-the-wednesday-rhythm-closure": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Wednesday Rhythm & Closure",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c006/p001.md"
-    },
     "/rachel/base-camp/jessica-s-15th-birthday": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Jessica\u2019s 15th Birthday",
@@ -463,12 +427,6 @@
         "filePath": "__CHAP_TOC__|2|6"
     },
     "/rachel/base-camp/jessica-s-15th-birthday/a-full-perimeter-the-phantom-anchor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "A Full Perimeter & The Phantom Anchor",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c007/p001.md"
-    },
-    "/rachel/base-camp/jessica-s-15th-birthday/part-1-a-full-perimeter-the-phantom-anchor": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Full Perimeter & The Phantom Anchor",
         "theme": "raggiesoft-books",
@@ -505,12 +463,6 @@
         "filePath": "__CHAP_TOC__|3|0"
     },
     "/rachel/middle-school/the-spring-sound-showcase-friday-may-14-1999/the-friday-commute-deploying-base-camp": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Friday Commute & Deploying Base Camp",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/p001.md"
-    },
-    "/rachel/middle-school/the-spring-sound-showcase-friday-may-14-1999/part-1-the-friday-commute-deploying-base-camp": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Friday Commute & Deploying Base Camp",
         "theme": "raggiesoft-books",
@@ -570,12 +522,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e004/c003/p001.md"
     },
-    "/rachel/middle-school/the-sunday-perimeter-sunday-may-16-1999/part-1-the-sleepover-calculation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Sleepover Calculation",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c003/p001.md"
-    },
     "/rachel/high-school": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "High School",
@@ -594,12 +540,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e005/c001/p001.md"
     },
-    "/rachel/high-school/marching-band/part-1-jessica-s-wake-up-call-band-camp": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Jessica\u2019s Wake Up Call & Band Camp",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c001/p001.md"
-    },
     "/rachel/high-school/the-concrete-walkway": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Concrete Walkway",
@@ -612,12 +552,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e005/c002/p001.md"
     },
-    "/rachel/high-school/the-concrete-walkway/part-1-black-friday-the-empty-house": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Black Friday & The Empty House",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c002/p001.md"
-    },
     "/rachel/high-school/the-holding-pattern": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Holding Pattern",
@@ -625,12 +559,6 @@
         "filePath": "__CHAP_TOC__|4|2"
     },
     "/rachel/high-school/the-holding-pattern/the-daytime-warden-the-logic-blueprint": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Daytime Warden & The Logic Blueprint",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c003/p001.md"
-    },
-    "/rachel/high-school/the-holding-pattern/part-1-the-daytime-warden-the-logic-blueprint": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Daytime Warden & The Logic Blueprint",
         "theme": "raggiesoft-books",
@@ -702,12 +630,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e005/c006/p001.md"
     },
-    "/rachel/high-school/the-catalyst-initiative/part-1-the-bare-metal-the-holding-pattern": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Bare Metal & The Holding Pattern",
-        "theme": "raggiesoft-books",
-        "filePath": "e005/c006/p001.md"
-    },
     "/rachel/atlanta-spring-trip": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Atlanta Spring Trip",
@@ -762,12 +684,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e006/c003/p001.md"
     },
-    "/rachel/atlanta-spring-trip/the-roanoke-rapids-collapse/part-1-the-crown-burger-trigger": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Crown Burger Trigger",
-        "theme": "raggiesoft-books",
-        "filePath": "e006/c003/p001.md"
-    },
     "/rachel/seeds-of-a-divorce": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Seeds of a Divorce",
@@ -799,12 +715,6 @@
         "filePath": "__CHAP_TOC__|6|1"
     },
     "/rachel/seeds-of-a-divorce/the-taps-grid-the-breda-fleet/reclaiming-the-armor-the-room-412-perimeter": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Reclaiming the Armor & The Room 412 Perimeter",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c002/p001.md"
-    },
-    "/rachel/seeds-of-a-divorce/the-taps-grid-the-breda-fleet/part-1-reclaiming-the-armor-the-room-412-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Reclaiming the Armor & The Room 412 Perimeter",
         "theme": "raggiesoft-books",
@@ -894,12 +804,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e009/c001/p001.md"
     },
-    "/rachel/the-divorce-reprieve/the-mall/part-1-vacation-from-parents-up-all-night-party": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Vacation from Parents & Up All Night Party",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c001/p001.md"
-    },
     "/rachel/the-divorce-reprieve/the-teenage-script": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Teenage Script",
@@ -907,12 +811,6 @@
         "filePath": "__CHAP_TOC__|8|1"
     },
     "/rachel/the-divorce-reprieve/the-teenage-script/the-elephant-in-the-room-the-cross-country-bargain": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Elephant in the Room & The Cross-Country Bargain",
-        "theme": "raggiesoft-books",
-        "filePath": "e009/c002/p001.md"
-    },
-    "/rachel/the-divorce-reprieve/the-teenage-script/part-1-the-elephant-in-the-room-the-cross-country-bargain": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Elephant in the Room & The Cross-Country Bargain",
         "theme": "raggiesoft-books",
@@ -936,12 +834,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e010/c001/p001.md"
     },
-    "/rachel/the-divorce/the-broken-door/part-1-rachel-s-fury-the-push-button-lock": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Rachel's Fury & The Push-Button Lock",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c001/p001.md"
-    },
     "/rachel/the-divorce/the-inevitable-math": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Inevitable Math",
@@ -949,12 +841,6 @@
         "filePath": "__CHAP_TOC__|9|1"
     },
     "/rachel/the-divorce/the-inevitable-math/the-guidance-office": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Guidance Office",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c002/p001.md"
-    },
-    "/rachel/the-divorce/the-inevitable-math/part-1-the-guidance-office": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Guidance Office",
         "theme": "raggiesoft-books",
@@ -972,12 +858,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e010/c003/p001.md"
     },
-    "/rachel/the-divorce/the-grounded-skies/part-1-the-eerie-silence-system-shutdown": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Eerie Silence & System Shutdown",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c003/p001.md"
-    },
     "/rachel/the-divorce/the-compromised-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Compromised Perimeter",
@@ -985,12 +865,6 @@
         "filePath": "__CHAP_TOC__|9|3"
     },
     "/rachel/the-divorce/the-compromised-perimeter/the-broken-routine-the-afternoon-siege": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Broken Routine & The Afternoon Siege",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c004/p001.md"
-    },
-    "/rachel/the-divorce/the-compromised-perimeter/part-1-the-broken-routine-the-afternoon-siege": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Broken Routine & The Afternoon Siege",
         "theme": "raggiesoft-books",
@@ -1008,12 +882,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e010/c005/p001.md"
     },
-    "/rachel/the-divorce/the-loophole/part-1-the-bleeding-finances-the-living-hell": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Bleeding Finances & The Living Hell",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c005/p001.md"
-    },
     "/rachel/the-divorce/the-departure": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Departure",
@@ -1021,12 +889,6 @@
         "filePath": "__CHAP_TOC__|9|5"
     },
     "/rachel/the-divorce/the-departure/the-bright-idea-the-calling-cards": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Bright Idea & The Calling Cards",
-        "theme": "raggiesoft-books",
-        "filePath": "e010/c006/p001.md"
-    },
-    "/rachel/the-divorce/the-departure/part-1-the-bright-idea-the-calling-cards": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Bright Idea & The Calling Cards",
         "theme": "raggiesoft-books",
@@ -1050,12 +912,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e011/c001/p001.md"
     },
-    "/rachel/michael-s-new-life/a-left-coast-christmas/part-1-arrival-at-pdx-sibling-cuddles": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Arrival at PDX & Sibling Cuddles",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c001/p001.md"
-    },
     "/rachel/michael-s-new-life/a-clark-county-christmas": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Clark County Christmas",
@@ -1063,12 +919,6 @@
         "filePath": "__CHAP_TOC__|10|1"
     },
     "/rachel/michael-s-new-life/a-clark-county-christmas/left-coast-time-the-hard-conversation": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Left Coast Time & The Hard Conversation",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c002/p001.md"
-    },
-    "/rachel/michael-s-new-life/a-clark-county-christmas/part-1-left-coast-time-the-hard-conversation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Left Coast Time & The Hard Conversation",
         "theme": "raggiesoft-books",
@@ -1086,12 +936,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e011/c003/p001.md"
     },
-    "/rachel/michael-s-new-life/shopping-in-portland/part-1-the-transit-protocol-the-federal-way-proposal": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Transit Protocol & The Federal Way Proposal",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c003/p001.md"
-    },
     "/rachel/michael-s-new-life/the-virginia-hammer": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Virginia Hammer",
@@ -1099,12 +943,6 @@
         "filePath": "__CHAP_TOC__|10|3"
     },
     "/rachel/michael-s-new-life/the-virginia-hammer/the-quantum-shield-the-status-quo": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Quantum Shield & The Status Quo",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c004/p001.md"
-    },
-    "/rachel/michael-s-new-life/the-virginia-hammer/part-1-the-quantum-shield-the-status-quo": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Quantum Shield & The Status Quo",
         "theme": "raggiesoft-books",
@@ -1158,12 +996,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e011/c007/p001.md"
     },
-    "/rachel/michael-s-new-life/the-southbound-arts/part-1-the-reverse-route-the-security-checkpoint": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Reverse Route & The Security Checkpoint",
-        "theme": "raggiesoft-books",
-        "filePath": "e011/c007/p001.md"
-    },
     "/rachel/the-east-coast": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The East Coast",
@@ -1206,12 +1038,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e012/c002/p001.md"
     },
-    "/rachel/the-east-coast/arrival-at-norfolk/part-1-sibling-reunification-the-northern-star": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Sibling Reunification & The Northern Star",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c002/p001.md"
-    },
     "/rachel/the-east-coast/the-new-baseline": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The New Baseline",
@@ -1219,12 +1045,6 @@
         "filePath": "__CHAP_TOC__|11|2"
     },
     "/rachel/the-east-coast/the-new-baseline/the-three-hour-shift": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Three-Hour Shift",
-        "theme": "raggiesoft-books",
-        "filePath": "e012/c003/p001.md"
-    },
-    "/rachel/the-east-coast/the-new-baseline/part-1-the-three-hour-shift": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Three-Hour Shift",
         "theme": "raggiesoft-books",
@@ -1243,12 +1063,6 @@
         "filePath": "__CHAP_TOC__|12|0"
     },
     "/rachel/michael-s-senior-year/the-high-school-field-trip-to-vdu/walking-the-old-camp-paths-with-northwood-high-the-promise-to-reunite-first": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Walking the Old Camp Paths with Northwood High & The Promise to Reunite First",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c001/p001.md"
-    },
-    "/rachel/michael-s-senior-year/the-high-school-field-trip-to-vdu/part-1-walking-the-old-camp-paths-with-northwood-high-the-promise-to-reunite-first": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Walking the Old Camp Paths with Northwood High & The Promise to Reunite First",
         "theme": "raggiesoft-books",
@@ -1314,12 +1128,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e013/c004/p001.md"
     },
-    "/rachel/michael-s-senior-year/the-extraction/part-1-the-morning-perimeter": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Morning Perimeter",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c004/p001.md"
-    },
     "/rachel/michael-s-senior-year/hurricane-isabel-the-three-bus-evacuation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Hurricane Isabel & The Three-Bus Evacuation",
@@ -1327,12 +1135,6 @@
         "filePath": "__CHAP_TOC__|12|4"
     },
     "/rachel/michael-s-senior-year/hurricane-isabel-the-three-bus-evacuation/three-buses-to-kemps-river-drive-crown-burger-sharing-cousin-maria-s-twin-bed": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Three Buses to Kemps River Drive, Crown Burger, & Sharing Cousin Maria's Twin Bed",
-        "theme": "raggiesoft-books",
-        "filePath": "e013/c005/p001.md"
-    },
-    "/rachel/michael-s-senior-year/hurricane-isabel-the-three-bus-evacuation/part-1-three-buses-to-kemps-river-drive-crown-burger-sharing-cousin-maria-s-twin-bed": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Three Buses to Kemps River Drive, Crown Burger, & Sharing Cousin Maria's Twin Bed",
         "theme": "raggiesoft-books",
@@ -1374,12 +1176,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e014/c002/p001.md"
     },
-    "/rachel/delores/the-gateway/part-1-the-morning-call": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Morning Call",
-        "theme": "raggiesoft-books",
-        "filePath": "e014/c002/p001.md"
-    },
     "/rachel/the-end-of-hell": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The End of Hell",
@@ -1398,12 +1194,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e015/c001/p001.md"
     },
-    "/rachel/the-end-of-hell/the-setup/part-1-the-pitch": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Pitch",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c001/p001.md"
-    },
     "/rachel/the-end-of-hell/the-departure": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Departure",
@@ -1411,12 +1201,6 @@
         "filePath": "__CHAP_TOC__|14|1"
     },
     "/rachel/the-end-of-hell/the-departure/the-deception-at-churchland-square-interstate-81": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Deception at Churchland Square & Interstate 81",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c002/p001.md"
-    },
-    "/rachel/the-end-of-hell/the-departure/part-1-the-deception-at-churchland-square-interstate-81": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Deception at Churchland Square & Interstate 81",
         "theme": "raggiesoft-books",
@@ -1434,12 +1218,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e015/c003/p001.md"
     },
-    "/rachel/the-end-of-hell/the-appalachian-crossing/part-1-the-knoxville-layover-kansas-city": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Knoxville Layover & Kansas City",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c003/p001.md"
-    },
     "/rachel/the-end-of-hell/the-northern-anchor": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Northern Anchor",
@@ -1447,12 +1225,6 @@
         "filePath": "__CHAP_TOC__|14|3"
     },
     "/rachel/the-end-of-hell/the-northern-anchor/the-state-line-the-salt-lake-layover": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The State Line & The Salt Lake Layover",
-        "theme": "raggiesoft-books",
-        "filePath": "e015/c004/p001.md"
-    },
-    "/rachel/the-end-of-hell/the-northern-anchor/part-1-the-state-line-the-salt-lake-layover": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The State Line & The Salt Lake Layover",
         "theme": "raggiesoft-books",
@@ -1824,12 +1596,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e018/c001/p001.md"
     },
-    "/rachel/the-shallow-end/the-foundation/part-1-the-tarmac-and-the-tear-the-decoy-protocol": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Tarmac and the Tear & The Decoy Protocol",
-        "theme": "raggiesoft-books",
-        "filePath": "e018/c001/p001.md"
-    },
     "/rachel/the-shallow-end/the-blueprint-and-the-sabomnim": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Blueprint and the Sabomnim",
@@ -1861,12 +1627,6 @@
         "filePath": "__CHAP_TOC__|17|2"
     },
     "/rachel/the-shallow-end/the-sunday-reset/the-three-day-math-the-evolution-of-the-anchor": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Three-Day Math & The Evolution of the Anchor",
-        "theme": "raggiesoft-books",
-        "filePath": "e018/c003/p001.md"
-    },
-    "/rachel/the-shallow-end/the-sunday-reset/part-1-the-three-day-math-the-evolution-of-the-anchor": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Three-Day Math & The Evolution of the Anchor",
         "theme": "raggiesoft-books",
@@ -2010,12 +1770,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e019/c003/p001.md"
     },
-    "/rachel/the-eastern-anchor/the-deployment/part-1-the-west-coast-wake-up": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The West Coast Wake-Up",
-        "theme": "raggiesoft-books",
-        "filePath": "e019/c003/p001.md"
-    },
     "/rachel/the-director-s-perimeter": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Director's Perimeter",
@@ -2034,12 +1788,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e020/c001/p001.md"
     },
-    "/rachel/the-director-s-perimeter/the-capture/part-1-the-sme-directive": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The SME Directive",
-        "theme": "raggiesoft-books",
-        "filePath": "e020/c001/p001.md"
-    },
     "/rachel/the-director-s-perimeter/the-moosewood-anomaly": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Moosewood Anomaly",
@@ -2052,12 +1800,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e020/c002/p001.md"
     },
-    "/rachel/the-director-s-perimeter/the-moosewood-anomaly/part-1-the-twenty-third-milestone-the-evasive-route": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Twenty-Third Milestone & The Evasive Route",
-        "theme": "raggiesoft-books",
-        "filePath": "e020/c002/p001.md"
-    },
     "/rachel/the-director-s-perimeter/the-tactical-acquisition": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Tactical Acquisition",
@@ -2065,12 +1807,6 @@
         "filePath": "__CHAP_TOC__|19|2"
     },
     "/rachel/the-director-s-perimeter/the-tactical-acquisition/the-route-36-commute-the-corporate-guillotine": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Route 36 Commute & The Corporate Guillotine",
-        "theme": "raggiesoft-books",
-        "filePath": "e020/c003/p001.md"
-    },
-    "/rachel/the-director-s-perimeter/the-tactical-acquisition/part-1-the-route-36-commute-the-corporate-guillotine": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Route 36 Commute & The Corporate Guillotine",
         "theme": "raggiesoft-books",
@@ -2160,12 +1896,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e021/c002/p001.md"
     },
-    "/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/bilateral-achilles-heel-cord-lengthening-cleared-for-cpi/part-1-bilateral-achilles-heel-cord-lengthening-why-rachel-waited-for-me-cleared-to-travel-to-cpi": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Bilateral Achilles Heel Cord Lengthening, Why Rachel Waited for Me, & Cleared to Travel to CPI",
-        "theme": "raggiesoft-books",
-        "filePath": "e021/c002/p001.md"
-    },
     "/rachel/the-mountain-conference-saacurc-2016": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Mountain Conference (SAACURC 2016)",
@@ -2232,12 +1962,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e023/c002/p001.md"
     },
-    "/rachel/behind-the-wheel-55-mph-on-ferrell-parkway-summer-2016/the-45-mph-curves-passing-the-road-test-on-the-first-try/part-1-45-mph-on-the-kempsville-lynnhaven-curves-passing-the-road-test-on-the-first-try": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "45 MPH on the Kempsville & Lynnhaven Curves & Passing the Road Test on the First Try",
-        "theme": "raggiesoft-books",
-        "filePath": "e023/c002/p001.md"
-    },
     "/rachel/thanksgiving-in-luray-the-court-square-crosswalk-november-2017": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Thanksgiving in Luray & The Court Square Crosswalk (November 2017)",
@@ -2251,12 +1975,6 @@
         "filePath": "__CHAP_TOC__|23|0"
     },
     "/rachel/thanksgiving-in-luray-the-court-square-crosswalk-november-2017/thanksgiving-in-the-page-valley-u-s-route-211-dinner-with-terry-the-single-queen-sanctuary/borrowing-mom-s-car-thanksgiving-with-terry-in-luray-the-single-queen-bed-on-us-211": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Borrowing Mom's Car, Thanksgiving with Terry in Luray, & The Single-Queen Bed on US-211",
-        "theme": "raggiesoft-books",
-        "filePath": "e024/c001/p001.md"
-    },
-    "/rachel/thanksgiving-in-luray-the-court-square-crosswalk-november-2017/thanksgiving-in-the-page-valley-u-s-route-211-dinner-with-terry-the-single-queen-sanctuary/part-1-borrowing-mom-s-car-thanksgiving-with-terry-in-luray-the-single-queen-bed-on-us-211": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Borrowing Mom's Car, Thanksgiving with Terry in Luray, & The Single-Queen Bed on US-211",
         "theme": "raggiesoft-books",

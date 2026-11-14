@@ -21,7 +21,7 @@
             "pdf_bytes": 19691323,
             "text_epub_bytes": 189100,
             "text_pdf_bytes": 573976,
-            "package_7z_bytes": 142853
+            "package_7z_bytes": 142857
         },
         "illustration_count": 25,
         "word_stats": {
@@ -78,12 +78,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p001.md"
     },
-    "/stardust-engine/book-1-analog-heart-teenager-in-the-valley-1978-1989/chapter-1-the-noise-floor-september-1978/part-1-high-fidelity-safe-harbor-the-circuit": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "High Fidelity, Safe Harbor & The Circuit",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/p001.md"
-    },
     "/stardust-engine/book-1-analog-heart-teenager-in-the-valley-1978-1989/chapter-2-the-analog-years-the-sonic-signature-1979-1985": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: The Analog Years & The Sonic Signature (1979\u20131985)",
@@ -96,12 +90,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c002/p001.md"
     },
-    "/stardust-engine/book-1-analog-heart-teenager-in-the-valley-1978-1989/chapter-2-the-analog-years-the-sonic-signature-1979-1985/part-1-the-analog-years-the-sonic-signature-1979-1985": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Analog Years & The Sonic Signature (1979\u20131985)",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c002/p001.md"
-    },
     "/stardust-engine/book-1-analog-heart-teenager-in-the-valley-1978-1989/chapter-3-ignition-the-1-00-cross-license-the-apex-years-1986-1989": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 3: 'Ignition,' The $1.00 Cross-License & The Apex Years (1986\u20131989)",
@@ -109,12 +97,6 @@
         "filePath": "__CHAP_TOC__|0|2"
     },
     "/stardust-engine/book-1-analog-heart-teenager-in-the-valley-1978-1989/chapter-3-ignition-the-1-00-cross-license-the-apex-years-1986-1989/ignition-the-1-00-cross-license-the-apex-years-1986-1989": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "'Ignition,' The $1.00 Cross-License & The Apex Years (1986\u20131989)",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c003/p001.md"
-    },
-    "/stardust-engine/book-1-analog-heart-teenager-in-the-valley-1978-1989/chapter-3-ignition-the-1-00-cross-license-the-apex-years-1986-1989/part-1-ignition-the-1-00-cross-license-the-apex-years-1986-1989": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "'Ignition,' The $1.00 Cross-License & The Apex Years (1986\u20131989)",
         "theme": "raggiesoft-books",
@@ -138,12 +120,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e002/c001/p001.md"
     },
-    "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1989-1990/chapter-1-live-in-chicago-the-thirty-minute-box-the-backstage-vow-october-14-1989/part-1-the-thirty-minute-box-the-onstage-anchor-the-backstage-vow": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Thirty-Minute Box, The Onstage Anchor & The Backstage Vow",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/p001.md"
-    },
     "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1989-1990/chapter-2-mile-marker-98-protocol-t-10-december-10-1990": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: Mile Marker 98 & Protocol T-10 (December 10, 1990)",
@@ -151,12 +127,6 @@
         "filePath": "__CHAP_TOC__|1|1"
     },
     "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1989-1990/chapter-2-mile-marker-98-protocol-t-10-december-10-1990/mile-marker-98-protocol-t-10-1990": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Mile Marker 98 & Protocol T-10 (1990)",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c002/p001.md"
-    },
-    "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1989-1990/chapter-2-mile-marker-98-protocol-t-10-december-10-1990/part-1-mile-marker-98-protocol-t-10-1990": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Mile Marker 98 & Protocol T-10 (1990)",
         "theme": "raggiesoft-books",
@@ -180,12 +150,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c001/p001.md"
     },
-    "/stardust-engine/book-3-the-friction-narrative-the-warehouse-tapes-1992-1995/chapter-1-the-beverly-hills-mansion-the-hostage-photo-september-1992/part-1-the-beverly-hills-mansion-the-hostage-photo-september-1992": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Beverly Hills Mansion & The Hostage Photo (September 1992)",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/p001.md"
-    },
     "/stardust-engine/book-3-the-friction-narrative-the-warehouse-tapes-1992-1995/chapter-2-the-subpoena-the-felony-trial-the-wilderness-1992-1995": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: The Subpoena, The Felony Trial & The Wilderness (1992\u20131995)",
@@ -193,12 +157,6 @@
         "filePath": "__CHAP_TOC__|2|1"
     },
     "/stardust-engine/book-3-the-friction-narrative-the-warehouse-tapes-1992-1995/chapter-2-the-subpoena-the-felony-trial-the-wilderness-1992-1995/the-subpoena-the-felony-trial-the-wilderness-1992-1995": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Subpoena, The Felony Trial & The Wilderness (1992\u20131995)",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/p001.md"
-    },
-    "/stardust-engine/book-3-the-friction-narrative-the-warehouse-tapes-1992-1995/chapter-2-the-subpoena-the-felony-trial-the-wilderness-1992-1995/part-1-the-subpoena-the-felony-trial-the-wilderness-1992-1995": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Subpoena, The Felony Trial & The Wilderness (1992\u20131995)",
         "theme": "raggiesoft-books",
@@ -222,12 +180,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e004/c001/p001.md"
     },
-    "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1995-2004/chapter-1-escape-velocity-ad-astra-main-engine-cutoff-1995-1997/part-1-main-engine-cutoff-the-magnum-opus": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Main Engine Cutoff & The Magnum Opus",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c001/p001.md"
-    },
     "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1995-2004/chapter-2-job-shadowing-the-manager-a-day-in-the-life-of-holly-o-connell-october-15-1999": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: Job Shadowing the Manager \u2014 A Day in the Life of Holly O'Connell (October 15, 1999)",
@@ -240,12 +192,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e004/c002/p001.md"
     },
-    "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1995-2004/chapter-2-job-shadowing-the-manager-a-day-in-the-life-of-holly-o-connell-october-15-1999/part-1-job-shadowing-the-manager-a-day-in-the-life-of-holly-o-connell": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Job Shadowing the Manager \u2014 A Day in the Life of Holly O'Connell",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c002/p001.md"
-    },
     "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1995-2004/chapter-3-writing-before-the-distance-on-progress-street-2004": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 3: Writing Before the Distance on Progress Street (2004)",
@@ -253,12 +199,6 @@
         "filePath": "__CHAP_TOC__|3|2"
     },
     "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1995-2004/chapter-3-writing-before-the-distance-on-progress-street-2004/two-blocks-from-commonwealth-mall": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Two Blocks from Commonwealth Mall",
-        "theme": "raggiesoft-books",
-        "filePath": "e004/c003/p001.md"
-    },
-    "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1995-2004/chapter-3-writing-before-the-distance-on-progress-street-2004/part-1-two-blocks-from-commonwealth-mall": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Two Blocks from Commonwealth Mall",
         "theme": "raggiesoft-books",
@@ -372,12 +312,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e007/c001/p001.md"
     },
-    "/stardust-engine/book-7-the-nine-figure-refusal-the-jessica-miller-center-2018-2019/chapter-1-the-approach-vector-september-13-2018/part-1-the-approach-vector-september-13-2018": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Approach Vector (September 13, 2018)",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c001/p001.md"
-    },
     "/stardust-engine/book-7-the-nine-figure-refusal-the-jessica-miller-center-2018-2019/chapter-2-omni-global-media-clause-88-the-twin-protocol-september-14-19-2018": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 2: Omni-Global Media, Clause 88 & The Twin Protocol (September 14\u201319, 2018)",
@@ -385,12 +319,6 @@
         "filePath": "__CHAP_TOC__|6|1"
     },
     "/stardust-engine/book-7-the-nine-figure-refusal-the-jessica-miller-center-2018-2019/chapter-2-omni-global-media-clause-88-the-twin-protocol-september-14-19-2018/omni-global-media-clause-88-the-twin-protocol-september-14-19-2018": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Omni-Global Media, Clause 88 & The Twin Protocol (September 14\u201319, 2018)",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c002/p001.md"
-    },
-    "/stardust-engine/book-7-the-nine-figure-refusal-the-jessica-miller-center-2018-2019/chapter-2-omni-global-media-clause-88-the-twin-protocol-september-14-19-2018/part-1-omni-global-media-clause-88-the-twin-protocol-september-14-19-2018": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Omni-Global Media, Clause 88 & The Twin Protocol (September 14\u201319, 2018)",
         "theme": "raggiesoft-books",
@@ -408,12 +336,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e007/c003/p001.md"
     },
-    "/stardust-engine/book-7-the-nine-figure-refusal-the-jessica-miller-center-2018-2019/chapter-3-the-summit-the-retrofit-the-sting-operation-september-14-25-2018/part-1-the-summit-the-retrofit-the-sting-the-arts-sleeper-problem-september-14-27-2018": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Summit, The Retrofit, The Sting & The ARTS Sleeper Problem (September 14\u201327, 2018)",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c003/p001.md"
-    },
     "/stardust-engine/book-7-the-nine-figure-refusal-the-jessica-miller-center-2018-2019/chapter-4-the-jessica-miller-center-the-frost-interview-december-2018-february-2019": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 4: The Jessica Miller Center & The Frost Interview (December 2018\u2013February 2019)",
@@ -421,12 +343,6 @@
         "filePath": "__CHAP_TOC__|6|3"
     },
     "/stardust-engine/book-7-the-nine-figure-refusal-the-jessica-miller-center-2018-2019/chapter-4-the-jessica-miller-center-the-frost-interview-december-2018-february-2019/the-jessica-miller-center-the-frost-interview-december-2018-february-2019": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Jessica Miller Center & The Frost Interview (December 2018\u2013February 2019)",
-        "theme": "raggiesoft-books",
-        "filePath": "e007/c004/p001.md"
-    },
-    "/stardust-engine/book-7-the-nine-figure-refusal-the-jessica-miller-center-2018-2019/chapter-4-the-jessica-miller-center-the-frost-interview-december-2018-february-2019/part-1-the-jessica-miller-center-the-frost-interview-december-2018-february-2019": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Jessica Miller Center & The Frost Interview (December 2018\u2013February 2019)",
         "theme": "raggiesoft-books",

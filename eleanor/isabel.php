@@ -31,19 +31,45 @@
 
 // Stardust Engine Library: Master Router
 // The OVA Siblings: Eleanor (Public Entry), Isabel (Router), Sophia (Protected Vault), Oliver (Viewer)
+// Note: Use `Cache-Control: no-cache` (never `no-store`) so browsers revalidate fresh HTML
+// while preserving instant Back-Forward Cache (bfcache) restoration across narrative chapters.
 header('Content-Type: text/html; charset=utf-8');
-header('Cache-Control: no-cache, no-store, must-revalidate');
-header('Pragma: no-cache');
-header('Expires: 0');
+header('Cache-Control: no-cache');
 
 // Strip any query parameters to match exact semantic route paths
-$requestUri = strtok($_SERVER['REQUEST_URI'], '?');
+$rawPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
+$requestUri = (is_string($rawPath) && $rawPath !== '') ? $rawPath : '/';
 
 // Normalize legacy `/books/<series>` or `/raggiesoft-books/<series>` deep-links
 // (e.g., `/books/stardust-engine`, `/raggiesoft-books/ad-astra`) to the canonical
 // root-level series route (`/<series>`) with a permanent 301 redirect.
 if (preg_match('#^/(?:raggiesoft-)?books/(.+)$#', $requestUri, $legacyBookMatch)) {
-    header('Location: /' . ltrim($legacyBookMatch[1], '/'), true, 301);
+    $cleanLegacyTarget = rtrim(ltrim($legacyBookMatch[1], '/'), '/');
+    header('Location: /' . $cleanLegacyTarget, true, 301);
+    exit;
+}
+
+// Canonicalize non-root trailing slashes (`/<slug>/` -> `/<slug>`) with a permanent 301 redirect
+// so search engines and social crawlers never index duplicate trailing-slash URLs.
+if ($requestUri !== '/' && str_ends_with($requestUri, '/')) {
+    header('Location: ' . rtrim($requestUri, '/'), true, 301);
+    exit;
+}
+
+// Canonicalize duplicate platform aliases to their single primary URLs via 301 redirect
+$platformAliasRedirects = [
+    '/index.php'              => '/',
+    '/isabel.php'             => '/',
+    '/eleanor/isabel.php'     => '/',
+    '/catalog'                => '/library',
+    '/discover'               => '/library',
+    '/table-of-illustrations' => '/illustrations',
+    '/word-counts'            => '/stats',
+    '/library-stats'          => '/stats',
+    '/setup'                  => '/welcome',
+];
+if (isset($platformAliasRedirects[$requestUri])) {
+    header('Location: ' . $platformAliasRedirects[$requestUri], true, 301);
     exit;
 }
 
@@ -73,11 +99,11 @@ $legacyPartRedirects = [
     '/nichole/college-tours/the-gap-year-protocol/part-1-1850-delaney-street-virginia-beach-virginia-the-departure'
         => '/nichole/college-tours/the-gap-year-protocol/part-1-delaney-street-virginia-beach-virginia-the-departure',
 
-    // Nichole (Era 13, Chapter 1, Part 1 — single-part chapter emits both canonical and `/part-1-` alias routes)
+    // Nichole (Era 13, Chapter 1, Part 1 — single-part chapter redirects directly to canonical slug)
     '/nichole/the-end/the-synchronized-shutdown/the-master-suite-95-west-main-road-portsmouth-ri-the-legacy'
         => '/nichole/the-end/the-synchronized-shutdown/the-master-suite-west-main-road-portsmouth-ri-the-legacy',
     '/nichole/the-end/the-synchronized-shutdown/part-1-the-master-suite-95-west-main-road-portsmouth-ri-the-legacy'
-        => '/nichole/the-end/the-synchronized-shutdown/part-1-the-master-suite-west-main-road-portsmouth-ri-the-legacy',
+        => '/nichole/the-end/the-synchronized-shutdown/the-master-suite-west-main-road-portsmouth-ri-the-legacy',
 
     // Rachel (Era 18, Chapter 4, Part 1 & Era 19, Chapter 1, Part 2): Stripped house numbers from Canadian Arch & Rich Court
     '/rachel/the-shallow-end/the-open-door-sanctuary/part-1-the-keys-to-3701-the-dollar-lease'
@@ -103,8 +129,25 @@ if (isset($legacyPartRedirects[$normalizedRequestUri])) {
 $basePath = realpath(__DIR__ . '/../');
 
 // ---------------------------------------------------------
-// ISABEL'S ROUTING LOGIC
+// ISABEL'S ROUTING & CANONICAL SEO METADATA LOGIC
 // ---------------------------------------------------------
+
+/**
+ * Cleanly truncates text on a word boundary for OpenGraph/Twitter titles (<= 60 chars)
+ * and meta descriptions (<= 155 chars) without chopping mid-word.
+ */
+$truncateSeoText = static function (string $text, int $maxChars): string {
+    $clean = trim((string)preg_replace('/\s+/', ' ', strip_tags(html_entity_decode($text, ENT_QUOTES | ENT_HTML5, 'UTF-8'))));
+    if ($clean === '' || mb_strlen($clean, 'UTF-8') <= $maxChars) {
+        return $clean;
+    }
+    $cut = mb_substr($clean, 0, $maxChars - 1, 'UTF-8');
+    $lastSpace = mb_strrpos($cut, ' ', 0, 'UTF-8');
+    if ($lastSpace !== false && $lastSpace >= (int)floor($maxChars * 0.55)) {
+        $cut = mb_substr($cut, 0, $lastSpace, 'UTF-8');
+    }
+    return rtrim($cut, " \t\n\r\0\x0B.,;:-—") . '…';
+};
 
 // Establish default page configuration payload
 $pageConfig = [
@@ -114,8 +157,7 @@ $pageConfig = [
 // Attempt to load global Master Settings from the local data directory
 $settingsFile = $basePath . '/data/settings.json';
 if (file_exists($settingsFile)) {
-    $settings = json_decode(file_get_contents($settingsFile), true);
-    // Coalesce fallback values to prevent undefined or empty variables
+    $settings = json_decode((string)file_get_contents($settingsFile), true);
     $cdnBaseUrl = !empty($settings['cdnBaseUrl']) ? rtrim($settings['cdnBaseUrl'], '/') : 'https://assets.raggiesoft.com';
     $siteName = !empty($settings['siteName']) ? $settings['siteName'] : 'Ocean View Archives';
 } else {
@@ -123,93 +165,112 @@ if (file_exists($settingsFile)) {
     $siteName = 'Ocean View Archives';
 }
 
-// Attempt to identify the narrative series slug from the first URL segment
-$seriesSlug = '';
-if (preg_match('#^/([^/]+)#', $requestUri, $matches)) {
-    $seriesSlug = $matches[1];
-    
-    // Attempt to load specific Route Data for the identified series
-    $routeFile = $basePath . '/data/routes/' . $seriesSlug . '.json';
-    if (file_exists($routeFile)) {
-        $routeData = json_decode(file_get_contents($routeFile), true) ?? [];
-        $common = $routeData['common'] ?? [];
-        $routeSpecific = $routeData[$requestUri] ?? [];
-        if (empty($routeSpecific) && strpos($requestUri, '/part-1-') !== false) {
-            $strippedPart1Uri = preg_replace('#/part-1-([^/]+)$#', '/$1', $requestUri);
-            if (!empty($routeData[$strippedPart1Uri])) {
-                $routeSpecific = $routeData[$strippedPart1Uri];
-            }
-        }
-        
-        // Merge configurations hierarchically: Specific overrides Common overrides Default
-        $pageConfig = array_merge($pageConfig, $common, $routeSpecific);
-    }
-}
+// Workspace server root (`/Users/michael/Developer/raggiesoft-servers` locally, `/var/www` on Droplet)
+$localServerRoot = dirname($basePath, 3);
 
-// Determine if the requested URI corresponds to top-level platform pages
+// 1. Evaluate top-level platform routes FIRST before checking narrative book slugs
 $isCatalog = false;
 $isHome = false;
 $isKnox = false;
 $isAethelSaga = false;
 $isAllIllustrations = false;
 $isStats = false;
-if ($requestUri === '/' || $requestUri === '/isabel.php' || $requestUri === '/index.php') {
+$isBookmarks = false;
+$isSettings = false;
+$isAccessibility = false;
+$isAbout = false;
+$isWelcome = false;
+$isPlatformRoute = false;
+
+if ($requestUri === '/') {
     $isHome = true;
-    $seriesSlug = ''; // Clear slug to avoid conflicts
+    $isPlatformRoute = true;
     $pageConfig['title'] = 'Home';
-} else if ($requestUri === '/illustrations' || $requestUri === '/table-of-illustrations') {
+} elseif ($requestUri === '/illustrations') {
     $isAllIllustrations = true;
-    $seriesSlug = '';
+    $isPlatformRoute = true;
     $pageConfig['title'] = 'Library Table of Illustrations';
-} else if ($requestUri === '/stats' || $requestUri === '/word-counts' || $requestUri === '/library-stats') {
+} elseif ($requestUri === '/stats') {
     $isStats = true;
-    $seriesSlug = '';
+    $isPlatformRoute = true;
     $pageConfig['title'] = 'Library Word Count & Scale Stats';
-} else if ($requestUri === '/library' || $requestUri === '/catalog') {
+} elseif ($requestUri === '/library') {
     $isCatalog = true;
-    $seriesSlug = ''; // Clear slug
+    $isPlatformRoute = true;
     $pageConfig['title'] = 'Library';
-} else if ($requestUri === '/knox') {
+} elseif ($requestUri === '/knox') {
     $isKnox = true;
-    $seriesSlug = '';
+    $isPlatformRoute = true;
     $pageConfig['title'] = 'Project: KNOX';
-} else if ($requestUri === '/aethel-saga') {
+} elseif ($requestUri === '/aethel-saga') {
     $isAethelSaga = true;
-    $seriesSlug = '';
+    $isPlatformRoute = true;
     $pageConfig['title'] = 'The Silver Gauntlet of Aethel';
-} else if ($requestUri === '/discover') {
-    header('Location: /library', true, 301);
-    exit;
-} else if ($requestUri === '/bookmarks') {
+} elseif ($requestUri === '/bookmarks') {
     $isBookmarks = true;
-    $seriesSlug = '';
+    $isPlatformRoute = true;
     $pageConfig['title'] = 'Bookmarks';
-} else if ($requestUri === '/settings') {
+} elseif ($requestUri === '/settings') {
     $isSettings = true;
-    $seriesSlug = '';
+    $isPlatformRoute = true;
     $pageConfig['title'] = 'Settings';
-} else if ($requestUri === '/accessibility') {
+} elseif ($requestUri === '/accessibility') {
     $isAccessibility = true;
-    $seriesSlug = '';
+    $isPlatformRoute = true;
     $pageConfig['title'] = 'Accessibility';
-} else if ($requestUri === '/about') {
+} elseif ($requestUri === '/about') {
     $isAbout = true;
-    $seriesSlug = '';
+    $isPlatformRoute = true;
     $pageConfig['title'] = 'About';
-} else if ($requestUri === '/welcome' || $requestUri === '/setup') {
+} elseif ($requestUri === '/welcome') {
     $isWelcome = true;
-    $seriesSlug = '';
+    $isPlatformRoute = true;
     $pageConfig['title'] = 'Welcome';
-} else if (false) {
-    $isCatalog = true;
-    $seriesSlug = ''; // Clear slug
-    $pageConfig['title'] = 'Library';
+}
+
+// 2. Resolve Narrative Book Series Routes & Enforce Canonical 301 / HTTP 404 Semantics
+$seriesSlug = '';
+$routeData = [];
+$hasValidBookSeries = false;
+$isNotFound = false;
+
+if (!$isPlatformRoute && preg_match('#^/([^/]+)#', $requestUri, $matches)) {
+    $seriesSlug = $matches[1];
+    $routeFile = $basePath . '/data/routes/' . $seriesSlug . '.json';
+    if (file_exists($routeFile)) {
+        $hasValidBookSeries = true;
+        $routeData = json_decode((string)file_get_contents($routeFile), true) ?? [];
+        $common = $routeData['common'] ?? [];
+
+        // Permanently 301-redirect legacy single-part `/part-1-<slug>` URLs to canonical `/<slug>`
+        if (strpos($requestUri, '/part-1-') !== false) {
+            $strippedPart1Uri = preg_replace('#/part-1-([^/]+)$#', '/$1', $requestUri);
+            if (is_string($strippedPart1Uri) && !empty($routeData[$strippedPart1Uri])) {
+                header('Location: ' . $strippedPart1Uri, true, 301);
+                exit;
+            }
+        }
+
+        $routeSpecific = $routeData[$requestUri] ?? [];
+        $pageConfig = array_merge($pageConfig, $common, $routeSpecific);
+        if (empty($routeSpecific['filePath'])) {
+            $isNotFound = true;
+        }
+    } else {
+        $isNotFound = true;
+    }
+} elseif (!$isPlatformRoute) {
+    $isNotFound = true;
+}
+
+if ($isNotFound) {
+    http_response_code(404);
 }
 
 // Extract the determined theme for the current view wrapper
 $currentPageTheme = $pageConfig['theme'] ?? 'raggiesoft-books';
 
-// Pre-fetch the Katie manifest for SEO calculations and Sidebar rendering
+// Pre-fetch the series TOC manifest for SEO metadata, breadcrumbs, and Sidebar rendering
 $toc_manifest = null;
 $ebookSizes = [
     'epub' => '',
@@ -217,19 +278,16 @@ $ebookSizes = [
     'text_epub' => '',
     'text_pdf' => ''
 ];
-if ($seriesSlug) {
-    // Prefer local workspace toc.json when available in dev/staging, falling back to CDN
-    $localTocPath = dirname($basePath, 3) . '/raggiesoft-assets/raggiesoft-books/books/' . $seriesSlug . '/toc.json';
+if ($hasValidBookSeries && $seriesSlug !== '') {
+    $localTocPath = $localServerRoot . '/raggiesoft-assets/raggiesoft-books/books/' . $seriesSlug . '/toc.json';
     if (is_file($localTocPath)) {
         $toc_manifestContent = @file_get_contents($localTocPath);
     } else {
-        // Note: `@` suppresses network/file warnings if the JSON is missing
         $toc_manifestUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/toc.json';
         $toc_manifestContent = @file_get_contents($toc_manifestUrl);
     }
     $toc_manifest = $toc_manifestContent ? json_decode($toc_manifestContent, true) : null;
 
-    // Resolve human-readable eBook file sizes (preferring local route manifest / ebook-sizes.json, falling back to CDN toc.json)
     if (!empty($routeData['common']['ebook_sizes']) && is_array($routeData['common']['ebook_sizes'])) {
         $ebookSizes = array_merge($ebookSizes, $routeData['common']['ebook_sizes']);
     } else {
@@ -246,104 +304,283 @@ if ($seriesSlug) {
     }
 }
 
-$siteName = 'Ocean View Archives';
-if (!empty($pageConfig['title'])) {
-    // Cleanse title strings like "Scene 1: Chapter 1: The Architect's Lesson" 
-    // to just "The Architect's Lesson" for tab aesthetics
-    $titleParts = explode(':', $pageConfig['title']);
-    $cleanSceneTitle = trim(end($titleParts));
-    
-    // Resolve series title from manifest, falling back to a formatted slug
-    $seriesTitle = !empty($toc_manifest['series_title']) ? $toc_manifest['series_title'] : (ucwords(str_replace('-', ' ', $seriesSlug)));
-    
-    if ($cleanSceneTitle === $seriesTitle || $cleanSceneTitle === "Table of Contents - $seriesTitle" || $cleanSceneTitle === "Table of Illustrations - $seriesTitle") {
-        $siteName = $cleanSceneTitle . ' | Ocean View Archives';
-    } else {
-        $siteName = $cleanSceneTitle . ' | ' . $seriesTitle;
+// Establish canonical URL, robots directives, and baseline OpenGraph variables
+$canonicalUrl = 'https://books.raggiesoft.com' . ($requestUri === '/' ? '/' : rtrim($requestUri, '/'));
+$ogUrl = $canonicalUrl;
+$isNoIndexRoute = ($isNotFound || $isBookmarks || $isSettings || $isWelcome);
+$robotsMeta = $isNoIndexRoute
+    ? 'noindex, follow'
+    : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
+$ogType = 'website';
+$ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/aubrie.jpg';
+$ogImageAlt = 'Ocean View Archives — RaggieSoft Book Reader';
+$metaDescription = '';
+$ogDescription = '';
+$ogTitle = 'Ocean View Archives';
+
+// Resolve route-specific titles, unique descriptions (<= 155 chars), OpenGraph types, and artwork
+if ($isNotFound) {
+    $siteName = 'Page Not Found | Ocean View Archives';
+    $ogTitle = 'Page Not Found | Ocean View Archives';
+    $ogDescription = 'This page could not be found in the Ocean View Archives. Browse the full library catalog or return to the homepage.';
+    if ($hasValidBookSeries && $seriesSlug !== '') {
+        $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/' . $seriesSlug . '.jpg';
     }
-}
-
-// Setup baseline OpenGraph variables for social sharing (Twitter, Facebook, Discord, etc.)
-$ogUrl = 'https://' . $_SERVER['HTTP_HOST'] . $requestUri;
-$ogTitle = $siteName;
-$ogDescription = !empty($toc_manifest['series_short_description'])
-    ? $toc_manifest['series_short_description']
-    : (!empty($toc_manifest['series_description']) ? $toc_manifest['series_description'] : 'Read this story on the Raggiesoft Ocean View Archives.');
-$ogImage = '';
-
-// Determine context-appropriate OpenGraph imagery based on the active route type
-if (!empty($seriesSlug)) {
-    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/' . $seriesSlug . '.jpg';
-} else if ($isCatalog) {
-    $siteName = 'Contemporary Fiction Library | Ocean View Archives';
-    $ogTitle = 'Contemporary Fiction Library | Ocean View Archives';
-    $ogDescription = 'Living stories. Expanding lore. Dive into the universe. The grounded, real-world archives of RaggieSoft Media.';
+} elseif ($isHome) {
+    $siteName = 'RaggieSoft Book Reader — Ocean View Archives';
+    $ogTitle = 'RaggieSoft Book Reader — Ocean View Archives';
+    $ogDescription = 'Read free serialized novels, scene illustrations, and companion lore from Ocean View Archives in the RaggieSoft Book Reader.';
+    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/aubrie.jpg';
+    $ogImageAlt = 'RaggieSoft Book Reader — Ocean View Archives featured novel showcase';
+} elseif ($isCatalog) {
+    $siteName = 'Fiction Library Catalog | Ocean View Archives';
+    $ogTitle = 'Fiction Library Catalog | Ocean View Archives';
+    $ogDescription = 'Browse all serialized novels, sagas, and illustrated volumes in the Ocean View Archives library with free EPUB and PDF editions.';
     $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/og/contemporary_v2.jpg';
-} else if ($isKnox) {
+    $ogImageAlt = 'Ocean View Archives Contemporary Fiction Library catalog';
+} elseif ($isAllIllustrations) {
+    $siteName = 'Scene Illustrations Gallery | Ocean View Archives';
+    $ogTitle = 'Scene Illustrations Gallery | Ocean View Archives';
+    $ogDescription = 'Explore 250+ illustrated story scenes across The Rachel Narrative, The Eleventh Child, Katie & Nathaniel, and Ocean View Archives.';
+    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/rachel.jpg';
+    $ogImageAlt = 'Scene Illustrations Gallery across Ocean View Archives novels';
+} elseif ($isStats) {
+    $siteName = 'Manuscript Word Counts & Scale | Ocean View Archives';
+    $ogTitle = 'Manuscript Word Counts & Scale | Ocean View Archives';
+    $ogDescription = 'Explore live manuscript word counts, page estimates, and reading times across every novel in the Ocean View Archives library.';
+    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/rachel.jpg';
+    $ogImageAlt = 'Manuscript word counts and publishing scale across Ocean View Archives';
+} elseif ($isKnox) {
     $siteName = 'Project: KNOX Universe | Ocean View Archives';
     $ogTitle = 'Project: KNOX Universe | Ocean View Archives';
     $ogDescription = 'On a high-gravity frontier world in the Telsan Gap, twins Anya and Kael Rostova evade the monolithic Axiom Archival Division.';
     $ogImage = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017-knox-ost/social-preview.jpg';
-} else if ($isAethelSaga) {
+    $ogImageAlt = 'Project: KNOX science-fiction universe banner';
+} elseif ($isAethelSaga) {
     $siteName = 'The Silver Gauntlet of Aethel | Ocean View Archives';
     $ogTitle = 'The Silver Gauntlet of Aethel | Ocean View Archives';
     $ogDescription = 'Two twins. One broken world. Follow Kaelan and Kaela across the four mythic eras of Aethel inside the Ocean View Archives.';
     $ogImage = $cdnBaseUrl . '/raggiesoft-books/aethel/images/aethel-hero.jpg';
-} else if ($isAllIllustrations) {
-    $siteName = 'Library Table of Illustrations | Ocean View Archives';
-    $ogTitle = 'Library Table of Illustrations | Ocean View Archives';
-    $ogDescription = 'Browse all 250+ illustrated scenes across The Rachel Narrative, The Eleventh Child, and the Ocean View Archives library.';
-    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/rachel.jpg';
-} else if ($isStats) {
-    $siteName = 'Library Word Count & Publishing Scale | Ocean View Archives';
-    $ogTitle = 'Library Word Count & Publishing Scale | Ocean View Archives';
-    $ogDescription = 'Live, auto-updated manuscript word counts, curated lore word counts, estimated page counts, and contemporary publishing scale benchmarks across all 30 Ocean View Archives volumes.';
-    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/rachel.jpg';
-} else if ($isHome) {
-    $siteName = 'RaggieSoft Book Reader — Ocean View Archives';
-    $ogTitle = 'RaggieSoft Book Reader — Ocean View Archives';
-    $ogDescription = 'The official literary imprint of RaggieSoft Media inside the RaggieSoft Book Reader. Featuring The Eleventh Child, The Rachel Narrative, and the Contemporary Fiction Library.';
-    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/aubrie.jpg';
+    $ogImageAlt = 'The Silver Gauntlet of Aethel epic fantasy saga banner';
+} elseif ($isAbout) {
+    $siteName = 'About Ocean View Archives | RaggieSoft Book Reader';
+    $ogTitle = 'About Ocean View Archives | RaggieSoft Book Reader';
+    $ogDescription = 'Learn about Ocean View Archives, the literary imprint created by Michael P. Ragsdale featuring free CC BY-SA 4.0 novels and lore.';
+    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/stardust-engine.jpg';
+    $ogImageAlt = 'About Ocean View Archives and RaggieSoft Book Reader';
+} elseif ($isAccessibility) {
+    $siteName = 'Accessibility Statement | RaggieSoft Book Reader';
+    $ogTitle = 'Accessibility Statement | RaggieSoft Book Reader';
+    $ogDescription = 'Read how RaggieSoft Book Reader supports screen readers, keyboard navigation, customizable typography, and comfortable reading modes.';
+    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/katie.jpg';
+    $ogImageAlt = 'RaggieSoft Book Reader accessibility features';
+} elseif ($isBookmarks) {
+    $siteName = 'Saved Bookmarks | RaggieSoft Book Reader';
+    $ogTitle = 'Saved Bookmarks | RaggieSoft Book Reader';
+    $ogDescription = 'Jump back into your saved chapters and reading progress in the RaggieSoft Book Reader.';
+} elseif ($isSettings) {
+    $siteName = 'Reading Settings | RaggieSoft Book Reader';
+    $ogTitle = 'Reading Settings | RaggieSoft Book Reader';
+    $ogDescription = 'Customize fonts, text spacing, and light or dark reading themes in the RaggieSoft Book Reader.';
+} elseif ($isWelcome) {
+    $siteName = 'Welcome | RaggieSoft Book Reader';
+    $ogTitle = 'Welcome | RaggieSoft Book Reader';
+    $ogDescription = 'Set up your preferred reading experience in the RaggieSoft Book Reader.';
+} elseif ($hasValidBookSeries && $seriesSlug !== '') {
+    $seriesTitle = !empty($toc_manifest['series_title'])
+        ? trim((string)$toc_manifest['series_title'])
+        : ucwords(str_replace('-', ' ', $seriesSlug));
+    $seriesShortDesc = !empty($toc_manifest['series_short_description'])
+        ? trim((string)$toc_manifest['series_short_description'])
+        : (!empty($toc_manifest['series_description']) ? trim((string)$toc_manifest['series_description']) : "Read {$seriesTitle} free in the RaggieSoft Book Reader on Ocean View Archives.");
+    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/' . $seriesSlug . '.jpg';
+    $ogImageAlt = "Cover artwork and title card for {$seriesTitle}";
+
+    $actualFilePath = (string)($pageConfig['filePath'] ?? '');
+    $seriesWordStats = $toc_manifest['word_stats'] ?? ($routeData['common']['word_stats'] ?? []);
+    $seriesStoryWords = (int)($seriesWordStats['story_word_count'] ?? 0);
+    $seriesEraCount   = (int)($seriesWordStats['era_count'] ?? count($toc_manifest['eras'] ?? []));
+    $seriesChapCount  = (int)($seriesWordStats['chapter_count'] ?? 0);
+    $seriesPartCount  = (int)($seriesWordStats['part_count'] ?? 0);
+    $seriesIllusCount = (int)($toc_manifest['illustration_count'] ?? ($routeData['common']['illustration_count'] ?? 0));
+
+    $resolveManifestImg = static function (string $rawImg) use ($cdnBaseUrl): string {
+        $trimmed = trim($rawImg);
+        if ($trimmed === '') return '';
+        if (str_starts_with($trimmed, 'http://') || str_starts_with($trimmed, 'https://')) {
+            return $trimmed;
+        }
+        return $cdnBaseUrl . '/' . ltrim($trimmed, '/');
+    };
+
+    if ($actualFilePath === '__SERIES_LANDING__') {
+        $ogType = 'book';
+        $siteName = "{$seriesTitle} | Ocean View Archives";
+        $ogTitle = $truncateSeoText("{$seriesTitle} | Ocean View Archives", 60);
+        $ogDescription = $truncateSeoText($seriesShortDesc, 155);
+    } elseif ($actualFilePath === '__TOC__') {
+        $siteName = "Table of Contents — {$seriesTitle} | Ocean View Archives";
+        $ogTitle = $truncateSeoText("Table of Contents — {$seriesTitle}", 60);
+        $tocDescRaw = "Browse all {$seriesEraCount} story eras, {$seriesChapCount} chapters, and {$seriesPartCount} parts of {$seriesTitle}"
+            . ($seriesStoryWords > 0 ? ' (' . number_format($seriesStoryWords) . ' story words) — ' . $seriesShortDesc : ' — ' . $seriesShortDesc);
+        $ogDescription = $truncateSeoText($tocDescRaw, 155);
+    } elseif ($actualFilePath === '__ILLUSTRATIONS__') {
+        $siteName = "Table of Illustrations — {$seriesTitle} | Ocean View Archives";
+        $ogTitle = $truncateSeoText("Illustrations ({$seriesIllusCount}) — {$seriesTitle}", 60);
+        $ogDescription = $truncateSeoText(
+            $seriesIllusCount > 0
+                ? "Explore all {$seriesIllusCount} illustrated story scenes from {$seriesTitle} in chronological reading order on Ocean View Archives."
+                : "Browse scene illustrations for {$seriesTitle} on Ocean View Archives.",
+            155
+        );
+        // Promote first illustrated scene plate in the book if available
+        if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
+            foreach ($toc_manifest['eras'] as $eItem) {
+                foreach (($eItem['chapters'] ?? []) as $cItem) {
+                    foreach (($cItem['parts'] ?? []) as $pItem) {
+                        if (!empty($pItem['image'])) {
+                            $ogImage = $resolveManifestImg((string)$pItem['image']);
+                            if (!empty($pItem['image_alt'])) {
+                                $ogImageAlt = (string)$pItem['image_alt'];
+                            }
+                            break 3;
+                        }
+                    }
+                }
+            }
+        }
+    } elseif (str_starts_with($actualFilePath, '__ERA_TOC__|')) {
+        $eraIdx = (int)substr($actualFilePath, strlen('__ERA_TOC__|'));
+        $eraObj = $toc_manifest['eras'][$eraIdx] ?? null;
+        $eraTitle = !empty($eraObj['era_title']) ? trim((string)$eraObj['era_title']) : trim((string)($pageConfig['title'] ?? 'Story Era'));
+        $eraChaps = is_array($eraObj['chapters'] ?? null) ? $eraObj['chapters'] : [];
+        $firstEraPart = $eraChaps[0]['parts'][0] ?? null;
+        $eraBaseDesc = !empty($eraObj['era_description'])
+            ? trim((string)$eraObj['era_description'])
+            : ("Read {$eraTitle} (" . count($eraChaps) . ' ' . (count($eraChaps) === 1 ? 'chapter' : 'chapters') . ") in {$seriesTitle}: " . ($firstEraPart['excerpt'] ?? $seriesShortDesc));
+        $siteName = "{$eraTitle} — {$seriesTitle} | Ocean View Archives";
+        $ogTitle = $truncateSeoText("{$eraTitle} | {$seriesTitle}", 60);
+        $ogDescription = $truncateSeoText($eraBaseDesc, 155);
+        foreach ($eraChaps as $cItem) {
+            foreach (($cItem['parts'] ?? []) as $pItem) {
+                if (!empty($pItem['image'])) {
+                    $ogImage = $resolveManifestImg((string)$pItem['image']);
+                    if (!empty($pItem['image_alt'])) {
+                        $ogImageAlt = (string)$pItem['image_alt'];
+                    }
+                    break 2;
+                }
+            }
+        }
+    } elseif (str_starts_with($actualFilePath, '__CHAP_TOC__|')) {
+        $idxParts = explode('|', $actualFilePath);
+        $eraIdx = (int)($idxParts[1] ?? 0);
+        $chapIdx = (int)($idxParts[2] ?? 0);
+        $eraObj = $toc_manifest['eras'][$eraIdx] ?? null;
+        $chapObj = $eraObj['chapters'][$chapIdx] ?? null;
+        $chapTitle = !empty($chapObj['chap_title']) ? trim((string)$chapObj['chap_title']) : trim((string)($pageConfig['title'] ?? 'Chapter'));
+        $chapParts = is_array($chapObj['parts'] ?? null) ? $chapObj['parts'] : [];
+        $firstChapPart = $chapParts[0] ?? null;
+        $chapBaseDesc = "Read {$chapTitle} (" . count($chapParts) . ' ' . (count($chapParts) === 1 ? 'part' : 'parts') . ") in {$seriesTitle}: " . ($firstChapPart['excerpt'] ?? $seriesShortDesc);
+        $siteName = "{$chapTitle} — {$seriesTitle} | Ocean View Archives";
+        $ogTitle = $truncateSeoText("{$chapTitle} | {$seriesTitle}", 60);
+        $ogDescription = $truncateSeoText($chapBaseDesc, 155);
+        foreach ($chapParts as $pItem) {
+            if (!empty($pItem['image'])) {
+                $ogImage = $resolveManifestImg((string)$pItem['image']);
+                if (!empty($pItem['image_alt'])) {
+                    $ogImageAlt = (string)$pItem['image_alt'];
+                }
+                break;
+            }
+        }
+    } else {
+        // Deep Manuscript Part (`eXXX/cXXX/pXXX.md`)
+        $ogType = 'article';
+        $partTitle = trim((string)($pageConfig['title'] ?? 'Chapter'));
+        $matchedTocPart = null;
+        $matchedEraTitle = '';
+        $matchedChapTitle = '';
+        if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
+            foreach ($toc_manifest['eras'] as $eItem) {
+                foreach (($eItem['chapters'] ?? []) as $cItem) {
+                    foreach (($cItem['parts'] ?? []) as $pItem) {
+                        if (($pItem['file_path'] ?? '') === $actualFilePath) {
+                            $matchedTocPart = $pItem;
+                            $matchedEraTitle = (string)($eItem['era_title'] ?? '');
+                            $matchedChapTitle = (string)($cItem['chap_title'] ?? '');
+                            break 3;
+                        }
+                    }
+                }
+            }
+        }
+        if (!empty($matchedTocPart['part_title'])) {
+            $partTitle = trim((string)$matchedTocPart['part_title']);
+        }
+        $siteName = "{$partTitle} | {$seriesTitle}";
+        $ogTitle = $truncateSeoText("{$partTitle} | {$seriesTitle}", 60);
+        if (!empty($matchedTocPart['excerpt'])) {
+            $ogDescription = $truncateSeoText((string)$matchedTocPart['excerpt'], 155);
+        } else {
+            $ogDescription = $truncateSeoText($seriesShortDesc, 155);
+        }
+        if (!empty($matchedTocPart['image'])) {
+            $ogImage = $resolveManifestImg((string)$matchedTocPart['image']);
+            if (!empty($matchedTocPart['image_alt'])) {
+                $ogImageAlt = (string)$matchedTocPart['image_alt'];
+            } else {
+                $ogImageAlt = "{$partTitle} — {$seriesTitle}";
+            }
+        }
+    }
 }
 
-// Intercept specific Markdown pages to extract explicit OpenGraph overrides from their YAML frontmatter
+// Intercept physical Markdown manuscript pages (preferring local NVMe disk first, falling back to CDN)
+// to reuse `$prefetchedMdContent` in `oliver.php` and honor explicit YAML frontmatter SEO overrides.
 $prefetchedMdContent = null;
-if (!empty($pageConfig['filePath'])) {
-    $actualFilePath = $pageConfig['filePath'];
-    
-    // Identify non-physical structural files to prevent unnecessary CDN requests
-    $isSpecial = in_array($actualFilePath, ['__SERIES_LANDING__', '__TOC__', '__ILLUSTRATIONS__']) || strpos($actualFilePath, '__ERA_TOC__|') === 0 || strpos($actualFilePath, '__CHAP_TOC__|') === 0;
-    
+if ($hasValidBookSeries && !empty($pageConfig['filePath'])) {
+    $actualFilePath = (string)$pageConfig['filePath'];
+    $isSpecial = in_array($actualFilePath, ['__SERIES_LANDING__', '__TOC__', '__ILLUSTRATIONS__'], true)
+        || str_starts_with($actualFilePath, '__ERA_TOC__|')
+        || str_starts_with($actualFilePath, '__CHAP_TOC__|');
+
     if (!$isSpecial) {
-        $mdUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/' . $actualFilePath;
-        $prefetchedContent = @file_get_contents($mdUrl);
-        
+        $localAssetMdPath = $localServerRoot . '/raggiesoft-assets/raggiesoft-books/books/' . $seriesSlug . '/' . ltrim($actualFilePath, '/');
+        $localNarrMdPath  = $localServerRoot . '/raggiesoft-narratives/books/' . $seriesSlug . '/' . ltrim($actualFilePath, '/');
+        if (is_file($localAssetMdPath)) {
+            $prefetchedContent = @file_get_contents($localAssetMdPath);
+        } elseif (is_file($localNarrMdPath)) {
+            $prefetchedContent = @file_get_contents($localNarrMdPath);
+        } else {
+            $mdUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/' . ltrim($actualFilePath, '/');
+            $prefetchedContent = @file_get_contents($mdUrl);
+        }
+
         if ($prefetchedContent !== false) {
-            // Re-map internal {{CDN}} and {{cms}} placeholders to the active domain before processing
             $prefetchedMdContent = str_replace(['{{CDN}}', '{{cms}}'], $cdnBaseUrl, $prefetchedContent);
-            
-            // Execute naive regex to capture YAML frontmatter block
+
             if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $prefetchedMdContent, $matches)) {
                 $rawFrontmatter = $matches[1];
                 $lines = explode("\n", $rawFrontmatter);
                 $fmTitle = '';
                 $fmOgTitle = '';
+                $fmOgDesc = '';
                 $fmImage = '';
+                $fmImageAlt = '';
                 $fmOgImage = '';
                 $currentFmArrayKey = null;
-                
-                // Parse key-value pairs and YAML list blocks manually
-                // (Supports both scalar `image: "..."` and multi-slide Hero Image Carousels where
-                // `image:` or `images:` is a YAML list; the first slide becomes the default `og:image`).
+
                 foreach ($lines as $line) {
                     $line = trim($line);
                     if ($line === '') continue;
 
-                    if (strpos($line, '-') === 0 && $currentFmArrayKey !== null) {
-                        $itemVal = trim(substr($line, 1));
-                        $itemVal = trim($itemVal, '"\'');
+                    if (str_starts_with($line, '-') && $currentFmArrayKey !== null) {
+                        $itemVal = trim(trim(substr($line, 1)), '"\'');
                         if (($currentFmArrayKey === 'image' || $currentFmArrayKey === 'images') && $fmImage === '' && $itemVal !== '') {
                             $fmImage = $itemVal;
+                        } elseif (($currentFmArrayKey === 'image_alt' || $currentFmArrayKey === 'image_alts') && $fmImageAlt === '' && $itemVal !== '') {
+                            $fmImageAlt = $itemVal;
                         }
                         continue;
                     }
@@ -357,52 +594,69 @@ if (!empty($pageConfig['filePath'])) {
                             continue;
                         }
                         $currentFmArrayKey = null;
-                        // Strip quotes
                         $val = trim($val, '"\'');
-                        
+
                         if ($key === 'title' && $val !== '') $fmTitle = $val;
                         if ($key === 'og_title' && $val !== '') $fmOgTitle = $val;
-                        if ($key === 'og_description' && $val !== '') $ogDescription = $val;
+                        if (($key === 'og_description' || $key === 'summary') && $val !== '') $fmOgDesc = $val;
                         if (($key === 'image' || $key === 'images') && $val !== '' && $fmImage === '') $fmImage = $val;
+                        if (($key === 'image_alt' || $key === 'image_alts') && $val !== '' && $fmImageAlt === '') $fmImageAlt = $val;
                         if ($key === 'og_image' && $val !== '') $fmOgImage = $val;
                     } else {
                         $currentFmArrayKey = null;
                     }
                 }
-                
-                // Automatic OpenGraph (og:image / twitter:image) inheritance:
-                // If the scene specifies an explicit `og_image:`, prioritize it; otherwise,
-                // automatically promote the scene's 16:9 chapter header plate (`image:`).
+
                 $resolvedSceneOgImage = ($fmOgImage !== '') ? $fmOgImage : $fmImage;
                 if ($resolvedSceneOgImage !== '') {
-                    // Strip any StardustParsedown layout hash (#fullwidth / #inline)
                     $resolvedSceneOgImage = preg_replace('/#.*$/', '', $resolvedSceneOgImage);
-                    if (strpos($resolvedSceneOgImage, 'http') !== 0) {
-                        $cleanImgPath = ltrim($resolvedSceneOgImage, '/');
-                        if (strpos($cleanImgPath, 'raggiesoft-books/') !== 0 && strpos($cleanImgPath, 'engine-room-records/') !== 0) {
-                            $cleanImgPath = 'raggiesoft-books/images/scenes/' . $cleanImgPath;
+                    if (!str_starts_with((string)$resolvedSceneOgImage, 'http')) {
+                        $cleanImgPath = ltrim((string)$resolvedSceneOgImage, '/');
+                        if (!str_starts_with($cleanImgPath, 'raggiesoft-books/') && !str_starts_with($cleanImgPath, 'engine-room-records/') && !str_starts_with($cleanImgPath, 'raggiesoft-lore/') && !str_starts_with($cleanImgPath, 'stardust-engine/images/')) {
+                            $cleanImgPath = 'raggiesoft-books/images/scenes/' . preg_replace('#^scenes/#', '', $cleanImgPath);
                         }
                         $ogImage = $cdnBaseUrl . '/' . $cleanImgPath;
                     } else {
-                        $ogImage = $resolvedSceneOgImage;
+                        $ogImage = (string)$resolvedSceneOgImage;
                     }
                 }
-                
-                // Apply extracted title overrides
+                if ($fmImageAlt !== '') {
+                    $ogImageAlt = $fmImageAlt;
+                }
                 if ($fmOgTitle !== '') {
-                    $ogTitle = $fmOgTitle;
-                } elseif ($fmTitle !== '') {
-                    $seriesTitle = !empty($toc_manifest['series_title']) ? $toc_manifest['series_title'] : (ucwords(str_replace('-', ' ', $seriesSlug)));
-                    $ogTitle = $fmTitle . ' | ' . $seriesTitle;
+                    $ogTitle = $truncateSeoText($fmOgTitle, 60);
+                }
+                if ($fmOgDesc !== '') {
+                    $ogDescription = $truncateSeoText($fmOgDesc, 155);
+                } elseif ($ogDescription === '' || $ogDescription === $truncateSeoText($seriesShortDesc ?? '', 155)) {
+                    // Extract opening prose from the live manuscript if `toc.json` excerpt was empty
+                    $liveBody = substr($prefetchedMdContent, strlen($matches[0]));
+                    $liveBody = preg_replace('/!\[[^\]]*\]\([^)]*\)/', '', $liveBody);
+                    $liveBody = preg_replace('/\[([^\]]+)\]\([^)]*\)/', '$1', (string)$liveBody);
+                    $liveBody = preg_replace('/^#+\s+.*$/m', '', (string)$liveBody);
+                    $liveBody = preg_replace('/^---+\s*$/m', '', (string)$liveBody);
+                    $liveBody = preg_replace('/[*_`~>]/', '', strip_tags((string)$liveBody));
+                    $liveExcerpt = $truncateSeoText((string)$liveBody, 155);
+                    if ($liveExcerpt !== '') {
+                        $ogDescription = $liveExcerpt;
+                    }
                 }
             }
+        } else {
+            // Physical manuscript missing from both disk and CDN -> mark 404 before `<head>` renders
+            $isNotFound = true;
+            http_response_code(404);
+            $robotsMeta = 'noindex, follow';
+            $siteName = 'Manuscript Part Not Found | Ocean View Archives';
         }
     }
 }
 
-// Inject the Co-Branded Top Application Header Bar on all platform screens,
-// while preserving 100% vertical height inside individual book reading panes (where sidebar.php displays the badge)
-$currentHeaderMenu = empty($seriesSlug) ? ($basePath . '/includes/components/headers/app-header.php') : null;
+$metaDescription = $ogDescription;
+
+// Inject the Co-Branded Top Application Header Bar on all platform screens (and unknown root 404s),
+// while preserving 100% vertical height inside valid book reading panes (where sidebar.php displays the badge)
+$currentHeaderMenu = (!$hasValidBookSeries) ? ($basePath . '/includes/components/headers/app-header.php') : null;
 
 // Include the Global HTML Header (Opens HTML, Head, Body, and the primary wrapper)
 require_once $basePath . '/includes/components/headers/header.php';
@@ -427,19 +681,21 @@ if ($isHome) {
     require_once $basePath . '/sophia/knox.php';
 } else if ($isAethelSaga) {
     require_once $basePath . '/sophia/aethel-saga.php';
-} else if (isset($isBookmarks) && $isBookmarks) {
+} else if ($isBookmarks) {
     require_once $basePath . '/sophia/bookmarks.php';
-} else if (isset($isSettings) && $isSettings) {
+} else if ($isSettings) {
     require_once $basePath . '/sophia/settings.php';
-} else if (isset($isAccessibility) && $isAccessibility) {
+} else if ($isAccessibility) {
     require_once $basePath . '/sophia/accessibility.php';
-} else if (isset($isAbout) && $isAbout) {
+} else if ($isAbout) {
     require_once $basePath . '/sophia/about.php';
-} else if (isset($isWelcome) && $isWelcome) {
+} else if ($isWelcome) {
     require_once $basePath . '/sophia/wizard.php';
 } else {
-    // Include Sophia's TOC Sidebar for navigation context
-    require_once $basePath . '/sophia/sidebar.php';
+    if ($hasValidBookSeries) {
+        // Include Sophia's TOC Sidebar for book navigation context
+        require_once $basePath . '/sophia/sidebar.php';
+    }
 
     // Hand execution over to Oliver, the dedicated Reading Pane component
     require_once $basePath . '/sophia/oliver.php';

@@ -82,10 +82,10 @@ $tocStoryPages = (int)($tocWordStats['estimated_story_pages'] ?? ($tocStoryWords
                 $eraWordCount = (int)($era['word_count'] ?? 0);
             ?>
                 <details class="toc-book" style="background: var(--rs-bg); border: 1px solid var(--rs-border); border-radius: 8px; overflow: hidden;">
-                    <!-- Native accordion header for the Era -->
+                    <!-- Native accordion header for the Era (uses span instead of h2 inside summary so screen-reader heading navigation stays intact) -->
                     <summary style="padding: 1.5rem; cursor: pointer; list-style: none; display: flex; flex-direction: column; gap: 0.5rem; user-select: none;">
                         <div style="display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;">
-                            <h2 style="margin: 0; font-size: 1.5rem; color: var(--rs-text);"><?php echo htmlspecialchars($era['era_title']); ?></h2>
+                            <span class="toc-era-heading" style="margin: 0; font-size: 1.5rem; font-weight: 700; color: var(--rs-text);"><?php echo htmlspecialchars($era['era_title']); ?></span>
                             <div style="display: inline-flex; align-items: center; gap: 0.65rem;">
                                 <?php if ($eraWordCount > 0): ?>
                                     <span style="font-size: 0.76rem; font-weight: 700; padding: 0.2rem 0.55rem; border-radius: 999px; background: var(--rs-surface); border: 1px solid var(--rs-border); color: var(--rs-text); opacity: 0.85; white-space: nowrap; font-variant-numeric: tabular-nums;">
@@ -107,7 +107,15 @@ $tocStoryPages = (int)($tocWordStats['estimated_story_pages'] ?? ($tocStoryWords
                     </summary>
                     
                     <!-- Chapter container -->
+                    <?php $eraOverviewHref = !empty($era['era_url']) ? str_replace('/raggiesoft-books/books', '', (string)$era['era_url']) : ''; ?>
                     <div class="toc-chapters" style="padding: 0 1.5rem 1.5rem 1.5rem; border-top: 1px solid var(--rs-border); background: var(--rs-surface);">
+                        <?php if ($eraOverviewHref !== ''): ?>
+                            <div style="padding-top: 0.85rem; display: flex; justify-content: flex-end;">
+                                <a href="<?php echo htmlspecialchars($eraOverviewHref); ?>" style="font-size: 0.84rem; font-weight: 700; color: var(--rs-primary); text-decoration: none;">
+                                    Open Era Overview: <?php echo htmlspecialchars($era['era_title']); ?> &rarr;
+                                </a>
+                            </div>
+                        <?php endif; ?>
                         <?php if (!empty($era['chapters'])): ?>
                             
                             <!-- Iterate over chapters within the current era -->
@@ -181,7 +189,15 @@ $tocStoryPages = (int)($tocWordStats['estimated_story_pages'] ?? ($tocStoryWords
                                         </span>
                                     </summary>
                                     
-                                    <ul style="list-style: none; padding: 0.5rem 0 0 1.5rem; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+                                    <?php $chapOverviewHref = !empty($chap['chap_url']) ? str_replace('/raggiesoft-books/books', '', (string)$chap['chap_url']) : ''; ?>
+                                    <ul role="list" style="list-style: none; padding: 0.5rem 0 0 1.5rem; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+                                        <?php if ($chapOverviewHref !== ''): ?>
+                                            <li>
+                                                <a href="<?php echo htmlspecialchars($chapOverviewHref); ?>" style="font-size: 0.82rem; font-weight: 700; color: var(--rs-text-muted); text-decoration: underline; text-underline-offset: 3px;">
+                                                    Chapter Overview: <?php echo htmlspecialchars($chap['chap_title']); ?> &rarr;
+                                                </a>
+                                            </li>
+                                        <?php endif; ?>
                                         <?php if (!empty($partList)): ?>
                                             
                                             <!-- Iterate over individual parts (pXXX.md files) -->

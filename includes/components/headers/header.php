@@ -64,8 +64,8 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
 <html lang="en-US" data-os="<?= htmlspecialchars($detectedClientOs) ?>" style="color-scheme: light dark;">
 <head>
     <meta charset="UTF-8">
-    <!-- Viewport configuration prevents zooming on input focus, essential for native app feel -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <!-- Responsive viewport with full user zoom accessibility (WCAG 1.4.4 & Lighthouse SEO compliant) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     
     <!-- Declare support for both light and dark color schemes to prevent FOUC -->
     <meta name="color-scheme" content="light dark">
@@ -236,8 +236,28 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
     
     <link rel="manifest" href="/manifest.json?v=4">
     <title><?= htmlspecialchars($siteName ?? 'Ocean View Archives') ?></title>
-    
+
+    <?php
+    // Normalize canonical URL, robots directive, OpenGraph type, and accessible image alt text
+    $resolvedCanonical = $canonicalUrl ?? ($ogUrl ?? ('https://books.raggiesoft.com' . (parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/')));
+    $resolvedRobots    = $robotsMeta ?? 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
+    $resolvedOgType    = $ogType ?? 'website';
+    $resolvedMetaDesc  = $metaDescription ?? ($ogDescription ?? '');
+    $resolvedOgImgAlt  = $ogImageAlt ?? ($ogTitle ?? ($siteName ?? 'Ocean View Archives'));
+    ?>
+    <meta name="robots" content="<?= htmlspecialchars($resolvedRobots) ?>">
+    <?php if (strpos($resolvedRobots, 'noindex') === false): ?>
+    <link rel="canonical" href="<?= htmlspecialchars($resolvedCanonical) ?>">
+    <?php endif; ?>
+    <?php if (!empty($resolvedMetaDesc)): ?>
+    <meta name="description" content="<?= htmlspecialchars($resolvedMetaDesc) ?>">
+    <?php endif; ?>
+
     <!-- OpenGraph & Twitter Metadata generation based on injected PHP variables -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="<?= htmlspecialchars($resolvedOgType) ?>">
+    <meta property="og:site_name" content="Ocean View Archives — RaggieSoft Book Reader">
+
     <?php if (!empty($ogTitle)): ?>
     <meta property="og:title" content="<?= htmlspecialchars($ogTitle) ?>">
     <meta name="twitter:title" content="<?= htmlspecialchars($ogTitle) ?>">
@@ -250,20 +270,37 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
     
     <?php if (!empty($ogImage)): ?>
     <meta property="og:image" content="<?= htmlspecialchars($ogImage) ?>">
+    <meta property="og:image:alt" content="<?= htmlspecialchars($resolvedOgImgAlt) ?>">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="<?= htmlspecialchars($ogImage) ?>">
+    <meta name="twitter:image:alt" content="<?= htmlspecialchars($resolvedOgImgAlt) ?>">
     <?php endif; ?>
     
-    <?php if (!empty($ogUrl)): ?>
-    <meta property="og:url" content="<?= htmlspecialchars($ogUrl) ?>">
+    <?php if (!empty($resolvedCanonical)): ?>
+    <meta property="og:url" content="<?= htmlspecialchars($resolvedCanonical) ?>">
     <?php endif; ?>
-    
-    <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Ocean View Archives — RaggieSoft Book Reader">
 
     <?php $assetsUrl = $cdnBaseUrl ?? 'https://assets.raggiesoft.com'; ?>
     <?php
-    $booksCanonicalUrl = $ogUrl ?? ('https://' . ($_SERVER['HTTP_HOST'] ?? 'books.raggiesoft.com') . (parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/'));
+    $booksCanonicalUrl = $resolvedCanonical;
+    $booksWebPageNode = [
+        '@type' => ($isCatalog ?? false) || ($isAllIllustrations ?? false) || ($isStats ?? false) ? 'CollectionPage' : (($isAbout ?? false) ? 'AboutPage' : 'WebPage'),
+        '@id' => $booksCanonicalUrl . '#webpage',
+        'url' => $booksCanonicalUrl,
+        'name' => $siteName ?? ($ogTitle ?? 'Ocean View Archives'),
+        'description' => $resolvedMetaDesc ?: 'Read CC BY-SA 4.0 serialized novels, lore archives, and interactive literature by Michael P. Ragsdale in the RaggieSoft Book Reader.',
+        'inLanguage' => 'en-US',
+        'license' => 'https://creativecommons.org/licenses/by-sa/4.0/',
+        'isPartOf' => [
+            '@id' => 'https://books.raggiesoft.com/#website'
+        ]
+    ];
+    if (!empty($ogImage)) {
+        $booksWebPageNode['primaryImageOfPage'] = [
+            '@type' => 'ImageObject',
+            'url' => $ogImage
+        ];
+    }
     $booksJsonLd = [
         '@context' => 'https://schema.org',
         '@graph' => [
@@ -271,8 +308,15 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
                 '@type' => 'Organization',
                 '@id' => 'https://raggiesoft.com/#organization',
                 'name' => 'RaggieSoft',
-                'alternateName' => ['Ocean View Archives', 'RaggieSoft Media'],
+                'alternateName' => ['Ocean View Archives', 'RaggieSoft Media', 'Engine Room Records'],
                 'url' => 'https://raggiesoft.com',
+                'sameAs' => [
+                    'https://books.raggiesoft.com',
+                    'https://music.raggiesoft.com',
+                    'https://engineroom.raggiesoft.com',
+                    'https://stardust.raggiesoft.com',
+                    'https://lore.raggiesoft.com'
+                ],
                 'founder' => [
                     '@type' => 'Person',
                     '@id' => 'https://michaelpragsdale.com/#michael-ragsdale',
@@ -285,22 +329,13 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
                 '@id' => 'https://books.raggiesoft.com/#website',
                 'url' => 'https://books.raggiesoft.com',
                 'name' => 'Ocean View Archives — RaggieSoft Book Reader',
+                'alternateName' => ['RaggieSoft Book Reader', 'Ocean View Archives'],
                 'inLanguage' => 'en-US',
                 'publisher' => [
                     '@id' => 'https://raggiesoft.com/#organization'
                 ]
             ],
-            [
-                '@type' => 'WebPage',
-                '@id' => $booksCanonicalUrl . '#webpage',
-                'url' => $booksCanonicalUrl,
-                'name' => $ogTitle ?? $siteName ?? 'Ocean View Archives',
-                'description' => $ogDescription ?? 'Read CC BY-SA 4.0 serialized novels, lore archives, and interactive literature by Michael P. Ragsdale in the RaggieSoft Book Reader.',
-                'inLanguage' => 'en-US',
-                'isPartOf' => [
-                    '@id' => 'https://books.raggiesoft.com/#website'
-                ]
-            ]
+            $booksWebPageNode
         ]
     ];
     ?>
@@ -535,8 +570,8 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
     </nav>
 
     <!-- Audio Player (Outside SPA Zone) -->
-    <!-- Positioned outside #stardust-app so navigating between pages doesn't kill playback -->
-    <audio id="stardust-bgm" loop preload="auto"></audio>
+    <!-- Positioned outside #stardust-app so navigating between pages doesn't kill playback; preload="none" avoids eager audio requests -->
+    <audio id="stardust-bgm" loop preload="none"></audio>
 
     <!-- The SPA router ONLY replaces the contents of this div -->
     <div id="stardust-app">

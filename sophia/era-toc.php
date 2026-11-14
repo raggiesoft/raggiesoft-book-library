@@ -82,17 +82,24 @@ if (!$era) {
                         </span>
                     </a>
                 </div>
-                <?php else: ?>
+                <?php else:
+                    $chapOverviewHref = !empty($chap['chap_url']) ? str_replace('/raggiesoft-books/books', '', (string)$chap['chap_url']) : '';
+                ?>
                 <div style="background: var(--rs-bg); border: 1px solid var(--rs-border); border-radius: 8px; padding: 1.5rem;">
-                    <!-- Render the chapter title with an icon -->
+                    <!-- Render the chapter title with a crawlable link to the Chapter Overview page -->
                     <h2 style="margin-top: 0; margin-bottom: 1rem; font-size: 1.3rem; display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;">
                         <span style="display: flex; align-items: center; gap: 0.5rem;">
-                            <i class="ph ph-folder" aria-hidden="true"></i> <?php echo htmlspecialchars($chap['chap_title']); ?>
+                            <i class="ph ph-folder" aria-hidden="true"></i>
+                            <?php if ($chapOverviewHref !== ''): ?>
+                                <a href="<?php echo htmlspecialchars($chapOverviewHref); ?>" style="color: var(--rs-text); text-decoration: none;"><?php echo htmlspecialchars($chap['chap_title']); ?></a>
+                            <?php else: ?>
+                                <?php echo htmlspecialchars($chap['chap_title']); ?>
+                            <?php endif; ?>
                         </span>
                         <span style="font-size: 0.8rem; font-weight: 600; color: var(--rs-text-muted);"><?php echo $partCount > 0 ? ((int)$partCount . ' Parts') : 'Coming Soon'; ?></span>
                     </h2>
                     
-                    <ul style="list-style: none; padding: 0 0 0 1rem; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+                    <ul role="list" style="list-style: none; padding: 0 0 0 1rem; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
                         <?php if (!empty($partList)): ?>
                             <!-- Iterate over all parts (pXXX.md files) belonging to this chapter -->
                             <?php foreach ($partList as $part): 

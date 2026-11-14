@@ -21,7 +21,7 @@
             "pdf_bytes": 235362,
             "text_epub_bytes": 85613,
             "text_pdf_bytes": 235362,
-            "package_7z_bytes": 63756
+            "package_7z_bytes": 63762
         },
         "illustration_count": 0,
         "word_stats": {
@@ -78,12 +78,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p001.md"
     },
-    "/bob-emily/life-without-a-father/the-longest-day/part-1-the-final-promise-a-new-plan-of-action": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Final Promise & A New Plan of Action",
-        "theme": "raggiesoft-books",
-        "filePath": "e001/c001/p001.md"
-    },
     "/bob-emily/life-without-a-father/the-new-normal": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The New Normal",
@@ -126,12 +120,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e002/c001/p001.md"
     },
-    "/bob-emily/assault/the-locker/part-1-the-assault-the-perp-walk": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Assault & The Perp Walk",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c001/p001.md"
-    },
     "/bob-emily/assault/the-hospital": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Hospital",
@@ -139,12 +127,6 @@
         "filePath": "__CHAP_TOC__|1|1"
     },
     "/bob-emily/assault/the-hospital/the-long-wait-chapter-notes-the-planetarium-promise": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The Long Wait & Chapter Notes: The Planetarium Promise",
-        "theme": "raggiesoft-books",
-        "filePath": "e002/c002/p001.md"
-    },
-    "/bob-emily/assault/the-hospital/part-1-the-long-wait-chapter-notes-the-planetarium-promise": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Long Wait & Chapter Notes: The Planetarium Promise",
         "theme": "raggiesoft-books",
@@ -168,12 +150,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c001/p001.md"
     },
-    "/bob-emily/bob-healing/bob-s-new-reality/part-1-the-first-day-home-cleared-for-travel": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "The First Day Home & Cleared for Travel",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c001/p001.md"
-    },
     "/bob-emily/bob-healing/bob-and-emily-see-the-stars": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Bob and Emily See the Stars",
@@ -186,12 +162,6 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c002/p001.md"
     },
-    "/bob-emily/bob-healing/bob-and-emily-see-the-stars/part-1-a-trip-to-the-stars-bluewater-transit-steps-up-to-the-plate": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "A Trip to the Stars & Bluewater Transit Steps Up to the Plate",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c002/p001.md"
-    },
     "/bob-emily/bob-healing/finishing-the-semester-strong": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Finishing the Semester Strong",
@@ -199,12 +169,6 @@
         "filePath": "__CHAP_TOC__|2|2"
     },
     "/bob-emily/bob-healing/finishing-the-semester-strong/a-hard-limit-the-graduation-pact": {
-        "view": "pages/raggiesoft-books/books/viewer",
-        "title": "A Hard Limit & The Graduation Pact",
-        "theme": "raggiesoft-books",
-        "filePath": "e003/c003/p001.md"
-    },
-    "/bob-emily/bob-healing/finishing-the-semester-strong/part-1-a-hard-limit-the-graduation-pact": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Hard Limit & The Graduation Pact",
         "theme": "raggiesoft-books",

@@ -30,15 +30,22 @@ if (!$chap) {
 }
 ?>
 <div class="book-page" style="max-width: 800px; margin: 0 auto;">
-    <!-- Chapter Header block, providing context via the parent Era title -->
+    <!-- Chapter Header block, providing clickable upward navigation to the parent Era Overview -->
+    <?php $parentEraHref = !empty($era['era_url']) ? str_replace('/raggiesoft-books/books', '', (string)$era['era_url']) : ''; ?>
     <div style="margin-bottom: 2rem; border-bottom: 2px solid var(--rs-border); padding-bottom: 1rem;">
-        <div style="font-size: 0.9rem; color: var(--rs-text-muted); margin-bottom: 0.5rem;"><?php echo htmlspecialchars($era['era_title']); ?></div>
+        <div style="font-size: 0.9rem; color: var(--rs-text-muted); margin-bottom: 0.5rem;">
+            <?php if ($parentEraHref !== ''): ?>
+                <a href="<?php echo htmlspecialchars($parentEraHref); ?>" style="color: var(--rs-text-muted); text-decoration: underline; text-underline-offset: 3px;"><?php echo htmlspecialchars($era['era_title']); ?></a>
+            <?php else: ?>
+                <?php echo htmlspecialchars($era['era_title']); ?>
+            <?php endif; ?>
+        </div>
         <h1 style="margin: 0; color: var(--rs-primary);"><?php echo htmlspecialchars($chap['chap_title']); ?></h1>
     </div>
 
     <!-- Parts List Container -->
     <div style="background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 8px; padding: 1.5rem;">
-        <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
+        <ul role="list" style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
             <?php if (!empty($chap['parts'])): ?>
                 <!-- Iterate through all parts assigned to this chapter -->
                 <?php foreach ($chap['parts'] as $part): 
