@@ -12,26 +12,26 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "57.6 MB",
-            "pdf": "53 MB",
-            "text_epub": "677 KB",
+            "epub": "57.8 MB",
+            "pdf": "53.4 MB",
+            "text_epub": "678 KB",
             "text_pdf": "1.8 MB",
-            "package_7z": "502 KB",
-            "epub_bytes": 60419093,
-            "pdf_bytes": 55618084,
-            "text_epub_bytes": 693632,
-            "text_pdf_bytes": 1890935,
-            "package_7z_bytes": 514358
+            "package_7z": "503 KB",
+            "epub_bytes": 60654062,
+            "pdf_bytes": 56026300,
+            "text_epub_bytes": 694610,
+            "text_pdf_bytes": 1893945,
+            "package_7z_bytes": 515343
         },
-        "illustration_count": 131,
+        "illustration_count": 132,
         "word_stats": {
-            "story_word_count": 285134,
-            "lore_word_count": 93472,
-            "combined_word_count": 378606,
-            "story_page_count": 1037,
-            "combined_page_count": 1377,
+            "story_word_count": 285705,
+            "lore_word_count": 93761,
+            "combined_word_count": 379466,
+            "story_page_count": 1039,
+            "combined_page_count": 1380,
             "reading_hours": 19,
-            "reading_minutes": 1141,
+            "reading_minutes": 1143,
             "novel_equivalent": 3.2,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
@@ -39,7 +39,7 @@
             "era_count": 11,
             "chapter_count": 45,
             "part_count": 110,
-            "illustration_count": 131
+            "illustration_count": 132
         }
     },
     "/katie": {
@@ -384,9 +384,9 @@
         "theme": "raggiesoft-books",
         "filePath": "e004/c002/p002.md"
     },
-    "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-3-the-back-row-of-room-204-a-song-in-my-head-cousin-hannah-s-green-parka": {
+    "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-3-the-back-corner-of-room-204-a-song-in-my-head-stairway-a": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: The Back Row of Room 204, A Song in My Head, & Cousin Hannah's Green Parka",
+        "title": "Part 3: The Back Corner of Room 204, A Song in My Head, & Stairway A",
         "theme": "raggiesoft-books",
         "filePath": "e004/c002/p003.md"
     },
