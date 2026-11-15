@@ -21,13 +21,13 @@
             "pdf_bytes": 56183033,
             "text_epub_bytes": 701513,
             "text_pdf_bytes": 1912664,
-            "package_7z_bytes": 520626
+            "package_7z_bytes": 520628
         },
         "illustration_count": 133,
         "word_stats": {
             "story_word_count": 288862,
-            "lore_word_count": 94981,
-            "combined_word_count": 383843,
+            "lore_word_count": 95033,
+            "combined_word_count": 383895,
             "story_page_count": 1050,
             "combined_page_count": 1396,
             "reading_hours": 19.3,
