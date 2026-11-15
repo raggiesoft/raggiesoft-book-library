@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "57.3 MB",
-            "pdf": "52.9 MB",
-            "text_epub": "670 KB",
+            "epub": "57.6 MB",
+            "pdf": "53 MB",
+            "text_epub": "677 KB",
             "text_pdf": "1.8 MB",
-            "package_7z": "497 KB",
-            "epub_bytes": 60120609,
-            "pdf_bytes": 55477401,
-            "text_epub_bytes": 686368,
-            "text_pdf_bytes": 1871364,
-            "package_7z_bytes": 509026
+            "package_7z": "502 KB",
+            "epub_bytes": 60419093,
+            "pdf_bytes": 55618084,
+            "text_epub_bytes": 693632,
+            "text_pdf_bytes": 1890935,
+            "package_7z_bytes": 514358
         },
-        "illustration_count": 130,
+        "illustration_count": 131,
         "word_stats": {
-            "story_word_count": 281981,
-            "lore_word_count": 91549,
-            "combined_word_count": 373530,
-            "story_page_count": 1025,
-            "combined_page_count": 1358,
-            "reading_hours": 18.8,
-            "reading_minutes": 1128,
-            "novel_equivalent": 3.1,
+            "story_word_count": 285134,
+            "lore_word_count": 93472,
+            "combined_word_count": 378606,
+            "story_page_count": 1037,
+            "combined_page_count": 1377,
+            "reading_hours": 19,
+            "reading_minutes": 1141,
+            "novel_equivalent": 3.2,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
-            "benchmark_note": "3.1\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
+            "benchmark_note": "3.2\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
             "era_count": 11,
             "chapter_count": 45,
-            "part_count": 109,
-            "illustration_count": 130
+            "part_count": 110,
+            "illustration_count": 131
         }
     },
     "/katie": {
@@ -383,6 +383,12 @@
         "title": "Part 2: The Drunken New Year Lie, Heather's Bitter Goodbye, & Twin Sisters Always Stay",
         "theme": "raggiesoft-books",
         "filePath": "e004/c002/p002.md"
+    },
+    "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-3-the-back-row-of-room-204-a-song-in-my-head-cousin-hannah-s-green-parka": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: The Back Row of Room 204, A Song in My Head, & Cousin Hannah's Green Parka",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c002/p003.md"
     },
     "/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
