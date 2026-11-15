@@ -351,8 +351,8 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
     }
     ?>
     <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-grid.css?v=20261029f">
-    <link rel="stylesheet" href="<?= $assetsUrl ?>/raggiesoft-books/library/css/stardust-engine.min.css?v=20261114a">
-    <link rel="stylesheet" href="<?= $assetsUrl ?>/raggiesoft-books/library/css/theme-<?= htmlspecialchars($resolvedThemeCss) ?>.min.css?v=20261114a">
+    <link rel="stylesheet" href="<?= $assetsUrl ?>/raggiesoft-books/library/css/stardust-engine.min.css?v=20261114b">
+    <link rel="stylesheet" href="<?= $assetsUrl ?>/raggiesoft-books/library/css/theme-<?= htmlspecialchars($resolvedThemeCss) ?>.min.css?v=20261114b">
     <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-network.css?v=20261029f">
     <script src="<?= $assetsUrl ?>/common/js/raggiesoft-network.js?v=20261029f" defer></script>
     <style>

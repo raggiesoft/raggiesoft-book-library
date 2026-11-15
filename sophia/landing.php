@@ -47,57 +47,139 @@ $landingEpubSize     = $landingSizes['epub'] ?? '';
 $landingPdfSize      = $landingSizes['pdf'] ?? '';
 $landingTextEpubSize = $landingSizes['text_epub'] ?? '';
 $landingTextPdfSize  = $landingSizes['text_pdf'] ?? '';
+// Resolve illustration, manuscript scale, and offline edition telemetry upfront for layout composition.
+$landingIllusCount = (int)($toc_manifest['illustration_count'] ?? ($routeData['common']['illustration_count'] ?? 0));
+$illustrationsUrl = '/' . $seriesSlug . '/illustrations';
+$landingWordStats = $toc_manifest['word_stats'] ?? ($routeData['common']['word_stats'] ?? []);
+$landingStoryWords = (int)($landingWordStats['story_word_count'] ?? 0);
+$landingLoreWords = (int)($landingWordStats['lore_word_count'] ?? 0);
+$landingCombinedWords = (int)($landingWordStats['combined_word_count'] ?? ($landingStoryWords + $landingLoreWords));
+$landingStoryPages = (int)($landingWordStats['story_page_count'] ?? ($landingWordStats['estimated_story_pages'] ?? ($landingStoryWords > 0 ? ceil($landingStoryWords / 275) : 0)));
+$landingTotalPages = (int)($landingWordStats['combined_page_count'] ?? ($landingWordStats['estimated_total_pages'] ?? ($landingCombinedWords > 0 ? ceil($landingCombinedWords / 275) : 0)));
+$landingReadingHours = (float)($landingWordStats['reading_hours'] ?? ($landingWordStats['reading_hours_story'] ?? ($landingStoryWords > 0 ? round($landingStoryWords / (250 * 60), 1) : 0)));
+$landingScaleLabel = (string)($landingWordStats['scale_category'] ?? ($landingWordStats['scale_label'] ?? ($landingWordStats['scale_badge'] ?? '')));
+$landingScaleBenchmark = (string)($landingWordStats['benchmark_note'] ?? ($landingWordStats['scale_benchmark'] ?? ''));
 ?>
 <style>
-/* CSS Grid layout for the landing presentation */
+/* Series Overview Hero Grid: pairs the uncropped 2:3 cover strictly with the synopsis & primary reading CTAs,
+ * while Manuscript Scale, Offline eBook Editions, and Companion Music span 100% full width below with zero dead space. */
+.landing-shell {
+    max-inline-size: 920px;
+    margin-inline: auto;
+}
+.landing-hero-header {
+    text-align: center;
+    margin-block-end: 2.25rem;
+}
+.landing-hero-title {
+    font-size: clamp(2.15rem, 4.5vw, 3.25rem);
+    line-height: 1.15;
+    margin: 0;
+    color: var(--rs-heading, var(--rs-text));
+}
 .landing-grid {
     display: grid;
     grid-template-columns: 1fr; /* Single column stack for mobile devices */
     gap: 2rem;
     align-items: start;
-    margin-bottom: 3rem;
+    margin-block-end: 2rem;
 }
-/* Breakpoint for tablet/desktop views to expand to a two-column layout */
 @media (min-width: 768px) {
     .landing-grid {
-        grid-template-columns: 300px 1fr; /* Fixed cover width, flowing text */
-        gap: 3rem;
+        grid-template-columns: 270px minmax(0, 1fr);
+        gap: 2.5rem;
+    }
+    .landing-cover-col {
+        position: sticky;
+        top: 1.5rem;
     }
 }
+/* Explicit `block-size: auto; height: auto; display: block;` ensures HTML `width`/`height` attributes
+ * reserve space for zero CLS without forcing a fixed 900px height or cropping cover typography horizontally. */
 .landing-cover {
-    width: 100%;
-    max-width: 300px;
-    margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    display: block;
+    inline-size: 100%;
+    max-inline-size: 270px;
+    block-size: auto;
+    height: auto;
+    margin-inline: auto;
+    border-radius: 10px;
+    border: 1px solid var(--rs-border);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.42);
+}
+.landing-cover-placeholder {
     aspect-ratio: 2 / 3;
-    object-fit: cover;
+    background: var(--rs-surface);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landing-about-heading {
+    margin-block: 0 1.15rem !important;
+    padding-block-end: 0.5rem;
+    border-bottom: 1px solid var(--rs-border);
+    color: var(--rs-primary) !important;
+}
+.landing-synopsis-prose {
+    font-size: 1.12rem;
+    line-height: 1.78;
+    margin-block-end: 1.5rem;
+    color: var(--rs-text);
+}
+.landing-synopsis-prose p:first-child {
+    margin-block-start: 0;
+}
+.landing-synopsis-prose p:last-child {
+    margin-block-end: 0;
+}
+.landing-primary-actions {
+    display: flex;
+    gap: 0.85rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.landing-full-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    margin-block-end: 2.25rem;
+}
+.landing-editions-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem 1.5rem;
+    padding: 1rem 1.3rem;
+    border-radius: 12px;
+    background: var(--rs-surface);
+    border: 1px solid var(--rs-border);
 }
 </style>
 
-<div class="book-page" style="max-width: 900px; margin: 0 auto;">
+<div class="book-page landing-shell">
     <!-- Landing Header -->
-    <div style="text-align: center; margin-bottom: 3rem;">
-        <h1 style="font-size: 3.5rem; margin-bottom: 1rem; color: var(--rs-text);"><?php echo htmlspecialchars($seriesTitle); ?></h1>
+    <div class="landing-hero-header">
+        <h1 class="landing-hero-title"><?php echo htmlspecialchars($seriesTitle); ?></h1>
     </div>
     
     <div class="landing-grid">
         <!-- Cover Art Column -->
-        <div style="text-align: center;">
+        <div class="landing-cover-col">
             <?php if (!empty($seriesImage)): ?>
-                <img src="<?php echo htmlspecialchars($cdnBaseUrl . $seriesImage); ?>" alt="Cover for <?php echo htmlspecialchars($seriesTitle); ?>" class="landing-cover" width="600" height="900" fetchpriority="high" decoding="async" />
+                <img src="<?php echo htmlspecialchars($cdnBaseUrl . $seriesImage); ?>" alt="Cover for <?php echo htmlspecialchars($seriesTitle); ?>" class="landing-cover" width="848" height="1264" fetchpriority="high" decoding="async" />
             <?php else: ?>
                 <!-- Fallback placeholder if no cover image is defined -->
-                <div class="landing-cover" style="background: var(--rs-surface); display: flex; align-items: center; justify-content: center; border: 1px solid var(--rs-border);">
-                    <i class="ph ph-book" style="font-size: 5rem; opacity: 0.2;"></i>
+                <div class="landing-cover landing-cover-placeholder">
+                    <i class="ph ph-book" aria-hidden="true" style="font-size: 5rem; opacity: 0.2;"></i>
                 </div>
             <?php endif; ?>
         </div>
         
-        <!-- Synopsis and Interaction Column -->
-        <div style="text-align: left;">
-            <h2 style="border-bottom: 1px solid var(--rs-border); padding-bottom: 0.5rem; margin-bottom: 1.5rem; color: var(--rs-primary);">About this Series</h2>
-            <div style="font-size: 1.2rem; line-height: 1.8; margin-bottom: 2.5rem; opacity: 0.9;">
+        <!-- Synopsis and Primary Reading CTA Column -->
+        <div style="text-align: left; min-inline-size: 0;">
+            <h2 class="landing-about-heading">About this Series</h2>
+            <div class="landing-synopsis-prose">
                 <?php 
                 // Determine whether to render the long markdown description or the short text fallback.
                 if (!empty($seriesDescriptionLong) && isset($Parsedown)) {
@@ -116,90 +198,94 @@ $landingTextPdfSize  = $landingSizes['text_pdf'] ?? '';
                 }
                 ?>
             </div>
-            
-            <!-- Call to action buttons to view the TOC, Table of Illustrations, and download eBooks (Illustrated + Text-Only Editions) -->
-            <?php
-            $landingIllusCount = (int)($toc_manifest['illustration_count'] ?? ($routeData['common']['illustration_count'] ?? 0));
-            $illustrationsUrl = '/' . $seriesSlug . '/illustrations';
-            $landingWordStats = $toc_manifest['word_stats'] ?? ($routeData['common']['word_stats'] ?? []);
-            $landingStoryWords = (int)($landingWordStats['story_word_count'] ?? 0);
-            $landingLoreWords = (int)($landingWordStats['lore_word_count'] ?? 0);
-            $landingCombinedWords = (int)($landingWordStats['combined_word_count'] ?? ($landingStoryWords + $landingLoreWords));
-            $landingStoryPages = (int)($landingWordStats['story_page_count'] ?? ($landingWordStats['estimated_story_pages'] ?? ($landingStoryWords > 0 ? ceil($landingStoryWords / 275) : 0)));
-            $landingTotalPages = (int)($landingWordStats['combined_page_count'] ?? ($landingWordStats['estimated_total_pages'] ?? ($landingCombinedWords > 0 ? ceil($landingCombinedWords / 275) : 0)));
-            $landingReadingHours = (float)($landingWordStats['reading_hours'] ?? ($landingWordStats['reading_hours_story'] ?? ($landingStoryWords > 0 ? round($landingStoryWords / (250 * 60), 1) : 0)));
-            $landingScaleLabel = (string)($landingWordStats['scale_category'] ?? ($landingWordStats['scale_label'] ?? ($landingWordStats['scale_badge'] ?? '')));
-            $landingScaleBenchmark = (string)($landingWordStats['benchmark_note'] ?? ($landingWordStats['scale_benchmark'] ?? ''));
-            ?>
-            <?php if ($landingCombinedWords > 0): ?>
-            <!-- Dynamic Manuscript & Lore Scale Telemetry Card (Compiled by paige.php) -->
-            <div style="margin-bottom: 1.75rem; padding: 1.15rem 1.3rem; border-radius: 12px; background: var(--rs-surface); border: 1px solid var(--rs-border); border-left: 4px solid var(--rs-primary);">
-                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.75rem;">
-                    <div style="font-size: 0.74rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--rs-primary); display: inline-flex; align-items: center; gap: 0.35rem;">
-                        <i class="ph-fill ph-chart-bar"></i>
-                        <span>Live Manuscript &amp; Lore Scale</span>
-                    </div>
-                    <?php if ($landingScaleLabel !== ''): ?>
-                    <span style="font-size: 0.74rem; font-weight: 700; padding: 0.2rem 0.6rem; border-radius: 999px; background: rgba(227, 178, 124, 0.16); color: var(--rs-primary);">
-                        <?php echo htmlspecialchars($landingScaleLabel); ?>
-                    </span>
-                    <?php endif; ?>
-                </div>
-                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(135px, 1fr)); gap: 0.85rem; margin-bottom: 0.7rem;">
-                    <div>
-                        <div style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.72;">Story Prose</div>
-                        <div style="font-size: 1.2rem; font-weight: 800; color: var(--rs-heading); font-variant-numeric: tabular-nums;"><?php echo number_format($landingStoryWords); ?> <span style="font-size: 0.75rem; font-weight: 600; opacity: 0.75;">words</span></div>
-                        <div style="font-size: 0.75rem; opacity: 0.75;">~<?php echo number_format($landingStoryPages); ?> print pages &bull; ~<?php echo number_format($landingReadingHours, 1); ?> hrs</div>
-                    </div>
-                    <?php if ($landingLoreWords > 0): ?>
-                    <div>
-                        <div style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.72;">Curated Lore &amp; Liner Notes</div>
-                        <div style="font-size: 1.2rem; font-weight: 800; color: var(--rs-heading); font-variant-numeric: tabular-nums;">+<?php echo number_format($landingLoreWords); ?> <span style="font-size: 0.75rem; font-weight: 600; opacity: 0.75;">words</span></div>
-                        <div style="font-size: 0.75rem; opacity: 0.75;">Archives, dossiers &amp; liner notes</div>
-                    </div>
-                    <div>
-                        <div style="font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.72;">Combined Volume Total</div>
-                        <div style="font-size: 1.2rem; font-weight: 800; color: var(--rs-primary); font-variant-numeric: tabular-nums;"><?php echo number_format($landingCombinedWords); ?> <span style="font-size: 0.75rem; font-weight: 600; opacity: 0.85;">words</span></div>
-                        <div style="font-size: 0.75rem; opacity: 0.75;">~<?php echo number_format($landingTotalPages); ?> combined pages</div>
-                    </div>
-                    <?php endif; ?>
-                </div>
-                <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; font-size: 0.78rem; padding-top: 0.55rem; border-top: 1px dashed var(--rs-border); opacity: 0.88;">
-                    <span><?php echo htmlspecialchars($landingScaleBenchmark); ?></span>
-                    <a href="/stats" style="color: var(--rs-primary); font-weight: 700; text-decoration: none; white-space: nowrap;">Compare Across All 30 Volumes &rarr;</a>
-                </div>
-            </div>
-            <?php endif; ?>
-            <div style="display: flex; gap: 1rem; align-items: center; flex-wrap: wrap;">
+
+            <!-- Primary Reading & Visual Index Actions -->
+            <div class="landing-primary-actions">
                 <?php if ($firstPartUrl !== ''): ?>
-                <a href="<?php echo htmlspecialchars($firstPartUrl); ?>" class="rs-btn rs-btn-primary" style="font-size: 1.1rem; padding: 0.75rem 1.85rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                <a href="<?php echo htmlspecialchars($firstPartUrl); ?>" class="rs-btn rs-btn-primary" style="font-size: 1.05rem; padding: 0.72rem 1.65rem; display: inline-flex; align-items: center; gap: 0.5rem;">
                     <i class="ph-fill ph-play-circle" aria-hidden="true"></i> Start Reading
                 </a>
                 <?php endif; ?>
-                <a href="<?php echo htmlspecialchars($tocUrl); ?>" class="rs-btn<?php echo $firstPartUrl === '' ? ' rs-btn-primary' : ''; ?>" style="font-size: 1.05rem; padding: 0.75rem 1.6rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                <a href="<?php echo htmlspecialchars($tocUrl); ?>" class="rs-btn<?php echo $firstPartUrl === '' ? ' rs-btn-primary' : ''; ?>" style="font-size: 1rem; padding: 0.72rem 1.35rem; display: inline-flex; align-items: center; gap: 0.5rem;">
                     <i class="ph ph-book-open" aria-hidden="true"></i> View the Table of Contents
                 </a>
                 <?php if ($landingIllusCount > 0): ?>
-                <a href="<?php echo htmlspecialchars($illustrationsUrl); ?>" class="rs-btn" style="font-size: 1.05rem; padding: 0.75rem 1.35rem; display: inline-flex; align-items: center; gap: 0.5rem;">
-                    <i class="ph ph-images"></i>
+                <a href="<?php echo htmlspecialchars($illustrationsUrl); ?>" class="rs-btn" style="font-size: 1rem; padding: 0.72rem 1.25rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <i class="ph ph-images" aria-hidden="true"></i>
                     <span>Table of Illustrations <span style="opacity: 0.85; font-weight: 600; font-size: 0.9em;">(<?php echo $landingIllusCount; ?>)</span></span>
                 </a>
                 <?php endif; ?>
-                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.epub"); ?>" target="_blank" class="rs-btn" title="Download Illustrated EPUB<?php echo $landingEpubSize ? ' (' . htmlspecialchars($landingEpubSize) . ')' : ''; ?>" style="font-size: 1.05rem; padding: 0.75rem 1.35rem; display: inline-flex; align-items: center; gap: 0.5rem;">
-                    <i class="ph ph-download-simple"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Full-Width Telemetry, Offline eBook Editions & Connected Music Stack (Zero Left-Column Dead Space) -->
+    <div class="landing-full-stack">
+        <?php if ($landingCombinedWords > 0): ?>
+        <!-- Dynamic Manuscript & Lore Scale Telemetry Card (Compiled by paige.php) -->
+        <div style="padding: 1.15rem 1.35rem; border-radius: 12px; background: var(--rs-surface); border: 1px solid var(--rs-border); border-left: 4px solid var(--rs-primary);">
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.8rem;">
+                <div style="font-size: 0.75rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--rs-primary); display: inline-flex; align-items: center; gap: 0.35rem;">
+                    <i class="ph-fill ph-chart-bar" aria-hidden="true"></i>
+                    <span>Live Manuscript &amp; Lore Scale</span>
+                </div>
+                <?php if ($landingScaleLabel !== ''): ?>
+                <span style="font-size: 0.74rem; font-weight: 700; padding: 0.2rem 0.65rem; border-radius: 999px; background: color-mix(in srgb, var(--rs-primary) 14%, transparent); color: var(--rs-primary);">
+                    <?php echo htmlspecialchars($landingScaleLabel); ?>
+                </span>
+                <?php endif; ?>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin-bottom: 0.75rem;">
+                <div>
+                    <div style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--rs-text-muted);">Story Prose</div>
+                    <div style="font-size: 1.25rem; font-weight: 800; color: var(--rs-heading); font-variant-numeric: tabular-nums;"><?php echo number_format($landingStoryWords); ?> <span style="font-size: 0.78rem; font-weight: 600; opacity: 0.8;">words</span></div>
+                    <div style="font-size: 0.78rem; color: var(--rs-text-muted);">~<?php echo number_format($landingStoryPages); ?> print pages &bull; ~<?php echo number_format($landingReadingHours, 1); ?> hrs</div>
+                </div>
+                <?php if ($landingLoreWords > 0): ?>
+                <div>
+                    <div style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--rs-text-muted);">Curated Lore &amp; Liner Notes</div>
+                    <div style="font-size: 1.25rem; font-weight: 800; color: var(--rs-heading); font-variant-numeric: tabular-nums;">+<?php echo number_format($landingLoreWords); ?> <span style="font-size: 0.78rem; font-weight: 600; opacity: 0.8;">words</span></div>
+                    <div style="font-size: 0.78rem; color: var(--rs-text-muted);">Archives, dossiers &amp; liner notes</div>
+                </div>
+                <div>
+                    <div style="font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--rs-text-muted);">Combined Volume Total</div>
+                    <div style="font-size: 1.25rem; font-weight: 800; color: var(--rs-primary); font-variant-numeric: tabular-nums;"><?php echo number_format($landingCombinedWords); ?> <span style="font-size: 0.78rem; font-weight: 600; opacity: 0.88;">words</span></div>
+                    <div style="font-size: 0.78rem; color: var(--rs-text-muted);">~<?php echo number_format($landingTotalPages); ?> combined pages</div>
+                </div>
+                <?php endif; ?>
+            </div>
+            <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.5rem; font-size: 0.8rem; padding-top: 0.6rem; border-top: 1px dashed var(--rs-border); color: var(--rs-text-muted);">
+                <span><?php echo htmlspecialchars($landingScaleBenchmark); ?></span>
+                <a href="/stats" style="color: var(--rs-primary); font-weight: 700; text-decoration: none; white-space: nowrap;">Compare Across All 30 Volumes &rarr;</a>
+            </div>
+        </div>
+        <?php endif; ?>
+
+        <!-- Offline eBook Download Bar (Illustrated + Text-Only Editions) -->
+        <div class="landing-editions-bar">
+            <div style="display: flex; flex-direction: column; gap: 0.25rem;">
+                <div style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.07em; color: var(--rs-primary); display: inline-flex; align-items: center; gap: 0.35rem;">
+                    <i class="ph-fill ph-books" aria-hidden="true"></i>
+                    <span>Offline eBook Editions</span>
+                </div>
+                <div style="font-size: 0.86rem; color: var(--rs-text-muted); display: flex; align-items: center; gap: 0.45rem; flex-wrap: wrap;">
+                    <span><i class="ph ph-file-text" aria-hidden="true"></i> Text-Only Edition (no images):</span>
+                    <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.epub"); ?>" target="_blank" rel="noopener" title="Download Text-Only EPUB (No Images<?php echo $landingTextEpubSize ? ' — ' . htmlspecialchars($landingTextEpubSize) : ''; ?>)" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">EPUB &mdash; Text Only<?php echo $landingTextEpubSize ? ' (' . htmlspecialchars($landingTextEpubSize) . ')' : ''; ?></a>
+                    <span aria-hidden="true">&bull;</span>
+                    <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.pdf"); ?>" target="_blank" rel="noopener" title="Download Text-Only PDF (No Images<?php echo $landingTextPdfSize ? ' — ' . htmlspecialchars($landingTextPdfSize) : ''; ?>)" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">PDF &mdash; Text Only<?php echo $landingTextPdfSize ? ' (' . htmlspecialchars($landingTextPdfSize) . ')' : ''; ?></a>
+                </div>
+            </div>
+            <div style="display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap;">
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.epub"); ?>" target="_blank" rel="noopener" class="rs-btn" title="Download Illustrated EPUB<?php echo $landingEpubSize ? ' (' . htmlspecialchars($landingEpubSize) . ')' : ''; ?>" style="font-size: 0.98rem; padding: 0.65rem 1.2rem; display: inline-flex; align-items: center; gap: 0.45rem;">
+                    <i class="ph ph-download-simple" aria-hidden="true"></i>
                     <span>EPUB<?php echo $landingEpubSize ? ' <span style="opacity: 0.82; font-weight: 500; font-size: 0.9em;">(' . htmlspecialchars($landingEpubSize) . ')</span>' : ''; ?></span>
                 </a>
-                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.pdf"); ?>" target="_blank" class="rs-btn" title="Download Illustrated PDF<?php echo $landingPdfSize ? ' (' . htmlspecialchars($landingPdfSize) . ')' : ''; ?>" style="font-size: 1.05rem; padding: 0.75rem 1.35rem; display: inline-flex; align-items: center; gap: 0.5rem;">
-                    <i class="ph ph-file-pdf"></i>
+                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}.pdf"); ?>" target="_blank" rel="noopener" class="rs-btn" title="Download Illustrated PDF<?php echo $landingPdfSize ? ' (' . htmlspecialchars($landingPdfSize) . ')' : ''; ?>" style="font-size: 0.98rem; padding: 0.65rem 1.2rem; display: inline-flex; align-items: center; gap: 0.45rem;">
+                    <i class="ph ph-file-pdf" aria-hidden="true"></i>
                     <span>PDF<?php echo $landingPdfSize ? ' <span style="opacity: 0.82; font-weight: 500; font-size: 0.9em;">(' . htmlspecialchars($landingPdfSize) . ')</span>' : ''; ?></span>
                 </a>
             </div>
-            <div style="margin-top: 0.75rem; font-size: 0.88rem; opacity: 0.9; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
-                <span><i class="ph ph-file-text"></i> Text-Only Edition (no images):</span>
-                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.epub"); ?>" target="_blank" title="Download Text-Only EPUB (No Images<?php echo $landingTextEpubSize ? ' — ' . htmlspecialchars($landingTextEpubSize) : ''; ?>)" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">EPUB &mdash; Text Only<?php echo $landingTextEpubSize ? ' (' . htmlspecialchars($landingTextEpubSize) . ')' : ''; ?></a>
-                <span aria-hidden="true">&bull;</span>
-                <a href="<?php echo htmlspecialchars("https://assets.raggiesoft.com/raggiesoft-books/books/{$seriesSlug}/{$seriesSlug}-text.pdf"); ?>" target="_blank" title="Download Text-Only PDF (No Images<?php echo $landingTextPdfSize ? ' — ' . htmlspecialchars($landingTextPdfSize) : ''; ?>)" style="color: var(--rs-primary); font-weight: 600; text-decoration: underline; text-underline-offset: 3px;">PDF &mdash; Text Only<?php echo $landingTextPdfSize ? ' (' . htmlspecialchars($landingTextPdfSize) . ')' : ''; ?></a>
-            </div>
+        </div>
 
             <?php
             /**
@@ -331,7 +417,7 @@ $landingTextPdfSize  = $landingSizes['text_pdf'] ?? '';
             ?>
             <?php if ($activeMusicCard): ?>
             <!-- Companion Portal & Listening Room Integration Box -->
-            <div style="margin-top: 1.75rem; padding: 1.25rem 1.35rem; border-radius: 12px; background: var(--rs-surface); border: 1px solid var(--rs-border); border-left: 5px solid var(--rs-primary);">
+            <div style="padding: 1.25rem 1.35rem; border-radius: 12px; background: var(--rs-surface); border: 1px solid var(--rs-border); border-left: 5px solid var(--rs-primary);">
                 <div style="font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--rs-primary); margin-bottom: 0.35rem;">
                     <i class="ph-fill <?php echo htmlspecialchars($activeMusicCard['icon']); ?>" aria-hidden="true"></i> <?php echo htmlspecialchars($activeMusicCard['eyebrow']); ?>
                 </div>
@@ -353,7 +439,6 @@ $landingTextPdfSize  = $landingSizes['text_pdf'] ?? '';
                 </div>
             </div>
             <?php endif; ?>
-        </div>
     </div>
 
     <?php if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])): ?>
