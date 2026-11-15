@@ -494,7 +494,7 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
       gtag('config', '<?= htmlspecialchars($gaTrackingId) ?>');
     </script>
     <?php endif; ?>
-    <script src="/scripts/pwa.js?v=20261114a"></script>
+    <script src="/scripts/pwa.js?v=20261115b"></script>
 </head>
 
 <body class="theme-<?= htmlspecialchars($currentPageTheme ?? 'oceanview') ?><?= $forceDarkClass ?>">

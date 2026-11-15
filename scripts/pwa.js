@@ -45,15 +45,85 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
+    let hasHandledLaunchQueueTarget = false;
+
+    // 1b. Cross-PWA Incoming Link Consumer (Launch Handler API: window.launchQueue)
+    // When RaggieSoft Backstage or The Listening Room hands off a book/chapter URL
+    // to an already-open Book Reader PWA window (`client_mode: "focus-existing"`),
+    // route seamlessly through the Stardust SPA router so active chapter audio never stops.
+    if ('launchQueue' in window && window.launchQueue && typeof window.launchQueue.setConsumer === 'function') {
+        window.launchQueue.setConsumer((launchParams) => {
+            if (!launchParams || !launchParams.targetURL) return;
+            try {
+                const incoming = new URL(launchParams.targetURL, window.location.origin);
+                if (incoming.origin !== window.location.origin) return;
+                hasHandledLaunchQueueTarget = true;
+                const dest = incoming.pathname + incoming.search + incoming.hash;
+                const here = window.location.pathname + window.location.search + window.location.hash;
+                if (dest === here) return;
+
+                if (incoming.pathname !== '/' && incoming.pathname.length > 2 && !incoming.pathname.includes('accessibility')) {
+                    localStorage.setItem('lastReadChapter', incoming.pathname);
+                }
+
+                if (document.body) {
+                    const spaAnchor = document.createElement('a');
+                    spaAnchor.href = dest;
+                    spaAnchor.style.display = 'none';
+                    document.body.appendChild(spaAnchor);
+                    spaAnchor.click();
+                    spaAnchor.remove();
+                } else {
+                    window.location.assign(dest);
+                }
+            } catch (e) {
+                console.warn('LaunchQueue navigation ignored:', e);
+            }
+        });
+    }
+
+    // 1c. Sibling RaggieSoft PWA Outbound Handoff Enhancer
+    // When running as an installed standalone PWA, ensure links to sibling RaggieSoft
+    // PWAs (`backstage.raggiesoft.com`, `music.raggiesoft.com`) open via auxiliary
+    // browsing context (`target="_blank" rel="noopener"`) so Chromium & Android
+    // PWA Link Capturing hands them directly to the installed sibling PWA window
+    // instead of trapping them inside Book Reader with an out-of-scope toolbar.
+    if (isStandalone) {
+        const siblingPwaHosts = new Set(['backstage.raggiesoft.com', 'music.raggiesoft.com']);
+        document.addEventListener(
+            'click',
+            (event) => {
+                if (event.defaultPrevented) return;
+                const targetEl = event.target instanceof Element ? event.target : null;
+                const anchor = targetEl ? targetEl.closest('a[href]') : null;
+                if (!anchor) return;
+                try {
+                    const destUrl = new URL(anchor.href, window.location.href);
+                    if (destUrl.hostname !== window.location.hostname && siblingPwaHosts.has(destUrl.hostname)) {
+                        anchor.target = '_blank';
+                        const relTokens = new Set((anchor.getAttribute('rel') || '').split(/\s+/).filter(Boolean));
+                        relTokens.add('noopener');
+                        anchor.setAttribute('rel', Array.from(relTokens).join(' '));
+                    }
+                } catch (_) {
+                    // Ignore malformed hrefs
+                }
+            },
+            true
+        );
+    }
+
     if (isStandalone && currentPath === '/') {
         // If launched from the OS home screen and landing on the root homepage, check launch preference.
         const launchBehavior = localStorage.getItem('rs-launch-behavior') || 'home';
         const lastRead = localStorage.getItem('lastReadChapter');
         
-        if (launchBehavior === 'resume' && lastRead && lastRead !== '/') {
+        if (!hasHandledLaunchQueueTarget && launchBehavior === 'resume' && lastRead && lastRead !== '/') {
             // Give a tiny delay so the native OS splash screen transitions naturally before the JS redirect fires.
             setTimeout(() => {
-                window.location.replace(lastRead);
+                if (!hasHandledLaunchQueueTarget) {
+                    window.location.replace(lastRead);
+                }
             }, 100);
         }
     }
