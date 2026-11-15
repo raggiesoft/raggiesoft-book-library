@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "55.6 MB",
-            "pdf": "52.1 MB",
-            "text_epub": "653 KB",
-            "text_pdf": "1.7 MB",
-            "package_7z": "484 KB",
-            "epub_bytes": 58351029,
-            "pdf_bytes": 54666522,
-            "text_epub_bytes": 668286,
-            "text_pdf_bytes": 1821514,
-            "package_7z_bytes": 495961
+            "epub": "56.8 MB",
+            "pdf": "52.7 MB",
+            "text_epub": "667 KB",
+            "text_pdf": "1.8 MB",
+            "package_7z": "495 KB",
+            "epub_bytes": 59571581,
+            "pdf_bytes": 55234134,
+            "text_epub_bytes": 683157,
+            "text_pdf_bytes": 1862454,
+            "package_7z_bytes": 506381
         },
-        "illustration_count": 124,
+        "illustration_count": 128,
         "word_stats": {
-            "story_word_count": 274624,
+            "story_word_count": 280565,
             "lore_word_count": 91549,
-            "combined_word_count": 366173,
-            "story_page_count": 999,
-            "combined_page_count": 1332,
-            "reading_hours": 18.3,
-            "reading_minutes": 1098,
+            "combined_word_count": 372114,
+            "story_page_count": 1020,
+            "combined_page_count": 1353,
+            "reading_hours": 18.7,
+            "reading_minutes": 1122,
             "novel_equivalent": 3.1,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
             "benchmark_note": "3.1\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
             "era_count": 11,
-            "chapter_count": 43,
-            "part_count": 104,
-            "illustration_count": 124
+            "chapter_count": 45,
+            "part_count": 108,
+            "illustration_count": 128
         }
     },
     "/katie": {
@@ -318,71 +318,107 @@
         "theme": "raggiesoft-books",
         "filePath": "e003/c005/p001.md"
     },
+    "/katie/sixteen-summer-sanctuary/cousin-wesley-annie-s-pretzels-coding-side-by-side": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Cousin Wesley, Annie's Pretzels, & Coding Side by Side",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|2|5"
+    },
+    "/katie/sixteen-summer-sanctuary/cousin-wesley-annie-s-pretzels-coding-side-by-side/part-1-cousin-wesley-at-emerald-creek-mall-annie-s-pretzels-the-same-deep-pressure-squeeze": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Cousin Wesley at Emerald Creek Mall, Annie's Pretzels, & The Same Deep-Pressure Squeeze",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c006/p001.md"
+    },
+    "/katie/sixteen-summer-sanctuary/cousin-wesley-annie-s-pretzels-coding-side-by-side/part-2-two-envelopes-at-mrs-demarco-s-window-table-three-sugar-cookies-coding-in-mrs-periwinkle-s-library": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Two Envelopes at Mrs. DeMarco's Window Table, Three Sugar Cookies, & Coding in Mrs. Periwinkle's Library",
+        "theme": "raggiesoft-books",
+        "filePath": "e003/c006/p002.md"
+    },
     "/katie/seventeen-senior-year-greenway-court": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Seventeen, Senior Year, & Greenway Court",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|3"
     },
+    "/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Seventeen at Chesapeake Bay Mall & Senior Fall With Heather",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|3|0"
+    },
+    "/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-1-two-buses-to-chesapeake-bay-mall-the-center-court-carousel-seventeen-on-four-wheels": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Two Buses to Chesapeake Bay Mall, The Center Court Carousel, & Seventeen on Four Wheels",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c001/p001.md"
+    },
+    "/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-2-senior-gold-day-in-room-204-paper-snowflakes-see-you-after-winter-break": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Senior Gold Day in Room 204, Paper Snowflakes, & See You After Winter Break",
+        "theme": "raggiesoft-books",
+        "filePath": "e004/c001/p002.md"
+    },
     "/katie/seventeen-senior-year-greenway-court/drunken-new-year": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Drunken New Year",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|3|0"
+        "filePath": "__CHAP_TOC__|3|1"
     },
     "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-1-the-gas-station-run-a-box-of-dry-cereal-why-i-never-had-a-twenty-first-birthday-drink": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Gas-Station Run, A Box of Dry Cereal, & Why I Never Had a Twenty-First Birthday Drink",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/p001.md"
+        "filePath": "e004/c002/p001.md"
     },
     "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-2-the-drunken-new-year-lie-heather-s-bitter-goodbye-twin-sisters-always-stay": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Drunken New Year Lie, Heather's Bitter Goodbye, & Twin Sisters Always Stay",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/p002.md"
+        "filePath": "e004/c002/p002.md"
     },
     "/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Greenway Court, Apartment A6 & The Square Closet Sanctuary",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|3|1"
+        "filePath": "__CHAP_TOC__|3|2"
     },
     "/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary/part-1-apartment-a6-on-greenway-court-dad-s-microwave-cart-across-the-hall-neighbors": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Apartment A6 on Greenway Court, Dad's Microwave Cart, & Across-the-Hall Neighbors",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/p001.md"
+        "filePath": "e004/c003/p001.md"
     },
     "/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary/part-2-brenda-in-the-back-alley-discovering-the-square-closet-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Brenda in the Back Alley & Discovering the Square Closet Sanctuary",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/p002.md"
+        "filePath": "e004/c003/p002.md"
     },
     "/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary/part-3-hurricane-isabel-two-layers-of-sandbags-at-greenway-court-two-weeks-at-dad-s-house-on-arvin-road": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Hurricane Isabel, Two Layers of Sandbags at Greenway Court, & Two Weeks at Dad's House on Arvin Road",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/p003.md"
+        "filePath": "e004/c003/p003.md"
     },
     "/katie/seventeen-senior-year-greenway-court/the-admiral-center-patio-moving-together-to-williamsburg": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Admiral Center Patio & Moving Together to Williamsburg",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|3|2"
+        "filePath": "__CHAP_TOC__|3|3"
     },
     "/katie/seventeen-senior-year-greenway-court/the-admiral-center-patio-moving-together-to-williamsburg/part-1-spilled-hot-chocolate-on-the-admiral-center-patio-brandon-mercer-presents-himself-as-a-gentleman": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Spilled Hot Chocolate on The Admiral Center Patio & Brandon Mercer Presents Himself as a Gentleman",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c003/p001.md"
+        "filePath": "e004/c004/p001.md"
     },
     "/katie/seventeen-senior-year-greenway-court/the-admiral-center-patio-moving-together-to-williamsburg/part-2-a-non-negotiable-package-deal-dad-s-calling-cards-moving-together-to-williamsburg": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: A Non-Negotiable Package Deal, Dad's Calling Cards, & Moving Together to Williamsburg",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c003/p002.md"
+        "filePath": "e004/c004/p002.md"
     },
     "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road": {
         "view": "pages/raggiesoft-books/books/viewer",
