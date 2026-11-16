@@ -330,6 +330,10 @@ $headerAssetsUrl = !empty($cdnBaseUrl) ? rtrim($cdnBaseUrl, '/') : 'https://asse
                 <i class="ph-fill ph-books"></i>
                 <span>Library</span>
             </a>
+            <a href="/arcs" class="rs-book-header-link <?= ($headerActivePath === '/arcs' || $headerActivePath === '/story-arcs') ? 'is-active' : '' ?>" <?= ($headerActivePath === '/arcs' || $headerActivePath === '/story-arcs') ? 'aria-current="page"' : '' ?> title="Follow Curated Story Arc Reading Playlists">
+                <i class="ph-fill ph-playlist"></i>
+                <span>Story Arcs</span>
+            </a>
             <a href="/illustrations" class="rs-book-header-link <?= ($headerActivePath === '/illustrations' || $headerActivePath === '/table-of-illustrations') ? 'is-active' : '' ?>" <?= ($headerActivePath === '/illustrations' || $headerActivePath === '/table-of-illustrations') ? 'aria-current="page"' : '' ?>>
                 <i class="ph-fill ph-images"></i>
                 <span>Illustrations</span>

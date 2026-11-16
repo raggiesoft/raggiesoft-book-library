@@ -59,6 +59,10 @@ $landingTotalPages = (int)($landingWordStats['combined_page_count'] ?? ($landing
 $landingReadingHours = (float)($landingWordStats['reading_hours'] ?? ($landingWordStats['reading_hours_story'] ?? ($landingStoryWords > 0 ? round($landingStoryWords / (250 * 60), 1) : 0)));
 $landingScaleLabel = (string)($landingWordStats['scale_category'] ?? ($landingWordStats['scale_label'] ?? ($landingWordStats['scale_badge'] ?? '')));
 $landingScaleBenchmark = (string)($landingWordStats['benchmark_note'] ?? ($landingWordStats['scale_benchmark'] ?? ''));
+// Resolve curated Story Arcs (Reading Playlists) compiled from `arcs.json` for this series.
+$landingStoryArcs = is_array($toc_manifest['story_arcs'] ?? null)
+    ? $toc_manifest['story_arcs']
+    : (is_array($routeData['common']['story_arcs'] ?? null) ? $routeData['common']['story_arcs'] : []);
 ?>
 <style>
 /* Series Overview Hero Grid: pairs the uncropped 2:3 cover strictly with the synopsis & primary reading CTAs,
@@ -215,12 +219,155 @@ $landingScaleBenchmark = (string)($landingWordStats['benchmark_note'] ?? ($landi
                     <span>Table of Illustrations <span style="opacity: 0.85; font-weight: 600; font-size: 0.9em;">(<?php echo $landingIllusCount; ?>)</span></span>
                 </a>
                 <?php endif; ?>
+                <?php if (!empty($landingStoryArcs)): ?>
+                <a href="#series-story-arcs" data-no-spa="true" class="rs-btn" style="font-size: 1rem; padding: 0.72rem 1.25rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                    <i class="ph-fill ph-playlist" aria-hidden="true"></i>
+                    <span>Follow a Story Arc <span style="opacity: 0.85; font-weight: 600; font-size: 0.9em;">(<?php echo count($landingStoryArcs); ?>)</span></span>
+                </a>
+                <?php endif; ?>
             </div>
         </div>
     </div>
 
-    <!-- Full-Width Telemetry, Offline eBook Editions & Connected Music Stack (Zero Left-Column Dead Space) -->
+    <!-- Full-Width Telemetry, Story Arcs, Offline eBook Editions & Connected Music Stack (Zero Left-Column Dead Space) -->
     <div class="landing-full-stack">
+        <?php if (!empty($landingStoryArcs)): ?>
+        <!-- Curated Multi-Arc Story Arcs (Reading Playlists) Section -->
+        <section id="series-story-arcs" class="rs-series-arcs-section" aria-labelledby="series-story-arcs-heading">
+            <div class="rs-series-arcs-header">
+                <div>
+                    <div class="rs-arcs-kicker">
+                        <i class="ph-fill ph-playlist" aria-hidden="true"></i>
+                        <span>Reading Playlists &bull; <?php echo count($landingStoryArcs); ?> <?php echo count($landingStoryArcs) === 1 ? 'Story Arc' : 'Story Arcs'; ?></span>
+                    </div>
+                    <h2 id="series-story-arcs-heading" class="rs-series-arcs-title">Follow a Story Arc in <?php echo htmlspecialchars($seriesTitle); ?></h2>
+                    <p class="rs-series-arcs-lead">
+                        Follow an individual character journey or storyline chronologically across the book&mdash;like a curated playlist of chapters and behind-the-scenes bonus scenes.
+                    </p>
+                </div>
+                <a href="/arcs?book=<?php echo htmlspecialchars($seriesSlug); ?>" class="rs-btn" style="white-space: nowrap;">
+                    <i class="ph ph-compass" aria-hidden="true"></i>
+                    <span>All Library Story Arcs</span>
+                </a>
+            </div>
+
+            <div class="rs-series-arcs-list">
+                <?php foreach ($landingStoryArcs as $lArc):
+                    $lArcSlug     = (string)($lArc['slug'] ?? '');
+                    $lArcTitle    = (string)($lArc['title'] ?? '');
+                    $lArcSub      = (string)($lArc['subtitle'] ?? '');
+                    $lArcDesc     = (string)($lArc['description'] ?? '');
+                    $lRawImg      = (string)($lArc['image'] ?? '');
+                    $lImgUrl      = (str_starts_with($lRawImg, 'http://') || str_starts_with($lRawImg, 'https://'))
+                        ? $lRawImg
+                        : rtrim((string)$cdnBaseUrl, '/') . '/' . ltrim($lRawImg, '/');
+                    $lStartUrl    = (string)($lArc['start_url'] ?? ('/' . $seriesSlug));
+                    $lBsUrl       = (string)($lArc['backstage_playlist_url'] ?? 'https://backstage.raggiesoft.com/arcs/');
+                    $lPartCount   = (int)($lArc['part_count'] ?? 0);
+                    $lBsCount     = (int)($lArc['backstage_count'] ?? 0);
+                    $lReadHours   = (float)($lArc['reading_hours'] ?? 0);
+                    $lReadMins    = (int)($lArc['reading_minutes'] ?? 1);
+                    $lReadLabel   = $lReadHours >= 1.0 ? ('~' . number_format($lReadHours, 1) . ' hrs') : ('~' . $lReadMins . ' min');
+                    $lStops       = is_array($lArc['stops'] ?? null) ? $lArc['stops'] : [];
+                ?>
+                <article class="rs-series-arc-item">
+                    <div class="rs-series-arc-top">
+                        <a href="<?php echo htmlspecialchars($lStartUrl); ?>" class="rs-series-arc-thumb" tabindex="-1" aria-hidden="true">
+                            <img src="<?php echo htmlspecialchars($lImgUrl); ?>" alt="" width="480" height="270" loading="lazy" decoding="async">
+                        </a>
+                        <div class="rs-series-arc-content">
+                            <?php if ($lArcSub !== ''): ?>
+                            <div class="rs-arc-card-subtitle"><?php echo htmlspecialchars($lArcSub); ?></div>
+                            <?php endif; ?>
+                            <h3 class="rs-series-arc-item-title">
+                                <a href="<?php echo htmlspecialchars($lStartUrl); ?>"><?php echo htmlspecialchars($lArcTitle); ?></a>
+                            </h3>
+                            <p class="rs-arc-card-desc"><?php echo htmlspecialchars($lArcDesc); ?></p>
+                            <div class="rs-arc-card-meta">
+                                <span><i class="ph-fill ph-book-open-text" aria-hidden="true"></i> <?php echo $lPartCount; ?> <?php echo $lPartCount === 1 ? 'Chapter' : 'Chapters'; ?></span>
+                                <?php if ($lBsCount > 0): ?>
+                                <span><i class="ph-fill ph-film-slate" aria-hidden="true"></i> <?php echo $lBsCount; ?> Bonus <?php echo $lBsCount === 1 ? 'Scene' : 'Scenes'; ?></span>
+                                <?php endif; ?>
+                                <span><i class="ph ph-clock" aria-hidden="true"></i> <?php echo htmlspecialchars($lReadLabel); ?></span>
+                            </div>
+                            <div class="rs-arc-card-actions">
+                                <a href="<?php echo htmlspecialchars($lStartUrl); ?>" class="rs-btn rs-btn-primary rs-arc-start-btn">
+                                    <i class="ph-fill ph-play-circle" aria-hidden="true"></i>
+                                    <span>Start Story Arc</span>
+                                </a>
+                                <a href="<?php echo htmlspecialchars($lBsUrl); ?>"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   data-no-spa="true"
+                                   data-backstage-direct="true"
+                                   class="rs-btn">
+                                    <i class="ph ph-film-slate" aria-hidden="true"></i>
+                                    <span>Backstage Guide</span>
+                                    <i class="ph ph-arrow-square-out" aria-hidden="true"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <?php if (!empty($lStops)): ?>
+                    <details class="rs-arc-disclosure" name="series-story-arcs">
+                        <summary class="rs-arc-disclosure-summary">
+                            <span><i class="ph ph-list-numbers" aria-hidden="true"></i> Browse All <?php echo count($lStops); ?> Stops in This Playlist</span>
+                            <i class="ph-bold ph-caret-down rs-arc-disclosure-caret" aria-hidden="true"></i>
+                        </summary>
+                        <ol class="rs-arc-stop-list">
+                            <?php foreach ($lStops as $stop):
+                                $sKind   = (string)($stop['kind'] ?? 'part');
+                                $sNum    = (int)($stop['stop_num'] ?? 0);
+                                $sTitle  = (string)($stop['title'] ?? '');
+                                $sSub    = (string)($stop['subtitle'] ?? '');
+                                $sDate   = (string)($stop['date'] ?? '');
+                                $sMins   = (int)($stop['reading_minutes'] ?? 1);
+                                $sArcUrl = (string)($stop['arc_url'] ?? '#');
+                                $sExtUrl = (string)($stop['url'] ?? '#');
+                            ?>
+                            <li class="rs-arc-stop-row is-<?php echo htmlspecialchars($sKind); ?>">
+                                <span class="rs-arc-stop-num"><?php echo $sNum; ?></span>
+                                <div class="rs-arc-stop-info">
+                                    <div class="rs-arc-stop-kicker">
+                                        <?php if ($sKind === 'backstage'): ?>
+                                            <span class="rs-arc-kind-badge is-backstage"><i class="ph-fill ph-film-slate" aria-hidden="true"></i> Bonus Scene</span>
+                                        <?php else: ?>
+                                            <span class="rs-arc-kind-badge is-part"><i class="ph-fill ph-book-open" aria-hidden="true"></i> Chapter</span>
+                                        <?php endif; ?>
+                                        <?php if ($sDate !== ''): ?>
+                                            <span><?php echo htmlspecialchars($sDate); ?></span>
+                                        <?php endif; ?>
+                                        <span>&bull; <?php echo $sMins; ?> min</span>
+                                    </div>
+                                    <?php if ($sKind === 'backstage'): ?>
+                                        <a href="<?php echo htmlspecialchars($sExtUrl); ?>"
+                                           target="_blank"
+                                           rel="noopener noreferrer"
+                                           data-no-spa="true"
+                                           data-backstage-direct="true"
+                                           class="rs-arc-stop-link">
+                                            <?php echo htmlspecialchars($sTitle); ?> <i class="ph ph-arrow-square-out" aria-hidden="true"></i>
+                                        </a>
+                                    <?php else: ?>
+                                        <a href="<?php echo htmlspecialchars($sArcUrl); ?>" class="rs-arc-stop-link">
+                                            <?php echo htmlspecialchars($sTitle); ?>
+                                        </a>
+                                    <?php endif; ?>
+                                    <?php if ($sSub !== ''): ?>
+                                        <div class="rs-arc-stop-sub"><?php echo htmlspecialchars($sSub); ?></div>
+                                    <?php endif; ?>
+                                </div>
+                            </li>
+                            <?php endforeach; ?>
+                        </ol>
+                    </details>
+                    <?php endif; ?>
+                </article>
+                <?php endforeach; ?>
+            </div>
+        </section>
+        <?php endif; ?>
         <?php if ($landingCombinedWords > 0): ?>
         <!-- Dynamic Manuscript & Lore Scale Telemetry Card (Compiled by paige.php) -->
         <div style="padding: 1.15rem 1.35rem; border-radius: 12px; background: var(--rs-surface); border: 1px solid var(--rs-border); border-left: 4px solid var(--rs-primary);">

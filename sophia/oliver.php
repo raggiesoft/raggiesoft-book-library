@@ -631,6 +631,83 @@ if ($currentIndex !== false) {
     if ($currentIndex < count($filteredKeys) - 1 && empty($nextUrl)) $nextUrl = $filteredKeys[$currentIndex + 1];
 }
 
+/*
+ * ============================================================================
+ * STORY ARC PLAYLIST MODE RESOLVER (`?arc=<slug>`) & CHAPTER ARC DISCOVERY
+ * ============================================================================
+ * Resolves whether the current manuscript part belongs to one or more curated
+ * Story Arcs (`$matchingPartStoryArcs`). When `?arc=<slug>` is active on the URL,
+ * rewires `$prevUrl` and `$nextUrl` to step strictly through that Story Arc's
+ * sequence, calculates playlist progress (`--arc-progress`), and surfaces any
+ * behind-the-scenes Backstage bonus scenes sitting right after this chapter.
+ */
+$seriesStoryArcs = is_array($toc_manifest['story_arcs'] ?? null)
+    ? $toc_manifest['story_arcs']
+    : (is_array($routeData['common']['story_arcs'] ?? null) ? $routeData['common']['story_arcs'] : []);
+$matchingPartStoryArcs = [];
+$activeStoryArc = null;
+$activeArcCurrentStop = null;
+$activeArcProgressPct = 0.0;
+$activeArcPrevLabel = 'Previous';
+$activeArcNextLabel = 'Next';
+$activeArcInterleavedBackstageStops = [];
+
+if (!$specialPageType && $actualFilePath !== '' && !empty($seriesStoryArcs)) {
+    $requestedArcSlug = isset($_GET['arc']) ? preg_replace('/[^a-z0-9_-]/i', '', (string)$_GET['arc']) : '';
+    foreach ($seriesStoryArcs as $sArc) {
+        $arcStops = is_array($sArc['stops'] ?? null) ? $sArc['stops'] : [];
+        $foundRawIndex = null;
+        foreach ($arcStops as $sIdx => $st) {
+            if (($st['kind'] ?? '') === 'part' && ($st['file_path'] ?? '') === $actualFilePath) {
+                $foundRawIndex = $sIdx;
+                break;
+            }
+        }
+        if ($foundRawIndex === null) {
+            continue;
+        }
+        $matchingPartStoryArcs[] = [
+            'slug'       => (string)($sArc['slug'] ?? ''),
+            'title'      => (string)($sArc['title'] ?? ''),
+            'stop_count' => (int)($sArc['stop_count'] ?? count($arcStops)),
+            'arc_url'    => $requestUri . '?arc=' . rawurlencode((string)($sArc['slug'] ?? '')),
+        ];
+
+        if ($requestedArcSlug !== '' && ($sArc['slug'] ?? '') === $requestedArcSlug) {
+            $activeStoryArc       = $sArc;
+            $activeArcCurrentStop = $arcStops[$foundRawIndex];
+            $totalStops           = max(1, count($arcStops));
+            $currStopNum          = (int)($activeArcCurrentStop['stop_num'] ?? ($foundRawIndex + 1));
+            $activeArcProgressPct = round(($currStopNum / $totalStops) * 100, 1);
+
+            // Walk backward to find the previous chapter stop in this Story Arc
+            $prevArcUrl = null;
+            for ($back = $foundRawIndex - 1; $back >= 0; $back--) {
+                if (($arcStops[$back]['kind'] ?? '') === 'part') {
+                    $prevArcUrl = $arcStops[$back]['arc_url'] ?? null;
+                    break;
+                }
+            }
+            // Walk forward to collect interleaved Backstage bonus stops AND find the next chapter stop
+            $nextArcUrl = null;
+            for ($fwd = $foundRawIndex + 1; $fwd < count($arcStops); $fwd++) {
+                $fKind = (string)($arcStops[$fwd]['kind'] ?? '');
+                if ($fKind === 'backstage') {
+                    $activeArcInterleavedBackstageStops[] = $arcStops[$fwd];
+                } elseif ($fKind === 'part') {
+                    $nextArcUrl = $arcStops[$fwd]['arc_url'] ?? null;
+                    break;
+                }
+            }
+
+            $prevUrl = $prevArcUrl;
+            $nextUrl = $nextArcUrl;
+            $activeArcPrevLabel = 'Previous in Arc';
+            $activeArcNextLabel = 'Next in Arc';
+        }
+    }
+}
+
 $overviewUrl = '/' . $seriesSlug;
 $title = $config['title'] ?? ($frontmatter['title'] ?? 'Untitled Chapter');
 $narrativeTheme = $frontmatter['theme'] ?? null;
@@ -944,6 +1021,62 @@ $oliverBookSeriesSchema = [
         </div>
 
         <article class="story-content">
+            <?php if (!$specialPageType && $activeStoryArc !== null):
+                $bannerStopNum   = (int)($activeArcCurrentStop['stop_num'] ?? 1);
+                $bannerStopTotal = (int)($activeStoryArc['stop_count'] ?? count($activeStoryArc['stops'] ?? []));
+                $bannerArcTitle  = (string)($activeStoryArc['title'] ?? 'Story Arc');
+            ?>
+            <!-- Story Arc Playlist Mode Top Banner (Progress passed via CSS Custom Property per modern-web-guidance) -->
+            <section class="rs-arc-reader-banner"
+                     aria-label="Active Story Arc Playlist"
+                     style="--arc-progress: <?php echo htmlspecialchars((string)$activeArcProgressPct); ?>%;">
+                <div class="rs-arc-reader-banner-row">
+                    <div class="rs-arc-reader-banner-info">
+                        <div class="rs-arc-reader-kicker">
+                            <i class="ph-fill ph-playlist" aria-hidden="true"></i>
+                            <span>Story Arc Playlist &bull; Stop <?php echo $bannerStopNum; ?> of <?php echo $bannerStopTotal; ?></span>
+                        </div>
+                        <div class="rs-arc-reader-title"><?php echo htmlspecialchars($bannerArcTitle); ?></div>
+                    </div>
+                    <div class="rs-arc-reader-actions">
+                        <button type="button"
+                                id="rs-open-arc-playlist-btn"
+                                class="rs-btn rs-btn-primary rs-arc-banner-btn"
+                                aria-haspopup="dialog"
+                                aria-controls="rs-arc-playlist-dialog">
+                            <i class="ph ph-list-numbers" aria-hidden="true"></i>
+                            <span>All <?php echo $bannerStopTotal; ?> Stops</span>
+                        </button>
+                        <a href="<?php echo htmlspecialchars($requestUri); ?>"
+                           class="rs-btn rs-arc-banner-btn"
+                           title="Exit Story Arc Playlist Mode and continue reading the full book in order">
+                            <i class="ph ph-book-open" aria-hidden="true"></i>
+                            <span>Switch to Full Book</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="rs-arc-progress-track" role="progressbar" aria-valuemin="1" aria-valuemax="<?php echo $bannerStopTotal; ?>" aria-valuenow="<?php echo $bannerStopNum; ?>" aria-label="Story Arc reading progress">
+                    <div class="rs-arc-progress-fill"></div>
+                </div>
+            </section>
+            <?php elseif (!$specialPageType && !empty($matchingPartStoryArcs)): ?>
+            <!-- Subtle Discovery Strip when a Chapter Belongs to One or More Curated Story Arcs -->
+            <aside class="rs-arc-discovery-strip" aria-label="Related Story Arcs">
+                <span class="rs-arc-discovery-label">
+                    <i class="ph-fill ph-playlist" aria-hidden="true"></i>
+                    <span>Follow Story Arc:</span>
+                </span>
+                <div class="rs-arc-discovery-pills">
+                    <?php foreach ($matchingPartStoryArcs as $mArc): ?>
+                    <a href="<?php echo htmlspecialchars($mArc['arc_url']); ?>" class="rs-arc-discovery-pill">
+                        <span><?php echo htmlspecialchars($mArc['title']); ?></span>
+                        <span class="rs-arc-discovery-count"><?php echo (int)$mArc['stop_count']; ?> stops &rarr;</span>
+                    </a>
+                    <?php endforeach; ?>
+                </div>
+            </aside>
+            <?php endif; ?>
+
             <?php if (!$specialPageType): ?>
             <?php
             /**
@@ -1913,6 +2046,51 @@ $oliverBookSeriesSchema = [
         </script>
         <?php endif; ?>
 
+        <!-- Interleaved Story Arc Bonus Stops & Bottom Sequence Navigation -->
+        <?php if (!$specialPageType && $activeStoryArc !== null && !empty($activeArcInterleavedBackstageStops)): ?>
+        <section class="rs-arc-bonus-checkpoint" aria-labelledby="rs-arc-bonus-checkpoint-heading">
+            <div class="rs-arc-reader-kicker">
+                <i class="ph-fill ph-film-slate" aria-hidden="true"></i>
+                <span>Next Stop in This Story Arc &bull; Behind-the-Scenes Bonus <?php echo count($activeArcInterleavedBackstageStops) === 1 ? 'Scene' : 'Scenes'; ?></span>
+            </div>
+            <h3 id="rs-arc-bonus-checkpoint-heading" class="rs-arc-bonus-checkpoint-title">
+                Read the Bonus Backstage <?php echo count($activeArcInterleavedBackstageStops) === 1 ? 'Scene' : 'Scenes'; ?> Before Moving On
+            </h3>
+            <div class="rs-arc-bonus-checkpoint-list">
+                <?php foreach ($activeArcInterleavedBackstageStops as $bsStop):
+                    $bsStopSlug = (string)($bsStop['backstage_slug'] ?? '');
+                    $bsStopUrl  = (string)($bsStop['url'] ?? 'https://backstage.raggiesoft.com/');
+                ?>
+                <div class="rs-arc-bonus-checkpoint-card">
+                    <div class="rs-arc-bonus-checkpoint-copy">
+                        <div class="rs-arc-stop-kicker">
+                            <span class="rs-arc-kind-badge is-backstage">Stop <?php echo (int)($bsStop['stop_num'] ?? 0); ?> &bull; Bonus Scene</span>
+                            <?php if (!empty($bsStop['date'])): ?><span><?php echo htmlspecialchars((string)$bsStop['date']); ?></span><?php endif; ?>
+                            <span>&bull; <?php echo (int)($bsStop['reading_minutes'] ?? 2); ?> min</span>
+                        </div>
+                        <div class="rs-arc-bonus-checkpoint-name"><?php echo htmlspecialchars((string)($bsStop['title'] ?? '')); ?></div>
+                        <?php if (!empty($bsStop['excerpt'])): ?>
+                        <p class="rs-arc-bonus-checkpoint-desc"><?php echo htmlspecialchars((string)$bsStop['excerpt']); ?></p>
+                        <?php endif; ?>
+                    </div>
+                    <div class="rs-arc-bonus-checkpoint-btns">
+                        <?php if ($bsStopSlug !== ''): ?>
+                        <button type="button" class="rs-btn rs-btn-primary" data-backstage-slug="<?php echo htmlspecialchars($bsStopSlug); ?>">
+                            <i class="ph ph-envelope-open" aria-hidden="true"></i>
+                            <span>Read Bonus Scene</span>
+                        </button>
+                        <?php endif; ?>
+                        <a href="<?php echo htmlspecialchars($bsStopUrl); ?>" target="_blank" rel="noopener noreferrer" data-no-spa="true" data-backstage-direct="true" class="rs-btn">
+                            <span>Open in Backstage</span>
+                            <i class="ph ph-arrow-square-out" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+            </div>
+        </section>
+        <?php endif; ?>
+
         <!-- Share Section for Reader -->
         <?php if (!$specialPageType): ?>
         <?php 
@@ -1923,9 +2101,9 @@ $oliverBookSeriesSchema = [
         <div class="bottom-nav-container" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--rs-border);">
             <div style="flex: 1; display: flex; justify-content: flex-start;">
                 <?php if ($prevUrl): ?>
-                    <a href="<?php echo htmlspecialchars($prevUrl); ?>" class="rs-btn" id="reader-btn-prev">&larr; Previous</a>
+                    <a href="<?php echo htmlspecialchars($prevUrl); ?>" class="rs-btn" id="reader-btn-prev">&larr; <?php echo htmlspecialchars($activeArcPrevLabel); ?></a>
                 <?php else: ?>
-                    <button class="rs-btn" disabled style="opacity: 0.5; cursor: not-allowed;" id="reader-btn-prev">&larr; Previous</button>
+                    <button class="rs-btn" disabled style="opacity: 0.5; cursor: not-allowed;" id="reader-btn-prev">&larr; <?php echo htmlspecialchars($activeArcPrevLabel); ?></button>
                 <?php endif; ?>
             </div>
 
@@ -1938,19 +2116,99 @@ $oliverBookSeriesSchema = [
                     <i class="ph ph-cloud-sun"></i> <span class="hide-on-mobile">Bluesky</span>
                 </a>
 
-                <button onclick="navigator.clipboard.writeText('<?php echo htmlspecialchars($currentUrl); ?>'); alert('Link copied to clipboard!');" class="rs-btn" title="Copy Link">
+                <button type="button" data-copy-share-url="<?php echo htmlspecialchars($currentUrl); ?>" class="rs-btn" title="Copy Link">
                     <i class="ph ph-link"></i> <span class="hide-on-mobile">Copy Link</span>
                 </button>
             </div>
 
             <div style="flex: 1; display: flex; justify-content: flex-end;">
                 <?php if ($nextUrl): ?>
-                    <a href="<?php echo htmlspecialchars($nextUrl); ?>" class="rs-btn rs-btn-primary" id="reader-btn-next">Next &rarr;</a>
+                    <a href="<?php echo htmlspecialchars($nextUrl); ?>" class="rs-btn rs-btn-primary" id="reader-btn-next"><?php echo htmlspecialchars($activeArcNextLabel); ?> &rarr;</a>
+                <?php elseif ($activeStoryArc !== null): ?>
+                    <a href="/arcs?book=<?php echo htmlspecialchars($seriesSlug); ?>" class="rs-btn rs-btn-primary" id="reader-btn-next">All Story Arcs &rarr;</a>
                 <?php else: ?>
-                    <button class="rs-btn rs-btn-primary" disabled style="opacity: 0.5; cursor: not-allowed;" id="reader-btn-next">Next &rarr;</button>
+                    <button class="rs-btn rs-btn-primary" disabled style="opacity: 0.5; cursor: not-allowed;" id="reader-btn-next"><?php echo htmlspecialchars($activeArcNextLabel); ?> &rarr;</button>
                 <?php endif; ?>
             </div>
         </div>
+
+        <?php if ($activeStoryArc !== null):
+            $dlgStops = is_array($activeStoryArc['stops'] ?? null) ? $activeStoryArc['stops'] : [];
+            $dlgCurrNum = (int)($activeArcCurrentStop['stop_num'] ?? 0);
+        ?>
+        <!-- Native <dialog closedby="any"> Story Arc Playlist Drawer (`modern-web-guidance: light-dismiss-a-dialog`) -->
+        <dialog id="rs-arc-playlist-dialog" closedby="any" aria-labelledby="rs-arc-playlist-title" class="rs-arc-playlist-dialog">
+            <div class="rs-arc-dialog-header">
+                <div>
+                    <div class="rs-arc-reader-kicker">
+                        <i class="ph-fill ph-playlist" aria-hidden="true"></i>
+                        <span><?php echo htmlspecialchars($seriesTitle); ?> &bull; Story Arc Playlist</span>
+                    </div>
+                    <h3 id="rs-arc-playlist-title" class="rs-arc-dialog-title"><?php echo htmlspecialchars((string)($activeStoryArc['title'] ?? '')); ?></h3>
+                </div>
+                <button type="button" id="rs-arc-playlist-close" class="rs-btn" aria-label="Close Story Arc Playlist">
+                    <i class="ph ph-x" aria-hidden="true"></i> Close
+                </button>
+            </div>
+            <div class="rs-arc-dialog-body">
+                <?php if (!empty($activeStoryArc['description'])): ?>
+                <p class="rs-arc-dialog-desc"><?php echo htmlspecialchars((string)$activeStoryArc['description']); ?></p>
+                <?php endif; ?>
+                <ol class="rs-arc-stop-list">
+                    <?php foreach ($dlgStops as $dStop):
+                        $dKind   = (string)($dStop['kind'] ?? 'part');
+                        $dNum    = (int)($dStop['stop_num'] ?? 0);
+                        $isCurr  = ($dNum === $dlgCurrNum);
+                        $dTitle  = (string)($dStop['title'] ?? '');
+                        $dSub    = (string)($dStop['subtitle'] ?? '');
+                        $dDate   = (string)($dStop['date'] ?? '');
+                        $dMins   = (int)($dStop['reading_minutes'] ?? 1);
+                        $dArcUrl = (string)($dStop['arc_url'] ?? '#');
+                        $dBsSlug = (string)($dStop['backstage_slug'] ?? '');
+                    ?>
+                    <li class="rs-arc-stop-row is-<?php echo htmlspecialchars($dKind); ?><?php echo $isCurr ? ' is-current' : ''; ?>" <?php if ($isCurr): ?>aria-current="step"<?php endif; ?>>
+                        <span class="rs-arc-stop-num"><?php echo $dNum; ?></span>
+                        <div class="rs-arc-stop-info">
+                            <div class="rs-arc-stop-kicker">
+                                <?php if ($isCurr): ?>
+                                    <span class="rs-arc-kind-badge is-current">Reading Now</span>
+                                <?php elseif ($dKind === 'backstage'): ?>
+                                    <span class="rs-arc-kind-badge is-backstage"><i class="ph-fill ph-film-slate" aria-hidden="true"></i> Bonus Scene</span>
+                                <?php else: ?>
+                                    <span class="rs-arc-kind-badge is-part"><i class="ph-fill ph-book-open" aria-hidden="true"></i> Chapter</span>
+                                <?php endif; ?>
+                                <?php if ($dDate !== ''): ?><span><?php echo htmlspecialchars($dDate); ?></span><?php endif; ?>
+                                <span>&bull; <?php echo $dMins; ?> min</span>
+                            </div>
+                            <?php if ($dKind === 'backstage' && $dBsSlug !== ''): ?>
+                                <button type="button" class="rs-arc-stop-link-btn" data-backstage-slug="<?php echo htmlspecialchars($dBsSlug); ?>" data-close-arc-dialog="true">
+                                    <?php echo htmlspecialchars($dTitle); ?>
+                                </button>
+                            <?php else: ?>
+                                <a href="<?php echo htmlspecialchars($dArcUrl); ?>" class="rs-arc-stop-link" data-close-arc-dialog="true">
+                                    <?php echo htmlspecialchars($dTitle); ?>
+                                </a>
+                            <?php endif; ?>
+                            <?php if ($dSub !== ''): ?>
+                                <div class="rs-arc-stop-sub"><?php echo htmlspecialchars($dSub); ?></div>
+                            <?php endif; ?>
+                        </div>
+                    </li>
+                    <?php endforeach; ?>
+                </ol>
+            </div>
+            <div class="rs-arc-dialog-footer">
+                <a href="/arcs?book=<?php echo htmlspecialchars($seriesSlug); ?>" class="rs-btn">
+                    <i class="ph ph-compass" aria-hidden="true"></i>
+                    <span>Browse All Story Arcs</span>
+                </a>
+                <a href="<?php echo htmlspecialchars($requestUri); ?>" class="rs-btn">
+                    <i class="ph ph-book-open" aria-hidden="true"></i>
+                    <span>Switch to Full Book</span>
+                </a>
+            </div>
+        </dialog>
+        <?php endif; ?>
         
         <style>
             @media (max-width: 768px) {

@@ -21,7 +21,7 @@
             "pdf_bytes": 194536,
             "text_epub_bytes": 66662,
             "text_pdf_bytes": 194536,
-            "package_7z_bytes": 50589
+            "package_7z_bytes": 50604
         },
         "illustration_count": 0,
         "word_stats": {
@@ -39,8 +39,10 @@
             "era_count": 4,
             "chapter_count": 8,
             "part_count": 11,
-            "illustration_count": 0
-        }
+            "illustration_count": 0,
+            "story_arc_count": 0
+        },
+        "story_arcs": []
     },
     "/samantha": {
         "view": "pages/raggiesoft-books/books/viewer",

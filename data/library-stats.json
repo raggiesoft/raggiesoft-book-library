@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-16T22:08:31+00:00",
+    "generated_at": "2026-11-16T23:01:57+00:00",
     "volume_count": 31,
     "active_story_volume_count": 28,
     "total_eras": 203,
@@ -55,12 +55,12 @@
                 "pdf": "80.3 MB",
                 "text_epub": "1.1 MB",
                 "text_pdf": "3.1 MB",
-                "package_7z": "789 KB",
+                "package_7z": "792 KB",
                 "epub_bytes": 79791564,
                 "pdf_bytes": 84152358,
                 "text_epub_bytes": 1167211,
                 "text_pdf_bytes": 3253711,
-                "package_7z_bytes": 807802
+                "package_7z_bytes": 810589
             },
             "word_stats": {
                 "story_word_count": 498551,
@@ -77,7 +77,8 @@
                 "era_count": 26,
                 "chapter_count": 107,
                 "part_count": 212,
-                "illustration_count": 131
+                "illustration_count": 131,
+                "story_arc_count": 2
             }
         },
         {
@@ -90,12 +91,12 @@
                 "pdf": "53.5 MB",
                 "text_epub": "1006 KB",
                 "text_pdf": "3.7 MB",
-                "package_7z": "718 KB",
+                "package_7z": "721 KB",
                 "epub_bytes": 69247267,
                 "pdf_bytes": 56110642,
                 "text_epub_bytes": 1030010,
                 "text_pdf_bytes": 3873509,
-                "package_7z_bytes": 735528
+                "package_7z_bytes": 738111
             },
             "word_stats": {
                 "story_word_count": 413615,
@@ -112,7 +113,8 @@
                 "era_count": 10,
                 "chapter_count": 48,
                 "part_count": 194,
-                "illustration_count": 72
+                "illustration_count": 72,
+                "story_arc_count": 2
             }
         },
         {
@@ -130,7 +132,7 @@
                 "pdf_bytes": 12179754,
                 "text_epub_bytes": 795858,
                 "text_pdf_bytes": 2373092,
-                "package_7z_bytes": 569235
+                "package_7z_bytes": 569251
             },
             "word_stats": {
                 "story_word_count": 334891,
@@ -147,7 +149,8 @@
                 "era_count": 16,
                 "chapter_count": 84,
                 "part_count": 168,
-                "illustration_count": 3
+                "illustration_count": 3,
+                "story_arc_count": 0
             }
         },
         {
@@ -156,16 +159,16 @@
             "image": "/raggiesoft-books/images/covers/2x3/katie.jpg",
             "short_description": "From childhood cartoon passwords and square-closet sanctuaries in Virginia Beach to Coastal Virginia Transit buses, walking out of Roosevelt Rehabilitation Center after twelve days, and serving in the Virginia General Assembly and the United States Senate, autistic fraternal twins Katie and Nathaniel (\"Nate\") Prairie never leave each other behind.",
             "ebook_sizes": {
-                "epub": "64.9 MB",
-                "pdf": "62.7 MB",
-                "text_epub": "747 KB",
+                "epub": "65.8 MB",
+                "pdf": "63.1 MB",
+                "text_epub": "757 KB",
                 "text_pdf": "2 MB",
-                "package_7z": "562 KB",
-                "epub_bytes": 68038487,
-                "pdf_bytes": 65726215,
-                "text_epub_bytes": 764917,
-                "text_pdf_bytes": 2086172,
-                "package_7z_bytes": 575580
+                "package_7z": "572 KB",
+                "epub_bytes": 69026179,
+                "pdf_bytes": 66189700,
+                "text_epub_bytes": 775541,
+                "text_pdf_bytes": 2117860,
+                "package_7z_bytes": 586098
             },
             "word_stats": {
                 "story_word_count": 318949,
@@ -182,7 +185,8 @@
                 "era_count": 11,
                 "chapter_count": 46,
                 "part_count": 125,
-                "illustration_count": 149
+                "illustration_count": 149,
+                "story_arc_count": 4
             }
         },
         {
@@ -200,7 +204,7 @@
                 "pdf_bytes": 1801709,
                 "text_epub_bytes": 673136,
                 "text_pdf_bytes": 1801709,
-                "package_7z_bytes": 463334
+                "package_7z_bytes": 463357
             },
             "word_stats": {
                 "story_word_count": 275128,
@@ -217,7 +221,8 @@
                 "era_count": 21,
                 "chapter_count": 73,
                 "part_count": 117,
-                "illustration_count": 0
+                "illustration_count": 0,
+                "story_arc_count": 0
             }
         },
         {
@@ -235,7 +240,7 @@
                 "pdf_bytes": 1764104,
                 "text_epub_bytes": 608772,
                 "text_pdf_bytes": 1764104,
-                "package_7z_bytes": 426533
+                "package_7z_bytes": 426540
             },
             "word_stats": {
                 "story_word_count": 261029,
@@ -252,7 +257,8 @@
                 "era_count": 9,
                 "chapter_count": 38,
                 "part_count": 90,
-                "illustration_count": 0
+                "illustration_count": 0,
+                "story_arc_count": 0
             }
         },
         {
@@ -270,7 +276,7 @@
                 "pdf_bytes": 1475296,
                 "text_epub_bytes": 510178,
                 "text_pdf_bytes": 1475296,
-                "package_7z_bytes": 371755
+                "package_7z_bytes": 371766
             },
             "word_stats": {
                 "story_word_count": 214143,
@@ -287,7 +293,8 @@
                 "era_count": 5,
                 "chapter_count": 36,
                 "part_count": 77,
-                "illustration_count": 0
+                "illustration_count": 0,
+                "story_arc_count": 0
             }
         },
         {
@@ -305,7 +312,7 @@
                 "pdf_bytes": 1272780,
                 "text_epub_bytes": 454748,
                 "text_pdf_bytes": 1272780,
-                "package_7z_bytes": 328009
+                "package_7z_bytes": 328026
             },
             "word_stats": {
                 "story_word_count": 186519,
@@ -322,7 +329,8 @@
                 "era_count": 14,
                 "chapter_count": 37,
                 "part_count": 73,
-                "illustration_count": 0
+                "illustration_count": 0,
+                "story_arc_count": 0
             }
         },
         {
@@ -335,12 +343,12 @@
                 "pdf": "4.8 MB",
                 "text_epub": "398 KB",
                 "text_pdf": "1.2 MB",
-                "package_7z": "295 KB",
+                "package_7z": "298 KB",
                 "epub_bytes": 5306928,
                 "pdf_bytes": 5058155,
                 "text_epub_bytes": 407438,
                 "text_pdf_bytes": 1263033,
-                "package_7z_bytes": 302424
+                "package_7z_bytes": 304845
             },
             "word_stats": {
                 "story_word_count": 169175,
@@ -357,7 +365,8 @@
                 "era_count": 6,
                 "chapter_count": 54,
                 "part_count": 71,
-                "illustration_count": 10
+                "illustration_count": 10,
+                "story_arc_count": 2
             }
         },
         {
@@ -375,7 +384,7 @@
                 "pdf_bytes": 858237,
                 "text_epub_bytes": 301711,
                 "text_pdf_bytes": 858237,
-                "package_7z_bytes": 228973
+                "package_7z_bytes": 228987
             },
             "word_stats": {
                 "story_word_count": 132610,
@@ -392,7 +401,8 @@
                 "era_count": 4,
                 "chapter_count": 9,
                 "part_count": 36,
-                "illustration_count": 0
+                "illustration_count": 0,
+                "story_arc_count": 0
             }
         },
         {
@@ -410,7 +420,7 @@
                 "pdf_bytes": 663054,
                 "text_epub_bytes": 237599,
                 "text_pdf_bytes": 663054,
-                "package_7z_bytes": 172113
+                "package_7z_bytes": 172130
             },
             "word_stats": {
                 "story_word_count": 94109,
@@ -427,7 +437,8 @@
                 "era_count": 8,
                 "chapter_count": 27,
                 "part_count": 42,
-                "illustration_count": 0
+                "illustration_count": 0,
+                "story_arc_count": 0
             }
         },
         {
@@ -445,7 +456,7 @@
                 "pdf_bytes": 3367309,
                 "text_epub_bytes": 189671,
                 "text_pdf_bytes": 3367313,
-                "package_7z_bytes": 144947
+                "package_7z_bytes": 144966
             },
             "word_stats": {
                 "story_word_count": 81433,
@@ -462,7 +473,8 @@
                 "era_count": 3,
                 "chapter_count": 33,
                 "part_count": 41,
-                "illustration_count": 0
+                "illustration_count": 0,
+                "story_arc_count": 0
             }
         },
         {
@@ -480,7 +492,7 @@
                 "pdf_bytes": 482428,
                 "text_epub_bytes": 169681,
                 "text_pdf_bytes": 482428,
-                "package_7z_bytes": 126115
+                "package_7z_bytes": 126127
             },
             "word_stats": {
                 "story_word_count": 68046,
@@ -497,7 +509,8 @@
                 "era_count": 5,
                 "chapter_count": 16,
                 "part_count": 27,
-                "illustration_count": 0
+                "illustration_count": 0,
+                "story_arc_count": 0
             }
         },
         {
@@ -510,12 +523,12 @@
                 "pdf": "18.8 MB",
                 "text_epub": "185 KB",
                 "text_pdf": "561 KB",
-                "package_7z": "140 KB",
+                "package_7z": "142 KB",
                 "epub_bytes": 17922538,
                 "pdf_bytes": 19691323,
                 "text_epub_bytes": 189100,
                 "text_pdf_bytes": 573976,
-                "package_7z_bytes": 142851
+                "package_7z_bytes": 144901
             },
             "word_stats": {
                 "story_word_count": 65118,
@@ -532,7 +545,8 @@
                 "era_count": 7,
                 "chapter_count": 16,
                 "part_count": 25,
-                "illustration_count": 25
+                "illustration_count": 25,
+                "story_arc_count": 2
             }
         },
         {
@@ -550,7 +564,7 @@
                 "pdf_bytes": 415749,
                 "text_epub_bytes": 155170,
                 "text_pdf_bytes": 415749,
-                "package_7z_bytes": 112014
+                "package_7z_bytes": 112025
             },
             "word_stats": {
                 "story_word_count": 57383,
@@ -567,7 +581,8 @@
                 "era_count": 24,
                 "chapter_count": 89,
                 "part_count": 17,
-                "illustration_count": 0
+                "illustration_count": 0,
+                "story_arc_count": 0
             }
         },
         {
@@ -585,7 +600,7 @@
                 "pdf_bytes": 259351,
                 "text_epub_bytes": 87849,
                 "text_pdf_bytes": 259351,
-                "package_7z_bytes": 70784
+                "package_7z_bytes": 70797
             },
             "word_stats": {
                 "story_word_count": 34858,
@@ -602,7 +617,8 @@
                 "era_count": 2,
                 "chapter_count": 15,
                 "part_count": 16,
-                "illustration_count": 0
+                "illustration_count": 0,
+                "story_arc_count": 0
             }
         },
         {
@@ -620,7 +636,7 @@
                 "pdf_bytes": 235362,
                 "text_epub_bytes": 85613,
                 "text_pdf_bytes": 235362,
-                "package_7z_bytes": 63756
+                "package_7z_bytes": 63776
             },
             "word_stats": {
                 "story_word_count": 33772,
@@ -637,7 +653,8 @@
                 "era_count": 4,
                 "chapter_count": 8,
                 "part_count": 11,
-                "illustration_count": 0
+                "illustration_count": 0,
+                "story_arc_count": 0
             }
         },
         {
@@ -655,7 +672,7 @@
                 "pdf_bytes": 241676,
                 "text_epub_bytes": 84495,
                 "text_pdf_bytes": 241676,
-                "package_7z_bytes": 68200
+                "package_7z_bytes": 68219
             },
             "word_stats": {
                 "story_word_count": 32393,
@@ -672,7 +689,8 @@
                 "era_count": 2,
                 "chapter_count": 11,
                 "part_count": 15,
-                "illustration_count": 0
+                "illustration_count": 0,
+                "story_arc_count": 0
             }
         },
         {
@@ -690,7 +708,7 @@
                 "pdf_bytes": 5514555,
                 "text_epub_bytes": 79111,
                 "text_pdf_bytes": 5514555,
-                "package_7z_bytes": 60955
+                "package_7z_bytes": 60965
             },
             "word_stats": {
                 "story_word_count": 29910,
@@ -707,7 +725,8 @@
                 "era_count": 3,
                 "chapter_count": 11,
                 "part_count": 15,
-                "illustration_count": 0
+                "illustration_count": 0,
+                "story_arc_count": 0
             }
         },
         {
@@ -725,7 +744,7 @@
                 "pdf_bytes": 2175257,
                 "text_epub_bytes": 85320,
                 "text_pdf_bytes": 277257,
-                "package_7z_bytes": 68610
+                "package_7z_bytes": 68632
             },
             "word_stats": {
                 "story_word_count": 28808,
@@ -742,7 +761,8 @@
                 "era_count": 2,
                 "chapter_count": 13,
                 "part_count": 14,
-                "illustration_count": 13
+                "illustration_count": 13,
+                "story_arc_count": 0
             }
         },
         {
@@ -760,7 +780,7 @@
                 "pdf_bytes": 206039,
                 "text_epub_bytes": 74019,
                 "text_pdf_bytes": 206039,
-                "package_7z_bytes": 57780
+                "package_7z_bytes": 57793
             },
             "word_stats": {
                 "story_word_count": 28751,
@@ -777,7 +797,8 @@
                 "era_count": 3,
                 "chapter_count": 19,
                 "part_count": 21,
-                "illustration_count": 0
+                "illustration_count": 0,
+                "story_arc_count": 0
             }
         },
         {
@@ -795,7 +816,7 @@
                 "pdf_bytes": 202768,
                 "text_epub_bytes": 70990,
                 "text_pdf_bytes": 202768,
-                "package_7z_bytes": 53969
+                "package_7z_bytes": 53987
             },
             "word_stats": {
                 "story_word_count": 26090,
@@ -812,7 +833,8 @@
                 "era_count": 3,
                 "chapter_count": 7,
                 "part_count": 12,
-                "illustration_count": 0
+                "illustration_count": 0,
+                "story_arc_count": 0
             }
         },
         {
@@ -830,7 +852,7 @@
                 "pdf_bytes": 194536,
                 "text_epub_bytes": 66662,
                 "text_pdf_bytes": 194536,
-                "package_7z_bytes": 50589
+                "package_7z_bytes": 50604
             },
             "word_stats": {
                 "story_word_count": 25121,
@@ -847,7 +869,8 @@
                 "era_count": 4,
                 "chapter_count": 8,
                 "part_count": 11,
-                "illustration_count": 0
+                "illustration_count": 0,
+                "story_arc_count": 0
             }
         },
         {
@@ -865,7 +888,7 @@
                 "pdf_bytes": 21143357,
                 "text_epub_bytes": 55576,
                 "text_pdf_bytes": 168226,
-                "package_7z_bytes": 45133
+                "package_7z_bytes": 45152
             },
             "word_stats": {
                 "story_word_count": 20942,
@@ -882,7 +905,8 @@
                 "era_count": 1,
                 "chapter_count": 8,
                 "part_count": 11,
-                "illustration_count": 9
+                "illustration_count": 9,
+                "story_arc_count": 0
             }
         },
         {
@@ -900,7 +924,7 @@
                 "pdf_bytes": 121729,
                 "text_epub_bytes": 41112,
                 "text_pdf_bytes": 121729,
-                "package_7z_bytes": 32503
+                "package_7z_bytes": 32517
             },
             "word_stats": {
                 "story_word_count": 15245,
@@ -917,7 +941,8 @@
                 "era_count": 1,
                 "chapter_count": 2,
                 "part_count": 5,
-                "illustration_count": 0
+                "illustration_count": 0,
+                "story_arc_count": 0
             }
         },
         {
@@ -935,7 +960,7 @@
                 "pdf_bytes": 41824,
                 "text_epub_bytes": 14621,
                 "text_pdf_bytes": 41824,
-                "package_7z_bytes": 35541
+                "package_7z_bytes": 35553
             },
             "word_stats": {
                 "story_word_count": 14030,
@@ -952,7 +977,8 @@
                 "era_count": 2,
                 "chapter_count": 5,
                 "part_count": 29,
-                "illustration_count": 0
+                "illustration_count": 0,
+                "story_arc_count": 0
             }
         },
         {
@@ -970,7 +996,7 @@
                 "pdf_bytes": 73850,
                 "text_epub_bytes": 20317,
                 "text_pdf_bytes": 73850,
-                "package_7z_bytes": 15359
+                "package_7z_bytes": 15373
             },
             "word_stats": {
                 "story_word_count": 5551,
@@ -987,7 +1013,8 @@
                 "era_count": 1,
                 "chapter_count": 4,
                 "part_count": 6,
-                "illustration_count": 0
+                "illustration_count": 0,
+                "story_arc_count": 0
             }
         },
         {
@@ -1005,7 +1032,7 @@
                 "pdf_bytes": 25934,
                 "text_epub_bytes": 9640,
                 "text_pdf_bytes": 25934,
-                "package_7z_bytes": 4900
+                "package_7z_bytes": 4916
             },
             "word_stats": {
                 "story_word_count": 1337,
@@ -1022,7 +1049,8 @@
                 "era_count": 1,
                 "chapter_count": 1,
                 "part_count": 1,
-                "illustration_count": 0
+                "illustration_count": 0,
+                "story_arc_count": 0
             }
         },
         {
@@ -1035,12 +1063,12 @@
                 "pdf": "3.2 KB",
                 "text_epub": "5.3 KB",
                 "text_pdf": "3.2 KB",
-                "package_7z": "924 B",
+                "package_7z": "938 B",
                 "epub_bytes": 5409,
                 "pdf_bytes": 3262,
                 "text_epub_bytes": 5410,
                 "text_pdf_bytes": 3262,
-                "package_7z_bytes": 924
+                "package_7z_bytes": 938
             },
             "word_stats": {
                 "story_word_count": 0,
@@ -1057,7 +1085,8 @@
                 "era_count": 0,
                 "chapter_count": 0,
                 "part_count": 0,
-                "illustration_count": 0
+                "illustration_count": 0,
+                "story_arc_count": 0
             }
         },
         {
@@ -1075,7 +1104,7 @@
                 "pdf_bytes": 3540,
                 "text_epub_bytes": 5403,
                 "text_pdf_bytes": 3540,
-                "package_7z_bytes": 1194
+                "package_7z_bytes": 1207
             },
             "word_stats": {
                 "story_word_count": 0,
@@ -1092,7 +1121,8 @@
                 "era_count": 0,
                 "chapter_count": 0,
                 "part_count": 0,
-                "illustration_count": 0
+                "illustration_count": 0,
+                "story_arc_count": 0
             }
         },
         {
@@ -1110,7 +1140,7 @@
                 "pdf_bytes": 16540,
                 "text_epub_bytes": 8788,
                 "text_pdf_bytes": 16540,
-                "package_7z_bytes": 2011
+                "package_7z_bytes": 2033
             },
             "word_stats": {
                 "story_word_count": 0,
@@ -1127,7 +1157,8 @@
                 "era_count": 5,
                 "chapter_count": 18,
                 "part_count": 0,
-                "illustration_count": 0
+                "illustration_count": 0,
+                "story_arc_count": 0
             }
         }
     ]

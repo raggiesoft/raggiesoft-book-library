@@ -21,7 +21,7 @@
             "pdf_bytes": 1764104,
             "text_epub_bytes": 608772,
             "text_pdf_bytes": 1764104,
-            "package_7z_bytes": 426533
+            "package_7z_bytes": 426540
         },
         "illustration_count": 0,
         "word_stats": {
@@ -39,8 +39,10 @@
             "era_count": 9,
             "chapter_count": 38,
             "part_count": 90,
-            "illustration_count": 0
-        }
+            "illustration_count": 0,
+            "story_arc_count": 0
+        },
+        "story_arcs": []
     },
     "/apex-fall-of-earth": {
         "view": "pages/raggiesoft-books/books/viewer",

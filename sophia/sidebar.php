@@ -110,6 +110,36 @@ if (!empty($routeData)) {
     }
 }
 
+// Resolve Story Arcs for the active book and override sidebar Prev/Next when `?arc=<slug>` is active.
+$sbStoryArcs = is_array($toc_manifest['story_arcs'] ?? null)
+    ? $toc_manifest['story_arcs']
+    : (is_array($routeData['common']['story_arcs'] ?? null) ? $routeData['common']['story_arcs'] : []);
+$sbActiveArc = null;
+$sbPrevLabel = 'Prev Part';
+$sbNextLabel = 'Next Part';
+if (!empty($sbStoryArcs) && !empty($_GET['arc']) && !empty($currentFilePath) && $isReadingScene) {
+    $requestedSbArcSlug = preg_replace('/[^a-z0-9_-]/i', '', (string)$_GET['arc']);
+    foreach ($sbStoryArcs as $candidateArc) {
+        if (($candidateArc['slug'] ?? '') !== $requestedSbArcSlug) {
+            continue;
+        }
+        $arcPartStops = array_values(array_filter(
+            $candidateArc['stops'] ?? [],
+            static fn($st) => ($st['kind'] ?? '') === 'part'
+        ));
+        foreach ($arcPartStops as $idx => $pStop) {
+            if (($pStop['file_path'] ?? '') === $currentFilePath) {
+                $sbActiveArc = $candidateArc;
+                $sbPrevUrl   = ($idx > 0) ? ($arcPartStops[$idx - 1]['arc_url'] ?? null) : null;
+                $sbNextUrl   = ($idx < count($arcPartStops) - 1) ? ($arcPartStops[$idx + 1]['arc_url'] ?? null) : null;
+                $sbPrevLabel = 'Prev in Arc';
+                $sbNextLabel = 'Next in Arc';
+                break 2;
+            }
+        }
+    }
+}
+
 // Resolve the active page title to display beneath the series header in mixed case (NOT all caps)
 $sidebarSeriesTitle = $toc_manifest['series_title'] ?? (ucfirst($seriesSlug) . ' Narrative');
 $sidebarPageTitle = $routeConfig['title'] ?? ($pageConfig['title'] ?? (!empty($fmTitle) ? $fmTitle : 'Navigation'));
@@ -186,26 +216,34 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
                 <span style="font-size: 0.7rem; font-weight: 700; padding: 0.1rem 0.45rem; border-radius: 999px; background: var(--rs-bg-alt); border: 1px solid var(--rs-border); color: var(--rs-primary);"><?php echo $sbIllusCount; ?></span>
             <?php endif; ?>
         </a>
+        <?php if (!empty($sbStoryArcs)): ?>
+        <a href="/arcs?book=<?php echo htmlspecialchars($seriesSlug); ?>" class="sidebar-nav-link" style="display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; text-decoration: none; padding: 0.45rem 0.55rem; border-radius: 6px; color: var(--rs-text); font-size: 0.88rem; font-weight: 600;">
+            <span style="display: inline-flex; align-items: center; gap: 0.6rem;">
+                <i class="ph ph-playlist" style="font-size: 1.1rem;"></i> Story Arcs
+            </span>
+            <span style="font-size: 0.7rem; font-weight: 700; padding: 0.1rem 0.45rem; border-radius: 999px; background: var(--rs-bg-alt); border: 1px solid var(--rs-border); color: var(--rs-primary);"><?php echo count($sbStoryArcs); ?></span>
+        </a>
+        <?php endif; ?>
         
         <!-- 6. Side-by-Side Previous / Next Part Flipper -->
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; margin-top: 0.45rem; padding-top: 0.5rem; border-top: 1px solid var(--rs-border);">
             <?php if ($sbPrevUrl): ?>
                 <a href="<?php echo htmlspecialchars($sbPrevUrl); ?>" class="rs-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.3rem; text-decoration: none; padding: 0.42rem 0.4rem; border-radius: 7px; color: var(--rs-text); font-size: 0.8rem; font-weight: 600;">
-                    <i class="ph ph-caret-left" style="font-size: 0.95rem;"></i> Prev Part
+                    <i class="ph ph-caret-left" style="font-size: 0.95rem;"></i> <?php echo htmlspecialchars($sbPrevLabel); ?>
                 </a>
             <?php else: ?>
                 <span class="rs-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.3rem; padding: 0.42rem 0.4rem; border-radius: 7px; color: var(--rs-text); opacity: 0.4; cursor: not-allowed; font-size: 0.8rem; font-weight: 600;">
-                    <i class="ph ph-caret-left" style="font-size: 0.95rem;"></i> Prev Part
+                    <i class="ph ph-caret-left" style="font-size: 0.95rem;"></i> <?php echo htmlspecialchars($sbPrevLabel); ?>
                 </span>
             <?php endif; ?>
 
             <?php if ($sbNextUrl): ?>
                 <a href="<?php echo htmlspecialchars($sbNextUrl); ?>" class="rs-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.3rem; text-decoration: none; padding: 0.42rem 0.4rem; border-radius: 7px; color: var(--rs-text); font-size: 0.8rem; font-weight: 600;">
-                    Next Part <i class="ph ph-caret-right" style="font-size: 0.95rem;"></i>
+                    <?php echo htmlspecialchars($sbNextLabel); ?> <i class="ph ph-caret-right" style="font-size: 0.95rem;"></i>
                 </a>
             <?php else: ?>
                 <span class="rs-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.3rem; padding: 0.42rem 0.4rem; border-radius: 7px; color: var(--rs-text); opacity: 0.4; cursor: not-allowed; font-size: 0.8rem; font-weight: 600;">
-                    Next Part <i class="ph ph-caret-right" style="font-size: 0.95rem;"></i>
+                    <?php echo htmlspecialchars($sbNextLabel); ?> <i class="ph ph-caret-right" style="font-size: 0.95rem;"></i>
                 </span>
             <?php endif; ?>
         </div>

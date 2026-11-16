@@ -21,7 +21,7 @@
             "pdf_bytes": 415749,
             "text_epub_bytes": 155170,
             "text_pdf_bytes": 415749,
-            "package_7z_bytes": 112014
+            "package_7z_bytes": 112025
         },
         "illustration_count": 0,
         "word_stats": {
@@ -39,8 +39,10 @@
             "era_count": 24,
             "chapter_count": 89,
             "part_count": 17,
-            "illustration_count": 0
-        }
+            "illustration_count": 0,
+            "story_arc_count": 0
+        },
+        "story_arcs": []
     },
     "/pebble-borrow": {
         "view": "pages/raggiesoft-books/books/viewer",

@@ -21,7 +21,7 @@
             "pdf_bytes": 1272780,
             "text_epub_bytes": 454748,
             "text_pdf_bytes": 1272780,
-            "package_7z_bytes": 328009
+            "package_7z_bytes": 328026
         },
         "illustration_count": 0,
         "word_stats": {
@@ -39,8 +39,10 @@
             "era_count": 14,
             "chapter_count": 37,
             "part_count": 73,
-            "illustration_count": 0
-        }
+            "illustration_count": 0,
+            "story_arc_count": 0
+        },
+        "story_arcs": []
     },
     "/nichole": {
         "view": "pages/raggiesoft-books/books/viewer",

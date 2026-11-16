@@ -171,6 +171,7 @@ $localServerRoot = dirname($basePath, 3);
 // 1. Evaluate top-level platform routes FIRST before checking narrative book slugs
 $isCatalog = false;
 $isHome = false;
+$isStoryArcs = false;
 $isKnox = false;
 $isAethelSaga = false;
 $isAllIllustrations = false;
@@ -186,6 +187,10 @@ if ($requestUri === '/') {
     $isHome = true;
     $isPlatformRoute = true;
     $pageConfig['title'] = 'Home';
+} elseif ($requestUri === '/arcs' || $requestUri === '/story-arcs') {
+    $isStoryArcs = true;
+    $isPlatformRoute = true;
+    $pageConfig['title'] = 'Story Arcs & Reading Playlists';
 } elseif ($requestUri === '/illustrations') {
     $isAllIllustrations = true;
     $isPlatformRoute = true;
@@ -386,6 +391,12 @@ if ($isNotFound) {
     $siteName = 'Welcome | RaggieSoft Book Reader';
     $ogTitle = 'Welcome | RaggieSoft Book Reader';
     $ogDescription = 'Set up your preferred reading experience in the RaggieSoft Book Reader.';
+} elseif ($isStoryArcs) {
+    $siteName = 'Story Arcs & Reading Playlists | Ocean View Archives';
+    $ogTitle = 'Story Arcs & Reading Playlists | Ocean View Archives';
+    $ogDescription = 'Follow curated chapter-by-chapter Story Arcs across Ocean View Archives novels, complete with behind-the-scenes bonus scenes.';
+    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/scenes/katie/b005/jun_2018_maplewood_north_lion_ribbon_cutting_earned_hug_nate_heather_wesley.jpg';
+    $ogImageAlt = 'Story Arcs and Reading Playlists in the RaggieSoft Book Reader';
 } elseif ($hasValidBookSeries && $seriesSlug !== '') {
     $seriesTitle = !empty($toc_manifest['series_title'])
         ? trim((string)$toc_manifest['series_title'])
@@ -662,8 +673,8 @@ $currentHeaderMenu = (!$hasValidBookSeries) ? ($basePath . '/includes/components
 require_once $basePath . '/includes/components/headers/header.php';
 
 // Inject Stardust-specific styling and logic scripts with deterministic cache-busting version
-echo '<link rel="stylesheet" href="' . $cdnBaseUrl . '/raggiesoft-books/css/reader.css?v=20261114b">';
-echo '<script src="' . $cdnBaseUrl . '/raggiesoft-books/js/reader.js?v=20261114b" defer></script>';
+echo '<link rel="stylesheet" href="' . $cdnBaseUrl . '/raggiesoft-books/css/reader.css?v=20261116a">';
+echo '<script src="' . $cdnBaseUrl . '/raggiesoft-books/js/reader.js?v=20261116a" defer></script>';
 
 // Open the primary application boundary
 echo '<div id="stardust-main-wrapper">';
@@ -671,6 +682,8 @@ echo '<div id="stardust-main-wrapper">';
 // Execute the final View routing based on established state
 if ($isHome) {
     require_once $basePath . '/sophia/home.php';
+} else if ($isStoryArcs) {
+    require_once $basePath . '/sophia/story-arcs.php';
 } else if ($isAllIllustrations) {
     require_once $basePath . '/sophia/all-illustrations.php';
 } else if ($isStats) {

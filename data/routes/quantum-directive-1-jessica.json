@@ -21,7 +21,7 @@
             "pdf_bytes": 259351,
             "text_epub_bytes": 87849,
             "text_pdf_bytes": 259351,
-            "package_7z_bytes": 70784
+            "package_7z_bytes": 70797
         },
         "illustration_count": 0,
         "word_stats": {
@@ -39,8 +39,10 @@
             "era_count": 2,
             "chapter_count": 15,
             "part_count": 16,
-            "illustration_count": 0
-        }
+            "illustration_count": 0,
+            "story_arc_count": 0
+        },
+        "story_arcs": []
     },
     "/quantum-directive-1-jessica": {
         "view": "pages/raggiesoft-books/books/viewer",
