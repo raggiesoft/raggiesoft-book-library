@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "65.2 MB",
-            "pdf": "64.4 MB",
-            "text_epub": "741 KB",
+            "epub": "64.9 MB",
+            "pdf": "62.7 MB",
+            "text_epub": "747 KB",
             "text_pdf": "2 MB",
-            "package_7z": "550 KB",
-            "epub_bytes": 68388218,
-            "pdf_bytes": 67569859,
-            "text_epub_bytes": 758979,
-            "text_pdf_bytes": 2068394,
-            "package_7z_bytes": 563136
+            "package_7z": "554 KB",
+            "epub_bytes": 68038487,
+            "pdf_bytes": 65726215,
+            "text_epub_bytes": 764917,
+            "text_pdf_bytes": 2086172,
+            "package_7z_bytes": 567626
         },
-        "illustration_count": 145,
+        "illustration_count": 146,
         "word_stats": {
-            "story_word_count": 312366,
-            "lore_word_count": 100572,
-            "combined_word_count": 412938,
-            "story_page_count": 1136,
-            "combined_page_count": 1502,
-            "reading_hours": 20.8,
-            "reading_minutes": 1249,
+            "story_word_count": 314758,
+            "lore_word_count": 101284,
+            "combined_word_count": 416042,
+            "story_page_count": 1145,
+            "combined_page_count": 1513,
+            "reading_hours": 21,
+            "reading_minutes": 1259,
             "novel_equivalent": 3.5,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
             "benchmark_note": "3.5\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
             "era_count": 11,
             "chapter_count": 45,
-            "part_count": 121,
-            "illustration_count": 145
+            "part_count": 122,
+            "illustration_count": 146
         }
     },
     "/katie": {
@@ -882,9 +882,9 @@
         "theme": "raggiesoft-books",
         "filePath": "e010/c001/p002.md"
     },
-    "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-3-thirty-inch-viewing-glass-touring-the-skylit-reptile-zoo-chelsea-and-wesley-talking-about-wesley-s-turtles": {
+    "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-3-turtles-reptiles-and-small-mammals-touring-the-three-zoo-wings-talking-about-wesley-s-turtles": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Thirty-Inch Viewing Glass, Touring the Skylit Reptile Zoo, & Chelsea and Wesley Talking About Wesley's Turtles",
+        "title": "Part 3: Turtles, Reptiles, and Small Mammals: Touring the Three Zoo Wings & Talking About Wesley's Turtles",
         "theme": "raggiesoft-books",
         "filePath": "e010/c001/p003.md"
     },
@@ -899,6 +899,12 @@
         "title": "Part 5: Chelsea's Magical First Non-Family Hug, Riding Route 54 to Terminal 2, & A Three-Way Hug Outside TSA",
         "theme": "raggiesoft-books",
         "filePath": "e010/c001/p005.md"
+    },
+    "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-6-father-s-day-on-arvin-road-two-guardians-blessing-making-it-official-between-chelsea-and-my-sweet-wes": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: Father's Day on Arvin Road, Two Guardians' Blessing, & Making It Official Between Chelsea and 'My Sweet Wes'",
+        "theme": "raggiesoft-books",
+        "filePath": "e010/c001/p006.md"
     },
     "/katie/across-the-rotunda-the-senate-of-virginia/flipping-the-seventh-senate-district-the-mahogany-senate-ramp-madam-chair": {
         "view": "pages/raggiesoft-books/books/viewer",
