@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "59.7 MB",
-            "pdf": "55.6 MB",
-            "text_epub": "699 KB",
+            "epub": "60.3 MB",
+            "pdf": "56.9 MB",
+            "text_epub": "704 KB",
             "text_pdf": "1.9 MB",
-            "package_7z": "519 KB",
-            "epub_bytes": 62558615,
-            "pdf_bytes": 58336752,
-            "text_epub_bytes": 716224,
-            "text_pdf_bytes": 1951156,
-            "package_7z_bytes": 531641
+            "package_7z": "523 KB",
+            "epub_bytes": 63264713,
+            "pdf_bytes": 59704753,
+            "text_epub_bytes": 721241,
+            "text_pdf_bytes": 1965277,
+            "package_7z_bytes": 535326
         },
-        "illustration_count": 135,
+        "illustration_count": 136,
         "word_stats": {
-            "story_word_count": 295221,
-            "lore_word_count": 95730,
-            "combined_word_count": 390951,
-            "story_page_count": 1074,
-            "combined_page_count": 1422,
-            "reading_hours": 19.7,
-            "reading_minutes": 1181,
+            "story_word_count": 297210,
+            "lore_word_count": 97195,
+            "combined_word_count": 394405,
+            "story_page_count": 1081,
+            "combined_page_count": 1434,
+            "reading_hours": 19.8,
+            "reading_minutes": 1189,
             "novel_equivalent": 3.3,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
             "benchmark_note": "3.3\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
             "era_count": 11,
             "chapter_count": 45,
-            "part_count": 113,
-            "illustration_count": 135
+            "part_count": 114,
+            "illustration_count": 136
         }
     },
     "/katie": {
@@ -792,47 +792,53 @@
         "theme": "raggiesoft-books",
         "filePath": "e009/c003/p004.md"
     },
-    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-rescuing-cousin-chelsea-from-mount-regalis-out-of-the-closet-into-our-four-person-nest": {
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-message-request-on-the-grid-rescuing-cousin-chelsea-from-mount-regalis-out-of-the-closet-into-our-four-person-nest": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Keeping Our High-School Promise, Rescuing Cousin Chelsea From Mount Regalis, & Out of the Closet Into Our Four-Person Nest",
+        "title": "Keeping Our High-School Promise, A Cautious Message Request on The Grid, Rescuing Cousin Chelsea From Mount Regalis, & Out of the Closet Into Our Four-Person Nest",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|8|3"
     },
-    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-rescuing-cousin-chelsea-from-mount-regalis-out-of-the-closet-into-our-four-person-nest/part-1-sine-die-welcoming-brittany-home-to-arvin-road-route-20-to-the-coastal-adult-learning-center-three-cousins-in-the-closet": {
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-message-request-on-the-grid-rescuing-cousin-chelsea-from-mount-regalis-out-of-the-closet-into-our-four-person-nest/part-1-sine-die-welcoming-brittany-home-to-arvin-road-route-20-to-the-coastal-adult-learning-center-three-cousins-in-the-closet": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Sine Die, Welcoming Brittany Home to Arvin Road, Route 20 to the Coastal Adult Learning Center, & Three Cousins in the Closet",
         "theme": "raggiesoft-books",
         "filePath": "e009/c004/p001.md"
     },
-    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-rescuing-cousin-chelsea-from-mount-regalis-out-of-the-closet-into-our-four-person-nest/part-2-turned-away-at-the-royal-gate-riding-bta-route-99-up-mount-regalis-catching-the-two-faced-manager-red-handed-no-known-living-family": {
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-message-request-on-the-grid-rescuing-cousin-chelsea-from-mount-regalis-out-of-the-closet-into-our-four-person-nest/part-2-a-filtered-request-on-the-grid-what-tyler-s-lie-cost-all-of-us-a-very-cautious-reply": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Turned Away at the Royal Gate, Riding BTA Route 99 Up Mount Regalis, Catching the Two-Faced Manager Red-Handed, & 'No Known Living Family'",
+        "title": "Part 2: A Filtered Request on The Grid, What Tyler's Lie Cost All of Us, & A Very Cautious Reply",
         "theme": "raggiesoft-books",
         "filePath": "e009/c004/p002.md"
     },
-    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-rescuing-cousin-chelsea-from-mount-regalis-out-of-the-closet-into-our-four-person-nest/part-3-ten-minutes-in-braxton-probate-court-forcing-open-the-royal-gate-with-a-sheriff-s-escort-goodbye-to-newport-over-i-895": {
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-message-request-on-the-grid-rescuing-cousin-chelsea-from-mount-regalis-out-of-the-closet-into-our-four-person-nest/part-3-turned-away-at-the-royal-gate-riding-bta-route-99-up-mount-regalis-catching-the-two-faced-manager-red-handed-no-known-living-family": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Ten Minutes in Braxton Probate Court, Forcing Open the Royal Gate With a Sheriff's Escort, & Goodbye to Newport Over I-895",
+        "title": "Part 3: Turned Away at the Royal Gate, Riding BTA Route 99 Up Mount Regalis, Catching the Two-Faced Manager Red-Handed, & 'No Known Living Family'",
         "theme": "raggiesoft-books",
         "filePath": "e009/c004/p003.md"
     },
-    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-rescuing-cousin-chelsea-from-mount-regalis-out-of-the-closet-into-our-four-person-nest/part-4-tagless-puffer-pocket-pajamas-gentle-reminders-fear-of-group-home-two-face-four-cousins-crammed-into-one-closet": {
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-message-request-on-the-grid-rescuing-cousin-chelsea-from-mount-regalis-out-of-the-closet-into-our-four-person-nest/part-4-ten-minutes-in-braxton-probate-court-forcing-open-the-royal-gate-with-a-sheriff-s-escort-goodbye-to-newport-over-i-895": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: Tagless Puffer-Pocket Pajamas, Gentle Reminders, Fear of 'Group Home Two-Face,' & Four Cousins Crammed Into One Closet",
+        "title": "Part 4: Ten Minutes in Braxton Probate Court, Forcing Open the Royal Gate With a Sheriff's Escort, & Goodbye to Newport Over I-895",
         "theme": "raggiesoft-books",
         "filePath": "e009/c004/p004.md"
     },
-    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-rescuing-cousin-chelsea-from-mount-regalis-out-of-the-closet-into-our-four-person-nest/part-5-eighty-cramped-nights-on-closet-plywood-building-our-four-person-oak-bed-the-twelve-minute-try-thanksgiving-s-forty-five-minute-milestone": {
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-message-request-on-the-grid-rescuing-cousin-chelsea-from-mount-regalis-out-of-the-closet-into-our-four-person-nest/part-5-tagless-puffer-pocket-pajamas-gentle-reminders-fear-of-group-home-two-face-four-cousins-crammed-into-one-closet": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: Eighty Cramped Nights on Closet Plywood, Building Our Four-Person Oak Bed, The Twelve-Minute Try, & Thanksgiving's Forty-Five-Minute Milestone",
+        "title": "Part 5: Tagless Puffer-Pocket Pajamas, Gentle Reminders, Fear of 'Group Home Two-Face,' & Four Cousins Crammed Into One Closet",
         "theme": "raggiesoft-books",
         "filePath": "e009/c004/p005.md"
     },
-    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-rescuing-cousin-chelsea-from-mount-regalis-out-of-the-closet-into-our-four-person-nest/part-6-safe-from-the-dark-and-group-home-two-face-rolling-up-our-closet-sleeping-bag-our-first-full-night-in-the-four-person-nest": {
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-message-request-on-the-grid-rescuing-cousin-chelsea-from-mount-regalis-out-of-the-closet-into-our-four-person-nest/part-6-eighty-cramped-nights-on-closet-plywood-building-our-four-person-oak-bed-the-twelve-minute-try-thanksgiving-s-forty-five-minute-milestone": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: Safe From the Dark and 'Group Home Two-Face,' Rolling Up Our Closet Sleeping Bag, & Our First Full Night in the Four-Person Nest",
+        "title": "Part 6: Eighty Cramped Nights on Closet Plywood, Building Our Four-Person Oak Bed, The Twelve-Minute Try, & Thanksgiving's Forty-Five-Minute Milestone",
         "theme": "raggiesoft-books",
         "filePath": "e009/c004/p006.md"
+    },
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-message-request-on-the-grid-rescuing-cousin-chelsea-from-mount-regalis-out-of-the-closet-into-our-four-person-nest/part-7-safe-from-the-dark-and-group-home-two-face-rolling-up-our-closet-sleeping-bag-our-first-full-night-in-the-four-person-nest": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Safe From the Dark and 'Group Home Two-Face,' Rolling Up Our Closet Sleeping Bag, & Our First Full Night in the Four-Person Nest",
+        "theme": "raggiesoft-books",
+        "filePath": "e009/c004/p007.md"
     },
     "/katie/across-the-rotunda-the-senate-of-virginia": {
         "view": "pages/raggiesoft-books/books/viewer",
