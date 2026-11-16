@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "61.9 MB",
-            "pdf": "60 MB",
-            "text_epub": "713 KB",
+            "epub": "63.6 MB",
+            "pdf": "63.6 MB",
+            "text_epub": "721 KB",
             "text_pdf": "1.9 MB",
-            "package_7z": "529 KB",
-            "epub_bytes": 64887381,
-            "pdf_bytes": 62894823,
-            "text_epub_bytes": 730017,
-            "text_pdf_bytes": 1989512,
-            "package_7z_bytes": 542035
+            "package_7z": "535 KB",
+            "epub_bytes": 66730021,
+            "pdf_bytes": 66673005,
+            "text_epub_bytes": 738804,
+            "text_pdf_bytes": 2013038,
+            "package_7z_bytes": 548200
         },
-        "illustration_count": 138,
+        "illustration_count": 140,
         "word_stats": {
-            "story_word_count": 300760,
-            "lore_word_count": 97411,
-            "combined_word_count": 398171,
-            "story_page_count": 1094,
-            "combined_page_count": 1448,
-            "reading_hours": 20.1,
-            "reading_minutes": 1203,
-            "novel_equivalent": 3.3,
+            "story_word_count": 304215,
+            "lore_word_count": 98768,
+            "combined_word_count": 402983,
+            "story_page_count": 1106,
+            "combined_page_count": 1465,
+            "reading_hours": 20.3,
+            "reading_minutes": 1217,
+            "novel_equivalent": 3.4,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
-            "benchmark_note": "3.3\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
+            "benchmark_note": "3.4\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
             "era_count": 11,
             "chapter_count": 45,
-            "part_count": 116,
-            "illustration_count": 138
+            "part_count": 118,
+            "illustration_count": 140
         }
     },
     "/katie": {
@@ -852,23 +852,35 @@
         "theme": "raggiesoft-books",
         "filePath": "e009/c004/p009.md"
     },
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-10-staff-member-wesley-s-reply-proving-it-when-nobody-was-looking-full-speaking-terms": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: Staff Member Wesley's Reply, Proving It When Nobody Was Looking, & Full Speaking Terms",
+        "theme": "raggiesoft-books",
+        "filePath": "e009/c004/p010.md"
+    },
     "/katie/across-the-rotunda-the-senate-of-virginia": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Across the Rotunda: The Senate of Virginia",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|9"
     },
-    "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition": {
+    "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Watching Senator Ward Kill Our Bills Across the Rotunda & The 250-Signature Petition",
+        "title": "Watching Senator Ward Kill Our Bills Across the Rotunda, The 250-Signature Petition, & Cutting the Ribbon on Route 64 in Maplewood",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|9|0"
     },
-    "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition/watching-senator-ward-kill-our-bills-across-the-rotunda-brainstorming-the-7th-senate-district-with-dad-the-250-signature-rule": {
+    "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-1-watching-senator-ward-kill-our-bills-across-the-rotunda-brainstorming-the-7th-senate-district-with-dad-the-250-signature-rule": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Watching Senator Ward Kill Our Bills Across the Rotunda, Brainstorming the 7th Senate District with Dad, & The 250-Signature Rule",
+        "title": "Part 1: Watching Senator Ward Kill Our Bills Across the Rotunda, Brainstorming the 7th Senate District with Dad, & The 250-Signature Rule",
         "theme": "raggiesoft-books",
         "filePath": "e010/c001/p001.md"
+    },
+    "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-2-route-64-to-maplewood-seeing-wesley-in-person-after-fifteen-years-the-earned-hug-at-the-ribbon-cutting": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Route 64 to Maplewood, Seeing Wesley in Person After Fifteen Years, & The Earned Hug at the Ribbon Cutting",
+        "theme": "raggiesoft-books",
+        "filePath": "e010/c001/p002.md"
     },
     "/katie/across-the-rotunda-the-senate-of-virginia/flipping-the-seventh-senate-district-the-mahogany-senate-ramp-madam-chair": {
         "view": "pages/raggiesoft-books/books/viewer",
