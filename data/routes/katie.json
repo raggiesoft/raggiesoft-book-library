@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "64.6 MB",
-            "pdf": "64.1 MB",
-            "text_epub": "736 KB",
+            "epub": "65.2 MB",
+            "pdf": "64.4 MB",
+            "text_epub": "741 KB",
             "text_pdf": "2 MB",
-            "package_7z": "546 KB",
-            "epub_bytes": 67710111,
-            "pdf_bytes": 67245152,
-            "text_epub_bytes": 753643,
-            "text_pdf_bytes": 2051814,
-            "package_7z_bytes": 559122
+            "package_7z": "550 KB",
+            "epub_bytes": 68388218,
+            "pdf_bytes": 67569859,
+            "text_epub_bytes": 758979,
+            "text_pdf_bytes": 2068394,
+            "package_7z_bytes": 563136
         },
-        "illustration_count": 143,
+        "illustration_count": 145,
         "word_stats": {
-            "story_word_count": 310139,
+            "story_word_count": 312366,
             "lore_word_count": 100572,
-            "combined_word_count": 410711,
-            "story_page_count": 1128,
-            "combined_page_count": 1493,
-            "reading_hours": 20.7,
-            "reading_minutes": 1241,
-            "novel_equivalent": 3.4,
+            "combined_word_count": 412938,
+            "story_page_count": 1136,
+            "combined_page_count": 1502,
+            "reading_hours": 20.8,
+            "reading_minutes": 1249,
+            "novel_equivalent": 3.5,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
-            "benchmark_note": "3.4\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
+            "benchmark_note": "3.5\u00d7 a standard 90,000-word contemporary novel (~3-volume print series)",
             "era_count": 11,
             "chapter_count": 45,
-            "part_count": 120,
-            "illustration_count": 143
+            "part_count": 121,
+            "illustration_count": 145
         }
     },
     "/katie": {
@@ -893,6 +893,12 @@
         "title": "Part 4: Behind the Education Classroom Door: Fifteen Years Off Our Chests & Cutting the Ribbon on Route 64",
         "theme": "raggiesoft-books",
         "filePath": "e010/c001/p004.md"
+    },
+    "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-5-chelsea-s-magical-first-non-family-hug-riding-route-54-to-terminal-2-a-three-way-hug-outside-tsa": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Chelsea's Magical First Non-Family Hug, Riding Route 54 to Terminal 2, & A Three-Way Hug Outside TSA",
+        "theme": "raggiesoft-books",
+        "filePath": "e010/c001/p005.md"
     },
     "/katie/across-the-rotunda-the-senate-of-virginia/flipping-the-seventh-senate-district-the-mahogany-senate-ramp-madam-chair": {
         "view": "pages/raggiesoft-books/books/viewer",
