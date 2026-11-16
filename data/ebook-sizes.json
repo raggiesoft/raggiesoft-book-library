@@ -9,7 +9,7 @@
         "pdf_bytes": 2175257,
         "text_epub_bytes": 85320,
         "text_pdf_bytes": 277257,
-        "package_7z_bytes": 68605
+        "package_7z_bytes": 68607
     },
     "aethel": {
         "epub": "295 KB",
@@ -21,7 +21,7 @@
         "pdf_bytes": 858237,
         "text_epub_bytes": 301711,
         "text_pdf_bytes": 858237,
-        "package_7z_bytes": 228971
+        "package_7z_bytes": 228973
     },
     "alex-chloe": {
         "epub": "657 KB",
@@ -33,7 +33,7 @@
         "pdf_bytes": 1801709,
         "text_epub_bytes": 673136,
         "text_pdf_bytes": 1801709,
-        "package_7z_bytes": 463333
+        "package_7z_bytes": 463335
     },
     "apex-fall-of-earth": {
         "epub": "595 KB",
@@ -45,7 +45,7 @@
         "pdf_bytes": 1764104,
         "text_epub_bytes": 608772,
         "text_pdf_bytes": 1764104,
-        "package_7z_bytes": 426529
+        "package_7z_bytes": 426533
     },
     "ashley-tower": {
         "epub": "83 KB",
@@ -57,7 +57,7 @@
         "pdf_bytes": 241676,
         "text_epub_bytes": 84495,
         "text_pdf_bytes": 241676,
-        "package_7z_bytes": 68201
+        "package_7z_bytes": 68205
     },
     "aubrie": {
         "epub": "66 MB",
@@ -69,7 +69,7 @@
         "pdf_bytes": 56110642,
         "text_epub_bytes": 1030010,
         "text_pdf_bytes": 3873509,
-        "package_7z_bytes": 735536
+        "package_7z_bytes": 735533
     },
     "beth": {
         "epub": "5.3 KB",
@@ -93,7 +93,7 @@
         "pdf_bytes": 235362,
         "text_epub_bytes": 85613,
         "text_pdf_bytes": 235362,
-        "package_7z_bytes": 63758
+        "package_7z_bytes": 63762
     },
     "crimson-node": {
         "epub": "20 MB",
@@ -105,7 +105,7 @@
         "pdf_bytes": 21143357,
         "text_epub_bytes": 55576,
         "text_pdf_bytes": 168226,
-        "package_7z_bytes": 45134
+        "package_7z_bytes": 45133
     },
     "drew": {
         "epub": "72 KB",
@@ -117,7 +117,7 @@
         "pdf_bytes": 206039,
         "text_epub_bytes": 74019,
         "text_pdf_bytes": 206039,
-        "package_7z_bytes": 57773
+        "package_7z_bytes": 57782
     },
     "erin": {
         "epub": "20 KB",
@@ -129,7 +129,7 @@
         "pdf_bytes": 73850,
         "text_epub_bytes": 20317,
         "text_pdf_bytes": 73850,
-        "package_7z_bytes": 15360
+        "package_7z_bytes": 15358
     },
     "fractured-prisms": {
         "epub": "8.6 KB",
@@ -141,7 +141,7 @@
         "pdf_bytes": 16540,
         "text_epub_bytes": 8788,
         "text_pdf_bytes": 16540,
-        "package_7z_bytes": 2010
+        "package_7z_bytes": 2014
     },
     "jack-sarah": {
         "epub": "185 KB",
@@ -153,7 +153,7 @@
         "pdf_bytes": 3367309,
         "text_epub_bytes": 189671,
         "text_pdf_bytes": 3367313,
-        "package_7z_bytes": 144950
+        "package_7z_bytes": 144949
     },
     "julian": {
         "epub": "166 KB",
@@ -165,19 +165,19 @@
         "pdf_bytes": 482428,
         "text_epub_bytes": 169681,
         "text_pdf_bytes": 482428,
-        "package_7z_bytes": 126116
+        "package_7z_bytes": 126119
     },
     "katie": {
         "epub": "60.3 MB",
         "pdf": "56.9 MB",
-        "text_epub": "704 KB",
+        "text_epub": "705 KB",
         "text_pdf": "1.9 MB",
-        "package_7z": "523 KB",
-        "epub_bytes": 63264713,
-        "pdf_bytes": 59704753,
-        "text_epub_bytes": 721241,
-        "text_pdf_bytes": 1965277,
-        "package_7z_bytes": 535326
+        "package_7z": "524 KB",
+        "epub_bytes": 63265881,
+        "pdf_bytes": 59707765,
+        "text_epub_bytes": 722377,
+        "text_pdf_bytes": 1968457,
+        "package_7z_bytes": 536230
     },
     "luna-leo": {
         "epub": "10.1 MB",
@@ -189,7 +189,7 @@
         "pdf_bytes": 12179754,
         "text_epub_bytes": 795858,
         "text_pdf_bytes": 2373092,
-        "package_7z_bytes": 569235
+        "package_7z_bytes": 569222
     },
     "mary-childhood": {
         "epub": "9.4 KB",
@@ -201,7 +201,7 @@
         "pdf_bytes": 25934,
         "text_epub_bytes": 9640,
         "text_pdf_bytes": 25934,
-        "package_7z_bytes": 4900
+        "package_7z_bytes": 4899
     },
     "meredith": {
         "epub": "40 KB",
@@ -213,7 +213,7 @@
         "pdf_bytes": 121729,
         "text_epub_bytes": 41112,
         "text_pdf_bytes": 121729,
-        "package_7z_bytes": 32504
+        "package_7z_bytes": 32502
     },
     "nate": {
         "epub": "69 KB",
@@ -225,7 +225,7 @@
         "pdf_bytes": 202768,
         "text_epub_bytes": 70990,
         "text_pdf_bytes": 202768,
-        "package_7z_bytes": 53970
+        "package_7z_bytes": 53972
     },
     "nichole": {
         "epub": "444 KB",
@@ -237,7 +237,7 @@
         "pdf_bytes": 1272780,
         "text_epub_bytes": 454748,
         "text_pdf_bytes": 1272780,
-        "package_7z_bytes": 328004
+        "package_7z_bytes": 328005
     },
     "paige": {
         "epub": "498 KB",
@@ -249,7 +249,7 @@
         "pdf_bytes": 1475296,
         "text_epub_bytes": 510178,
         "text_pdf_bytes": 1475296,
-        "package_7z_bytes": 371757
+        "package_7z_bytes": 371750
     },
     "pebble-borrow": {
         "epub": "152 KB",
@@ -261,7 +261,7 @@
         "pdf_bytes": 415749,
         "text_epub_bytes": 155170,
         "text_pdf_bytes": 415749,
-        "package_7z_bytes": 112005
+        "package_7z_bytes": 112013
     },
     "quantum-directive-1-jessica": {
         "epub": "86 KB",
@@ -273,7 +273,7 @@
         "pdf_bytes": 259351,
         "text_epub_bytes": 87849,
         "text_pdf_bytes": 259351,
-        "package_7z_bytes": 70786
+        "package_7z_bytes": 70784
     },
     "quantum-directive-2-kelly": {
         "epub": "77 KB",
@@ -285,7 +285,7 @@
         "pdf_bytes": 5514555,
         "text_epub_bytes": 79111,
         "text_pdf_bytes": 5514555,
-        "package_7z_bytes": 60951
+        "package_7z_bytes": 60950
     },
     "quantum-directive-3-casey": {
         "epub": "5.1 MB",
@@ -297,7 +297,7 @@
         "pdf_bytes": 5058155,
         "text_epub_bytes": 407438,
         "text_pdf_bytes": 1263033,
-        "package_7z_bytes": 302431
+        "package_7z_bytes": 302428
     },
     "rachel": {
         "epub": "76.1 MB",
@@ -321,7 +321,7 @@
         "pdf_bytes": 663054,
         "text_epub_bytes": 237599,
         "text_pdf_bytes": 663054,
-        "package_7z_bytes": 172119
+        "package_7z_bytes": 172114
     },
     "runebreaker": {
         "epub": "14 KB",
@@ -333,7 +333,7 @@
         "pdf_bytes": 41824,
         "text_epub_bytes": 14621,
         "text_pdf_bytes": 41824,
-        "package_7z_bytes": 35543
+        "package_7z_bytes": 35535
     },
     "samantha": {
         "epub": "65 KB",
@@ -345,19 +345,19 @@
         "pdf_bytes": 194536,
         "text_epub_bytes": 66662,
         "text_pdf_bytes": 194536,
-        "package_7z_bytes": 50588
+        "package_7z_bytes": 50589
     },
     "stardust-engine": {
         "epub": "17.1 MB",
         "pdf": "18.8 MB",
         "text_epub": "185 KB",
         "text_pdf": "561 KB",
-        "package_7z": "140 KB",
+        "package_7z": "139 KB",
         "epub_bytes": 17922538,
         "pdf_bytes": 19691323,
         "text_epub_bytes": 189100,
         "text_pdf_bytes": 573976,
-        "package_7z_bytes": 142859
+        "package_7z_bytes": 142846
     },
     "water-planet": {
         "epub": "5.3 KB",
