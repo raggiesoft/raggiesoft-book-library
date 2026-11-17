@@ -16,20 +16,20 @@
             "pdf": "70 MB",
             "text_epub": "800 KB",
             "text_pdf": "2.1 MB",
-            "package_7z": "604 KB",
+            "package_7z": "605 KB",
             "epub_bytes": 74287713,
             "pdf_bytes": 73374693,
             "text_epub_bytes": 819332,
             "text_pdf_bytes": 2235041,
-            "package_7z_bytes": 618446
+            "package_7z_bytes": 619154
         },
         "illustration_count": 156,
         "word_stats": {
             "story_word_count": 336062,
-            "lore_word_count": 108770,
-            "combined_word_count": 444832,
+            "lore_word_count": 113202,
+            "combined_word_count": 449264,
             "story_page_count": 1222,
-            "combined_page_count": 1618,
+            "combined_page_count": 1634,
             "reading_hours": 22.4,
             "reading_minutes": 1344,
             "novel_equivalent": 3.7,
@@ -2015,11 +2015,11 @@
                 "image": "/raggiesoft-books/images/scenes/katie/b005/jan_2027_alx_arts_mobile_lift_senator_elect_katie_prairie.jpg",
                 "start_url": "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road/part-5-the-cchr-disability-counselor-the-glossy-fishersville-pitch-why-brother-and-sister-should-get-to-share-a-dorm-room?arc=fishersville-twelve-days-and-twenty-years",
                 "part_count": 10,
-                "backstage_count": 6,
-                "stop_count": 16,
-                "word_count": 47451,
-                "reading_minutes": 190,
-                "reading_hours": 3.2,
+                "backstage_count": 8,
+                "stop_count": 18,
+                "word_count": 51696,
+                "reading_minutes": 207,
+                "reading_hours": 3.4,
                 "stops": [
                     {
                         "stop_num": 1,
@@ -2151,11 +2151,49 @@
                         "image": "/raggiesoft-books/images/scenes/katie/b005/jan_2027_alx_arts_mobile_lift_senator_elect_katie_prairie.jpg",
                         "url": "https://backstage.raggiesoft.com/books/katie/rrc-seasonal-closet-curfew-search/",
                         "arc_url": "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/starting-web-apps-while-stuck-in-barton-hall-sleeping-in-the-closet-the-chickenshit-report/part-2-emergency-in-the-therapeutic-pool-caught-sleeping-together-in-a-closet-calling-the-staffer-s-bluff-the-chickenshit-report?arc=fishersville-twelve-days-and-twenty-years",
-                        "word_count": 1267,
+                        "word_count": 1373,
                         "reading_minutes": 6
                     },
                     {
                         "stop_num": 8,
+                        "kind": "backstage",
+                        "series_slug": "katie",
+                        "series_title": "Katie & Nathaniel",
+                        "backstage_slug": "books/katie/what-if-rrc-unlocked-closet-ending-a-three-fifty-am",
+                        "title": "Alternate 'What If' Dossier (Ending A \u2014 3:50 AM): Leaving the Closet Unlocked, Dad's Engineer Question, & Waking Up With Zero Clue Who's Missing",
+                        "subtitle": "What Happens If Katie and Nate Realize an Unlocked Door Is the Perfect Camouflage\u2014Triggering a Midnight Missing-Persons Alert That Brings David and the Sheriff Straight to the Stage Curtain",
+                        "era_title": "Behind the Scenes",
+                        "chap_title": "Katie & Nathaniel \u2014 Behind the Scenes",
+                        "date": "2007-03-14",
+                        "location": "Campus Recreation Hall & Barton Hall, Roosevelt Rehabilitation Center, Fishersville, Virginia",
+                        "excerpt": "An official Alternate 'What If' exploration (Ending A): what if Katie and Nate left the Rec Hall seasonal closet unlocked at 10:44 PM so the night supervisor missed them completely\u2014accidentally triggering a full Virginia State Police and Sheriff's missing-persons search and waking up at 3:50 AM having zero clue that everyone in Augusta County is looking for them?",
+                        "image": "/raggiesoft-backstage/images/scenes/what-if-rrc-unlocked-closet-ending-a-350am.jpg",
+                        "url": "https://backstage.raggiesoft.com/books/katie/what-if-rrc-unlocked-closet-ending-a-three-fifty-am/",
+                        "arc_url": "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/starting-web-apps-while-stuck-in-barton-hall-sleeping-in-the-closet-the-chickenshit-report/part-2-emergency-in-the-therapeutic-pool-caught-sleeping-together-in-a-closet-calling-the-staffer-s-bluff-the-chickenshit-report?arc=fishersville-twelve-days-and-twenty-years",
+                        "word_count": 1976,
+                        "reading_minutes": 8
+                    },
+                    {
+                        "stop_num": 9,
+                        "kind": "backstage",
+                        "series_slug": "katie",
+                        "series_title": "Katie & Nathaniel",
+                        "backstage_slug": "books/katie/what-if-rrc-unlocked-closet-ending-b-six-forty-am-stealth",
+                        "title": "Alternate 'What If' Dossier (Ending B \u2014 6:40 AM): Sneaking Past the Morning Janitor\u2014And Rolling Out Into Their Own Missing-Persons Command Post",
+                        "subtitle": "What Happens If Nobody Re-Checks the Rec Hall Overnight, Nate and Katie Pull Off a Flawless Dawn Stealth Exit, & They Ask Their Own Search Party Who Went Missing",
+                        "era_title": "Behind the Scenes",
+                        "chap_title": "Katie & Nathaniel \u2014 Behind the Scenes",
+                        "date": "2007-03-14",
+                        "location": "Campus Recreation Hall & Main Quadrangle, Roosevelt Rehabilitation Center, Fishersville, Virginia",
+                        "excerpt": "An official Alternate 'What If' exploration (Ending B): when the Night Supervisor swears on three state incident forms that the Rec Hall is empty, Katie and Nate sleep eight glorious hours undisturbed, sneak past the 6:25 AM janitor on Speed Setting 1 so nobody inside sees them, and roll casually onto the sunlit quad\u2014having zero clue that the police command post and their dad are there looking for them.",
+                        "image": "/raggiesoft-backstage/images/scenes/what-if-rrc-unlocked-closet-ending-b-640am-courtyard.jpg",
+                        "url": "https://backstage.raggiesoft.com/books/katie/what-if-rrc-unlocked-closet-ending-b-six-forty-am-stealth/",
+                        "arc_url": "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/starting-web-apps-while-stuck-in-barton-hall-sleeping-in-the-closet-the-chickenshit-report/part-2-emergency-in-the-therapeutic-pool-caught-sleeping-together-in-a-closet-calling-the-staffer-s-bluff-the-chickenshit-report?arc=fishersville-twelve-days-and-twenty-years",
+                        "word_count": 2163,
+                        "reading_minutes": 9
+                    },
+                    {
+                        "stop_num": 10,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -2174,7 +2212,7 @@
                         "reading_minutes": 10
                     },
                     {
-                        "stop_num": 9,
+                        "stop_num": 11,
                         "kind": "backstage",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -2193,7 +2231,7 @@
                         "reading_minutes": 4
                     },
                     {
-                        "stop_num": 10,
+                        "stop_num": 12,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -2212,7 +2250,7 @@
                         "reading_minutes": 7
                     },
                     {
-                        "stop_num": 11,
+                        "stop_num": 13,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -2231,7 +2269,7 @@
                         "reading_minutes": 19
                     },
                     {
-                        "stop_num": 12,
+                        "stop_num": 14,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -2250,7 +2288,7 @@
                         "reading_minutes": 26
                     },
                     {
-                        "stop_num": 13,
+                        "stop_num": 15,
                         "kind": "backstage",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -2269,7 +2307,7 @@
                         "reading_minutes": 7
                     },
                     {
-                        "stop_num": 14,
+                        "stop_num": 16,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -2288,7 +2326,7 @@
                         "reading_minutes": 27
                     },
                     {
-                        "stop_num": 15,
+                        "stop_num": 17,
                         "kind": "backstage",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -2307,7 +2345,7 @@
                         "reading_minutes": 10
                     },
                     {
-                        "stop_num": 16,
+                        "stop_num": 18,
                         "kind": "backstage",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
