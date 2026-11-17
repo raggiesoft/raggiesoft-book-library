@@ -21,13 +21,13 @@
             "pdf_bytes": 67195549,
             "text_epub_bytes": 789643,
             "text_pdf_bytes": 2152986,
-            "package_7z_bytes": 596539
+            "package_7z_bytes": 596529
         },
         "illustration_count": 151,
         "word_stats": {
             "story_word_count": 323986,
-            "lore_word_count": 106027,
-            "combined_word_count": 430013,
+            "lore_word_count": 106030,
+            "combined_word_count": 430016,
             "story_page_count": 1178,
             "combined_page_count": 1564,
             "reading_hours": 21.6,
@@ -57,7 +57,7 @@
                 "part_count": 27,
                 "backstage_count": 7,
                 "stop_count": 34,
-                "word_count": 67478,
+                "word_count": 67481,
                 "reading_minutes": 270,
                 "reading_hours": 4.5,
                 "stops": [
@@ -210,7 +210,7 @@
                         "image": "/raggiesoft-backstage/images/scenes/wesley-blowout-at-heather-jan-2003.jpg",
                         "url": "https://backstage.raggiesoft.com/books/katie/wesley-blowout-at-heather-losing-his-friend-nate/",
                         "arc_url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-2-the-drunken-new-year-lie-heather-s-bitter-goodbye-twin-sisters-always-stay?arc=heather-wesley-and-north-lion",
-                        "word_count": 1736,
+                        "word_count": 1739,
                         "reading_minutes": 7
                     },
                     {

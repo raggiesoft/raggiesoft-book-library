@@ -17,17 +17,17 @@
             "text_epub": "14 KB",
             "text_pdf": "44 KB",
             "package_7z": "13 KB",
-            "epub_bytes": 733635,
-            "pdf_bytes": 784967,
-            "text_epub_bytes": 14622,
-            "text_pdf_bytes": 45072,
-            "package_7z_bytes": 13178
+            "epub_bytes": 733637,
+            "pdf_bytes": 784963,
+            "text_epub_bytes": 14619,
+            "text_pdf_bytes": 45070,
+            "package_7z_bytes": 13184
         },
         "illustration_count": 2,
         "word_stats": {
-            "story_word_count": 3163,
+            "story_word_count": 3164,
             "lore_word_count": 9641,
-            "combined_word_count": 12804,
+            "combined_word_count": 12805,
             "story_page_count": 12,
             "combined_page_count": 47,
             "reading_hours": 0.2,
@@ -57,7 +57,7 @@
                 "part_count": 2,
                 "backstage_count": 6,
                 "stop_count": 8,
-                "word_count": 12186,
+                "word_count": 12190,
                 "reading_minutes": 49,
                 "reading_hours": 0.8,
                 "stops": [
@@ -77,7 +77,7 @@
                         "image": "/raggiesoft-books/images/scenes/heather/e001/jan_2003_chesapeake_living_room_wesley_photo_blowout_heather.jpg",
                         "url": "/heather/scales-tails-and-safe-people/saturday-pretzel-day-the-empty-shelf-the-boy-without-a-phone-bridge/part-1-the-empty-pretzel-table-the-oak-frame-off-the-shelf-why-wesley-blew-up",
                         "arc_url": "/heather/scales-tails-and-safe-people/saturday-pretzel-day-the-empty-shelf-the-boy-without-a-phone-bridge/part-1-the-empty-pretzel-table-the-oak-frame-off-the-shelf-why-wesley-blew-up?arc=scales-tails-and-safe-people",
-                        "word_count": 2224,
+                        "word_count": 2225,
                         "reading_minutes": 9
                     },
                     {
@@ -96,7 +96,7 @@
                         "image": "/raggiesoft-backstage/images/scenes/wesley-blowout-at-heather-jan-2003.jpg",
                         "url": "https://backstage.raggiesoft.com/books/katie/wesley-blowout-at-heather-losing-his-friend-nate/",
                         "arc_url": "/heather/scales-tails-and-safe-people/saturday-pretzel-day-the-empty-shelf-the-boy-without-a-phone-bridge/part-1-the-empty-pretzel-table-the-oak-frame-off-the-shelf-why-wesley-blew-up?arc=scales-tails-and-safe-people",
-                        "word_count": 1736,
+                        "word_count": 1739,
                         "reading_minutes": 7
                     },
                     {
