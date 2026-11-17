@@ -21,15 +21,15 @@
             "pdf_bytes": 786749,
             "text_epub_bytes": 15388,
             "text_pdf_bytes": 47154,
-            "package_7z_bytes": 13892
+            "package_7z_bytes": 13895
         },
         "illustration_count": 2,
         "word_stats": {
             "story_word_count": 3489,
-            "lore_word_count": 9676,
-            "combined_word_count": 13165,
+            "lore_word_count": 9982,
+            "combined_word_count": 13471,
             "story_page_count": 13,
-            "combined_page_count": 48,
+            "combined_page_count": 49,
             "reading_hours": 0.2,
             "reading_minutes": 14,
             "novel_equivalent": 0.04,
@@ -57,7 +57,7 @@
                 "part_count": 2,
                 "backstage_count": 6,
                 "stop_count": 8,
-                "word_count": 12949,
+                "word_count": 12896,
                 "reading_minutes": 52,
                 "reading_hours": 0.9,
                 "stops": [
@@ -200,17 +200,17 @@
                         "series_slug": "heather",
                         "series_title": "The Story of Heather Lindstrom",
                         "backstage_slug": "books/katie/what-if-wesley-and-chelsea-two-in-law-suites",
-                        "title": "Alternate 'What If' Dossier: Two Ground-Floor In-Law Suites \u2014 Virginia Beach & Maplewood",
-                        "subtitle": "What If Chelsea and Wesley Were Allowed to Live Together Year-Round Across Matching Guardian-Connected Suites at 737 Arvin Road and Heather & Dan's Minnesota Home?",
+                        "title": "Architectural & Family Guide: Three Mirrored Ground-Floor In-Law Suites \u2014 Virginia Beach, Alexandria, & Maplewood",
+                        "subtitle": "How Both Guardian Families Built Identical Zero-Step Connected Suites at 737 Arvin Road, Sunset Drive, and Route 64 Once Senator Katie Prairie's 2028 Reform Law Took Effect",
                         "era_title": "Behind the Scenes",
                         "chap_title": "Katie & Nathaniel \u2014 Behind the Scenes",
-                        "date": "2028-09-15",
-                        "location": "Virginia Beach, Virginia (737 Arvin Road In-Law Suite) & Maplewood, Minnesota (Route 64 Breezeway Suite)",
-                        "excerpt": "In main canon, Chelsea keeps her home base with Katie, Nate, and Brittany in Virginia while Wesley keeps his job at North Lion Scales & Tails in Minnesota, enjoying long cross-state visits after Senator Katie Prairie's 2028 reform law. This Alternate 'What If' explores the world where both guardian families build matching connected ground-floor in-law suites in BOTH Virginia Beach and Maplewood so Wesley and Chelsea can live together full-time!",
+                        "date": "2029-03-10",
+                        "location": "Virginia Beach, Virginia (737 Arvin Road), Alexandria, Virginia (Sunset Drive), & Maplewood, Minnesota (Route 64 Breezeway Suite)",
+                        "excerpt": "Once U.S. Senator Katie Prairie's 2028 Supported Companions, Waiver Portability, and Social Security Solvency Act takes effect on January 1, 2029, David, Katie, Nate, Brittany, Heather, and Dan build three inch-for-inch mirrored ground-floor connected in-law suites in Virginia Beach, Alexandria, and Maplewood so Wesley and Chelsea live together year-round under full guardian support.",
                         "image": "/raggiesoft-backstage/images/scenes/what-if-wesley-and-chelsea-shared-inlaw-suite.jpg",
                         "url": "https://backstage.raggiesoft.com/books/katie/what-if-wesley-and-chelsea-two-in-law-suites/",
                         "arc_url": "/heather/scales-tails-and-safe-people/saturday-pretzel-day-the-empty-shelf-the-boy-without-a-phone-bridge/part-2-two-taps-on-the-glass-every-saturday-five-months-of-frozen-pride?arc=scales-tails-and-safe-people",
-                        "word_count": 1138,
+                        "word_count": 1085,
                         "reading_minutes": 5
                     }
                 ]
