@@ -14,24 +14,24 @@
         "ebook_sizes": {
             "epub": "66.7 MB",
             "pdf": "64.1 MB",
-            "text_epub": "771 KB",
+            "text_epub": "772 KB",
             "text_pdf": "2.1 MB",
             "package_7z": "583 KB",
-            "epub_bytes": 69938354,
-            "pdf_bytes": 67195549,
-            "text_epub_bytes": 789643,
-            "text_pdf_bytes": 2152986,
-            "package_7z_bytes": 596529
+            "epub_bytes": 69938850,
+            "pdf_bytes": 67197369,
+            "text_epub_bytes": 790143,
+            "text_pdf_bytes": 2155550,
+            "package_7z_bytes": 596904
         },
         "illustration_count": 151,
         "word_stats": {
-            "story_word_count": 323986,
-            "lore_word_count": 106030,
-            "combined_word_count": 430016,
-            "story_page_count": 1178,
-            "combined_page_count": 1564,
+            "story_word_count": 324215,
+            "lore_word_count": 106152,
+            "combined_word_count": 430367,
+            "story_page_count": 1179,
+            "combined_page_count": 1565,
             "reading_hours": 21.6,
-            "reading_minutes": 1296,
+            "reading_minutes": 1297,
             "novel_equivalent": 3.6,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
@@ -57,8 +57,8 @@
                 "part_count": 27,
                 "backstage_count": 7,
                 "stop_count": 34,
-                "word_count": 67481,
-                "reading_minutes": 270,
+                "word_count": 67832,
+                "reading_minutes": 272,
                 "reading_hours": 4.5,
                 "stops": [
                     {
@@ -229,8 +229,8 @@
                         "image": "/raggiesoft-books/images/scenes/katie/b004/feb_2003_northwood_room_204_unhandled_exception_katie_nate_heather_apart.jpg",
                         "url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-3-the-back-corner-of-room-204-a-song-in-my-head-stairway-a",
                         "arc_url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-3-the-back-corner-of-room-204-a-song-in-my-head-stairway-a?arc=heather-wesley-and-north-lion",
-                        "word_count": 3799,
-                        "reading_minutes": 16
+                        "word_count": 4002,
+                        "reading_minutes": 17
                     },
                     {
                         "stop_num": 10,
@@ -248,8 +248,8 @@
                         "image": "/raggiesoft-backstage/images/scenes/katie-room-204-unhandled-exception.jpg",
                         "url": "https://backstage.raggiesoft.com/books/katie/room-204-unhandled-exception-and-tylers-cousin-lie/",
                         "arc_url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-3-the-back-corner-of-room-204-a-song-in-my-head-stairway-a?arc=heather-wesley-and-north-lion",
-                        "word_count": 2644,
-                        "reading_minutes": 11
+                        "word_count": 2766,
+                        "reading_minutes": 12
                     },
                     {
                         "stop_num": 11,
@@ -267,7 +267,7 @@
                         "image": "/raggiesoft-books/images/scenes/katie/b004/jun_2003_pavilion_graduation_heather_apology_angry_wesley.jpg",
                         "url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-one-chance-strictly-for-wesley",
                         "arc_url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-one-chance-strictly-for-wesley?arc=heather-wesley-and-north-lion",
-                        "word_count": 3786,
+                        "word_count": 3812,
                         "reading_minutes": 16
                     },
                     {

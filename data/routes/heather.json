@@ -12,22 +12,22 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "716 KB",
-            "pdf": "767 KB",
-            "text_epub": "14 KB",
-            "text_pdf": "44 KB",
+            "epub": "717 KB",
+            "pdf": "768 KB",
+            "text_epub": "15 KB",
+            "text_pdf": "45 KB",
             "package_7z": "13 KB",
-            "epub_bytes": 733637,
-            "pdf_bytes": 784963,
-            "text_epub_bytes": 14619,
-            "text_pdf_bytes": 45070,
-            "package_7z_bytes": 13184
+            "epub_bytes": 734111,
+            "pdf_bytes": 786092,
+            "text_epub_bytes": 15096,
+            "text_pdf_bytes": 46448,
+            "package_7z_bytes": 13625
         },
         "illustration_count": 2,
         "word_stats": {
-            "story_word_count": 3164,
+            "story_word_count": 3368,
             "lore_word_count": 9641,
-            "combined_word_count": 12805,
+            "combined_word_count": 13009,
             "story_page_count": 12,
             "combined_page_count": 47,
             "reading_hours": 0.2,
@@ -57,8 +57,8 @@
                 "part_count": 2,
                 "backstage_count": 6,
                 "stop_count": 8,
-                "word_count": 12190,
-                "reading_minutes": 49,
+                "word_count": 12516,
+                "reading_minutes": 51,
                 "reading_hours": 0.8,
                 "stops": [
                     {
@@ -111,12 +111,12 @@
                         "chap_title": "Saturday Pretzel Day, The Empty Shelf, & The Boy Without a Phone Bridge",
                         "date": "2003-02-15",
                         "location": "Chesapeake & Virginia Beach, VA (Aunt Linda's House & Northwood High School)",
-                        "excerpt": "Four days after watching Megan demolish Tyler's lie about Cousin Hannah in the Northwood cafeteria, Heather faces Wesley's weekly plea to go apologize to Nate and Katie.",
+                        "excerpt": "Four days after watching Kristen Bauer demolish Tyler's double-down lie about Cousin Hannah in the Northwood cafeteria, Heather faces Wesley's weekly plea to go apologize to Nate and Katie.",
                         "image": "/raggiesoft-books/images/scenes/heather/e001/jan_2003_chesapeake_living_room_wesley_photo_blowout_heather.jpg",
                         "url": "/heather/scales-tails-and-safe-people/saturday-pretzel-day-the-empty-shelf-the-boy-without-a-phone-bridge/part-2-two-taps-on-the-glass-every-saturday-five-months-of-frozen-pride",
                         "arc_url": "/heather/scales-tails-and-safe-people/saturday-pretzel-day-the-empty-shelf-the-boy-without-a-phone-bridge/part-2-two-taps-on-the-glass-every-saturday-five-months-of-frozen-pride?arc=scales-tails-and-safe-people",
-                        "word_count": 939,
-                        "reading_minutes": 4
+                        "word_count": 1143,
+                        "reading_minutes": 5
                     },
                     {
                         "stop_num": 4,
@@ -134,8 +134,8 @@
                         "image": "/raggiesoft-backstage/images/scenes/katie-room-204-unhandled-exception.jpg",
                         "url": "https://backstage.raggiesoft.com/books/katie/room-204-unhandled-exception-and-tylers-cousin-lie/",
                         "arc_url": "/heather/scales-tails-and-safe-people/saturday-pretzel-day-the-empty-shelf-the-boy-without-a-phone-bridge/part-2-two-taps-on-the-glass-every-saturday-five-months-of-frozen-pride?arc=scales-tails-and-safe-people",
-                        "word_count": 2644,
-                        "reading_minutes": 11
+                        "word_count": 2766,
+                        "reading_minutes": 12
                     },
                     {
                         "stop_num": 5,
