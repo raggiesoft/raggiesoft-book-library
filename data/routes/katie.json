@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "65.8 MB",
-            "pdf": "63.1 MB",
-            "text_epub": "757 KB",
+            "epub": "66.7 MB",
+            "pdf": "64.1 MB",
+            "text_epub": "768 KB",
             "text_pdf": "2 MB",
-            "package_7z": "572 KB",
-            "epub_bytes": 69026179,
-            "pdf_bytes": 66189700,
-            "text_epub_bytes": 775541,
-            "text_pdf_bytes": 2117860,
-            "package_7z_bytes": 586098
+            "package_7z": "581 KB",
+            "epub_bytes": 69935289,
+            "pdf_bytes": 67189663,
+            "text_epub_bytes": 786627,
+            "text_pdf_bytes": 2147166,
+            "package_7z_bytes": 594754
         },
-        "illustration_count": 149,
+        "illustration_count": 151,
         "word_stats": {
-            "story_word_count": 318949,
-            "lore_word_count": 101284,
-            "combined_word_count": 420233,
-            "story_page_count": 1160,
-            "combined_page_count": 1528,
-            "reading_hours": 21.3,
-            "reading_minutes": 1276,
-            "novel_equivalent": 3.5,
+            "story_word_count": 322975,
+            "lore_word_count": 105358,
+            "combined_word_count": 428333,
+            "story_page_count": 1174,
+            "combined_page_count": 1558,
+            "reading_hours": 21.5,
+            "reading_minutes": 1292,
+            "novel_equivalent": 3.6,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
-            "benchmark_note": "3.5\u00d7 a standard 90,000-word contemporary novel (~4-volume print series)",
+            "benchmark_note": "3.6\u00d7 a standard 90,000-word contemporary novel (~4-volume print series)",
             "era_count": 11,
-            "chapter_count": 46,
-            "part_count": 125,
-            "illustration_count": 149,
+            "chapter_count": 47,
+            "part_count": 127,
+            "illustration_count": 151,
             "story_arc_count": 4
         },
         "story_arcs": [
@@ -50,16 +50,16 @@
                 "backstage_playlist_slug": "katie-heather-wesley-and-north-lion",
                 "backstage_playlist_url": "https://backstage.raggiesoft.com/arcs/katie-heather-wesley-and-north-lion/",
                 "title": "From Northwood High to North Lion: Heather, Wesley & Chelsea",
-                "subtitle": "2001\u20132018 \u2022 Teenage Heartbreak, Ten Years Behind the Lens & Two Special Friends",
-                "description": "Follow Heather Collins from Nate's high school girlfriend at Emerald Creek Mall and Tyler's senior-year lie through ten years building North Lion Scales & Tails in Minnesota, the Maplewood zoo reunion, and Wesley and Chelsea's deep-pressure bond.",
+                "subtitle": "2001\u20132028 \u2022 Teenage Heartbreak, Ten Years Behind the Lens, Two Special Friends & The Restored Rose Garden",
+                "description": "Follow Heather Collins from Nate's high school girlfriend at Emerald Creek Mall and Wesley's January 2003 blowout through ten years building North Lion Scales & Tails in Minnesota, Wesley and Chelsea's deep-pressure bond, and Senator Katie Prairie's 2028 landmark disability reform law.",
                 "image": "/raggiesoft-books/images/scenes/katie/b005/jun_2018_maplewood_north_lion_ribbon_cutting_earned_hug_nate_heather_wesley.jpg",
                 "start_url": "/katie/sixteen-summer-sanctuary/sixteen-on-four-wheels-finding-dates/part-1-navigating-northwood-high-on-four-wheels-two-first-dates-why-we-ride-on-saturday?arc=heather-wesley-and-north-lion",
-                "part_count": 25,
-                "backstage_count": 5,
-                "stop_count": 30,
-                "word_count": 60808,
-                "reading_minutes": 244,
-                "reading_hours": 4.1,
+                "part_count": 27,
+                "backstage_count": 7,
+                "stop_count": 34,
+                "word_count": 67328,
+                "reading_minutes": 270,
+                "reading_hours": 4.5,
                 "stops": [
                     {
                         "stop_num": 1,
@@ -196,6 +196,25 @@
                     },
                     {
                         "stop_num": 8,
+                        "kind": "backstage",
+                        "series_slug": "katie",
+                        "series_title": "Katie & Nathaniel",
+                        "backstage_slug": "books/katie/wesley-blowout-at-heather-losing-his-friend-nate",
+                        "title": "Five Red X's on the Wall Calendar: Wesley's Perspective on the Morning He Thought He Lost Nate Forever",
+                        "subtitle": "From Fifteen-Year-Old Non-Verbal Wesley Collins's Third-Person Limited Point of View \u2014 Why Heather's Breakup Felt Like Losing His Only Guy Friend on Earth",
+                        "era_title": "Behind the Scenes",
+                        "chap_title": "Katie & Nathaniel \u2014 Behind the Scenes",
+                        "date": "2003-01-11",
+                        "location": "Chesapeake, Virginia (Wesley's Upstairs Bedroom & Living Room)",
+                        "excerpt": "While Katie & Nathaniel follows Nate in Virginia Beach and The Story of Heather Lindstrom follows Heather in Chesapeake, this companion scene enters fifteen-year-old non-verbal Wesley Collins's own third-person limited perspective on Saturday morning, January 11, 2003\u2014revealing the sheer terror of having zero phone, bus, or spoken bridge to his very first guy friend when Heather messed up.",
+                        "image": "/raggiesoft-backstage/images/scenes/wesley-blowout-at-heather-jan-2003.jpg",
+                        "url": "https://backstage.raggiesoft.com/books/katie/wesley-blowout-at-heather-losing-his-friend-nate/",
+                        "arc_url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-2-the-drunken-new-year-lie-heather-s-bitter-goodbye-twin-sisters-always-stay?arc=heather-wesley-and-north-lion",
+                        "word_count": 1736,
+                        "reading_minutes": 7
+                    },
+                    {
+                        "stop_num": 9,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -214,7 +233,7 @@
                         "reading_minutes": 16
                     },
                     {
-                        "stop_num": 9,
+                        "stop_num": 10,
                         "kind": "backstage",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -233,7 +252,7 @@
                         "reading_minutes": 11
                     },
                     {
-                        "stop_num": 10,
+                        "stop_num": 11,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -252,7 +271,7 @@
                         "reading_minutes": 16
                     },
                     {
-                        "stop_num": 11,
+                        "stop_num": 12,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -271,7 +290,7 @@
                         "reading_minutes": 13
                     },
                     {
-                        "stop_num": 12,
+                        "stop_num": 13,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -290,7 +309,7 @@
                         "reading_minutes": 8
                     },
                     {
-                        "stop_num": 13,
+                        "stop_num": 14,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -305,11 +324,11 @@
                         "image": "/raggiesoft-books/images/scenes/katie/b005/nov_2005_ocean_view_kitchen_tiffany_breakup_katie_nate.jpg",
                         "url": "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road/part-3-milk-isn-t-allowed-in-this-fridge-tiffany-s-sunday-morning-accusation-yes-or-no-questions-through-tears",
                         "arc_url": "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road/part-3-milk-isn-t-allowed-in-this-fridge-tiffany-s-sunday-morning-accusation-yes-or-no-questions-through-tears?arc=heather-wesley-and-north-lion",
-                        "word_count": 3339,
+                        "word_count": 3354,
                         "reading_minutes": 14
                     },
                     {
-                        "stop_num": 14,
+                        "stop_num": 15,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -328,7 +347,7 @@
                         "reading_minutes": 9
                     },
                     {
-                        "stop_num": 15,
+                        "stop_num": 16,
                         "kind": "backstage",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -347,7 +366,7 @@
                         "reading_minutes": 6
                     },
                     {
-                        "stop_num": 16,
+                        "stop_num": 17,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -366,7 +385,7 @@
                         "reading_minutes": 9
                     },
                     {
-                        "stop_num": 17,
+                        "stop_num": 18,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -385,7 +404,7 @@
                         "reading_minutes": 5
                     },
                     {
-                        "stop_num": 18,
+                        "stop_num": 19,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -404,7 +423,7 @@
                         "reading_minutes": 8
                     },
                     {
-                        "stop_num": 19,
+                        "stop_num": 20,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -423,7 +442,7 @@
                         "reading_minutes": 9
                     },
                     {
-                        "stop_num": 20,
+                        "stop_num": 21,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -442,7 +461,7 @@
                         "reading_minutes": 11
                     },
                     {
-                        "stop_num": 21,
+                        "stop_num": 22,
                         "kind": "backstage",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -461,7 +480,7 @@
                         "reading_minutes": 3
                     },
                     {
-                        "stop_num": 22,
+                        "stop_num": 23,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -480,7 +499,7 @@
                         "reading_minutes": 8
                     },
                     {
-                        "stop_num": 23,
+                        "stop_num": 24,
                         "kind": "backstage",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -499,7 +518,7 @@
                         "reading_minutes": 6
                     },
                     {
-                        "stop_num": 24,
+                        "stop_num": 25,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -518,7 +537,7 @@
                         "reading_minutes": 12
                     },
                     {
-                        "stop_num": 25,
+                        "stop_num": 26,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -537,7 +556,7 @@
                         "reading_minutes": 9
                     },
                     {
-                        "stop_num": 26,
+                        "stop_num": 27,
                         "kind": "backstage",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -556,7 +575,7 @@
                         "reading_minutes": 5
                     },
                     {
-                        "stop_num": 27,
+                        "stop_num": 28,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -575,7 +594,7 @@
                         "reading_minutes": 9
                     },
                     {
-                        "stop_num": 28,
+                        "stop_num": 29,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -594,7 +613,7 @@
                         "reading_minutes": 8
                     },
                     {
-                        "stop_num": 29,
+                        "stop_num": 30,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -613,7 +632,7 @@
                         "reading_minutes": 5
                     },
                     {
-                        "stop_num": 30,
+                        "stop_num": 31,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -630,6 +649,63 @@
                         "arc_url": "/katie/across-the-rotunda-the-senate-of-virginia/msp-to-ric-deep-pressure-hugs-at-bayshore-town-center-wesley-meeting-sunny-and-pebble-on-arvin-road/part-3-inseparable-across-saturday-and-sunday-zero-guarding-left-between-them-seeing-the-lindstroms-off-at-ric?arc=heather-wesley-and-north-lion",
                         "word_count": 1195,
                         "reading_minutes": 5
+                    },
+                    {
+                        "stop_num": 32,
+                        "kind": "part",
+                        "series_slug": "katie",
+                        "series_title": "Katie & Nathaniel",
+                        "file_path": "e011/c007/p001.md",
+                        "title": "Part 1: Form SSA-4178 on Camera, Scrapping the Social Security Cap, & Taxing Billionaires and Windfall Profits",
+                        "subtitle": "The Supported Companions, Waiver Portability, & Social Security Solvency Act \u2022 The Senator from Virginia",
+                        "era_title": "The Senator from Virginia",
+                        "chap_title": "The Supported Companions, Waiver Portability, & Social Security Solvency Act",
+                        "date": "2028-05-11",
+                        "location": "Washington, D.C. (Room 124 of the Dirksen Senate Office Building)",
+                        "excerpt": "Holding up federal Form SSA-4178 in Dirksen Room 124, Senator Katie Prairie unveils landmark disability marriage equality, waiver portability, and billionaire tax reform.",
+                        "image": "/raggiesoft-books/images/scenes/katie/b006/jun_2028_restored_rose_garden_supported_companions_signing.jpg",
+                        "url": "/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act/part-1-form-ssa-4178-on-camera-scrapping-the-social-security-cap-taxing-billionaires-and-windfall-profits",
+                        "arc_url": "/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act/part-1-form-ssa-4178-on-camera-scrapping-the-social-security-cap-taxing-billionaires-and-windfall-profits?arc=heather-wesley-and-north-lion",
+                        "word_count": 1798,
+                        "reading_minutes": 8
+                    },
+                    {
+                        "stop_num": 33,
+                        "kind": "part",
+                        "series_slug": "katie",
+                        "series_title": "Katie & Nathaniel",
+                        "file_path": "e011/c007/p002.md",
+                        "title": "Part 2: Dad's 1994 Crew Cab Pickup, First-Time Guests at the White House, & Signing Law Number One in the Restored Rose Garden",
+                        "subtitle": "The Supported Companions, Waiver Portability, & Social Security Solvency Act \u2022 The Senator from Virginia",
+                        "era_title": "The Senator from Virginia",
+                        "chap_title": "The Supported Companions, Waiver Portability, & Social Security Solvency Act",
+                        "date": "2028-06-20",
+                        "location": "Alexandria, VA & Washington, D.C. (Sunset Drive, Capital Transit Yellow Line, & The Restored White House Rose Garden)",
+                        "excerpt": "After passing the Senate 57-43, Chelsea, Brittany, and Heather's entire family visit the White House for the first time as President Morales signs Katie's landmark law in the restored Rose Garden.",
+                        "image": "/raggiesoft-books/images/scenes/katie/b006/jun_2028_restored_rose_garden_supported_companions_signing.jpg",
+                        "url": "/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act/part-2-dad-s-1994-crew-cab-pickup-first-time-guests-at-the-white-house-signing-law-number-one-in-the-restored-rose-garden",
+                        "arc_url": "/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act/part-2-dad-s-1994-crew-cab-pickup-first-time-guests-at-the-white-house-signing-law-number-one-in-the-restored-rose-garden?arc=heather-wesley-and-north-lion",
+                        "word_count": 1833,
+                        "reading_minutes": 8
+                    },
+                    {
+                        "stop_num": 34,
+                        "kind": "backstage",
+                        "series_slug": "katie",
+                        "series_title": "Katie & Nathaniel",
+                        "backstage_slug": "books/katie/what-if-wesley-and-chelsea-two-in-law-suites",
+                        "title": "Alternate 'What If' Dossier: Two Ground-Floor In-Law Suites \u2014 Virginia Beach & Maplewood",
+                        "subtitle": "What If Chelsea and Wesley Were Allowed to Live Together Year-Round Across Matching Guardian-Connected Suites at 737 Arvin Road and Heather & Dan's Minnesota Home?",
+                        "era_title": "Behind the Scenes",
+                        "chap_title": "Katie & Nathaniel \u2014 Behind the Scenes",
+                        "date": "2028-09-15",
+                        "location": "Virginia Beach, Virginia (737 Arvin Road In-Law Suite) & Maplewood, Minnesota (Route 64 Breezeway Suite)",
+                        "excerpt": "In main canon, Chelsea keeps her home base with Katie, Nate, and Brittany in Virginia while Wesley keeps his job at North Lion Scales & Tails in Minnesota, enjoying long cross-state visits after Senator Katie Prairie's 2028 reform law. This Alternate 'What If' explores the world where both guardian families build matching connected ground-floor in-law suites in BOTH Virginia Beach and Maplewood so Wesley and Chelsea can live together full-time!",
+                        "image": "/raggiesoft-backstage/images/scenes/what-if-wesley-and-chelsea-shared-inlaw-suite.jpg",
+                        "url": "https://backstage.raggiesoft.com/books/katie/what-if-wesley-and-chelsea-two-in-law-suites/",
+                        "arc_url": "/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act/part-2-dad-s-1994-crew-cab-pickup-first-time-guests-at-the-white-house-signing-law-number-one-in-the-restored-rose-garden?arc=heather-wesley-and-north-lion",
+                        "word_count": 1138,
+                        "reading_minutes": 5
                     }
                 ]
             },
@@ -644,12 +720,12 @@
                 "description": "Trace Katie Prairie's public-service journey alongside Nate\u2014from a 2007 White House and Capitol visit and Virginia Beach's 5:30 PM bus curfew to City Council, the viral House Bill 663 speech, flipping the State Senate, and riding every bus in Virginia to the United States Senate.",
                 "image": "/raggiesoft-books/images/scenes/katie/b005/senator_katie_prairie_age_41_us_senate_portrait_og.jpg",
                 "start_url": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-touring-the-white-house-the-u-s-capitol-meeting-senator-james-west-the-spark-to-run-for-city-council-two-blue-passports/part-2-unclipping-our-backpacks-where-is-president-george-w-walker-today-the-white-house-tour-that-sparked-a-political-calling?arc=katie-political-career",
-                "part_count": 31,
+                "part_count": 33,
                 "backstage_count": 5,
-                "stop_count": 36,
-                "word_count": 110192,
-                "reading_minutes": 441,
-                "reading_hours": 7.3,
+                "stop_count": 38,
+                "word_count": 114168,
+                "reading_minutes": 457,
+                "reading_hours": 7.6,
                 "stops": [
                     {
                         "stop_num": 1,
@@ -1085,8 +1161,8 @@
                         "image": "/raggiesoft-books/images/scenes/katie/b006/jan_2027_capitol_south_elevator_plaza_arrival_katie_nate_david.jpg",
                         "url": "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate/part-3-u-s-senate-new-member-orientation-senator-tess-dunmore-s-ramp-making-the-vice-president-swear-her-in",
                         "arc_url": "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate/part-3-u-s-senate-new-member-orientation-senator-tess-dunmore-s-ramp-making-the-vice-president-swear-her-in?arc=katie-political-career",
-                        "word_count": 6224,
-                        "reading_minutes": 25
+                        "word_count": 6323,
+                        "reading_minutes": 26
                     },
                     {
                         "stop_num": 24,
@@ -1100,11 +1176,11 @@
                         "chap_title": "Election Night, The Decision Desk Call, & The Referendum Mandate",
                         "date": "2026-12-01",
                         "location": "Washington, D.C. & Alexandria, VA (The U.S. Capitol, Dirksen Basement Transition Suite SD-B14, Charles R. Fenwick Bridge, & Sunset Drive)",
-                        "excerpt": "Senator-Elect Katie Prairie opposes Leader Charles Schuman, watches SecDef Halverson survive a 211-204 vote, and rides home over the Fenwick Bridge.",
+                        "excerpt": "Senator-Elect Katie Prairie backs Challenger Chris Van Deren to unseat Leader Charles Schuman 29-26, watches SecDef Halverson survive a 211-204 vote, and rides home over the Fenwick Bridge.",
                         "image": "/raggiesoft-books/images/scenes/katie/b006/dec_2026_dirksen_basement_transition_211_204_vote_katie_nate.jpg",
                         "url": "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate/part-4-opposing-leader-schuman-the-211-204-lame-duck-false-dawn-in-the-dirksen-basement-home-across-the-fenwick-bridge",
                         "arc_url": "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate/part-4-opposing-leader-schuman-the-211-204-lame-duck-false-dawn-in-the-dirksen-basement-home-across-the-fenwick-bridge?arc=katie-political-career",
-                        "word_count": 3566,
+                        "word_count": 3699,
                         "reading_minutes": 15
                     },
                     {
@@ -1114,17 +1190,17 @@
                         "series_title": "Katie & Nathaniel",
                         "backstage_slug": "books/katie/dscc-holloway-primary-and-senate-wheelchair-caucus",
                         "title": "The $14 Million DSCC Primary Shock, Opposing Leader Schuman, The 211\u2013204 Lame-Duck False Dawn, & The Senate Wheelchair Caucus",
-                        "subtitle": "Inside Retiring Senator Martin Warren's Office, Uncle Richard's Live Beacon News Takedown, Forcing a Ballot Against Charles Schuman, Bret Halverson's Premature Pentagon Victory Lap, & VPOTUS Conrad Drayton's Fury in S-216",
+                        "subtitle": "Inside Retiring Senator Martin Warren's Office, Uncle Richard's Live Beacon News Takedown, Backing Chris Van Deren to Unseat Charles Schuman 29\u201326, Bret Halverson's Premature Pentagon Victory Lap, & VPOTUS Conrad Drayton's Fury in S-216",
                         "era_title": "Behind the Scenes",
                         "chap_title": "Katie & Nathaniel \u2014 Behind the Scenes",
                         "date": "2027-01-03",
                         "location": "DSCC Headquarters, Mansfield Room (S-207), Dirksen Basement (SD-B14), U.S. Capitol Chamber, & S-216, Washington, D.C.",
-                        "excerpt": "Behind-the-scenes look at Katie's primary upset over the DSCC, Uncle Richard defending her on Beacon News, her public No vote against Leader Charles Schuman, Defense Secretary Bret Halverson's premature 211\u2013204 impeachment escape, the three-member Senate Wheelchair Caucus, and S-216.",
+                        "excerpt": "Behind-the-scenes look at Katie's primary upset over the DSCC, Uncle Richard defending her on Beacon News, backing Chris Van Deren's 29\u201326 upset over Leader Charles Schuman, Defense Secretary Bret Halverson's premature 211\u2013204 impeachment escape, the three-member Senate Wheelchair Caucus, and S-216.",
                         "image": "/raggiesoft-backstage/images/scenes/katie-nate-us-senate-corridor.jpg",
                         "url": "https://backstage.raggiesoft.com/books/katie/dscc-holloway-primary-and-senate-wheelchair-caucus/",
                         "arc_url": "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate/part-4-opposing-leader-schuman-the-211-204-lame-duck-false-dawn-in-the-dirksen-basement-home-across-the-fenwick-bridge?arc=katie-political-career",
-                        "word_count": 1728,
-                        "reading_minutes": 7
+                        "word_count": 1786,
+                        "reading_minutes": 8
                     },
                     {
                         "stop_num": 26,
@@ -1180,8 +1256,8 @@
                         "image": "/raggiesoft-books/images/scenes/katie/b006/mar_2027_capitol_succession_flowchart_katie_nate_morales.jpg",
                         "url": "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-suite-756-at-timberline-shopping-center-three-convictions-in-the-senate/part-1-the-south-lawn-tirade-the-norfolk-carrier-leak-why-the-order-of-the-trials-matters",
                         "arc_url": "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-suite-756-at-timberline-shopping-center-three-convictions-in-the-senate/part-1-the-south-lawn-tirade-the-norfolk-carrier-leak-why-the-order-of-the-trials-matters?arc=katie-political-career",
-                        "word_count": 2735,
-                        "reading_minutes": 11
+                        "word_count": 2788,
+                        "reading_minutes": 12
                     },
                     {
                         "stop_num": 29,
@@ -1199,7 +1275,7 @@
                         "image": "/raggiesoft-books/images/scenes/katie/b006/apr_2027_us_senate_impeachment_guilty_vote_katie_nate_david.jpg",
                         "url": "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-suite-756-at-timberline-shopping-center-three-convictions-in-the-senate/part-3-the-words-of-mason-madison-and-lincoln-three-guilty-votes-from-capitol-police-protection-back-to-normal-life-at-pleasure-house-road",
                         "arc_url": "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-suite-756-at-timberline-shopping-center-three-convictions-in-the-senate/part-3-the-words-of-mason-madison-and-lincoln-three-guilty-votes-from-capitol-police-protection-back-to-normal-life-at-pleasure-house-road?arc=katie-political-career",
-                        "word_count": 6046,
+                        "word_count": 6048,
                         "reading_minutes": 25
                     },
                     {
@@ -1227,6 +1303,44 @@
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
                         "file_path": "e011/c007/p001.md",
+                        "title": "Part 1: Form SSA-4178 on Camera, Scrapping the Social Security Cap, & Taxing Billionaires and Windfall Profits",
+                        "subtitle": "The Supported Companions, Waiver Portability, & Social Security Solvency Act \u2022 The Senator from Virginia",
+                        "era_title": "The Senator from Virginia",
+                        "chap_title": "The Supported Companions, Waiver Portability, & Social Security Solvency Act",
+                        "date": "2028-05-11",
+                        "location": "Washington, D.C. (Room 124 of the Dirksen Senate Office Building)",
+                        "excerpt": "Holding up federal Form SSA-4178 in Dirksen Room 124, Senator Katie Prairie unveils landmark disability marriage equality, waiver portability, and billionaire tax reform.",
+                        "image": "/raggiesoft-books/images/scenes/katie/b006/jun_2028_restored_rose_garden_supported_companions_signing.jpg",
+                        "url": "/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act/part-1-form-ssa-4178-on-camera-scrapping-the-social-security-cap-taxing-billionaires-and-windfall-profits",
+                        "arc_url": "/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act/part-1-form-ssa-4178-on-camera-scrapping-the-social-security-cap-taxing-billionaires-and-windfall-profits?arc=katie-political-career",
+                        "word_count": 1798,
+                        "reading_minutes": 8
+                    },
+                    {
+                        "stop_num": 32,
+                        "kind": "part",
+                        "series_slug": "katie",
+                        "series_title": "Katie & Nathaniel",
+                        "file_path": "e011/c007/p002.md",
+                        "title": "Part 2: Dad's 1994 Crew Cab Pickup, First-Time Guests at the White House, & Signing Law Number One in the Restored Rose Garden",
+                        "subtitle": "The Supported Companions, Waiver Portability, & Social Security Solvency Act \u2022 The Senator from Virginia",
+                        "era_title": "The Senator from Virginia",
+                        "chap_title": "The Supported Companions, Waiver Portability, & Social Security Solvency Act",
+                        "date": "2028-06-20",
+                        "location": "Alexandria, VA & Washington, D.C. (Sunset Drive, Capital Transit Yellow Line, & The Restored White House Rose Garden)",
+                        "excerpt": "After passing the Senate 57-43, Chelsea, Brittany, and Heather's entire family visit the White House for the first time as President Morales signs Katie's landmark law in the restored Rose Garden.",
+                        "image": "/raggiesoft-books/images/scenes/katie/b006/jun_2028_restored_rose_garden_supported_companions_signing.jpg",
+                        "url": "/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act/part-2-dad-s-1994-crew-cab-pickup-first-time-guests-at-the-white-house-signing-law-number-one-in-the-restored-rose-garden",
+                        "arc_url": "/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act/part-2-dad-s-1994-crew-cab-pickup-first-time-guests-at-the-white-house-signing-law-number-one-in-the-restored-rose-garden?arc=katie-political-career",
+                        "word_count": 1833,
+                        "reading_minutes": 8
+                    },
+                    {
+                        "stop_num": 33,
+                        "kind": "part",
+                        "series_slug": "katie",
+                        "series_title": "Katie & Nathaniel",
+                        "file_path": "e011/c008/p001.md",
                         "title": "Part 1: Refusing the 2045 Presidency From Home, Five Statutory Shields Against the Bubble, & Out of the Closet Into Our Four-Person Nest",
                         "subtitle": "Three Senate Terms, Refusing the 2044 Nomination, & The Stop #0812 Four-Seat Presidential Endorsement Loop \u2022 The Senator from Virginia",
                         "era_title": "The Senator from Virginia",
@@ -1241,11 +1355,11 @@
                         "reading_minutes": 15
                     },
                     {
-                        "stop_num": 32,
+                        "stop_num": 34,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
-                        "file_path": "e011/c007/p002.md",
+                        "file_path": "e011/c008/p002.md",
                         "title": "Part 2: The Biggest Prize in the Primary: Sam, Mandy, & Sarah's Bus-Loop Plan & Stop #0812",
                         "subtitle": "Three Senate Terms, Refusing the 2044 Nomination, & The Stop #0812 Four-Seat Presidential Endorsement Loop \u2022 The Senator from Virginia",
                         "era_title": "The Senator from Virginia",
@@ -1260,11 +1374,11 @@
                         "reading_minutes": 11
                     },
                     {
-                        "stop_num": 33,
+                        "stop_num": 35,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
-                        "file_path": "e011/c007/p003.md",
+                        "file_path": "e011/c008/p003.md",
                         "title": "Part 3: The First Tuesday on the Loop: Governor Harrison Caldwell on Routes 15, 800, 25, & 12",
                         "subtitle": "Three Senate Terms, Refusing the 2044 Nomination, & The Stop #0812 Four-Seat Presidential Endorsement Loop \u2022 The Senator from Virginia",
                         "era_title": "The Senator from Virginia",
@@ -1279,11 +1393,11 @@
                         "reading_minutes": 8
                     },
                     {
-                        "stop_num": 34,
+                        "stop_num": 36,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
-                        "file_path": "e011/c007/p004.md",
+                        "file_path": "e011/c008/p004.md",
                         "title": "Part 4: The Second Tuesday on the Loop: Representative Devon Pierce on Routes 15, 800, 25, & 12",
                         "subtitle": "Three Senate Terms, Refusing the 2044 Nomination, & The Stop #0812 Four-Seat Presidential Endorsement Loop \u2022 The Senator from Virginia",
                         "era_title": "The Senator from Virginia",
@@ -1298,11 +1412,11 @@
                         "reading_minutes": 10
                     },
                     {
-                        "stop_num": 35,
+                        "stop_num": 37,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
-                        "file_path": "e011/c007/p005.md",
+                        "file_path": "e011/c008/p005.md",
                         "title": "Part 5: The Thursday Morning Loop: Governor Elena Delgado & The Six O'Clock Upload",
                         "subtitle": "Three Senate Terms, Refusing the 2044 Nomination, & The Stop #0812 Four-Seat Presidential Endorsement Loop \u2022 The Senator from Virginia",
                         "era_title": "The Senator from Virginia",
@@ -1317,7 +1431,7 @@
                         "reading_minutes": 13
                     },
                     {
-                        "stop_num": 36,
+                        "stop_num": 38,
                         "kind": "backstage",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -1637,7 +1751,7 @@
                 "part_count": 10,
                 "backstage_count": 6,
                 "stop_count": 16,
-                "word_count": 47434,
+                "word_count": 47451,
                 "reading_minutes": 190,
                 "reading_hours": 3.2,
                 "stops": [
@@ -1847,7 +1961,7 @@
                         "image": "/raggiesoft-books/images/scenes/katie/b006/jan_2027_dirksen_room_511_natalie_mother_phone_call_katie_nate.jpg",
                         "url": "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc/part-4-the-constituent-line-in-room-511-is-nathaniel-still-with-you-what-really-happened-to-natalie",
                         "arc_url": "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc/part-4-the-constituent-line-in-room-511-is-nathaniel-still-with-you-what-really-happened-to-natalie?arc=fishersville-twelve-days-and-twenty-years",
-                        "word_count": 4682,
+                        "word_count": 4699,
                         "reading_minutes": 19
                     },
                     {
@@ -3023,40 +3137,58 @@
         "theme": "raggiesoft-books",
         "filePath": "e011/c006/p001.md"
     },
+    "/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Supported Companions, Waiver Portability, & Social Security Solvency Act",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|10|6"
+    },
+    "/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act/part-1-form-ssa-4178-on-camera-scrapping-the-social-security-cap-taxing-billionaires-and-windfall-profits": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Form SSA-4178 on Camera, Scrapping the Social Security Cap, & Taxing Billionaires and Windfall Profits",
+        "theme": "raggiesoft-books",
+        "filePath": "e011/c007/p001.md"
+    },
+    "/katie/the-senator-from-virginia/the-supported-companions-waiver-portability-social-security-solvency-act/part-2-dad-s-1994-crew-cab-pickup-first-time-guests-at-the-white-house-signing-law-number-one-in-the-restored-rose-garden": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Dad's 1994 Crew Cab Pickup, First-Time Guests at the White House, & Signing Law Number One in the Restored Rose Garden",
+        "theme": "raggiesoft-books",
+        "filePath": "e011/c007/p002.md"
+    },
     "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Three Senate Terms, Refusing the 2044 Nomination, & The Stop #0812 Four-Seat Presidential Endorsement Loop",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|10|6"
+        "filePath": "__CHAP_TOC__|10|7"
     },
     "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-1-refusing-the-2045-presidency-from-home-five-statutory-shields-against-the-bubble-out-of-the-closet-into-our-four-person-nest": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Refusing the 2045 Presidency From Home, Five Statutory Shields Against the Bubble, & Out of the Closet Into Our Four-Person Nest",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c007/p001.md"
+        "filePath": "e011/c008/p001.md"
     },
     "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-2-the-biggest-prize-in-the-primary-sam-mandy-sarah-s-bus-loop-plan-stop-0812": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Biggest Prize in the Primary: Sam, Mandy, & Sarah's Bus-Loop Plan & Stop #0812",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c007/p002.md"
+        "filePath": "e011/c008/p002.md"
     },
     "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-3-the-first-tuesday-on-the-loop-governor-harrison-caldwell-on-routes-15-800-25-12": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The First Tuesday on the Loop: Governor Harrison Caldwell on Routes 15, 800, 25, & 12",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c007/p003.md"
+        "filePath": "e011/c008/p003.md"
     },
     "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-4-the-second-tuesday-on-the-loop-representative-devon-pierce-on-routes-15-800-25-12": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Second Tuesday on the Loop: Representative Devon Pierce on Routes 15, 800, 25, & 12",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c007/p004.md"
+        "filePath": "e011/c008/p004.md"
     },
     "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-5-the-thursday-morning-loop-governor-elena-delgado-the-six-o-clock-upload": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: The Thursday Morning Loop: Governor Elena Delgado & The Six O'Clock Upload",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c007/p005.md"
+        "filePath": "e011/c008/p005.md"
     }
 }
