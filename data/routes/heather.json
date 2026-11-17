@@ -21,7 +21,7 @@
             "pdf_bytes": 786749,
             "text_epub_bytes": 15388,
             "text_pdf_bytes": 47154,
-            "package_7z_bytes": 13889
+            "package_7z_bytes": 13892
         },
         "illustration_count": 2,
         "word_stats": {
@@ -57,7 +57,7 @@
                 "part_count": 2,
                 "backstage_count": 6,
                 "stop_count": 8,
-                "word_count": 12818,
+                "word_count": 12949,
                 "reading_minutes": 52,
                 "reading_hours": 0.9,
                 "stops": [
@@ -134,8 +134,8 @@
                         "image": "/raggiesoft-backstage/images/scenes/katie-room-204-unhandled-exception.jpg",
                         "url": "https://backstage.raggiesoft.com/books/katie/room-204-unhandled-exception-and-tylers-cousin-lie/",
                         "arc_url": "/heather/scales-tails-and-safe-people/saturday-pretzel-day-the-empty-shelf-the-boy-without-a-phone-bridge/part-2-two-taps-on-the-glass-every-saturday-five-months-of-frozen-pride?arc=scales-tails-and-safe-people",
-                        "word_count": 2947,
-                        "reading_minutes": 12
+                        "word_count": 3078,
+                        "reading_minutes": 13
                     },
                     {
                         "stop_num": 5,
