@@ -15,23 +15,23 @@
             "epub": "717 KB",
             "pdf": "768 KB",
             "text_epub": "15 KB",
-            "text_pdf": "45 KB",
-            "package_7z": "13 KB",
-            "epub_bytes": 734111,
-            "pdf_bytes": 786092,
-            "text_epub_bytes": 15096,
-            "text_pdf_bytes": 46448,
-            "package_7z_bytes": 13625
+            "text_pdf": "46 KB",
+            "package_7z": "14 KB",
+            "epub_bytes": 734406,
+            "pdf_bytes": 786749,
+            "text_epub_bytes": 15388,
+            "text_pdf_bytes": 47154,
+            "package_7z_bytes": 13889
         },
         "illustration_count": 2,
         "word_stats": {
-            "story_word_count": 3368,
-            "lore_word_count": 9641,
-            "combined_word_count": 13009,
-            "story_page_count": 12,
-            "combined_page_count": 47,
+            "story_word_count": 3489,
+            "lore_word_count": 9676,
+            "combined_word_count": 13165,
+            "story_page_count": 13,
+            "combined_page_count": 48,
             "reading_hours": 0.2,
-            "reading_minutes": 13,
+            "reading_minutes": 14,
             "novel_equivalent": 0.04,
             "scale_category": "Short Fiction & Novelette",
             "scale_badge": "Short Fiction",
@@ -57,9 +57,9 @@
                 "part_count": 2,
                 "backstage_count": 6,
                 "stop_count": 8,
-                "word_count": 12516,
-                "reading_minutes": 51,
-                "reading_hours": 0.8,
+                "word_count": 12818,
+                "reading_minutes": 52,
+                "reading_hours": 0.9,
                 "stops": [
                     {
                         "stop_num": 1,
@@ -115,8 +115,8 @@
                         "image": "/raggiesoft-books/images/scenes/heather/e001/jan_2003_chesapeake_living_room_wesley_photo_blowout_heather.jpg",
                         "url": "/heather/scales-tails-and-safe-people/saturday-pretzel-day-the-empty-shelf-the-boy-without-a-phone-bridge/part-2-two-taps-on-the-glass-every-saturday-five-months-of-frozen-pride",
                         "arc_url": "/heather/scales-tails-and-safe-people/saturday-pretzel-day-the-empty-shelf-the-boy-without-a-phone-bridge/part-2-two-taps-on-the-glass-every-saturday-five-months-of-frozen-pride?arc=scales-tails-and-safe-people",
-                        "word_count": 1143,
-                        "reading_minutes": 5
+                        "word_count": 1264,
+                        "reading_minutes": 6
                     },
                     {
                         "stop_num": 4,
@@ -134,7 +134,7 @@
                         "image": "/raggiesoft-backstage/images/scenes/katie-room-204-unhandled-exception.jpg",
                         "url": "https://backstage.raggiesoft.com/books/katie/room-204-unhandled-exception-and-tylers-cousin-lie/",
                         "arc_url": "/heather/scales-tails-and-safe-people/saturday-pretzel-day-the-empty-shelf-the-boy-without-a-phone-bridge/part-2-two-taps-on-the-glass-every-saturday-five-months-of-frozen-pride?arc=scales-tails-and-safe-people",
-                        "word_count": 2766,
+                        "word_count": 2947,
                         "reading_minutes": 12
                     },
                     {
