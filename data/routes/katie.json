@@ -17,17 +17,17 @@
             "text_epub": "788 KB",
             "text_pdf": "2.1 MB",
             "package_7z": "595 KB",
-            "epub_bytes": 72412935,
-            "pdf_bytes": 70126007,
-            "text_epub_bytes": 806814,
-            "text_pdf_bytes": 2200815,
-            "package_7z_bytes": 609504
+            "epub_bytes": 72407090,
+            "pdf_bytes": 70157733,
+            "text_epub_bytes": 806745,
+            "text_pdf_bytes": 2200611,
+            "package_7z_bytes": 609539
         },
         "illustration_count": 154,
         "word_stats": {
-            "story_word_count": 330909,
+            "story_word_count": 330897,
             "lore_word_count": 108454,
-            "combined_word_count": 439363,
+            "combined_word_count": 439351,
             "story_page_count": 1203,
             "combined_page_count": 1598,
             "reading_hours": 22.1,
@@ -57,7 +57,7 @@
                 "part_count": 30,
                 "backstage_count": 7,
                 "stop_count": 37,
-                "word_count": 73970,
+                "word_count": 73958,
                 "reading_minutes": 296,
                 "reading_hours": 4.9,
                 "stops": [
@@ -742,7 +742,7 @@
                         "image": "/raggiesoft-books/images/scenes/katie/b006/apr_2032_arvin_road_brittany_1991_truck_streamtube_wheelchair_garage.jpg",
                         "url": "/katie/the-senator-from-virginia/the-supported-companions-act-three-mirrored-in-law-suites-brittany-s-1991-crew-cab/part-4-passing-the-torch-for-chelsea-four-gears-uncle-david-taught-her-brittany-s-truck-videos-on-streamtube-and-the-grid",
                         "arc_url": "/katie/the-senator-from-virginia/the-supported-companions-act-three-mirrored-in-law-suites-brittany-s-1991-crew-cab/part-4-passing-the-torch-for-chelsea-four-gears-uncle-david-taught-her-brittany-s-truck-videos-on-streamtube-and-the-grid?arc=heather-wesley-and-north-lion",
-                        "word_count": 1960,
+                        "word_count": 1948,
                         "reading_minutes": 8
                     },
                     {
@@ -1579,7 +1579,7 @@
                 "part_count": 14,
                 "backstage_count": 2,
                 "stop_count": 16,
-                "word_count": 40934,
+                "word_count": 40922,
                 "reading_minutes": 164,
                 "reading_hours": 2.7,
                 "stops": [
@@ -1884,7 +1884,7 @@
                         "image": "/raggiesoft-books/images/scenes/katie/b006/apr_2032_arvin_road_brittany_1991_truck_streamtube_wheelchair_garage.jpg",
                         "url": "/katie/the-senator-from-virginia/the-supported-companions-act-three-mirrored-in-law-suites-brittany-s-1991-crew-cab/part-4-passing-the-torch-for-chelsea-four-gears-uncle-david-taught-her-brittany-s-truck-videos-on-streamtube-and-the-grid",
                         "arc_url": "/katie/the-senator-from-virginia/the-supported-companions-act-three-mirrored-in-law-suites-brittany-s-1991-crew-cab/part-4-passing-the-torch-for-chelsea-four-gears-uncle-david-taught-her-brittany-s-truck-videos-on-streamtube-and-the-grid?arc=brittany-chelsea-and-the-four-person-sanctuary",
-                        "word_count": 1960,
+                        "word_count": 1948,
                         "reading_minutes": 8
                     }
                 ]
