@@ -920,7 +920,7 @@ require_once $basePath . '/includes/components/headers/header.php';
 
 // Inject Stardust-specific styling and logic scripts with deterministic cache-busting version
 echo '<link rel="stylesheet" href="' . $cdnBaseUrl . '/raggiesoft-books/css/reader.css?v=20261118a">';
-echo '<script src="' . $cdnBaseUrl . '/raggiesoft-books/js/reader.js?v=20261117b" defer></script>';
+echo '<script src="' . $cdnBaseUrl . '/raggiesoft-books/js/reader.js?v=20261118c" defer></script>';
 
 // Open the primary application boundary
 echo '<div id="stardust-main-wrapper">';

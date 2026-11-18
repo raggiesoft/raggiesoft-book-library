@@ -1738,11 +1738,13 @@ $oliverBookSeriesSchema = [
                                 
                                 <!-- Custom HTML5 Audio Player UI -->
                                 <div class="reader-audio-controls-row" style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
+                                    <!-- Invisible HTML5 Audio Engine (matching The Listening Room: no `display: none` or idle metadata probe for Safari WebKit PWA parity) -->
                                     <audio id="narrative-audio-element"
                                            data-title="<?php echo htmlspecialchars($audioTitleDisplay); ?>"
                                            data-artist="<?php echo htmlspecialchars($artistDisplay); ?>"
                                            data-album="<?php echo htmlspecialchars($albumDisplay); ?>"
                                            data-artwork="<?php echo htmlspecialchars($albumArtUrl); ?>"
+                                           data-duration="<?php echo htmlspecialchars((string)($firstTrack['duration'] ?? '')); ?>"
                                            data-listening-room-track-url="<?php echo htmlspecialchars($listeningRoomTrackUrl); ?>"
                                            data-listening-room-album-url="<?php echo htmlspecialchars($listeningRoomAlbumUrl); ?>"
                                            data-queue-mode="<?php echo htmlspecialchars($queueMode); ?>"
@@ -1754,8 +1756,7 @@ $oliverBookSeriesSchema = [
                                            src="<?php echo htmlspecialchars($audioUrl); ?>"
                                            data-start-time="<?php echo $audioStart; ?>"
                                            <?php if ($queueCount === 1): ?>loop<?php endif; ?>
-                                           preload="metadata"
-                                           style="display: none;"></audio>
+                                           preload="none"></audio>
                                     
                                     <?php if ($queueCount > 1): ?>
                                     <button type="button" id="narrative-audio-prev" class="rs-btn" style="border-radius: 50%; width: 34px; height: 34px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 1px solid var(--rs-border); background: transparent;" aria-label="Previous Track" title="Previous Track">
@@ -1776,7 +1777,7 @@ $oliverBookSeriesSchema = [
                                     <div class="reader-audio-scrubber-container" style="flex: 1; min-width: 140px;">
                                         <span id="narrative-audio-current">0:00</span>
                                         <input type="range" id="narrative-audio-scrubber" value="0" min="0" step="1" aria-label="Seek background audio timeline">
-                                        <span id="narrative-audio-duration">0:00</span>
+                                        <span id="narrative-audio-duration"><?php echo !empty($firstTrack['duration']) ? htmlspecialchars((string)$firstTrack['duration']) : '0:00'; ?></span>
                                     </div>
                                     
                                     <button type="button" id="narrative-audio-loop-toggle" class="rs-btn" style="border-radius: 50%; width: 36px; height: 36px; padding: 0; display: flex; align-items: center; justify-content: center; flex-shrink: 0; border: 2px solid var(--rs-primary); color: var(--rs-primary); background: rgba(0,0,0,0.05);" aria-label="<?php echo $queueCount > 1 ? 'Toggle Repeat: All Tracks' : 'Toggle Repeat: ON'; ?>" title="<?php echo $queueCount > 1 ? 'Repeat All Tracks: ON' : 'Repeat 1 Track: ON'; ?>">

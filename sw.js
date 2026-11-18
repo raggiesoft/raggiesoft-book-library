@@ -18,10 +18,10 @@
  *            the user always gets the latest story updates. If offline, it falls back to previously cached versions.
  */
 
-// Cache partition identifiers
-const CACHE_NAME = 'ova-cache-v19';
-const DYNAMIC_CACHE = 'ova-dynamic-v19';
-const IMAGE_CACHE = 'ova-images-v19';
+// Cache partition identifiers (incremented to v20 to purge cached partial-range audio entries)
+const CACHE_NAME = 'ova-cache-v20';
+const DYNAMIC_CACHE = 'ova-dynamic-v20';
+const IMAGE_CACHE = 'ova-images-v20';
 
 // Minimum required assets to render the offline application shell
 // Note: /manifest.json is intentionally excluded from PRECACHE_ASSETS and bypassed in fetch
@@ -93,6 +93,20 @@ self.addEventListener('fetch', event => {
         return;
     }
 
+    // Audio/video stream, HTTP 206 Partial Content Range, & large binary archive bypass:
+    // Safari/WebKit CoreMedia (especially inside macOS/iOS standalone PWAs) strictly mandates
+    // native HTTP 206 byte-range streaming (`Range: bytes=0-1` -> `206 Partial Content`) and
+    // refuses to play if a Service Worker caches an initial range probe or intercepts CDN audio
+    // streams (matching The Listening Room's `sw.js` audio stream bypass).
+    if (
+        event.request.destination === 'audio' ||
+        event.request.destination === 'video' ||
+        event.request.headers.has('range') ||
+        /\.(mp3|wav|ogg|flac|m4a|aac|mp4|webm|epub|pdf|7z|zip)$/i.test(url.pathname)
+    ) {
+        return;
+    }
+
     // 1. Cache First Strategy for Static Resources (Images, Fonts, Scripts, Styles)
     if (url.hostname.includes('assets.raggiesoft.com') || url.hostname.includes('fonts.googleapis.com') || url.hostname.includes('fonts.gstatic.com') || event.request.destination === 'image' || event.request.destination === 'style' || event.request.destination === 'script') {
         event.respondWith(
@@ -103,12 +117,14 @@ self.addEventListener('fetch', event => {
                 }
                 // Otherwise fetch from network
                 return fetch(event.request).then(response => {
-                    // Segregate heavy images into their own cache bin
-                    const cacheName = event.request.destination === 'image' ? IMAGE_CACHE : DYNAMIC_CACHE;
-                    const responseClone = response.clone();
-                    caches.open(cacheName).then(cache => {
-                        cache.put(event.request, responseClone);
-                    });
+                    // Only cache complete 200 OK or valid opaque static asset responses (never 206 Partial Content or errors)
+                    if (response && response.status !== 206 && (response.status === 200 || response.type === 'opaque')) {
+                        const cacheName = event.request.destination === 'image' ? IMAGE_CACHE : DYNAMIC_CACHE;
+                        const responseClone = response.clone();
+                        caches.open(cacheName).then(cache => {
+                            cache.put(event.request, responseClone);
+                        });
+                    }
                     return response;
                 }).catch(() => {
                     // Ignore network failure for assets (will simply fail to load the image/font)
