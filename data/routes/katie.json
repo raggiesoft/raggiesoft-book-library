@@ -14,31 +14,31 @@
         "ebook_sizes": {
             "epub": "72.5 MB",
             "pdf": "71.8 MB",
-            "text_epub": "839 KB",
+            "text_epub": "840 KB",
             "text_pdf": "2.2 MB",
-            "package_7z": "638 KB",
-            "epub_bytes": 76012767,
-            "pdf_bytes": 75307035,
-            "text_epub_bytes": 858897,
-            "text_pdf_bytes": 2328099,
-            "package_7z_bytes": 652852
+            "package_7z": "639 KB",
+            "epub_bytes": 76014202,
+            "pdf_bytes": 75310723,
+            "text_epub_bytes": 860334,
+            "text_pdf_bytes": 2332053,
+            "package_7z_bytes": 653851
         },
         "illustration_count": 159,
         "word_stats": {
-            "story_word_count": 348498,
+            "story_word_count": 348981,
             "lore_word_count": 115994,
-            "combined_word_count": 464492,
-            "story_page_count": 1267,
-            "combined_page_count": 1689,
-            "reading_hours": 23.2,
-            "reading_minutes": 1394,
+            "combined_word_count": 464975,
+            "story_page_count": 1269,
+            "combined_page_count": 1691,
+            "reading_hours": 23.3,
+            "reading_minutes": 1396,
             "novel_equivalent": 3.9,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
             "benchmark_note": "3.9\u00d7 a standard 90,000-word contemporary novel (~4-volume print series)",
             "era_count": 11,
             "chapter_count": 51,
-            "part_count": 141,
+            "part_count": 142,
             "illustration_count": 159,
             "story_arc_count": 4
         },
@@ -2420,13 +2420,13 @@
                         "label": "Accept Heather's Apology & Welcome Her Back",
                         "subtitle": "Forgive Heather under the Pavilion colonnade, stay in Virginia on in-state domicile, tour nine Virginia campuses together for Wesley, marry Heather, and rescue both Brittany and Chelsea.",
                         "entry_part": "paths/accept-heather-virginia/e005/c001/p001.md",
-                        "entry_url": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/saying-yes-under-the-crape-myrtles-the-four-person-household/two-squeezes-wesley-s-cheer-where-one-pair-goes-both-pairs-go",
+                        "entry_url": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/saying-yes-under-the-crape-myrtles-the-four-person-household/two-squeezes-wesley-s-cheer-virginia-domicile-planning-wesley-s-summer-college-tour",
                         "required_choices": {
                             "pavilion-apology-2003": "accept-heather-virginia"
                         },
-                        "part_count": 7,
-                        "word_count": 10725,
-                        "reading_minutes": 43,
+                        "part_count": 8,
+                        "word_count": 11208,
+                        "reading_minutes": 45,
                         "image": "/raggiesoft-books/images/scenes/katie/b004/jun_2003_pavilion_accepted_apology_wesley_cheering_hug.jpg"
                     },
                     {
@@ -2884,13 +2884,13 @@
                     "label": "Accept Heather's Apology & Welcome Her Back",
                     "subtitle": "Forgive Heather under the Pavilion colonnade, stay in Virginia on in-state domicile, tour nine Virginia campuses together for Wesley, marry Heather, and rescue both Brittany and Chelsea.",
                     "entry_part": "paths/accept-heather-virginia/e005/c001/p001.md",
-                    "entry_url": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/saying-yes-under-the-crape-myrtles-the-four-person-household/two-squeezes-wesley-s-cheer-where-one-pair-goes-both-pairs-go",
+                    "entry_url": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/saying-yes-under-the-crape-myrtles-the-four-person-household/two-squeezes-wesley-s-cheer-virginia-domicile-planning-wesley-s-summer-college-tour",
                     "required_choices": {
                         "pavilion-apology-2003": "accept-heather-virginia"
                     },
-                    "part_count": 7,
-                    "word_count": 10725,
-                    "reading_minutes": 43,
+                    "part_count": 8,
+                    "word_count": 11208,
+                    "reading_minutes": 45,
                     "image": "/raggiesoft-books/images/scenes/katie/b004/jun_2003_pavilion_accepted_apology_wesley_cheering_hug.jpg"
                 },
                 {
@@ -4449,9 +4449,9 @@
         "pathId": "accept-heather-virginia",
         "crossroadsId": "pavilion-apology-2003"
     },
-    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/saying-yes-under-the-crape-myrtles-the-four-person-household/two-squeezes-wesley-s-cheer-where-one-pair-goes-both-pairs-go": {
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/saying-yes-under-the-crape-myrtles-the-four-person-household/two-squeezes-wesley-s-cheer-virginia-domicile-planning-wesley-s-summer-college-tour": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Two Squeezes, Wesley's Cheer, & Where One Pair Goes, Both Pairs Go",
+        "title": "Two Squeezes, Wesley's Cheer, Virginia Domicile, & Planning Wesley's Summer College Tour",
         "theme": "raggiesoft-books",
         "filePath": "paths/accept-heather-virginia/e005/c001/p001.md",
         "pathId": "accept-heather-virginia",
@@ -4460,17 +4460,17 @@
             "pavilion-apology-2003": "accept-heather-virginia"
         },
         "prevUrl": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-heather-s-apology",
-        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/nine-campuses-for-wesley-tidewater-northern-virginia-winchester-redmond-hall-cpi/part-1-stops-one-through-four-for-wesley-cchr-vdu-warwick-university-beside-112-nntc-charles-anne"
+        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/summer-2003-college-tour-for-rising-junior-wesley-meeting-family-in-minnesota-stopping-brandon-cold/part-1-stops-one-through-four-for-wesley-cchr-vdu-warwick-university-beside-112-nntc-charles-anne"
     },
-    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/nine-campuses-for-wesley-tidewater-northern-virginia-winchester-redmond-hall-cpi": {
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/summer-2003-college-tour-for-rising-junior-wesley-meeting-family-in-minnesota-stopping-brandon-cold": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Nine Campuses for Wesley: Tidewater, Northern Virginia, Winchester, Redmond Hall, & CPI",
+        "title": "Summer 2003 College Tour for Rising-Junior Wesley, Meeting Family in Minnesota, & Stopping Brandon Cold",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|accept-heather-virginia|0|1",
         "pathId": "accept-heather-virginia",
         "crossroadsId": "pavilion-apology-2003"
     },
-    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/nine-campuses-for-wesley-tidewater-northern-virginia-winchester-redmond-hall-cpi/part-1-stops-one-through-four-for-wesley-cchr-vdu-warwick-university-beside-112-nntc-charles-anne": {
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/summer-2003-college-tour-for-rising-junior-wesley-meeting-family-in-minnesota-stopping-brandon-cold/part-1-stops-one-through-four-for-wesley-cchr-vdu-warwick-university-beside-112-nntc-charles-anne": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Stops One Through Four for Wesley: CCHR, VDU, Warwick University Beside 112 NNTC, & Charles & Anne",
         "theme": "raggiesoft-books",
@@ -4480,10 +4480,10 @@
         "requiredChoices": {
             "pavilion-apology-2003": "accept-heather-virginia"
         },
-        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/saying-yes-under-the-crape-myrtles-the-four-person-household/two-squeezes-wesley-s-cheer-where-one-pair-goes-both-pairs-go",
-        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/nine-campuses-for-wesley-tidewater-northern-virginia-winchester-redmond-hall-cpi/part-2-stops-five-through-seven-west-broad-street-at-cvu-ring-roads-at-george-wythe-cutting-northern-valley-s-open-house-short"
+        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/saying-yes-under-the-crape-myrtles-the-four-person-household/two-squeezes-wesley-s-cheer-virginia-domicile-planning-wesley-s-summer-college-tour",
+        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/summer-2003-college-tour-for-rising-junior-wesley-meeting-family-in-minnesota-stopping-brandon-cold/part-2-stops-five-through-seven-west-broad-street-at-cvu-ring-roads-at-george-wythe-cutting-northern-valley-s-open-house-short"
     },
-    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/nine-campuses-for-wesley-tidewater-northern-virginia-winchester-redmond-hall-cpi/part-2-stops-five-through-seven-west-broad-street-at-cvu-ring-roads-at-george-wythe-cutting-northern-valley-s-open-house-short": {
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/summer-2003-college-tour-for-rising-junior-wesley-meeting-family-in-minnesota-stopping-brandon-cold/part-2-stops-five-through-seven-west-broad-street-at-cvu-ring-roads-at-george-wythe-cutting-northern-valley-s-open-house-short": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Stops Five Through Seven: West Broad Street at CVU, Ring Roads at George Wythe, & Cutting Northern Valley's Open House Short",
         "theme": "raggiesoft-books",
@@ -4493,10 +4493,10 @@
         "requiredChoices": {
             "pavilion-apology-2003": "accept-heather-virginia"
         },
-        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/nine-campuses-for-wesley-tidewater-northern-virginia-winchester-redmond-hall-cpi/part-1-stops-one-through-four-for-wesley-cchr-vdu-warwick-university-beside-112-nntc-charles-anne",
-        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/nine-campuses-for-wesley-tidewater-northern-virginia-winchester-redmond-hall-cpi/part-3-stops-eight-and-nine-stopping-short-outside-redmond-hall-at-rrc-loving-cpi-s-valley-despite-steep-battery-hills"
+        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/summer-2003-college-tour-for-rising-junior-wesley-meeting-family-in-minnesota-stopping-brandon-cold/part-1-stops-one-through-four-for-wesley-cchr-vdu-warwick-university-beside-112-nntc-charles-anne",
+        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/summer-2003-college-tour-for-rising-junior-wesley-meeting-family-in-minnesota-stopping-brandon-cold/part-3-stops-eight-and-nine-stopping-short-outside-redmond-hall-at-rrc-loving-cpi-s-valley-despite-steep-battery-hills"
     },
-    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/nine-campuses-for-wesley-tidewater-northern-virginia-winchester-redmond-hall-cpi/part-3-stops-eight-and-nine-stopping-short-outside-redmond-hall-at-rrc-loving-cpi-s-valley-despite-steep-battery-hills": {
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/summer-2003-college-tour-for-rising-junior-wesley-meeting-family-in-minnesota-stopping-brandon-cold/part-3-stops-eight-and-nine-stopping-short-outside-redmond-hall-at-rrc-loving-cpi-s-valley-despite-steep-battery-hills": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Stops Eight and Nine: Stopping Short Outside Redmond Hall at RRC & Loving CPI's Valley Despite Steep Battery Hills",
         "theme": "raggiesoft-books",
@@ -4506,7 +4506,20 @@
         "requiredChoices": {
             "pavilion-apology-2003": "accept-heather-virginia"
         },
-        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/nine-campuses-for-wesley-tidewater-northern-virginia-winchester-redmond-hall-cpi/part-2-stops-five-through-seven-west-broad-street-at-cvu-ring-roads-at-george-wythe-cutting-northern-valley-s-open-house-short",
+        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/summer-2003-college-tour-for-rising-junior-wesley-meeting-family-in-minnesota-stopping-brandon-cold/part-2-stops-five-through-seven-west-broad-street-at-cvu-ring-roads-at-george-wythe-cutting-northern-valley-s-open-house-short",
+        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/summer-2003-college-tour-for-rising-junior-wesley-meeting-family-in-minnesota-stopping-brandon-cold/part-4-stop-ten-in-minnesota-meeting-the-extended-family-touring-nssu-s-skyways-stopping-brandon-cold-back-home"
+    },
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/summer-2003-college-tour-for-rising-junior-wesley-meeting-family-in-minnesota-stopping-brandon-cold/part-4-stop-ten-in-minnesota-meeting-the-extended-family-touring-nssu-s-skyways-stopping-brandon-cold-back-home": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Stop Ten in Minnesota: Meeting the Extended Family, Touring NSSU's Skyways, & Stopping Brandon Cold Back Home",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/accept-heather-virginia/e005/c002/p004.md",
+        "pathId": "accept-heather-virginia",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "accept-heather-virginia"
+        },
+        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/summer-2003-college-tour-for-rising-junior-wesley-meeting-family-in-minnesota-stopping-brandon-cold/part-3-stops-eight-and-nine-stopping-short-outside-redmond-hall-at-rrc-loving-cpi-s-valley-despite-steep-battery-hills",
         "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/rescuing-both-cousins-learning-uncle-david-s-1991-truck-twelve-extra-years-together/part-1-three-alumni-at-the-sanctuary-doors-shelly-turtle-comes-home-to-kempsville"
     },
     "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/rescuing-both-cousins-learning-uncle-david-s-1991-truck-twelve-extra-years-together": {
@@ -4527,7 +4540,7 @@
         "requiredChoices": {
             "pavilion-apology-2003": "accept-heather-virginia"
         },
-        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/nine-campuses-for-wesley-tidewater-northern-virginia-winchester-redmond-hall-cpi/part-3-stops-eight-and-nine-stopping-short-outside-redmond-hall-at-rrc-loving-cpi-s-valley-despite-steep-battery-hills",
+        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/summer-2003-college-tour-for-rising-junior-wesley-meeting-family-in-minnesota-stopping-brandon-cold/part-4-stop-ten-in-minnesota-meeting-the-extended-family-touring-nssu-s-skyways-stopping-brandon-cold-back-home",
         "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/rescuing-both-cousins-learning-uncle-david-s-1991-truck-twelve-extra-years-together/part-2-now-you-re-learning-my-truck-l-1-2-3-r-in-an-empty-lot-three-manuals-on-the-tailgate"
     },
     "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/rescuing-both-cousins-learning-uncle-david-s-1991-truck-twelve-extra-years-together/part-2-now-you-re-learning-my-truck-l-1-2-3-r-in-an-empty-lot-three-manuals-on-the-tailgate": {
