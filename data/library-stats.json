@@ -1,21 +1,21 @@
 {
-    "generated_at": "2026-11-18T12:17:01+00:00",
+    "generated_at": "2026-11-18T13:02:18+00:00",
     "volume_count": 32,
     "active_story_volume_count": 29,
     "total_eras": 204,
     "total_chapters": 849,
-    "total_parts": 1496,
+    "total_parts": 1497,
     "total_illustrations": 423,
-    "total_story_words": 3493428,
-    "total_book_lore_words": 460668,
+    "total_story_words": 3495730,
+    "total_book_lore_words": 460867,
     "total_shared_universe_lore_words": 167859,
-    "total_curated_lore_words": 628527,
+    "total_curated_lore_words": 628726,
     "total_lyrics_words": 144028,
-    "total_combined_words": 4121955,
-    "total_combined_with_lyrics_words": 4265983,
-    "total_story_pages": 12703,
-    "total_combined_pages": 14989,
-    "total_reading_hours": 232.9,
+    "total_combined_words": 4124456,
+    "total_combined_with_lyrics_words": 4268484,
+    "total_story_pages": 12712,
+    "total_combined_pages": 14998,
+    "total_reading_hours": 233,
     "total_novel_equivalents": 38.8,
     "total_combined_novel_equivalents": 45.8,
     "shared_lore_breakdown": [
@@ -52,15 +52,15 @@
             "short_description": "A complex, multi-generational story tracking the life, challenges, and growth of Rachel and her brother Michael.",
             "ebook_sizes": {
                 "epub": "76.1 MB",
-                "pdf": "80.3 MB",
+                "pdf": "80.2 MB",
                 "text_epub": "1.1 MB",
                 "text_pdf": "3.1 MB",
                 "package_7z": "792 KB",
-                "epub_bytes": 79791564,
-                "pdf_bytes": 84152358,
-                "text_epub_bytes": 1167211,
+                "epub_bytes": 79790300,
+                "pdf_bytes": 84144743,
+                "text_epub_bytes": 1167209,
                 "text_pdf_bytes": 3253711,
-                "package_7z_bytes": 810598
+                "package_7z_bytes": 810602
             },
             "word_stats": {
                 "story_word_count": 498551,
@@ -92,11 +92,11 @@
                 "text_epub": "1006 KB",
                 "text_pdf": "3.7 MB",
                 "package_7z": "721 KB",
-                "epub_bytes": 69247267,
-                "pdf_bytes": 56110642,
-                "text_epub_bytes": 1030010,
-                "text_pdf_bytes": 3873509,
-                "package_7z_bytes": 738107
+                "epub_bytes": 69247160,
+                "pdf_bytes": 56108431,
+                "text_epub_bytes": 1030001,
+                "text_pdf_bytes": 3873520,
+                "package_7z_bytes": 738119
             },
             "word_stats": {
                 "story_word_count": 413615,
@@ -123,32 +123,32 @@
             "image": "/raggiesoft-books/images/covers/2x3/katie.jpg",
             "short_description": "From childhood cartoon passwords and square-closet sanctuaries in Virginia Beach to Coastal Virginia Transit buses, walking out of Roosevelt Rehabilitation Center after twelve days, and serving in the Virginia General Assembly and the United States Senate, autistic fraternal twins Katie and Nathaniel (\"Nate\") Prairie never leave each other behind.",
             "ebook_sizes": {
-                "epub": "70.8 MB",
-                "pdf": "70 MB",
-                "text_epub": "800 KB",
-                "text_pdf": "2.1 MB",
-                "package_7z": "625 KB",
-                "epub_bytes": 74287713,
-                "pdf_bytes": 73374693,
-                "text_epub_bytes": 819332,
-                "text_pdf_bytes": 2235041,
-                "package_7z_bytes": 640174
+                "epub": "72.5 MB",
+                "pdf": "71.8 MB",
+                "text_epub": "820 KB",
+                "text_pdf": "2.2 MB",
+                "package_7z": "629 KB",
+                "epub_bytes": 75993295,
+                "pdf_bytes": 75253610,
+                "text_epub_bytes": 839802,
+                "text_pdf_bytes": 2277150,
+                "package_7z_bytes": 644512
             },
             "word_stats": {
-                "story_word_count": 341381,
-                "lore_word_count": 115006,
-                "combined_word_count": 456387,
-                "story_page_count": 1241,
-                "combined_page_count": 1660,
-                "reading_hours": 22.8,
-                "reading_minutes": 1366,
+                "story_word_count": 343683,
+                "lore_word_count": 115205,
+                "combined_word_count": 458888,
+                "story_page_count": 1250,
+                "combined_page_count": 1669,
+                "reading_hours": 22.9,
+                "reading_minutes": 1375,
                 "novel_equivalent": 3.8,
                 "scale_category": "Multi-Volume Epic Omnibus",
                 "scale_badge": "Multi-Volume Omnibus",
                 "benchmark_note": "3.8× a standard 90,000-word contemporary novel (~4-volume print series)",
                 "era_count": 11,
                 "chapter_count": 51,
-                "part_count": 137,
+                "part_count": 138,
                 "illustration_count": 158,
                 "story_arc_count": 4
             }
@@ -168,7 +168,7 @@
                 "pdf_bytes": 12179754,
                 "text_epub_bytes": 795858,
                 "text_pdf_bytes": 2373092,
-                "package_7z_bytes": 569244
+                "package_7z_bytes": 569246
             },
             "word_stats": {
                 "story_word_count": 334891,
@@ -195,16 +195,16 @@
             "image": "/raggiesoft-books/images/covers/2x3/alex-chloe.jpg",
             "short_description": "A lifelong coming-of-age journey tracing the unbreakable platonic bond between Alex, his cousin Megan, and Chloé.",
             "ebook_sizes": {
-                "epub": "657 KB",
+                "epub": "656 KB",
                 "pdf": "1.7 MB",
-                "text_epub": "657 KB",
+                "text_epub": "656 KB",
                 "text_pdf": "1.7 MB",
-                "package_7z": "452 KB",
-                "epub_bytes": 673131,
-                "pdf_bytes": 1801709,
-                "text_epub_bytes": 673136,
-                "text_pdf_bytes": 1801709,
-                "package_7z_bytes": 463350
+                "package_7z": "453 KB",
+                "epub_bytes": 671893,
+                "pdf_bytes": 1800709,
+                "text_epub_bytes": 671893,
+                "text_pdf_bytes": 1800709,
+                "package_7z_bytes": 463364
             },
             "word_stats": {
                 "story_word_count": 275128,
@@ -240,7 +240,7 @@
                 "pdf_bytes": 1764104,
                 "text_epub_bytes": 608772,
                 "text_pdf_bytes": 1764104,
-                "package_7z_bytes": 426549
+                "package_7z_bytes": 426551
             },
             "word_stats": {
                 "story_word_count": 261029,
@@ -276,7 +276,7 @@
                 "pdf_bytes": 1475296,
                 "text_epub_bytes": 510178,
                 "text_pdf_bytes": 1475296,
-                "package_7z_bytes": 371765
+                "package_7z_bytes": 371766
             },
             "word_stats": {
                 "story_word_count": 214143,
@@ -308,11 +308,11 @@
                 "text_epub": "444 KB",
                 "text_pdf": "1.2 MB",
                 "package_7z": "320 KB",
-                "epub_bytes": 454748,
-                "pdf_bytes": 1272780,
-                "text_epub_bytes": 454748,
-                "text_pdf_bytes": 1272780,
-                "package_7z_bytes": 328022
+                "epub_bytes": 454225,
+                "pdf_bytes": 1272576,
+                "text_epub_bytes": 454226,
+                "text_pdf_bytes": 1272576,
+                "package_7z_bytes": 328029
             },
             "word_stats": {
                 "story_word_count": 186519,
@@ -348,7 +348,7 @@
                 "pdf_bytes": 5058155,
                 "text_epub_bytes": 407438,
                 "text_pdf_bytes": 1263033,
-                "package_7z_bytes": 304855
+                "package_7z_bytes": 304849
             },
             "word_stats": {
                 "story_word_count": 169175,
@@ -384,7 +384,7 @@
                 "pdf_bytes": 858237,
                 "text_epub_bytes": 301711,
                 "text_pdf_bytes": 858237,
-                "package_7z_bytes": 228986
+                "package_7z_bytes": 228984
             },
             "word_stats": {
                 "story_word_count": 132610,
@@ -420,7 +420,7 @@
                 "pdf_bytes": 663054,
                 "text_epub_bytes": 237599,
                 "text_pdf_bytes": 663054,
-                "package_7z_bytes": 172129
+                "package_7z_bytes": 172130
             },
             "word_stats": {
                 "story_word_count": 94109,
@@ -456,7 +456,7 @@
                 "pdf_bytes": 3367309,
                 "text_epub_bytes": 189671,
                 "text_pdf_bytes": 3367313,
-                "package_7z_bytes": 144960
+                "package_7z_bytes": 144963
             },
             "word_stats": {
                 "story_word_count": 81433,
@@ -492,7 +492,7 @@
                 "pdf_bytes": 482428,
                 "text_epub_bytes": 169681,
                 "text_pdf_bytes": 482428,
-                "package_7z_bytes": 126133
+                "package_7z_bytes": 126132
             },
             "word_stats": {
                 "story_word_count": 68046,
@@ -524,11 +524,11 @@
                 "text_epub": "185 KB",
                 "text_pdf": "561 KB",
                 "package_7z": "142 KB",
-                "epub_bytes": 17922538,
-                "pdf_bytes": 19691323,
-                "text_epub_bytes": 189100,
-                "text_pdf_bytes": 573976,
-                "package_7z_bytes": 144902
+                "epub_bytes": 17922403,
+                "pdf_bytes": 19689814,
+                "text_epub_bytes": 189098,
+                "text_pdf_bytes": 573989,
+                "package_7z_bytes": 144901
             },
             "word_stats": {
                 "story_word_count": 65118,
@@ -555,16 +555,16 @@
             "image": "/raggiesoft-books/images/covers/2x3/pebble-borrow.jpg",
             "short_description": "A tense, atmospheric thriller tracking a group of friends through a dangerous downpour along US Highway 11.",
             "ebook_sizes": {
-                "epub": "152 KB",
-                "pdf": "406 KB",
-                "text_epub": "152 KB",
-                "text_pdf": "406 KB",
+                "epub": "137 KB",
+                "pdf": "391 KB",
+                "text_epub": "137 KB",
+                "text_pdf": "391 KB",
                 "package_7z": "109 KB",
-                "epub_bytes": 155174,
-                "pdf_bytes": 415749,
-                "text_epub_bytes": 155170,
-                "text_pdf_bytes": 415749,
-                "package_7z_bytes": 112017
+                "epub_bytes": 140643,
+                "pdf_bytes": 400644,
+                "text_epub_bytes": 140639,
+                "text_pdf_bytes": 400644,
+                "package_7z_bytes": 112032
             },
             "word_stats": {
                 "story_word_count": 57383,
@@ -591,16 +591,16 @@
             "image": "/raggiesoft-books/images/covers/2x3/quantum-directive-1-jessica.jpg",
             "short_description": "A high-stakes corporate drama following Jessica Taylor as she shields her developer team in the late-90s boom.",
             "ebook_sizes": {
-                "epub": "86 KB",
+                "epub": "85 KB",
                 "pdf": "253 KB",
-                "text_epub": "86 KB",
+                "text_epub": "85 KB",
                 "text_pdf": "253 KB",
                 "package_7z": "69 KB",
-                "epub_bytes": 87848,
-                "pdf_bytes": 259351,
-                "text_epub_bytes": 87849,
-                "text_pdf_bytes": 259351,
-                "package_7z_bytes": 70806
+                "epub_bytes": 87130,
+                "pdf_bytes": 258845,
+                "text_epub_bytes": 87130,
+                "text_pdf_bytes": 258845,
+                "package_7z_bytes": 70793
             },
             "word_stats": {
                 "story_word_count": 34858,
@@ -636,7 +636,7 @@
                 "pdf_bytes": 235362,
                 "text_epub_bytes": 85613,
                 "text_pdf_bytes": 235362,
-                "package_7z_bytes": 63774
+                "package_7z_bytes": 63771
             },
             "word_stats": {
                 "story_word_count": 33772,
@@ -672,7 +672,7 @@
                 "pdf_bytes": 241676,
                 "text_epub_bytes": 84495,
                 "text_pdf_bytes": 241676,
-                "package_7z_bytes": 68219
+                "package_7z_bytes": 68216
             },
             "word_stats": {
                 "story_word_count": 32393,
@@ -704,11 +704,11 @@
                 "text_epub": "77 KB",
                 "text_pdf": "5.3 MB",
                 "package_7z": "60 KB",
-                "epub_bytes": 79116,
-                "pdf_bytes": 5514555,
-                "text_epub_bytes": 79111,
-                "text_pdf_bytes": 5514555,
-                "package_7z_bytes": 60971
+                "epub_bytes": 78489,
+                "pdf_bytes": 5514260,
+                "text_epub_bytes": 78490,
+                "text_pdf_bytes": 5514258,
+                "package_7z_bytes": 60974
             },
             "word_stats": {
                 "story_word_count": 29910,
@@ -744,7 +744,7 @@
                 "pdf_bytes": 2175257,
                 "text_epub_bytes": 85320,
                 "text_pdf_bytes": 277257,
-                "package_7z_bytes": 68630
+                "package_7z_bytes": 68624
             },
             "word_stats": {
                 "story_word_count": 28808,
@@ -780,7 +780,7 @@
                 "pdf_bytes": 206039,
                 "text_epub_bytes": 74019,
                 "text_pdf_bytes": 206039,
-                "package_7z_bytes": 57794
+                "package_7z_bytes": 57796
             },
             "word_stats": {
                 "story_word_count": 28751,
@@ -816,7 +816,7 @@
                 "pdf_bytes": 202768,
                 "text_epub_bytes": 70990,
                 "text_pdf_bytes": 202768,
-                "package_7z_bytes": 53988
+                "package_7z_bytes": 53993
             },
             "word_stats": {
                 "story_word_count": 26090,
@@ -848,10 +848,10 @@
                 "text_epub": "65 KB",
                 "text_pdf": "190 KB",
                 "package_7z": "49 KB",
-                "epub_bytes": 66663,
-                "pdf_bytes": 194536,
-                "text_epub_bytes": 66662,
-                "text_pdf_bytes": 194536,
+                "epub_bytes": 66149,
+                "pdf_bytes": 194380,
+                "text_epub_bytes": 66154,
+                "text_pdf_bytes": 194380,
                 "package_7z_bytes": 50609
             },
             "word_stats": {
@@ -888,7 +888,7 @@
                 "pdf_bytes": 21143357,
                 "text_epub_bytes": 55576,
                 "text_pdf_bytes": 168226,
-                "package_7z_bytes": 45144
+                "package_7z_bytes": 45153
             },
             "word_stats": {
                 "story_word_count": 20942,
@@ -924,7 +924,7 @@
                 "pdf_bytes": 121729,
                 "text_epub_bytes": 41112,
                 "text_pdf_bytes": 121729,
-                "package_7z_bytes": 32517
+                "package_7z_bytes": 32518
             },
             "word_stats": {
                 "story_word_count": 15245,
@@ -960,7 +960,7 @@
                 "pdf_bytes": 41824,
                 "text_epub_bytes": 14621,
                 "text_pdf_bytes": 41824,
-                "package_7z_bytes": 35550
+                "package_7z_bytes": 35548
             },
             "word_stats": {
                 "story_word_count": 14030,
@@ -1024,15 +1024,15 @@
             "short_description": "Scales, Tails, and Safe People — From a panicked seventeen-year-old mistake at Northwood High and her non-verbal cousin Wesley's heartbreak to raising disabled twins Jonas and Nora and building North Lion Scales & Tails in Maplewood, Minnesota.",
             "ebook_sizes": {
                 "epub": "717 KB",
-                "pdf": "768 KB",
+                "pdf": "767 KB",
                 "text_epub": "15 KB",
                 "text_pdf": "46 KB",
                 "package_7z": "14 KB",
-                "epub_bytes": 734406,
-                "pdf_bytes": 786749,
-                "text_epub_bytes": 15388,
+                "epub_bytes": 734388,
+                "pdf_bytes": 785811,
+                "text_epub_bytes": 15389,
                 "text_pdf_bytes": 47154,
-                "package_7z_bytes": 13893
+                "package_7z_bytes": 13892
             },
             "word_stats": {
                 "story_word_count": 3489,
@@ -1167,16 +1167,16 @@
             "image": "/raggiesoft-books/images/covers/2x3/fractured-prisms.jpg",
             "short_description": "A mind-bending thriller where protagonists piece together fragmented realities and shifting shards of truth.",
             "ebook_sizes": {
-                "epub": "8.6 KB",
-                "pdf": "16 KB",
-                "text_epub": "8.6 KB",
-                "text_pdf": "16 KB",
+                "epub": "5.3 KB",
+                "pdf": "3.7 KB",
+                "text_epub": "5.3 KB",
+                "text_pdf": "3.7 KB",
                 "package_7z": "2 KB",
-                "epub_bytes": 8786,
-                "pdf_bytes": 16540,
-                "text_epub_bytes": 8788,
-                "text_pdf_bytes": 16540,
-                "package_7z_bytes": 2027
+                "epub_bytes": 5426,
+                "pdf_bytes": 3759,
+                "text_epub_bytes": 5425,
+                "text_pdf_bytes": 3759,
+                "package_7z_bytes": 2031
             },
             "word_stats": {
                 "story_word_count": 0,

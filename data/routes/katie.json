@@ -14,31 +14,31 @@
         "ebook_sizes": {
             "epub": "72.5 MB",
             "pdf": "71.8 MB",
-            "text_epub": "820 KB",
+            "text_epub": "826 KB",
             "text_pdf": "2.2 MB",
-            "package_7z": "625 KB",
-            "epub_bytes": 75993295,
-            "pdf_bytes": 75253610,
-            "text_epub_bytes": 839802,
-            "text_pdf_bytes": 2277150,
-            "package_7z_bytes": 640174
+            "package_7z": "629 KB",
+            "epub_bytes": 75998845,
+            "pdf_bytes": 75269627,
+            "text_epub_bytes": 845330,
+            "text_pdf_bytes": 2292739,
+            "package_7z_bytes": 644512
         },
         "illustration_count": 158,
         "word_stats": {
-            "story_word_count": 341381,
-            "lore_word_count": 115006,
-            "combined_word_count": 456387,
-            "story_page_count": 1241,
-            "combined_page_count": 1660,
-            "reading_hours": 22.8,
-            "reading_minutes": 1366,
+            "story_word_count": 343683,
+            "lore_word_count": 115205,
+            "combined_word_count": 458888,
+            "story_page_count": 1250,
+            "combined_page_count": 1669,
+            "reading_hours": 22.9,
+            "reading_minutes": 1375,
             "novel_equivalent": 3.8,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
             "benchmark_note": "3.8\u00d7 a standard 90,000-word contemporary novel (~4-volume print series)",
             "era_count": 11,
             "chapter_count": 51,
-            "part_count": 137,
+            "part_count": 138,
             "illustration_count": 158,
             "story_arc_count": 4
         },
@@ -57,8 +57,8 @@
                 "part_count": 32,
                 "backstage_count": 8,
                 "stop_count": 40,
-                "word_count": 80920,
-                "reading_minutes": 324,
+                "word_count": 81119,
+                "reading_minutes": 325,
                 "reading_hours": 5.4,
                 "stops": [
                     {
@@ -267,8 +267,8 @@
                         "image": "/raggiesoft-backstage/images/scenes/what-if-warwick-university-route-112-nntc-wesley-tour.jpg",
                         "url": "https://backstage.raggiesoft.com/books/katie/what-if-virginia-domicile-unbroken-trust-and-both-rescues/",
                         "arc_url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-3-the-back-corner-of-room-204-a-song-in-my-head-stairway-a?arc=heather-wesley-and-north-lion",
-                        "word_count": 1616,
-                        "reading_minutes": 7
+                        "word_count": 1815,
+                        "reading_minutes": 8
                     },
                     {
                         "stop_num": 12,
@@ -2405,9 +2405,9 @@
                         "required_choices": {
                             "pavilion-apology-2003": "accept-heather-virginia"
                         },
-                        "part_count": 4,
-                        "word_count": 5175,
-                        "reading_minutes": 21,
+                        "part_count": 5,
+                        "word_count": 7477,
+                        "reading_minutes": 30,
                         "image": "/raggiesoft-books/images/scenes/katie/b004/jun_2003_pavilion_accepted_apology_wesley_cheering_hug.jpg"
                     },
                     {
@@ -2869,9 +2869,9 @@
                     "required_choices": {
                         "pavilion-apology-2003": "accept-heather-virginia"
                     },
-                    "part_count": 4,
-                    "word_count": 5175,
-                    "reading_minutes": 21,
+                    "part_count": 5,
+                    "word_count": 7477,
+                    "reading_minutes": 30,
                     "image": "/raggiesoft-books/images/scenes/katie/b004/jun_2003_pavilion_accepted_apology_wesley_cheering_hug.jpg"
                 },
                 {
@@ -4428,19 +4428,19 @@
             "pavilion-apology-2003": "accept-heather-virginia"
         },
         "prevUrl": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-heather-s-apology",
-        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/touring-cchr-vdu-and-warwick-university-as-a-team/three-campuses-on-one-legal-pad-route-112-nntc-at-the-shoe-lane-roundabout"
+        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/touring-cchr-vdu-warwick-university-saying-no-at-redmond-hall/part-1-touring-cchr-vdu-and-warwick-university-for-wesley-route-112-nntc-at-shoe-lane"
     },
-    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/touring-cchr-vdu-and-warwick-university-as-a-team": {
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/touring-cchr-vdu-warwick-university-saying-no-at-redmond-hall": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Touring CCHR, VDU, and Warwick University as a Team",
+        "title": "Touring CCHR, VDU, Warwick University, & Saying No at Redmond Hall",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|accept-heather-virginia|0|1",
         "pathId": "accept-heather-virginia",
         "crossroadsId": "pavilion-apology-2003"
     },
-    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/touring-cchr-vdu-and-warwick-university-as-a-team/three-campuses-on-one-legal-pad-route-112-nntc-at-the-shoe-lane-roundabout": {
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/touring-cchr-vdu-warwick-university-saying-no-at-redmond-hall/part-1-touring-cchr-vdu-and-warwick-university-for-wesley-route-112-nntc-at-shoe-lane": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Three Campuses on One Legal Pad & Route 112 NNTC at the Shoe Lane Roundabout",
+        "title": "Part 1: Touring CCHR, VDU, and Warwick University for Wesley & Route 112 NNTC at Shoe Lane",
         "theme": "raggiesoft-books",
         "filePath": "paths/accept-heather-virginia/e005/c002/p001.md",
         "pathId": "accept-heather-virginia",
@@ -4449,7 +4449,20 @@
             "pavilion-apology-2003": "accept-heather-virginia"
         },
         "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/saying-yes-under-the-crape-myrtles-the-four-person-household/two-squeezes-wesley-s-cheer-where-one-pair-goes-both-pairs-go",
-        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/house-bill-663-rescuing-both-cousins-twelve-extra-years-together/part-1-three-alumni-at-the-sanctuary-doors-romaine-squares-waiting-in-kempsville"
+        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/touring-cchr-vdu-warwick-university-saying-no-at-redmond-hall/part-2-redmond-hall-gender-separated-dorms-why-heather-is-wesley-s-safe-person"
+    },
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/touring-cchr-vdu-warwick-university-saying-no-at-redmond-hall/part-2-redmond-hall-gender-separated-dorms-why-heather-is-wesley-s-safe-person": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Redmond Hall, Gender-Separated Dorms, & Why Heather Is Wesley's Safe Person",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/accept-heather-virginia/e005/c002/p002.md",
+        "pathId": "accept-heather-virginia",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "accept-heather-virginia"
+        },
+        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/touring-cchr-vdu-warwick-university-saying-no-at-redmond-hall/part-1-touring-cchr-vdu-and-warwick-university-for-wesley-route-112-nntc-at-shoe-lane",
+        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/house-bill-663-rescuing-both-cousins-twelve-extra-years-together/part-1-three-alumni-at-the-sanctuary-doors-shelly-turtle-comes-home-to-kempsville"
     },
     "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/house-bill-663-rescuing-both-cousins-twelve-extra-years-together": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -4459,9 +4472,9 @@
         "pathId": "accept-heather-virginia",
         "crossroadsId": "pavilion-apology-2003"
     },
-    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/house-bill-663-rescuing-both-cousins-twelve-extra-years-together/part-1-three-alumni-at-the-sanctuary-doors-romaine-squares-waiting-in-kempsville": {
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/house-bill-663-rescuing-both-cousins-twelve-extra-years-together/part-1-three-alumni-at-the-sanctuary-doors-shelly-turtle-comes-home-to-kempsville": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Three Alumni at the Sanctuary Doors & Romaine Squares Waiting in Kempsville",
+        "title": "Part 1: Three Alumni at the Sanctuary Doors & Shelly Turtle Comes Home to Kempsville",
         "theme": "raggiesoft-books",
         "filePath": "paths/accept-heather-virginia/e005/c003/p001.md",
         "pathId": "accept-heather-virginia",
@@ -4469,7 +4482,7 @@
         "requiredChoices": {
             "pavilion-apology-2003": "accept-heather-virginia"
         },
-        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/touring-cchr-vdu-and-warwick-university-as-a-team/three-campuses-on-one-legal-pad-route-112-nntc-at-the-shoe-lane-roundabout",
+        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/touring-cchr-vdu-warwick-university-saying-no-at-redmond-hall/part-2-redmond-hall-gender-separated-dorms-why-heather-is-wesley-s-safe-person",
         "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/house-bill-663-rescuing-both-cousins-twelve-extra-years-together/part-2-six-chairs-in-the-rose-garden-twelve-extra-years-under-one-sky"
     },
     "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/house-bill-663-rescuing-both-cousins-twelve-extra-years-together/part-2-six-chairs-in-the-rose-garden-twelve-extra-years-under-one-sky": {
@@ -4482,7 +4495,7 @@
         "requiredChoices": {
             "pavilion-apology-2003": "accept-heather-virginia"
         },
-        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/house-bill-663-rescuing-both-cousins-twelve-extra-years-together/part-1-three-alumni-at-the-sanctuary-doors-romaine-squares-waiting-in-kempsville",
+        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/house-bill-663-rescuing-both-cousins-twelve-extra-years-together/part-1-three-alumni-at-the-sanctuary-doors-shelly-turtle-comes-home-to-kempsville",
         "noNext": true
     }
 }
