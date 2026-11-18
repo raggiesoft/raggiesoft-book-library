@@ -14,32 +14,32 @@
         "ebook_sizes": {
             "epub": "72.5 MB",
             "pdf": "71.8 MB",
-            "text_epub": "826 KB",
+            "text_epub": "839 KB",
             "text_pdf": "2.2 MB",
-            "package_7z": "629 KB",
-            "epub_bytes": 75998845,
-            "pdf_bytes": 75269627,
-            "text_epub_bytes": 845330,
-            "text_pdf_bytes": 2292739,
-            "package_7z_bytes": 644512
+            "package_7z": "638 KB",
+            "epub_bytes": 76012767,
+            "pdf_bytes": 75307035,
+            "text_epub_bytes": 858897,
+            "text_pdf_bytes": 2328099,
+            "package_7z_bytes": 652852
         },
-        "illustration_count": 158,
+        "illustration_count": 159,
         "word_stats": {
-            "story_word_count": 343683,
-            "lore_word_count": 115205,
-            "combined_word_count": 458888,
-            "story_page_count": 1250,
-            "combined_page_count": 1669,
-            "reading_hours": 22.9,
-            "reading_minutes": 1375,
-            "novel_equivalent": 3.8,
+            "story_word_count": 348498,
+            "lore_word_count": 115994,
+            "combined_word_count": 464492,
+            "story_page_count": 1267,
+            "combined_page_count": 1689,
+            "reading_hours": 23.2,
+            "reading_minutes": 1394,
+            "novel_equivalent": 3.9,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
-            "benchmark_note": "3.8\u00d7 a standard 90,000-word contemporary novel (~4-volume print series)",
+            "benchmark_note": "3.9\u00d7 a standard 90,000-word contemporary novel (~4-volume print series)",
             "era_count": 11,
             "chapter_count": 51,
-            "part_count": 138,
-            "illustration_count": 158,
+            "part_count": 141,
+            "illustration_count": 159,
             "story_arc_count": 4
         },
         "story_arcs": [
@@ -57,8 +57,8 @@
                 "part_count": 32,
                 "backstage_count": 8,
                 "stop_count": 40,
-                "word_count": 81119,
-                "reading_minutes": 325,
+                "word_count": 80628,
+                "reading_minutes": 323,
                 "reading_hours": 5.4,
                 "stops": [
                     {
@@ -799,7 +799,7 @@
                         "image": "/raggiesoft-books/images/scenes/katie/b006/oct_2031_kempsville_david_prairie_funeral_family_rose_garden_roses.jpg",
                         "url": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-2-eye-level-on-the-carpet-to-the-very-end-saying-goodbye-to-dad-in-kempsville-white-roses-from-the-rose-garden-marge-and-the-triplets-standing-for-richard",
                         "arc_url": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-2-eye-level-on-the-carpet-to-the-very-end-saying-goodbye-to-dad-in-kempsville-white-roses-from-the-rose-garden-marge-and-the-triplets-standing-for-richard?arc=heather-wesley-and-north-lion",
-                        "word_count": 2602,
+                        "word_count": 2597,
                         "reading_minutes": 11
                     },
                     {
@@ -808,18 +808,18 @@
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
                         "file_path": "e011/c008/p003.md",
-                        "title": "Part 3: Passing the Torch for Chelsea, Four Gears Uncle David Taught Her, & Brittany's Truck Videos on StreamTube and The Grid",
+                        "title": "Part 3: Passing the Torch for Chelsea, Fifteen Years of Videos With Uncle David, & It Really Is Her Truck Now",
                         "subtitle": "Saying Goodbye in Danville & Kempsville, Passing the Torch, & Brittany's 1991 Crew Cab \u2022 The Senator from Virginia",
                         "era_title": "The Senator from Virginia",
                         "chap_title": "Saying Goodbye in Danville & Kempsville, Passing the Torch, & Brittany's 1991 Crew Cab",
                         "date": "2032-04-17",
                         "location": "Virginia Beach, VA (Driveway on Arvin Road)",
-                        "excerpt": "Having succeeded aging Uncle David as Chelsea's legal guardian and conservator and inherited his 1991 four-speed Crew Cab 4x4 as the sole licensed driver in the family, Brittany launches a warm StreamTube and Grid series sharing how she maintains the truck and its wheelchair modifications.",
+                        "excerpt": "Having spent fifteen years filming unpretentious maintenance videos alongside Uncle David, taken over primary driving and Chelsea's guardianship in Spring 2030, and inherited his 1991 L-1-2-3-R Crew Cab 4x4, Brittany continues their series in the Arvin Road driveway.",
                         "image": "/raggiesoft-books/images/scenes/katie/b006/apr_2032_arvin_road_brittany_1991_truck_streamtube_wheelchair_garage.jpg",
-                        "url": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-3-passing-the-torch-for-chelsea-four-gears-uncle-david-taught-her-brittany-s-truck-videos-on-streamtube-and-the-grid",
-                        "arc_url": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-3-passing-the-torch-for-chelsea-four-gears-uncle-david-taught-her-brittany-s-truck-videos-on-streamtube-and-the-grid?arc=heather-wesley-and-north-lion",
-                        "word_count": 1948,
-                        "reading_minutes": 8
+                        "url": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-3-passing-the-torch-for-chelsea-fifteen-years-of-videos-with-uncle-david-it-really-is-her-truck-now",
+                        "arc_url": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-3-passing-the-torch-for-chelsea-fifteen-years-of-videos-with-uncle-david-it-really-is-her-truck-now?arc=heather-wesley-and-north-lion",
+                        "word_count": 1462,
+                        "reading_minutes": 6
                     }
                 ]
             },
@@ -837,7 +837,7 @@
                 "part_count": 38,
                 "backstage_count": 5,
                 "stop_count": 43,
-                "word_count": 123728,
+                "word_count": 123723,
                 "reading_minutes": 495,
                 "reading_hours": 8.2,
                 "stops": [
@@ -1541,7 +1541,7 @@
                         "image": "/raggiesoft-books/images/scenes/katie/b006/oct_2031_kempsville_david_prairie_funeral_family_rose_garden_roses.jpg",
                         "url": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-2-eye-level-on-the-carpet-to-the-very-end-saying-goodbye-to-dad-in-kempsville-white-roses-from-the-rose-garden-marge-and-the-triplets-standing-for-richard",
                         "arc_url": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-2-eye-level-on-the-carpet-to-the-very-end-saying-goodbye-to-dad-in-kempsville-white-roses-from-the-rose-garden-marge-and-the-triplets-standing-for-richard?arc=katie-political-career",
-                        "word_count": 2602,
+                        "word_count": 2597,
                         "reading_minutes": 11
                     },
                     {
@@ -1671,12 +1671,12 @@
                 "description": "From Tonomy Hill in 2004 and thirteen years sleeping inside dark closets to rescuing Brittany at a South Richmond church, freeing Chelsea from Mount Regalis, unveiling Wesley and Chelsea's three mirrored in-law suites, saying goodbye to Uncle Richard and Dad, and Brittany succeeding Uncle David as Chelsea's guardian and inheriting his 1991 four-speed pickup.",
                 "image": "/raggiesoft-books/images/scenes/katie/b005/jul_2016_kings_college_royal_gate_court_order_chelsea_rescue_family.jpg",
                 "start_url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-1-the-gas-station-run-a-box-of-dry-cereal-why-i-never-had-a-twenty-first-birthday-drink?arc=brittany-chelsea-and-the-four-person-sanctuary",
-                "part_count": 16,
+                "part_count": 17,
                 "backstage_count": 2,
-                "stop_count": 18,
-                "word_count": 46145,
-                "reading_minutes": 185,
-                "reading_hours": 3.1,
+                "stop_count": 19,
+                "word_count": 47712,
+                "reading_minutes": 191,
+                "reading_hours": 3.2,
                 "stops": [
                     {
                         "stop_num": 1,
@@ -1949,6 +1949,25 @@
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
+                        "file_path": "e009/c004/p011.md",
+                        "title": "Part 11: 'Now You're Learning My Truck,' L-1-2-3-R in an Empty Parking Lot, & Three Manuals on the Tailgate",
+                        "subtitle": "Keeping Our High-School Promise, A Cautious Request on The Grid, Rescuing Cousin Chelsea, Out of the Closet Into Our Four-Person Nest, & Chelsea's Turtle Tank Reveal \u2022 The Gentlewoman from Virginia Beach: The House of Delegates",
+                        "era_title": "The Gentlewoman from Virginia Beach: The House of Delegates",
+                        "chap_title": "Keeping Our High-School Promise, A Cautious Request on The Grid, Rescuing Cousin Chelsea, Out of the Closet Into Our Four-Person Nest, & Chelsea's Turtle Tank Reveal",
+                        "date": "2017-06-11",
+                        "location": "Virginia Beach, VA (Empty Kempsville Sunday Parking Lot & Driveway on Arvin Road)",
+                        "excerpt": "With Uncle David very much alive in the passenger seat, Brittany films her first StreamTube and Grid video learning his 1991 four-speed L-1-2-3-R pickup from scratch\u2014earning his trust before driving Katie and Nate.",
+                        "image": "/raggiesoft-books/images/scenes/katie/b005/jul_2016_kings_college_royal_gate_court_order_chelsea_rescue_family.jpg",
+                        "url": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-11-now-you-re-learning-my-truck-l-1-2-3-r-in-an-empty-parking-lot-three-manuals-on-the-tailgate",
+                        "arc_url": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-11-now-you-re-learning-my-truck-l-1-2-3-r-in-an-empty-parking-lot-three-manuals-on-the-tailgate?arc=brittany-chelsea-and-the-four-person-sanctuary",
+                        "word_count": 2058,
+                        "reading_minutes": 9
+                    },
+                    {
+                        "stop_num": 16,
+                        "kind": "part",
+                        "series_slug": "katie",
+                        "series_title": "Katie & Nathaniel",
                         "file_path": "e011/c007/p003.md",
                         "title": "Part 3: Three Identical Pocket Doors: Moving Wesley and Chelsea Into Their Connected In-Law Suites in Virginia Beach, Alexandria, & Maplewood",
                         "subtitle": "The Supported Companions Act & Three Mirrored In-Law Suites \u2022 The Senator from Virginia",
@@ -1964,7 +1983,7 @@
                         "reading_minutes": 5
                     },
                     {
-                        "stop_num": 16,
+                        "stop_num": 17,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -1983,7 +2002,7 @@
                         "reading_minutes": 11
                     },
                     {
-                        "stop_num": 17,
+                        "stop_num": 18,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
@@ -1998,27 +2017,27 @@
                         "image": "/raggiesoft-books/images/scenes/katie/b006/oct_2031_kempsville_david_prairie_funeral_family_rose_garden_roses.jpg",
                         "url": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-2-eye-level-on-the-carpet-to-the-very-end-saying-goodbye-to-dad-in-kempsville-white-roses-from-the-rose-garden-marge-and-the-triplets-standing-for-richard",
                         "arc_url": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-2-eye-level-on-the-carpet-to-the-very-end-saying-goodbye-to-dad-in-kempsville-white-roses-from-the-rose-garden-marge-and-the-triplets-standing-for-richard?arc=brittany-chelsea-and-the-four-person-sanctuary",
-                        "word_count": 2602,
+                        "word_count": 2597,
                         "reading_minutes": 11
                     },
                     {
-                        "stop_num": 18,
+                        "stop_num": 19,
                         "kind": "part",
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
                         "file_path": "e011/c008/p003.md",
-                        "title": "Part 3: Passing the Torch for Chelsea, Four Gears Uncle David Taught Her, & Brittany's Truck Videos on StreamTube and The Grid",
+                        "title": "Part 3: Passing the Torch for Chelsea, Fifteen Years of Videos With Uncle David, & It Really Is Her Truck Now",
                         "subtitle": "Saying Goodbye in Danville & Kempsville, Passing the Torch, & Brittany's 1991 Crew Cab \u2022 The Senator from Virginia",
                         "era_title": "The Senator from Virginia",
                         "chap_title": "Saying Goodbye in Danville & Kempsville, Passing the Torch, & Brittany's 1991 Crew Cab",
                         "date": "2032-04-17",
                         "location": "Virginia Beach, VA (Driveway on Arvin Road)",
-                        "excerpt": "Having succeeded aging Uncle David as Chelsea's legal guardian and conservator and inherited his 1991 four-speed Crew Cab 4x4 as the sole licensed driver in the family, Brittany launches a warm StreamTube and Grid series sharing how she maintains the truck and its wheelchair modifications.",
+                        "excerpt": "Having spent fifteen years filming unpretentious maintenance videos alongside Uncle David, taken over primary driving and Chelsea's guardianship in Spring 2030, and inherited his 1991 L-1-2-3-R Crew Cab 4x4, Brittany continues their series in the Arvin Road driveway.",
                         "image": "/raggiesoft-books/images/scenes/katie/b006/apr_2032_arvin_road_brittany_1991_truck_streamtube_wheelchair_garage.jpg",
-                        "url": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-3-passing-the-torch-for-chelsea-four-gears-uncle-david-taught-her-brittany-s-truck-videos-on-streamtube-and-the-grid",
-                        "arc_url": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-3-passing-the-torch-for-chelsea-four-gears-uncle-david-taught-her-brittany-s-truck-videos-on-streamtube-and-the-grid?arc=brittany-chelsea-and-the-four-person-sanctuary",
-                        "word_count": 1948,
-                        "reading_minutes": 8
+                        "url": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-3-passing-the-torch-for-chelsea-fifteen-years-of-videos-with-uncle-david-it-really-is-her-truck-now",
+                        "arc_url": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-3-passing-the-torch-for-chelsea-fifteen-years-of-videos-with-uncle-david-it-really-is-her-truck-now?arc=brittany-chelsea-and-the-four-person-sanctuary",
+                        "word_count": 1462,
+                        "reading_minutes": 6
                     }
                 ]
             },
@@ -2399,15 +2418,15 @@
                         "id": "accept-heather-virginia",
                         "crossroads_id": "pavilion-apology-2003",
                         "label": "Accept Heather's Apology & Welcome Her Back",
-                        "subtitle": "Forgive Heather under the Pavilion colonnade, stay in Virginia on in-state domicile, tour CCHR, VDU, and Warwick University together as a team, marry Heather, and rescue both Brittany and Chelsea.",
+                        "subtitle": "Forgive Heather under the Pavilion colonnade, stay in Virginia on in-state domicile, tour nine Virginia campuses together for Wesley, marry Heather, and rescue both Brittany and Chelsea.",
                         "entry_part": "paths/accept-heather-virginia/e005/c001/p001.md",
                         "entry_url": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/saying-yes-under-the-crape-myrtles-the-four-person-household/two-squeezes-wesley-s-cheer-where-one-pair-goes-both-pairs-go",
                         "required_choices": {
                             "pavilion-apology-2003": "accept-heather-virginia"
                         },
-                        "part_count": 5,
-                        "word_count": 7477,
-                        "reading_minutes": 30,
+                        "part_count": 7,
+                        "word_count": 10725,
+                        "reading_minutes": 43,
                         "image": "/raggiesoft-books/images/scenes/katie/b004/jun_2003_pavilion_accepted_apology_wesley_cheering_hug.jpg"
                     },
                     {
@@ -2420,9 +2439,9 @@
                         "required_choices": {
                             "pavilion-apology-2003": "wesley-aide-bridge"
                         },
-                        "part_count": 99,
-                        "word_count": 272886,
-                        "reading_minutes": 1092,
+                        "part_count": 100,
+                        "word_count": 274453,
+                        "reading_minutes": 1098,
                         "image": "/raggiesoft-books/images/scenes/katie/b004/jun_2003_emerald_creek_mall_food_court_goodbye_wesley_nate_katie_heather.jpg"
                     }
                 ]
@@ -2863,15 +2882,15 @@
                     "id": "accept-heather-virginia",
                     "crossroads_id": "pavilion-apology-2003",
                     "label": "Accept Heather's Apology & Welcome Her Back",
-                    "subtitle": "Forgive Heather under the Pavilion colonnade, stay in Virginia on in-state domicile, tour CCHR, VDU, and Warwick University together as a team, marry Heather, and rescue both Brittany and Chelsea.",
+                    "subtitle": "Forgive Heather under the Pavilion colonnade, stay in Virginia on in-state domicile, tour nine Virginia campuses together for Wesley, marry Heather, and rescue both Brittany and Chelsea.",
                     "entry_part": "paths/accept-heather-virginia/e005/c001/p001.md",
                     "entry_url": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/saying-yes-under-the-crape-myrtles-the-four-person-household/two-squeezes-wesley-s-cheer-where-one-pair-goes-both-pairs-go",
                     "required_choices": {
                         "pavilion-apology-2003": "accept-heather-virginia"
                     },
-                    "part_count": 5,
-                    "word_count": 7477,
-                    "reading_minutes": 30,
+                    "part_count": 7,
+                    "word_count": 10725,
+                    "reading_minutes": 43,
                     "image": "/raggiesoft-books/images/scenes/katie/b004/jun_2003_pavilion_accepted_apology_wesley_cheering_hug.jpg"
                 },
                 {
@@ -2884,9 +2903,9 @@
                     "required_choices": {
                         "pavilion-apology-2003": "wesley-aide-bridge"
                     },
-                    "part_count": 99,
-                    "word_count": 272886,
-                    "reading_minutes": 1092,
+                    "part_count": 100,
+                    "word_count": 274453,
+                    "reading_minutes": 1098,
                     "image": "/raggiesoft-books/images/scenes/katie/b004/jun_2003_emerald_creek_mall_food_court_goodbye_wesley_nate_katie_heather.jpg"
                 }
             ]
@@ -3737,6 +3756,19 @@
             "pavilion-apology-2003": "wesley-aide-bridge"
         },
         "prevUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-9-pouring-the-foundation-on-route-64-staff-member-wesley-the-jolt-across-ten-years",
+        "nextUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-11-now-you-re-learning-my-truck-l-1-2-3-r-in-an-empty-parking-lot-three-manuals-on-the-tailgate"
+    },
+    "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-11-now-you-re-learning-my-truck-l-1-2-3-r-in-an-empty-parking-lot-three-manuals-on-the-tailgate": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: 'Now You're Learning My Truck,' L-1-2-3-R in an Empty Parking Lot, & Three Manuals on the Tailgate",
+        "theme": "raggiesoft-books",
+        "filePath": "e009/c004/p011.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-10-staff-member-wesley-s-reply-proving-it-when-nobody-was-looking-full-speaking-terms",
         "nextUrl": "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-1-watching-senator-ward-kill-our-bills-across-the-rotunda-brainstorming-the-7th-senate-district-with-dad-the-250-signature-rule"
     },
     "/katie/across-the-rotunda-the-senate-of-virginia": {
@@ -3761,7 +3793,7 @@
         "requiredChoices": {
             "pavilion-apology-2003": "wesley-aide-bridge"
         },
-        "prevUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-10-staff-member-wesley-s-reply-proving-it-when-nobody-was-looking-full-speaking-terms",
+        "prevUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-11-now-you-re-learning-my-truck-l-1-2-3-r-in-an-empty-parking-lot-three-manuals-on-the-tailgate",
         "nextUrl": "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-2-route-64-to-maplewood-seeing-wesley-in-person-after-fifteen-years-the-earned-hug-sale-number-one-in-the-store"
     },
     "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-2-route-64-to-maplewood-seeing-wesley-in-person-after-fifteen-years-the-earned-hug-sale-number-one-in-the-store": {
@@ -4315,11 +4347,11 @@
             "pavilion-apology-2003": "wesley-aide-bridge"
         },
         "prevUrl": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-1-no-senate-pin-in-the-family-pew-saying-goodbye-to-uncle-richard-in-southside-virginia-katie-s-lifelong-promise-to-sam-mandy-and-sarah",
-        "nextUrl": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-3-passing-the-torch-for-chelsea-four-gears-uncle-david-taught-her-brittany-s-truck-videos-on-streamtube-and-the-grid"
+        "nextUrl": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-3-passing-the-torch-for-chelsea-fifteen-years-of-videos-with-uncle-david-it-really-is-her-truck-now"
     },
-    "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-3-passing-the-torch-for-chelsea-four-gears-uncle-david-taught-her-brittany-s-truck-videos-on-streamtube-and-the-grid": {
+    "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-3-passing-the-torch-for-chelsea-fifteen-years-of-videos-with-uncle-david-it-really-is-her-truck-now": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Passing the Torch for Chelsea, Four Gears Uncle David Taught Her, & Brittany's Truck Videos on StreamTube and The Grid",
+        "title": "Part 3: Passing the Torch for Chelsea, Fifteen Years of Videos With Uncle David, & It Really Is Her Truck Now",
         "theme": "raggiesoft-books",
         "filePath": "e011/c008/p003.md",
         "pathId": "wesley-aide-bridge",
@@ -4346,7 +4378,7 @@
         "requiredChoices": {
             "pavilion-apology-2003": "wesley-aide-bridge"
         },
-        "prevUrl": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-3-passing-the-torch-for-chelsea-four-gears-uncle-david-taught-her-brittany-s-truck-videos-on-streamtube-and-the-grid",
+        "prevUrl": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-3-passing-the-torch-for-chelsea-fifteen-years-of-videos-with-uncle-david-it-really-is-her-truck-now",
         "nextUrl": "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-2-the-biggest-prize-in-the-primary-sam-mandy-sarah-s-bus-loop-plan-stop-0812"
     },
     "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-2-the-biggest-prize-in-the-primary-sam-mandy-sarah-s-bus-loop-plan-stop-0812": {
@@ -4428,19 +4460,19 @@
             "pavilion-apology-2003": "accept-heather-virginia"
         },
         "prevUrl": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-heather-s-apology",
-        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/touring-cchr-vdu-warwick-university-saying-no-at-redmond-hall/part-1-touring-cchr-vdu-and-warwick-university-for-wesley-route-112-nntc-at-shoe-lane"
+        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/nine-campuses-for-wesley-tidewater-northern-virginia-winchester-redmond-hall-cpi/part-1-stops-one-through-four-for-wesley-cchr-vdu-warwick-university-beside-112-nntc-charles-anne"
     },
-    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/touring-cchr-vdu-warwick-university-saying-no-at-redmond-hall": {
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/nine-campuses-for-wesley-tidewater-northern-virginia-winchester-redmond-hall-cpi": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Touring CCHR, VDU, Warwick University, & Saying No at Redmond Hall",
+        "title": "Nine Campuses for Wesley: Tidewater, Northern Virginia, Winchester, Redmond Hall, & CPI",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|accept-heather-virginia|0|1",
         "pathId": "accept-heather-virginia",
         "crossroadsId": "pavilion-apology-2003"
     },
-    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/touring-cchr-vdu-warwick-university-saying-no-at-redmond-hall/part-1-touring-cchr-vdu-and-warwick-university-for-wesley-route-112-nntc-at-shoe-lane": {
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/nine-campuses-for-wesley-tidewater-northern-virginia-winchester-redmond-hall-cpi/part-1-stops-one-through-four-for-wesley-cchr-vdu-warwick-university-beside-112-nntc-charles-anne": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Touring CCHR, VDU, and Warwick University for Wesley & Route 112 NNTC at Shoe Lane",
+        "title": "Part 1: Stops One Through Four for Wesley: CCHR, VDU, Warwick University Beside 112 NNTC, & Charles & Anne",
         "theme": "raggiesoft-books",
         "filePath": "paths/accept-heather-virginia/e005/c002/p001.md",
         "pathId": "accept-heather-virginia",
@@ -4449,11 +4481,11 @@
             "pavilion-apology-2003": "accept-heather-virginia"
         },
         "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/saying-yes-under-the-crape-myrtles-the-four-person-household/two-squeezes-wesley-s-cheer-where-one-pair-goes-both-pairs-go",
-        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/touring-cchr-vdu-warwick-university-saying-no-at-redmond-hall/part-2-redmond-hall-gender-separated-dorms-why-heather-is-wesley-s-safe-person"
+        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/nine-campuses-for-wesley-tidewater-northern-virginia-winchester-redmond-hall-cpi/part-2-stops-five-through-seven-west-broad-street-at-cvu-ring-roads-at-george-wythe-cutting-northern-valley-s-open-house-short"
     },
-    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/touring-cchr-vdu-warwick-university-saying-no-at-redmond-hall/part-2-redmond-hall-gender-separated-dorms-why-heather-is-wesley-s-safe-person": {
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/nine-campuses-for-wesley-tidewater-northern-virginia-winchester-redmond-hall-cpi/part-2-stops-five-through-seven-west-broad-street-at-cvu-ring-roads-at-george-wythe-cutting-northern-valley-s-open-house-short": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Redmond Hall, Gender-Separated Dorms, & Why Heather Is Wesley's Safe Person",
+        "title": "Part 2: Stops Five Through Seven: West Broad Street at CVU, Ring Roads at George Wythe, & Cutting Northern Valley's Open House Short",
         "theme": "raggiesoft-books",
         "filePath": "paths/accept-heather-virginia/e005/c002/p002.md",
         "pathId": "accept-heather-virginia",
@@ -4461,18 +4493,31 @@
         "requiredChoices": {
             "pavilion-apology-2003": "accept-heather-virginia"
         },
-        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/touring-cchr-vdu-warwick-university-saying-no-at-redmond-hall/part-1-touring-cchr-vdu-and-warwick-university-for-wesley-route-112-nntc-at-shoe-lane",
-        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/house-bill-663-rescuing-both-cousins-twelve-extra-years-together/part-1-three-alumni-at-the-sanctuary-doors-shelly-turtle-comes-home-to-kempsville"
+        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/nine-campuses-for-wesley-tidewater-northern-virginia-winchester-redmond-hall-cpi/part-1-stops-one-through-four-for-wesley-cchr-vdu-warwick-university-beside-112-nntc-charles-anne",
+        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/nine-campuses-for-wesley-tidewater-northern-virginia-winchester-redmond-hall-cpi/part-3-stops-eight-and-nine-stopping-short-outside-redmond-hall-at-rrc-loving-cpi-s-valley-despite-steep-battery-hills"
     },
-    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/house-bill-663-rescuing-both-cousins-twelve-extra-years-together": {
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/nine-campuses-for-wesley-tidewater-northern-virginia-winchester-redmond-hall-cpi/part-3-stops-eight-and-nine-stopping-short-outside-redmond-hall-at-rrc-loving-cpi-s-valley-despite-steep-battery-hills": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "House Bill 663, Rescuing Both Cousins, & Twelve Extra Years Together",
+        "title": "Part 3: Stops Eight and Nine: Stopping Short Outside Redmond Hall at RRC & Loving CPI's Valley Despite Steep Battery Hills",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/accept-heather-virginia/e005/c002/p003.md",
+        "pathId": "accept-heather-virginia",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "accept-heather-virginia"
+        },
+        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/nine-campuses-for-wesley-tidewater-northern-virginia-winchester-redmond-hall-cpi/part-2-stops-five-through-seven-west-broad-street-at-cvu-ring-roads-at-george-wythe-cutting-northern-valley-s-open-house-short",
+        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/rescuing-both-cousins-learning-uncle-david-s-1991-truck-twelve-extra-years-together/part-1-three-alumni-at-the-sanctuary-doors-shelly-turtle-comes-home-to-kempsville"
+    },
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/rescuing-both-cousins-learning-uncle-david-s-1991-truck-twelve-extra-years-together": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Rescuing Both Cousins, Learning Uncle David's 1991 Truck, & Twelve Extra Years Together",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|accept-heather-virginia|0|2",
         "pathId": "accept-heather-virginia",
         "crossroadsId": "pavilion-apology-2003"
     },
-    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/house-bill-663-rescuing-both-cousins-twelve-extra-years-together/part-1-three-alumni-at-the-sanctuary-doors-shelly-turtle-comes-home-to-kempsville": {
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/rescuing-both-cousins-learning-uncle-david-s-1991-truck-twelve-extra-years-together/part-1-three-alumni-at-the-sanctuary-doors-shelly-turtle-comes-home-to-kempsville": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Three Alumni at the Sanctuary Doors & Shelly Turtle Comes Home to Kempsville",
         "theme": "raggiesoft-books",
@@ -4482,12 +4527,12 @@
         "requiredChoices": {
             "pavilion-apology-2003": "accept-heather-virginia"
         },
-        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/touring-cchr-vdu-warwick-university-saying-no-at-redmond-hall/part-2-redmond-hall-gender-separated-dorms-why-heather-is-wesley-s-safe-person",
-        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/house-bill-663-rescuing-both-cousins-twelve-extra-years-together/part-2-six-chairs-in-the-rose-garden-twelve-extra-years-under-one-sky"
+        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/nine-campuses-for-wesley-tidewater-northern-virginia-winchester-redmond-hall-cpi/part-3-stops-eight-and-nine-stopping-short-outside-redmond-hall-at-rrc-loving-cpi-s-valley-despite-steep-battery-hills",
+        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/rescuing-both-cousins-learning-uncle-david-s-1991-truck-twelve-extra-years-together/part-2-now-you-re-learning-my-truck-l-1-2-3-r-in-an-empty-lot-three-manuals-on-the-tailgate"
     },
-    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/house-bill-663-rescuing-both-cousins-twelve-extra-years-together/part-2-six-chairs-in-the-rose-garden-twelve-extra-years-under-one-sky": {
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/rescuing-both-cousins-learning-uncle-david-s-1991-truck-twelve-extra-years-together/part-2-now-you-re-learning-my-truck-l-1-2-3-r-in-an-empty-lot-three-manuals-on-the-tailgate": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Six Chairs in the Rose Garden & Twelve Extra Years Under One Sky",
+        "title": "Part 2: 'Now You're Learning My Truck,' L-1-2-3-R in an Empty Lot, & Three Manuals on the Tailgate",
         "theme": "raggiesoft-books",
         "filePath": "paths/accept-heather-virginia/e005/c003/p002.md",
         "pathId": "accept-heather-virginia",
@@ -4495,7 +4540,20 @@
         "requiredChoices": {
             "pavilion-apology-2003": "accept-heather-virginia"
         },
-        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/house-bill-663-rescuing-both-cousins-twelve-extra-years-together/part-1-three-alumni-at-the-sanctuary-doors-shelly-turtle-comes-home-to-kempsville",
+        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/rescuing-both-cousins-learning-uncle-david-s-1991-truck-twelve-extra-years-together/part-1-three-alumni-at-the-sanctuary-doors-shelly-turtle-comes-home-to-kempsville",
+        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/rescuing-both-cousins-learning-uncle-david-s-1991-truck-twelve-extra-years-together/part-3-six-chairs-in-the-rose-garden-twelve-extra-years-together-it-really-is-her-truck-now"
+    },
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/rescuing-both-cousins-learning-uncle-david-s-1991-truck-twelve-extra-years-together/part-3-six-chairs-in-the-rose-garden-twelve-extra-years-together-it-really-is-her-truck-now": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Six Chairs in the Rose Garden, Twelve Extra Years Together, & It Really Is Her Truck Now",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/accept-heather-virginia/e005/c003/p003.md",
+        "pathId": "accept-heather-virginia",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "accept-heather-virginia"
+        },
+        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/rescuing-both-cousins-learning-uncle-david-s-1991-truck-twelve-extra-years-together/part-2-now-you-re-learning-my-truck-l-1-2-3-r-in-an-empty-lot-three-manuals-on-the-tailgate",
         "noNext": true
     }
 }
