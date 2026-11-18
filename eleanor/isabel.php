@@ -89,9 +89,17 @@ if (isset($platformAliasRedirects[$requestUri])) {
  *     HTTP 301 Permanent Redirect before route JSON resolution executes.
  */
 $legacyPartRedirects = [
-    // Katie & Nathaniel (Era 4, Chapter 2, Part 4): Renamed to end on Heather's Pavilion apology
+    // Katie & Nathaniel (Era 4 legacy slugs redirected to Graduation 2003 & Ten-Campus Summer Tour mainline)
     '/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-one-chance-strictly-for-wesley'
-        => '/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-heather-s-apology',
+        => '/katie/seventeen-senior-year-greenway-court-the-ten-campus-summer-tour/drunken-new-year/part-5-cautious-ground-rules-wesley-s-cheer-under-the-canopy-staying-in-virginia',
+    '/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-heather-s-apology'
+        => '/katie/seventeen-senior-year-greenway-court-the-ten-campus-summer-tour/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-heather-s-apology',
+    '/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary/part-1-apartment-a6-on-greenway-court-dad-s-microwave-cart-across-the-hall-neighbors'
+        => '/katie/seventeen-senior-year-greenway-court-the-ten-campus-summer-tour/apartment-a6-on-greenway-court-familiar-neighbors-across-the-hall/apartment-a6-on-greenway-court-dad-s-microwave-cart-across-the-hall-neighbors',
+    '/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary/apartment-a6-on-greenway-court-dads-microwave-cart-across-the-hall-neighbors'
+        => '/katie/seventeen-senior-year-greenway-court-the-ten-campus-summer-tour/apartment-a6-on-greenway-court-familiar-neighbors-across-the-hall/apartment-a6-on-greenway-court-dad-s-microwave-cart-across-the-hall-neighbors',
+    '/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary/part-3-hurricane-isabel-two-layers-of-sandbags-at-greenway-court-two-weeks-at-dad-s-house-on-arvin-road'
+        => '/katie/seventeen-senior-year-greenway-court-the-ten-campus-summer-tour/brenda-in-the-back-alley-the-square-closet-sanctuary-hurricane-isabel/part-2-hurricane-isabel-two-layers-of-sandbags-at-greenway-court-two-weeks-at-dad-s-house-on-arvin-road',
 
     // Luna & Leo (Era 12, Chapter 3, Part 2): Split into Parts 2 & 3 right after the Kaleidoscope Sun flute signal
     '/luna-leo/the-delores-nightmare/the-hijacked-plan/part-2-printer-rage-guardianship-questions-and-a-forceful-kiss-leftovers-bus-schedules-and-locked-doors'
@@ -615,7 +623,7 @@ if ($isNotFound) {
     $siteName = 'Story Arcs & Reading Playlists | Ocean View Archives';
     $ogTitle = 'Story Arcs & Reading Playlists | Ocean View Archives';
     $ogDescription = 'Follow curated chapter-by-chapter Story Arcs across Ocean View Archives novels, complete with behind-the-scenes bonus scenes.';
-    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/scenes/katie/b005/jun_2018_maplewood_north_lion_ribbon_cutting_earned_hug_nate_heather_wesley.jpg';
+    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/scenes/katie/b004/jun_2003_pavilion_accepted_apology_wesley_cheering_hug.jpg';
     $ogImageAlt = 'Story Arcs and Reading Playlists in the RaggieSoft Book Reader';
 } elseif ($hasValidBookSeries && $seriesSlug !== '') {
     $seriesTitle = !empty($toc_manifest['series_title'])
