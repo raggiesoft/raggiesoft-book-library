@@ -18,10 +18,10 @@
  *            the user always gets the latest story updates. If offline, it falls back to previously cached versions.
  */
 
-// Cache partition identifiers (incremented to v20 to purge cached partial-range audio entries)
-const CACHE_NAME = 'ova-cache-v20';
-const DYNAMIC_CACHE = 'ova-dynamic-v20';
-const IMAGE_CACHE = 'ova-images-v20';
+// Cache partition identifiers (incremented to v21 to purge any legacy partial-range audio caches across Safari/Chromium PWAs)
+const CACHE_NAME = 'ova-cache-v21';
+const DYNAMIC_CACHE = 'ova-dynamic-v21';
+const IMAGE_CACHE = 'ova-images-v21';
 
 // Minimum required assets to render the offline application shell
 // Note: /manifest.json is intentionally excluded from PRECACHE_ASSETS and bypassed in fetch
@@ -30,7 +30,7 @@ const PRECACHE_ASSETS = [
     '/',
     '/library',
     '/arcs',
-    '/scripts/pwa.js?v=20261115b',
+    '/scripts/pwa.js?v=20261118d',
     '/favicon.ico?v=4',
     '/icons/icon-192.png?v=4',
     '/icons/icon-512.png?v=4',
@@ -102,6 +102,7 @@ self.addEventListener('fetch', event => {
         event.request.destination === 'audio' ||
         event.request.destination === 'video' ||
         event.request.headers.has('range') ||
+        url.pathname.includes('/web-mp3/') ||
         /\.(mp3|wav|ogg|flac|m4a|aac|mp4|webm|epub|pdf|7z|zip)$/i.test(url.pathname)
     ) {
         return;

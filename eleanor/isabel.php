@@ -182,7 +182,10 @@ if (file_exists($settingsFile)) {
 }
 
 // Workspace server root (`/Users/michael/Developer/raggiesoft-servers` locally, `/var/www` on Droplet)
-$localServerRoot = dirname($basePath, 3);
+// Resolve sibling server root across both macOS dev (`.../raggiesoft-servers`) and DigitalOcean (`/var/www`)
+$localServerRoot = is_dir(dirname($basePath, 3) . '/raggiesoft-assets')
+    ? dirname($basePath, 3)
+    : (is_dir(dirname($basePath, 1) . '/raggiesoft-assets') ? dirname($basePath, 1) : dirname($basePath, 3));
 
 // 1. Evaluate top-level platform routes FIRST before checking narrative book slugs
 $isCatalog = false;
@@ -915,12 +918,8 @@ $metaDescription = $ogDescription;
 // while preserving 100% vertical height inside valid book reading panes (where sidebar.php displays the badge)
 $currentHeaderMenu = (!$hasValidBookSeries) ? ($basePath . '/includes/components/headers/app-header.php') : null;
 
-// Include the Global HTML Header (Opens HTML, Head, Body, and the primary wrapper)
+// Include the Global HTML Header (Opens HTML, Head with reader.css & reader.js, Body, persistent #stardust-bgm audio, and #stardust-app)
 require_once $basePath . '/includes/components/headers/header.php';
-
-// Inject Stardust-specific styling and logic scripts with deterministic cache-busting version
-echo '<link rel="stylesheet" href="' . $cdnBaseUrl . '/raggiesoft-books/css/reader.css?v=20261118a">';
-echo '<script src="' . $cdnBaseUrl . '/raggiesoft-books/js/reader.js?v=20261118c" defer></script>';
 
 // Open the primary application boundary
 echo '<div id="stardust-main-wrapper">';

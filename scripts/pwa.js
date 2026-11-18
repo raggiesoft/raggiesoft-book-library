@@ -174,12 +174,26 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 3. Register Service Worker
-    // Ensure the browser supports Service Workers before attempting registration.
+    // 3. Purge Legacy Pre-v21 CacheStorage Partitions & Register Service Worker
+    // Proactively delete any stale pre-v21 `ova-*` cache bins (such as `ova-dynamic-v19` that
+    // previously cached full/partial `.mp3` responses and broke Safari WebKit CoreMedia HTTP 206
+    // byte-range probes), then register `/sw.js?v=21` with `updateViaCache: 'none'` so both
+    // Cloudflare's edge cache and Safari's ServiceWorker cache fetch the live worker immediately.
+    if ('caches' in window) {
+        const activeBins = new Set(['ova-cache-v21', 'ova-dynamic-v21', 'ova-images-v21']);
+        caches.keys().then(names => {
+            names.forEach(name => {
+                if (name.startsWith('ova-') && !activeBins.has(name)) {
+                    caches.delete(name);
+                }
+            });
+        }).catch(() => {});
+    }
+
     if ('serviceWorker' in navigator) {
         // Wait for the window `load` event to ensure the SW registration doesn't block the critical rendering path.
         window.addEventListener('load', () => {
-            navigator.serviceWorker.register('/sw.js').then(registration => {
+            navigator.serviceWorker.register('/sw.js?v=21', { scope: '/', updateViaCache: 'none' }).then(registration => {
                 registration.update();
                 console.log('ServiceWorker registration successful with scope: ', registration.scope);
             }, err => {

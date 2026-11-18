@@ -32,15 +32,15 @@
     </div> <!-- Close #stardust-app -->
 
     <!-- The hyper-optimized Stardust SPA Router -->
-    <!-- Handles pushState routing and seamless DOM swapping -->
-    <script src="https://assets.raggiesoft.com/raggiesoft-books/library/js/stardust-spa.min.js?v=20261114a"></script>
+    <!-- Handles pushState routing and seamless DOM swapping via document.importNode -->
+    <script src="https://assets.raggiesoft.com/raggiesoft-books/library/js/stardust-spa.min.js?v=20261118d"></script>
 
     <!-- PWA Service Worker Registration -->
-    <!-- Essential for offline reading and the "Add to Home Screen" native feel -->
+    <!-- Uses versioned query string + updateViaCache:'none' to match pwa.js and bypass edge/disk caching -->
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js').catch(err => {
+                navigator.serviceWorker.register('/sw.js?v=21', { scope: '/', updateViaCache: 'none' }).catch(err => {
                     console.log('ServiceWorker registration failed: ', err);
                 });
             });

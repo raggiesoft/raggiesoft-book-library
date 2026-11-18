@@ -494,7 +494,10 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
       gtag('config', '<?= htmlspecialchars($gaTrackingId) ?>');
     </script>
     <?php endif; ?>
-    <script src="/scripts/pwa.js?v=20261115b"></script>
+    <!-- Global Reader Stylesheet & Persistent SPA Scripts (loaded once in <head> outside #stardust-app) -->
+    <link rel="stylesheet" href="<?= htmlspecialchars($cdnBaseUrl ?? 'https://assets.raggiesoft.com') ?>/raggiesoft-books/css/reader.css?v=20261118d">
+    <script src="/scripts/pwa.js?v=20261118d"></script>
+    <script src="<?= htmlspecialchars($cdnBaseUrl ?? 'https://assets.raggiesoft.com') ?>/raggiesoft-books/js/reader.js?v=20261118d" defer></script>
 </head>
 
 <body class="theme-<?= htmlspecialchars($currentPageTheme ?? 'oceanview') ?><?= $forceDarkClass ?>">
@@ -569,9 +572,9 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
       </div>
     </nav>
 
-    <!-- Audio Player (Outside SPA Zone) -->
-    <!-- Positioned outside #stardust-app so navigating between pages doesn't kill playback; preload="none" avoids eager audio requests -->
-    <audio id="stardust-bgm" loop preload="none"></audio>
+    <!-- Persistent Live HTML5 Audio Engine (Outside #stardust-app SPA Zone) -->
+    <!-- Lives permanently in window.document so Safari/WebKit CoreMedia never encounters an inert DOMParser <audio> element during SPA swaps -->
+    <audio id="stardust-bgm" preload="none"></audio>
 
     <!-- The SPA router ONLY replaces the contents of this div -->
     <div id="stardust-app">

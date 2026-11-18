@@ -211,7 +211,9 @@ if ($actualFilePath === '__SERIES_LANDING__') {
     if (isset($prefetchedMdContent) && $prefetchedMdContent !== null) {
         $mdContent = $prefetchedMdContent;
     } else {
-        $oliverServerRoot = dirname($basePath, 3);
+        $oliverServerRoot = is_dir(dirname($basePath, 3) . '/raggiesoft-assets')
+            ? dirname($basePath, 3)
+            : (is_dir(dirname($basePath, 1) . '/raggiesoft-assets') ? dirname($basePath, 1) : dirname($basePath, 3));
         $localAssetMd = $oliverServerRoot . '/raggiesoft-assets/raggiesoft-books/books/' . $seriesSlug . '/' . ltrim($actualFilePath, '/');
         $localNarrMd  = $oliverServerRoot . '/raggiesoft-narratives/books/' . $seriesSlug . '/' . ltrim($actualFilePath, '/');
         if (is_file($localAssetMd)) {
@@ -339,7 +341,11 @@ if ($specialPageType) {
     $linkPreviewsMap = is_file($linkPreviewsFile)
         ? (json_decode((string)@file_get_contents($linkPreviewsFile), true) ?: [])
         : [];
-    $localAssetsRoot = dirname($basePath, 3) . '/raggiesoft-assets';
+    $localAssetsRoot = is_dir(dirname($basePath, 3) . '/raggiesoft-assets')
+        ? dirname($basePath, 3) . '/raggiesoft-assets'
+        : (is_dir(dirname($basePath, 1) . '/raggiesoft-assets')
+            ? dirname($basePath, 1) . '/raggiesoft-assets'
+            : dirname($basePath, 3) . '/raggiesoft-assets');
     $wikiLinkCounter = 0;
 
     $htmlContent = preg_replace_callback(
@@ -1447,7 +1453,11 @@ $oliverBookSeriesSchema = [
                         $tracksMetaCache = [];
                         $artistAlbumsMetaCache = [];
 
-                        $localErrArtistsRoot = dirname($basePath, 3) . '/raggiesoft-assets/engine-room-records/artists';
+                        $resolvedErrServerRoot = is_dir(dirname($basePath, 3) . '/raggiesoft-assets')
+                            ? dirname($basePath, 3)
+                            : (is_dir(dirname($basePath, 1) . '/raggiesoft-assets') ? dirname($basePath, 1) : dirname($basePath, 3));
+                        $localErrArtistsRoot = $resolvedErrServerRoot . '/raggiesoft-assets/engine-room-records/artists';
+                        $localErrPlaylistsRoot = $resolvedErrServerRoot . '/raggiesoft-assets/engine-room-records/playlists';
                         $fetchAlbumMeta = function ($artistSlug, $albumSlug) use ($cdnBaseUrl, $localErrArtistsRoot, &$albumMetaCache, &$tracksMetaCache, &$artistAlbumsMetaCache) {
                             $key = $artistSlug . '/' . $albumSlug;
                             if (!isset($albumMetaCache[$key])) {
@@ -1588,6 +1598,7 @@ $oliverBookSeriesSchema = [
                             &$playlistListeningRoomUrl,
                             $fetchAlbumMeta,
                             $buildTrackItem,
+                            $localErrPlaylistsRoot,
                             &$expandAudioSpec
                         ) {
                             $clean = trim((string)$spec, " \t\n\r\0\x0B/");
@@ -1598,8 +1609,9 @@ $oliverBookSeriesSchema = [
                                 $plRelative = preg_replace('#^(engine-room-records/)?playlists/#', '', $clean);
                                 $plRelative = preg_replace('#/playlist\.json$#', '', $plRelative);
                                 $plSlug = trim($plRelative, '/');
+                                $localPlJson = $localErrPlaylistsRoot . '/' . $plSlug . '/playlist.json';
                                 $plJsonUrl = $cdnBaseUrl . '/engine-room-records/playlists/' . $plSlug . '/playlist.json';
-                                $plRaw = @file_get_contents($plJsonUrl);
+                                $plRaw = is_file($localPlJson) ? @file_get_contents($localPlJson) : @file_get_contents($plJsonUrl);
                                 if ($plRaw) {
                                     $plData = json_decode($plRaw, true);
                                     if (is_array($plData)) {
@@ -1738,7 +1750,7 @@ $oliverBookSeriesSchema = [
                                 
                                 <!-- Custom HTML5 Audio Player UI -->
                                 <div class="reader-audio-controls-row" style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
-                                    <!-- Invisible HTML5 Audio Engine (matching The Listening Room: no `display: none` or idle metadata probe for Safari WebKit PWA parity) -->
+                                    <!-- SSR Metadata & Queue Carrier (actual playback executes on the live persistent #stardust-bgm <audio> element outside #stardust-app for Safari/WebKit PWA CoreMedia compatibility) -->
                                     <audio id="narrative-audio-element"
                                            data-title="<?php echo htmlspecialchars($audioTitleDisplay); ?>"
                                            data-artist="<?php echo htmlspecialchars($artistDisplay); ?>"
@@ -1753,9 +1765,8 @@ $oliverBookSeriesSchema = [
                                            data-repeat-mode="<?php echo $queueCount > 1 ? 'all' : 'one'; ?>"
                                            data-active-index="0"
                                            data-queue="<?php echo htmlspecialchars(json_encode($audioQueue, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE)); ?>"
-                                           src="<?php echo htmlspecialchars($audioUrl); ?>"
+                                           data-audio-src="<?php echo htmlspecialchars($audioUrl); ?>"
                                            data-start-time="<?php echo $audioStart; ?>"
-                                           <?php if ($queueCount === 1): ?>loop<?php endif; ?>
                                            preload="none"></audio>
                                     
                                     <?php if ($queueCount > 1): ?>
@@ -1933,6 +1944,7 @@ $oliverBookSeriesSchema = [
             if (!empty($backstageSlugs)) {
                 $localBsIndexCandidates = [
                     dirname($basePath, 3) . '/raggiesoft-assets/raggiesoft-backstage/api/v1/index.json',
+                    dirname($basePath, 1) . '/raggiesoft-assets/raggiesoft-backstage/api/v1/index.json',
                     dirname($basePath) . '/backstage/dist/api/v1/index.json',
                     '/var/www/backstage.raggiesoft.com/api/v1/index.json'
                 ];
