@@ -14,35 +14,78 @@
         "ebook_sizes": {
             "epub": "10.1 MB",
             "pdf": "11.6 MB",
-            "text_epub": "777 KB",
+            "text_epub": "783 KB",
             "text_pdf": "2.3 MB",
-            "package_7z": "556 KB",
-            "epub_bytes": 10548710,
-            "pdf_bytes": 12179754,
-            "text_epub_bytes": 795858,
-            "text_pdf_bytes": 2373092,
-            "package_7z_bytes": 569243
+            "package_7z": "563 KB",
+            "epub_bytes": 10554160,
+            "pdf_bytes": 12181918,
+            "text_epub_bytes": 801296,
+            "text_pdf_bytes": 2375739,
+            "package_7z_bytes": 576830
         },
         "illustration_count": 3,
         "word_stats": {
-            "story_word_count": 334891,
+            "story_word_count": 333327,
             "lore_word_count": 546,
-            "combined_word_count": 335437,
-            "story_page_count": 1218,
-            "combined_page_count": 1220,
-            "reading_hours": 22.3,
-            "reading_minutes": 1340,
+            "combined_word_count": 333873,
+            "story_page_count": 1212,
+            "combined_page_count": 1214,
+            "reading_hours": 22.2,
+            "reading_minutes": 1333,
             "novel_equivalent": 3.7,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
             "benchmark_note": "3.7\u00d7 a standard 90,000-word contemporary novel (~4-volume print series)",
             "era_count": 16,
-            "chapter_count": 84,
-            "part_count": 168,
+            "chapter_count": 86,
+            "part_count": 171,
             "illustration_count": 3,
             "story_arc_count": 0
         },
-        "story_arcs": []
+        "story_arcs": [],
+        "crossroads": [
+            {
+                "id": "sibling-weekend-2003",
+                "trigger_part": "e012/c003/p002.md",
+                "trigger_url": "/luna-leo/the-delores-nightmare/the-hijacked-plan/part-2-printer-rage-guardianship-questions-and-the-flute-signal",
+                "kicker": "Story Crossroads \u2022 Columbus Day Sibling Weekend, October 11, 2003",
+                "title": "Delores Grabs Leo's Arms: Does Luna Explode and Throw Her Out?",
+                "prompt": "This weekend was supposed to be just Leo, his twin sister Luna, and his older sister Stella\u2014yet Delores hijacked the invite, shrieked at their printer, demanded Stella's legal guardianship, mocked Luna's Kaleidoscope Sun flute signal, and has just grabbed Leo's arms to yank him onto her lap. Both paths forward are complete, coequal stories (and shape Delores's upstream history in Jack & Sarah).",
+                "required_choices": [],
+                "options": [
+                    {
+                        "id": "luna-throws-delores-out",
+                        "crossroads_id": "sibling-weekend-2003",
+                        "label": "Luna Screams 'GET OUT!' & Reclaims the Sibling Weekend",
+                        "subtitle": "Luna erupts before Delores can touch Leo further, Stella backs her with full guardianship authority to throw Delores out for good, and the three siblings reclaim their weekend\u2014skipping the four-day Pathfinder trip to Washington.",
+                        "entry_part": "paths/luna-throws-delores-out/e012/c003/p003.md",
+                        "entry_url": "/luna-leo/paths/luna-throws-delores-out/reclaiming-the-sibling-weekend/get-out-three-siblings-under-one-roof/part-3-get-out-throwing-delores-off-the-porch-locking-the-door-forever",
+                        "required_choices": {
+                            "sibling-weekend-2003": "luna-throws-delores-out"
+                        },
+                        "part_count": 3,
+                        "word_count": 2443,
+                        "reading_minutes": 10,
+                        "image": "/raggiesoft-books/images/covers/og/luna-leo.jpg"
+                    },
+                    {
+                        "id": "pathfinder-washington-ordeal",
+                        "crossroads_id": "sibling-weekend-2003",
+                        "label": "Bank Their Fury & Endure Through Tuesday",
+                        "subtitle": "Afraid of retaliation behind closed doors, Luna and Stella freeze, teach Leo the emergency TTY collect-call lifeline before Tuesday's bus, and fight across three thousand miles after the four-day Pathfinder trip to Washington.",
+                        "entry_part": "e012/c003/p003.md",
+                        "entry_url": "/luna-leo/the-delores-nightmare/the-hijacked-plan/part-3-a-forceful-kiss-locked-doors-tuesday-morning-departure",
+                        "required_choices": {
+                            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+                        },
+                        "part_count": 75,
+                        "word_count": 132837,
+                        "reading_minutes": 532,
+                        "image": "/raggiesoft-books/images/scenes/luna-leo/b010/orf-airport-reunion-gate-a5.jpg"
+                    }
+                ]
+            }
+        ]
     },
     "/luna-leo": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -78,7 +121,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Birthday Morning and the Grandparents' Arrival & Birthday Cake and Sweet Memories on Ludlow Road",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/p001.md"
+        "filePath": "e001/c001/p001.md",
+        "noPrev": true,
+        "nextUrl": "/luna-leo/elementary-and-middle-school/breakthrough-for-leo/breakthrough-for-leo-student-training-and-education-program"
     },
     "/luna-leo/elementary-and-middle-school": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -96,7 +141,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Breakthrough for Leo & Student Training and Education Program",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/p001.md"
+        "filePath": "e002/c001/p001.md",
+        "prevUrl": "/luna-leo/early-years/birthday-morning-and-the-grandparents-arrival/birthday-morning-and-the-grandparents-arrival-birthday-cake-and-sweet-memories-on-ludlow-road",
+        "nextUrl": "/luna-leo/elementary-and-middle-school/stella-to-the-sore-rescue/part-1-stella-to-the-sore-rescue"
     },
     "/luna-leo/elementary-and-middle-school/stella-to-the-sore-rescue": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -108,13 +155,17 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Stella to the Sore Rescue",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c002/p001.md"
+        "filePath": "e002/c002/p001.md",
+        "prevUrl": "/luna-leo/elementary-and-middle-school/breakthrough-for-leo/breakthrough-for-leo-student-training-and-education-program",
+        "nextUrl": "/luna-leo/elementary-and-middle-school/stella-to-the-sore-rescue/part-2-sunday-with-stella"
     },
     "/luna-leo/elementary-and-middle-school/stella-to-the-sore-rescue/part-2-sunday-with-stella": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Sunday with Stella",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c002/p002.md"
+        "filePath": "e002/c002/p002.md",
+        "prevUrl": "/luna-leo/elementary-and-middle-school/stella-to-the-sore-rescue/part-1-stella-to-the-sore-rescue",
+        "nextUrl": "/luna-leo/the-equipment-arrivals/introduction-and-anticipation/introduction-and-anticipation-a-new-soundtrack-and-leo-s-poem"
     },
     "/luna-leo/the-equipment-arrivals": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -132,7 +183,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Introduction and Anticipation & A New Soundtrack and Leo's Poem",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/p001.md"
+        "filePath": "e003/c001/p001.md",
+        "prevUrl": "/luna-leo/elementary-and-middle-school/stella-to-the-sore-rescue/part-2-sunday-with-stella",
+        "nextUrl": "/luna-leo/twins-summer-with-stella/the-demarco-decree/the-demarco-decree-cafeteria-justice-multilingual-edition"
     },
     "/luna-leo/twins-summer-with-stella": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -150,7 +203,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The DeMarco Decree & Cafeteria Justice, Multilingual Edition",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/p001.md"
+        "filePath": "e004/c001/p001.md",
+        "prevUrl": "/luna-leo/the-equipment-arrivals/introduction-and-anticipation/introduction-and-anticipation-a-new-soundtrack-and-leo-s-poem",
+        "nextUrl": "/luna-leo/twins-summer-with-stella/the-record-player-discovery/the-record-player-discovery"
     },
     "/luna-leo/twins-summer-with-stella/the-record-player-discovery": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -162,7 +217,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Record Player Discovery",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/p001.md"
+        "filePath": "e004/c002/p001.md",
+        "prevUrl": "/luna-leo/twins-summer-with-stella/the-demarco-decree/the-demarco-decree-cafeteria-justice-multilingual-edition",
+        "nextUrl": "/luna-leo/twins-summer-with-stella/the-music-store/the-music-store"
     },
     "/luna-leo/twins-summer-with-stella/the-music-store": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -174,7 +231,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Music Store",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c003/p001.md"
+        "filePath": "e004/c003/p001.md",
+        "prevUrl": "/luna-leo/twins-summer-with-stella/the-record-player-discovery/the-record-player-discovery",
+        "nextUrl": "/luna-leo/twins-summer-with-stella/the-doorbell-rings/the-doorbell-rings"
     },
     "/luna-leo/twins-summer-with-stella/the-doorbell-rings": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -186,7 +245,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Doorbell Rings",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c004/p001.md"
+        "filePath": "e004/c004/p001.md",
+        "prevUrl": "/luna-leo/twins-summer-with-stella/the-music-store/the-music-store",
+        "nextUrl": "/luna-leo/twins-summer-with-stella/legal-issues-settled/legal-issues-settled"
     },
     "/luna-leo/twins-summer-with-stella/legal-issues-settled": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -198,7 +259,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Legal Issues Settled",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c005/p001.md"
+        "filePath": "e004/c005/p001.md",
+        "prevUrl": "/luna-leo/twins-summer-with-stella/the-doorbell-rings/the-doorbell-rings",
+        "nextUrl": "/luna-leo/twins-summer-with-stella/programming-the-aac/programming-the-aac"
     },
     "/luna-leo/twins-summer-with-stella/programming-the-aac": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -210,7 +273,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Programming the AAC",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c006/p001.md"
+        "filePath": "e004/c006/p001.md",
+        "prevUrl": "/luna-leo/twins-summer-with-stella/legal-issues-settled/legal-issues-settled",
+        "nextUrl": "/luna-leo/twins-summer-with-stella/weight-of-academic-neglect/weight-of-academic-neglect"
     },
     "/luna-leo/twins-summer-with-stella/weight-of-academic-neglect": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -222,7 +287,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Weight of Academic Neglect",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c007/p001.md"
+        "filePath": "e004/c007/p001.md",
+        "prevUrl": "/luna-leo/twins-summer-with-stella/programming-the-aac/programming-the-aac",
+        "nextUrl": "/luna-leo/twins-summer-with-stella/opus-computers-setup/opus-computers-setup"
     },
     "/luna-leo/twins-summer-with-stella/opus-computers-setup": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -234,7 +301,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Opus Computers Setup",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c008/p001.md"
+        "filePath": "e004/c008/p001.md",
+        "prevUrl": "/luna-leo/twins-summer-with-stella/weight-of-academic-neglect/weight-of-academic-neglect",
+        "nextUrl": "/luna-leo/twins-summer-with-stella/rainy-tuesday-evening/rainy-tuesday-evening"
     },
     "/luna-leo/twins-summer-with-stella/rainy-tuesday-evening": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -246,7 +315,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Rainy Tuesday Evening",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c009/p001.md"
+        "filePath": "e004/c009/p001.md",
+        "prevUrl": "/luna-leo/twins-summer-with-stella/opus-computers-setup/opus-computers-setup",
+        "nextUrl": "/luna-leo/twins-summer-with-stella/compublue-keymech/compublue-keymech"
     },
     "/luna-leo/twins-summer-with-stella/compublue-keymech": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -258,7 +329,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "COMPUBLUE KeyMech",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c010/p001.md"
+        "filePath": "e004/c010/p001.md",
+        "prevUrl": "/luna-leo/twins-summer-with-stella/rainy-tuesday-evening/rainy-tuesday-evening",
+        "nextUrl": "/luna-leo/twins-summer-with-stella/oregon-trail-preparation/oregon-trail-preparation"
     },
     "/luna-leo/twins-summer-with-stella/oregon-trail-preparation": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -270,7 +343,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Oregon Trail Preparation",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c011/p001.md"
+        "filePath": "e004/c011/p001.md",
+        "prevUrl": "/luna-leo/twins-summer-with-stella/compublue-keymech/compublue-keymech",
+        "nextUrl": "/luna-leo/twins-summer-with-stella/saturday-morning-research/saturday-morning-research"
     },
     "/luna-leo/twins-summer-with-stella/saturday-morning-research": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -282,7 +357,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Saturday Morning Research",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c012/p001.md"
+        "filePath": "e004/c012/p001.md",
+        "prevUrl": "/luna-leo/twins-summer-with-stella/oregon-trail-preparation/oregon-trail-preparation",
+        "nextUrl": "/luna-leo/twins-summer-with-stella/printing-the-reports/printing-the-reports"
     },
     "/luna-leo/twins-summer-with-stella/printing-the-reports": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -294,7 +371,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Printing the Reports",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c013/p001.md"
+        "filePath": "e004/c013/p001.md",
+        "prevUrl": "/luna-leo/twins-summer-with-stella/saturday-morning-research/saturday-morning-research",
+        "nextUrl": "/luna-leo/twins-summer-with-stella/therapy-appointment-drive/therapy-appointment-drive"
     },
     "/luna-leo/twins-summer-with-stella/therapy-appointment-drive": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -306,7 +385,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Therapy Appointment Drive",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c014/p001.md"
+        "filePath": "e004/c014/p001.md",
+        "prevUrl": "/luna-leo/twins-summer-with-stella/printing-the-reports/printing-the-reports",
+        "nextUrl": "/luna-leo/twins-summer-with-stella/classic-rock-discoveries/classic-rock-discoveries"
     },
     "/luna-leo/twins-summer-with-stella/classic-rock-discoveries": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -318,7 +399,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Classic Rock Discoveries",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c015/p001.md"
+        "filePath": "e004/c015/p001.md",
+        "prevUrl": "/luna-leo/twins-summer-with-stella/therapy-appointment-drive/therapy-appointment-drive",
+        "nextUrl": "/luna-leo/twins-summer-with-stella/wherever-you-go/wherever-you-go"
     },
     "/luna-leo/twins-summer-with-stella/wherever-you-go": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -330,7 +413,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Wherever You Go",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c016/p001.md"
+        "filePath": "e004/c016/p001.md",
+        "prevUrl": "/luna-leo/twins-summer-with-stella/classic-rock-discoveries/classic-rock-discoveries",
+        "nextUrl": "/luna-leo/twins-summer-with-stella/friday-night-lights/friday-night-lights"
     },
     "/luna-leo/twins-summer-with-stella/friday-night-lights": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -342,7 +427,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Friday Night Lights",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c017/p001.md"
+        "filePath": "e004/c017/p001.md",
+        "prevUrl": "/luna-leo/twins-summer-with-stella/wherever-you-go/wherever-you-go",
+        "nextUrl": "/luna-leo/twins-summer-with-stella/charter-bus-to-the-mountains/charter-bus-to-the-mountains-showtime-preparation"
     },
     "/luna-leo/twins-summer-with-stella/charter-bus-to-the-mountains": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -354,7 +441,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Charter Bus to the Mountains & Showtime Preparation",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c018/p001.md"
+        "filePath": "e004/c018/p001.md",
+        "prevUrl": "/luna-leo/twins-summer-with-stella/friday-night-lights/friday-night-lights",
+        "nextUrl": "/luna-leo/twins-summer-with-stella/a-form-from-school/part-1-a-form-from-school-the-talk"
     },
     "/luna-leo/twins-summer-with-stella/a-form-from-school": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -366,19 +455,25 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Form from School & The Talk",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c019/p001.md"
+        "filePath": "e004/c019/p001.md",
+        "prevUrl": "/luna-leo/twins-summer-with-stella/charter-bus-to-the-mountains/charter-bus-to-the-mountains-showtime-preparation",
+        "nextUrl": "/luna-leo/twins-summer-with-stella/a-form-from-school/part-2-mary-is-snubbed"
     },
     "/luna-leo/twins-summer-with-stella/a-form-from-school/part-2-mary-is-snubbed": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Mary is Snubbed",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c019/p002.md"
+        "filePath": "e004/c019/p002.md",
+        "prevUrl": "/luna-leo/twins-summer-with-stella/a-form-from-school/part-1-a-form-from-school-the-talk",
+        "nextUrl": "/luna-leo/twins-summer-with-stella/a-form-from-school/part-3-kevin-is-snubbed"
     },
     "/luna-leo/twins-summer-with-stella/a-form-from-school/part-3-kevin-is-snubbed": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Kevin is Snubbed",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c019/p003.md"
+        "filePath": "e004/c019/p003.md",
+        "prevUrl": "/luna-leo/twins-summer-with-stella/a-form-from-school/part-2-mary-is-snubbed",
+        "nextUrl": "/luna-leo/sophomore-year/the-porter-morning-machine/part-1-the-porter-morning-machine-the-unwritten-rules"
     },
     "/luna-leo/sophomore-year": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -396,19 +491,25 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Porter Morning Machine & The Unwritten Rules",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/p001.md"
+        "filePath": "e005/c001/p001.md",
+        "prevUrl": "/luna-leo/twins-summer-with-stella/a-form-from-school/part-3-kevin-is-snubbed",
+        "nextUrl": "/luna-leo/sophomore-year/the-porter-morning-machine/part-2-parallel-lines-the-sanctuary-of-the-stacks"
     },
     "/luna-leo/sophomore-year/the-porter-morning-machine/part-2-parallel-lines-the-sanctuary-of-the-stacks": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Parallel Lines & The Sanctuary of the Stacks",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/p002.md"
+        "filePath": "e005/c001/p002.md",
+        "prevUrl": "/luna-leo/sophomore-year/the-porter-morning-machine/part-1-the-porter-morning-machine-the-unwritten-rules",
+        "nextUrl": "/luna-leo/sophomore-year/the-porter-morning-machine/part-3-the-getaway-driver"
     },
     "/luna-leo/sophomore-year/the-porter-morning-machine/part-3-the-getaway-driver": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Getaway Driver",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/p003.md"
+        "filePath": "e005/c001/p003.md",
+        "prevUrl": "/luna-leo/sophomore-year/the-porter-morning-machine/part-2-parallel-lines-the-sanctuary-of-the-stacks",
+        "nextUrl": "/luna-leo/sophomore-year/online-reconnaissance/online-reconnaissance-built-holt-tough"
     },
     "/luna-leo/sophomore-year/online-reconnaissance": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -420,7 +521,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Online Reconnaissance & Built Holt Tough",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c002/p001.md"
+        "filePath": "e005/c002/p001.md",
+        "prevUrl": "/luna-leo/sophomore-year/the-porter-morning-machine/part-3-the-getaway-driver",
+        "nextUrl": "/luna-leo/sophomore-year/showing-off-the-new-car/showing-off-the-new-car-range-of-motion"
     },
     "/luna-leo/sophomore-year/showing-off-the-new-car": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -432,7 +535,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Showing Off the New Car & Range of Motion",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c003/p001.md"
+        "filePath": "e005/c003/p001.md",
+        "prevUrl": "/luna-leo/sophomore-year/online-reconnaissance/online-reconnaissance-built-holt-tough",
+        "nextUrl": "/luna-leo/sophomore-year/difficult-news/difficult-news-the-final-phone-call"
     },
     "/luna-leo/sophomore-year/difficult-news": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -444,7 +549,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Difficult News & The Final Phone Call",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c004/p001.md"
+        "filePath": "e005/c004/p001.md",
+        "prevUrl": "/luna-leo/sophomore-year/showing-off-the-new-car/showing-off-the-new-car-range-of-motion",
+        "nextUrl": "/luna-leo/sophomore-year/turnpike-wonders/part-1-turnpike-wonders-a-colossal-good-distraction"
     },
     "/luna-leo/sophomore-year/turnpike-wonders": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -456,13 +563,17 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Turnpike Wonders & A Colossal Good Distraction",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c005/p001.md"
+        "filePath": "e005/c005/p001.md",
+        "prevUrl": "/luna-leo/sophomore-year/difficult-news/difficult-news-the-final-phone-call",
+        "nextUrl": "/luna-leo/sophomore-year/turnpike-wonders/part-2-the-jingle-and-the-mansions"
     },
     "/luna-leo/sophomore-year/turnpike-wonders/part-2-the-jingle-and-the-mansions": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Jingle and the Mansions",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c005/p002.md"
+        "filePath": "e005/c005/p002.md",
+        "prevUrl": "/luna-leo/sophomore-year/turnpike-wonders/part-1-turnpike-wonders-a-colossal-good-distraction",
+        "nextUrl": "/luna-leo/sophomore-year/programming-the-aac/coastal-wonders-marine-center-the-jingle-and-the-mansions"
     },
     "/luna-leo/sophomore-year/programming-the-aac": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -474,7 +585,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Coastal Wonders Marine Center & The Jingle and the Mansions",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c006/p001.md"
+        "filePath": "e005/c006/p001.md",
+        "prevUrl": "/luna-leo/sophomore-year/turnpike-wonders/part-2-the-jingle-and-the-mansions",
+        "nextUrl": "/luna-leo/junior-year/a-rainy-saturday-session/part-1-a-rainy-saturday-session"
     },
     "/luna-leo/junior-year": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -492,19 +605,25 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Rainy Saturday Session",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/p001.md"
+        "filePath": "e006/c001/p001.md",
+        "prevUrl": "/luna-leo/sophomore-year/programming-the-aac/coastal-wonders-marine-center-the-jingle-and-the-mansions",
+        "nextUrl": "/luna-leo/junior-year/a-rainy-saturday-session/part-2-the-true-light"
     },
     "/luna-leo/junior-year/a-rainy-saturday-session/part-2-the-true-light": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The True Light",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/p002.md"
+        "filePath": "e006/c001/p002.md",
+        "prevUrl": "/luna-leo/junior-year/a-rainy-saturday-session/part-1-a-rainy-saturday-session",
+        "nextUrl": "/luna-leo/junior-year/a-rainy-saturday-session/part-3-the-signal"
     },
     "/luna-leo/junior-year/a-rainy-saturday-session/part-3-the-signal": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Signal",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/p003.md"
+        "filePath": "e006/c001/p003.md",
+        "prevUrl": "/luna-leo/junior-year/a-rainy-saturday-session/part-2-the-true-light",
+        "nextUrl": "/luna-leo/junior-year/the-rental-agreement/the-rental-agreement-the-sterling-standard"
     },
     "/luna-leo/junior-year/the-rental-agreement": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -516,7 +635,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Rental Agreement & The Sterling Standard",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c002/p001.md"
+        "filePath": "e006/c002/p001.md",
+        "prevUrl": "/luna-leo/junior-year/a-rainy-saturday-session/part-3-the-signal",
+        "nextUrl": "/luna-leo/senior-year-and-the-new-beginning/an-unseen-ally/part-1-an-unseen-ally-a-grateful-introduction"
     },
     "/luna-leo/senior-year-and-the-new-beginning": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -534,13 +655,17 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: An Unseen Ally & A Grateful Introduction",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c001/p001.md"
+        "filePath": "e007/c001/p001.md",
+        "prevUrl": "/luna-leo/junior-year/the-rental-agreement/the-rental-agreement-the-sterling-standard",
+        "nextUrl": "/luna-leo/senior-year-and-the-new-beginning/an-unseen-ally/part-2-cafeteria-connection-contact-exchange-and-a-vile-misinterpretation"
     },
     "/luna-leo/senior-year-and-the-new-beginning/an-unseen-ally/part-2-cafeteria-connection-contact-exchange-and-a-vile-misinterpretation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Cafeteria Connection, Contact Exchange, and a Vile Misinterpretation",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c001/p002.md"
+        "filePath": "e007/c001/p002.md",
+        "prevUrl": "/luna-leo/senior-year-and-the-new-beginning/an-unseen-ally/part-1-an-unseen-ally-a-grateful-introduction",
+        "nextUrl": "/luna-leo/senior-year-and-the-new-beginning/an-afternoon-visit-and-gathering-clouds/part-1-an-afternoon-visit-and-gathering-clouds-morning-calm-and-sisterly-smiles"
     },
     "/luna-leo/senior-year-and-the-new-beginning/an-afternoon-visit-and-gathering-clouds": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -552,19 +677,25 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: An Afternoon Visit and Gathering Clouds & Morning Calm and Sisterly Smiles",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c002/p001.md"
+        "filePath": "e007/c002/p001.md",
+        "prevUrl": "/luna-leo/senior-year-and-the-new-beginning/an-unseen-ally/part-2-cafeteria-connection-contact-exchange-and-a-vile-misinterpretation",
+        "nextUrl": "/luna-leo/senior-year-and-the-new-beginning/an-afternoon-visit-and-gathering-clouds/part-2-saturday-respite-and-a-planned-weekend-stay-a-sunday-well-spent"
     },
     "/luna-leo/senior-year-and-the-new-beginning/an-afternoon-visit-and-gathering-clouds/part-2-saturday-respite-and-a-planned-weekend-stay-a-sunday-well-spent": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Saturday Respite and a Planned Weekend Stay & A Sunday Well Spent",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c002/p002.md"
+        "filePath": "e007/c002/p002.md",
+        "prevUrl": "/luna-leo/senior-year-and-the-new-beginning/an-afternoon-visit-and-gathering-clouds/part-1-an-afternoon-visit-and-gathering-clouds-morning-calm-and-sisterly-smiles",
+        "nextUrl": "/luna-leo/senior-year-and-the-new-beginning/an-afternoon-visit-and-gathering-clouds/part-3-a-guardian-s-trust"
     },
     "/luna-leo/senior-year-and-the-new-beginning/an-afternoon-visit-and-gathering-clouds/part-3-a-guardian-s-trust": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: A Guardian\u2019s Trust",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c002/p003.md"
+        "filePath": "e007/c002/p003.md",
+        "prevUrl": "/luna-leo/senior-year-and-the-new-beginning/an-afternoon-visit-and-gathering-clouds/part-2-saturday-respite-and-a-planned-weekend-stay-a-sunday-well-spent",
+        "nextUrl": "/luna-leo/senior-year-and-the-new-beginning/a-test-of-trust/a-test-of-trust"
     },
     "/luna-leo/senior-year-and-the-new-beginning/a-test-of-trust": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -576,7 +707,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Test of Trust",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c003/p001.md"
+        "filePath": "e007/c003/p001.md",
+        "prevUrl": "/luna-leo/senior-year-and-the-new-beginning/an-afternoon-visit-and-gathering-clouds/part-3-a-guardian-s-trust",
+        "nextUrl": "/luna-leo/senior-year-and-the-new-beginning/the-guardian-s-blessing/the-guardian-s-blessing"
     },
     "/luna-leo/senior-year-and-the-new-beginning/the-guardian-s-blessing": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -588,7 +721,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Guardian's Blessing",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c004/p001.md"
+        "filePath": "e007/c004/p001.md",
+        "prevUrl": "/luna-leo/senior-year-and-the-new-beginning/a-test-of-trust/a-test-of-trust",
+        "nextUrl": "/luna-leo/senior-year-and-the-new-beginning/a-quiet-evening-promised/part-1-calculus-tutoring-an-unwanted-attempt"
     },
     "/luna-leo/senior-year-and-the-new-beginning/a-quiet-evening-promised": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -600,13 +735,17 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Calculus Tutoring & An Unwanted Attempt",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c005/p001.md"
+        "filePath": "e007/c005/p001.md",
+        "prevUrl": "/luna-leo/senior-year-and-the-new-beginning/the-guardian-s-blessing/the-guardian-s-blessing",
+        "nextUrl": "/luna-leo/senior-year-and-the-new-beginning/a-quiet-evening-promised/part-2-band-room-practice-saturday-matinee-and-a-souring-mood"
     },
     "/luna-leo/senior-year-and-the-new-beginning/a-quiet-evening-promised/part-2-band-room-practice-saturday-matinee-and-a-souring-mood": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Band Room Practice & Saturday Matinee and a Souring Mood",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c005/p002.md"
+        "filePath": "e007/c005/p002.md",
+        "prevUrl": "/luna-leo/senior-year-and-the-new-beginning/a-quiet-evening-promised/part-1-calculus-tutoring-an-unwanted-attempt",
+        "nextUrl": "/luna-leo/senior-year-and-the-new-beginning/calculus-tutoring/part-1-a-quiet-evening-promised-the-call-for-rescue"
     },
     "/luna-leo/senior-year-and-the-new-beginning/calculus-tutoring": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -618,13 +757,17 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Quiet Evening Promised & The Call for Rescue",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c006/p001.md"
+        "filePath": "e007/c006/p001.md",
+        "prevUrl": "/luna-leo/senior-year-and-the-new-beginning/a-quiet-evening-promised/part-2-band-room-practice-saturday-matinee-and-a-souring-mood",
+        "nextUrl": "/luna-leo/senior-year-and-the-new-beginning/calculus-tutoring/part-2-extraction-and-stella-s-quiet-wrath-a-quiet-countdown-a-noisy-neighborhood"
     },
     "/luna-leo/senior-year-and-the-new-beginning/calculus-tutoring/part-2-extraction-and-stella-s-quiet-wrath-a-quiet-countdown-a-noisy-neighborhood": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Extraction and Stella's Quiet Wrath & A Quiet Countdown, A Noisy Neighborhood",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c006/p002.md"
+        "filePath": "e007/c006/p002.md",
+        "prevUrl": "/luna-leo/senior-year-and-the-new-beginning/calculus-tutoring/part-1-a-quiet-evening-promised-the-call-for-rescue",
+        "nextUrl": "/luna-leo/senior-year-and-the-new-beginning/chapter-7-a-new-ally/happy-new-year"
     },
     "/luna-leo/senior-year-and-the-new-beginning/chapter-7-a-new-ally": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -636,7 +779,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Happy New Year",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c007/p001.md"
+        "filePath": "e007/c007/p001.md",
+        "prevUrl": "/luna-leo/senior-year-and-the-new-beginning/calculus-tutoring/part-2-extraction-and-stella-s-quiet-wrath-a-quiet-countdown-a-noisy-neighborhood",
+        "nextUrl": "/luna-leo/eastbound/all-aboard/part-1-all-aboard-a-necessary-interlude"
     },
     "/luna-leo/eastbound": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -654,13 +799,17 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: All Aboard & A Necessary Interlude",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c001/p001.md"
+        "filePath": "e008/c001/p001.md",
+        "prevUrl": "/luna-leo/senior-year-and-the-new-beginning/chapter-7-a-new-ally/happy-new-year",
+        "nextUrl": "/luna-leo/eastbound/all-aboard/part-2-an-evening-on-the-town-a-fortress-assembles-for-the-night"
     },
     "/luna-leo/eastbound/all-aboard/part-2-an-evening-on-the-town-a-fortress-assembles-for-the-night": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: An Evening on the Town & A Fortress Assembles for the Night",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c001/p002.md"
+        "filePath": "e008/c001/p002.md",
+        "prevUrl": "/luna-leo/eastbound/all-aboard/part-1-all-aboard-a-necessary-interlude",
+        "nextUrl": "/luna-leo/eastbound/museum-hopping/part-1-an-afternoon-among-the-animals-a-fortress-assembles-for-the-night"
     },
     "/luna-leo/eastbound/museum-hopping": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -672,13 +821,17 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: An Afternoon Among the Animals & A Fortress Assembles for the Night",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c002/p001.md"
+        "filePath": "e008/c002/p001.md",
+        "prevUrl": "/luna-leo/eastbound/all-aboard/part-2-an-evening-on-the-town-a-fortress-assembles-for-the-night",
+        "nextUrl": "/luna-leo/eastbound/museum-hopping/part-2-a-taste-of-stanstead-the-fortress-reassembled"
     },
     "/luna-leo/eastbound/museum-hopping/part-2-a-taste-of-stanstead-the-fortress-reassembled": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: A Taste of Stanstead & The Fortress, Reassembled",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c002/p002.md"
+        "filePath": "e008/c002/p002.md",
+        "prevUrl": "/luna-leo/eastbound/museum-hopping/part-1-an-afternoon-among-the-animals-a-fortress-assembles-for-the-night",
+        "nextUrl": "/luna-leo/eastbound/the-practice-mission/part-1-museum-hopping-a-walk-through-time"
     },
     "/luna-leo/eastbound/the-practice-mission": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -690,13 +843,17 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Museum Hopping & A Walk Through Time",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c003/p001.md"
+        "filePath": "e008/c003/p001.md",
+        "prevUrl": "/luna-leo/eastbound/museum-hopping/part-2-a-taste-of-stanstead-the-fortress-reassembled",
+        "nextUrl": "/luna-leo/eastbound/the-practice-mission/part-2-a-taste-of-stanstead-the-fortress-reassembled"
     },
     "/luna-leo/eastbound/the-practice-mission/part-2-a-taste-of-stanstead-the-fortress-reassembled": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: A Taste of Stanstead & The Fortress, Reassembled",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c003/p002.md"
+        "filePath": "e008/c003/p002.md",
+        "prevUrl": "/luna-leo/eastbound/the-practice-mission/part-1-museum-hopping-a-walk-through-time",
+        "nextUrl": "/luna-leo/eastbound/a-layover-in-philly/the-practice-mission-a-sanctuary-of-calm"
     },
     "/luna-leo/eastbound/a-layover-in-philly": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -708,7 +865,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Practice Mission & A Sanctuary of Calm",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c004/p001.md"
+        "filePath": "e008/c004/p001.md",
+        "prevUrl": "/luna-leo/eastbound/the-practice-mission/part-2-a-taste-of-stanstead-the-fortress-reassembled",
+        "nextUrl": "/luna-leo/eastbound/the-journey-west/the-journey-continues-a-day-in-the-steel-city"
     },
     "/luna-leo/eastbound/the-journey-west": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -720,7 +879,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Journey Continues & A Day in the Steel City",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c005/p001.md"
+        "filePath": "e008/c005/p001.md",
+        "prevUrl": "/luna-leo/eastbound/a-layover-in-philly/the-practice-mission-a-sanctuary-of-calm",
+        "nextUrl": "/luna-leo/eastbound/the-shadow-on-the-platform/a-desperate-search-a-day-in-the-steel-city"
     },
     "/luna-leo/eastbound/the-shadow-on-the-platform": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -732,7 +893,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Desperate Search & A Day in the Steel City",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c006/p001.md"
+        "filePath": "e008/c006/p001.md",
+        "prevUrl": "/luna-leo/eastbound/the-journey-west/the-journey-continues-a-day-in-the-steel-city",
+        "nextUrl": "/luna-leo/eastbound/the-steel-city/the-colors-of-the-steel-city-a-sanctuary-in-the-steel-city"
     },
     "/luna-leo/eastbound/the-steel-city": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -744,7 +907,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Colors of the Steel City & A Sanctuary in the Steel City",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c007/p001.md"
+        "filePath": "e008/c007/p001.md",
+        "prevUrl": "/luna-leo/eastbound/the-shadow-on-the-platform/a-desperate-search-a-day-in-the-steel-city",
+        "nextUrl": "/luna-leo/heartland-to-the-peaks/the-windy-city/part-1-good-morning-chicago-deep-dish"
     },
     "/luna-leo/heartland-to-the-peaks": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -762,13 +927,17 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Good Morning, Chicago & Deep Dish",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c008/p001.md"
+        "filePath": "e009/c008/p001.md",
+        "prevUrl": "/luna-leo/eastbound/the-steel-city/the-colors-of-the-steel-city-a-sanctuary-in-the-steel-city",
+        "nextUrl": "/luna-leo/heartland-to-the-peaks/the-windy-city/part-2-the-cheese-toll-recovery"
     },
     "/luna-leo/heartland-to-the-peaks/the-windy-city/part-2-the-cheese-toll-recovery": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Cheese Toll & Recovery",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c008/p002.md"
+        "filePath": "e009/c008/p002.md",
+        "prevUrl": "/luna-leo/heartland-to-the-peaks/the-windy-city/part-1-good-morning-chicago-deep-dish",
+        "nextUrl": "/luna-leo/heartland-to-the-peaks/the-heartland/the-brat-diet-crossing-the-plains"
     },
     "/luna-leo/heartland-to-the-peaks/the-heartland": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -780,7 +949,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The BRAT Diet & Crossing the Plains",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c009/p001.md"
+        "filePath": "e009/c009/p001.md",
+        "prevUrl": "/luna-leo/heartland-to-the-peaks/the-windy-city/part-2-the-cheese-toll-recovery",
+        "nextUrl": "/luna-leo/heartland-to-the-peaks/the-mile-high-city/the-mile-high-city-bison-and-oysters"
     },
     "/luna-leo/heartland-to-the-peaks/the-mile-high-city": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -792,7 +963,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Mile High City & Bison and Oysters",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c010/p001.md"
+        "filePath": "e009/c010/p001.md",
+        "prevUrl": "/luna-leo/heartland-to-the-peaks/the-heartland/the-brat-diet-crossing-the-plains",
+        "nextUrl": "/luna-leo/heartland-to-the-peaks/the-botanic-gardens/the-centennial-botanic-gardens-one-more-night"
     },
     "/luna-leo/heartland-to-the-peaks/the-botanic-gardens": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -804,7 +977,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Centennial Botanic Gardens & One More Night",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c011/p001.md"
+        "filePath": "e009/c011/p001.md",
+        "prevUrl": "/luna-leo/heartland-to-the-peaks/the-mile-high-city/the-mile-high-city-bison-and-oysters",
+        "nextUrl": "/luna-leo/heartland-to-the-peaks/the-moffat-tunnel/part-1-night-terrors-the-observation-deck"
     },
     "/luna-leo/heartland-to-the-peaks/the-moffat-tunnel": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -816,13 +991,17 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Night Terrors & The Observation Deck",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c012/p001.md"
+        "filePath": "e009/c012/p001.md",
+        "prevUrl": "/luna-leo/heartland-to-the-peaks/the-botanic-gardens/the-centennial-botanic-gardens-one-more-night",
+        "nextUrl": "/luna-leo/heartland-to-the-peaks/the-moffat-tunnel/part-2-dining-car-service-the-utah-border"
     },
     "/luna-leo/heartland-to-the-peaks/the-moffat-tunnel/part-2-dining-car-service-the-utah-border": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Dining Car Service & The Utah Border",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c012/p002.md"
+        "filePath": "e009/c012/p002.md",
+        "prevUrl": "/luna-leo/heartland-to-the-peaks/the-moffat-tunnel/part-1-night-terrors-the-observation-deck",
+        "nextUrl": "/luna-leo/heartland-to-the-peaks/the-salt-lake-stop/the-salt-lake-stop-the-sovereign-regency-san-francisco"
     },
     "/luna-leo/heartland-to-the-peaks/the-salt-lake-stop": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -834,7 +1013,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Salt Lake Stop & The Sovereign Regency San Francisco",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c013/p001.md"
+        "filePath": "e009/c013/p001.md",
+        "prevUrl": "/luna-leo/heartland-to-the-peaks/the-moffat-tunnel/part-2-dining-car-service-the-utah-border",
+        "nextUrl": "/luna-leo/the-golden-state/the-city-by-the-bay/part-1-the-historic-f-line-the-transbay-tube"
     },
     "/luna-leo/the-golden-state": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -852,13 +1033,17 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Historic F-Line & The Transbay Tube",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c014/p001.md"
+        "filePath": "e010/c014/p001.md",
+        "prevUrl": "/luna-leo/heartland-to-the-peaks/the-salt-lake-stop/the-salt-lake-stop-the-sovereign-regency-san-francisco",
+        "nextUrl": "/luna-leo/the-golden-state/the-city-by-the-bay/part-2-east-bay-diner-the-bridge-at-night"
     },
     "/luna-leo/the-golden-state/the-city-by-the-bay/part-2-east-bay-diner-the-bridge-at-night": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: East Bay Diner & The Bridge at Night",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c014/p002.md"
+        "filePath": "e010/c014/p002.md",
+        "prevUrl": "/luna-leo/the-golden-state/the-city-by-the-bay/part-1-the-historic-f-line-the-transbay-tube",
+        "nextUrl": "/luna-leo/the-golden-state/the-sovereign-regency/part-1-the-atrium-the-fourth-of-july-realization"
     },
     "/luna-leo/the-golden-state/the-sovereign-regency": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -870,13 +1055,17 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Atrium & The Fourth of July Realization",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c015/p001.md"
+        "filePath": "e010/c015/p001.md",
+        "prevUrl": "/luna-leo/the-golden-state/the-city-by-the-bay/part-2-east-bay-diner-the-bridge-at-night",
+        "nextUrl": "/luna-leo/the-golden-state/the-sovereign-regency/part-2-the-team-transfer"
     },
     "/luna-leo/the-golden-state/the-sovereign-regency/part-2-the-team-transfer": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Team Transfer",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c015/p002.md"
+        "filePath": "e010/c015/p002.md",
+        "prevUrl": "/luna-leo/the-golden-state/the-sovereign-regency/part-1-the-atrium-the-fourth-of-july-realization",
+        "nextUrl": "/luna-leo/the-golden-state/karl-the-fog/part-1-the-golden-gate-the-transbay-emergency"
     },
     "/luna-leo/the-golden-state/karl-the-fog": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -888,13 +1077,17 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Golden Gate & The Transbay Emergency",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c016/p001.md"
+        "filePath": "e010/c016/p001.md",
+        "prevUrl": "/luna-leo/the-golden-state/the-sovereign-regency/part-2-the-team-transfer",
+        "nextUrl": "/luna-leo/the-golden-state/karl-the-fog/part-2-the-premonition"
     },
     "/luna-leo/the-golden-state/karl-the-fog/part-2-the-premonition": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Premonition",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c016/p002.md"
+        "filePath": "e010/c016/p002.md",
+        "prevUrl": "/luna-leo/the-golden-state/karl-the-fog/part-1-the-golden-gate-the-transbay-emergency",
+        "nextUrl": "/luna-leo/the-golden-state/the-sub-basement/the-lingering-shadows-retreat"
     },
     "/luna-leo/the-golden-state/the-sub-basement": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -906,7 +1099,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Lingering Shadows & Retreat",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c017/p001.md"
+        "filePath": "e010/c017/p001.md",
+        "prevUrl": "/luna-leo/the-golden-state/karl-the-fog/part-2-the-premonition",
+        "nextUrl": "/luna-leo/the-golden-state/the-southbound-platform/the-southbound-platform-the-voyage-inn"
     },
     "/luna-leo/the-golden-state/the-southbound-platform": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -918,7 +1113,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Southbound Platform & The Voyage Inn",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c018/p001.md"
+        "filePath": "e010/c018/p001.md",
+        "prevUrl": "/luna-leo/the-golden-state/the-sub-basement/the-lingering-shadows-retreat",
+        "nextUrl": "/luna-leo/the-golden-state/global-studios/global-city-the-shipping-box"
     },
     "/luna-leo/the-golden-state/global-studios": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -930,7 +1127,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Global City & The Shipping Box",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c019/p001.md"
+        "filePath": "e010/c019/p001.md",
+        "prevUrl": "/luna-leo/the-golden-state/the-southbound-platform/the-southbound-platform-the-voyage-inn",
+        "nextUrl": "/luna-leo/the-golden-state/the-enchanted-resort/part-1-the-orange-county-commute-the-silver-lining"
     },
     "/luna-leo/the-golden-state/the-enchanted-resort": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -942,13 +1141,17 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Orange County Commute & The Silver Lining",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c020/p001.md"
+        "filePath": "e010/c020/p001.md",
+        "prevUrl": "/luna-leo/the-golden-state/global-studios/global-city-the-shipping-box",
+        "nextUrl": "/luna-leo/the-golden-state/the-enchanted-resort/part-2-the-evening-news"
     },
     "/luna-leo/the-golden-state/the-enchanted-resort/part-2-the-evening-news": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Evening News",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c020/p002.md"
+        "filePath": "e010/c020/p002.md",
+        "prevUrl": "/luna-leo/the-golden-state/the-enchanted-resort/part-1-the-orange-county-commute-the-silver-lining",
+        "nextUrl": "/luna-leo/the-golden-state/hollywood-forever/fellowship-with-all-life"
     },
     "/luna-leo/the-golden-state/hollywood-forever": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -960,7 +1163,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Fellowship with All Life",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c021/p001.md"
+        "filePath": "e010/c021/p001.md",
+        "prevUrl": "/luna-leo/the-golden-state/the-enchanted-resort/part-2-the-evening-news",
+        "nextUrl": "/luna-leo/emerald-endings/chapter-98-the-confrontation/part-1-the-shattering-a-sanctuary-in-the-storm"
     },
     "/luna-leo/emerald-endings": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -978,19 +1183,25 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Shattering & A Sanctuary in the Storm",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c098/p001.md"
+        "filePath": "e011/c098/p001.md",
+        "prevUrl": "/luna-leo/the-golden-state/hollywood-forever/fellowship-with-all-life",
+        "nextUrl": "/luna-leo/emerald-endings/chapter-98-the-confrontation/part-2-the-long-night-begins-the-feast-of-homecoming"
     },
     "/luna-leo/emerald-endings/chapter-98-the-confrontation/part-2-the-long-night-begins-the-feast-of-homecoming": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Long Night Begins & The Feast of Homecoming",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c098/p002.md"
+        "filePath": "e011/c098/p002.md",
+        "prevUrl": "/luna-leo/emerald-endings/chapter-98-the-confrontation/part-1-the-shattering-a-sanctuary-in-the-storm",
+        "nextUrl": "/luna-leo/emerald-endings/chapter-98-the-confrontation/part-3-evening-rituals-and-secure-sleep"
     },
     "/luna-leo/emerald-endings/chapter-98-the-confrontation/part-3-evening-rituals-and-secure-sleep": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Evening Rituals and Secure Sleep",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c098/p003.md"
+        "filePath": "e011/c098/p003.md",
+        "prevUrl": "/luna-leo/emerald-endings/chapter-98-the-confrontation/part-2-the-long-night-begins-the-feast-of-homecoming",
+        "nextUrl": "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/part-1-the-shadow-on-the-platform-a-mission-of-agency"
     },
     "/luna-leo/emerald-endings/chapter-99-a-change-of-plans": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1002,19 +1213,25 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Shadow on the Platform & A Mission of Agency",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c099/p001.md"
+        "filePath": "e011/c099/p001.md",
+        "prevUrl": "/luna-leo/emerald-endings/chapter-98-the-confrontation/part-3-evening-rituals-and-secure-sleep",
+        "nextUrl": "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/part-2-reclaiming-a-sanctuary-a-new-path-forward"
     },
     "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/part-2-reclaiming-a-sanctuary-a-new-path-forward": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Reclaiming a Sanctuary & A New Path Forward",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c099/p002.md"
+        "filePath": "e011/c099/p002.md",
+        "prevUrl": "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/part-1-the-shadow-on-the-platform-a-mission-of-agency",
+        "nextUrl": "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/part-3-fortress-goes-to-college-the-first-peaceful-sleep"
     },
     "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/part-3-fortress-goes-to-college-the-first-peaceful-sleep": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Fortress Goes to College & The First Peaceful Sleep",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c099/p003.md"
+        "filePath": "e011/c099/p003.md",
+        "prevUrl": "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/part-2-reclaiming-a-sanctuary-a-new-path-forward",
+        "nextUrl": "/luna-leo/the-delores-nightmare/a-grieving-start/part-1-a-grieving-start-a-cautious-assessment"
     },
     "/luna-leo/the-delores-nightmare": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1032,13 +1249,17 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Grieving Start & A Cautious Assessment",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c001/p001.md"
+        "filePath": "e012/c001/p001.md",
+        "prevUrl": "/luna-leo/emerald-endings/chapter-99-a-change-of-plans/part-3-fortress-goes-to-college-the-first-peaceful-sleep",
+        "nextUrl": "/luna-leo/the-delores-nightmare/a-grieving-start/part-2-confronting-quantum-a-long-distance-lifeline"
     },
     "/luna-leo/the-delores-nightmare/a-grieving-start/part-2-confronting-quantum-a-long-distance-lifeline": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Confronting Quantum & A Long-Distance Lifeline",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c001/p002.md"
+        "filePath": "e012/c001/p002.md",
+        "prevUrl": "/luna-leo/the-delores-nightmare/a-grieving-start/part-1-a-grieving-start-a-cautious-assessment",
+        "nextUrl": "/luna-leo/the-delores-nightmare/the-tutor/part-1-the-tutor-a-guardian-s-shadow"
     },
     "/luna-leo/the-delores-nightmare/the-tutor": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1050,13 +1271,17 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Tutor & A Guardian's Shadow",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c002/p001.md"
+        "filePath": "e012/c002/p001.md",
+        "prevUrl": "/luna-leo/the-delores-nightmare/a-grieving-start/part-2-confronting-quantum-a-long-distance-lifeline",
+        "nextUrl": "/luna-leo/the-delores-nightmare/the-tutor/part-2-a-sleepless-resolve-a-fragile-normalcy"
     },
     "/luna-leo/the-delores-nightmare/the-tutor/part-2-a-sleepless-resolve-a-fragile-normalcy": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: A Sleepless Resolve & A Fragile Normalcy",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c002/p002.md"
+        "filePath": "e012/c002/p002.md",
+        "prevUrl": "/luna-leo/the-delores-nightmare/the-tutor/part-1-the-tutor-a-guardian-s-shadow",
+        "nextUrl": "/luna-leo/the-delores-nightmare/the-hijacked-plan/part-1-the-hijacked-plan-magnabyte-conflict"
     },
     "/luna-leo/the-delores-nightmare/the-hijacked-plan": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1068,19 +1293,71 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Hijacked Plan & MagnaByte Conflict",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c003/p001.md"
+        "filePath": "e012/c003/p001.md",
+        "prevUrl": "/luna-leo/the-delores-nightmare/the-tutor/part-2-a-sleepless-resolve-a-fragile-normalcy",
+        "nextUrl": "/luna-leo/the-delores-nightmare/the-hijacked-plan/part-2-printer-rage-guardianship-questions-and-the-flute-signal"
     },
-    "/luna-leo/the-delores-nightmare/the-hijacked-plan/part-2-printer-rage-guardianship-questions-and-a-forceful-kiss-leftovers-bus-schedules-and-locked-doors": {
+    "/luna-leo/the-delores-nightmare/the-hijacked-plan/part-2-printer-rage-guardianship-questions-and-the-flute-signal": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Printer Rage, Guardianship Questions, and a Forceful Kiss & Leftovers, Bus Schedules, and Locked Doors",
+        "title": "Part 2: Printer Rage, Guardianship Questions, and the Flute Signal",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c003/p002.md"
+        "filePath": "e012/c003/p002.md",
+        "prevUrl": "/luna-leo/the-delores-nightmare/the-hijacked-plan/part-1-the-hijacked-plan-magnabyte-conflict",
+        "noNext": true,
+        "crossroads": {
+            "id": "sibling-weekend-2003",
+            "trigger_part": "e012/c003/p002.md",
+            "trigger_url": "/luna-leo/the-delores-nightmare/the-hijacked-plan/part-2-printer-rage-guardianship-questions-and-the-flute-signal",
+            "kicker": "Story Crossroads \u2022 Columbus Day Sibling Weekend, October 11, 2003",
+            "title": "Delores Grabs Leo's Arms: Does Luna Explode and Throw Her Out?",
+            "prompt": "This weekend was supposed to be just Leo, his twin sister Luna, and his older sister Stella\u2014yet Delores hijacked the invite, shrieked at their printer, demanded Stella's legal guardianship, mocked Luna's Kaleidoscope Sun flute signal, and has just grabbed Leo's arms to yank him onto her lap. Both paths forward are complete, coequal stories (and shape Delores's upstream history in Jack & Sarah).",
+            "required_choices": [],
+            "options": [
+                {
+                    "id": "luna-throws-delores-out",
+                    "crossroads_id": "sibling-weekend-2003",
+                    "label": "Luna Screams 'GET OUT!' & Reclaims the Sibling Weekend",
+                    "subtitle": "Luna erupts before Delores can touch Leo further, Stella backs her with full guardianship authority to throw Delores out for good, and the three siblings reclaim their weekend\u2014skipping the four-day Pathfinder trip to Washington.",
+                    "entry_part": "paths/luna-throws-delores-out/e012/c003/p003.md",
+                    "entry_url": "/luna-leo/paths/luna-throws-delores-out/reclaiming-the-sibling-weekend/get-out-three-siblings-under-one-roof/part-3-get-out-throwing-delores-off-the-porch-locking-the-door-forever",
+                    "required_choices": {
+                        "sibling-weekend-2003": "luna-throws-delores-out"
+                    },
+                    "part_count": 3,
+                    "word_count": 2443,
+                    "reading_minutes": 10,
+                    "image": "/raggiesoft-books/images/covers/og/luna-leo.jpg"
+                },
+                {
+                    "id": "pathfinder-washington-ordeal",
+                    "crossroads_id": "sibling-weekend-2003",
+                    "label": "Bank Their Fury & Endure Through Tuesday",
+                    "subtitle": "Afraid of retaliation behind closed doors, Luna and Stella freeze, teach Leo the emergency TTY collect-call lifeline before Tuesday's bus, and fight across three thousand miles after the four-day Pathfinder trip to Washington.",
+                    "entry_part": "e012/c003/p003.md",
+                    "entry_url": "/luna-leo/the-delores-nightmare/the-hijacked-plan/part-3-a-forceful-kiss-locked-doors-tuesday-morning-departure",
+                    "required_choices": {
+                        "sibling-weekend-2003": "pathfinder-washington-ordeal"
+                    },
+                    "part_count": 75,
+                    "word_count": 132837,
+                    "reading_minutes": 532,
+                    "image": "/raggiesoft-books/images/scenes/luna-leo/b010/orf-airport-reunion-gate-a5.jpg"
+                }
+            ]
+        }
     },
-    "/luna-leo/the-delores-nightmare/the-hijacked-plan/part-3-a-day-under-duress-tuesday-morning-departure": {
+    "/luna-leo/the-delores-nightmare/the-hijacked-plan/part-3-a-forceful-kiss-locked-doors-tuesday-morning-departure": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: A Day Under Duress & Tuesday Morning Departure",
+        "title": "Part 3: A Forceful Kiss, Locked Doors, & Tuesday Morning Departure",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c003/p003.md"
+        "filePath": "e012/c003/p003.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/the-hijacked-plan/part-2-printer-rage-guardianship-questions-and-the-flute-signal",
+        "nextUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-1-the-trip-proposal"
     },
     "/luna-leo/the-delores-nightmare/the-trip-proposal": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1092,73 +1369,157 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Trip Proposal",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/p001.md"
+        "filePath": "e012/c004/p001.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/the-hijacked-plan/part-3-a-forceful-kiss-locked-doors-tuesday-morning-departure",
+        "nextUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-2-four-days-on-the-bus"
     },
     "/luna-leo/the-delores-nightmare/the-trip-proposal/part-2-four-days-on-the-bus": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Four Days on the Bus",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/p002.md"
+        "filePath": "e012/c004/p002.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-1-the-trip-proposal",
+        "nextUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-3-the-music-city-realization"
     },
     "/luna-leo/the-delores-nightmare/the-trip-proposal/part-3-the-music-city-realization": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Music City Realization",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/p003.md"
+        "filePath": "e012/c004/p003.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-2-four-days-on-the-bus",
+        "nextUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-4-the-colby-turn"
     },
     "/luna-leo/the-delores-nightmare/the-trip-proposal/part-4-the-colby-turn": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Colby Turn",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/p004.md"
+        "filePath": "e012/c004/p004.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-3-the-music-city-realization",
+        "nextUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-5-mile-high"
     },
     "/luna-leo/the-delores-nightmare/the-trip-proposal/part-5-mile-high": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: Mile High",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/p005.md"
+        "filePath": "e012/c004/p005.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-4-the-colby-turn",
+        "nextUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-6-pressure-and-lies"
     },
     "/luna-leo/the-delores-nightmare/the-trip-proposal/part-6-pressure-and-lies": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 6: Pressure and Lies",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/p006.md"
+        "filePath": "e012/c004/p006.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-5-mile-high",
+        "nextUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-7-the-pasco-lock"
     },
     "/luna-leo/the-delores-nightmare/the-trip-proposal/part-7-the-pasco-lock": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 7: The Pasco Lock",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/p007.md"
+        "filePath": "e012/c004/p007.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-6-pressure-and-lies",
+        "nextUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-8-arrival-in-the-pacific-northwest"
     },
     "/luna-leo/the-delores-nightmare/the-trip-proposal/part-8-arrival-in-the-pacific-northwest": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 8: Arrival in the Pacific Northwest",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/p008.md"
+        "filePath": "e012/c004/p008.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-7-the-pasco-lock",
+        "nextUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-9-an-unwelcoming-house"
     },
     "/luna-leo/the-delores-nightmare/the-trip-proposal/part-9-an-unwelcoming-house": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 9: An Unwelcoming House",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/p009.md"
+        "filePath": "e012/c004/p009.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-8-arrival-in-the-pacific-northwest",
+        "nextUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-10-jet-lag-pancakes-and-a-fragile-plan"
     },
     "/luna-leo/the-delores-nightmare/the-trip-proposal/part-10-jet-lag-pancakes-and-a-fragile-plan": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 10: Jet Lag, Pancakes, and a Fragile Plan",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/p010.md"
+        "filePath": "e012/c004/p010.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-9-an-unwelcoming-house",
+        "nextUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-11-delores-forces-herself"
     },
     "/luna-leo/the-delores-nightmare/the-trip-proposal/part-11-delores-forces-herself": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 11: Delores Forces Herself",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/p011.md"
+        "filePath": "e012/c004/p011.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-10-jet-lag-pancakes-and-a-fragile-plan",
+        "nextUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-12-the-breaking-point"
     },
     "/luna-leo/the-delores-nightmare/the-trip-proposal/part-12-the-breaking-point": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 12: The Breaking Point",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c004/p012.md"
+        "filePath": "e012/c004/p012.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-11-delores-forces-herself",
+        "nextUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-1-escape-through-the-rain"
     },
     "/luna-leo/the-delores-nightmare/escape-through-the-rain": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1170,109 +1531,235 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Escape Through the Rain",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/p001.md"
+        "filePath": "e012/c005/p001.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/the-trip-proposal/part-12-the-breaking-point",
+        "nextUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-2-carol-looks-for-leo"
     },
     "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-2-carol-looks-for-leo": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Carol Looks for Leo",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/p002.md"
+        "filePath": "e012/c005/p002.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-1-escape-through-the-rain",
+        "nextUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-3-the-tty-lifeline"
     },
     "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-3-the-tty-lifeline": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The TTY Lifeline",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/p003.md"
+        "filePath": "e012/c005/p003.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-2-carol-looks-for-leo",
+        "nextUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-4-the-longest-hour"
     },
     "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-4-the-longest-hour": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Longest Hour",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/p004.md"
+        "filePath": "e012/c005/p004.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-3-the-tty-lifeline",
+        "nextUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-5-sanctuary-in-a-sterile-room-the-boarding-pass"
     },
     "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-5-sanctuary-in-a-sterile-room-the-boarding-pass": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: Sanctuary in a Sterile Room & The Boarding Pass",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/p005.md"
+        "filePath": "e012/c005/p005.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-4-the-longest-hour",
+        "nextUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-6-airside-sanctuary"
     },
     "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-6-airside-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 6: Airside Sanctuary",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/p006.md"
+        "filePath": "e012/c005/p006.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-5-sanctuary-in-a-sterile-room-the-boarding-pass",
+        "nextUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-7-airside-mission-clothing"
     },
     "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-7-airside-mission-clothing": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 7: Airside Mission \u2013 Clothing",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/p007.md"
+        "filePath": "e012/c005/p007.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-6-airside-sanctuary",
+        "nextUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-8-restoring-dignity"
     },
     "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-8-restoring-dignity": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 8: Restoring Dignity",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/p008.md"
+        "filePath": "e012/c005/p008.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-7-airside-mission-clothing",
+        "nextUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-9-a-song-of-homecoming"
     },
     "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-9-a-song-of-homecoming": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 9: A Song of Homecoming",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/p009.md"
+        "filePath": "e012/c005/p009.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-8-restoring-dignity",
+        "nextUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-10-the-storm-before-the-calm"
     },
     "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-10-the-storm-before-the-calm": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 10: The Storm Before the Calm",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/p010.md"
+        "filePath": "e012/c005/p010.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-9-a-song-of-homecoming",
+        "nextUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-11-flight-1138"
     },
     "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-11-flight-1138": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 11: Flight 1138",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/p011.md"
+        "filePath": "e012/c005/p011.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-10-the-storm-before-the-calm",
+        "nextUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-12-a-longing-for-simplicity"
     },
     "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-12-a-longing-for-simplicity": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 12: A Longing for Simplicity",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/p012.md"
+        "filePath": "e012/c005/p012.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-11-flight-1138",
+        "nextUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-13-a-midway-dash"
     },
     "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-13-a-midway-dash": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 13: A Midway Dash",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/p013.md"
+        "filePath": "e012/c005/p013.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-12-a-longing-for-simplicity",
+        "nextUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-14-the-gate-pass"
     },
     "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-14-the-gate-pass": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 14: The Gate Pass",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/p014.md"
+        "filePath": "e012/c005/p014.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-13-a-midway-dash",
+        "nextUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-15-sanctuary"
     },
     "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-15-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 15: Sanctuary",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/p015.md"
+        "filePath": "e012/c005/p015.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-14-the-gate-pass",
+        "nextUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-16-haven-city"
     },
     "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-16-haven-city": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 16: Haven City",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/p016.md"
+        "filePath": "e012/c005/p016.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-15-sanctuary",
+        "nextUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-17-the-contaminated-sanctuary-later-that-night"
     },
     "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-17-the-contaminated-sanctuary-later-that-night": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 17: The Contaminated Sanctuary & Later That Night",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/p017.md"
+        "filePath": "e012/c005/p017.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-16-haven-city",
+        "nextUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-18-i-ll-drag-you-back"
     },
     "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-18-i-ll-drag-you-back": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 18: I'll Drag You Back",
         "theme": "raggiesoft-books",
-        "filePath": "e012/c005/p018.md"
+        "filePath": "e012/c005/p018.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-17-the-contaminated-sanctuary-later-that-night",
+        "nextUrl": "/luna-leo/safe-harbor-stark-reality/the-first-morning/part-1-the-first-morning-the-fortress-assembles-for-the-night"
     },
     "/luna-leo/safe-harbor-stark-reality": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1290,13 +1777,27 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The First Morning & The Fortress Assembles for the Night",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c003/p001.md"
+        "filePath": "e013/c003/p001.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/escape-through-the-rain/part-18-i-ll-drag-you-back",
+        "nextUrl": "/luna-leo/safe-harbor-stark-reality/the-first-morning/part-2-kent-assembling-the-case"
     },
     "/luna-leo/safe-harbor-stark-reality/the-first-morning/part-2-kent-assembling-the-case": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Kent? & Assembling the Case",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c003/p002.md"
+        "filePath": "e013/c003/p002.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/safe-harbor-stark-reality/the-first-morning/part-1-the-first-morning-the-fortress-assembles-for-the-night",
+        "nextUrl": "/luna-leo/safe-harbor-stark-reality/assembling-the-fortress/assembling-the-fortress-ordering-a-new-voice"
     },
     "/luna-leo/safe-harbor-stark-reality/assembling-the-fortress": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1308,7 +1809,14 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Assembling the Fortress & Ordering a New Voice",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c004/p001.md"
+        "filePath": "e013/c004/p001.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/safe-harbor-stark-reality/the-first-morning/part-2-kent-assembling-the-case",
+        "nextUrl": "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/part-1-a-new-language-of-home-poutine-logistics-and-a-fortress-in-french-class"
     },
     "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1320,25 +1828,53 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A New Language of Home & Poutine Logistics and a Fortress in French Class",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c005/p001.md"
+        "filePath": "e013/c005/p001.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/safe-harbor-stark-reality/assembling-the-fortress/assembling-the-fortress-ordering-a-new-voice",
+        "nextUrl": "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/part-2-a-tale-of-two-frances-the-final-secret"
     },
     "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/part-2-a-tale-of-two-frances-the-final-secret": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: A Tale of Two Frances & The Final Secret",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c005/p002.md"
+        "filePath": "e013/c005/p002.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/part-1-a-new-language-of-home-poutine-logistics-and-a-fortress-in-french-class",
+        "nextUrl": "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/part-3-the-grand-old-lady-on-the-hill-the-fortress-expanded"
     },
     "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/part-3-the-grand-old-lady-on-the-hill-the-fortress-expanded": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Grand Old Lady on the Hill & The Fortress Expanded",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c005/p003.md"
+        "filePath": "e013/c005/p003.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/part-2-a-tale-of-two-frances-the-final-secret",
+        "nextUrl": "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/part-4-the-prime-time-r-veillon-the-comfort-of-home"
     },
     "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/part-4-the-prime-time-r-veillon-the-comfort-of-home": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Prime-Time R\u00e9veillon & The Comfort of Home",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c005/p004.md"
+        "filePath": "e013/c005/p004.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/part-3-the-grand-old-lady-on-the-hill-the-fortress-expanded",
+        "nextUrl": "/luna-leo/safe-harbor-stark-reality/the-morning-after/the-morning-after-the-holiday-afterglow"
     },
     "/luna-leo/safe-harbor-stark-reality/the-morning-after": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1350,7 +1886,14 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Morning After & The Holiday Afterglow",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c006/p001.md"
+        "filePath": "e013/c006/p001.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/safe-harbor-stark-reality/a-new-language-of-home/part-4-the-prime-time-r-veillon-the-comfort-of-home",
+        "nextUrl": "/luna-leo/safe-harbor-stark-reality/a-day-of-quiet/a-day-of-quiet-a-nightmare-in-the-safe-harbor"
     },
     "/luna-leo/safe-harbor-stark-reality/a-day-of-quiet": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1362,7 +1905,14 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Day of Quiet & A Nightmare in the Safe Harbor",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c007/p001.md"
+        "filePath": "e013/c007/p001.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/safe-harbor-stark-reality/the-morning-after/the-morning-after-the-holiday-afterglow",
+        "nextUrl": "/luna-leo/safe-harbor-stark-reality/the-day-in-court/the-day-in-court"
     },
     "/luna-leo/safe-harbor-stark-reality/the-day-in-court": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1374,7 +1924,14 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Day in Court",
         "theme": "raggiesoft-books",
-        "filePath": "e013/c008/p001.md"
+        "filePath": "e013/c008/p001.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/safe-harbor-stark-reality/a-day-of-quiet/a-day-of-quiet-a-nightmare-in-the-safe-harbor",
+        "nextUrl": "/luna-leo/the-trial-and-the-toast/the-judge-s-order/part-1-the-judge-s-order"
     },
     "/luna-leo/the-trial-and-the-toast": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1392,19 +1949,40 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Judge's Order",
         "theme": "raggiesoft-books",
-        "filePath": "e014/c001/p001.md"
+        "filePath": "e014/c001/p001.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/safe-harbor-stark-reality/the-day-in-court/the-day-in-court",
+        "nextUrl": "/luna-leo/the-trial-and-the-toast/the-judge-s-order/part-2-the-longest-morning"
     },
     "/luna-leo/the-trial-and-the-toast/the-judge-s-order/part-2-the-longest-morning": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Longest Morning",
         "theme": "raggiesoft-books",
-        "filePath": "e014/c001/p002.md"
+        "filePath": "e014/c001/p002.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-trial-and-the-toast/the-judge-s-order/part-1-the-judge-s-order",
+        "nextUrl": "/luna-leo/the-trial-and-the-toast/the-judge-s-order/part-3-the-new-ms-walker-porter-an-impossible-thought"
     },
     "/luna-leo/the-trial-and-the-toast/the-judge-s-order/part-3-the-new-ms-walker-porter-an-impossible-thought": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The New Ms. Walker Porter & An Impossible Thought",
         "theme": "raggiesoft-books",
-        "filePath": "e014/c001/p003.md"
+        "filePath": "e014/c001/p003.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-trial-and-the-toast/the-judge-s-order/part-2-the-longest-morning",
+        "nextUrl": "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/part-1-a-test-and-a-toast"
     },
     "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1416,19 +1994,40 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Test and a Toast",
         "theme": "raggiesoft-books",
-        "filePath": "e014/c002/p001.md"
+        "filePath": "e014/c002/p001.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-trial-and-the-toast/the-judge-s-order/part-3-the-new-ms-walker-porter-an-impossible-thought",
+        "nextUrl": "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/part-2-the-separation-the-toasts"
     },
     "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/part-2-the-separation-the-toasts": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Separation & The Toasts",
         "theme": "raggiesoft-books",
-        "filePath": "e014/c002/p002.md"
+        "filePath": "e014/c002/p002.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/part-1-a-test-and-a-toast",
+        "nextUrl": "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/part-3-the-feast-decompression"
     },
     "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/part-3-the-feast-decompression": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Feast & Decompression",
         "theme": "raggiesoft-books",
-        "filePath": "e014/c002/p003.md"
+        "filePath": "e014/c002/p003.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/part-2-the-separation-the-toasts",
+        "nextUrl": "/luna-leo/the-iron-point-transfer/the-weapon/part-1-the-weapon-the-tape"
     },
     "/luna-leo/the-iron-point-transfer": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1446,13 +2045,27 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Weapon & The Tape",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c001/p001.md"
+        "filePath": "e015/c001/p001.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-trial-and-the-toast/a-test-and-a-toast/part-3-the-feast-decompression",
+        "nextUrl": "/luna-leo/the-iron-point-transfer/the-weapon/part-2-the-verdict-the-long-twilight"
     },
     "/luna-leo/the-iron-point-transfer/the-weapon/part-2-the-verdict-the-long-twilight": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Verdict & The Long Twilight",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c001/p002.md"
+        "filePath": "e015/c001/p002.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-iron-point-transfer/the-weapon/part-1-the-weapon-the-tape",
+        "nextUrl": "/luna-leo/the-iron-point-transfer/the-iron-link/part-1-the-iron-link-the-victory-lap-the-blueprint"
     },
     "/luna-leo/the-iron-point-transfer/the-iron-link": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1464,19 +2077,40 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Iron Link & The Victory Lap & The Blueprint",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c002/p001.md"
+        "filePath": "e015/c002/p001.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-iron-point-transfer/the-weapon/part-2-the-verdict-the-long-twilight",
+        "nextUrl": "/luna-leo/the-iron-point-transfer/the-iron-link/part-2-the-subterranean-city-the-foundation"
     },
     "/luna-leo/the-iron-point-transfer/the-iron-link/part-2-the-subterranean-city-the-foundation": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Subterranean City & The Foundation",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c002/p002.md"
+        "filePath": "e015/c002/p002.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-iron-point-transfer/the-iron-link/part-1-the-iron-link-the-victory-lap-the-blueprint",
+        "nextUrl": "/luna-leo/the-iron-point-transfer/the-iron-link/part-3-the-last-train-out-the-lobster-toast"
     },
     "/luna-leo/the-iron-point-transfer/the-iron-link/part-3-the-last-train-out-the-lobster-toast": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Last Train Out & The Lobster Toast",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c002/p003.md"
+        "filePath": "e015/c002/p003.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-iron-point-transfer/the-iron-link/part-2-the-subterranean-city-the-foundation",
+        "nextUrl": "/luna-leo/the-iron-point-transfer/the-orange-army/part-1-the-orange-army-the-restoration"
     },
     "/luna-leo/the-iron-point-transfer/the-orange-army": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1488,19 +2122,40 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Orange Army & The Restoration",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c003/p001.md"
+        "filePath": "e015/c003/p001.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-iron-point-transfer/the-iron-link/part-3-the-last-train-out-the-lobster-toast",
+        "nextUrl": "/luna-leo/the-iron-point-transfer/the-orange-army/part-2-the-closing-table-the-vessel"
     },
     "/luna-leo/the-iron-point-transfer/the-orange-army/part-2-the-closing-table-the-vessel": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Closing Table & The Vessel",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c003/p002.md"
+        "filePath": "e015/c003/p002.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-iron-point-transfer/the-orange-army/part-1-the-orange-army-the-restoration",
+        "nextUrl": "/luna-leo/the-iron-point-transfer/the-orange-army/part-3-the-final-passenger"
     },
     "/luna-leo/the-iron-point-transfer/the-orange-army/part-3-the-final-passenger": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Final Passenger",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c003/p003.md"
+        "filePath": "e015/c003/p003.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-iron-point-transfer/the-orange-army/part-2-the-closing-table-the-vessel",
+        "nextUrl": "/luna-leo/the-iron-point-transfer/the-transfer-of-power/part-1-the-transfer-of-power-the-final-crossing"
     },
     "/luna-leo/the-iron-point-transfer/the-transfer-of-power": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1512,13 +2167,27 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Transfer of Power & The Final Crossing",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c004/p001.md"
+        "filePath": "e015/c004/p001.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-iron-point-transfer/the-orange-army/part-3-the-final-passenger",
+        "nextUrl": "/luna-leo/the-iron-point-transfer/the-transfer-of-power/part-2-the-arts-box"
     },
     "/luna-leo/the-iron-point-transfer/the-transfer-of-power/part-2-the-arts-box": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The ARTS-Box",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c004/p002.md"
+        "filePath": "e015/c004/p002.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-iron-point-transfer/the-transfer-of-power/part-1-the-transfer-of-power-the-final-crossing",
+        "nextUrl": "/luna-leo/the-iron-point-transfer/the-landing/part-1-the-landing"
     },
     "/luna-leo/the-iron-point-transfer/the-landing": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1530,25 +2199,53 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Landing",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c005/p001.md"
+        "filePath": "e015/c005/p001.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-iron-point-transfer/the-transfer-of-power/part-2-the-arts-box",
+        "nextUrl": "/luna-leo/the-iron-point-transfer/the-landing/part-2-the-home-court"
     },
     "/luna-leo/the-iron-point-transfer/the-landing/part-2-the-home-court": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Home Court",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c005/p002.md"
+        "filePath": "e015/c005/p002.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-iron-point-transfer/the-landing/part-1-the-landing",
+        "nextUrl": "/luna-leo/the-iron-point-transfer/the-landing/part-3-the-traffic-report-the-twin-frequency"
     },
     "/luna-leo/the-iron-point-transfer/the-landing/part-3-the-traffic-report-the-twin-frequency": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Traffic Report & The Twin Frequency",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c005/p003.md"
+        "filePath": "e015/c005/p003.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-iron-point-transfer/the-landing/part-2-the-home-court",
+        "nextUrl": "/luna-leo/the-iron-point-transfer/the-landing/part-4-the-wall-test-the-warning-signs"
     },
     "/luna-leo/the-iron-point-transfer/the-landing/part-4-the-wall-test-the-warning-signs": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Wall Test & The Warning Signs",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c005/p004.md"
+        "filePath": "e015/c005/p004.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-iron-point-transfer/the-landing/part-3-the-traffic-report-the-twin-frequency",
+        "nextUrl": "/luna-leo/the-iron-point-transfer/the-ticket-kiosk/part-1-the-ticket-kiosk-the-crossing-and-the-calm"
     },
     "/luna-leo/the-iron-point-transfer/the-ticket-kiosk": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1560,13 +2257,27 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Ticket Kiosk & The Crossing and the Calm",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c006/p001.md"
+        "filePath": "e015/c006/p001.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-iron-point-transfer/the-landing/part-4-the-wall-test-the-warning-signs",
+        "nextUrl": "/luna-leo/the-iron-point-transfer/the-ticket-kiosk/part-2-the-shield-the-return-of-the-fleet"
     },
     "/luna-leo/the-iron-point-transfer/the-ticket-kiosk/part-2-the-shield-the-return-of-the-fleet": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Shield & The Return of the Fleet",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c006/p002.md"
+        "filePath": "e015/c006/p002.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-iron-point-transfer/the-ticket-kiosk/part-1-the-ticket-kiosk-the-crossing-and-the-calm",
+        "nextUrl": "/luna-leo/the-iron-point-transfer/the-official-stamp/part-1-the-official-stamp-the-bill"
     },
     "/luna-leo/the-iron-point-transfer/the-official-stamp": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1578,13 +2289,27 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Official Stamp & The Bill",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c007/p001.md"
+        "filePath": "e015/c007/p001.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-iron-point-transfer/the-ticket-kiosk/part-2-the-shield-the-return-of-the-fleet",
+        "nextUrl": "/luna-leo/the-iron-point-transfer/the-official-stamp/part-2-the-textbook-run-the-last-mile-problem"
     },
     "/luna-leo/the-iron-point-transfer/the-official-stamp/part-2-the-textbook-run-the-last-mile-problem": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Textbook Run & The Last Mile Problem",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c007/p002.md"
+        "filePath": "e015/c007/p002.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-iron-point-transfer/the-official-stamp/part-1-the-official-stamp-the-bill",
+        "nextUrl": "/luna-leo/the-iron-point-transfer/the-ferry-and-the-fortress/part-1-the-ferry-and-the-fortress-the-clean-break"
     },
     "/luna-leo/the-iron-point-transfer/the-ferry-and-the-fortress": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1596,13 +2321,27 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Ferry and the Fortress & The Clean Break",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c008/p001.md"
+        "filePath": "e015/c008/p001.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-iron-point-transfer/the-official-stamp/part-2-the-textbook-run-the-last-mile-problem",
+        "nextUrl": "/luna-leo/the-iron-point-transfer/the-ferry-and-the-fortress/part-2-the-night-watch"
     },
     "/luna-leo/the-iron-point-transfer/the-ferry-and-the-fortress/part-2-the-night-watch": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Night Watch",
         "theme": "raggiesoft-books",
-        "filePath": "e015/c008/p002.md"
+        "filePath": "e015/c008/p002.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-iron-point-transfer/the-ferry-and-the-fortress/part-1-the-ferry-and-the-fortress-the-clean-break",
+        "nextUrl": "/luna-leo/finding-a-new-house/the-05-30-alarm/part-1-the-05-30-alarm"
     },
     "/luna-leo/finding-a-new-house": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1620,31 +2359,66 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The 05:30 Alarm",
         "theme": "raggiesoft-books",
-        "filePath": "e016/c001/p001.md"
+        "filePath": "e016/c001/p001.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/the-iron-point-transfer/the-ferry-and-the-fortress/part-2-the-night-watch",
+        "nextUrl": "/luna-leo/finding-a-new-house/the-05-30-alarm/part-2-the-rainy-day-express"
     },
     "/luna-leo/finding-a-new-house/the-05-30-alarm/part-2-the-rainy-day-express": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Rainy Day Express",
         "theme": "raggiesoft-books",
-        "filePath": "e016/c001/p002.md"
+        "filePath": "e016/c001/p002.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/finding-a-new-house/the-05-30-alarm/part-1-the-05-30-alarm",
+        "nextUrl": "/luna-leo/finding-a-new-house/the-05-30-alarm/part-3-the-split-screen-the-vetting-process"
     },
     "/luna-leo/finding-a-new-house/the-05-30-alarm/part-3-the-split-screen-the-vetting-process": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Split Screen & The Vetting Process",
         "theme": "raggiesoft-books",
-        "filePath": "e016/c001/p003.md"
+        "filePath": "e016/c001/p003.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/finding-a-new-house/the-05-30-alarm/part-2-the-rainy-day-express",
+        "nextUrl": "/luna-leo/finding-a-new-house/the-05-30-alarm/part-4-the-dialect-shock-the-audition"
     },
     "/luna-leo/finding-a-new-house/the-05-30-alarm/part-4-the-dialect-shock-the-audition": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Dialect Shock & The Audition",
         "theme": "raggiesoft-books",
-        "filePath": "e016/c001/p004.md"
+        "filePath": "e016/c001/p004.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/finding-a-new-house/the-05-30-alarm/part-3-the-split-screen-the-vetting-process",
+        "nextUrl": "/luna-leo/finding-a-new-house/the-05-30-alarm/part-5-the-library-rendezvous-the-glass-wall"
     },
     "/luna-leo/finding-a-new-house/the-05-30-alarm/part-5-the-library-rendezvous-the-glass-wall": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: The Library Rendezvous & The Glass Wall",
         "theme": "raggiesoft-books",
-        "filePath": "e016/c001/p005.md"
+        "filePath": "e016/c001/p005.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/finding-a-new-house/the-05-30-alarm/part-4-the-dialect-shock-the-audition",
+        "nextUrl": "/luna-leo/finding-a-new-house/the-green-room/part-1-the-green-room-the-jurisdiction-trap"
     },
     "/luna-leo/finding-a-new-house/the-green-room": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1656,18 +2430,110 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Green Room & The Jurisdiction Trap",
         "theme": "raggiesoft-books",
-        "filePath": "e016/c002/p001.md"
+        "filePath": "e016/c002/p001.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/finding-a-new-house/the-05-30-alarm/part-5-the-library-rendezvous-the-glass-wall",
+        "nextUrl": "/luna-leo/finding-a-new-house/the-green-room/part-2-the-station-assault-the-identity-protocol"
     },
     "/luna-leo/finding-a-new-house/the-green-room/part-2-the-station-assault-the-identity-protocol": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Station Assault & The Identity Protocol",
         "theme": "raggiesoft-books",
-        "filePath": "e016/c002/p002.md"
+        "filePath": "e016/c002/p002.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/finding-a-new-house/the-green-room/part-1-the-green-room-the-jurisdiction-trap",
+        "nextUrl": "/luna-leo/finding-a-new-house/the-green-room/part-3-the-plastic-anchor-the-maiden-voyage"
     },
     "/luna-leo/finding-a-new-house/the-green-room/part-3-the-plastic-anchor-the-maiden-voyage": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Plastic Anchor & The Maiden Voyage",
         "theme": "raggiesoft-books",
-        "filePath": "e016/c002/p003.md"
+        "filePath": "e016/c002/p003.md",
+        "pathId": "pathfinder-washington-ordeal",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "pathfinder-washington-ordeal"
+        },
+        "prevUrl": "/luna-leo/finding-a-new-house/the-green-room/part-2-the-station-assault-the-identity-protocol",
+        "noNext": true
+    },
+    "/luna-leo/paths/luna-throws-delores-out/reclaiming-the-sibling-weekend": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Reclaiming the Sibling Weekend",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|luna-throws-delores-out|0",
+        "pathId": "luna-throws-delores-out",
+        "crossroadsId": "sibling-weekend-2003"
+    },
+    "/luna-leo/paths/luna-throws-delores-out/reclaiming-the-sibling-weekend/get-out-three-siblings-under-one-roof": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "GET OUT! & Three Siblings Under One Roof",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|luna-throws-delores-out|0|0",
+        "pathId": "luna-throws-delores-out",
+        "crossroadsId": "sibling-weekend-2003"
+    },
+    "/luna-leo/paths/luna-throws-delores-out/reclaiming-the-sibling-weekend/get-out-three-siblings-under-one-roof/part-3-get-out-throwing-delores-off-the-porch-locking-the-door-forever": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: 'GET OUT!' \u2014 Throwing Delores Off the Porch & Locking the Door Forever",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/luna-throws-delores-out/e012/c003/p003.md",
+        "pathId": "luna-throws-delores-out",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "luna-throws-delores-out"
+        },
+        "prevUrl": "/luna-leo/the-delores-nightmare/the-hijacked-plan/part-2-printer-rage-guardianship-questions-and-the-flute-signal",
+        "nextUrl": "/luna-leo/paths/luna-throws-delores-out/reclaiming-the-sibling-weekend/get-out-three-siblings-under-one-roof/part-4-a-brother-his-twin-sister-and-his-older-sister-vinyl-records-clearing-out-portsmouth"
+    },
+    "/luna-leo/paths/luna-throws-delores-out/reclaiming-the-sibling-weekend/get-out-three-siblings-under-one-roof/part-4-a-brother-his-twin-sister-and-his-older-sister-vinyl-records-clearing-out-portsmouth": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: A Brother, His Twin Sister, and His Older Sister \u2014 Vinyl Records & Clearing Out Portsmouth",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/luna-throws-delores-out/e012/c003/p004.md",
+        "pathId": "luna-throws-delores-out",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "luna-throws-delores-out"
+        },
+        "prevUrl": "/luna-leo/paths/luna-throws-delores-out/reclaiming-the-sibling-weekend/get-out-three-siblings-under-one-roof/part-3-get-out-throwing-delores-off-the-porch-locking-the-door-forever",
+        "nextUrl": "/luna-leo/paths/luna-throws-delores-out/the-unbroken-fortress-french-class-iron-point/olivia-arrives-whole-beginning-french-i-moving-north-to-iron-point/thanksgiving-in-peace-beginning-french-i-olivia-walker-porter-iron-point"
+    },
+    "/luna-leo/paths/luna-throws-delores-out/the-unbroken-fortress-french-class-iron-point": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Unbroken Fortress, French Class, & Iron Point",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|luna-throws-delores-out|1",
+        "pathId": "luna-throws-delores-out",
+        "crossroadsId": "sibling-weekend-2003"
+    },
+    "/luna-leo/paths/luna-throws-delores-out/the-unbroken-fortress-french-class-iron-point/olivia-arrives-whole-beginning-french-i-moving-north-to-iron-point": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Olivia Arrives Whole, Beginning French I, & Moving North to Iron Point",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|luna-throws-delores-out|1|0",
+        "pathId": "luna-throws-delores-out",
+        "crossroadsId": "sibling-weekend-2003"
+    },
+    "/luna-leo/paths/luna-throws-delores-out/the-unbroken-fortress-french-class-iron-point/olivia-arrives-whole-beginning-french-i-moving-north-to-iron-point/thanksgiving-in-peace-beginning-french-i-olivia-walker-porter-iron-point": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Thanksgiving in Peace, Beginning French I, Olivia Walker Porter, & Iron Point",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/luna-throws-delores-out/e013/c001/p001.md",
+        "pathId": "luna-throws-delores-out",
+        "crossroadsId": "sibling-weekend-2003",
+        "requiredChoices": {
+            "sibling-weekend-2003": "luna-throws-delores-out"
+        },
+        "prevUrl": "/luna-leo/paths/luna-throws-delores-out/reclaiming-the-sibling-weekend/get-out-three-siblings-under-one-roof/part-4-a-brother-his-twin-sister-and-his-older-sister-vinyl-records-clearing-out-portsmouth",
+        "noNext": true
     }
 }

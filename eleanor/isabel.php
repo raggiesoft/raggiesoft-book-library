@@ -97,6 +97,10 @@ $legacyPartRedirects = [
     '/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/summer-2003-college-tour-for-rising-junior-wesley-meeting-family-in-minnesota-stopping-brandon-cold/part-2-stops-five-through-seven-west-broad-street-at-cvu-ring-roads-at-george-wythe-cutting-northern-valley-s-open-house-short'
         => '/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/summer-2003-college-tour-for-rising-junior-wesley-meeting-family-in-minnesota-stopping-brandon-cold/part-2-stops-five-through-seven-west-broad-street-at-cvu-ring-roads-at-george-wythe-cutting-shenandoah-valley-s-open-house-short',
 
+    // Luna & Leo (Era 12, Chapter 3, Part 2): Split at Sibling Weekend Story Crossroads before the forceful kiss
+    '/luna-leo/the-delores-nightmare/the-hijacked-plan/part-2-printer-rage-guardianship-questions-and-a-forceful-kiss-leftovers-bus-schedules-and-locked-doors'
+        => '/luna-leo/the-delores-nightmare/the-hijacked-plan/part-2-printer-rage-guardianship-questions-and-the-flute-signal',
+
     // Katie & Nathaniel (Era 10, Chapter 3, Part 2): Stripped street number from Victoria Boulevard
     '/katie/across-the-rotunda-the-senate-of-virginia/the-accessibility-project-riding-every-bus-across-the-commonwealth-for-the-united-states-senate/part-2-the-jammed-ramp-at-3400-victoria-boulevard-shoreline-transit-across-the-bay-wearing-the-nfa-s-f-grade-in-fairfax'
         => '/katie/across-the-rotunda-the-senate-of-virginia/the-accessibility-project-riding-every-bus-across-the-commonwealth-for-the-united-states-senate/part-2-the-jammed-ramp-on-victoria-boulevard-shoreline-transit-across-the-bay-wearing-the-nfa-s-f-grade-in-fairfax',

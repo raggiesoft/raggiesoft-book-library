@@ -12,37 +12,80 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "185 KB",
-            "pdf": "3.2 MB",
-            "text_epub": "185 KB",
-            "text_pdf": "3.2 MB",
-            "package_7z": "142 KB",
-            "epub_bytes": 189673,
-            "pdf_bytes": 3367309,
-            "text_epub_bytes": 189671,
-            "text_pdf_bytes": 3367313,
-            "package_7z_bytes": 144960
+            "epub": "297 KB",
+            "pdf": "3.5 MB",
+            "text_epub": "297 KB",
+            "text_pdf": "3.5 MB",
+            "package_7z": "147 KB",
+            "epub_bytes": 304233,
+            "pdf_bytes": 3675742,
+            "text_epub_bytes": 304228,
+            "text_pdf_bytes": 3675742,
+            "package_7z_bytes": 150291
         },
         "illustration_count": 0,
         "word_stats": {
-            "story_word_count": 81433,
+            "story_word_count": 130797,
             "lore_word_count": 138,
-            "combined_word_count": 81571,
-            "story_page_count": 296,
-            "combined_page_count": 297,
-            "reading_hours": 5.4,
-            "reading_minutes": 326,
-            "novel_equivalent": 0.9,
-            "scale_category": "Full-Length Contemporary Novel",
-            "scale_badge": "Full-Length Novel",
-            "benchmark_note": "0.9\u00d7 a standard 90,000-word contemporary novel (70k\u2013110k trade benchmark)",
+            "combined_word_count": 130935,
+            "story_page_count": 476,
+            "combined_page_count": 476,
+            "reading_hours": 8.7,
+            "reading_minutes": 523,
+            "novel_equivalent": 1.5,
+            "scale_category": "Epic Full-Length Novel",
+            "scale_badge": "Epic Novel",
+            "benchmark_note": "1.5\u00d7 a standard 90,000-word contemporary novel (Epic 110k\u2013200k tier)",
             "era_count": 3,
-            "chapter_count": 33,
-            "part_count": 41,
+            "chapter_count": 49,
+            "part_count": 63,
             "illustration_count": 0,
             "story_arc_count": 0
         },
-        "story_arcs": []
+        "story_arcs": [],
+        "crossroads": [
+            {
+                "id": "delores-porter-history",
+                "trigger_part": "e002/c007/p002.md",
+                "trigger_url": "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors/part-2-a-safe-harbor-coffee-date",
+                "kicker": "Story Crossroads \u2022 Cross-Book Continuity With Luna & Leo",
+                "title": "Dinner at Delores's Apartment: Which Luna & Leo Story Path Are You Arriving From?",
+                "prompt": "Delores is the exact same Delores from Luna & Leo\u2014where her relationship with Leo Porter reached a Crossroads during the October 2003 Columbus Day Sibling Weekend. Choose which upstream history Delores and her mother Robyn carry into tonight's dinner and the rest of Jack & Sarah. Both paths forward are complete, coequal continuations through the end of the novel.",
+                "required_choices": [],
+                "options": [
+                    {
+                        "id": "after-sibling-weekend-throwout",
+                        "crossroads_id": "delores-porter-history",
+                        "label": "Arriving From: Luna Screamed 'GET OUT!' During Sibling Weekend",
+                        "subtitle": "Delores never took Leo to Washington state and owes zero court restitution\u2014instead, Robyn is livid Delores blew her golden meal ticket with the wealthy Porters, and Delores is obsessed with beating family guardianship before another 'precious sister' throws her out.",
+                        "entry_part": "paths/after-sibling-weekend-throwout/e002/c008/p001.md",
+                        "entry_url": "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/a-date-with-delores/part-1-an-unassuming-dinner-the-debrief",
+                        "required_choices": {
+                            "delores-porter-history": "after-sibling-weekend-throwout"
+                        },
+                        "part_count": 22,
+                        "word_count": 49364,
+                        "reading_minutes": 198,
+                        "image": "/raggiesoft-books/images/covers/og/jack-sarah.jpg"
+                    },
+                    {
+                        "id": "after-washington-restitution",
+                        "crossroads_id": "delores-porter-history",
+                        "label": "Arriving From: The Four-Day Pathfinder Trip to Washington & Court Restitution",
+                        "subtitle": "Delores returned in disgrace from Kent, Washington owing massive court-ordered restitution to the Porter family\u2014driving Robyn to eye Jermaine as a financial bailout while Delores hunts for a replacement target.",
+                        "entry_part": "e002/c008/p001.md",
+                        "entry_url": "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/part-1-an-unassuming-dinner-the-debrief",
+                        "required_choices": {
+                            "delores-porter-history": "after-washington-restitution"
+                        },
+                        "part_count": 22,
+                        "word_count": 49285,
+                        "reading_minutes": 198,
+                        "image": "/raggiesoft-books/images/covers/og/jack-sarah.jpg"
+                    }
+                ]
+            }
+        ]
     },
     "/jack-sarah": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -78,7 +121,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Discovery \ud83d\udc94 & The Alliance",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/p001.md"
+        "filePath": "e001/c001/p001.md",
+        "noPrev": true,
+        "nextUrl": "/jack-sarah/life-at-fairlawn/rec-center/hired-at-the-rec-center-an-official-welcome"
     },
     "/jack-sarah/life-at-fairlawn/rec-center": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -90,7 +135,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Hired at the Rec Center & An Official Welcome",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/p001.md"
+        "filePath": "e001/c002/p001.md",
+        "prevUrl": "/jack-sarah/life-at-fairlawn/the-end-of-a-war/the-discovery-the-alliance",
+        "nextUrl": "/jack-sarah/life-at-fairlawn/planning-halloween/the-tuesday-august-15th-2006-meeting-the-war-is-over"
     },
     "/jack-sarah/life-at-fairlawn/planning-halloween": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -102,7 +149,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Tuesday, August 15th, 2006 Meeting \ud83d\uddd3\ufe0f & The War is Over",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/p001.md"
+        "filePath": "e001/c003/p001.md",
+        "prevUrl": "/jack-sarah/life-at-fairlawn/rec-center/hired-at-the-rec-center-an-official-welcome",
+        "nextUrl": "/jack-sarah/life-at-fairlawn/an-infernal-halloween/a-tuesday-in-hell-off-the-clock"
     },
     "/jack-sarah/life-at-fairlawn/an-infernal-halloween": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -114,7 +163,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Tuesday in Hell & Off the Clock",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/p001.md"
+        "filePath": "e001/c004/p001.md",
+        "prevUrl": "/jack-sarah/life-at-fairlawn/planning-halloween/the-tuesday-august-15th-2006-meeting-the-war-is-over",
+        "nextUrl": "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn/part-1-the-unfamiliar-code-a-safe-harbor"
     },
     "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -126,13 +177,17 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Unfamiliar Code & A Safe Harbor \u2764\ufe0f\u200d\ud83e\ude79",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c005/p001.md"
+        "filePath": "e001/c005/p001.md",
+        "prevUrl": "/jack-sarah/life-at-fairlawn/an-infernal-halloween/a-tuesday-in-hell-off-the-clock",
+        "nextUrl": "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn/part-2-a-father-s-understanding-settling-in-for-the-night"
     },
     "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn/part-2-a-father-s-understanding-settling-in-for-the-night": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: A Father's Understanding \ud83d\udc68\u200d\ud83d\udc67\u200d\ud83d\udc66 & Settling in for the Night \ud83d\udc68\u200d\ud83d\udc67\u200d\ud83d\udc66",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c005/p002.md"
+        "filePath": "e001/c005/p002.md",
+        "prevUrl": "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn/part-1-the-unfamiliar-code-a-safe-harbor",
+        "nextUrl": "/jack-sarah/life-at-fairlawn/the-long-night/the-long-night-the-conti-vac"
     },
     "/jack-sarah/life-at-fairlawn/the-long-night": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -144,7 +199,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Long Night \ud83d\ude20 & The Conti-Vac \ud83d\udca7",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c006/p001.md"
+        "filePath": "e001/c006/p001.md",
+        "prevUrl": "/jack-sarah/life-at-fairlawn/chemical-emergency-at-fairlawn/part-2-a-father-s-understanding-settling-in-for-the-night",
+        "nextUrl": "/jack-sarah/life-at-fairlawn/a-new-day-in-the-hospital/the-morning-report-a-taste-of-victory"
     },
     "/jack-sarah/life-at-fairlawn/a-new-day-in-the-hospital": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -156,7 +213,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Morning Report & A Taste of Victory \ud83d\udc68\u200d\ud83d\udc69\u200d\ud83d\udc67\u200d\ud83d\udc67",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c007/p001.md"
+        "filePath": "e001/c007/p001.md",
+        "prevUrl": "/jack-sarah/life-at-fairlawn/the-long-night/the-long-night-the-conti-vac",
+        "nextUrl": "/jack-sarah/life-at-fairlawn/the-cost-of-the-crisis/an-unsteady-step-the-turning-of-the-tide"
     },
     "/jack-sarah/life-at-fairlawn/the-cost-of-the-crisis": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -168,7 +227,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "An Unsteady Step \ud83d\ude1f & The Turning of the Tide",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c008/p001.md"
+        "filePath": "e001/c008/p001.md",
+        "prevUrl": "/jack-sarah/life-at-fairlawn/a-new-day-in-the-hospital/the-morning-report-a-taste-of-victory",
+        "nextUrl": "/jack-sarah/life-at-fairlawn/going-home/the-last-night-homecoming"
     },
     "/jack-sarah/life-at-fairlawn/going-home": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -180,7 +241,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Last Night\u00a0\ud83d\ude34 & Homecoming",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c009/p001.md"
+        "filePath": "e001/c009/p001.md",
+        "prevUrl": "/jack-sarah/life-at-fairlawn/the-cost-of-the-crisis/an-unsteady-step-the-turning-of-the-tide",
+        "nextUrl": "/jack-sarah/life-at-fairlawn/a-day-of-rest/the-good-news-the-promise-of-the-quad"
     },
     "/jack-sarah/life-at-fairlawn/a-day-of-rest": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -192,7 +255,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Good News & The Promise of the Quad",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c010/p001.md"
+        "filePath": "e001/c010/p001.md",
+        "prevUrl": "/jack-sarah/life-at-fairlawn/going-home/the-last-night-homecoming",
+        "nextUrl": "/jack-sarah/a-trip-to-washington-dc/a-healing-journey/a-new-beginning-in-fredericksburg-the-first-night"
     },
     "/jack-sarah/a-trip-to-washington-dc": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -210,7 +275,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A New Beginning in Fredericksburg & The First Night",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/p001.md"
+        "filePath": "e002/c001/p001.md",
+        "prevUrl": "/jack-sarah/life-at-fairlawn/a-day-of-rest/the-good-news-the-promise-of-the-quad",
+        "nextUrl": "/jack-sarah/a-trip-to-washington-dc/the-journey-in/the-journey-in-a-new-level-of-trust"
     },
     "/jack-sarah/a-trip-to-washington-dc/the-journey-in": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -222,7 +289,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Journey In & A New Level of Trust",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c002/p001.md"
+        "filePath": "e002/c002/p001.md",
+        "prevUrl": "/jack-sarah/a-trip-to-washington-dc/a-healing-journey/a-new-beginning-in-fredericksburg-the-first-night",
+        "nextUrl": "/jack-sarah/a-trip-to-washington-dc/a-trip-made-easier/a-trip-made-easier"
     },
     "/jack-sarah/a-trip-to-washington-dc/a-trip-made-easier": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -234,7 +303,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Trip Made Easier",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c003/p001.md"
+        "filePath": "e002/c003/p001.md",
+        "prevUrl": "/jack-sarah/a-trip-to-washington-dc/the-journey-in/the-journey-in-a-new-level-of-trust",
+        "nextUrl": "/jack-sarah/a-trip-to-washington-dc/sarah-with-an-injury/welcome-home-to-a-twisted-ankle"
     },
     "/jack-sarah/a-trip-to-washington-dc/sarah-with-an-injury": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -246,7 +317,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Welcome Home to a Twisted Ankle",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c004/p001.md"
+        "filePath": "e002/c004/p001.md",
+        "prevUrl": "/jack-sarah/a-trip-to-washington-dc/a-trip-made-easier/a-trip-made-easier",
+        "nextUrl": "/jack-sarah/a-trip-to-washington-dc/summer-dreams/tent-in-a-backyard"
     },
     "/jack-sarah/a-trip-to-washington-dc/summer-dreams": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -258,7 +331,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Tent in a Backyard",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c005/p001.md"
+        "filePath": "e002/c005/p001.md",
+        "prevUrl": "/jack-sarah/a-trip-to-washington-dc/sarah-with-an-injury/welcome-home-to-a-twisted-ankle",
+        "nextUrl": "/jack-sarah/a-trip-to-washington-dc/delores/university-open-house-the-move"
     },
     "/jack-sarah/a-trip-to-washington-dc/delores": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -270,7 +345,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "University Open House & The Move",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c006/p001.md"
+        "filePath": "e002/c006/p001.md",
+        "prevUrl": "/jack-sarah/a-trip-to-washington-dc/summer-dreams/tent-in-a-backyard",
+        "nextUrl": "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors/part-1-a-cousin-s-rescue-conversations-on-a-ride-home"
     },
     "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -282,13 +359,58 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Cousin's Rescue & Conversations on a Ride Home",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c007/p001.md"
+        "filePath": "e002/c007/p001.md",
+        "prevUrl": "/jack-sarah/a-trip-to-washington-dc/delores/university-open-house-the-move",
+        "nextUrl": "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors/part-2-a-safe-harbor-coffee-date"
     },
     "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors/part-2-a-safe-harbor-coffee-date": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: A Safe Harbor & Coffee Date",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c007/p002.md"
+        "filePath": "e002/c007/p002.md",
+        "prevUrl": "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors/part-1-a-cousin-s-rescue-conversations-on-a-ride-home",
+        "noNext": true,
+        "crossroads": {
+            "id": "delores-porter-history",
+            "trigger_part": "e002/c007/p002.md",
+            "trigger_url": "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors/part-2-a-safe-harbor-coffee-date",
+            "kicker": "Story Crossroads \u2022 Cross-Book Continuity With Luna & Leo",
+            "title": "Dinner at Delores's Apartment: Which Luna & Leo Story Path Are You Arriving From?",
+            "prompt": "Delores is the exact same Delores from Luna & Leo\u2014where her relationship with Leo Porter reached a Crossroads during the October 2003 Columbus Day Sibling Weekend. Choose which upstream history Delores and her mother Robyn carry into tonight's dinner and the rest of Jack & Sarah. Both paths forward are complete, coequal continuations through the end of the novel.",
+            "required_choices": [],
+            "options": [
+                {
+                    "id": "after-sibling-weekend-throwout",
+                    "crossroads_id": "delores-porter-history",
+                    "label": "Arriving From: Luna Screamed 'GET OUT!' During Sibling Weekend",
+                    "subtitle": "Delores never took Leo to Washington state and owes zero court restitution\u2014instead, Robyn is livid Delores blew her golden meal ticket with the wealthy Porters, and Delores is obsessed with beating family guardianship before another 'precious sister' throws her out.",
+                    "entry_part": "paths/after-sibling-weekend-throwout/e002/c008/p001.md",
+                    "entry_url": "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/a-date-with-delores/part-1-an-unassuming-dinner-the-debrief",
+                    "required_choices": {
+                        "delores-porter-history": "after-sibling-weekend-throwout"
+                    },
+                    "part_count": 22,
+                    "word_count": 49364,
+                    "reading_minutes": 198,
+                    "image": "/raggiesoft-books/images/covers/og/jack-sarah.jpg"
+                },
+                {
+                    "id": "after-washington-restitution",
+                    "crossroads_id": "delores-porter-history",
+                    "label": "Arriving From: The Four-Day Pathfinder Trip to Washington & Court Restitution",
+                    "subtitle": "Delores returned in disgrace from Kent, Washington owing massive court-ordered restitution to the Porter family\u2014driving Robyn to eye Jermaine as a financial bailout while Delores hunts for a replacement target.",
+                    "entry_part": "e002/c008/p001.md",
+                    "entry_url": "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/part-1-an-unassuming-dinner-the-debrief",
+                    "required_choices": {
+                        "delores-porter-history": "after-washington-restitution"
+                    },
+                    "part_count": 22,
+                    "word_count": 49285,
+                    "reading_minutes": 198,
+                    "image": "/raggiesoft-books/images/covers/og/jack-sarah.jpg"
+                }
+            ]
+        }
     },
     "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -300,13 +422,27 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: An Unassuming Dinner & The Debrief",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c008/p001.md"
+        "filePath": "e002/c008/p001.md",
+        "pathId": "after-washington-restitution",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-washington-restitution"
+        },
+        "prevUrl": "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors/part-2-a-safe-harbor-coffee-date",
+        "nextUrl": "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/part-2-a-theory-is-formed-the-new-normal-begins"
     },
     "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/part-2-a-theory-is-formed-the-new-normal-begins": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: A Theory is Formed & The New Normal Begins",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c008/p002.md"
+        "filePath": "e002/c008/p002.md",
+        "pathId": "after-washington-restitution",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-washington-restitution"
+        },
+        "prevUrl": "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/part-1-an-unassuming-dinner-the-debrief",
+        "nextUrl": "/jack-sarah/a-trip-to-washington-dc/planning-sarah-s-birthday/a-mission-for-the-sister-a-taste-of-twin-magic"
     },
     "/jack-sarah/a-trip-to-washington-dc/planning-sarah-s-birthday": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -318,7 +454,14 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Mission for the Sister & A Taste of Twin Magic",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c009/p001.md"
+        "filePath": "e002/c009/p001.md",
+        "pathId": "after-washington-restitution",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-washington-restitution"
+        },
+        "prevUrl": "/jack-sarah/a-trip-to-washington-dc/a-date-with-delores/part-2-a-theory-is-formed-the-new-normal-begins",
+        "nextUrl": "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/part-1-a-day-of-dread-and-duty-trial-by-fecal-contamination"
     },
     "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -330,13 +473,27 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Day of Dread and Duty & Trial by Fecal Contamination",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c010/p001.md"
+        "filePath": "e002/c010/p001.md",
+        "pathId": "after-washington-restitution",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-washington-restitution"
+        },
+        "prevUrl": "/jack-sarah/a-trip-to-washington-dc/planning-sarah-s-birthday/a-mission-for-the-sister-a-taste-of-twin-magic",
+        "nextUrl": "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/part-2-the-longest-shift-a-safe-harbor-at-home"
     },
     "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/part-2-the-longest-shift-a-safe-harbor-at-home": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Longest Shift & A Safe Harbor at Home",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c010/p002.md"
+        "filePath": "e002/c010/p002.md",
+        "pathId": "after-washington-restitution",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-washington-restitution"
+        },
+        "prevUrl": "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/part-1-a-day-of-dread-and-duty-trial-by-fecal-contamination",
+        "nextUrl": "/jack-sarah/a-trip-to-washington-dc/confusion-and-stress/a-morning-shrouded-in-fog-a-misfired-warning"
     },
     "/jack-sarah/a-trip-to-washington-dc/confusion-and-stress": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -348,7 +505,14 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Morning Shrouded in Fog \ud83e\udd63 & A Misfired Warning",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c011/p001.md"
+        "filePath": "e002/c011/p001.md",
+        "pathId": "after-washington-restitution",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-washington-restitution"
+        },
+        "prevUrl": "/jack-sarah/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/part-2-the-longest-shift-a-safe-harbor-at-home",
+        "nextUrl": "/jack-sarah/a-trip-to-washington-dc/welcome-to-work/off-to-work-the-mobile-emergency-room"
     },
     "/jack-sarah/a-trip-to-washington-dc/welcome-to-work": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -360,7 +524,14 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Off to Work & The Mobile Emergency Room",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c012/p001.md"
+        "filePath": "e002/c012/p001.md",
+        "pathId": "after-washington-restitution",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-washington-restitution"
+        },
+        "prevUrl": "/jack-sarah/a-trip-to-washington-dc/confusion-and-stress/a-morning-shrouded-in-fog-a-misfired-warning",
+        "nextUrl": "/jack-sarah/heart-attack/hospital-arrival/part-1-arrival-at-the-emergency-room-a-quiet-vigil"
     },
     "/jack-sarah/heart-attack": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -378,13 +549,27 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Arrival at the Emergency Room & A Quiet Vigil",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/p001.md"
+        "filePath": "e003/c001/p001.md",
+        "pathId": "after-washington-restitution",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-washington-restitution"
+        },
+        "prevUrl": "/jack-sarah/a-trip-to-washington-dc/welcome-to-work/off-to-work-the-mobile-emergency-room",
+        "nextUrl": "/jack-sarah/heart-attack/hospital-arrival/part-2-the-family-visit-the-wait-for-dawn"
     },
     "/jack-sarah/heart-attack/hospital-arrival/part-2-the-family-visit-the-wait-for-dawn": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Family Visit & The Wait for Dawn",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/p002.md"
+        "filePath": "e003/c001/p002.md",
+        "pathId": "after-washington-restitution",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-washington-restitution"
+        },
+        "prevUrl": "/jack-sarah/heart-attack/hospital-arrival/part-1-arrival-at-the-emergency-room-a-quiet-vigil",
+        "nextUrl": "/jack-sarah/heart-attack/heart-hospital/part-1-serious-health-discussion-off-to-the-operating-room"
     },
     "/jack-sarah/heart-attack/heart-hospital": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -396,13 +581,27 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Serious Health Discussion & Off to the Operating Room",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/p001.md"
+        "filePath": "e003/c002/p001.md",
+        "pathId": "after-washington-restitution",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-washington-restitution"
+        },
+        "prevUrl": "/jack-sarah/heart-attack/hospital-arrival/part-2-the-family-visit-the-wait-for-dawn",
+        "nextUrl": "/jack-sarah/heart-attack/heart-hospital/part-2-waking-up-in-the-intensive-care-unit"
     },
     "/jack-sarah/heart-attack/heart-hospital/part-2-waking-up-in-the-intensive-care-unit": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Waking Up in the Intensive Care Unit",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/p002.md"
+        "filePath": "e003/c002/p002.md",
+        "pathId": "after-washington-restitution",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-washington-restitution"
+        },
+        "prevUrl": "/jack-sarah/heart-attack/heart-hospital/part-1-serious-health-discussion-off-to-the-operating-room",
+        "nextUrl": "/jack-sarah/heart-attack/the-day-of-surgery/the-last-meal-the-transfer"
     },
     "/jack-sarah/heart-attack/the-day-of-surgery": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -414,7 +613,14 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Last Meal & The Transfer",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c003/p001.md"
+        "filePath": "e003/c003/p001.md",
+        "pathId": "after-washington-restitution",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-washington-restitution"
+        },
+        "prevUrl": "/jack-sarah/heart-attack/heart-hospital/part-2-waking-up-in-the-intensive-care-unit",
+        "nextUrl": "/jack-sarah/heart-attack/the-road-to-recovery/rooming-with-sarah-in-the-hospital-bed-time-with-sarah"
     },
     "/jack-sarah/heart-attack/the-road-to-recovery": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -426,7 +632,14 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Rooming with Sarah in the Hospital & Bed Time with Sarah",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c004/p001.md"
+        "filePath": "e003/c004/p001.md",
+        "pathId": "after-washington-restitution",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-washington-restitution"
+        },
+        "prevUrl": "/jack-sarah/heart-attack/the-day-of-surgery/the-last-meal-the-transfer",
+        "nextUrl": "/jack-sarah/heart-attack/a-blizzard-sanctuary/part-1-a-visitor-in-the-storm-a-call-home"
     },
     "/jack-sarah/heart-attack/a-blizzard-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -438,13 +651,27 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Visitor in the Storm & A Call Home",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c005/p001.md"
+        "filePath": "e003/c005/p001.md",
+        "pathId": "after-washington-restitution",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-washington-restitution"
+        },
+        "prevUrl": "/jack-sarah/heart-attack/the-road-to-recovery/rooming-with-sarah-in-the-hospital-bed-time-with-sarah",
+        "nextUrl": "/jack-sarah/heart-attack/a-blizzard-sanctuary/part-2-the-anthem-of-aethel-a-new-home"
     },
     "/jack-sarah/heart-attack/a-blizzard-sanctuary/part-2-the-anthem-of-aethel-a-new-home": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Anthem of Aethel \ud83c\udfb6 & A New Home",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c005/p002.md"
+        "filePath": "e003/c005/p002.md",
+        "pathId": "after-washington-restitution",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-washington-restitution"
+        },
+        "prevUrl": "/jack-sarah/heart-attack/a-blizzard-sanctuary/part-1-a-visitor-in-the-storm-a-call-home",
+        "nextUrl": "/jack-sarah/heart-attack/recovering-from-a-heart-attack/the-new-house-first-night-at-the-house"
     },
     "/jack-sarah/heart-attack/recovering-from-a-heart-attack": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -456,7 +683,14 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The New House & First Night at the House",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c006/p001.md"
+        "filePath": "e003/c006/p001.md",
+        "pathId": "after-washington-restitution",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-washington-restitution"
+        },
+        "prevUrl": "/jack-sarah/heart-attack/a-blizzard-sanctuary/part-2-the-anthem-of-aethel-a-new-home",
+        "nextUrl": "/jack-sarah/heart-attack/a-taste-of-home/a-taste-of-home-a-visit-to-a-second-home"
     },
     "/jack-sarah/heart-attack/a-taste-of-home": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -468,7 +702,14 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Taste of Home & A Visit to a Second Home",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c007/p001.md"
+        "filePath": "e003/c007/p001.md",
+        "pathId": "after-washington-restitution",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-washington-restitution"
+        },
+        "prevUrl": "/jack-sarah/heart-attack/recovering-from-a-heart-attack/the-new-house-first-night-at-the-house",
+        "nextUrl": "/jack-sarah/heart-attack/a-final-encounter/a-final-encounter-room-service"
     },
     "/jack-sarah/heart-attack/a-final-encounter": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -480,7 +721,14 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Final Encounter & Room Service",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c008/p001.md"
+        "filePath": "e003/c008/p001.md",
+        "pathId": "after-washington-restitution",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-washington-restitution"
+        },
+        "prevUrl": "/jack-sarah/heart-attack/a-taste-of-home/a-taste-of-home-a-visit-to-a-second-home",
+        "nextUrl": "/jack-sarah/heart-attack/the-first-tour/part-1-the-first-tour-a-sanctuary-decorated"
     },
     "/jack-sarah/heart-attack/the-first-tour": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -492,13 +740,27 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The First Tour & A Sanctuary Decorated",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c009/p001.md"
+        "filePath": "e003/c009/p001.md",
+        "pathId": "after-washington-restitution",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-washington-restitution"
+        },
+        "prevUrl": "/jack-sarah/heart-attack/a-final-encounter/a-final-encounter-room-service",
+        "nextUrl": "/jack-sarah/heart-attack/the-first-tour/part-2-the-biological-deadline"
     },
     "/jack-sarah/heart-attack/the-first-tour/part-2-the-biological-deadline": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Biological Deadline",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c009/p002.md"
+        "filePath": "e003/c009/p002.md",
+        "pathId": "after-washington-restitution",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-washington-restitution"
+        },
+        "prevUrl": "/jack-sarah/heart-attack/the-first-tour/part-1-the-first-tour-a-sanctuary-decorated",
+        "nextUrl": "/jack-sarah/heart-attack/the-long-road-ahead/the-windsor-woods-realization-a-new-kind-of-housebound"
     },
     "/jack-sarah/heart-attack/the-long-road-ahead": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -510,7 +772,14 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Windsor Woods Realization & A New Kind of Housebound",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c010/p001.md"
+        "filePath": "e003/c010/p001.md",
+        "pathId": "after-washington-restitution",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-washington-restitution"
+        },
+        "prevUrl": "/jack-sarah/heart-attack/the-first-tour/part-2-the-biological-deadline",
+        "nextUrl": "/jack-sarah/heart-attack/a-quiet-refusal/a-delayed-rejection-the-midnight-showing"
     },
     "/jack-sarah/heart-attack/a-quiet-refusal": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -522,6 +791,443 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "A Delayed Rejection & The Midnight Showing",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c011/p001.md"
+        "filePath": "e003/c011/p001.md",
+        "pathId": "after-washington-restitution",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-washington-restitution"
+        },
+        "prevUrl": "/jack-sarah/heart-attack/the-long-road-ahead/the-windsor-woods-realization-a-new-kind-of-housebound",
+        "noNext": true
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Trip to Washington DC",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|after-sibling-weekend-throwout|0",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/a-date-with-delores": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Date with Delores",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|after-sibling-weekend-throwout|0|0",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/a-date-with-delores/part-1-an-unassuming-dinner-the-debrief": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: An Unassuming Dinner & The Debrief",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/after-sibling-weekend-throwout/e002/c008/p001.md",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-sibling-weekend-throwout"
+        },
+        "prevUrl": "/jack-sarah/a-trip-to-washington-dc/red-flags-and-safe-harbors/part-2-a-safe-harbor-coffee-date",
+        "nextUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/a-date-with-delores/part-2-a-theory-is-formed-the-new-normal-begins"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/a-date-with-delores/part-2-a-theory-is-formed-the-new-normal-begins": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: A Theory is Formed & The New Normal Begins",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/after-sibling-weekend-throwout/e002/c008/p002.md",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-sibling-weekend-throwout"
+        },
+        "prevUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/a-date-with-delores/part-1-an-unassuming-dinner-the-debrief",
+        "nextUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/planning-sarah-s-birthday/a-mission-for-the-sister-a-taste-of-twin-magic"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/planning-sarah-s-birthday": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Planning Sarah\u2019s Birthday",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|after-sibling-weekend-throwout|0|1",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/planning-sarah-s-birthday/a-mission-for-the-sister-a-taste-of-twin-magic": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Mission for the Sister & A Taste of Twin Magic",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/after-sibling-weekend-throwout/e002/c009/p001.md",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-sibling-weekend-throwout"
+        },
+        "prevUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/a-date-with-delores/part-2-a-theory-is-formed-the-new-normal-begins",
+        "nextUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/part-1-a-day-of-dread-and-duty-trial-by-fecal-contamination"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Sarah Bennett, Reporting for Duty",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|after-sibling-weekend-throwout|0|2",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/part-1-a-day-of-dread-and-duty-trial-by-fecal-contamination": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Day of Dread and Duty & Trial by Fecal Contamination",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/after-sibling-weekend-throwout/e002/c010/p001.md",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-sibling-weekend-throwout"
+        },
+        "prevUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/planning-sarah-s-birthday/a-mission-for-the-sister-a-taste-of-twin-magic",
+        "nextUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/part-2-the-longest-shift-a-safe-harbor-at-home"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/part-2-the-longest-shift-a-safe-harbor-at-home": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Longest Shift & A Safe Harbor at Home",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/after-sibling-weekend-throwout/e002/c010/p002.md",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-sibling-weekend-throwout"
+        },
+        "prevUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/part-1-a-day-of-dread-and-duty-trial-by-fecal-contamination",
+        "nextUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/confusion-and-stress/a-morning-shrouded-in-fog-a-misfired-warning"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/confusion-and-stress": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Confusion and Stress",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|after-sibling-weekend-throwout|0|3",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/confusion-and-stress/a-morning-shrouded-in-fog-a-misfired-warning": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Morning Shrouded in Fog \ud83e\udd63 & A Misfired Warning",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/after-sibling-weekend-throwout/e002/c011/p001.md",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-sibling-weekend-throwout"
+        },
+        "prevUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/sarah-bennett-reporting-for-duty/part-2-the-longest-shift-a-safe-harbor-at-home",
+        "nextUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/welcome-to-work/off-to-work-the-mobile-emergency-room"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/welcome-to-work": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Welcome to Work",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|after-sibling-weekend-throwout|0|4",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/welcome-to-work/off-to-work-the-mobile-emergency-room": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Off to Work & The Mobile Emergency Room",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/after-sibling-weekend-throwout/e002/c012/p001.md",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-sibling-weekend-throwout"
+        },
+        "prevUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/confusion-and-stress/a-morning-shrouded-in-fog-a-misfired-warning",
+        "nextUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/hospital-arrival/part-1-arrival-at-the-emergency-room-a-quiet-vigil"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Heart Attack",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|after-sibling-weekend-throwout|1",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/hospital-arrival": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Hospital Arrival",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|after-sibling-weekend-throwout|1|0",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/hospital-arrival/part-1-arrival-at-the-emergency-room-a-quiet-vigil": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Arrival at the Emergency Room & A Quiet Vigil",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/after-sibling-weekend-throwout/e003/c001/p001.md",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-sibling-weekend-throwout"
+        },
+        "prevUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/a-trip-to-washington-dc/welcome-to-work/off-to-work-the-mobile-emergency-room",
+        "nextUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/hospital-arrival/part-2-the-family-visit-the-wait-for-dawn"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/hospital-arrival/part-2-the-family-visit-the-wait-for-dawn": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Family Visit & The Wait for Dawn",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/after-sibling-weekend-throwout/e003/c001/p002.md",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-sibling-weekend-throwout"
+        },
+        "prevUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/hospital-arrival/part-1-arrival-at-the-emergency-room-a-quiet-vigil",
+        "nextUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/heart-hospital/part-1-serious-health-discussion-off-to-the-operating-room"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/heart-hospital": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Heart Hospital",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|after-sibling-weekend-throwout|1|1",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/heart-hospital/part-1-serious-health-discussion-off-to-the-operating-room": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Serious Health Discussion & Off to the Operating Room",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/after-sibling-weekend-throwout/e003/c002/p001.md",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-sibling-weekend-throwout"
+        },
+        "prevUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/hospital-arrival/part-2-the-family-visit-the-wait-for-dawn",
+        "nextUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/heart-hospital/part-2-waking-up-in-the-intensive-care-unit"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/heart-hospital/part-2-waking-up-in-the-intensive-care-unit": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Waking Up in the Intensive Care Unit",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/after-sibling-weekend-throwout/e003/c002/p002.md",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-sibling-weekend-throwout"
+        },
+        "prevUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/heart-hospital/part-1-serious-health-discussion-off-to-the-operating-room",
+        "nextUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/the-day-of-surgery/the-last-meal-the-transfer"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/the-day-of-surgery": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Day of Surgery",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|after-sibling-weekend-throwout|1|2",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/the-day-of-surgery/the-last-meal-the-transfer": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Last Meal & The Transfer",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/after-sibling-weekend-throwout/e003/c003/p001.md",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-sibling-weekend-throwout"
+        },
+        "prevUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/heart-hospital/part-2-waking-up-in-the-intensive-care-unit",
+        "nextUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/the-road-to-recovery/rooming-with-sarah-in-the-hospital-bed-time-with-sarah"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/the-road-to-recovery": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Road to Recovery",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|after-sibling-weekend-throwout|1|3",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/the-road-to-recovery/rooming-with-sarah-in-the-hospital-bed-time-with-sarah": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Rooming with Sarah in the Hospital & Bed Time with Sarah",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/after-sibling-weekend-throwout/e003/c004/p001.md",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-sibling-weekend-throwout"
+        },
+        "prevUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/the-day-of-surgery/the-last-meal-the-transfer",
+        "nextUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/a-blizzard-sanctuary/part-1-a-visitor-in-the-storm-a-call-home"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/a-blizzard-sanctuary": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Blizzard Sanctuary",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|after-sibling-weekend-throwout|1|4",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/a-blizzard-sanctuary/part-1-a-visitor-in-the-storm-a-call-home": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: A Visitor in the Storm & A Call Home",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/after-sibling-weekend-throwout/e003/c005/p001.md",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-sibling-weekend-throwout"
+        },
+        "prevUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/the-road-to-recovery/rooming-with-sarah-in-the-hospital-bed-time-with-sarah",
+        "nextUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/a-blizzard-sanctuary/part-2-the-anthem-of-aethel-a-new-home"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/a-blizzard-sanctuary/part-2-the-anthem-of-aethel-a-new-home": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Anthem of Aethel \ud83c\udfb6 & A New Home",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/after-sibling-weekend-throwout/e003/c005/p002.md",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-sibling-weekend-throwout"
+        },
+        "prevUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/a-blizzard-sanctuary/part-1-a-visitor-in-the-storm-a-call-home",
+        "nextUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/recovering-from-a-heart-attack/the-new-house-first-night-at-the-house"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/recovering-from-a-heart-attack": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Recovering from a Heart Attack",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|after-sibling-weekend-throwout|1|5",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/recovering-from-a-heart-attack/the-new-house-first-night-at-the-house": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The New House & First Night at the House",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/after-sibling-weekend-throwout/e003/c006/p001.md",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-sibling-weekend-throwout"
+        },
+        "prevUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/a-blizzard-sanctuary/part-2-the-anthem-of-aethel-a-new-home",
+        "nextUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/a-taste-of-home/a-taste-of-home-a-visit-to-a-second-home"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/a-taste-of-home": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Taste of Home",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|after-sibling-weekend-throwout|1|6",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/a-taste-of-home/a-taste-of-home-a-visit-to-a-second-home": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Taste of Home & A Visit to a Second Home",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/after-sibling-weekend-throwout/e003/c007/p001.md",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-sibling-weekend-throwout"
+        },
+        "prevUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/recovering-from-a-heart-attack/the-new-house-first-night-at-the-house",
+        "nextUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/a-final-encounter/a-final-encounter-room-service"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/a-final-encounter": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Final Encounter",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|after-sibling-weekend-throwout|1|7",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/a-final-encounter/a-final-encounter-room-service": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Final Encounter & Room Service",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/after-sibling-weekend-throwout/e003/c008/p001.md",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-sibling-weekend-throwout"
+        },
+        "prevUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/a-taste-of-home/a-taste-of-home-a-visit-to-a-second-home",
+        "nextUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/the-first-tour/part-1-the-first-tour-a-sanctuary-decorated"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/the-first-tour": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The First Tour",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|after-sibling-weekend-throwout|1|8",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/the-first-tour/part-1-the-first-tour-a-sanctuary-decorated": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: The First Tour & A Sanctuary Decorated",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/after-sibling-weekend-throwout/e003/c009/p001.md",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-sibling-weekend-throwout"
+        },
+        "prevUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/a-final-encounter/a-final-encounter-room-service",
+        "nextUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/the-first-tour/part-2-the-biological-deadline"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/the-first-tour/part-2-the-biological-deadline": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: The Biological Deadline",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/after-sibling-weekend-throwout/e003/c009/p002.md",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-sibling-weekend-throwout"
+        },
+        "prevUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/the-first-tour/part-1-the-first-tour-a-sanctuary-decorated",
+        "nextUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/the-long-road-ahead/the-windsor-woods-realization-a-new-kind-of-housebound"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/the-long-road-ahead": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Long Road Ahead",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|after-sibling-weekend-throwout|1|9",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/the-long-road-ahead/the-windsor-woods-realization-a-new-kind-of-housebound": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Windsor Woods Realization & A New Kind of Housebound",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/after-sibling-weekend-throwout/e003/c010/p001.md",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-sibling-weekend-throwout"
+        },
+        "prevUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/the-first-tour/part-2-the-biological-deadline",
+        "nextUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/a-quiet-refusal/a-delayed-rejection-the-midnight-showing"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/a-quiet-refusal": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Quiet Refusal",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|after-sibling-weekend-throwout|1|10",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history"
+    },
+    "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/a-quiet-refusal/a-delayed-rejection-the-midnight-showing": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "A Delayed Rejection & The Midnight Showing",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/after-sibling-weekend-throwout/e003/c011/p001.md",
+        "pathId": "after-sibling-weekend-throwout",
+        "crossroadsId": "delores-porter-history",
+        "requiredChoices": {
+            "delores-porter-history": "after-sibling-weekend-throwout"
+        },
+        "prevUrl": "/jack-sarah/paths/after-sibling-weekend-throwout/heart-attack/the-long-road-ahead/the-windsor-woods-realization-a-new-kind-of-housebound",
+        "noNext": true
     }
 }
