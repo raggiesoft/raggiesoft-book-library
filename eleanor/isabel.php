@@ -89,15 +89,11 @@ if (isset($platformAliasRedirects[$requestUri])) {
  *     HTTP 301 Permanent Redirect before route JSON resolution executes.
  */
 $legacyPartRedirects = [
-    // Katie & Nathaniel (Era 4, Chapter 2, Part 4): Renamed upon introducing Pavilion Story Crossroads
+    // Katie & Nathaniel (Era 4, Chapter 2, Part 4): Renamed to end on Heather's Pavilion apology
     '/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-one-chance-strictly-for-wesley'
         => '/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-heather-s-apology',
 
-    // Katie & Nathaniel (Path accept-heather-virginia, Era 5, Chapter 2, Part 2): Updated Stop 7 to Shenandoah Valley University (SVU)
-    '/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/summer-2003-college-tour-for-rising-junior-wesley-meeting-family-in-minnesota-stopping-brandon-cold/part-2-stops-five-through-seven-west-broad-street-at-cvu-ring-roads-at-george-wythe-cutting-northern-valley-s-open-house-short'
-        => '/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/summer-2003-college-tour-for-rising-junior-wesley-meeting-family-in-minnesota-stopping-brandon-cold/part-2-stops-five-through-seven-west-broad-street-at-cvu-ring-roads-at-george-wythe-cutting-shenandoah-valley-s-open-house-short',
-
-    // Luna & Leo (Era 12, Chapter 3, Part 2): Split at Sibling Weekend Story Crossroads before the forceful kiss
+    // Luna & Leo (Era 12, Chapter 3, Part 2): Split into Parts 2 & 3 right after the Kaleidoscope Sun flute signal
     '/luna-leo/the-delores-nightmare/the-hijacked-plan/part-2-printer-rage-guardianship-questions-and-a-forceful-kiss-leftovers-bus-schedules-and-locked-doors'
         => '/luna-leo/the-delores-nightmare/the-hijacked-plan/part-2-printer-rage-guardianship-questions-and-the-flute-signal',
 
@@ -271,6 +267,13 @@ if (!$isPlatformRoute && preg_match('#^/([^/]+)#', $requestUri, $matches)) {
         $routeSpecific = $routeData[$requestUri] ?? [];
         $pageConfig = array_merge($pageConfig, $common, $routeSpecific);
         if (empty($routeSpecific['filePath'])) {
+            // If Story Crossroads are parked for this series (`crossroads.json` absent),
+            // gracefully 301-redirect any retired `/<series>/paths/...` URL to `/<series>`
+            // while automatically yielding to live Crossroads routes whenever active.
+            if (str_starts_with($requestUri, '/' . $seriesSlug . '/paths/')) {
+                header('Location: /' . $seriesSlug, true, 301);
+                exit;
+            }
             $isNotFound = true;
         }
     } else {
