@@ -2055,13 +2055,25 @@ $oliverBookSeriesSchema = [
             : null;
         if ($partCrossroads !== null):
             $cxOptionsList = is_array($partCrossroads['options'] ?? null) ? $partCrossroads['options'] : [];
+            // Select 2-directional (Option A/B) vs 3-directional (3+ options) Story Crossroads emblem
+            $cxSignpostDirs = (count($cxOptionsList) >= 3) ? 3 : 2;
+            $cxBrandLogoUrl = rtrim($cdnBaseUrl, '/') . "/raggiesoft-books/images/logos/story-crossroads-logo-{$cxSignpostDirs}way-512.png";
         ?>
         <!-- Coequal Interactive Story Crossroads Decision Cards -->
         <section id="rs-story-crossroads" class="rs-crossroads-section" aria-labelledby="rs-crossroads-heading">
             <div class="rs-crossroads-header">
-                <div class="rs-crossroads-kicker">
-                    <i class="ph-fill ph-signpost" aria-hidden="true"></i>
-                    <span><?php echo htmlspecialchars((string)($partCrossroads['kicker'] ?? 'Story Crossroads')); ?></span>
+                <div style="display: flex; align-items: center; gap: 0.85rem; margin-bottom: 0.5rem;">
+                    <img src="<?php echo htmlspecialchars($cxBrandLogoUrl); ?>"
+                         alt=""
+                         aria-hidden="true"
+                         width="52"
+                         height="52"
+                         loading="lazy"
+                         style="width: 52px; height: 52px; border-radius: 12px; flex-shrink: 0; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.22); border: 1px solid rgba(227, 178, 124, 0.45);">
+                    <div class="rs-crossroads-kicker" style="margin-bottom: 0;">
+                        <i class="ph-fill ph-signpost" aria-hidden="true"></i>
+                        <span><?php echo htmlspecialchars((string)($partCrossroads['kicker'] ?? 'RaggieSoft Story Crossroads')); ?></span>
+                    </div>
                 </div>
                 <h2 id="rs-crossroads-heading" class="rs-crossroads-title"><?php echo htmlspecialchars((string)($partCrossroads['title'] ?? 'Choose How the Story Continues')); ?></h2>
                 <?php if (!empty($partCrossroads['prompt'])): ?>
