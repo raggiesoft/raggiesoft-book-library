@@ -12,26 +12,26 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "61.4 MB",
-            "pdf": "59.8 MB",
-            "text_epub": "730 KB",
+            "epub": "62.2 MB",
+            "pdf": "60.8 MB",
+            "text_epub": "732 KB",
             "text_pdf": "1.9 MB",
-            "package_7z": "551 KB",
-            "epub_bytes": 64395834,
-            "pdf_bytes": 62701714,
-            "text_epub_bytes": 747761,
-            "text_pdf_bytes": 2039097,
-            "package_7z_bytes": 564438
+            "package_7z": "553 KB",
+            "epub_bytes": 65216736,
+            "pdf_bytes": 63778373,
+            "text_epub_bytes": 749600,
+            "text_pdf_bytes": 2043371,
+            "package_7z_bytes": 565837
         },
-        "illustration_count": 134,
+        "illustration_count": 135,
         "word_stats": {
-            "story_word_count": 303240,
+            "story_word_count": 304077,
             "lore_word_count": 118043,
-            "combined_word_count": 421283,
-            "story_page_count": 1103,
-            "combined_page_count": 1532,
-            "reading_hours": 20.2,
-            "reading_minutes": 1213,
+            "combined_word_count": 422120,
+            "story_page_count": 1106,
+            "combined_page_count": 1535,
+            "reading_hours": 20.3,
+            "reading_minutes": 1216,
             "novel_equivalent": 3.4,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
@@ -39,7 +39,7 @@
             "era_count": 11,
             "chapter_count": 50,
             "part_count": 127,
-            "illustration_count": 134,
+            "illustration_count": 135,
             "story_arc_count": 4
         },
         "story_arcs": [
@@ -57,7 +57,7 @@
                 "part_count": 34,
                 "backstage_count": 3,
                 "stop_count": 37,
-                "word_count": 72293,
+                "word_count": 72302,
                 "reading_minutes": 290,
                 "reading_hours": 4.8,
                 "stops": [
@@ -495,7 +495,7 @@
                         "image": "/raggiesoft-books/images/scenes/katie/b006/jul_2007_rrc_cantor_hall_room_mixup_keycards_tina_herb_jim_nate.jpg",
                         "url": "/katie/fourteen-days-at-roosevelt-rehabilitation-center-two-weeks-in-the-shenandoah-valley-a-secular-wedding-in-2008/ditching-campus-for-the-hotel-room-without-passes-natalie-s-tears-spending-week-two-exploring-the-shenandoah-valley/part-1-the-dormitory-room-mix-up-staying-at-heather-and-wesley-s-hotel-without-passes-natalie-s-tears-outside-the-cafeteria",
                         "arc_url": "/katie/fourteen-days-at-roosevelt-rehabilitation-center-two-weeks-in-the-shenandoah-valley-a-secular-wedding-in-2008/ditching-campus-for-the-hotel-room-without-passes-natalie-s-tears-spending-week-two-exploring-the-shenandoah-valley/part-1-the-dormitory-room-mix-up-staying-at-heather-and-wesley-s-hotel-without-passes-natalie-s-tears-outside-the-cafeteria?arc=heather-wesley-and-virginia",
-                        "word_count": 1282,
+                        "word_count": 1291,
                         "reading_minutes": 6
                     },
                     {
@@ -2017,8 +2017,8 @@
                 "part_count": 11,
                 "backstage_count": 8,
                 "stop_count": 19,
-                "word_count": 50883,
-                "reading_minutes": 204,
+                "word_count": 51720,
+                "reading_minutes": 207,
                 "reading_hours": 3.4,
                 "stops": [
                     {
@@ -2065,18 +2065,18 @@
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
                         "file_path": "e007/c001/p001.md",
-                        "title": "Part 1: Sunday Check-In at Barton Hall, The Opposite-Gender Dorm Rule, & Expelling the Creepy Roommate",
+                        "title": "Part 1: Four Names on the Hotel Folio, Sunday Check-In at Barton Hall, & Expelling the Creepy Roommate",
                         "subtitle": "Barton Hall Check-In, Rushing Voc Eval in One Week, & Visiting Shenandoah Valley University With Heather and Wesley \u2022 Fourteen Days at Roosevelt Rehabilitation Center, Two Weeks in the Shenandoah Valley, & A Secular Wedding in 2008",
                         "era_title": "Fourteen Days at Roosevelt Rehabilitation Center, Two Weeks in the Shenandoah Valley, & A Secular Wedding in 2008",
                         "chap_title": "Barton Hall Check-In, Rushing Voc Eval in One Week, & Visiting Shenandoah Valley University With Heather and Wesley",
                         "date": "2007-07-08",
-                        "location": "Fishersville & Waynesboro, VA (Roosevelt Rehabilitation Center \u2014 Barton Hall, Recreation Hall, & Dining Hall)",
-                        "excerpt": "\"Good timing\u2014we beat the noon heat up Afton Mountain by ten minutes,\" twenty-two-year-old Heather Collins smiled as she clicked the power side-ramp of our silver accessible van back into place along the curb\u2026",
-                        "image": "/raggiesoft-books/images/scenes/katie/b006/jul_2007_rrc_barton_hall_checkin_wesley_heather_david_katie_nate.jpg",
-                        "url": "/katie/fourteen-days-at-roosevelt-rehabilitation-center-two-weeks-in-the-shenandoah-valley-a-secular-wedding-in-2008/barton-hall-check-in-rushing-voc-eval-in-one-week-visiting-shenandoah-valley-university-with-heather-and-wesley/part-1-sunday-check-in-at-barton-hall-the-opposite-gender-dorm-rule-expelling-the-creepy-roommate",
-                        "arc_url": "/katie/fourteen-days-at-roosevelt-rehabilitation-center-two-weeks-in-the-shenandoah-valley-a-secular-wedding-in-2008/barton-hall-check-in-rushing-voc-eval-in-one-week-visiting-shenandoah-valley-university-with-heather-and-wesley/part-1-sunday-check-in-at-barton-hall-the-opposite-gender-dorm-rule-expelling-the-creepy-roommate?arc=fishersville-twelve-days-and-twenty-years",
-                        "word_count": 4372,
-                        "reading_minutes": 18
+                        "location": "Augusta County, Waynesboro, & Fishersville, VA (Extended-Stay Hotel on Route 250 & Roosevelt Rehabilitation Center \u2014 Barton Hall)",
+                        "excerpt": "\"Fourteen nights in a ground-floor accessible two-queen kitchenette suite, checking out Sunday, July twenty-second\u2014and I've got your Meridian card right here for the room and incidentals, Miss Collins,\" the\u2026",
+                        "image": "/raggiesoft-books/images/scenes/katie/b006/jul_2007_route250_hotel_checkin_heather_wesley_nate_katie.jpg",
+                        "url": "/katie/fourteen-days-at-roosevelt-rehabilitation-center-two-weeks-in-the-shenandoah-valley-a-secular-wedding-in-2008/barton-hall-check-in-rushing-voc-eval-in-one-week-visiting-shenandoah-valley-university-with-heather-and-wesley/part-1-four-names-on-the-hotel-folio-sunday-check-in-at-barton-hall-expelling-the-creepy-roommate",
+                        "arc_url": "/katie/fourteen-days-at-roosevelt-rehabilitation-center-two-weeks-in-the-shenandoah-valley-a-secular-wedding-in-2008/barton-hall-check-in-rushing-voc-eval-in-one-week-visiting-shenandoah-valley-university-with-heather-and-wesley/part-1-four-names-on-the-hotel-folio-sunday-check-in-at-barton-hall-expelling-the-creepy-roommate?arc=fishersville-twelve-days-and-twenty-years",
+                        "word_count": 5200,
+                        "reading_minutes": 21
                     },
                     {
                         "stop_num": 4,
@@ -2227,7 +2227,7 @@
                         "image": "/raggiesoft-books/images/scenes/katie/b006/jul_2007_rrc_cantor_hall_room_mixup_keycards_tina_herb_jim_nate.jpg",
                         "url": "/katie/fourteen-days-at-roosevelt-rehabilitation-center-two-weeks-in-the-shenandoah-valley-a-secular-wedding-in-2008/ditching-campus-for-the-hotel-room-without-passes-natalie-s-tears-spending-week-two-exploring-the-shenandoah-valley/part-1-the-dormitory-room-mix-up-staying-at-heather-and-wesley-s-hotel-without-passes-natalie-s-tears-outside-the-cafeteria",
                         "arc_url": "/katie/fourteen-days-at-roosevelt-rehabilitation-center-two-weeks-in-the-shenandoah-valley-a-secular-wedding-in-2008/ditching-campus-for-the-hotel-room-without-passes-natalie-s-tears-spending-week-two-exploring-the-shenandoah-valley/part-1-the-dormitory-room-mix-up-staying-at-heather-and-wesley-s-hotel-without-passes-natalie-s-tears-outside-the-cafeteria?arc=fishersville-twelve-days-and-twenty-years",
-                        "word_count": 1282,
+                        "word_count": 1291,
                         "reading_minutes": 6
                     },
                     {
@@ -2992,9 +2992,9 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|6|0"
     },
-    "/katie/fourteen-days-at-roosevelt-rehabilitation-center-two-weeks-in-the-shenandoah-valley-a-secular-wedding-in-2008/barton-hall-check-in-rushing-voc-eval-in-one-week-visiting-shenandoah-valley-university-with-heather-and-wesley/part-1-sunday-check-in-at-barton-hall-the-opposite-gender-dorm-rule-expelling-the-creepy-roommate": {
+    "/katie/fourteen-days-at-roosevelt-rehabilitation-center-two-weeks-in-the-shenandoah-valley-a-secular-wedding-in-2008/barton-hall-check-in-rushing-voc-eval-in-one-week-visiting-shenandoah-valley-university-with-heather-and-wesley/part-1-four-names-on-the-hotel-folio-sunday-check-in-at-barton-hall-expelling-the-creepy-roommate": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Sunday Check-In at Barton Hall, The Opposite-Gender Dorm Rule, & Expelling the Creepy Roommate",
+        "title": "Part 1: Four Names on the Hotel Folio, Sunday Check-In at Barton Hall, & Expelling the Creepy Roommate",
         "theme": "raggiesoft-books",
         "filePath": "e007/c001/p001.md"
     },
