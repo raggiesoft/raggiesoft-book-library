@@ -78,8 +78,12 @@ if (!empty($routeData)) {
         strpos($currentFilePath, '__ERA_TOC__|') !== 0 &&
         strpos($currentFilePath, '__CHAP_TOC__|') !== 0
     );
-    $sbFilteredKeys = array_filter($sbRouteKeys, function($k) use ($sbSeriesFilter, $routeData, $isReadingScene) { 
+    $sbFilteredKeys = array_filter($sbRouteKeys, function($k) use ($sbSeriesFilter, $routeData, $isReadingScene, $activeStoryPathId, $activeSegmentIdSet) { 
         if ($k === 'common' || $k === $sbSeriesFilter) {
+            return false;
+        }
+        $candidatePathId = (string)($routeData[$k]['pathId'] ?? '');
+        if ($candidatePathId !== '' && empty($activeSegmentIdSet[$candidatePathId]) && $candidatePathId !== (string)$activeStoryPathId) {
             return false;
         }
         if ($isReadingScene) {
@@ -100,13 +104,17 @@ if (!empty($routeData)) {
     // Re-index array to guarantee numerical progression
     $sbFilteredKeys = array_values($sbFilteredKeys);
     
-    // Locate the current page in the sequence
+    // Locate the current page in the sequence (respecting Story Crossroads `noNext` / `crossroads` boundaries)
     $sbCurrentIndex = array_search($normalizedRequestUri, $sbFilteredKeys);
     if ($sbCurrentIndex !== false) {
         // Assign Previous if not explicitly overridden and not the first page
-        if ($sbCurrentIndex > 0 && empty($sbPrevUrl)) $sbPrevUrl = $sbFilteredKeys[$sbCurrentIndex - 1];
-        // Assign Next if not explicitly overridden and not the last page
-        if ($sbCurrentIndex < count($sbFilteredKeys) - 1 && empty($sbNextUrl)) $sbNextUrl = $sbFilteredKeys[$sbCurrentIndex + 1];
+        if ($sbCurrentIndex > 0 && empty($sbPrevUrl) && empty($routeConfig['noPrev'])) {
+            $sbPrevUrl = $sbFilteredKeys[$sbCurrentIndex - 1];
+        }
+        // Assign Next if not explicitly overridden and not halted at a Story Crossroads or path ending
+        if ($sbCurrentIndex < count($sbFilteredKeys) - 1 && empty($sbNextUrl) && empty($routeConfig['noNext']) && empty($routeConfig['crossroads'])) {
+            $sbNextUrl = $sbFilteredKeys[$sbCurrentIndex + 1];
+        }
     }
 }
 
@@ -222,6 +230,19 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
                 <i class="ph ph-playlist" style="font-size: 1.1rem;"></i> Story Arcs
             </span>
             <span style="font-size: 0.7rem; font-weight: 700; padding: 0.1rem 0.45rem; border-radius: 999px; background: var(--rs-bg-alt); border: 1px solid var(--rs-border); color: var(--rs-primary);"><?php echo count($sbStoryArcs); ?></span>
+        </a>
+        <?php endif; ?>
+        <?php
+        $sbCrossroads = is_array($toc_manifest['crossroads'] ?? null) ? $toc_manifest['crossroads'] : [];
+        if (!empty($sbCrossroads)):
+            $sbHasActivePath = !empty($activeStoryPathId) && !empty($activeStoryPathObj['label']);
+        ?>
+        <a href="/<?php echo htmlspecialchars($seriesSlug); ?>/toc#rs-toc-crossroads" data-open-crossroads-if-present="true" class="sidebar-nav-link" title="<?php echo $sbHasActivePath ? ('Active Story Path: ' . htmlspecialchars((string)$activeStoryPathObj['label']) . ' — Click to switch Story Path') : 'Choose a Story Path at the Story Crossroads'; ?>" style="display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; text-decoration: none; padding: 0.45rem 0.55rem; border-radius: 6px; color: var(--rs-text); font-size: 0.88rem; font-weight: 600;">
+            <span style="display: inline-flex; align-items: center; gap: 0.6rem; min-width: 0;">
+                <i class="ph ph-signpost" style="font-size: 1.1rem; flex-shrink: 0;"></i>
+                <span style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><?php echo $sbHasActivePath ? 'Switch Story Path' : 'Story Crossroads'; ?></span>
+            </span>
+            <span style="font-size: 0.68rem; font-weight: 700; padding: 0.1rem 0.45rem; border-radius: 999px; background: var(--rs-bg-alt); border: 1px solid var(--rs-border); color: var(--rs-primary); flex-shrink: 0;"><?php echo $sbHasActivePath ? 'Active' : count($sbCrossroads[0]['options'] ?? []) . ' Paths'; ?></span>
         </a>
         <?php endif; ?>
         

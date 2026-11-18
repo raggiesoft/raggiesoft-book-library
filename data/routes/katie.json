@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "70.8 MB",
-            "pdf": "70 MB",
-            "text_epub": "800 KB",
-            "text_pdf": "2.1 MB",
-            "package_7z": "605 KB",
-            "epub_bytes": 74287713,
-            "pdf_bytes": 73374693,
-            "text_epub_bytes": 819332,
-            "text_pdf_bytes": 2235041,
-            "package_7z_bytes": 619462
+            "epub": "72.5 MB",
+            "pdf": "71.8 MB",
+            "text_epub": "820 KB",
+            "text_pdf": "2.2 MB",
+            "package_7z": "625 KB",
+            "epub_bytes": 75993295,
+            "pdf_bytes": 75253610,
+            "text_epub_bytes": 839802,
+            "text_pdf_bytes": 2277150,
+            "package_7z_bytes": 640174
         },
-        "illustration_count": 156,
+        "illustration_count": 158,
         "word_stats": {
-            "story_word_count": 336062,
-            "lore_word_count": 115490,
-            "combined_word_count": 451552,
-            "story_page_count": 1222,
-            "combined_page_count": 1642,
-            "reading_hours": 22.4,
-            "reading_minutes": 1344,
-            "novel_equivalent": 3.7,
+            "story_word_count": 341381,
+            "lore_word_count": 115006,
+            "combined_word_count": 456387,
+            "story_page_count": 1241,
+            "combined_page_count": 1660,
+            "reading_hours": 22.8,
+            "reading_minutes": 1366,
+            "novel_equivalent": 3.8,
             "scale_category": "Multi-Volume Epic Omnibus",
             "scale_badge": "Multi-Volume Omnibus",
-            "benchmark_note": "3.7\u00d7 a standard 90,000-word contemporary novel (~4-volume print series)",
+            "benchmark_note": "3.8\u00d7 a standard 90,000-word contemporary novel (~4-volume print series)",
             "era_count": 11,
-            "chapter_count": 48,
-            "part_count": 133,
-            "illustration_count": 156,
+            "chapter_count": 51,
+            "part_count": 137,
+            "illustration_count": 158,
             "story_arc_count": 4
         },
         "story_arcs": [
@@ -57,8 +57,8 @@
                 "part_count": 32,
                 "backstage_count": 8,
                 "stop_count": 40,
-                "word_count": 81318,
-                "reading_minutes": 326,
+                "word_count": 80920,
+                "reading_minutes": 324,
                 "reading_hours": 5.4,
                 "stops": [
                     {
@@ -172,8 +172,8 @@
                         "image": "/raggiesoft-books/images/scenes/katie/b004/dec_2002_northwood_room_204_senior_winter_break_heather_katie_nate.jpg",
                         "url": "/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-3-senior-gold-day-in-room-204-paper-snowflakes-one-tight-hug-before-winter-break",
                         "arc_url": "/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-3-senior-gold-day-in-room-204-paper-snowflakes-one-tight-hug-before-winter-break?arc=heather-wesley-and-north-lion",
-                        "word_count": 1447,
-                        "reading_minutes": 6
+                        "word_count": 1513,
+                        "reading_minutes": 7
                     },
                     {
                         "stop_num": 7,
@@ -191,7 +191,7 @@
                         "image": "/raggiesoft-books/images/scenes/katie/b004/jan_2003_bedroom_blue_butterfly_twin_sisters_never_walk_away.jpg",
                         "url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-2-the-drunken-new-year-lie-heather-s-bitter-goodbye-twin-sisters-always-stay",
                         "arc_url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-2-the-drunken-new-year-lie-heather-s-bitter-goodbye-twin-sisters-always-stay?arc=heather-wesley-and-north-lion",
-                        "word_count": 1990,
+                        "word_count": 1994,
                         "reading_minutes": 8
                     },
                     {
@@ -248,7 +248,7 @@
                         "image": "/raggiesoft-backstage/images/scenes/katie-room-204-unhandled-exception.jpg",
                         "url": "https://backstage.raggiesoft.com/books/katie/room-204-unhandled-exception-and-tylers-cousin-lie/",
                         "arc_url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-3-the-back-corner-of-room-204-a-song-in-my-head-stairway-a?arc=heather-wesley-and-north-lion",
-                        "word_count": 3078,
+                        "word_count": 3118,
                         "reading_minutes": 13
                     },
                     {
@@ -257,18 +257,18 @@
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
                         "backstage_slug": "books/katie/what-if-virginia-domicile-unbroken-trust-and-both-rescues",
-                        "title": "Alternate 'What If' Dossier: Virginia Domicile, Calling Tyler's Bluff in Homeroom 212, & Keeping Wesley, Katie's Career, and Both Rescues",
-                        "subtitle": "What Happens If Cousin Hannah's Movie-Theater Lie Comes First, Heather Roasts Tyler on January 6, and Heather & Wesley Stay in Virginia for In-State Tuition at CCHR and VDU",
+                        "title": "Story Crossroads Dossier: Virginia Domicile, Touring Warwick University on Route 112 NNTC, & Keeping Wesley, Katie's Career, and Both Rescues",
+                        "subtitle": "How Staying in Virginia on In-State Tuition Domicile Lets Heather Drive Nate, Katie, and Wesley to Warwick University, Eliminates Tiffany, Stops Brandon Cold, and Preserves Katie's Senate Career and Both Cousin Rescues",
                         "era_title": "Behind the Scenes",
                         "chap_title": "Katie & Nathaniel \u2014 Behind the Scenes",
                         "date": "2005-10-15",
-                        "location": "Virginia Beach & Norfolk, Virginia (Northwood High School, CCHR, Virginia Dominion University, Kempsville, & Richmond)",
-                        "excerpt": "In our Minnesota Marriage 'What If,' moving 1,300 miles north cost Cousin Brittany, Cousin Chelsea, and Katie's Senate career. Here is the Virginia Domicile 'What If': Cousin Hannah's green-parka lie happens first so Heather demolishes Tyler in Homeroom 212, Heather and Wesley stay in Hampton Roads for in-state tuition at CCHR and VDU, Tiffany is eliminated, Brandon hits a four-person brick wall, Wesley never loses his guy friend Nate, Katie still rises to the U.S. Senate, and both Brittany and Chelsea come home safe.",
-                        "image": "/raggiesoft-backstage/images/scenes/what-if-virginia-domicile-vdu-quad-nate-heather-katie-wesley.jpg",
+                        "location": "Virginia Beach, Norfolk, & Newport News, Virginia (Northwood High School, CCHR, Virginia Dominion University, Warwick University, & Richmond)",
+                        "excerpt": "In our Minnesota Marriage 'What If,' moving 1,300 miles north cost Cousin Brittany, Cousin Chelsea, and Katie's Senate career. Here is the architectural breakdown behind the Virginia Domicile Story Crossroads path: Heather and Wesley stay in Hampton Roads for in-state tuition at CCHR and VDU, Heather drives everyone across the tunnel to tour Warwick University beside Route 112 NNTC at the Shoe Lane roundabout, Tiffany is eliminated, Brandon hits a four-person brick wall, Wesley never loses his guy friend Nate, Katie still rises to the U.S. Senate, and both Brittany and Chelsea come home safe.",
+                        "image": "/raggiesoft-backstage/images/scenes/what-if-warwick-university-route-112-nntc-wesley-tour.jpg",
                         "url": "https://backstage.raggiesoft.com/books/katie/what-if-virginia-domicile-unbroken-trust-and-both-rescues/",
                         "arc_url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-3-the-back-corner-of-room-204-a-song-in-my-head-stairway-a?arc=heather-wesley-and-north-lion",
-                        "word_count": 2140,
-                        "reading_minutes": 9
+                        "word_count": 1616,
+                        "reading_minutes": 7
                     },
                     {
                         "stop_num": 12,
@@ -276,18 +276,18 @@
                         "series_slug": "katie",
                         "series_title": "Katie & Nathaniel",
                         "file_path": "e004/c002/p004.md",
-                        "title": "Part 4: Purple Gowns at the Pavilion, Pomp and Circumstance, & One Chance Strictly for Wesley",
+                        "title": "Part 4: Purple Gowns at the Pavilion, Pomp and Circumstance, & Heather's Apology",
                         "subtitle": "Drunken New Year \u2022 Seventeen, Senior Year, & Greenway Court",
                         "era_title": "Seventeen, Senior Year, & Greenway Court",
                         "chap_title": "Drunken New Year",
                         "date": "2003-06-14",
                         "location": "Virginia Beach, VA (Virginia Beach Pavilion \u2014 Class of 2003 Commencement)",
-                        "excerpt": "After Pomp and Circumstance echoes through Northwood High's graduation at the Virginia Beach Pavilion, Katie and Nate tell Heather they cannot reform their relationship\u2014breaking Wesley's heart until the twins agree to one strictly bounded Saturday at Emerald Creek Mall for Wesley's sake.",
+                        "excerpt": "Outside the Virginia Beach Pavilion after Northwood High's Class of 2003 Commencement, Wesley marches Heather over to apologize to Katie and Nate\u2014leaving everything resting on their answer.",
                         "image": "/raggiesoft-books/images/scenes/katie/b004/jun_2003_pavilion_graduation_heather_apology_angry_wesley.jpg",
-                        "url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-one-chance-strictly-for-wesley",
-                        "arc_url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-one-chance-strictly-for-wesley?arc=heather-wesley-and-north-lion",
-                        "word_count": 3862,
-                        "reading_minutes": 16
+                        "url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-heather-s-apology",
+                        "arc_url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-heather-s-apology?arc=heather-wesley-and-north-lion",
+                        "word_count": 2263,
+                        "reading_minutes": 10
                     },
                     {
                         "stop_num": 13,
@@ -299,14 +299,14 @@
                         "subtitle": "Drunken New Year \u2022 Seventeen, Senior Year, & Greenway Court",
                         "era_title": "Seventeen, Senior Year, & Greenway Court",
                         "chap_title": "Drunken New Year",
-                        "date": "2003-06-28",
-                        "location": "Chesapeake, VA (Emerald Creek Mall \u2014 CVTA Route 15 Bus Stop & Upstairs Food Court)",
-                        "excerpt": "Before Heather and Wesley move home to Minnesota, Katie and Nate meet them off CVTA Route 15 at Emerald Creek Mall to give Wesley a proper buddy farewell.",
+                        "date": "2003-06-14",
+                        "location": "Virginia Beach & Chesapeake, VA (Virginia Beach Pavilion & Emerald Creek Mall)",
+                        "excerpt": "Saying no to dating yet refusing to let sixteen-year-old Wesley lose his first guy friend, Katie and Nate meet Wesley and Heather off CVTA Route 15 at Emerald Creek Mall before Minnesota.",
                         "image": "/raggiesoft-books/images/scenes/katie/b004/jun_2003_emerald_creek_mall_food_court_goodbye_wesley_nate_katie_heather.jpg",
                         "url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-5-waiting-by-the-route-15-stop-if-you-walked-away-wesley-s-laminated-buddy-card",
                         "arc_url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-5-waiting-by-the-route-15-stop-if-you-walked-away-wesley-s-laminated-buddy-card?arc=heather-wesley-and-north-lion",
-                        "word_count": 3099,
-                        "reading_minutes": 13
+                        "word_count": 4714,
+                        "reading_minutes": 19
                     },
                     {
                         "stop_num": 14,
@@ -1674,7 +1674,7 @@
                 "part_count": 16,
                 "backstage_count": 2,
                 "stop_count": 18,
-                "word_count": 46087,
+                "word_count": 46145,
                 "reading_minutes": 185,
                 "reading_hours": 3.1,
                 "stops": [
@@ -1694,7 +1694,7 @@
                         "image": "/raggiesoft-books/images/scenes/katie/b004/dec_2002_new_years_eve_locked_bedroom_cereal_ginger_ale.jpg",
                         "url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-1-the-gas-station-run-a-box-of-dry-cereal-why-i-never-had-a-twenty-first-birthday-drink",
                         "arc_url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-1-the-gas-station-run-a-box-of-dry-cereal-why-i-never-had-a-twenty-first-birthday-drink?arc=brittany-chelsea-and-the-four-person-sanctuary",
-                        "word_count": 2606,
+                        "word_count": 2664,
                         "reading_minutes": 11
                     },
                     {
@@ -2384,6 +2384,49 @@
                     }
                 ]
             }
+        ],
+        "crossroads": [
+            {
+                "id": "pavilion-apology-2003",
+                "trigger_part": "e004/c002/p004.md",
+                "trigger_url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-heather-s-apology",
+                "kicker": "Story Crossroads \u2022 Saturday, June 14, 2003, 11:52 AM",
+                "title": "Outside the Virginia Beach Pavilion: How Do Katie and Nate Answer?",
+                "prompt": "Under the blooming crape-myrtles after commencement, Heather has just confessed the whole truth, and sixteen-year-old Wesley is turning his blue silicone ring between both palms\u2014hoping with his whole heart not to lose his very first guy friend. Both paths forward are complete, coequal stories.",
+                "required_choices": [],
+                "options": [
+                    {
+                        "id": "accept-heather-virginia",
+                        "crossroads_id": "pavilion-apology-2003",
+                        "label": "Accept Heather's Apology & Welcome Her Back",
+                        "subtitle": "Forgive Heather under the Pavilion colonnade, stay in Virginia on in-state domicile, tour CCHR, VDU, and Warwick University together as a team, marry Heather, and rescue both Brittany and Chelsea.",
+                        "entry_part": "paths/accept-heather-virginia/e005/c001/p001.md",
+                        "entry_url": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/saying-yes-under-the-crape-myrtles-the-four-person-household/two-squeezes-wesley-s-cheer-where-one-pair-goes-both-pairs-go",
+                        "required_choices": {
+                            "pavilion-apology-2003": "accept-heather-virginia"
+                        },
+                        "part_count": 4,
+                        "word_count": 5175,
+                        "reading_minutes": 21,
+                        "image": "/raggiesoft-books/images/scenes/katie/b004/jun_2003_pavilion_accepted_apology_wesley_cheering_hug.jpg"
+                    },
+                    {
+                        "id": "wesley-aide-bridge",
+                        "crossroads_id": "pavilion-apology-2003",
+                        "label": "Say No to Dating, Yet Meet Once for Wesley",
+                        "subtitle": "Hold the romantic boundary, yet meet off Route 15 at Emerald Creek Mall on June 28 as Wesley's driver and aide so Wesley keeps his buddy bridge across thirteen hundred miles.",
+                        "entry_part": "e004/c002/p005.md",
+                        "entry_url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-5-waiting-by-the-route-15-stop-if-you-walked-away-wesley-s-laminated-buddy-card",
+                        "required_choices": {
+                            "pavilion-apology-2003": "wesley-aide-bridge"
+                        },
+                        "part_count": 99,
+                        "word_count": 272886,
+                        "reading_minutes": 1092,
+                        "image": "/raggiesoft-books/images/scenes/katie/b004/jun_2003_emerald_creek_mall_food_court_goodbye_wesley_nate_katie_heather.jpg"
+                    }
+                ]
+            }
         ]
     },
     "/katie": {
@@ -2420,7 +2463,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Cartoons Are for Life: The Secret Password & The Afternoon Sanctuary",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c001/p001.md"
+        "filePath": "e001/c001/p001.md",
+        "noPrev": true,
+        "nextUrl": "/katie/early-childhood/summer-camp-at-virginia-dominion-university/the-parallel-pair-dominion-mall-the-vdu-fieldhouse"
     },
     "/katie/early-childhood/summer-camp-at-virginia-dominion-university": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2432,7 +2477,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Parallel Pair: Dominion Mall & The VDU Fieldhouse",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/p001.md"
+        "filePath": "e001/c002/p001.md",
+        "prevUrl": "/katie/early-childhood/the-great-afternoon/cartoons-are-for-life-the-secret-password-the-afternoon-sanctuary",
+        "nextUrl": "/katie/early-childhood/big-family-christmas/the-newport-news-arts-train-the-downstairs-sofa-bed"
     },
     "/katie/early-childhood/big-family-christmas": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2444,7 +2491,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Newport News ARTS Train & The Downstairs Sofa Bed",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/p001.md"
+        "filePath": "e001/c003/p001.md",
+        "prevUrl": "/katie/early-childhood/summer-camp-at-virginia-dominion-university/the-parallel-pair-dominion-mall-the-vdu-fieldhouse",
+        "nextUrl": "/katie/early-childhood/all-summer-down-on-blackwater-road/two-sisters-through-the-screen-door-uncle-steve-s-red-cedar-post-all-summer-sheltered-on-blackwater-road"
     },
     "/katie/early-childhood/all-summer-down-on-blackwater-road": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2456,7 +2505,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Two Sisters Through the Screen Door, Uncle Steve's Red Cedar Post, & All Summer Sheltered on Blackwater Road",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c004/p001.md"
+        "filePath": "e001/c004/p001.md",
+        "prevUrl": "/katie/early-childhood/big-family-christmas/the-newport-news-arts-train-the-downstairs-sofa-bed",
+        "nextUrl": "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/the-blizzard-of-96/part-1-snow-day-in-virginia-beach-the-backyard-promise"
     },
     "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2474,13 +2525,17 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Snow Day in Virginia Beach & The Backyard Promise",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/p001.md"
+        "filePath": "e002/c001/p001.md",
+        "prevUrl": "/katie/early-childhood/all-summer-down-on-blackwater-road/two-sisters-through-the-screen-door-uncle-steve-s-red-cedar-post-all-summer-sheltered-on-blackwater-road",
+        "nextUrl": "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/the-blizzard-of-96/part-2-sleet-on-the-glass-glaze-ice-across-tidewater-brittany-s-first-group-cuddle"
     },
     "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/the-blizzard-of-96/part-2-sleet-on-the-glass-glaze-ice-across-tidewater-brittany-s-first-group-cuddle": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Sleet on the Glass, Glaze Ice Across Tidewater, & Brittany's First Group Cuddle",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c001/p002.md"
+        "filePath": "e002/c001/p002.md",
+        "prevUrl": "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/the-blizzard-of-96/part-1-snow-day-in-virginia-beach-the-backyard-promise",
+        "nextUrl": "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/katie-is-dumped/no-more-fighting-the-dinner-dance-promise"
     },
     "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/katie-is-dumped": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2492,7 +2547,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "No More Fighting & The Dinner Dance Promise",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c002/p001.md"
+        "filePath": "e002/c002/p001.md",
+        "prevUrl": "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/the-blizzard-of-96/part-2-sleet-on-the-glass-glaze-ice-across-tidewater-brittany-s-first-group-cuddle",
+        "nextUrl": "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/the-pretend-boyfriend-twins-day/twin-brothers-always-stay-spirit-week-the-living-room-sofa"
     },
     "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/the-pretend-boyfriend-twins-day": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2504,7 +2561,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Twin Brothers Always Stay: Spirit Week & The Living Room Sofa",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c003/p001.md"
+        "filePath": "e002/c003/p001.md",
+        "prevUrl": "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/katie-is-dumped/no-more-fighting-the-dinner-dance-promise",
+        "nextUrl": "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/summer-1998-on-blackwater-road-what-s-inside-the-cabinet-bleak-numbers-on-the-ledger/tropical-brochures-on-the-counter-aunt-karen-and-dad-s-gentle-truth-bleak-numbers-on-the-farm-ledger"
     },
     "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/summer-1998-on-blackwater-road-what-s-inside-the-cabinet-bleak-numbers-on-the-ledger": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2516,7 +2575,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Tropical Brochures on the Counter, Aunt Karen and Dad's Gentle Truth, & Bleak Numbers on the Farm Ledger",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c004/p001.md"
+        "filePath": "e002/c004/p001.md",
+        "prevUrl": "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/the-pretend-boyfriend-twins-day/twin-brothers-always-stay-spirit-week-the-living-room-sofa",
+        "nextUrl": "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/two-dollars-a-bushel-one-last-harvest-goodbye-to-blackwater-road/two-dollars-and-ten-cents-a-bushel-unhooked-soybean-drills-one-last-sunset-across-the-wheat-stubble"
     },
     "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/two-dollars-a-bushel-one-last-harvest-goodbye-to-blackwater-road": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2528,7 +2589,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Two Dollars and Ten Cents a Bushel, Unhooked Soybean Drills, & One Last Sunset Across the Wheat Stubble",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c005/p001.md"
+        "filePath": "e002/c005/p001.md",
+        "prevUrl": "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/summer-1998-on-blackwater-road-what-s-inside-the-cabinet-bleak-numbers-on-the-ledger/tropical-brochures-on-the-counter-aunt-karen-and-dad-s-gentle-truth-bleak-numbers-on-the-farm-ledger",
+        "nextUrl": "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/freshman-lunch-chicken-patty-bites-the-demarco-decree/cramping-fingers-cut-up-chicken-patty-bites-two-fifteen-at-the-dumpsters"
     },
     "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/freshman-lunch-chicken-patty-bites-the-demarco-decree": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2540,7 +2603,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Cramping Fingers, Cut-Up Chicken Patty Bites, & Two-Fifteen at the Dumpsters",
         "theme": "raggiesoft-books",
-        "filePath": "e002/c006/p001.md"
+        "filePath": "e002/c006/p001.md",
+        "prevUrl": "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/two-dollars-a-bushel-one-last-harvest-goodbye-to-blackwater-road/two-dollars-and-ten-cents-a-bushel-unhooked-soybean-drills-one-last-sunset-across-the-wheat-stubble",
+        "nextUrl": "/katie/sixteen-summer-sanctuary/earlton-court-bonding-with-my-sister/part-1-through-smoker-s-corner-to-earlton-court-aunt-karen-s-couch-our-promise-for-three"
     },
     "/katie/sixteen-summer-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2558,13 +2623,17 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Through Smoker's Corner to Earlton Court, Aunt Karen's Couch, & Our Promise for Three",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/p001.md"
+        "filePath": "e003/c001/p001.md",
+        "prevUrl": "/katie/the-blizzard-of-96-blackwater-summers-middle-school-freshman-year/freshman-lunch-chicken-patty-bites-the-demarco-decree/cramping-fingers-cut-up-chicken-patty-bites-two-fifteen-at-the-dumpsters",
+        "nextUrl": "/katie/sixteen-summer-sanctuary/earlton-court-bonding-with-my-sister/part-2-summer-sanctuary-hearthstone-pizza-the-sunlit-valley-katie-s-room"
     },
     "/katie/sixteen-summer-sanctuary/earlton-court-bonding-with-my-sister/part-2-summer-sanctuary-hearthstone-pizza-the-sunlit-valley-katie-s-room": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Summer Sanctuary: Hearthstone Pizza, The Sunlit Valley, & Katie's Room",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c001/p002.md"
+        "filePath": "e003/c001/p002.md",
+        "prevUrl": "/katie/sixteen-summer-sanctuary/earlton-court-bonding-with-my-sister/part-1-through-smoker-s-corner-to-earlton-court-aunt-karen-s-couch-our-promise-for-three",
+        "nextUrl": "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-1-the-i-95-haul-the-quantum-basic-library-book-ditching-captain-barnaby"
     },
     "/katie/sixteen-summer-sanctuary/end-of-summer-cruise": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2576,31 +2645,41 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The I-95 Haul, The Quantum Basic Library Book, & Ditching Captain Barnaby",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/p001.md"
+        "filePath": "e003/c002/p001.md",
+        "prevUrl": "/katie/sixteen-summer-sanctuary/earlton-court-bonding-with-my-sister/part-2-summer-sanctuary-hearthstone-pizza-the-sunlit-valley-katie-s-room",
+        "nextUrl": "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-2-the-nassau-pier-guest-services-the-last-straw"
     },
     "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-2-the-nassau-pier-guest-services-the-last-straw": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Nassau Pier, Guest Services, & The Last Straw",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/p002.md"
+        "filePath": "e003/c002/p002.md",
+        "prevUrl": "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-1-the-i-95-haul-the-quantum-basic-library-book-ditching-captain-barnaby",
+        "nextUrl": "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-3-stateroom-6004-the-loaner-wheelchairs-pizza-for-three-on-the-aft-deck"
     },
     "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-3-stateroom-6004-the-loaner-wheelchairs-pizza-for-three-on-the-aft-deck": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Stateroom 6004, The Loaner Wheelchairs, & Pizza for Three on the Aft Deck",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/p003.md"
+        "filePath": "e003/c002/p003.md",
+        "prevUrl": "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-2-the-nassau-pier-guest-services-the-last-straw",
+        "nextUrl": "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-4-back-on-dry-land-the-twelve-hour-drive-up-i-95"
     },
     "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-4-back-on-dry-land-the-twelve-hour-drive-up-i-95": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: Back on Dry Land & The Twelve-Hour Drive Up I-95",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/p004.md"
+        "filePath": "e003/c002/p004.md",
+        "prevUrl": "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-3-stateroom-6004-the-loaner-wheelchairs-pizza-for-three-on-the-aft-deck",
+        "nextUrl": "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-5-monday-morning-in-virginia-beach-the-divorce-lawyer-the-pcp-borrowed-time"
     },
     "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-5-monday-morning-in-virginia-beach-the-divorce-lawyer-the-pcp-borrowed-time": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: Monday Morning in Virginia Beach \u2014 The Divorce Lawyer, The PCP, & Borrowed Time",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c002/p005.md"
+        "filePath": "e003/c002/p005.md",
+        "prevUrl": "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-4-back-on-dry-land-the-twelve-hour-drive-up-i-95",
+        "nextUrl": "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-1-the-fault-grounds-filing-the-protective-order-junior-year-at-northwood-high-school"
     },
     "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2612,25 +2691,33 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Fault-Grounds Filing, The Protective Order, & Junior Year at Northwood High School",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c003/p001.md"
+        "filePath": "e003/c003/p001.md",
+        "prevUrl": "/katie/sixteen-summer-sanctuary/end-of-summer-cruise/part-5-monday-morning-in-virginia-beach-the-divorce-lawyer-the-pcp-borrowed-time",
+        "nextUrl": "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-2-when-borrowed-time-runs-out-the-collapse-at-school-the-emergency-room-escalation-time-for-powerchairs"
     },
     "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-2-when-borrowed-time-runs-out-the-collapse-at-school-the-emergency-room-escalation-time-for-powerchairs": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: When Borrowed Time Runs Out \u2014 The Collapse at School, The Emergency Room Escalation, & Time for Powerchairs",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c003/p002.md"
+        "filePath": "e003/c003/p002.md",
+        "prevUrl": "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-1-the-fault-grounds-filing-the-protective-order-junior-year-at-northwood-high-school",
+        "nextUrl": "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-3-then-we-ll-change-the-truck-downsizing-to-military-highway-cvta-route-15"
     },
     "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-3-then-we-ll-change-the-truck-downsizing-to-military-highway-cvta-route-15": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: 'Then We'll Change the Truck,' Downsizing to Military Highway, & CVTA Route 15",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c003/p003.md"
+        "filePath": "e003/c003/p003.md",
+        "prevUrl": "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-2-when-borrowed-time-runs-out-the-collapse-at-school-the-emergency-room-escalation-time-for-powerchairs",
+        "nextUrl": "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-4-purple-day-lunch-josh-riley-s-lane-toll-the-demarco-periwinkle-tag-team"
     },
     "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-4-purple-day-lunch-josh-riley-s-lane-toll-the-demarco-periwinkle-tag-team": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: Purple Day Lunch, Josh Riley's Lane Toll, & The DeMarco\u2013Periwinkle Tag-Team",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c003/p004.md"
+        "filePath": "e003/c003/p004.md",
+        "prevUrl": "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-3-then-we-ll-change-the-truck-downsizing-to-military-highway-cvta-route-15",
+        "nextUrl": "/katie/sixteen-summer-sanctuary/sixteen-on-four-wheels-finding-dates/part-1-navigating-northwood-high-on-four-wheels-two-first-dates-why-we-ride-on-saturday"
     },
     "/katie/sixteen-summer-sanctuary/sixteen-on-four-wheels-finding-dates": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2642,13 +2729,17 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Navigating Northwood High on Four Wheels, Two First Dates, & Why We Ride on Saturday",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c004/p001.md"
+        "filePath": "e003/c004/p001.md",
+        "prevUrl": "/katie/sixteen-summer-sanctuary/junior-year-at-northwood-high-the-prognosis/part-4-purple-day-lunch-josh-riley-s-lane-toll-the-demarco-periwinkle-tag-team",
+        "nextUrl": "/katie/sixteen-summer-sanctuary/sixteen-on-four-wheels-finding-dates/part-2-cousin-wesley-ryan-s-escalator-exit-two-dates-at-emerald-creek-mall"
     },
     "/katie/sixteen-summer-sanctuary/sixteen-on-four-wheels-finding-dates/part-2-cousin-wesley-ryan-s-escalator-exit-two-dates-at-emerald-creek-mall": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Cousin Wesley, Ryan's Escalator Exit, & Two Dates at Emerald Creek Mall",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c004/p002.md"
+        "filePath": "e003/c004/p002.md",
+        "prevUrl": "/katie/sixteen-summer-sanctuary/sixteen-on-four-wheels-finding-dates/part-1-navigating-northwood-high-on-four-wheels-two-first-dates-why-we-ride-on-saturday",
+        "nextUrl": "/katie/sixteen-summer-sanctuary/the-uncut-curb-at-smoker-s-corner/the-handicap-lot-edge-the-crosswalk-to-grass-on-lions-way-why-brittany-turned-down-the-cigarette"
     },
     "/katie/sixteen-summer-sanctuary/the-uncut-curb-at-smoker-s-corner": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2660,7 +2751,9 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "The Handicap Lot Edge, The Crosswalk to Grass on Lions Way, & Why Brittany Turned Down the Cigarette",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c005/p001.md"
+        "filePath": "e003/c005/p001.md",
+        "prevUrl": "/katie/sixteen-summer-sanctuary/sixteen-on-four-wheels-finding-dates/part-2-cousin-wesley-ryan-s-escalator-exit-two-dates-at-emerald-creek-mall",
+        "nextUrl": "/katie/sixteen-summer-sanctuary/cousin-wesley-annie-s-pretzels-coding-side-by-side/part-1-cousin-wesley-at-emerald-creek-mall-annie-s-pretzels-the-same-deep-pressure-squeeze"
     },
     "/katie/sixteen-summer-sanctuary/cousin-wesley-annie-s-pretzels-coding-side-by-side": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2672,13 +2765,17 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Cousin Wesley at Emerald Creek Mall, Annie's Pretzels, & The Same Deep-Pressure Squeeze",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c006/p001.md"
+        "filePath": "e003/c006/p001.md",
+        "prevUrl": "/katie/sixteen-summer-sanctuary/the-uncut-curb-at-smoker-s-corner/the-handicap-lot-edge-the-crosswalk-to-grass-on-lions-way-why-brittany-turned-down-the-cigarette",
+        "nextUrl": "/katie/sixteen-summer-sanctuary/cousin-wesley-annie-s-pretzels-coding-side-by-side/part-2-two-envelopes-at-mrs-demarco-s-window-table-three-sugar-cookies-coding-in-mrs-periwinkle-s-library"
     },
     "/katie/sixteen-summer-sanctuary/cousin-wesley-annie-s-pretzels-coding-side-by-side/part-2-two-envelopes-at-mrs-demarco-s-window-table-three-sugar-cookies-coding-in-mrs-periwinkle-s-library": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Two Envelopes at Mrs. DeMarco's Window Table, Three Sugar Cookies, & Coding in Mrs. Periwinkle's Library",
         "theme": "raggiesoft-books",
-        "filePath": "e003/c006/p002.md"
+        "filePath": "e003/c006/p002.md",
+        "prevUrl": "/katie/sixteen-summer-sanctuary/cousin-wesley-annie-s-pretzels-coding-side-by-side/part-1-cousin-wesley-at-emerald-creek-mall-annie-s-pretzels-the-same-deep-pressure-squeeze",
+        "nextUrl": "/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-1-two-buses-to-chesapeake-bay-mall-the-center-court-carousel-seventeen-on-four-wheels"
     },
     "/katie/seventeen-senior-year-greenway-court": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2696,19 +2793,25 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Two Buses to Chesapeake Bay Mall, The Center Court Carousel, & Seventeen on Four Wheels",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/p001.md"
+        "filePath": "e004/c001/p001.md",
+        "prevUrl": "/katie/sixteen-summer-sanctuary/cousin-wesley-annie-s-pretzels-coding-side-by-side/part-2-two-envelopes-at-mrs-demarco-s-window-table-three-sugar-cookies-coding-in-mrs-periwinkle-s-library",
+        "nextUrl": "/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-2-saturday-afternoon-on-arvin-road-two-copies-open-at-once-the-most-important-bond-you-have"
     },
     "/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-2-saturday-afternoon-on-arvin-road-two-copies-open-at-once-the-most-important-bond-you-have": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Saturday Afternoon on Arvin Road, Two Copies Open at Once, & The Most Important Bond You Have",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/p002.md"
+        "filePath": "e004/c001/p002.md",
+        "prevUrl": "/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-1-two-buses-to-chesapeake-bay-mall-the-center-court-carousel-seventeen-on-four-wheels",
+        "nextUrl": "/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-3-senior-gold-day-in-room-204-paper-snowflakes-one-tight-hug-before-winter-break"
     },
     "/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-3-senior-gold-day-in-room-204-paper-snowflakes-one-tight-hug-before-winter-break": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Senior Gold Day in Room 204, Paper Snowflakes, & One Tight Hug Before Winter Break",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c001/p003.md"
+        "filePath": "e004/c001/p003.md",
+        "prevUrl": "/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-2-saturday-afternoon-on-arvin-road-two-copies-open-at-once-the-most-important-bond-you-have",
+        "nextUrl": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-1-the-gas-station-run-a-box-of-dry-cereal-why-i-never-had-a-twenty-first-birthday-drink"
     },
     "/katie/seventeen-senior-year-greenway-court/drunken-new-year": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2720,31 +2823,87 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Gas-Station Run, A Box of Dry Cereal, & Why I Never Had a Twenty-First Birthday Drink",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/p001.md"
+        "filePath": "e004/c002/p001.md",
+        "prevUrl": "/katie/seventeen-senior-year-greenway-court/seventeen-at-chesapeake-bay-mall-senior-fall-with-heather/part-3-senior-gold-day-in-room-204-paper-snowflakes-one-tight-hug-before-winter-break",
+        "nextUrl": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-2-the-drunken-new-year-lie-heather-s-bitter-goodbye-twin-sisters-always-stay"
     },
     "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-2-the-drunken-new-year-lie-heather-s-bitter-goodbye-twin-sisters-always-stay": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Drunken New Year Lie, Heather's Bitter Goodbye, & Twin Sisters Always Stay",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/p002.md"
+        "filePath": "e004/c002/p002.md",
+        "prevUrl": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-1-the-gas-station-run-a-box-of-dry-cereal-why-i-never-had-a-twenty-first-birthday-drink",
+        "nextUrl": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-3-the-back-corner-of-room-204-a-song-in-my-head-stairway-a"
     },
     "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-3-the-back-corner-of-room-204-a-song-in-my-head-stairway-a": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Back Corner of Room 204, A Song in My Head, & Stairway A",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/p003.md"
+        "filePath": "e004/c002/p003.md",
+        "prevUrl": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-2-the-drunken-new-year-lie-heather-s-bitter-goodbye-twin-sisters-always-stay",
+        "nextUrl": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-heather-s-apology"
     },
-    "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-one-chance-strictly-for-wesley": {
+    "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-heather-s-apology": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: Purple Gowns at the Pavilion, Pomp and Circumstance, & One Chance Strictly for Wesley",
+        "title": "Part 4: Purple Gowns at the Pavilion, Pomp and Circumstance, & Heather's Apology",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/p004.md"
+        "filePath": "e004/c002/p004.md",
+        "prevUrl": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-3-the-back-corner-of-room-204-a-song-in-my-head-stairway-a",
+        "noNext": true,
+        "crossroads": {
+            "id": "pavilion-apology-2003",
+            "trigger_part": "e004/c002/p004.md",
+            "trigger_url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-heather-s-apology",
+            "kicker": "Story Crossroads \u2022 Saturday, June 14, 2003, 11:52 AM",
+            "title": "Outside the Virginia Beach Pavilion: How Do Katie and Nate Answer?",
+            "prompt": "Under the blooming crape-myrtles after commencement, Heather has just confessed the whole truth, and sixteen-year-old Wesley is turning his blue silicone ring between both palms\u2014hoping with his whole heart not to lose his very first guy friend. Both paths forward are complete, coequal stories.",
+            "required_choices": [],
+            "options": [
+                {
+                    "id": "accept-heather-virginia",
+                    "crossroads_id": "pavilion-apology-2003",
+                    "label": "Accept Heather's Apology & Welcome Her Back",
+                    "subtitle": "Forgive Heather under the Pavilion colonnade, stay in Virginia on in-state domicile, tour CCHR, VDU, and Warwick University together as a team, marry Heather, and rescue both Brittany and Chelsea.",
+                    "entry_part": "paths/accept-heather-virginia/e005/c001/p001.md",
+                    "entry_url": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/saying-yes-under-the-crape-myrtles-the-four-person-household/two-squeezes-wesley-s-cheer-where-one-pair-goes-both-pairs-go",
+                    "required_choices": {
+                        "pavilion-apology-2003": "accept-heather-virginia"
+                    },
+                    "part_count": 4,
+                    "word_count": 5175,
+                    "reading_minutes": 21,
+                    "image": "/raggiesoft-books/images/scenes/katie/b004/jun_2003_pavilion_accepted_apology_wesley_cheering_hug.jpg"
+                },
+                {
+                    "id": "wesley-aide-bridge",
+                    "crossroads_id": "pavilion-apology-2003",
+                    "label": "Say No to Dating, Yet Meet Once for Wesley",
+                    "subtitle": "Hold the romantic boundary, yet meet off Route 15 at Emerald Creek Mall on June 28 as Wesley's driver and aide so Wesley keeps his buddy bridge across thirteen hundred miles.",
+                    "entry_part": "e004/c002/p005.md",
+                    "entry_url": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-5-waiting-by-the-route-15-stop-if-you-walked-away-wesley-s-laminated-buddy-card",
+                    "required_choices": {
+                        "pavilion-apology-2003": "wesley-aide-bridge"
+                    },
+                    "part_count": 99,
+                    "word_count": 272886,
+                    "reading_minutes": 1092,
+                    "image": "/raggiesoft-books/images/scenes/katie/b004/jun_2003_emerald_creek_mall_food_court_goodbye_wesley_nate_katie_heather.jpg"
+                }
+            ]
+        }
     },
     "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-5-waiting-by-the-route-15-stop-if-you-walked-away-wesley-s-laminated-buddy-card": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: Waiting by the Route 15 Stop, If You Walked Away, & Wesley's Laminated Buddy Card",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c002/p005.md"
+        "filePath": "e004/c002/p005.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-heather-s-apology",
+        "nextUrl": "/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary/part-1-apartment-a6-on-greenway-court-dad-s-microwave-cart-across-the-hall-neighbors"
     },
     "/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2756,19 +2915,40 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Apartment A6 on Greenway Court, Dad's Microwave Cart, & Across-the-Hall Neighbors",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c003/p001.md"
+        "filePath": "e004/c003/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-5-waiting-by-the-route-15-stop-if-you-walked-away-wesley-s-laminated-buddy-card",
+        "nextUrl": "/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary/part-2-brenda-in-the-back-alley-discovering-the-square-closet-sanctuary"
     },
     "/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary/part-2-brenda-in-the-back-alley-discovering-the-square-closet-sanctuary": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Brenda in the Back Alley & Discovering the Square Closet Sanctuary",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c003/p002.md"
+        "filePath": "e004/c003/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary/part-1-apartment-a6-on-greenway-court-dad-s-microwave-cart-across-the-hall-neighbors",
+        "nextUrl": "/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary/part-3-hurricane-isabel-two-layers-of-sandbags-at-greenway-court-two-weeks-at-dad-s-house-on-arvin-road"
     },
     "/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary/part-3-hurricane-isabel-two-layers-of-sandbags-at-greenway-court-two-weeks-at-dad-s-house-on-arvin-road": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Hurricane Isabel, Two Layers of Sandbags at Greenway Court, & Two Weeks at Dad's House on Arvin Road",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c003/p003.md"
+        "filePath": "e004/c003/p003.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary/part-2-brenda-in-the-back-alley-discovering-the-square-closet-sanctuary",
+        "nextUrl": "/katie/seventeen-senior-year-greenway-court/the-admiral-center-patio-moving-together-to-williamsburg/part-1-spilled-hot-chocolate-on-the-admiral-center-patio-brandon-mercer-presents-himself-as-a-gentleman"
     },
     "/katie/seventeen-senior-year-greenway-court/the-admiral-center-patio-moving-together-to-williamsburg": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2780,13 +2960,27 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Spilled Hot Chocolate on The Admiral Center Patio & Brandon Mercer Presents Himself as a Gentleman",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c004/p001.md"
+        "filePath": "e004/c004/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/seventeen-senior-year-greenway-court/greenway-court-apartment-a6-the-square-closet-sanctuary/part-3-hurricane-isabel-two-layers-of-sandbags-at-greenway-court-two-weeks-at-dad-s-house-on-arvin-road",
+        "nextUrl": "/katie/seventeen-senior-year-greenway-court/the-admiral-center-patio-moving-together-to-williamsburg/part-2-a-non-negotiable-package-deal-dad-s-calling-cards-moving-together-to-williamsburg"
     },
     "/katie/seventeen-senior-year-greenway-court/the-admiral-center-patio-moving-together-to-williamsburg/part-2-a-non-negotiable-package-deal-dad-s-calling-cards-moving-together-to-williamsburg": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: A Non-Negotiable Package Deal, Dad's Calling Cards, & Moving Together to Williamsburg",
         "theme": "raggiesoft-books",
-        "filePath": "e004/c004/p002.md"
+        "filePath": "e004/c004/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/seventeen-senior-year-greenway-court/the-admiral-center-patio-moving-together-to-williamsburg/part-1-spilled-hot-chocolate-on-the-admiral-center-patio-brandon-mercer-presents-himself-as-a-gentleman",
+        "nextUrl": "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/north-henry-street-six-buses-from-williamsburg-the-goyeau-street-tunnel-file/part-1-closed-bedroom-doors-the-three-by-six-closet-sanctuary-unwritten-couple-rules"
     },
     "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2804,19 +2998,40 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Closed Bedroom Doors, The Three-by-Six Closet Sanctuary, & Unwritten Couple Rules",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/p001.md"
+        "filePath": "e005/c001/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/seventeen-senior-year-greenway-court/the-admiral-center-patio-moving-together-to-williamsburg/part-2-a-non-negotiable-package-deal-dad-s-calling-cards-moving-together-to-williamsburg",
+        "nextUrl": "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/north-henry-street-six-buses-from-williamsburg-the-goyeau-street-tunnel-file/part-2-six-buses-from-williamsburg-the-blind-leap-at-boundary-street-crown-burger-open-radio-on-route-20-dad-at-indian-river-road"
     },
     "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/north-henry-street-six-buses-from-williamsburg-the-goyeau-street-tunnel-file/part-2-six-buses-from-williamsburg-the-blind-leap-at-boundary-street-crown-burger-open-radio-on-route-20-dad-at-indian-river-road": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Six Buses from Williamsburg \u2014 The Blind Leap at Boundary Street, Crown Burger, Open Radio on Route 20, & Dad at Indian River Road",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/p002.md"
+        "filePath": "e005/c001/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/north-henry-street-six-buses-from-williamsburg-the-goyeau-street-tunnel-file/part-1-closed-bedroom-doors-the-three-by-six-closet-sanctuary-unwritten-couple-rules",
+        "nextUrl": "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/north-henry-street-six-buses-from-williamsburg-the-goyeau-street-tunnel-file/part-3-the-goyeau-street-tunnel-bus-the-trashed-ticket-on-east-jefferson-avenue-protected-non-traveling-complainant"
     },
     "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/north-henry-street-six-buses-from-williamsburg-the-goyeau-street-tunnel-file/part-3-the-goyeau-street-tunnel-bus-the-trashed-ticket-on-east-jefferson-avenue-protected-non-traveling-complainant": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Goyeau Street Tunnel Bus, The Trashed Ticket on East Jefferson Avenue, & Protected Non-Traveling Complainant",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c001/p003.md"
+        "filePath": "e005/c001/p003.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/north-henry-street-six-buses-from-williamsburg-the-goyeau-street-tunnel-file/part-2-six-buses-from-williamsburg-the-blind-leap-at-boundary-street-crown-burger-open-radio-on-route-20-dad-at-indian-river-road",
+        "nextUrl": "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road/part-1-chapters-co-after-williamsburg-tiffany-sloan-invites-both-twins-into-sea-breeze-west"
     },
     "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2828,31 +3043,66 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Chapters & Co. After Williamsburg & Tiffany Sloan Invites Both Twins Into Sea Breeze West",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c002/p001.md"
+        "filePath": "e005/c002/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/north-henry-street-six-buses-from-williamsburg-the-goyeau-street-tunnel-file/part-3-the-goyeau-street-tunnel-bus-the-trashed-ticket-on-east-jefferson-avenue-protected-non-traveling-complainant",
+        "nextUrl": "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road/part-2-the-worst-christmas-ever-eighteen-stops-to-dirty-old-tonomy-hill-four-days-with-cousin-chelsea-the-west-main-road-shortcut-home"
     },
     "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road/part-2-the-worst-christmas-ever-eighteen-stops-to-dirty-old-tonomy-hill-four-days-with-cousin-chelsea-the-west-main-road-shortcut-home": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Worst Christmas Ever: Eighteen Stops to Dirty Old Tonomy Hill, Four Days with Cousin Chelsea, & The West Main Road Shortcut Home",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c002/p002.md"
+        "filePath": "e005/c002/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road/part-1-chapters-co-after-williamsburg-tiffany-sloan-invites-both-twins-into-sea-breeze-west",
+        "nextUrl": "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road/part-3-milk-isn-t-allowed-in-this-fridge-tiffany-s-sunday-morning-accusation-yes-or-no-questions-through-tears"
     },
     "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road/part-3-milk-isn-t-allowed-in-this-fridge-tiffany-s-sunday-morning-accusation-yes-or-no-questions-through-tears": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Milk Isn't Allowed in This Fridge, Tiffany's Sunday Morning Accusation, & Yes-or-No Questions Through Tears",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c002/p003.md"
+        "filePath": "e005/c002/p003.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road/part-2-the-worst-christmas-ever-eighteen-stops-to-dirty-old-tonomy-hill-four-days-with-cousin-chelsea-the-west-main-road-shortcut-home",
+        "nextUrl": "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road/part-4-thanksgiving-dinner-home-on-arvin-road-the-black-friday-closet-sanctuary-quietly-launching-ideas-for-coastal-virginia-transit"
     },
     "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road/part-4-thanksgiving-dinner-home-on-arvin-road-the-black-friday-closet-sanctuary-quietly-launching-ideas-for-coastal-virginia-transit": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: Thanksgiving Dinner Home on Arvin Road, The Black Friday Closet Sanctuary, & Quietly Launching Ideas for Coastal Virginia Transit",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c002/p004.md"
+        "filePath": "e005/c002/p004.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road/part-3-milk-isn-t-allowed-in-this-fridge-tiffany-s-sunday-morning-accusation-yes-or-no-questions-through-tears",
+        "nextUrl": "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road/part-5-the-cchr-disability-counselor-the-glossy-fishersville-pitch-why-brother-and-sister-should-get-to-share-a-dorm-room"
     },
     "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road/part-5-the-cchr-disability-counselor-the-glossy-fishersville-pitch-why-brother-and-sister-should-get-to-share-a-dorm-room": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: The CCHR Disability Counselor, The Glossy Fishersville Pitch, & Why Brother and Sister Should Get to Share a Dorm Room",
         "theme": "raggiesoft-books",
-        "filePath": "e005/c002/p005.md"
+        "filePath": "e005/c002/p005.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road/part-4-thanksgiving-dinner-home-on-arvin-road-the-black-friday-closet-sanctuary-quietly-launching-ideas-for-coastal-virginia-transit",
+        "nextUrl": "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/barton-hall-check-in-rushing-voc-eval-in-one-week-door-greeter/part-1-sunday-check-in-at-barton-hall-the-opposite-gender-dorm-rule-expelling-the-creepy-roommate"
     },
     "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2870,13 +3120,27 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Sunday Check-In at Barton Hall, The Opposite-Gender Dorm Rule, & Expelling the Creepy Roommate",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/p001.md"
+        "filePath": "e006/c001/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/six-buses-from-williamsburg-sea-breeze-west-coming-home-to-arvin-road/tiffany-s-sea-breeze-west-apartment-dirty-old-tonomy-hill-coming-home-to-arvin-road/part-5-the-cchr-disability-counselor-the-glossy-fishersville-pitch-why-brother-and-sister-should-get-to-share-a-dorm-room",
+        "nextUrl": "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/barton-hall-check-in-rushing-voc-eval-in-one-week-door-greeter/part-2-rushing-voc-eval-in-one-week-auto-shop-door-greeter-refusing-separation-staying-stuck-on-level-2"
     },
     "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/barton-hall-check-in-rushing-voc-eval-in-one-week-door-greeter/part-2-rushing-voc-eval-in-one-week-auto-shop-door-greeter-refusing-separation-staying-stuck-on-level-2": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Rushing Voc Eval in One Week, Auto Shop & 'Door Greeter!?', Refusing Separation, & Staying Stuck on Level 2",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c001/p002.md"
+        "filePath": "e006/c001/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/barton-hall-check-in-rushing-voc-eval-in-one-week-door-greeter/part-1-sunday-check-in-at-barton-hall-the-opposite-gender-dorm-rule-expelling-the-creepy-roommate",
+        "nextUrl": "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/starting-web-apps-while-stuck-in-barton-hall-sleeping-in-the-closet-the-chickenshit-report/part-1-starting-web-apps-while-stuck-on-level-2-in-barton-hall-quantum-os-2000-professional-meeting-tina-jim-and-sheila"
     },
     "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/starting-web-apps-while-stuck-in-barton-hall-sleeping-in-the-closet-the-chickenshit-report": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2888,13 +3152,27 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Starting Web Apps While Stuck on Level 2 in Barton Hall, Quantum OS 2000 Professional, & Meeting Tina, Jim, and Sheila",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c002/p001.md"
+        "filePath": "e006/c002/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/barton-hall-check-in-rushing-voc-eval-in-one-week-door-greeter/part-2-rushing-voc-eval-in-one-week-auto-shop-door-greeter-refusing-separation-staying-stuck-on-level-2",
+        "nextUrl": "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/starting-web-apps-while-stuck-in-barton-hall-sleeping-in-the-closet-the-chickenshit-report/part-2-emergency-in-the-therapeutic-pool-caught-sleeping-together-in-a-closet-calling-the-staffer-s-bluff-the-chickenshit-report"
     },
     "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/starting-web-apps-while-stuck-in-barton-hall-sleeping-in-the-closet-the-chickenshit-report/part-2-emergency-in-the-therapeutic-pool-caught-sleeping-together-in-a-closet-calling-the-staffer-s-bluff-the-chickenshit-report": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Emergency in the Therapeutic Pool, Caught Sleeping Together in a Closet, Calling the Staffer's Bluff, & The Chickenshit Report",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c002/p002.md"
+        "filePath": "e006/c002/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/starting-web-apps-while-stuck-in-barton-hall-sleeping-in-the-closet-the-chickenshit-report/part-1-starting-web-apps-while-stuck-on-level-2-in-barton-hall-quantum-os-2000-professional-meeting-tina-jim-and-sheila",
+        "nextUrl": "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/the-dormitory-room-mix-up-a-safe-closet-in-luray-leaving-rrc-after-twelve-days/part-1-the-dormitory-room-mix-up-blind-red-tape-room-reassignments-a-sleepless-night-for-natalie"
     },
     "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/the-dormitory-room-mix-up-a-safe-closet-in-luray-leaving-rrc-after-twelve-days": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2906,13 +3184,27 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Dormitory Room Mix-Up, Blind Red-Tape Room Reassignments, & A Sleepless Night for Natalie",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c003/p001.md"
+        "filePath": "e006/c003/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/starting-web-apps-while-stuck-in-barton-hall-sleeping-in-the-closet-the-chickenshit-report/part-2-emergency-in-the-therapeutic-pool-caught-sleeping-together-in-a-closet-calling-the-staffer-s-bluff-the-chickenshit-report",
+        "nextUrl": "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/the-dormitory-room-mix-up-a-safe-closet-in-luray-leaving-rrc-after-twelve-days/part-2-a-safe-closet-at-tina-s-house-in-luray-walking-out-after-twelve-days-coming-home-to-kempsville"
     },
     "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/the-dormitory-room-mix-up-a-safe-closet-in-luray-leaving-rrc-after-twelve-days/part-2-a-safe-closet-at-tina-s-house-in-luray-walking-out-after-twelve-days-coming-home-to-kempsville": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: A Safe Closet at Tina's House in Luray, Walking Out After Twelve Days, & Coming Home to Kempsville",
         "theme": "raggiesoft-books",
-        "filePath": "e006/c003/p002.md"
+        "filePath": "e006/c003/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/the-dormitory-room-mix-up-a-safe-closet-in-luray-leaving-rrc-after-twelve-days/part-1-the-dormitory-room-mix-up-blind-red-tape-room-reassignments-a-sleepless-night-for-natalie",
+        "nextUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-horizontal-ids-on-route-12-yearly-passes-at-fairlawn/part-1-unofficial-homeowners-one-bedroom-and-one-office-the-closet-we-both-know-we-ll-use"
     },
     "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2930,25 +3222,53 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Unofficial Homeowners, One Bedroom and One Office, & The Closet We Both Know We'll Use",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c001/p001.md"
+        "filePath": "e007/c001/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/twelve-days-at-roosevelt-rehabilitation-center-walking-out-for-good/the-dormitory-room-mix-up-a-safe-closet-in-luray-leaving-rrc-after-twelve-days/part-2-a-safe-closet-at-tina-s-house-in-luray-walking-out-after-twelve-days-coming-home-to-kempsville",
+        "nextUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-horizontal-ids-on-route-12-yearly-passes-at-fairlawn/part-2-dr-carter-s-exam-room-skin-to-skin-in-the-closet-no-crosswalks-at-military-and-indian-river"
     },
     "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-horizontal-ids-on-route-12-yearly-passes-at-fairlawn/part-2-dr-carter-s-exam-room-skin-to-skin-in-the-closet-no-crosswalks-at-military-and-indian-river": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Dr. Carter's Exam Room, Skin to Skin in the Closet, & No Crosswalks at Military and Indian River",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c001/p002.md"
+        "filePath": "e007/c001/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-horizontal-ids-on-route-12-yearly-passes-at-fairlawn/part-1-unofficial-homeowners-one-bedroom-and-one-office-the-closet-we-both-know-we-ll-use",
+        "nextUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-horizontal-ids-on-route-12-yearly-passes-at-fairlawn/part-3-crossing-both-roads-for-route-12-buckner-boulevard-dmv-horizontal-state-ids-on-the-spot"
     },
     "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-horizontal-ids-on-route-12-yearly-passes-at-fairlawn/part-3-crossing-both-roads-for-route-12-buckner-boulevard-dmv-horizontal-state-ids-on-the-spot": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Crossing Both Roads for Route 12, Buckner Boulevard DMV, & Horizontal State IDs on the Spot",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c001/p003.md"
+        "filePath": "e007/c001/p003.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-horizontal-ids-on-route-12-yearly-passes-at-fairlawn/part-2-dr-carter-s-exam-room-skin-to-skin-in-the-closet-no-crosswalks-at-military-and-indian-river",
+        "nextUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-horizontal-ids-on-route-12-yearly-passes-at-fairlawn/part-4-the-07-bus-from-glenrock-mall-yearly-memberships-at-fairlawn-rec-center-the-1977-building-s-quirks"
     },
     "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-horizontal-ids-on-route-12-yearly-passes-at-fairlawn/part-4-the-07-bus-from-glenrock-mall-yearly-memberships-at-fairlawn-rec-center-the-1977-building-s-quirks": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The :07 Bus From Glenrock Mall, Yearly Memberships at Fairlawn Rec Center, & The 1977 Building's Quirks",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c001/p004.md"
+        "filePath": "e007/c001/p004.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-horizontal-ids-on-route-12-yearly-passes-at-fairlawn/part-3-crossing-both-roads-for-route-12-buckner-boulevard-dmv-horizontal-state-ids-on-the-spot",
+        "nextUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/a-near-miss-at-dying-glenrock-mall-locking-down-whois-forming-our-virginia-llc/part-1-a-dying-single-story-mall-spotting-brenda-in-the-concourse-the-whois-wake-up-call"
     },
     "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/a-near-miss-at-dying-glenrock-mall-locking-down-whois-forming-our-virginia-llc": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2960,13 +3280,27 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: A Dying Single-Story Mall, Spotting Brenda in the Concourse, & The WHOIS Wake-Up Call",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c002/p001.md"
+        "filePath": "e007/c002/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/arvin-road-crossing-without-a-crosswalk-horizontal-ids-on-route-12-yearly-passes-at-fairlawn/part-4-the-07-bus-from-glenrock-mall-yearly-memberships-at-fairlawn-rec-center-the-1977-building-s-quirks",
+        "nextUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/a-near-miss-at-dying-glenrock-mall-locking-down-whois-forming-our-virginia-llc/part-2-dad-s-legal-consultation-our-virginia-llc-a-virtual-mailbox-at-the-parcel-center"
     },
     "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/a-near-miss-at-dying-glenrock-mall-locking-down-whois-forming-our-virginia-llc/part-2-dad-s-legal-consultation-our-virginia-llc-a-virtual-mailbox-at-the-parcel-center": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Dad's Legal Consultation, Our Virginia LLC, & A Virtual Mailbox at The Parcel Center",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c002/p002.md"
+        "filePath": "e007/c002/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/a-near-miss-at-dying-glenrock-mall-locking-down-whois-forming-our-virginia-llc/part-1-a-dying-single-story-mall-spotting-brenda-in-the-concourse-the-whois-wake-up-call",
+        "nextUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-touring-the-white-house-the-u-s-capitol-meeting-senator-james-west-the-spark-to-run-for-city-council-two-blue-passports/part-1-accessible-taxi-to-newport-news-the-arts-train-to-alexandria-riding-northern-virginia-transit-on-our-twenty-second-birthday"
     },
     "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-touring-the-white-house-the-u-s-capitol-meeting-senator-james-west-the-spark-to-run-for-city-council-two-blue-passports": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -2978,31 +3312,66 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Accessible Taxi to Newport News, The ARTS Train to Alexandria, & Riding Northern Virginia Transit on Our Twenty-Second Birthday",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c003/p001.md"
+        "filePath": "e007/c003/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/a-near-miss-at-dying-glenrock-mall-locking-down-whois-forming-our-virginia-llc/part-2-dad-s-legal-consultation-our-virginia-llc-a-virtual-mailbox-at-the-parcel-center",
+        "nextUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-touring-the-white-house-the-u-s-capitol-meeting-senator-james-west-the-spark-to-run-for-city-council-two-blue-passports/part-2-unclipping-our-backpacks-where-is-president-george-w-walker-today-the-white-house-tour-that-sparked-a-political-calling"
     },
     "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-touring-the-white-house-the-u-s-capitol-meeting-senator-james-west-the-spark-to-run-for-city-council-two-blue-passports/part-2-unclipping-our-backpacks-where-is-president-george-w-walker-today-the-white-house-tour-that-sparked-a-political-calling": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Unclipping Our Backpacks, Where Is President George W. Walker Today?, & The White House Tour That Sparked a Political Calling",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c003/p002.md"
+        "filePath": "e007/c003/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-touring-the-white-house-the-u-s-capitol-meeting-senator-james-west-the-spark-to-run-for-city-council-two-blue-passports/part-1-accessible-taxi-to-newport-news-the-arts-train-to-alexandria-riding-northern-virginia-transit-on-our-twenty-second-birthday",
+        "nextUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-touring-the-white-house-the-u-s-capitol-meeting-senator-james-west-the-spark-to-run-for-city-council-two-blue-passports/part-3-beneath-the-capitol-dome-touring-the-crypt-the-rotunda-national-statuary-hall-the-historic-old-senate-chamber"
     },
     "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-touring-the-white-house-the-u-s-capitol-meeting-senator-james-west-the-spark-to-run-for-city-council-two-blue-passports/part-3-beneath-the-capitol-dome-touring-the-crypt-the-rotunda-national-statuary-hall-the-historic-old-senate-chamber": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Beneath the Capitol Dome: Touring the Crypt, the Rotunda, National Statuary Hall, & the Historic Old Senate Chamber",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c003/p003.md"
+        "filePath": "e007/c003/p003.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-touring-the-white-house-the-u-s-capitol-meeting-senator-james-west-the-spark-to-run-for-city-council-two-blue-passports/part-2-unclipping-our-backpacks-where-is-president-george-w-walker-today-the-white-house-tour-that-sparked-a-political-calling",
+        "nextUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-touring-the-white-house-the-u-s-capitol-meeting-senator-james-west-the-spark-to-run-for-city-council-two-blue-passports/part-4-meeting-senator-james-west-watching-the-u-s-senate-from-the-gallery-why-can-t-we-ride-the-bus-to-city-hall"
     },
     "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-touring-the-white-house-the-u-s-capitol-meeting-senator-james-west-the-spark-to-run-for-city-council-two-blue-passports/part-4-meeting-senator-james-west-watching-the-u-s-senate-from-the-gallery-why-can-t-we-ride-the-bus-to-city-hall": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: Meeting Senator James West, Watching the U.S. Senate From the Gallery, & Why Can't We Ride the Bus to City Hall?",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c003/p004.md"
+        "filePath": "e007/c003/p004.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-touring-the-white-house-the-u-s-capitol-meeting-senator-james-west-the-spark-to-run-for-city-council-two-blue-passports/part-3-beneath-the-capitol-dome-touring-the-crypt-the-rotunda-national-statuary-hall-the-historic-old-senate-chamber",
+        "nextUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-touring-the-white-house-the-u-s-capitol-meeting-senator-james-west-the-spark-to-run-for-city-council-two-blue-passports/part-5-what-s-this-it-s-an-id-card-form-ds-11-at-the-post-office-two-navy-blue-u-s-passports"
     },
     "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-touring-the-white-house-the-u-s-capitol-meeting-senator-james-west-the-spark-to-run-for-city-council-two-blue-passports/part-5-what-s-this-it-s-an-id-card-form-ds-11-at-the-post-office-two-navy-blue-u-s-passports": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: \"What's This? It's an ID Card!\", Form DS-11 at the Post Office, & Two Navy-Blue U.S. Passports",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c003/p005.md"
+        "filePath": "e007/c003/p005.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-touring-the-white-house-the-u-s-capitol-meeting-senator-james-west-the-spark-to-run-for-city-council-two-blue-passports/part-4-meeting-senator-james-west-watching-the-u-s-senate-from-the-gallery-why-can-t-we-ride-the-bus-to-city-hall",
+        "nextUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/associate-degrees-in-hand-not-the-right-skill-match-launching-prairie-twin-interactive-the-arvin-road-networking-closet/part-1-associate-degrees-in-hand-not-the-right-skill-match-putting-our-virginia-llc-to-work"
     },
     "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/associate-degrees-in-hand-not-the-right-skill-match-launching-prairie-twin-interactive-the-arvin-road-networking-closet": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3014,13 +3383,27 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Associate Degrees in Hand, 'Not the Right Skill Match,' & Putting Our Virginia LLC to Work",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c004/p001.md"
+        "filePath": "e007/c004/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/twenty-two-in-alexandria-riding-dmv-transit-touring-the-white-house-the-u-s-capitol-meeting-senator-james-west-the-spark-to-run-for-city-council-two-blue-passports/part-5-what-s-this-it-s-an-id-card-form-ds-11-at-the-post-office-two-navy-blue-u-s-passports",
+        "nextUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/associate-degrees-in-hand-not-the-right-skill-match-launching-prairie-twin-interactive-the-arvin-road-networking-closet/part-2-the-arvin-road-networking-closet-a-fail-safe-thermostat-relay-sheer-random-luck-on-streamtube"
     },
     "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/associate-degrees-in-hand-not-the-right-skill-match-launching-prairie-twin-interactive-the-arvin-road-networking-closet/part-2-the-arvin-road-networking-closet-a-fail-safe-thermostat-relay-sheer-random-luck-on-streamtube": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Arvin Road Networking Closet, A Fail-Safe Thermostat Relay, & Sheer Random Luck on StreamTube",
         "theme": "raggiesoft-books",
-        "filePath": "e007/c004/p002.md"
+        "filePath": "e007/c004/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/associate-degrees-in-hand-not-the-right-skill-match-launching-prairie-twin-interactive-the-arvin-road-networking-closet/part-1-associate-degrees-in-hand-not-the-right-skill-match-putting-our-virginia-llc-to-work",
+        "nextUrl": "/katie/do-better-ideas-for-cvta-the-kempsville-city-council/do-better-ideas-for-cvta-the-four-bus-mayoral-loop/part-1-does-the-bus-run-calling-out-cvta-s-complacency-the-2008-regional-mayoral-challenge"
     },
     "/katie/do-better-ideas-for-cvta-the-kempsville-city-council": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3038,13 +3421,27 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Does the Bus Run? Calling Out CVTA's Complacency & The 2008 Regional Mayoral Challenge",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c001/p001.md"
+        "filePath": "e008/c001/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/unofficial-homeowners-back-home-in-virginia-beach-2007-2008/associate-degrees-in-hand-not-the-right-skill-match-launching-prairie-twin-interactive-the-arvin-road-networking-closet/part-2-the-arvin-road-networking-closet-a-fail-safe-thermostat-relay-sheer-random-luck-on-streamtube",
+        "nextUrl": "/katie/do-better-ideas-for-cvta-the-kempsville-city-council/do-better-ideas-for-cvta-the-four-bus-mayoral-loop/part-2-the-four-bus-mayoral-loop-silenced-at-eighteenth-street-choosing-to-run-for-the-kempsville-seat"
     },
     "/katie/do-better-ideas-for-cvta-the-kempsville-city-council/do-better-ideas-for-cvta-the-four-bus-mayoral-loop/part-2-the-four-bus-mayoral-loop-silenced-at-eighteenth-street-choosing-to-run-for-the-kempsville-seat": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Four-Bus Mayoral Loop, Silenced at Eighteenth Street, & Choosing to Run for the Kempsville Seat",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c001/p002.md"
+        "filePath": "e008/c001/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/do-better-ideas-for-cvta-the-kempsville-city-council/do-better-ideas-for-cvta-the-four-bus-mayoral-loop/part-1-does-the-bus-run-calling-out-cvta-s-complacency-the-2008-regional-mayoral-challenge",
+        "nextUrl": "/katie/do-better-ideas-for-cvta-the-kempsville-city-council/the-empty-podium-on-whrc-tv-15-the-94-1-landslide-councilwoman-prairie/part-1-the-empty-podium-on-whrc-tv-15-the-8-24-pm-three-bus-sprint-home-the-front-page-metro-headline"
     },
     "/katie/do-better-ideas-for-cvta-the-kempsville-city-council/the-empty-podium-on-whrc-tv-15-the-94-1-landslide-councilwoman-prairie": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3056,13 +3453,27 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Empty Podium on WHRC TV-15, The 8:24 PM Three-Bus Sprint Home, & The Front-Page Metro Headline",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c002/p001.md"
+        "filePath": "e008/c002/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/do-better-ideas-for-cvta-the-kempsville-city-council/do-better-ideas-for-cvta-the-four-bus-mayoral-loop/part-2-the-four-bus-mayoral-loop-silenced-at-eighteenth-street-choosing-to-run-for-the-kempsville-seat",
+        "nextUrl": "/katie/do-better-ideas-for-cvta-the-kempsville-city-council/the-empty-podium-on-whrc-tv-15-the-94-1-landslide-councilwoman-prairie/part-2-the-wtga-790-am-disability-attack-the-94-1-landslide-the-eighteenth-street-reckoning"
     },
     "/katie/do-better-ideas-for-cvta-the-kempsville-city-council/the-empty-podium-on-whrc-tv-15-the-94-1-landslide-councilwoman-prairie/part-2-the-wtga-790-am-disability-attack-the-94-1-landslide-the-eighteenth-street-reckoning": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The WTGA 790 AM Disability Attack, The 94.1% Landslide, & The Eighteenth Street Reckoning",
         "theme": "raggiesoft-books",
-        "filePath": "e008/c002/p002.md"
+        "filePath": "e008/c002/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/do-better-ideas-for-cvta-the-kempsville-city-council/the-empty-podium-on-whrc-tv-15-the-94-1-landslide-councilwoman-prairie/part-1-the-empty-podium-on-whrc-tv-15-the-8-24-pm-three-bus-sprint-home-the-front-page-metro-headline",
+        "nextUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/stopped-at-the-third-floor-gallery-seated-by-delegate-ronald-villa-winning-the-85th-district/part-1-stopped-at-the-third-floor-gallery-by-capitol-police-seated-on-the-house-floor-near-delegate-ronald-villa-the-spark-to-run"
     },
     "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3080,13 +3491,27 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Stopped at the Third-Floor Gallery by Capitol Police, Seated on the House Floor Near Delegate Ronald Villa, & The Spark to Run",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c001/p001.md"
+        "filePath": "e009/c001/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/do-better-ideas-for-cvta-the-kempsville-city-council/the-empty-podium-on-whrc-tv-15-the-94-1-landslide-councilwoman-prairie/part-2-the-wtga-790-am-disability-attack-the-94-1-landslide-the-eighteenth-street-reckoning",
+        "nextUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/stopped-at-the-third-floor-gallery-seated-by-delegate-ronald-villa-winning-the-85th-district/part-2-telling-dad-at-our-kempsville-kitchen-table-the-125-signature-ballot-petition-at-cchr-winning-the-eighty-fifth-house-district"
     },
     "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/stopped-at-the-third-floor-gallery-seated-by-delegate-ronald-villa-winning-the-85th-district/part-2-telling-dad-at-our-kempsville-kitchen-table-the-125-signature-ballot-petition-at-cchr-winning-the-eighty-fifth-house-district": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Telling Dad at Our Kempsville Kitchen Table, The 125-Signature Ballot Petition at CCHR, & Winning the Eighty-Fifth House District",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c001/p002.md"
+        "filePath": "e009/c001/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/stopped-at-the-third-floor-gallery-seated-by-delegate-ronald-villa-winning-the-85th-district/part-1-stopped-at-the-third-floor-gallery-by-capitol-police-seated-on-the-house-floor-near-delegate-ronald-villa-the-spark-to-run",
+        "nextUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/freshman-session-on-west-broad-street-riding-jrtc-route-6-to-the-capitol/part-1-the-west-broad-street-loft-making-up-the-decoy-bed-for-our-closet-sanctuary-weekend-reconnaissance-on-jrtc-route-6"
     },
     "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/freshman-session-on-west-broad-street-riding-jrtc-route-6-to-the-capitol": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3098,13 +3523,27 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The West Broad Street Loft, Making Up the Decoy Bed for Our Closet Sanctuary, & Weekend Reconnaissance on JRTC Route 6",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c002/p001.md"
+        "filePath": "e009/c002/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/stopped-at-the-third-floor-gallery-seated-by-delegate-ronald-villa-winning-the-85th-district/part-2-telling-dad-at-our-kempsville-kitchen-table-the-125-signature-ballot-petition-at-cchr-winning-the-eighty-fifth-house-district",
+        "nextUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/freshman-session-on-west-broad-street-riding-jrtc-route-6-to-the-capitol/part-2-gold-license-plates-vs-jrtc-route-6-turning-down-the-parking-deck-pass-the-60-inch-ada-restroom-showdown"
     },
     "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/freshman-session-on-west-broad-street-riding-jrtc-route-6-to-the-capitol/part-2-gold-license-plates-vs-jrtc-route-6-turning-down-the-parking-deck-pass-the-60-inch-ada-restroom-showdown": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Gold License Plates vs. JRTC Route 6, Turning Down the Parking Deck Pass, & The 60-Inch ADA Restroom Showdown",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c002/p002.md"
+        "filePath": "e009/c002/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/freshman-session-on-west-broad-street-riding-jrtc-route-6-to-the-capitol/part-1-the-west-broad-street-loft-making-up-the-decoy-bed-for-our-closet-sanctuary-weekend-reconnaissance-on-jrtc-route-6",
+        "nextUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/house-bill-663-live-on-meet-the-nation/part-1-line-18-seated-by-delegate-ronald-villa-on-the-floor-a-question-across-the-chamber"
     },
     "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/house-bill-663-live-on-meet-the-nation": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3116,25 +3555,53 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Line 18, Seated by Delegate Ronald Villa on the Floor, & A Question Across the Chamber",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c003/p001.md"
+        "filePath": "e009/c003/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/freshman-session-on-west-broad-street-riding-jrtc-route-6-to-the-capitol/part-2-gold-license-plates-vs-jrtc-route-6-turning-down-the-parking-deck-pass-the-60-inch-ada-restroom-showdown",
+        "nextUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/house-bill-663-live-on-meet-the-nation/part-2-transit-legislative-day-in-room-518-the-six-o-clock-news-two-meltdowns-answered-by-page-forty-two"
     },
     "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/house-bill-663-live-on-meet-the-nation/part-2-transit-legislative-day-in-room-518-the-six-o-clock-news-two-meltdowns-answered-by-page-forty-two": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Transit Legislative Day in Room 518, The Six-O'Clock News, & Two Meltdowns Answered by Page Forty-Two",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c003/p002.md"
+        "filePath": "e009/c003/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/house-bill-663-live-on-meet-the-nation/part-1-line-18-seated-by-delegate-ronald-villa-on-the-floor-a-question-across-the-chamber",
+        "nextUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/house-bill-663-live-on-meet-the-nation/part-3-hold-the-elevator-reuniting-with-cousin-brittany-in-room-518-friday-night-on-jrtc-route-6-why-nate-must-speak"
     },
     "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/house-bill-663-live-on-meet-the-nation/part-3-hold-the-elevator-reuniting-with-cousin-brittany-in-room-518-friday-night-on-jrtc-route-6-why-nate-must-speak": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Hold the Elevator!, Reuniting With Cousin Brittany in Room 518, Friday Night on JRTC Route 6, & Why Nate Must Speak",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c003/p003.md"
+        "filePath": "e009/c003/p003.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/house-bill-663-live-on-meet-the-nation/part-2-transit-legislative-day-in-room-518-the-six-o-clock-news-two-meltdowns-answered-by-page-forty-two",
+        "nextUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/house-bill-663-live-on-meet-the-nation/part-4-via-southside-plaza-speaking-up-at-the-altar-taking-brittany-to-meet-the-nation-left-onto-macgregory-street"
     },
     "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/house-bill-663-live-on-meet-the-nation/part-4-via-southside-plaza-speaking-up-at-the-altar-taking-brittany-to-meet-the-nation-left-onto-macgregory-street": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: Via Southside Plaza, Speaking Up at the Altar, Taking Brittany to Meet the Nation, & Left Onto Macgregory Street",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c003/p004.md"
+        "filePath": "e009/c003/p004.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/house-bill-663-live-on-meet-the-nation/part-3-hold-the-elevator-reuniting-with-cousin-brittany-in-room-518-friday-night-on-jrtc-route-6-why-nate-must-speak",
+        "nextUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-1-sine-die-welcoming-brittany-home-to-arvin-road-route-20-to-the-coastal-adult-learning-center-three-cousins-in-the-closet"
     },
     "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3146,61 +3613,131 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Sine Die, Welcoming Brittany Home to Arvin Road, Route 20 to the Coastal Adult Learning Center, & Three Cousins in the Closet",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c004/p001.md"
+        "filePath": "e009/c004/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/house-bill-663-live-on-meet-the-nation/part-4-via-southside-plaza-speaking-up-at-the-altar-taking-brittany-to-meet-the-nation-left-onto-macgregory-street",
+        "nextUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-2-a-filtered-request-on-the-grid-what-tyler-s-lie-cost-all-of-us-a-very-cautious-reply"
     },
     "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-2-a-filtered-request-on-the-grid-what-tyler-s-lie-cost-all-of-us-a-very-cautious-reply": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: A Filtered Request on The Grid, What Tyler's Lie Cost All of Us, & A Very Cautious Reply",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c004/p002.md"
+        "filePath": "e009/c004/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-1-sine-die-welcoming-brittany-home-to-arvin-road-route-20-to-the-coastal-adult-learning-center-three-cousins-in-the-closet",
+        "nextUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-3-turned-away-at-the-royal-gate-riding-bta-route-99-up-mount-regalis-catching-the-two-faced-manager-red-handed-no-known-living-family"
     },
     "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-3-turned-away-at-the-royal-gate-riding-bta-route-99-up-mount-regalis-catching-the-two-faced-manager-red-handed-no-known-living-family": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Turned Away at the Royal Gate, Riding BTA Route 99 Up Mount Regalis, Catching the Two-Faced Manager Red-Handed, & 'No Known Living Family'",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c004/p003.md"
+        "filePath": "e009/c004/p003.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-2-a-filtered-request-on-the-grid-what-tyler-s-lie-cost-all-of-us-a-very-cautious-reply",
+        "nextUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-4-ten-minutes-in-braxton-probate-court-forcing-open-the-royal-gate-with-a-sheriff-s-escort-goodbye-to-newport-over-i-895"
     },
     "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-4-ten-minutes-in-braxton-probate-court-forcing-open-the-royal-gate-with-a-sheriff-s-escort-goodbye-to-newport-over-i-895": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: Ten Minutes in Braxton Probate Court, Forcing Open the Royal Gate With a Sheriff's Escort, & Goodbye to Newport Over I-895",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c004/p004.md"
+        "filePath": "e009/c004/p004.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-3-turned-away-at-the-royal-gate-riding-bta-route-99-up-mount-regalis-catching-the-two-faced-manager-red-handed-no-known-living-family",
+        "nextUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-5-tagless-puffer-pocket-pajamas-gentle-reminders-fear-of-group-home-two-face-four-cousins-crammed-into-one-closet"
     },
     "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-5-tagless-puffer-pocket-pajamas-gentle-reminders-fear-of-group-home-two-face-four-cousins-crammed-into-one-closet": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: Tagless Puffer-Pocket Pajamas, Gentle Reminders, Fear of 'Group Home Two-Face,' & Four Cousins Crammed Into One Closet",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c004/p005.md"
+        "filePath": "e009/c004/p005.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-4-ten-minutes-in-braxton-probate-court-forcing-open-the-royal-gate-with-a-sheriff-s-escort-goodbye-to-newport-over-i-895",
+        "nextUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-6-eighty-cramped-nights-on-closet-plywood-building-our-four-person-oak-bed-the-twelve-minute-try-thanksgiving-s-forty-five-minute-milestone"
     },
     "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-6-eighty-cramped-nights-on-closet-plywood-building-our-four-person-oak-bed-the-twelve-minute-try-thanksgiving-s-forty-five-minute-milestone": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 6: Eighty Cramped Nights on Closet Plywood, Building Our Four-Person Oak Bed, The Twelve-Minute Try, & Thanksgiving's Forty-Five-Minute Milestone",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c004/p006.md"
+        "filePath": "e009/c004/p006.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-5-tagless-puffer-pocket-pajamas-gentle-reminders-fear-of-group-home-two-face-four-cousins-crammed-into-one-closet",
+        "nextUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-7-safe-from-the-dark-and-group-home-two-face-rolling-up-our-closet-sleeping-bag-our-first-full-night-in-the-four-person-nest"
     },
     "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-7-safe-from-the-dark-and-group-home-two-face-rolling-up-our-closet-sleeping-bag-our-first-full-night-in-the-four-person-nest": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 7: Safe From the Dark and 'Group Home Two-Face,' Rolling Up Our Closet Sleeping Bag, & Our First Full Night in the Four-Person Nest",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c004/p007.md"
+        "filePath": "e009/c004/p007.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-6-eighty-cramped-nights-on-closet-plywood-building-our-four-person-oak-bed-the-twelve-minute-try-thanksgiving-s-forty-five-minute-milestone",
+        "nextUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-8-chelsea-s-living-room-turtle-habitat-two-friends-for-shelly-turtle-the-nice-glove-man-on-streamtube"
     },
     "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-8-chelsea-s-living-room-turtle-habitat-two-friends-for-shelly-turtle-the-nice-glove-man-on-streamtube": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 8: Chelsea's Living-Room Turtle Habitat, Two Friends for Shelly Turtle, & The Nice Glove Man on StreamTube",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c004/p008.md"
+        "filePath": "e009/c004/p008.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-7-safe-from-the-dark-and-group-home-two-face-rolling-up-our-closet-sleeping-bag-our-first-full-night-in-the-four-person-nest",
+        "nextUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-9-pouring-the-foundation-on-route-64-staff-member-wesley-the-jolt-across-ten-years"
     },
     "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-9-pouring-the-foundation-on-route-64-staff-member-wesley-the-jolt-across-ten-years": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 9: Pouring the Foundation on Route 64, Staff Member Wesley, & The Jolt Across Ten Years",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c004/p009.md"
+        "filePath": "e009/c004/p009.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-8-chelsea-s-living-room-turtle-habitat-two-friends-for-shelly-turtle-the-nice-glove-man-on-streamtube",
+        "nextUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-10-staff-member-wesley-s-reply-proving-it-when-nobody-was-looking-full-speaking-terms"
     },
     "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-10-staff-member-wesley-s-reply-proving-it-when-nobody-was-looking-full-speaking-terms": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 10: Staff Member Wesley's Reply, Proving It When Nobody Was Looking, & Full Speaking Terms",
         "theme": "raggiesoft-books",
-        "filePath": "e009/c004/p010.md"
+        "filePath": "e009/c004/p010.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-9-pouring-the-foundation-on-route-64-staff-member-wesley-the-jolt-across-ten-years",
+        "nextUrl": "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-1-watching-senator-ward-kill-our-bills-across-the-rotunda-brainstorming-the-7th-senate-district-with-dad-the-250-signature-rule"
     },
     "/katie/across-the-rotunda-the-senate-of-virginia": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3218,37 +3755,79 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Watching Senator Ward Kill Our Bills Across the Rotunda, Brainstorming the 7th Senate District with Dad, & The 250-Signature Rule",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c001/p001.md"
+        "filePath": "e010/c001/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-gentlewoman-from-virginia-beach-the-house-of-delegates/keeping-our-high-school-promise-a-cautious-request-on-the-grid-rescuing-cousin-chelsea-out-of-the-closet-into-our-four-person-nest-chelsea-s-turtle-tank-reveal/part-10-staff-member-wesley-s-reply-proving-it-when-nobody-was-looking-full-speaking-terms",
+        "nextUrl": "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-2-route-64-to-maplewood-seeing-wesley-in-person-after-fifteen-years-the-earned-hug-sale-number-one-in-the-store"
     },
     "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-2-route-64-to-maplewood-seeing-wesley-in-person-after-fifteen-years-the-earned-hug-sale-number-one-in-the-store": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Route 64 to Maplewood, Seeing Wesley in Person After Fifteen Years, The Earned Hug, & Sale Number One in the Store",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c001/p002.md"
+        "filePath": "e010/c001/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-1-watching-senator-ward-kill-our-bills-across-the-rotunda-brainstorming-the-7th-senate-district-with-dad-the-250-signature-rule",
+        "nextUrl": "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-3-turtles-reptiles-and-small-mammals-touring-the-three-zoo-wings-talking-about-wesley-s-turtles"
     },
     "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-3-turtles-reptiles-and-small-mammals-touring-the-three-zoo-wings-talking-about-wesley-s-turtles": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Turtles, Reptiles, and Small Mammals: Touring the Three Zoo Wings & Talking About Wesley's Turtles",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c001/p003.md"
+        "filePath": "e010/c001/p003.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-2-route-64-to-maplewood-seeing-wesley-in-person-after-fifteen-years-the-earned-hug-sale-number-one-in-the-store",
+        "nextUrl": "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-4-behind-the-education-classroom-door-fifteen-years-off-our-chests-cutting-the-ribbon-on-route-64"
     },
     "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-4-behind-the-education-classroom-door-fifteen-years-off-our-chests-cutting-the-ribbon-on-route-64": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: Behind the Education Classroom Door: Fifteen Years Off Our Chests & Cutting the Ribbon on Route 64",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c001/p004.md"
+        "filePath": "e010/c001/p004.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-3-turtles-reptiles-and-small-mammals-touring-the-three-zoo-wings-talking-about-wesley-s-turtles",
+        "nextUrl": "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-5-chelsea-s-magical-first-non-family-hug-riding-route-54-to-terminal-2-a-three-way-hug-outside-tsa"
     },
     "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-5-chelsea-s-magical-first-non-family-hug-riding-route-54-to-terminal-2-a-three-way-hug-outside-tsa": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: Chelsea's Magical First Non-Family Hug, Riding Route 54 to Terminal 2, & A Three-Way Hug Outside TSA",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c001/p005.md"
+        "filePath": "e010/c001/p005.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-4-behind-the-education-classroom-door-fifteen-years-off-our-chests-cutting-the-ribbon-on-route-64",
+        "nextUrl": "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-6-father-s-day-on-arvin-road-two-guardians-blessing-making-it-official-between-chelsea-and-my-sweet-wes"
     },
     "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-6-father-s-day-on-arvin-road-two-guardians-blessing-making-it-official-between-chelsea-and-my-sweet-wes": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 6: Father's Day on Arvin Road, Two Guardians' Blessing, & Making It Official Between Chelsea and 'My Sweet Wes'",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c001/p006.md"
+        "filePath": "e010/c001/p006.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-5-chelsea-s-magical-first-non-family-hug-riding-route-54-to-terminal-2-a-three-way-hug-outside-tsa",
+        "nextUrl": "/katie/across-the-rotunda-the-senate-of-virginia/msp-to-ric-deep-pressure-hugs-at-bayshore-town-center-wesley-meeting-sunny-and-pebble-on-arvin-road/part-1-msp-to-ric-sensory-overload-at-the-coastal-virginia-convention-center-deep-pressure-hugs-at-bayshore-town-center"
     },
     "/katie/across-the-rotunda-the-senate-of-virginia/msp-to-ric-deep-pressure-hugs-at-bayshore-town-center-wesley-meeting-sunny-and-pebble-on-arvin-road": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3260,19 +3839,40 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: MSP to RIC, Sensory Overload at the Coastal Virginia Convention Center, & Deep-Pressure Hugs at Bayshore Town Center",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c002/p001.md"
+        "filePath": "e010/c002/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/across-the-rotunda-the-senate-of-virginia/watching-senator-ward-kill-our-bills-across-the-rotunda-the-250-signature-petition-cutting-the-ribbon-on-route-64-in-maplewood/part-6-father-s-day-on-arvin-road-two-guardians-blessing-making-it-official-between-chelsea-and-my-sweet-wes",
+        "nextUrl": "/katie/across-the-rotunda-the-senate-of-virginia/msp-to-ric-deep-pressure-hugs-at-bayshore-town-center-wesley-meeting-sunny-and-pebble-on-arvin-road/part-2-ahead-of-friday-s-closing-bell-under-the-bay-to-virginia-beach-wesley-meeting-sunny-and-pebble-on-arvin-road"
     },
     "/katie/across-the-rotunda-the-senate-of-virginia/msp-to-ric-deep-pressure-hugs-at-bayshore-town-center-wesley-meeting-sunny-and-pebble-on-arvin-road/part-2-ahead-of-friday-s-closing-bell-under-the-bay-to-virginia-beach-wesley-meeting-sunny-and-pebble-on-arvin-road": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Ahead of Friday's Closing Bell, Under the Bay to Virginia Beach, & Wesley Meeting Sunny and Pebble on Arvin Road",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c002/p002.md"
+        "filePath": "e010/c002/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/across-the-rotunda-the-senate-of-virginia/msp-to-ric-deep-pressure-hugs-at-bayshore-town-center-wesley-meeting-sunny-and-pebble-on-arvin-road/part-1-msp-to-ric-sensory-overload-at-the-coastal-virginia-convention-center-deep-pressure-hugs-at-bayshore-town-center",
+        "nextUrl": "/katie/across-the-rotunda-the-senate-of-virginia/msp-to-ric-deep-pressure-hugs-at-bayshore-town-center-wesley-meeting-sunny-and-pebble-on-arvin-road/part-3-inseparable-across-saturday-and-sunday-zero-guarding-left-between-them-seeing-the-lindstroms-off-at-ric"
     },
     "/katie/across-the-rotunda-the-senate-of-virginia/msp-to-ric-deep-pressure-hugs-at-bayshore-town-center-wesley-meeting-sunny-and-pebble-on-arvin-road/part-3-inseparable-across-saturday-and-sunday-zero-guarding-left-between-them-seeing-the-lindstroms-off-at-ric": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Inseparable Across Saturday and Sunday, Zero Guarding Left Between Them, & Seeing the Lindstroms Off at RIC",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c002/p003.md"
+        "filePath": "e010/c002/p003.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/across-the-rotunda-the-senate-of-virginia/msp-to-ric-deep-pressure-hugs-at-bayshore-town-center-wesley-meeting-sunny-and-pebble-on-arvin-road/part-2-ahead-of-friday-s-closing-bell-under-the-bay-to-virginia-beach-wesley-meeting-sunny-and-pebble-on-arvin-road",
+        "nextUrl": "/katie/across-the-rotunda-the-senate-of-virginia/flipping-the-seventh-senate-district-the-mahogany-senate-ramp-madam-chair/flipping-the-seventh-senate-district-custom-milling-the-mahogany-senate-ramp-swearing-in-as-madam-chair"
     },
     "/katie/across-the-rotunda-the-senate-of-virginia/flipping-the-seventh-senate-district-the-mahogany-senate-ramp-madam-chair": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3284,7 +3884,14 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Flipping the Seventh Senate District, Custom-Milling the Mahogany Senate Ramp, & Swearing In as Madam Chair",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c003/p001.md"
+        "filePath": "e010/c003/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/across-the-rotunda-the-senate-of-virginia/msp-to-ric-deep-pressure-hugs-at-bayshore-town-center-wesley-meeting-sunny-and-pebble-on-arvin-road/part-3-inseparable-across-saturday-and-sunday-zero-guarding-left-between-them-seeing-the-lindstroms-off-at-ric",
+        "nextUrl": "/katie/across-the-rotunda-the-senate-of-virginia/the-accessibility-project-riding-every-bus-across-the-commonwealth-for-the-united-states-senate/part-1-the-living-room-decision-in-kempsville-the-10-000-signature-rule-the-accessibility-project"
     },
     "/katie/across-the-rotunda-the-senate-of-virginia/the-accessibility-project-riding-every-bus-across-the-commonwealth-for-the-united-states-senate": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3296,31 +3903,66 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Living Room Decision in Kempsville, The 10,000-Signature Rule, & The Accessibility Project",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c004/p001.md"
+        "filePath": "e010/c004/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/across-the-rotunda-the-senate-of-virginia/flipping-the-seventh-senate-district-the-mahogany-senate-ramp-madam-chair/flipping-the-seventh-senate-district-custom-milling-the-mahogany-senate-ramp-swearing-in-as-madam-chair",
+        "nextUrl": "/katie/across-the-rotunda-the-senate-of-virginia/the-accessibility-project-riding-every-bus-across-the-commonwealth-for-the-united-states-senate/part-2-the-jammed-ramp-on-victoria-boulevard-shoreline-transit-across-the-bay-wearing-the-nfa-s-f-grade-in-fairfax"
     },
     "/katie/across-the-rotunda-the-senate-of-virginia/the-accessibility-project-riding-every-bus-across-the-commonwealth-for-the-united-states-senate/part-2-the-jammed-ramp-on-victoria-boulevard-shoreline-transit-across-the-bay-wearing-the-nfa-s-f-grade-in-fairfax": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Jammed Ramp on Victoria Boulevard, ShoreLine Transit Across the Bay, & Wearing the NFA's 'F' Grade in Fairfax",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c004/p002.md"
+        "filePath": "e010/c004/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/across-the-rotunda-the-senate-of-virginia/the-accessibility-project-riding-every-bus-across-the-commonwealth-for-the-united-states-senate/part-1-the-living-room-decision-in-kempsville-the-10-000-signature-rule-the-accessibility-project",
+        "nextUrl": "/katie/across-the-rotunda-the-senate-of-virginia/the-accessibility-project-riding-every-bus-across-the-commonwealth-for-the-united-states-senate/part-3-the-roanoke-express-the-brooks-family-compound-on-lee-highway-the-maroon-express-to-bluewater-winning-the-june-primary"
     },
     "/katie/across-the-rotunda-the-senate-of-virginia/the-accessibility-project-riding-every-bus-across-the-commonwealth-for-the-united-states-senate/part-3-the-roanoke-express-the-brooks-family-compound-on-lee-highway-the-maroon-express-to-bluewater-winning-the-june-primary": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Roanoke Express, The Brooks Family Compound on Lee Highway, The Maroon Express to Bluewater, & Winning the June Primary",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c004/p003.md"
+        "filePath": "e010/c004/p003.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/across-the-rotunda-the-senate-of-virginia/the-accessibility-project-riding-every-bus-across-the-commonwealth-for-the-united-states-senate/part-2-the-jammed-ramp-on-victoria-boulevard-shoreline-transit-across-the-bay-wearing-the-nfa-s-f-grade-in-fairfax",
+        "nextUrl": "/katie/across-the-rotunda-the-senate-of-virginia/the-accessibility-project-riding-every-bus-across-the-commonwealth-for-the-united-states-senate/part-4-riding-into-deep-red-rtr-country-mountain-empire-transit-the-coalfields-cumberland-gap-with-dad"
     },
     "/katie/across-the-rotunda-the-senate-of-virginia/the-accessibility-project-riding-every-bus-across-the-commonwealth-for-the-united-states-senate/part-4-riding-into-deep-red-rtr-country-mountain-empire-transit-the-coalfields-cumberland-gap-with-dad": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: Riding Into Deep-Red RTR Country: Mountain Empire Transit, The Coalfields, & Cumberland Gap With Dad",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c004/p004.md"
+        "filePath": "e010/c004/p004.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/across-the-rotunda-the-senate-of-virginia/the-accessibility-project-riding-every-bus-across-the-commonwealth-for-the-united-states-senate/part-3-the-roanoke-express-the-brooks-family-compound-on-lee-highway-the-maroon-express-to-bluewater-winning-the-june-primary",
+        "nextUrl": "/katie/across-the-rotunda-the-senate-of-virginia/the-accessibility-project-riding-every-bus-across-the-commonwealth-for-the-united-states-senate/part-5-katie-s-favorite-place-in-virginia-the-cassini-center-in-highland-county-the-october-whrc-tv-15-three-bus-sprint"
     },
     "/katie/across-the-rotunda-the-senate-of-virginia/the-accessibility-project-riding-every-bus-across-the-commonwealth-for-the-united-states-senate/part-5-katie-s-favorite-place-in-virginia-the-cassini-center-in-highland-county-the-october-whrc-tv-15-three-bus-sprint": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: Katie's Favorite Place in Virginia: The Cassini Center in Highland County & The October WHRC TV-15 Three-Bus Sprint",
         "theme": "raggiesoft-books",
-        "filePath": "e010/c004/p005.md"
+        "filePath": "e010/c004/p005.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/across-the-rotunda-the-senate-of-virginia/the-accessibility-project-riding-every-bus-across-the-commonwealth-for-the-united-states-senate/part-4-riding-into-deep-red-rtr-country-mountain-empire-transit-the-coalfields-cumberland-gap-with-dad",
+        "nextUrl": "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate/part-1-polls-close-at-seven-the-8-42-pm-decision-desk-call-victory-in-virginia-beach"
     },
     "/katie/the-senator-from-virginia": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3338,25 +3980,53 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Polls Close at Seven, The 8:42 PM Decision Desk Call, & Victory in Virginia Beach",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c001/p001.md"
+        "filePath": "e011/c001/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/across-the-rotunda-the-senate-of-virginia/the-accessibility-project-riding-every-bus-across-the-commonwealth-for-the-united-states-senate/part-5-katie-s-favorite-place-in-virginia-the-cassini-center-in-highland-county-the-october-whrc-tv-15-three-bus-sprint",
+        "nextUrl": "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate/part-2-the-morning-after-in-kempsville-the-school-tax-referendum-jess-s-open-letter-on-the-grid"
     },
     "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate/part-2-the-morning-after-in-kempsville-the-school-tax-referendum-jess-s-open-letter-on-the-grid": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Morning After in Kempsville, The School Tax Referendum, & Jess's Open Letter on The Grid",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c001/p002.md"
+        "filePath": "e011/c001/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate/part-1-polls-close-at-seven-the-8-42-pm-decision-desk-call-victory-in-virginia-beach",
+        "nextUrl": "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate/part-3-u-s-senate-new-member-orientation-senator-tess-dunmore-s-ramp-making-the-vice-president-swear-her-in"
     },
     "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate/part-3-u-s-senate-new-member-orientation-senator-tess-dunmore-s-ramp-making-the-vice-president-swear-her-in": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: U.S. Senate New Member Orientation, Senator Tess Dunmore's Ramp, & Making the Vice President Swear Her In",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c001/p003.md"
+        "filePath": "e011/c001/p003.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate/part-2-the-morning-after-in-kempsville-the-school-tax-referendum-jess-s-open-letter-on-the-grid",
+        "nextUrl": "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate/part-4-opposing-leader-schuman-the-211-204-lame-duck-false-dawn-in-the-dirksen-basement-home-across-the-fenwick-bridge"
     },
     "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate/part-4-opposing-leader-schuman-the-211-204-lame-duck-false-dawn-in-the-dirksen-basement-home-across-the-fenwick-bridge": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: Opposing Leader Schuman, The 211\u2013204 Lame-Duck False Dawn in the Dirksen Basement, & Home Across the Fenwick Bridge",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c001/p004.md"
+        "filePath": "e011/c001/p004.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate/part-3-u-s-senate-new-member-orientation-senator-tess-dunmore-s-ramp-making-the-vice-president-swear-her-in",
+        "nextUrl": "/katie/the-senator-from-virginia/the-minified-zip-file-the-raw-html-takedown-resigning-from-richmond/part-1-the-minified-zip-trick-barely-commented-code-the-live-wcag-takedown"
     },
     "/katie/the-senator-from-virginia/the-minified-zip-file-the-raw-html-takedown-resigning-from-richmond": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3368,13 +4038,27 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The Minified ZIP Trick, Barely Commented Code, & The Live WCAG Takedown",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c002/p001.md"
+        "filePath": "e011/c002/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/election-night-the-decision-desk-call-the-referendum-mandate/part-4-opposing-leader-schuman-the-211-204-lame-duck-false-dawn-in-the-dirksen-basement-home-across-the-fenwick-bridge",
+        "nextUrl": "/katie/the-senator-from-virginia/the-minified-zip-file-the-raw-html-takedown-resigning-from-richmond/part-2-article-iv-section-4-hand-delivering-her-resignation-in-richmond-the-writ-of-special-election"
     },
     "/katie/the-senator-from-virginia/the-minified-zip-file-the-raw-html-takedown-resigning-from-richmond/part-2-article-iv-section-4-hand-delivering-her-resignation-in-richmond-the-writ-of-special-election": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Article IV Section 4, Hand-Delivering Her Resignation in Richmond, & The Writ of Special Election",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c002/p002.md"
+        "filePath": "e011/c002/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/the-minified-zip-file-the-raw-html-takedown-resigning-from-richmond/part-1-the-minified-zip-trick-barely-commented-code-the-live-wcag-takedown",
+        "nextUrl": "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc/part-1-five-business-class-tickets-for-free-caf-car-drinks-the-mobile-lift-at-alexandria"
     },
     "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3386,31 +4070,66 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Five Business Class Tickets for Free Caf\u00e9 Car Drinks & The Mobile Lift at Alexandria",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c003/p001.md"
+        "filePath": "e011/c003/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/the-minified-zip-file-the-raw-html-takedown-resigning-from-richmond/part-2-article-iv-section-4-hand-delivering-her-resignation-in-richmond-the-writ-of-special-election",
+        "nextUrl": "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc/part-2-the-yellow-line-over-the-fenwick-bridge-the-full-chair-portrait-swearing-in-on-the-constitution"
     },
     "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc/part-2-the-yellow-line-over-the-fenwick-bridge-the-full-chair-portrait-swearing-in-on-the-constitution": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Yellow Line Over the Fenwick Bridge, The Full-Chair Portrait, & Swearing In on the Constitution",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c003/p002.md"
+        "filePath": "e011/c003/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc/part-1-five-business-class-tickets-for-free-caf-car-drinks-the-mobile-lift-at-alexandria",
+        "nextUrl": "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc/part-3-the-first-invite-to-cocktails-a-known-side-effect-of-death-home-to-sunset-drive"
     },
     "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc/part-3-the-first-invite-to-cocktails-a-known-side-effect-of-death-home-to-sunset-drive": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The First Invite to Cocktails, A Known Side Effect of Death, & Home to Sunset Drive",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c003/p003.md"
+        "filePath": "e011/c003/p003.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc/part-2-the-yellow-line-over-the-fenwick-bridge-the-full-chair-portrait-swearing-in-on-the-constitution",
+        "nextUrl": "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc/part-4-the-constituent-line-in-room-511-is-nathaniel-still-with-you-what-really-happened-to-natalie"
     },
     "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc/part-4-the-constituent-line-in-room-511-is-nathaniel-still-with-you-what-really-happened-to-natalie": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Constituent Line in Room 511, 'Is Nathaniel Still With You?', & What Really Happened to Natalie",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c003/p004.md"
+        "filePath": "e011/c003/p004.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc/part-3-the-first-invite-to-cocktails-a-known-side-effect-of-death-home-to-sunset-drive",
+        "nextUrl": "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc/part-5-34-c-f-r-section-361-38-two-twelve-day-dropouts-in-room-511-strings-attached-at-the-subcommittee-hearing"
     },
     "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc/part-5-34-c-f-r-section-361-38-two-twelve-day-dropouts-in-room-511-strings-attached-at-the-subcommittee-hearing": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: 34 C.F.R. Section 361.38, Two Twelve-Day Dropouts in Room 511, & Strings Attached at the Subcommittee Hearing",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c003/p005.md"
+        "filePath": "e011/c003/p005.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc/part-4-the-constituent-line-in-room-511-is-nathaniel-still-with-you-what-really-happened-to-natalie",
+        "nextUrl": "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-1-the-south-lawn-tirade-the-norfolk-carrier-leak-why-the-order-of-the-trials-matters"
     },
     "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3422,31 +4141,66 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: The South Lawn Tirade, The Norfolk Carrier Leak, & Why the Order of the Trials Matters",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c004/p001.md"
+        "filePath": "e011/c004/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/first-train-from-norfolk-swearing-in-on-the-constitution-strings-attached-for-rrc/part-5-34-c-f-r-section-361-38-two-twelve-day-dropouts-in-room-511-strings-attached-at-the-subcommittee-hearing",
+        "nextUrl": "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-2-route-36-to-timberline-shopping-center-lunch-at-don-miller-subs-retro-games-at-neat-stuff-suite-756"
     },
     "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-2-route-36-to-timberline-shopping-center-lunch-at-don-miller-subs-retro-games-at-neat-stuff-suite-756": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Route 36 to Timberline Shopping Center, Lunch at Don Miller Subs, Retro Games at Neat Stuff, & Suite 756",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c004/p002.md"
+        "filePath": "e011/c004/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-1-the-south-lawn-tirade-the-norfolk-carrier-leak-why-the-order-of-the-trials-matters",
+        "nextUrl": "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-3-the-words-of-mason-madison-and-lincoln-three-guilty-votes-swearing-in-president-clara-morales"
     },
     "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-3-the-words-of-mason-madison-and-lincoln-three-guilty-votes-swearing-in-president-clara-morales": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The Words of Mason, Madison, and Lincoln, Three Guilty Votes, & Swearing In President Clara Morales",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c004/p003.md"
+        "filePath": "e011/c004/p003.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-2-route-36-to-timberline-shopping-center-lunch-at-don-miller-subs-retro-games-at-neat-stuff-suite-756",
+        "nextUrl": "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-4-why-isn-t-katie-home-in-may-senator-prairie-s-capitol-tour-holding-hands-in-the-senate-gallery"
     },
     "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-4-why-isn-t-katie-home-in-may-senator-prairie-s-capitol-tour-holding-hands-in-the-senate-gallery": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: Why Isn't Katie Home in May?, Senator Prairie's Capitol Tour, & Holding Hands in the Senate Gallery",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c004/p004.md"
+        "filePath": "e011/c004/p004.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-3-the-words-of-mason-madison-and-lincoln-three-guilty-votes-swearing-in-president-clara-morales",
+        "nextUrl": "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-5-standing-down-the-detail-rolling-off-route-913-at-shore-drive-and-pleasure-house-road"
     },
     "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-5-standing-down-the-detail-rolling-off-route-913-at-shore-drive-and-pleasure-house-road": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: Standing Down the Detail & Rolling Off Route 913 at Shore Drive and Pleasure House Road",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c004/p005.md"
+        "filePath": "e011/c004/p005.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-4-why-isn-t-katie-home-in-may-senator-prairie-s-capitol-tour-holding-hands-in-the-senate-gallery",
+        "nextUrl": "/katie/the-senator-from-virginia/street-clothes-on-the-route-250-connector-unannounced-in-fishersville-calling-the-governor/arts-train-51-to-staunton-street-clothes-on-the-route-250-connector-calling-governor-langford-from-fishersville"
     },
     "/katie/the-senator-from-virginia/street-clothes-on-the-route-250-connector-unannounced-in-fishersville-calling-the-governor": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3458,7 +4212,14 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "ARTS Train 51 to Staunton, Street Clothes on the Route 250 Connector, & Calling Governor Langford From Fishersville",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c005/p001.md"
+        "filePath": "e011/c005/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/the-norfolk-carrier-leak-three-convictions-senator-prairie-s-capitol-tour-route-913-across-the-bay/part-5-standing-down-the-detail-rolling-off-route-913-at-shore-drive-and-pleasure-house-road",
+        "nextUrl": "/katie/the-senator-from-virginia/joint-base-andrews-to-chambers-field-flying-home-on-air-force-one/chambers-field-four-hundred-million-restored-on-pier-12-tapping-in-at-king-street-the-next-morning"
     },
     "/katie/the-senator-from-virginia/joint-base-andrews-to-chambers-field-flying-home-on-air-force-one": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3470,7 +4231,14 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chambers Field, Four Hundred Million Restored on Pier 12, & Tapping In at King Street the Next Morning",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c006/p001.md"
+        "filePath": "e011/c006/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/street-clothes-on-the-route-250-connector-unannounced-in-fishersville-calling-the-governor/arts-train-51-to-staunton-street-clothes-on-the-route-250-connector-calling-governor-langford-from-fishersville",
+        "nextUrl": "/katie/the-senator-from-virginia/the-supported-companions-act-three-mirrored-in-law-suites/part-1-form-ssa-4178-on-camera-scrapping-the-social-security-cap-taxing-billionaires-and-windfall-profits"
     },
     "/katie/the-senator-from-virginia/the-supported-companions-act-three-mirrored-in-law-suites": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3482,19 +4250,40 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Form SSA-4178 on Camera, Scrapping the Social Security Cap, & Taxing Billionaires and Windfall Profits",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c007/p001.md"
+        "filePath": "e011/c007/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/joint-base-andrews-to-chambers-field-flying-home-on-air-force-one/chambers-field-four-hundred-million-restored-on-pier-12-tapping-in-at-king-street-the-next-morning",
+        "nextUrl": "/katie/the-senator-from-virginia/the-supported-companions-act-three-mirrored-in-law-suites/part-2-dad-s-1991-crew-cab-pickup-first-time-guests-at-the-white-house-signing-law-number-one-in-the-restored-rose-garden"
     },
     "/katie/the-senator-from-virginia/the-supported-companions-act-three-mirrored-in-law-suites/part-2-dad-s-1991-crew-cab-pickup-first-time-guests-at-the-white-house-signing-law-number-one-in-the-restored-rose-garden": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Dad's 1991 Crew Cab Pickup, First-Time Guests at the White House, & Signing Law Number One in the Restored Rose Garden",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c007/p002.md"
+        "filePath": "e011/c007/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/the-supported-companions-act-three-mirrored-in-law-suites/part-1-form-ssa-4178-on-camera-scrapping-the-social-security-cap-taxing-billionaires-and-windfall-profits",
+        "nextUrl": "/katie/the-senator-from-virginia/the-supported-companions-act-three-mirrored-in-law-suites/part-3-three-identical-pocket-doors-moving-wesley-and-chelsea-into-their-connected-in-law-suites-in-virginia-beach-alexandria-maplewood"
     },
     "/katie/the-senator-from-virginia/the-supported-companions-act-three-mirrored-in-law-suites/part-3-three-identical-pocket-doors-moving-wesley-and-chelsea-into-their-connected-in-law-suites-in-virginia-beach-alexandria-maplewood": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Three Identical Pocket Doors: Moving Wesley and Chelsea Into Their Connected In-Law Suites in Virginia Beach, Alexandria, & Maplewood",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c007/p003.md"
+        "filePath": "e011/c007/p003.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/the-supported-companions-act-three-mirrored-in-law-suites/part-2-dad-s-1991-crew-cab-pickup-first-time-guests-at-the-white-house-signing-law-number-one-in-the-restored-rose-garden",
+        "nextUrl": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-1-no-senate-pin-in-the-family-pew-saying-goodbye-to-uncle-richard-in-southside-virginia-katie-s-lifelong-promise-to-sam-mandy-and-sarah"
     },
     "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3506,19 +4295,40 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: No Senate Pin in the Family Pew: Saying Goodbye to Uncle Richard in Southside Virginia & Katie's Lifelong Promise to Sam, Mandy, and Sarah",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c008/p001.md"
+        "filePath": "e011/c008/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/the-supported-companions-act-three-mirrored-in-law-suites/part-3-three-identical-pocket-doors-moving-wesley-and-chelsea-into-their-connected-in-law-suites-in-virginia-beach-alexandria-maplewood",
+        "nextUrl": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-2-eye-level-on-the-carpet-to-the-very-end-saying-goodbye-to-dad-in-kempsville-white-roses-from-the-rose-garden-marge-and-the-triplets-standing-for-richard"
     },
     "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-2-eye-level-on-the-carpet-to-the-very-end-saying-goodbye-to-dad-in-kempsville-white-roses-from-the-rose-garden-marge-and-the-triplets-standing-for-richard": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Eye Level on the Carpet to the Very End: Saying Goodbye to Dad in Kempsville, White Roses From the Rose Garden, & Marge and the Triplets Standing for Richard",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c008/p002.md"
+        "filePath": "e011/c008/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-1-no-senate-pin-in-the-family-pew-saying-goodbye-to-uncle-richard-in-southside-virginia-katie-s-lifelong-promise-to-sam-mandy-and-sarah",
+        "nextUrl": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-3-passing-the-torch-for-chelsea-four-gears-uncle-david-taught-her-brittany-s-truck-videos-on-streamtube-and-the-grid"
     },
     "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-3-passing-the-torch-for-chelsea-four-gears-uncle-david-taught-her-brittany-s-truck-videos-on-streamtube-and-the-grid": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Passing the Torch for Chelsea, Four Gears Uncle David Taught Her, & Brittany's Truck Videos on StreamTube and The Grid",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c008/p003.md"
+        "filePath": "e011/c008/p003.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-2-eye-level-on-the-carpet-to-the-very-end-saying-goodbye-to-dad-in-kempsville-white-roses-from-the-rose-garden-marge-and-the-triplets-standing-for-richard",
+        "nextUrl": "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-1-refusing-the-2045-presidency-from-home-five-statutory-shields-against-the-bubble-out-of-the-closet-into-our-four-person-nest"
     },
     "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -3530,30 +4340,149 @@
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Refusing the 2045 Presidency From Home, Five Statutory Shields Against the Bubble, & Out of the Closet Into Our Four-Person Nest",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c009/p001.md"
+        "filePath": "e011/c009/p001.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/saying-goodbye-in-danville-kempsville-passing-the-torch-brittany-s-1991-crew-cab/part-3-passing-the-torch-for-chelsea-four-gears-uncle-david-taught-her-brittany-s-truck-videos-on-streamtube-and-the-grid",
+        "nextUrl": "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-2-the-biggest-prize-in-the-primary-sam-mandy-sarah-s-bus-loop-plan-stop-0812"
     },
     "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-2-the-biggest-prize-in-the-primary-sam-mandy-sarah-s-bus-loop-plan-stop-0812": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: The Biggest Prize in the Primary: Sam, Mandy, & Sarah's Bus-Loop Plan & Stop #0812",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c009/p002.md"
+        "filePath": "e011/c009/p002.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-1-refusing-the-2045-presidency-from-home-five-statutory-shields-against-the-bubble-out-of-the-closet-into-our-four-person-nest",
+        "nextUrl": "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-3-the-first-tuesday-on-the-loop-governor-harrison-caldwell-on-routes-15-800-25-12"
     },
     "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-3-the-first-tuesday-on-the-loop-governor-harrison-caldwell-on-routes-15-800-25-12": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: The First Tuesday on the Loop: Governor Harrison Caldwell on Routes 15, 800, 25, & 12",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c009/p003.md"
+        "filePath": "e011/c009/p003.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-2-the-biggest-prize-in-the-primary-sam-mandy-sarah-s-bus-loop-plan-stop-0812",
+        "nextUrl": "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-4-the-second-tuesday-on-the-loop-representative-devon-pierce-on-routes-15-800-25-12"
     },
     "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-4-the-second-tuesday-on-the-loop-representative-devon-pierce-on-routes-15-800-25-12": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: The Second Tuesday on the Loop: Representative Devon Pierce on Routes 15, 800, 25, & 12",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c009/p004.md"
+        "filePath": "e011/c009/p004.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-3-the-first-tuesday-on-the-loop-governor-harrison-caldwell-on-routes-15-800-25-12",
+        "nextUrl": "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-5-the-thursday-morning-loop-governor-elena-delgado-the-six-o-clock-upload"
     },
     "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-5-the-thursday-morning-loop-governor-elena-delgado-the-six-o-clock-upload": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: The Thursday Morning Loop: Governor Elena Delgado & The Six O'Clock Upload",
         "theme": "raggiesoft-books",
-        "filePath": "e011/c009/p005.md"
+        "filePath": "e011/c009/p005.md",
+        "pathId": "wesley-aide-bridge",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "wesley-aide-bridge"
+        },
+        "prevUrl": "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-4-the-second-tuesday-on-the-loop-representative-devon-pierce-on-routes-15-800-25-12",
+        "noNext": true
+    },
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Virginia Domicile, Three Campuses, & Twelve Extra Years",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|accept-heather-virginia|0",
+        "pathId": "accept-heather-virginia",
+        "crossroadsId": "pavilion-apology-2003"
+    },
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/saying-yes-under-the-crape-myrtles-the-four-person-household": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Saying Yes Under the Crape-Myrtles & The Four-Person Household",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|accept-heather-virginia|0|0",
+        "pathId": "accept-heather-virginia",
+        "crossroadsId": "pavilion-apology-2003"
+    },
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/saying-yes-under-the-crape-myrtles-the-four-person-household/two-squeezes-wesley-s-cheer-where-one-pair-goes-both-pairs-go": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Two Squeezes, Wesley's Cheer, & Where One Pair Goes, Both Pairs Go",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/accept-heather-virginia/e005/c001/p001.md",
+        "pathId": "accept-heather-virginia",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "accept-heather-virginia"
+        },
+        "prevUrl": "/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-heather-s-apology",
+        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/touring-cchr-vdu-and-warwick-university-as-a-team/three-campuses-on-one-legal-pad-route-112-nntc-at-the-shoe-lane-roundabout"
+    },
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/touring-cchr-vdu-and-warwick-university-as-a-team": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Touring CCHR, VDU, and Warwick University as a Team",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|accept-heather-virginia|0|1",
+        "pathId": "accept-heather-virginia",
+        "crossroadsId": "pavilion-apology-2003"
+    },
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/touring-cchr-vdu-and-warwick-university-as-a-team/three-campuses-on-one-legal-pad-route-112-nntc-at-the-shoe-lane-roundabout": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Three Campuses on One Legal Pad & Route 112 NNTC at the Shoe Lane Roundabout",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/accept-heather-virginia/e005/c002/p001.md",
+        "pathId": "accept-heather-virginia",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "accept-heather-virginia"
+        },
+        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/saying-yes-under-the-crape-myrtles-the-four-person-household/two-squeezes-wesley-s-cheer-where-one-pair-goes-both-pairs-go",
+        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/house-bill-663-rescuing-both-cousins-twelve-extra-years-together/part-1-three-alumni-at-the-sanctuary-doors-romaine-squares-waiting-in-kempsville"
+    },
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/house-bill-663-rescuing-both-cousins-twelve-extra-years-together": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "House Bill 663, Rescuing Both Cousins, & Twelve Extra Years Together",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|accept-heather-virginia|0|2",
+        "pathId": "accept-heather-virginia",
+        "crossroadsId": "pavilion-apology-2003"
+    },
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/house-bill-663-rescuing-both-cousins-twelve-extra-years-together/part-1-three-alumni-at-the-sanctuary-doors-romaine-squares-waiting-in-kempsville": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Three Alumni at the Sanctuary Doors & Romaine Squares Waiting in Kempsville",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/accept-heather-virginia/e005/c003/p001.md",
+        "pathId": "accept-heather-virginia",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "accept-heather-virginia"
+        },
+        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/touring-cchr-vdu-and-warwick-university-as-a-team/three-campuses-on-one-legal-pad-route-112-nntc-at-the-shoe-lane-roundabout",
+        "nextUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/house-bill-663-rescuing-both-cousins-twelve-extra-years-together/part-2-six-chairs-in-the-rose-garden-twelve-extra-years-under-one-sky"
+    },
+    "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/house-bill-663-rescuing-both-cousins-twelve-extra-years-together/part-2-six-chairs-in-the-rose-garden-twelve-extra-years-under-one-sky": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Six Chairs in the Rose Garden & Twelve Extra Years Under One Sky",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/accept-heather-virginia/e005/c003/p002.md",
+        "pathId": "accept-heather-virginia",
+        "crossroadsId": "pavilion-apology-2003",
+        "requiredChoices": {
+            "pavilion-apology-2003": "accept-heather-virginia"
+        },
+        "prevUrl": "/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/house-bill-663-rescuing-both-cousins-twelve-extra-years-together/part-1-three-alumni-at-the-sanctuary-doors-romaine-squares-waiting-in-kempsville",
+        "noNext": true
     }
 }

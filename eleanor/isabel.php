@@ -89,6 +89,10 @@ if (isset($platformAliasRedirects[$requestUri])) {
  *     HTTP 301 Permanent Redirect before route JSON resolution executes.
  */
 $legacyPartRedirects = [
+    // Katie & Nathaniel (Era 4, Chapter 2, Part 4): Renamed upon introducing Pavilion Story Crossroads
+    '/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-one-chance-strictly-for-wesley'
+        => '/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-heather-s-apology',
+
     // Katie & Nathaniel (Era 10, Chapter 3, Part 2): Stripped street number from Victoria Boulevard
     '/katie/across-the-rotunda-the-senate-of-virginia/the-accessibility-project-riding-every-bus-across-the-commonwealth-for-the-united-states-senate/part-2-the-jammed-ramp-at-3400-victoria-boulevard-shoreline-transit-across-the-bay-wearing-the-nfa-s-f-grade-in-fairfax'
         => '/katie/across-the-rotunda-the-senate-of-virginia/the-accessibility-project-riding-every-bus-across-the-commonwealth-for-the-united-states-senate/part-2-the-jammed-ramp-on-victoria-boulevard-shoreline-transit-across-the-bay-wearing-the-nfa-s-f-grade-in-fairfax',
@@ -309,6 +313,211 @@ if ($hasValidBookSeries && $seriesSlug !== '') {
     }
 }
 
+/**
+ * =============================================================================
+ * MULTI-CROSSROADS NARRATIVE GRAPH & DYNAMIC ACTIVE-PATH TOC RESOLVER
+ * =============================================================================
+ * Supports ANY number of sequential or nested Story Crossroads per novel.
+ * Persists a per-book JSON map (`rs_cx_<seriesSlug>` = `{"<cxId>":"<optId>"}`),
+ * auto-hydrates ancestor `requiredChoices` on deep links, and walks `segments`
+ * from `"__root__"` to build:
+ *   - `$effectiveTocEras`: Merged Eras/Chapters/Parts along the active path chain
+ *   - `$activeCrossroadsChain`: Ordered list of `[crossroads, chosen_option]` decisions
+ *   - `$pendingFrontierCrossroads`: Next unchosen Crossroads at the TOC frontier (if any)
+ *   - `$activeSegmentIdSet`: Set of active segment/path IDs for Prev/Next filtering
+ */
+$seriesCrossroadsList      = is_array($toc_manifest['crossroads'] ?? null) ? $toc_manifest['crossroads'] : [];
+$seriesPathsMap            = is_array($toc_manifest['paths'] ?? null) ? $toc_manifest['paths'] : [];
+$seriesSegmentsMap         = is_array($toc_manifest['segments'] ?? null) ? $toc_manifest['segments'] : [];
+$activeCrossroadsChoices   = [];
+$activeCrossroadsChain     = [];
+$pendingFrontierCrossroads = null;
+$activeSegmentIdSet        = ['__root__' => true];
+$activeStoryPathId         = null;
+$activeStoryPathObj        = null;
+$effectiveTocEras          = is_array($toc_manifest['eras'] ?? null) ? $toc_manifest['eras'] : [];
+
+if ($hasValidBookSeries && $seriesSlug !== '' && !empty($seriesCrossroadsList) && !empty($seriesSegmentsMap)) {
+    $safeBookCookieSlug = preg_replace('/[^a-z0-9_-]/i', '_', $seriesSlug);
+    $cxMapCookieName    = 'rs_cx_' . $safeBookCookieSlug;
+    $legacyCookieName   = 'rs_path_' . $safeBookCookieSlug;
+
+    $crossroadsById = [];
+    foreach ($seriesCrossroadsList as $cxDef) {
+        if (!empty($cxDef['id'])) {
+            $crossroadsById[(string)$cxDef['id']] = $cxDef;
+        }
+    }
+
+    // 1. Load saved multi-crossroads choices map from cookie
+    if (!empty($_COOKIE[$cxMapCookieName])) {
+        $decodedCookie = json_decode((string)$_COOKIE[$cxMapCookieName], true);
+        if (is_array($decodedCookie)) {
+            foreach ($decodedCookie as $k => $v) {
+                if (is_string($k) && is_string($v) && isset($crossroadsById[$k]) && isset($seriesPathsMap[$v])) {
+                    $activeCrossroadsChoices[$k] = $v;
+                }
+            }
+        }
+    } elseif (!empty($_COOKIE[$legacyCookieName]) && isset($seriesPathsMap[(string)$_COOKIE[$legacyCookieName]])) {
+        $legOpt = $seriesPathsMap[(string)$_COOKIE[$legacyCookieName]];
+        if (!empty($legOpt['required_choices']) && is_array($legOpt['required_choices'])) {
+            foreach ($legOpt['required_choices'] as $rk => $rv) {
+                $activeCrossroadsChoices[(string)$rk] = (string)$rv;
+            }
+        } elseif (!empty($legOpt['crossroads_id'])) {
+            $activeCrossroadsChoices[(string)$legOpt['crossroads_id']] = (string)$legOpt['id'];
+        }
+    }
+
+    // 2. Apply explicit URL query (`?path=<optId>` or `?path=reset` [& optional `?cx=<cxId>`]) or deep-link `requiredChoices`
+    $reqPathParam = isset($_GET['path']) ? trim((string)$_GET['path']) : '';
+    $reqCxParam   = isset($_GET['cx']) ? trim((string)$_GET['cx']) : '';
+    $cookieDirty  = false;
+
+    if ($reqPathParam === 'reset') {
+        if ($reqCxParam !== '' && isset($activeCrossroadsChoices[$reqCxParam])) {
+            unset($activeCrossroadsChoices[$reqCxParam]);
+        } else {
+            $activeCrossroadsChoices = [];
+        }
+        $cookieDirty = true;
+    } elseif ($reqPathParam !== '' && isset($seriesPathsMap[$reqPathParam])) {
+        $targetSeg = $seriesPathsMap[$reqPathParam];
+        if (!empty($targetSeg['required_choices']) && is_array($targetSeg['required_choices'])) {
+            foreach ($targetSeg['required_choices'] as $rk => $rv) {
+                $activeCrossroadsChoices[(string)$rk] = (string)$rv;
+            }
+        }
+        if (!empty($targetSeg['crossroads_id'])) {
+            $activeCrossroadsChoices[(string)$targetSeg['crossroads_id']] = $reqPathParam;
+        }
+        $cookieDirty = true;
+    } elseif (!empty($pageConfig['requiredChoices']) && is_array($pageConfig['requiredChoices'])) {
+        foreach ($pageConfig['requiredChoices'] as $rk => $rv) {
+            if (($activeCrossroadsChoices[(string)$rk] ?? null) !== (string)$rv) {
+                $activeCrossroadsChoices[(string)$rk] = (string)$rv;
+                $cookieDirty = true;
+            }
+        }
+    } elseif (!empty($pageConfig['pathId']) && isset($seriesPathsMap[(string)$pageConfig['pathId']])) {
+        $pSeg = $seriesPathsMap[(string)$pageConfig['pathId']];
+        if (!empty($pSeg['crossroads_id']) && ($activeCrossroadsChoices[(string)$pSeg['crossroads_id']] ?? null) !== (string)$pSeg['id']) {
+            $activeCrossroadsChoices[(string)$pSeg['crossroads_id']] = (string)$pSeg['id'];
+            $cookieDirty = true;
+        }
+    }
+
+    if ($cookieDirty && !headers_sent()) {
+        if (empty($activeCrossroadsChoices)) {
+            setcookie($cxMapCookieName, '', ['expires' => time() - 3600, 'path' => '/', 'samesite' => 'Lax']);
+            setcookie($legacyCookieName, '', ['expires' => time() - 3600, 'path' => '/', 'samesite' => 'Lax']);
+        } else {
+            setcookie($cxMapCookieName, json_encode($activeCrossroadsChoices, JSON_UNESCAPED_SLASHES), [
+                'expires'  => time() + 31536000,
+                'path'     => '/',
+                'samesite' => 'Lax',
+            ]);
+        }
+    }
+
+    // 3. Walk the Multi-Crossroads Segment Graph from `__root__`
+    $mergeSegmentEras = static function (array $baseEras, array $addEras): array {
+        $merged = $baseEras;
+        foreach ($addEras as $pEra) {
+            $pEraNum = (int)($pEra['era_num'] ?? 0);
+            $pEraScope = (string)($pEra['era_url'] ?? '');
+            $matchedEraIdx = null;
+            foreach ($merged as $mIdx => $mEra) {
+                // Merge into the same Era card when two consecutive inline segments share `era_num` & `era_url`
+                if ((int)($mEra['era_num'] ?? -1) === $pEraNum && (string)($mEra['era_url'] ?? '') === $pEraScope) {
+                    $matchedEraIdx = $mIdx;
+                    break;
+                }
+            }
+            if ($matchedEraIdx === null) {
+                $merged[] = $pEra;
+            } else {
+                foreach (($pEra['chapters'] ?? []) as $pChap) {
+                    $pChapNum = (int)($pChap['chap_num'] ?? 0);
+                    $matchedChapIdx = null;
+                    foreach (($merged[$matchedEraIdx]['chapters'] ?? []) as $mcIdx => $mChap) {
+                        if ((int)($mChap['chap_num'] ?? -1) === $pChapNum) {
+                            $matchedChapIdx = $mcIdx;
+                            break;
+                        }
+                    }
+                    if ($matchedChapIdx === null) {
+                        $merged[$matchedEraIdx]['chapters'][] = $pChap;
+                    } else {
+                        $merged[$matchedEraIdx]['chapters'][$matchedChapIdx]['parts'] = array_merge(
+                            $merged[$matchedEraIdx]['chapters'][$matchedChapIdx]['parts'] ?? [],
+                            $pChap['parts'] ?? []
+                        );
+                        $merged[$matchedEraIdx]['chapters'][$matchedChapIdx]['word_count'] =
+                            (int)($merged[$matchedEraIdx]['chapters'][$matchedChapIdx]['word_count'] ?? 0)
+                            + (int)($pChap['word_count'] ?? 0);
+                        $merged[$matchedEraIdx]['chapters'][$matchedChapIdx]['illustration_count'] =
+                            (int)($merged[$matchedEraIdx]['chapters'][$matchedChapIdx]['illustration_count'] ?? 0)
+                            + (int)($pChap['illustration_count'] ?? 0);
+                    }
+                }
+                $merged[$matchedEraIdx]['word_count'] =
+                    (int)($merged[$matchedEraIdx]['word_count'] ?? 0) + (int)($pEra['word_count'] ?? 0);
+                $merged[$matchedEraIdx]['illustration_count'] =
+                    (int)($merged[$matchedEraIdx]['illustration_count'] ?? 0) + (int)($pEra['illustration_count'] ?? 0);
+            }
+        }
+        return $merged;
+    };
+
+    $walkEras = [];
+    $cursorSegId = (string)($toc_manifest['root_segment_id'] ?? '__root__');
+    $visitedSegs = [];
+
+    while ($cursorSegId !== '' && isset($seriesSegmentsMap[$cursorSegId]) && !isset($visitedSegs[$cursorSegId])) {
+        $visitedSegs[$cursorSegId] = true;
+        $activeSegmentIdSet[$cursorSegId] = true;
+        $segDef = $seriesSegmentsMap[$cursorSegId];
+        if ($cursorSegId !== '__root__') {
+            $activeStoryPathId  = $cursorSegId;
+            $activeStoryPathObj = $segDef;
+        }
+        $walkEras = $mergeSegmentEras($walkEras, is_array($segDef['eras'] ?? null) ? $segDef['eras'] : []);
+
+        $nextCxId = isset($segDef['next_crossroads_id']) ? trim((string)$segDef['next_crossroads_id']) : '';
+        if ($nextCxId === '' || !isset($crossroadsById[$nextCxId])) {
+            break;
+        }
+
+        $cxObj = $crossroadsById[$nextCxId];
+        $chosenOptId = $activeCrossroadsChoices[$nextCxId] ?? '';
+        $matchedOptObj = null;
+        if ($chosenOptId !== '') {
+            foreach (($cxObj['options'] ?? []) as $candOpt) {
+                if ((string)($candOpt['id'] ?? '') === $chosenOptId) {
+                    $matchedOptObj = $candOpt;
+                    break;
+                }
+            }
+        }
+
+        if ($matchedOptObj === null || !isset($seriesSegmentsMap[$chosenOptId])) {
+            // Reader has not chosen at `$nextCxId` yet — stop here and surface `$cxObj` at the TOC frontier!
+            $pendingFrontierCrossroads = $cxObj;
+            break;
+        }
+
+        $activeCrossroadsChain[] = [
+            'crossroads'    => $cxObj,
+            'chosen_option' => $matchedOptObj,
+        ];
+        $cursorSegId = $chosenOptId;
+    }
+
+    $effectiveTocEras = $walkEras;
+}
+
 // Establish canonical URL, robots directives, and baseline OpenGraph variables
 $canonicalUrl = 'https://books.raggiesoft.com' . ($requestUri === '/' ? '/' : rtrim($requestUri, '/'));
 $ogUrl = $canonicalUrl;
@@ -461,8 +670,15 @@ if ($isNotFound) {
             }
         }
     } elseif (str_starts_with($actualFilePath, '__ERA_TOC__|')) {
-        $eraIdx = (int)substr($actualFilePath, strlen('__ERA_TOC__|'));
-        $eraObj = $toc_manifest['eras'][$eraIdx] ?? null;
+        $eraTokenParts = explode('|', $actualFilePath);
+        if (count($eraTokenParts) >= 3) {
+            $tokenPathId = $eraTokenParts[1];
+            $eraIdx = (int)$eraTokenParts[2];
+            $eraObj = $seriesPathsMap[$tokenPathId]['eras'][$eraIdx] ?? null;
+        } else {
+            $eraIdx = (int)($eraTokenParts[1] ?? 0);
+            $eraObj = $toc_manifest['eras'][$eraIdx] ?? null;
+        }
         $eraTitle = !empty($eraObj['era_title']) ? trim((string)$eraObj['era_title']) : trim((string)($pageConfig['title'] ?? 'Story Era'));
         $eraChaps = is_array($eraObj['chapters'] ?? null) ? $eraObj['chapters'] : [];
         $firstEraPart = $eraChaps[0]['parts'][0] ?? null;
@@ -485,9 +701,16 @@ if ($isNotFound) {
         }
     } elseif (str_starts_with($actualFilePath, '__CHAP_TOC__|')) {
         $idxParts = explode('|', $actualFilePath);
-        $eraIdx = (int)($idxParts[1] ?? 0);
-        $chapIdx = (int)($idxParts[2] ?? 0);
-        $eraObj = $toc_manifest['eras'][$eraIdx] ?? null;
+        if (count($idxParts) >= 4) {
+            $tokenPathId = $idxParts[1];
+            $eraIdx = (int)$idxParts[2];
+            $chapIdx = (int)$idxParts[3];
+            $eraObj = $seriesPathsMap[$tokenPathId]['eras'][$eraIdx] ?? null;
+        } else {
+            $eraIdx = (int)($idxParts[1] ?? 0);
+            $chapIdx = (int)($idxParts[2] ?? 0);
+            $eraObj = $toc_manifest['eras'][$eraIdx] ?? null;
+        }
         $chapObj = $eraObj['chapters'][$chapIdx] ?? null;
         $chapTitle = !empty($chapObj['chap_title']) ? trim((string)$chapObj['chap_title']) : trim((string)($pageConfig['title'] ?? 'Chapter'));
         $chapParts = is_array($chapObj['parts'] ?? null) ? $chapObj['parts'] : [];
@@ -506,22 +729,26 @@ if ($isNotFound) {
             }
         }
     } else {
-        // Deep Manuscript Part (`eXXX/cXXX/pXXX.md`)
+        // Deep Manuscript Part (`eXXX/cXXX/pXXX.md` or `paths/<id>/eXXX/cXXX/pXXX.md`)
         $ogType = 'article';
         $partTitle = trim((string)($pageConfig['title'] ?? 'Chapter'));
         $matchedTocPart = null;
         $matchedEraTitle = '';
         $matchedChapTitle = '';
-        if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
-            foreach ($toc_manifest['eras'] as $eItem) {
-                foreach (($eItem['chapters'] ?? []) as $cItem) {
-                    foreach (($cItem['parts'] ?? []) as $pItem) {
-                        if (($pItem['file_path'] ?? '') === $actualFilePath) {
-                            $matchedTocPart = $pItem;
-                            $matchedEraTitle = (string)($eItem['era_title'] ?? '');
-                            $matchedChapTitle = (string)($cItem['chap_title'] ?? '');
-                            break 3;
-                        }
+        $allSearchableEras = is_array($toc_manifest['eras'] ?? null) ? $toc_manifest['eras'] : [];
+        foreach ($seriesPathsMap as $spDef) {
+            if (!empty($spDef['eras']) && is_array($spDef['eras'])) {
+                $allSearchableEras = array_merge($allSearchableEras, $spDef['eras']);
+            }
+        }
+        foreach ($allSearchableEras as $eItem) {
+            foreach (($eItem['chapters'] ?? []) as $cItem) {
+                foreach (($cItem['parts'] ?? []) as $pItem) {
+                    if (($pItem['file_path'] ?? '') === $actualFilePath) {
+                        $matchedTocPart = $pItem;
+                        $matchedEraTitle = (string)($eItem['era_title'] ?? '');
+                        $matchedChapTitle = (string)($cItem['chap_title'] ?? '');
+                        break 3;
                     }
                 }
             }
@@ -673,8 +900,8 @@ $currentHeaderMenu = (!$hasValidBookSeries) ? ($basePath . '/includes/components
 require_once $basePath . '/includes/components/headers/header.php';
 
 // Inject Stardust-specific styling and logic scripts with deterministic cache-busting version
-echo '<link rel="stylesheet" href="' . $cdnBaseUrl . '/raggiesoft-books/css/reader.css?v=20261116a">';
-echo '<script src="' . $cdnBaseUrl . '/raggiesoft-books/js/reader.js?v=20261116a" defer></script>';
+echo '<link rel="stylesheet" href="' . $cdnBaseUrl . '/raggiesoft-books/css/reader.css?v=20261117b">';
+echo '<script src="' . $cdnBaseUrl . '/raggiesoft-books/js/reader.js?v=20261117b" defer></script>';
 
 // Open the primary application boundary
 echo '<div id="stardust-main-wrapper">';

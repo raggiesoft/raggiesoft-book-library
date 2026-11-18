@@ -12,16 +12,16 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "8.6 KB",
-            "pdf": "16 KB",
-            "text_epub": "8.6 KB",
-            "text_pdf": "16 KB",
+            "epub": "5.3 KB",
+            "pdf": "3.7 KB",
+            "text_epub": "5.3 KB",
+            "text_pdf": "3.7 KB",
             "package_7z": "2 KB",
-            "epub_bytes": 8786,
-            "pdf_bytes": 16540,
-            "text_epub_bytes": 8788,
-            "text_pdf_bytes": 16540,
-            "package_7z_bytes": 2030
+            "epub_bytes": 5426,
+            "pdf_bytes": 3759,
+            "text_epub_bytes": 5425,
+            "text_pdf_bytes": 3759,
+            "package_7z_bytes": 2027
         },
         "illustration_count": 0,
         "word_stats": {

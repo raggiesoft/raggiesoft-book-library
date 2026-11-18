@@ -23,7 +23,7 @@
  */
 
 // Import required global state provided by the routing controller
-global $toc_manifest, $cdnBaseUrl, $seriesSlug;
+global $toc_manifest, $effectiveTocEras, $activeStoryPathId, $activeStoryPathObj, $activeCrossroadsChain, $pendingFrontierCrossroads, $cdnBaseUrl, $seriesSlug;
 ?>
 <!-- 
   MAIN CONTAINER
@@ -34,6 +34,9 @@ $tocTotalIllustrations = (int)($toc_manifest['illustration_count'] ?? 0);
 $tocWordStats = $toc_manifest['word_stats'] ?? [];
 $tocStoryWords = (int)($tocWordStats['story_word_count'] ?? 0);
 $tocStoryPages = (int)($tocWordStats['estimated_story_pages'] ?? ($tocStoryWords > 0 ? ceil($tocStoryWords / 275) : 0));
+$tocErasList = (isset($effectiveTocEras) && is_array($effectiveTocEras)) ? $effectiveTocEras : ($toc_manifest['eras'] ?? []);
+$tocActiveChain = (isset($activeCrossroadsChain) && is_array($activeCrossroadsChain)) ? $activeCrossroadsChain : [];
+$tocFrontierCrossroads = $pendingFrontierCrossroads ?? null;
 ?>
 <div class="book-page" style="max-width: 960px; margin: 0 auto;">
     <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--rs-border); padding-bottom: 1rem;">
@@ -73,11 +76,72 @@ $tocStoryPages = (int)($tocWordStats['estimated_story_pages'] ?? ($tocStoryWords
         </details>
     <?php endif; ?>
     
-    <?php if (!empty($toc_manifest['eras'])): ?>
+    <?php if (!empty($tocActiveChain)): ?>
+        <!-- Multi-Crossroads Active Story Path Decisions & Switchers -->
+        <div id="rs-toc-crossroads" style="display: flex; flex-direction: column; gap: 0.9rem; margin-bottom: 1.5rem;">
+        <?php foreach ($tocActiveChain as $chainIdx => $chainStep):
+            $stepCx  = $chainStep['crossroads'] ?? [];
+            $stepOpt = $chainStep['chosen_option'] ?? [];
+            $stepCxId = (string)($stepCx['id'] ?? '');
+            $stepOptId = (string)($stepOpt['id'] ?? '');
+        ?>
+            <section class="rs-active-path-bar" aria-label="Active Story Path Decision" style="margin-bottom: 0;">
+                <div class="rs-active-path-bar-main">
+                    <div class="rs-active-path-copy">
+                        <span class="rs-crossroads-kicker">
+                            <i class="ph-fill ph-signpost" aria-hidden="true"></i>
+                            <span><?php echo htmlspecialchars((string)($stepCx['kicker'] ?? ('Story Crossroads ' . ($chainIdx + 1)))); ?></span>
+                        </span>
+                        <div class="rs-active-path-name"><?php echo htmlspecialchars((string)($stepOpt['label'] ?? '')); ?></div>
+                        <?php if (!empty($stepOpt['subtitle'])): ?>
+                            <p class="rs-active-path-sub"><?php echo htmlspecialchars((string)$stepOpt['subtitle']); ?></p>
+                        <?php endif; ?>
+                    </div>
+                    <div class="rs-active-path-actions">
+                        <?php if (!empty($stepOpt['entry_url'])): ?>
+                            <a href="<?php echo htmlspecialchars((string)$stepOpt['entry_url']); ?>" class="rs-btn rs-btn-primary">
+                                <span>Open Path Start</span>
+                                <i class="ph ph-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        <?php endif; ?>
+                        <a href="/<?php echo htmlspecialchars($seriesSlug); ?>/toc?path=reset&amp;cx=<?php echo rawurlencode($stepCxId); ?>#rs-toc-crossroads"
+                           data-story-path="reset"
+                           data-story-crossroads="<?php echo htmlspecialchars($stepCxId); ?>"
+                           data-story-book="<?php echo htmlspecialchars($seriesSlug); ?>"
+                           class="rs-btn">
+                            <i class="ph ph-arrows-clockwise" aria-hidden="true"></i>
+                            <span>Change Choice</span>
+                        </a>
+                    </div>
+                </div>
+                <?php if (!empty($stepCx['options'])): ?>
+                <div class="rs-active-path-switcher-pills">
+                    <?php foreach ($stepCx['options'] as $cxOpt):
+                        $cxOptId = (string)($cxOpt['id'] ?? '');
+                        $isCurrentOpt = ($cxOptId === $stepOptId);
+                    ?>
+                        <a href="/<?php echo htmlspecialchars($seriesSlug); ?>/toc?cx=<?php echo rawurlencode($stepCxId); ?>&amp;path=<?php echo rawurlencode($cxOptId); ?>"
+                           data-story-path="<?php echo htmlspecialchars($cxOptId); ?>"
+                           data-story-crossroads="<?php echo htmlspecialchars($stepCxId); ?>"
+                           data-story-book="<?php echo htmlspecialchars($seriesSlug); ?>"
+                           class="rs-path-pill<?php echo $isCurrentOpt ? ' is-active' : ''; ?>"
+                           <?php if ($isCurrentOpt): ?>aria-current="true"<?php endif; ?>>
+                            <i class="ph <?php echo $isCurrentOpt ? 'ph-check-circle' : 'ph-signpost'; ?>" aria-hidden="true"></i>
+                            <span><?php echo htmlspecialchars((string)($cxOpt['label'] ?? '')); ?></span>
+                        </a>
+                    <?php endforeach; ?>
+                </div>
+                <?php endif; ?>
+            </section>
+        <?php endforeach; ?>
+        </div>
+    <?php endif; ?>
+
+    <?php if (!empty($tocErasList)): ?>
         <div class="toc-accordion" style="display: flex; flex-direction: column; gap: 1rem;">
             
-            <!-- Iterate over top-level eras in the novel -->
-            <?php foreach ($toc_manifest['eras'] as $eIndex => $era):
+            <!-- Iterate over top-level eras in the active reading sequence -->
+            <?php foreach ($tocErasList as $eIndex => $era):
                 $eraIllusCount = (int)($era['illustration_count'] ?? 0);
                 $eraWordCount = (int)($era['word_count'] ?? 0);
             ?>
@@ -241,6 +305,64 @@ $tocStoryPages = (int)($tocWordStats['estimated_story_pages'] ?? ($tocStoryWords
                 </details>
             <?php endforeach; ?>
         </div>
+
+        <?php if ($tocFrontierCrossroads !== null):
+            $frontierCxId = (string)($tocFrontierCrossroads['id'] ?? '');
+        ?>
+            <!-- Coequal Story Crossroads Selector (Shown directly at the frontier of the active TOC whenever an unchosen Crossroads is reached) -->
+            <section <?php echo empty($tocActiveChain) ? 'id="rs-toc-crossroads" ' : ''; ?>class="rs-crossroads-section" aria-labelledby="rs-toc-crossroads-heading" style="margin-top: 1.75rem;">
+                <div class="rs-crossroads-header">
+                    <div class="rs-crossroads-kicker">
+                        <i class="ph-fill ph-signpost" aria-hidden="true"></i>
+                        <span><?php echo htmlspecialchars((string)($tocFrontierCrossroads['kicker'] ?? 'Story Crossroads')); ?></span>
+                    </div>
+                    <h2 id="rs-toc-crossroads-heading" class="rs-crossroads-title"><?php echo htmlspecialchars((string)($tocFrontierCrossroads['title'] ?? 'Choose How the Story Continues')); ?></h2>
+                    <?php if (!empty($tocFrontierCrossroads['prompt'])): ?>
+                        <p class="rs-crossroads-prompt"><?php echo htmlspecialchars((string)$tocFrontierCrossroads['prompt']); ?></p>
+                    <?php endif; ?>
+                    <?php if (!empty($tocFrontierCrossroads['trigger_url'])): ?>
+                        <p style="margin: 0.5rem 0 0; font-size: 0.9rem;">
+                            <a href="<?php echo htmlspecialchars((string)$tocFrontierCrossroads['trigger_url']); ?>" style="color: var(--rs-primary); font-weight: 700; text-decoration: underline; text-underline-offset: 3px;">
+                                Read the Crossroads Scene First &rarr;
+                            </a>
+                        </p>
+                    <?php endif; ?>
+                </div>
+                <div class="rs-crossroads-grid">
+                    <?php foreach (($tocFrontierCrossroads['options'] ?? []) as $cxOpt):
+                        $optId = (string)($cxOpt['id'] ?? '');
+                        $optLabel = (string)($cxOpt['label'] ?? '');
+                        $optSub = (string)($cxOpt['subtitle'] ?? '');
+                        $optImgRaw = (string)($cxOpt['image'] ?? '');
+                        $optImg = $optImgRaw !== ''
+                            ? ((strpos($optImgRaw, 'http') === 0) ? $optImgRaw : rtrim($cdnBaseUrl, '/') . '/' . ltrim($optImgRaw, '/'))
+                            : '';
+                    ?>
+                    <article class="rs-crossroads-card">
+                        <?php if ($optImg !== ''): ?>
+                            <img src="<?php echo htmlspecialchars($optImg); ?>" alt="<?php echo htmlspecialchars($optLabel); ?>" class="rs-crossroads-card-img" loading="lazy">
+                        <?php endif; ?>
+                        <div class="rs-crossroads-card-body">
+                            <h3 class="rs-crossroads-card-title"><?php echo htmlspecialchars($optLabel); ?></h3>
+                            <?php if ($optSub !== ''): ?>
+                                <p class="rs-crossroads-card-desc"><?php echo htmlspecialchars($optSub); ?></p>
+                            <?php endif; ?>
+                        </div>
+                        <div class="rs-crossroads-card-footer">
+                            <a href="/<?php echo htmlspecialchars($seriesSlug); ?>/toc?cx=<?php echo rawurlencode($frontierCxId); ?>&amp;path=<?php echo rawurlencode($optId); ?>"
+                               data-story-path="<?php echo htmlspecialchars($optId); ?>"
+                               data-story-crossroads="<?php echo htmlspecialchars($frontierCxId); ?>"
+                               data-story-book="<?php echo htmlspecialchars($seriesSlug); ?>"
+                               class="rs-btn rs-btn-primary rs-crossroads-choose-btn">
+                                <span>Show Chapters for This Path</span>
+                                <i class="ph ph-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+                    <?php endforeach; ?>
+                </div>
+            </section>
+        <?php endif; ?>
         
         <!-- Inline CSS to manage the native `<details>` chevron animations -->
         <style>

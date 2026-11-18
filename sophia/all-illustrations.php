@@ -73,13 +73,27 @@ foreach ($catalogEntries as $catEntry) {
     if (empty($tocData['eras']) || !is_array($tocData['eras'])) continue;
 
     $bookPlates = [];
-    foreach ($tocData['eras'] as $era) {
+    $allBookEras = $tocData['eras'];
+    if (!empty($tocData['paths']) && is_array($tocData['paths'])) {
+        foreach ($tocData['paths'] as $pDef) {
+            if (!empty($pDef['eras']) && is_array($pDef['eras'])) {
+                $allBookEras = array_merge($allBookEras, $pDef['eras']);
+            }
+        }
+    }
+    $seenBookPartFiles = [];
+    foreach ($allBookEras as $era) {
         $eraNum = intval($era['era_num'] ?? 0);
         $eraTitle = $era['era_title'] ?? "Era {$eraNum}";
         foreach (($era['chapters'] ?? []) as $chap) {
             $chapNum = intval($chap['chap_num'] ?? 0);
             $chapTitle = $chap['chap_title'] ?? "Chapter {$chapNum}";
             foreach (($chap['parts'] ?? []) as $part) {
+                $fpDedup = (string)($part['file_path'] ?? ($part['url'] ?? ''));
+                if ($fpDedup !== '') {
+                    if (isset($seenBookPartFiles[$fpDedup])) continue;
+                    $seenBookPartFiles[$fpDedup] = true;
+                }
                 $partImages = [];
                 if (!empty($part['images']) && is_array($part['images'])) {
                     $partImages = $part['images'];

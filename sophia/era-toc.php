@@ -17,10 +17,15 @@
  */
 
 // Import necessary variables populated by the upstream router/controller.
-global $toc_manifest, $specialPageIndex1, $fileToUrl;
+global $toc_manifest, $effectiveTocEras, $specialPagePathId, $specialPageIndex1, $fileToUrl;
 
-// Extract the requested era using the provided index.
-$era = $toc_manifest['eras'][$specialPageIndex1] ?? null;
+// Extract the requested era from either a Story Crossroads path (`$specialPagePathId`) or the active TOC eras.
+if (!empty($specialPagePathId) && isset($toc_manifest['paths'][$specialPagePathId]['eras'][$specialPageIndex1])) {
+    $era = $toc_manifest['paths'][$specialPagePathId]['eras'][$specialPageIndex1];
+} else {
+    $eraSourceList = (!empty($effectiveTocEras) && is_array($effectiveTocEras)) ? $effectiveTocEras : ($toc_manifest['eras'] ?? []);
+    $era = $eraSourceList[$specialPageIndex1] ?? ($toc_manifest['eras'][$specialPageIndex1] ?? null);
+}
 
 // Halt rendering early if the era does not exist in the structure.
 if (!$era) {

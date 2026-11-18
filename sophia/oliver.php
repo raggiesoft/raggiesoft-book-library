@@ -174,6 +174,7 @@ if (empty($actualFilePath)) {
 // 1. Fetch Markdown Content from CDN (or intercept internal paths)
 // $cdnBaseUrl is injected by isabel.php
 $specialPageType = null;
+$specialPagePathId = null;
 $specialPageIndex1 = 0;
 $specialPageIndex2 = 0;
 $mdContent = '';
@@ -188,12 +189,23 @@ if ($actualFilePath === '__SERIES_LANDING__') {
 } elseif (strpos($actualFilePath, '__ERA_TOC__|') === 0) {
     $p = explode('|', $actualFilePath);
     $specialPageType = 'era_toc';
-    $specialPageIndex1 = (int)($p[1] ?? 0);
+    if (count($p) >= 3) {
+        $specialPagePathId = $p[1];
+        $specialPageIndex1 = (int)$p[2];
+    } else {
+        $specialPageIndex1 = (int)($p[1] ?? 0);
+    }
 } elseif (strpos($actualFilePath, '__CHAP_TOC__|') === 0) {
     $p = explode('|', $actualFilePath);
     $specialPageType = 'chap_toc';
-    $specialPageIndex1 = (int)($p[1] ?? 0);
-    $specialPageIndex2 = (int)($p[2] ?? 0);
+    if (count($p) >= 4) {
+        $specialPagePathId = $p[1];
+        $specialPageIndex1 = (int)$p[2];
+        $specialPageIndex2 = (int)$p[3];
+    } else {
+        $specialPageIndex1 = (int)($p[1] ?? 0);
+        $specialPageIndex2 = (int)($p[2] ?? 0);
+    }
 } else {
     // Standard content fetching block (preferring local NVMe disk before remote CDN)
     if (isset($prefetchedMdContent) && $prefetchedMdContent !== null) {
@@ -606,8 +618,12 @@ $sequenceName = $routeData['common']['siteName'] ?? 'Ocean View Archives';
 // "Previous" and "Next" flow seamlessly from scene to scene across chapter boundaries.
 $routeKeys = array_keys($routeData);
 $seriesSlugForFilter = '/' . ($seriesSlug ?? '');
-$filteredKeys = array_filter($routeKeys, function($k) use ($seriesSlugForFilter, $routeData, $specialPageType) { 
+$filteredKeys = array_filter($routeKeys, function($k) use ($seriesSlugForFilter, $routeData, $specialPageType, $activeStoryPathId, $activeSegmentIdSet) { 
     if ($k === 'common' || $k === $seriesSlugForFilter) {
+        return false;
+    }
+    $candidatePathId = (string)($routeData[$k]['pathId'] ?? '');
+    if ($candidatePathId !== '' && empty($activeSegmentIdSet[$candidatePathId]) && $candidatePathId !== (string)$activeStoryPathId) {
         return false;
     }
     if (!$specialPageType) {
@@ -627,8 +643,12 @@ $filteredKeys = array_filter($routeKeys, function($k) use ($seriesSlugForFilter,
 $filteredKeys = array_values($filteredKeys); // reindex
 $currentIndex = array_search($requestUri, $filteredKeys);
 if ($currentIndex !== false) {
-    if ($currentIndex > 0 && empty($prevUrl)) $prevUrl = $filteredKeys[$currentIndex - 1];
-    if ($currentIndex < count($filteredKeys) - 1 && empty($nextUrl)) $nextUrl = $filteredKeys[$currentIndex + 1];
+    if ($currentIndex > 0 && empty($prevUrl) && empty($config['noPrev'])) {
+        $prevUrl = $filteredKeys[$currentIndex - 1];
+    }
+    if ($currentIndex < count($filteredKeys) - 1 && empty($nextUrl) && empty($config['noNext']) && empty($config['crossroads'])) {
+        $nextUrl = $filteredKeys[$currentIndex + 1];
+    }
 }
 
 /*
@@ -1073,6 +1093,36 @@ $oliverBookSeriesSchema = [
                         <span class="rs-arc-discovery-count"><?php echo (int)$mArc['stop_count']; ?> stops &rarr;</span>
                     </a>
                     <?php endforeach; ?>
+                </div>
+            </aside>
+            <?php endif; ?>
+
+            <?php
+            $oliverCurrentPathId = (string)($config['pathId'] ?? '');
+            $oliverPathMap = is_array($toc_manifest['paths'] ?? null) ? $toc_manifest['paths'] : [];
+            $oliverCrossroadsList = is_array($toc_manifest['crossroads'] ?? null)
+                ? $toc_manifest['crossroads']
+                : (is_array($routeData['common']['crossroads'] ?? null) ? $routeData['common']['crossroads'] : []);
+            $oliverCurrentPathObj = ($oliverCurrentPathId !== '' && isset($oliverPathMap[$oliverCurrentPathId]))
+                ? $oliverPathMap[$oliverCurrentPathId]
+                : null;
+            if (!$specialPageType && $oliverCurrentPathObj !== null && !empty($oliverCrossroadsList)):
+            ?>
+            <aside class="rs-active-path-bar" aria-label="Active Story Path">
+                <div class="rs-active-path-bar-main">
+                    <div class="rs-active-path-copy">
+                        <span class="rs-crossroads-kicker">
+                            <i class="ph-fill ph-signpost" aria-hidden="true"></i>
+                            <span>Story Path</span>
+                        </span>
+                        <div class="rs-active-path-name"><?php echo htmlspecialchars((string)($oliverCurrentPathObj['label'] ?? '')); ?></div>
+                    </div>
+                    <div class="rs-active-path-actions">
+                        <button type="button" class="rs-btn rs-btn-primary" data-open-crossroads-dialog="true">
+                            <i class="ph ph-signpost" aria-hidden="true"></i>
+                            <span>Switch Story Path</span>
+                        </button>
+                    </div>
                 </div>
             </aside>
             <?php endif; ?>
@@ -1998,6 +2048,149 @@ $oliverBookSeriesSchema = [
             </div>
         </dialog>
         <?php endif; ?>
+
+        <?php
+        $partCrossroads = (!$specialPageType && !empty($config['crossroads']) && is_array($config['crossroads']))
+            ? $config['crossroads']
+            : null;
+        if ($partCrossroads !== null):
+            $cxOptionsList = is_array($partCrossroads['options'] ?? null) ? $partCrossroads['options'] : [];
+        ?>
+        <!-- Coequal Interactive Story Crossroads Decision Cards -->
+        <section id="rs-story-crossroads" class="rs-crossroads-section" aria-labelledby="rs-crossroads-heading">
+            <div class="rs-crossroads-header">
+                <div class="rs-crossroads-kicker">
+                    <i class="ph-fill ph-signpost" aria-hidden="true"></i>
+                    <span><?php echo htmlspecialchars((string)($partCrossroads['kicker'] ?? 'Story Crossroads')); ?></span>
+                </div>
+                <h2 id="rs-crossroads-heading" class="rs-crossroads-title"><?php echo htmlspecialchars((string)($partCrossroads['title'] ?? 'Choose How the Story Continues')); ?></h2>
+                <?php if (!empty($partCrossroads['prompt'])): ?>
+                    <p class="rs-crossroads-prompt"><?php echo htmlspecialchars((string)$partCrossroads['prompt']); ?></p>
+                <?php endif; ?>
+            </div>
+            <div class="rs-crossroads-grid">
+                <?php foreach ($cxOptionsList as $cxOpt):
+                    $optId = (string)($cxOpt['id'] ?? '');
+                    $optLabel = (string)($cxOpt['label'] ?? '');
+                    $optSub = (string)($cxOpt['subtitle'] ?? '');
+                    $optEntryUrl = (string)($cxOpt['entry_url'] ?? '');
+                    $optImgRaw = (string)($cxOpt['image'] ?? '');
+                    $optImg = $optImgRaw !== ''
+                        ? ((strpos($optImgRaw, 'http') === 0) ? $optImgRaw : rtrim($cdnBaseUrl, '/') . '/' . ltrim($optImgRaw, '/'))
+                        : '';
+                    $partCxId = (string)($partCrossroads['id'] ?? '');
+                    $isSavedChoice = (($activeCrossroadsChoices[$partCxId] ?? null) === $optId) || ($activeStoryPathId !== null && $activeStoryPathId === $optId);
+                ?>
+                <article class="rs-crossroads-card<?php echo $isSavedChoice ? ' is-selected' : ''; ?>">
+                    <?php if ($optImg !== ''): ?>
+                        <img src="<?php echo htmlspecialchars($optImg); ?>" alt="<?php echo htmlspecialchars($optLabel); ?>" class="rs-crossroads-card-img" loading="lazy">
+                    <?php endif; ?>
+                    <div class="rs-crossroads-card-body">
+                        <?php if ($isSavedChoice): ?>
+                            <span class="rs-crossroads-saved-pill">
+                                <i class="ph-fill ph-check-circle" aria-hidden="true"></i>
+                                <span>Currently Selected Path</span>
+                            </span>
+                        <?php endif; ?>
+                        <h3 class="rs-crossroads-card-title"><?php echo htmlspecialchars($optLabel); ?></h3>
+                        <?php if ($optSub !== ''): ?>
+                            <p class="rs-crossroads-card-desc"><?php echo htmlspecialchars($optSub); ?></p>
+                        <?php endif; ?>
+                    </div>
+                    <div class="rs-crossroads-card-footer">
+                        <a href="<?php echo htmlspecialchars($optEntryUrl); ?>"
+                           data-story-path="<?php echo htmlspecialchars($optId); ?>"
+                           data-story-crossroads="<?php echo htmlspecialchars($partCxId); ?>"
+                           data-story-book="<?php echo htmlspecialchars($seriesSlug); ?>"
+                           class="rs-btn rs-btn-primary rs-crossroads-choose-btn">
+                            <span><?php echo $isSavedChoice ? 'Continue This Story Path' : 'Follow This Story Path'; ?></span>
+                            <i class="ph ph-arrow-right" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </article>
+                <?php endforeach; ?>
+            </div>
+        </section>
+        <?php endif; ?>
+
+        <?php
+        // Light-Dismiss Story Path Switcher Dialog (`<dialog closedby="any">`) for switching paths anywhere in the novel
+        if (!$specialPageType && !empty($oliverCrossroadsList)):
+            $dlgCx = $oliverCrossroadsList[0];
+            foreach ($oliverCrossroadsList as $candCx) {
+                if (!empty($config['crossroadsId']) && ($candCx['id'] ?? '') === $config['crossroadsId']) {
+                    $dlgCx = $candCx;
+                    break;
+                }
+            }
+        ?>
+        <dialog id="rs-story-crossroads-dialog" closedby="any" aria-labelledby="rs-story-crossroads-dialog-title" class="rs-crossroads-dialog">
+            <div class="rs-arc-dialog-header">
+                <div>
+                    <div class="rs-crossroads-kicker">
+                        <i class="ph-fill ph-signpost" aria-hidden="true"></i>
+                        <span><?php echo htmlspecialchars($seriesTitle); ?> &bull; Story Crossroads</span>
+                    </div>
+                    <h3 id="rs-story-crossroads-dialog-title" class="rs-arc-dialog-title"><?php echo htmlspecialchars((string)($dlgCx['title'] ?? 'Switch Story Path')); ?></h3>
+                </div>
+                <button type="button" id="rs-story-crossroads-close" class="rs-btn" aria-label="Close Story Path Switcher">
+                    <i class="ph ph-x" aria-hidden="true"></i> Close
+                </button>
+            </div>
+            <div class="rs-arc-dialog-body">
+                <?php if (!empty($dlgCx['prompt'])): ?>
+                    <p class="rs-arc-dialog-desc"><?php echo htmlspecialchars((string)$dlgCx['prompt']); ?></p>
+                <?php endif; ?>
+                <div class="rs-crossroads-grid">
+                    <?php foreach (($dlgCx['options'] ?? []) as $dOpt):
+                        $dOptId = (string)($dOpt['id'] ?? '');
+                        $dOptLabel = (string)($dOpt['label'] ?? '');
+                        $dOptSub = (string)($dOpt['subtitle'] ?? '');
+                        $dOptUrl = (string)($dOpt['entry_url'] ?? '');
+                        $dlgCxId = (string)($dlgCx['id'] ?? '');
+                        $dIsCurrent = (($activeCrossroadsChoices[$dlgCxId] ?? null) === $dOptId) || ($activeStoryPathId !== null && $activeStoryPathId === $dOptId);
+                    ?>
+                    <article class="rs-crossroads-card<?php echo $dIsCurrent ? ' is-selected' : ''; ?>">
+                        <div class="rs-crossroads-card-body">
+                            <?php if ($dIsCurrent): ?>
+                                <span class="rs-crossroads-saved-pill">
+                                    <i class="ph-fill ph-check-circle" aria-hidden="true"></i>
+                                    <span>Current Story Path</span>
+                                </span>
+                            <?php endif; ?>
+                            <h4 class="rs-crossroads-card-title"><?php echo htmlspecialchars($dOptLabel); ?></h4>
+                            <?php if ($dOptSub !== ''): ?>
+                                <p class="rs-crossroads-card-desc"><?php echo htmlspecialchars($dOptSub); ?></p>
+                            <?php endif; ?>
+                        </div>
+                        <div class="rs-crossroads-card-footer">
+                            <a href="<?php echo htmlspecialchars($dOptUrl); ?>"
+                               data-story-path="<?php echo htmlspecialchars($dOptId); ?>"
+                               data-story-crossroads="<?php echo htmlspecialchars($dlgCxId); ?>"
+                               data-story-book="<?php echo htmlspecialchars($seriesSlug); ?>"
+                               class="rs-btn rs-btn-primary rs-crossroads-choose-btn">
+                                <span><?php echo $dIsCurrent ? 'Start From Beginning of Path' : 'Switch to This Story Path'; ?></span>
+                                <i class="ph ph-arrow-right" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </article>
+                    <?php endforeach; ?>
+                </div>
+            </div>
+            <?php if (!empty($dlgCx['trigger_url'])): ?>
+            <div class="rs-arc-dialog-footer">
+                <a href="<?php echo htmlspecialchars((string)$dlgCx['trigger_url']); ?>" class="rs-btn">
+                    <i class="ph ph-arrow-u-up-left" aria-hidden="true"></i>
+                    <span>Re-read the Story Crossroads Scene</span>
+                </a>
+                <a href="/<?php echo htmlspecialchars($seriesSlug); ?>/toc" class="rs-btn">
+                    <i class="ph ph-list" aria-hidden="true"></i>
+                    <span>Open Table of Contents</span>
+                </a>
+            </div>
+            <?php endif; ?>
+        </dialog>
+        <?php endif; ?>
         
         <!-- E-Book CTA Card (Dismissible; persisted in reader-settings.showOfflineCta and resettable in Settings) -->
         <?php if (!$specialPageType):
@@ -2124,6 +2317,8 @@ $oliverBookSeriesSchema = [
             <div style="flex: 1; display: flex; justify-content: flex-end;">
                 <?php if ($nextUrl): ?>
                     <a href="<?php echo htmlspecialchars($nextUrl); ?>" class="rs-btn rs-btn-primary" id="reader-btn-next"><?php echo htmlspecialchars($activeArcNextLabel); ?> &rarr;</a>
+                <?php elseif (!empty($partCrossroads)): ?>
+                    <a href="#rs-story-crossroads" data-no-spa="true" class="rs-btn rs-btn-primary" id="reader-btn-next">Choose Story Path &uarr;</a>
                 <?php elseif ($activeStoryArc !== null): ?>
                     <a href="/arcs?book=<?php echo htmlspecialchars($seriesSlug); ?>" class="rs-btn rs-btn-primary" id="reader-btn-next">All Story Arcs &rarr;</a>
                 <?php else: ?>

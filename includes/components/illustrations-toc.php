@@ -86,8 +86,24 @@ $totalIllustrationsCount = 0;
 $totalIllustratedPartsCount = 0;
 $globalIllustrationNumber = 0;
 
-if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
-    foreach ($toc_manifest['eras'] as $eIdx => $era) {
+$allGalleryEras = is_array($toc_manifest['eras'] ?? null) ? $toc_manifest['eras'] : [];
+if (!empty($toc_manifest['paths']) && is_array($toc_manifest['paths'])) {
+    foreach ($toc_manifest['paths'] as $pDef) {
+        if (!empty($pDef['eras']) && is_array($pDef['eras'])) {
+            foreach ($pDef['eras'] as $pEra) {
+                $pEraCopy = $pEra;
+                if (!empty($pDef['label'])) {
+                    $pEraCopy['era_title'] = ($pEra['era_title'] ?? 'Story Path') . ' (' . $pDef['label'] . ')';
+                }
+                $allGalleryEras[] = $pEraCopy;
+            }
+        }
+    }
+}
+$seenIllustratedFilePaths = [];
+
+if (!empty($allGalleryEras)) {
+    foreach ($allGalleryEras as $eIdx => $era) {
         $eraNum = $era['era_num'] ?? ($eIdx + 1);
         $eraTitle = $era['era_title'] ?? "Era {$eraNum}";
         $eraUrl = !empty($era['era_url'])
@@ -106,6 +122,13 @@ if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
 
                 if (!empty($chap['parts']) && is_array($chap['parts'])) {
                     foreach ($chap['parts'] as $part) {
+                        $partFpKey = (string)($part['file_path'] ?? ($part['url'] ?? ''));
+                        if ($partFpKey !== '') {
+                            if (isset($seenIllustratedFilePaths[$partFpKey])) {
+                                continue;
+                            }
+                            $seenIllustratedFilePaths[$partFpKey] = true;
+                        }
                         $partImages = [];
 
                         if (!empty($part['images']) && is_array($part['images'])) {
