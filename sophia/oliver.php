@@ -2855,6 +2855,15 @@ html[data-os="android"] .zoe-kernel-log-os-badge::before {
     .reader-hero-slide, .reader-hero-nav, .reader-hero-dot { transition: none !important; }
 }
 
+/* Inline PWA Immediate Styles for Transit Amber LED Matrix Signs (<led>) & <pa> */
+.led-sign, em.led-sign { display: inline-flex; align-items: center; gap: 0.46em; vertical-align: middle; max-inline-size: 100%; padding: 0.2em 0.56em; margin: 0.08em 0.12em; border-radius: 5px; background: #0a0c10; color: #ffb300; border: 1px solid #d97706; box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.78), 0 1px 2px rgba(0, 0, 0, 0.18); font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; font-style: normal; font-weight: 800; letter-spacing: 0.055em; line-height: 1.15; text-indent: 0 !important; text-shadow: 0 0 6px rgba(255, 179, 0, 0.26); box-sizing: border-box; }
+.led-sign.led-sign--stacked, .led-sign.led-sign--split { padding: 0.24em 0.62em; }
+.led-sign .led-route { font-size: 1.56em; line-height: 0.96; font-weight: 900; letter-spacing: 0.02em; font-variant-numeric: tabular-nums; padding-inline-end: 0.42em; border-inline-end: 1px solid rgba(255, 179, 0, 0.34); align-self: stretch; display: inline-flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.led-sign .led-lines { display: inline-flex; flex-direction: column; justify-content: center; align-items: flex-start; gap: 0.09em; min-inline-size: 0; }
+.led-sign .led-line-single { font-size: 0.88em; line-height: 1.18; white-space: normal; overflow-wrap: anywhere; }
+.led-sign .led-line-top { font-size: 0.74em; line-height: 1.12; font-weight: 800; letter-spacing: 0.06em; white-space: normal; overflow-wrap: anywhere; }
+.led-sign .led-line-bottom { font-size: 0.7em; line-height: 1.12; font-weight: 700; letter-spacing: 0.05em; color: #ffc233; white-space: normal; overflow-wrap: anywhere; }
+
 /* ==========================================================================
  * OLIVER READER: IN-SCENE MINI TABLE OF CONTENTS & `## Heading` SUB-HEADERS
  * ==========================================================================

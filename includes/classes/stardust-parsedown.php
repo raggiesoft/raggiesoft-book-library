@@ -305,6 +305,20 @@ class StardustParsedown extends Parsedown {
         $text = preg_replace('/<asl>(.*?)<\/asl>/is', '<span class="visually-hidden">American Sign Language: </span><em class="asl-sign">$1</em>', $text);
         $text = preg_replace('/<sgn>(.*?)<\/sgn>/is', '<span class="visually-hidden">Signed: </span><em class="generic-sign">$1</em>', $text);
         $text = preg_replace('/<sms>(.*?)<\/sms>/is', '<span class="visually-hidden">Text Message: </span><em class="sms-message">$1</em>', $text);
+        $text = preg_replace('/<pa>(.*?)<\/pa>/is', '<span class="visually-hidden">Public Address System: </span><em class="pa-announcement">$1</em>', $text);
+
+        // Transit Destination LED Matrix Signs (<led>...</led> & <led route="..." .../>):
+        // Supports single-line headers (<led>112 NNTC</led>), two-line stacked headers
+        // (<led>OUT OF SERVICE | GARAGE</led>), and full-height route numbers paired with
+        // stacked destination lines (<led>913 | VA BEACH | SHORE & PLEAS HSE</led> or
+        // <led route="913">VA BEACH | SHORE & PLEAS HSE</led>).
+        $text = preg_replace_callback(
+            '/<led\b([^>]*?)(?:\/>|>(.*?)<\/led>)/isu',
+            function ($matches) {
+                return $this->renderLedSignSpan($matches[1] ?? '', $matches[2] ?? '');
+            },
+            $text
+        );
 
         // =====================================================================
         // ZOË WREN BROOKS COGNITIVE KERNEL LOG PARSER & SYNTAX HIGHLIGHTER
@@ -599,6 +613,119 @@ class StardustParsedown extends Parsedown {
             . '<div class="zoe-log-main">' . $nsPrefixHtml . $bodyHtml . '</div>'
             . $timestampHtml
             . '</div>';
+    }
+
+    /**
+     * Parses and renders an in-universe Transit Amber LED Destination Sign (`<led>...</led>`).
+     *
+     * Supported Authoring Forms:
+     * 1. Single-Line Header:
+     *      `<led>112 NNTC</led>`
+     *      `<led>MAROON EXPRESS</led>`
+     * 2. Two-Line Stacked Matrix (No Route Column):
+     *      `<led>OUT OF SERVICE | GARAGE</led>`
+     *      `<led>RADFORD CONNECTOR RELIEF<br>TO CPI via PRICES FORK</led>`
+     * 3. Full-Height Route Number + Stacked Destination Matrix (24x200 Split Header):
+     *      `<led>913 | VA BEACH | SHORE & PLEAS HSE</led>`
+     *      `<led route="913">VA BEACH | SHORE & PLEAS HSE</led>`
+     *      `<led route="913" line1="VA BEACH" line2="SHORE & PLEAS HSE"></led>`
+     *      `<led route="112">NNTC</led>`
+     *
+     * Accessibility & Find-in-Page Fidelity:
+     *   Uses inline `<span>` elements (preserving Parsedown inline paragraph context,
+     *   browser Find-in-Page, and copy-paste) paired with `.visually-hidden` separators
+     *   so screen readers announce `"LED Sign: Route 913 — VA BEACH / SHORE & PLEAS HSE"`.
+     */
+    protected function renderLedSignSpan(string $attrString, string $rawInner): string {
+        $attrs = [];
+        if ($attrString !== '' && preg_match_all('/([a-zA-Z0-9_-]+)\s*=\s*(?:"([^"]*)"|\'([^\']*)\')/u', $attrString, $attrMatches, PREG_SET_ORDER)) {
+            foreach ($attrMatches as $m) {
+                $key = strtolower(trim($m[1]));
+                $val = $m[2] !== '' ? $m[2] : ($m[3] ?? '');
+                $attrs[$key] = trim(html_entity_decode($val, ENT_QUOTES | ENT_HTML5, 'UTF-8'));
+            }
+        }
+
+        $route = $attrs['route'] ?? '';
+        $lines = [];
+
+        if (isset($attrs['line1']) || isset($attrs['line2'])) {
+            if (($attrs['line1'] ?? '') !== '') {
+                $lines[] = $attrs['line1'];
+            }
+            if (($attrs['line2'] ?? '') !== '') {
+                $lines[] = $attrs['line2'];
+            }
+        }
+
+        if (empty($lines)) {
+            // Normalize explicit `<br>` tags or literal newlines into pipe segments
+            $normalized = preg_replace('/<br\s*\/?>|\R/iu', '|', $rawInner);
+            $decoded = html_entity_decode((string)$normalized, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+            $parts = array_values(array_filter(array_map('trim', explode('|', $decoded)), static function ($seg) {
+                return $seg !== '';
+            }));
+
+            if ($route === '' && count($parts) >= 3) {
+                // 3-part shorthand: `ROUTE | TOP LINE | BOTTOM LINE`
+                $route = array_shift($parts);
+                $lines = [
+                    $parts[0],
+                    implode(' ', array_slice($parts, 1)),
+                ];
+            } elseif (count($parts) >= 2) {
+                $lines = [
+                    $parts[0],
+                    implode(' ', array_slice($parts, 1)),
+                ];
+            } elseif (count($parts) === 1) {
+                $lines = [$parts[0]];
+            }
+        }
+
+        $esc = static function (string $val): string {
+            return htmlspecialchars($val, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
+        };
+
+        if ($route === '' && empty($lines)) {
+            return '';
+        }
+
+        // Case 1: Single-line LED header (no separate full-height route column)
+        if ($route === '' && count($lines) === 1) {
+            return '<span class="visually-hidden">LED Sign: </span>'
+                . '<span class="led-sign"><span class="led-line-single">' . $esc($lines[0]) . '</span></span>';
+        }
+
+        // Case 2: Two-line stacked LED header without a left route column
+        if ($route === '') {
+            return '<span class="visually-hidden">LED Sign: </span>'
+                . '<span class="led-sign led-sign--stacked">'
+                . '<span class="led-lines">'
+                . '<span class="led-line-top">' . $esc($lines[0]) . '</span>'
+                . '<span class="visually-hidden"> / </span>'
+                . '<span class="led-line-bottom">' . $esc($lines[1]) . '</span>'
+                . '</span>'
+                . '</span>';
+        }
+
+        // Case 3: Full-height route number on the left + 1 or 2 destination lines on the right
+        $linesHtml = '';
+        if (count($lines) >= 2) {
+            $linesHtml = '<span class="led-lines">'
+                . '<span class="led-line-top">' . $esc($lines[0]) . '</span>'
+                . '<span class="visually-hidden"> / </span>'
+                . '<span class="led-line-bottom">' . $esc($lines[1]) . '</span>'
+                . '</span>';
+        } elseif (count($lines) === 1) {
+            $linesHtml = '<span class="led-lines"><span class="led-line-single">' . $esc($lines[0]) . '</span></span>';
+        }
+
+        return '<span class="visually-hidden">LED Sign: Route </span>'
+            . '<span class="led-sign led-sign--split">'
+            . '<span class="led-route">' . $esc($route) . '</span>'
+            . ($linesHtml !== '' ? '<span class="visually-hidden"> — </span>' . $linesHtml : '')
+            . '</span>';
     }
 }
 

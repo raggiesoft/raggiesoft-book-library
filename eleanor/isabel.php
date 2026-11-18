@@ -93,6 +93,10 @@ $legacyPartRedirects = [
     '/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-one-chance-strictly-for-wesley'
         => '/katie/seventeen-senior-year-greenway-court/drunken-new-year/part-4-purple-gowns-at-the-pavilion-pomp-and-circumstance-heather-s-apology',
 
+    // Katie & Nathaniel (Path accept-heather-virginia, Era 5, Chapter 2, Part 2): Updated Stop 7 to Shenandoah Valley University (SVU)
+    '/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/summer-2003-college-tour-for-rising-junior-wesley-meeting-family-in-minnesota-stopping-brandon-cold/part-2-stops-five-through-seven-west-broad-street-at-cvu-ring-roads-at-george-wythe-cutting-northern-valley-s-open-house-short'
+        => '/katie/paths/accept-heather-virginia/virginia-domicile-three-campuses-twelve-extra-years/summer-2003-college-tour-for-rising-junior-wesley-meeting-family-in-minnesota-stopping-brandon-cold/part-2-stops-five-through-seven-west-broad-street-at-cvu-ring-roads-at-george-wythe-cutting-shenandoah-valley-s-open-house-short',
+
     // Katie & Nathaniel (Era 10, Chapter 3, Part 2): Stripped street number from Victoria Boulevard
     '/katie/across-the-rotunda-the-senate-of-virginia/the-accessibility-project-riding-every-bus-across-the-commonwealth-for-the-united-states-senate/part-2-the-jammed-ramp-at-3400-victoria-boulevard-shoreline-transit-across-the-bay-wearing-the-nfa-s-f-grade-in-fairfax'
         => '/katie/across-the-rotunda-the-senate-of-virginia/the-accessibility-project-riding-every-bus-across-the-commonwealth-for-the-united-states-senate/part-2-the-jammed-ramp-on-victoria-boulevard-shoreline-transit-across-the-bay-wearing-the-nfa-s-f-grade-in-fairfax',
@@ -900,7 +904,7 @@ $currentHeaderMenu = (!$hasValidBookSeries) ? ($basePath . '/includes/components
 require_once $basePath . '/includes/components/headers/header.php';
 
 // Inject Stardust-specific styling and logic scripts with deterministic cache-busting version
-echo '<link rel="stylesheet" href="' . $cdnBaseUrl . '/raggiesoft-books/css/reader.css?v=20261117b">';
+echo '<link rel="stylesheet" href="' . $cdnBaseUrl . '/raggiesoft-books/css/reader.css?v=20261118a">';
 echo '<script src="' . $cdnBaseUrl . '/raggiesoft-books/js/reader.js?v=20261117b" defer></script>';
 
 // Open the primary application boundary
