@@ -353,8 +353,8 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
     <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-grid.css?v=20261029f">
     <link rel="stylesheet" href="<?= $assetsUrl ?>/raggiesoft-books/library/css/stardust-engine.min.css?v=20261118a">
     <link rel="stylesheet" href="<?= $assetsUrl ?>/raggiesoft-books/library/css/theme-<?= htmlspecialchars($resolvedThemeCss) ?>.min.css?v=20261114b">
-    <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-network.css?v=20261115h">
-    <script src="<?= $assetsUrl ?>/common/js/raggiesoft-network.js?v=20261115h" defer></script>
+    <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-network.css?v=20261118a">
+    <script src="<?= $assetsUrl ?>/common/js/raggiesoft-network.js?v=20261118a" defer></script>
     <style>
         /* Native PWA Immersion Guard: Hide cross-site network bar in installed PWA display modes */
         @media (display-mode: standalone),
@@ -567,7 +567,7 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
           <li><a href="https://engineroom.raggiesoft.com" data-no-spa="true">⚙️ Engine Room</a></li>
           <li><a href="https://corporate.raggiesoft.com" data-no-spa="true">🏢 Corporate</a></li>
           <li><a href="https://storetrainer.raggiesoft.com" data-no-spa="true">💾 StoreTrainer</a></li>
-          <li><a href="https://michaelpragsdale.com" data-no-spa="true">👔 Michael P. Ragsdale</a></li>
+          <li><a href="https://michaelpragsdale.com" data-no-spa="true">👔 Portfolio &amp; Resume</a></li>
         </ul>
       </div>
     </nav>
