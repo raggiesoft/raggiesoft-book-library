@@ -1,28 +1,46 @@
 <?php
 /**
- * ============================================================================
- * ARCHITECTURE & MODULE OVERVIEW: app-header.php
- * ============================================================================
- * Purpose:
- *     Persistent Co-Branded Top Application Header Bar for RaggieSoft Book
- *     Reader (`https://books.raggiesoft.com`), mirroring the architectural
- *     layout of The Listening Room (`https://music.raggiesoft.com`).
+ * =============================================================================
+ * PLAIN-ENGLISH OVERVIEW FOR NEW DEVELOPERS (100-LEVEL JAVASCRIPT / WEB INTRO)
+ * =============================================================================
+ * File: includes/components/headers/app-header.php
+ * App:  RaggieSoft Book Reader (`https://books.raggiesoft.com`)
  *
- * Design Decisions & Future Maintenance:
- *     1. Co-Branded "App + Imprint" Identity:
- *        - Prominently displays the RaggieSoft Book Reader App Icon (`/icons/icon-192.png?v=4`)
- *          on the left alongside "RaggieSoft Book Reader" and the Ocean View Archives
- *          keyhole-compass imprint crest ("by Ocean View Archives").
- *     2. Adaptive Theme & WCAG 2.1 AA Compliance:
- *        - Automatically adapts to Light Mode, Dark Mode, Sepia, and Dark-Sepia
- *          via `--rs-*` CSS custom properties and `@media (prefers-color-scheme: dark)`.
- *     3. Desktop & Tablet Navigation + PWA Window Drag Support:
- *        - Provides instant SPA navigation links (`Home`, `Library`, `Illustrations`,
- *          `Bookmarks`, `Settings`) with active route highlighting and respects
- *          iOS Dynamic Island safe-area insets.
- * ============================================================================
+ * WHAT IS THIS FILE?
+ *   This component renders the persistent **Co-Branded Top Application Header Bar**
+ *   (`<header id="stardust-header" class="rs-book-app-header">`) displayed at the
+ *   top of all platform discovery screens (`/`, `/library`, `/arcs`, `/illustrations`,
+ *   `/stats`, `/bookmarks`, `/settings`, `/about`, `/accessibility`).
+ *   (Note: When reading an actual novel chapter inside `sophia/oliver.php`,
+ *   `eleanor/isabel.php` omits this top bar so 100% of vertical screen height
+ *   is dedicated to the book prose and `sophia/sidebar.php`!)
+ *
+ * WHAT FEEDS INTO IT?
+ *   - `$requestUri`: Active path from `eleanor/isabel.php` (used to highlight
+ *     the current nav link with `.is-active` and `aria-current="page"`).
+ *   - `$cdnBaseUrl`: CDN base URL (`https://assets.raggiesoft.com`) for loading
+ *     the Ocean View Archives keyhole-compass SVG imprint crest.
+ *
+ * KEY CSS & ACCESSIBILITY CONCEPTS DEMONSTRATED HERE:
+ *   1. **CSS Specificity (`#stardust-header.rs-book-app-header`)**:
+ *      Combining an ID selector (`#stardust-header`) with a class selector
+ *      (`.rs-book-app-header`) guarantees our header styles win over generic
+ *      `#stardust-header` rules in external stylesheets.
+ *   2. **Atomic Scoped CSS Custom Properties (`--rs-hdr-*`)**:
+ *      Instead of scattering color overrides across 10 child selectors, we define
+ *      11 `--rs-hdr-*` variables on the `<header>` root and switch all 11 together
+ *      for `theme-light`, `theme-sepia`, `theme-dark`, `theme-dark-sepia`, `theme-auto`,
+ *      and `theme-sepia-system`—guaranteeing >= 7:1 WCAG AAA text contrast in every mode!
+ *   3. **Responsive Desktop/Mobile Navigation Swap (`768px` Breakpoint)**:
+ *      - Below `768px` (phones): hides `.rs-book-header-nav` links in the top bar
+ *        so `bottom-nav.php` handles thumb-friendly bottom navigation.
+ *      - At `768px` and above (tablets/desktops): shows `.rs-book-header-nav` and
+ *        hides `.ios-tab-bar`.
+ * =============================================================================
  */
+
 global $requestUri, $cdnBaseUrl;
+// Normalize the active path so `/`, `/index.php`, and `/isabel.php` all highlight the "Home" link
 $headerActivePath = rtrim((string)($requestUri ?? strtok($_SERVER['REQUEST_URI'] ?? '/', '?')), '/');
 if ($headerActivePath === '' || $headerActivePath === '/index.php' || $headerActivePath === '/isabel.php') {
     $headerActivePath = '/';
@@ -33,17 +51,10 @@ $headerAssetsUrl = !empty($cdnBaseUrl) ? rtrim($cdnBaseUrl, '/') : 'https://asse
     /* =========================================================================
        PERSISTENT CO-BRANDED APPLICATION HEADER BAR (#stardust-header.rs-book-app-header)
        =========================================================================
-       Architectural & Accessibility Notes:
-       1. Uses `#stardust-header.rs-book-app-header` (ID + class specificity)
-          so that legacy `#stardust-header { background: var(--rs-surface); }`
-          rules in `stardust-engine.min.css` never override the header's
-          theme-coordinated surface and text variables.
-       2. Binds background, border, brand title/subtitle, crest badge, and
-          navigation link colors to atomic `--rs-hdr-*` custom properties on the
-          header root so background and foreground colors switch together across
-          all 6 reading themes (`auto`, `sepia-system`, `light`, `sepia`, `dark`,
-          `dark-sepia`) with >= 7:1 WCAG AAA text contrast and >= 3:1 UI state
-          contrast.
+       Default palette below is Ocean View Midnight (Dark Mode), overridden cleanly
+       below for Dark-Sepia, Crisp Light, and Warm Sepia reading modes.
+       `backdrop-filter: saturate(180%) blur(14px)` creates a frosted-glass bar as
+       content scrolls underneath `position: sticky; top: 0;`.
        ========================================================================= */
     #stardust-header.rs-book-app-header {
         --rs-hdr-bg: rgba(9, 34, 42, 0.96);
@@ -67,17 +78,19 @@ $headerAssetsUrl = !empty($cdnBaseUrl) ? rtrim($cdnBaseUrl, '/') : 'https://asse
         min-height: 60px;
         background: var(--rs-hdr-bg) !important;
         border-bottom: 1px solid var(--rs-hdr-border) !important;
+        /* `env(safe-area-inset-top)` adds extra top clearance on notched / Dynamic Island devices */
         padding: max(0.55rem, calc(env(safe-area-inset-top, 0px) + 0.4rem)) 1rem 0.55rem !important;
         backdrop-filter: saturate(180%) blur(14px);
         -webkit-backdrop-filter: saturate(180%) blur(14px);
         flex-shrink: 0;
     }
 
+    /* Extra top clearance when running as a full-screen installed iOS Home Screen PWA (`black-translucent` status bar) */
     html[data-os="ios"].is-pwa-standalone #stardust-header.rs-book-app-header {
         padding-top: max(3.25rem, calc(env(safe-area-inset-top, 0px) + 0.5rem)) !important;
     }
 
-    /* Dark Sepia (`theme-dark-sepia` and `theme-sepia-system` under OS Dark Mode) */
+    /* Theme Variant 1: Dark Sepia (`theme-dark-sepia` and `theme-sepia-system` under OS Dark Mode) */
     body.theme-dark-sepia #stardust-header.rs-book-app-header {
         --rs-hdr-bg: rgba(31, 27, 22, 0.96);
         --rs-hdr-border: #4a4135;
@@ -107,7 +120,7 @@ $headerAssetsUrl = !empty($cdnBaseUrl) ? rtrim($cdnBaseUrl, '/') : 'https://asse
         }
     }
 
-    /* Crisp Light (`theme-light` and `theme-auto` under OS Light Mode) */
+    /* Theme Variant 2: Crisp Light (`theme-light` and `theme-auto` under OS Light Mode) */
     body.theme-light #stardust-header.rs-book-app-header {
         --rs-hdr-bg: rgba(255, 255, 255, 0.96);
         --rs-hdr-border: #cbd5e1;
@@ -138,7 +151,7 @@ $headerAssetsUrl = !empty($cdnBaseUrl) ? rtrim($cdnBaseUrl, '/') : 'https://asse
         }
     }
 
-    /* Classic Sepia & Adaptive Sepia under OS Light Mode (`theme-sepia` & light `theme-sepia-system`) */
+    /* Theme Variant 3: Classic Warm Sepia & Adaptive Sepia under OS Light Mode */
     body.theme-sepia #stardust-header.rs-book-app-header {
         --rs-hdr-bg: rgba(244, 236, 216, 0.96);
         --rs-hdr-border: #c8b798;
@@ -168,6 +181,7 @@ $headerAssetsUrl = !empty($cdnBaseUrl) ? rtrim($cdnBaseUrl, '/') : 'https://asse
         }
     }
 
+    /* Inner Flexbox container centering brand lockup (left) and nav links (right) up to 1200px */
     .rs-book-app-header-inner {
         width: 100%;
         max-width: 1200px;
@@ -190,6 +204,7 @@ $headerAssetsUrl = !empty($cdnBaseUrl) ? rtrim($cdnBaseUrl, '/') : 'https://asse
     .rs-book-brand-link:hover {
         text-decoration: none !important;
     }
+    /* `:focus-visible` shows a crisp 2px outline ONLY when navigating via keyboard (`Tab`), not mouse clicks */
     .rs-book-brand-link:focus-visible,
     .rs-book-header-link:focus-visible {
         outline: 2px solid var(--rs-hdr-focus-ring);
@@ -281,7 +296,7 @@ $headerAssetsUrl = !empty($cdnBaseUrl) ? rtrim($cdnBaseUrl, '/') : 'https://asse
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
     }
 
-    /* Windows High Contrast / Forced Colors Mode Fallback */
+    /* Windows High Contrast / Forced Colors Mode (`Canvas`, `CanvasText`, `Highlight`, `HighlightText` are OS system color keywords) */
     @media (forced-colors: active) {
         #stardust-header.rs-book-app-header {
             background: Canvas !important;
@@ -294,6 +309,8 @@ $headerAssetsUrl = !empty($cdnBaseUrl) ? rtrim($cdnBaseUrl, '/') : 'https://asse
         }
     }
 
+    /* Responsive Breakpoint Handoff (`767px` vs `768px`):
+       Phones use `bottom-nav.php`; Tablets & Desktops use `.rs-book-header-nav`! */
     @media (max-width: 767px) {
         .rs-book-header-nav {
             display: none;
@@ -306,8 +323,10 @@ $headerAssetsUrl = !empty($cdnBaseUrl) ? rtrim($cdnBaseUrl, '/') : 'https://asse
     }
 </style>
 
+<!-- Semantic `<header>` landmark with Co-Branded App + Imprint Lockup and Global `<nav>` -->
 <header id="stardust-header" class="rs-book-app-header" aria-label="RaggieSoft Book Reader Application Header">
     <div class="rs-book-app-header-inner">
+        <!-- Left Side: App Icon + "RaggieSoft Book Reader / by Ocean View Archives" -->
         <a href="/" class="rs-book-brand-link" title="RaggieSoft Book Reader — Ocean View Archives Home">
             <div class="rs-book-brand-icon-wrap">
                 <img src="/icons/icon-192.png?v=4" alt="RaggieSoft Book Reader App Icon">
@@ -315,12 +334,14 @@ $headerAssetsUrl = !empty($cdnBaseUrl) ? rtrim($cdnBaseUrl, '/') : 'https://asse
             <div class="rs-book-brand-text">
                 <span class="rs-book-brand-title">RaggieSoft Book Reader</span>
                 <span class="rs-book-brand-subtitle">
+                    <!-- Decorative crest next to text: `alt=""` + `aria-hidden="true"` prevents redundant screen-reader speech -->
                     <img src="<?= htmlspecialchars($headerAssetsUrl) ?>/raggiesoft-books/images/logos/oceanview-archives.svg" alt="" aria-hidden="true">
                     <span>by Ocean View Archives</span>
                 </span>
             </div>
         </a>
 
+        <!-- Right Side: Desktop & Tablet SPA Navigation Bar -->
         <nav class="rs-book-header-nav" aria-label="Book Reader Global Navigation">
             <a href="/" class="rs-book-header-link <?= $headerActivePath === '/' ? 'is-active' : '' ?>" <?= $headerActivePath === '/' ? 'aria-current="page"' : '' ?>>
                 <i class="ph-fill ph-house"></i>
@@ -353,4 +374,3 @@ $headerAssetsUrl = !empty($cdnBaseUrl) ? rtrim($cdnBaseUrl, '/') : 'https://asse
         </nav>
     </div>
 </header>
-

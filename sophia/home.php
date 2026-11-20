@@ -1,34 +1,55 @@
 <?php
-/**
+/*
  * =============================================================================
- * Architecture & Maintenance Guide: sophia/home.php
+ * READ-ALONG TEACHING GUIDE: sophia/home.php
  * =============================================================================
- * Purpose:
- *     Official Home Page for Ocean View Archives (https://books.raggiesoft.com/).
- *     Introduces visitors to the official literary imprint of RaggieSoft Media,
- *     offers a prominent front-and-center gateway to the Full Library (/library),
- *     showcases the three flagship literary universes (Contemporary Fiction,
- *     Project: KNOX, and The Silver Gauntlet of Aethel), and explains the
- *     Stardust Engine Book Reader PWA and automated typesetting pipeline powered
- *     by Paige (`paige.php`).
+ * WHAT PAGE THIS FILE RENDERS:
+ *     This template renders `https://books.raggiesoft.com/` — the front-door
+ *     Home Page for **Ocean View Archives** and the **RaggieSoft Book Reader**!
  *
- * Design Principles:
- *     - Dedicated Home Page (Zero Discover Clutter): Replaces the retired
- *       Discover / hybrid dashboard view with a clean, authoritative literary
- *       imprint homepage and direct entry to `/library`.
- *     - Optional Resume Reading Bar: If returning readers have an active reading
- *       session in `localStorage` (`rs-last-read`), a compact "Continue Reading"
- *       banner appears automatically without showing an empty state to new visitors.
- *     - WCAG 2.1 AA Compliance: Enforces >= 4.5:1 text contrast across both
- *       Light Mode and Dark Mode (`prefers-color-scheme`) as well as the
- *       Deep Coastal Teal (#0F4C5C) & Metallic Bronze (#E3B27C) Imprint Hero.
+ * HOW IT CONNECTS TO `eleanor/isabel.php` & `paige.php`:
+ *     1. When a visitor navigates to `/`, `eleanor/isabel.php` sets `$isHome = true`,
+ *        injects `$cdnBaseUrl`, `$siteName`, and `$requestUri`, renders the
+ *        global `<head>` + top application header bar (`header.php` + `app-header.php`),
+ *        and `require_once`s this file (`sophia/home.php`).
+ *     2. Here in PHP, we load TWO static JSON manifests compiled by `paige.php`:
+ *          - `catalog.json`: Gives us the live `$books` array (for `$volumeCount`
+ *            and for matching cover art in the client-side "Resume Reading" card).
+ *          - `library-stats.json`: Gives us live story words, curated lore words,
+ *            combined page estimates, and 90,000-word novel equivalents.
+ *
+ * WHAT THE READER SEES & INTERACTS WITH:
+ *     1. Co-Branded Hero Banner pairing the RaggieSoft Book Reader App Icon with
+ *        the Ocean View Archives Imprint Crest.
+ *     2. Conditional **Active Reading Session Card** (`#rs-home-jump-back-outer`):
+ *        hidden by default (`display: none`) for first-time visitors, and revealed
+ *        automatically by JavaScript whenever `localStorage['rs-last-read']` holds
+ *        a chapter in progress!
+ *     3. Full Library Gateway Card (`/library`, `/illustrations`, `/stats`,
+ *        `/bookmarks`, `/settings`) + Live Corpus Telemetry Strip.
+ *     4. 6-Card Featured Showcase Grid (*The Eleventh Child*, *The Rachel Narrative*,
+ *        *Library-Wide Table of Illustrations*, *The Stardust Engine*, *Escape Velocity:
+ *        Ad Astra*, and *Contemporary Fiction Library*).
+ *     5. 3-Pillar Reader Feature Overview (Dyslexia-friendly typography, Offline PWA
+ *        caching, and Engine Room Records companion scores) + Editorial Callout.
+ *
+ * 100-LEVEL JSON-LD & STORAGE CONCEPTS TO NOTICE HERE:
+ *     - Right below `?>`, `<script type="application/ld+json">` embeds Schema.org
+ *       structured data for search engines. Unlike executable `<script>` blocks,
+ *       JSON-LD MUST be 100% strict JSON (which forbids `//` or `/*` comments!),
+ *       so comments explaining JSON-LD always go right outside the `<script>` tag.
+ *     - At the bottom of the file, notice how `sessionStorage` and `localStorage`
+ *       work together when `'rs-launch-behavior'` is set to `'resume'`:
+ *       `localStorage` persists forever across restarts, whereas `sessionStorage`
+ *       clears when the tab closes—preventing an infinite redirect loop if the
+ *       reader intentionally clicks the "Home" button later during the same session!
  * =============================================================================
  */
 
-// Import necessary variables provided by the Stardust routing engine (Isabel)
+// Import shared routing state provided by `eleanor/isabel.php`.
 global $cdnBaseUrl, $siteName, $requestUri;
 
-// Fetch the master catalog (preferring local workspace catalog.json when available, falling back to CDN)
+// Step 1: Load the master `catalog.json` (preferring local NVMe workspace disk, falling back to CDN).
 $localCatalogPath = dirname(__DIR__, 4) . '/raggiesoft-assets/raggiesoft-books/books/catalog.json';
 $catalogUrl = $cdnBaseUrl . '/raggiesoft-books/books/catalog.json';
 $catalogData = is_file($localCatalogPath)
@@ -41,7 +62,7 @@ if ($catalogData) {
 }
 $volumeCount = count($books);
 
-// Fetch the dynamically compiled library-stats.json manifest (generated by paige.php)
+// Step 2: Load `data/library-stats.json` (compiled by `paige.php`) for live word/page counts on the homepage.
 $localStatsPath = dirname(__DIR__) . '/data/library-stats.json';
 $cdnStatsUrl = $cdnBaseUrl . '/raggiesoft-books/json/library-stats.json';
 $rawStatsJson = is_file($localStatsPath)
@@ -56,7 +77,11 @@ $homeTotalPages = (int)($homeTotals['total_combined_pages'] ?? ($homeTotals['est
 $homeNovelEquivs = (float)($homeTotals['total_novel_equivalents'] ?? ($homeTotals['standard_90k_novel_equivalents_story'] ?? ($homeStoryWords > 0 ? round($homeStoryWords / 90000, 1) : 0)));
 ?>
 
-<!-- ARCHITECTURE: Semantic Publisher & CollectionPage JSON-LD metadata -->
+<!--
+  STRUCTURED DATA (`application/ld+json`):
+  Provides machine-readable Schema.org `Publisher` and `CollectionPage` metadata to search
+  engines. Kept comment-free inside the tag because strict JSON syntax does not allow comments.
+-->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -890,24 +915,39 @@ $homeNovelEquivs = (float)($homeTotals['total_novel_equivalents'] ?? ($homeTotal
     </div>
 </div>
 
-<!-- Render bottom tab bar component -->
+<!-- Render persistent mobile/tablet bottom tab navigation bar -->
 <?php include __DIR__ . "/../includes/components/bottom-nav.php"; ?>
 
 <!-- 
-  CLIENT-SIDE RESUME READING RESOLUTION
-  Checks localStorage for an active reading session ('rs-last-read') and reveals
-  the compact Continue Reading banner if present.
+  CLIENT-SIDE "RESUME READING" & LAUNCH-BEHAVIOR CONTROLLER:
+  100-Level JavaScript Walkthrough:
+  1. `JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT` tells PHP's `json_encode()`
+     to hex-escape `<`, `>`, `&`, `'`, and `"` so no book string could ever accidentally close
+     the surrounding `</script>` tag!
+  2. Checks `'rs-launch-behavior'` (configured in `sophia/settings.php`): if set to `'resume'`,
+     automatically redirects (`window.location.replace(lastRead)`) on initial launch—while
+     setting `sessionStorage.setItem('rs-prevent-auto-redirect', 'true')` so clicking "Home"
+     later in the same browser session stays on `/` instead of bouncing right back out!
+  3. Extracts the book's `<seriesSlug>` from the first URL segment of `lastRead` (e.g.,
+     `"/rachel/..."` -> `"rachel"`), looks up its title and 2:3 cover in `catalog`, and reveals
+     `#rs-home-jump-back-outer` inside the Hero Banner!
 -->
 <script>
 (function() {
+    // Bridge PHP `$books` catalog array safely into JavaScript
     const catalog = <?php echo json_encode($books, JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?: '[]'; ?>;
     const lastRead = localStorage.getItem('rs-last-read');
     const launchBehavior = localStorage.getItem('rs-launch-behavior') || 'home';
+
+    // Optional one-time launch redirect when user selected "Resume Last Read Book" in Settings
     if (launchBehavior === 'resume' && lastRead && window.location.pathname === '/' && !sessionStorage.getItem('rs-prevent-auto-redirect')) {
         sessionStorage.setItem('rs-prevent-auto-redirect', 'true');
         window.location.replace(lastRead);
     }
+
+    // Populate and unhide the "Welcome Back • Active Reading Session" card if `rs-last-read` exists
     if (lastRead) {
+        // Split URL path on `'/'` and discard empty strings (`"/aubrie/era-1/..."` -> `["aubrie", "era-1", ...]`)
         const parts = lastRead.split('/').filter(p => p.length > 0);
         if (parts.length >= 1) {
             const seriesSlug = parts[0];

@@ -1,62 +1,107 @@
 <?php
 /**
  * =============================================================================
- * Architecture & Maintenance Guide: isabel.php
+ * PLAIN-ENGLISH OVERVIEW FOR NEW DEVELOPERS (100-LEVEL JAVASCRIPT / WEB INTRO)
  * =============================================================================
- * Purpose:
- *     This script acts as the "Master Router" for the Stardust Engine. Named 
- *     'Isabel' within the narrative lore, it intercepts all incoming requests, 
- *     resolves them against static JSON route manifests, sets up OpenGraph 
- *     metadata, and finally orchestrates the assembly of the page using various 
- *     sub-components (Eleanor, Sophia, Oliver).
+ * File: eleanor/isabel.php
+ * App:  RaggieSoft Book Reader (`https://books.raggiesoft.com`)
  *
- * Design Principles:
- *     - Single Entry Point (Front Controller): All traffic is directed here 
- *       via web server rewrites (e.g., Nginx or Apache).
- *     - Decoupled State: Routing definitions (`$routeData`) and narrative 
- *       configurations (`$toc_manifest`) are loaded from static JSON files. This 
- *       removes the need for a database.
- *     - SEO Optimization: Automatically parses Markdown frontmatter to inject 
- *       page-specific OpenGraph tags (`og:title`, `og:image`, etc.) for rich 
- *       social sharing.
+ * WHAT IS THIS FILE? ("THE FRONT CONTROLLER / MASTER ROUTER")
+ *   If you have only built static HTML/JS websites before, you might expect a
+ *   URL like `https://books.raggiesoft.com/katie/toc` to correspond to a physical
+ *   folder named `/katie/toc/index.html` on the server. Instead, RaggieSoft Book
+ *   Reader has over 2,500 URLs—and ZERO database servers!
  *
- * Maintenance Notes:
- *     - If the internal Stardust file structure changes, verify that the 
- *       `require_once` paths at the bottom of the script are still accurate.
- *     - The Markdown parser is intentionally naive. It assumes the YAML frontmatter 
- *       is wrapped in standard `---` block boundaries. If you introduce complex 
- *       YAML, you may need a dedicated YAML parsing library.
+ *   How does one PHP file serve 2,500+ clean URLs?
+ *   1. On the DigitalOcean server, Nginx (the web server software) uses a rule
+ *      called `try_files`: if a requested URL matches a real static file on disk
+ *      (like `/sw.js`, `/favicon.ico`, or `/scripts/pwa.js`), Nginx serves that
+ *      file directly. Otherwise, Nginx forwards EVERY request to THIS single PHP
+ *      script: `eleanor/isabel.php`!
+ *   2. In web architecture, this pattern is called a **Front Controller** (similar
+ *      to `app.get('*', ...)` in an Express.js server). Notice we deliberately avoid
+ *      naming it `index.php` so automated bots scanning for WordPress/PHP defaults
+ *      don't find predictable entrypoints.
+ *   3. In Ocean View Archives lore, the platform modules are named after the four
+ *      OVA Siblings:
+ *        - **Eleanor** (`eleanor/`): The public-facing web gateway directory.
+ *        - **Isabel** (`eleanor/isabel.php`): This Master Router!
+ *        - **Sophia** (`sophia/`): The protected vault of page templates (`home.php`,
+ *          `catalog.php`, `story-arcs.php`, `sidebar.php`, etc.).
+ *        - **Oliver** (`sophia/oliver.php`): The dedicated Markdown novel reader pane.
+ *
+ * WHAT FEEDS INTO `isabel.php`?
+ *   - `$_SERVER['REQUEST_URI']`: The URL path the visitor requested (e.g. `/rachel`).
+ *   - `$_GET` & `$_COOKIE`: Query parameters (e.g. `?path=...`) and saved Story
+ *     Crossroads choices (`rs_cx_<bookSlug>`).
+ *   - Static JSON manifests compiled ahead-of-time by Paige (`paige.php`):
+ *       * `data/settings.json` (CDN base URL & site name)
+ *       * `data/routes/<seriesSlug>.json` (maps clean URLs -> `.md` file paths)
+ *       * `raggiesoft-assets/raggiesoft-books/books/<seriesSlug>/toc.json` (full
+ *         table of contents, word counts, illustrations, and Story Crossroads graph)
+ *   - Raw `.md` manuscript files (prefetched from local NVMe disk or CDN so SEO
+ *     tags in `<head>` can read YAML frontmatter before the body renders).
+ *
+ * WHAT VISIBLE UI / BEHAVIOR DOES IT PRODUCE?
+ *   1. Sends HTTP `301 Moved Permanently` redirects for legacy or trailing-slash
+ *      URLs so bookmarks never break and Google never indexes duplicate URLs.
+ *   2. Sends a real HTTP `404 Not Found` status code (`http_response_code(404)`)
+ *      when a book or chapter doesn't exist.
+ *   3. Resolves interactive **Story Crossroads** choices (walking the branching
+ *      segment graph from `__root__`) so the sidebar and Next/Previous buttons
+ *      reflect the reader's chosen narrative route.
+ *   4. Computes unique `<title>`, `<meta name="description">`, and OpenGraph /
+ *      Twitter social preview cards (`<= 60` char title, `<= 155` char description).
+ *   5. Sandwiches the matching `sophia/` view between `includes/components/headers/header.php`
+ *      and `includes/components/footers/footer.php` to output a complete HTML5 page!
+ *
+ * CRITICAL PHP RULE ("HEADERS ALREADY SENT"):
+ *   In HTTP, response headers (`header(...)`, `http_response_code(...)`, `setcookie(...)`)
+ *   MUST be sent BEFORE a single byte of HTML or whitespace leaves the server.
+ *   That is why `<?php` sits on Line 1, Column 1 with zero spaces above it, and no
+ *   `echo` or `require_once header.php` happens until line ~920!
  * =============================================================================
  */
 
-// Stardust Engine Library: Master Router
-// The OVA Siblings: Eleanor (Public Entry), Isabel (Router), Sophia (Protected Vault), Oliver (Viewer)
-// Note: Use `Cache-Control: no-cache` (never `no-store`) so browsers revalidate fresh HTML
-// while preserving instant Back-Forward Cache (bfcache) restoration across narrative chapters.
+// =============================================================================
+// STEP 1: SEND GLOBAL HTTP RESPONSE HEADERS
+// =============================================================================
+// Tell the browser the response is UTF-8 HTML5.
+// Why `Cache-Control: no-cache` instead of `no-store`?
+//   - `no-cache` tells the browser: "Check with the server (`304 Not Modified` / fresh HTML)
+//     before reusing cached HTML so newly published chapters show up right away,
+//     BUT allow the browser's instant Back/Forward Cache (bfcache) to work!"
 header('Content-Type: text/html; charset=utf-8');
 header('Cache-Control: no-cache');
 
-// Strip any query parameters to match exact semantic route paths
+// =============================================================================
+// STEP 2: PARSE & CANONICALIZE THE INCOMING URL (`301` PERMANENT REDIRECTS)
+// =============================================================================
+// `$_SERVER` is a built-in PHP associative array containing web-server environment info.
+// `parse_url(..., PHP_URL_PATH)` strips query strings (turning `/katie?arc=foo` into `/katie`),
+// just like `new URL(req.url, 'https://...').pathname` in JavaScript!
 $rawPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
 $requestUri = (is_string($rawPath) && $rawPath !== '') ? $rawPath : '/';
 
-// Normalize legacy `/books/<series>` or `/raggiesoft-books/<series>` deep-links
-// (e.g., `/books/stardust-engine`, `/raggiesoft-books/ad-astra`) to the canonical
-// root-level series route (`/<series>`) with a permanent 301 redirect.
+// 2A. Redirect old `/books/<series>` or `/raggiesoft-books/<series>` URLs to `/<series>`.
+//     HTTP status `301` means "Moved Permanently"—browsers and search engines automatically
+//     update their saved URL to the new `Location:` header. `exit;` stops PHP immediately.
 if (preg_match('#^/(?:raggiesoft-)?books/(.+)$#', $requestUri, $legacyBookMatch)) {
     $cleanLegacyTarget = rtrim(ltrim($legacyBookMatch[1], '/'), '/');
     header('Location: /' . $cleanLegacyTarget, true, 301);
     exit;
 }
 
-// Canonicalize non-root trailing slashes (`/<slug>/` -> `/<slug>`) with a permanent 301 redirect
-// so search engines and social crawlers never index duplicate trailing-slash URLs.
+// 2B. Strip trailing slashes on every route except the homepage `/` (`/katie/` -> `/katie`)
+//     so search engines never treat `/katie` and `/katie/` as two competing duplicate pages.
 if ($requestUri !== '/' && str_ends_with($requestUri, '/')) {
     header('Location: ' . rtrim($requestUri, '/'), true, 301);
     exit;
 }
 
-// Canonicalize duplicate platform aliases to their single primary URLs via 301 redirect
+// 2C. Canonicalize friendly or legacy platform aliases to their single official URL.
+//     Notice PHP's associative array syntax `['key' => 'value']`—this works just like
+//     a JavaScript `const platformAliasRedirects = { '/catalog': '/library', ... }` lookup map!
 $platformAliasRedirects = [
     '/index.php'              => '/',
     '/isabel.php'             => '/',
@@ -74,19 +119,13 @@ if (isset($platformAliasRedirects[$requestUri])) {
 }
 
 /**
- * Legacy Part-Slug Redirect Map (`$legacyPartRedirects`)
+ * 2D. Legacy Part-Slug Redirect Map (`$legacyPartRedirects`)
  * -----------------------------------------------------------------------------
- * Architectural Purpose:
- *     Preserves external bookmarks, search-engine citations, and historical deep-links
- *     whenever a Part's YAML `title:` is updated to strip real-world street numbers
- *     or real-world university building names (such as Old Dominion University's
- *     `1016 Hampton House`, replaced in-universe by Virginia Dominion University's
- *     `Harbor House`).
- *
- * Maintenance Note:
- *     Keys and target paths omit trailing slashes; `$normalizedRequestUri` trims any
- *     trailing slash prior to lookup so both `/path` and `/path/` issue a clean
- *     HTTP 301 Permanent Redirect before route JSON resolution executes.
+ * When a chapter Part's YAML `title:` is edited (for example, to remove a real-world
+ * street number or replace a real-world university dorm name with an in-universe VDU
+ * landmark), `paige.php` generates a new URL slug from the updated title.
+ * Mapping `oldSlug => newSlug` here ensures old links and bookmarks 301-redirect
+ * in O(1) constant time (`isset(...)` hash lookup) instead of hitting a 404 page!
  */
 $legacyPartRedirects = [
     // Katie & Nathaniel (Era 4 legacy slugs redirected to Graduation 2003 & Ten-Campus Summer Tour mainline)
@@ -134,23 +173,28 @@ $legacyPartRedirects = [
         => '/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/from-cchr-to-vdu-the-upperclass-gih-pilot-apartment/part-3-the-only-gih-pair-in-building-2-harbor-house-the-ra-s-look-in-the-hallway-the-1st-floor-laundry-room',
 ];
 
-// Normalize trailing slash (while preserving root `/`) and execute O(1) hash lookup for renamed Part slugs
+// Check if the requested path is in `$legacyPartRedirects` and issue an instant 301 redirect if so.
 $normalizedRequestUri = ($requestUri !== '/') ? rtrim($requestUri, '/') : '/';
 if (isset($legacyPartRedirects[$normalizedRequestUri])) {
     header('Location: ' . $legacyPartRedirects[$normalizedRequestUri], true, 301);
     exit;
 }
 
-// Resolve the absolute base directory of the server to ensure reliable includes
+// =============================================================================
+// STEP 3: RESOLVE FILESYSTEM PATHS & GLOBAL SETTINGS (`data/settings.json`)
+// =============================================================================
+// Since `isabel.php` lives inside `subdomains/books/eleanor/`, going up one folder (`..`)
+// lands at the root of the `subdomains/books` web app! `realpath()` resolves `..` cleanly.
 $basePath = realpath(__DIR__ . '/../');
 
-// ---------------------------------------------------------
-// ISABEL'S ROUTING & CANONICAL SEO METADATA LOGIC
-// ---------------------------------------------------------
-
 /**
- * Cleanly truncates text on a word boundary for OpenGraph/Twitter titles (<= 60 chars)
- * and meta descriptions (<= 155 chars) without chopping mid-word.
+ * Helper Closure: `$truncateSeoText(string $text, int $maxChars): string`
+ * -----------------------------------------------------------------------------
+ * Search engines and social cards (Discord, iMessage, X/Twitter, LinkedIn) cut off
+ * titles longer than ~60 characters and descriptions longer than ~155 characters.
+ * This anonymous function strips HTML tags, collapses extra spaces, and trims at the
+ * last whole word boundary (`mb_strrpos` = multi-byte UTF-8 `lastIndexOf(' ')`)
+ * before appending a clean Unicode ellipsis `…`.
  */
 $truncateSeoText = static function (string $text, int $maxChars): string {
     $clean = trim((string)preg_replace('/\s+/', ' ', strip_tags(html_entity_decode($text, ENT_QUOTES | ENT_HTML5, 'UTF-8'))));
@@ -165,12 +209,13 @@ $truncateSeoText = static function (string $text, int $maxChars): string {
     return rtrim($cut, " \t\n\r\0\x0B.,;:-—") . '…';
 };
 
-// Establish default page configuration payload
+// Default configuration array for the current request (will be merged with route JSON data below).
 $pageConfig = [
     'theme' => 'raggiesoft-books'
 ];
 
-// Attempt to load global Master Settings from the local data directory
+// Read `data/settings.json` (`json_decode(..., true)` works like `JSON.parse()` in JS,
+// where `true` tells PHP to return associative arrays instead of `stdClass` objects).
 $settingsFile = $basePath . '/data/settings.json';
 if (file_exists($settingsFile)) {
     $settings = json_decode((string)file_get_contents($settingsFile), true);
@@ -181,13 +226,18 @@ if (file_exists($settingsFile)) {
     $siteName = 'Ocean View Archives';
 }
 
-// Workspace server root (`/Users/michael/Developer/raggiesoft-servers` locally, `/var/www` on Droplet)
-// Resolve sibling server root across both macOS dev (`.../raggiesoft-servers`) and DigitalOcean (`/var/www`)
+// Locate the parent server root containing sibling `raggiesoft-assets` on disk:
+//   - Local macOS dev: `/Users/michael/Developer/raggiesoft-servers` (3 levels up from `subdomains/books`)
+//   - Production DigitalOcean Droplet: `/var/www` (1 level up from `/var/www/raggiesoft-book-library`)
+// Reading local NVMe disk first avoids making round-trip HTTPS calls to the CDN during server-side rendering!
 $localServerRoot = is_dir(dirname($basePath, 3) . '/raggiesoft-assets')
     ? dirname($basePath, 3)
     : (is_dir(dirname($basePath, 1) . '/raggiesoft-assets') ? dirname($basePath, 1) : dirname($basePath, 3));
 
-// 1. Evaluate top-level platform routes FIRST before checking narrative book slugs
+// =============================================================================
+// STEP 4: MATCH TOP-LEVEL PLATFORM ROUTES FIRST (`/`, `/library`, `/arcs`, ...)
+// =============================================================================
+// Boolean flags tracking which top-level screen (if any) the visitor requested.
 $isCatalog = false;
 $isHome = false;
 $isStoryArcs = false;
@@ -252,7 +302,12 @@ if ($requestUri === '/') {
     $pageConfig['title'] = 'Welcome';
 }
 
-// 2. Resolve Narrative Book Series Routes & Enforce Canonical 301 / HTTP 404 Semantics
+// =============================================================================
+// STEP 5: RESOLVE NARRATIVE BOOK SERIES ROUTES (`data/routes/<seriesSlug>.json`)
+// =============================================================================
+// If the URL wasn't a top-level platform page (like `/library`), extract the first
+// path segment (`/<seriesSlug>/...`, e.g. `katie`, `rachel`, `stardust-engine`)
+// and check whether Paige compiled a route table at `data/routes/<seriesSlug>.json`.
 $seriesSlug = '';
 $routeData = [];
 $hasValidBookSeries = false;
@@ -264,9 +319,11 @@ if (!$isPlatformRoute && preg_match('#^/([^/]+)#', $requestUri, $matches)) {
     if (file_exists($routeFile)) {
         $hasValidBookSeries = true;
         $routeData = json_decode((string)file_get_contents($routeFile), true) ?? [];
+        // Every route JSON file has a `"common"` block holding shared book defaults
         $common = $routeData['common'] ?? [];
 
-        // Permanently 301-redirect legacy single-part `/part-1-<slug>` URLs to canonical `/<slug>`
+        // If a chapter has only 1 part, Paige collapses `/part-1-<slug>` to `/<slug>`.
+        // Redirect any old `/part-1-<slug>` URL to its collapsed canonical URL (`301`).
         if (strpos($requestUri, '/part-1-') !== false) {
             $strippedPart1Uri = preg_replace('#/part-1-([^/]+)$#', '/$1', $requestUri);
             if (is_string($strippedPart1Uri) && !empty($routeData[$strippedPart1Uri])) {
@@ -275,6 +332,7 @@ if (!$isPlatformRoute && preg_match('#^/([^/]+)#', $requestUri, $matches)) {
             }
         }
 
+        // Merge defaults -> `"common"` -> specific URL entry (`Object.assign({}, pageConfig, common, routeSpecific)` in JS)
         $routeSpecific = $routeData[$requestUri] ?? [];
         $pageConfig = array_merge($pageConfig, $common, $routeSpecific);
         if (empty($routeSpecific['filePath'])) {
@@ -285,23 +343,29 @@ if (!$isPlatformRoute && preg_match('#^/([^/]+)#', $requestUri, $matches)) {
                 header('Location: /' . $seriesSlug, true, 301);
                 exit;
             }
+            // Known book slug, but unknown chapter/part path inside that book -> HTTP 404!
             $isNotFound = true;
         }
     } else {
+        // First URL segment matched neither a platform route nor any `data/routes/<slug>.json` -> HTTP 404!
         $isNotFound = true;
     }
 } elseif (!$isPlatformRoute) {
     $isNotFound = true;
 }
 
+// Send a genuine HTTP `404 Not Found` status header (prevents Google "Soft-404" penalties
+// while still letting us render a friendly, themed Not Found screen inside Oliver!).
 if ($isNotFound) {
     http_response_code(404);
 }
 
-// Extract the determined theme for the current view wrapper
+// Determine which CSS theme file `header.php` should load (`raggiesoft-books` -> `theme-oceanview.min.css`)
 $currentPageTheme = $pageConfig['theme'] ?? 'raggiesoft-books';
 
-// Pre-fetch the series TOC manifest for SEO metadata, breadcrumbs, and Sidebar rendering
+// =============================================================================
+// STEP 6: LOAD BOOK TABLE OF CONTENTS (`toc.json`) & EBOOK DOWNLOAD SIZES
+// =============================================================================
 $toc_manifest = null;
 $ebookSizes = [
     'epub' => '',
@@ -310,6 +374,9 @@ $ebookSizes = [
     'text_pdf' => ''
 ];
 if ($hasValidBookSeries && $seriesSlug !== '') {
+    // Prefer instant local NVMe read if `raggiesoft-assets` sits beside this repo; fall back to CDN URL.
+    // Note: `@` before `file_get_contents` suppresses PHP warnings if a file/URL fails to open,
+    // letting us check truthiness cleanly on the next line.
     $localTocPath = $localServerRoot . '/raggiesoft-assets/raggiesoft-books/books/' . $seriesSlug . '/toc.json';
     if (is_file($localTocPath)) {
         $toc_manifestContent = @file_get_contents($localTocPath);
@@ -319,6 +386,7 @@ if ($hasValidBookSeries && $seriesSlug !== '') {
     }
     $toc_manifest = $toc_manifestContent ? json_decode($toc_manifestContent, true) : null;
 
+    // Resolve human-readable file sizes (e.g. `"14.2 MB"`) for the free EPUB/PDF download buttons
     if (!empty($routeData['common']['ebook_sizes']) && is_array($routeData['common']['ebook_sizes'])) {
         $ebookSizes = array_merge($ebookSizes, $routeData['common']['ebook_sizes']);
     } else {
@@ -337,16 +405,23 @@ if ($hasValidBookSeries && $seriesSlug !== '') {
 
 /**
  * =============================================================================
- * MULTI-CROSSROADS NARRATIVE GRAPH & DYNAMIC ACTIVE-PATH TOC RESOLVER
+ * STEP 7: MULTI-CROSSROADS NARRATIVE GRAPH & DYNAMIC ACTIVE-PATH TOC RESOLVER
  * =============================================================================
- * Supports ANY number of sequential or nested Story Crossroads per novel.
- * Persists a per-book JSON map (`rs_cx_<seriesSlug>` = `{"<cxId>":"<optId>"}`),
- * auto-hydrates ancestor `requiredChoices` on deep links, and walks `segments`
- * from `"__root__"` to build:
- *   - `$effectiveTocEras`: Merged Eras/Chapters/Parts along the active path chain
- *   - `$activeCrossroadsChain`: Ordered list of `[crossroads, chosen_option]` decisions
- *   - `$pendingFrontierCrossroads`: Next unchosen Crossroads at the TOC frontier (if any)
- *   - `$activeSegmentIdSet`: Set of active segment/path IDs for Prev/Next filtering
+ * Plain-English Explanation:
+ *   Some novels under the **RaggieSoft Story Crossroads** imprint are interactive
+ *   branching narratives where the reader makes a pivotal decision at one or more
+ *   "Crossroads" points, unlocking different story routes (`segments`).
+ *
+ *   How do we remember which route a reader picked without user accounts or a database?
+ *   1. We store a tiny JSON map in a browser cookie named `rs_cx_<seriesSlug>`
+ *      (e.g. `{"crossroads_1": "option_b"}`).
+ *   2. If a reader clicks an option link (`?path=<optId>`), resets (`?path=reset`),
+ *      or opens a shared deep-link directly into a branch (`$pageConfig['requiredChoices']`),
+ *      we update `$activeCrossroadsChoices` and persist the updated cookie via `setcookie()`.
+ *   3. Finally, a `while` loop walks the directed graph of story segments starting at
+ *      `"__root__"`, merging Eras/Chapters along the reader's chosen options until it
+ *      either reaches the end of the novel or stops at the next unchosen Crossroads
+ *      (`$pendingFrontierCrossroads`)!
  */
 $seriesCrossroadsList      = is_array($toc_manifest['crossroads'] ?? null) ? $toc_manifest['crossroads'] : [];
 $seriesPathsMap            = is_array($toc_manifest['paths'] ?? null) ? $toc_manifest['paths'] : [];
@@ -364,6 +439,7 @@ if ($hasValidBookSeries && $seriesSlug !== '' && !empty($seriesCrossroadsList) &
     $cxMapCookieName    = 'rs_cx_' . $safeBookCookieSlug;
     $legacyCookieName   = 'rs_path_' . $safeBookCookieSlug;
 
+    // Index Crossroads definitions by `id` for fast lookup
     $crossroadsById = [];
     foreach ($seriesCrossroadsList as $cxDef) {
         if (!empty($cxDef['id'])) {
@@ -371,7 +447,7 @@ if ($hasValidBookSeries && $seriesSlug !== '' && !empty($seriesCrossroadsList) &
         }
     }
 
-    // 1. Load saved multi-crossroads choices map from cookie
+    // 7A. Load saved multi-crossroads choices map from `$_COOKIE` (with backwards-compatible fallback)
     if (!empty($_COOKIE[$cxMapCookieName])) {
         $decodedCookie = json_decode((string)$_COOKIE[$cxMapCookieName], true);
         if (is_array($decodedCookie)) {
@@ -392,7 +468,8 @@ if ($hasValidBookSeries && $seriesSlug !== '' && !empty($seriesCrossroadsList) &
         }
     }
 
-    // 2. Apply explicit URL query (`?path=<optId>` or `?path=reset` [& optional `?cx=<cxId>`]) or deep-link `requiredChoices`
+    // 7B. Apply explicit URL query (`?path=<optId>` or `?path=reset` [& optional `?cx=<cxId>`])
+    //     OR auto-hydrate ancestor `requiredChoices` when landing directly on a deep branch URL!
     $reqPathParam = isset($_GET['path']) ? trim((string)$_GET['path']) : '';
     $reqCxParam   = isset($_GET['cx']) ? trim((string)$_GET['cx']) : '';
     $cookieDirty  = false;
@@ -430,6 +507,7 @@ if ($hasValidBookSeries && $seriesSlug !== '' && !empty($seriesCrossroadsList) &
         }
     }
 
+    // Save or clear the `Set-Cookie` HTTP header (31,536,000 seconds = 1 year; `SameSite=Lax` for security)
     if ($cookieDirty && !headers_sent()) {
         if (empty($activeCrossroadsChoices)) {
             setcookie($cxMapCookieName, '', ['expires' => time() - 3600, 'path' => '/', 'samesite' => 'Lax']);
@@ -443,7 +521,8 @@ if ($hasValidBookSeries && $seriesSlug !== '' && !empty($seriesCrossroadsList) &
         }
     }
 
-    // 3. Walk the Multi-Crossroads Segment Graph from `__root__`
+    // 7C. Walk the Multi-Crossroads Segment Graph starting from `__root__`, stitching Eras/Chapters
+    //     together seamlessly along the reader's active choices.
     $mergeSegmentEras = static function (array $baseEras, array $addEras): array {
         $merged = $baseEras;
         foreach ($addEras as $pEra) {
@@ -495,7 +574,7 @@ if ($hasValidBookSeries && $seriesSlug !== '' && !empty($seriesCrossroadsList) &
 
     $walkEras = [];
     $cursorSegId = (string)($toc_manifest['root_segment_id'] ?? '__root__');
-    $visitedSegs = [];
+    $visitedSegs = []; // Cycle-prevention set so a malformed JSON graph can never loop infinitely
 
     while ($cursorSegId !== '' && isset($seriesSegmentsMap[$cursorSegId]) && !isset($visitedSegs[$cursorSegId])) {
         $visitedSegs[$cursorSegId] = true;
@@ -540,7 +619,13 @@ if ($hasValidBookSeries && $seriesSlug !== '' && !empty($seriesCrossroadsList) &
     $effectiveTocEras = $walkEras;
 }
 
-// Establish canonical URL, robots directives, and baseline OpenGraph variables
+// =============================================================================
+// STEP 8: COMPUTE CANONICAL URL, ROBOTS DIRECTIVE, & SOCIAL PREVIEW METADATA
+// =============================================================================
+// Every indexable page gets a unique `<title>`, `<meta name="description">`,
+// OpenGraph (`og:*`), and Twitter Card (`twitter:*`) payload consumed by `header.php`.
+// Utility/personal screens (`404`, `/bookmarks`, `/settings`, `/welcome`) get `noindex, follow`
+// so search engines follow their outbound links without indexing empty user-local screens.
 $canonicalUrl = 'https://books.raggiesoft.com' . ($requestUri === '/' ? '/' : rtrim($requestUri, '/'));
 $ogUrl = $canonicalUrl;
 $isNoIndexRoute = ($isNotFound || $isBookmarks || $isSettings || $isWelcome);
@@ -629,6 +714,8 @@ if ($isNotFound) {
     $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/scenes/katie/b004/jun_2003_pavilion_accepted_apology_wesley_cheering_hug.jpg';
     $ogImageAlt = 'Story Arcs and Reading Playlists in the RaggieSoft Book Reader';
 } elseif ($hasValidBookSeries && $seriesSlug !== '') {
+    // Inside a specific novel (`/<seriesSlug>`, `/<seriesSlug>/toc`, `/<seriesSlug>/illustrations`,
+    // Era overview, Chapter overview, or individual Manuscript Part `eXXX/cXXX/pXXX.md`).
     $seriesTitle = !empty($toc_manifest['series_title'])
         ? trim((string)$toc_manifest['series_title'])
         : ucwords(str_replace('-', ' ', $seriesSlug));
@@ -638,6 +725,9 @@ if ($isNotFound) {
     $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/' . $seriesSlug . '.jpg';
     $ogImageAlt = "Cover artwork and title card for {$seriesTitle}";
 
+    // Paige sets special sentinel tokens (`__SERIES_LANDING__`, `__TOC__`, `__ILLUSTRATIONS__`,
+    // `__ERA_TOC__|...`, `__CHAP_TOC__|...`) in `filePath` for index views, and relative `.md`
+    // paths (`e001/c001/p001.md`) for actual story chapters.
     $actualFilePath = (string)($pageConfig['filePath'] ?? '');
     $seriesWordStats = $toc_manifest['word_stats'] ?? ($routeData['common']['word_stats'] ?? []);
     $seriesStoryWords = (int)($seriesWordStats['story_word_count'] ?? 0);
@@ -646,6 +736,7 @@ if ($isNotFound) {
     $seriesPartCount  = (int)($seriesWordStats['part_count'] ?? 0);
     $seriesIllusCount = (int)($toc_manifest['illustration_count'] ?? ($routeData['common']['illustration_count'] ?? 0));
 
+    // Closure (`use ($cdnBaseUrl)` captures `$cdnBaseUrl` from the outer scope, which is explicit in PHP!)
     $resolveManifestImg = static function (string $rawImg) use ($cdnBaseUrl): string {
         $trimmed = trim($rawImg);
         if ($trimmed === '') return '';
@@ -675,7 +766,7 @@ if ($isNotFound) {
                 : "Browse scene illustrations for {$seriesTitle} on Ocean View Archives.",
             155
         );
-        // Promote first illustrated scene plate in the book if available
+        // Promote first illustrated scene plate in the book if available (`break 3` exits all 3 nested `foreach` loops!)
         if (!empty($toc_manifest['eras']) && is_array($toc_manifest['eras'])) {
             foreach ($toc_manifest['eras'] as $eItem) {
                 foreach (($eItem['chapters'] ?? []) as $cItem) {
@@ -796,8 +887,16 @@ if ($isNotFound) {
     }
 }
 
-// Intercept physical Markdown manuscript pages (preferring local NVMe disk first, falling back to CDN)
-// to reuse `$prefetchedMdContent` in `oliver.php` and honor explicit YAML frontmatter SEO overrides.
+// =============================================================================
+// STEP 9: PREFETCH LIVE MARKDOWN MANUSCRIPT & PARSE YAML FRONTMATTER OVERRIDES
+// =============================================================================
+// Why prefetch the `.md` file here in `isabel.php` BEFORE `header.php` runs?
+//   1. `<head>` (emitted by `header.php`) needs any frontmatter `image:`, `image_alt:`,
+//      `og_title:`, or `og_description:` overrides BEFORE `sophia/oliver.php` renders `<body>`.
+//   2. Storing the string in `$prefetchedMdContent` lets `sophia/oliver.php` reuse it
+//      immediately without reading the disk or CDN a second time!
+//   3. If the `.md` file is missing everywhere, we can still set `http_response_code(404)`
+//      cleanly before any HTML headers have been sent!
 $prefetchedMdContent = null;
 if ($hasValidBookSeries && !empty($pageConfig['filePath'])) {
     $actualFilePath = (string)$pageConfig['filePath'];
@@ -818,8 +917,12 @@ if ($hasValidBookSeries && !empty($pageConfig['filePath'])) {
         }
 
         if ($prefetchedContent !== false) {
+            // Expand `{{CDN}}` and `{{cms}}` asset macros right away
             $prefetchedMdContent = str_replace(['{{CDN}}', '{{cms}}'], $cdnBaseUrl, $prefetchedContent);
 
+            // Lightweight YAML frontmatter parser: matches everything between the opening `---`
+            // on line 1 and the closing `---` delimiter. Supports both `key: value` scalars and
+            // multi-line YAML lists (`images:\n  - path/to/scene.jpg`).
             if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $prefetchedMdContent, $matches)) {
                 $rawFrontmatter = $matches[1];
                 $lines = explode("\n", $rawFrontmatter);
@@ -835,6 +938,7 @@ if ($hasValidBookSeries && !empty($pageConfig['filePath'])) {
                     $line = trim($line);
                     if ($line === '') continue;
 
+                    // Handle YAML list item (`- "scene.jpg"`) belonging to the previous `key:` line
                     if (str_starts_with($line, '-') && $currentFmArrayKey !== null) {
                         $itemVal = trim(trim(substr($line, 1)), '"\'');
                         if (($currentFmArrayKey === 'image' || $currentFmArrayKey === 'images') && $fmImage === '' && $itemVal !== '') {
@@ -845,6 +949,7 @@ if ($hasValidBookSeries && !empty($pageConfig['filePath'])) {
                         continue;
                     }
 
+                    // Handle `key: value` scalar line (or `key:` header starting a YAML list)
                     if (strpos($line, ':') !== false) {
                         list($key, $val) = explode(':', $line, 2);
                         $key = trim($key);
@@ -867,6 +972,7 @@ if ($hasValidBookSeries && !empty($pageConfig['filePath'])) {
                     }
                 }
 
+                // Resolve scene illustration URL for `<meta property="og:image">`
                 $resolvedSceneOgImage = ($fmOgImage !== '') ? $fmOgImage : $fmImage;
                 if ($resolvedSceneOgImage !== '') {
                     $resolvedSceneOgImage = preg_replace('/#.*$/', '', $resolvedSceneOgImage);
@@ -889,7 +995,7 @@ if ($hasValidBookSeries && !empty($pageConfig['filePath'])) {
                 if ($fmOgDesc !== '') {
                     $ogDescription = $truncateSeoText($fmOgDesc, 155);
                 } elseif ($ogDescription === '' || $ogDescription === $truncateSeoText($seriesShortDesc ?? '', 155)) {
-                    // Extract opening prose from the live manuscript if `toc.json` excerpt was empty
+                    // Fallback: extract opening plain-text prose from the live manuscript if `toc.json` excerpt was empty
                     $liveBody = substr($prefetchedMdContent, strlen($matches[0]));
                     $liveBody = preg_replace('/!\[[^\]]*\]\([^)]*\)/', '', $liveBody);
                     $liveBody = preg_replace('/\[([^\]]+)\]\([^)]*\)/', '$1', (string)$liveBody);
@@ -914,17 +1020,22 @@ if ($hasValidBookSeries && !empty($pageConfig['filePath'])) {
 
 $metaDescription = $ogDescription;
 
-// Inject the Co-Branded Top Application Header Bar on all platform screens (and unknown root 404s),
-// while preserving 100% vertical height inside valid book reading panes (where sidebar.php displays the badge)
+// =============================================================================
+// STEP 10: ASSEMBLE & RENDER THE HTML DOCUMENT (HEADER -> VIEW -> FOOTER)
+// =============================================================================
+// Show the Co-Branded Top Application Header Bar (`app-header.php`) on all platform
+// screens (`/`, `/library`, `/arcs`, `/stats`, etc.) and root 404s, while omitting it
+// inside active book reading views (`$hasValidBookSeries === true`) so the reading pane
+// gets 100% of vertical screen height (where `sophia/sidebar.php` carries navigation).
 $currentHeaderMenu = (!$hasValidBookSeries) ? ($basePath . '/includes/components/headers/app-header.php') : null;
 
-// Include the Global HTML Header (Opens HTML, Head with reader.css & reader.js, Body, persistent #stardust-bgm audio, and #stardust-app)
+// 10A. Emit `<!DOCTYPE html>`, `<head>`, `<body>`, `<audio id="stardust-bgm">`, and `<div id="stardust-app">`
 require_once $basePath . '/includes/components/headers/header.php';
 
-// Open the primary application boundary
+// 10B. Open `#stardust-main-wrapper` (the Flexbox row holding optional Sidebar + Reading Pane)
 echo '<div id="stardust-main-wrapper">';
 
-// Execute the final View routing based on established state
+// 10C. Dispatch to the exact Sophia view template (or Sophia Sidebar + Oliver Reader Pane)
 if ($isHome) {
     require_once $basePath . '/sophia/home.php';
 } else if ($isStoryArcs) {
@@ -951,19 +1062,16 @@ if ($isHome) {
     require_once $basePath . '/sophia/wizard.php';
 } else {
     if ($hasValidBookSeries) {
-        // Include Sophia's TOC Sidebar for book navigation context
+        // Include Sophia's Table of Contents Sidebar on the left (or mobile drawer)
         require_once $basePath . '/sophia/sidebar.php';
     }
 
-    // Hand execution over to Oliver, the dedicated Reading Pane component
+    // Hand execution over to Oliver, the dedicated Markdown Novel Reading Pane
     require_once $basePath . '/sophia/oliver.php';
 }
 
 echo '</div> <!-- END #stardust-main-wrapper -->';
 
-// Attach the unified global settings modal structure to the end of the DOM
-// settings-dialog.php removed (migrated to screens)
-
-// Include the Global HTML Footer (Closes structural tags, injects SPA framework hooks)
+// 10D. Emit `</div>` (closing `#stardust-app`), load `stardust-spa.min.js`, register `sw.js`, and close `</body></html>`
 require_once $basePath . '/includes/components/footers/footer.php';
 ?>

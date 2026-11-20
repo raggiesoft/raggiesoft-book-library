@@ -1,61 +1,83 @@
 #!/bin/bash
 # ============================================================================
-# ARCHITECTURAL BLOCK COMMENT: generate_pwa_assets.sh (Book Reader / books.raggiesoft.com)
+# PLAIN-ENGLISH OVERVIEW FOR NEW DEVELOPERS (100-LEVEL JAVASCRIPT / WEB INTRO)
 # ============================================================================
-# Purpose:
-#     Automates the generation of Progressive Web App (PWA) icons, SVG/ICO favicons,
-#     and Option A Co-Branded ("App + Imprint") Light Mode & Dark Mode iOS/iPadOS
-#     startup splash screens for RaggieSoft Book Reader (`books.raggiesoft.com`).
+# File: scripts/generate_pwa_assets.sh
+# App:  RaggieSoft Book Reader (`https://books.raggiesoft.com`)
 #
-# Design Decisions & Future Maintenance:
-#     1. Separation of App Icon vs. Publishing Imprint Crest:
-#        - Uses `book-reader-app-icon.png` (open glowing hardcover book over golden-teal
-#          waves) as the primary App Icon for favicons, Home Screen icons, and the
-#          center hero of the iOS launch screen.
-#        - Preserves `oceanview-archives.png` / `oceanview-archives.svg` (the keyhole-compass
-#          crest) as the corporate literary imprint logo, co-featured in the bottom
-#          imprint attribution lockup of every iOS startup splash screen.
-#     2. Full 92-Screen iOS/iPadOS Matrix (46 Light Mode + 46 Dark Mode):
-#        - Generates all 23 portrait + 23 landscape device resolutions in both
-#          Light Mode (`#FAF8F5` archival warm paper) and Dark Mode (`#0B0F19` deep
-#          midnight reading slate).
-#     3. Zero-Network Deterministic Build:
-#        - Uses Python 3 + Pillow (`PIL`) with Lanczos resampling and 2x supersampled
-#          squircle masks.
+# WHAT IS THIS SCRIPT & WHY DOES IT EXIST?
+#   When a reader installs RaggieSoft Book Reader to their phone, tablet, or
+#   desktop Home Screen as a Progressive Web App (PWA), different operating
+#   systems demand dozens of exact icon and startup-screen image files:
+#     - Browser tabs want `favicon.ico` (16x16, 32x32, 48x48) and `icon.svg`.
+#     - Android / Chrome / Windows PWAs want `192x192` and `512x512` icons in
+#       both standard rounded-squircle ("any") and full-bleed padded ("maskable")
+#       formats so OS icon masks never chop off the book artwork.
+#     - iOS & iPadOS Safari want an `apple-icon-180.png` Home Screen icon PLUS
+#       **92 exact pixel-resolution startup splash screens** (23 iPhone/iPad
+#       screen sizes x 2 orientations [Portrait + Landscape] x 2 color modes
+#       [Light Mode `#FAF8F5` + Dark Mode `#0B0F19`]) linked in `header.php`!
+#
+#   Creating 99 image files by hand in Photoshop every time an icon changes
+#   would take hours. Running this single Bash + Python (`Pillow`) build script
+#   generates all 99 files deterministically in seconds with zero network calls!
+#
+# WHAT FEEDS INTO IT?
+#   Two master high-resolution source PNGs in `raggiesoft-assets/raggiesoft-books/images/logos/`:
+#     1. `book-reader-app-icon.png` (the glowing open hardcover book over waves)
+#     2. `oceanview-archives.png`   (the Ocean View Archives keyhole-compass crest)
+#
+# WHAT DOES IT PRODUCE?
+#   - Writes all 92 `apple-splash-*.jpg` files + master icons into the CDN folder
+#     `raggiesoft-assets/raggiesoft-books/images/pwa-icons/`.
+#   - Copies the local `/icons/*` and `/favicon.ico` files into `subdomains/books/`
+#     so same-origin PWA manifest and favicon requests resolve immediately.
+#
+# NOTE ON LINE 1 (`#!/bin/bash`):
+#   In Unix/macOS shell scripts, `#!/bin/bash` on Line 1 is called a "shebang"—
+#   it tells the operating system to run this file using the Bash shell interpreter.
 # ============================================================================
 
+# `set -e` tells Bash: "Stop immediately with a non-zero error code if any command fails."
 set -e
 
+# Change working directory (`cd`) to the root of `subdomains/books` (one folder above `scripts/`)
+# regardless of which directory the developer ran `./scripts/generate_pwa_assets.sh` from.
 cd "$(dirname "$0")/.." || exit
 
 echo "Generating RaggieSoft Book Reader PWA icons and 92 Light/Dark Co-Branded iOS splash screens..."
 
+# Run an inline Python 3 script using a "heredoc" (`<< 'EOF' ... EOF`).
+# Everything between `<< 'EOF'` and `EOF` is fed directly into Python 3!
 /opt/homebrew/bin/python3 - << 'EOF'
 import os, io, base64
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
+# Resolve paths to `subdomains/books`, the CDN `pwa-icons` output folder, and master `logos` folder
 books_root = os.getcwd()
 cdn_pwa_dir = os.path.abspath(os.path.join(books_root, "../../../raggiesoft-assets/raggiesoft-books/images/pwa-icons"))
 logos_dir = os.path.abspath(os.path.join(books_root, "../../../raggiesoft-assets/raggiesoft-books/images/logos"))
 
 os.makedirs(cdn_pwa_dir, exist_ok=True)
 
+# Load the two master artwork PNGs in 32-bit RGBA (Red, Green, Blue, Alpha transparency) mode
 app_icon = Image.open(os.path.join(logos_dir, "book-reader-app-icon.png")).convert("RGBA")
 imprint_crest = Image.open(os.path.join(logos_dir, "oceanview-archives.png")).convert("RGBA")
 
-# Sample edge background color from the master Book Reader icon for seamless maskable padding
-ICON_EDGE_BG = (11, 20, 42)     # Deep midnight sapphire matching the master icon edge
-DARK_BG = (11, 15, 25)          # #0B0F19 (Book Reader Dark Mode background)
-LIGHT_BG = (250, 248, 245)      # #FAF8F5 (Archival Paper Light Mode background)
+# Color palette constants (RGB tuples `(R, G, B)` where each channel is `0..255`)
+ICON_EDGE_BG = (11, 20, 42)     # Deep midnight sapphire matching the master icon edge (for maskable safe-zone padding)
+DARK_BG = (11, 15, 25)          # #0B0F19 (Book Reader Dark Mode splash background)
+LIGHT_BG = (250, 248, 245)      # #FAF8F5 (Archival Paper Light Mode splash background)
 
-DARK_TEXT_PRIMARY = (248, 250, 252)   # #F8FAFC
-DARK_TEXT_ACCENT = (227, 178, 124)    # #E3B27C (Ocean View Bronze)
-DARK_TEXT_MUTED = (148, 163, 184)     # #94A3B8
+DARK_TEXT_PRIMARY = (248, 250, 252)   # #F8FAFC (crisp white-slate title on Dark Mode)
+DARK_TEXT_ACCENT = (227, 178, 124)    # #E3B27C (Ocean View Bronze subtitle on Dark Mode)
+DARK_TEXT_MUTED = (148, 163, 184)     # #94A3B8 (muted attribution line on Dark Mode)
 
-LIGHT_TEXT_PRIMARY = (15, 23, 42)     # #0F172A
-LIGHT_TEXT_ACCENT = (15, 76, 92)      # #0F4C5C (Ocean View Coastal Teal)
-LIGHT_TEXT_MUTED = (71, 85, 105)      # #475569
+LIGHT_TEXT_PRIMARY = (15, 23, 42)     # #0F172A (deep navy ink title on Light Mode)
+LIGHT_TEXT_ACCENT = (15, 76, 92)      # #0F4C5C (Ocean View Coastal Teal subtitle on Light Mode)
+LIGHT_TEXT_MUTED = (71, 85, 105)      # #475569 (muted attribution line on Light Mode)
 
+# Try macOS system fonts in priority order; fall back safely to Pillow's built-in bitmap font if missing
 def load_font(candidates, size):
     for path, idx in candidates:
         if os.path.exists(path):
@@ -80,7 +102,11 @@ SANS_REG_CANDIDATES = [
 ]
 
 def make_rounded_squircle(img_rgba, size, radius_ratio=0.225, border_rgba=None):
-    """Creates a 2x-supersampled anti-aliased rounded squircle icon."""
+    """
+    Creates a smooth rounded-rectangle ('squircle') icon with optional border.
+    Draws at 2x resolution (`ss = size * 2`) and downscales with Lanczos resampling
+    ('2x supersampling') so corner curves look silky-smooth with zero jagged pixel stairs!
+    """
     ss = size * 2
     resized = img_rgba.resize((ss, ss), Image.Resampling.LANCZOS)
     mask = Image.new("L", (ss, ss), 0)
@@ -99,7 +125,10 @@ def make_rounded_squircle(img_rgba, size, radius_ratio=0.225, border_rgba=None):
     return out.resize((size, size), Image.Resampling.LANCZOS)
 
 def make_maskable_icon(img_rgba, size, safe_padding_ratio=0.10):
-    """Creates a full-bleed maskable icon with safe-zone padding so Android/OS masks never clip the book."""
+    """
+    Creates a full-bleed W3C 'maskable' icon with 10% safe-zone padding around all edges
+    so Android launchers (circle, teardrop, squircle) never clip the open book emblem.
+    """
     canvas = Image.new("RGB", (size, size), ICON_EDGE_BG)
     inner = int(round(size * (1.0 - 2.0 * safe_padding_ratio)))
     resized = img_rgba.resize((inner, inner), Image.Resampling.LANCZOS)
@@ -107,7 +136,7 @@ def make_maskable_icon(img_rgba, size, safe_padding_ratio=0.10):
     canvas.paste(resized, (offset, offset), resized)
     return canvas
 
-# 1. Generate SVG Favicon (rounded squircle)
+# 1. Generate SVG Favicon (embeds a base64-encoded 128x128 PNG squircle inside `<svg>`)
 fav_png = make_rounded_squircle(app_icon, 128, radius_ratio=0.22, border_rgba=(227, 178, 124, 140))
 buf = io.BytesIO()
 fav_png.save(buf, format="PNG", optimize=True)
@@ -121,16 +150,16 @@ svg_favicon = f"""<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" 
 with open(os.path.join(cdn_pwa_dir, "icon.svg"), "w") as f:
     f.write(svg_favicon)
 
-# 2. Generate Multi-Resolution favicon.ico (16x16, 32x32, 48x48)
+# 2. Generate Multi-Resolution `favicon.ico` bundling 16x16, 32x32, and 48x48 frames in one `.ico` file
 ico_base = make_rounded_squircle(app_icon, 256, radius_ratio=0.22, border_rgba=(227, 178, 124, 160))
 ico_base.save(os.path.join(books_root, "favicon.ico"), format="ICO", sizes=[(16, 16), (32, 32), (48, 48)])
 ico_base.save(os.path.join(cdn_pwa_dir, "favicon.ico"), format="ICO", sizes=[(16, 16), (32, 32), (48, 48)])
 
-# 3. Generate iOS Home Screen Icon (180x180 full-bleed; iOS applies its own squircle mask)
+# 3. Generate iOS Home Screen Icon (`180x180` opaque RGB; iOS Safari applies Apple's hardware squircle mask automatically)
 apple_180 = app_icon.resize((180, 180), Image.Resampling.LANCZOS).convert("RGB")
 apple_180.save(os.path.join(cdn_pwa_dir, "apple-icon-180.png"), format="PNG", optimize=True)
 
-# 4. Generate Standard ("any") & Maskable ("maskable") Manifest Icons (192x192, 512x512)
+# 4. Generate Standard ("any") & Maskable ("maskable") Web App Manifest Icons (`192x192` & `512x512`)
 icon_192_any = make_rounded_squircle(app_icon, 192, radius_ratio=0.22, border_rgba=(227, 178, 124, 120))
 icon_512_any = make_rounded_squircle(app_icon, 512, radius_ratio=0.22, border_rgba=(227, 178, 124, 120))
 icon_192_any.save(os.path.join(cdn_pwa_dir, "icon-192.png"), format="PNG", optimize=True)
@@ -141,7 +170,8 @@ icon_512_mask = make_maskable_icon(app_icon, 512, safe_padding_ratio=0.10)
 icon_192_mask.save(os.path.join(cdn_pwa_dir, "manifest-icon-192.maskable.png"), format="PNG", optimize=True)
 icon_512_mask.save(os.path.join(cdn_pwa_dir, "manifest-icon-512.maskable.png"), format="PNG", optimize=True)
 
-# 5. Generate All 46 iOS / iPadOS Startup Splash Screen Resolutions (Light & Dark = 92 files)
+# 5. Generate All 46 iOS / iPadOS Startup Splash Screen Resolutions (46 Light + 46 Dark = 92 JPEG files)
+#    Every `(width, height)` pair matches a `<link rel="apple-touch-startup-image" ...>` tag in `header.php`.
 splash_resolutions = [
     (2048, 2732), (2732, 2048),
     (2064, 2752), (2752, 2064),
@@ -169,6 +199,12 @@ splash_resolutions = [
 ]
 
 def make_cobranded_splash(w, h, is_dark):
+    """
+    Composites a single Co-Branded ('App + Imprint') launch screen at `w x h` pixels:
+      - Center hero: RaggieSoft Book Reader rounded squircle icon with Gaussian drop shadow,
+        app title, and 'STARDUST ENGINE LITERARY ARCHIVE' subtitle.
+      - Bottom lockup: Ocean View Archives keyhole-compass crest + imprint attribution.
+    """
     bg_rgb = DARK_BG if is_dark else LIGHT_BG
     text_primary = DARK_TEXT_PRIMARY if is_dark else LIGHT_TEXT_PRIMARY
     text_accent = DARK_TEXT_ACCENT if is_dark else LIGHT_TEXT_ACCENT
@@ -179,11 +215,11 @@ def make_cobranded_splash(w, h, is_dark):
     short_side = min(w, h)
     is_landscape = w > h
 
-    # Center Hero App Icon size
+    # Center Hero App Icon size (proportional to the shorter screen edge so tablets & phones scale evenly)
     icon_dim = int(round(short_side * (0.24 if is_landscape else 0.28)))
     squircle = make_rounded_squircle(app_icon, icon_dim, radius_ratio=0.225, border_rgba=border_rgba)
 
-    # Soft elevation drop shadow behind squircle
+    # Soft Gaussian-blurred elevation drop shadow behind the squircle
     shadow_pad = int(round(icon_dim * 0.18))
     shadow = Image.new("RGBA", (icon_dim + shadow_pad * 2, icon_dim + shadow_pad * 2), (0, 0, 0, 0))
     sdraw = ImageDraw.Draw(shadow)
@@ -205,7 +241,7 @@ def make_cobranded_splash(w, h, is_dark):
 
     draw = ImageDraw.Draw(canvas)
 
-    # Typography sizes scaled to short_side
+    # Typography sizes scaled dynamically to `short_side`
     title_sz = max(24, int(round(short_side * (0.044 if is_landscape else 0.050))))
     sub_sz = max(13, int(round(short_side * (0.019 if is_landscape else 0.021))))
     imp_title_sz = max(14, int(round(short_side * (0.020 if is_landscape else 0.022))))
@@ -216,7 +252,7 @@ def make_cobranded_splash(w, h, is_dark):
     font_imp_title = load_font(SANS_BOLD_CANDIDATES, imp_title_sz)
     font_imp_sub = load_font(SANS_REG_CANDIDATES, imp_sub_sz)
 
-    # App Title + Subtitle below squircle
+    # Horizontally centered App Title + Subtitle below the squircle
     title_text = "RaggieSoft Book Reader"
     sub_text = "STARDUST ENGINE LITERARY ARCHIVE"
 
@@ -252,6 +288,7 @@ def make_cobranded_splash(w, h, is_dark):
 
     return canvas.convert("RGB")
 
+# Render and save both Light Mode and Dark Mode JPEGs for every device resolution
 for (w, h) in splash_resolutions:
     light_img = make_cobranded_splash(w, h, is_dark=False)
     light_img.save(os.path.join(cdn_pwa_dir, f"apple-splash-{w}-{h}.jpg"), format="JPEG", quality=92, optimize=True)
@@ -262,6 +299,8 @@ for (w, h) in splash_resolutions:
 print(f"Generated {len(splash_resolutions)} Light and {len(splash_resolutions)} Dark Book Reader splash screens in {cdn_pwa_dir}")
 EOF
 
+# Mirror the core Home Screen / Manifest icons into `subdomains/books/icons/`
+# because Web App Manifests (`manifest.json`) work most reliably with same-origin icon paths.
 mkdir -p icons
 cp "../../../raggiesoft-assets/raggiesoft-books/images/pwa-icons/icon-192.png" \
    "../../../raggiesoft-assets/raggiesoft-books/images/pwa-icons/icon-512.png" \

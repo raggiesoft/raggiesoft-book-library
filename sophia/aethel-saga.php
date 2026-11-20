@@ -1,22 +1,44 @@
 <?php
-/**
+/*
  * =============================================================================
- * Architecture & Maintenance Guide: sophia/aethel-saga.php
+ * READ-ALONG TEACHING GUIDE: sophia/aethel-saga.php
  * =============================================================================
- * Purpose:
- *     Flagship Universe Portal for "The Silver Gauntlet of Aethel" inside
- *     Ocean View Archives (https://books.raggiesoft.com/aethel-saga).
+ * WHAT PAGE THIS FILE RENDERS:
+ *     This template renders `https://books.raggiesoft.com/aethel-saga` — the
+ *     cinematic Universe Portal for the epic fantasy novel "The Silver Gauntlet
+ *     of Aethel" inside the RaggieSoft Book Reader.
  *
- * Design Principles:
- *     - Introduces readers to the four mythic eras of Aethel (Era 1: Myth,
- *       Era 2: Silence, Era 3: Tides, Era 4: Iron) before entering the
- *       full-screen Stardust Engine Book Reader.
- *     - Uses 100% canonical e###/c###/s### semantic routes (zero legacy b-num/p-num URLs).
- *     - Links directly to Firelight's companion rock-opera album in The Listening Room
- *       (https://music.raggiesoft.com/firelight/1987-silver-gauntlet-of-aethel).
+ * HOW IT CONNECTS TO THE MASTER ROUTER (`eleanor/isabel.php`):
+ *     1. When a reader visits `/aethel-saga`, `eleanor/isabel.php` matches
+ *        `$requestUri === '/aethel-saga'`, sets `$isAethelSaga = true`, configures
+ *        page-specific OpenGraph tags (`$ogTitle`, `$ogDescription`, `$ogImage`),
+ *        and outputs the global `<head>` + `#stardust-app` wrapper via `header.php`.
+ *     2. `isabel.php` then `require_once`s this file (`sophia/aethel-saga.php`).
+ *     3. Clicking "Enter the Saga" (`/aethel`), "Read Prologue", or any of the
+ *        four "Enter Era" buttons transitions seamlessly into `sophia/oliver.php`
+ *        and `sophia/sidebar.php` to read the novel itself.
+ *
+ * WHAT THE READER SEES & INTERACTS WITH:
+ *     - A full-bleed dark-amber fantasy Hero Banner with three action buttons:
+ *         1. Series Overview & Table of Contents (`/aethel`)
+ *         2. Direct Prologue jump link (`Scene 1: "The Architect's Lesson"`)
+ *         3. Companion Rock-Opera Album link to Firelight on `music.raggiesoft.com`
+ *     - A formatted `<blockquote>` excerpt from Era I ("The Solar Garden").
+ *     - A responsive 4-column CSS Grid introducing all four canonical Eras
+ *       (Era 1: Myth, Era 2: Silence, Era 3: Tides, Era 4: Iron).
+ *
+ * 100-LEVEL CSS & SPA CONCEPTS TO NOTICE HERE:
+ *     - `clamp(min, preferred, max)` in `.aethel-title` smoothly scales the
+ *       headline font size with viewport width (`5.5vw`) while never shrinking
+ *       below `2.4rem` on phones or growing past `4rem` on ultrawide monitors.
+ *     - `data-no-spa="true"` on the external `music.raggiesoft.com` link tells
+ *       the client-side Single-Page App router (`stardust-spa.min.js`) NOT to
+ *       intercept that click with `fetch()`, allowing the browser to open the
+ *       external music site normally in a new tab (`target="_blank"`).
  * =============================================================================
  */
 
+// Import `$cdnBaseUrl` from `eleanor/isabel.php` and build full CDN URLs for artwork.
 global $cdnBaseUrl;
 $posterBg = $cdnBaseUrl . '/raggiesoft-books/aethel/images/aethel-hero.jpg';
 $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-gauntlet-of-aethel/album-art.jpg';
@@ -25,7 +47,10 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
 <style>
     /* =========================================================================
        THE SILVER GAUNTLET OF AETHEL PORTAL STYLES (WCAG 2.1 AA Compliant)
+       Note: Inside `<style>` tags, we always use CSS `/* ... * /` comments.
        ========================================================================= */
+
+    /* Outer page wrapper inheriting active Light/Dark/Sepia `--rs-bg` & `--rs-text` tokens */
     .aethel-portal-wrap {
         flex: 1;
         background: var(--rs-bg);
@@ -33,6 +58,8 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
         padding-bottom: 6rem;
     }
 
+    /* Full-width hero banner layering a dark slate-to-amber CSS gradient over the CDN hero image
+       so white/gold text maintains >= 4.5:1 WCAG AA contrast regardless of image brightness */
     .aethel-hero {
         position: relative;
         background:
@@ -43,11 +70,13 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
         padding: calc(2.5rem + env(safe-area-inset-top, 0px)) 1.5rem 3rem;
     }
 
+    /* Centers inner hero content at a comfortable 1140px max width on desktop monitors */
     .aethel-container {
         max-width: 1140px;
         margin: 0 auto;
     }
 
+    /* Pill-shaped (`border-radius: 999px`) category badge above the main title */
     .aethel-eyebrow {
         display: inline-flex;
         align-items: center;
@@ -64,6 +93,7 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
         margin-bottom: 1rem;
     }
 
+    /* Fluid typography using CSS `clamp()` so the serif display title scales smoothly across screen sizes */
     .aethel-title {
         font-family: 'Playfair Display', Georgia, serif;
         font-size: clamp(2.4rem, 5.5vw, 4rem);
@@ -83,6 +113,7 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
         text-transform: uppercase;
     }
 
+    /* `max-width: 65ch` caps line length at ~65 characters—the classic typographic sweet spot for comfortable reading */
     .aethel-lead {
         font-family: Georgia, serif;
         font-size: 1.15rem;
@@ -92,6 +123,7 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
         margin: 0 0 1.75rem 0;
     }
 
+    /* Flexbox button bar that wraps neatly into stacked rows on narrow mobile screens (`flex-wrap: wrap`) */
     .aethel-cta-row {
         display: flex;
         flex-wrap: wrap;
@@ -99,6 +131,7 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
         align-items: center;
     }
 
+    /* Primary amber/gold Call-to-Action (CTA) button with dark slate text (`#0f172a`) for crisp contrast */
     .aethel-btn-gold {
         display: inline-flex;
         align-items: center;
@@ -114,12 +147,14 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
         transition: background-color 0.2s ease, transform 0.15s ease;
     }
 
+    /* `:focus-visible` matches `:hover` so keyboard Tab users see clear visual feedback */
     .aethel-btn-gold:hover,
     .aethel-btn-gold:focus-visible {
         background: #fbbf24;
         transform: translateY(-1px);
     }
 
+    /* Secondary translucent dark pill button for Prologue & Companion Music links */
     .aethel-btn-outline {
         display: inline-flex;
         align-items: center;
@@ -134,18 +169,22 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
         border: 1px solid rgba(251, 191, 36, 0.5);
     }
 
+    /* Standard horizontal/vertical spacing wrapper for body sections below the hero */
     .aethel-section {
         max-width: 1140px;
         margin: 0 auto;
         padding: 2.5rem 1.5rem;
     }
 
+    /* Responsive CSS Grid: automatically fits 1, 2, or 4 columns depending on screen width
+       without needing media queries (`repeat(auto-fit, minmax(240px, 1fr))`)! */
     .aethel-era-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
         gap: 1.5rem;
     }
 
+    /* Individual Era card: `justify-content: space-between` pins the "Enter Era" button to the bottom edge */
     .aethel-era-card {
         background: var(--rs-surface);
         border: 1px solid var(--rs-border);
@@ -174,10 +213,12 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
     }
 </style>
 
+<!-- `#stardust-main-content` is the target of the "Skip to main content" keyboard accessibility link in `header.php` -->
 <div class="stardust-mobile-scroll aethel-portal-wrap" id="stardust-main-content">
-    <!-- HERO -->
+    <!-- SECTION 1: FULL-BLEED FANTASY SAGA HERO BANNER -->
     <section class="aethel-hero" aria-label="The Silver Gauntlet of Aethel Introduction">
         <div class="aethel-container">
+            <!-- Return breadcrumb back to the Ocean View Archives Homepage (`/`) -->
             <div style="margin-bottom: 1rem;">
                 <a href="/" style="color: #cbd5e1; text-decoration: none; font-size: 0.9rem; display: inline-flex; align-items: center; gap: 0.35rem;">
                     <i class="ph ph-arrow-left"></i> Back to Ocean View Archives Imprint
@@ -191,13 +232,17 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
             <p class="aethel-lead">
                 Two twins. One broken world. And a debt that must be paid in fire. Follow Kaelan and Kaela across all four mythic eras of Aethel inside the Stardust Engine Book Reader.
             </p>
+            <!-- Primary Reading & Companion Soundtrack Action Buttons -->
             <div class="aethel-cta-row">
+                <!-- Route 1: Opens `/aethel` (`sophia/landing.php` inside `oliver.php`) -->
                 <a href="/aethel" class="aethel-btn-gold">
                     <i class="ph-fill ph-book-open"></i> Enter the Saga (Series Overview &amp; TOC)
                 </a>
+                <!-- Route 2: Jumps straight into Era 1, Book I, Scene 1 inside `oliver.php` -->
                 <a href="/aethel/era-1-the-age-of-myth/book-i-the-silver-sun/scene-1-chapter-1-the-architect-s-lesson" class="aethel-btn-outline">
                     <i class="ph-fill ph-sparkle"></i> Read Prologue: &ldquo;The Architect's Lesson&rdquo;
                 </a>
+                <!-- Route 3: External companion rock-opera album on `music.raggiesoft.com` (`data-no-spa="true"` bypasses SPA fetch) -->
                 <a href="https://music.raggiesoft.com/firelight/1987-silver-gauntlet-of-aethel" data-no-spa="true" target="_blank" rel="noopener" class="aethel-btn-outline">
                     <i class="ph-fill ph-headphones"></i> Firelight Companion Album (Listening Room)
                 </a>
@@ -205,7 +250,7 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
         </div>
     </section>
 
-    <!-- PROLOGUE EXCERPT -->
+    <!-- SECTION 2: PROLOGUE LITERARY EXCERPT (`aria-labelledby` links the `<section>` landmark to its `<h2>` heading) -->
     <section class="aethel-section" id="prologue" aria-labelledby="aethel-prologue-heading">
         <div style="background: var(--rs-surface); border: 1px solid var(--rs-border); border-left: 5px solid var(--rs-secondary); border-radius: 12px; padding: 1.75rem;">
             <h2 id="aethel-prologue-heading" style="font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--rs-text-muted); margin: 0 0 0.75rem 0;">
@@ -220,7 +265,7 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
         </div>
     </section>
 
-    <!-- THE FOUR ERAS -->
+    <!-- SECTION 3: THE FOUR CANONICAL ERAS (Each link opens `sophia/era-toc.php` for that Era) -->
     <section class="aethel-section" id="eras" style="padding-top: 0.5rem;" aria-labelledby="aethel-eras-heading">
         <div style="text-align: center; margin-bottom: 2rem;">
             <h2 id="aethel-eras-heading" style="font-family: 'Playfair Display', Georgia, serif; font-size: 2rem; font-weight: 800; color: var(--rs-heading); margin: 0 0 0.35rem 0;">
@@ -230,6 +275,7 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
         </div>
 
         <div class="aethel-era-grid">
+            <!-- Era 1 Card -->
             <article class="aethel-era-card">
                 <div>
                     <i class="ph-fill ph-sun-horizon" style="font-size: 2.25rem; color: var(--rs-secondary); display: block; margin-bottom: 0.75rem;"></i>
@@ -245,6 +291,7 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
                 </a>
             </article>
 
+            <!-- Era 2 Card -->
             <article class="aethel-era-card">
                 <div>
                     <i class="ph-fill ph-snowflake" style="font-size: 2.25rem; color: var(--rs-primary); display: block; margin-bottom: 0.75rem;"></i>
@@ -260,6 +307,7 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
                 </a>
             </article>
 
+            <!-- Era 3 Card -->
             <article class="aethel-era-card">
                 <div>
                     <i class="ph-fill ph-waves" style="font-size: 2.25rem; color: var(--rs-primary); display: block; margin-bottom: 0.75rem;"></i>
@@ -275,6 +323,7 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
                 </a>
             </article>
 
+            <!-- Era 4 Card -->
             <article class="aethel-era-card">
                 <div>
                     <i class="ph-fill ph-flame" style="font-size: 2.25rem; color: var(--rs-secondary); display: block; margin-bottom: 0.75rem;"></i>
@@ -293,5 +342,7 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
     </section>
 </div>
 
-<?php include __DIR__ . "/../includes/components/bottom-nav.php"; ?>
-
+<?php
+// Render the shared bottom tab navigation bar (`Home`, `Library`, `Bookmarks`, `Settings`).
+include __DIR__ . "/../includes/components/bottom-nav.php";
+?>

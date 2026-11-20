@@ -1,25 +1,48 @@
 <?php
-/**
+/*
  * =============================================================================
- * Architecture & Maintenance Guide: sophia/knox.php
+ * READ-ALONG TEACHING GUIDE: sophia/knox.php
  * =============================================================================
- * Purpose:
- *     Flagship Universe Portal for "Project: KNOX" & "The Quantum Directive"
- *     inside Ocean View Archives (https://books.raggiesoft.com/knox).
+ * WHAT PAGE THIS FILE RENDERS:
+ *     This template renders `https://books.raggiesoft.com/knox` — the flagship
+ *     Sci-Fi Universe Portal for "Project: K.N.O.X." and "The Quantum Directive"
+ *     inside the RaggieSoft Book Reader.
  *
- * Design Principles:
- *     - Introduces readers to the Project: KNOX / Quantum Directive narrative
- *       universe before entering the full-screen Stardust Engine Book Reader.
- *     - Preserves the interactive "Decryption Key: ROOK" Threat Profile toggle
- *       (Axiom Intelligence Estimate vs. Ground-Truth Rostova Twins profile).
- *     - Links directly to canonical e###/c###/s### routes for both Jessica's Cut
- *       (/quantum-directive-1-jessica) and Kelly's Cut (/quantum-directive-1-kelly)
- *       and hands off soundtrack playback to The Listening Room
- *       (https://music.raggiesoft.com/the-stardust-engine).
- *     - Strictly enforces WCAG 2.1 AA contrast across both Dark and Light modes.
+ * HOW IT CONNECTS TO THE MASTER ROUTER (`eleanor/isabel.php`):
+ *     1. When a reader visits `/knox`, `eleanor/isabel.php` matches
+ *        `$requestUri === '/knox'`, sets `$isKnox = true`, populates page-specific
+ *        OpenGraph social preview tags, and includes `header.php` + this file.
+ *     2. From here, readers can jump straight into either parallel perspective
+ *        of Book I (`/quantum-directive-1-jessica` or `/quantum-directive-1-kelly`),
+ *        which `isabel.php` routes into `sophia/sidebar.php` + `sophia/oliver.php`.
+ *
+ * WHAT THE READER SEES & INTERACTS WITH:
+ *     - Hero Banner introducing the Telsan Gap frontier, dual-POV Book I buttons,
+ *       and an external link (`data-no-spa="true"`) to The Stardust Engine's
+ *       official KNOX soundtrack in The Listening Room (`music.raggiesoft.com`).
+ *     - "The Axiom's Nightmare vs. The Reality" comparison paired with an
+ *       interactive **Threat Profile Card** (`#knox-threat-card`): clicking
+ *       `"Decryption Key: ROOK (Toggle Reality)"` flips the dossier live between
+ *       Axiom's false intelligence estimate ("Subject: K.N.O.X.") and the ground
+ *       truth ("Reality: The Rostova Twins — Anya & Kael")!
+ *     - Worldbuilding cards for The Telsan Gap (`The Spire`, `The Weave`, `The Moss`)
+ *       and Operative Profiles (`Anya`, `Kael`, `Rook`).
+ *
+ * 100-LEVEL CSS & DOM TOGGLE CONCEPTS TO NOTICE HERE:
+ *     - Adaptive Contrast Tokens (`--knox-danger`, `--knox-success`, `--knox-info`):
+ *       Notice how darker crimson/emerald/sky shades are used in Light Mode
+ *       (`#b91c1c`, `#166534`, `#0369a1`) while brighter pastel shades (`#f87171`,
+ *       `#4ade80`, `#38bdf8`) are swapped in under `body.theme-dark` and
+ *       `@media (prefers-color-scheme: dark)`! That keeps contrast >= 4.5:1
+ *       (WCAG 2.1 AA) on both light and dark backgrounds.
+ *     - `card.classList.toggle('is-decrypted')` in the `<script>` at the bottom
+ *       flips a CSS class on and off in one line and returns a boolean (`true`
+ *       when added, `false` when removed) that we immediately use to update
+ *       `aria-expanded`, swap `style.display`, and change the clearance badge text!
  * =============================================================================
  */
 
+// Import `$cdnBaseUrl` from `eleanor/isabel.php` to construct CDN artwork URLs.
 global $cdnBaseUrl;
 $heroBg = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017-knox-ost/social-preview.jpg';
 $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017-knox-ost/album-art.jpg';
@@ -29,6 +52,8 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
     /* =========================================================================
        PROJECT: KNOX UNIVERSE PORTAL STYLES (WCAG 2.1 AA Light & Dark Adaptive)
        ========================================================================= */
+
+    /* Main portal wrapper inheriting global `--rs-bg` & `--rs-text` theme variables */
     .knox-portal-wrap {
         flex: 1;
         background: var(--rs-bg);
@@ -36,6 +61,7 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
         padding-bottom: 6rem;
     }
 
+    /* Full-bleed sci-fi hero banner with dark navy-to-crimson gradient overlay for guaranteed legibility */
     .knox-hero {
         position: relative;
         background:
@@ -51,6 +77,7 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
         margin: 0 auto;
     }
 
+    /* Monospace tactical pill badge above the main hero title */
     .knox-eyebrow {
         display: inline-flex;
         align-items: center;
@@ -68,6 +95,7 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
         margin-bottom: 1rem;
     }
 
+    /* Responsive fluid display title (`clamp()` scales smoothly from 2.5rem on mobile to 4.25rem on desktop) */
     .knox-title {
         font-size: clamp(2.5rem, 6vw, 4.25rem);
         font-weight: 900;
@@ -104,6 +132,7 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
         align-items: center;
     }
 
+    /* Primary crimson CTA button */
     .knox-btn-primary {
         display: inline-flex;
         align-items: center;
@@ -125,6 +154,7 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
         transform: translateY(-1px);
     }
 
+    /* Secondary dark slate CTA button */
     .knox-btn-secondary {
         display: inline-flex;
         align-items: center;
@@ -152,6 +182,7 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
         padding: 2.5rem 1.5rem;
     }
 
+    /* Responsive 2-column and 3-column CSS Grids that automatically stack to 1 column on narrow screens */
     .knox-grid-2 {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -165,12 +196,14 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
         gap: 1.5rem;
     }
 
+    /* Light-mode default semantic status tokens (deep colors for >= 4.5:1 contrast on light/sepia surfaces) */
     .knox-portal-wrap {
         --knox-danger: #b91c1c;
         --knox-success: #166534;
         --knox-info: #0369a1;
     }
 
+    /* Explicit Dark / Dark-Sepia theme overrides (luminous colors for >= 4.5:1 contrast on dark surfaces) */
     body.theme-dark .knox-portal-wrap,
     body.theme-dark-sepia .knox-portal-wrap {
         --knox-danger: #f87171;
@@ -178,6 +211,7 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
         --knox-info: #38bdf8;
     }
 
+    /* Automatic OS Dark Mode override when the reader is in `theme-auto` or `theme-sepia-system` */
     @media (prefers-color-scheme: dark) {
         body:not(.theme-light):not(.theme-sepia) .knox-portal-wrap {
             --knox-danger: #f87171;
@@ -194,6 +228,8 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
         box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
     }
 
+    /* Interactive Threat Profile Dossier Card: starts with red border (`--knox-danger`),
+       switches to emerald green (`--knox-success`) when `.is-decrypted` is toggled by JS! */
     .knox-dossier-card {
         background: var(--rs-surface);
         border: 2px solid var(--knox-danger);
@@ -289,7 +325,7 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
 </style>
 
 <div class="stardust-mobile-scroll knox-portal-wrap" id="stardust-main-content">
-    <!-- HERO -->
+    <!-- SECTION 1: SCI-FI UNIVERSE HERO BANNER & PARALLEL EDITION LINKS -->
     <section class="knox-hero" aria-label="Project: KNOX Universe Introduction">
         <div class="knox-container">
             <div style="margin-bottom: 1rem;">
@@ -308,12 +344,15 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
                 On a high-gravity frontier world in the Telsan Gap, a family hunts a phantom while evading the monolithic Axiom Archival Division. Experience both parallel perspectives of <em>The Quantum Directive</em> inside the Stardust Engine Book Reader.
             </p>
             <div class="knox-cta-row">
+                <!-- Parallel Edition 1: Jessica's POV (`/quantum-directive-1-jessica`) -->
                 <a href="/quantum-directive-1-jessica" class="knox-btn-primary">
                     <i class="ph-fill ph-book-open"></i> Read Jessica's Cut (Book I)
                 </a>
+                <!-- Parallel Edition 2: Kelly's POV (`/quantum-directive-1-kelly`) -->
                 <a href="/quantum-directive-1-kelly" class="knox-btn-secondary">
                     <i class="ph-fill ph-books"></i> Read Kelly's Cut (Parallel Edition)
                 </a>
+                <!-- External soundtrack handoff to `music.raggiesoft.com` (`data-no-spa="true"` bypasses SPA routing) -->
                 <a href="https://music.raggiesoft.com/the-stardust-engine" data-no-spa="true" target="_blank" rel="noopener" class="knox-btn-secondary">
                     <i class="ph-fill ph-headphones"></i> Official KNOX OST (Listening Room)
                 </a>
@@ -321,9 +360,10 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
         </div>
     </section>
 
-    <!-- THE AXIOM'S NIGHTMARE VS. REALITY -->
+    <!-- SECTION 2: THE AXIOM'S NIGHTMARE VS. GROUND REALITY (INTERACTIVE DOSSIER) -->
     <section class="knox-section" id="dossier" aria-labelledby="knox-dossier-heading">
         <div class="knox-grid-2">
+            <!-- Left Column: Narrative Premise -->
             <div>
                 <h2 id="knox-dossier-heading" style="font-size: 1.85rem; font-weight: 800; color: var(--rs-heading); margin: 0 0 1rem 0;">
                     The Axiom's Nightmare
@@ -343,14 +383,14 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
                 </p>
             </div>
 
-            <!-- Interactive Threat Profile Card -->
+            <!-- Right Column: Interactive Threat Profile Card (Wired by the inline `<script>` at the bottom) -->
             <div class="knox-dossier-card" id="knox-threat-card">
                 <div class="knox-dossier-header">
                     <span><i class="ph-fill ph-shield-warning"></i> Threat Profile</span>
                     <span id="knox-clearance-badge" style="font-size: 0.75rem; padding: 0.15rem 0.5rem; background: rgba(0,0,0,0.3); border-radius: 4px;">ALPHA-PRIME</span>
                 </div>
 
-                <!-- Axiom View -->
+                <!-- State A (Visible initially): Axiom Corporate Intelligence Estimate -->
                 <div id="axiom-profile" style="padding: 1.5rem;">
                     <h3 style="font-family: ui-monospace, monospace; font-size: 1.15rem; color: var(--knox-danger); margin: 0 0 0.75rem 0;">
                         SUBJECT: K.N.O.X.
@@ -367,7 +407,7 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
                     </div>
                 </div>
 
-                <!-- Decrypted Reality View -->
+                <!-- State B (Hidden initially via `display: none;`): Decrypted Rostova Twins Ground Truth -->
                 <div id="reality-profile" style="padding: 1.5rem; display: none;">
                     <h3 style="font-family: ui-monospace, monospace; font-size: 1.15rem; color: var(--knox-success); margin: 0 0 0.75rem 0;">
                         REALITY: THE ROSTOVA TWINS
@@ -384,6 +424,7 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
                     </div>
                 </div>
 
+                <!-- Toggle Button: `aria-expanded` announces toggle state to screen readers -->
                 <div style="padding: 0 1.5rem 1.5rem;">
                     <button type="button" class="knox-decrypt-btn" id="knox-decrypt-toggle" aria-expanded="false">
                         <i class="ph-fill ph-key"></i> Decryption Key: ROOK (Toggle Reality)
@@ -393,7 +434,7 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
         </div>
     </section>
 
-    <!-- THE TELSAN GAP -->
+    <!-- SECTION 3: WORLDBUILDING — THE TELSAN GAP -->
     <section class="knox-section" style="padding-top: 0.5rem;" aria-labelledby="telsan-gap-heading">
         <div style="text-align: center; margin-bottom: 2rem;">
             <h2 id="telsan-gap-heading" style="font-size: 1.75rem; font-weight: 800; color: var(--rs-heading); margin: 0 0 0.35rem 0;">
@@ -429,7 +470,7 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
         </div>
     </section>
 
-    <!-- OPERATIVES & SOUNDTRACK -->
+    <!-- SECTION 4: OPERATIVE PROFILES -->
     <section class="knox-section" style="padding-top: 0.5rem;" aria-labelledby="knox-operatives-heading">
         <h2 id="knox-operatives-heading" style="font-size: 1.5rem; font-weight: 800; color: var(--rs-heading); margin: 0 0 1.25rem 0; text-align: center;">
             Operative Profiles
@@ -462,20 +503,38 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
     </section>
 </div>
 
-<?php include __DIR__ . "/../includes/components/bottom-nav.php"; ?>
+<?php
+// Attach the persistent bottom tab bar (`Home`, `Library`, `Bookmarks`, `Settings`).
+include __DIR__ . "/../includes/components/bottom-nav.php";
+?>
 
 <script>
+/*
+ * INTERACTIVE THREAT PROFILE DECRYPTION CONTROLLER:
+ * Wrapped in an IIFE `(function() { ... })();` so variable names stay scoped locally.
+ * When the reader clicks `#knox-decrypt-toggle`, we toggle `.is-decrypted` on the card
+ * (which swaps the red header/border to emerald green via CSS) and flip visibility
+ * between `#axiom-profile` and `#reality-profile`.
+ */
 (function() {
+    // 1. Look up the interactive elements in the DOM by their unique `id` attributes
     const toggleBtn = document.getElementById('knox-decrypt-toggle');
     const card = document.getElementById('knox-threat-card');
     const axiom = document.getElementById('axiom-profile');
     const reality = document.getElementById('reality-profile');
     const badge = document.getElementById('knox-clearance-badge');
 
+    // 2. Defensive check: verify all elements exist before attaching the `click` listener
     if (toggleBtn && card && axiom && reality) {
         toggleBtn.addEventListener('click', function() {
+            // `classList.toggle()` adds `'is-decrypted'` if absent (returning `true`)
+            // or removes `'is-decrypted'` if already present (returning `false`).
             const isDecrypted = card.classList.toggle('is-decrypted');
+
+            // Keep `aria-expanded` synchronized so assistive technologies announce the toggle state
             toggleBtn.setAttribute('aria-expanded', isDecrypted ? 'true' : 'false');
+
+            // Swap which profile panel is visible and update the clearance header badge text
             if (isDecrypted) {
                 axiom.style.display = 'none';
                 reality.style.display = 'block';
@@ -489,4 +548,3 @@ $ostCover = $cdnBaseUrl . '/engine-room-records/artists/the-stardust-engine/2017
     }
 })();
 </script>
-

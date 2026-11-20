@@ -1,48 +1,76 @@
 <?php
-/**
+/*
  * =============================================================================
- * Architecture & Maintenance Guide: toc.php
+ * READ-ALONG TEACHING GUIDE: sophia/toc.php
  * =============================================================================
- * Purpose:
- *     This file renders the Table of Contents (TOC) for a specific narrative series.
- *     It parses the `$toc_manifest` manifest structure (injected by the Stardust Engine) 
- *     and maps underlying physical file paths to clean semantic URLs.
+ * WHAT PAGE THIS FILE RENDERS:
+ *     This sub-view renders the full Table of Contents for a single book series
+ *     at `https://books.raggiesoft.com/<series>/toc` (for example, `/rachel/toc`
+ *     or `/stardust-engine/toc`).
  *
- * Design Principles:
- *     - Semantic HTML: Uses native `<details>` and `<summary>` tags for lightweight, 
- *       no-JS accordion functionality.
- *     - Data Binding: Relies on a reverse-lookup array (`$fileToUrl`) to bridge 
- *       legacy file references (`p001.md`) to Stardust routes (`/part-1`).
+ * HOW IT CONNECTS TO `eleanor/isabel.php`, `sophia/sidebar.php`, & `sophia/oliver.php`:
+ *     1. In `data/routes/<series>.json`, `/<series>/toc` maps to `'__TOC__'`.
+ *     2. `eleanor/isabel.php` loads the book's `toc.json` into `$toc_manifest`
+ *        AND runs the Multi-Crossroads Narrative Graph Resolver, walking from
+ *        `'__root__'` through any saved Story Crossroads choices (stored in the
+ *        `rs_cx_<series>` cookie) to produce:
+ *          - `$effectiveTocEras`: Merged Eras/Chapters/Parts along the active route!
+ *          - `$activeCrossroadsChain`: Ordered history of Crossroads decisions made so far.
+ *          - `$pendingFrontierCrossroads`: The next unchosen Crossroads waiting at the
+ *            end ("frontier") of the current Table of Contents, if any!
+ *     3. `sophia/sidebar.php` builds `$fileToUrl` (mapping `e001/c001/p001.md` to
+ *        clean semantic URLs), and `sophia/oliver.php` renders this file inside
+ *        `#stardust-reading-pane` via PHP output buffering (`ob_start()`).
  *
- * Maintenance Notes:
- *     - If the accordion styling breaks, check the `<style>` block at the bottom; 
- *       it overrides default webkit behaviors for summary markers.
- *     - Ensure the `$toc_manifest` array shape remains consistent with `raggiesoft-deployment-tools/paige.php`. 
- *       Specifically, it expects `['eras'] -> ['chapters'] -> ['parts']`.
+ * WHAT THE READER SEES & INTERACTS WITH:
+ *     1. Header bar with live story word count, estimated print pages (`words / 275`),
+ *        and a button to the dedicated Table of Illustrations (`/<series>/illustrations`).
+ *     2. An optional collapsible "Table of Illustrations — Visual Scene Index" drawer.
+ *     3. Active Story Crossroads Decision History bars (`#rs-toc-crossroads`), allowing
+ *        the reader to switch routes or reset a choice (`?path=reset&cx=<id>`) anytime.
+ *     4. Native HTML `<details>` / `<summary>` accordions for every Era and Chapter,
+ *        automatically collapsing 1-part chapters into direct one-click links.
+ *     5. A Frontier Story Crossroads selector at the bottom if the book is an
+ *        interactive Story Crossroads novel and the reader has reached a branching point!
+ *
+ * 100-LEVEL HTML & JS CONCEPTS TO NOTICE HERE:
+ *     - Why use `<span class="toc-era-heading">` instead of `<h2>` inside `<summary>`?
+ *       Many screen readers strip heading semantics inside `<summary>` buttons, or
+ *       announce awkward nested interactive controls. Styling a `<span>` keeps the
+ *       accordion button announcement clean and predictable!
+ *     - Notice `data-story-path`, `data-story-crossroads`, and `data-story-book` on
+ *       Crossroads links: `reader.js` intercepts clicks in the DOM *capture* phase
+ *       to write the updated `rs_cx_<book>` cookie *before* the SPA `fetch()` fires,
+ *       so the PHP server immediately renders the newly chosen branch!
  * =============================================================================
  */
 
-// Import required global state provided by the routing controller
+// Import shared manifest, Story Crossroads graph state, and routing globals from `isabel.php`.
 global $toc_manifest, $effectiveTocEras, $activeStoryPathId, $activeStoryPathObj, $activeCrossroadsChain, $pendingFrontierCrossroads, $cdnBaseUrl, $seriesSlug;
 ?>
 <!-- 
-  MAIN CONTAINER
-  Constrains the TOC width for better readability on desktop displays.
+  MAIN CONTAINER:
+  Constrains the Table of Contents width to 960px for comfortable scanning on desktop displays.
 -->
 <?php
+// Prepare top-of-page statistics and Story Crossroads state arrays with safe defaults.
 $tocTotalIllustrations = (int)($toc_manifest['illustration_count'] ?? 0);
 $tocWordStats = $toc_manifest['word_stats'] ?? [];
 $tocStoryWords = (int)($tocWordStats['story_word_count'] ?? 0);
+// Standard publishing trade-paperback estimate: ~275 words per printed page (`ceil()` rounds up).
 $tocStoryPages = (int)($tocWordStats['estimated_story_pages'] ?? ($tocStoryWords > 0 ? ceil($tocStoryWords / 275) : 0));
+// Prefer `$effectiveTocEras` (which merges active Story Crossroads branches) over raw `$toc_manifest['eras']`.
 $tocErasList = (isset($effectiveTocEras) && is_array($effectiveTocEras)) ? $effectiveTocEras : ($toc_manifest['eras'] ?? []);
 $tocActiveChain = (isset($activeCrossroadsChain) && is_array($activeCrossroadsChain)) ? $activeCrossroadsChain : [];
 $tocFrontierCrossroads = $pendingFrontierCrossroads ?? null;
 ?>
 <div class="book-page" style="max-width: 960px; margin: 0 auto;">
+    <!-- SECTION 1: TOC HEADER, WORD/PAGE TELEMETRY, & ILLUSTRATIONS GALLERY LINK -->
     <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1.5rem; border-bottom: 2px solid var(--rs-border); padding-bottom: 1rem;">
         <div>
             <h1 style="margin: 0; color: var(--rs-primary);">Table of Contents</h1>
             <?php if ($tocStoryWords > 0): ?>
+                <!-- `font-variant-numeric: tabular-nums` aligns digits cleanly like a ledger -->
                 <div style="font-size: 0.85rem; font-weight: 600; color: var(--rs-text-muted); margin-top: 0.25rem; font-variant-numeric: tabular-nums;">
                     <?php echo number_format($tocStoryWords); ?> story words &bull; ~<?php echo number_format($tocStoryPages); ?> print pages &bull; <a href="/stats" style="color: var(--rs-primary); text-decoration: none; font-weight: 700;">Library Scale Stats &rarr;</a>
                 </div>
@@ -55,7 +83,7 @@ $tocFrontierCrossroads = $pendingFrontierCrossroads ?? null;
     </div>
 
     <?php if ($tocTotalIllustrations > 0): ?>
-        <!-- Reusable Embedded Table of Illustrations Component -->
+        <!-- SECTION 2: EMBEDDED COLLAPSIBLE TABLE OF ILLUSTRATIONS (`$illustrationsTocMode = 'embedded'`) -->
         <details style="margin-bottom: 1.75rem; background: var(--rs-bg); border: 1px solid var(--rs-border); border-radius: 8px; overflow: hidden;">
             <summary style="padding: 1.15rem 1.5rem; cursor: pointer; list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 1rem; user-select: none; background: rgba(227, 178, 124, 0.08);">
                 <span style="display: inline-flex; align-items: center; gap: 0.65rem; font-size: 1.15rem; font-weight: 700; color: var(--rs-primary);">
@@ -69,6 +97,7 @@ $tocFrontierCrossroads = $pendingFrontierCrossroads ?? null;
             </summary>
             <div style="padding: 0 1.25rem 1.25rem 1.25rem; border-top: 1px solid var(--rs-border);">
                 <?php
+                // Reuses the exact same gallery component as `sophia/illustrations.php`, configured for embedded accordion mode!
                 $illustrationsTocMode = 'embedded';
                 require __DIR__ . '/../includes/components/illustrations-toc.php';
                 ?>
@@ -77,7 +106,13 @@ $tocFrontierCrossroads = $pendingFrontierCrossroads ?? null;
     <?php endif; ?>
     
     <?php if (!empty($tocActiveChain)): ?>
-        <!-- Multi-Crossroads Active Story Path Decisions & Switchers -->
+        <!--
+          SECTION 3: STORY CROSSROADS DECISION HISTORY & ROUTE SWITCHERS
+          Whenever a reader has chosen one or more branching Story Crossroads options in an
+          interactive novel, `$tocActiveChain` lists every decision in sequence so the reader
+          can see which route they are currently viewing, jump to its opening chapter, reset
+          the choice (`?path=reset`), or click another pill to switch routes on the fly!
+        -->
         <div id="rs-toc-crossroads" style="display: flex; flex-direction: column; gap: 0.9rem; margin-bottom: 1.5rem;">
         <?php foreach ($tocActiveChain as $chainIdx => $chainStep):
             $stepCx  = $chainStep['crossroads'] ?? [];
@@ -104,6 +139,7 @@ $tocFrontierCrossroads = $pendingFrontierCrossroads ?? null;
                                 <i class="ph ph-arrow-right" aria-hidden="true"></i>
                             </a>
                         <?php endif; ?>
+                        <!-- `data-story-path="reset"` clears this Crossroads choice in the `rs_cx_<book>` cookie & `localStorage` -->
                         <a href="/<?php echo htmlspecialchars($seriesSlug); ?>/toc?path=reset&amp;cx=<?php echo rawurlencode($stepCxId); ?>#rs-toc-crossroads"
                            data-story-path="reset"
                            data-story-crossroads="<?php echo htmlspecialchars($stepCxId); ?>"
@@ -115,6 +151,7 @@ $tocFrontierCrossroads = $pendingFrontierCrossroads ?? null;
                     </div>
                 </div>
                 <?php if (!empty($stepCx['options'])): ?>
+                <!-- Quick-switch route pills for all options at this Crossroads -->
                 <div class="rs-active-path-switcher-pills">
                     <?php foreach ($stepCx['options'] as $cxOpt):
                         $cxOptId = (string)($cxOpt['id'] ?? '');
@@ -138,15 +175,16 @@ $tocFrontierCrossroads = $pendingFrontierCrossroads ?? null;
     <?php endif; ?>
 
     <?php if (!empty($tocErasList)): ?>
+        <!-- SECTION 4: MULTI-LEVEL ERA -> CHAPTER -> PART ACCORDION -->
         <div class="toc-accordion" style="display: flex; flex-direction: column; gap: 1rem;">
             
-            <!-- Iterate over top-level eras in the active reading sequence -->
+            <!-- Outer Loop: Iterate over top-level Story Eras (`e001`, `e002`, ...) -->
             <?php foreach ($tocErasList as $eIndex => $era):
                 $eraIllusCount = (int)($era['illustration_count'] ?? 0);
                 $eraWordCount = (int)($era['word_count'] ?? 0);
             ?>
                 <details class="toc-book" style="background: var(--rs-bg); border: 1px solid var(--rs-border); border-radius: 8px; overflow: hidden;">
-                    <!-- Native accordion header for the Era (uses span instead of h2 inside summary so screen-reader heading navigation stays intact) -->
+                    <!-- Native `<summary>` toggle header for the Era (uses `<span>` rather than `<h2>` inside `<summary>` to keep screen-reader heading trees clean) -->
                     <summary style="padding: 1.5rem; cursor: pointer; list-style: none; display: flex; flex-direction: column; gap: 0.5rem; user-select: none;">
                         <div style="display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;">
                             <span class="toc-era-heading" style="margin: 0; font-size: 1.5rem; font-weight: 700; color: var(--rs-text);"><?php echo htmlspecialchars($era['era_title']); ?></span>
@@ -170,7 +208,7 @@ $tocFrontierCrossroads = $pendingFrontierCrossroads ?? null;
                         <?php endif; ?>
                     </summary>
                     
-                    <!-- Chapter container -->
+                    <!-- Expanded Era Body: Direct Era Overview Link + Chapters List -->
                     <?php $eraOverviewHref = !empty($era['era_url']) ? str_replace('/raggiesoft-books/books', '', (string)$era['era_url']) : ''; ?>
                     <div class="toc-chapters" style="padding: 0 1.5rem 1.5rem 1.5rem; border-top: 1px solid var(--rs-border); background: var(--rs-surface);">
                         <?php if ($eraOverviewHref !== ''): ?>
@@ -182,19 +220,20 @@ $tocFrontierCrossroads = $pendingFrontierCrossroads ?? null;
                         <?php endif; ?>
                         <?php if (!empty($era['chapters'])): ?>
                             
-                            <!-- Iterate over chapters within the current era -->
+                            <!-- Middle Loop: Iterate over Chapters (`c001`, `c002`, ...) inside the current Era -->
                             <?php foreach ($era['chapters'] as $cIndex => $chap): 
+                                // `$fileToUrl` was built by `sophia/sidebar.php` to map `eXXX/cXXX/pXXX.md` -> clean URL
                                 global $fileToUrl;
                                 $partList = !empty($chap['parts']) && is_array($chap['parts']) ? $chap['parts'] : [];
                                 $partCount = count($partList);
                                 $chapIllusCount = (int)($chap['illustration_count'] ?? 0);
                             ?>
                                 <?php if ($partCount === 1): 
-                                    /**
-                                     * IDEA 3: SMART SINGLE-PART CHAPTER COLLAPSE
+                                    /*
+                                     * SMART SINGLE-PART CHAPTER COLLAPSE:
                                      * When a Chapter (`cXXX`) contains only 1 Part (`p001.md`), bypass the
                                      * redundant nested `<details>` accordion and render the Chapter as a
-                                     * direct single-click link.
+                                     * direct single-click link with word count & reading-minute estimate (`words / 250`).
                                      */
                                     $singlePart = $partList[0];
                                     $singleHref = $fileToUrl[$singlePart['file_path']] ?? ($singlePart['url'] ?? $singlePart['file_path']);
@@ -235,8 +274,8 @@ $tocFrontierCrossroads = $pendingFrontierCrossroads ?? null;
                                     </a>
                                 </div>
                                 <?php else: ?>
+                                <!-- Nested `<details>` Accordion for Multi-Part Chapters (`2+` Parts) -->
                                 <details class="toc-chapter" style="margin-top: 1rem;">
-                                    <!-- Native accordion header for multi-part Chapter -->
                                     <summary style="cursor: pointer; list-style: none; font-size: 1.2rem; font-weight: 600; padding: 0.5rem 0; border-bottom: 1px dashed var(--rs-border); display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;">
                                         <span style="display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;">
                                             <i class="ph ph-folder" aria-hidden="true"></i>
@@ -264,7 +303,7 @@ $tocFrontierCrossroads = $pendingFrontierCrossroads ?? null;
                                         <?php endif; ?>
                                         <?php if (!empty($partList)): ?>
                                             
-                                            <!-- Iterate over individual parts (pXXX.md files) -->
+                                            <!-- Inner Loop: Iterate over individual scene Parts (`p001.md`, `p002.md`, ...) -->
                                             <?php foreach ($partList as $part): 
                                                 $href = $fileToUrl[$part['file_path']] ?? ($part['url'] ?? $part['file_path']);
                                                 $partHasImage = !empty($part['image']) || !empty($part['images']);
@@ -307,6 +346,8 @@ $tocFrontierCrossroads = $pendingFrontierCrossroads ?? null;
         </div>
 
         <?php if ($tocFrontierCrossroads !== null):
+            // SECTION 5: PENDING FRONTIER STORY CROSSROADS SELECTOR
+            // Automatically picks the 2-way signpost emblem for binary Crossroads or 3-way emblem for 3+ options!
             $frontierCxId = (string)($tocFrontierCrossroads['id'] ?? '');
             $frontierOptsList = is_array($tocFrontierCrossroads['options'] ?? null) ? $tocFrontierCrossroads['options'] : [];
             $frontierDirs = (count($frontierOptsList) >= 3) ? 3 : 2;
@@ -340,6 +381,7 @@ $tocFrontierCrossroads = $pendingFrontierCrossroads ?? null;
                         </p>
                     <?php endif; ?>
                 </div>
+                <!-- Option Cards: Clicking "Show Chapters for This Path" saves the route choice and reveals its Eras/Chapters -->
                 <div class="rs-crossroads-grid">
                     <?php foreach (($tocFrontierCrossroads['options'] ?? []) as $cxOpt):
                         $optId = (string)($cxOpt['id'] ?? '');
@@ -376,7 +418,7 @@ $tocFrontierCrossroads = $pendingFrontierCrossroads ?? null;
             </section>
         <?php endif; ?>
         
-        <!-- Inline CSS to manage the native `<details>` chevron animations -->
+        <!-- Inline CSS hiding default WebKit `<summary>` triangles and rotating our custom `.toc-caret` icon 180deg when `[open]` -->
         <style>
             details > summary::-webkit-details-marker { display: none; }
             details[open] > summary .toc-caret { transform: rotate(180deg); }

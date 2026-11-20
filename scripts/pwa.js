@@ -1,40 +1,73 @@
 /**
- * Architectural Block Comment:
- * File: pwa.js
- * Purpose:
- *     This client-side script initializes and manages the Progressive Web App (PWA) behaviors for the reading platform.
- *     It handles service worker registration, offline resume functionality, and iOS-specific installation prompts.
- * 
- * Design Decisions & Future Maintenance:
- *     - Standalone Detection: Detects if the app is running in a browser tab vs. installed on the device (standalone mode).
- *     - Reading Resume: Automatically stores the current URL in `localStorage`. If the app is launched in standalone mode, 
- *       it redirects the user straight to their last read chapter rather than forcing them to navigate from the homepage.
- *     - iOS Quirks: iOS Safari historically hides PWA installation prompts. This script includes a custom, dismissible 
- *       HTML overlay specifically targeting iOS users to educate them on how to "Add to Home Screen".
- *     - Deferral: Logic is executed inside `DOMContentLoaded` to ensure DOM elements can be safely manipulated, while 
- *       Service Worker registration is deferred to `window.addEventListener('load')` to prioritize page content rendering.
+ * =============================================================================
+ * PLAIN-ENGLISH OVERVIEW FOR NEW DEVELOPERS (100-LEVEL JAVASCRIPT / WEB INTRO)
+ * =============================================================================
+ * File: scripts/pwa.js
+ * URL:  https://books.raggiesoft.com/scripts/pwa.js
+ *
+ * WHAT IS THIS FILE?
+ *   Loaded once inside `<head>` (`includes/components/headers/header.php`),
+ *   this client-side Vanilla JavaScript file bridges the gap between running
+ *   RaggieSoft Book Reader inside a normal browser tab vs. running it as an
+ *   installed Progressive Web App (PWA) icon on iOS, Android, macOS, or Windows.
+ *
+ * WHY DOES IT EXIST & WHAT VISIBLE BEHAVIORS DOES IT POWER?
+ *   1. **Resume Last-Read Chapter**: Saves the current chapter URL in the
+ *      browser's `localStorage` (`lastReadChapter`). If the reader configured
+ *      "Resume where I left off" (`rs-launch-behavior === 'resume'`) and taps
+ *      their Home Screen app icon (which opens `/`), it jumps straight back to
+ *      their chapter!
+ *   2. **Standalone PWA Chrome Cleanup**: Detects when the app is running in an
+ *      installed OS window (`display-mode: standalone`) and hides the cross-site
+ *      RaggieSoft Network top bar so the app feels 100% native.
+ *   3. **Cross-PWA Link Handoffs (`window.launchQueue` & Outbound Capture)**:
+ *      - *Inbound*: If RaggieSoft Backstage or The Listening Room sends a link
+ *        to an already-open Book Reader window, routes it through the Stardust
+ *        SPA router so background chapter music never cuts out!
+ *      - *Outbound*: Marks links to `backstage.raggiesoft.com` and `music.raggiesoft.com`
+ *        with `target="_blank" rel="noopener"` in standalone mode so the OS opens
+ *        the sibling app window cleanly.
+ *   4. **iOS Safari "Add to Home Screen" Guide**: Because Apple's iOS Safari
+ *      does not show an automatic "Install App" prompt, displays a polite,
+ *      dismissible hint banner (at most once every 7 days) showing iPhone/iPad
+ *      visitors how to tap Share -> "Add to Home Screen".
+ *   5. **Cache Cleanup & Service Worker Registration**: Purges outdated pre-`v21`
+ *      Cache Storage bins and registers `/sw.js?v=21` after the page finishes loading.
+ * =============================================================================
  */
 
+// Wait for `DOMContentLoaded` (which fires as soon as the HTML tags are parsed into `document`,
+// without waiting for slow images or fonts to finish downloading).
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Resume Reading Logic
-    // Grab the current URL path to evaluate state.
+    // =========================================================================
+    // 1. SAVE LAST-READ LOCATION IN `localStorage`
+    // =========================================================================
+    // `localStorage` is a persistent key-value dictionary built into every browser
+    // that survives closing the tab or restarting the phone/computer.
     const currentPath = window.location.pathname;
     
-    // If not on the homepage (and it's a valid route), save the current path as the last read location.
+    // Save any real reading path (longer than `/`), skipping utility screens like `/accessibility`
+    // so re-opening the app never drops the reader onto a policy screen instead of their novel.
     if (currentPath !== '/' && currentPath.length > 2) {
-        // Exclude specific system paths if needed, e.g., /accessibility/, so we don't drop users into settings on next launch.
         if (!currentPath.includes('accessibility')) {
             localStorage.setItem('lastReadChapter', currentPath);
         }
     }
 
-    // Check if running as an installed PWA (standalone, window-controls-overlay, minimal-ui, or fullscreen).
+    // =========================================================================
+    // 2. DETECT INSTALLED ("STANDALONE") PWA DISPLAY MODE
+    // =========================================================================
+    // Check three cross-platform signals to tell if we are running as an installed app:
+    //   - Standard CSS Media Query (`display-mode: standalone` / `window-controls-overlay`, etc.)
+    //   - Legacy Apple iOS Safari property (`window.navigator.standalone === true`)
+    //   - Android Trusted Web Activity referrer (`android-app://`)
     const isStandalone =
         window.matchMedia('(display-mode: standalone), (display-mode: window-controls-overlay), (display-mode: minimal-ui), (display-mode: fullscreen)').matches ||
         window.navigator.standalone === true ||
         document.referrer.includes('android-app://');
 
     if (isStandalone) {
+        // Add `.is-pwa-standalone` CSS hook and hide the web-only RaggieSoft Network bar
         document.documentElement.classList.add('is-pwa-standalone');
         document.body.classList.add('is-pwa-standalone');
         const netBar = document.querySelector('.rs-network-bar');
@@ -45,12 +78,17 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
     
+    // Tracks whether the Launch Handler API (`window.launchQueue`) already navigated us to a deep link
+    // on startup—preventing the homepage "Resume Last Chapter" timer below from overriding it!
     let hasHandledLaunchQueueTarget = false;
 
-    // 1b. Cross-PWA Incoming Link Consumer (Launch Handler API: window.launchQueue)
-    // When RaggieSoft Backstage or The Listening Room hands off a book/chapter URL
-    // to an already-open Book Reader PWA window (`client_mode: "focus-existing"`),
-    // route seamlessly through the Stardust SPA router so active chapter audio never stops.
+    // =========================================================================
+    // 3. INBOUND CROSS-PWA HANDOFF (`window.launchQueue` Launch Handler API)
+    // =========================================================================
+    // When `manifest.json` specifies `"launch_handler": { "client_mode": "focus-existing" }`,
+    // clicking a `books.raggiesoft.com` link inside another app focuses the existing Book Reader
+    // PWA window and delivers the clicked URL to `window.launchQueue.setConsumer(...)` instead
+    // of reloading the window!
     if ('launchQueue' in window && window.launchQueue && typeof window.launchQueue.setConsumer === 'function') {
         window.launchQueue.setConsumer((launchParams) => {
             if (!launchParams || !launchParams.targetURL) return;
@@ -66,6 +104,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     localStorage.setItem('lastReadChapter', incoming.pathname);
                 }
 
+                // Clever SPA trick: create an invisible `<a href="...">`, append it to `document.body`,
+                // call `.click()` so `stardust-spa.js`'s body click listener intercepts it for a soft
+                // DOM swap (keeping `<audio id="stardust-bgm">` playing uninterrupted!), then remove it!
                 if (document.body) {
                     const spaAnchor = document.createElement('a');
                     spaAnchor.href = dest;
@@ -82,12 +123,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 1c. Sibling RaggieSoft PWA Outbound Handoff Enhancer
-    // When running as an installed standalone PWA, ensure links to sibling RaggieSoft
-    // PWAs (`backstage.raggiesoft.com`, `music.raggiesoft.com`) open via auxiliary
-    // browsing context (`target="_blank" rel="noopener"`) so Chromium & Android
-    // PWA Link Capturing hands them directly to the installed sibling PWA window
-    // instead of trapping them inside Book Reader with an out-of-scope toolbar.
+    // =========================================================================
+    // 4. OUTBOUND SIBLING PWA HANDOFF ENHANCER (Capture-Phase Click Listener)
+    // =========================================================================
+    // When installed as a standalone PWA, clicking a regular link to a different subdomain
+    // (`backstage.raggiesoft.com` or `music.raggiesoft.com`) would otherwise open a trapped
+    // in-app browser sheet inside Book Reader. Adding `target="_blank" rel="noopener"` during
+    // the **capture phase** (`true` as the 3rd argument to `addEventListener`, running top-down
+    // from `document` BEFORE target listeners) lets the OS launch the installed sibling PWA window!
     if (isStandalone) {
         const siblingPwaHosts = new Set(['backstage.raggiesoft.com', 'music.raggiesoft.com']);
         document.addEventListener(
@@ -102,7 +145,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (destUrl.hostname !== window.location.hostname && siblingPwaHosts.has(destUrl.hostname)) {
                         anchor.target = '_blank';
                         const relTokens = new Set((anchor.getAttribute('rel') || '').split(/\s+/).filter(Boolean));
-                        relTokens.add('noopener');
+                        relTokens.add('noopener'); // Security best practice: prevents new window from accessing `window.opener`
                         anchor.setAttribute('rel', Array.from(relTokens).join(' '));
                     }
                 } catch (_) {
@@ -113,13 +156,17 @@ document.addEventListener('DOMContentLoaded', () => {
         );
     }
 
+    // =========================================================================
+    // 5. AUTOMATIC CHAPTER RESUME ON HOME SCREEN LAUNCH
+    // =========================================================================
     if (isStandalone && currentPath === '/') {
-        // If launched from the OS home screen and landing on the root homepage, check launch preference.
+        // Check if the reader opted into `'resume'` in Settings (`sophia/settings.php`)
         const launchBehavior = localStorage.getItem('rs-launch-behavior') || 'home';
         const lastRead = localStorage.getItem('lastReadChapter');
         
         if (!hasHandledLaunchQueueTarget && launchBehavior === 'resume' && lastRead && lastRead !== '/') {
-            // Give a tiny delay so the native OS splash screen transitions naturally before the JS redirect fires.
+            // Wait 100ms so the OS startup splash screen finishes fading smoothly,
+            // then use `location.replace()` (replaces `/` in history so Back doesn't loop!).
             setTimeout(() => {
                 if (!hasHandledLaunchQueueTarget) {
                     window.location.replace(lastRead);
@@ -128,27 +175,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // 2. iOS Add to Home Screen Hint
-    // Helper function to detect Apple mobile devices via user-agent string.
+    // =========================================================================
+    // 6. iOS SAFARI "ADD TO HOME SCREEN" EDUCATIONAL BANNER
+    // =========================================================================
+    // Helper arrow function testing if the visitor's User-Agent string is an iPhone, iPad, or iPod.
     const isIos = () => {
         const userAgent = window.navigator.userAgent.toLowerCase();
         return /iphone|ipad|ipod/.test(userAgent);
     };
 
     if (isIos() && !isStandalone) {
-        // Check if we already showed the installation hint recently to avoid spamming the user.
+        // Read the Unix millisecond timestamp when the user last dismissed the banner
         const hintDismissed = localStorage.getItem('iosA2HSDismissed');
         const now = new Date().getTime();
         
-        // Show if not dismissed, or if it was dismissed more than 7 days ago.
+        // Only show if never dismissed OR if > 7 days (`7 * 24 * 60 * 60 * 1000` ms) have passed.
         if (!hintDismissed || (now - parseInt(hintDismissed)) > 7 * 24 * 60 * 60 * 1000) {
             showIosInstallHint();
         }
     }
 
     /**
-     * Injects a floating banner at the bottom of the screen instructing iOS users 
-     * on how to manually install the PWA using Safari's share menu.
+     * Injects a theme-aware floating card at the bottom of mobile Safari explaining
+     * how to tap the Share icon and choose "Add to Home Screen".
      */
     function showIosInstallHint() {
         const hintHtml = `
@@ -164,21 +213,23 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         `;
         
-        // Append the banner to the DOM.
+        // `insertAdjacentHTML('beforeend', ...)` appends HTML right before `</body>`
+        // without destroying existing DOM event listeners (unlike `document.body.innerHTML += ...`!).
         document.body.insertAdjacentHTML('beforeend', hintHtml);
         
-        // Bind the close button to remove the banner and update the dismissal timestamp in localStorage.
+        // Remove the banner on click and record the current timestamp so we wait 7 days before asking again
         document.getElementById('close-ios-hint').addEventListener('click', () => {
             document.getElementById('ios-install-hint').remove();
             localStorage.setItem('iosA2HSDismissed', new Date().getTime().toString());
         });
     }
 
-    // 3. Purge Legacy Pre-v21 CacheStorage Partitions & Register Service Worker
-    // Proactively delete any stale pre-v21 `ova-*` cache bins (such as `ova-dynamic-v19` that
-    // previously cached full/partial `.mp3` responses and broke Safari WebKit CoreMedia HTTP 206
-    // byte-range probes), then register `/sw.js?v=21` with `updateViaCache: 'none'` so both
-    // Cloudflare's edge cache and Safari's ServiceWorker cache fetch the live worker immediately.
+    // =========================================================================
+    // 7. PROACTIVE CACHE STORAGE CLEANUP & SERVICE WORKER REGISTRATION
+    // =========================================================================
+    // Immediately delete any old pre-`v21` `ova-*` cache drawers from the page thread
+    // (for example, `ova-dynamic-v19`, which previously cached `.mp3` files and interfered
+    // with Safari WebKit CoreMedia's HTTP 206 byte-range audio streaming).
     if ('caches' in window) {
         const activeBins = new Set(['ova-cache-v21', 'ova-dynamic-v21', 'ova-images-v21']);
         caches.keys().then(names => {
@@ -190,8 +241,11 @@ document.addEventListener('DOMContentLoaded', () => {
         }).catch(() => {});
     }
 
+    // Register `/sw.js?v=21` AFTER `window` `'load'` (once fonts, images, and CSS finish)
+    // so Service Worker installation never competes for bandwidth with initial page rendering!
+    // `updateViaCache: 'none'` tells the browser to check the live server for `sw.js` updates
+    // instead of trusting stale HTTP disk cache.
     if ('serviceWorker' in navigator) {
-        // Wait for the window `load` event to ensure the SW registration doesn't block the critical rendering path.
         window.addEventListener('load', () => {
             navigator.serviceWorker.register('/sw.js?v=21', { scope: '/', updateViaCache: 'none' }).then(registration => {
                 registration.update();

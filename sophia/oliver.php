@@ -1,49 +1,79 @@
 <?php
-/**
+/*
  * ============================================================================
- * ARCHITECTURE & MODULE OVERVIEW: oliver.php
+ * READ-ALONG TEACHING GUIDE: sophia/oliver.php (THE CORE BOOK READER ENGINE)
  * ============================================================================
- * Purpose:
- * This file serves as the core reading interface ("Oliver"). It dynamically 
- * routes requests, parses Markdown files from the CDN, extracts YAML frontmatter, 
- * and renders the immersive narrative reading experience, including multimedia 
- * integration (audio).
- * 
- * Architectural Role:
- * The primary view engine for narrative content. It intercepts routing logic 
- * using JSON maps, separating the UI from the raw content stored externally. 
- * It converts standard Markdown to HTML via Parsedown while injecting custom 
- * UI elements like ambient audio players, breadcrumbs, and social sharing links.
- * 
- * Key Components:
- * 1. Routing Engine: Maps `$requestUri` to a physical `.md` path using a 
- *    series-specific JSON route file (`data/routes/*.json`).
- * 2. Markdown Parsing: Fetches content from the CDN, strips YAML frontmatter 
- *    into an array (`$frontmatter`), and uses `StardustParsedown` to render.
- * 3. Temporal Data Handling: Parses custom frontmatter keys (`stardate`, `date`, 
- *    `timezone`) to render in-universe chronologies.
- * 4. Audio Integration: Dynamically generates an HTML5 audio player if `audio` 
- *    frontmatter exists, resolving tracks against `engine-room-records` metadata.
- * 5. Special Pages: Handles TOCs and Landing pages by intercepting specific 
- *    internal path keywords (`__TOC__`, `__LANDING__`) and delegating to sub-views.
- * 
- * Maintenance Notes:
- * - Routing depends entirely on the JSON map. If a URL isn't in the JSON, it 404s.
- * - Timezone conversions (`America/New_York`) use hardcoded maps for standard 
- *   abbreviations (`EST/EDT`). Updates to PHP's timezone db or new abbreviations 
- *   require updates to `$tzMap`.
- * - Audio fetching logic relies on an assumed directory structure 
- *   (`engine-room-records/artists/{artist}/{album}`).
+ * WHAT PAGES & VIEWS THIS FILE RENDERS:
+ *     Named after "Oliver" (the fourth sibling in the Ocean View Archives lore),
+ *     this 3,400+-line controller + view template is the heart of
+ *     `https://books.raggiesoft.com`. Whenever a visitor opens ANY URL belonging
+ *     to a novel (`/<series>`, `/<series>/toc`, `/<series>/illustrations`,
+ *     `/<series>/<era>`, `/<series>/<era>/<chapter>`, or a deep story manuscript
+ *     part `/<series>/<era>/<chapter>/<part>`), `eleanor/isabel.php` renders
+ *     `sophia/sidebar.php` on the left and hands control to `sophia/oliver.php`
+ *     to render `<main id="stardust-reading-pane">`!
+ *
+ * VARIABLES & JSON MANIFESTS FED INTO `oliver.php` FROM `eleanor/isabel.php`:
+ *     - `$requestUri`: Clean URL path requested by the browser (e.g. `/rachel/...`).
+ *     - `$basePath`: Server filesystem root of the `books.raggiesoft.com` app.
+ *     - `$cdnBaseUrl`: Asset CDN origin (`https://assets.raggiesoft.com`).
+ *     - `$toc_manifest`: Decoded `toc.json` for the active series (Eras, Chapters,
+ *       Parts, Story Arcs, Story Crossroads graph, and `word_stats`).
+ *     - `$prefetchedMdContent`: Raw `.md` manuscript already loaded by `isabel.php`
+ *       when computing `<head>` OpenGraph tags—reused here so we never read disk twice!
+ *     - `$activeStoryPathId`, `$activeSegmentIdSet`, `$activeCrossroadsChoices`:
+ *       Active **RaggieSoft Story Crossroads** branching choices resolved by
+ *       `isabel.php` from the `rs_cx_<series>` cookie / `?path=` query string.
+ *     - `$fileToUrl`: Reverse lookup dictionary (`filePath => cleanUrl`) built
+ *       just moments earlier by `sophia/sidebar.php`.
+ *
+ * COMPLETE MAP OF SUBSYSTEMS INSIDE THIS FILE (TOP TO BOTTOM):
+ *     1. Route Lookup & Trauma-Informed 404 Card (`data/routes/<series>.json` +
+ *        `renderOliverNotFoundCard()`).
+ *     2. Sub-View Dispatcher (`__SERIES_LANDING__` -> `landing.php`, `__TOC__` ->
+ *        `toc.php`, `__ILLUSTRATIONS__` -> `illustrations.php`, `__ERA_TOC__` ->
+ *        `era-toc.php`, `__CHAP_TOC__` -> `chap-toc.php`) & Markdown File Loader.
+ *     3. Custom YAML Frontmatter Parser (`--- ... ---` -> `$frontmatter` array).
+ *     4. `StardustParsedown` Markdown-to-HTML Renderer, `## Heading` In-Scene
+ *        Mini-TOC Extractor (`$sceneSubsections`), and Wikipedia-Style Inline
+ *        Link Preview Enricher (`data-rs-preview` across Books, Music, & Portals).
+ *     5. Sequential `Previous` / `Next` Resolver (filtering out inactive Story
+ *        Crossroads segments and rewiring for `?arc=<slug>` Story Arc Playlists).
+ *     6. Schema.org Structured Data Graph (`BookSeries` + `Book`/`Chapter` +
+ *        `BreadcrumbList` JSON-LD) & Atmospheric Narrative Themes (`dark-rain`).
+ *     7. Reading Pane Typography & Theme Inheritance (`#stardust-reading-pane` +
+ *        `.story-content`, driven by CSS Custom Properties `--rs-font-family`,
+ *        `--rs-font-size`, `--rs-line-height`, measure width, and `theme-*` classes
+ *        persisted in `localStorage['reader-settings']` via `settings.php` & `reader.js`).
+ *     8. Scene Hero Plate, Multi-Slide 16:9 Hero Image Carousel (keyboard + touch
+ *        swipe), and Locale-Aware Temporal Chronology (`stardate`, `realm_time`,
+ *        and ISO-8601 `DateTime::ATOM` timezone conversion).
+ *     9. Persistent Soundtrack `<audio>` Queue Engine & Lyrics/WebVTT Architecture
+ *        (bridging `#narrative-audio-element` SSR metadata to the live `#stardust-bgm`
+ *        player in `header.php`, `.md` lyrics modal, and The Listening Room's
+ *        time-synced `.vtt` WebVTT lyric cues).
+ *    10. RaggieSoft Backstage Bonus-Dossier Drawer (`#rs-backstage-callout` +
+ *        `<dialog id="rs-backstage-dialog">` hydrated via CORS `fetch()` against
+ *        `https://backstage.raggiesoft.com/api/v1/<slug>.json`).
+ *    11. Coequal **Story Crossroads** Interactive Route Cards (`#rs-story-crossroads`)
+ *        & Mid-Novel Story Path Switcher (`<dialog id="rs-story-crossroads-dialog">`).
+ *    12. Offline EPUB/PDF Download Card (`#rs-offline-cta-card`), Social Share Bar,
+ *        Zoë Patel's OS-Adaptive `ZOË.Systems.Logs` Syntax Highlighter CSS, `<led>`
+ *        Transit Destination Signs, and the Inline Link Hovercard JS Controller!
  * ============================================================================
  */
 
-// RaggieSoft Books - Markdown Viewer (Route JSON Driven)
-
+// ============================================================================
+// SUBSYSTEM 1: ROUTE MANIFEST RESOLUTION (`data/routes/<seriesSlug>.json`)
+// ============================================================================
+// Trim any trailing slash from `$requestUri` and split on `'/'` so segment `[0]`
+// gives us the novel's URL slug (e.g. `"/rachel/era-1/..."` -> `$seriesSlug = "rachel"`).
 $requestUri = rtrim($requestUri, '/');
 $parts = explode('/', ltrim($requestUri, '/'));
 $seriesSlug = $parts[0] ?? '';
 
-// Load the routing manifest for the specific series
+// Load the pre-compiled route table generated by `paige.php` for this series.
+// Each URL key in `<seriesSlug>.json` maps to `['title' => '...', 'filePath' => 'e001/c001/p001.md', ...]`.
 $routeFile = $basePath . '/data/routes/' . $seriesSlug . '.json';
 $routeData = [];
 $config = [];
@@ -57,6 +87,7 @@ if (file_exists($routeFile)) {
             $actualFilePath = $config['filePath'];
         }
     } elseif (strpos($requestUri, '/part-1-') !== false) {
+        // Legacy fallback: single-part chapters strip `/part-1-<slug>` down to `/<slug>`
         $strippedPart1Uri = preg_replace('#/part-1-([^/]+)$#', '/$1', $requestUri);
         if (isset($routeData[$strippedPart1Uri])) {
             $config = $routeData[$strippedPart1Uri];
@@ -171,15 +202,19 @@ if (empty($actualFilePath)) {
     return;
 }
 
-// 1. Fetch Markdown Content from CDN (or intercept internal paths)
-// $cdnBaseUrl is injected by isabel.php
+// ============================================================================
+// SUBSYSTEM 2: SPECIAL SUB-VIEW DISPATCHER & MARKDOWN MANUSCRIPT FETCHER
+// ============================================================================
+// `$actualFilePath` is either a sentinel token (`__SERIES_LANDING__`, `__TOC__`,
+// `__ILLUSTRATIONS__`, `__ERA_TOC__|...`, `__CHAP_TOC__|...`) OR a relative
+// Markdown manuscript path like `e001/c001/p001.md` (or `paths/<optId>/e002/...`).
 $specialPageType = null;
 $specialPagePathId = null;
 $specialPageIndex1 = 0;
 $specialPageIndex2 = 0;
 $mdContent = '';
 
-// Handle programmatic view routing for tables of contents, illustrations, and landing pages
+// Check sentinel tokens first; pipe-delimited tokens (`|`) carry Story Crossroads `pathId` and 0-based Era/Chapter indices
 if ($actualFilePath === '__SERIES_LANDING__') {
     $specialPageType = 'landing';
 } elseif ($actualFilePath === '__TOC__') {
@@ -207,7 +242,9 @@ if ($actualFilePath === '__SERIES_LANDING__') {
         $specialPageIndex2 = (int)($p[2] ?? 0);
     }
 } else {
-    // Standard content fetching block (preferring local NVMe disk before remote CDN)
+    // Story scene `.md` loading pipeline:
+    // 1. Reuse `$prefetchedMdContent` if `eleanor/isabel.php` already read the file during SEO `<head>` setup!
+    // 2. Otherwise check local NVMe `raggiesoft-assets`, then `raggiesoft-narratives`, then remote `$cdnBaseUrl`.
     if (isset($prefetchedMdContent) && $prefetchedMdContent !== null) {
         $mdContent = $prefetchedMdContent;
     } else {
@@ -221,17 +258,17 @@ if ($actualFilePath === '__SERIES_LANDING__') {
         } elseif (is_file($localNarrMd)) {
             $mdContent = @file_get_contents($localNarrMd);
         } else {
-            // Suppress errors and handle 404s gracefully via the check below
             $mdUrl = $cdnBaseUrl . '/raggiesoft-books/books/' . $seriesSlug . '/' . ltrim($actualFilePath, '/');
             $mdContent = @file_get_contents($mdUrl);
         }
         if ($mdContent !== false) {
-            // Replace internal CDN macros
+            // Expand author-time `{{CDN}}` / `{{cms}}` placeholders into the live CDN URL (`https://assets.raggiesoft.com`)
             $mdContent = str_replace(['{{CDN}}', '{{cms}}'], $cdnBaseUrl, $mdContent);
         }
     }
 }
 
+// Guard clause: if the physical `.md` file could not be read from disk or CDN, render the 404 navigation card
 if ($mdContent === false && !$specialPageType) {
     renderOliverNotFoundCard(
         (string)$seriesSlug,
@@ -243,38 +280,46 @@ if ($mdContent === false && !$specialPageType) {
     return;
 }
 
-// 2. Parse YAML Frontmatter
+// ============================================================================
+// SUBSYSTEM 3: CUSTOM YAML FRONTMATTER PARSER (`--- ... ---`)
+// ============================================================================
+// Every story Markdown file starts with a metadata header wrapped between `---` lines:
+//   ---
+//   title: "Part 1: ..."
+//   date: "May 21, 2016"
+//   audio: "the-stardust-engine/2016-live-at-the-crucible/..."
+//   backstage:
+//     - "books/aubrie/..."
+//   ---
+// We slice that header off `$mdContent` so raw YAML never prints in the story,
+// and parse both scalar `key: value` pairs and bulleted `- item` YAML lists into `$frontmatter`.
 $frontmatter = [];
-// Matches a block surrounded by '---' at the very start of the string
 if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $mdContent, $matches)) {
     $rawFrontmatter = $matches[1];
-    $mdContent = substr($mdContent, strlen($matches[0])); // Strip it from the content
+    $mdContent = substr($mdContent, strlen($matches[0])); // Strip frontmatter block from the prose body
     
     $lines = explode("\n", $rawFrontmatter);
     $currentArrayKey = null;
     
-    // Custom YAML parser optimized for simple key-value and list structures
     foreach ($lines as $line) {
         $trimmed = trim($line);
         if ($trimmed === '') continue;
         
-        // Handle array items (lines starting with '-')
+        // Case A: YAML list item (`- "value"`) belonging to the active `$currentArrayKey`
         if (strpos($trimmed, '-') === 0 && $currentArrayKey) {
             $val = trim(substr($trimmed, 1));
             $val = trim($val, '"\'');
             $frontmatter[$currentArrayKey][] = $val;
         } 
-        // Handle key: value pairs
+        // Case B: `key: value` or `key:` (opening a multi-line YAML array)
         elseif (strpos($trimmed, ':') !== false) {
             list($key, $val) = explode(':', $trimmed, 2);
             $key = trim($key);
             $val = trim($val);
             if ($val === '') {
-                // Prepare for an array block
                 $currentArrayKey = $key;
                 $frontmatter[$currentArrayKey] = [];
             } else {
-                // Scalar value
                 $val = trim($val, '"\'');
                 $frontmatter[$key] = $val;
                 $currentArrayKey = null;
@@ -285,13 +330,20 @@ if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $mdContent, $matche
     }
 }
 
-// 3. Render HTML & Extract In-Scene `## Heading` (`<h2>`) Sub-Sections for Mini-TOC
+// ============================================================================
+// SUBSYSTEM 4: MARKDOWN RENDERING, IN-SCENE MINI-TOC, & WIKI LINK PREVIEWS
+// ============================================================================
+// `StardustParsedown` extends standard Parsedown to handle custom narrative tags
+// such as AAC speech synthesis blocks, `<led>` bus destination signs, `<pa>`
+// transit announcements, `.foreign-language` tap-to-translate spans, and
+// Zoë Patel's `ZOË.Systems.Logs` diagnostic blocks!
 require_once $basePath . '/includes/classes/stardust-parsedown.php';
 $Parsedown = new StardustParsedown('vanilla');
 $sceneSubsections = [];
 if ($specialPageType) {
+    // PHP Output Buffering (`ob_start()` -> `ob_get_clean()`): captures all `echo`ed HTML from
+    // `landing.php`, `toc.php`, `illustrations.php`, `era-toc.php`, or `chap-toc.php` into `$htmlContent`!
     ob_start();
-    // Dynamically require the correct PHP sub-view
     if ($specialPageType === 'landing') {
         require_once __DIR__ . '/landing.php';
     } elseif ($specialPageType === 'toc') {
@@ -613,15 +665,20 @@ if ($specialPageType) {
     );
 }
 
-// 4. Sequence Navigation (Provided by Route JSON)
+// ============================================================================
+// SUBSYSTEM 5: SEQUENTIAL PREVIOUS / NEXT NAVIGATION & STORY CROSSROADS GATING
+// ============================================================================
+// Computes the bottom `$prevUrl` and `$nextUrl` buttons:
+//   - Filters out `'common'`, the series root `/<series>`, and (when reading a story scene)
+//     intermediate TOC/Gallery views (`__TOC__`, `__ERA_TOC__`, `__CHAP_TOC__`, `__ILLUSTRATIONS__`).
+//   - Story Crossroads Filtering: Skips any route whose `pathId` belongs to an unchosen
+//     branch (`empty($activeSegmentIdSet[$candidatePathId])`), AND halts `$nextUrl` whenever
+//     the current chapter defines `$config['crossroads']` or `$config['noNext']` so the reader
+//     is invited to choose their branching route at `#rs-story-crossroads`!
 $prevUrl = $config['prevUrl'] ?? null;
 $nextUrl = $config['nextUrl'] ?? null;
 $sequenceName = $routeData['common']['siteName'] ?? 'Ocean View Archives';
 
-// Fallback logic to generate previous/next if they aren't explicitly in the JSON.
-// When the reader is viewing an actual narrative scene (`!$specialPageType`), filter out
-// intermediate structural TOC routes (`__TOC__`, `__ILLUSTRATIONS__`, `__ERA_TOC__`, `__CHAP_TOC__`) so
-// "Previous" and "Next" flow seamlessly from scene to scene across chapter boundaries.
 $routeKeys = array_keys($routeData);
 $seriesSlugForFilter = '/' . ($seriesSlug ?? '');
 $filteredKeys = array_filter($routeKeys, function($k) use ($seriesSlugForFilter, $routeData, $specialPageType, $activeStoryPathId, $activeSegmentIdSet) { 
@@ -646,7 +703,7 @@ $filteredKeys = array_filter($routeKeys, function($k) use ($seriesSlugForFilter,
     }
     return true;
 });
-$filteredKeys = array_values($filteredKeys); // reindex
+$filteredKeys = array_values($filteredKeys); // Re-index numeric keys `0..N-1` after `array_filter()`
 $currentIndex = array_search($requestUri, $filteredKeys);
 if ($currentIndex !== false) {
     if ($currentIndex > 0 && empty($prevUrl) && empty($config['noPrev'])) {
@@ -985,16 +1042,27 @@ $oliverBookSeriesSchema = [
     ],
 ];
 ?>
+<!--
+  SUBSYSTEM 6: SCHEMA.ORG STRUCTURED DATA (`BookSeries` + `Book`/`Chapter` + `BreadcrumbList`)
+  Injected cleanly as `application/ld+json` so search engines understand the exact
+  BookSeries -> Era -> Chapter -> Part hierarchy, CC BY-SA 4.0 license, and EPUB/PDF downloads.
+-->
 <script type="application/ld+json">
 <?php echo json_encode($oliverBookSeriesSchema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT); ?>
 </script>
 <?php if ($narrativeTheme): ?>
-    <!-- Ambient CSS Themes and Animations -->
+    <!--
+      ATMOSPHERIC NARRATIVE THEME LOADER:
+      Notice `disabled` on `<link id="narrative-theme-css">`! `reader.js` checks whether
+      `reader-settings.customThemeEnabled !== false` in `localStorage` before enabling this
+      stylesheet, and automatically suppresses rain animations when the user's OS has
+      `prefers-reduced-motion: reduce` turned on!
+    -->
     <meta name="stardust-narrative-theme" content="<?php echo htmlspecialchars($narrativeTheme); ?>">
     <link id="narrative-theme-css" rel="stylesheet" href="<?php echo htmlspecialchars($cdnBaseUrl . '/raggiesoft-books/css/themes/' . $narrativeTheme . '.css?v=20261114a'); ?>" disabled>
     
     <?php if ($narrativeTheme === 'dark-rain'): ?>
-    <!-- Procedural Rain Generation for 'dark-rain' theme -->
+    <!-- Procedural 60-Drop Rain Overlay (`aria-hidden="true"` hides decorative rain from screen readers) -->
     <div class="narrative-rain-container" aria-hidden="true">
         <?php for($i=0; $i<60; $i++): 
             $left = rand(0, 100);
@@ -1008,6 +1076,23 @@ $oliverBookSeriesSchema = [
     <?php endif; ?>
 <?php endif; ?>
 
+<!--
+  ============================================================================
+  SUBSYSTEM 7: PRIMARY READING PANE & CUSTOMIZABLE TYPOGRAPHY / THEME SHELL
+  ============================================================================
+  100-Level CSS & Accessibility Architecture Note:
+  - `#stardust-reading-pane` (`height: 100dvh; overflow-y: auto`) is the independent
+    scrolling viewport next to `sophia/sidebar.php`, and `reader.js` automatically
+    records the reader's current chapter URL + scroll progress in `localStorage`
+    (`'rs-last-read'` and `'rs-last-read-title'`).
+  - `<div class="book-page reader-page">` and `<article class="story-content">` inherit
+    every WCAG 2.1 AA preference configured in `sophia/settings.php` & `sophia/wizard.php`:
+      * Font Family: `var(--rs-font-family)` (`System`, `Georgia`, `Lora`, `Inter`, `Atkinson Hyperlegible`, `OpenDyslexic`)
+      * Font Size: `var(--rs-font-size)` (`0.85rem`–`2.5rem`, baseline `1.15rem` = `100%`)
+      * Line Spacing: `var(--rs-line-height)` (`1.4`, `1.6`, `1.8`, `2.0`)
+      * Measure / Column Width: `.width-default` (`800px`), `.width-wide` (`1200px`), `.width-full` (`100%`)
+      * Color Mode: `body.theme-auto|light|sepia|dark|dark-sepia|sepia-system` (`var(--rs-bg)`, `var(--rs-text)`)
+-->
 <main id="stardust-reading-pane" tabindex="-1" style="flex: 1; height: 100vh; height: 100dvh; overflow-y: auto;">
     <div class="book-page reader-page">
         <!-- Hierarchical Breadcrumbs & Sidebar Menu Toggle -->
@@ -1258,9 +1343,15 @@ $oliverBookSeriesSchema = [
                 </figure>
                 <script>
                 /**
-                 * Self-contained inline Hero Image Carousel controller for `oliver.php`.
-                 * Executed automatically on both full page loads and `stardust-spa.min.js`
-                 * soft-navigations (even when external CDN scripts are cached by the PWA Service Worker).
+                 * SUBSYSTEM 8B: INLINE 16:9 HERO IMAGE CAROUSEL CONTROLLER
+                 * 100-Level JavaScript Walkthrough:
+                 * - Attached right below multi-slide hero plates (`$heroSlideCount > 1`) so it runs
+                 *   automatically on both full page loads AND SPA soft-navigations (`stardust-spa.min.js`).
+                 * - Modulo Wrap-Around Math: `((nextIdx % total) + total) % total` converts `-1` into
+                 *   `total - 1` (the last slide) and `total` back into `0` (the first slide)!
+                 * - Accessibility Synchronization: Updates `aria-hidden` on slides, `aria-selected` on
+                 *   tab dots, and `aria-live="polite"` on `[data-hero-counter]`, plus binds `ArrowLeft` /
+                 *   `ArrowRight` keys and horizontal touch swipes (`Math.abs(dx) > 40` pixels).
                  */
                 (function () {
                     window.stardustSetHeroSlide = function (carousel, nextIdx) {
@@ -1431,7 +1522,41 @@ $oliverBookSeriesSchema = [
 
             <?php endif; // End if(!$specialPageType) ?>
 
-            <!-- Audio Player Integration (Supports Single Track, Full Album, Named Playlist, or Inline YAML Queue) -->
+            <!--
+              ============================================================================
+              SUBSYSTEM 9: PERSISTENT SOUNDTRACK `<audio>` QUEUE & LYRICS / WEBVTT SYNC
+              ============================================================================
+              100-Level Multimedia Architecture Walkthrough:
+              1. Flexible YAML Input: A chapter's YAML frontmatter can specify:
+                   - A single MP3 (`audio: "the-stardust-engine/2016-live-at-the-crucible/..."`),
+                   - A full album (`audio: "the-paper-wall/2003-eleventh-child-book-1"`),
+                   - A YAML list of multiple songs/acts (`audio: [ ... ]`), OR
+                   - A named Engine Room Records playlist (`playlist: "..."`),
+                 plus an optional seek offset (`audio_start: "1:30"` -> `90` seconds).
+              2. Why Two `<audio>` Tags Exist (`#narrative-audio-element` vs `#stardust-bgm`):
+                   - When a reader turns the page via the SPA router (`stardust-spa.min.js`),
+                     the contents of `#stardust-app` (including `oliver.php`) are swapped out.
+                   - If music played inside `#narrative-audio-element` right here, turning the
+                     page to Part 2 of the same concert scene would destroy the `<audio>` node
+                     and cut the song off mid-chorus (and Safari/WebKit CoreMedia blocks
+                     `DOMParser`-created `<audio>` tags from playing without a fresh tap)!
+                   - Therefore, `<audio id="narrative-audio-element" preload="none">` below acts
+                     PURELY as a Server-Side-Rendered (`data-*`) metadata & JSON queue carrier,
+                     while `reader.js` drives actual audio playback on the persistent
+                     `<audio id="stardust-bgm">` element mounted *outside* `#stardust-app` in
+                     `header.php`! If Part 2 uses the same track/queue as Part 1, playback
+                     continues seamlessly across the page turn without skipping a single beat,
+                     syncing OS lock-screen controls via `navigator.mediaSession`!
+              3. Lyrics Modal & Time-Synced WebVTT (`.vtt`) Handoff:
+                   - Clicking the musical-notes button (`#narrative-audio-lyrics-toggle`) fetches
+                     the song's `.md` lyrics & lore sheet into `<dialog id="narrative-lyrics-dialog">`.
+                   - Every track mastered through `harper.sh` ALSO ships a `HUMAN_VERIFIED`
+                     `.vtt` (WebVTT timed-cue) file (`lyrics/<fileName>.vtt`). Clicking any
+                     `.reader-audio-external-link` ("Song in Listening Room" / headphone icon)
+                     automatically pauses `#stardust-bgm` (preventing dual-audio collision) and
+                     opens `https://music.raggiesoft.com/<artist>/<album>/<track>`, where Svelte 5
+                     synchronizes real-time line-by-line `.vtt` karaoke lyric cues with lossless audio!
+            -->
             <?php if (!empty($frontmatter['audio']) || !empty($frontmatter['playlist'])): ?>
                     <?php
                         // Parse starting timestamp if provided (e.g., "1:30" or "90")
@@ -1927,13 +2052,24 @@ $oliverBookSeriesSchema = [
 
         <?php
         // =====================================================================
-        // RAGGIESOFT BACKSTAGE (<dialog> API & Correspondence Callout Integration)
+        // SUBSYSTEM 10: RAGGIESOFT BACKSTAGE BONUS-DOSSIER DRAWER (`cors fetch()`)
         // =====================================================================
-        // Renders the Backstage Bonus Features / Extracted Correspondence callout
-        // when `backstage:` is present in the scene's YAML frontmatter, and mounts
-        // `<dialog id="rs-backstage-dialog">` so both frontmatter buttons and
-        // inline `https://backstage.raggiesoft.com/...` links open an in-reader
-        // modal with a one-click bounce button to `https://backstage.raggiesoft.com/`.
+        // 100-Level Cross-Subdomain API Walkthrough:
+        //   1. Authoring: Any novel scene (`p*.md`) can declare `backstage:` in its
+        //      YAML frontmatter (either a single slug or a YAML list of slugs) AND/OR
+        //      include inline links to `https://backstage.raggiesoft.com/<slug>`.
+        //   2. Server-Side Preview Cards (PHP right below): Looks up titles, dates,
+        //      senders, and summaries from Backstage's pre-built `api/v1/index.json`
+        //      so `#rs-backstage-callout` renders rich cards immediately on first paint.
+        //   3. Client-Side CORS `fetch()` (`reader.js` -> `<dialog id="rs-backstage-dialog">`):
+        //      When the reader clicks "Read in Dialog" (`[data-backstage-slug]`) or an
+        //      inline Backstage link, `reader.js` opens `<dialog id="rs-backstage-dialog">`
+        //      and performs a cross-origin `fetch()` to:
+        //        `https://backstage.raggiesoft.com/api/v1/<slug>.json`
+        //      (falling back automatically to `https://assets.raggiesoft.com/raggiesoft-backstage/api/v1/<slug>.json`),
+        //      injecting `data.html` straight into `#rs-backstage-dialog-body` so the
+        //      reader can inspect in-universe emails, legal filings, and floorplans
+        //      without losing their scroll position in the chapter!
         if (!$specialPageType):
             $rawBackstage = $frontmatter['backstage'] ?? [];
             $backstageSlugs = is_array($rawBackstage)
@@ -2063,6 +2199,22 @@ $oliverBookSeriesSchema = [
         <?php endif; ?>
 
         <?php
+        // =====================================================================
+        // SUBSYSTEM 11: RAGGIESOFT STORY CROSSROADS INTERACTIVE ROUTE CARDS
+        // =====================================================================
+        // 100-Level Branching Narrative Graph Walkthrough:
+        //   - When a chapter sits at a **Story Crossroads** decision point (`$config['crossroads']`
+        //     compiled by `paige.php` from `books/<slug>/crossroads.json`), Subsystem 5 above
+        //     intentionally left `$nextUrl` empty so the reader pauses right here at the end
+        //     of the scene to choose which coequal route the story takes next!
+        //   - Emblem Selection: Automatically selects `story-crossroads-logo-2way-512.png` for
+        //     2-option Crossroads or `story-crossroads-logo-3way-512.png` when 3+ options exist.
+        //   - Persistence Handshake: Each option button carries `data-story-path="<optId>"`,
+        //     `data-story-crossroads="<cxId>"`, and `data-story-book="<seriesSlug>"`.
+        //     When clicked, `reader.js` intercepts the click in the DOM *capture* phase
+        //     (`addEventListener('click', ..., true)`) to write both the `rs_cx_<book>` cookie
+        //     AND `localStorage['rs-story-choices-<book>']` *before* `stardust-spa.min.js`
+        //     fetches `$optEntryUrl`, so `isabel.php` immediately unlocks the chosen branch!
         $partCrossroads = (!$specialPageType && !empty($config['crossroads']) && is_array($config['crossroads']))
             ? $config['crossroads']
             : null;
@@ -2252,6 +2404,12 @@ $oliverBookSeriesSchema = [
             </div>
         </div>
         <script>
+        /*
+         * SUBSYSTEM 12A: DISMISSIBLE OFFLINE E-BOOK CARD PERSISTENCE CHECK
+         * Immediately checks `reader-settings.showOfflineCta` in `localStorage` before painting
+         * below the fold so if the reader clicked "Hide" (or unchecked the toggle in `settings.php`),
+         * `#rs-offline-cta-card` stays hidden with zero layout flicker.
+         */
         (function() {
             try {
                 var s = JSON.parse(localStorage.getItem('reader-settings') || '{}');
@@ -3196,7 +3354,30 @@ html[data-os="android"] .zoe-kernel-log-os-badge::before {
     </div>
 </div>
 <script>
+/*
+ * ============================================================================
+ * SUBSYSTEM 12B: CLIENT OS DETECTOR & WIKIPEDIA-STYLE HOVERCARD CONTROLLER
+ * ============================================================================
+ * 100-Level JavaScript Walkthrough:
+ * 1. OS Window-Chrome Sync (`data-os` on `<html>`):
+ *    Refines the server's `User-Agent` guess on the client—crucially detecting
+ *    iPadOS (`navigator.maxTouchPoints > 1` on a `'Macintosh'` user agent!) so
+ *    Zoë Patel's `.zoe-kernel-log` diagnostic blocks display authentic macOS,
+ *    Windows 11, Linux, iOS/iPadOS, or Android window decorations!
+ * 2. WCAG 1.4.13 Hovercard Singleton (`#rs-wiki-preview-card`):
+ *    - Instead of creating hundreds of hidden tooltip `<div>`s, ALL `.rs-wiki-link`
+ *      links share ONE floating `#rs-wiki-preview-card` singleton populated from
+ *      each `<a>` tag's `data-rs-preview` JSON attribute (`JSON.parse(raw)`).
+ *    - Desktop Pointer/Keyboard: Opens after a `190ms` hover intent delay (or on
+ *      Tab `focus`), stays open while the mouse moves onto the card itself
+ *      (WCAG 1.4.13 "Hoverable"), and closes on `Escape` or `180ms` after leaving.
+ *    - Touch-First Two-Tap (`isTouchFirstEnvironment()`): On phones/tablets, the
+ *      FIRST tap intercepts navigation in the capture phase (`useCapture = true`)
+ *      to open the preview card ("Tap link again to open"), and the SECOND tap
+ *      navigates to the linked scene or companion album!
+ */
 (function () {
+    // Part 1: Detect viewer operating system (or honor `?preview_os=windows|linux|ios|android|macos`)
     try {
         var params = new URLSearchParams(window.location.search);
         var previewOs = (params.get('preview_os') || '').toLowerCase();
@@ -3207,6 +3388,7 @@ html[data-os="android"] .zoe-kernel-log-os-badge::before {
         } else {
             var ua = (navigator.userAgent || '').toLowerCase();
             var plat = ((navigator.userAgentData && navigator.userAgentData.platform) || navigator.platform || '').toLowerCase();
+            // iPadOS Safari reports `'MacIntel'` / `'Macintosh'` by default; `maxTouchPoints > 1` reveals iPad hardware!
             var isIpadOs = (plat.indexOf('mac') !== -1 || ua.indexOf('macintosh') !== -1) && navigator.maxTouchPoints && navigator.maxTouchPoints > 1;
             if (isIpadOs || /iphone|ipad|ipod/.test(ua) || plat.indexOf('ios') !== -1) {
                 resolvedOs = 'ios';
@@ -3223,8 +3405,9 @@ html[data-os="android"] .zoe-kernel-log-os-badge::before {
         document.documentElement.setAttribute('data-os', resolvedOs);
     } catch (e) {}
 
-    // Wikipedia-Style Inline Link Preview Hovercard Controller (Desktop Hover/Focus + Touch-First Two-Tap)
+    // Part 2: Wikipedia-Style Inline Link Preview Hovercard Controller
     const card = document.getElementById('rs-wiki-preview-card');
+    // Guard with `dataset.bound` so SPA soft-navigations never bind duplicate listeners to the singleton card
     if (!card || card.dataset.bound === 'true') return;
     card.dataset.bound = 'true';
 
@@ -3243,11 +3426,13 @@ html[data-os="android"] .zoe-kernel-log-os-badge::before {
     let hideTimer = null;
     let lastTouchTime = 0;
 
+    // Returns `true` if the user recently touched the screen OR the device has a coarse/non-hover primary pointer
     function isTouchFirstEnvironment() {
         if (Date.now() - lastTouchTime < 1200) return true;
         return window.matchMedia && window.matchMedia('(hover: none) and (pointer: coarse)').matches;
     }
 
+    // Positions the fixed hovercard centered below `anchor` (or flips it ABOVE `anchor` if near the bottom of the screen!)
     function positionCard(anchor) {
         if (!anchor || !card) return;
         const rect = anchor.getBoundingClientRect();
@@ -3256,9 +3441,11 @@ html[data-os="android"] .zoe-kernel-log-os-badge::before {
         const cardWidth = Math.min(360, vw - 24);
         const cardHeight = card.offsetHeight || 290;
 
+        // Clamp horizontal `left` between `12px` and `vw - cardWidth - 12` so it never bleeds off-screen
         let left = rect.left + (rect.width / 2) - (cardWidth / 2);
         left = Math.max(12, Math.min(left, vw - cardWidth - 12));
 
+        // Prefer `10px` below the link; flip `10px` above the link if bottom space is too tight
         let top = rect.bottom + 10;
         if (top + cardHeight > vh - 16 && rect.top - cardHeight - 10 > 12) {
             top = rect.top - cardHeight - 10;
@@ -3270,6 +3457,7 @@ html[data-os="android"] .zoe-kernel-log-os-badge::before {
         card.style.top = Math.round(top) + 'px';
     }
 
+    // Parses `data-rs-preview` JSON on `anchor`, populates the singleton card DOM, and reveals it
     function openPreviewForLink(anchor, viaTouch) {
         if (!anchor) return;
         const raw = anchor.getAttribute('data-rs-preview');

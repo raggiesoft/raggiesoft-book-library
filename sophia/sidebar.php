@@ -1,74 +1,87 @@
 <?php
-/**
+/*
  * =============================================================================
- * Architecture & Maintenance Guide: sidebar.php
+ * READ-ALONG TEACHING GUIDE: sophia/sidebar.php
  * =============================================================================
- * Purpose:
- *     This file renders the contextual slide-out navigation menu inside the 
- *     reading environment. It provides quick access to global sections (Home, 
- *     Library, Settings) and contextual links (Next/Previous part).
+ * WHAT COMPONENT THIS FILE RENDERS:
+ *     This file renders `<aside id="stardust-sidebar" class="reader-sidebar">`
+ *     — the persistent left-hand navigation drawer (permanent sidebar on desktop,
+ *     slide-out drawer with `#reader-sidebar-backdrop` on phones/tablets) shown
+ *     across every book route (`/<series>`, `/<series>/toc`, `/<series>/...`).
  *
- * Design Principles:
- *     - Stardust Route Calculation: Dynamically calculates sequential "Next" 
- *       and "Previous" navigation paths by parsing the active route against 
- *       the complete narrative route map (`$routeData`).
- *     - Progressive Search: Implements a client-side "Instant Search" that 
- *       lazily fetches a JSON index from the CDN when focused, allowing 
- *       real-time typeahead without backend querying.
+ * HOW IT CONNECTS TO `eleanor/isabel.php` & `sophia/oliver.php`:
+ *     1. Whenever `$hasValidBookSeries === true`, `eleanor/isabel.php` includes
+ *        `sophia/sidebar.php` *immediately before* `sophia/oliver.php`!
+ *     2. Because `sidebar.php` runs first in the same PHP scope, the reverse
+ *        lookup dictionary `$fileToUrl` created right here (mapping physical
+ *        Markdown paths like `e001/c001/p001.md` -> clean URLs like `/rachel/...`)
+ *        becomes available to `oliver.php`, `landing.php`, `toc.php`,
+ *        `era-toc.php`, `chap-toc.php`, and `illustrations.php`!
+ *     3. `sidebar.php` also calculates sequential `$sbPrevUrl` and `$sbNextUrl`
+ *        buttons—filtering out non-story index pages, respecting Story Crossroads
+ *        branches (`$activeSegmentIdSet`), and rewiring Prev/Next to follow
+ *        Story Arc playlists whenever `?arc=<slug>` is active!
  *
- * Maintenance Notes:
- *     - Next/Prev Logic: It explicitly filters out 'common' and landing page 
- *       routes (`/$seriesSlug`) when building the sequential array map. If 
- *       new non-sequential routes are added, filter them out here.
- *     - Search Index: The search relies on `search-index.json`. If the CDN 
- *       structure changes, update `searchIndexUrl` in the JS block.
+ * WHAT THE READER SEES & INTERACTS WITH:
+ *     1. Co-branded RaggieSoft Book Reader + Ocean View Archives home badge.
+ *     2. Current Book Series title and clamped 1-line active chapter subtitle.
+ *     3. 4-button Quick Access Toolbar: `Home`, `Library`, `Save` (`#reader-bookmark-btn`,
+ *        wired by `reader.js` to toggle bookmarks in `localStorage['rs-bookmarks']`),
+ *        and `Settings` (`/settings`).
+ *     4. Client-Side Instant Search (`#rs-book-search`), which lazily fetches
+ *        `search-index.json` via `async/await fetch()` only when focused!
+ *     5. Contextual Book Links: Series Overview, Table of Contents, Table of
+ *        Illustrations (with count pill), Story Arcs, and Story Crossroads switcher.
+ *     6. Side-by-side `Prev Part` / `Next Part` buttons + Offline EPUB/PDF download strip.
  * =============================================================================
  */
 
-// Import legacy global variables required for view rendering
+// Import shared routing, manifest, frontmatter, and eBook size variables from `eleanor/isabel.php`.
 global $seriesSlug, $routeData, $cdnBaseUrl, $requestUri, $toc_manifest, $pageConfig, $fmTitle, $ebookSizes;
 
-// Normalize request URI to match route keys even if a trailing slash is present
+// Step 1: Normalize `$requestUri` by stripping any trailing slash (except root `'/'`)
+// so lookups against `$routeData` keys always match cleanly.
 $normalizedRequestUri = rtrim($requestUri, '/');
 if ($normalizedRequestUri === '') {
     $normalizedRequestUri = '/';
 }
 
-// Build a reverse lookup array mapping physical file paths to clean Stardust URLs
+// Step 2: Build `$fileToUrl` — a reverse hash map (`filePath => cleanUrl`).
+// `$routeData` (loaded from `data/routes/<series>.json`) is keyed by URL (`/rachel/... => ['filePath' => 'e001/...']`),
+// so inverting it once in `O(N)` time lets `toc.php` / `era-toc.php` / `chap-toc.php` turn file paths into URLs in `O(1)` time!
 $fileToUrl = [];
 if (!empty($routeData)) {
     foreach ($routeData as $url => $data) {
-        if ($url === 'common') continue; // Skip metadata block
+        if ($url === 'common') continue; // Skip the shared series metadata block
         if (isset($data['filePath'])) {
             $fileToUrl[$data['filePath']] = $url;
         }
     }
 }
 
-// Initialize sequence navigation variables
+// Step 3: Initialize sidebar Previous / Next / Up navigation variables.
 $sbPrevUrl = null;
 $sbNextUrl = null;
 $routeConfig = [];
 
-// Determine "Up" navigation based on URL segments
-// Defaults back to the series landing page
+// Upward navigation always returns to the current book's Series Overview (`/<seriesSlug>`).
 $segments = explode('/', trim($normalizedRequestUri, '/'));
 $sbUpUrl = '/' . $seriesSlug; 
 $sbUpLabel = "Up to Series";
 
-// Dynamically calculate sequential "Previous" and "Next" buttons based on current route
+// Step 4: Dynamically compute sequential "Prev Part" and "Next Part" URLs across the active reading path.
 if (!empty($routeData)) {
     $routeConfig = $routeData[$normalizedRequestUri] ?? ($routeData[$requestUri] ?? []);
     
-    // First, check if explicit overrides exist in the route definition
+    // Honor explicit `prevUrl` / `nextUrl` overrides if defined in `data/routes/<series>.json`
     $sbPrevUrl = $routeConfig['prevUrl'] ?? null;
     $sbNextUrl = $routeConfig['nextUrl'] ?? null;
     
-    // Extract all registered route URLs
+    // Grab all route keys for this book series
     $sbRouteKeys = array_keys($routeData);
     $sbSeriesFilter = '/' . ($seriesSlug ?? '');
     
-    // Filter out non-sequential pages (like the root common block, landing page, or intermediate TOC views when reading a scene)
+    // Check whether the reader is currently viewing a real narrative Markdown scene (not a TOC/Landing page)
     $currentFilePath = (string)($routeConfig['filePath'] ?? '');
     $isReadingScene = (
         $currentFilePath !== '' &&
@@ -78,6 +91,11 @@ if (!empty($routeData)) {
         strpos($currentFilePath, '__ERA_TOC__|') !== 0 &&
         strpos($currentFilePath, '__CHAP_TOC__|') !== 0
     );
+
+    // Filter `$sbRouteKeys` down to ONLY sequential chapters along the reader's active Story Crossroads path:
+    //   1. Exclude `'common'` metadata and the root landing page `'/<series>'`.
+    //   2. Exclude scenes belonging to unchosen Story Crossroads branches (`$candidatePathId` not in `$activeSegmentIdSet`).
+    //   3. When reading a story scene, exclude intermediate TOC/Gallery pages so Prev/Next steps smoothly from story scene to story scene!
     $sbFilteredKeys = array_filter($sbRouteKeys, function($k) use ($sbSeriesFilter, $routeData, $isReadingScene, $activeStoryPathId, $activeSegmentIdSet) { 
         if ($k === 'common' || $k === $sbSeriesFilter) {
             return false;
@@ -101,24 +119,25 @@ if (!empty($routeData)) {
         return true; 
     });
     
-    // Re-index array to guarantee numerical progression
+    // `array_filter()` preserves old array keys (leaving gaps like 0, 2, 5), so `array_values()`
+    // re-indexes the list cleanly to `0, 1, 2, ...` before we look up `$sbCurrentIndex - 1` and `+ 1`!
     $sbFilteredKeys = array_values($sbFilteredKeys);
     
-    // Locate the current page in the sequence (respecting Story Crossroads `noNext` / `crossroads` boundaries)
+    // Locate the current URL in the filtered sequence and assign Prev/Next (unless halted by a Story Crossroads gate)
     $sbCurrentIndex = array_search($normalizedRequestUri, $sbFilteredKeys);
     if ($sbCurrentIndex !== false) {
-        // Assign Previous if not explicitly overridden and not the first page
         if ($sbCurrentIndex > 0 && empty($sbPrevUrl) && empty($routeConfig['noPrev'])) {
             $sbPrevUrl = $sbFilteredKeys[$sbCurrentIndex - 1];
         }
-        // Assign Next if not explicitly overridden and not halted at a Story Crossroads or path ending
         if ($sbCurrentIndex < count($sbFilteredKeys) - 1 && empty($sbNextUrl) && empty($routeConfig['noNext']) && empty($routeConfig['crossroads'])) {
             $sbNextUrl = $sbFilteredKeys[$sbCurrentIndex + 1];
         }
     }
 }
 
-// Resolve Story Arcs for the active book and override sidebar Prev/Next when `?arc=<slug>` is active.
+// Step 5: Story Arc Playlist Mode Override (`?arc=<slug>`).
+// If the reader is following a curated Story Arc playlist, override `$sbPrevUrl` and `$sbNextUrl`
+// so the sidebar buttons step through the playlist's `'part'` stops ("Prev in Arc" / "Next in Arc")!
 $sbStoryArcs = is_array($toc_manifest['story_arcs'] ?? null)
     ? $toc_manifest['story_arcs']
     : (is_array($routeData['common']['story_arcs'] ?? null) ? $routeData['common']['story_arcs'] : []);
@@ -131,6 +150,7 @@ if (!empty($sbStoryArcs) && !empty($_GET['arc']) && !empty($currentFilePath) && 
         if (($candidateArc['slug'] ?? '') !== $requestedSbArcSlug) {
             continue;
         }
+        // Keep only `'part'` stops (chapters) when wiring Previous/Next chapter links
         $arcPartStops = array_values(array_filter(
             $candidateArc['stops'] ?? [],
             static fn($st) => ($st['kind'] ?? '') === 'part'
@@ -142,22 +162,23 @@ if (!empty($sbStoryArcs) && !empty($_GET['arc']) && !empty($currentFilePath) && 
                 $sbNextUrl   = ($idx < count($arcPartStops) - 1) ? ($arcPartStops[$idx + 1]['arc_url'] ?? null) : null;
                 $sbPrevLabel = 'Prev in Arc';
                 $sbNextLabel = 'Next in Arc';
-                break 2;
+                break 2; // Exit both nested `foreach` loops once matched
             }
         }
     }
 }
 
-// Resolve the active page title to display beneath the series header in mixed case (NOT all caps)
+// Step 6: Format the Series Title and active Part Subtitle for the compact sidebar header,
+// stripping any redundant trailing `" - <Series Title>"` suffix via `preg_replace()`.
 $sidebarSeriesTitle = $toc_manifest['series_title'] ?? (ucfirst($seriesSlug) . ' Narrative');
 $sidebarPageTitle = $routeConfig['title'] ?? ($pageConfig['title'] ?? (!empty($fmTitle) ? $fmTitle : 'Navigation'));
 $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/') . '$/i', '', (string)$sidebarPageTitle);
 ?>
 
-<!-- Slide-out sidebar container (Optimized for zero-scroll fit on iPad Landscape & Desktop) -->
+<!-- SLIDE-OUT / DOCKED BOOK NAVIGATION SIDEBAR (`<aside>` landmark) -->
 <aside id="stardust-sidebar" class="reader-sidebar">
 
-    <!-- 1. Co-Branded Book Reader App + Ocean View Archives Imprint Badge -->
+    <!-- 1. Co-Branded Book Reader App + Ocean View Archives Imprint Badge (Links to `/`) -->
     <a href="/" style="display: flex; align-items: center; gap: 0.6rem; text-decoration: none; padding: 0.45rem 0.6rem; margin-bottom: 0.65rem; border-radius: 10px; background: var(--rs-surface); border: 1px solid var(--rs-border); box-shadow: 0 2px 6px rgba(0,0,0,0.06);">
         <img src="/icons/icon-192.png?v=4" alt="RaggieSoft Book Reader App Icon" style="width: 34px; height: 34px; border-radius: 8px; flex-shrink: 0; border: 1px solid rgba(227, 178, 124, 0.55); box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
         <div style="display: flex; flex-direction: column; min-width: 0; text-align: left;">
@@ -169,7 +190,7 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
         </div>
     </a>
     
-    <!-- 2. Contextual Series Header (Compact 1-Line Clamped Subtitle) -->
+    <!-- 2. Contextual Series Header (`text-overflow: ellipsis` keeps long chapter titles neatly on 1 line) -->
     <div class="sidebar-series-header" style="text-align: left; padding: 0 0.15rem; margin-bottom: 0.65rem;">
         <a href="<?php echo htmlspecialchars($sbUpUrl); ?>" style="text-decoration: none; display: block; margin: 0 0 0.15rem 0; color: var(--rs-primary); font-size: 1.05rem; font-weight: 800; line-height: 1.25; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><?php 
             echo htmlspecialchars($sidebarSeriesTitle); 
@@ -177,7 +198,7 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
         <p title="<?php echo htmlspecialchars($sidebarPageTitle); ?>" style="margin: 0; color: var(--rs-text-muted); font-size: 0.78rem; font-weight: 600; line-height: 1.3; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;"><?php echo htmlspecialchars($sidebarPageTitle); ?></p>
     </div>
 
-    <!-- 3. Single-Row Quick Access Toolbar (Home, Library, Bookmark, Settings) -->
+    <!-- 3. 4-Column Quick Access Toolbar: Home, Library, Bookmark (`#reader-bookmark-btn`), and Settings -->
     <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.35rem; margin-bottom: 0.65rem;">
         <a href="/" class="rs-btn rs-btn-brand" title="Book Reader Home" style="text-align: center; text-decoration: none; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 0.38rem 0.2rem; font-size: 0.72rem; font-weight: 700; border-radius: 7px;">
             <i class="ph ph-house" style="font-size: 1rem;"></i>
@@ -187,6 +208,7 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
             <i class="ph ph-books" style="font-size: 1rem;"></i>
             <span>Library</span>
         </a>
+        <!-- `#reader-bookmark-btn`: `reader.js` attaches a click listener here to save/remove the current URL in `localStorage['rs-bookmarks']` -->
         <button id="reader-bookmark-btn" class="rs-btn" title="Bookmark This Part" style="display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 0.38rem 0.2rem; font-size: 0.72rem; font-weight: 600; border-radius: 7px;">
             <i class="ph ph-bookmark" style="font-size: 1rem;"></i>
             <span>Save</span>
@@ -197,7 +219,7 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
         </a>
     </div>
 
-    <!-- 4. Compact Instant Search Bar -->
+    <!-- 4. Compact Instant Search Bar (Dropdown `#rs-search-results` is positioned `top: 100%` right below the input) -->
     <form action="/search" method="GET" class="search-container" style="position: relative; margin-bottom: 0.65rem;">
         <input type="text" id="rs-book-search" name="q" placeholder="Search the universe..." style="width: 100%; padding: 0.5rem 0.75rem; border-radius: 7px; border: 1px solid var(--rs-border); background: var(--rs-surface); color: var(--rs-text); font-size: 0.86rem;">
         <div id="rs-search-results" style="display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 6px; max-height: 320px; overflow-y: auto; z-index: 1000; box-shadow: 0 8px 24px rgba(0,0,0,0.15); margin-top: 4px;"></div>
@@ -205,7 +227,7 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
 
     <hr style="border:0; border-top:1px solid var(--rs-border); margin: 0 0 0.5rem 0;">
     
-    <!-- 5. Primary Contextual Book Navigation (De-duplicated) -->
+    <!-- 5. Primary Contextual Book Navigation Links -->
     <nav class="toc-nav" style="display: flex; flex-direction: column; gap: 0.2rem;">
         <a href="<?php echo htmlspecialchars($sbUpUrl); ?>" class="sidebar-nav-link" style="display: flex; align-items: center; gap: 0.6rem; text-decoration: none; padding: 0.45rem 0.55rem; border-radius: 6px; color: var(--rs-text); font-size: 0.88rem; font-weight: 600;">
             <i class="ph ph-book-open" style="font-size: 1.1rem;"></i> Series Overview
@@ -225,6 +247,7 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
             <?php endif; ?>
         </a>
         <?php if (!empty($sbStoryArcs)): ?>
+        <!-- Shown automatically whenever `arcs.json` defines 1+ Story Arcs for this novel -->
         <a href="/arcs?book=<?php echo htmlspecialchars($seriesSlug); ?>" class="sidebar-nav-link" style="display: flex; align-items: center; justify-content: space-between; gap: 0.6rem; text-decoration: none; padding: 0.45rem 0.55rem; border-radius: 6px; color: var(--rs-text); font-size: 0.88rem; font-weight: 600;">
             <span style="display: inline-flex; align-items: center; gap: 0.6rem;">
                 <i class="ph ph-playlist" style="font-size: 1.1rem;"></i> Story Arcs
@@ -233,6 +256,9 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
         </a>
         <?php endif; ?>
         <?php
+        // Shown automatically whenever `crossroads.json` defines Story Crossroads branching routes for this novel.
+        // `data-open-crossroads-if-present="true"` tells `reader.js` to pop open `#rs-story-crossroads-dialog`
+        // right on the current chapter if the dialog is mounted in `oliver.php`, or fall back to `/<series>/toc#rs-toc-crossroads`.
         $sbCrossroads = is_array($toc_manifest['crossroads'] ?? null) ? $toc_manifest['crossroads'] : [];
         if (!empty($sbCrossroads)):
             $sbHasActivePath = !empty($activeStoryPathId) && !empty($activeStoryPathObj['label']);
@@ -246,7 +272,7 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
         </a>
         <?php endif; ?>
         
-        <!-- 6. Side-by-Side Previous / Next Part Flipper -->
+        <!-- 6. Side-by-Side Previous / Next Part Flipper (Disabled `<span>` when at first/last chapter or Crossroads gate) -->
         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.4rem; margin-top: 0.45rem; padding-top: 0.5rem; border-top: 1px solid var(--rs-border);">
             <?php if ($sbPrevUrl): ?>
                 <a href="<?php echo htmlspecialchars($sbPrevUrl); ?>" class="rs-btn" style="display: flex; align-items: center; justify-content: center; gap: 0.3rem; text-decoration: none; padding: 0.42rem 0.4rem; border-radius: 7px; color: var(--rs-text); font-size: 0.8rem; font-weight: 600;">
@@ -270,7 +296,7 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
         </div>
     </nav>
 
-    <!-- 7. Compact E-Book Editions Strip (Illustrated + Text-Only) -->
+    <!-- 7. Compact Offline E-Book Editions Strip (Full Illustrated EPUB/PDF + Lightweight Text-Only EPUB/PDF) -->
     <?php if (!empty($seriesSlug) && !empty($toc_manifest)):
         $sbSizes = !empty($ebookSizes) && is_array($ebookSizes)
             ? $ebookSizes
@@ -304,7 +330,7 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
     <?php endif; ?>
 </aside>
 
-<!-- Hover Styles for Sidebar Links -->
+<!-- Hover Highlight Rule for Sidebar Navigation Rows -->
 <style>
     .sidebar-nav-link:hover {
         background: var(--rs-bg-alt);
@@ -312,25 +338,32 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
     }
 </style>
 
-<!-- Mobile Backdrop: Darkens the main content when sidebar is open on small screens -->
+<!-- Mobile Backdrop: Semi-transparent overlay toggled by `reader.js` when the off-canvas sidebar opens on phones/tablets -->
 <div id="reader-sidebar-backdrop" style="display: none; position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.5); z-index: 999; backdrop-filter: blur(2px);"></div>
 
 <!-- 
-  Instant Search JS
-  Lazily fetches a pre-compiled JSON index from the CDN to provide instantaneous 
-  typeahead searching across the entire narrative universe.
+  CLIENT-SIDE INSTANT FULL-TEXT SEARCH (`#rs-book-search`):
+  100-Level JavaScript Walkthrough:
+  - Instead of downloading a large search index on every single page load, we wait
+    until the user actually clicks (`focus` event) inside the search box ("lazy loading")!
+  - `async / await` lets us pause cleanly while `fetch(searchIndexUrl)` downloads and
+    parses `search-index.json` in the background without freezing the browser UI.
+  - On every keystroke (`input` event), `.filter()` scans all chapters in memory and
+    `.slice(0, 10)` caps the dropdown to the top 10 matches so DOM updates stay instant.
 -->
 <script>
 (function() {
+    // Grab DOM references to the search `<input>` and floating `#rs-search-results` container
     const searchInput = document.getElementById('rs-book-search');
     const resultsContainer = document.getElementById('rs-search-results');
+    // Cached array of search entries once fetched, plus a boolean lock (`isFetching`) so rapid clicks never trigger duplicate downloads
     let searchIndex = null;
     let isFetching = false;
 
-    // Hardcoded CDN location for the compiled search index
+    // Pre-compiled library-wide JSON search index generated by `paige.php` and hosted on the CDN
     const searchIndexUrl = 'https://assets.raggiesoft.com/raggiesoft-books/json/search-index.json';
 
-    // Lazy load the index only when the user focuses the input box
+    // Step 1: Lazy-load `search-index.json` the first time the reader focuses the search box
     searchInput.addEventListener('focus', async function() {
         if (!searchIndex && !isFetching) {
             isFetching = true;
@@ -343,30 +376,29 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
         }
     });
 
-    // Execute search locally across the fetched JSON object
+    // Step 2: Filter the in-memory JSON array in real time as the reader types
     searchInput.addEventListener('input', function(e) {
         const query = e.target.value.toLowerCase().trim();
         resultsContainer.innerHTML = '';
 
-        // Prevent heavy DOM manipulation for tiny queries
+        // Require at least 3 characters (e.g., `"cat"` or `"bus"`) so 1-letter queries don't match thousands of chapters
         if (query.length < 3 || !searchIndex) {
             resultsContainer.style.display = 'none';
             return;
         }
 
-        // Search across title, content, book, and series fields
+        // Case-insensitive substring search across chapter title, full body prose, era/book, and series name
         const results = searchIndex.filter(item => {
             return (item.title && item.title.toLowerCase().includes(query)) || 
                    (item.content && item.content.toLowerCase().includes(query)) ||
                    (item.book && item.book.toLowerCase().includes(query)) ||
                    (item.series && item.series.toLowerCase().includes(query));
-        }).slice(0, 10); // Cap results to top 10 for performance
+        }).slice(0, 10); // Keep only the first 10 matches so the dropdown renders in < 1ms
 
         if (results.length > 0) {
             results.forEach(item => {
                 const div = document.createElement('a');
-                // Format the URL. The index contains legacy paths like "/raggiesoft-books/books/amaya/..." 
-                // but the modern Stardust engine runs directly on the root domain.
+                // Normalize any legacy `/raggiesoft-books/books/<slug>/...` path to root-level `/<slug>/...`
                 div.href = item.url.replace('/raggiesoft-books/books/', '/');
                 div.style = "display: block; padding: 0.75rem 1rem; border-bottom: 1px solid var(--rs-border); text-decoration: none; color: var(--rs-text); cursor: pointer;";
                 
@@ -375,7 +407,7 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
                     <div style="font-size: 0.75rem; color: var(--rs-text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${item.book} &middot; ${item.chapter}</div>
                 `;
                 
-                // Add simple hover states dynamically
+                // Highlight hovered result row using CSS custom properties
                 div.addEventListener('mouseenter', () => div.style.background = 'var(--rs-bg-alt)');
                 div.addEventListener('mouseleave', () => div.style.background = 'transparent');
                 
@@ -383,13 +415,13 @@ $sidebarPageTitle = preg_replace('/\s*-\s*' . preg_quote($sidebarSeriesTitle, '/
             });
             resultsContainer.style.display = 'block';
         } else {
-            // Handle no-results state gracefully
+            // Friendly empty state when zero chapters match the typed query
             resultsContainer.innerHTML = '<div style="padding: 0.75rem 1rem; font-size: 0.85rem; color: var(--rs-text-muted);">No results found in the archives.</div>';
             resultsContainer.style.display = 'block';
         }
     });
 
-    // Automatically dismiss the search dropdown when clicking outside
+    // Step 3: Light-dismiss the search results popover whenever the reader clicks anywhere outside the input or dropdown
     document.addEventListener('click', function(e) {
         if (!searchInput.contains(e.target) && !resultsContainer.contains(e.target)) {
             resultsContainer.style.display = 'none';

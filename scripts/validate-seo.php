@@ -1,63 +1,75 @@
 <?php
 /**
  * =============================================================================
- * Architectural Block Comment:
- * File: subdomains/books/scripts/validate-seo.php
- * License: MIT
+ * PLAIN-ENGLISH OVERVIEW FOR NEW DEVELOPERS (100-LEVEL JAVASCRIPT / WEB INTRO)
  * =============================================================================
- * Purpose:
- *     Automated Search Engine Optimization (SEO), Social Preview (OpenGraph /
- *     Twitter Card), Schema.org JSON-LD, XML Sitemap, and Canonical Link
- *     Validator for RaggieSoft Book Reader (`https://books.raggiesoft.com`).
+ * File: scripts/validate-seo.php
+ * License: MIT
+ * Run From Terminal: `php raggiesoft.com/subdomains/books/scripts/validate-seo.php`
  *
- * Architectural Verification Layers:
- *     1. Crawl Discovery & Sitemaps (`robots.txt`, `sitemap.xml`, `sitemaps/*.xml`):
- *        - Verifies `robots.txt` allows crawling and points to `https://books.raggiesoft.com/sitemap.xml`.
- *        - Parses `sitemap.xml` and all 4 child XML sitemaps (`editorial.xml`,
- *          `books.xml`, `chapters.xml`, `parts.xml`) with `SimpleXMLElement`.
- *        - Asserts zero duplicate `<loc>` URLs, zero non-root trailing slashes,
- *          zero legacy `/books/` prefixes, zero single-part `/part-1-` alias URLs,
- *          and valid ISO `YYYY-MM-DD` `<lastmod>` dates across all 2,500+ routes.
- *     2. Canonical HTTP Status Codes (`301` Redirects & Real `404` Soft-404 Prevention):
- *        - Executes isolated PHP CLI requests against `eleanor/isabel.php` to verify:
- *          * `301` permanent redirects on non-root trailing slashes (`/katie/`),
- *            legacy `/books/<slug>` paths, legacy platform aliases (`/catalog`),
- *            and collapsed single-part `/part-1-<slug>` aliases.
- *          * Real `404` HTTP status + `<meta name="robots" content="noindex, follow">`
- *            + omitted `<link rel="canonical">` on nonexistent routes.
- *     3. Representative SSR HTML, Metadata, JSON-LD & Cross-Site Canonical Links:
- *        - Renders representative pages across every template tier:
- *          * Home (`/`), Library (`/library`), Stats (`/stats`), Illustrations (`/illustrations`)
- *          * Series Overview (`/fractured-prisms`, `/stardust-engine`, `/katie`)
- *          * Series TOC (`/katie/toc`), Illustrations (`/katie/illustrations`),
- *            Era Overview, Chapter Overview, and Deep Manuscript Scenes (`pXXX.md`
- *            including inline music links in `aubrie`, `erin`, and `ad-astra`).
- *        - Asserts unique `<title>`, unique `<meta name="description">` (<= 155 chars),
- *          `og:title` (<= 60 chars), `og:description` (<= 155 chars), `og:image:alt`,
- *          matching `<link rel="canonical">`, valid `application/ld+json` schemas,
- *          single `<h1>` per document, and zero `?track=` or `/books/<slug>` links!
+ * WHAT IS THIS FILE?
+ *   Unlike `isabel.php` or `header.php` (which run on the web server when a
+ *   human visits `books.raggiesoft.com`), this file is an **automated command-line
+ *   test suite**! You run it in your terminal before or during deployment to
+ *   verify that Search Engine Optimization (SEO), social sharing cards, sitemaps,
+ *   and canonical redirects across all 2,500+ routes are 100% healthy.
+ *
+ * WHY DOES IT EXIST?
+ *   A tiny typo in a router or template could accidentally:
+ *     - Make two pages share the exact same `<title>` or `<meta name="description">`
+ *     - Let an OpenGraph title (`og:title`) exceed 60 characters or description
+ *       exceed 155 characters (causing Discord/X/Google to chop text awkwardly)
+ *     - Return HTTP `200 OK` instead of `404 Not Found` on a broken URL ("Soft-404")
+ *     - Emit broken JSON-LD structured data or two `<h1>` headings on one page.
+ *   This script tests all of those rules automatically in ~1 second without even
+ *   needing a running Nginx server!
+ *
+ * HOW DOES IT TEST `isabel.php` WITHOUT A WEB SERVER?
+ *   Look at `renderBookRoute()` below: it uses PHP's `proc_open()` (similar to
+ *   Node.js's `child_process.spawn()`) to launch a fresh, isolated PHP child
+ *   process, pre-fills `$_SERVER['REQUEST_URI']` to fake a real browser request,
+ *   captures the HTML output buffer (`ob_start()` -> `ob_get_clean()`) and HTTP
+ *   status code (`http_response_code()`), and returns both for inspection!
+ *
+ * THREE VERIFICATION LAYERS:
+ *   - Layer 1: Validates `robots.txt`, `sitemap.xml`, all 4 child XML sitemaps
+ *              (`2,000+` canonical URLs), and `data/link-previews.json`.
+ *   - Layer 2: Verifies HTTP `301` redirects on legacy/trailing-slash URLs and
+ *              real HTTP `404` + `noindex, follow` on nonexistent URLs.
+ *   - Layer 3: Renders representative live SSR pages across every view type and
+ *              checks `<title>`, `<meta name="description">`, `og:title`,
+ *              `og:image:alt`, `<link rel="canonical">`, `<h1>` count, and JSON-LD.
  * =============================================================================
  */
 
+// `declare(strict_types=1)` enables TypeScript-like strict runtime type checking in PHP:
+// passing `"123"` (a string) to a function expecting `int` throws a `TypeError` instead of silently coercing!
 declare(strict_types=1);
 
+// Resolve the root `subdomains/books` folder (one directory up from `scripts/`).
+// If missing, print an error to `STDERR` (standard error stream, like `console.error` in JS) and exit with code `1`.
 $booksRoot = realpath(__DIR__ . '/..');
 if ($booksRoot === false) {
     fwrite(STDERR, "❌ Could not resolve subdomains/books root directory.\n");
     exit(1);
 }
 
+// Global test accumulator state: `$failures` collects failed error messages; `$checksRun` counts assertions.
 $failures = [];
 $checksRun = 0;
 
 /**
- * Records a validation assertion result.
+ * Mini test assertion helper (like `console.assert(condition, message)` or Jest's `expect()`).
+ * Instead of crashing on the first error, it collects ALL failures into `$failures`
+ * so the developer can see and fix every problem in a single run!
  *
  * @param bool   $condition Truthiness of the assertion.
- * @param string $message   Human-readable failure message if false.
+ * @param string $message   Human-readable failure message recorded if `$condition` is false.
  */
 function assertSeo(bool $condition, string $message): void
 {
+    // In PHP, functions do NOT automatically see outer global variables (unlike JS closures!);
+    // `global $failures, $checksRun;` explicitly imports those two top-level variables.
     global $failures, $checksRun;
     $checksRun++;
     if (!$condition) {
@@ -68,6 +80,7 @@ function assertSeo(bool $condition, string $message): void
 // =============================================================================
 // LAYER 1: Validate `robots.txt`, `sitemap.xml`, and Child XML Sitemaps
 // =============================================================================
+// 1A. Check `robots.txt` (the standard text file search crawlers read first to see what they may index)
 $robotsPath = $booksRoot . '/robots.txt';
 assertSeo(is_file($robotsPath), 'Missing robots.txt in subdomains/books/');
 if (is_file($robotsPath)) {
@@ -79,11 +92,14 @@ if (is_file($robotsPath)) {
     );
 }
 
+// 1B. Parse `sitemap.xml` (a Sitemap Index pointing to 4 child sitemaps:
+//     `editorial.xml`, `books.xml`, `chapters.xml`, and `parts.xml`) using `simplexml_load_file()`.
 $sitemapIndexPath = $booksRoot . '/sitemap.xml';
 assertSeo(is_file($sitemapIndexPath), 'Missing sitemap.xml index in subdomains/books/');
 
 $allSitemapUrls = [];
 if (is_file($sitemapIndexPath)) {
+    // Capture XML parser warnings internally rather than printing raw warnings to stdout
     libxml_use_internal_errors(true);
     $indexXml = simplexml_load_file($sitemapIndexPath);
     assertSeo($indexXml !== false, 'sitemap.xml failed XML parsing');
@@ -102,6 +118,7 @@ if (is_file($sitemapIndexPath)) {
                 "Invalid lastmod '{$childMod}' in sitemap.xml for {$childLoc}"
             );
 
+            // Load each child XML file on disk and inspect every `<url><loc>...</loc></url>` entry
             $relChild = str_replace('https://books.raggiesoft.com/', '', $childLoc);
             $localChildPath = $booksRoot . '/' . $relChild;
             assertSeo(is_file($localChildPath), "Missing child sitemap file: {$localChildPath}");
@@ -112,13 +129,14 @@ if (is_file($sitemapIndexPath)) {
                     foreach ($urlsetXml->url as $uNode) {
                         $loc = (string)$uNode->loc;
                         $mod = (string)$uNode->lastmod;
+                        // Ensure no URL appears twice across any of the 4 XML sitemaps
                         assertSeo(
                             !isset($allSitemapUrls[$loc]),
                             "Duplicate <loc> across XML sitemaps: {$loc}"
                         );
                         $allSitemapUrls[$loc] = $relChild;
 
-                        // Root is `https://books.raggiesoft.com/`; all deeper paths must have no trailing slash
+                        // Root is `https://books.raggiesoft.com/`; all deeper paths must have NO trailing slash
                         if ($loc !== 'https://books.raggiesoft.com/') {
                             assertSeo(
                                 !str_ends_with($loc, '/'),
@@ -146,7 +164,7 @@ assertSeo(
     'Expected >= 2,000 canonical URLs across books XML sitemaps, found ' . count($allSitemapUrls)
 );
 
-// Verify `link-previews.json` emits canonical song URLs with zero `?track=` query strings in `url` values
+// 1C. Verify `data/link-previews.json` emits clean path-based song URLs (never legacy `?track=` query strings)
 $linkPreviewsPath = $booksRoot . '/data/link-previews.json';
 assertSeo(is_file($linkPreviewsPath), 'Missing data/link-previews.json');
 if (is_file($linkPreviewsPath)) {
@@ -174,11 +192,18 @@ if (is_file($linkPreviewsPath)) {
 // Helper: Execute an isolated SSR request against `eleanor/isabel.php`
 // =============================================================================
 /**
- * Runs `eleanor/isabel.php` in a clean PHP CLI child process for `$requestUri`
- * and returns `['status' => int, 'html' => string]`.
+ * Spawns a clean PHP CLI child process to run `eleanor/isabel.php` for `$requestUri`!
  *
- * @param string $requestUri
- * @return array{status:int, html:string}
+ * Why a separate child process instead of `require 'isabel.php'` directly?
+ *   1. `isabel.php` calls `exit;` whenever it sends a `301` redirect, and defines
+ *      top-level variables and `require_once` calls that can only run once per process.
+ *   2. By wrapping `require isabel.php` in `ob_start()` (Output Buffering) +
+ *      `register_shutdown_function(...)` inside a fresh `proc_open` child process,
+ *      even when `isabel.php` calls `exit;` on line 49, our shutdown hook still catches
+ *      `http_response_code()` (e.g. `301`, `404`, `200`) and prints `__SEO_STATUS__:<code>\n<html>`!
+ *
+ * @param string $requestUri Path to simulate (e.g. `'/katie/toc'`).
+ * @return array{status:int, html:string} Associative array with HTTP status code and rendered HTML.
  */
 function renderBookRoute(string $requestUri): array
 {
@@ -202,11 +227,12 @@ function renderBookRoute(string $requestUri): array
         var_export($booksRoot . '/eleanor/isabel.php', true)
     );
 
+    // `PHP_BINARY` points to the exact `php` executable running this script.
     $cmd = [PHP_BINARY, '-d', 'display_errors=0', '-r', $runnerCode];
     $descriptors = [
-        0 => ['pipe', 'r'],
-        1 => ['pipe', 'w'],
-        2 => ['pipe', 'w'],
+        0 => ['pipe', 'r'], // stdin
+        1 => ['pipe', 'w'], // stdout
+        2 => ['pipe', 'w'], // stderr
     ];
     $proc = proc_open($cmd, $descriptors, $pipes);
     if (!is_resource($proc)) {
@@ -227,7 +253,8 @@ function renderBookRoute(string $requestUri): array
 // =============================================================================
 // LAYER 2: Verify `301` Canonical Redirects & Real `404` Soft-404 Protection
 // =============================================================================
-// Discover a real single-part chapter route so we can verify its `/part-1-...` alias 301-redirects!
+// Discover real Era, Chapter, and Part URLs dynamically from `katie` and `aubrie`
+// so our tests stay valid even if chapter titles evolve over time.
 $katieRoutes = json_decode((string)file_get_contents($booksRoot . '/data/routes/katie.json'), true) ?: [];
 unset($katieRoutes['common']);
 $samplePartUrl = '';
@@ -274,6 +301,7 @@ foreach ($aubrieRoutes as $rUrl => $rMeta) {
     }
 }
 
+// Verify trailing-slash, `/books/...`, platform-alias, and `/part-1-...` URLs return HTTP `301`
 $redirectRoutes = [
     '/katie/',
     '/books/fractured-prisms',
@@ -291,6 +319,7 @@ foreach ($redirectRoutes as $redirUri) {
     );
 }
 
+// Verify unknown book/chapter URLs return HTTP `404` + `noindex, follow` + zero `<link rel="canonical">`
 $notFoundRoutes = [
     '/nonexistent-book-slug-xyz',
     '/katie/nonexistent-era-xyz/nonexistent-chap',
@@ -339,7 +368,7 @@ foreach ($representativeRoutes as $uri) {
 
     assertSeo($res['status'] === 200, "Expected HTTP 200 for '{$uri}', got {$res['status']}");
 
-    // 1. <title> uniqueness & non-emptiness
+    // 1. `<title>` must be non-empty and unique across every tested page
     $hasTitle = preg_match('/<title>(.*?)<\/title>/is', $html, $titleMatch);
     $titleText = $hasTitle ? html_entity_decode(trim($titleMatch[1]), ENT_QUOTES | ENT_HTML5, 'UTF-8') : '';
     assertSeo($titleText !== '', "Missing <title> on '{$uri}'");
@@ -352,7 +381,7 @@ foreach ($representativeRoutes as $uri) {
         $seenTitles[$titleText] = $uri;
     }
 
-    // 2. <meta name="description"> uniqueness & <= 155 chars
+    // 2. `<meta name="description">` must be non-empty, unique, and `<= 155` characters
     $hasDesc = preg_match('/<meta\s+name="description"\s+content="([^"]*)"/i', $html, $descMatch);
     $descText = $hasDesc ? html_entity_decode(trim($descMatch[1]), ENT_QUOTES | ENT_HTML5, 'UTF-8') : '';
     assertSeo($descText !== '', "Missing <meta name=\"description\"> on '{$uri}'");
@@ -370,7 +399,7 @@ foreach ($representativeRoutes as $uri) {
         $seenDescriptions[$descText] = $uri;
     }
 
-    // 3. Canonical link exact match
+    // 3. `<link rel="canonical">` must match the exact requested `https://books.raggiesoft.com<uri>`
     $expectedCanonical = $uri === '/' ? 'https://books.raggiesoft.com/' : 'https://books.raggiesoft.com' . $uri;
     $hasCanon = preg_match('/<link\s+rel="canonical"\s+href="([^"]*)"/i', $html, $canonMatch);
     $canonHref = $hasCanon ? trim($canonMatch[1]) : '';
@@ -379,7 +408,7 @@ foreach ($representativeRoutes as $uri) {
         "Canonical mismatch on '{$uri}': expected '{$expectedCanonical}', got '{$canonHref}'"
     );
 
-    // 4. OpenGraph title <= 60 chars & image alt text present
+    // 4. OpenGraph `og:title` must be `<= 60` characters & `og:image:alt` must be present for accessibility
     if (preg_match('/<meta\s+property="og:title"\s+content="([^"]*)"/i', $html, $ogTitleMatch)) {
         $ogTitleDecoded = html_entity_decode(trim($ogTitleMatch[1]), ENT_QUOTES | ENT_HTML5, 'UTF-8');
         $ogLen = mb_strlen($ogTitleDecoded, 'UTF-8');
@@ -392,11 +421,11 @@ foreach ($representativeRoutes as $uri) {
         "Missing non-empty og:image:alt on '{$uri}'"
     );
 
-    // 5. Single <h1> per rendered document (excluding any dialog overlays)
+    // 5. Exactly 1 `<h1>` heading per document (critical for screen-reader document outline & SEO)
     $h1Count = preg_match_all('/<h1[\s>]/i', $html);
     assertSeo($h1Count === 1, "Expected exactly 1 <h1> on '{$uri}', found {$h1Count}");
 
-    // 6. Valid JSON-LD blocks
+    // 6. Every `<script type="application/ld+json">` block must parse as valid JSON
     $jsonLdCount = preg_match_all('/<script\s+type="application\/ld\+json">(.*?)<\/script>/is', $html, $ldMatches);
     assertSeo($jsonLdCount >= 1, "Missing application/ld+json structured data on '{$uri}'");
     foreach (($ldMatches[1] ?? []) as $idx => $rawJson) {
@@ -417,7 +446,7 @@ foreach ($representativeRoutes as $uri) {
         "Found legacy /books/ prefix link in rendered HTML of '{$uri}'"
     );
 
-    // 8. Specific deep-surfacing checks for "The Hollow Square" by Fractured Prisms
+    // 8. Verify cross-site canonical song link to The Listening Room ("The Hollow Square")
     if ($uri === '/fractured-prisms' || $uri === $hollowSquareBookSceneUrl) {
         assertSeo(
             str_contains($html, 'https://music.raggiesoft.com/fractured-prisms/1983-carnaby-street/the-hollow-square'),
@@ -426,6 +455,10 @@ foreach ($representativeRoutes as $uri) {
     }
 }
 
+// =============================================================================
+// FINAL REPORT & EXIT CODE
+// =============================================================================
+// Exit code `1` fails CI / deployment pipelines; exit code `0` (implicit at end of script) signals PASS!
 if (!empty($failures)) {
     fwrite(STDERR, "❌ RaggieSoft Book Reader SEO Validation FAILED (" . count($failures) . " issue(s)):\n");
     foreach ($failures as $f) {

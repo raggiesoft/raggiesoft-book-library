@@ -1,25 +1,43 @@
 <?php
-/**
- * Architectural Block Comment:
- * File: era-toc.php
- * Purpose:
- *     This template renders the Table of Contents (TOC) specifically for a single era within a larger novel.
- *     It dynamically generates a nested list of chapters and their constituent scenes based on the global JSON metadata.
- * 
- * Design Decisions & Future Maintenance:
- *     - Global State Dependency: Relies heavily on globally scoped variables (`$toc_manifest`, `$specialPageIndex1`, `$fileToUrl`).
- *       `$toc_manifest` holds the parsed series JSON. `$specialPageIndex1` is expected to be a valid 0-based index targeting a specific era.
- *       `$fileToUrl` is an array mapping internal markdown file paths to their routable frontend URLs.
- *     - Inline Styling: Currently utilizes hardcoded inline CSS rather than external stylesheet classes. For a long-term UI overhaul,
- *       these should be migrated to a dedicated CSS file.
- *     - Error Handling: Implements basic graceful degradation (e.g., "Era not found", "No scenes available") if the JSON structure is incomplete or if an invalid index is passed.
- *     - Security: Enforces `htmlspecialchars()` aggressively on all output (titles, descriptions, URLs) to mitigate Cross-Site Scripting (XSS) attacks.
+/*
+ * =============================================================================
+ * READ-ALONG TEACHING GUIDE: sophia/era-toc.php
+ * =============================================================================
+ * WHAT PAGE THIS FILE RENDERS:
+ *     This sub-view renders the scoped Table of Contents for a single Story Era
+ *     (or "Book" / "Episode" volume, e.g. `https://books.raggiesoft.com/rachel/<era-slug>`)
+ *     inside a larger Ocean View Archives novel.
+ *
+ * HOW IT CONNECTS TO `eleanor/isabel.php` & `sophia/oliver.php`:
+ *     1. In `data/routes/<series>.json`, every Era URL maps to an internal token:
+ *          - Linear Era: `__ERA_TOC__|<eraIndex>`
+ *          - Story Crossroads Branch Era: `__ERA_TOC__|<pathId>|<eraIndex>`
+ *     2. `eleanor/isabel.php` loads `$toc_manifest` (`toc.json`), resolves active
+ *        Story Crossroads choices into `$effectiveTocEras`, and loads
+ *        `sophia/sidebar.php` (which populates `$fileToUrl`, mapping `e001/c001/p001.md`
+ *        to its clean semantic URL).
+ *     3. `sophia/oliver.php` unpacks the `__ERA_TOC__|...` token into
+ *        `$specialPagePathId` and `$specialPageIndex1` (the 0-based Era index),
+ *        captures this file's output via `ob_start()`, and renders it inside
+ *        `#stardust-reading-pane` complete with breadcrumbs and Schema.org JSON-LD.
+ *
+ * WHAT THE READER SEES & INTERACTS WITH:
+ *     - The Era `<h1>` title and optional multi-sentence `era_description`.
+ *     - Every Chapter in that Era, using a smart UX rule ("Single-Part Chapter Collapse"):
+ *         * When a Chapter has ONLY 1 Part (`$partCount === 1`), it renders as a
+ *           clean, one-click card ("Read Chapter →") so the reader doesn't have
+ *           to click through a redundant sub-list of 1 item!
+ *         * When a Chapter has 2+ Parts, it renders a Chapter `<h2>` card with a
+ *           clickable link to `chap-toc.php` plus the full list of individual Parts.
+ * =============================================================================
  */
 
-// Import necessary variables populated by the upstream router/controller.
+// Import shared routing and manifest variables from `isabel.php`, `sidebar.php`, and `oliver.php`.
 global $toc_manifest, $effectiveTocEras, $specialPagePathId, $specialPageIndex1, $fileToUrl;
 
-// Extract the requested era from either a Story Crossroads path (`$specialPagePathId`) or the active TOC eras.
+// Step 1: Resolve the requested Era array (`$era`) from either:
+//   (a) A specific Story Crossroads path segment (`$toc_manifest['paths'][$specialPagePathId]['eras']`), or
+//   (b) The active merged Era list (`$effectiveTocEras`), falling back to `$toc_manifest['eras']`.
 if (!empty($specialPagePathId) && isset($toc_manifest['paths'][$specialPagePathId]['eras'][$specialPageIndex1])) {
     $era = $toc_manifest['paths'][$specialPagePathId]['eras'][$specialPageIndex1];
 } else {
@@ -27,42 +45,49 @@ if (!empty($specialPagePathId) && isset($toc_manifest['paths'][$specialPagePathI
     $era = $eraSourceList[$specialPageIndex1] ?? ($toc_manifest['eras'][$specialPageIndex1] ?? null);
 }
 
-// Halt rendering early if the era does not exist in the structure.
+// Guard clause: stop early with a friendly message if `$specialPageIndex1` is out of range.
 if (!$era) {
     echo '<p>Era not found.</p>';
     return;
 }
 ?>
+<!-- Scoped Era Overview wrapper rendered inside `#stardust-reading-pane` -->
 <div class="book-page" style="max-width: 800px; margin: 0 auto;">
-    <!-- Render the main era title -->
+    <!-- Main Era primary h1 Heading -->
     <h1 style="margin-bottom: 2rem; color: var(--rs-primary); border-bottom: 2px solid var(--rs-border); padding-bottom: 1rem;"><?php echo htmlspecialchars($era['era_title']); ?></h1>
     
-    <!-- Render the era description if one is provided in the metadata -->
+    <!-- Optional Era synopsis paragraph (from the Era folder's `ovab.json`) -->
     <?php if (!empty($era['era_description'])): ?>
         <p style="margin-bottom: 2rem; font-size: 1.1rem; opacity: 0.9;"><?php echo htmlspecialchars($era['era_description']); ?></p>
     <?php endif; ?>
 
+    <!-- Vertical stack of Chapter cards inside this Era -->
     <div class="toc-chapters" style="display: flex; flex-direction: column; gap: 1rem;">
         <?php if (!empty($era['chapters'])): ?>
-            <!-- Iterate over each chapter within the era -->
+            <!-- Loop through every Chapter belonging to this Era -->
             <?php foreach ($era['chapters'] as $chap): 
+                // Safely normalize `parts` to an array and count how many Parts this Chapter has
                 $partList = !empty($chap['parts']) && is_array($chap['parts']) ? $chap['parts'] : [];
                 $partCount = count($partList);
             ?>
                 <?php if ($partCount === 1):
-                    /**
-                     * IDEA 3: SMART SINGLE-PART CHAPTER COLLAPSE
-                     * When a Chapter (`cXXX`) contains only 1 Part (`p001.md`), render the
-                     * chapter card as a direct one-click link rather than a nested list.
+                    /*
+                     * SMART SINGLE-PART CHAPTER COLLAPSE:
+                     * When a Chapter (`cXXX`) contains only 1 Part (`p001.md`), render the entire
+                     * chapter card as a direct one-click link to the story scene rather than a nested list.
+                     * We also check whether the Part's subtitle adds new information beyond `$rawChapTitle`
+                     * so we never repeat the exact same title twice on one line!
                      */
                     $singlePart = $partList[0];
                     $singleHref = $fileToUrl[$singlePart['file_path']] ?? ($singlePart['url'] ?? $singlePart['file_path']);
                     $rawChapTitle = (string)($chap['chap_title'] ?? '');
                     $rawPartTitle = (string)($singlePart['part_title'] ?? '');
+                    // Strip leading "Part 1: " prefix to compare the core subtitle text
                     $cleanPartSub = trim((string)preg_replace('/^Part\s+\d+\s*:\s*/i', '', $rawPartTitle));
                     $showPartSub = ($cleanPartSub !== '' && stripos($rawChapTitle, $cleanPartSub) === false && strcasecmp($cleanPartSub, 'Untitled Chapter') !== 0 && !preg_match('/^Part\s+\d+$/i', $cleanPartSub));
                     $singleHasImage = !empty($singlePart['image']) || !empty($singlePart['images']);
                 ?>
+                <!-- Single-Part Chapter Card: Direct 1-click link straight into `oliver.php` -->
                 <div style="background: var(--rs-bg); border: 1px solid var(--rs-border); border-radius: 8px; padding: 1.25rem 1.5rem;">
                     <a href="<?php echo htmlspecialchars($singleHref); ?>"
                        style="text-decoration: none; color: var(--rs-primary); display: flex; align-items: center; justify-content: space-between; gap: 1rem; font-size: 1.25rem; font-weight: 700; transition: opacity 0.2s;"
@@ -88,10 +113,13 @@ if (!$era) {
                     </a>
                 </div>
                 <?php else:
+                    // Multi-Part Chapter (or 0-part placeholder): strip legacy `/raggiesoft-books/books` prefix
+                    // to build the clean Chapter Overview route (`/<series>/<era>/<chapter>`).
                     $chapOverviewHref = !empty($chap['chap_url']) ? str_replace('/raggiesoft-books/books', '', (string)$chap['chap_url']) : '';
                 ?>
+                <!-- Multi-Part Chapter Card: Folder Heading + Bulleted List of Scene Parts -->
                 <div style="background: var(--rs-bg); border: 1px solid var(--rs-border); border-radius: 8px; padding: 1.5rem;">
-                    <!-- Render the chapter title with a crawlable link to the Chapter Overview page -->
+                    <!-- Chapter `<h2>` header with link to `chap-toc.php` and a Part count pill on the right -->
                     <h2 style="margin-top: 0; margin-bottom: 1rem; font-size: 1.3rem; display: flex; align-items: center; justify-content: space-between; gap: 0.5rem;">
                         <span style="display: flex; align-items: center; gap: 0.5rem;">
                             <i class="ph ph-folder" aria-hidden="true"></i>
@@ -104,15 +132,17 @@ if (!$era) {
                         <span style="font-size: 0.8rem; font-weight: 600; color: var(--rs-text-muted);"><?php echo $partCount > 0 ? ((int)$partCount . ' Parts') : 'Coming Soon'; ?></span>
                     </h2>
                     
+                    <!--Accessible `role="list"` of every Part (`p001.md`, `p002.md`, ...) inside this Chapter -->
                     <ul role="list" style="list-style: none; padding: 0 0 0 1rem; margin: 0; display: flex; flex-direction: column; gap: 0.75rem;">
                         <?php if (!empty($partList)): ?>
-                            <!-- Iterate over all parts (pXXX.md files) belonging to this chapter -->
+                            <!-- Loop through all Parts belonging to this Chapter -->
                             <?php foreach ($partList as $part): 
+                                // Map internal file path (`e001/c001/p001.md`) -> clean URL via `$fileToUrl`
                                 $href = $fileToUrl[$part['file_path']] ?? ($part['url'] ?? $part['file_path']);
                                 $partHasImage = !empty($part['image']) || !empty($part['images']);
                             ?>
                                 <li>
-                                    <!-- Render the clickable link to the reading page -->
+                                    <!-- Clickable Part link opening `oliver.php` -->
                                     <a href="<?php echo htmlspecialchars($href); ?>" style="text-decoration: none; color: var(--rs-primary); display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; transition: opacity 0.2s;" onmouseover="this.style.opacity='0.8'" onmouseout="this.style.opacity='1'">
                                         <i class="ph ph-file-text" aria-hidden="true"></i>
                                         <span><?php echo htmlspecialchars($part['part_title']); ?></span>
@@ -126,7 +156,7 @@ if (!$era) {
                                 </li>
                             <?php endforeach; ?>
                         <?php else: ?>
-                            <!-- Fallback for empty chapters -->
+                            <!-- Fallback when a Chapter folder has no published Parts yet -->
                             <li style="color: var(--rs-text-muted);">No parts available yet.</li>
                         <?php endif; ?>
                     </ul>
@@ -134,7 +164,7 @@ if (!$era) {
                 <?php endif; ?>
             <?php endforeach; ?>
         <?php else: ?>
-            <!-- Fallback for eras without any chapters defined -->
+            <!-- Fallback when an Era has no Chapters defined yet -->
             <p style="color: var(--rs-text-muted);">No chapters available.</p>
         <?php endif; ?>
     </div>

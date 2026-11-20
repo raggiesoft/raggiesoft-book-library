@@ -1,42 +1,67 @@
 <?php
-/**
- * ACCESSIBILITY VIEW (accessibility.php)
- * ---------------------------------------------------------
- * Architectural Block Comment:
- * File: accessibility.php
- * Purpose:
- *     This file replaces the old standalone accessibility page with a 
- *     native app-like screen that integrates with the Stardust Engine's 
- *     bottom navigation and UI shell. It declares RaggieSoft's accessibility policies 
- *     and details technical accommodations built into the reading platform.
- * 
- * Design Decisions & Future Maintenance:
- *     - Integration: Uses `include` to bolt on the global `bottom-nav.php`, ensuring it acts as a primary application tab.
- *     - Layout: Hardcoded inline CSS utilizes CSS variables (`var(--rs-bg)`, `var(--rs-text)`) to maintain compatibility with 
- *       the site's dynamic light/dark/custom theming engine.
- *     - Content Structure: Organized logically into sections (Motion, Color/Contrast, Keyboard, Screen Readers) rather than 
- *       a wall of text.
- *     - Mobile Responsiveness: Extensive use of Flexbox and `safe-area-inset` calculations to ensure it renders correctly on 
- *       modern mobile devices with notches and bottom swiping bars.
+/*
+ * =============================================================================
+ * READ-ALONG TEACHING GUIDE: sophia/accessibility.php
+ * =============================================================================
+ * WHAT PAGE THIS FILE RENDERS:
+ *     This template renders `https://books.raggiesoft.com/accessibility` — the
+ *     official consumer-friendly Accessibility Commitment screen inside the
+ *     RaggieSoft Book Reader.
+ *
+ * HOW IT CONNECTS TO THE MASTER ROUTER (`eleanor/isabel.php`):
+ *     1. When the browser requests `/accessibility`, `eleanor/isabel.php`
+ *        matches `$requestUri === '/accessibility'`, sets `$isAccessibility = true`,
+ *        configures OpenGraph metadata (`Accessibility Statement | RaggieSoft Book Reader`),
+ *        and outputs the global HTML `<head>` + persistent theme loader via
+ *        `includes/components/headers/header.php`.
+ *     2. `isabel.php` then `require_once`s this view (`sophia/accessibility.php`)
+ *        inside `#stardust-main-wrapper`.
+ *     3. Finally, `includes/components/bottom-nav.php` renders the mobile/tablet
+ *        navigation bar at the bottom of the viewport.
+ *
+ * WHAT THE READER SEES & INTERACTS WITH:
+ *     - A "Back to Settings" breadcrumb link (`/settings`) at the top left.
+ *     - Four plain-English cards explaining how the Book Reader honors:
+ *         1. Native OS "Reduce Motion" (`@media (prefers-reduced-motion: reduce)`)
+ *            so rain/weather animations never trigger vestibular discomfort.
+ *         2. Automatic OS Light/Dark Mode (`prefers-color-scheme`) plus Sepia
+ *            and Dark Sepia reading themes stored in `localStorage`.
+ *         3. Full Keyboard Navigation (including the "Skip to main content"
+ *            focusable link at the very top of `header.php`).
+ *         4. Screen Reader support for Augmentative and Alternative Communication
+ *            (AAC) device dialogue (`"AAC Device:"` visually-hidden prefix
+ *            injected by `StardustParsedown` when parsing story Markdown).
+ *
+ * 100-LEVEL HTML & CSS CONCEPTS TO NOTICE HERE:
+ *     - Notice how zero JavaScript is needed on this page! Because `header.php`
+ *       already reads `localStorage.getItem('reader-settings')` before first
+ *       paint and sets CSS Custom Properties (`--rs-bg`, `--rs-surface`,
+ *       `--rs-text`, `--rs-heading`, `--rs-primary`), every card on this screen
+ *       automatically inherits the user's active font and color theme.
+ * =============================================================================
  */
+
+// Import shared routing state set up upstream in `eleanor/isabel.php`.
 global $cdnBaseUrl, $siteName, $requestUri;
 ?>
 
 <!-- 
-  MAIN CONTAINER
-  We use flex: 1 and a bottom padding to ensure the content doesn't get 
-  hidden behind the fixed bottom navigation bar on mobile devices.
+  MAIN SCROLLABLE VIEWPORT CONTAINER:
+  - `flex: 1` expands this pane to fill the available vertical height inside `#stardust-main-wrapper`.
+  - `padding-bottom: 6rem` reserves space at the bottom so the final card is never
+    covered up by the fixed bottom tab bar (`bottom-nav.php`) on phones.
 -->
 <div class="stardust-mobile-scroll" style="flex: 1; background: var(--rs-bg); padding-bottom: 6rem;">
-    <!-- Container wrapper with max-width for desktop, and safe-area adjustments for mobile -->
+    <!-- Centered readable column (`max-width: 800px`) with iOS notch clearance (`env(safe-area-inset-top, 0px)`) -->
     <div style="max-width: 800px; margin: 0 auto; padding: calc(1.5rem + env(safe-area-inset-top, 0px)) 1.5rem 1rem;">
         
-        <!-- HEADER SECTION -->
+        <!-- PAGE HEADER & BREADCRUMB -->
         <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 2rem;">
             <div>
-                <!-- Navigation Breadcrumb allowing users to return to the parent Settings view -->
+                <!-- Breadcrumb link returning the reader to `/settings` (`sophia/settings.php`) -->
                 <a href="/settings" style="display: inline-flex; align-items: center; gap: 0.5rem; color: var(--rs-text-muted); text-decoration: none; font-weight: 600; margin-bottom: 1rem;"><i class="ph ph-arrow-left"></i> Back to Settings</a>
                 
+                <!-- Uppercase eyebrow label above the primary h1 page title -->
                 <p style="font-size: 1.1rem; color: var(--rs-primary); margin: 0 0 0.25rem 0; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
                     Our Commitment
                 </p>
@@ -46,11 +71,12 @@ global $cdnBaseUrl, $siteName, $requestUri;
             </div>
         </div>
 
+        <!-- Lead introductory sentence -->
         <p style="font-size: 1.2rem; margin-bottom: 2rem; opacity: 0.9; color: var(--rs-text);">
             At RaggieSoft, we believe digital experiences should be accessible, comfortable, and safe for everyone.
         </p>
 
-        <!-- NATIVE ACCESSIBILITY & MOTION SECTION -->
+        <!-- PILLAR 1: NATIVE ACCESSIBILITY & REDUCED MOTION (`prefers-reduced-motion`) -->
         <div style="background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 1.5rem;">
             <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--rs-heading); margin-top: 0; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
                 <i class="ph ph-person-simple-walk"></i> Native Accessibility & Motion
@@ -70,7 +96,7 @@ global $cdnBaseUrl, $siteName, $requestUri;
             </p>
         </div>
 
-        <!-- COLOR & CONTRAST SECTION -->
+        <!-- PILLAR 2: COLOR SCHEMES & HIGH-CONTRAST READING THEMES (`prefers-color-scheme`) -->
         <div style="background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 1.5rem;">
             <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--rs-heading); margin-top: 0; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
                 <i class="ph ph-circle-half"></i> Color & Contrast
@@ -82,7 +108,7 @@ global $cdnBaseUrl, $siteName, $requestUri;
             </p>
         </div>
         
-        <!-- KEYBOARD NAVIGATION SECTION -->
+        <!-- PILLAR 3: FULL KEYBOARD NAVIGATION & SKIP LINKS -->
         <div style="background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 1.5rem;">
             <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--rs-heading); margin-top: 0; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
                 <i class="ph ph-keyboard"></i> Keyboard Navigation
@@ -96,7 +122,7 @@ global $cdnBaseUrl, $siteName, $requestUri;
             </p>
         </div>
         
-        <!-- SCREEN READERS & AAC DIALOGUE SECTION -->
+        <!-- PILLAR 4: SCREEN READERS & AUGMENTATIVE/ALTERNATIVE COMMUNICATION (AAC) DIALOGUE -->
         <div style="background: var(--rs-surface); border: 1px solid var(--rs-border); border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.05); margin-bottom: 2rem;">
             <h3 style="font-size: 1.25rem; font-weight: 700; color: var(--rs-heading); margin-top: 0; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
                 <i class="ph ph-speaker-high"></i> Screen Readers & AAC Dialogue
@@ -113,7 +139,7 @@ global $cdnBaseUrl, $siteName, $requestUri;
 </div>
 
 <!-- 
-  BOTTOM NAVIGATION COMPONENT
-  This includes the iOS-style tab bar at the bottom of the screen.
+  BOTTOM NAVIGATION COMPONENT:
+  Includes the shared iOS/PWA-style bottom tab bar (`includes/components/bottom-nav.php`).
 -->
 <?php include __DIR__ . '/../includes/components/bottom-nav.php'; ?>

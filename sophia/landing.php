@@ -1,35 +1,53 @@
 <?php
-/**
- * Architectural Block Comment:
- * File: landing.php
- * Purpose:
- *     This script renders the main landing page for an entire book series.
- *     It displays the series cover art, parses and outputs a long-form markdown description, 
- *     and provides social media sharing links.
- * 
- * Design Decisions & Future Maintenance:
- *     - Global Variables: Relies on `$toc_manifest` for configuration data, `$cdnBaseUrl` for image asset resolution,
- *       `$seriesSlug` for URL generation, and `$Parsedown` for converting the long markdown description into HTML.
- *     - Markdown Parsing: Includes logic to strip YAML frontmatter (`--- ... ---`) from the top of the description file
- *       before passing it to Parsedown to prevent raw metadata from bleeding into the UI.
- *     - Responsive Grid: Utilizes CSS Grid (`.landing-grid`) to shift the layout from stacked on mobile to a two-column setup on desktop.
- *     - Social Sharing: Generates platform-specific intent URLs (Facebook, Bluesky) and implements a clipboard copy button.
- *       Open Graph (`og:image`) assets are hardcoded to follow a specific naming convention based on `$seriesSlug`.
- *     - Security/Sanitization: `htmlspecialchars` is applied dynamically to all variables rendered inside HTML tags to prevent XSS. 
- *       Note that `$Parsedown->text()` is assumed to be safe or is handling its own sanitization for the description body.
+/*
+ * =============================================================================
+ * READ-ALONG TEACHING GUIDE: sophia/landing.php
+ * =============================================================================
+ * WHAT PAGE THIS FILE RENDERS:
+ *     This sub-view renders the dedicated Series Overview ("Book Cover & Back-Cover
+ *     Synopsis") page at `https://books.raggiesoft.com/<series>` (for example,
+ *     `/rachel`, `/aubrie`, `/katie`, or `/stardust-engine`).
+ *
+ * HOW IT CONNECTS TO `eleanor/isabel.php`, `sophia/sidebar.php`, & `sophia/oliver.php`:
+ *     1. In `data/routes/<series>.json`, the root series route (`/<series>`) maps
+ *        to the special `filePath` token `'__SERIES_LANDING__'`.
+ *     2. `eleanor/isabel.php` loads the series' `toc.json` into `$toc_manifest`,
+ *        resolves eBook file sizes into `$ebookSizes`, sets OpenGraph `og:type`
+ *        to `'book'`, and renders `sophia/sidebar.php` (which populates `$fileToUrl`).
+ *     3. `sophia/oliver.php` instantiates `$Parsedown = new StardustParsedown('vanilla')`,
+ *        turns on PHP output buffering (`ob_start()`), and `require_once`s this file
+ *        inside `#stardust-reading-pane` alongside full Schema.org `Book` JSON-LD!
+ *
+ * WHAT THE READER SEES & INTERACTS WITH:
+ *     1. Two-Column Hero Grid (`.landing-grid`):
+ *          - Left Column: Sticky 2:3 uncropped novel cover artwork.
+ *          - Right Column: Full Markdown synopsis (`landing.md` or `series_description`
+ *            from `ovab.json`), plus 1-click `Start Reading` (jumping straight to
+ *            Era 1, Chapter 1, Part 1), `View the Table of Contents`, `Table of
+ *            Illustrations`, and `Follow a Story Arc` buttons.
+ *     2. Full-Width Below-the-Fold Stack (`.landing-full-stack`):
+ *          - Curated **Story Arcs** reading playlists (`#series-story-arcs`).
+ *          - **Live Manuscript & Lore Scale** telemetry card (words, print pages, hours).
+ *          - **Offline eBook Editions** bar (Illustrated + Text-Only EPUB & PDF).
+ *          - **Companion Music Discovery Card** (`$companionMusicCards`) connecting
+ *            music-linked novels directly to `music.raggiesoft.com` (The Listening Room).
+ *     3. Crawlable **Story Eras & Chapters** overview grid + Social Share bar with
+ *        an async Clipboard API (`navigator.clipboard.writeText()`) "Copy Link" button!
+ * =============================================================================
  */
 
-// Import requisite dependencies and metadata.
+// Import shared manifests, CDN base URL, Parsedown Markdown parser, eBook sizes, and route maps.
 global $toc_manifest, $cdnBaseUrl, $seriesSlug, $Parsedown, $ebookSizes, $routeData, $fileToUrl;
 
-// Setup fallback values in case the JSON data is missing expected fields.
+// Step 1: Extract core series metadata from `$toc_manifest` (`toc.json`) with safe fallbacks.
 $seriesTitle = $toc_manifest['series_title'] ?? 'Book Series';
 $seriesDescriptionLong = $toc_manifest['series_description_long'] ?? '';
 $seriesDescription = $toc_manifest['series_description'] ?? 'No description available.';
 $seriesImage = $toc_manifest['series_image'] ?? '';
 $tocUrl = '/' . $seriesSlug . '/toc';
 
-// Resolve the canonical opening scene URL so readers and search crawlers can enter Chapter 1 directly in 1 click.
+// Step 2: Resolve the exact URL of Era 1 -> Chapter 1 -> Part 1 (`$firstPartUrl`) so the
+// primary "Start Reading" button drops the reader directly into the opening scene in 1 click!
 $firstPartUrl = '';
 if (!empty($toc_manifest['eras'][0]['chapters'][0]['parts'][0])) {
     $openingPart = $toc_manifest['eras'][0]['chapters'][0]['parts'][0];
@@ -37,9 +55,12 @@ if (!empty($toc_manifest['eras'][0]['chapters'][0]['parts'][0])) {
     if ($openingFilePath !== '' && !empty($fileToUrl[$openingFilePath])) {
         $firstPartUrl = (string)$fileToUrl[$openingFilePath];
     } elseif (!empty($openingPart['url'])) {
+        // Strip legacy single-part `/part-1-<slug>` suffix if falling back to raw `toc.json` URL
         $firstPartUrl = (string)preg_replace('#/part-1-[^/]+$#', '', str_replace('/raggiesoft-books/books', '', (string)$openingPart['url']));
     }
 }
+
+// Step 3: Resolve human-readable file sizes (e.g., `"42.8 MB"` vs `"1.4 MB"`) for all 4 offline eBook editions.
 $landingSizes = !empty($ebookSizes) && is_array($ebookSizes)
     ? $ebookSizes
     : ($routeData['common']['ebook_sizes'] ?? ($toc_manifest['ebook_sizes'] ?? []));
@@ -47,7 +68,9 @@ $landingEpubSize     = $landingSizes['epub'] ?? '';
 $landingPdfSize      = $landingSizes['pdf'] ?? '';
 $landingTextEpubSize = $landingSizes['text_epub'] ?? '';
 $landingTextPdfSize  = $landingSizes['text_pdf'] ?? '';
-// Resolve illustration, manuscript scale, and offline edition telemetry upfront for layout composition.
+
+// Step 4: Extract illustration count, manuscript word/page/hour metrics, and curated Story Arcs (`arcs.json`).
+// Industry typesetting math: `275` words per trade-paperback page; `250` words per reading minute (`15,000` words/hour).
 $landingIllusCount = (int)($toc_manifest['illustration_count'] ?? ($routeData['common']['illustration_count'] ?? 0));
 $illustrationsUrl = '/' . $seriesSlug . '/illustrations';
 $landingWordStats = $toc_manifest['word_stats'] ?? ($routeData['common']['word_stats'] ?? []);
@@ -59,7 +82,7 @@ $landingTotalPages = (int)($landingWordStats['combined_page_count'] ?? ($landing
 $landingReadingHours = (float)($landingWordStats['reading_hours'] ?? ($landingWordStats['reading_hours_story'] ?? ($landingStoryWords > 0 ? round($landingStoryWords / (250 * 60), 1) : 0)));
 $landingScaleLabel = (string)($landingWordStats['scale_category'] ?? ($landingWordStats['scale_label'] ?? ($landingWordStats['scale_badge'] ?? '')));
 $landingScaleBenchmark = (string)($landingWordStats['benchmark_note'] ?? ($landingWordStats['scale_benchmark'] ?? ''));
-// Resolve curated Story Arcs (Reading Playlists) compiled from `arcs.json` for this series.
+// Curated Story Arcs compiled by `paige.php` from `books/<seriesSlug>/arcs.json`
 $landingStoryArcs = is_array($toc_manifest['story_arcs'] ?? null)
     ? $toc_manifest['story_arcs']
     : (is_array($routeData['common']['story_arcs'] ?? null) ? $routeData['common']['story_arcs'] : []);
@@ -185,19 +208,20 @@ $landingStoryArcs = is_array($toc_manifest['story_arcs'] ?? null)
             <h2 class="landing-about-heading">About this Series</h2>
             <div class="landing-synopsis-prose">
                 <?php 
-                // Determine whether to render the long markdown description or the short text fallback.
+                // Step 5: Render the book's back-cover synopsis.
+                // - If `paige.php` found a multi-paragraph `landing.md` (`$seriesDescriptionLong`),
+                //   strip any optional `--- ... ---` YAML frontmatter block at the top using `preg_match()`
+                //   + `substr()`, then convert Markdown formatting into HTML via `$Parsedown->text()`.
+                // - Otherwise, fall back to `series_description` from `ovab.json`, escaping HTML with
+                //   `htmlspecialchars()` and turning newline characters (`\n`) into `<br>` tags via `nl2br()`.
                 if (!empty($seriesDescriptionLong) && isset($Parsedown)) {
                     $descContent = $seriesDescriptionLong;
                     
-                    // Regex routine to detect and strip YAML frontmatter block from the start of the markdown string.
                     if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $descContent, $matches)) {
-                        // Slice off the frontmatter portion based on the matched length.
                         $descContent = substr($descContent, strlen($matches[0]));
                     }
-                    // Parse the resulting markdown into HTML for display.
                     echo $Parsedown->text($descContent);
                 } else {
-                    // Fallback to the short description, formatting line breaks into `<br>` tags.
                     echo '<p>' . nl2br(htmlspecialchars($seriesDescription)) . '</p>';
                 }
                 ?>
@@ -645,7 +669,9 @@ $landingStoryArcs = is_array($toc_manifest['story_arcs'] ?? null)
     <?php endif; ?>
 
 <?php 
-// Build deterministic canonical share URL so social shares never include legacy `/books/` prefixes or query strings.
+// SECTION 5: SOCIAL SHARING & CLIPBOARD LINK COPY
+// Build deterministic canonical share URL (`https://books.raggiesoft.com/<slug>`) so shared links
+// never carry temporary query parameters or legacy `/books/` prefixes.
 $currentUrl = 'https://books.raggiesoft.com/' . rawurlencode((string)$seriesSlug);
 $encodedUrl = urlencode($currentUrl);
 $encodedText = urlencode("Check out " . $seriesTitle . " by Michael Ragsdale!");
@@ -655,21 +681,21 @@ $ogImageFile = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/' . $seriesSlug
     <div style="margin-top: 4rem; padding-top: 2rem; border-top: 1px solid var(--rs-border); text-align: center;">
         <h2 style="font-size: 1.4rem; margin-bottom: 1.5rem; color: var(--rs-text);">Share this Book</h2>
         
-        <!-- OpenGraph Image Preview -->
+        <!-- 16:9 Social Share Card Preview (`1200x630`; hidden gracefully via JS `error` listener below if an OG image hasn't been generated yet) -->
         <img id="rs-share-og-preview" src="<?php echo htmlspecialchars($ogImageFile); ?>" alt="Social share card for <?php echo htmlspecialchars($seriesTitle); ?>" width="1200" height="630" loading="lazy" decoding="async" style="width: 100%; max-width: 600px; height: auto; aspect-ratio: 1200 / 630; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.3); margin-bottom: 2rem; border: 1px solid var(--rs-border);">
         
         <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-            <!-- Facebook Share Intent -->
+            <!-- Facebook Share Intent URL (`?u=<urlEncodedLink>`) -->
             <a href="https://www.facebook.com/sharer/sharer.php?u=<?php echo $encodedUrl; ?>" target="_blank" rel="noopener noreferrer" class="rs-btn">
                 <i class="ph ph-facebook-logo" aria-hidden="true"></i> Facebook
             </a>
             
-            <!-- Bluesky Compose Intent -->
+            <!-- Bluesky Compose Intent URL (`?text=<urlEncodedMessage>`) -->
             <a href="https://bsky.app/intent/compose?text=<?php echo $encodedText . '%20' . $encodedUrl; ?>" target="_blank" rel="noopener noreferrer" class="rs-btn">
                 <i class="ph ph-cloud-sun" aria-hidden="true"></i> Bluesky
             </a>
 
-            <!-- Native Clipboard API Copy capability (wired via addEventListener below) -->
+            <!-- Modern Async Clipboard API Copy Button (`data-copy-url` passes PHP's `$currentUrl` cleanly to JS) -->
             <button type="button" id="rs-copy-book-link" data-copy-url="<?php echo htmlspecialchars($currentUrl); ?>" class="rs-btn rs-btn-primary">
                 <i class="ph ph-link" aria-hidden="true"></i> <span id="rs-copy-book-label">Copy Link</span>
             </button>
@@ -680,6 +706,14 @@ $ogImageFile = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/' . $seriesSlug
         </p>
     </div>
     <script>
+    /*
+     * SERIES LANDING SHARE & IMAGE FALLBACK SCRIPT:
+     * 1. Listens for the `error` event on `#rs-share-og-preview` so broken-image icons never appear
+     *    if a newly drafted book doesn't have an `og/<slug>.jpg` card on the CDN yet.
+     * 2. Uses `navigator.clipboard.writeText(targetUrl)` (an asynchronous Promise-based Web API)
+     *    to copy the canonical book URL to the user's clipboard, temporarily changing the button
+     *    label to `'Link Copied!'` for 2,200 milliseconds (`setTimeout`) as visual confirmation!
+     */
     (function () {
         var ogImg = document.getElementById('rs-share-og-preview');
         if (ogImg) {

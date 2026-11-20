@@ -1,36 +1,52 @@
 <?php
-/**
+/*
  * =============================================================================
- * Architecture & Maintenance Guide: sophia/stats.php
+ * READ-ALONG TEACHING GUIDE: sophia/stats.php
  * =============================================================================
- * Purpose:
- *     Renders the live, dynamic "Library Word Count & Contemporary Publishing
- *     Scale Ledger" (`https://books.raggiesoft.com/stats`).
- *     Displays real-time manuscript word counts (Pure Story Prose vs. Curated
- *     Lore vs. Combined Total), estimated trade paperback page counts (~275
- *     words/page), estimated reading durations (~250 words/minute), and
- *     comparisons against standard, generic contemporary publishing industry
- *     benchmarks (strictly zero third-party author names or external book titles).
+ * WHAT PAGE THIS FILE RENDERS:
+ *     This template renders `https://books.raggiesoft.com/stats` (also the
+ *     canonical 301 redirect target of `/word-counts` and `/library-stats`) —
+ *     the live "Library Word Count & Contemporary Publishing Scale Ledger".
  *
- * Dynamic Data Pipeline:
- *     - Reads `/data/library-stats.json` (compiled automatically by `paige.php`
- *       on every build/deploy, with fallback to CDN `/raggiesoft-books/json/library-stats.json`
- *       or `/raggiesoft-books/books/catalog.json`).
- *     - Whenever any novel scene (`p*.md`) or lore file (`lore/**`, `universal-lore/**`,
- *       `backstage/**`, or `engine-room-records/catalog.json`) is edited and
- *       published via `paige.php` / `jenna-sync.sh`, every metric on this page
- *       updates automatically with zero manual intervention.
+ * HOW IT CONNECTS TO `eleanor/isabel.php` & `paige.php`:
+ *     1. Build Time (`paige.php`): Counts every word of story prose (`p*.md`),
+ *        book-specific lore, shared universe lore, Backstage dossiers, and
+ *        Engine Room Records song lyrics across the entire workspace, writing
+ *        the compiled snapshot to `data/library-stats.json` (and CDN `json/library-stats.json`).
+ *     2. Server Side (`isabel.php` -> `stats.php`): When `$requestUri === '/stats'`,
+ *        `isabel.php` sets `$isStats = true`, injects `$cdnBaseUrl` and `$basePath`,
+ *        and includes this view. Here in PHP, we decode `library-stats.json`,
+ *        compute `$maxBookCombined` so each volume's proportional progress bar
+ *        scales accurately against the largest volume (`0%`–`100%`), and render
+ *        the responsive `<table id="ova-stats-ledger-table">`.
  *
- * Accessibility & Theme Support (WCAG 2.1 AA):
- *     - Adapts automatically to Light Mode, Dark Mode, Sepia, and system
- *       `prefers-color-scheme` using `--rs-*` custom properties.
- *     - Uses semantic table landmarks, keyboard-operable filter pills, and
- *       accessible progress bars.
+ * WHAT THE READER SEES & INTERACTS WITH:
+ *     1. Hero KPI Summary Grid: 4 cards showing Pure Narrative Story Prose,
+ *        Curated Lore & Liner Notes, Combined Story + Lore Canon, and
+ *        Contemporary 90,000-word Novel Equivalents.
+ *     2. Standard Contemporary Publishing Length Classifications (6 tiers from
+ *        Short Fiction `< 17.5k` words up to Multi-Volume Epic Omnibus `200k+`).
+ *     3. Interactive Volume-by-Volume Ledger Table with instant scale-tier filter
+ *        pills (`All`, `Omnibus 200k+`, `Novels 40k–200k`, `Novellas & Short Works`)
+ *        and live text filtering (`#ova-stats-search`).
+ *     4. Shared Universe Lore & Engine Room Records Music Archive breakdown cards.
+ *
+ * 100-LEVEL RESPONSIVE CSS & JS CONCEPTS TO NOTICE HERE:
+ *     - Responsive Table-to-Card Transformation (`@media (max-width: 859px)`):
+ *       Wide 7-column data tables normally force horizontal scrolling on phones.
+ *       Here, CSS switches `<tr>` to `display: grid` on screens `< 860px` and uses
+ *       `content: attr(data-label)` on `td.cell-metric::before` so every table cell
+ *       automatically prints its own mini column header (`STORY PROSE`, `SERIES LORE`,
+ *       `COMBINED TOTAL`) inside a 3-up card grid—100% semantic `<table>` HTML on
+ *       desktop, zero-horizontal-scroll native cards on mobile!
  * =============================================================================
  */
 
+// Import `$cdnBaseUrl` and `$basePath` from `eleanor/isabel.php`.
 global $cdnBaseUrl, $basePath;
 
+// Step 1: Load `library-stats.json` from local NVMe disk first (`data/library-stats.json`),
+// falling back to the public CDN if the local file is missing.
 $resolvedBasePath = !empty($basePath) ? $basePath : dirname(__DIR__);
 $localStatsFile   = $resolvedBasePath . '/data/library-stats.json';
 $cdnStatsUrl      = rtrim((string)$cdnBaseUrl, '/') . '/raggiesoft-books/json/library-stats.json';
@@ -41,6 +57,8 @@ $statsRaw = is_file($localStatsFile)
 
 $stats = $statsRaw ? (json_decode((string)$statsRaw, true) ?: []) : [];
 
+// Step 2: Unpack library-wide aggregate totals with safe integer/float casts and mathematical fallbacks
+// (`275` words per trade paperback page; `15,000` words per reading hour = `250` words/minute; `90,000` words per standard novel).
 $volumeCount          = (int)($stats['volume_count'] ?? 30);
 $activeVolumeCount    = (int)($stats['active_story_volume_count'] ?? 27);
 $totalEras            = (int)($stats['total_eras'] ?? 0);
@@ -62,7 +80,8 @@ $totalCombinedEquiv   = (float)($stats['total_combined_novel_equivalents'] ?? ro
 $sharedLoreBreakdown  = is_array($stats['shared_lore_breakdown'] ?? null) ? $stats['shared_lore_breakdown'] : [];
 $booksList            = is_array($stats['books'] ?? null) ? $stats['books'] : [];
 
-// Determine maximum combined word count among books for proportional visual bar scaling
+// Step 3: Find the largest single book (`$maxBookCombined`, initialized to `1` so we never divide by zero!)
+// so every row's stacked Story + Lore visual bar scales proportionally from 0% to 100%.
 $maxBookCombined = 1;
 foreach ($booksList as $bItem) {
     $cVal = (int)($bItem['word_stats']['combined_word_count'] ?? 0);
@@ -613,6 +632,7 @@ foreach ($booksList as $bItem) {
                     </thead>
                     <tbody>
                         <?php foreach ($booksList as $idx => $bRow):
+                            // Unpack per-volume telemetry from `library-stats.json`
                             $bSlug    = (string)($bRow['slug'] ?? '');
                             $bTitle   = (string)($bRow['title'] ?? $bSlug);
                             $bImg     = !empty($bRow['image']) ? ($cdnBaseUrl . $bRow['image']) : ($cdnBaseUrl . '/raggiesoft-books/images/covers/og/' . $bSlug . '.jpg');
@@ -631,6 +651,8 @@ foreach ($booksList as $bItem) {
                             $badge    = (string)($ws['scale_badge'] ?? 'Novel');
                             $note     = (string)($ws['benchmark_note'] ?? '');
 
+                            // Bucket each volume into one of the 3 filter-pill categories (`omnibus`, `novel`, `novella`)
+                            // so client-side JavaScript can filter rows via `row.getAttribute('data-tier')`
                             $tierKey = 'novella';
                             if ($sWords >= 200000) {
                                 $tierKey = 'omnibus';
@@ -638,6 +660,8 @@ foreach ($booksList as $bItem) {
                                 $tierKey = 'novel';
                             }
 
+                            // Compute stacked horizontal bar widths (`storyBarPct + loreBarPct <= 100%`)
+                            // relative to `$maxBookCombined` (the longest book in the library)
                             $storyBarPct = $maxBookCombined > 0 ? round(($sWords / $maxBookCombined) * 100, 2) : 0;
                             $loreBarPct  = $maxBookCombined > 0 ? round(($lWords / $maxBookCombined) * 100, 2) : 0;
                             $timeLabel   = $sWords === 0
@@ -729,15 +753,29 @@ foreach ($booksList as $bItem) {
     </div>
 </div>
 
-<?php include __DIR__ . "/../includes/components/bottom-nav.php"; ?>
+<?php
+// Attach the shared bottom tab navigation bar (`Home`, `Library`, `Bookmarks`, `Settings`).
+include __DIR__ . "/../includes/components/bottom-nav.php";
+?>
 
 <script>
+/*
+ * CLIENT-SIDE LEDGER FILTER & SEARCH CONTROLLER:
+ * 100-Level JavaScript Walkthrough:
+ * - Each `<tr>` row rendered by PHP above carries two `data-*` attributes:
+ *     1. `data-tier="omnibus|novel|novella"` (based on pure story word count)
+ *     2. `data-search="..."` (pre-lowercased concatenation of title, slug, scale badge, and benchmark note)
+ * - Whenever the reader clicks a `.ova-stats-filter-btn` pill OR types into `#ova-stats-search`,
+ *   `applyTableFilters()` checks BOTH conditions (`matchTier && matchQuery`) and toggles
+ *   `row.style.display` between `''` (default CSS table-row / mobile grid) and `'none'` (hidden)!
+ */
 (function() {
     var filterBtns = document.querySelectorAll('.ova-stats-filter-btn');
     var searchInput = document.getElementById('ova-stats-search');
     var rows = document.querySelectorAll('.ova-stats-row');
     var activeFilter = 'all';
 
+    // Evaluates every ledger row against BOTH the active tier pill and the text search box
     function applyTableFilters() {
         var q = (searchInput ? searchInput.value : '').trim().toLowerCase();
         rows.forEach(function(row) {
@@ -745,10 +783,13 @@ foreach ($booksList as $bItem) {
             var hay = row.getAttribute('data-search') || '';
             var matchTier = (activeFilter === 'all') || (tier === activeFilter);
             var matchQuery = (q === '') || (hay.indexOf(q) !== -1);
+            // Setting `style.display = ''` removes any inline override so desktop `table-row`
+            // and `< 860px` mobile `display: grid` CSS rules both work automatically!
             row.style.display = (matchTier && matchQuery) ? '' : 'none';
         });
     }
 
+    // Attach click listeners to each publishing-scale filter pill
     filterBtns.forEach(function(btn) {
         btn.addEventListener('click', function() {
             filterBtns.forEach(function(b) { b.classList.remove('is-active'); });
@@ -758,6 +799,7 @@ foreach ($booksList as $bItem) {
         });
     });
 
+    // Re-filter live on every keystroke inside the search input
     if (searchInput) {
         searchInput.addEventListener('input', applyTableFilters);
     }

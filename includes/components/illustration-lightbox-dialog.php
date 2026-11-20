@@ -1,40 +1,51 @@
 <?php
 /**
- * ============================================================================
- * COMPONENT: Shared Native <dialog> Illustration Lightbox
- *            (includes/components/illustration-lightbox-dialog.php)
- * ============================================================================
- * PURPOSE:
- * Provides a single DRY, zero-dependency HTML5 `<dialog id="ova-illus-lightbox">`
- * modal shared between:
- *   1. The Table of Illustrations (`includes/components/illustrations-toc.php`,
- *      used on `/<seriesSlug>/illustrations` and embedded inside `/<seriesSlug>/toc`),
- *      where clicking any `.illus-toc-zoom-btn` ("Inspect") opens the lightbox.
- *   2. The Narrative Chapter/Part Reader (`sophia/oliver.php`), where clicking
- *      or pressing Enter/Space on any inline story illustration or hero plate
- *      `<img>` inside `article.story-content` opens the exact same `<dialog>`
- *      to inspect a larger version of the artwork and caption.
+ * =============================================================================
+ * PLAIN-ENGLISH OVERVIEW FOR NEW DEVELOPERS (100-LEVEL JAVASCRIPT / WEB INTRO)
+ * =============================================================================
+ * File: includes/components/illustration-lightbox-dialog.php
+ * App:  RaggieSoft Book Reader (`https://books.raggiesoft.com`)
  *
- * MODERN WEB & ACCESSIBILITY COMPLIANCE:
- * - Declarative light-dismiss via `<dialog closedby="any">` paired with a
- *   bounding-box click fallback (`!('closedBy' in HTMLDialogElement.prototype)`)
- *   for Safari and older WebKit engines.
- * - Opened strictly via `dialog.showModal()` so the browser places the modal
- *   in the top layer, traps focus, and handles the `Escape` key natively.
- * - Zero-scroll viewport fit (`max-block-size: min(92dvh, 900px)`) with
- *   `overscroll-behavior: contain` on `:modal` and `::backdrop`.
- * - Full keyboard navigation (`ArrowLeft` / `ArrowRight` for Previous / Next,
- *   `Enter` / `Space` on inline story images, `Escape` to close).
- * ============================================================================
+ * WHAT IS THIS FILE?
+ *   A "Lightbox" is a full-screen-overlay image viewer that dims the page behind
+ *   it so you can inspect a story illustration at large resolution, read its
+ *   scene caption, and step backward/forward (`Previous` / `Next`) through all
+ *   illustrations on the page.
+ *
+ *   Instead of loading a heavy third-party lightbox library, this component builds
+ *   one shared, zero-dependency lightbox using the modern **native HTML5 `<dialog>`
+ *   element** (`<dialog id="ova-illus-lightbox">`), shared across two places:
+ *     1. **Table of Illustrations** (`includes/components/illustrations-toc.php`),
+ *        when clicking any card's "Inspect" button (`.illus-toc-zoom-btn`).
+ *     2. **Live Story Chapters** (`sophia/oliver.php`), when clicking (or pressing
+ *        `Enter` / `Space` on) any illustration inside `<article class="story-content">`.
+ *
+ * HOW DOES NATIVE HTML `<dialog>` WORK? (Key Web Platform Concept!)
+ *   - By default, a `<dialog>` tag in HTML is completely invisible (`open === false`).
+ *   - When JavaScript calls `dialog.showModal()` (NOT `.show()`!), the browser
+ *     automatically:
+ *       1. Promotes the `<dialog>` into the browser's special **Top Layer**
+ *          (above every `z-index` on the page—no z-index wars!).
+ *       2. Renders a dim frosted-glass `::backdrop` behind it.
+ *       3. **Traps keyboard `Tab` focus** inside the dialog (and makes the rest
+ *          of the page inert to clicks and screen readers!).
+ *       4. Listens for the **`Escape` key** natively and closes the dialog!
+ *   - Adding `closedby="any"` tells modern Chromium/Firefox browsers to also close
+ *     when the user clicks outside the dialog box ("light dismiss"), and we include
+ *     a 12-line bounding-box click fallback at the bottom for Safari!
+ * =============================================================================
  */
 
-// Prevent duplicate emission if both `illustrations-toc.php` and `oliver.php`
-// include this partial within the same PHP request lifecycle.
+// Singleton Guard: If both `illustrations-toc.php` and `sophia/oliver.php` include this file
+// during the same PHP page render, `return;` on the second include so we never emit duplicate
+// `<dialog id="ova-illus-lightbox">` elements into the DOM!
 if (!empty($GLOBALS['__ova_illus_lightbox_rendered'])) {
     return;
 }
 $GLOBALS['__ova_illus_lightbox_rendered'] = true;
 
+// Resolve the current book slug (`rachel`, `katie`, etc.) so inline chapter images can link
+// to `/<seriesSlug>/illustrations`.
 global $seriesSlug, $activeSeriesSlug;
 $resolvedLightboxSeriesSlug = '';
 if (!empty($activeSeriesSlug)) {
@@ -46,6 +57,10 @@ if (!empty($activeSeriesSlug)) {
 <style>
 /* ==========================================================================
  * SHARED NATIVE <dialog> ILLUSTRATION LIGHTBOX STYLES
+ * Note on CSS Logical Properties used below:
+ *   - `inline-size` / `max-inline-size` = `width` / `max-width`
+ *   - `block-size`  / `max-block-size`  = `height` / `max-height`
+ *   - `dvh` = Dynamic Viewport Height (accounts for mobile Safari's URL bar!)
  * ========================================================================== */
 .illus-lightbox-dialog {
     max-inline-size: min(94vw, 1240px);
@@ -60,10 +75,13 @@ if (!empty($activeSeriesSlug)) {
     overflow: hidden;
 }
 
+/* `:modal` matches `<dialog>` ONLY when opened via `.showModal()`.
+   `overscroll-behavior: contain` stops trackpad/touch scrolling from leaking to the page behind! */
 .illus-lightbox-dialog:modal {
     overscroll-behavior: contain;
 }
 
+/* `::backdrop` is the browser's built-in full-screen overlay behind a modal `<dialog>`. */
 .illus-lightbox-dialog::backdrop {
     overflow: hidden;
     overscroll-behavior: contain;
@@ -136,6 +154,8 @@ if (!empty($activeSeriesSlug)) {
     gap: 0.65rem;
 }
 
+/* `object-fit: contain` ensures the entire 16:9 or portrait artwork fits inside the modal
+   without ever cropping a character's head or edges! */
 .illus-lightbox-img {
     display: block;
     inline-size: auto;
@@ -233,7 +253,7 @@ if (!empty($activeSeriesSlug)) {
     text-decoration: underline;
 }
 
-/* Interactive affordance for clickable inline & hero story illustrations inside `oliver.php` */
+/* Magnifying-glass cursor (`zoom-in`) & keyboard focus ring for clickable chapter images */
 .story-content img.ova-clickable-story-img {
     cursor: zoom-in;
     transition: transform 0.18s ease, box-shadow 0.18s ease, outline-color 0.18s ease;
@@ -244,6 +264,7 @@ if (!empty($activeSeriesSlug)) {
     outline-offset: 3px;
 }
 
+/* Respect readers who enabled "Reduce Motion" in OS Accessibility Settings! */
 @media (prefers-reduced-motion: no-preference) {
     .story-content p > img.ova-clickable-story-img:hover {
         transform: scale(1.01);
@@ -252,7 +273,12 @@ if (!empty($activeSeriesSlug)) {
 }
 </style>
 
-<!-- Native <dialog> Lightbox Modal (invoked via .showModal() with closedby="any" + Prev/Next/Up navigation) -->
+<!--
+  Native HTML5 `<dialog>` Modal Markup:
+  - `closedby="any"` allows clicking the dimmed backdrop OR pressing `Escape` to close.
+  - `aria-labelledby="ova-illus-lightbox-title"` links the modal's accessible name to its `<h3>` title.
+  - `aria-live="polite"` on `#ova-illus-lightbox-counter` announces `"2 / 14"` quietly to screen readers when stepping.
+-->
 <dialog id="ova-illus-lightbox"
         class="illus-lightbox-dialog"
         closedby="any"
@@ -299,11 +325,16 @@ if (!empty($activeSeriesSlug)) {
 </dialog>
 
 <script>
+// Immediately Invoked Function Expression (IIFE: `(function() { ... })();`):
+// Wraps all variables (`dialog`, `imgEl`, `currentTrigger`, etc.) inside a private function
+// scope so they never collide with global variables when `stardust-spa.js` re-runs scripts!
 (function() {
     const dialog = document.getElementById('ova-illus-lightbox');
+    // `dataset.bound` reads `data-bound="true"` on the element so we never attach duplicate listeners
     if (!dialog || dialog.dataset.bound === 'true') return;
     dialog.dataset.bound = 'true';
 
+    // Cache references to every sub-element inside the `<dialog>` once at setup time
     const imgEl = document.getElementById('ova-illus-lightbox-img');
     const titleEl = document.getElementById('ova-illus-lightbox-title');
     const chapEl = document.getElementById('ova-illus-lightbox-chap');
@@ -315,7 +346,7 @@ if (!empty($activeSeriesSlug)) {
     const nextBtn = document.getElementById('ova-illus-lightbox-next');
     const counterEl = document.getElementById('ova-illus-lightbox-counter');
 
-    // 1. Discover any explicit Table of Illustrations `.illus-toc-zoom-btn` triggers
+    // 1. Discover any explicit Table of Illustrations `.illus-toc-zoom-btn` ("Inspect") buttons
     const tocZoomBtns = Array.from(document.querySelectorAll('.illus-toc-zoom-btn'));
 
     // 2. Discover inline story & hero plate `<img>` elements inside `article.story-content`
@@ -335,8 +366,9 @@ if (!empty($activeSeriesSlug)) {
         return src !== '';
     });
 
-    // Deduplicate story images by `src` for Previous/Next stepping (so a frontmatter hero plate
-    // repeated inline in the prose is counted once in the `1 / N` sequence while both remain clickable).
+    // Deduplicate story images by `src` using a JavaScript `Map` (`src -> canonical <img>`)
+    // so if a frontmatter hero plate is also embedded inline in the prose, the `1 / N` stepper
+    // counts it once while clicking EITHER copy opens the lightbox at the right slot!
     const uniqueStoryTriggers = [];
     const storyTriggerBySrc = new Map();
 
@@ -344,6 +376,7 @@ if (!empty($activeSeriesSlug)) {
         const src = img.getAttribute('src') || img.currentSrc || img.src || '';
         const alt = (img.getAttribute('alt') || '').trim();
 
+        // Make the `<img>` keyboard-focusable (`tabindex="0"`) and announceable as a dialog button
         img.classList.add('ova-clickable-story-img');
         if (!img.hasAttribute('tabindex')) {
             img.setAttribute('tabindex', '0');
@@ -356,6 +389,8 @@ if (!empty($activeSeriesSlug)) {
             img.setAttribute('title', 'Click to view larger illustration');
         }
 
+        // Store metadata in `data-illus-*` attributes so story `<img>` elements share the exact
+        // same data contract as `.illus-toc-zoom-btn` buttons!
         img.setAttribute('data-illus-src', src);
         img.setAttribute('data-illus-title', defaultPartTitle || 'Scene Illustration');
         img.setAttribute('data-illus-chap', defaultChapEyebrow || 'Ocean View Archives');
@@ -374,6 +409,8 @@ if (!empty($activeSeriesSlug)) {
             e.stopPropagation();
             showIllustrationForTrigger(canonicalTrigger);
         });
+        // Keyboard accessibility: `<a>` and `<button>` trigger on `Enter`/`Space` natively,
+        // whereas `<img role="button" tabindex="0">` needs an explicit `keydown` listener!
         img.addEventListener('keydown', function(e) {
             if (e.key === 'Enter' || e.key === ' ') {
                 e.preventDefault();
@@ -385,6 +422,8 @@ if (!empty($activeSeriesSlug)) {
 
     let currentTrigger = null;
 
+    // Return the active list of triggers—respecting any live search filter in `illustrations-toc.php`
+    // (`card.style.display !== 'none'`) so `Previous` / `Next` only steps through visible search matches!
     function getVisibleTriggers() {
         if (tocZoomBtns.length > 0) {
             return tocZoomBtns.filter(function(b) {
@@ -395,6 +434,7 @@ if (!empty($activeSeriesSlug)) {
         return uniqueStoryTriggers;
     }
 
+    // Populate the `<dialog>` fields from `trigger`'s `data-illus-*` attributes and call `.showModal()`
     function showIllustrationForTrigger(trigger) {
         if (!trigger) return;
         currentTrigger = trigger;
@@ -426,11 +466,14 @@ if (!empty($activeSeriesSlug)) {
         if (prevBtn) prevBtn.disabled = total <= 1;
         if (nextBtn) nextBtn.disabled = total <= 1;
 
+        // Open in the browser's Top Layer (traps focus & binds `Escape` automatically)
         if (!dialog.open && typeof dialog.showModal === 'function') {
             dialog.showModal();
         }
     }
 
+    // Wrap-around modular arithmetic (`(idx + delta + length) % length`) so pressing `Previous`
+    // on image #1 wraps cleanly to image #N, and `Next` on #N wraps back to #1!
     function stepIllustration(delta) {
         const visibleTriggers = getVisibleTriggers();
         if (visibleTriggers.length === 0) return;
@@ -458,6 +501,7 @@ if (!empty($activeSeriesSlug)) {
         });
     }
 
+    // Close the modal cleanly before `stardust-spa.js` navigates to the linked scene!
     if (linkEl) {
         linkEl.addEventListener('click', function() {
             if (dialog.open) {
@@ -466,7 +510,9 @@ if (!empty($activeSeriesSlug)) {
         });
     }
 
-    // Bind global ArrowLeft / ArrowRight handler once across SPA navigations
+    // Expose the current page's `stepIllustration` function on `window` and bind ONE global
+    // `keydown` listener (`__ovaIllusLightboxKeydownBound`) so `ArrowLeft` / `ArrowRight`
+    // never accumulate duplicate listeners across 20+ SPA chapter navigations!
     window.__ovaIllusLightboxStep = function(delta) {
         const activeDialog = document.getElementById('ova-illus-lightbox');
         if (!activeDialog || !activeDialog.open) return false;
@@ -496,7 +542,11 @@ if (!empty($activeSeriesSlug)) {
         });
     }
 
-    // Fallback for browsers without declarative <dialog closedby="any"> support (e.g. Safari)
+    // Safari / older WebKit Fallback for `<dialog closedby="any">`:
+    // When clicking the `::backdrop` outside a `<dialog>`, the browser dispatches the click event
+    // with `event.target === dialog`, whereas `event.clientX` / `event.clientY` fall OUTSIDE
+    // `dialog.getBoundingClientRect()`. Checking the rectangle closes the modal on backdrop clicks
+    // without closing when clicking inside the dialog box!
     if (!('closedBy' in HTMLDialogElement.prototype)) {
         dialog.addEventListener('click', function(event) {
             if (event.target !== dialog) return;
@@ -513,4 +563,3 @@ if (!empty($activeSeriesSlug)) {
     }
 })();
 </script>
-
