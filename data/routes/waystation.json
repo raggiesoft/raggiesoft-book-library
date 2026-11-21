@@ -1,0 +1,310 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "oceanview",
+        "siteName": "Ocean View Archives",
+        "isSequential": true,
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books",
+        "navbarBrandLogo": "/raggiesoft-books/images/logos/story-crossroads-seal-3way.svg",
+        "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
+        "navbarBrandLink": "/raggiesoft-books",
+        "ebook_sizes": {
+            "epub": "1.9 MB",
+            "pdf": "877 KB",
+            "text_epub": "25 KB",
+            "text_pdf": "63 KB",
+            "package_7z": "16 KB",
+            "epub_bytes": 1948994,
+            "pdf_bytes": 897639,
+            "text_epub_bytes": 25929,
+            "text_pdf_bytes": 64666,
+            "package_7z_bytes": 16506
+        },
+        "illustration_count": 6,
+        "word_stats": {
+            "story_word_count": 4684,
+            "lore_word_count": 137,
+            "combined_word_count": 4821,
+            "story_page_count": 17,
+            "combined_page_count": 18,
+            "reading_hours": 0.3,
+            "reading_minutes": 19,
+            "novel_equivalent": 0.05,
+            "scale_category": "Short Fiction & Novelette",
+            "scale_badge": "Short Fiction",
+            "benchmark_note": "Short story / novelette companion (< 17,500 words)",
+            "era_count": 1,
+            "chapter_count": 5,
+            "part_count": 6,
+            "illustration_count": 6,
+            "story_arc_count": 0
+        },
+        "story_arcs": [],
+        "crossroads": [
+            {
+                "id": "borderland-three-roads",
+                "trigger_part": "e001/c002/p001.md",
+                "trigger_url": "/waystation/book-one-beyond-the-living-room-rift/chapter-2-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
+                "kicker": "Story Crossroads \u2022 Second Afternoon of the Twin Moons, The Sunken Milestone",
+                "title": "Three Roads Inward Through Vaeloria: How Do Nolan and Gwen Travel?",
+                "prompt": "With both wheelchairs left behind on their living-room rug, barefoot brother and sister Nolan and Gwen Lennox cannot march twenty miles of rough gravel a day\u2014and here at the Sunken Milestone, peddler Bramwell Kettle has shown them three gentler 1980s-fantasy routes winding deeper into Vaeloria. Every option opens a complete, coequal story route.",
+                "required_choices": [],
+                "options": [
+                    {
+                        "id": "lantern-barge-canal",
+                        "crossroads_id": "borderland-three-roads",
+                        "label": "The Glasswater Lantern-Barge Canal",
+                        "subtitle": "Step onto barge-master Maren's wide reed-and-cedar lantern boat\u2014resting bare feet on cushioned planks with crutches stowed safe beside the gunwale while glowing blue glass lanterns drift toward the inner river towns.",
+                        "entry_part": "paths/lantern-barge-canal/e001/c003/p001.md",
+                        "entry_url": "/waystation/paths/lantern-barge-canal/book-one-beyond-the-living-room-rift/chapter-3-lanterns-on-the-glasswater/drifting-under-sapphire-glass",
+                        "required_choices": {
+                            "borderland-three-roads": "lantern-barge-canal"
+                        },
+                        "part_count": 1,
+                        "word_count": 629,
+                        "reading_minutes": 3,
+                        "image": "/raggiesoft-books/images/scenes/waystation/paths/route1_lantern_barge_canal.jpg"
+                    },
+                    {
+                        "id": "whisperwood-moss-road",
+                        "crossroads_id": "borderland-three-roads",
+                        "label": "The Whisperwood Cushion-Moss Road",
+                        "subtitle": "Walk unhurriedly at your own crutch pace over three-inch-deep emerald velvet moss beneath glowing twilight trees, where carved stone benches and warm geothermal foot-springs wait every quarter-mile.",
+                        "entry_part": "paths/whisperwood-moss-road/e001/c003/p001.md",
+                        "entry_url": "/waystation/paths/whisperwood-moss-road/book-one-beyond-the-living-room-rift/chapter-3-the-slow-footed-order-s-road/warm-springs-and-glowing-canopy",
+                        "required_choices": {
+                            "borderland-three-roads": "whisperwood-moss-road"
+                        },
+                        "part_count": 1,
+                        "word_count": 602,
+                        "reading_minutes": 3,
+                        "image": "/raggiesoft-books/images/scenes/waystation/paths/route2_whisperwood_moss_road.jpg"
+                    },
+                    {
+                        "id": "brass-counterweight-way",
+                        "crossroads_id": "borderland-three-roads",
+                        "label": "The Brass Counterweight Gondola Way",
+                        "subtitle": "Board the ancient oak-and-brass counterweight cable gondola rising smoothly up the Amber Crags past singing bronze wind-harps, where cliffside astronomers keep warm kitchens and ancient star-rings.",
+                        "entry_part": "paths/brass-counterweight-way/e001/c003/p001.md",
+                        "entry_url": "/waystation/paths/brass-counterweight-way/book-one-beyond-the-living-room-rift/chapter-3-above-the-painted-clouds/gondolas-of-the-amber-crags",
+                        "required_choices": {
+                            "borderland-three-roads": "brass-counterweight-way"
+                        },
+                        "part_count": 1,
+                        "word_count": 653,
+                        "reading_minutes": 3,
+                        "image": "/raggiesoft-books/images/scenes/waystation/paths/route3_brass_counterweight_way.jpg"
+                    }
+                ]
+            }
+        ],
+        "story_crossroads_logo": "/raggiesoft-books/images/logos/story-crossroads-logo-3way-512.png",
+        "story_crossroads_seal": "/raggiesoft-books/images/logos/story-crossroads-seal-3way.svg"
+    },
+    "/waystation": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "The Uncharted Waystation",
+        "theme": "raggiesoft-books",
+        "filePath": "__SERIES_LANDING__"
+    },
+    "/waystation/toc": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Contents - The Uncharted Waystation",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
+    },
+    "/waystation/illustrations": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Illustrations - The Uncharted Waystation",
+        "theme": "raggiesoft-books",
+        "filePath": "__ILLUSTRATIONS__"
+    },
+    "/waystation/book-one-beyond-the-living-room-rift": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book One: Beyond the Living-Room Rift",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|0"
+    },
+    "/waystation/book-one-beyond-the-living-room-rift/chapter-1-no-wheelchairs-in-the-star-moss": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: No Wheelchairs in the Star-Moss",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|0"
+    },
+    "/waystation/book-one-beyond-the-living-room-rift/chapter-1-no-wheelchairs-in-the-star-moss/part-1-amber-glass-over-the-coffee-table": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Amber Glass Over the Coffee Table",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/p001.md",
+        "noPrev": true,
+        "nextUrl": "/waystation/book-one-beyond-the-living-room-rift/chapter-1-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong"
+    },
+    "/waystation/book-one-beyond-the-living-room-rift/chapter-1-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Six Inches Taller and Four Crutches Strong",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/p002.md",
+        "prevUrl": "/waystation/book-one-beyond-the-living-room-rift/chapter-1-no-wheelchairs-in-the-star-moss/part-1-amber-glass-over-the-coffee-table",
+        "nextUrl": "/waystation/book-one-beyond-the-living-room-rift/chapter-2-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide"
+    },
+    "/waystation/book-one-beyond-the-living-room-rift/chapter-2-the-three-roads-of-the-sunken-milestone": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: The Three Roads of the Sunken Milestone",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|1"
+    },
+    "/waystation/book-one-beyond-the-living-room-rift/chapter-2-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Where the Flagstones Divide",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c002/p001.md",
+        "prevUrl": "/waystation/book-one-beyond-the-living-room-rift/chapter-1-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong",
+        "noNext": true,
+        "crossroads": {
+            "id": "borderland-three-roads",
+            "trigger_part": "e001/c002/p001.md",
+            "trigger_url": "/waystation/book-one-beyond-the-living-room-rift/chapter-2-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
+            "kicker": "Story Crossroads \u2022 Second Afternoon of the Twin Moons, The Sunken Milestone",
+            "title": "Three Roads Inward Through Vaeloria: How Do Nolan and Gwen Travel?",
+            "prompt": "With both wheelchairs left behind on their living-room rug, barefoot brother and sister Nolan and Gwen Lennox cannot march twenty miles of rough gravel a day\u2014and here at the Sunken Milestone, peddler Bramwell Kettle has shown them three gentler 1980s-fantasy routes winding deeper into Vaeloria. Every option opens a complete, coequal story route.",
+            "required_choices": [],
+            "options": [
+                {
+                    "id": "lantern-barge-canal",
+                    "crossroads_id": "borderland-three-roads",
+                    "label": "The Glasswater Lantern-Barge Canal",
+                    "subtitle": "Step onto barge-master Maren's wide reed-and-cedar lantern boat\u2014resting bare feet on cushioned planks with crutches stowed safe beside the gunwale while glowing blue glass lanterns drift toward the inner river towns.",
+                    "entry_part": "paths/lantern-barge-canal/e001/c003/p001.md",
+                    "entry_url": "/waystation/paths/lantern-barge-canal/book-one-beyond-the-living-room-rift/chapter-3-lanterns-on-the-glasswater/drifting-under-sapphire-glass",
+                    "required_choices": {
+                        "borderland-three-roads": "lantern-barge-canal"
+                    },
+                    "part_count": 1,
+                    "word_count": 629,
+                    "reading_minutes": 3,
+                    "image": "/raggiesoft-books/images/scenes/waystation/paths/route1_lantern_barge_canal.jpg"
+                },
+                {
+                    "id": "whisperwood-moss-road",
+                    "crossroads_id": "borderland-three-roads",
+                    "label": "The Whisperwood Cushion-Moss Road",
+                    "subtitle": "Walk unhurriedly at your own crutch pace over three-inch-deep emerald velvet moss beneath glowing twilight trees, where carved stone benches and warm geothermal foot-springs wait every quarter-mile.",
+                    "entry_part": "paths/whisperwood-moss-road/e001/c003/p001.md",
+                    "entry_url": "/waystation/paths/whisperwood-moss-road/book-one-beyond-the-living-room-rift/chapter-3-the-slow-footed-order-s-road/warm-springs-and-glowing-canopy",
+                    "required_choices": {
+                        "borderland-three-roads": "whisperwood-moss-road"
+                    },
+                    "part_count": 1,
+                    "word_count": 602,
+                    "reading_minutes": 3,
+                    "image": "/raggiesoft-books/images/scenes/waystation/paths/route2_whisperwood_moss_road.jpg"
+                },
+                {
+                    "id": "brass-counterweight-way",
+                    "crossroads_id": "borderland-three-roads",
+                    "label": "The Brass Counterweight Gondola Way",
+                    "subtitle": "Board the ancient oak-and-brass counterweight cable gondola rising smoothly up the Amber Crags past singing bronze wind-harps, where cliffside astronomers keep warm kitchens and ancient star-rings.",
+                    "entry_part": "paths/brass-counterweight-way/e001/c003/p001.md",
+                    "entry_url": "/waystation/paths/brass-counterweight-way/book-one-beyond-the-living-room-rift/chapter-3-above-the-painted-clouds/gondolas-of-the-amber-crags",
+                    "required_choices": {
+                        "borderland-three-roads": "brass-counterweight-way"
+                    },
+                    "part_count": 1,
+                    "word_count": 653,
+                    "reading_minutes": 3,
+                    "image": "/raggiesoft-books/images/scenes/waystation/paths/route3_brass_counterweight_way.jpg"
+                }
+            ]
+        }
+    },
+    "/waystation/paths/lantern-barge-canal/book-one-beyond-the-living-room-rift": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book One: Beyond the Living-Room Rift",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|lantern-barge-canal|0",
+        "pathId": "lantern-barge-canal",
+        "crossroadsId": "borderland-three-roads"
+    },
+    "/waystation/paths/lantern-barge-canal/book-one-beyond-the-living-room-rift/chapter-3-lanterns-on-the-glasswater": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: Lanterns on the Glasswater",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|lantern-barge-canal|0|0",
+        "pathId": "lantern-barge-canal",
+        "crossroadsId": "borderland-three-roads"
+    },
+    "/waystation/paths/lantern-barge-canal/book-one-beyond-the-living-room-rift/chapter-3-lanterns-on-the-glasswater/drifting-under-sapphire-glass": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Drifting Under Sapphire Glass",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/lantern-barge-canal/e001/c003/p001.md",
+        "pathId": "lantern-barge-canal",
+        "crossroadsId": "borderland-three-roads",
+        "requiredChoices": {
+            "borderland-three-roads": "lantern-barge-canal"
+        },
+        "prevUrl": "/waystation/book-one-beyond-the-living-room-rift/chapter-2-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
+        "noNext": true
+    },
+    "/waystation/paths/whisperwood-moss-road/book-one-beyond-the-living-room-rift": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book One: Beyond the Living-Room Rift",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|whisperwood-moss-road|0",
+        "pathId": "whisperwood-moss-road",
+        "crossroadsId": "borderland-three-roads"
+    },
+    "/waystation/paths/whisperwood-moss-road/book-one-beyond-the-living-room-rift/chapter-3-the-slow-footed-order-s-road": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: The Slow-Footed Order's Road",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|whisperwood-moss-road|0|0",
+        "pathId": "whisperwood-moss-road",
+        "crossroadsId": "borderland-three-roads"
+    },
+    "/waystation/paths/whisperwood-moss-road/book-one-beyond-the-living-room-rift/chapter-3-the-slow-footed-order-s-road/warm-springs-and-glowing-canopy": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Warm Springs and Glowing Canopy",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/whisperwood-moss-road/e001/c003/p001.md",
+        "pathId": "whisperwood-moss-road",
+        "crossroadsId": "borderland-three-roads",
+        "requiredChoices": {
+            "borderland-three-roads": "whisperwood-moss-road"
+        },
+        "prevUrl": "/waystation/book-one-beyond-the-living-room-rift/chapter-2-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
+        "noNext": true
+    },
+    "/waystation/paths/brass-counterweight-way/book-one-beyond-the-living-room-rift": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book One: Beyond the Living-Room Rift",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|brass-counterweight-way|0",
+        "pathId": "brass-counterweight-way",
+        "crossroadsId": "borderland-three-roads"
+    },
+    "/waystation/paths/brass-counterweight-way/book-one-beyond-the-living-room-rift/chapter-3-above-the-painted-clouds": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: Above the Painted Clouds",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|brass-counterweight-way|0|0",
+        "pathId": "brass-counterweight-way",
+        "crossroadsId": "borderland-three-roads"
+    },
+    "/waystation/paths/brass-counterweight-way/book-one-beyond-the-living-room-rift/chapter-3-above-the-painted-clouds/gondolas-of-the-amber-crags": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Gondolas of the Amber Crags",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/brass-counterweight-way/e001/c003/p001.md",
+        "pathId": "brass-counterweight-way",
+        "crossroadsId": "borderland-three-roads",
+        "requiredChoices": {
+            "borderland-three-roads": "brass-counterweight-way"
+        },
+        "prevUrl": "/waystation/book-one-beyond-the-living-room-rift/chapter-2-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
+        "noNext": true
+    }
+}

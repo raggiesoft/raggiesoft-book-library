@@ -83,10 +83,10 @@ header('Cache-Control: no-cache');
 $rawPath = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH);
 $requestUri = (is_string($rawPath) && $rawPath !== '') ? $rawPath : '/';
 
-// 2A. Redirect old `/books/<series>` or `/raggiesoft-books/<series>` URLs to `/<series>`.
+// 2A. Redirect `/book/<series>`, `/books/<series>`, or `/raggiesoft-books/<series>` URLs to `/<series>`.
 //     HTTP status `301` means "Moved Permanently"—browsers and search engines automatically
 //     update their saved URL to the new `Location:` header. `exit;` stops PHP immediately.
-if (preg_match('#^/(?:raggiesoft-)?books/(.+)$#', $requestUri, $legacyBookMatch)) {
+if (preg_match('#^/(?:raggiesoft-)?books?/(.+)$#', $requestUri, $legacyBookMatch)) {
     $cleanLegacyTarget = rtrim(ltrim($legacyBookMatch[1], '/'), '/');
     header('Location: /' . $cleanLegacyTarget, true, 301);
     exit;
