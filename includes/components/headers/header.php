@@ -381,8 +381,8 @@ if (!empty($_GET['preview_os']) && in_array(strtolower((string)$_GET['preview_os
     <!-- 3. Active Brand Theme (`theme-oceanview.min.css` by default) -->
     <link rel="stylesheet" href="<?= $assetsUrl ?>/raggiesoft-books/library/css/theme-<?= htmlspecialchars($resolvedThemeCss) ?>.min.css?v=20261114b">
     <!-- 4. Cross-site RaggieSoft Network Top Bar ( + memorial ribbon logic in `raggiesoft-network.js`) -->
-    <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-network.css?v=20261121b">
-    <script src="<?= $assetsUrl ?>/common/js/raggiesoft-network.js?v=20261121b" defer></script>
+    <link rel="stylesheet" href="<?= $assetsUrl ?>/common/css/raggiesoft-network.css?v=20261121d">
+    <script src="<?= $assetsUrl ?>/common/js/raggiesoft-network.js?v=20261121d" defer></script>
     <style>
         /* Native PWA Immersion Guard: Hide cross-site network bar in installed PWA display modes
            and offset reading/sidebar panes below iOS Dynamic Island (`env(safe-area-inset-top)`) */
