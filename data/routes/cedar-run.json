@@ -1,0 +1,310 @@
+{
+    "common": {
+        "site": "raggiesoft-books",
+        "theme": "oceanview",
+        "siteName": "Ocean View Archives",
+        "isSequential": true,
+        "showSidebar": true,
+        "sidebar": "raggiesoft-books/sidebar-book",
+        "headerMenu": "raggiesoft-books/header-books",
+        "footer": "raggiesoft-books/footer-books",
+        "navbarBrandLogo": "/raggiesoft-books/images/logos/story-crossroads-seal-3way.svg",
+        "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
+        "navbarBrandLink": "/raggiesoft-books",
+        "ebook_sizes": {
+            "epub": "2.4 MB",
+            "pdf": "1.1 MB",
+            "text_epub": "30 KB",
+            "text_pdf": "76 KB",
+            "package_7z": "20 KB",
+            "epub_bytes": 2466638,
+            "pdf_bytes": 1181987,
+            "text_epub_bytes": 31203,
+            "text_pdf_bytes": 77363,
+            "package_7z_bytes": 20905
+        },
+        "illustration_count": 6,
+        "word_stats": {
+            "story_word_count": 7149,
+            "lore_word_count": 142,
+            "combined_word_count": 7291,
+            "story_page_count": 26,
+            "combined_page_count": 27,
+            "reading_hours": 0.5,
+            "reading_minutes": 29,
+            "novel_equivalent": 0.08,
+            "scale_category": "Short Fiction & Novelette",
+            "scale_badge": "Short Fiction",
+            "benchmark_note": "Short story / novelette companion (< 17,500 words)",
+            "era_count": 1,
+            "chapter_count": 5,
+            "part_count": 6,
+            "illustration_count": 6,
+            "story_arc_count": 0
+        },
+        "story_arcs": [],
+        "crossroads": [
+            {
+                "id": "first-shelter-and-forage-2000",
+                "trigger_part": "e001/c002/p001.md",
+                "trigger_url": "/cedar-run/episode-1-past-the-back-fence/chapter-2-three-footholds-in-the-valley/food-timber-and-the-fork-in-the-drainage",
+                "kicker": "Story Crossroads \u2022 Thursday, June 22, 2000, 6:40 PM",
+                "title": "Three Footholds in Cedar Run Valley: Where Do Luke, Tessa, and Sadie Build?",
+                "prompt": "With four days of pantry oats left in their packs and zero intention of walking back out to a town, the triplets have scouted three completely wild footholds inside the Cedar Run basin\u2014each offering its own shelter engineering and wild food supply. All three routes forward are complete, coequal stories.",
+                "required_choices": [],
+                "options": [
+                    {
+                        "id": "creek-bend-cedar-frame",
+                        "crossroads_id": "first-shelter-and-forage-2000",
+                        "label": "The Creek-Bend Cedar Bench",
+                        "subtitle": "Stay above the emerald trout pools beside the eighty-foot windfall red cedar\u2014splitting straight cedar planks and roof shakes with Grandpa Owen's froe while weaving willow traps for cutthroat trout.",
+                        "entry_part": "paths/creek-bend-cedar-frame/e001/c003/p001.md",
+                        "entry_url": "/cedar-run/paths/creek-bend-cedar-frame/route-1-the-creek-bend-cedar-bench/chapter-3-straight-grain-and-cutthroat-pools/splitting-the-windfall-giant",
+                        "required_choices": {
+                            "first-shelter-and-forage-2000": "creek-bend-cedar-frame"
+                        },
+                        "part_count": 1,
+                        "word_count": 868,
+                        "reading_minutes": 4,
+                        "image": "/raggiesoft-books/images/scenes/cedar-run/paths/jun_2000_route1_creek_bend_splitting_cedar_shakes.jpg"
+                    },
+                    {
+                        "id": "granite-overhang-hearth",
+                        "crossroads_id": "first-shelter-and-forage-2000",
+                        "label": "The South-Facing Granite Overhang",
+                        "subtitle": "Climb half a mile upslope to the bone-dry bedrock cliff alcove overlooking five acres of wild mountain huckleberries and wild onions\u2014walling in the front with flat granite slabs so sun-baked stone radiates warmth all night.",
+                        "entry_part": "paths/granite-overhang-hearth/e001/c003/p001.md",
+                        "entry_url": "/cedar-run/paths/granite-overhang-hearth/route-2-the-south-facing-granite-overhang/chapter-3-living-stone-and-huckleberry-sun/three-walls-already-standing",
+                        "required_choices": {
+                            "first-shelter-and-forage-2000": "granite-overhang-hearth"
+                        },
+                        "part_count": 1,
+                        "word_count": 831,
+                        "reading_minutes": 4,
+                        "image": "/raggiesoft-books/images/scenes/cedar-run/paths/jun_2000_route2_granite_overhang_stone_wall_huckleberries.jpg"
+                    },
+                    {
+                        "id": "old-lookout-ridge",
+                        "crossroads_id": "first-shelter-and-forage-2000",
+                        "label": "The Forgotten Stone Springhouse",
+                        "subtitle": "Follow the cold spring up to the high tamarack saddle where sixty years of moss hide four intact 1930s fieldstone walls and a 42-degree indoor spring trough\u2014raising new fir rafters beside golden chanterelle and berry woods.",
+                        "entry_part": "paths/old-lookout-ridge/e001/c003/p001.md",
+                        "entry_url": "/cedar-run/paths/old-lookout-ridge/route-3-the-forgotten-stone-springhouse/chapter-3-cold-spring-and-tamarack-rafters/sixty-years-under-the-moss",
+                        "required_choices": {
+                            "first-shelter-and-forage-2000": "old-lookout-ridge"
+                        },
+                        "part_count": 1,
+                        "word_count": 800,
+                        "reading_minutes": 4,
+                        "image": "/raggiesoft-books/images/scenes/cedar-run/paths/jun_2000_route3_forgotten_stone_springhouse_rafters.jpg"
+                    }
+                ]
+            }
+        ],
+        "story_crossroads_logo": "/raggiesoft-books/images/logos/story-crossroads-logo-3way-512.png",
+        "story_crossroads_seal": "/raggiesoft-books/images/logos/story-crossroads-seal-3way.svg"
+    },
+    "/cedar-run": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Cedar Run",
+        "theme": "raggiesoft-books",
+        "filePath": "__SERIES_LANDING__"
+    },
+    "/cedar-run/toc": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Contents - Cedar Run",
+        "theme": "raggiesoft-books",
+        "filePath": "__TOC__"
+    },
+    "/cedar-run/illustrations": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Table of Illustrations - Cedar Run",
+        "theme": "raggiesoft-books",
+        "filePath": "__ILLUSTRATIONS__"
+    },
+    "/cedar-run/episode-1-past-the-back-fence": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Episode 1: Past the Back Fence",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|0"
+    },
+    "/cedar-run/episode-1-past-the-back-fence/chapter-1-first-night-without-shouting": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: First Night Without Shouting",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|0"
+    },
+    "/cedar-run/episode-1-past-the-back-fence/chapter-1-first-night-without-shouting/part-1-five-miles-past-the-wire": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Five Miles Past the Wire",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/p001.md",
+        "noPrev": true,
+        "nextUrl": "/cedar-run/episode-1-past-the-back-fence/chapter-1-first-night-without-shouting/part-2-snowmelt-and-red-cedar"
+    },
+    "/cedar-run/episode-1-past-the-back-fence/chapter-1-first-night-without-shouting/part-2-snowmelt-and-red-cedar": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Snowmelt and Red Cedar",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/p002.md",
+        "prevUrl": "/cedar-run/episode-1-past-the-back-fence/chapter-1-first-night-without-shouting/part-1-five-miles-past-the-wire",
+        "nextUrl": "/cedar-run/episode-1-past-the-back-fence/chapter-2-three-footholds-in-the-valley/food-timber-and-the-fork-in-the-drainage"
+    },
+    "/cedar-run/episode-1-past-the-back-fence/chapter-2-three-footholds-in-the-valley": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 2: Three Footholds in the Valley",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|0|1"
+    },
+    "/cedar-run/episode-1-past-the-back-fence/chapter-2-three-footholds-in-the-valley/food-timber-and-the-fork-in-the-drainage": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Food, Timber, and the Fork in the Drainage",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c002/p001.md",
+        "prevUrl": "/cedar-run/episode-1-past-the-back-fence/chapter-1-first-night-without-shouting/part-2-snowmelt-and-red-cedar",
+        "noNext": true,
+        "crossroads": {
+            "id": "first-shelter-and-forage-2000",
+            "trigger_part": "e001/c002/p001.md",
+            "trigger_url": "/cedar-run/episode-1-past-the-back-fence/chapter-2-three-footholds-in-the-valley/food-timber-and-the-fork-in-the-drainage",
+            "kicker": "Story Crossroads \u2022 Thursday, June 22, 2000, 6:40 PM",
+            "title": "Three Footholds in Cedar Run Valley: Where Do Luke, Tessa, and Sadie Build?",
+            "prompt": "With four days of pantry oats left in their packs and zero intention of walking back out to a town, the triplets have scouted three completely wild footholds inside the Cedar Run basin\u2014each offering its own shelter engineering and wild food supply. All three routes forward are complete, coequal stories.",
+            "required_choices": [],
+            "options": [
+                {
+                    "id": "creek-bend-cedar-frame",
+                    "crossroads_id": "first-shelter-and-forage-2000",
+                    "label": "The Creek-Bend Cedar Bench",
+                    "subtitle": "Stay above the emerald trout pools beside the eighty-foot windfall red cedar\u2014splitting straight cedar planks and roof shakes with Grandpa Owen's froe while weaving willow traps for cutthroat trout.",
+                    "entry_part": "paths/creek-bend-cedar-frame/e001/c003/p001.md",
+                    "entry_url": "/cedar-run/paths/creek-bend-cedar-frame/route-1-the-creek-bend-cedar-bench/chapter-3-straight-grain-and-cutthroat-pools/splitting-the-windfall-giant",
+                    "required_choices": {
+                        "first-shelter-and-forage-2000": "creek-bend-cedar-frame"
+                    },
+                    "part_count": 1,
+                    "word_count": 868,
+                    "reading_minutes": 4,
+                    "image": "/raggiesoft-books/images/scenes/cedar-run/paths/jun_2000_route1_creek_bend_splitting_cedar_shakes.jpg"
+                },
+                {
+                    "id": "granite-overhang-hearth",
+                    "crossroads_id": "first-shelter-and-forage-2000",
+                    "label": "The South-Facing Granite Overhang",
+                    "subtitle": "Climb half a mile upslope to the bone-dry bedrock cliff alcove overlooking five acres of wild mountain huckleberries and wild onions\u2014walling in the front with flat granite slabs so sun-baked stone radiates warmth all night.",
+                    "entry_part": "paths/granite-overhang-hearth/e001/c003/p001.md",
+                    "entry_url": "/cedar-run/paths/granite-overhang-hearth/route-2-the-south-facing-granite-overhang/chapter-3-living-stone-and-huckleberry-sun/three-walls-already-standing",
+                    "required_choices": {
+                        "first-shelter-and-forage-2000": "granite-overhang-hearth"
+                    },
+                    "part_count": 1,
+                    "word_count": 831,
+                    "reading_minutes": 4,
+                    "image": "/raggiesoft-books/images/scenes/cedar-run/paths/jun_2000_route2_granite_overhang_stone_wall_huckleberries.jpg"
+                },
+                {
+                    "id": "old-lookout-ridge",
+                    "crossroads_id": "first-shelter-and-forage-2000",
+                    "label": "The Forgotten Stone Springhouse",
+                    "subtitle": "Follow the cold spring up to the high tamarack saddle where sixty years of moss hide four intact 1930s fieldstone walls and a 42-degree indoor spring trough\u2014raising new fir rafters beside golden chanterelle and berry woods.",
+                    "entry_part": "paths/old-lookout-ridge/e001/c003/p001.md",
+                    "entry_url": "/cedar-run/paths/old-lookout-ridge/route-3-the-forgotten-stone-springhouse/chapter-3-cold-spring-and-tamarack-rafters/sixty-years-under-the-moss",
+                    "required_choices": {
+                        "first-shelter-and-forage-2000": "old-lookout-ridge"
+                    },
+                    "part_count": 1,
+                    "word_count": 800,
+                    "reading_minutes": 4,
+                    "image": "/raggiesoft-books/images/scenes/cedar-run/paths/jun_2000_route3_forgotten_stone_springhouse_rafters.jpg"
+                }
+            ]
+        }
+    },
+    "/cedar-run/paths/creek-bend-cedar-frame/route-1-the-creek-bend-cedar-bench": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Route 1: The Creek-Bend Cedar Bench",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|creek-bend-cedar-frame|0",
+        "pathId": "creek-bend-cedar-frame",
+        "crossroadsId": "first-shelter-and-forage-2000"
+    },
+    "/cedar-run/paths/creek-bend-cedar-frame/route-1-the-creek-bend-cedar-bench/chapter-3-straight-grain-and-cutthroat-pools": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: Straight Grain and Cutthroat Pools",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|creek-bend-cedar-frame|0|0",
+        "pathId": "creek-bend-cedar-frame",
+        "crossroadsId": "first-shelter-and-forage-2000"
+    },
+    "/cedar-run/paths/creek-bend-cedar-frame/route-1-the-creek-bend-cedar-bench/chapter-3-straight-grain-and-cutthroat-pools/splitting-the-windfall-giant": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Splitting the Windfall Giant",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/creek-bend-cedar-frame/e001/c003/p001.md",
+        "pathId": "creek-bend-cedar-frame",
+        "crossroadsId": "first-shelter-and-forage-2000",
+        "requiredChoices": {
+            "first-shelter-and-forage-2000": "creek-bend-cedar-frame"
+        },
+        "prevUrl": "/cedar-run/episode-1-past-the-back-fence/chapter-2-three-footholds-in-the-valley/food-timber-and-the-fork-in-the-drainage",
+        "noNext": true
+    },
+    "/cedar-run/paths/granite-overhang-hearth/route-2-the-south-facing-granite-overhang": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Route 2: The South-Facing Granite Overhang",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|granite-overhang-hearth|0",
+        "pathId": "granite-overhang-hearth",
+        "crossroadsId": "first-shelter-and-forage-2000"
+    },
+    "/cedar-run/paths/granite-overhang-hearth/route-2-the-south-facing-granite-overhang/chapter-3-living-stone-and-huckleberry-sun": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: Living Stone and Huckleberry Sun",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|granite-overhang-hearth|0|0",
+        "pathId": "granite-overhang-hearth",
+        "crossroadsId": "first-shelter-and-forage-2000"
+    },
+    "/cedar-run/paths/granite-overhang-hearth/route-2-the-south-facing-granite-overhang/chapter-3-living-stone-and-huckleberry-sun/three-walls-already-standing": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Three Walls Already Standing",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/granite-overhang-hearth/e001/c003/p001.md",
+        "pathId": "granite-overhang-hearth",
+        "crossroadsId": "first-shelter-and-forage-2000",
+        "requiredChoices": {
+            "first-shelter-and-forage-2000": "granite-overhang-hearth"
+        },
+        "prevUrl": "/cedar-run/episode-1-past-the-back-fence/chapter-2-three-footholds-in-the-valley/food-timber-and-the-fork-in-the-drainage",
+        "noNext": true
+    },
+    "/cedar-run/paths/old-lookout-ridge/route-3-the-forgotten-stone-springhouse": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Route 3: The Forgotten Stone Springhouse",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|old-lookout-ridge|0",
+        "pathId": "old-lookout-ridge",
+        "crossroadsId": "first-shelter-and-forage-2000"
+    },
+    "/cedar-run/paths/old-lookout-ridge/route-3-the-forgotten-stone-springhouse/chapter-3-cold-spring-and-tamarack-rafters": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 3: Cold Spring and Tamarack Rafters",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|old-lookout-ridge|0|0",
+        "pathId": "old-lookout-ridge",
+        "crossroadsId": "first-shelter-and-forage-2000"
+    },
+    "/cedar-run/paths/old-lookout-ridge/route-3-the-forgotten-stone-springhouse/chapter-3-cold-spring-and-tamarack-rafters/sixty-years-under-the-moss": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Sixty Years Under the Moss",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/old-lookout-ridge/e001/c003/p001.md",
+        "pathId": "old-lookout-ridge",
+        "crossroadsId": "first-shelter-and-forage-2000",
+        "requiredChoices": {
+            "first-shelter-and-forage-2000": "old-lookout-ridge"
+        },
+        "prevUrl": "/cedar-run/episode-1-past-the-back-fence/chapter-2-three-footholds-in-the-valley/food-timber-and-the-fork-in-the-drainage",
+        "noNext": true
+    }
+}
