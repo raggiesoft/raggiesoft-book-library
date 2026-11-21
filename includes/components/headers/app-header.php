@@ -310,13 +310,56 @@ $headerAssetsUrl = !empty($cdnBaseUrl) ? rtrim($cdnBaseUrl, '/') : 'https://asse
     }
 
     /* Responsive Breakpoint Handoff (`767px` vs `768px`):
-       Phones use `bottom-nav.php`; Tablets & Desktops use `.rs-book-header-nav`! */
-    @media (max-width: 767px) {
+       Phones use `bottom-nav.php` + compact `#header-navigation-panel` drawer; Tablets & Desktops use `.rs-book-header-nav`! */
+    @media (max-width: 767.98px) {
+        #stardust-header.rs-book-app-header {
+            min-height: 52px;
+            padding: max(0.38rem, calc(env(safe-area-inset-top, 0px) + 0.28rem)) 0.85rem 0.38rem !important;
+        }
+        .rs-book-app-header-inner {
+            flex-wrap: wrap;
+            gap: 0.45rem;
+        }
+        .rs-book-brand-icon-wrap {
+            width: 34px;
+            height: 34px;
+            border-radius: 9px;
+        }
+        #stardust-header.rs-book-app-header .rs-book-brand-title {
+            font-size: 0.92rem;
+        }
+        #stardust-header.rs-book-app-header .rs-book-brand-subtitle {
+            display: none;
+        }
         .rs-book-header-nav {
             display: none;
         }
+        .rs-book-mobile-quicklinks {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 0.4rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .rs-book-mobile-quicklinks a {
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            min-height: 38px;
+            padding: 0.4rem 0.6rem;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: var(--rs-hdr-link) !important;
+            background: var(--rs-hdr-hover-bg);
+            text-decoration: none !important;
+        }
     }
     @media (min-width: 768px) {
+        .rs-book-mobile-drawer {
+            display: none !important;
+        }
         .ios-tab-bar {
             display: none !important;
         }
@@ -372,5 +415,36 @@ $headerAssetsUrl = !empty($cdnBaseUrl) ? rtrim($cdnBaseUrl, '/') : 'https://asse
                 <span>Settings</span>
             </a>
         </nav>
+
+        <!-- Compact 44x44px Mobile Drawer Toggle (Reveals Secondary Library Sections + RaggieSoft Ecosystem Switcher) -->
+        <button
+            type="button"
+            class="rs-mobile-header-toggle"
+            data-rs-mobile-toggle
+            data-open-label="Open menu"
+            data-close-label="Close menu"
+            aria-expanded="false"
+            aria-controls="header-navigation-panel"
+            aria-label="Open menu"
+        >
+            <svg class="rs-icon-bars" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" aria-hidden="true" focusable="false">
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <svg class="rs-icon-close" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.25" stroke-linecap="round" aria-hidden="true" focusable="false">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+
+        <div id="header-navigation-panel" data-rs-collapsible="true" class="rs-book-mobile-drawer">
+            <ul class="rs-book-mobile-quicklinks" aria-label="Book Reader Quick Links">
+                <li><a href="/arcs"><i class="ph-fill ph-playlist" aria-hidden="true"></i><span>Story Arcs</span></a></li>
+                <li><a href="/illustrations"><i class="ph-fill ph-images" aria-hidden="true"></i><span>Illustrations</span></a></li>
+                <li><a href="/stats"><i class="ph-fill ph-chart-bar" aria-hidden="true"></i><span>Stats</span></a></li>
+                <li><a href="/bookmarks"><i class="ph-fill ph-bookmark" aria-hidden="true"></i><span>Bookmarks</span></a></li>
+            </ul>
+        </div>
     </div>
 </header>
