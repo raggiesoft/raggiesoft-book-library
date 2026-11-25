@@ -14,22 +14,22 @@
         "ebook_sizes": {
             "epub": "66 MB",
             "pdf": "53.5 MB",
-            "text_epub": "1006 KB",
+            "text_epub": "983 KB",
             "text_pdf": "3.7 MB",
-            "package_7z": "721 KB",
-            "epub_bytes": 69247160,
+            "package_7z": "",
+            "epub_bytes": 69223288,
             "pdf_bytes": 56108431,
-            "text_epub_bytes": 1030001,
+            "text_epub_bytes": 1006633,
             "text_pdf_bytes": 3873520,
-            "package_7z_bytes": 738135
+            "package_7z_bytes": 0
         },
         "illustration_count": 72,
         "word_stats": {
-            "story_word_count": 413615,
+            "story_word_count": 413505,
             "lore_word_count": 60373,
-            "combined_word_count": 473988,
+            "combined_word_count": 473878,
             "story_page_count": 1504,
-            "combined_page_count": 1724,
+            "combined_page_count": 1723,
             "reading_hours": 27.6,
             "reading_minutes": 1654,
             "novel_equivalent": 4.6,
@@ -248,7 +248,7 @@
                 "part_count": 9,
                 "backstage_count": 1,
                 "stop_count": 10,
-                "word_count": 26241,
+                "word_count": 26239,
                 "reading_minutes": 105,
                 "reading_hours": 1.7,
                 "stops": [
@@ -420,7 +420,7 @@
                         "image": "/raggiesoft-books/images/covers/2x3/aubrie.jpg",
                         "url": "/aubrie/jordan-s-court-case/welcome-to-geneva-street-the-no-jealousy-pact/part-1-no-clipboard-to-hide-behind",
                         "arc_url": "/aubrie/jordan-s-court-case/welcome-to-geneva-street-the-no-jealousy-pact/part-1-no-clipboard-to-hide-behind?arc=world-trek-and-zoes-architecture",
-                        "word_count": 1753,
+                        "word_count": 1752,
                         "reading_minutes": 8
                     },
                     {
@@ -439,7 +439,7 @@
                         "image": "/raggiesoft-books/images/scenes/aubrie/e006/c002/p004/new-river-hall-welcoming.jpg",
                         "url": "/aubrie/jordan-s-court-case/welcome-to-geneva-street-the-no-jealousy-pact/part-4-new-river-hall-room-323-allegheny-commons-apartment-101",
                         "arc_url": "/aubrie/jordan-s-court-case/welcome-to-geneva-street-the-no-jealousy-pact/part-4-new-river-hall-room-323-allegheny-commons-apartment-101?arc=world-trek-and-zoes-architecture",
-                        "word_count": 1329,
+                        "word_count": 1328,
                         "reading_minutes": 6
                     }
                 ]

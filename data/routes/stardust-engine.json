@@ -14,20 +14,20 @@
         "ebook_sizes": {
             "epub": "17.1 MB",
             "pdf": "18.8 MB",
-            "text_epub": "185 KB",
+            "text_epub": "181 KB",
             "text_pdf": "561 KB",
-            "package_7z": "142 KB",
-            "epub_bytes": 17922403,
+            "package_7z": "",
+            "epub_bytes": 17918297,
             "pdf_bytes": 19689814,
-            "text_epub_bytes": 189098,
+            "text_epub_bytes": 185045,
             "text_pdf_bytes": 573989,
-            "package_7z_bytes": 144905
+            "package_7z_bytes": 0
         },
         "illustration_count": 25,
         "word_stats": {
-            "story_word_count": 65118,
+            "story_word_count": 65113,
             "lore_word_count": 26225,
-            "combined_word_count": 91343,
+            "combined_word_count": 91338,
             "story_page_count": 237,
             "combined_page_count": 332,
             "reading_hours": 4.3,
@@ -57,7 +57,7 @@
                 "part_count": 7,
                 "backstage_count": 1,
                 "stop_count": 8,
-                "word_count": 20305,
+                "word_count": 20304,
                 "reading_minutes": 82,
                 "reading_hours": 1.4,
                 "stops": [
@@ -96,7 +96,7 @@
                         "image": "/stardust-engine/images/story/ad-astra/ad-astra-hero.jpg",
                         "url": "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1989-1990/chapter-1-live-in-chicago-the-thirty-minute-box-the-backstage-vow-october-14-1989/the-thirty-minute-box-the-onstage-anchor-the-backstage-vow",
                         "arc_url": "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1989-1990/chapter-1-live-in-chicago-the-thirty-minute-box-the-backstage-vow-october-14-1989/the-thirty-minute-box-the-onstage-anchor-the-backstage-vow?arc=apex-records-to-engine-room-independence",
-                        "word_count": 4223,
+                        "word_count": 4222,
                         "reading_minutes": 17
                     },
                     {
@@ -229,7 +229,7 @@
                 "part_count": 11,
                 "backstage_count": 1,
                 "stop_count": 12,
-                "word_count": 22164,
+                "word_count": 22160,
                 "reading_minutes": 89,
                 "reading_hours": 1.5,
                 "stops": [
@@ -249,7 +249,7 @@
                         "image": "/raggiesoft-books/images/covers/2x3/stardust-engine.jpg",
                         "url": "/stardust-engine/book-5-burnout-hiatus-our-own-frequency-neon-on-the-huckleberry-trail-2005-2016/chapter-1-our-own-frequency-the-blue-ridge-regional-aquatic-center-virginia-transit-legislative-day-2008-2016/part-1-the-blue-ridge-regional-aquatic-center-the-150m-refusal-the-birth-of-neon-on-the-huckleberry-trail",
                         "arc_url": "/stardust-engine/book-5-burnout-hiatus-our-own-frequency-neon-on-the-huckleberry-trail-2005-2016/chapter-1-our-own-frequency-the-blue-ridge-regional-aquatic-center-virginia-transit-legislative-day-2008-2016/part-1-the-blue-ridge-regional-aquatic-center-the-150m-refusal-the-birth-of-neon-on-the-huckleberry-trail?arc=reignition-and-live-at-the-crucible",
-                        "word_count": 2207,
+                        "word_count": 2206,
                         "reading_minutes": 9
                     },
                     {
@@ -306,7 +306,7 @@
                         "image": "/raggiesoft-books/images/scenes/aubrie/e008/c004/p001/forger-nation-tailgate-plaza.jpg",
                         "url": "/stardust-engine/book-6-reignition-live-at-the-crucible-2015-2016/chapter-1-live-at-the-crucible-may-21-2016/part-1-protocol-t-10-the-15m-lockout-operation-anvil",
                         "arc_url": "/stardust-engine/book-6-reignition-live-at-the-crucible-2015-2016/chapter-1-live-at-the-crucible-may-21-2016/part-1-protocol-t-10-the-15m-lockout-operation-anvil?arc=reignition-and-live-at-the-crucible",
-                        "word_count": 1710,
+                        "word_count": 1709,
                         "reading_minutes": 7
                     },
                     {
@@ -325,7 +325,7 @@
                         "image": "/raggiesoft-books/images/scenes/aubrie/e008/c004/p002/act-i-ignition-marching-forgers.jpg",
                         "url": "/stardust-engine/book-6-reignition-live-at-the-crucible-2015-2016/chapter-1-live-at-the-crucible-may-21-2016/part-2-act-i-the-anvil-strike-the-marching-forgers",
                         "arc_url": "/stardust-engine/book-6-reignition-live-at-the-crucible-2015-2016/chapter-1-live-at-the-crucible-may-21-2016/part-2-act-i-the-anvil-strike-the-marching-forgers?arc=reignition-and-live-at-the-crucible",
-                        "word_count": 2035,
+                        "word_count": 2034,
                         "reading_minutes": 9
                     },
                     {
@@ -363,7 +363,7 @@
                         "image": "/raggiesoft-books/images/scenes/aubrie/e008/c004/p004/escape-velocity-ad-astra-cassidy-nebula.jpg",
                         "url": "/stardust-engine/book-6-reignition-live-at-the-crucible-2015-2016/chapter-1-live-at-the-crucible-may-21-2016/part-4-acts-iii-iv-ad-astra-cosmic-tidal-lock-mile-marker-98",
                         "arc_url": "/stardust-engine/book-6-reignition-live-at-the-crucible-2015-2016/chapter-1-live-at-the-crucible-may-21-2016/part-4-acts-iii-iv-ad-astra-cosmic-tidal-lock-mile-marker-98?arc=reignition-and-live-at-the-crucible",
-                        "word_count": 2292,
+                        "word_count": 2291,
                         "reading_minutes": 10
                     },
                     {
