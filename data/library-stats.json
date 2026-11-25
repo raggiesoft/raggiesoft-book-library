@@ -1,5 +1,5 @@
 {
-    "generated_at": "2026-11-25T03:49:19+00:00",
+    "generated_at": "2026-11-25T03:57:58+00:00",
     "volume_count": 34,
     "active_story_volume_count": 31,
     "total_eras": 206,
@@ -60,7 +60,7 @@
                 "pdf_bytes": 84144768,
                 "text_epub_bytes": 1167231,
                 "text_pdf_bytes": 3253696,
-                "package_7z_bytes": 810562
+                "package_7z_bytes": 810563
             },
             "word_stats": {
                 "story_word_count": 498537,
@@ -88,15 +88,15 @@
             "short_description": "Eighteen-year-old Jordan Fuller breaks free from his suffocating mother and builds a fiercely protective found family.",
             "ebook_sizes": {
                 "epub": "66 MB",
-                "pdf": "53.5 MB",
-                "text_epub": "983 KB",
-                "text_pdf": "3.7 MB",
+                "pdf": "54.7 MB",
+                "text_epub": "982 KB",
+                "text_pdf": "4.9 MB",
                 "package_7z": "709 KB",
-                "epub_bytes": 69223288,
-                "pdf_bytes": 56108431,
-                "text_epub_bytes": 1006633,
-                "text_pdf_bytes": 3873520,
-                "package_7z_bytes": 726220
+                "epub_bytes": 69222054,
+                "pdf_bytes": 57382276,
+                "text_epub_bytes": 1005458,
+                "text_pdf_bytes": 5143922,
+                "package_7z_bytes": 726228
             },
             "word_stats": {
                 "story_word_count": 413346,
@@ -128,11 +128,11 @@
                 "text_epub": "766 KB",
                 "text_pdf": "2.2 MB",
                 "package_7z": "549 KB",
-                "epub_bytes": 10537369,
-                "pdf_bytes": 12157369,
-                "text_epub_bytes": 784510,
-                "text_pdf_bytes": 2350731,
-                "package_7z_bytes": 561962
+                "epub_bytes": 10537699,
+                "pdf_bytes": 12128206,
+                "text_epub_bytes": 784837,
+                "text_pdf_bytes": 2322074,
+                "package_7z_bytes": 561978
             },
             "word_stats": {
                 "story_word_count": 331287,
@@ -168,7 +168,7 @@
                 "pdf_bytes": 63776237,
                 "text_epub_bytes": 749169,
                 "text_pdf_bytes": 2041658,
-                "package_7z_bytes": 565985
+                "package_7z_bytes": 565980
             },
             "word_stats": {
                 "story_word_count": 304107,
@@ -200,11 +200,11 @@
                 "text_epub": "656 KB",
                 "text_pdf": "1.7 MB",
                 "package_7z": "452 KB",
-                "epub_bytes": 671870,
-                "pdf_bytes": 1800709,
-                "text_epub_bytes": 671872,
-                "text_pdf_bytes": 1800709,
-                "package_7z_bytes": 463292
+                "epub_bytes": 671779,
+                "pdf_bytes": 1800496,
+                "text_epub_bytes": 671779,
+                "text_pdf_bytes": 1800496,
+                "package_7z_bytes": 463282
             },
             "word_stats": {
                 "story_word_count": 275128,
@@ -231,16 +231,16 @@
             "image": "/raggiesoft-books/images/covers/2x3/apex-fall-of-earth.jpg",
             "short_description": "Inside the acoustic fortress of Studio B, a defiant band sparks the dramatic origin story of Project APEX.",
             "ebook_sizes": {
-                "epub": "594 KB",
+                "epub": "589 KB",
                 "pdf": "1.7 MB",
-                "text_epub": "594 KB",
+                "text_epub": "589 KB",
                 "text_pdf": "1.7 MB",
                 "package_7z": "413 KB",
-                "epub_bytes": 608540,
-                "pdf_bytes": 1764104,
-                "text_epub_bytes": 608542,
-                "text_pdf_bytes": 1764104,
-                "package_7z_bytes": 422471
+                "epub_bytes": 602944,
+                "pdf_bytes": 1745890,
+                "text_epub_bytes": 602943,
+                "text_pdf_bytes": 1745890,
+                "package_7z_bytes": 422453
             },
             "word_stats": {
                 "story_word_count": 258944,
@@ -267,16 +267,16 @@
             "image": "/raggiesoft-books/images/covers/2x3/paige.jpg",
             "short_description": "A story of camaraderie and ambition forged amidst grueling computer science deadlines and late-night debugging.",
             "ebook_sizes": {
-                "epub": "496 KB",
+                "epub": "495 KB",
                 "pdf": "1.4 MB",
-                "text_epub": "496 KB",
+                "text_epub": "495 KB",
                 "text_pdf": "1.4 MB",
                 "package_7z": "362 KB",
-                "epub_bytes": 507569,
-                "pdf_bytes": 1475296,
-                "text_epub_bytes": 507575,
-                "text_pdf_bytes": 1475296,
-                "package_7z_bytes": 370543
+                "epub_bytes": 507230,
+                "pdf_bytes": 1444112,
+                "text_epub_bytes": 507232,
+                "text_pdf_bytes": 1444112,
+                "package_7z_bytes": 370538
             },
             "word_stats": {
                 "story_word_count": 214359,
@@ -303,16 +303,16 @@
             "image": "/raggiesoft-books/images/covers/2x3/nichole.jpg",
             "short_description": "The extraordinary life of Nichole Bennett, brilliant architect of the Bennet Machine, and her bond with Patrick.",
             "ebook_sizes": {
-                "epub": "443 KB",
+                "epub": "444 KB",
                 "pdf": "1.2 MB",
-                "text_epub": "443 KB",
+                "text_epub": "444 KB",
                 "text_pdf": "1.2 MB",
                 "package_7z": "321 KB",
-                "epub_bytes": 453636,
-                "pdf_bytes": 1272576,
-                "text_epub_bytes": 453635,
-                "text_pdf_bytes": 1272576,
-                "package_7z_bytes": 328509
+                "epub_bytes": 454633,
+                "pdf_bytes": 1267260,
+                "text_epub_bytes": 454631,
+                "text_pdf_bytes": 1267260,
+                "package_7z_bytes": 328504
             },
             "word_stats": {
                 "story_word_count": 187252,
@@ -344,11 +344,11 @@
                 "text_epub": "398 KB",
                 "text_pdf": "1.2 MB",
                 "package_7z": "298 KB",
-                "epub_bytes": 5306861,
-                "pdf_bytes": 5058155,
-                "text_epub_bytes": 407371,
-                "text_pdf_bytes": 1263033,
-                "package_7z_bytes": 304960
+                "epub_bytes": 5306884,
+                "pdf_bytes": 5056887,
+                "text_epub_bytes": 407396,
+                "text_pdf_bytes": 1261828,
+                "package_7z_bytes": 304970
             },
             "word_stats": {
                 "story_word_count": 169221,
@@ -380,11 +380,11 @@
                 "text_epub": "295 KB",
                 "text_pdf": "838 KB",
                 "package_7z": "224 KB",
-                "epub_bytes": 301752,
-                "pdf_bytes": 858237,
-                "text_epub_bytes": 301753,
-                "text_pdf_bytes": 858237,
-                "package_7z_bytes": 228947
+                "epub_bytes": 301654,
+                "pdf_bytes": 858099,
+                "text_epub_bytes": 301655,
+                "text_pdf_bytes": 858099,
+                "package_7z_bytes": 228940
             },
             "word_stats": {
                 "story_word_count": 132594,
@@ -416,11 +416,11 @@
                 "text_epub": "232 KB",
                 "text_pdf": "648 KB",
                 "package_7z": "168 KB",
-                "epub_bytes": 237609,
-                "pdf_bytes": 663054,
-                "text_epub_bytes": 237610,
-                "text_pdf_bytes": 663054,
-                "package_7z_bytes": 172194
+                "epub_bytes": 237664,
+                "pdf_bytes": 663662,
+                "text_epub_bytes": 237663,
+                "text_pdf_bytes": 663662,
+                "package_7z_bytes": 172193
             },
             "word_stats": {
                 "story_word_count": 94123,
@@ -456,7 +456,7 @@
                 "pdf_bytes": 3367309,
                 "text_epub_bytes": 189412,
                 "text_pdf_bytes": 3367313,
-                "package_7z_bytes": 144816
+                "package_7z_bytes": 144820
             },
             "word_stats": {
                 "story_word_count": 81433,
@@ -492,7 +492,7 @@
                 "pdf_bytes": 482428,
                 "text_epub_bytes": 169681,
                 "text_pdf_bytes": 482428,
-                "package_7z_bytes": 126129
+                "package_7z_bytes": 126130
             },
             "word_stats": {
                 "story_word_count": 68046,
@@ -520,14 +520,14 @@
             "short_description": "The forty-year rock-opera chronicle of The Stardust Engine (1978–2018), told through guitarist Ryan O'Connell's eyes.",
             "ebook_sizes": {
                 "epub": "17.1 MB",
-                "pdf": "18.8 MB",
-                "text_epub": "181 KB",
-                "text_pdf": "561 KB",
+                "pdf": "18.7 MB",
+                "text_epub": "180 KB",
+                "text_pdf": "521 KB",
                 "package_7z": "139 KB",
-                "epub_bytes": 17918297,
-                "pdf_bytes": 19689814,
-                "text_epub_bytes": 185045,
-                "text_pdf_bytes": 573989,
+                "epub_bytes": 17918001,
+                "pdf_bytes": 19649366,
+                "text_epub_bytes": 184771,
+                "text_pdf_bytes": 533476,
                 "package_7z_bytes": 142474
             },
             "word_stats": {
@@ -564,7 +564,7 @@
                 "pdf_bytes": 400644,
                 "text_epub_bytes": 140576,
                 "text_pdf_bytes": 400644,
-                "package_7z_bytes": 111957
+                "package_7z_bytes": 111948
             },
             "word_stats": {
                 "story_word_count": 57383,
@@ -592,14 +592,14 @@
             "short_description": "A high-stakes corporate drama following Jessica Taylor as she shields her developer team in the late-90s boom.",
             "ebook_sizes": {
                 "epub": "85 KB",
-                "pdf": "253 KB",
+                "pdf": "250 KB",
                 "text_epub": "85 KB",
-                "text_pdf": "253 KB",
+                "text_pdf": "250 KB",
                 "package_7z": "69 KB",
-                "epub_bytes": 86855,
-                "pdf_bytes": 258845,
-                "text_epub_bytes": 86857,
-                "text_pdf_bytes": 258845,
+                "epub_bytes": 87038,
+                "pdf_bytes": 256466,
+                "text_epub_bytes": 87037,
+                "text_pdf_bytes": 256466,
                 "package_7z_bytes": 70734
             },
             "word_stats": {
@@ -636,7 +636,7 @@
                 "pdf_bytes": 235362,
                 "text_epub_bytes": 85571,
                 "text_pdf_bytes": 235362,
-                "package_7z_bytes": 63719
+                "package_7z_bytes": 63715
             },
             "word_stats": {
                 "story_word_count": 33772,
@@ -699,16 +699,16 @@
             "image": "/raggiesoft-books/images/covers/2x3/quantum-directive-2-kelly.jpg",
             "short_description": "Experience the late-90s tech boom from the trenches alongside Kelly Madsen and her twin brother Ryan at Quantum.",
             "ebook_sizes": {
-                "epub": "76 KB",
+                "epub": "77 KB",
                 "pdf": "5.3 MB",
-                "text_epub": "76 KB",
+                "text_epub": "77 KB",
                 "text_pdf": "5.3 MB",
                 "package_7z": "60 KB",
-                "epub_bytes": 77512,
-                "pdf_bytes": 5514260,
-                "text_epub_bytes": 77512,
-                "text_pdf_bytes": 5514258,
-                "package_7z_bytes": 61361
+                "epub_bytes": 79019,
+                "pdf_bytes": 5511079,
+                "text_epub_bytes": 79016,
+                "text_pdf_bytes": 5511079,
+                "package_7z_bytes": 61367
             },
             "word_stats": {
                 "story_word_count": 30410,
@@ -738,13 +738,13 @@
                 "epub": "3.8 MB",
                 "pdf": "2.1 MB",
                 "text_epub": "82 KB",
-                "text_pdf": "271 KB",
+                "text_pdf": "256 KB",
                 "package_7z": "66 KB",
-                "epub_bytes": 3949936,
-                "pdf_bytes": 2175257,
-                "text_epub_bytes": 83777,
-                "text_pdf_bytes": 277257,
-                "package_7z_bytes": 67731
+                "epub_bytes": 3949862,
+                "pdf_bytes": 2160123,
+                "text_epub_bytes": 83706,
+                "text_pdf_bytes": 262335,
+                "package_7z_bytes": 67734
             },
             "word_stats": {
                 "story_word_count": 28841,
@@ -780,7 +780,7 @@
                 "pdf_bytes": 206039,
                 "text_epub_bytes": 74019,
                 "text_pdf_bytes": 206039,
-                "package_7z_bytes": 57793
+                "package_7z_bytes": 57797
             },
             "word_stats": {
                 "story_word_count": 28751,
@@ -808,15 +808,15 @@
             "short_description": "A deeply moving story of chronic illness, fierce sibling devotion, and finding joy in quiet acts of rebellion.",
             "ebook_sizes": {
                 "epub": "69 KB",
-                "pdf": "198 KB",
+                "pdf": "199 KB",
                 "text_epub": "69 KB",
-                "text_pdf": "198 KB",
+                "text_pdf": "199 KB",
                 "package_7z": "53 KB",
-                "epub_bytes": 70945,
-                "pdf_bytes": 202768,
-                "text_epub_bytes": 70947,
-                "text_pdf_bytes": 202768,
-                "package_7z_bytes": 54039
+                "epub_bytes": 71036,
+                "pdf_bytes": 203564,
+                "text_epub_bytes": 71036,
+                "text_pdf_bytes": 203564,
+                "package_7z_bytes": 54032
             },
             "word_stats": {
                 "story_word_count": 27138,
@@ -844,15 +844,15 @@
             "short_description": "A relentless thriller about a terrifying kidnapping and the unbreakable sibling devotion that changes everything.",
             "ebook_sizes": {
                 "epub": "65 KB",
-                "pdf": "190 KB",
+                "pdf": "183 KB",
                 "text_epub": "65 KB",
-                "text_pdf": "190 KB",
+                "text_pdf": "183 KB",
                 "package_7z": "49 KB",
-                "epub_bytes": 66160,
-                "pdf_bytes": 194380,
-                "text_epub_bytes": 66160,
-                "text_pdf_bytes": 194380,
-                "package_7z_bytes": 50592
+                "epub_bytes": 66117,
+                "pdf_bytes": 187632,
+                "text_epub_bytes": 66115,
+                "text_pdf_bytes": 187632,
+                "package_7z_bytes": 50601
             },
             "word_stats": {
                 "story_word_count": 25118,
@@ -888,7 +888,7 @@
                 "pdf_bytes": 21143357,
                 "text_epub_bytes": 55608,
                 "text_pdf_bytes": 168226,
-                "package_7z_bytes": 45138
+                "package_7z_bytes": 45145
             },
             "word_stats": {
                 "story_word_count": 20942,
@@ -924,7 +924,7 @@
                 "pdf_bytes": 121729,
                 "text_epub_bytes": 41112,
                 "text_pdf_bytes": 121729,
-                "package_7z_bytes": 32516
+                "package_7z_bytes": 32518
             },
             "word_stats": {
                 "story_word_count": 15245,
@@ -960,7 +960,7 @@
                 "pdf_bytes": 41824,
                 "text_epub_bytes": 14621,
                 "text_pdf_bytes": 41824,
-                "package_7z_bytes": 35555
+                "package_7z_bytes": 35554
             },
             "word_stats": {
                 "story_word_count": 14030,
@@ -996,7 +996,7 @@
                 "pdf_bytes": 1181987,
                 "text_epub_bytes": 31203,
                 "text_pdf_bytes": 77363,
-                "package_7z_bytes": 20934
+                "package_7z_bytes": 20933
             },
             "word_stats": {
                 "story_word_count": 7149,
@@ -1032,7 +1032,7 @@
                 "pdf_bytes": 73850,
                 "text_epub_bytes": 20271,
                 "text_pdf_bytes": 73850,
-                "package_7z_bytes": 15260
+                "package_7z_bytes": 15261
             },
             "word_stats": {
                 "story_word_count": 5538,
@@ -1068,7 +1068,7 @@
                 "pdf_bytes": 897639,
                 "text_epub_bytes": 25929,
                 "text_pdf_bytes": 64666,
-                "package_7z_bytes": 16546
+                "package_7z_bytes": 16544
             },
             "word_stats": {
                 "story_word_count": 4684,
@@ -1212,7 +1212,7 @@
                 "pdf_bytes": 3540,
                 "text_epub_bytes": 5403,
                 "text_pdf_bytes": 3540,
-                "package_7z_bytes": 1208
+                "package_7z_bytes": 1207
             },
             "word_stats": {
                 "story_word_count": 0,
@@ -1248,7 +1248,7 @@
                 "pdf_bytes": 3759,
                 "text_epub_bytes": 5425,
                 "text_pdf_bytes": 3759,
-                "package_7z_bytes": 2024
+                "package_7z_bytes": 2032
             },
             "word_stats": {
                 "story_word_count": 0,
