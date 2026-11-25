@@ -13,25 +13,25 @@
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
             "epub": "17.1 MB",
-            "pdf": "18.8 MB",
-            "text_epub": "181 KB",
-            "text_pdf": "561 KB",
-            "package_7z": "",
-            "epub_bytes": 17918297,
-            "pdf_bytes": 19689814,
-            "text_epub_bytes": 185045,
-            "text_pdf_bytes": 573989,
-            "package_7z_bytes": 0
+            "pdf": "18.7 MB",
+            "text_epub": "180 KB",
+            "text_pdf": "521 KB",
+            "package_7z": "139 KB",
+            "epub_bytes": 17918001,
+            "pdf_bytes": 19649366,
+            "text_epub_bytes": 184771,
+            "text_pdf_bytes": 533476,
+            "package_7z_bytes": 142474
         },
         "illustration_count": 25,
         "word_stats": {
-            "story_word_count": 65113,
+            "story_word_count": 65187,
             "lore_word_count": 26225,
-            "combined_word_count": 91338,
+            "combined_word_count": 91412,
             "story_page_count": 237,
             "combined_page_count": 332,
             "reading_hours": 4.3,
-            "reading_minutes": 260,
+            "reading_minutes": 261,
             "novel_equivalent": 0.7,
             "scale_category": "Compact Novel",
             "scale_badge": "Compact Novel",
@@ -57,7 +57,7 @@
                 "part_count": 7,
                 "backstage_count": 1,
                 "stop_count": 8,
-                "word_count": 20304,
+                "word_count": 20308,
                 "reading_minutes": 82,
                 "reading_hours": 1.4,
                 "stops": [
@@ -115,7 +115,7 @@
                         "image": "/raggiesoft-books/images/scenes/stardust-engine/e002/c002/p001/dec-14-90-cassidy-overnight-anchor.jpg",
                         "url": "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1989-1990/chapter-2-mile-marker-98-protocol-t-10-december-10-1990/mile-marker-98-protocol-t-10-1990",
                         "arc_url": "/stardust-engine/book-2-live-in-chicago-mile-marker-98-1989-1990/chapter-2-mile-marker-98-protocol-t-10-december-10-1990/mile-marker-98-protocol-t-10-1990?arc=apex-records-to-engine-room-independence",
-                        "word_count": 3766,
+                        "word_count": 3758,
                         "reading_minutes": 16
                     },
                     {
@@ -153,7 +153,7 @@
                         "image": "/stardust-engine/images/story/ad-astra/ad-astra-hero.jpg",
                         "url": "/stardust-engine/book-3-the-friction-narrative-the-warehouse-tapes-1992-1995/chapter-2-the-subpoena-the-felony-trial-the-wilderness-1992-1995/the-subpoena-the-felony-trial-the-wilderness-1992-1995",
                         "arc_url": "/stardust-engine/book-3-the-friction-narrative-the-warehouse-tapes-1992-1995/chapter-2-the-subpoena-the-felony-trial-the-wilderness-1992-1995/the-subpoena-the-felony-trial-the-wilderness-1992-1995?arc=apex-records-to-engine-room-independence",
-                        "word_count": 2151,
+                        "word_count": 2162,
                         "reading_minutes": 9
                     },
                     {
@@ -191,7 +191,7 @@
                         "image": "/raggiesoft-books/images/scenes/stardust-engine/e004/c002/p001/holly-band-manager-job-shadow.jpg",
                         "url": "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1995-2004/chapter-2-job-shadowing-the-manager-a-day-in-the-life-of-holly-o-connell-october-15-1999/job-shadowing-the-manager-a-day-in-the-life-of-holly-o-connell",
                         "arc_url": "/stardust-engine/book-4-ad-astra-hard-reset-the-stadium-years-1995-2004/chapter-2-job-shadowing-the-manager-a-day-in-the-life-of-holly-o-connell-october-15-1999/job-shadowing-the-manager-a-day-in-the-life-of-holly-o-connell?arc=apex-records-to-engine-room-independence",
-                        "word_count": 4762,
+                        "word_count": 4763,
                         "reading_minutes": 20
                     },
                     {
@@ -229,7 +229,7 @@
                 "part_count": 11,
                 "backstage_count": 1,
                 "stop_count": 12,
-                "word_count": 22160,
+                "word_count": 22151,
                 "reading_minutes": 89,
                 "reading_hours": 1.5,
                 "stops": [
@@ -268,7 +268,7 @@
                         "image": "/raggiesoft-books/images/covers/2x3/stardust-engine.jpg",
                         "url": "/stardust-engine/book-5-burnout-hiatus-our-own-frequency-neon-on-the-huckleberry-trail-2005-2016/chapter-1-our-own-frequency-the-blue-ridge-regional-aquatic-center-virginia-transit-legislative-day-2008-2016/part-2-forty-one-degrees-in-the-rain-the-rlfd30-kneeling-ramp-ninety-five-point-five-in-the-cove",
                         "arc_url": "/stardust-engine/book-5-burnout-hiatus-our-own-frequency-neon-on-the-huckleberry-trail-2005-2016/chapter-1-our-own-frequency-the-blue-ridge-regional-aquatic-center-virginia-transit-legislative-day-2008-2016/part-2-forty-one-degrees-in-the-rain-the-rlfd30-kneeling-ramp-ninety-five-point-five-in-the-cove?arc=reignition-and-live-at-the-crucible",
-                        "word_count": 1187,
+                        "word_count": 1174,
                         "reading_minutes": 5
                     },
                     {
@@ -435,11 +435,11 @@
                         "chap_title": "Chapter 1: Live at the Crucible (May 21, 2016)",
                         "date": "2016-05-22",
                         "location": "\\",
-                        "excerpt": "On any other world tour between 1987 and 2005, the Sunday afternoon after athree-hour stadium show meant waking up stiff and exhausted in a hotel bed four hundred miles away, transferring onto a cold shower\u2026",
+                        "excerpt": "On any other world tour between 1987 and 2005, the Sunday afternoon after a three-hour stadium show meant waking up stiff and exhausted in a hotel bed four hundred miles away, transferring onto a cold shower\u2026",
                         "image": "/raggiesoft-books/images/covers/2x3/stardust-engine.jpg",
                         "url": "/stardust-engine/book-6-reignition-live-at-the-crucible-2015-2016/chapter-1-live-at-the-crucible-may-21-2016/part-8-the-morning-after-95-5-f-at-the-blue-ridge-regional-aquatic-center",
                         "arc_url": "/stardust-engine/book-6-reignition-live-at-the-crucible-2015-2016/chapter-1-live-at-the-crucible-may-21-2016/part-8-the-morning-after-95-5-f-at-the-blue-ridge-regional-aquatic-center?arc=reignition-and-live-at-the-crucible",
-                        "word_count": 3108,
+                        "word_count": 3112,
                         "reading_minutes": 13
                     },
                     {

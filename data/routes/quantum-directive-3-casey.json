@@ -16,18 +16,18 @@
             "pdf": "4.8 MB",
             "text_epub": "398 KB",
             "text_pdf": "1.2 MB",
-            "package_7z": "",
-            "epub_bytes": 5306861,
-            "pdf_bytes": 5058155,
-            "text_epub_bytes": 407371,
-            "text_pdf_bytes": 1263033,
-            "package_7z_bytes": 0
+            "package_7z": "298 KB",
+            "epub_bytes": 5306884,
+            "pdf_bytes": 5056887,
+            "text_epub_bytes": 407396,
+            "text_pdf_bytes": 1261828,
+            "package_7z_bytes": 304960
         },
         "illustration_count": 10,
         "word_stats": {
-            "story_word_count": 169175,
+            "story_word_count": 169221,
             "lore_word_count": 51160,
-            "combined_word_count": 220335,
+            "combined_word_count": 220381,
             "story_page_count": 615,
             "combined_page_count": 801,
             "reading_hours": 11.3,
@@ -57,7 +57,7 @@
                 "part_count": 9,
                 "backstage_count": 1,
                 "stop_count": 10,
-                "word_count": 22908,
+                "word_count": 22912,
                 "reading_minutes": 92,
                 "reading_hours": 1.5,
                 "stops": [
@@ -172,7 +172,7 @@
                         "image": "/raggiesoft-books/images/covers/2x3/quantum-directive-3-casey.jpg",
                         "url": "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-14-the-blackout/part-2-the-redmond-compound-acquisition-the-taps-grid",
                         "arc_url": "/quantum-directive-3-casey/book-2-the-sovereign-perimeter/chapter-14-the-blackout/part-2-the-redmond-compound-acquisition-the-taps-grid?arc=twenty-one-day-bridge-and-holiday-sanctuary",
-                        "word_count": 3169,
+                        "word_count": 3173,
                         "reading_minutes": 13
                     },
                     {
