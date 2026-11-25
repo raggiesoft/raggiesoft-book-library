@@ -633,7 +633,7 @@ $robotsMeta = $isNoIndexRoute
     ? 'noindex, follow'
     : 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
 $ogType = 'website';
-$ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/aubrie.jpg';
+$ogImage = $cdnBaseUrl . '/raggiesoft-books/images/og/oceanview-archives.jpg';
 $ogImageAlt = 'Ocean View Archives — RaggieSoft Book Reader';
 $metaDescription = '';
 $ogDescription = '';
@@ -651,8 +651,8 @@ if ($isNotFound) {
     $siteName = 'RaggieSoft Book Reader — Ocean View Archives';
     $ogTitle = 'RaggieSoft Book Reader — Ocean View Archives';
     $ogDescription = 'Read free serialized novels, scene illustrations, and companion lore from Ocean View Archives in the RaggieSoft Book Reader.';
-    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/aubrie.jpg';
-    $ogImageAlt = 'RaggieSoft Book Reader — Ocean View Archives featured novel showcase';
+    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/og/oceanview-archives.jpg';
+    $ogImageAlt = 'Ocean View Archives — RaggieSoft Media literary imprint and RaggieSoft Book Reader';
 } elseif ($isCatalog) {
     $siteName = 'Fiction Library Catalog | Ocean View Archives';
     $ogTitle = 'Fiction Library Catalog | Ocean View Archives';
@@ -687,7 +687,7 @@ if ($isNotFound) {
     $siteName = 'About Ocean View Archives | RaggieSoft Book Reader';
     $ogTitle = 'About Ocean View Archives | RaggieSoft Book Reader';
     $ogDescription = 'Learn about Ocean View Archives, the literary imprint created by Michael P. Ragsdale featuring free CC BY-SA 4.0 novels and lore.';
-    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/stardust-engine.jpg';
+    $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/og/oceanview-archives.jpg';
     $ogImageAlt = 'About Ocean View Archives and RaggieSoft Book Reader';
 } elseif ($isAccessibility) {
     $siteName = 'Accessibility Statement | RaggieSoft Book Reader';
