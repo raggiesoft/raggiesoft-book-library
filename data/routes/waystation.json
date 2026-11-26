@@ -17,17 +17,17 @@
             "text_epub": "43 KB",
             "text_pdf": "113 KB",
             "package_7z": "32 KB",
-            "epub_bytes": 2173274,
-            "pdf_bytes": 2056347,
-            "text_epub_bytes": 44136,
-            "text_pdf_bytes": 115536,
-            "package_7z_bytes": 32872
+            "epub_bytes": 2173253,
+            "pdf_bytes": 2056385,
+            "text_epub_bytes": 44112,
+            "text_pdf_bytes": 115553,
+            "package_7z_bytes": 32887
         },
         "illustration_count": 8,
         "word_stats": {
-            "story_word_count": 11869,
-            "lore_word_count": 190,
-            "combined_word_count": 12059,
+            "story_word_count": 11870,
+            "lore_word_count": 191,
+            "combined_word_count": 12061,
             "story_page_count": 43,
             "combined_page_count": 44,
             "reading_hours": 0.8,
@@ -134,9 +134,9 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-1-2710-ike-street-gate-four-and-home-to-emerald-creek": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-1-route-13-gate-four-and-home-to-emerald-creek": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: 2710 Ike Street, Gate Four, and Home to Emerald Creek",
+        "title": "Part 1: Route 13, Gate Four, and Home to Emerald Creek",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p001.md",
         "noPrev": true,
@@ -147,7 +147,7 @@
         "title": "Part 2: Eighteen Candles, One Brass Key, and Everything Left Behind",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p002.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-1-2710-ike-street-gate-four-and-home-to-emerald-creek",
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-1-route-13-gate-four-and-home-to-emerald-creek",
         "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-3-moving-into-a-rectangular-box-and-quantum-os-2000"
     },
     "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-3-moving-into-a-rectangular-box-and-quantum-os-2000": {
