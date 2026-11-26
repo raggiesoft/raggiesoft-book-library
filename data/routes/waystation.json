@@ -15,23 +15,23 @@
             "epub": "2.1 MB",
             "pdf": "2 MB",
             "text_epub": "43 KB",
-            "text_pdf": "113 KB",
+            "text_pdf": "112 KB",
             "package_7z": "32 KB",
-            "epub_bytes": 2173253,
-            "pdf_bytes": 2056385,
-            "text_epub_bytes": 44112,
-            "text_pdf_bytes": 115553,
-            "package_7z_bytes": 32887
+            "epub_bytes": 2173045,
+            "pdf_bytes": 2055675,
+            "text_epub_bytes": 43872,
+            "text_pdf_bytes": 114234,
+            "package_7z_bytes": 32732
         },
         "illustration_count": 8,
         "word_stats": {
-            "story_word_count": 11870,
-            "lore_word_count": 191,
-            "combined_word_count": 12061,
+            "story_word_count": 11877,
+            "lore_word_count": 176,
+            "combined_word_count": 12053,
             "story_page_count": 43,
             "combined_page_count": 44,
             "reading_hours": 0.8,
-            "reading_minutes": 47,
+            "reading_minutes": 48,
             "novel_equivalent": 0.13,
             "scale_category": "Short Fiction & Novelette",
             "scale_badge": "Short Fiction",
@@ -134,9 +134,9 @@
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-1-route-13-gate-four-and-home-to-emerald-creek": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-1-route-13-forty-eight-hours-notice-and-home-to-emerald-creek": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Route 13, Gate Four, and Home to Emerald Creek",
+        "title": "Part 1: Route 13, Forty-Eight Hours' Notice, and Home to Emerald Creek",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p001.md",
         "noPrev": true,
@@ -147,7 +147,7 @@
         "title": "Part 2: Eighteen Candles, One Brass Key, and Everything Left Behind",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p002.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-1-route-13-gate-four-and-home-to-emerald-creek",
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-1-route-13-forty-eight-hours-notice-and-home-to-emerald-creek",
         "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-3-moving-into-a-rectangular-box-and-quantum-os-2000"
     },
     "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-3-moving-into-a-rectangular-box-and-quantum-os-2000": {
