@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "3.1 MB",
-            "pdf": "2.7 MB",
-            "text_epub": "75 KB",
-            "text_pdf": "197 KB",
-            "package_7z": "51 KB",
-            "epub_bytes": 3289933,
-            "pdf_bytes": 2788434,
-            "text_epub_bytes": 76711,
-            "text_pdf_bytes": 201931,
-            "package_7z_bytes": 52631
+            "epub": "3.5 MB",
+            "pdf": "3 MB",
+            "text_epub": "80 KB",
+            "text_pdf": "212 KB",
+            "package_7z": "56 KB",
+            "epub_bytes": 3620036,
+            "pdf_bytes": 3129855,
+            "text_epub_bytes": 81649,
+            "text_pdf_bytes": 216609,
+            "package_7z_bytes": 56889
         },
-        "illustration_count": 19,
+        "illustration_count": 20,
         "word_stats": {
-            "story_word_count": 24847,
-            "lore_word_count": 5151,
-            "combined_word_count": 29998,
-            "story_page_count": 90,
-            "combined_page_count": 109,
-            "reading_hours": 1.7,
-            "reading_minutes": 99,
+            "story_word_count": 27061,
+            "lore_word_count": 5303,
+            "combined_word_count": 32364,
+            "story_page_count": 98,
+            "combined_page_count": 118,
+            "reading_hours": 1.8,
+            "reading_minutes": 108,
             "novel_equivalent": 0.3,
             "scale_category": "Novella",
             "scale_badge": "Novella",
             "benchmark_note": "Standard contemporary novella length (17,500\u201340,000 words)",
             "era_count": 1,
             "chapter_count": 9,
-            "part_count": 18,
-            "illustration_count": 19,
+            "part_count": 19,
+            "illustration_count": 20,
             "story_arc_count": 0
         },
         "story_arcs": [],
@@ -148,38 +148,46 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p002.md",
         "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-1-aisle-four-cutback-transfers-and-ready-for-everything",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-3-route-13-forty-eight-hours-notice-and-home-to-emerald-creek"
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-3-booth-fries-first-night-away-from-home-and-connecting-day-one"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-3-route-13-forty-eight-hours-notice-and-home-to-emerald-creek": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-3-booth-fries-first-night-away-from-home-and-connecting-day-one": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Route 13, Forty-Eight Hours' Notice, and Home to Emerald Creek",
+        "title": "Part 3: Booth Fries, First Night Away From Home, and Connecting Day One",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p003.md",
         "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-2-four-wooden-steps-sofa-cuddles-and-your-older-sister",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-4-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals"
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-4-route-13-forty-eight-hours-notice-and-home-to-emerald-creek"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-4-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-4-route-13-forty-eight-hours-notice-and-home-to-emerald-creek": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: Eighteen Candles, Always There for Big Brother, and Ten Raised Seals",
+        "title": "Part 4: Route 13, Forty-Eight Hours' Notice, and Home to Emerald Creek",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p004.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-3-route-13-forty-eight-hours-notice-and-home-to-emerald-creek",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-5-moving-into-a-rectangular-box-and-quantum-os-2000"
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-3-booth-fries-first-night-away-from-home-and-connecting-day-one",
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-5-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-5-moving-into-a-rectangular-box-and-quantum-os-2000": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-5-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: Moving Into a Rectangular Box and Quantum OS 2000",
+        "title": "Part 5: Eighteen Candles, Always There for Big Brother, and Ten Raised Seals",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p005.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-4-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-6-eighty-nine-degrees-and-one-rattling-fan"
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-4-route-13-forty-eight-hours-notice-and-home-to-emerald-creek",
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-6-moving-into-a-rectangular-box-and-quantum-os-2000"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-6-eighty-nine-degrees-and-one-rattling-fan": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-6-moving-into-a-rectangular-box-and-quantum-os-2000": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: Eighty-Nine Degrees and One Rattling Fan",
+        "title": "Part 6: Moving Into a Rectangular Box and Quantum OS 2000",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p006.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-5-moving-into-a-rectangular-box-and-quantum-os-2000",
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-5-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals",
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-7-eighty-nine-degrees-and-one-rattling-fan"
+    },
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-7-eighty-nine-degrees-and-one-rattling-fan": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 7: Eighty-Nine Degrees and One Rattling Fan",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/p007.md",
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-6-moving-into-a-rectangular-box-and-quantum-os-2000",
         "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-1-amber-glass-beside-the-full-sized-bed"
     },
     "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss": {
@@ -193,7 +201,7 @@
         "title": "Part 1: Amber Glass Beside the Full-Sized Bed",
         "theme": "raggiesoft-books",
         "filePath": "e001/c002/p001.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-6-eighty-nine-degrees-and-one-rattling-fan",
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-7-eighty-nine-degrees-and-one-rattling-fan",
         "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong"
     },
     "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong": {
