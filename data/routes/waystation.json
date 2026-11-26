@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "2.8 MB",
-            "pdf": "2.5 MB",
-            "text_epub": "69 KB",
-            "text_pdf": "181 KB",
-            "package_7z": "46 KB",
-            "epub_bytes": 2979948,
-            "pdf_bytes": 2597325,
-            "text_epub_bytes": 71029,
-            "text_pdf_bytes": 185573,
-            "package_7z_bytes": 47573
+            "epub": "3.1 MB",
+            "pdf": "2.7 MB",
+            "text_epub": "73 KB",
+            "text_pdf": "193 KB",
+            "package_7z": "50 KB",
+            "epub_bytes": 3288276,
+            "pdf_bytes": 2783091,
+            "text_epub_bytes": 75089,
+            "text_pdf_bytes": 197284,
+            "package_7z_bytes": 51241
         },
-        "illustration_count": 18,
+        "illustration_count": 19,
         "word_stats": {
-            "story_word_count": 22346,
-            "lore_word_count": 4546,
-            "combined_word_count": 26892,
-            "story_page_count": 81,
-            "combined_page_count": 98,
-            "reading_hours": 1.5,
-            "reading_minutes": 89,
-            "novel_equivalent": 0.2,
+            "story_word_count": 24107,
+            "lore_word_count": 4693,
+            "combined_word_count": 28800,
+            "story_page_count": 88,
+            "combined_page_count": 105,
+            "reading_hours": 1.6,
+            "reading_minutes": 96,
+            "novel_equivalent": 0.3,
             "scale_category": "Novella",
             "scale_badge": "Novella",
             "benchmark_note": "Standard contemporary novella length (17,500\u201340,000 words)",
             "era_count": 1,
             "chapter_count": 9,
-            "part_count": 17,
-            "illustration_count": 18,
+            "part_count": 18,
+            "illustration_count": 19,
             "story_arc_count": 0
         },
         "story_arcs": [],
@@ -140,38 +140,46 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p001.md",
         "noPrev": true,
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-2-route-13-forty-eight-hours-notice-and-home-to-emerald-creek"
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-2-four-wooden-steps-sofa-cuddles-and-your-older-sister"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-2-route-13-forty-eight-hours-notice-and-home-to-emerald-creek": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-2-four-wooden-steps-sofa-cuddles-and-your-older-sister": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Route 13, Forty-Eight Hours' Notice, and Home to Emerald Creek",
+        "title": "Part 2: Four Wooden Steps, Sofa Cuddles, and Your Older Sister?",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p002.md",
         "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-1-aisle-four-cutback-transfers-and-ready-for-everything",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-3-eighteen-candles-one-brass-key-and-everything-left-behind"
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-3-route-13-forty-eight-hours-notice-and-home-to-emerald-creek"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-3-eighteen-candles-one-brass-key-and-everything-left-behind": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-3-route-13-forty-eight-hours-notice-and-home-to-emerald-creek": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Eighteen Candles, One Brass Key, and Everything Left Behind",
+        "title": "Part 3: Route 13, Forty-Eight Hours' Notice, and Home to Emerald Creek",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p003.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-2-route-13-forty-eight-hours-notice-and-home-to-emerald-creek",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-4-moving-into-a-rectangular-box-and-quantum-os-2000"
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-2-four-wooden-steps-sofa-cuddles-and-your-older-sister",
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-4-eighteen-candles-one-brass-key-and-everything-left-behind"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-4-moving-into-a-rectangular-box-and-quantum-os-2000": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-4-eighteen-candles-one-brass-key-and-everything-left-behind": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: Moving Into a Rectangular Box and Quantum OS 2000",
+        "title": "Part 4: Eighteen Candles, One Brass Key, and Everything Left Behind",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p004.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-3-eighteen-candles-one-brass-key-and-everything-left-behind",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-5-eighty-nine-degrees-and-one-rattling-fan"
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-3-route-13-forty-eight-hours-notice-and-home-to-emerald-creek",
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-5-moving-into-a-rectangular-box-and-quantum-os-2000"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-5-eighty-nine-degrees-and-one-rattling-fan": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-5-moving-into-a-rectangular-box-and-quantum-os-2000": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: Eighty-Nine Degrees and One Rattling Fan",
+        "title": "Part 5: Moving Into a Rectangular Box and Quantum OS 2000",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p005.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-4-moving-into-a-rectangular-box-and-quantum-os-2000",
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-4-eighteen-candles-one-brass-key-and-everything-left-behind",
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-6-eighty-nine-degrees-and-one-rattling-fan"
+    },
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-6-eighty-nine-degrees-and-one-rattling-fan": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 6: Eighty-Nine Degrees and One Rattling Fan",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/p006.md",
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-5-moving-into-a-rectangular-box-and-quantum-os-2000",
         "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-1-amber-glass-beside-the-full-sized-bed"
     },
     "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss": {
@@ -185,7 +193,7 @@
         "title": "Part 1: Amber Glass Beside the Full-Sized Bed",
         "theme": "raggiesoft-books",
         "filePath": "e001/c002/p001.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-5-eighty-nine-degrees-and-one-rattling-fan",
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-6-eighty-nine-degrees-and-one-rattling-fan",
         "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong"
     },
     "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong": {
