@@ -14,32 +14,32 @@
         "ebook_sizes": {
             "epub": "11.7 MB",
             "pdf": "12.4 MB",
-            "text_epub": "172 KB",
-            "text_pdf": "433 KB",
-            "package_7z": "119 KB",
-            "epub_bytes": 12297536,
-            "pdf_bytes": 12963539,
-            "text_epub_bytes": 175862,
-            "text_pdf_bytes": 443126,
-            "package_7z_bytes": 121801
+            "text_epub": "176 KB",
+            "text_pdf": "448 KB",
+            "package_7z": "123 KB",
+            "epub_bytes": 12302381,
+            "pdf_bytes": 12979900,
+            "text_epub_bytes": 180536,
+            "text_pdf_bytes": 458452,
+            "package_7z_bytes": 125840
         },
-        "illustration_count": 35,
+        "illustration_count": 36,
         "word_stats": {
-            "story_word_count": 58322,
+            "story_word_count": 60138,
             "lore_word_count": 7601,
-            "combined_word_count": 65923,
-            "story_page_count": 212,
-            "combined_page_count": 240,
-            "reading_hours": 3.9,
-            "reading_minutes": 233,
-            "novel_equivalent": 0.6,
+            "combined_word_count": 67739,
+            "story_page_count": 219,
+            "combined_page_count": 246,
+            "reading_hours": 4,
+            "reading_minutes": 241,
+            "novel_equivalent": 0.7,
             "scale_category": "Compact Novel",
             "scale_badge": "Compact Novel",
             "benchmark_note": "Compact single-volume trade paperback length (40,000\u201370,000 words)",
             "era_count": 1,
             "chapter_count": 12,
-            "part_count": 39,
-            "illustration_count": 35,
+            "part_count": 41,
+            "illustration_count": 36,
             "story_arc_count": 0
         },
         "story_arcs": [],
@@ -77,8 +77,8 @@
                             "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus"
                         },
                         "part_count": 3,
-                        "word_count": 3879,
-                        "reading_minutes": 16,
+                        "word_count": 4770,
+                        "reading_minutes": 20,
                         "image": "/raggiesoft-books/images/scenes/waystation/paths/exodus_p001_norfolk_bay4_boarding.jpg"
                     }
                 ]
@@ -105,9 +105,9 @@
                             "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus",
                             "blue-tech-missed-shift-alarm-2001": "pasco-early-intercept"
                         },
-                        "part_count": 3,
-                        "word_count": 4040,
-                        "reading_minutes": 17,
+                        "part_count": 4,
+                        "word_count": 4512,
+                        "reading_minutes": 19,
                         "image": "/raggiesoft-books/images/scenes/waystation/paths/pasco_p001_walter_kitchen_timetable.jpg"
                     },
                     {
@@ -116,14 +116,14 @@
                         "label": "Respect Workplace Boundaries & Wait Until Friday's Third No-Show",
                         "subtitle": "Honor corporate protocol and relationship guardrails until Friday evening's automatic third-strike termination\u2014leaving feverish Nolan to endure the full haul to Seattle, Puget Sound General Hospital, grounded post-9/11 skies, and missing Gwen's eighteenth birthday while Grandpa Walter refuses to die until Gwen and Mallory bring Nolan home.",
                         "entry_part": "paths/seattle-full-exodus-rescue/e001/c001/p001.md",
-                        "entry_url": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-1-colby-salt-lake-skin-breakdown-pasco-and-abandoned-in-seattle",
+                        "entry_url": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-1-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake",
                         "required_choices": {
                             "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus",
                             "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
                         },
-                        "part_count": 3,
-                        "word_count": 3562,
-                        "reading_minutes": 15,
+                        "part_count": 4,
+                        "word_count": 4015,
+                        "reading_minutes": 17,
                         "image": "/raggiesoft-books/images/scenes/waystation/paths/seattle_p001_colby_kansas_truckstop.jpg"
                     }
                 ]
@@ -322,8 +322,8 @@
                         "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus"
                     },
                     "part_count": 3,
-                    "word_count": 3879,
-                    "reading_minutes": 16,
+                    "word_count": 4770,
+                    "reading_minutes": 20,
                     "image": "/raggiesoft-books/images/scenes/waystation/paths/exodus_p001_norfolk_bay4_boarding.jpg"
                 }
             ]
@@ -461,11 +461,11 @@
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
         "rejoinPrevBySegment": {
-            "pasco-early-intercept": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-empty-work-polos-ray-s-personal-number-and-home-in-studio-205",
-            "seattle-full-exodus-rescue": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-crying-into-four-safe-arms-in-seattle-grandpa-s-final-watch-and-studio-205",
+            "pasco-early-intercept": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-4-empty-work-polos-ray-s-personal-number-and-home-in-studio-205",
+            "seattle-full-exodus-rescue": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-4-crying-into-four-safe-arms-in-seattle-grandpa-s-final-watch-and-studio-205",
             "lock-wheelchair-brakes-emerald-creek": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-18-eighty-nine-degrees-and-one-rattling-fan"
         },
-        "prevUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-empty-work-polos-ray-s-personal-number-and-home-in-studio-205",
+        "prevUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-4-empty-work-polos-ray-s-personal-number-and-home-in-studio-205",
         "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong"
     },
     "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong": {
@@ -628,9 +628,9 @@
                         "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus",
                         "blue-tech-missed-shift-alarm-2001": "pasco-early-intercept"
                     },
-                    "part_count": 3,
-                    "word_count": 4040,
-                    "reading_minutes": 17,
+                    "part_count": 4,
+                    "word_count": 4512,
+                    "reading_minutes": 19,
                     "image": "/raggiesoft-books/images/scenes/waystation/paths/pasco_p001_walter_kitchen_timetable.jpg"
                 },
                 {
@@ -639,14 +639,14 @@
                     "label": "Respect Workplace Boundaries & Wait Until Friday's Third No-Show",
                     "subtitle": "Honor corporate protocol and relationship guardrails until Friday evening's automatic third-strike termination\u2014leaving feverish Nolan to endure the full haul to Seattle, Puget Sound General Hospital, grounded post-9/11 skies, and missing Gwen's eighteenth birthday while Grandpa Walter refuses to die until Gwen and Mallory bring Nolan home.",
                     "entry_part": "paths/seattle-full-exodus-rescue/e001/c001/p001.md",
-                    "entry_url": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-1-colby-salt-lake-skin-breakdown-pasco-and-abandoned-in-seattle",
+                    "entry_url": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-1-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake",
                     "required_choices": {
                         "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus",
                         "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
                     },
-                    "part_count": 3,
-                    "word_count": 3562,
-                    "reading_minutes": 15,
+                    "part_count": 4,
+                    "word_count": 4015,
+                    "reading_minutes": 17,
                     "image": "/raggiesoft-books/images/scenes/waystation/paths/seattle_p001_colby_kansas_truckstop.jpg"
                 }
             ]
@@ -680,11 +680,11 @@
             "blue-tech-missed-shift-alarm-2001": "pasco-early-intercept"
         },
         "prevUrl": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-3-eight-oh-five-at-the-timeclock-and-two-unspoken-guardrails",
-        "nextUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-2-colby-truck-stop-us-287-and-crying-into-four-safe-arms-in-pasco"
+        "nextUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-2-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake"
     },
-    "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-2-colby-truck-stop-us-287-and-crying-into-four-safe-arms-in-pasco": {
+    "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-2-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Colby Truck Stop, US-287, and Crying Into Four Safe Arms in Pasco",
+        "title": "Part 2: Bitter Wind in Colby, US-287, and Breaking Skin in Salt Lake",
         "theme": "raggiesoft-books",
         "filePath": "paths/pasco-early-intercept/e001/c001/p002.md",
         "pathId": "pasco-early-intercept",
@@ -694,11 +694,11 @@
             "blue-tech-missed-shift-alarm-2001": "pasco-early-intercept"
         },
         "prevUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-1-eden-way-north-at-eight-eighteen-and-two-pre-dawn-tickets-west",
-        "nextUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-empty-work-polos-ray-s-personal-number-and-home-in-studio-205"
+        "nextUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-five-minutes-before-the-restroom-door-and-crying-into-four-safe-arms-in-pasco"
     },
-    "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-empty-work-polos-ray-s-personal-number-and-home-in-studio-205": {
+    "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-five-minutes-before-the-restroom-door-and-crying-into-four-safe-arms-in-pasco": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Empty Work Polos, Ray's Personal Number, and Home in Studio 205",
+        "title": "Part 3: Five Minutes Before the Restroom Door and Crying Into Four Safe Arms in Pasco",
         "theme": "raggiesoft-books",
         "filePath": "paths/pasco-early-intercept/e001/c001/p003.md",
         "pathId": "pasco-early-intercept",
@@ -707,7 +707,21 @@
             "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus",
             "blue-tech-missed-shift-alarm-2001": "pasco-early-intercept"
         },
-        "prevUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-2-colby-truck-stop-us-287-and-crying-into-four-safe-arms-in-pasco",
+        "prevUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-2-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake",
+        "nextUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-4-empty-work-polos-ray-s-personal-number-and-home-in-studio-205"
+    },
+    "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-4-empty-work-polos-ray-s-personal-number-and-home-in-studio-205": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Empty Work Polos, Ray's Personal Number, and Home in Studio 205",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/pasco-early-intercept/e001/c001/p004.md",
+        "pathId": "pasco-early-intercept",
+        "crossroadsId": "blue-tech-missed-shift-alarm-2001",
+        "requiredChoices": {
+            "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus",
+            "blue-tech-missed-shift-alarm-2001": "pasco-early-intercept"
+        },
+        "prevUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-five-minutes-before-the-restroom-door-and-crying-into-four-safe-arms-in-pasco",
         "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-1-amber-glass-beside-the-full-sized-bed"
     },
     "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound": {
@@ -726,9 +740,9 @@
         "pathId": "seattle-full-exodus-rescue",
         "crossroadsId": "blue-tech-missed-shift-alarm-2001"
     },
-    "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-1-colby-salt-lake-skin-breakdown-pasco-and-abandoned-in-seattle": {
+    "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-1-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Colby, Salt Lake Skin Breakdown, Pasco, and Abandoned in Seattle",
+        "title": "Part 1: Bitter Wind in Colby, US-287, and Breaking Skin in Salt Lake",
         "theme": "raggiesoft-books",
         "filePath": "paths/seattle-full-exodus-rescue/e001/c001/p001.md",
         "pathId": "seattle-full-exodus-rescue",
@@ -738,11 +752,11 @@
             "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
         },
         "prevUrl": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-3-eight-oh-five-at-the-timeclock-and-two-unspoken-guardrails",
-        "nextUrl": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-2-puget-sound-general-grounded-skies-and-holding-on-past-october-nineteenth"
+        "nextUrl": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-2-fog-in-pasco-across-the-cascades-and-abandoned-in-seattle"
     },
-    "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-2-puget-sound-general-grounded-skies-and-holding-on-past-october-nineteenth": {
+    "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-2-fog-in-pasco-across-the-cascades-and-abandoned-in-seattle": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Puget Sound General, Grounded Skies, and Holding On Past October Nineteenth",
+        "title": "Part 2: Fog in Pasco, Across the Cascades, and Abandoned in Seattle",
         "theme": "raggiesoft-books",
         "filePath": "paths/seattle-full-exodus-rescue/e001/c001/p002.md",
         "pathId": "seattle-full-exodus-rescue",
@@ -751,12 +765,12 @@
             "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus",
             "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
         },
-        "prevUrl": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-1-colby-salt-lake-skin-breakdown-pasco-and-abandoned-in-seattle",
-        "nextUrl": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-crying-into-four-safe-arms-in-seattle-grandpa-s-final-watch-and-studio-205"
+        "prevUrl": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-1-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake",
+        "nextUrl": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-puget-sound-general-grounded-skies-and-holding-on-past-october-nineteenth"
     },
-    "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-crying-into-four-safe-arms-in-seattle-grandpa-s-final-watch-and-studio-205": {
+    "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-puget-sound-general-grounded-skies-and-holding-on-past-october-nineteenth": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Crying Into Four Safe Arms in Seattle, Grandpa's Final Watch, and Studio 205",
+        "title": "Part 3: Puget Sound General, Grounded Skies, and Holding On Past October Nineteenth",
         "theme": "raggiesoft-books",
         "filePath": "paths/seattle-full-exodus-rescue/e001/c001/p003.md",
         "pathId": "seattle-full-exodus-rescue",
@@ -765,7 +779,21 @@
             "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus",
             "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
         },
-        "prevUrl": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-2-puget-sound-general-grounded-skies-and-holding-on-past-october-nineteenth",
+        "prevUrl": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-2-fog-in-pasco-across-the-cascades-and-abandoned-in-seattle",
+        "nextUrl": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-4-crying-into-four-safe-arms-in-seattle-grandpa-s-final-watch-and-studio-205"
+    },
+    "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-4-crying-into-four-safe-arms-in-seattle-grandpa-s-final-watch-and-studio-205": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 4: Crying Into Four Safe Arms in Seattle, Grandpa's Final Watch, and Studio 205",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/seattle-full-exodus-rescue/e001/c001/p004.md",
+        "pathId": "seattle-full-exodus-rescue",
+        "crossroadsId": "blue-tech-missed-shift-alarm-2001",
+        "requiredChoices": {
+            "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus",
+            "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
+        },
+        "prevUrl": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-puget-sound-general-grounded-skies-and-holding-on-past-october-nineteenth",
         "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-1-amber-glass-beside-the-full-sized-bed"
     },
     "/waystation/paths/lantern-barge-canal/book-one-beyond-the-studio-rift": {

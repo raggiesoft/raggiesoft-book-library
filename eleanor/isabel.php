@@ -171,6 +171,18 @@ $legacyPartRedirects = [
         => '/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/from-cchr-to-vdu-the-upperclass-gih-pilot-apartment/part-2-move-in-day-at-harbor-house-building-2-the-2-bed-2-bath-floor-plan-alternating-beds',
     '/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/from-cchr-to-vdu-the-upperclass-gih-pilot-apartment/part-3-the-only-gih-pair-in-building-2-hampton-house-the-ra-s-look-in-the-hallway-the-1st-floor-laundry-room'
         => '/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/from-cchr-to-vdu-the-upperclass-gih-pilot-apartment/part-3-the-only-gih-pair-in-building-2-harbor-house-the-ra-s-look-in-the-hallway-the-1st-floor-laundry-room',
+
+    // Waystation (Pasco & Seattle Pathfinder sub-routes): Split Colby, KS into its own dedicated Part
+    '/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-2-colby-truck-stop-us-287-and-crying-into-four-safe-arms-in-pasco'
+        => '/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-2-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake',
+    '/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-empty-work-polos-ray-s-personal-number-and-home-in-studio-205'
+        => '/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-4-empty-work-polos-ray-s-personal-number-and-home-in-studio-205',
+    '/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-1-colby-salt-lake-skin-breakdown-pasco-and-abandoned-in-seattle'
+        => '/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-1-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake',
+    '/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-2-puget-sound-general-grounded-skies-and-holding-on-past-october-nineteenth'
+        => '/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-puget-sound-general-grounded-skies-and-holding-on-past-october-nineteenth',
+    '/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-crying-into-four-safe-arms-in-seattle-grandpa-s-final-watch-and-studio-205'
+        => '/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-4-crying-into-four-safe-arms-in-seattle-grandpa-s-final-watch-and-studio-205',
 ];
 
 // Check if the requested path is in `$legacyPartRedirects` and issue an instant 301 redirect if so.
