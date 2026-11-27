@@ -331,6 +331,27 @@ if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $mdContent, $matche
 }
 
 // ============================================================================
+// IMMUTABLE SEPTEMBER 11, 2001 ZERO-IMAGES FATAL GUARDRAIL (`oliver.php`)
+// ============================================================================
+// Runtime SSR enforcement on `books.raggiesoft.com`: if any story section set on
+// September 11, 2001 ever reaches the live viewer with YAML `image` / `images` /
+// `og_image` / `ogImage` metadata, inline Markdown `![...](...)`, or raw `<img`
+// HTML, immediately respond HTTP 500 and throw an uncaught `RuntimeException`!
+if (!$specialPageType && !empty($frontmatter['date']) && is_string($frontmatter['date'])) {
+    if (preg_match('/(?:\b2001-0?9-11\b|\b0?9[\/\-]11[\/\-]2001\b|\bSept(?:ember)?\.?\s+11(?:th)?,?\s+2001\b|\b11\s+Sept(?:ember)?\.?,?\s+2001\b)/i', trim($frontmatter['date']))) {
+        $oliverHasFmImg = !empty($frontmatter['image']) || !empty($frontmatter['images']) || !empty($frontmatter['og_image']) || !empty($frontmatter['ogImage']);
+        $oliverBodyNoCode = (string)preg_replace('/```[\s\S]*?```/', '', (string)$mdContent);
+        $oliverHasInlineImg = (bool)preg_match('/!\[[^\]]*\]\([^)]+\)|<img\b/i', $oliverBodyNoCode);
+        if ($oliverHasFmImg || $oliverHasInlineImg) {
+            if (!headers_sent()) {
+                http_response_code(500);
+            }
+            throw new RuntimeException('FATAL GUARDRAIL ERROR [IMMUTABLE SEPTEMBER 11, 2001 ZERO-IMAGES RULE]: Story sections taking place on September 11, 2001 are permanently prohibited from rendering images.');
+        }
+    }
+}
+
+// ============================================================================
 // SUBSYSTEM 4: MARKDOWN RENDERING, IN-SCENE MINI-TOC, & WIKI LINK PREVIEWS
 // ============================================================================
 // `StardustParsedown` extends standard Parsedown to handle custom narrative tags
