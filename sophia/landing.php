@@ -516,14 +516,16 @@ $landingStoryArcs = is_array($toc_manifest['story_arcs'] ?? null)
                     ],
                 ],
                 'aubrie' => [
-                    'eyebrow' => 'Connected Music in The Listening Room',
+                    'eyebrow' => 'Connected Music & Open-Source Companion Project',
                     'icon'    => 'ph-headphones',
-                    'heading' => 'Hear the Companion Albums for The Eleventh Child',
-                    'copy'    => 'Stream the two-volume concept albums by The Paper Wall and the May 2016 commencement concert at The Crucible.',
+                    'heading' => 'Hear the Companion Albums & Explore Fin# in Real Life',
+                    'copy'    => 'Stream the two-volume concept albums by The Paper Wall, relive the May 2016 commencement concert at The Crucible, or explore Fin# — the financial language born around the Geneva Street dining table in Fall 2015 that grew into a real open-source project.',
                     'links'   => [
                         ['href' => 'https://music.raggiesoft.com/the-paper-wall/2003-eleventh-child-book-1', 'label' => 'The Eleventh Child, Book 1: System.Crash', 'icon' => 'ph-vinyl-record', 'external' => true, 'primary' => true],
                         ['href' => 'https://music.raggiesoft.com/the-paper-wall/2003-eleventh-child-book-2', 'label' => 'The Eleventh Child, Book 2: System.Restore', 'icon' => 'ph-vinyl-record', 'external' => true],
                         ['href' => 'https://music.raggiesoft.com/the-stardust-engine/2016-live-at-the-crucible', 'label' => 'Live at the Crucible (2016)', 'icon' => 'ph-microphone-stage', 'external' => true],
+                        ['href' => '/aubrie/fall-semester-2015/the-5-45-am-problem-the-birth-of-fin-home-on-geneva-street/part-3-question-the-rules-the-birth-of-fin', 'label' => 'Read "Question The Rules: The Birth of Fin#"', 'icon' => 'ph-book-open-text', 'external' => false],
+                        ['href' => 'https://finsharp.raggiesoft.dev', 'label' => 'Explore Fin# Companion Site (finsharp.raggiesoft.dev)', 'icon' => 'ph-sparkle', 'external' => true],
                     ],
                 ],
                 'luna-leo' => [

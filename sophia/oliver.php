@@ -632,20 +632,26 @@ if ($specialPageType) {
                     ];
                 }
             }
-            // Case 3: Companion RaggieSoft Universe Properties (stardust, engineroom, lore, nebulae)
-            elseif (in_array($host, ['stardust.raggiesoft.com', 'engineroom.raggiesoft.com', 'lore.raggiesoft.com', 'nebulae.raggiesoft.com'], true)) {
+            // Case 3: Companion RaggieSoft Universe & Open-Source Project Properties
+            elseif (in_array($host, ['stardust.raggiesoft.com', 'engineroom.raggiesoft.com', 'lore.raggiesoft.com', 'nebulae.raggiesoft.com', 'finsharp.raggiesoft.dev', 'raggiescript.raggiesoft.dev', 'raggiesoft.dev'], true)) {
                 $isExternal = true;
                 $siteTitleMap = [
                     'stardust.raggiesoft.com' => 'The Stardust Engine Official Portal',
                     'engineroom.raggiesoft.com' => 'Engine Room Records Archive',
-                    'lore.raggiesoft.com' => 'RaggieSoft Lore & Technical Manual',
-                    'nebulae.raggiesoft.com' => 'Caelum-IV Planetary Survey (Nebulae)'
+                    'lore.raggiesoft.com' => 'RaggieSoft Lore & World Guide',
+                    'nebulae.raggiesoft.com' => 'Caelum-IV Planetary Survey (Nebulae)',
+                    'finsharp.raggiesoft.dev' => 'Fin# — Open-Source Language Born in The Eleventh Child',
+                    'raggiescript.raggiesoft.dev' => 'RaggieScript — Open-Source Language Portal',
+                    'raggiesoft.dev' => 'RaggieSoft Open-Source Projects Hub'
                 ];
                 $siteImageMap = [
                     'stardust.raggiesoft.com' => rtrim($cdnBaseUrl, '/') . '/stardust-engine/images/stardust-engine-hero.jpg',
                     'engineroom.raggiesoft.com' => rtrim($cdnBaseUrl, '/') . '/engine-room-records/images/err-hero.jpg',
                     'lore.raggiesoft.com' => rtrim($cdnBaseUrl, '/') . '/raggiesoft-books/images/covers/og/stardust-engine.jpg',
-                    'nebulae.raggiesoft.com' => rtrim($cdnBaseUrl, '/') . '/raggiesoft-books/images/covers/og/ad-astra.jpg'
+                    'nebulae.raggiesoft.com' => rtrim($cdnBaseUrl, '/') . '/raggiesoft-books/images/covers/og/ad-astra.jpg',
+                    'finsharp.raggiesoft.dev' => rtrim($cdnBaseUrl, '/') . '/raggiesoft-books/images/scenes/aubrie/e007/c001/p003/birth-of-finsharp-og.jpg',
+                    'raggiescript.raggiesoft.dev' => rtrim($cdnBaseUrl, '/') . '/raggiesoft-books/images/covers/og/aubrie.jpg',
+                    'raggiesoft.dev' => rtrim($cdnBaseUrl, '/') . '/raggiesoft-books/images/covers/og/aubrie.jpg'
                 ];
                 $previewPayload = [
                     'kind' => 'companion',
@@ -2390,6 +2396,51 @@ $oliverBookSeriesSchema = [
         </dialog>
         <?php endif; ?>
         
+        <?php
+        // =====================================================================
+        // SUBSYSTEM 11B: OUT-OF-PROSE REAL-WORLD COMPANION PROJECT CARD
+        // =====================================================================
+        // 100-Level Chronological-Integrity Walkthrough:
+        //   - Scenes set in past years (such as August 2015 in `books/aubrie/e007/c001/p003.md`)
+        //     must NEVER break the fourth wall inside the story prose itself.
+        //   - Instead, a scene's YAML frontmatter can optionally specify `companion_site_url`
+        //     alongside `companion_site_kicker`, `companion_site_title`, `companion_site_copy`,
+        //     and `companion_site_cta`.
+        //   - Right after the story `<article>` and Backstage cards finish, Oliver renders this
+        //     warm, reader-friendly companion card so readers can jump straight to real-world
+        //     projects inspired by the chapter (such as `https://finsharp.raggiesoft.dev`)!
+        if (!$specialPageType && !empty($frontmatter['companion_site_url'])):
+            $compUrl    = trim((string)$frontmatter['companion_site_url']);
+            $compKicker = trim((string)($frontmatter['companion_site_kicker'] ?? 'Companion Project'));
+            $compTitle  = trim((string)($frontmatter['companion_site_title'] ?? 'Explore the Real-World Companion Project'));
+            $compCopy   = trim((string)($frontmatter['companion_site_copy'] ?? ''));
+            $compCta    = trim((string)($frontmatter['companion_site_cta'] ?? 'Visit Companion Site'));
+        ?>
+        <section id="rs-companion-project-card" aria-labelledby="rs-companion-project-heading" style="margin-top: 2.75rem; padding: 1.6rem 1.8rem; border: 1px solid var(--rs-border); border-left: 5px solid var(--rs-primary); border-radius: 12px; background: var(--rs-surface); box-shadow: 0 4px 18px rgba(0,0,0,0.06);">
+            <div style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--rs-primary); margin-bottom: 0.45rem;">
+                <i class="ph ph-sparkle" aria-hidden="true"></i> <?php echo htmlspecialchars($compKicker); ?>
+            </div>
+            <h3 id="rs-companion-project-heading" style="margin: 0 0 0.5rem; font-size: 1.22rem;">
+                <?php echo htmlspecialchars($compTitle); ?>
+            </h3>
+            <?php if ($compCopy !== ''): ?>
+            <p style="margin: 0 0 1.1rem; font-size: 0.98rem; line-height: 1.6; opacity: 0.9;">
+                <?php echo htmlspecialchars($compCopy); ?>
+            </p>
+            <?php endif; ?>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center;">
+                <a href="<?php echo htmlspecialchars($compUrl); ?>" target="_blank" rel="noopener noreferrer" data-no-spa="true" class="rs-btn rs-btn-primary" style="padding: 0.6rem 1.15rem; font-size: 0.95rem; display: inline-flex; align-items: center; gap: 0.45rem;">
+                    <span><?php echo htmlspecialchars($compCta); ?></span>
+                    <i class="ph ph-arrow-square-out" aria-hidden="true"></i>
+                </a>
+                <a href="https://raggiesoft.dev" target="_blank" rel="noopener noreferrer" data-no-spa="true" class="rs-btn" style="padding: 0.6rem 1.05rem; font-size: 0.92rem; display: inline-flex; align-items: center; gap: 0.4rem;">
+                    <span>Explore All Open-Source Projects on raggiesoft.dev</span>
+                    <i class="ph ph-arrow-square-out" aria-hidden="true"></i>
+                </a>
+            </div>
+        </section>
+        <?php endif; ?>
+
         <!-- E-Book CTA Card (Dismissible; persisted in reader-settings.showOfflineCta and resettable in Settings) -->
         <?php if (!$specialPageType):
             global $ebookSizes;

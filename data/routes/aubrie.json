@@ -16,18 +16,18 @@
             "pdf": "54.7 MB",
             "text_epub": "982 KB",
             "text_pdf": "4.9 MB",
-            "package_7z": "709 KB",
+            "package_7z": "",
             "epub_bytes": 69222054,
             "pdf_bytes": 57382276,
             "text_epub_bytes": 1005458,
             "text_pdf_bytes": 5143922,
-            "package_7z_bytes": 726221
+            "package_7z_bytes": 0
         },
         "illustration_count": 72,
         "word_stats": {
             "story_word_count": 413346,
-            "lore_word_count": 60373,
-            "combined_word_count": 473719,
+            "lore_word_count": 60483,
+            "combined_word_count": 473829,
             "story_page_count": 1503,
             "combined_page_count": 1723,
             "reading_hours": 27.6,
@@ -248,9 +248,9 @@
                 "part_count": 9,
                 "backstage_count": 1,
                 "stop_count": 10,
-                "word_count": 26221,
-                "reading_minutes": 105,
-                "reading_hours": 1.7,
+                "word_count": 26331,
+                "reading_minutes": 106,
+                "reading_hours": 1.8,
                 "stops": [
                     {
                         "stop_num": 1,
@@ -344,8 +344,8 @@
                         "image": "/raggiesoft-books/images/covers/2x3/aubrie.jpg",
                         "url": "https://backstage.raggiesoft.com/books/aubrie/zoe-logging-architecture/",
                         "arc_url": "/aubrie/jordan-s-world-trek/leg-8-southern-cross-winter-the-red-centre-home-to-roanoke-australia/part-1-sydney-harbour-the-three-sisters-the-jamison-skyway?arc=world-trek-and-zoes-architecture",
-                        "word_count": 693,
-                        "reading_minutes": 3
+                        "word_count": 803,
+                        "reading_minutes": 4
                     },
                     {
                         "stop_num": 6,

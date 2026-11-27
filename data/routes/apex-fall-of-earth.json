@@ -16,12 +16,12 @@
             "pdf": "1.7 MB",
             "text_epub": "589 KB",
             "text_pdf": "1.7 MB",
-            "package_7z": "413 KB",
+            "package_7z": "",
             "epub_bytes": 602944,
             "pdf_bytes": 1745890,
             "text_epub_bytes": 602943,
             "text_pdf_bytes": 1745890,
-            "package_7z_bytes": 422463
+            "package_7z_bytes": 0
         },
         "illustration_count": 0,
         "word_stats": {
