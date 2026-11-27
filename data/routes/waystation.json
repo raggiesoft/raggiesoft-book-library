@@ -12,34 +12,34 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "4 MB",
+            "epub": "4.2 MB",
             "pdf": "3.6 MB",
-            "text_epub": "122 KB",
+            "text_epub": "126 KB",
             "text_pdf": "328 KB",
-            "package_7z": "89 KB",
-            "epub_bytes": 4215675,
+            "package_7z": "93 KB",
+            "epub_bytes": 4438803,
             "pdf_bytes": 3803930,
-            "text_epub_bytes": 124656,
+            "text_epub_bytes": 128970,
             "text_pdf_bytes": 335990,
-            "package_7z_bytes": 91585
+            "package_7z_bytes": 95057
         },
-        "illustration_count": 23,
+        "illustration_count": 24,
         "word_stats": {
-            "story_word_count": 44792,
-            "lore_word_count": 4514,
-            "combined_word_count": 49306,
-            "story_page_count": 163,
-            "combined_page_count": 179,
-            "reading_hours": 3,
-            "reading_minutes": 179,
+            "story_word_count": 46517,
+            "lore_word_count": 4717,
+            "combined_word_count": 51234,
+            "story_page_count": 169,
+            "combined_page_count": 186,
+            "reading_hours": 3.1,
+            "reading_minutes": 186,
             "novel_equivalent": 0.5,
             "scale_category": "Compact Novel",
             "scale_badge": "Compact Novel",
             "benchmark_note": "Compact single-volume trade paperback length (40,000\u201370,000 words)",
             "era_count": 1,
             "chapter_count": 9,
-            "part_count": 28,
-            "illustration_count": 23,
+            "part_count": 29,
+            "illustration_count": 24,
             "story_arc_count": 0
         },
         "story_arcs": [],
@@ -252,14 +252,22 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p015.md",
         "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-14-clocking-out-together-one-car-ride-home-and-crimson-red-outside-the-lobby",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-16-eighty-nine-degrees-and-one-rattling-fan"
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-16-third-floor-food-court-laced-fingers-and-nothing-left-to-weaponize"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-16-eighty-nine-degrees-and-one-rattling-fan": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-16-third-floor-food-court-laced-fingers-and-nothing-left-to-weaponize": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 16: Eighty-Nine Degrees and One Rattling Fan",
+        "title": "Part 16: Third-Floor Food Court, Laced Fingers, and Nothing Left to Weaponize",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p016.md",
         "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-15-coming-back-the-next-day-hot-cocoa-in-studio-205-and-zero-supervisor-pin",
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-17-eighty-nine-degrees-and-one-rattling-fan"
+    },
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-17-eighty-nine-degrees-and-one-rattling-fan": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 17: Eighty-Nine Degrees and One Rattling Fan",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/p017.md",
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-16-third-floor-food-court-laced-fingers-and-nothing-left-to-weaponize",
         "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-1-amber-glass-beside-the-full-sized-bed"
     },
     "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss": {
@@ -273,7 +281,7 @@
         "title": "Part 1: Amber Glass Beside the Full-Sized Bed",
         "theme": "raggiesoft-books",
         "filePath": "e001/c002/p001.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-16-eighty-nine-degrees-and-one-rattling-fan",
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-17-eighty-nine-degrees-and-one-rattling-fan",
         "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong"
     },
     "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong": {
