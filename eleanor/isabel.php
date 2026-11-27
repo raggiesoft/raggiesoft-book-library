@@ -507,6 +507,18 @@ if ($hasValidBookSeries && $seriesSlug !== '' && !empty($seriesCrossroadsList) &
         }
     }
 
+    // For shared post-convergence chapters (reached after multiple earlier branches rejoin),
+    // populate `defaultChoices` ONLY for Crossroads keys the reader hasn't already chosen so
+    // cold deep-link visitors see a complete Table of Contents while returning readers keep their chosen route!
+    if ($reqPathParam !== 'reset' && !empty($pageConfig['defaultChoices']) && is_array($pageConfig['defaultChoices'])) {
+        foreach ($pageConfig['defaultChoices'] as $dk => $dv) {
+            if (!isset($activeCrossroadsChoices[(string)$dk])) {
+                $activeCrossroadsChoices[(string)$dk] = (string)$dv;
+                $cookieDirty = true;
+            }
+        }
+    }
+
     // Save or clear the `Set-Cookie` HTTP header (31,536,000 seconds = 1 year; `SameSite=Lax` for security)
     if ($cookieDirty && !headers_sent()) {
         if (empty($activeCrossroadsChoices)) {

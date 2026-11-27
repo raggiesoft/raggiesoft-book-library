@@ -240,7 +240,7 @@ $coverArt = $cdnBaseUrl . '/engine-room-records/artists/firelight/2025-silver-ga
                 </a>
                 <!-- Route 2: Jumps straight into Era 1, Book I, Scene 1 inside `oliver.php` -->
                 <a href="/aethel/era-1-the-age-of-myth/book-i-the-silver-sun/scene-1-chapter-1-the-architect-s-lesson" class="aethel-btn-outline">
-                    <i class="ph-fill ph-sparkle"></i> Read Prologue: &ldquo;The Architect's Lesson&rdquo;
+                    <i class="ph-fill ph-scroll"></i> Read Prologue: &ldquo;The Architect's Lesson&rdquo;
                 </a>
                 <!-- Route 3: External companion rock-opera album on `music.raggiesoft.com` (`data-no-spa="true"` bypasses SPA fetch) -->
                 <a href="https://music.raggiesoft.com/firelight/1987-silver-gauntlet-of-aethel" data-no-spa="true" target="_blank" rel="noopener" class="aethel-btn-outline">

@@ -396,15 +396,15 @@
         "package_7z_bytes": 0
     },
     "waystation": {
-        "epub": "4.2 MB",
-        "pdf": "3.8 MB",
-        "text_epub": "126 KB",
-        "text_pdf": "340 KB",
+        "epub": "4.3 MB",
+        "pdf": "3.9 MB",
+        "text_epub": "170 KB",
+        "text_pdf": "428 KB",
         "package_7z": "",
-        "epub_bytes": 4435800,
-        "pdf_bytes": 4031964,
-        "text_epub_bytes": 128908,
-        "text_pdf_bytes": 347672,
+        "epub_bytes": 4480742,
+        "pdf_bytes": 4122122,
+        "text_epub_bytes": 173908,
+        "text_pdf_bytes": 437847,
         "package_7z_bytes": 0
     }
 }

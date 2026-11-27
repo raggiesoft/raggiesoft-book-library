@@ -12,38 +12,122 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "4.2 MB",
-            "pdf": "3.8 MB",
-            "text_epub": "126 KB",
-            "text_pdf": "340 KB",
+            "epub": "4.3 MB",
+            "pdf": "3.9 MB",
+            "text_epub": "170 KB",
+            "text_pdf": "428 KB",
             "package_7z": "",
-            "epub_bytes": 4435800,
-            "pdf_bytes": 4031964,
-            "text_epub_bytes": 128908,
-            "text_pdf_bytes": 347672,
+            "epub_bytes": 4480742,
+            "pdf_bytes": 4122122,
+            "text_epub_bytes": 173908,
+            "text_pdf_bytes": 437847,
             "package_7z_bytes": 0
         },
         "illustration_count": 24,
         "word_stats": {
-            "story_word_count": 46517,
-            "lore_word_count": 5651,
-            "combined_word_count": 52168,
-            "story_page_count": 169,
-            "combined_page_count": 190,
-            "reading_hours": 3.1,
-            "reading_minutes": 186,
-            "novel_equivalent": 0.5,
+            "story_word_count": 57536,
+            "lore_word_count": 6175,
+            "combined_word_count": 63711,
+            "story_page_count": 209,
+            "combined_page_count": 232,
+            "reading_hours": 3.8,
+            "reading_minutes": 230,
+            "novel_equivalent": 0.6,
             "scale_category": "Compact Novel",
             "scale_badge": "Compact Novel",
             "benchmark_note": "Compact single-volume trade paperback length (40,000\u201370,000 words)",
             "era_count": 1,
-            "chapter_count": 9,
-            "part_count": 29,
+            "chapter_count": 12,
+            "part_count": 39,
             "illustration_count": 24,
             "story_arc_count": 0
         },
         "story_arcs": [],
         "crossroads": [
+            {
+                "id": "norfolk-pathfinder-terminal-2001",
+                "trigger_part": "e001/c001/p009.md",
+                "trigger_url": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-norfolk-ticket-line",
+                "kicker": "Story Crossroads \u2022 Tuesday, August 21, 2001, 9:48 AM \u2014 Norfolk Pathfinder Terminal",
+                "title": "Before the Walk-Up Ticket Line: Does Nolan Lock His Wheelchair Brakes or Stay Quiet?",
+                "prompt": "Inside the fluorescent-lit concourse of the Norfolk Pathfinder Terminal, twenty-six-year-old Tammy strides toward the walk-up plexiglass counter with an envelope of cash to buy two unreserved ninety-nine-dollar four-day bus tickets to Seattle\u2014without calling Pathfinder forty-eight hours ahead for a hydraulic wheelchair lift. Twenty-three-year-old Nolan Lennox's Wednesday shift at the Emerald Creek Blue Tech is twenty-nine hours away, seventeen-year-old Gwen turns eighteen in October, and Grandpa Walter's heart is failing back in Chesapeake. Every option opens a complete, coequal story route that returns Nolan home to Studio 205 and Mallory Walsh before Vaeloria.",
+                "required_choices": [],
+                "options": [
+                    {
+                        "id": "lock-wheelchair-brakes-emerald-creek",
+                        "crossroads_id": "norfolk-pathfinder-terminal-2001",
+                        "label": "Lock Both Wheelchair Brakes & Break Up in Public",
+                        "subtitle": "Snap both steel wheel locks down in front of thirty concourse witnesses, refuse Tammy's last-ditch enticement in favor of yell-free peace with Gwen, and ride three CVTA buses safely home to Grandpa Walter's porch and your spotless Blue Tech schedule.",
+                        "entry_part": "e001/c001/p010.md",
+                        "entry_url": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-locked-wheelchair-brakes-fellow-passengers-and-safe-home-to-emerald-creek",
+                        "required_choices": [],
+                        "part_count": 12,
+                        "word_count": 21192,
+                        "reading_minutes": 85,
+                        "image": "/raggiesoft-books/images/scenes/waystation/e001/e001_c001_p001_safe_home_emerald_creek_porch.jpg"
+                    },
+                    {
+                        "id": "seattle-pathfinder-exodus",
+                        "crossroads_id": "norfolk-pathfinder-terminal-2001",
+                        "label": "Freeze Under Conditioned Dread & Board the Seattle Pathfinder",
+                        "subtitle": "Stay quiet to avoid a concourse explosion and haul yourself up four steep aluminum coach steps on your matte-silver forearm crutches for a brutal ninety-six-hour coast-to-coast haul\u2014while back at Blue Tech on Wednesday night, Shift Supervisor Mallory Walsh notices your first-ever missed shift.",
+                        "entry_part": "paths/seattle-pathfinder-exodus/e001/c001/p001.md",
+                        "entry_url": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-1-ninety-nine-dollars-loose-legrests-overhead-and-crossing-bristol",
+                        "required_choices": {
+                            "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus"
+                        },
+                        "part_count": 3,
+                        "word_count": 3821,
+                        "reading_minutes": 16,
+                        "image": "/raggiesoft-books/images/covers/og/waystation.jpg"
+                    }
+                ]
+            },
+            {
+                "id": "blue-tech-missed-shift-alarm-2001",
+                "trigger_part": "paths/seattle-pathfinder-exodus/e001/c001/p003.md",
+                "trigger_url": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-3-eight-oh-five-at-the-timeclock-and-two-unspoken-guardrails",
+                "kicker": "Story Crossroads \u2022 Wednesday, August 22, 2001, 8:05 PM \u2014 Emerald Creek Blue Tech",
+                "title": "Missed Shift Number One: Does Mallory Check on Nolan Tonight or Wait Until Friday?",
+                "prompt": "As Nolan's Pathfinder coach rolls west past St. Louis after his loose overhead wheelchair legrests crash down onto Tammy's head, eight-oh-five clicks onto the Emerald Creek Blue Tech breakroom timeclock\u2014marking the first No-Call No-Show of Nolan's spotless two-year career. Quietly in love with Nolan yet bound both by respect for his relationship and by corporate HR's rule to wait until Friday's third missed shift, Computers Shift Supervisor Mallory Walsh stands beside her car four blocks from Grandpa Walter's house on Eden Way North. Both options return Nolan home to Studio 205 and Mallory before Vaeloria.",
+                "required_choices": {
+                    "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus"
+                },
+                "options": [
+                    {
+                        "id": "pasco-early-intercept",
+                        "crossroads_id": "blue-tech-missed-shift-alarm-2001",
+                        "label": "Drive Down Eden Way North Tonight & Intercept Pasco",
+                        "subtitle": "Break corporate HR's three-day waiting rule immediately on Wednesday night, uncover Tammy's cash Seattle route at Pinecrest Court with Gwen and Grandpa Walter on Thursday morning, and fly Meridian Airlines into Pasco Regional Airport to rescue Nolan minutes before Tammy leads him into the terminal restroom.",
+                        "entry_part": "paths/pasco-early-intercept/e001/c001/p001.md",
+                        "entry_url": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-1-eden-way-north-at-eight-eighteen-and-two-pre-dawn-tickets-west",
+                        "required_choices": {
+                            "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus",
+                            "blue-tech-missed-shift-alarm-2001": "pasco-early-intercept"
+                        },
+                        "part_count": 3,
+                        "word_count": 3686,
+                        "reading_minutes": 15,
+                        "image": "/raggiesoft-books/images/covers/og/waystation.jpg"
+                    },
+                    {
+                        "id": "seattle-full-exodus-rescue",
+                        "crossroads_id": "blue-tech-missed-shift-alarm-2001",
+                        "label": "Respect Workplace Boundaries & Wait Until Friday's Third No-Show",
+                        "subtitle": "Honor corporate protocol and relationship guardrails until Friday evening's automatic third-strike termination\u2014leaving feverish Nolan to endure the full haul to Seattle, Puget Sound General Hospital, grounded post-9/11 skies, and missing Gwen's eighteenth birthday while Grandpa Walter refuses to die until Gwen and Mallory bring Nolan home.",
+                        "entry_part": "paths/seattle-full-exodus-rescue/e001/c001/p001.md",
+                        "entry_url": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-1-colby-salt-lake-skin-breakdown-pasco-and-abandoned-in-seattle",
+                        "required_choices": {
+                            "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus",
+                            "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
+                        },
+                        "part_count": 3,
+                        "word_count": 3417,
+                        "reading_minutes": 14,
+                        "image": "/raggiesoft-books/images/covers/og/waystation.jpg"
+                    }
+                ]
+            },
             {
                 "id": "borderland-three-roads",
                 "trigger_part": "e001/c003/p001.md",
@@ -196,78 +280,170 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p008.md",
         "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-7-unspoken-rules-four-nights-back-upstairs-and-clean-work-polos",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-home-to-emerald-creek"
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-norfolk-ticket-line"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-home-to-emerald-creek": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-norfolk-ticket-line": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 9: Route 13, Forty-Eight Hours' Notice, and Home to Emerald Creek",
+        "title": "Part 9: Route 13, Forty-Eight Hours' Notice, and the Norfolk Ticket Line",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p009.md",
         "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-8-protected-memory-store-four-twenty-and-someone-safe-in-the-breakroom",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-seventy-five-ohms-fast-busy-lines-and-eden-way-north"
+        "noNext": true,
+        "crossroads": {
+            "id": "norfolk-pathfinder-terminal-2001",
+            "trigger_part": "e001/c001/p009.md",
+            "trigger_url": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-norfolk-ticket-line",
+            "kicker": "Story Crossroads \u2022 Tuesday, August 21, 2001, 9:48 AM \u2014 Norfolk Pathfinder Terminal",
+            "title": "Before the Walk-Up Ticket Line: Does Nolan Lock His Wheelchair Brakes or Stay Quiet?",
+            "prompt": "Inside the fluorescent-lit concourse of the Norfolk Pathfinder Terminal, twenty-six-year-old Tammy strides toward the walk-up plexiglass counter with an envelope of cash to buy two unreserved ninety-nine-dollar four-day bus tickets to Seattle\u2014without calling Pathfinder forty-eight hours ahead for a hydraulic wheelchair lift. Twenty-three-year-old Nolan Lennox's Wednesday shift at the Emerald Creek Blue Tech is twenty-nine hours away, seventeen-year-old Gwen turns eighteen in October, and Grandpa Walter's heart is failing back in Chesapeake. Every option opens a complete, coequal story route that returns Nolan home to Studio 205 and Mallory Walsh before Vaeloria.",
+            "required_choices": [],
+            "options": [
+                {
+                    "id": "lock-wheelchair-brakes-emerald-creek",
+                    "crossroads_id": "norfolk-pathfinder-terminal-2001",
+                    "label": "Lock Both Wheelchair Brakes & Break Up in Public",
+                    "subtitle": "Snap both steel wheel locks down in front of thirty concourse witnesses, refuse Tammy's last-ditch enticement in favor of yell-free peace with Gwen, and ride three CVTA buses safely home to Grandpa Walter's porch and your spotless Blue Tech schedule.",
+                    "entry_part": "e001/c001/p010.md",
+                    "entry_url": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-locked-wheelchair-brakes-fellow-passengers-and-safe-home-to-emerald-creek",
+                    "required_choices": [],
+                    "part_count": 12,
+                    "word_count": 21192,
+                    "reading_minutes": 85,
+                    "image": "/raggiesoft-books/images/scenes/waystation/e001/e001_c001_p001_safe_home_emerald_creek_porch.jpg"
+                },
+                {
+                    "id": "seattle-pathfinder-exodus",
+                    "crossroads_id": "norfolk-pathfinder-terminal-2001",
+                    "label": "Freeze Under Conditioned Dread & Board the Seattle Pathfinder",
+                    "subtitle": "Stay quiet to avoid a concourse explosion and haul yourself up four steep aluminum coach steps on your matte-silver forearm crutches for a brutal ninety-six-hour coast-to-coast haul\u2014while back at Blue Tech on Wednesday night, Shift Supervisor Mallory Walsh notices your first-ever missed shift.",
+                    "entry_part": "paths/seattle-pathfinder-exodus/e001/c001/p001.md",
+                    "entry_url": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-1-ninety-nine-dollars-loose-legrests-overhead-and-crossing-bristol",
+                    "required_choices": {
+                        "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus"
+                    },
+                    "part_count": 3,
+                    "word_count": 3821,
+                    "reading_minutes": 16,
+                    "image": "/raggiesoft-books/images/covers/og/waystation.jpg"
+                }
+            ]
+        }
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-seventy-five-ohms-fast-busy-lines-and-eden-way-north": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-locked-wheelchair-brakes-fellow-passengers-and-safe-home-to-emerald-creek": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 10: Seventy-Five Ohms, Fast-Busy Lines, and Eden Way North",
+        "title": "Part 10: Locked Wheelchair Brakes, Fellow Passengers, and Safe Home to Emerald Creek",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p010.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-home-to-emerald-creek",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-11-second-block-latin-the-german-classroom-and-holding-on-at-home"
+        "pathId": "lock-wheelchair-brakes-emerald-creek",
+        "crossroadsId": "norfolk-pathfinder-terminal-2001",
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
+        },
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-norfolk-ticket-line",
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-11-seventy-five-ohms-fast-busy-lines-and-eden-way-north"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-11-second-block-latin-the-german-classroom-and-holding-on-at-home": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-11-seventy-five-ohms-fast-busy-lines-and-eden-way-north": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 11: Second-Block Latin, the German Classroom, and Holding On at Home",
+        "title": "Part 11: Seventy-Five Ohms, Fast-Busy Lines, and Eden Way North",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p011.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-seventy-five-ohms-fast-busy-lines-and-eden-way-north",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-12-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals"
+        "pathId": "lock-wheelchair-brakes-emerald-creek",
+        "crossroadsId": "norfolk-pathfinder-terminal-2001",
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
+        },
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-locked-wheelchair-brakes-fellow-passengers-and-safe-home-to-emerald-creek",
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-12-second-block-latin-the-german-classroom-and-holding-on-at-home"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-12-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-12-second-block-latin-the-german-classroom-and-holding-on-at-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 12: Eighteen Candles, Always There for Big Brother, and Ten Raised Seals",
+        "title": "Part 12: Second-Block Latin, the German Classroom, and Holding On at Home",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p012.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-11-second-block-latin-the-german-classroom-and-holding-on-at-home",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-13-moving-into-studio-205-and-quantum-os-2000"
+        "pathId": "lock-wheelchair-brakes-emerald-creek",
+        "crossroadsId": "norfolk-pathfinder-terminal-2001",
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
+        },
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-11-seventy-five-ohms-fast-busy-lines-and-eden-way-north",
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-13-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-13-moving-into-studio-205-and-quantum-os-2000": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-13-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 13: Moving Into Studio 205 and Quantum OS 2000",
+        "title": "Part 13: Eighteen Candles, Always There for Big Brother, and Ten Raised Seals",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p013.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-12-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-14-clocking-out-together-one-car-ride-home-and-crimson-red-outside-the-lobby"
+        "pathId": "lock-wheelchair-brakes-emerald-creek",
+        "crossroadsId": "norfolk-pathfinder-terminal-2001",
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
+        },
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-12-second-block-latin-the-german-classroom-and-holding-on-at-home",
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-14-moving-into-studio-205-and-quantum-os-2000"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-14-clocking-out-together-one-car-ride-home-and-crimson-red-outside-the-lobby": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-14-moving-into-studio-205-and-quantum-os-2000": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 14: Clocking Out Together, One Car Ride Home, and Crimson Red Outside the Lobby",
+        "title": "Part 14: Moving Into Studio 205 and Quantum OS 2000",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p014.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-13-moving-into-studio-205-and-quantum-os-2000",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-15-coming-back-the-next-day-hot-cocoa-in-studio-205-and-zero-supervisor-pin"
+        "pathId": "lock-wheelchair-brakes-emerald-creek",
+        "crossroadsId": "norfolk-pathfinder-terminal-2001",
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
+        },
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-13-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals",
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-15-clocking-out-together-one-car-ride-home-and-crimson-red-outside-the-lobby"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-15-coming-back-the-next-day-hot-cocoa-in-studio-205-and-zero-supervisor-pin": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-15-clocking-out-together-one-car-ride-home-and-crimson-red-outside-the-lobby": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 15: Coming Back the Next Day, Hot Cocoa in Studio 205, and Zero Supervisor Pin",
+        "title": "Part 15: Clocking Out Together, One Car Ride Home, and Crimson Red Outside the Lobby",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p015.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-14-clocking-out-together-one-car-ride-home-and-crimson-red-outside-the-lobby",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-16-third-floor-food-court-laced-fingers-and-nothing-left-to-weaponize"
+        "pathId": "lock-wheelchair-brakes-emerald-creek",
+        "crossroadsId": "norfolk-pathfinder-terminal-2001",
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
+        },
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-14-moving-into-studio-205-and-quantum-os-2000",
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-16-coming-back-the-next-day-hot-cocoa-in-studio-205-and-zero-supervisor-pin"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-16-third-floor-food-court-laced-fingers-and-nothing-left-to-weaponize": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-16-coming-back-the-next-day-hot-cocoa-in-studio-205-and-zero-supervisor-pin": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 16: Third-Floor Food Court, Laced Fingers, and Nothing Left to Weaponize",
+        "title": "Part 16: Coming Back the Next Day, Hot Cocoa in Studio 205, and Zero Supervisor Pin",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p016.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-15-coming-back-the-next-day-hot-cocoa-in-studio-205-and-zero-supervisor-pin",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-17-eighty-nine-degrees-and-one-rattling-fan"
+        "pathId": "lock-wheelchair-brakes-emerald-creek",
+        "crossroadsId": "norfolk-pathfinder-terminal-2001",
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
+        },
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-15-clocking-out-together-one-car-ride-home-and-crimson-red-outside-the-lobby",
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-17-third-floor-food-court-laced-fingers-and-nothing-left-to-weaponize"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-17-eighty-nine-degrees-and-one-rattling-fan": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-17-third-floor-food-court-laced-fingers-and-nothing-left-to-weaponize": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 17: Eighty-Nine Degrees and One Rattling Fan",
+        "title": "Part 17: Third-Floor Food Court, Laced Fingers, and Nothing Left to Weaponize",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p017.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-16-third-floor-food-court-laced-fingers-and-nothing-left-to-weaponize",
+        "pathId": "lock-wheelchair-brakes-emerald-creek",
+        "crossroadsId": "norfolk-pathfinder-terminal-2001",
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
+        },
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-16-coming-back-the-next-day-hot-cocoa-in-studio-205-and-zero-supervisor-pin",
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-18-eighty-nine-degrees-and-one-rattling-fan"
+    },
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-18-eighty-nine-degrees-and-one-rattling-fan": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 18: Eighty-Nine Degrees and One Rattling Fan",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/p018.md",
+        "pathId": "lock-wheelchair-brakes-emerald-creek",
+        "crossroadsId": "norfolk-pathfinder-terminal-2001",
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
+        },
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-17-third-floor-food-court-laced-fingers-and-nothing-left-to-weaponize",
         "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-1-amber-glass-beside-the-full-sized-bed"
     },
     "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss": {
@@ -281,7 +457,15 @@
         "title": "Part 1: Amber Glass Beside the Full-Sized Bed",
         "theme": "raggiesoft-books",
         "filePath": "e001/c002/p001.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-17-eighty-nine-degrees-and-one-rattling-fan",
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
+        },
+        "rejoinPrevBySegment": {
+            "pasco-early-intercept": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-healed-skin-eighteen-candles-and-zero-supervisor-pin-left",
+            "seattle-full-exodus-rescue": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-crying-into-four-safe-arms-in-seattle-grandpa-s-final-watch-and-studio-205",
+            "lock-wheelchair-brakes-emerald-creek": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-18-eighty-nine-degrees-and-one-rattling-fan"
+        },
+        "prevUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-healed-skin-eighteen-candles-and-zero-supervisor-pin-left",
         "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong"
     },
     "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong": {
@@ -289,6 +473,9 @@
         "title": "Part 2: Six Inches Taller and Four Crutches Strong",
         "theme": "raggiesoft-books",
         "filePath": "e001/c002/p002.md",
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
+        },
         "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-1-amber-glass-beside-the-full-sized-bed",
         "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-3-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide"
     },
@@ -303,6 +490,9 @@
         "title": "Where the Flagstones Divide",
         "theme": "raggiesoft-books",
         "filePath": "e001/c003/p001.md",
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
+        },
         "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong",
         "noNext": true,
         "crossroads": {
@@ -362,6 +552,222 @@
             ]
         }
     },
+    "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book One: The Ninety-Nine-Dollar Pathfinder",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|seattle-pathfinder-exodus|0",
+        "pathId": "seattle-pathfinder-exodus",
+        "crossroadsId": "norfolk-pathfinder-terminal-2001"
+    },
+    "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1A: Ninety-Six Hours Westbound and Missed Shift Number One",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|seattle-pathfinder-exodus|0|0",
+        "pathId": "seattle-pathfinder-exodus",
+        "crossroadsId": "norfolk-pathfinder-terminal-2001"
+    },
+    "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-1-ninety-nine-dollars-loose-legrests-overhead-and-crossing-bristol": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Ninety-Nine Dollars, Loose Legrests Overhead, and Crossing Bristol",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/seattle-pathfinder-exodus/e001/c001/p001.md",
+        "pathId": "seattle-pathfinder-exodus",
+        "crossroadsId": "norfolk-pathfinder-terminal-2001",
+        "requiredChoices": {
+            "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus"
+        },
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-norfolk-ticket-line",
+        "nextUrl": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-2-breaking-point-in-nashville-and-falling-steel-outside-st-louis"
+    },
+    "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-2-breaking-point-in-nashville-and-falling-steel-outside-st-louis": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Breaking Point in Nashville and Falling Steel Outside St. Louis",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/seattle-pathfinder-exodus/e001/c001/p002.md",
+        "pathId": "seattle-pathfinder-exodus",
+        "crossroadsId": "norfolk-pathfinder-terminal-2001",
+        "requiredChoices": {
+            "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus"
+        },
+        "prevUrl": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-1-ninety-nine-dollars-loose-legrests-overhead-and-crossing-bristol",
+        "nextUrl": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-3-eight-oh-five-at-the-timeclock-and-two-unspoken-guardrails"
+    },
+    "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-3-eight-oh-five-at-the-timeclock-and-two-unspoken-guardrails": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Eight-Oh-Five at the Timeclock and Two Unspoken Guardrails",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/seattle-pathfinder-exodus/e001/c001/p003.md",
+        "pathId": "seattle-pathfinder-exodus",
+        "crossroadsId": "norfolk-pathfinder-terminal-2001",
+        "requiredChoices": {
+            "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus"
+        },
+        "prevUrl": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-2-breaking-point-in-nashville-and-falling-steel-outside-st-louis",
+        "noNext": true,
+        "crossroads": {
+            "id": "blue-tech-missed-shift-alarm-2001",
+            "trigger_part": "paths/seattle-pathfinder-exodus/e001/c001/p003.md",
+            "trigger_url": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-3-eight-oh-five-at-the-timeclock-and-two-unspoken-guardrails",
+            "kicker": "Story Crossroads \u2022 Wednesday, August 22, 2001, 8:05 PM \u2014 Emerald Creek Blue Tech",
+            "title": "Missed Shift Number One: Does Mallory Check on Nolan Tonight or Wait Until Friday?",
+            "prompt": "As Nolan's Pathfinder coach rolls west past St. Louis after his loose overhead wheelchair legrests crash down onto Tammy's head, eight-oh-five clicks onto the Emerald Creek Blue Tech breakroom timeclock\u2014marking the first No-Call No-Show of Nolan's spotless two-year career. Quietly in love with Nolan yet bound both by respect for his relationship and by corporate HR's rule to wait until Friday's third missed shift, Computers Shift Supervisor Mallory Walsh stands beside her car four blocks from Grandpa Walter's house on Eden Way North. Both options return Nolan home to Studio 205 and Mallory before Vaeloria.",
+            "required_choices": {
+                "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus"
+            },
+            "options": [
+                {
+                    "id": "pasco-early-intercept",
+                    "crossroads_id": "blue-tech-missed-shift-alarm-2001",
+                    "label": "Drive Down Eden Way North Tonight & Intercept Pasco",
+                    "subtitle": "Break corporate HR's three-day waiting rule immediately on Wednesday night, uncover Tammy's cash Seattle route at Pinecrest Court with Gwen and Grandpa Walter on Thursday morning, and fly Meridian Airlines into Pasco Regional Airport to rescue Nolan minutes before Tammy leads him into the terminal restroom.",
+                    "entry_part": "paths/pasco-early-intercept/e001/c001/p001.md",
+                    "entry_url": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-1-eden-way-north-at-eight-eighteen-and-two-pre-dawn-tickets-west",
+                    "required_choices": {
+                        "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus",
+                        "blue-tech-missed-shift-alarm-2001": "pasco-early-intercept"
+                    },
+                    "part_count": 3,
+                    "word_count": 3686,
+                    "reading_minutes": 15,
+                    "image": "/raggiesoft-books/images/covers/og/waystation.jpg"
+                },
+                {
+                    "id": "seattle-full-exodus-rescue",
+                    "crossroads_id": "blue-tech-missed-shift-alarm-2001",
+                    "label": "Respect Workplace Boundaries & Wait Until Friday's Third No-Show",
+                    "subtitle": "Honor corporate protocol and relationship guardrails until Friday evening's automatic third-strike termination\u2014leaving feverish Nolan to endure the full haul to Seattle, Puget Sound General Hospital, grounded post-9/11 skies, and missing Gwen's eighteenth birthday while Grandpa Walter refuses to die until Gwen and Mallory bring Nolan home.",
+                    "entry_part": "paths/seattle-full-exodus-rescue/e001/c001/p001.md",
+                    "entry_url": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-1-colby-salt-lake-skin-breakdown-pasco-and-abandoned-in-seattle",
+                    "required_choices": {
+                        "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus",
+                        "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
+                    },
+                    "part_count": 3,
+                    "word_count": 3417,
+                    "reading_minutes": 14,
+                    "image": "/raggiesoft-books/images/covers/og/waystation.jpg"
+                }
+            ]
+        }
+    },
+    "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book One: Intercept Before the Restroom",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|pasco-early-intercept|0",
+        "pathId": "pasco-early-intercept",
+        "crossroadsId": "blue-tech-missed-shift-alarm-2001"
+    },
+    "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1B: Eden Way North, US-287, and Five Minutes to Spare in Pasco",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|pasco-early-intercept|0|0",
+        "pathId": "pasco-early-intercept",
+        "crossroadsId": "blue-tech-missed-shift-alarm-2001"
+    },
+    "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-1-eden-way-north-at-eight-eighteen-and-two-pre-dawn-tickets-west": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Eden Way North at Eight-Eighteen and Two Pre-Dawn Tickets West",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/pasco-early-intercept/e001/c001/p001.md",
+        "pathId": "pasco-early-intercept",
+        "crossroadsId": "blue-tech-missed-shift-alarm-2001",
+        "requiredChoices": {
+            "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus",
+            "blue-tech-missed-shift-alarm-2001": "pasco-early-intercept"
+        },
+        "prevUrl": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-3-eight-oh-five-at-the-timeclock-and-two-unspoken-guardrails",
+        "nextUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-2-colby-truck-stop-us-287-and-crying-into-four-safe-arms-in-pasco"
+    },
+    "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-2-colby-truck-stop-us-287-and-crying-into-four-safe-arms-in-pasco": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Colby Truck Stop, US-287, and Crying Into Four Safe Arms in Pasco",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/pasco-early-intercept/e001/c001/p002.md",
+        "pathId": "pasco-early-intercept",
+        "crossroadsId": "blue-tech-missed-shift-alarm-2001",
+        "requiredChoices": {
+            "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus",
+            "blue-tech-missed-shift-alarm-2001": "pasco-early-intercept"
+        },
+        "prevUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-1-eden-way-north-at-eight-eighteen-and-two-pre-dawn-tickets-west",
+        "nextUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-healed-skin-eighteen-candles-and-zero-supervisor-pin-left"
+    },
+    "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-healed-skin-eighteen-candles-and-zero-supervisor-pin-left": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Healed Skin, Eighteen Candles, and Zero Supervisor Pin Left",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/pasco-early-intercept/e001/c001/p003.md",
+        "pathId": "pasco-early-intercept",
+        "crossroadsId": "blue-tech-missed-shift-alarm-2001",
+        "requiredChoices": {
+            "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus",
+            "blue-tech-missed-shift-alarm-2001": "pasco-early-intercept"
+        },
+        "prevUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-2-colby-truck-stop-us-287-and-crying-into-four-safe-arms-in-pasco",
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-1-amber-glass-beside-the-full-sized-bed"
+    },
+    "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Book One: Ninety-Six Hours to Puget Sound",
+        "theme": "raggiesoft-books",
+        "filePath": "__ERA_TOC__|seattle-full-exodus-rescue|0",
+        "pathId": "seattle-full-exodus-rescue",
+        "crossroadsId": "blue-tech-missed-shift-alarm-2001"
+    },
+    "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1B: Pasco, Puget Sound General, and Grandpa Walter's Promise",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|seattle-full-exodus-rescue|0|0",
+        "pathId": "seattle-full-exodus-rescue",
+        "crossroadsId": "blue-tech-missed-shift-alarm-2001"
+    },
+    "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-1-colby-salt-lake-skin-breakdown-pasco-and-abandoned-in-seattle": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Colby, Salt Lake Skin Breakdown, Pasco, and Abandoned in Seattle",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/seattle-full-exodus-rescue/e001/c001/p001.md",
+        "pathId": "seattle-full-exodus-rescue",
+        "crossroadsId": "blue-tech-missed-shift-alarm-2001",
+        "requiredChoices": {
+            "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus",
+            "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
+        },
+        "prevUrl": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-3-eight-oh-five-at-the-timeclock-and-two-unspoken-guardrails",
+        "nextUrl": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-2-puget-sound-general-grounded-skies-and-holding-on-past-october-nineteenth"
+    },
+    "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-2-puget-sound-general-grounded-skies-and-holding-on-past-october-nineteenth": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Puget Sound General, Grounded Skies, and Holding On Past October Nineteenth",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/seattle-full-exodus-rescue/e001/c001/p002.md",
+        "pathId": "seattle-full-exodus-rescue",
+        "crossroadsId": "blue-tech-missed-shift-alarm-2001",
+        "requiredChoices": {
+            "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus",
+            "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
+        },
+        "prevUrl": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-1-colby-salt-lake-skin-breakdown-pasco-and-abandoned-in-seattle",
+        "nextUrl": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-crying-into-four-safe-arms-in-seattle-grandpa-s-final-watch-and-studio-205"
+    },
+    "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-crying-into-four-safe-arms-in-seattle-grandpa-s-final-watch-and-studio-205": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 3: Crying Into Four Safe Arms in Seattle, Grandpa's Final Watch, and Studio 205",
+        "theme": "raggiesoft-books",
+        "filePath": "paths/seattle-full-exodus-rescue/e001/c001/p003.md",
+        "pathId": "seattle-full-exodus-rescue",
+        "crossroadsId": "blue-tech-missed-shift-alarm-2001",
+        "requiredChoices": {
+            "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus",
+            "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
+        },
+        "prevUrl": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-2-puget-sound-general-grounded-skies-and-holding-on-past-october-nineteenth",
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-1-amber-glass-beside-the-full-sized-bed"
+    },
     "/waystation/paths/lantern-barge-canal/book-one-beyond-the-studio-rift": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Book One: Beyond the Studio Rift",
@@ -388,6 +794,9 @@
         "requiredChoices": {
             "borderland-three-roads": "lantern-barge-canal"
         },
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
+        },
         "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-3-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
         "nextUrl": "/waystation/paths/lantern-barge-canal/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway"
     },
@@ -409,6 +818,9 @@
         "requiredChoices": {
             "borderland-three-roads": "lantern-barge-canal"
         },
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
+        },
         "prevUrl": "/waystation/paths/lantern-barge-canal/book-one-beyond-the-studio-rift/chapter-4-lanterns-on-the-glasswater/drifting-under-sapphire-glass",
         "nextUrl": "/waystation/paths/lantern-barge-canal/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-choosing-home"
     },
@@ -421,6 +833,9 @@
         "crossroadsId": "borderland-three-roads",
         "requiredChoices": {
             "borderland-three-roads": "lantern-barge-canal"
+        },
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
         "prevUrl": "/waystation/paths/lantern-barge-canal/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway",
         "noNext": true
@@ -451,6 +866,9 @@
         "requiredChoices": {
             "borderland-three-roads": "whisperwood-moss-road"
         },
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
+        },
         "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-3-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
         "nextUrl": "/waystation/paths/whisperwood-moss-road/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway"
     },
@@ -472,6 +890,9 @@
         "requiredChoices": {
             "borderland-three-roads": "whisperwood-moss-road"
         },
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
+        },
         "prevUrl": "/waystation/paths/whisperwood-moss-road/book-one-beyond-the-studio-rift/chapter-4-the-slow-footed-order-s-road/warm-springs-and-glowing-canopy",
         "nextUrl": "/waystation/paths/whisperwood-moss-road/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-choosing-home"
     },
@@ -484,6 +905,9 @@
         "crossroadsId": "borderland-three-roads",
         "requiredChoices": {
             "borderland-three-roads": "whisperwood-moss-road"
+        },
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
         "prevUrl": "/waystation/paths/whisperwood-moss-road/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway",
         "noNext": true
@@ -514,6 +938,9 @@
         "requiredChoices": {
             "borderland-three-roads": "brass-counterweight-way"
         },
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
+        },
         "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-3-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
         "nextUrl": "/waystation/paths/brass-counterweight-way/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway"
     },
@@ -535,6 +962,9 @@
         "requiredChoices": {
             "borderland-three-roads": "brass-counterweight-way"
         },
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
+        },
         "prevUrl": "/waystation/paths/brass-counterweight-way/book-one-beyond-the-studio-rift/chapter-4-above-the-painted-clouds/gondolas-of-the-amber-crags",
         "nextUrl": "/waystation/paths/brass-counterweight-way/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-choosing-home"
     },
@@ -547,6 +977,9 @@
         "crossroadsId": "borderland-three-roads",
         "requiredChoices": {
             "borderland-three-roads": "brass-counterweight-way"
+        },
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
         "prevUrl": "/waystation/paths/brass-counterweight-way/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway",
         "noNext": true

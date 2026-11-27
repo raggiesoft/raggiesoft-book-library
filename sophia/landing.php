@@ -499,7 +499,7 @@ $landingStoryArcs = is_array($toc_manifest['story_arcs'] ?? null)
                         ['href' => 'https://music.raggiesoft.com/the-stardust-engine/1996-ad-astra-single', 'label' => 'Escape Velocity (Ad Astra)', 'icon' => 'ph-rocket-launch', 'external' => true, 'primary' => true],
                         ['href' => 'https://music.raggiesoft.com/the-stardust-engine/2003-sanctuary-zero-g', 'label' => 'Sanctuary (Zero-G)', 'icon' => 'ph-vinyl-record', 'external' => true],
                         ['href' => 'https://music.raggiesoft.com/the-stardust-engine/2011-starfield-calibration', 'label' => 'Starfield Calibration', 'icon' => 'ph-vinyl-record', 'external' => true],
-                        ['href' => 'https://nebulae.raggiesoft.com', 'label' => 'Cosmic Visualizer (nebulae.raggiesoft.com)', 'icon' => 'ph-sparkle', 'external' => true],
+                        ['href' => 'https://nebulae.raggiesoft.com', 'label' => 'Cosmic Visualizer (nebulae.raggiesoft.com)', 'icon' => 'ph-planet', 'external' => true],
                     ],
                 ],
                 'fractured-prisms' => [
@@ -525,7 +525,7 @@ $landingStoryArcs = is_array($toc_manifest['story_arcs'] ?? null)
                         ['href' => 'https://music.raggiesoft.com/the-paper-wall/2003-eleventh-child-book-2', 'label' => 'The Eleventh Child, Book 2: System.Restore', 'icon' => 'ph-vinyl-record', 'external' => true],
                         ['href' => 'https://music.raggiesoft.com/the-stardust-engine/2016-live-at-the-crucible', 'label' => 'Live at the Crucible (2016)', 'icon' => 'ph-microphone-stage', 'external' => true],
                         ['href' => '/aubrie/fall-semester-2015/the-5-45-am-problem-the-birth-of-fin-home-on-geneva-street/part-3-question-the-rules-the-birth-of-fin', 'label' => 'Read "Question The Rules: The Birth of Fin#"', 'icon' => 'ph-book-open-text', 'external' => false],
-                        ['href' => 'https://finsharp.raggiesoft.dev', 'label' => 'Explore Fin# Companion Site (finsharp.raggiesoft.dev)', 'icon' => 'ph-sparkle', 'external' => true],
+                        ['href' => 'https://finsharp.raggiesoft.dev', 'label' => 'Explore Fin# Companion Site (finsharp.raggiesoft.dev)', 'icon' => 'ph-scales', 'external' => true],
                     ],
                 ],
                 'luna-leo' => [

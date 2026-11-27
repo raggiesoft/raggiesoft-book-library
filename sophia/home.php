@@ -693,7 +693,7 @@ $homeNovelEquivs = (float)($homeTotals['total_novel_equivalents'] ?? ($homeTotal
         <section id="imprint-universes" aria-labelledby="ova-collections-heading">
             <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.1rem;">
                 <h2 id="ova-collections-heading" style="font-size: 1.35rem; font-weight: 800; color: var(--rs-heading); margin: 0; display: flex; align-items: center; gap: 0.5rem;">
-                    <i class="ph-fill ph-sparkle" style="color: var(--rs-primary);"></i> Featured Showcase &amp; Collections
+                    <i class="ph-fill ph-compass" style="color: var(--rs-primary);"></i> Featured Showcase &amp; Collections
                 </h2>
                 <a href="/library" style="font-size: 0.9rem; font-weight: 700; color: var(--rs-primary); text-decoration: none;">
                     View All Volumes in the Library &rarr;
@@ -895,7 +895,7 @@ $homeNovelEquivs = (float)($homeTotals['total_novel_equivalents'] ?? ($homeTotal
         <section class="ova-pipeline-banner" aria-labelledby="ova-typesetting-heading">
             <div style="flex: 1; min-width: 260px;">
                 <h2 id="ova-typesetting-heading" style="font-size: 1.1rem; font-weight: 800; color: var(--rs-heading); margin: 0 0 0.4rem 0; display: flex; align-items: center; gap: 0.45rem;">
-                    <i class="ph-fill ph-sparkle" style="color: var(--rs-primary);"></i> Curated &amp; Typeset by the Ocean View Archives Editorial Team
+                    <i class="ph-fill ph-feather" style="color: var(--rs-primary);"></i> Curated &amp; Typeset by the Ocean View Archives Editorial Team
                 </h2>
                 <p style="font-size: 0.92rem; line-height: 1.6; color: var(--rs-text); opacity: 0.9; margin: 0;">
                     Every novel and short story in the Ocean View Archives is carefully edited, typeset, and organized into chapters, character guides, and illustrated galleries so you can explore each universe at your own pace.

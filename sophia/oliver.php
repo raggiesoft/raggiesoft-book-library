@@ -703,6 +703,16 @@ if ($specialPageType) {
 //     the current chapter defines `$config['crossroads']` or `$config['noNext']` so the reader
 //     is invited to choose their branching route at `#rs-story-crossroads`!
 $prevUrl = $config['prevUrl'] ?? null;
+// Diamond Convergence Previous-Link Resolver: When multiple Crossroads branches rejoin onto one shared chapter
+// (such as `e001/c002/p001.md`), check `$config['rejoinPrevBySegment']` against `$activeSegmentIdSet` so clicking
+// "Previous" steps straight back to the final scene of whichever branch the reader actually completed!
+if (!empty($config['rejoinPrevBySegment']) && is_array($config['rejoinPrevBySegment'])) {
+    foreach ($config['rejoinPrevBySegment'] as $candSegId => $candPrevUrl) {
+        if (!empty($activeSegmentIdSet[(string)$candSegId]) && is_string($candPrevUrl) && $candPrevUrl !== '') {
+            $prevUrl = $candPrevUrl;
+        }
+    }
+}
 $nextUrl = $config['nextUrl'] ?? null;
 $sequenceName = $routeData['common']['siteName'] ?? 'Ocean View Archives';
 
@@ -2418,7 +2428,7 @@ $oliverBookSeriesSchema = [
         ?>
         <section id="rs-companion-project-card" aria-labelledby="rs-companion-project-heading" style="margin-top: 2.75rem; padding: 1.6rem 1.8rem; border: 1px solid var(--rs-border); border-left: 5px solid var(--rs-primary); border-radius: 12px; background: var(--rs-surface); box-shadow: 0 4px 18px rgba(0,0,0,0.06);">
             <div style="font-size: 0.78rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--rs-primary); margin-bottom: 0.45rem;">
-                <i class="ph ph-sparkle" aria-hidden="true"></i> <?php echo htmlspecialchars($compKicker); ?>
+                <i class="ph ph-scales" aria-hidden="true"></i> <?php echo htmlspecialchars($compKicker); ?>
             </div>
             <h3 id="rs-companion-project-heading" style="margin: 0 0 0.5rem; font-size: 1.22rem;">
                 <?php echo htmlspecialchars($compTitle); ?>
