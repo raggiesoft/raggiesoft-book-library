@@ -14,31 +14,31 @@
         "ebook_sizes": {
             "epub": "3.5 MB",
             "pdf": "3 MB",
-            "text_epub": "84 KB",
-            "text_pdf": "223 KB",
-            "package_7z": "",
-            "epub_bytes": 3624298,
-            "pdf_bytes": 3140651,
-            "text_epub_bytes": 85890,
-            "text_pdf_bytes": 227983,
-            "package_7z_bytes": 0
+            "text_epub": "90 KB",
+            "text_pdf": "240 KB",
+            "package_7z": "64 KB",
+            "epub_bytes": 3630561,
+            "pdf_bytes": 3158820,
+            "text_epub_bytes": 92088,
+            "text_pdf_bytes": 245562,
+            "package_7z_bytes": 65374
         },
         "illustration_count": 20,
         "word_stats": {
-            "story_word_count": 28867,
-            "lore_word_count": 5584,
-            "combined_word_count": 34451,
-            "story_page_count": 105,
-            "combined_page_count": 125,
-            "reading_hours": 1.9,
-            "reading_minutes": 115,
-            "novel_equivalent": 0.3,
+            "story_word_count": 31563,
+            "lore_word_count": 5608,
+            "combined_word_count": 37171,
+            "story_page_count": 115,
+            "combined_page_count": 135,
+            "reading_hours": 2.1,
+            "reading_minutes": 126,
+            "novel_equivalent": 0.4,
             "scale_category": "Novella",
             "scale_badge": "Novella",
             "benchmark_note": "Standard contemporary novella length (17,500\u201340,000 words)",
             "era_count": 1,
             "chapter_count": 9,
-            "part_count": 20,
+            "part_count": 21,
             "illustration_count": 20,
             "story_arc_count": 0
         },
@@ -164,6 +164,14 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p004.md",
         "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-3-booth-fries-first-night-away-from-home-and-connecting-day-one",
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-5-two-direct-deposit-stubs-one-wobbly-wooden-ramp-and-moving-off-route-13"
+    },
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-5-two-direct-deposit-stubs-one-wobbly-wooden-ramp-and-moving-off-route-13": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 5: Two Direct-Deposit Stubs, One Wobbly Wooden Ramp, and Moving Off Route 13",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/p005.md",
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-4-sunday-morning-glow-big-brother-boundaries-and-straight-a-homework",
         "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-6-route-13-forty-eight-hours-notice-and-home-to-emerald-creek"
     },
     "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-6-route-13-forty-eight-hours-notice-and-home-to-emerald-creek": {
@@ -171,7 +179,7 @@
         "title": "Part 6: Route 13, Forty-Eight Hours' Notice, and Home to Emerald Creek",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p006.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-4-sunday-morning-glow-big-brother-boundaries-and-straight-a-homework",
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-5-two-direct-deposit-stubs-one-wobbly-wooden-ramp-and-moving-off-route-13",
         "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-7-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals"
     },
     "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-7-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals": {
