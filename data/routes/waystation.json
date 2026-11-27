@@ -12,26 +12,26 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "11 MB",
-            "pdf": "11.6 MB",
-            "text_epub": "171 KB",
-            "text_pdf": "431 KB",
-            "package_7z": "118 KB",
-            "epub_bytes": 11516101,
-            "pdf_bytes": 12146406,
-            "text_epub_bytes": 175187,
-            "text_pdf_bytes": 441622,
-            "package_7z_bytes": 121101
+            "epub": "11.4 MB",
+            "pdf": "12.1 MB",
+            "text_epub": "172 KB",
+            "text_pdf": "433 KB",
+            "package_7z": "119 KB",
+            "epub_bytes": 11992048,
+            "pdf_bytes": 12657566,
+            "text_epub_bytes": 175852,
+            "text_pdf_bytes": 443353,
+            "package_7z_bytes": 121588
         },
         "illustration_count": 34,
         "word_stats": {
-            "story_word_count": 58095,
-            "lore_word_count": 6323,
-            "combined_word_count": 64418,
-            "story_page_count": 211,
-            "combined_page_count": 234,
+            "story_word_count": 58307,
+            "lore_word_count": 6526,
+            "combined_word_count": 64833,
+            "story_page_count": 212,
+            "combined_page_count": 236,
             "reading_hours": 3.9,
-            "reading_minutes": 232,
+            "reading_minutes": 233,
             "novel_equivalent": 0.6,
             "scale_category": "Compact Novel",
             "scale_badge": "Compact Novel",
@@ -47,37 +47,37 @@
             {
                 "id": "norfolk-pathfinder-terminal-2001",
                 "trigger_part": "e001/c001/p009.md",
-                "trigger_url": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-norfolk-ticket-line",
-                "kicker": "Story Crossroads \u2022 Tuesday, August 21, 2001, 9:48 AM \u2014 Norfolk Pathfinder Terminal",
-                "title": "Before the Walk-Up Ticket Line: Does Nolan Lock His Wheelchair Brakes or Stay Quiet?",
-                "prompt": "Inside the fluorescent-lit concourse of the Norfolk Pathfinder Terminal, twenty-six-year-old Tammy strides toward the walk-up plexiglass counter with an envelope of cash to buy two unreserved ninety-nine-dollar four-day bus tickets to Seattle\u2014without calling Pathfinder forty-eight hours ahead for a hydraulic wheelchair lift. Twenty-three-year-old Nolan Lennox's Wednesday shift at the Emerald Creek Blue Tech is twenty-nine hours away, seventeen-year-old Gwen turns eighteen in October, and Grandpa Walter's heart is failing back in Chesapeake. Every option opens a complete, coequal story route that returns Nolan home to Studio 205 and Mallory Walsh before Vaeloria.",
+                "trigger_url": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-locker-alcove-on-monticello",
+                "kicker": "Story Crossroads \u2022 Tuesday, August 21, 2001, 9:50 AM \u2014 1961 Norfolk Pathfinder Terminal",
+                "title": "Inside the Monticello Locker Alcove: Does Nolan Reject Tammy or Believe Her Promise?",
+                "prompt": "Wheeled six feet behind the thick concrete column into the recessed steel coin-locker alcove leading to the 1961 Monticello Avenue terminal's separate Men's and Women's restrooms\u2014shielded from concourse security by the lockers, Tammy's back, and her open baby-blue cardigan wings\u2014twenty-three-year-old Nolan Lennox faces Tammy's ultimate trump card: a silent two-second flash beneath her braless shelf-bra camisole and a soft Week-One promise of zero yelling in Seattle plus a payphone call to Blue Tech in Richmond. Every option opens a complete, coequal story route returning Nolan home to Studio 205 and Mallory Walsh before Vaeloria.",
                 "required_choices": [],
                 "options": [
                     {
                         "id": "lock-wheelchair-brakes-emerald-creek",
                         "crossroads_id": "norfolk-pathfinder-terminal-2001",
-                        "label": "Lock Both Wheelchair Brakes & Break Up in Public",
-                        "subtitle": "Snap both steel wheel locks down in front of thirty concourse witnesses, refuse Tammy's last-ditch enticement in favor of yell-free peace with Gwen, and ride three CVTA buses safely home to Grandpa Walter's porch and your spotless Blue Tech schedule.",
+                        "label": "Reject Tammy's Promise & Roll Out Into the Concourse",
+                        "subtitle": "Realize peaceful, yell-free hugs with Gwen beat empty promises every time\u2014rolling straight out from behind the lockers into plain view of thirty witnesses to lock your wheelchair brakes, end things for good, and ride three CVTA buses safely home to Emerald Creek.",
                         "entry_part": "e001/c001/p010.md",
-                        "entry_url": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-locked-wheelchair-brakes-fellow-passengers-and-safe-home-to-emerald-creek",
+                        "entry_url": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-rolling-out-past-the-lockers-fellow-passengers-and-safe-home-to-emerald-creek",
                         "required_choices": [],
                         "part_count": 12,
-                        "word_count": 21252,
-                        "reading_minutes": 86,
+                        "word_count": 21021,
+                        "reading_minutes": 85,
                         "image": "/raggiesoft-books/images/scenes/waystation/e001/e001_c001_p001_safe_home_emerald_creek_porch.jpg"
                     },
                     {
                         "id": "seattle-pathfinder-exodus",
                         "crossroads_id": "norfolk-pathfinder-terminal-2001",
-                        "label": "Freeze Under Conditioned Dread & Board the Seattle Pathfinder",
-                        "subtitle": "Stay quiet to avoid a concourse explosion and haul yourself up four steep aluminum coach steps on your matte-silver forearm crutches for a brutal ninety-six-hour coast-to-coast haul\u2014while back at Blue Tech on Wednesday night, Shift Supervisor Mallory Walsh notices your first-ever missed shift.",
+                        "label": "Believe Tammy's Promise & Board the Seattle Pathfinder",
+                        "subtitle": "Take Tammy's velvet Week-One promise and Richmond payphone assurance literally\u2014watching the mask snap shut the instant she buys the ninety-nine-dollar tickets and makes you climb four steep coach steps on your forearm crutches while Shift Supervisor Mallory Walsh notices your first missed shift back at Blue Tech.",
                         "entry_part": "paths/seattle-pathfinder-exodus/e001/c001/p001.md",
                         "entry_url": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-1-ninety-nine-dollars-loose-legrests-overhead-and-crossing-bristol",
                         "required_choices": {
                             "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus"
                         },
                         "part_count": 3,
-                        "word_count": 3821,
+                        "word_count": 3879,
                         "reading_minutes": 16,
                         "image": "/raggiesoft-books/images/scenes/waystation/paths/exodus_p001_norfolk_bay4_boarding.jpg"
                     }
@@ -280,11 +280,11 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p008.md",
         "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-7-unspoken-rules-four-nights-back-upstairs-and-clean-work-polos",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-norfolk-ticket-line"
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-locker-alcove-on-monticello"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-norfolk-ticket-line": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-locker-alcove-on-monticello": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 9: Route 13, Forty-Eight Hours' Notice, and the Norfolk Ticket Line",
+        "title": "Part 9: Route 13, Forty-Eight Hours' Notice, and the Locker Alcove on Monticello",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p009.md",
         "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-8-protected-memory-store-four-twenty-and-someone-safe-in-the-breakroom",
@@ -292,46 +292,46 @@
         "crossroads": {
             "id": "norfolk-pathfinder-terminal-2001",
             "trigger_part": "e001/c001/p009.md",
-            "trigger_url": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-norfolk-ticket-line",
-            "kicker": "Story Crossroads \u2022 Tuesday, August 21, 2001, 9:48 AM \u2014 Norfolk Pathfinder Terminal",
-            "title": "Before the Walk-Up Ticket Line: Does Nolan Lock His Wheelchair Brakes or Stay Quiet?",
-            "prompt": "Inside the fluorescent-lit concourse of the Norfolk Pathfinder Terminal, twenty-six-year-old Tammy strides toward the walk-up plexiglass counter with an envelope of cash to buy two unreserved ninety-nine-dollar four-day bus tickets to Seattle\u2014without calling Pathfinder forty-eight hours ahead for a hydraulic wheelchair lift. Twenty-three-year-old Nolan Lennox's Wednesday shift at the Emerald Creek Blue Tech is twenty-nine hours away, seventeen-year-old Gwen turns eighteen in October, and Grandpa Walter's heart is failing back in Chesapeake. Every option opens a complete, coequal story route that returns Nolan home to Studio 205 and Mallory Walsh before Vaeloria.",
+            "trigger_url": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-locker-alcove-on-monticello",
+            "kicker": "Story Crossroads \u2022 Tuesday, August 21, 2001, 9:50 AM \u2014 1961 Norfolk Pathfinder Terminal",
+            "title": "Inside the Monticello Locker Alcove: Does Nolan Reject Tammy or Believe Her Promise?",
+            "prompt": "Wheeled six feet behind the thick concrete column into the recessed steel coin-locker alcove leading to the 1961 Monticello Avenue terminal's separate Men's and Women's restrooms\u2014shielded from concourse security by the lockers, Tammy's back, and her open baby-blue cardigan wings\u2014twenty-three-year-old Nolan Lennox faces Tammy's ultimate trump card: a silent two-second flash beneath her braless shelf-bra camisole and a soft Week-One promise of zero yelling in Seattle plus a payphone call to Blue Tech in Richmond. Every option opens a complete, coequal story route returning Nolan home to Studio 205 and Mallory Walsh before Vaeloria.",
             "required_choices": [],
             "options": [
                 {
                     "id": "lock-wheelchair-brakes-emerald-creek",
                     "crossroads_id": "norfolk-pathfinder-terminal-2001",
-                    "label": "Lock Both Wheelchair Brakes & Break Up in Public",
-                    "subtitle": "Snap both steel wheel locks down in front of thirty concourse witnesses, refuse Tammy's last-ditch enticement in favor of yell-free peace with Gwen, and ride three CVTA buses safely home to Grandpa Walter's porch and your spotless Blue Tech schedule.",
+                    "label": "Reject Tammy's Promise & Roll Out Into the Concourse",
+                    "subtitle": "Realize peaceful, yell-free hugs with Gwen beat empty promises every time\u2014rolling straight out from behind the lockers into plain view of thirty witnesses to lock your wheelchair brakes, end things for good, and ride three CVTA buses safely home to Emerald Creek.",
                     "entry_part": "e001/c001/p010.md",
-                    "entry_url": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-locked-wheelchair-brakes-fellow-passengers-and-safe-home-to-emerald-creek",
+                    "entry_url": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-rolling-out-past-the-lockers-fellow-passengers-and-safe-home-to-emerald-creek",
                     "required_choices": [],
                     "part_count": 12,
-                    "word_count": 21252,
-                    "reading_minutes": 86,
+                    "word_count": 21021,
+                    "reading_minutes": 85,
                     "image": "/raggiesoft-books/images/scenes/waystation/e001/e001_c001_p001_safe_home_emerald_creek_porch.jpg"
                 },
                 {
                     "id": "seattle-pathfinder-exodus",
                     "crossroads_id": "norfolk-pathfinder-terminal-2001",
-                    "label": "Freeze Under Conditioned Dread & Board the Seattle Pathfinder",
-                    "subtitle": "Stay quiet to avoid a concourse explosion and haul yourself up four steep aluminum coach steps on your matte-silver forearm crutches for a brutal ninety-six-hour coast-to-coast haul\u2014while back at Blue Tech on Wednesday night, Shift Supervisor Mallory Walsh notices your first-ever missed shift.",
+                    "label": "Believe Tammy's Promise & Board the Seattle Pathfinder",
+                    "subtitle": "Take Tammy's velvet Week-One promise and Richmond payphone assurance literally\u2014watching the mask snap shut the instant she buys the ninety-nine-dollar tickets and makes you climb four steep coach steps on your forearm crutches while Shift Supervisor Mallory Walsh notices your first missed shift back at Blue Tech.",
                     "entry_part": "paths/seattle-pathfinder-exodus/e001/c001/p001.md",
                     "entry_url": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-1-ninety-nine-dollars-loose-legrests-overhead-and-crossing-bristol",
                     "required_choices": {
                         "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus"
                     },
                     "part_count": 3,
-                    "word_count": 3821,
+                    "word_count": 3879,
                     "reading_minutes": 16,
                     "image": "/raggiesoft-books/images/scenes/waystation/paths/exodus_p001_norfolk_bay4_boarding.jpg"
                 }
             ]
         }
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-locked-wheelchair-brakes-fellow-passengers-and-safe-home-to-emerald-creek": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-rolling-out-past-the-lockers-fellow-passengers-and-safe-home-to-emerald-creek": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 10: Locked Wheelchair Brakes, Fellow Passengers, and Safe Home to Emerald Creek",
+        "title": "Part 10: Rolling Out Past the Lockers, Fellow Passengers, and Safe Home to Emerald Creek",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p010.md",
         "pathId": "lock-wheelchair-brakes-emerald-creek",
@@ -339,7 +339,7 @@
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-norfolk-ticket-line",
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-locker-alcove-on-monticello",
         "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-11-seventy-five-ohms-fast-busy-lines-and-eden-way-north"
     },
     "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-11-seventy-five-ohms-fast-busy-lines-and-eden-way-north": {
@@ -352,7 +352,7 @@
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-locked-wheelchair-brakes-fellow-passengers-and-safe-home-to-emerald-creek",
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-rolling-out-past-the-lockers-fellow-passengers-and-safe-home-to-emerald-creek",
         "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-12-second-block-latin-the-german-classroom-and-holding-on-at-home"
     },
     "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-12-second-block-latin-the-german-classroom-and-holding-on-at-home": {
@@ -578,7 +578,7 @@
         "requiredChoices": {
             "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus"
         },
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-norfolk-ticket-line",
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-locker-alcove-on-monticello",
         "nextUrl": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-2-breaking-point-in-nashville-and-falling-steel-outside-st-louis"
     },
     "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-2-breaking-point-in-nashville-and-falling-steel-outside-st-louis": {
