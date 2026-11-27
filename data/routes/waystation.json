@@ -14,24 +14,24 @@
         "ebook_sizes": {
             "epub": "4.3 MB",
             "pdf": "3.9 MB",
-            "text_epub": "170 KB",
-            "text_pdf": "428 KB",
-            "package_7z": "",
-            "epub_bytes": 4480742,
-            "pdf_bytes": 4122122,
-            "text_epub_bytes": 173908,
-            "text_pdf_bytes": 437847,
-            "package_7z_bytes": 0
+            "text_epub": "171 KB",
+            "text_pdf": "431 KB",
+            "package_7z": "117 KB",
+            "epub_bytes": 4482026,
+            "pdf_bytes": 4125685,
+            "text_epub_bytes": 175190,
+            "text_pdf_bytes": 441622,
+            "package_7z_bytes": 119299
         },
         "illustration_count": 24,
         "word_stats": {
-            "story_word_count": 57536,
-            "lore_word_count": 6175,
-            "combined_word_count": 63711,
-            "story_page_count": 209,
-            "combined_page_count": 232,
-            "reading_hours": 3.8,
-            "reading_minutes": 230,
+            "story_word_count": 58095,
+            "lore_word_count": 6323,
+            "combined_word_count": 64418,
+            "story_page_count": 211,
+            "combined_page_count": 234,
+            "reading_hours": 3.9,
+            "reading_minutes": 232,
             "novel_equivalent": 0.6,
             "scale_category": "Compact Novel",
             "scale_badge": "Compact Novel",
@@ -62,8 +62,8 @@
                         "entry_url": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-locked-wheelchair-brakes-fellow-passengers-and-safe-home-to-emerald-creek",
                         "required_choices": [],
                         "part_count": 12,
-                        "word_count": 21192,
-                        "reading_minutes": 85,
+                        "word_count": 21252,
+                        "reading_minutes": 86,
                         "image": "/raggiesoft-books/images/scenes/waystation/e001/e001_c001_p001_safe_home_emerald_creek_porch.jpg"
                     },
                     {
@@ -106,8 +106,8 @@
                             "blue-tech-missed-shift-alarm-2001": "pasco-early-intercept"
                         },
                         "part_count": 3,
-                        "word_count": 3686,
-                        "reading_minutes": 15,
+                        "word_count": 4040,
+                        "reading_minutes": 17,
                         "image": "/raggiesoft-books/images/covers/og/waystation.jpg"
                     },
                     {
@@ -122,8 +122,8 @@
                             "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
                         },
                         "part_count": 3,
-                        "word_count": 3417,
-                        "reading_minutes": 14,
+                        "word_count": 3562,
+                        "reading_minutes": 15,
                         "image": "/raggiesoft-books/images/covers/og/waystation.jpg"
                     }
                 ]
@@ -307,8 +307,8 @@
                     "entry_url": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-locked-wheelchair-brakes-fellow-passengers-and-safe-home-to-emerald-creek",
                     "required_choices": [],
                     "part_count": 12,
-                    "word_count": 21192,
-                    "reading_minutes": 85,
+                    "word_count": 21252,
+                    "reading_minutes": 86,
                     "image": "/raggiesoft-books/images/scenes/waystation/e001/e001_c001_p001_safe_home_emerald_creek_porch.jpg"
                 },
                 {
@@ -461,11 +461,11 @@
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
         "rejoinPrevBySegment": {
-            "pasco-early-intercept": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-healed-skin-eighteen-candles-and-zero-supervisor-pin-left",
+            "pasco-early-intercept": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-empty-work-polos-ray-s-personal-number-and-home-in-studio-205",
             "seattle-full-exodus-rescue": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-crying-into-four-safe-arms-in-seattle-grandpa-s-final-watch-and-studio-205",
             "lock-wheelchair-brakes-emerald-creek": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-18-eighty-nine-degrees-and-one-rattling-fan"
         },
-        "prevUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-healed-skin-eighteen-candles-and-zero-supervisor-pin-left",
+        "prevUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-empty-work-polos-ray-s-personal-number-and-home-in-studio-205",
         "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong"
     },
     "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong": {
@@ -629,8 +629,8 @@
                         "blue-tech-missed-shift-alarm-2001": "pasco-early-intercept"
                     },
                     "part_count": 3,
-                    "word_count": 3686,
-                    "reading_minutes": 15,
+                    "word_count": 4040,
+                    "reading_minutes": 17,
                     "image": "/raggiesoft-books/images/covers/og/waystation.jpg"
                 },
                 {
@@ -645,8 +645,8 @@
                         "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
                     },
                     "part_count": 3,
-                    "word_count": 3417,
-                    "reading_minutes": 14,
+                    "word_count": 3562,
+                    "reading_minutes": 15,
                     "image": "/raggiesoft-books/images/covers/og/waystation.jpg"
                 }
             ]
@@ -694,11 +694,11 @@
             "blue-tech-missed-shift-alarm-2001": "pasco-early-intercept"
         },
         "prevUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-1-eden-way-north-at-eight-eighteen-and-two-pre-dawn-tickets-west",
-        "nextUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-healed-skin-eighteen-candles-and-zero-supervisor-pin-left"
+        "nextUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-empty-work-polos-ray-s-personal-number-and-home-in-studio-205"
     },
-    "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-healed-skin-eighteen-candles-and-zero-supervisor-pin-left": {
+    "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-empty-work-polos-ray-s-personal-number-and-home-in-studio-205": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Healed Skin, Eighteen Candles, and Zero Supervisor Pin Left",
+        "title": "Part 3: Empty Work Polos, Ray's Personal Number, and Home in Studio 205",
         "theme": "raggiesoft-books",
         "filePath": "paths/pasco-early-intercept/e001/c001/p003.md",
         "pathId": "pasco-early-intercept",
