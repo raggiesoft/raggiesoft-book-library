@@ -13,32 +13,32 @@
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
             "epub": "3.7 MB",
-            "pdf": "3.2 MB",
-            "text_epub": "90 KB",
-            "text_pdf": "240 KB",
-            "package_7z": "64 KB",
-            "epub_bytes": 3871093,
-            "pdf_bytes": 3399968,
-            "text_epub_bytes": 92288,
-            "text_pdf_bytes": 245961,
-            "package_7z_bytes": 65753
+            "pdf": "3.3 MB",
+            "text_epub": "101 KB",
+            "text_pdf": "268 KB",
+            "package_7z": "73 KB",
+            "epub_bytes": 3881841,
+            "pdf_bytes": 3428855,
+            "text_epub_bytes": 103056,
+            "text_pdf_bytes": 274843,
+            "package_7z_bytes": 74402
         },
         "illustration_count": 21,
         "word_stats": {
-            "story_word_count": 31645,
-            "lore_word_count": 6793,
-            "combined_word_count": 38438,
-            "story_page_count": 115,
-            "combined_page_count": 140,
-            "reading_hours": 2.1,
-            "reading_minutes": 127,
+            "story_word_count": 35958,
+            "lore_word_count": 7504,
+            "combined_word_count": 43462,
+            "story_page_count": 131,
+            "combined_page_count": 158,
+            "reading_hours": 2.4,
+            "reading_minutes": 144,
             "novel_equivalent": 0.4,
             "scale_category": "Novella",
             "scale_badge": "Novella",
             "benchmark_note": "Standard contemporary novella length (17,500\u201340,000 words)",
             "era_count": 1,
             "chapter_count": 9,
-            "part_count": 21,
+            "part_count": 23,
             "illustration_count": 21,
             "story_arc_count": 0
         },
@@ -180,30 +180,46 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p006.md",
         "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-5-two-direct-deposit-stubs-one-wobbly-wooden-ramp-and-moving-off-route-13",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-7-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals"
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-7-seventy-five-ohms-fast-busy-lines-and-eden-way-north"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-7-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-7-seventy-five-ohms-fast-busy-lines-and-eden-way-north": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 7: Eighteen Candles, Always There for Big Brother, and Ten Raised Seals",
+        "title": "Part 7: Seventy-Five Ohms, Fast-Busy Lines, and Eden Way North",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p007.md",
         "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-6-route-13-forty-eight-hours-notice-and-home-to-emerald-creek",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-8-moving-into-a-rectangular-box-and-quantum-os-2000"
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-8-second-block-latin-the-german-classroom-and-holding-on-at-home"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-8-moving-into-a-rectangular-box-and-quantum-os-2000": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-8-second-block-latin-the-german-classroom-and-holding-on-at-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 8: Moving Into a Rectangular Box and Quantum OS 2000",
+        "title": "Part 8: Second-Block Latin, the German Classroom, and Holding On at Home",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p008.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-7-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-eighty-nine-degrees-and-one-rattling-fan"
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-7-seventy-five-ohms-fast-busy-lines-and-eden-way-north",
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-eighty-nine-degrees-and-one-rattling-fan": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 9: Eighty-Nine Degrees and One Rattling Fan",
+        "title": "Part 9: Eighteen Candles, Always There for Big Brother, and Ten Raised Seals",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p009.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-8-moving-into-a-rectangular-box-and-quantum-os-2000",
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-8-second-block-latin-the-german-classroom-and-holding-on-at-home",
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-moving-into-a-rectangular-box-and-quantum-os-2000"
+    },
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-moving-into-a-rectangular-box-and-quantum-os-2000": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 10: Moving Into a Rectangular Box and Quantum OS 2000",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/p010.md",
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals",
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-11-eighty-nine-degrees-and-one-rattling-fan"
+    },
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-11-eighty-nine-degrees-and-one-rattling-fan": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 11: Eighty-Nine Degrees and One Rattling Fan",
+        "theme": "raggiesoft-books",
+        "filePath": "e001/c001/p011.md",
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-moving-into-a-rectangular-box-and-quantum-os-2000",
         "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-1-amber-glass-beside-the-full-sized-bed"
     },
     "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss": {
@@ -217,7 +233,7 @@
         "title": "Part 1: Amber Glass Beside the Full-Sized Bed",
         "theme": "raggiesoft-books",
         "filePath": "e001/c002/p001.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-eighty-nine-degrees-and-one-rattling-fan",
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-11-eighty-nine-degrees-and-one-rattling-fan",
         "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong"
     },
     "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong": {

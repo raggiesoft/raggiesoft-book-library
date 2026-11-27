@@ -1,23 +1,23 @@
 {
-    "generated_at": "2026-11-27T02:55:30+00:00",
+    "generated_at": "2026-11-27T03:35:00+00:00",
     "volume_count": 34,
     "active_story_volume_count": 31,
     "total_eras": 206,
     "total_chapters": 862,
-    "total_parts": 1513,
+    "total_parts": 1515,
     "total_illustrations": 427,
-    "total_story_words": 3491693,
-    "total_book_lore_words": 477899,
+    "total_story_words": 3496006,
+    "total_book_lore_words": 478610,
     "total_shared_universe_lore_words": 170366,
-    "total_curated_lore_words": 648265,
+    "total_curated_lore_words": 648976,
     "total_lyrics_words": 143384,
-    "total_combined_words": 4139958,
-    "total_combined_with_lyrics_words": 4283342,
-    "total_story_pages": 12697,
-    "total_combined_pages": 15054,
-    "total_reading_hours": 232.8,
+    "total_combined_words": 4144982,
+    "total_combined_with_lyrics_words": 4288366,
+    "total_story_pages": 12713,
+    "total_combined_pages": 15073,
+    "total_reading_hours": 233.1,
     "total_novel_equivalents": 38.8,
-    "total_combined_novel_equivalents": 46,
+    "total_combined_novel_equivalents": 46.1,
     "shared_lore_breakdown": [
         {
             "label": "Universal Lore Archive (CPI, Transit, Cities & Institutions)",
@@ -60,7 +60,7 @@
                 "pdf_bytes": 84144768,
                 "text_epub_bytes": 1167231,
                 "text_pdf_bytes": 3253696,
-                "package_7z_bytes": 810562
+                "package_7z_bytes": 810553
             },
             "word_stats": {
                 "story_word_count": 498537,
@@ -96,7 +96,7 @@
                 "pdf_bytes": 57382276,
                 "text_epub_bytes": 1005458,
                 "text_pdf_bytes": 5143922,
-                "package_7z_bytes": 726219
+                "package_7z_bytes": 726223
             },
             "word_stats": {
                 "story_word_count": 413346,
@@ -132,7 +132,7 @@
                 "pdf_bytes": 12128206,
                 "text_epub_bytes": 784837,
                 "text_pdf_bytes": 2322074,
-                "package_7z_bytes": 561945
+                "package_7z_bytes": 561961
             },
             "word_stats": {
                 "story_word_count": 331287,
@@ -168,7 +168,7 @@
                 "pdf_bytes": 63776237,
                 "text_epub_bytes": 749169,
                 "text_pdf_bytes": 2041658,
-                "package_7z_bytes": 565969
+                "package_7z_bytes": 565989
             },
             "word_stats": {
                 "story_word_count": 304107,
@@ -204,7 +204,7 @@
                 "pdf_bytes": 1800496,
                 "text_epub_bytes": 671779,
                 "text_pdf_bytes": 1800496,
-                "package_7z_bytes": 463274
+                "package_7z_bytes": 463272
             },
             "word_stats": {
                 "story_word_count": 275128,
@@ -240,7 +240,7 @@
                 "pdf_bytes": 1745890,
                 "text_epub_bytes": 602943,
                 "text_pdf_bytes": 1745890,
-                "package_7z_bytes": 422466
+                "package_7z_bytes": 422462
             },
             "word_stats": {
                 "story_word_count": 258944,
@@ -276,7 +276,7 @@
                 "pdf_bytes": 1444112,
                 "text_epub_bytes": 507232,
                 "text_pdf_bytes": 1444112,
-                "package_7z_bytes": 370543
+                "package_7z_bytes": 370539
             },
             "word_stats": {
                 "story_word_count": 214359,
@@ -312,7 +312,7 @@
                 "pdf_bytes": 1267260,
                 "text_epub_bytes": 454631,
                 "text_pdf_bytes": 1267260,
-                "package_7z_bytes": 328500
+                "package_7z_bytes": 328505
             },
             "word_stats": {
                 "story_word_count": 187252,
@@ -348,7 +348,7 @@
                 "pdf_bytes": 5056887,
                 "text_epub_bytes": 407396,
                 "text_pdf_bytes": 1261828,
-                "package_7z_bytes": 304951
+                "package_7z_bytes": 304956
             },
             "word_stats": {
                 "story_word_count": 169221,
@@ -384,7 +384,7 @@
                 "pdf_bytes": 858099,
                 "text_epub_bytes": 301655,
                 "text_pdf_bytes": 858099,
-                "package_7z_bytes": 228941
+                "package_7z_bytes": 228938
             },
             "word_stats": {
                 "story_word_count": 132594,
@@ -420,7 +420,7 @@
                 "pdf_bytes": 663662,
                 "text_epub_bytes": 237663,
                 "text_pdf_bytes": 663662,
-                "package_7z_bytes": 172189
+                "package_7z_bytes": 172190
             },
             "word_stats": {
                 "story_word_count": 94123,
@@ -456,7 +456,7 @@
                 "pdf_bytes": 3367309,
                 "text_epub_bytes": 189412,
                 "text_pdf_bytes": 3367313,
-                "package_7z_bytes": 144814
+                "package_7z_bytes": 144815
             },
             "word_stats": {
                 "story_word_count": 81433,
@@ -528,7 +528,7 @@
                 "pdf_bytes": 19649366,
                 "text_epub_bytes": 184771,
                 "text_pdf_bytes": 533476,
-                "package_7z_bytes": 142468
+                "package_7z_bytes": 142469
             },
             "word_stats": {
                 "story_word_count": 65187,
@@ -564,7 +564,7 @@
                 "pdf_bytes": 400644,
                 "text_epub_bytes": 140576,
                 "text_pdf_bytes": 400644,
-                "package_7z_bytes": 111930
+                "package_7z_bytes": 111947
             },
             "word_stats": {
                 "story_word_count": 57383,
@@ -586,6 +586,42 @@
             }
         },
         {
+            "slug": "waystation",
+            "title": "The Uncharted Waystation",
+            "image": "/raggiesoft-books/images/covers/2x3/waystation.jpg",
+            "short_description": "Pulled barefoot from their tiny studio bed into Vaeloria, Nolan (24) and Gwen (19) journey toward home.",
+            "ebook_sizes": {
+                "epub": "3.7 MB",
+                "pdf": "3.2 MB",
+                "text_epub": "90 KB",
+                "text_pdf": "240 KB",
+                "package_7z": "73 KB",
+                "epub_bytes": 3871093,
+                "pdf_bytes": 3399968,
+                "text_epub_bytes": 92288,
+                "text_pdf_bytes": 245961,
+                "package_7z_bytes": 74402
+            },
+            "word_stats": {
+                "story_word_count": 35958,
+                "lore_word_count": 7504,
+                "combined_word_count": 43462,
+                "story_page_count": 131,
+                "combined_page_count": 158,
+                "reading_hours": 2.4,
+                "reading_minutes": 144,
+                "novel_equivalent": 0.4,
+                "scale_category": "Novella",
+                "scale_badge": "Novella",
+                "benchmark_note": "Standard contemporary novella length (17,500–40,000 words)",
+                "era_count": 1,
+                "chapter_count": 9,
+                "part_count": 23,
+                "illustration_count": 21,
+                "story_arc_count": 0
+            }
+        },
+        {
             "slug": "quantum-directive-1-jessica",
             "title": "The Quantum Directive: Jessica's Cut",
             "image": "/raggiesoft-books/images/covers/2x3/quantum-directive-1-jessica.jpg",
@@ -600,7 +636,7 @@
                 "pdf_bytes": 256466,
                 "text_epub_bytes": 87037,
                 "text_pdf_bytes": 256466,
-                "package_7z_bytes": 70738
+                "package_7z_bytes": 70733
             },
             "word_stats": {
                 "story_word_count": 34948,
@@ -636,7 +672,7 @@
                 "pdf_bytes": 235362,
                 "text_epub_bytes": 85571,
                 "text_pdf_bytes": 235362,
-                "package_7z_bytes": 63721
+                "package_7z_bytes": 63715
             },
             "word_stats": {
                 "story_word_count": 33772,
@@ -672,7 +708,7 @@
                 "pdf_bytes": 241676,
                 "text_epub_bytes": 84450,
                 "text_pdf_bytes": 241676,
-                "package_7z_bytes": 68194
+                "package_7z_bytes": 68195
             },
             "word_stats": {
                 "story_word_count": 32393,
@@ -694,42 +730,6 @@
             }
         },
         {
-            "slug": "waystation",
-            "title": "The Uncharted Waystation",
-            "image": "/raggiesoft-books/images/covers/2x3/waystation.jpg",
-            "short_description": "Pulled barefoot from their tiny studio bed into Vaeloria, Nolan (24) and Gwen (19) journey toward home.",
-            "ebook_sizes": {
-                "epub": "3.7 MB",
-                "pdf": "3.2 MB",
-                "text_epub": "90 KB",
-                "text_pdf": "240 KB",
-                "package_7z": "64 KB",
-                "epub_bytes": 3870899,
-                "pdf_bytes": 3399493,
-                "text_epub_bytes": 92093,
-                "text_pdf_bytes": 245569,
-                "package_7z_bytes": 65753
-            },
-            "word_stats": {
-                "story_word_count": 31645,
-                "lore_word_count": 6793,
-                "combined_word_count": 38438,
-                "story_page_count": 115,
-                "combined_page_count": 140,
-                "reading_hours": 2.1,
-                "reading_minutes": 127,
-                "novel_equivalent": 0.4,
-                "scale_category": "Novella",
-                "scale_badge": "Novella",
-                "benchmark_note": "Standard contemporary novella length (17,500–40,000 words)",
-                "era_count": 1,
-                "chapter_count": 9,
-                "part_count": 21,
-                "illustration_count": 21,
-                "story_arc_count": 0
-            }
-        },
-        {
             "slug": "quantum-directive-2-kelly",
             "title": "The Quantum Directive: Kelly's Cut",
             "image": "/raggiesoft-books/images/covers/2x3/quantum-directive-2-kelly.jpg",
@@ -744,7 +744,7 @@
                 "pdf_bytes": 5511079,
                 "text_epub_bytes": 79016,
                 "text_pdf_bytes": 5511079,
-                "package_7z_bytes": 61360
+                "package_7z_bytes": 61365
             },
             "word_stats": {
                 "story_word_count": 30410,
@@ -888,7 +888,7 @@
                 "pdf_bytes": 187632,
                 "text_epub_bytes": 66115,
                 "text_pdf_bytes": 187632,
-                "package_7z_bytes": 50595
+                "package_7z_bytes": 50600
             },
             "word_stats": {
                 "story_word_count": 25118,
@@ -924,7 +924,7 @@
                 "pdf_bytes": 21143357,
                 "text_epub_bytes": 55608,
                 "text_pdf_bytes": 168226,
-                "package_7z_bytes": 45144
+                "package_7z_bytes": 45138
             },
             "word_stats": {
                 "story_word_count": 20942,
@@ -960,7 +960,7 @@
                 "pdf_bytes": 121729,
                 "text_epub_bytes": 41112,
                 "text_pdf_bytes": 121729,
-                "package_7z_bytes": 32519
+                "package_7z_bytes": 32517
             },
             "word_stats": {
                 "story_word_count": 15245,
@@ -996,7 +996,7 @@
                 "pdf_bytes": 41824,
                 "text_epub_bytes": 14621,
                 "text_pdf_bytes": 41824,
-                "package_7z_bytes": 35550
+                "package_7z_bytes": 35547
             },
             "word_stats": {
                 "story_word_count": 14030,
@@ -1032,7 +1032,7 @@
                 "pdf_bytes": 1181987,
                 "text_epub_bytes": 31203,
                 "text_pdf_bytes": 77363,
-                "package_7z_bytes": 20932
+                "package_7z_bytes": 20939
             },
             "word_stats": {
                 "story_word_count": 7149,
@@ -1068,7 +1068,7 @@
                 "pdf_bytes": 73850,
                 "text_epub_bytes": 20271,
                 "text_pdf_bytes": 73850,
-                "package_7z_bytes": 15261
+                "package_7z_bytes": 15262
             },
             "word_stats": {
                 "story_word_count": 5538,
@@ -1104,7 +1104,7 @@
                 "pdf_bytes": 785826,
                 "text_epub_bytes": 15393,
                 "text_pdf_bytes": 47154,
-                "package_7z_bytes": 13887
+                "package_7z_bytes": 13886
             },
             "word_stats": {
                 "story_word_count": 3489,
@@ -1171,12 +1171,12 @@
                 "pdf": "3.2 KB",
                 "text_epub": "5.3 KB",
                 "text_pdf": "3.2 KB",
-                "package_7z": "938 B",
+                "package_7z": "937 B",
                 "epub_bytes": 5409,
                 "pdf_bytes": 3262,
                 "text_epub_bytes": 5410,
                 "text_pdf_bytes": 3262,
-                "package_7z_bytes": 938
+                "package_7z_bytes": 937
             },
             "word_stats": {
                 "story_word_count": 0,
@@ -1212,7 +1212,7 @@
                 "pdf_bytes": 3540,
                 "text_epub_bytes": 5403,
                 "text_pdf_bytes": 3540,
-                "package_7z_bytes": 1207
+                "package_7z_bytes": 1206
             },
             "word_stats": {
                 "story_word_count": 0,
@@ -1248,7 +1248,7 @@
                 "pdf_bytes": 3759,
                 "text_epub_bytes": 5425,
                 "text_pdf_bytes": 3759,
-                "package_7z_bytes": 2031
+                "package_7z_bytes": 2030
             },
             "word_stats": {
                 "story_word_count": 0,
