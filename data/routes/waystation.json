@@ -12,18 +12,18 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "4.3 MB",
-            "pdf": "3.9 MB",
+            "epub": "11 MB",
+            "pdf": "11.6 MB",
             "text_epub": "171 KB",
             "text_pdf": "431 KB",
-            "package_7z": "117 KB",
-            "epub_bytes": 4482026,
-            "pdf_bytes": 4125685,
-            "text_epub_bytes": 175190,
+            "package_7z": "118 KB",
+            "epub_bytes": 11516101,
+            "pdf_bytes": 12146406,
+            "text_epub_bytes": 175187,
             "text_pdf_bytes": 441622,
-            "package_7z_bytes": 119299
+            "package_7z_bytes": 121101
         },
-        "illustration_count": 24,
+        "illustration_count": 34,
         "word_stats": {
             "story_word_count": 58095,
             "lore_word_count": 6323,
@@ -39,7 +39,7 @@
             "era_count": 1,
             "chapter_count": 12,
             "part_count": 39,
-            "illustration_count": 24,
+            "illustration_count": 34,
             "story_arc_count": 0
         },
         "story_arcs": [],
@@ -79,7 +79,7 @@
                         "part_count": 3,
                         "word_count": 3821,
                         "reading_minutes": 16,
-                        "image": "/raggiesoft-books/images/covers/og/waystation.jpg"
+                        "image": "/raggiesoft-books/images/scenes/waystation/paths/exodus_p001_norfolk_bay4_boarding.jpg"
                     }
                 ]
             },
@@ -108,7 +108,7 @@
                         "part_count": 3,
                         "word_count": 4040,
                         "reading_minutes": 17,
-                        "image": "/raggiesoft-books/images/covers/og/waystation.jpg"
+                        "image": "/raggiesoft-books/images/scenes/waystation/paths/pasco_p001_walter_kitchen_timetable.jpg"
                     },
                     {
                         "id": "seattle-full-exodus-rescue",
@@ -124,7 +124,7 @@
                         "part_count": 3,
                         "word_count": 3562,
                         "reading_minutes": 15,
-                        "image": "/raggiesoft-books/images/covers/og/waystation.jpg"
+                        "image": "/raggiesoft-books/images/scenes/waystation/paths/seattle_p001_colby_kansas_truckstop.jpg"
                     }
                 ]
             },
@@ -324,7 +324,7 @@
                     "part_count": 3,
                     "word_count": 3821,
                     "reading_minutes": 16,
-                    "image": "/raggiesoft-books/images/covers/og/waystation.jpg"
+                    "image": "/raggiesoft-books/images/scenes/waystation/paths/exodus_p001_norfolk_bay4_boarding.jpg"
                 }
             ]
         }
@@ -631,7 +631,7 @@
                     "part_count": 3,
                     "word_count": 4040,
                     "reading_minutes": 17,
-                    "image": "/raggiesoft-books/images/covers/og/waystation.jpg"
+                    "image": "/raggiesoft-books/images/scenes/waystation/paths/pasco_p001_walter_kitchen_timetable.jpg"
                 },
                 {
                     "id": "seattle-full-exodus-rescue",
@@ -647,7 +647,7 @@
                     "part_count": 3,
                     "word_count": 3562,
                     "reading_minutes": 15,
-                    "image": "/raggiesoft-books/images/covers/og/waystation.jpg"
+                    "image": "/raggiesoft-books/images/scenes/waystation/paths/seattle_p001_colby_kansas_truckstop.jpg"
                 }
             ]
         }
