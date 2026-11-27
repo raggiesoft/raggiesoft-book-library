@@ -14,22 +14,22 @@
         "ebook_sizes": {
             "epub": "11.7 MB",
             "pdf": "12.4 MB",
-            "text_epub": "176 KB",
+            "text_epub": "177 KB",
             "text_pdf": "448 KB",
             "package_7z": "123 KB",
-            "epub_bytes": 12302381,
-            "pdf_bytes": 12979900,
-            "text_epub_bytes": 180536,
-            "text_pdf_bytes": 458452,
-            "package_7z_bytes": 125840
+            "epub_bytes": 12302591,
+            "pdf_bytes": 12980322,
+            "text_epub_bytes": 180753,
+            "text_pdf_bytes": 458879,
+            "package_7z_bytes": 126026
         },
         "illustration_count": 36,
         "word_stats": {
-            "story_word_count": 60138,
+            "story_word_count": 60243,
             "lore_word_count": 7601,
-            "combined_word_count": 67739,
+            "combined_word_count": 67844,
             "story_page_count": 219,
-            "combined_page_count": 246,
+            "combined_page_count": 247,
             "reading_hours": 4,
             "reading_minutes": 241,
             "novel_equivalent": 0.7,
@@ -122,7 +122,7 @@
                             "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
                         },
                         "part_count": 4,
-                        "word_count": 4015,
+                        "word_count": 4120,
                         "reading_minutes": 17,
                         "image": "/raggiesoft-books/images/scenes/waystation/paths/seattle_p001_colby_kansas_truckstop.jpg"
                     }
@@ -645,7 +645,7 @@
                         "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
                     },
                     "part_count": 4,
-                    "word_count": 4015,
+                    "word_count": 4120,
                     "reading_minutes": 17,
                     "image": "/raggiesoft-books/images/scenes/waystation/paths/seattle_p001_colby_kansas_truckstop.jpg"
                 }
