@@ -14,24 +14,24 @@
         "ebook_sizes": {
             "epub": "4 MB",
             "pdf": "3.6 MB",
-            "text_epub": "121 KB",
-            "text_pdf": "325 KB",
+            "text_epub": "122 KB",
+            "text_pdf": "328 KB",
             "package_7z": "89 KB",
-            "epub_bytes": 4214478,
-            "pdf_bytes": 3800372,
-            "text_epub_bytes": 123425,
-            "text_pdf_bytes": 332535,
-            "package_7z_bytes": 90652
+            "epub_bytes": 4215675,
+            "pdf_bytes": 3803930,
+            "text_epub_bytes": 124656,
+            "text_pdf_bytes": 335990,
+            "package_7z_bytes": 91588
         },
         "illustration_count": 23,
         "word_stats": {
-            "story_word_count": 44177,
-            "lore_word_count": 4361,
-            "combined_word_count": 48538,
-            "story_page_count": 161,
-            "combined_page_count": 177,
-            "reading_hours": 2.9,
-            "reading_minutes": 177,
+            "story_word_count": 44792,
+            "lore_word_count": 4514,
+            "combined_word_count": 49306,
+            "story_page_count": 163,
+            "combined_page_count": 179,
+            "reading_hours": 3,
+            "reading_minutes": 179,
             "novel_equivalent": 0.5,
             "scale_category": "Compact Novel",
             "scale_badge": "Compact Novel",
@@ -236,22 +236,22 @@
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p013.md",
         "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-12-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-14-three-buses-in-the-sleet-one-downtown-lab-bench-and-final-out-at-twelve-thirty"
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-14-clocking-out-together-one-car-ride-home-and-crimson-red-outside-the-lobby"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-14-three-buses-in-the-sleet-one-downtown-lab-bench-and-final-out-at-twelve-thirty": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-14-clocking-out-together-one-car-ride-home-and-crimson-red-outside-the-lobby": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 14: Three Buses in the Sleet, One Downtown Lab Bench, and Final Out at Twelve-Thirty",
+        "title": "Part 14: Clocking Out Together, One Car Ride Home, and Crimson Red Outside the Lobby",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p014.md",
         "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-13-moving-into-studio-205-and-quantum-os-2000",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-15-twenty-two-stairs-to-studio-205-one-full-sized-bed-and-zero-weirdness"
+        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-15-coming-back-the-next-day-hot-cocoa-in-studio-205-and-zero-supervisor-pin"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-15-twenty-two-stairs-to-studio-205-one-full-sized-bed-and-zero-weirdness": {
+    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-15-coming-back-the-next-day-hot-cocoa-in-studio-205-and-zero-supervisor-pin": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 15: Twenty-Two Stairs to Studio 205, One Full-Sized Bed, and Zero Weirdness",
+        "title": "Part 15: Coming Back the Next Day, Hot Cocoa in Studio 205, and Zero Supervisor Pin",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p015.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-14-three-buses-in-the-sleet-one-downtown-lab-bench-and-final-out-at-twelve-thirty",
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-14-clocking-out-together-one-car-ride-home-and-crimson-red-outside-the-lobby",
         "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-16-eighty-nine-degrees-and-one-rattling-fan"
     },
     "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-16-eighty-nine-degrees-and-one-rattling-fan": {
@@ -259,7 +259,7 @@
         "title": "Part 16: Eighty-Nine Degrees and One Rattling Fan",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p016.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-15-twenty-two-stairs-to-studio-205-one-full-sized-bed-and-zero-weirdness",
+        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-15-coming-back-the-next-day-hot-cocoa-in-studio-205-and-zero-supervisor-pin",
         "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-1-amber-glass-beside-the-full-sized-bed"
     },
     "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss": {
