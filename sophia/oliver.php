@@ -304,6 +304,17 @@ if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $mdContent, $matche
     $currentMapKey = null;
     $currentMapSubKey = null;
     
+    // Unquotes a single YAML frontmatter scalar and unescapes inner `\"`, `\'`, and `\$` sequences
+    // so titles and locations like `"\"The Cove\" Warm Water Therapy Pool"` never render literal `\"`.
+    $unquoteOliverYaml = static function (string $rawVal): string {
+        $v = trim($rawVal);
+        if ((str_starts_with($v, '"') && str_ends_with($v, '"')) ||
+            (str_starts_with($v, "'") && str_ends_with($v, "'"))) {
+            $v = substr($v, 1, -1);
+        }
+        return str_replace(['\"', "\'", '\$'], ['"', "'", '$'], $v);
+    };
+
     foreach ($lines as $line) {
         $isIndented = ($line !== '' && ($line[0] === ' ' || $line[0] === "\t"));
         $trimmed = trim($line);
@@ -312,7 +323,7 @@ if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $mdContent, $matche
         // Case 0: Indented entry under a 2-level YAML map (`image_by_path:`, `image_alt_by_path:`, `theme_by_path:`)
         if ($isIndented && $currentMapKey !== null) {
             if (strpos($trimmed, '-') === 0 && $currentMapSubKey !== null) {
-                $val = trim(trim(substr($trimmed, 1)), '"\'');
+                $val = $unquoteOliverYaml(substr($trimmed, 1));
                 if ($val !== '') {
                     $frontmatter[$currentMapKey][$currentMapSubKey][] = $val;
                 }
@@ -327,7 +338,7 @@ if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $mdContent, $matche
                     $frontmatter[$currentMapKey][$currentMapSubKey] = [];
                 } else {
                     $currentMapSubKey = null;
-                    $cleanSubV = trim($subV, '"\'');
+                    $cleanSubV = $unquoteOliverYaml($subV);
                     $frontmatter[$currentMapKey][$subK] = ($currentMapKey === 'theme_by_path') ? $cleanSubV : [$cleanSubV];
                 }
                 continue;
@@ -336,8 +347,7 @@ if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $mdContent, $matche
         
         // Case A: YAML list item (`- "value"`) belonging to the active `$currentArrayKey`
         if (strpos($trimmed, '-') === 0 && $currentArrayKey) {
-            $val = trim(substr($trimmed, 1));
-            $val = trim($val, '"\'');
+            $val = $unquoteOliverYaml(substr($trimmed, 1));
             $frontmatter[$currentArrayKey][] = $val;
         } 
         // Case B: `key: value` or `key:` (opening a multi-line YAML array or 2-level `*_by_path` map)
@@ -357,7 +367,7 @@ if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $mdContent, $matche
                     $frontmatter[$currentArrayKey] = [];
                 }
             } else {
-                $val = trim($val, '"\'');
+                $val = $unquoteOliverYaml($val);
                 $frontmatter[$key] = $val;
                 $currentArrayKey = null;
             }

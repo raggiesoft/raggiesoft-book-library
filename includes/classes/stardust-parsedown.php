@@ -80,6 +80,24 @@ class StardustParsedown extends Parsedown {
     protected $frameworkMode;
 
     /**
+     * Full CommonMark 0.30 / GitHub Flavored Markdown 32-character ASCII punctuation escape set.
+     *
+     * WHY WE OVERRIDE BASE PARSEDOWN'S `$specialCharacters`:
+     *   Base `Parsedown` (v1.7) only listed the 17 characters from John Gruber's 2004 Markdown 1.0
+     *   (`\\`, `` ` ``, `*`, `_`, `{`, `}`, `[`, `]`, `(`, `)`, `>`, `#`, `+`, `-`, `.`, `!`, `|`, `~`),
+     *   omitting `$`, `"`, `'`, `%`, `&`, `/`, `:`, `;`, `<`, `=`, `?`, `@`, `^`, and `,`.
+     *   As a result, CommonMark / Pandoc GFM escapes like `\$100`, `\"quote\"`, `Don\'t`, `100\%`,
+     *   `\<tag\>`, and `A\&B` bled literal backslashes onto public web pages!
+     *   Expanding `$specialCharacters` to all 32 CommonMark ASCII punctuation characters—paired
+     *   with `htmlspecialchars(..., ENT_NOQUOTES)` in `inlineEscapeSequence()` below so `\<`, `\>`,
+     *   and `\&` emit safe HTML entities (`&lt;`, `&gt;`, `&amp;`)—guarantees zero leaked escapes.
+     */
+    protected $specialCharacters = array(
+        '\\', '`', '*', '_', '{', '}', '[', ']', '(', ')', '<', '>', '#', '+', '-', '.', '!', '|', '~',
+        '$', '"', '\'', '%', '&', '/', ':', ';', '=', '?', '@', '^', ',',
+    );
+
+    /**
      * Class constructor (the PHP equivalent of JavaScript's `constructor(frameworkMode = 'web-awesome')`).
      * Runs automatically whenever code calls `new StardustParsedown()`.
      *
@@ -88,6 +106,24 @@ class StardustParsedown extends Parsedown {
     public function __construct($frameworkMode = 'web-awesome') {
         // In PHP, `$this->property` is equivalent to `this.property` in JavaScript.
         $this->frameworkMode = $frameworkMode;
+    }
+
+    /**
+     * AST HOOK 0: CommonMark-Complete & XSS-Safe Backslash Escape Handler (`inlineEscapeSequence`)
+     * -------------------------------------------------------------------------
+     * Base `Parsedown::inlineEscapeSequence` returned `'element' => array('rawHtml' => $Excerpt['text'][1])`,
+     * which would emit an unescaped `<` if `<` were added to `$specialCharacters`. Returning
+     * `'element' => array('text' => $Excerpt['text'][1])` delegates to `Parsedown::escape($text, true)`
+     * (`htmlspecialchars(..., ENT_NOQUOTES, 'UTF-8')`), turning `\<` into `&lt;`, `\>` into `&gt;`,
+     * `\&` into `&amp;`, and `\$` / `\"` / `\'` into clean `$` / `"` / `'`.
+     */
+    protected function inlineEscapeSequence($Excerpt) {
+        if (isset($Excerpt['text'][1]) && in_array($Excerpt['text'][1], $this->specialCharacters, true)) {
+            return array(
+                'element' => array('text' => $Excerpt['text'][1]),
+                'extent' => 2,
+            );
+        }
     }
     
     /**

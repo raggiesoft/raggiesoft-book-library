@@ -1015,6 +1015,16 @@ if ($hasValidBookSeries && !empty($pageConfig['filePath'])) {
                 $currentFmMapKey = null;
                 $currentFmMapSubKey = null;
 
+                // Unquotes a single YAML frontmatter scalar and unescapes inner `\"`, `\'`, and `\$` sequences
+                $unquoteIsabelYaml = static function (string $rawVal): string {
+                    $v = trim($rawVal);
+                    if ((str_starts_with($v, '"') && str_ends_with($v, '"')) ||
+                        (str_starts_with($v, "'") && str_ends_with($v, "'"))) {
+                        $v = substr($v, 1, -1);
+                    }
+                    return str_replace(['\"', "\'", '\$'], ['"', "'", '$'], $v);
+                };
+
                 foreach ($lines as $rawFmLine) {
                     $isIndented = ($rawFmLine !== '' && ($rawFmLine[0] === ' ' || $rawFmLine[0] === "\t"));
                     $line = trim($rawFmLine);
@@ -1023,7 +1033,7 @@ if ($hasValidBookSeries && !empty($pageConfig['filePath'])) {
                     // Handle 2-level YAML map entries under `image_by_path:`, `image_alt_by_path:`, or `theme_by_path:`
                     if ($isIndented && $currentFmMapKey !== null) {
                         if (str_starts_with($line, '-') && $currentFmMapSubKey !== null) {
-                            $itemVal = trim(trim(substr($line, 1)), '"\'');
+                            $itemVal = $unquoteIsabelYaml(substr($line, 1));
                             if ($itemVal !== '') {
                                 if ($currentFmMapKey === 'image_by_path' && !isset($fmImageByPath[$currentFmMapSubKey])) {
                                     $fmImageByPath[$currentFmMapSubKey] = $itemVal;
@@ -1041,7 +1051,7 @@ if ($hasValidBookSeries && !empty($pageConfig['filePath'])) {
                                 $currentFmMapSubKey = $subK;
                             } else {
                                 $currentFmMapSubKey = null;
-                                $cleanSubV = trim($subV, '"\'');
+                                $cleanSubV = $unquoteIsabelYaml($subV);
                                 if ($cleanSubV !== '') {
                                     if ($currentFmMapKey === 'image_by_path' && !isset($fmImageByPath[$subK])) {
                                         $fmImageByPath[$subK] = $cleanSubV;
@@ -1056,7 +1066,7 @@ if ($hasValidBookSeries && !empty($pageConfig['filePath'])) {
 
                     // Handle 1-level YAML list item (`- "scene.jpg"`) belonging to the previous `key:` line
                     if (str_starts_with($line, '-') && $currentFmArrayKey !== null) {
-                        $itemVal = trim(trim(substr($line, 1)), '"\'');
+                        $itemVal = $unquoteIsabelYaml(substr($line, 1));
                         if (($currentFmArrayKey === 'image' || $currentFmArrayKey === 'images') && $fmImage === '' && $itemVal !== '') {
                             $fmImage = $itemVal;
                         } elseif (($currentFmArrayKey === 'image_alt' || $currentFmArrayKey === 'image_alts') && $fmImageAlt === '' && $itemVal !== '') {
@@ -1086,7 +1096,7 @@ if ($hasValidBookSeries && !empty($pageConfig['filePath'])) {
                             continue;
                         }
                         $currentFmArrayKey = null;
-                        $val = trim($val, '"\'');
+                        $val = $unquoteIsabelYaml($val);
 
                         if ($key === 'title' && $val !== '') $fmTitle = $val;
                         if ($key === 'og_title' && $val !== '') $fmOgTitle = $val;

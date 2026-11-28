@@ -17,19 +17,19 @@
             "text_epub": "732 KB",
             "text_pdf": "1.9 MB",
             "package_7z": "553 KB",
-            "epub_bytes": 65216358,
-            "pdf_bytes": 63776237,
-            "text_epub_bytes": 749169,
-            "text_pdf_bytes": 2041658,
-            "package_7z_bytes": 565907
+            "epub_bytes": 65216552,
+            "pdf_bytes": 63772245,
+            "text_epub_bytes": 749367,
+            "text_pdf_bytes": 2037744,
+            "package_7z_bytes": 565897
         },
         "illustration_count": 135,
         "word_stats": {
             "story_word_count": 304107,
-            "lore_word_count": 123543,
-            "combined_word_count": 427650,
+            "lore_word_count": 123363,
+            "combined_word_count": 427470,
             "story_page_count": 1106,
-            "combined_page_count": 1555,
+            "combined_page_count": 1554,
             "reading_hours": 20.3,
             "reading_minutes": 1216,
             "novel_equivalent": 3.4,
@@ -780,7 +780,7 @@
                 "part_count": 38,
                 "backstage_count": 5,
                 "stop_count": 43,
-                "word_count": 122593,
+                "word_count": 122590,
                 "reading_minutes": 491,
                 "reading_hours": 8.2,
                 "stops": [
@@ -1598,7 +1598,7 @@
                         "image": "/raggiesoft-books/images/scenes/katie/b005/senator_katie_prairie_age_41_us_senate_portrait_og.jpg",
                         "url": "https://backstage.raggiesoft.com/books/katie/brenda-walsh-suite-756-and-the-2044-route-15-primary/",
                         "arc_url": "/katie/the-senator-from-virginia/three-senate-terms-refusing-the-2044-nomination-the-stop-0812-four-seat-presidential-endorsement-loop/part-5-the-thursday-morning-loop-governor-elena-delgado-the-six-o-clock-upload?arc=katie-political-career",
-                        "word_count": 3695,
+                        "word_count": 3692,
                         "reading_minutes": 15
                     }
                 ]
@@ -1617,7 +1617,7 @@
                 "part_count": 17,
                 "backstage_count": 3,
                 "stop_count": 20,
-                "word_count": 49151,
+                "word_count": 49149,
                 "reading_minutes": 197,
                 "reading_hours": 3.3,
                 "stops": [
@@ -1656,7 +1656,7 @@
                         "image": "/raggiesoft-books/images/scenes/katie/b004/dec_2002_northwood_bus_loop_winter_goodbye_tight_hug_heather_nate_katie.jpg",
                         "url": "https://backstage.raggiesoft.com/books/katie/what-if-brittany-respected-no-company-new-years-2002/",
                         "arc_url": "/katie/seventeen-senior-year-greenway-court-the-ten-campus-summer-tour/drunken-new-year/part-1-the-gas-station-run-a-box-of-dry-cereal-why-i-never-had-a-twenty-first-birthday-drink?arc=brittany-chelsea-and-the-four-person-sanctuary",
-                        "word_count": 1552,
+                        "word_count": 1550,
                         "reading_minutes": 7
                     },
                     {
@@ -2977,7 +2977,7 @@
     },
     "/katie/unofficial-homeowners-on-arvin-road-turning-twenty-two-in-washington-not-the-right-skill-match/twenty-two-in-alexandria-riding-dmv-transit-touring-the-white-house-the-u-s-capitol-meeting-senator-james-west-the-spark-to-run-for-city-council-two-blue-passports/part-5-what-s-this-it-s-an-id-card-form-ds-11-at-the-post-office-two-navy-blue-u-s-passports": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: \"What's This? It's an ID Card!\", Form DS-11 at the Post Office, & Two Navy-Blue U.S. Passports",
+        "title": "Part 5: 'What's This? It's an ID Card!', Form DS-11 at the Post Office, & Two Navy-Blue U.S. Passports",
         "theme": "raggiesoft-books",
         "filePath": "e006/c003/p005.md"
     },

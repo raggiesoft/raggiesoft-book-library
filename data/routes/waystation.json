@@ -15,19 +15,19 @@
             "epub": "13.6 MB",
             "pdf": "13.3 MB",
             "text_epub": "207 KB",
-            "text_pdf": "518 KB",
+            "text_pdf": "519 KB",
             "package_7z": "150 KB",
-            "epub_bytes": 14305028,
-            "pdf_bytes": 13928504,
-            "text_epub_bytes": 211884,
-            "text_pdf_bytes": 530241,
-            "package_7z_bytes": 153644
+            "epub_bytes": 14305325,
+            "pdf_bytes": 13929733,
+            "text_epub_bytes": 212174,
+            "text_pdf_bytes": 531292,
+            "package_7z_bytes": 153847
         },
         "illustration_count": 51,
         "word_stats": {
-            "story_word_count": 72189,
-            "lore_word_count": 9931,
-            "combined_word_count": 82120,
+            "story_word_count": 72328,
+            "lore_word_count": 9926,
+            "combined_word_count": 82254,
             "story_page_count": 263,
             "combined_page_count": 299,
             "reading_hours": 4.8,
@@ -51,7 +51,7 @@
                 "kicker": "Story Crossroads \u2022 Tuesday, August 21, 2001, 9:50 AM \u2014 1961 Norfolk Pathfinder Terminal",
                 "title": "Inside the Monticello Locker Alcove: Does Nolan Reject Tammy Now or Wait While She Buys Tickets?",
                 "prompt": "Wheeled six feet behind the thick concrete column into the recessed steel coin-locker alcove leading to the 1961 Monticello Avenue terminal's separate Men's and Women's restrooms\u2014shielded from concourse security by the lockers, Tammy's back, and her open baby-blue cardigan wings\u2014twenty-three-year-old Nolan Lennox faces Tammy's ultimate trump card: a silent two-second flash beneath her braless shelf-bra camisole and a soft Week-One promise of zero yelling in Seattle plus a payphone call to Blue Tech in Richmond. Every option opens a complete, coequal story route.",
-                "required_choices": [],
+                "required_choices": {},
                 "options": [
                     {
                         "id": "lock-wheelchair-brakes-emerald-creek",
@@ -172,7 +172,7 @@
                             "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
                         },
                         "part_count": 4,
-                        "word_count": 6010,
+                        "word_count": 6149,
                         "reading_minutes": 25,
                         "image": "/raggiesoft-books/images/scenes/waystation/paths/seattle_p001_colby_kansas_truckstop.jpg"
                     }
@@ -185,7 +185,7 @@
                 "kicker": "Story Crossroads \u2022 Second Afternoon of the Twin Moons, The Sunken Milestone",
                 "title": "Three Gentle Roads Toward the Waystation: How Do Nolan, Gwen, and Mallory Travel?",
                 "prompt": "With both wheelchairs and Mallory's sneakers left behind in Studio 205 on Earth, barefoot twenty-four-year-old Nolan Lennox, his six-foot-one nineteen-year-old sister Gwen, and his twenty-four-year-old girlfriend Mallory Walsh have learned why Vaeloria's sleeping Three-Ring Bronze Astrolabe answered their Friday-night wish: only an astronomer's eye, a truth-reader's diagnostic mind, and a guardian's unhurried heart turning together can heal The Great Drift. Here at the Sunken Milestone, peddler Bramwell Kettle shows all three of them three gentle 1980s-fantasy routes winding inward. Every option opens a complete, coequal story route.",
-                "required_choices": [],
+                "required_choices": {},
                 "options": [
                     {
                         "id": "lantern-barge-canal",
@@ -346,7 +346,7 @@
             "kicker": "Story Crossroads \u2022 Tuesday, August 21, 2001, 9:50 AM \u2014 1961 Norfolk Pathfinder Terminal",
             "title": "Inside the Monticello Locker Alcove: Does Nolan Reject Tammy Now or Wait While She Buys Tickets?",
             "prompt": "Wheeled six feet behind the thick concrete column into the recessed steel coin-locker alcove leading to the 1961 Monticello Avenue terminal's separate Men's and Women's restrooms\u2014shielded from concourse security by the lockers, Tammy's back, and her open baby-blue cardigan wings\u2014twenty-three-year-old Nolan Lennox faces Tammy's ultimate trump card: a silent two-second flash beneath her braless shelf-bra camisole and a soft Week-One promise of zero yelling in Seattle plus a payphone call to Blue Tech in Richmond. Every option opens a complete, coequal story route.",
-            "required_choices": [],
+            "required_choices": {},
             "options": [
                 {
                     "id": "lock-wheelchair-brakes-emerald-creek",
@@ -552,7 +552,7 @@
             "kicker": "Story Crossroads \u2022 Second Afternoon of the Twin Moons, The Sunken Milestone",
             "title": "Three Gentle Roads Toward the Waystation: How Do Nolan, Gwen, and Mallory Travel?",
             "prompt": "With both wheelchairs and Mallory's sneakers left behind in Studio 205 on Earth, barefoot twenty-four-year-old Nolan Lennox, his six-foot-one nineteen-year-old sister Gwen, and his twenty-four-year-old girlfriend Mallory Walsh have learned why Vaeloria's sleeping Three-Ring Bronze Astrolabe answered their Friday-night wish: only an astronomer's eye, a truth-reader's diagnostic mind, and a guardian's unhurried heart turning together can heal The Great Drift. Here at the Sunken Milestone, peddler Bramwell Kettle shows all three of them three gentle 1980s-fantasy routes winding inward. Every option opens a complete, coequal story route.",
-            "required_choices": [],
+            "required_choices": {},
             "options": [
                 {
                     "id": "lantern-barge-canal",
@@ -872,7 +872,7 @@
                         "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
                     },
                     "part_count": 4,
-                    "word_count": 6010,
+                    "word_count": 6149,
                     "reading_minutes": 25,
                     "image": "/raggiesoft-books/images/scenes/waystation/paths/seattle_p001_colby_kansas_truckstop.jpg"
                 }
