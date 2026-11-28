@@ -14,25 +14,25 @@
         "ebook_sizes": {
             "epub": "13.9 MB",
             "pdf": "13.3 MB",
-            "text_epub": "195 KB",
+            "text_epub": "207 KB",
             "text_pdf": "485 KB",
-            "package_7z": "133 KB",
-            "epub_bytes": 14560491,
+            "package_7z": "",
+            "epub_bytes": 14572634,
             "pdf_bytes": 13967346,
-            "text_epub_bytes": 200143,
+            "text_epub_bytes": 211728,
             "text_pdf_bytes": 496779,
-            "package_7z_bytes": 136279
+            "package_7z_bytes": 0
         },
         "illustration_count": 45,
         "word_stats": {
-            "story_word_count": 65567,
-            "lore_word_count": 9329,
-            "combined_word_count": 74896,
-            "story_page_count": 238,
-            "combined_page_count": 272,
-            "reading_hours": 4.4,
-            "reading_minutes": 262,
-            "novel_equivalent": 0.7,
+            "story_word_count": 68535,
+            "lore_word_count": 9640,
+            "combined_word_count": 78175,
+            "story_page_count": 249,
+            "combined_page_count": 284,
+            "reading_hours": 4.6,
+            "reading_minutes": 274,
+            "novel_equivalent": 0.8,
             "scale_category": "Compact Novel",
             "scale_badge": "Compact Novel",
             "benchmark_note": "Compact single-volume trade paperback length (40,000\u201370,000 words)",
@@ -64,8 +64,8 @@
                             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
                         },
                         "part_count": 12,
-                        "word_count": 21200,
-                        "reading_minutes": 85,
+                        "word_count": 22274,
+                        "reading_minutes": 90,
                         "image": "/raggiesoft-books/images/scenes/waystation/e001/e001_c001_p001_safe_home_emerald_creek_porch.jpg"
                     },
                     {
@@ -183,53 +183,53 @@
                 "trigger_part": "e002/c002/p001.md",
                 "trigger_url": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-2-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
                 "kicker": "Story Crossroads \u2022 Second Afternoon of the Twin Moons, The Sunken Milestone",
-                "title": "Three Gentle Roads Toward the Waystation: How Do Nolan and Gwen Travel?",
-                "prompt": "With both wheelchairs left behind in Studio 205 on Earth, barefoot twenty-four-year-old Nolan Lennox and his six-foot-one nineteen-year-old sister Gwen have learned why Vaeloria's sleeping Astrolabe answered Gwen's wish: only two inseparable, unhurried hearts can re-harmonize the twin rings and heal The Great Drift. Here at the Sunken Milestone, peddler Bramwell Kettle shows them three gentle 1980s-fantasy routes winding inward. Every option opens a complete, coequal story route.",
+                "title": "Three Gentle Roads Toward the Waystation: How Do Nolan, Gwen, and Mallory Travel?",
+                "prompt": "With both wheelchairs and Mallory's sneakers left behind in Studio 205 on Earth, barefoot twenty-four-year-old Nolan Lennox, his six-foot-one nineteen-year-old sister Gwen, and his twenty-four-year-old girlfriend Mallory Walsh have learned why Vaeloria's sleeping Three-Ring Bronze Astrolabe answered their Friday-night wish: only an astronomer's eye, a truth-reader's diagnostic mind, and a guardian's unhurried heart turning together can heal The Great Drift. Here at the Sunken Milestone, peddler Bramwell Kettle shows all three of them three gentle 1980s-fantasy routes winding inward. Every option opens a complete, coequal story route.",
                 "required_choices": [],
                 "options": [
                     {
                         "id": "lantern-barge-canal",
                         "crossroads_id": "borderland-three-roads",
                         "label": "The Glasswater Lantern-Barge Canal",
-                        "subtitle": "Step onto barge-master Maren's wide reed-and-cedar lantern boat\u2014cuddling barefoot on cushioned planks with forearm crutches stowed safe beside the gunwale while Gwen's astronomy eye guides the barge through the misty stars of The Great Drift.",
+                        "subtitle": "Step aboard barge-master Maren's wide reed-and-cedar lantern boat\u2014cuddling three-across on cushioned planks with Nolan's and Gwen's forearm crutches stowed safe beside the gunwale while Gwen's astronomy eye, Mallory's lock-cipher logic, and Nolan's current-reading eye guide the vessel upriver.",
                         "entry_part": "paths/lantern-barge-canal/e002/c003/p001.md",
                         "entry_url": "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-3-lanterns-on-the-glasswater/drifting-under-sapphire-glass",
                         "required_choices": {
                             "borderland-three-roads": "lantern-barge-canal"
                         },
                         "part_count": 3,
-                        "word_count": 2668,
-                        "reading_minutes": 11,
+                        "word_count": 3396,
+                        "reading_minutes": 14,
                         "image": "/raggiesoft-books/images/scenes/waystation/paths/route1_lantern_barge_canal.jpg"
                     },
                     {
                         "id": "whisperwood-moss-road",
                         "crossroads_id": "borderland-three-roads",
                         "label": "The Whisperwood Cushion-Moss Road",
-                        "subtitle": "Walk unhurriedly at your own forearm-crutch pace over three-inch velvet moss laid by the Slow-Footed Order, soaking bare feet in 98-degree mineral springs and curling up together in cozy stone shelters as your shared footsteps reawaken sleepy forest lanterns.",
+                        "subtitle": "Walk unhurriedly three abreast at Nolan and Gwen's forearm-crutch pace over three-inch velvet moss laid by the Slow-Footed Order, soaking six bare feet in 98-degree mineral springs and curling up three-across in cozy stone shelters as your shared footsteps reawaken sleepy forest lanterns.",
                         "entry_part": "paths/whisperwood-moss-road/e002/c003/p001.md",
                         "entry_url": "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-3-the-slow-footed-order-s-road/warm-springs-and-glowing-canopy",
                         "required_choices": {
                             "borderland-three-roads": "whisperwood-moss-road"
                         },
                         "part_count": 3,
-                        "word_count": 2630,
-                        "reading_minutes": 11,
+                        "word_count": 3213,
+                        "reading_minutes": 13,
                         "image": "/raggiesoft-books/images/scenes/waystation/paths/route2_whisperwood_moss_road.jpg"
                     },
                     {
                         "id": "brass-counterweight-way",
                         "crossroads_id": "borderland-three-roads",
                         "label": "The Brass Counterweight Gondola Way",
-                        "subtitle": "Board the oak-and-brass water-balanced sky gondola rising smoothly into the Amber Crags past singing bronze wind-harps, helping the cliffside Star-Keepers recalibrate moon-rings knocked out of phase by The Great Drift.",
+                        "subtitle": "Board the oak-and-brass water-balanced sky gondola rising smoothly into the Amber Crags past singing bronze wind-harps, helping the cliffside Star-Keepers recalibrate moon-and-vernier rings knocked out of phase by The Great Drift.",
                         "entry_part": "paths/brass-counterweight-way/e002/c003/p001.md",
                         "entry_url": "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-3-above-the-painted-clouds/gondolas-of-the-amber-crags",
                         "required_choices": {
                             "borderland-three-roads": "brass-counterweight-way"
                         },
                         "part_count": 3,
-                        "word_count": 2689,
-                        "reading_minutes": 11,
+                        "word_count": 3272,
+                        "reading_minutes": 14,
                         "image": "/raggiesoft-books/images/scenes/waystation/paths/route3_brass_counterweight_way.jpg"
                     }
                 ]
@@ -359,8 +359,8 @@
                         "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
                     },
                     "part_count": 12,
-                    "word_count": 21200,
-                    "reading_minutes": 85,
+                    "word_count": 22274,
+                    "reading_minutes": 90,
                     "image": "/raggiesoft-books/images/scenes/waystation/e001/e001_c001_p001_safe_home_emerald_creek_porch.jpg"
                 },
                 {
@@ -550,53 +550,53 @@
             "trigger_part": "e002/c002/p001.md",
             "trigger_url": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-2-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
             "kicker": "Story Crossroads \u2022 Second Afternoon of the Twin Moons, The Sunken Milestone",
-            "title": "Three Gentle Roads Toward the Waystation: How Do Nolan and Gwen Travel?",
-            "prompt": "With both wheelchairs left behind in Studio 205 on Earth, barefoot twenty-four-year-old Nolan Lennox and his six-foot-one nineteen-year-old sister Gwen have learned why Vaeloria's sleeping Astrolabe answered Gwen's wish: only two inseparable, unhurried hearts can re-harmonize the twin rings and heal The Great Drift. Here at the Sunken Milestone, peddler Bramwell Kettle shows them three gentle 1980s-fantasy routes winding inward. Every option opens a complete, coequal story route.",
+            "title": "Three Gentle Roads Toward the Waystation: How Do Nolan, Gwen, and Mallory Travel?",
+            "prompt": "With both wheelchairs and Mallory's sneakers left behind in Studio 205 on Earth, barefoot twenty-four-year-old Nolan Lennox, his six-foot-one nineteen-year-old sister Gwen, and his twenty-four-year-old girlfriend Mallory Walsh have learned why Vaeloria's sleeping Three-Ring Bronze Astrolabe answered their Friday-night wish: only an astronomer's eye, a truth-reader's diagnostic mind, and a guardian's unhurried heart turning together can heal The Great Drift. Here at the Sunken Milestone, peddler Bramwell Kettle shows all three of them three gentle 1980s-fantasy routes winding inward. Every option opens a complete, coequal story route.",
             "required_choices": [],
             "options": [
                 {
                     "id": "lantern-barge-canal",
                     "crossroads_id": "borderland-three-roads",
                     "label": "The Glasswater Lantern-Barge Canal",
-                    "subtitle": "Step onto barge-master Maren's wide reed-and-cedar lantern boat\u2014cuddling barefoot on cushioned planks with forearm crutches stowed safe beside the gunwale while Gwen's astronomy eye guides the barge through the misty stars of The Great Drift.",
+                    "subtitle": "Step aboard barge-master Maren's wide reed-and-cedar lantern boat\u2014cuddling three-across on cushioned planks with Nolan's and Gwen's forearm crutches stowed safe beside the gunwale while Gwen's astronomy eye, Mallory's lock-cipher logic, and Nolan's current-reading eye guide the vessel upriver.",
                     "entry_part": "paths/lantern-barge-canal/e002/c003/p001.md",
                     "entry_url": "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-3-lanterns-on-the-glasswater/drifting-under-sapphire-glass",
                     "required_choices": {
                         "borderland-three-roads": "lantern-barge-canal"
                     },
                     "part_count": 3,
-                    "word_count": 2668,
-                    "reading_minutes": 11,
+                    "word_count": 3396,
+                    "reading_minutes": 14,
                     "image": "/raggiesoft-books/images/scenes/waystation/paths/route1_lantern_barge_canal.jpg"
                 },
                 {
                     "id": "whisperwood-moss-road",
                     "crossroads_id": "borderland-three-roads",
                     "label": "The Whisperwood Cushion-Moss Road",
-                    "subtitle": "Walk unhurriedly at your own forearm-crutch pace over three-inch velvet moss laid by the Slow-Footed Order, soaking bare feet in 98-degree mineral springs and curling up together in cozy stone shelters as your shared footsteps reawaken sleepy forest lanterns.",
+                    "subtitle": "Walk unhurriedly three abreast at Nolan and Gwen's forearm-crutch pace over three-inch velvet moss laid by the Slow-Footed Order, soaking six bare feet in 98-degree mineral springs and curling up three-across in cozy stone shelters as your shared footsteps reawaken sleepy forest lanterns.",
                     "entry_part": "paths/whisperwood-moss-road/e002/c003/p001.md",
                     "entry_url": "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-3-the-slow-footed-order-s-road/warm-springs-and-glowing-canopy",
                     "required_choices": {
                         "borderland-three-roads": "whisperwood-moss-road"
                     },
                     "part_count": 3,
-                    "word_count": 2630,
-                    "reading_minutes": 11,
+                    "word_count": 3213,
+                    "reading_minutes": 13,
                     "image": "/raggiesoft-books/images/scenes/waystation/paths/route2_whisperwood_moss_road.jpg"
                 },
                 {
                     "id": "brass-counterweight-way",
                     "crossroads_id": "borderland-three-roads",
                     "label": "The Brass Counterweight Gondola Way",
-                    "subtitle": "Board the oak-and-brass water-balanced sky gondola rising smoothly into the Amber Crags past singing bronze wind-harps, helping the cliffside Star-Keepers recalibrate moon-rings knocked out of phase by The Great Drift.",
+                    "subtitle": "Board the oak-and-brass water-balanced sky gondola rising smoothly into the Amber Crags past singing bronze wind-harps, helping the cliffside Star-Keepers recalibrate moon-and-vernier rings knocked out of phase by The Great Drift.",
                     "entry_part": "paths/brass-counterweight-way/e002/c003/p001.md",
                     "entry_url": "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-3-above-the-painted-clouds/gondolas-of-the-amber-crags",
                     "required_choices": {
                         "borderland-three-roads": "brass-counterweight-way"
                     },
                     "part_count": 3,
-                    "word_count": 2689,
-                    "reading_minutes": 11,
+                    "word_count": 3272,
+                    "reading_minutes": 14,
                     "image": "/raggiesoft-books/images/scenes/waystation/paths/route3_brass_counterweight_way.jpg"
                 }
             ]
@@ -994,7 +994,7 @@
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
         "prevUrl": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-2-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
-        "nextUrl": "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway"
+        "nextUrl": "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-three-rings-and-the-glowing-hearth-archway"
     },
     "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1004,9 +1004,9 @@
         "pathId": "lantern-barge-canal",
         "crossroadsId": "borderland-three-roads"
     },
-    "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway": {
+    "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-three-rings-and-the-glowing-hearth-archway": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Turning the Twin Rings and the Glowing Hearth-Archway",
+        "title": "Part 1: Turning the Three Rings and the Glowing Hearth-Archway",
         "theme": "raggiesoft-books",
         "filePath": "paths/lantern-barge-canal/e002/c004/p001.md",
         "pathId": "lantern-barge-canal",
@@ -1018,11 +1018,11 @@
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
         "prevUrl": "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-3-lanterns-on-the-glasswater/drifting-under-sapphire-glass",
-        "nextUrl": "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-choosing-home"
+        "nextUrl": "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-two-pause-held-worlds"
     },
-    "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-choosing-home": {
+    "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-two-pause-held-worlds": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Nine-Fifteen on the VCR Clock and Choosing Home",
+        "title": "Part 2: Nine-Fifteen on the VCR Clock and Two Pause-Held Worlds",
         "theme": "raggiesoft-books",
         "filePath": "paths/lantern-barge-canal/e002/c004/p002.md",
         "pathId": "lantern-barge-canal",
@@ -1033,7 +1033,7 @@
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway",
+        "prevUrl": "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-three-rings-and-the-glowing-hearth-archway",
         "noNext": true
     },
     "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order": {
@@ -1066,7 +1066,7 @@
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
         "prevUrl": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-2-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
-        "nextUrl": "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway"
+        "nextUrl": "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-three-rings-and-the-glowing-hearth-archway"
     },
     "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1076,9 +1076,9 @@
         "pathId": "whisperwood-moss-road",
         "crossroadsId": "borderland-three-roads"
     },
-    "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway": {
+    "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-three-rings-and-the-glowing-hearth-archway": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Turning the Twin Rings and the Glowing Hearth-Archway",
+        "title": "Part 1: Turning the Three Rings and the Glowing Hearth-Archway",
         "theme": "raggiesoft-books",
         "filePath": "paths/whisperwood-moss-road/e002/c004/p001.md",
         "pathId": "whisperwood-moss-road",
@@ -1090,11 +1090,11 @@
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
         "prevUrl": "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-3-the-slow-footed-order-s-road/warm-springs-and-glowing-canopy",
-        "nextUrl": "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-choosing-home"
+        "nextUrl": "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-two-pause-held-worlds"
     },
-    "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-choosing-home": {
+    "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-two-pause-held-worlds": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Nine-Fifteen on the VCR Clock and Choosing Home",
+        "title": "Part 2: Nine-Fifteen on the VCR Clock and Two Pause-Held Worlds",
         "theme": "raggiesoft-books",
         "filePath": "paths/whisperwood-moss-road/e002/c004/p002.md",
         "pathId": "whisperwood-moss-road",
@@ -1105,7 +1105,7 @@
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway",
+        "prevUrl": "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-three-rings-and-the-glowing-hearth-archway",
         "noNext": true
     },
     "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds": {
@@ -1138,7 +1138,7 @@
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
         "prevUrl": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-2-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
-        "nextUrl": "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway"
+        "nextUrl": "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-three-rings-and-the-glowing-hearth-archway"
     },
     "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1148,9 +1148,9 @@
         "pathId": "brass-counterweight-way",
         "crossroadsId": "borderland-three-roads"
     },
-    "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway": {
+    "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-three-rings-and-the-glowing-hearth-archway": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 1: Turning the Twin Rings and the Glowing Hearth-Archway",
+        "title": "Part 1: Turning the Three Rings and the Glowing Hearth-Archway",
         "theme": "raggiesoft-books",
         "filePath": "paths/brass-counterweight-way/e002/c004/p001.md",
         "pathId": "brass-counterweight-way",
@@ -1162,11 +1162,11 @@
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
         "prevUrl": "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-3-above-the-painted-clouds/gondolas-of-the-amber-crags",
-        "nextUrl": "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-choosing-home"
+        "nextUrl": "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-two-pause-held-worlds"
     },
-    "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-choosing-home": {
+    "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-two-pause-held-worlds": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 2: Nine-Fifteen on the VCR Clock and Choosing Home",
+        "title": "Part 2: Nine-Fifteen on the VCR Clock and Two Pause-Held Worlds",
         "theme": "raggiesoft-books",
         "filePath": "paths/brass-counterweight-way/e002/c004/p002.md",
         "pathId": "brass-counterweight-way",
@@ -1177,7 +1177,7 @@
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway",
+        "prevUrl": "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-three-rings-and-the-glowing-hearth-archway",
         "noNext": true
     }
 }

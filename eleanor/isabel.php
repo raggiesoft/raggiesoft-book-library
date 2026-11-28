@@ -994,8 +994,9 @@ if ($hasValidBookSeries && !empty($pageConfig['filePath'])) {
             $prefetchedMdContent = str_replace(['{{CDN}}', '{{cms}}'], $cdnBaseUrl, $prefetchedContent);
 
             // Lightweight YAML frontmatter parser: matches everything between the opening `---`
-            // on line 1 and the closing `---` delimiter. Supports both `key: value` scalars and
-            // multi-line YAML lists (`images:\n  - path/to/scene.jpg`).
+            // on line 1 and the closing `---` delimiter. Supports scalar `key: value` lines,
+            // multi-line YAML lists (`images:\n  - path/to/scene.jpg`), AND Story Crossroads
+            // path-aware maps (`image_by_path:`, `image_alt_by_path:`, `theme_by_path:`)!
             if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $prefetchedMdContent, $matches)) {
                 $rawFrontmatter = $matches[1];
                 $lines = explode("\n", $rawFrontmatter);
@@ -1004,31 +1005,84 @@ if ($hasValidBookSeries && !empty($pageConfig['filePath'])) {
                 $fmOgDesc = '';
                 $fmImage = '';
                 $fmImageAlt = '';
+                $fmImageIfPath = '';
+                $fmMatchedImage = '';
+                $fmMatchedImageAlt = '';
+                $fmImageByPath = [];
+                $fmImageAltByPath = [];
                 $fmOgImage = '';
                 $currentFmArrayKey = null;
+                $currentFmMapKey = null;
+                $currentFmMapSubKey = null;
 
-                foreach ($lines as $line) {
-                    $line = trim($line);
-                    if ($line === '') continue;
+                foreach ($lines as $rawFmLine) {
+                    $isIndented = ($rawFmLine !== '' && ($rawFmLine[0] === ' ' || $rawFmLine[0] === "\t"));
+                    $line = trim($rawFmLine);
+                    if ($line === '' || str_starts_with($line, '#')) continue;
 
-                    // Handle YAML list item (`- "scene.jpg"`) belonging to the previous `key:` line
+                    // Handle 2-level YAML map entries under `image_by_path:`, `image_alt_by_path:`, or `theme_by_path:`
+                    if ($isIndented && $currentFmMapKey !== null) {
+                        if (str_starts_with($line, '-') && $currentFmMapSubKey !== null) {
+                            $itemVal = trim(trim(substr($line, 1)), '"\'');
+                            if ($itemVal !== '') {
+                                if ($currentFmMapKey === 'image_by_path' && !isset($fmImageByPath[$currentFmMapSubKey])) {
+                                    $fmImageByPath[$currentFmMapSubKey] = $itemVal;
+                                } elseif ($currentFmMapKey === 'image_alt_by_path' && !isset($fmImageAltByPath[$currentFmMapSubKey])) {
+                                    $fmImageAltByPath[$currentFmMapSubKey] = $itemVal;
+                                }
+                            }
+                            continue;
+                        }
+                        if (strpos($line, ':') !== false) {
+                            list($subK, $subV) = explode(':', $line, 2);
+                            $subK = trim($subK, "\"' \t");
+                            $subV = trim($subV);
+                            if ($subV === '') {
+                                $currentFmMapSubKey = $subK;
+                            } else {
+                                $currentFmMapSubKey = null;
+                                $cleanSubV = trim($subV, '"\'');
+                                if ($cleanSubV !== '') {
+                                    if ($currentFmMapKey === 'image_by_path' && !isset($fmImageByPath[$subK])) {
+                                        $fmImageByPath[$subK] = $cleanSubV;
+                                    } elseif ($currentFmMapKey === 'image_alt_by_path' && !isset($fmImageAltByPath[$subK])) {
+                                        $fmImageAltByPath[$subK] = $cleanSubV;
+                                    }
+                                }
+                            }
+                            continue;
+                        }
+                    }
+
+                    // Handle 1-level YAML list item (`- "scene.jpg"`) belonging to the previous `key:` line
                     if (str_starts_with($line, '-') && $currentFmArrayKey !== null) {
                         $itemVal = trim(trim(substr($line, 1)), '"\'');
                         if (($currentFmArrayKey === 'image' || $currentFmArrayKey === 'images') && $fmImage === '' && $itemVal !== '') {
                             $fmImage = $itemVal;
                         } elseif (($currentFmArrayKey === 'image_alt' || $currentFmArrayKey === 'image_alts') && $fmImageAlt === '' && $itemVal !== '') {
                             $fmImageAlt = $itemVal;
+                        } elseif ($currentFmArrayKey === 'image_when_matched' && $fmMatchedImage === '' && $itemVal !== '') {
+                            $fmMatchedImage = $itemVal;
+                        } elseif ($currentFmArrayKey === 'image_alt_when_matched' && $fmMatchedImageAlt === '' && $itemVal !== '') {
+                            $fmMatchedImageAlt = $itemVal;
                         }
                         continue;
                     }
 
-                    // Handle `key: value` scalar line (or `key:` header starting a YAML list)
+                    // Handle top-level `key: value` scalar line (or `key:` header starting a YAML list or map)
                     if (strpos($line, ':') !== false) {
                         list($key, $val) = explode(':', $line, 2);
                         $key = trim($key);
                         $val = trim($val);
+                        $currentFmMapKey = null;
+                        $currentFmMapSubKey = null;
                         if ($val === '') {
-                            $currentFmArrayKey = $key;
+                            if (in_array($key, ['image_by_path', 'image_alt_by_path', 'theme_by_path'], true)) {
+                                $currentFmMapKey = $key;
+                                $currentFmArrayKey = null;
+                            } else {
+                                $currentFmArrayKey = $key;
+                            }
                             continue;
                         }
                         $currentFmArrayKey = null;
@@ -1039,9 +1093,58 @@ if ($hasValidBookSeries && !empty($pageConfig['filePath'])) {
                         if (($key === 'og_description' || $key === 'summary') && $val !== '') $fmOgDesc = $val;
                         if (($key === 'image' || $key === 'images') && $val !== '' && $fmImage === '') $fmImage = $val;
                         if (($key === 'image_alt' || $key === 'image_alts') && $val !== '' && $fmImageAlt === '') $fmImageAlt = $val;
+                        if ($key === 'image_if_path' && $val !== '') $fmImageIfPath = $val;
+                        if ($key === 'image_when_matched' && $val !== '' && $fmMatchedImage === '') $fmMatchedImage = $val;
+                        if ($key === 'image_alt_when_matched' && $val !== '' && $fmMatchedImageAlt === '') $fmMatchedImageAlt = $val;
                         if ($key === 'og_image' && $val !== '') $fmOgImage = $val;
                     } else {
                         $currentFmArrayKey = null;
+                        $currentFmMapKey = null;
+                        $currentFmMapSubKey = null;
+                    }
+                }
+
+                // 1. Evaluate `image_by_path:` / `image_alt_by_path:` map against `$activeSegmentIdSet`
+                foreach ($fmImageByPath as $candPathKey => $candImgVal) {
+                    $pathMatched = false;
+                    foreach (array_filter(array_map('trim', explode(',', (string)$candPathKey))) as $tok) {
+                        if (str_starts_with($tok, '!')) {
+                            $negId = trim(substr($tok, 1));
+                            if ($negId !== '' && empty($activeSegmentIdSet[$negId])) { $pathMatched = true; break; }
+                        } elseif (!empty($activeSegmentIdSet[$tok])) {
+                            $pathMatched = true; break;
+                        }
+                    }
+                    if ($pathMatched && $candImgVal !== '') {
+                        $fmImage = $candImgVal;
+                        if (!empty($fmImageAltByPath[$candPathKey])) {
+                            $fmImageAlt = $fmImageAltByPath[$candPathKey];
+                        }
+                        break;
+                    }
+                }
+
+                // 2. Also support scalar `image_if_path` + `image_when_matched` alias if present
+                if ($fmImageIfPath !== '' && $fmMatchedImage !== '') {
+                    $ifTokens = array_filter(array_map('trim', explode(',', $fmImageIfPath)));
+                    $condMatched = false;
+                    foreach ($ifTokens as $tok) {
+                        if (str_starts_with($tok, '!')) {
+                            $negId = trim(substr($tok, 1));
+                            if ($negId !== '' && empty($activeSegmentIdSet[$negId])) {
+                                $condMatched = true;
+                                break;
+                            }
+                        } elseif (!empty($activeSegmentIdSet[$tok])) {
+                            $condMatched = true;
+                            break;
+                        }
+                    }
+                    if ($condMatched) {
+                        $fmImage = $fmMatchedImage;
+                        if ($fmMatchedImageAlt !== '') {
+                            $fmImageAlt = $fmMatchedImageAlt;
+                        }
                     }
                 }
 
@@ -1068,9 +1171,20 @@ if ($hasValidBookSeries && !empty($pageConfig['filePath'])) {
                 if ($fmOgDesc !== '') {
                     $ogDescription = $truncateSeoText($fmOgDesc, 155);
                 } elseif ($ogDescription === '' || $ogDescription === $truncateSeoText($seriesShortDesc ?? '', 155)) {
-                    // Fallback: extract opening plain-text prose from the live manuscript if `toc.json` excerpt was empty
+                    // Fallback: extract opening plain-text prose from the live manuscript if `toc.json` excerpt was empty,
+                    // resolving `<!-- @if-path: ... -->` / `<!-- @if-not-path: ... -->` blocks to their default branch first!
                     $liveBody = substr($prefetchedMdContent, strlen($matches[0]));
-                    $liveBody = preg_replace('/!\[[^\]]*\]\([^)]*\)/', '', $liveBody);
+                    $liveBody = preg_replace_callback(
+                        '/^[ \t]*<!--[ \t]*@(if-path|if-not-path):\s*([^>]+?)[ \t]*-->[ \t]*\R([\s\S]*?)(?:^[ \t]*<!--[ \t]*@else[ \t]*-->[ \t]*\R([\s\S]*?))?^[ \t]*<!--[ \t]*@endif[ \t]*-->[ \t]*\R?/m',
+                        static fn($m) => $m[1] === 'if-not-path' ? (string)$m[3] : (isset($m[4]) ? (string)$m[4] : ''),
+                        (string)$liveBody
+                    );
+                    $liveBody = preg_replace_callback(
+                        '/^[ \t]*:::if-path\[([^\]]+)\][ \t]*\R([\s\S]*?)(?:^[ \t]*:::else[ \t]*\R([\s\S]*?))?^[ \t]*:::endif[ \t]*\R?/m',
+                        static fn($m) => isset($m[3]) ? $m[3] : '',
+                        (string)$liveBody
+                    );
+                    $liveBody = preg_replace('/!\[[^\]]*\]\([^)]*\)/', '', (string)$liveBody);
                     $liveBody = preg_replace('/\[([^\]]+)\]\([^)]*\)/', '$1', (string)$liveBody);
                     $liveBody = preg_replace('/^#+\s+.*$/m', '', (string)$liveBody);
                     $liveBody = preg_replace('/^---+\s*$/m', '', (string)$liveBody);

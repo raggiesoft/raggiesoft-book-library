@@ -292,7 +292,8 @@ if ($mdContent === false && !$specialPageType) {
 //     - "books/aubrie/..."
 //   ---
 // We slice that header off `$mdContent` so raw YAML never prints in the story,
-// and parse both scalar `key: value` pairs and bulleted `- item` YAML lists into `$frontmatter`.
+// and parse scalar `key: value` pairs, bulleted `- item` YAML lists, AND 2-level
+// Story Crossroads path maps (`image_by_path:`, `image_alt_by_path:`, `theme_by_path:`) into `$frontmatter`.
 $frontmatter = [];
 if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $mdContent, $matches)) {
     $rawFrontmatter = $matches[1];
@@ -300,10 +301,38 @@ if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $mdContent, $matche
     
     $lines = explode("\n", $rawFrontmatter);
     $currentArrayKey = null;
+    $currentMapKey = null;
+    $currentMapSubKey = null;
     
     foreach ($lines as $line) {
+        $isIndented = ($line !== '' && ($line[0] === ' ' || $line[0] === "\t"));
         $trimmed = trim($line);
-        if ($trimmed === '') continue;
+        if ($trimmed === '' || strpos($trimmed, '#') === 0) continue;
+
+        // Case 0: Indented entry under a 2-level YAML map (`image_by_path:`, `image_alt_by_path:`, `theme_by_path:`)
+        if ($isIndented && $currentMapKey !== null) {
+            if (strpos($trimmed, '-') === 0 && $currentMapSubKey !== null) {
+                $val = trim(trim(substr($trimmed, 1)), '"\'');
+                if ($val !== '') {
+                    $frontmatter[$currentMapKey][$currentMapSubKey][] = $val;
+                }
+                continue;
+            }
+            if (strpos($trimmed, ':') !== false) {
+                list($subK, $subV) = explode(':', $trimmed, 2);
+                $subK = trim($subK, "\"' \t");
+                $subV = trim($subV);
+                if ($subV === '') {
+                    $currentMapSubKey = $subK;
+                    $frontmatter[$currentMapKey][$currentMapSubKey] = [];
+                } else {
+                    $currentMapSubKey = null;
+                    $cleanSubV = trim($subV, '"\'');
+                    $frontmatter[$currentMapKey][$subK] = ($currentMapKey === 'theme_by_path') ? $cleanSubV : [$cleanSubV];
+                }
+                continue;
+            }
+        }
         
         // Case A: YAML list item (`- "value"`) belonging to the active `$currentArrayKey`
         if (strpos($trimmed, '-') === 0 && $currentArrayKey) {
@@ -311,14 +340,22 @@ if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $mdContent, $matche
             $val = trim($val, '"\'');
             $frontmatter[$currentArrayKey][] = $val;
         } 
-        // Case B: `key: value` or `key:` (opening a multi-line YAML array)
+        // Case B: `key: value` or `key:` (opening a multi-line YAML array or 2-level `*_by_path` map)
         elseif (strpos($trimmed, ':') !== false) {
             list($key, $val) = explode(':', $trimmed, 2);
             $key = trim($key);
             $val = trim($val);
+            $currentMapKey = null;
+            $currentMapSubKey = null;
             if ($val === '') {
-                $currentArrayKey = $key;
-                $frontmatter[$currentArrayKey] = [];
+                if (in_array($key, ['image_by_path', 'image_alt_by_path', 'theme_by_path'], true)) {
+                    $currentMapKey = $key;
+                    $currentArrayKey = null;
+                    $frontmatter[$currentMapKey] = [];
+                } else {
+                    $currentArrayKey = $key;
+                    $frontmatter[$currentArrayKey] = [];
+                }
             } else {
                 $val = trim($val, '"\'');
                 $frontmatter[$key] = $val;
@@ -326,6 +363,8 @@ if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $mdContent, $matche
             }
         } else {
             $currentArrayKey = null;
+            $currentMapKey = null;
+            $currentMapSubKey = null;
         }
     }
 }
@@ -335,11 +374,11 @@ if (preg_match('/^---\s*[\r\n]+(.*?)[\r\n]+---\s*[\r\n]+/s', $mdContent, $matche
 // ============================================================================
 // Runtime SSR enforcement on `books.raggiesoft.com`: if any story section set on
 // September 11, 2001 ever reaches the live viewer with YAML `image` / `images` /
-// `og_image` / `ogImage` metadata, inline Markdown `![...](...)`, or raw `<img`
-// HTML, immediately respond HTTP 500 and throw an uncaught `RuntimeException`!
+// `image_by_path` / `og_image` / `ogImage` metadata, inline Markdown `![...](...)`,
+// or raw `<img` HTML, immediately respond HTTP 500 and throw an uncaught `RuntimeException`!
 if (!$specialPageType && !empty($frontmatter['date']) && is_string($frontmatter['date'])) {
     if (preg_match('/(?:\b2001-0?9-11\b|\b0?9[\/\-]11[\/\-]2001\b|\bSept(?:ember)?\.?\s+11(?:th)?,?\s+2001\b|\b11\s+Sept(?:ember)?\.?,?\s+2001\b)/i', trim($frontmatter['date']))) {
-        $oliverHasFmImg = !empty($frontmatter['image']) || !empty($frontmatter['images']) || !empty($frontmatter['og_image']) || !empty($frontmatter['ogImage']);
+        $oliverHasFmImg = !empty($frontmatter['image']) || !empty($frontmatter['images']) || !empty($frontmatter['image_by_path']) || !empty($frontmatter['image_when_matched']) || !empty($frontmatter['og_image']) || !empty($frontmatter['ogImage']);
         $oliverBodyNoCode = (string)preg_replace('/```[\s\S]*?```/', '', (string)$mdContent);
         $oliverHasInlineImg = (bool)preg_match('/!\[[^\]]*\]\([^)]+\)|<img\b/i', $oliverBodyNoCode);
         if ($oliverHasFmImg || $oliverHasInlineImg) {
@@ -349,6 +388,108 @@ if (!$specialPageType && !empty($frontmatter['date']) && is_string($frontmatter[
             throw new RuntimeException('FATAL GUARDRAIL ERROR [IMMUTABLE SEPTEMBER 11, 2001 ZERO-IMAGES RULE]: Story sections taking place on September 11, 2001 are permanently prohibited from rendering images.');
         }
     }
+}
+
+// ============================================================================
+// SUBSYSTEM 3B: STORY CROSSROADS PATH-AWARE DIRECTIVE & FRONTMATTER RESOLVER
+// ============================================================================
+// 100-Level Branch-Continuity Walkthrough:
+//   1. Single-Hyphen HTML-Comment Directives in `.md` Prose:
+//        `<!-- @if-path: seattle-full-exodus-rescue -->`
+//        `(Trauma-aware night comfort scene & inline illustration)`
+//        `<!-- @else -->`
+//        `(Peaceful sound-sleep scene & inline illustration)`
+//        `<!-- @endif -->`
+//      (Also supports `<!-- @if-not-path: ... -->` and comma-separated OR lists!)
+//      Because these are valid HTML comments with single hyphens (obeying `GEMINI.md`),
+//      raw directive tags can never leak visibly onto the page even in raw Markdown tools.
+//   2. Path-Aware Frontmatter Hero & Theme Swaps:
+//      Evaluates `image_by_path:`, `image_alt_by_path:`, and `theme_by_path:` against
+//      `$activeSegmentIdSet` so `$frontmatter['images']`, `$frontmatter['image_alts']`,
+//      and `$frontmatter['theme']` swap seamlessly before rendering!
+$oliverActiveSegments = isset($activeSegmentIdSet) && is_array($activeSegmentIdSet)
+    ? $activeSegmentIdSet
+    : ['__root__' => true];
+$evaluateOliverPathCondition = static function (string $expr, bool $negateAll = false) use ($oliverActiveSegments): bool {
+    $tokens = array_filter(array_map('trim', explode(',', $expr)), static fn($t) => $t !== '');
+    if (empty($tokens)) {
+        return false;
+    }
+    if ($negateAll) {
+        foreach ($tokens as $tok) {
+            $cleanTok = ltrim($tok, '!');
+            if ($cleanTok !== '' && !empty($oliverActiveSegments[$cleanTok])) {
+                return false;
+            }
+        }
+        return true;
+    }
+    foreach ($tokens as $tok) {
+        if (strpos($tok, '!') === 0) {
+            $negId = trim(substr($tok, 1));
+            if ($negId !== '' && empty($oliverActiveSegments[$negId])) {
+                return true;
+            }
+        } elseif (!empty($oliverActiveSegments[$tok])) {
+            return true;
+        }
+    }
+    return false;
+};
+
+// Apply `theme_by_path:` and `image_by_path:` / `image_alt_by_path:` overrides directly onto `$frontmatter`
+if (!$specialPageType) {
+    if (!empty($frontmatter['theme_by_path']) && is_array($frontmatter['theme_by_path'])) {
+        foreach ($frontmatter['theme_by_path'] as $tPathExpr => $tSlugVal) {
+            $resolvedTSlug = is_array($tSlugVal) ? (string)($tSlugVal[0] ?? '') : (string)$tSlugVal;
+            if ($resolvedTSlug !== '' && $evaluateOliverPathCondition((string)$tPathExpr)) {
+                $frontmatter['theme'] = $resolvedTSlug;
+                break;
+            }
+        }
+    }
+    if (!empty($frontmatter['image_by_path']) && is_array($frontmatter['image_by_path'])) {
+        foreach ($frontmatter['image_by_path'] as $iPathExpr => $iImgList) {
+            $normImgList = is_array($iImgList) ? array_values(array_filter($iImgList)) : (trim((string)$iImgList) !== '' ? [trim((string)$iImgList)] : []);
+            if (!empty($normImgList) && $evaluateOliverPathCondition((string)$iPathExpr)) {
+                $frontmatter['images'] = $normImgList;
+                $frontmatter['image']  = $normImgList;
+                if (!empty($frontmatter['image_alt_by_path'][$iPathExpr])) {
+                    $matchedAlts = $frontmatter['image_alt_by_path'][$iPathExpr];
+                    $normAltList = is_array($matchedAlts) ? array_values(array_filter($matchedAlts)) : [trim((string)$matchedAlts)];
+                    $frontmatter['image_alts'] = $normAltList;
+                    $frontmatter['image_alt']  = $normAltList;
+                }
+                break;
+            }
+        }
+    }
+}
+
+if (!$specialPageType && (strpos((string)$mdContent, '@if-path:') !== false || strpos((string)$mdContent, '@if-not-path:') !== false)) {
+    $mdContent = (string)preg_replace_callback(
+        '/^[ \t]*<!--[ \t]*@(if-path|if-not-path):\s*([^>]+?)[ \t]*-->[ \t]*\R([\s\S]*?)(?:^[ \t]*<!--[ \t]*@else[ \t]*-->[ \t]*\R([\s\S]*?))?^[ \t]*<!--[ \t]*@endif[ \t]*-->[ \t]*\R?/m',
+        static function (array $m) use ($evaluateOliverPathCondition): string {
+            $isNot      = (strtolower(trim((string)$m[1])) === 'if-not-path');
+            $condExpr   = trim((string)$m[2]);
+            $thenBranch = (string)$m[3];
+            $elseBranch = isset($m[4]) ? (string)$m[4] : '';
+            return $evaluateOliverPathCondition($condExpr, $isNot) ? $thenBranch : $elseBranch;
+        },
+        (string)$mdContent
+    );
+}
+if (!$specialPageType && strpos((string)$mdContent, ':::if-path[') !== false) {
+    $mdContent = (string)preg_replace_callback(
+        '/^[ \t]*:::if-path\[([^\]]+)\][ \t]*\R([\s\S]*?)(?:^[ \t]*:::else[ \t]*\R([\s\S]*?))?^[ \t]*:::endif[ \t]*\R?/m',
+        static function (array $m) use ($evaluateOliverPathCondition): string {
+            $condExpr   = trim((string)$m[1]);
+            $thenBranch = (string)$m[2];
+            $elseBranch = isset($m[3]) ? (string)$m[3] : '';
+            return $evaluateOliverPathCondition($condExpr) ? $thenBranch : $elseBranch;
+        },
+        (string)$mdContent
+    );
 }
 
 // ============================================================================
@@ -1234,16 +1375,30 @@ $oliverBookSeriesSchema = [
             $oliverCurrentPathObj = ($oliverCurrentPathId !== '' && isset($oliverPathMap[$oliverCurrentPathId]))
                 ? $oliverPathMap[$oliverCurrentPathId]
                 : null;
-            if (!$specialPageType && $oliverCurrentPathObj !== null && !empty($oliverCrossroadsList)):
+            $oliverHasActiveChain = !empty($activeCrossroadsChain) && is_array($activeCrossroadsChain);
+            if (!$specialPageType && ($oliverCurrentPathObj !== null || $oliverHasActiveChain) && !empty($oliverCrossroadsList)):
+                $oliverBannerLabel = '';
+                if ($oliverCurrentPathObj !== null) {
+                    $oliverBannerLabel = (string)($oliverCurrentPathObj['label'] ?? '');
+                } elseif ($oliverHasActiveChain) {
+                    $chainLabels = [];
+                    foreach ($activeCrossroadsChain as $chainStep) {
+                        $stepLbl = trim((string)($chainStep['chosen_option']['label'] ?? ''));
+                        if ($stepLbl !== '') {
+                            $chainLabels[] = $stepLbl;
+                        }
+                    }
+                    $oliverBannerLabel = implode(' → ', $chainLabels);
+                }
             ?>
             <aside class="rs-active-path-bar" aria-label="Active Story Path">
                 <div class="rs-active-path-bar-main">
                     <div class="rs-active-path-copy">
                         <span class="rs-crossroads-kicker">
                             <i class="ph-fill ph-signpost" aria-hidden="true"></i>
-                            <span>Story Path</span>
+                            <span><?php echo ($oliverHasActiveChain && count($activeCrossroadsChain) > 1 && $oliverCurrentPathObj === null) ? 'Active Story Paths' : 'Story Path'; ?></span>
                         </span>
-                        <div class="rs-active-path-name"><?php echo htmlspecialchars((string)($oliverCurrentPathObj['label'] ?? '')); ?></div>
+                        <div class="rs-active-path-name"><?php echo htmlspecialchars($oliverBannerLabel); ?></div>
                     </div>
                     <div class="rs-active-path-actions">
                         <button type="button" class="rs-btn rs-btn-primary" data-open-crossroads-dialog="true">
@@ -1261,8 +1416,11 @@ $oliverBookSeriesSchema = [
              * ============================================================================
              * SCENE HERO IMAGE & HERO IMAGE CAROUSEL RESOLVER (Option A Header Plate)
              * ============================================================================
-             * Supports both a single scalar `image:` / `image_alt:` AND a multi-slide
-             * YAML list (`image:` + `image_alt:` arrays, or `images:` + `image_alts:`).
+             * Supports both a single scalar `image:` / `image_alt:`, a multi-slide
+             * YAML list (`image:` + `image_alt:` arrays, or `images:` + `image_alts:`),
+             * AND Story Crossroads route-conditional hero overrides (`image_if_path:` +
+             * `image_when_matched:` / `image_alt_when_matched:`) so converged chapters
+             * automatically display the illustration matching the reader's chosen route!
              * - When 1 slide is present: renders a static 16:9 `<figure class="reader-chapter-plate">`.
              * - When 2+ slides are present: renders an accessible, keyboard- and swipe-navigable
              *   16:9 Hero Image Carousel (`<figure class="reader-chapter-plate reader-hero-carousel">`).
@@ -1282,15 +1440,27 @@ $oliverBookSeriesSchema = [
                 return $url;
             };
 
+            $useMatchedHeroOverride = !empty($frontmatter['image_if_path'])
+                && !empty($frontmatter['image_when_matched'])
+                && $evaluateOliverPathCondition((string)$frontmatter['image_if_path']);
+
             $rawHeroImages = [];
-            if (!empty($frontmatter['images'])) {
+            if ($useMatchedHeroOverride) {
+                $rawHeroImages = is_array($frontmatter['image_when_matched'])
+                    ? $frontmatter['image_when_matched']
+                    : [$frontmatter['image_when_matched']];
+            } elseif (!empty($frontmatter['images'])) {
                 $rawHeroImages = is_array($frontmatter['images']) ? $frontmatter['images'] : [$frontmatter['images']];
             } elseif (!empty($frontmatter['image'])) {
                 $rawHeroImages = is_array($frontmatter['image']) ? $frontmatter['image'] : [$frontmatter['image']];
             }
 
             $rawHeroAlts = [];
-            if (!empty($frontmatter['image_alts'])) {
+            if ($useMatchedHeroOverride && !empty($frontmatter['image_alt_when_matched'])) {
+                $rawHeroAlts = is_array($frontmatter['image_alt_when_matched'])
+                    ? $frontmatter['image_alt_when_matched']
+                    : [$frontmatter['image_alt_when_matched']];
+            } elseif (!empty($frontmatter['image_alts'])) {
                 $rawHeroAlts = is_array($frontmatter['image_alts']) ? $frontmatter['image_alts'] : [$frontmatter['image_alts']];
             } elseif (!empty($frontmatter['image_alt'])) {
                 $rawHeroAlts = is_array($frontmatter['image_alt']) ? $frontmatter['image_alt'] : [$frontmatter['image_alt']];
@@ -2328,15 +2498,30 @@ $oliverBookSeriesSchema = [
         <?php endif; ?>
 
         <?php
-        // Light-Dismiss Story Path Switcher Dialog (`<dialog closedby="any">`) for switching paths anywhere in the novel
+        // Light-Dismiss Story Path Switcher Dialog (`<dialog closedby="any">`) for switching paths anywhere in the novel.
+        // Supports multi-Crossroads novels (like `waystation`) by displaying all Crossroads decisions along the reader's
+        // journey—and when reading a converged chapter (or a downstream Book Two route), lets the reader apply a different
+        // earlier Crossroads choice right onto `$requestUri?path=<optId>` to experience alternate continuity in place!
         if (!$specialPageType && !empty($oliverCrossroadsList)):
-            $dlgCx = $oliverCrossroadsList[0];
-            foreach ($oliverCrossroadsList as $candCx) {
-                if (!empty($config['crossroadsId']) && ($candCx['id'] ?? '') === $config['crossroadsId']) {
-                    $dlgCx = $candCx;
-                    break;
+            $dlgCxItems = [];
+            if (!empty($activeCrossroadsChain) && is_array($activeCrossroadsChain)) {
+                foreach ($activeCrossroadsChain as $chainStep) {
+                    if (!empty($chainStep['crossroads']['id'])) {
+                        $dlgCxItems[(string)$chainStep['crossroads']['id']] = $chainStep['crossroads'];
+                    }
                 }
             }
+            foreach ($oliverCrossroadsList as $candCx) {
+                $candId = (string)($candCx['id'] ?? '');
+                if ($candId !== '' && (!empty($config['crossroadsId']) && $candId === $config['crossroadsId'])) {
+                    $dlgCxItems[$candId] = $candCx;
+                }
+            }
+            if (empty($dlgCxItems)) {
+                $dlgCxItems[(string)($oliverCrossroadsList[0]['id'] ?? 'default')] = $oliverCrossroadsList[0];
+            }
+            $dlgCxArray = array_values($dlgCxItems);
+            $dlgPrimaryCx = $dlgCxArray[count($dlgCxArray) - 1];
         ?>
         <dialog id="rs-story-crossroads-dialog" closedby="any" aria-labelledby="rs-story-crossroads-dialog-title" class="rs-crossroads-dialog">
             <div class="rs-arc-dialog-header">
@@ -2345,55 +2530,78 @@ $oliverBookSeriesSchema = [
                         <i class="ph-fill ph-signpost" aria-hidden="true"></i>
                         <span><?php echo htmlspecialchars($seriesTitle); ?> &bull; Story Crossroads</span>
                     </div>
-                    <h3 id="rs-story-crossroads-dialog-title" class="rs-arc-dialog-title"><?php echo htmlspecialchars((string)($dlgCx['title'] ?? 'Switch Story Path')); ?></h3>
+                    <h3 id="rs-story-crossroads-dialog-title" class="rs-arc-dialog-title"><?php echo count($dlgCxArray) > 1 ? 'Switch Active Story Crossroads Choices' : htmlspecialchars((string)($dlgPrimaryCx['title'] ?? 'Switch Story Path')); ?></h3>
                 </div>
                 <button type="button" id="rs-story-crossroads-close" class="rs-btn" aria-label="Close Story Path Switcher">
                     <i class="ph ph-x" aria-hidden="true"></i> Close
                 </button>
             </div>
             <div class="rs-arc-dialog-body">
-                <?php if (!empty($dlgCx['prompt'])): ?>
-                    <p class="rs-arc-dialog-desc"><?php echo htmlspecialchars((string)$dlgCx['prompt']); ?></p>
-                <?php endif; ?>
-                <div class="rs-crossroads-grid">
-                    <?php foreach (($dlgCx['options'] ?? []) as $dOpt):
-                        $dOptId = (string)($dOpt['id'] ?? '');
-                        $dOptLabel = (string)($dOpt['label'] ?? '');
-                        $dOptSub = (string)($dOpt['subtitle'] ?? '');
-                        $dOptUrl = (string)($dOpt['entry_url'] ?? '');
-                        $dlgCxId = (string)($dlgCx['id'] ?? '');
-                        $dIsCurrent = (($activeCrossroadsChoices[$dlgCxId] ?? null) === $dOptId) || ($activeStoryPathId !== null && $activeStoryPathId === $dOptId);
-                    ?>
-                    <article class="rs-crossroads-card<?php echo $dIsCurrent ? ' is-selected' : ''; ?>">
-                        <div class="rs-crossroads-card-body">
-                            <?php if ($dIsCurrent): ?>
-                                <span class="rs-crossroads-saved-pill">
-                                    <i class="ph-fill ph-check-circle" aria-hidden="true"></i>
-                                    <span>Current Story Path</span>
-                                </span>
-                            <?php endif; ?>
-                            <h4 class="rs-crossroads-card-title"><?php echo htmlspecialchars($dOptLabel); ?></h4>
-                            <?php if ($dOptSub !== ''): ?>
-                                <p class="rs-crossroads-card-desc"><?php echo htmlspecialchars($dOptSub); ?></p>
-                            <?php endif; ?>
-                        </div>
-                        <div class="rs-crossroads-card-footer">
-                            <a href="<?php echo htmlspecialchars($dOptUrl); ?>"
-                               data-story-path="<?php echo htmlspecialchars($dOptId); ?>"
-                               data-story-crossroads="<?php echo htmlspecialchars($dlgCxId); ?>"
-                               data-story-book="<?php echo htmlspecialchars($seriesSlug); ?>"
-                               class="rs-btn rs-btn-primary rs-crossroads-choose-btn">
-                                <span><?php echo $dIsCurrent ? 'Start From Beginning of Path' : 'Switch to This Story Path'; ?></span>
-                                <i class="ph ph-arrow-right" aria-hidden="true"></i>
-                            </a>
-                        </div>
-                    </article>
-                    <?php endforeach; ?>
+                <?php foreach ($dlgCxArray as $cxGroupIdx => $dlgCx):
+                    $dlgCxId = (string)($dlgCx['id'] ?? '');
+                    $isCurrentBranchCx = (!empty($config['crossroadsId']) && $config['crossroadsId'] === $dlgCxId);
+                ?>
+                <div style="<?php echo $cxGroupIdx > 0 ? 'margin-top: 1.75rem; padding-top: 1.5rem; border-top: 1px solid var(--rs-border);' : ''; ?>">
+                    <?php if (count($dlgCxArray) > 1): ?>
+                        <div class="rs-crossroads-kicker" style="margin-bottom: 0.25rem;"><?php echo htmlspecialchars((string)($dlgCx['kicker'] ?? 'Story Crossroads')); ?></div>
+                        <h4 style="margin: 0 0 0.45rem; font-size: 1.08rem;"><?php echo htmlspecialchars((string)($dlgCx['title'] ?? '')); ?></h4>
+                    <?php elseif (!empty($dlgCx['prompt'])): ?>
+                        <p class="rs-arc-dialog-desc"><?php echo htmlspecialchars((string)$dlgCx['prompt']); ?></p>
+                    <?php endif; ?>
+                    <div class="rs-crossroads-grid">
+                        <?php foreach (($dlgCx['options'] ?? []) as $dOpt):
+                            $dOptId = (string)($dOpt['id'] ?? '');
+                            $dOptLabel = (string)($dOpt['label'] ?? '');
+                            $dOptSub = (string)($dOpt['subtitle'] ?? '');
+                            $dOptUrl = (string)($dOpt['entry_url'] ?? '');
+                            $dIsCurrent = !empty($oliverActiveSegments[$dOptId]) || (($activeCrossroadsChoices[$dlgCxId] ?? null) === $dOptId);
+                            // If this Crossroads was an EARLIER upstream decision (not the branch container we are currently inside),
+                            // linking to `$requestUri?path=<optId>` updates the upstream choice while keeping the reader right on this chapter!
+                            $stayInPlaceHref = (!$isCurrentBranchCx && $oliverCurrentPathId === '')
+                                ? ($requestUri . '?path=' . rawurlencode($dOptId))
+                                : $dOptUrl;
+                        ?>
+                        <article class="rs-crossroads-card<?php echo $dIsCurrent ? ' is-selected' : ''; ?>">
+                            <div class="rs-crossroads-card-body">
+                                <?php if ($dIsCurrent): ?>
+                                    <span class="rs-crossroads-saved-pill">
+                                        <i class="ph-fill ph-check-circle" aria-hidden="true"></i>
+                                        <span>Current Story Path</span>
+                                    </span>
+                                <?php endif; ?>
+                                <h4 class="rs-crossroads-card-title"><?php echo htmlspecialchars($dOptLabel); ?></h4>
+                                <?php if ($dOptSub !== ''): ?>
+                                    <p class="rs-crossroads-card-desc"><?php echo htmlspecialchars($dOptSub); ?></p>
+                                <?php endif; ?>
+                            </div>
+                            <div class="rs-crossroads-card-footer" style="display: flex; flex-direction: column; gap: 0.45rem;">
+                                <a href="<?php echo htmlspecialchars($stayInPlaceHref); ?>"
+                                   data-story-path="<?php echo htmlspecialchars($dOptId); ?>"
+                                   data-story-crossroads="<?php echo htmlspecialchars($dlgCxId); ?>"
+                                   data-story-book="<?php echo htmlspecialchars($seriesSlug); ?>"
+                                   class="rs-btn rs-btn-primary rs-crossroads-choose-btn">
+                                    <span><?php echo (!$isCurrentBranchCx && $oliverCurrentPathId === '') ? ($dIsCurrent ? 'Active on This Chapter' : 'Apply to Current Chapter') : ($dIsCurrent ? 'Start From Beginning of Path' : 'Switch to This Story Path'); ?></span>
+                                    <i class="ph ph-arrow-right" aria-hidden="true"></i>
+                                </a>
+                                <?php if (!$isCurrentBranchCx && $oliverCurrentPathId === '' && $dOptUrl !== ''): ?>
+                                <a href="<?php echo htmlspecialchars($dOptUrl); ?>"
+                                   data-story-path="<?php echo htmlspecialchars($dOptId); ?>"
+                                   data-story-crossroads="<?php echo htmlspecialchars($dlgCxId); ?>"
+                                   data-story-book="<?php echo htmlspecialchars($seriesSlug); ?>"
+                                   class="rs-btn" style="font-size: 0.82rem; justify-content: center;">
+                                    <span>Jump to Start of This Route</span>
+                                </a>
+                                <?php endif; ?>
+                            </div>
+                        </article>
+                        <?php endforeach; ?>
+                    </div>
                 </div>
+                <?php endforeach; ?>
             </div>
-            <?php if (!empty($dlgCx['trigger_url'])): ?>
+            <?php if (!empty($dlgPrimaryCx['trigger_url'])): ?>
             <div class="rs-arc-dialog-footer">
-                <a href="<?php echo htmlspecialchars((string)$dlgCx['trigger_url']); ?>" class="rs-btn">
+                <a href="<?php echo htmlspecialchars((string)$dlgPrimaryCx['trigger_url']); ?>" class="rs-btn">
                     <i class="ph ph-arrow-u-up-left" aria-hidden="true"></i>
                     <span>Re-read the Story Crossroads Scene</span>
                 </a>
