@@ -51,7 +51,7 @@
                 "kicker": "Story Crossroads \u2022 Thursday, June 22, 2000, 6:40 PM",
                 "title": "Three Footholds in Cedar Run Valley: Where Do Luke, Tessa, and Sadie Build?",
                 "prompt": "With four days of pantry oats left in their packs and zero intention of walking back out to a town, the triplets have scouted three completely wild footholds inside the Cedar Run basin\u2014each offering its own shelter engineering and wild food supply. All three routes forward are complete, coequal stories.",
-                "required_choices": [],
+                "required_choices": {},
                 "options": [
                     {
                         "id": "creek-bend-cedar-frame",
@@ -170,7 +170,7 @@
             "kicker": "Story Crossroads \u2022 Thursday, June 22, 2000, 6:40 PM",
             "title": "Three Footholds in Cedar Run Valley: Where Do Luke, Tessa, and Sadie Build?",
             "prompt": "With four days of pantry oats left in their packs and zero intention of walking back out to a town, the triplets have scouted three completely wild footholds inside the Cedar Run basin\u2014each offering its own shelter engineering and wild food supply. All three routes forward are complete, coequal stories.",
-            "required_choices": [],
+            "required_choices": {},
             "options": [
                 {
                     "id": "creek-bend-cedar-frame",

@@ -25,20 +25,20 @@
         },
         "illustration_count": 45,
         "word_stats": {
-            "story_word_count": 68535,
-            "lore_word_count": 9640,
-            "combined_word_count": 78175,
-            "story_page_count": 249,
-            "combined_page_count": 284,
-            "reading_hours": 4.6,
-            "reading_minutes": 274,
+            "story_word_count": 72189,
+            "lore_word_count": 9931,
+            "combined_word_count": 82120,
+            "story_page_count": 263,
+            "combined_page_count": 299,
+            "reading_hours": 4.8,
+            "reading_minutes": 289,
             "novel_equivalent": 0.8,
-            "scale_category": "Compact Novel",
-            "scale_badge": "Compact Novel",
-            "benchmark_note": "Compact single-volume trade paperback length (40,000\u201370,000 words)",
+            "scale_category": "Full-Length Contemporary Novel",
+            "scale_badge": "Full-Length Novel",
+            "benchmark_note": "0.8\u00d7 a standard 90,000-word contemporary novel (70k\u2013110k trade benchmark)",
             "era_count": 2,
-            "chapter_count": 14,
-            "part_count": 43,
+            "chapter_count": 17,
+            "part_count": 47,
             "illustration_count": 45,
             "story_arc_count": 0
         },
@@ -602,6 +602,73 @@
             ]
         }
     },
+    "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-5-first-night-beneath-the-twin-moon-skylight": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 5: First Night Beneath the Twin-Moon Skylight",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|2"
+    },
+    "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-5-first-night-beneath-the-twin-moon-skylight/nolan-in-the-middle-and-the-cedar-canopy-bed": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Nolan in the Middle and the Cedar Canopy Bed",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c005/p001.md",
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
+        },
+        "rejoinPrevBySegment": {
+            "lantern-barge-canal": "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-two-pause-held-worlds",
+            "whisperwood-moss-road": "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-two-pause-held-worlds",
+            "brass-counterweight-way": "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-two-pause-held-worlds"
+        },
+        "prevUrl": "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-two-pause-held-worlds",
+        "nextUrl": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-6-rolling-down-to-cloudbrook-hollow/part-1-zero-curb-cuts-missing-in-cloudbrook-market"
+    },
+    "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-6-rolling-down-to-cloudbrook-hollow": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 6: Rolling Down to Cloudbrook Hollow",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|3"
+    },
+    "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-6-rolling-down-to-cloudbrook-hollow/part-1-zero-curb-cuts-missing-in-cloudbrook-market": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 1: Zero Curb Cuts Missing in Cloudbrook Market",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c006/p001.md",
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
+        },
+        "prevUrl": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-5-first-night-beneath-the-twin-moon-skylight/nolan-in-the-middle-and-the-cedar-canopy-bed",
+        "nextUrl": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-6-rolling-down-to-cloudbrook-hollow/part-2-star-vellum-runic-slates-and-unhurried-seasons"
+    },
+    "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-6-rolling-down-to-cloudbrook-hollow/part-2-star-vellum-runic-slates-and-unhurried-seasons": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Part 2: Star-Vellum, Runic Slates, and Unhurried Seasons",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c006/p002.md",
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
+        },
+        "prevUrl": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-6-rolling-down-to-cloudbrook-hollow/part-1-zero-curb-cuts-missing-in-cloudbrook-market",
+        "nextUrl": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-7-sixteen-glowing-archways-and-the-open-horizon/three-keepers-on-the-moon-glass-parapet"
+    },
+    "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-7-sixteen-glowing-archways-and-the-open-horizon": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 7: Sixteen Glowing Archways and the Open Horizon",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|4"
+    },
+    "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-7-sixteen-glowing-archways-and-the-open-horizon/three-keepers-on-the-moon-glass-parapet": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Three Keepers on the Moon-Glass Parapet",
+        "theme": "raggiesoft-books",
+        "filePath": "e002/c007/p001.md",
+        "defaultChoices": {
+            "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
+        },
+        "prevUrl": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-6-rolling-down-to-cloudbrook-hollow/part-2-star-vellum-runic-slates-and-unhurried-seasons",
+        "noNext": true
+    },
     "/waystation/paths/norfolk-ticket-counter/norfolk-terminal-route-ninety-nine-dollars-at-the-ticket-window": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Norfolk Terminal Route: Ninety-Nine Dollars at the Ticket Window",
@@ -1034,7 +1101,7 @@
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
         "prevUrl": "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-three-rings-and-the-glowing-hearth-archway",
-        "noNext": true
+        "nextUrl": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-5-first-night-beneath-the-twin-moon-skylight/nolan-in-the-middle-and-the-cedar-canopy-bed"
     },
     "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1106,7 +1173,7 @@
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
         "prevUrl": "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-three-rings-and-the-glowing-hearth-archway",
-        "noNext": true
+        "nextUrl": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-5-first-night-beneath-the-twin-moon-skylight/nolan-in-the-middle-and-the-cedar-canopy-bed"
     },
     "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds": {
         "view": "pages/raggiesoft-books/books/viewer",
@@ -1178,6 +1245,6 @@
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
         "prevUrl": "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-three-rings-and-the-glowing-hearth-archway",
-        "noNext": true
+        "nextUrl": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-5-first-night-beneath-the-twin-moon-skylight/nolan-in-the-middle-and-the-cedar-canopy-bed"
     }
 }
