@@ -12,26 +12,26 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "12.8 MB",
-            "pdf": "12.8 MB",
-            "text_epub": "191 KB",
-            "text_pdf": "453 KB",
-            "package_7z": "",
-            "epub_bytes": 13456279,
-            "pdf_bytes": 13465971,
-            "text_epub_bytes": 195778,
-            "text_pdf_bytes": 464353,
-            "package_7z_bytes": 0
+            "epub": "13.9 MB",
+            "pdf": "13.3 MB",
+            "text_epub": "194 KB",
+            "text_pdf": "482 KB",
+            "package_7z": "132 KB",
+            "epub_bytes": 14559352,
+            "pdf_bytes": 13964396,
+            "text_epub_bytes": 198964,
+            "text_pdf_bytes": 493293,
+            "package_7z_bytes": 135062
         },
-        "illustration_count": 41,
+        "illustration_count": 45,
         "word_stats": {
-            "story_word_count": 63429,
-            "lore_word_count": 8856,
-            "combined_word_count": 72285,
-            "story_page_count": 231,
-            "combined_page_count": 263,
-            "reading_hours": 4.2,
-            "reading_minutes": 254,
+            "story_word_count": 64904,
+            "lore_word_count": 9279,
+            "combined_word_count": 74183,
+            "story_page_count": 236,
+            "combined_page_count": 270,
+            "reading_hours": 4.3,
+            "reading_minutes": 260,
             "novel_equivalent": 0.7,
             "scale_category": "Compact Novel",
             "scale_badge": "Compact Novel",
@@ -39,7 +39,7 @@
             "era_count": 1,
             "chapter_count": 14,
             "part_count": 43,
-            "illustration_count": 41,
+            "illustration_count": 45,
             "story_arc_count": 0
         },
         "story_arcs": [],
@@ -81,7 +81,7 @@
                         "part_count": 1,
                         "word_count": 640,
                         "reading_minutes": 3,
-                        "image": "/raggiesoft-books/images/covers/og/waystation.jpg"
+                        "image": "/raggiesoft-books/images/scenes/waystation/paths/norfolk_ticket_counter_crossroads.jpg"
                     }
                 ]
             },
@@ -126,7 +126,7 @@
                         "part_count": 3,
                         "word_count": 4719,
                         "reading_minutes": 19,
-                        "image": "/raggiesoft-books/images/scenes/waystation/paths/exodus_p001_norfolk_bay4_boarding.jpg"
+                        "image": "/raggiesoft-books/images/scenes/waystation/paths/exodus_p001_sweet_voice_bay4_boarding.jpg"
                     }
                 ]
             },
@@ -172,8 +172,8 @@
                             "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
                         },
                         "part_count": 4,
-                        "word_count": 4535,
-                        "reading_minutes": 19,
+                        "word_count": 6010,
+                        "reading_minutes": 25,
                         "image": "/raggiesoft-books/images/scenes/waystation/paths/seattle_p001_colby_kansas_truckstop.jpg"
                     }
                 ]
@@ -376,7 +376,7 @@
                     "part_count": 1,
                     "word_count": 640,
                     "reading_minutes": 3,
-                    "image": "/raggiesoft-books/images/covers/og/waystation.jpg"
+                    "image": "/raggiesoft-books/images/scenes/waystation/paths/norfolk_ticket_counter_crossroads.jpg"
                 }
             ]
         }
@@ -665,7 +665,7 @@
                     "part_count": 3,
                     "word_count": 4719,
                     "reading_minutes": 19,
-                    "image": "/raggiesoft-books/images/scenes/waystation/paths/exodus_p001_norfolk_bay4_boarding.jpg"
+                    "image": "/raggiesoft-books/images/scenes/waystation/paths/exodus_p001_sweet_voice_bay4_boarding.jpg"
                 }
             ]
         }
@@ -799,8 +799,8 @@
                         "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
                     },
                     "part_count": 4,
-                    "word_count": 4535,
-                    "reading_minutes": 19,
+                    "word_count": 6010,
+                    "reading_minutes": 25,
                     "image": "/raggiesoft-books/images/scenes/waystation/paths/seattle_p001_colby_kansas_truckstop.jpg"
                 }
             ]

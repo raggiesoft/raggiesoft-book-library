@@ -172,7 +172,11 @@ $legacyPartRedirects = [
     '/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/from-cchr-to-vdu-the-upperclass-gih-pilot-apartment/part-3-the-only-gih-pair-in-building-2-hampton-house-the-ra-s-look-in-the-hallway-the-1st-floor-laundry-room'
         => '/rachel/the-gih-pilot-the-heel-cord-surgery-2015-2016/from-cchr-to-vdu-the-upperclass-gih-pilot-apartment/part-3-the-only-gih-pair-in-building-2-harbor-house-the-ra-s-look-in-the-hallway-the-1st-floor-laundry-room',
 
-    // Waystation (Pasco & Seattle Pathfinder sub-routes): Split Colby, KS into its own dedicated Part
+    // Waystation (Norfolk cab update, Gate Four sweet-voice split, & Colby, KS split)
+    '/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-rolling-out-past-the-lockers-fellow-passengers-and-safe-home-to-emerald-creek'
+        => '/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-rolling-out-past-the-lockers-denise-s-turned-off-meter-and-safe-home-to-emerald-creek',
+    '/waystation/paths/seattle-pathfinder-exodus/book-one-the-pathfinder-exodus/chapter-1b-ninety-nine-dollars-westbound/part-1-ninety-nine-dollars-loose-legrests-overhead-and-crossing-bristol'
+        => '/waystation/paths/seattle-pathfinder-exodus/book-one-the-pathfinder-exodus/chapter-1b-ninety-nine-dollars-westbound/part-1-sweet-voice-at-gate-four-dropped-mask-in-richmond-and-crossing-bristol',
     '/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-2-colby-truck-stop-us-287-and-crying-into-four-safe-arms-in-pasco'
         => '/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-2-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake',
     '/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-empty-work-polos-ray-s-personal-number-and-home-in-studio-205'
