@@ -12,26 +12,26 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "13.6 MB",
+            "epub": "13.7 MB",
             "pdf": "13.3 MB",
-            "text_epub": "215 KB",
-            "text_pdf": "540 KB",
-            "package_7z": "155 KB",
-            "epub_bytes": 14312865,
-            "pdf_bytes": 13950032,
-            "text_epub_bytes": 219730,
-            "text_pdf_bytes": 552855,
-            "package_7z_bytes": 159062
+            "text_epub": "217 KB",
+            "text_pdf": "545 KB",
+            "package_7z": "157 KB",
+            "epub_bytes": 14315013,
+            "pdf_bytes": 13956285,
+            "text_epub_bytes": 221857,
+            "text_pdf_bytes": 558515,
+            "package_7z_bytes": 160590
         },
         "illustration_count": 51,
         "word_stats": {
-            "story_word_count": 75271,
-            "lore_word_count": 10697,
-            "combined_word_count": 85968,
-            "story_page_count": 274,
-            "combined_page_count": 313,
-            "reading_hours": 5,
-            "reading_minutes": 301,
+            "story_word_count": 76252,
+            "lore_word_count": 10742,
+            "combined_word_count": 86994,
+            "story_page_count": 277,
+            "combined_page_count": 316,
+            "reading_hours": 5.1,
+            "reading_minutes": 305,
             "novel_equivalent": 0.8,
             "scale_category": "Full-Length Contemporary Novel",
             "scale_badge": "Full-Length Novel",
@@ -155,8 +155,8 @@
                             "blue-tech-missed-shift-alarm-2001": "pasco-early-intercept"
                         },
                         "part_count": 5,
-                        "word_count": 6356,
-                        "reading_minutes": 26,
+                        "word_count": 6857,
+                        "reading_minutes": 28,
                         "image": "/raggiesoft-books/images/scenes/waystation/paths/pasco_p001_walter_kitchen_timetable.jpg"
                     },
                     {
@@ -172,8 +172,8 @@
                             "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
                         },
                         "part_count": 5,
-                        "word_count": 7748,
-                        "reading_minutes": 31,
+                        "word_count": 8228,
+                        "reading_minutes": 33,
                         "image": "/raggiesoft-books/images/scenes/waystation/paths/seattle_p001_colby_kansas_truckstop.jpg"
                     }
                 ]
@@ -855,8 +855,8 @@
                         "blue-tech-missed-shift-alarm-2001": "pasco-early-intercept"
                     },
                     "part_count": 5,
-                    "word_count": 6356,
-                    "reading_minutes": 26,
+                    "word_count": 6857,
+                    "reading_minutes": 28,
                     "image": "/raggiesoft-books/images/scenes/waystation/paths/pasco_p001_walter_kitchen_timetable.jpg"
                 },
                 {
@@ -872,8 +872,8 @@
                         "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
                     },
                     "part_count": 5,
-                    "word_count": 7748,
-                    "reading_minutes": 31,
+                    "word_count": 8228,
+                    "reading_minutes": 33,
                     "image": "/raggiesoft-books/images/scenes/waystation/paths/seattle_p001_colby_kansas_truckstop.jpg"
                 }
             ]
