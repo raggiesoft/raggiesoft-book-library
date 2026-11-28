@@ -14,24 +14,24 @@
         "ebook_sizes": {
             "epub": "13.9 MB",
             "pdf": "13.3 MB",
-            "text_epub": "194 KB",
-            "text_pdf": "481 KB",
-            "package_7z": "132 KB",
-            "epub_bytes": 14558989,
-            "pdf_bytes": 13962695,
-            "text_epub_bytes": 198623,
-            "text_pdf_bytes": 492887,
-            "package_7z_bytes": 135199
+            "text_epub": "195 KB",
+            "text_pdf": "485 KB",
+            "package_7z": "133 KB",
+            "epub_bytes": 14560491,
+            "pdf_bytes": 13967346,
+            "text_epub_bytes": 200143,
+            "text_pdf_bytes": 496779,
+            "package_7z_bytes": 136284
         },
         "illustration_count": 45,
         "word_stats": {
-            "story_word_count": 64904,
-            "lore_word_count": 9279,
-            "combined_word_count": 74183,
-            "story_page_count": 236,
-            "combined_page_count": 270,
-            "reading_hours": 4.3,
-            "reading_minutes": 260,
+            "story_word_count": 65567,
+            "lore_word_count": 9329,
+            "combined_word_count": 74896,
+            "story_page_count": 238,
+            "combined_page_count": 272,
+            "reading_hours": 4.4,
+            "reading_minutes": 262,
             "novel_equivalent": 0.7,
             "scale_category": "Compact Novel",
             "scale_badge": "Compact Novel",
@@ -64,8 +64,8 @@
                             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
                         },
                         "part_count": 12,
-                        "word_count": 20841,
-                        "reading_minutes": 84,
+                        "word_count": 21200,
+                        "reading_minutes": 85,
                         "image": "/raggiesoft-books/images/scenes/waystation/e001/e001_c001_p001_safe_home_emerald_creek_porch.jpg"
                     },
                     {
@@ -108,8 +108,8 @@
                             "norfolk-bay-four-boarding-2001": "ticket-snap-refuse-boarding"
                         },
                         "part_count": 1,
-                        "word_count": 1881,
-                        "reading_minutes": 8,
+                        "word_count": 2185,
+                        "reading_minutes": 9,
                         "image": "/raggiesoft-books/images/scenes/waystation/paths/exodus_p001_norfolk_bay4_boarding.jpg"
                     },
                     {
@@ -359,8 +359,8 @@
                         "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
                     },
                     "part_count": 12,
-                    "word_count": 20841,
-                    "reading_minutes": 84,
+                    "word_count": 21200,
+                    "reading_minutes": 85,
                     "image": "/raggiesoft-books/images/scenes/waystation/e001/e001_c001_p001_safe_home_emerald_creek_porch.jpg"
                 },
                 {
@@ -653,8 +653,8 @@
                         "norfolk-bay-four-boarding-2001": "ticket-snap-refuse-boarding"
                     },
                     "part_count": 1,
-                    "word_count": 1881,
-                    "reading_minutes": 8,
+                    "word_count": 2185,
+                    "reading_minutes": 9,
                     "image": "/raggiesoft-books/images/scenes/waystation/paths/exodus_p001_norfolk_bay4_boarding.jpg"
                 },
                 {
