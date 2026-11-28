@@ -12,26 +12,26 @@
         "navbarBrandText": "<span class=\"ova-serif fw-bold\" style=\"color: #E3B27C;\">Ocean View Archives</span>",
         "navbarBrandLink": "/raggiesoft-books",
         "ebook_sizes": {
-            "epub": "11.7 MB",
-            "pdf": "12.4 MB",
-            "text_epub": "177 KB",
-            "text_pdf": "448 KB",
-            "package_7z": "123 KB",
-            "epub_bytes": 12302591,
-            "pdf_bytes": 12980322,
-            "text_epub_bytes": 180753,
-            "text_pdf_bytes": 458879,
-            "package_7z_bytes": 126026
+            "epub": "12.8 MB",
+            "pdf": "12.8 MB",
+            "text_epub": "178 KB",
+            "text_pdf": "453 KB",
+            "package_7z": "125 KB",
+            "epub_bytes": 13442925,
+            "pdf_bytes": 13465971,
+            "text_epub_bytes": 182731,
+            "text_pdf_bytes": 464353,
+            "package_7z_bytes": 127874
         },
-        "illustration_count": 36,
+        "illustration_count": 40,
         "word_stats": {
-            "story_word_count": 60243,
-            "lore_word_count": 7601,
-            "combined_word_count": 67844,
-            "story_page_count": 219,
-            "combined_page_count": 247,
-            "reading_hours": 4,
-            "reading_minutes": 241,
+            "story_word_count": 61147,
+            "lore_word_count": 7733,
+            "combined_word_count": 68880,
+            "story_page_count": 222,
+            "combined_page_count": 250,
+            "reading_hours": 4.1,
+            "reading_minutes": 245,
             "novel_equivalent": 0.7,
             "scale_category": "Compact Novel",
             "scale_badge": "Compact Novel",
@@ -39,7 +39,7 @@
             "era_count": 1,
             "chapter_count": 12,
             "part_count": 41,
-            "illustration_count": 36,
+            "illustration_count": 40,
             "story_arc_count": 0
         },
         "story_arcs": [],
@@ -77,7 +77,7 @@
                             "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus"
                         },
                         "part_count": 3,
-                        "word_count": 4770,
+                        "word_count": 4769,
                         "reading_minutes": 20,
                         "image": "/raggiesoft-books/images/scenes/waystation/paths/exodus_p001_norfolk_bay4_boarding.jpg"
                     }
@@ -106,8 +106,8 @@
                             "blue-tech-missed-shift-alarm-2001": "pasco-early-intercept"
                         },
                         "part_count": 4,
-                        "word_count": 4512,
-                        "reading_minutes": 19,
+                        "word_count": 4993,
+                        "reading_minutes": 20,
                         "image": "/raggiesoft-books/images/scenes/waystation/paths/pasco_p001_walter_kitchen_timetable.jpg"
                     },
                     {
@@ -122,8 +122,8 @@
                             "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
                         },
                         "part_count": 4,
-                        "word_count": 4120,
-                        "reading_minutes": 17,
+                        "word_count": 4544,
+                        "reading_minutes": 19,
                         "image": "/raggiesoft-books/images/scenes/waystation/paths/seattle_p001_colby_kansas_truckstop.jpg"
                     }
                 ]
@@ -322,7 +322,7 @@
                         "norfolk-pathfinder-terminal-2001": "seattle-pathfinder-exodus"
                     },
                     "part_count": 3,
-                    "word_count": 4770,
+                    "word_count": 4769,
                     "reading_minutes": 20,
                     "image": "/raggiesoft-books/images/scenes/waystation/paths/exodus_p001_norfolk_bay4_boarding.jpg"
                 }
@@ -629,8 +629,8 @@
                         "blue-tech-missed-shift-alarm-2001": "pasco-early-intercept"
                     },
                     "part_count": 4,
-                    "word_count": 4512,
-                    "reading_minutes": 19,
+                    "word_count": 4993,
+                    "reading_minutes": 20,
                     "image": "/raggiesoft-books/images/scenes/waystation/paths/pasco_p001_walter_kitchen_timetable.jpg"
                 },
                 {
@@ -645,8 +645,8 @@
                         "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
                     },
                     "part_count": 4,
-                    "word_count": 4120,
-                    "reading_minutes": 17,
+                    "word_count": 4544,
+                    "reading_minutes": 19,
                     "image": "/raggiesoft-books/images/scenes/waystation/paths/seattle_p001_colby_kansas_truckstop.jpg"
                 }
             ]
