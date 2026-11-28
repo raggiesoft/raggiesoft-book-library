@@ -723,7 +723,7 @@ if ($isNotFound) {
 } elseif ($isHome) {
     $siteName = 'RaggieSoft Book Reader — Ocean View Archives';
     $ogTitle = 'RaggieSoft Book Reader — Ocean View Archives';
-    $ogDescription = 'Read free serialized novels, scene illustrations, and companion lore from Ocean View Archives in the RaggieSoft Book Reader.';
+    $ogDescription = 'Read free serialized novels, interactive Story Crossroads editions, and illustrated lore from Ocean View Archives in Book Reader.';
     $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/og/oceanview-archives.jpg';
     $ogImageAlt = 'Ocean View Archives — RaggieSoft Media literary imprint and RaggieSoft Book Reader';
 } elseif ($isCatalog) {
@@ -735,7 +735,7 @@ if ($isNotFound) {
 } elseif ($isAllIllustrations) {
     $siteName = 'Scene Illustrations Gallery | Ocean View Archives';
     $ogTitle = 'Scene Illustrations Gallery | Ocean View Archives';
-    $ogDescription = 'Explore 250+ illustrated story scenes across The Rachel Narrative, The Eleventh Child, Katie & Nathaniel, and Ocean View Archives.';
+    $ogDescription = 'Explore 450+ illustrated story scenes across The Rachel Narrative, The Eleventh Child, The Uncharted Waystation, and Ocean View Archives.';
     $ogImage = $cdnBaseUrl . '/raggiesoft-books/images/covers/og/rachel.jpg';
     $ogImageAlt = 'Scene Illustrations Gallery across Ocean View Archives novels';
 } elseif ($isStats) {

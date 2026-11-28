@@ -27,9 +27,10 @@
  *        a chapter in progress!
  *     3. Full Library Gateway Card (`/library`, `/illustrations`, `/stats`,
  *        `/bookmarks`, `/settings`) + Live Corpus Telemetry Strip.
- *     4. 6-Card Featured Showcase Grid (*The Eleventh Child*, *The Rachel Narrative*,
- *        *Library-Wide Table of Illustrations*, *The Stardust Engine*, *Escape Velocity:
- *        Ad Astra*, and *Contemporary Fiction Library*).
+ *     4. Featured Showcase Grid (*The Eleventh Child*, *The Rachel Narrative*,
+ *        *The Uncharted Waystation*, *Library-Wide Table of Illustrations*,
+ *        *The Stardust Engine*, *Escape Velocity: Ad Astra*, and *Contemporary
+ *        Fiction Library*).
  *     5. 3-Pillar Reader Feature Overview (Dyslexia-friendly typography, Offline PWA
  *        caching, and Engine Room Records companion scores) + Editorial Callout.
  *
@@ -75,6 +76,7 @@ $homeLoreWords = (int)($homeTotals['total_curated_lore_words'] ?? ($homeTotals['
 $homeCombinedWords = (int)($homeTotals['total_combined_words'] ?? ($homeTotals['combined_word_count'] ?? ($homeStoryWords + $homeLoreWords)));
 $homeTotalPages = (int)($homeTotals['total_combined_pages'] ?? ($homeTotals['estimated_total_pages'] ?? ($homeCombinedWords > 0 ? ceil($homeCombinedWords / 275) : 0)));
 $homeNovelEquivs = (float)($homeTotals['total_novel_equivalents'] ?? ($homeTotals['standard_90k_novel_equivalents_story'] ?? ($homeStoryWords > 0 ? round($homeStoryWords / 90000, 1) : 0)));
+$homeTotalIllustrations = (int)($homeTotals['total_illustrations'] ?? 457);
 ?>
 
 <!--
@@ -95,13 +97,13 @@ $homeNovelEquivs = (float)($homeTotals['total_novel_equivalents'] ?? ($homeTotal
         "name": "RaggieSoft Media",
         "url": "https://corporate.raggiesoft.com"
       },
-      "description": "The official literary and archival imprint of RaggieSoft Media, preserving original contemporary fiction, sci-fi, and fantasy universes inside the Stardust Engine Library PWA."
+      "description": "The official literary and archival imprint of RaggieSoft Media, preserving original contemporary fiction, interactive Story Crossroads novels, sci-fi, and fantasy universes inside RaggieSoft Book Reader."
     },
     {
       "@type": "CollectionPage",
       "name": "Ocean View Archives — Literary Imprint & Book Reader Hub",
       "url": "https://books.raggiesoft.com",
-      "description": "Directory of literary works, prominently co-featuring The Eleventh Child: The Story of Jordan, The Rachel Narrative, and the Library-Wide Table of Illustrations."
+      "description": "Directory of literary works, prominently featuring The Eleventh Child: The Story of Jordan, The Rachel Narrative, The Uncharted Waystation, and the Library-Wide Table of Illustrations."
     }
   ]
 }
@@ -599,6 +601,9 @@ $homeNovelEquivs = (float)($homeTotals['total_novel_equivalents'] ?? ($homeTotal
                 <a href="/rachel" class="ova-btn-bronze">
                     <i class="ph-fill ph-star"></i> Featured: The Rachel Narrative
                 </a>
+                <a href="/waystation" class="ova-btn-bronze">
+                    <i class="ph-fill ph-compass"></i> Featured: The Uncharted Waystation
+                </a>
                 <a href="/illustrations" class="ova-btn-ghost">
                     <i class="ph-fill ph-images"></i> Library-Wide Table of Illustrations
                 </a>
@@ -753,7 +758,33 @@ $homeNovelEquivs = (float)($homeTotals['total_novel_equivalents'] ?? ($homeTotal
                     </div>
                 </article>
 
-                <!-- 3. Library-Wide Table of Illustrations (All Novels) -->
+                <!-- 3. Featured Story Crossroads Novel: The Uncharted Waystation -->
+                <article class="ova-universe-card">
+                    <div class="ova-universe-media">
+                        <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/images/covers/og/waystation.jpg"
+                             alt="The Uncharted Waystation — Interactive Story Crossroads Novel of Sibling Loyalty &amp; Twin-Moon Sanctuary"
+                             loading="lazy">
+                    </div>
+                    <div class="ova-universe-body">
+                        <div>
+                            <span class="ova-universe-tag">Featured Story Crossroads &bull; 51 Illustrations</span>
+                            <h3 class="ova-universe-title">The Uncharted Waystation</h3>
+                            <p class="ova-universe-desc">
+                                From Tidewater Virginia and tiny Studio 205 to the twin-moon borderlands of Vaeloria, follow twenty-four-year-old Nolan Lennox, his tall nineteen-year-old sister Gwen, and his devoted girlfriend Mallory Walsh across four interactive Story Crossroads&mdash;paired with <a href="https://waystation.raggiesoft.com" data-no-spa="true" style="color: var(--rs-primary); font-weight: 700;">waystation.raggiesoft.com</a>.
+                            </p>
+                        </div>
+                        <div>
+                            <a href="/waystation" class="ova-universe-link">
+                                <i class="ph-fill ph-compass"></i> Read The Uncharted Waystation
+                            </a>
+                            <a href="/waystation/illustrations" class="ova-universe-sublink">
+                                <i class="ph-fill ph-images"></i> Book Illustrations (51 Plates)
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- 4. Library-Wide Table of Illustrations (All Novels) -->
                 <article class="ova-universe-card">
                     <div class="ova-universe-media">
                         <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/images/scenes/rachel/b021/feb_2016_saacurc_kincaid_student_center_school_colors_clothespins.jpg"
@@ -762,21 +793,21 @@ $homeNovelEquivs = (float)($homeTotals['total_novel_equivalents'] ?? ($homeTotal
                     </div>
                     <div class="ova-universe-body">
                         <div>
-                            <span class="ova-universe-tag">All-Novel Visual Index &bull; 253 Plates</span>
+                            <span class="ova-universe-tag">All-Novel Visual Index &bull; <?= number_format($homeTotalIllustrations) ?> Plates</span>
                             <h3 class="ova-universe-title">Library-Wide Table of Illustrations</h3>
                             <p class="ova-universe-desc">
-                                Explore every high-resolution 16:9 chapter plate and inline archival illustration across <strong>all</strong> illustrated Ocean View Archives novels&mdash;including <em>The Rachel Narrative</em>, <em>The Eleventh Child</em>, <em>The Stardust Engine</em>, and <em>Escape Velocity: Ad Astra</em>&mdash;with book filter pills, instant search, and lightbox inspection.
+                                Explore every high-resolution 16:9 chapter plate and inline archival illustration across <strong>all</strong> illustrated Ocean View Archives and Story Crossroads novels&mdash;including <em>The Rachel Narrative</em>, <em>The Eleventh Child</em>, <em>The Uncharted Waystation</em>, and <em>The Stardust Engine</em>&mdash;with book filter pills, instant search, and lightbox inspection.
                             </p>
                         </div>
                         <div>
                             <a href="/illustrations" class="ova-universe-link">
-                                <i class="ph-fill ph-images"></i> Browse All 253 Library Illustrations
+                                <i class="ph-fill ph-images"></i> Browse All <?= number_format($homeTotalIllustrations) ?> Library Illustrations
                             </a>
                         </div>
                     </div>
                 </article>
 
-                <!-- 4. The Stardust Engine: The Story of the Iron Five -->
+                <!-- 5. The Stardust Engine: The Story of the Iron Five -->
                 <article class="ova-universe-card">
                     <div class="ova-universe-media">
                         <img src="<?= htmlspecialchars($cdnBaseUrl) ?>/raggiesoft-books/images/covers/og/stardust-engine.jpg"
