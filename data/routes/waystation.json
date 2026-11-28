@@ -15,23 +15,23 @@
             "epub": "13.7 MB",
             "pdf": "13.3 MB",
             "text_epub": "219 KB",
-            "text_pdf": "553 KB",
+            "text_pdf": "554 KB",
             "package_7z": "158 KB",
-            "epub_bytes": 14317172,
-            "pdf_bytes": 13963020,
-            "text_epub_bytes": 224048,
-            "text_pdf_bytes": 565828,
-            "package_7z_bytes": 161451
+            "epub_bytes": 14317649,
+            "pdf_bytes": 13964276,
+            "text_epub_bytes": 224555,
+            "text_pdf_bytes": 567587,
+            "package_7z_bytes": 161829
         },
         "illustration_count": 51,
         "word_stats": {
-            "story_word_count": 77015,
-            "lore_word_count": 10778,
-            "combined_word_count": 87793,
-            "story_page_count": 280,
-            "combined_page_count": 319,
-            "reading_hours": 5.1,
-            "reading_minutes": 308,
+            "story_word_count": 77256,
+            "lore_word_count": 11992,
+            "combined_word_count": 89248,
+            "story_page_count": 281,
+            "combined_page_count": 325,
+            "reading_hours": 5.2,
+            "reading_minutes": 309,
             "novel_equivalent": 0.9,
             "scale_category": "Full-Length Contemporary Novel",
             "scale_badge": "Full-Length Novel",
@@ -64,8 +64,8 @@
                             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
                         },
                         "part_count": 12,
-                        "word_count": 22263,
-                        "reading_minutes": 90,
+                        "word_count": 22504,
+                        "reading_minutes": 91,
                         "image": "/raggiesoft-books/images/scenes/waystation/e001/e001_c001_p001_safe_home_emerald_creek_porch.jpg"
                     },
                     {
@@ -359,8 +359,8 @@
                         "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
                     },
                     "part_count": 12,
-                    "word_count": 22263,
-                    "reading_minutes": 90,
+                    "word_count": 22504,
+                    "reading_minutes": 91,
                     "image": "/raggiesoft-books/images/scenes/waystation/e001/e001_c001_p001_safe_home_emerald_creek_porch.jpg"
                 },
                 {
