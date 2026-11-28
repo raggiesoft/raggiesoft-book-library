@@ -178,16 +178,25 @@ $tocFrontierCrossroads = $pendingFrontierCrossroads ?? null;
         <!-- SECTION 4: MULTI-LEVEL ERA -> CHAPTER -> PART ACCORDION -->
         <div class="toc-accordion" style="display: flex; flex-direction: column; gap: 1rem;">
             
-            <!-- Outer Loop: Iterate over top-level Story Eras (`e001`, `e002`, ...) -->
-            <?php foreach ($tocErasList as $eIndex => $era):
+            <!-- Outer Loop: Iterate over top-level Story Eras (`e001`, `e002`, ...), appending "(Continued)" if an earlier Era resumes after an intra-era Crossroads rejoin -->
+            <?php
+            $seenEraTitlesOnToc = [];
+            foreach ($tocErasList as $eIndex => $era):
                 $eraIllusCount = (int)($era['illustration_count'] ?? 0);
                 $eraWordCount = (int)($era['word_count'] ?? 0);
+                $baseEraTitle = (string)($era['era_title'] ?? '');
+                $displayEraTitle = isset($seenEraTitlesOnToc[$baseEraTitle])
+                    ? ($baseEraTitle . ' (Continued)')
+                    : $baseEraTitle;
+                if ($baseEraTitle !== '') {
+                    $seenEraTitlesOnToc[$baseEraTitle] = true;
+                }
             ?>
                 <details class="toc-book" style="background: var(--rs-bg); border: 1px solid var(--rs-border); border-radius: 8px; overflow: hidden;">
                     <!-- Native `<summary>` toggle header for the Era (uses `<span>` rather than `<h2>` inside `<summary>` to keep screen-reader heading trees clean) -->
                     <summary style="padding: 1.5rem; cursor: pointer; list-style: none; display: flex; flex-direction: column; gap: 0.5rem; user-select: none;">
                         <div style="display: flex; align-items: center; justify-content: space-between; gap: 0.75rem;">
-                            <span class="toc-era-heading" style="margin: 0; font-size: 1.5rem; font-weight: 700; color: var(--rs-text);"><?php echo htmlspecialchars($era['era_title']); ?></span>
+                            <span class="toc-era-heading" style="margin: 0; font-size: 1.5rem; font-weight: 700; color: var(--rs-text);"><?php echo htmlspecialchars($displayEraTitle); ?></span>
                             <div style="display: inline-flex; align-items: center; gap: 0.65rem;">
                                 <?php if ($eraWordCount > 0): ?>
                                     <span style="font-size: 0.76rem; font-weight: 700; padding: 0.2rem 0.55rem; border-radius: 999px; background: var(--rs-surface); border: 1px solid var(--rs-border); color: var(--rs-text); opacity: 0.85; white-space: nowrap; font-variant-numeric: tabular-nums;">

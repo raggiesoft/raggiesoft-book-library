@@ -15,13 +15,13 @@
             "epub": "13.9 MB",
             "pdf": "13.3 MB",
             "text_epub": "194 KB",
-            "text_pdf": "482 KB",
+            "text_pdf": "481 KB",
             "package_7z": "132 KB",
-            "epub_bytes": 14559352,
-            "pdf_bytes": 13964396,
-            "text_epub_bytes": 198964,
-            "text_pdf_bytes": 493293,
-            "package_7z_bytes": 135062
+            "epub_bytes": 14558989,
+            "pdf_bytes": 13962695,
+            "text_epub_bytes": 198623,
+            "text_pdf_bytes": 492887,
+            "package_7z_bytes": 135215
         },
         "illustration_count": 45,
         "word_stats": {
@@ -36,7 +36,7 @@
             "scale_category": "Compact Novel",
             "scale_badge": "Compact Novel",
             "benchmark_note": "Compact single-volume trade paperback length (40,000\u201370,000 words)",
-            "era_count": 1,
+            "era_count": 2,
             "chapter_count": 14,
             "part_count": 43,
             "illustration_count": 45,
@@ -47,19 +47,19 @@
             {
                 "id": "norfolk-pathfinder-terminal-2001",
                 "trigger_part": "e001/c001/p009.md",
-                "trigger_url": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-locker-alcove-on-monticello",
+                "trigger_url": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-locker-alcove-on-monticello",
                 "kicker": "Story Crossroads \u2022 Tuesday, August 21, 2001, 9:50 AM \u2014 1961 Norfolk Pathfinder Terminal",
                 "title": "Inside the Monticello Locker Alcove: Does Nolan Reject Tammy Now or Wait While She Buys Tickets?",
-                "prompt": "Wheeled six feet behind the thick concrete column into the recessed steel coin-locker alcove leading to the 1961 Monticello Avenue terminal's separate Men's and Women's restrooms\u2014shielded from concourse security by the lockers, Tammy's back, and her open baby-blue cardigan wings\u2014twenty-three-year-old Nolan Lennox faces Tammy's ultimate trump card: a silent two-second flash beneath her braless shelf-bra camisole and a soft Week-One promise of zero yelling in Seattle plus a payphone call to Blue Tech in Richmond. Every option opens a complete, coequal story route returning Nolan home to Studio 205 and Mallory Walsh before Vaeloria.",
+                "prompt": "Wheeled six feet behind the thick concrete column into the recessed steel coin-locker alcove leading to the 1961 Monticello Avenue terminal's separate Men's and Women's restrooms\u2014shielded from concourse security by the lockers, Tammy's back, and her open baby-blue cardigan wings\u2014twenty-three-year-old Nolan Lennox faces Tammy's ultimate trump card: a silent two-second flash beneath her braless shelf-bra camisole and a soft Week-One promise of zero yelling in Seattle plus a payphone call to Blue Tech in Richmond. Every option opens a complete, coequal story route.",
                 "required_choices": [],
                 "options": [
                     {
                         "id": "lock-wheelchair-brakes-emerald-creek",
                         "crossroads_id": "norfolk-pathfinder-terminal-2001",
                         "label": "Reject Tammy's Promise & Roll Out Before She Buys Tickets",
-                        "subtitle": "Realize peaceful, yell-free hugs with Gwen beat empty promises every time\u2014rolling straight out from behind the lockers into plain view of thirty witnesses to lock your wheelchair brakes, break up for good, and ride straight home at zero charge in kind Norfolk cabbie Denise Carter's taxi.",
+                        "subtitle": "Realize peaceful, yell-free hugs with Gwen beat empty promises every time\u2014rolling straight out from behind the lockers into plain view of the waiting room to lock your wheelchair brakes, tell Tammy you're breaking up for good, and head back home to Gwen and Grandpa Walter in Emerald Creek.",
                         "entry_part": "e001/c001/p010.md",
-                        "entry_url": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-rolling-out-past-the-lockers-denise-s-turned-off-meter-and-safe-home-to-emerald-creek",
+                        "entry_url": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-10-rolling-out-past-the-lockers-denise-s-turned-off-meter-and-safe-home-to-emerald-creek",
                         "required_choices": {
                             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
                         },
@@ -72,9 +72,9 @@
                         "id": "norfolk-ticket-counter",
                         "crossroads_id": "norfolk-pathfinder-terminal-2001",
                         "label": "Believe Tammy's Promise While She Buys the Ninety-Nine-Dollar Tickets",
-                        "subtitle": "Take Tammy's velvet Week-One promise and Richmond payphone assurance at face value\u2014waiting beside the lockers while she buys two walk-up cash tickets to Seattle and wheels you out to Gate Four, where the Richmond coach has no wheelchair lift.",
+                        "subtitle": "Take Tammy's velvet Week-One promise and Richmond payphone assurance at face value\u2014easing your hands off your wheel locks and waiting in the concourse while she walks up to the counter to buy two ninety-nine-dollar cash tickets to Seattle.",
                         "entry_part": "paths/norfolk-ticket-counter/e001/c001/p001.md",
-                        "entry_url": "/waystation/paths/norfolk-ticket-counter/book-one-ninety-nine-dollars-at-the-ticket-window/chapter-1a-two-ticket-folders-and-four-steep-steps-at-gate-four/two-ninety-nine-dollar-folders-and-no-lift-at-gate-four",
+                        "entry_url": "/waystation/paths/norfolk-ticket-counter/norfolk-terminal-route-ninety-nine-dollars-at-the-ticket-window/chapter-1a-two-ticket-folders-and-four-steep-steps-at-gate-four/two-ninety-nine-dollar-folders-and-no-lift-at-gate-four",
                         "required_choices": {
                             "norfolk-pathfinder-terminal-2001": "norfolk-ticket-counter"
                         },
@@ -88,10 +88,10 @@
             {
                 "id": "norfolk-bay-four-boarding-2001",
                 "trigger_part": "paths/norfolk-ticket-counter/e001/c001/p001.md",
-                "trigger_url": "/waystation/paths/norfolk-ticket-counter/book-one-ninety-nine-dollars-at-the-ticket-window/chapter-1a-two-ticket-folders-and-four-steep-steps-at-gate-four/two-ninety-nine-dollar-folders-and-no-lift-at-gate-four",
+                "trigger_url": "/waystation/paths/norfolk-ticket-counter/norfolk-terminal-route-ninety-nine-dollars-at-the-ticket-window/chapter-1a-two-ticket-folders-and-four-steep-steps-at-gate-four/two-ninety-nine-dollar-folders-and-no-lift-at-gate-four",
                 "kicker": "Story Crossroads \u2022 Tuesday, August 21, 2001, 9:56 AM \u2014 Gate Four, Norfolk Pathfinder Terminal",
                 "title": "Paid Tickets and Four Steep Steps: Does Tammy Snap or Keep Her Week-One Voice?",
-                "prompt": "With two freshly printed ninety-nine-dollar Seattle ticket folders in Tammy's hand, the Gate Four driver shakes his head at Nolan's manual wheelchair: nobody called corporate forty-eight hours ahead for a hydraulic lift, meaning Nolan's chair must ride folded in the luggage bay while he climbs four steep aluminum steps on his forearm crutches. If Tammy drops her sweet mask and snaps now, Nolan will refuse to board on the spot and go home; only if Tammy keeps every drop of her gentle Week-One voice will literal-minded Nolan trust her enough to climb aboard.",
+                "prompt": "With two freshly printed ninety-nine-dollar Seattle ticket folders in Tammy's hand, the Gate Four driver shakes his head at Nolan's manual wheelchair: nobody called corporate forty-eight hours ahead for a hydraulic lift, meaning Nolan's chair must ride folded in the luggage bay while he climbs four steep aluminum steps on his forearm crutches. What Tammy says next decides whether Nolan steps aboard.",
                 "required_choices": {
                     "norfolk-pathfinder-terminal-2001": "norfolk-ticket-counter"
                 },
@@ -100,9 +100,9 @@
                         "id": "ticket-snap-refuse-boarding",
                         "crossroads_id": "norfolk-bay-four-boarding-2001",
                         "label": "Tammy Snaps at Gate Four \u2014 Refuse to Board & Go Home",
-                        "subtitle": "The instant Tammy drops her sweet voice and barks at you in front of the boarding queue, wake up to the lie, roll straight back inside the waiting room to end things for good, and ride home free of charge in kind Norfolk cabbie Denise Carter's taxi\u2014rejoining the mainline sequence.",
+                        "subtitle": "The instant Tammy drops her sweet voice and snaps at you in front of the boarding queue, wake up to the lie, ask the driver to pull your wheelchair back out of the luggage bay, and roll straight back inside the waiting room to break up for good and go home.",
                         "entry_part": "paths/ticket-snap-refuse-boarding/e001/c001/p001.md",
-                        "entry_url": "/waystation/paths/ticket-snap-refuse-boarding/book-one-turning-around-at-gate-four/chapter-1b-dropped-mask-at-bay-four-and-denise-s-cab-home/snapping-at-gate-four-refusing-the-steps-and-denise-s-cab-home",
+                        "entry_url": "/waystation/paths/ticket-snap-refuse-boarding/gate-four-route-refusing-the-steps-and-denise-s-cab-home/chapter-1b-dropped-mask-at-bay-four-and-denise-s-cab-home/snapping-at-gate-four-refusing-the-steps-and-denise-s-cab-home",
                         "required_choices": {
                             "norfolk-pathfinder-terminal-2001": "norfolk-ticket-counter",
                             "norfolk-bay-four-boarding-2001": "ticket-snap-refuse-boarding"
@@ -116,9 +116,9 @@
                         "id": "seattle-pathfinder-exodus",
                         "crossroads_id": "norfolk-bay-four-boarding-2001",
                         "label": "Tammy Keeps Her Sweet Week-One Voice \u2014 Board the Pathfinder",
-                        "subtitle": "Reassured by Tammy's warm, patient Week-One smile\u2014promising to carry your footrests, call Blue Tech together in Richmond, and ask the Richmond desk for a lift coach\u2014climb those four aluminum steps onto Gate Four before her mask drops a hundred miles up the highway.",
+                        "subtitle": "Reassured by Tammy's warm, patient Week-One smile\u2014apologizing to the driver, carrying your metal footrests, and promising to call Blue Tech together in Richmond and ask the desk for a lift coach\u2014trust her word and climb the four steep aluminum steps onto Gate Four.",
                         "entry_part": "paths/seattle-pathfinder-exodus/e001/c001/p001.md",
-                        "entry_url": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-1-sweet-voice-at-gate-four-dropped-mask-in-richmond-and-crossing-bristol",
+                        "entry_url": "/waystation/paths/seattle-pathfinder-exodus/pathfinder-westbound-route-from-norfolk-to-missed-shift-one/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-1-sweet-voice-at-gate-four-dropped-mask-in-richmond-and-crossing-bristol",
                         "required_choices": {
                             "norfolk-pathfinder-terminal-2001": "norfolk-ticket-counter",
                             "norfolk-bay-four-boarding-2001": "seattle-pathfinder-exodus"
@@ -133,10 +133,10 @@
             {
                 "id": "blue-tech-missed-shift-alarm-2001",
                 "trigger_part": "paths/seattle-pathfinder-exodus/e001/c001/p003.md",
-                "trigger_url": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-3-eight-oh-five-at-the-timeclock-and-two-unspoken-guardrails",
+                "trigger_url": "/waystation/paths/seattle-pathfinder-exodus/pathfinder-westbound-route-from-norfolk-to-missed-shift-one/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-3-eight-oh-five-at-the-timeclock-and-two-unspoken-guardrails",
                 "kicker": "Story Crossroads \u2022 Wednesday, August 22, 2001, 8:05 PM \u2014 Emerald Creek Blue Tech",
                 "title": "Missed Shift Number One: Does Mallory Check on Nolan Tonight or Wait Until Friday?",
-                "prompt": "As Nolan's Pathfinder coach rolls west past St. Louis after his loose overhead wheelchair legrests crash down onto Tammy's head, eight-oh-five clicks onto the Emerald Creek Blue Tech breakroom timeclock\u2014marking the first No-Call No-Show of Nolan's spotless two-year career. Quietly in love with Nolan yet bound both by respect for his relationship and by corporate HR's rule to wait until Friday's third missed shift, Computers Shift Supervisor Mallory Walsh stands beside her car four blocks from Grandpa Walter's house on Eden Way North. Both options return Nolan home to Studio 205 and Mallory before Vaeloria.",
+                "prompt": "Eight-oh-five clicks onto the Emerald Creek Blue Tech breakroom timeclock\u2014marking the first No-Call No-Show of Nolan Lennox's spotless two-year career. Quietly in love with Nolan yet bound both by respect for his relationship and by corporate HR's rule to wait until Friday's third missed shift before calling an emergency contact, Computers Shift Supervisor Mallory Walsh stands beside her car four blocks from Grandpa Walter's house off Eden Way North.",
                 "required_choices": {
                     "norfolk-pathfinder-terminal-2001": "norfolk-ticket-counter",
                     "norfolk-bay-four-boarding-2001": "seattle-pathfinder-exodus"
@@ -145,10 +145,10 @@
                     {
                         "id": "pasco-early-intercept",
                         "crossroads_id": "blue-tech-missed-shift-alarm-2001",
-                        "label": "Drive Down Eden Way North Tonight & Intercept Pasco",
-                        "subtitle": "Break corporate HR's three-day waiting rule immediately on Wednesday night, uncover Tammy's cash Seattle route at Pinecrest Court with Gwen and Grandpa Walter on Thursday morning, and fly Meridian Airlines into Pasco Regional Airport to rescue Nolan minutes before Tammy leads him into the terminal restroom.",
+                        "label": "Drive Down Eden Way North Tonight",
+                        "subtitle": "Trust your gut over corporate HR's three-day waiting rule\u2014driving four blocks down Eden Way North right after closing tonight to check on Nolan with Gwen and Grandpa Walter before another day slips away.",
                         "entry_part": "paths/pasco-early-intercept/e001/c001/p001.md",
-                        "entry_url": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-1-eden-way-north-at-eight-eighteen-and-two-pre-dawn-tickets-west",
+                        "entry_url": "/waystation/paths/pasco-early-intercept/pasco-rescue-route-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-1-eden-way-north-at-eight-eighteen-and-two-pre-dawn-tickets-west",
                         "required_choices": {
                             "norfolk-pathfinder-terminal-2001": "norfolk-ticket-counter",
                             "norfolk-bay-four-boarding-2001": "seattle-pathfinder-exodus",
@@ -162,10 +162,10 @@
                     {
                         "id": "seattle-full-exodus-rescue",
                         "crossroads_id": "blue-tech-missed-shift-alarm-2001",
-                        "label": "Respect Workplace Boundaries & Wait Until Friday's Third No-Show",
-                        "subtitle": "Honor corporate protocol and relationship guardrails until Friday evening's automatic third-strike termination\u2014leaving feverish Nolan to endure the full haul to Seattle, Puget Sound General Hospital, grounded post-9/11 skies, and missing Gwen's eighteenth birthday while Grandpa Walter refuses to die until Gwen and Mallory bring Nolan home.",
+                        "label": "Respect Corporate Protocol & Wait Until Friday's Third No-Show",
+                        "subtitle": "Honor corporate HR rules and off-the-clock boundaries\u2014holding back until Friday evening's third missed shift gives you official reason to call Grandpa Walter's landline.",
                         "entry_part": "paths/seattle-full-exodus-rescue/e001/c001/p001.md",
-                        "entry_url": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-1-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake",
+                        "entry_url": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-1-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake",
                         "required_choices": {
                             "norfolk-pathfinder-terminal-2001": "norfolk-ticket-counter",
                             "norfolk-bay-four-boarding-2001": "seattle-pathfinder-exodus",
@@ -180,8 +180,8 @@
             },
             {
                 "id": "borderland-three-roads",
-                "trigger_part": "e001/c003/p001.md",
-                "trigger_url": "/waystation/book-one-beyond-the-studio-rift/chapter-3-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
+                "trigger_part": "e002/c002/p001.md",
+                "trigger_url": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-2-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
                 "kicker": "Story Crossroads \u2022 Second Afternoon of the Twin Moons, The Sunken Milestone",
                 "title": "Three Gentle Roads Toward the Waystation: How Do Nolan and Gwen Travel?",
                 "prompt": "With both wheelchairs left behind in Studio 205 on Earth, barefoot twenty-four-year-old Nolan Lennox and his six-foot-one nineteen-year-old sister Gwen have learned why Vaeloria's sleeping Astrolabe answered Gwen's wish: only two inseparable, unhurried hearts can re-harmonize the twin rings and heal The Great Drift. Here at the Sunken Milestone, peddler Bramwell Kettle shows them three gentle 1980s-fantasy routes winding inward. Every option opens a complete, coequal story route.",
@@ -192,8 +192,8 @@
                         "crossroads_id": "borderland-three-roads",
                         "label": "The Glasswater Lantern-Barge Canal",
                         "subtitle": "Step onto barge-master Maren's wide reed-and-cedar lantern boat\u2014cuddling barefoot on cushioned planks with forearm crutches stowed safe beside the gunwale while Gwen's astronomy eye guides the barge through the misty stars of The Great Drift.",
-                        "entry_part": "paths/lantern-barge-canal/e001/c004/p001.md",
-                        "entry_url": "/waystation/paths/lantern-barge-canal/book-one-beyond-the-studio-rift/chapter-4-lanterns-on-the-glasswater/drifting-under-sapphire-glass",
+                        "entry_part": "paths/lantern-barge-canal/e002/c003/p001.md",
+                        "entry_url": "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-3-lanterns-on-the-glasswater/drifting-under-sapphire-glass",
                         "required_choices": {
                             "borderland-three-roads": "lantern-barge-canal"
                         },
@@ -207,8 +207,8 @@
                         "crossroads_id": "borderland-three-roads",
                         "label": "The Whisperwood Cushion-Moss Road",
                         "subtitle": "Walk unhurriedly at your own forearm-crutch pace over three-inch velvet moss laid by the Slow-Footed Order, soaking bare feet in 98-degree mineral springs and curling up together in cozy stone shelters as your shared footsteps reawaken sleepy forest lanterns.",
-                        "entry_part": "paths/whisperwood-moss-road/e001/c004/p001.md",
-                        "entry_url": "/waystation/paths/whisperwood-moss-road/book-one-beyond-the-studio-rift/chapter-4-the-slow-footed-order-s-road/warm-springs-and-glowing-canopy",
+                        "entry_part": "paths/whisperwood-moss-road/e002/c003/p001.md",
+                        "entry_url": "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-3-the-slow-footed-order-s-road/warm-springs-and-glowing-canopy",
                         "required_choices": {
                             "borderland-three-roads": "whisperwood-moss-road"
                         },
@@ -222,8 +222,8 @@
                         "crossroads_id": "borderland-three-roads",
                         "label": "The Brass Counterweight Gondola Way",
                         "subtitle": "Board the oak-and-brass water-balanced sky gondola rising smoothly into the Amber Crags past singing bronze wind-harps, helping the cliffside Star-Keepers recalibrate moon-rings knocked out of phase by The Great Drift.",
-                        "entry_part": "paths/brass-counterweight-way/e001/c004/p001.md",
-                        "entry_url": "/waystation/paths/brass-counterweight-way/book-one-beyond-the-studio-rift/chapter-4-above-the-painted-clouds/gondolas-of-the-amber-crags",
+                        "entry_part": "paths/brass-counterweight-way/e002/c003/p001.md",
+                        "entry_url": "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-3-above-the-painted-clouds/gondolas-of-the-amber-crags",
                         "required_choices": {
                             "borderland-three-roads": "brass-counterweight-way"
                         },
@@ -256,105 +256,105 @@
         "theme": "raggiesoft-books",
         "filePath": "__ILLUSTRATIONS__"
     },
-    "/waystation/book-one-beyond-the-studio-rift": {
+    "/waystation/book-one-tidewater-and-studio-205": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book One: Beyond the Studio Rift",
+        "title": "Book One: Tidewater and Studio 205",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|0"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease": {
+    "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 1: Two Names on One Studio Lease",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|0|0"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-1-aisle-four-cutback-transfers-and-ready-for-everything": {
+    "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-1-aisle-four-cutback-transfers-and-ready-for-everything": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Aisle Four, Cutback Transfers, and Ready for Everything",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p001.md",
         "noPrev": true,
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-2-four-wooden-steps-sofa-cuddles-and-your-older-sister"
+        "nextUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-2-four-wooden-steps-sofa-cuddles-and-your-older-sister"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-2-four-wooden-steps-sofa-cuddles-and-your-older-sister": {
+    "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-2-four-wooden-steps-sofa-cuddles-and-your-older-sister": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Four Wooden Steps, Sofa Cuddles, and Your Older Sister?",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p002.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-1-aisle-four-cutback-transfers-and-ready-for-everything",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-3-booth-fries-first-night-away-from-home-and-connecting-day-one"
+        "prevUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-1-aisle-four-cutback-transfers-and-ready-for-everything",
+        "nextUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-3-booth-fries-first-night-away-from-home-and-connecting-day-one"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-3-booth-fries-first-night-away-from-home-and-connecting-day-one": {
+    "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-3-booth-fries-first-night-away-from-home-and-connecting-day-one": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Booth Fries, First Night Away From Home, and Connecting Day One",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p003.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-2-four-wooden-steps-sofa-cuddles-and-your-older-sister",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-4-sunday-morning-glow-big-brother-boundaries-and-straight-a-homework"
+        "prevUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-2-four-wooden-steps-sofa-cuddles-and-your-older-sister",
+        "nextUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-4-sunday-morning-glow-big-brother-boundaries-and-straight-a-homework"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-4-sunday-morning-glow-big-brother-boundaries-and-straight-a-homework": {
+    "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-4-sunday-morning-glow-big-brother-boundaries-and-straight-a-homework": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: Sunday Morning Glow, Big-Brother Boundaries, and Straight-A Homework",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p004.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-3-booth-fries-first-night-away-from-home-and-connecting-day-one",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-5-two-direct-deposit-stubs-one-wobbly-wooden-ramp-and-moving-off-route-13"
+        "prevUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-3-booth-fries-first-night-away-from-home-and-connecting-day-one",
+        "nextUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-5-two-direct-deposit-stubs-one-wobbly-wooden-ramp-and-moving-off-route-13"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-5-two-direct-deposit-stubs-one-wobbly-wooden-ramp-and-moving-off-route-13": {
+    "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-5-two-direct-deposit-stubs-one-wobbly-wooden-ramp-and-moving-off-route-13": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 5: Two Direct-Deposit Stubs, One Wobbly Wooden Ramp, and Moving Off Route 13",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p005.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-4-sunday-morning-glow-big-brother-boundaries-and-straight-a-homework",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-6-two-digit-clocks-floppy-disk-backups-and-turning-everything-off-before-midnight"
+        "prevUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-4-sunday-morning-glow-big-brother-boundaries-and-straight-a-homework",
+        "nextUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-6-two-digit-clocks-floppy-disk-backups-and-turning-everything-off-before-midnight"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-6-two-digit-clocks-floppy-disk-backups-and-turning-everything-off-before-midnight": {
+    "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-6-two-digit-clocks-floppy-disk-backups-and-turning-everything-off-before-midnight": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 6: Two-Digit Clocks, Floppy-Disk Backups, and Turning Everything Off Before Midnight",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p006.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-5-two-direct-deposit-stubs-one-wobbly-wooden-ramp-and-moving-off-route-13",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-7-unspoken-rules-four-nights-back-upstairs-and-clean-work-polos"
+        "prevUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-5-two-direct-deposit-stubs-one-wobbly-wooden-ramp-and-moving-off-route-13",
+        "nextUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-7-unspoken-rules-four-nights-back-upstairs-and-clean-work-polos"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-7-unspoken-rules-four-nights-back-upstairs-and-clean-work-polos": {
+    "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-7-unspoken-rules-four-nights-back-upstairs-and-clean-work-polos": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 7: Unspoken Rules, Four Nights Back Upstairs, and Clean Work Polos",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p007.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-6-two-digit-clocks-floppy-disk-backups-and-turning-everything-off-before-midnight",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-8-protected-memory-store-four-twenty-and-someone-safe-in-the-breakroom"
+        "prevUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-6-two-digit-clocks-floppy-disk-backups-and-turning-everything-off-before-midnight",
+        "nextUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-8-protected-memory-store-four-twenty-and-someone-safe-in-the-breakroom"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-8-protected-memory-store-four-twenty-and-someone-safe-in-the-breakroom": {
+    "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-8-protected-memory-store-four-twenty-and-someone-safe-in-the-breakroom": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 8: Protected Memory, Store Four-Twenty, and Someone Safe in the Breakroom",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p008.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-7-unspoken-rules-four-nights-back-upstairs-and-clean-work-polos",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-locker-alcove-on-monticello"
+        "prevUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-7-unspoken-rules-four-nights-back-upstairs-and-clean-work-polos",
+        "nextUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-locker-alcove-on-monticello"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-locker-alcove-on-monticello": {
+    "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-locker-alcove-on-monticello": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 9: Route 13, Forty-Eight Hours' Notice, and the Locker Alcove on Monticello",
         "theme": "raggiesoft-books",
         "filePath": "e001/c001/p009.md",
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-8-protected-memory-store-four-twenty-and-someone-safe-in-the-breakroom",
+        "prevUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-8-protected-memory-store-four-twenty-and-someone-safe-in-the-breakroom",
         "noNext": true,
         "crossroads": {
             "id": "norfolk-pathfinder-terminal-2001",
             "trigger_part": "e001/c001/p009.md",
-            "trigger_url": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-locker-alcove-on-monticello",
+            "trigger_url": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-locker-alcove-on-monticello",
             "kicker": "Story Crossroads \u2022 Tuesday, August 21, 2001, 9:50 AM \u2014 1961 Norfolk Pathfinder Terminal",
             "title": "Inside the Monticello Locker Alcove: Does Nolan Reject Tammy Now or Wait While She Buys Tickets?",
-            "prompt": "Wheeled six feet behind the thick concrete column into the recessed steel coin-locker alcove leading to the 1961 Monticello Avenue terminal's separate Men's and Women's restrooms\u2014shielded from concourse security by the lockers, Tammy's back, and her open baby-blue cardigan wings\u2014twenty-three-year-old Nolan Lennox faces Tammy's ultimate trump card: a silent two-second flash beneath her braless shelf-bra camisole and a soft Week-One promise of zero yelling in Seattle plus a payphone call to Blue Tech in Richmond. Every option opens a complete, coequal story route returning Nolan home to Studio 205 and Mallory Walsh before Vaeloria.",
+            "prompt": "Wheeled six feet behind the thick concrete column into the recessed steel coin-locker alcove leading to the 1961 Monticello Avenue terminal's separate Men's and Women's restrooms\u2014shielded from concourse security by the lockers, Tammy's back, and her open baby-blue cardigan wings\u2014twenty-three-year-old Nolan Lennox faces Tammy's ultimate trump card: a silent two-second flash beneath her braless shelf-bra camisole and a soft Week-One promise of zero yelling in Seattle plus a payphone call to Blue Tech in Richmond. Every option opens a complete, coequal story route.",
             "required_choices": [],
             "options": [
                 {
                     "id": "lock-wheelchair-brakes-emerald-creek",
                     "crossroads_id": "norfolk-pathfinder-terminal-2001",
                     "label": "Reject Tammy's Promise & Roll Out Before She Buys Tickets",
-                    "subtitle": "Realize peaceful, yell-free hugs with Gwen beat empty promises every time\u2014rolling straight out from behind the lockers into plain view of thirty witnesses to lock your wheelchair brakes, break up for good, and ride straight home at zero charge in kind Norfolk cabbie Denise Carter's taxi.",
+                    "subtitle": "Realize peaceful, yell-free hugs with Gwen beat empty promises every time\u2014rolling straight out from behind the lockers into plain view of the waiting room to lock your wheelchair brakes, tell Tammy you're breaking up for good, and head back home to Gwen and Grandpa Walter in Emerald Creek.",
                     "entry_part": "e001/c001/p010.md",
-                    "entry_url": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-rolling-out-past-the-lockers-denise-s-turned-off-meter-and-safe-home-to-emerald-creek",
+                    "entry_url": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-10-rolling-out-past-the-lockers-denise-s-turned-off-meter-and-safe-home-to-emerald-creek",
                     "required_choices": {
                         "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
                     },
@@ -367,9 +367,9 @@
                     "id": "norfolk-ticket-counter",
                     "crossroads_id": "norfolk-pathfinder-terminal-2001",
                     "label": "Believe Tammy's Promise While She Buys the Ninety-Nine-Dollar Tickets",
-                    "subtitle": "Take Tammy's velvet Week-One promise and Richmond payphone assurance at face value\u2014waiting beside the lockers while she buys two walk-up cash tickets to Seattle and wheels you out to Gate Four, where the Richmond coach has no wheelchair lift.",
+                    "subtitle": "Take Tammy's velvet Week-One promise and Richmond payphone assurance at face value\u2014easing your hands off your wheel locks and waiting in the concourse while she walks up to the counter to buy two ninety-nine-dollar cash tickets to Seattle.",
                     "entry_part": "paths/norfolk-ticket-counter/e001/c001/p001.md",
-                    "entry_url": "/waystation/paths/norfolk-ticket-counter/book-one-ninety-nine-dollars-at-the-ticket-window/chapter-1a-two-ticket-folders-and-four-steep-steps-at-gate-four/two-ninety-nine-dollar-folders-and-no-lift-at-gate-four",
+                    "entry_url": "/waystation/paths/norfolk-ticket-counter/norfolk-terminal-route-ninety-nine-dollars-at-the-ticket-window/chapter-1a-two-ticket-folders-and-four-steep-steps-at-gate-four/two-ninety-nine-dollar-folders-and-no-lift-at-gate-four",
                     "required_choices": {
                         "norfolk-pathfinder-terminal-2001": "norfolk-ticket-counter"
                     },
@@ -381,7 +381,7 @@
             ]
         }
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-rolling-out-past-the-lockers-denise-s-turned-off-meter-and-safe-home-to-emerald-creek": {
+    "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-10-rolling-out-past-the-lockers-denise-s-turned-off-meter-and-safe-home-to-emerald-creek": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 10: Rolling Out Past the Lockers, Denise's Turned-Off Meter, and Safe Home to Emerald Creek",
         "theme": "raggiesoft-books",
@@ -394,10 +394,10 @@
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-locker-alcove-on-monticello",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-11-seventy-five-ohms-fast-busy-lines-and-eden-way-north"
+        "prevUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-locker-alcove-on-monticello",
+        "nextUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-11-seventy-five-ohms-fast-busy-lines-and-eden-way-north"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-11-seventy-five-ohms-fast-busy-lines-and-eden-way-north": {
+    "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-11-seventy-five-ohms-fast-busy-lines-and-eden-way-north": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 11: Seventy-Five Ohms, Fast-Busy Lines, and Eden Way North",
         "theme": "raggiesoft-books",
@@ -406,13 +406,13 @@
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
         "rejoinPrevBySegment": {
-            "ticket-snap-refuse-boarding": "/waystation/paths/ticket-snap-refuse-boarding/book-one-turning-around-at-gate-four/chapter-1b-dropped-mask-at-bay-four-and-denise-s-cab-home/snapping-at-gate-four-refusing-the-steps-and-denise-s-cab-home",
-            "lock-wheelchair-brakes-emerald-creek": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-10-rolling-out-past-the-lockers-denise-s-turned-off-meter-and-safe-home-to-emerald-creek"
+            "ticket-snap-refuse-boarding": "/waystation/paths/ticket-snap-refuse-boarding/gate-four-route-refusing-the-steps-and-denise-s-cab-home/chapter-1b-dropped-mask-at-bay-four-and-denise-s-cab-home/snapping-at-gate-four-refusing-the-steps-and-denise-s-cab-home",
+            "lock-wheelchair-brakes-emerald-creek": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-10-rolling-out-past-the-lockers-denise-s-turned-off-meter-and-safe-home-to-emerald-creek"
         },
-        "prevUrl": "/waystation/paths/ticket-snap-refuse-boarding/book-one-turning-around-at-gate-four/chapter-1b-dropped-mask-at-bay-four-and-denise-s-cab-home/snapping-at-gate-four-refusing-the-steps-and-denise-s-cab-home",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-12-second-block-latin-the-german-classroom-and-holding-on-at-home"
+        "prevUrl": "/waystation/paths/ticket-snap-refuse-boarding/gate-four-route-refusing-the-steps-and-denise-s-cab-home/chapter-1b-dropped-mask-at-bay-four-and-denise-s-cab-home/snapping-at-gate-four-refusing-the-steps-and-denise-s-cab-home",
+        "nextUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-12-second-block-latin-the-german-classroom-and-holding-on-at-home"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-12-second-block-latin-the-german-classroom-and-holding-on-at-home": {
+    "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-12-second-block-latin-the-german-classroom-and-holding-on-at-home": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 12: Second-Block Latin, the German Classroom, and Holding On at Home",
         "theme": "raggiesoft-books",
@@ -420,10 +420,10 @@
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-11-seventy-five-ohms-fast-busy-lines-and-eden-way-north",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-13-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals"
+        "prevUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-11-seventy-five-ohms-fast-busy-lines-and-eden-way-north",
+        "nextUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-13-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-13-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals": {
+    "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-13-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 13: Eighteen Candles, Always There for Big Brother, and Ten Raised Seals",
         "theme": "raggiesoft-books",
@@ -431,10 +431,10 @@
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-12-second-block-latin-the-german-classroom-and-holding-on-at-home",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-14-moving-into-studio-205-and-quantum-os-2000"
+        "prevUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-12-second-block-latin-the-german-classroom-and-holding-on-at-home",
+        "nextUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-14-moving-into-studio-205-and-quantum-os-2000"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-14-moving-into-studio-205-and-quantum-os-2000": {
+    "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-14-moving-into-studio-205-and-quantum-os-2000": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 14: Moving Into Studio 205 and Quantum OS 2000",
         "theme": "raggiesoft-books",
@@ -442,10 +442,10 @@
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-13-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-15-clocking-out-together-one-car-ride-home-and-crimson-red-outside-the-lobby"
+        "prevUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-13-eighteen-candles-always-there-for-big-brother-and-ten-raised-seals",
+        "nextUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-15-clocking-out-together-one-car-ride-home-and-crimson-red-outside-the-lobby"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-15-clocking-out-together-one-car-ride-home-and-crimson-red-outside-the-lobby": {
+    "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-15-clocking-out-together-one-car-ride-home-and-crimson-red-outside-the-lobby": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 15: Clocking Out Together, One Car Ride Home, and Crimson Red Outside the Lobby",
         "theme": "raggiesoft-books",
@@ -453,10 +453,10 @@
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-14-moving-into-studio-205-and-quantum-os-2000",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-16-coming-back-the-next-day-hot-cocoa-in-studio-205-and-zero-supervisor-pin"
+        "prevUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-14-moving-into-studio-205-and-quantum-os-2000",
+        "nextUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-16-coming-back-the-next-day-hot-cocoa-in-studio-205-and-zero-supervisor-pin"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-16-coming-back-the-next-day-hot-cocoa-in-studio-205-and-zero-supervisor-pin": {
+    "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-16-coming-back-the-next-day-hot-cocoa-in-studio-205-and-zero-supervisor-pin": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 16: Coming Back the Next Day, Hot Cocoa in Studio 205, and Zero Supervisor Pin",
         "theme": "raggiesoft-books",
@@ -464,10 +464,10 @@
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-15-clocking-out-together-one-car-ride-home-and-crimson-red-outside-the-lobby",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-17-third-floor-food-court-laced-fingers-and-nothing-left-to-weaponize"
+        "prevUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-15-clocking-out-together-one-car-ride-home-and-crimson-red-outside-the-lobby",
+        "nextUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-17-third-floor-food-court-laced-fingers-and-nothing-left-to-weaponize"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-17-third-floor-food-court-laced-fingers-and-nothing-left-to-weaponize": {
+    "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-17-third-floor-food-court-laced-fingers-and-nothing-left-to-weaponize": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 17: Third-Floor Food Court, Laced Fingers, and Nothing Left to Weaponize",
         "theme": "raggiesoft-books",
@@ -475,10 +475,10 @@
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-16-coming-back-the-next-day-hot-cocoa-in-studio-205-and-zero-supervisor-pin",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-18-eighty-nine-degrees-and-one-rattling-fan"
+        "prevUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-16-coming-back-the-next-day-hot-cocoa-in-studio-205-and-zero-supervisor-pin",
+        "nextUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-18-eighty-nine-degrees-and-one-rattling-fan"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-18-eighty-nine-degrees-and-one-rattling-fan": {
+    "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-18-eighty-nine-degrees-and-one-rattling-fan": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 18: Eighty-Nine Degrees and One Rattling Fan",
         "theme": "raggiesoft-books",
@@ -486,63 +486,69 @@
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-17-third-floor-food-court-laced-fingers-and-nothing-left-to-weaponize",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-1-amber-glass-beside-the-full-sized-bed"
+        "prevUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-17-third-floor-food-court-laced-fingers-and-nothing-left-to-weaponize",
+        "nextUrl": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-1-no-wheelchairs-in-the-star-moss/part-1-amber-glass-beside-the-full-sized-bed"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss": {
+    "/waystation/book-two-vaeloria-beyond-the-studio-rift": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 2: No Wheelchairs in the Star-Moss",
+        "title": "Book Two: Vaeloria \u2014 Beyond the Studio Rift",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|0|1"
+        "filePath": "__ERA_TOC__|1"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-1-amber-glass-beside-the-full-sized-bed": {
+    "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-1-no-wheelchairs-in-the-star-moss": {
+        "view": "pages/raggiesoft-books/books/viewer",
+        "title": "Chapter 1: No Wheelchairs in the Star-Moss",
+        "theme": "raggiesoft-books",
+        "filePath": "__CHAP_TOC__|1|0"
+    },
+    "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-1-no-wheelchairs-in-the-star-moss/part-1-amber-glass-beside-the-full-sized-bed": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Amber Glass Beside the Full-Sized Bed",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/p001.md",
+        "filePath": "e002/c001/p001.md",
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
         "rejoinPrevBySegment": {
-            "ticket-snap-refuse-boarding": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-18-eighty-nine-degrees-and-one-rattling-fan",
-            "pasco-early-intercept": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-4-empty-work-polos-ray-s-personal-number-and-home-in-studio-205",
-            "seattle-full-exodus-rescue": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-4-crying-into-four-safe-arms-in-seattle-grandpa-s-final-watch-and-studio-205",
-            "lock-wheelchair-brakes-emerald-creek": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-18-eighty-nine-degrees-and-one-rattling-fan"
+            "ticket-snap-refuse-boarding": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-18-eighty-nine-degrees-and-one-rattling-fan",
+            "pasco-early-intercept": "/waystation/paths/pasco-early-intercept/pasco-rescue-route-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-4-empty-work-polos-ray-s-personal-number-and-home-in-studio-205",
+            "seattle-full-exodus-rescue": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-4-crying-into-four-safe-arms-in-seattle-grandpa-s-final-watch-and-studio-205",
+            "lock-wheelchair-brakes-emerald-creek": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-18-eighty-nine-degrees-and-one-rattling-fan"
         },
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-18-eighty-nine-degrees-and-one-rattling-fan",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong"
+        "prevUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-18-eighty-nine-degrees-and-one-rattling-fan",
+        "nextUrl": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-1-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong": {
+    "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-1-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Six Inches Taller and Four Crutches Strong",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c002/p002.md",
+        "filePath": "e002/c001/p002.md",
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-1-amber-glass-beside-the-full-sized-bed",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-3-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide"
+        "prevUrl": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-1-no-wheelchairs-in-the-star-moss/part-1-amber-glass-beside-the-full-sized-bed",
+        "nextUrl": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-2-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-3-the-three-roads-of-the-sunken-milestone": {
+    "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-2-the-three-roads-of-the-sunken-milestone": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 3: The Three Roads of the Sunken Milestone",
+        "title": "Chapter 2: The Three Roads of the Sunken Milestone",
         "theme": "raggiesoft-books",
-        "filePath": "__CHAP_TOC__|0|2"
+        "filePath": "__CHAP_TOC__|1|1"
     },
-    "/waystation/book-one-beyond-the-studio-rift/chapter-3-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide": {
+    "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-2-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Where the Flagstones Divide",
         "theme": "raggiesoft-books",
-        "filePath": "e001/c003/p001.md",
+        "filePath": "e002/c002/p001.md",
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong",
+        "prevUrl": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-1-no-wheelchairs-in-the-star-moss/part-2-six-inches-taller-and-four-crutches-strong",
         "noNext": true,
         "crossroads": {
             "id": "borderland-three-roads",
-            "trigger_part": "e001/c003/p001.md",
-            "trigger_url": "/waystation/book-one-beyond-the-studio-rift/chapter-3-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
+            "trigger_part": "e002/c002/p001.md",
+            "trigger_url": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-2-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
             "kicker": "Story Crossroads \u2022 Second Afternoon of the Twin Moons, The Sunken Milestone",
             "title": "Three Gentle Roads Toward the Waystation: How Do Nolan and Gwen Travel?",
             "prompt": "With both wheelchairs left behind in Studio 205 on Earth, barefoot twenty-four-year-old Nolan Lennox and his six-foot-one nineteen-year-old sister Gwen have learned why Vaeloria's sleeping Astrolabe answered Gwen's wish: only two inseparable, unhurried hearts can re-harmonize the twin rings and heal The Great Drift. Here at the Sunken Milestone, peddler Bramwell Kettle shows them three gentle 1980s-fantasy routes winding inward. Every option opens a complete, coequal story route.",
@@ -553,8 +559,8 @@
                     "crossroads_id": "borderland-three-roads",
                     "label": "The Glasswater Lantern-Barge Canal",
                     "subtitle": "Step onto barge-master Maren's wide reed-and-cedar lantern boat\u2014cuddling barefoot on cushioned planks with forearm crutches stowed safe beside the gunwale while Gwen's astronomy eye guides the barge through the misty stars of The Great Drift.",
-                    "entry_part": "paths/lantern-barge-canal/e001/c004/p001.md",
-                    "entry_url": "/waystation/paths/lantern-barge-canal/book-one-beyond-the-studio-rift/chapter-4-lanterns-on-the-glasswater/drifting-under-sapphire-glass",
+                    "entry_part": "paths/lantern-barge-canal/e002/c003/p001.md",
+                    "entry_url": "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-3-lanterns-on-the-glasswater/drifting-under-sapphire-glass",
                     "required_choices": {
                         "borderland-three-roads": "lantern-barge-canal"
                     },
@@ -568,8 +574,8 @@
                     "crossroads_id": "borderland-three-roads",
                     "label": "The Whisperwood Cushion-Moss Road",
                     "subtitle": "Walk unhurriedly at your own forearm-crutch pace over three-inch velvet moss laid by the Slow-Footed Order, soaking bare feet in 98-degree mineral springs and curling up together in cozy stone shelters as your shared footsteps reawaken sleepy forest lanterns.",
-                    "entry_part": "paths/whisperwood-moss-road/e001/c004/p001.md",
-                    "entry_url": "/waystation/paths/whisperwood-moss-road/book-one-beyond-the-studio-rift/chapter-4-the-slow-footed-order-s-road/warm-springs-and-glowing-canopy",
+                    "entry_part": "paths/whisperwood-moss-road/e002/c003/p001.md",
+                    "entry_url": "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-3-the-slow-footed-order-s-road/warm-springs-and-glowing-canopy",
                     "required_choices": {
                         "borderland-three-roads": "whisperwood-moss-road"
                     },
@@ -583,8 +589,8 @@
                     "crossroads_id": "borderland-three-roads",
                     "label": "The Brass Counterweight Gondola Way",
                     "subtitle": "Board the oak-and-brass water-balanced sky gondola rising smoothly into the Amber Crags past singing bronze wind-harps, helping the cliffside Star-Keepers recalibrate moon-rings knocked out of phase by The Great Drift.",
-                    "entry_part": "paths/brass-counterweight-way/e001/c004/p001.md",
-                    "entry_url": "/waystation/paths/brass-counterweight-way/book-one-beyond-the-studio-rift/chapter-4-above-the-painted-clouds/gondolas-of-the-amber-crags",
+                    "entry_part": "paths/brass-counterweight-way/e002/c003/p001.md",
+                    "entry_url": "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-3-above-the-painted-clouds/gondolas-of-the-amber-crags",
                     "required_choices": {
                         "borderland-three-roads": "brass-counterweight-way"
                     },
@@ -596,15 +602,15 @@
             ]
         }
     },
-    "/waystation/paths/norfolk-ticket-counter/book-one-ninety-nine-dollars-at-the-ticket-window": {
+    "/waystation/paths/norfolk-ticket-counter/norfolk-terminal-route-ninety-nine-dollars-at-the-ticket-window": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book One: Ninety-Nine Dollars at the Ticket Window",
+        "title": "Norfolk Terminal Route: Ninety-Nine Dollars at the Ticket Window",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|norfolk-ticket-counter|0",
         "pathId": "norfolk-ticket-counter",
         "crossroadsId": "norfolk-pathfinder-terminal-2001"
     },
-    "/waystation/paths/norfolk-ticket-counter/book-one-ninety-nine-dollars-at-the-ticket-window/chapter-1a-two-ticket-folders-and-four-steep-steps-at-gate-four": {
+    "/waystation/paths/norfolk-ticket-counter/norfolk-terminal-route-ninety-nine-dollars-at-the-ticket-window/chapter-1a-two-ticket-folders-and-four-steep-steps-at-gate-four": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 1A: Two Ticket Folders and Four Steep Steps at Gate Four",
         "theme": "raggiesoft-books",
@@ -612,7 +618,7 @@
         "pathId": "norfolk-ticket-counter",
         "crossroadsId": "norfolk-pathfinder-terminal-2001"
     },
-    "/waystation/paths/norfolk-ticket-counter/book-one-ninety-nine-dollars-at-the-ticket-window/chapter-1a-two-ticket-folders-and-four-steep-steps-at-gate-four/two-ninety-nine-dollar-folders-and-no-lift-at-gate-four": {
+    "/waystation/paths/norfolk-ticket-counter/norfolk-terminal-route-ninety-nine-dollars-at-the-ticket-window/chapter-1a-two-ticket-folders-and-four-steep-steps-at-gate-four/two-ninety-nine-dollar-folders-and-no-lift-at-gate-four": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Two Ninety-Nine-Dollar Folders and No Lift at Gate Four",
         "theme": "raggiesoft-books",
@@ -622,15 +628,15 @@
         "requiredChoices": {
             "norfolk-pathfinder-terminal-2001": "norfolk-ticket-counter"
         },
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-locker-alcove-on-monticello",
+        "prevUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-9-route-13-forty-eight-hours-notice-and-the-locker-alcove-on-monticello",
         "noNext": true,
         "crossroads": {
             "id": "norfolk-bay-four-boarding-2001",
             "trigger_part": "paths/norfolk-ticket-counter/e001/c001/p001.md",
-            "trigger_url": "/waystation/paths/norfolk-ticket-counter/book-one-ninety-nine-dollars-at-the-ticket-window/chapter-1a-two-ticket-folders-and-four-steep-steps-at-gate-four/two-ninety-nine-dollar-folders-and-no-lift-at-gate-four",
+            "trigger_url": "/waystation/paths/norfolk-ticket-counter/norfolk-terminal-route-ninety-nine-dollars-at-the-ticket-window/chapter-1a-two-ticket-folders-and-four-steep-steps-at-gate-four/two-ninety-nine-dollar-folders-and-no-lift-at-gate-four",
             "kicker": "Story Crossroads \u2022 Tuesday, August 21, 2001, 9:56 AM \u2014 Gate Four, Norfolk Pathfinder Terminal",
             "title": "Paid Tickets and Four Steep Steps: Does Tammy Snap or Keep Her Week-One Voice?",
-            "prompt": "With two freshly printed ninety-nine-dollar Seattle ticket folders in Tammy's hand, the Gate Four driver shakes his head at Nolan's manual wheelchair: nobody called corporate forty-eight hours ahead for a hydraulic lift, meaning Nolan's chair must ride folded in the luggage bay while he climbs four steep aluminum steps on his forearm crutches. If Tammy drops her sweet mask and snaps now, Nolan will refuse to board on the spot and go home; only if Tammy keeps every drop of her gentle Week-One voice will literal-minded Nolan trust her enough to climb aboard.",
+            "prompt": "With two freshly printed ninety-nine-dollar Seattle ticket folders in Tammy's hand, the Gate Four driver shakes his head at Nolan's manual wheelchair: nobody called corporate forty-eight hours ahead for a hydraulic lift, meaning Nolan's chair must ride folded in the luggage bay while he climbs four steep aluminum steps on his forearm crutches. What Tammy says next decides whether Nolan steps aboard.",
             "required_choices": {
                 "norfolk-pathfinder-terminal-2001": "norfolk-ticket-counter"
             },
@@ -639,9 +645,9 @@
                     "id": "ticket-snap-refuse-boarding",
                     "crossroads_id": "norfolk-bay-four-boarding-2001",
                     "label": "Tammy Snaps at Gate Four \u2014 Refuse to Board & Go Home",
-                    "subtitle": "The instant Tammy drops her sweet voice and barks at you in front of the boarding queue, wake up to the lie, roll straight back inside the waiting room to end things for good, and ride home free of charge in kind Norfolk cabbie Denise Carter's taxi\u2014rejoining the mainline sequence.",
+                    "subtitle": "The instant Tammy drops her sweet voice and snaps at you in front of the boarding queue, wake up to the lie, ask the driver to pull your wheelchair back out of the luggage bay, and roll straight back inside the waiting room to break up for good and go home.",
                     "entry_part": "paths/ticket-snap-refuse-boarding/e001/c001/p001.md",
-                    "entry_url": "/waystation/paths/ticket-snap-refuse-boarding/book-one-turning-around-at-gate-four/chapter-1b-dropped-mask-at-bay-four-and-denise-s-cab-home/snapping-at-gate-four-refusing-the-steps-and-denise-s-cab-home",
+                    "entry_url": "/waystation/paths/ticket-snap-refuse-boarding/gate-four-route-refusing-the-steps-and-denise-s-cab-home/chapter-1b-dropped-mask-at-bay-four-and-denise-s-cab-home/snapping-at-gate-four-refusing-the-steps-and-denise-s-cab-home",
                     "required_choices": {
                         "norfolk-pathfinder-terminal-2001": "norfolk-ticket-counter",
                         "norfolk-bay-four-boarding-2001": "ticket-snap-refuse-boarding"
@@ -655,9 +661,9 @@
                     "id": "seattle-pathfinder-exodus",
                     "crossroads_id": "norfolk-bay-four-boarding-2001",
                     "label": "Tammy Keeps Her Sweet Week-One Voice \u2014 Board the Pathfinder",
-                    "subtitle": "Reassured by Tammy's warm, patient Week-One smile\u2014promising to carry your footrests, call Blue Tech together in Richmond, and ask the Richmond desk for a lift coach\u2014climb those four aluminum steps onto Gate Four before her mask drops a hundred miles up the highway.",
+                    "subtitle": "Reassured by Tammy's warm, patient Week-One smile\u2014apologizing to the driver, carrying your metal footrests, and promising to call Blue Tech together in Richmond and ask the desk for a lift coach\u2014trust her word and climb the four steep aluminum steps onto Gate Four.",
                     "entry_part": "paths/seattle-pathfinder-exodus/e001/c001/p001.md",
-                    "entry_url": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-1-sweet-voice-at-gate-four-dropped-mask-in-richmond-and-crossing-bristol",
+                    "entry_url": "/waystation/paths/seattle-pathfinder-exodus/pathfinder-westbound-route-from-norfolk-to-missed-shift-one/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-1-sweet-voice-at-gate-four-dropped-mask-in-richmond-and-crossing-bristol",
                     "required_choices": {
                         "norfolk-pathfinder-terminal-2001": "norfolk-ticket-counter",
                         "norfolk-bay-four-boarding-2001": "seattle-pathfinder-exodus"
@@ -670,15 +676,15 @@
             ]
         }
     },
-    "/waystation/paths/ticket-snap-refuse-boarding/book-one-turning-around-at-gate-four": {
+    "/waystation/paths/ticket-snap-refuse-boarding/gate-four-route-refusing-the-steps-and-denise-s-cab-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book One: Turning Around at Gate Four",
+        "title": "Gate Four Route: Refusing the Steps and Denise\u2019s Cab Home",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|ticket-snap-refuse-boarding|0",
         "pathId": "ticket-snap-refuse-boarding",
         "crossroadsId": "norfolk-bay-four-boarding-2001"
     },
-    "/waystation/paths/ticket-snap-refuse-boarding/book-one-turning-around-at-gate-four/chapter-1b-dropped-mask-at-bay-four-and-denise-s-cab-home": {
+    "/waystation/paths/ticket-snap-refuse-boarding/gate-four-route-refusing-the-steps-and-denise-s-cab-home/chapter-1b-dropped-mask-at-bay-four-and-denise-s-cab-home": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 1B: Dropped Mask at Bay Four and Denise's Cab Home",
         "theme": "raggiesoft-books",
@@ -686,7 +692,7 @@
         "pathId": "ticket-snap-refuse-boarding",
         "crossroadsId": "norfolk-bay-four-boarding-2001"
     },
-    "/waystation/paths/ticket-snap-refuse-boarding/book-one-turning-around-at-gate-four/chapter-1b-dropped-mask-at-bay-four-and-denise-s-cab-home/snapping-at-gate-four-refusing-the-steps-and-denise-s-cab-home": {
+    "/waystation/paths/ticket-snap-refuse-boarding/gate-four-route-refusing-the-steps-and-denise-s-cab-home/chapter-1b-dropped-mask-at-bay-four-and-denise-s-cab-home/snapping-at-gate-four-refusing-the-steps-and-denise-s-cab-home": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Snapping at Gate Four, Refusing the Steps, and Denise's Cab Home",
         "theme": "raggiesoft-books",
@@ -697,18 +703,18 @@
             "norfolk-pathfinder-terminal-2001": "norfolk-ticket-counter",
             "norfolk-bay-four-boarding-2001": "ticket-snap-refuse-boarding"
         },
-        "prevUrl": "/waystation/paths/norfolk-ticket-counter/book-one-ninety-nine-dollars-at-the-ticket-window/chapter-1a-two-ticket-folders-and-four-steep-steps-at-gate-four/two-ninety-nine-dollar-folders-and-no-lift-at-gate-four",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-1-two-names-on-one-studio-lease/part-11-seventy-five-ohms-fast-busy-lines-and-eden-way-north"
+        "prevUrl": "/waystation/paths/norfolk-ticket-counter/norfolk-terminal-route-ninety-nine-dollars-at-the-ticket-window/chapter-1a-two-ticket-folders-and-four-steep-steps-at-gate-four/two-ninety-nine-dollar-folders-and-no-lift-at-gate-four",
+        "nextUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-11-seventy-five-ohms-fast-busy-lines-and-eden-way-north"
     },
-    "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder": {
+    "/waystation/paths/seattle-pathfinder-exodus/pathfinder-westbound-route-from-norfolk-to-missed-shift-one": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book One: The Ninety-Nine-Dollar Pathfinder",
+        "title": "Pathfinder Westbound Route: From Norfolk to Missed Shift One",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|seattle-pathfinder-exodus|0",
         "pathId": "seattle-pathfinder-exodus",
         "crossroadsId": "norfolk-bay-four-boarding-2001"
     },
-    "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one": {
+    "/waystation/paths/seattle-pathfinder-exodus/pathfinder-westbound-route-from-norfolk-to-missed-shift-one/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 1A: Ninety-Six Hours Westbound and Missed Shift Number One",
         "theme": "raggiesoft-books",
@@ -716,7 +722,7 @@
         "pathId": "seattle-pathfinder-exodus",
         "crossroadsId": "norfolk-bay-four-boarding-2001"
     },
-    "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-1-sweet-voice-at-gate-four-dropped-mask-in-richmond-and-crossing-bristol": {
+    "/waystation/paths/seattle-pathfinder-exodus/pathfinder-westbound-route-from-norfolk-to-missed-shift-one/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-1-sweet-voice-at-gate-four-dropped-mask-in-richmond-and-crossing-bristol": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Sweet Voice at Gate Four, Dropped Mask in Richmond, and Crossing Bristol",
         "theme": "raggiesoft-books",
@@ -727,10 +733,10 @@
             "norfolk-pathfinder-terminal-2001": "norfolk-ticket-counter",
             "norfolk-bay-four-boarding-2001": "seattle-pathfinder-exodus"
         },
-        "prevUrl": "/waystation/paths/norfolk-ticket-counter/book-one-ninety-nine-dollars-at-the-ticket-window/chapter-1a-two-ticket-folders-and-four-steep-steps-at-gate-four/two-ninety-nine-dollar-folders-and-no-lift-at-gate-four",
-        "nextUrl": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-2-breaking-point-in-nashville-and-falling-steel-outside-st-louis"
+        "prevUrl": "/waystation/paths/norfolk-ticket-counter/norfolk-terminal-route-ninety-nine-dollars-at-the-ticket-window/chapter-1a-two-ticket-folders-and-four-steep-steps-at-gate-four/two-ninety-nine-dollar-folders-and-no-lift-at-gate-four",
+        "nextUrl": "/waystation/paths/seattle-pathfinder-exodus/pathfinder-westbound-route-from-norfolk-to-missed-shift-one/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-2-breaking-point-in-nashville-and-falling-steel-outside-st-louis"
     },
-    "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-2-breaking-point-in-nashville-and-falling-steel-outside-st-louis": {
+    "/waystation/paths/seattle-pathfinder-exodus/pathfinder-westbound-route-from-norfolk-to-missed-shift-one/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-2-breaking-point-in-nashville-and-falling-steel-outside-st-louis": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Breaking Point in Nashville and Falling Steel Outside St. Louis",
         "theme": "raggiesoft-books",
@@ -741,10 +747,10 @@
             "norfolk-pathfinder-terminal-2001": "norfolk-ticket-counter",
             "norfolk-bay-four-boarding-2001": "seattle-pathfinder-exodus"
         },
-        "prevUrl": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-1-sweet-voice-at-gate-four-dropped-mask-in-richmond-and-crossing-bristol",
-        "nextUrl": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-3-eight-oh-five-at-the-timeclock-and-two-unspoken-guardrails"
+        "prevUrl": "/waystation/paths/seattle-pathfinder-exodus/pathfinder-westbound-route-from-norfolk-to-missed-shift-one/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-1-sweet-voice-at-gate-four-dropped-mask-in-richmond-and-crossing-bristol",
+        "nextUrl": "/waystation/paths/seattle-pathfinder-exodus/pathfinder-westbound-route-from-norfolk-to-missed-shift-one/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-3-eight-oh-five-at-the-timeclock-and-two-unspoken-guardrails"
     },
-    "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-3-eight-oh-five-at-the-timeclock-and-two-unspoken-guardrails": {
+    "/waystation/paths/seattle-pathfinder-exodus/pathfinder-westbound-route-from-norfolk-to-missed-shift-one/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-3-eight-oh-five-at-the-timeclock-and-two-unspoken-guardrails": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Eight-Oh-Five at the Timeclock and Two Unspoken Guardrails",
         "theme": "raggiesoft-books",
@@ -755,15 +761,15 @@
             "norfolk-pathfinder-terminal-2001": "norfolk-ticket-counter",
             "norfolk-bay-four-boarding-2001": "seattle-pathfinder-exodus"
         },
-        "prevUrl": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-2-breaking-point-in-nashville-and-falling-steel-outside-st-louis",
+        "prevUrl": "/waystation/paths/seattle-pathfinder-exodus/pathfinder-westbound-route-from-norfolk-to-missed-shift-one/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-2-breaking-point-in-nashville-and-falling-steel-outside-st-louis",
         "noNext": true,
         "crossroads": {
             "id": "blue-tech-missed-shift-alarm-2001",
             "trigger_part": "paths/seattle-pathfinder-exodus/e001/c001/p003.md",
-            "trigger_url": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-3-eight-oh-five-at-the-timeclock-and-two-unspoken-guardrails",
+            "trigger_url": "/waystation/paths/seattle-pathfinder-exodus/pathfinder-westbound-route-from-norfolk-to-missed-shift-one/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-3-eight-oh-five-at-the-timeclock-and-two-unspoken-guardrails",
             "kicker": "Story Crossroads \u2022 Wednesday, August 22, 2001, 8:05 PM \u2014 Emerald Creek Blue Tech",
             "title": "Missed Shift Number One: Does Mallory Check on Nolan Tonight or Wait Until Friday?",
-            "prompt": "As Nolan's Pathfinder coach rolls west past St. Louis after his loose overhead wheelchair legrests crash down onto Tammy's head, eight-oh-five clicks onto the Emerald Creek Blue Tech breakroom timeclock\u2014marking the first No-Call No-Show of Nolan's spotless two-year career. Quietly in love with Nolan yet bound both by respect for his relationship and by corporate HR's rule to wait until Friday's third missed shift, Computers Shift Supervisor Mallory Walsh stands beside her car four blocks from Grandpa Walter's house on Eden Way North. Both options return Nolan home to Studio 205 and Mallory before Vaeloria.",
+            "prompt": "Eight-oh-five clicks onto the Emerald Creek Blue Tech breakroom timeclock\u2014marking the first No-Call No-Show of Nolan Lennox's spotless two-year career. Quietly in love with Nolan yet bound both by respect for his relationship and by corporate HR's rule to wait until Friday's third missed shift before calling an emergency contact, Computers Shift Supervisor Mallory Walsh stands beside her car four blocks from Grandpa Walter's house off Eden Way North.",
             "required_choices": {
                 "norfolk-pathfinder-terminal-2001": "norfolk-ticket-counter",
                 "norfolk-bay-four-boarding-2001": "seattle-pathfinder-exodus"
@@ -772,10 +778,10 @@
                 {
                     "id": "pasco-early-intercept",
                     "crossroads_id": "blue-tech-missed-shift-alarm-2001",
-                    "label": "Drive Down Eden Way North Tonight & Intercept Pasco",
-                    "subtitle": "Break corporate HR's three-day waiting rule immediately on Wednesday night, uncover Tammy's cash Seattle route at Pinecrest Court with Gwen and Grandpa Walter on Thursday morning, and fly Meridian Airlines into Pasco Regional Airport to rescue Nolan minutes before Tammy leads him into the terminal restroom.",
+                    "label": "Drive Down Eden Way North Tonight",
+                    "subtitle": "Trust your gut over corporate HR's three-day waiting rule\u2014driving four blocks down Eden Way North right after closing tonight to check on Nolan with Gwen and Grandpa Walter before another day slips away.",
                     "entry_part": "paths/pasco-early-intercept/e001/c001/p001.md",
-                    "entry_url": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-1-eden-way-north-at-eight-eighteen-and-two-pre-dawn-tickets-west",
+                    "entry_url": "/waystation/paths/pasco-early-intercept/pasco-rescue-route-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-1-eden-way-north-at-eight-eighteen-and-two-pre-dawn-tickets-west",
                     "required_choices": {
                         "norfolk-pathfinder-terminal-2001": "norfolk-ticket-counter",
                         "norfolk-bay-four-boarding-2001": "seattle-pathfinder-exodus",
@@ -789,10 +795,10 @@
                 {
                     "id": "seattle-full-exodus-rescue",
                     "crossroads_id": "blue-tech-missed-shift-alarm-2001",
-                    "label": "Respect Workplace Boundaries & Wait Until Friday's Third No-Show",
-                    "subtitle": "Honor corporate protocol and relationship guardrails until Friday evening's automatic third-strike termination\u2014leaving feverish Nolan to endure the full haul to Seattle, Puget Sound General Hospital, grounded post-9/11 skies, and missing Gwen's eighteenth birthday while Grandpa Walter refuses to die until Gwen and Mallory bring Nolan home.",
+                    "label": "Respect Corporate Protocol & Wait Until Friday's Third No-Show",
+                    "subtitle": "Honor corporate HR rules and off-the-clock boundaries\u2014holding back until Friday evening's third missed shift gives you official reason to call Grandpa Walter's landline.",
                     "entry_part": "paths/seattle-full-exodus-rescue/e001/c001/p001.md",
-                    "entry_url": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-1-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake",
+                    "entry_url": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-1-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake",
                     "required_choices": {
                         "norfolk-pathfinder-terminal-2001": "norfolk-ticket-counter",
                         "norfolk-bay-four-boarding-2001": "seattle-pathfinder-exodus",
@@ -806,15 +812,15 @@
             ]
         }
     },
-    "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom": {
+    "/waystation/paths/pasco-early-intercept/pasco-rescue-route-intercept-before-the-restroom": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book One: Intercept Before the Restroom",
+        "title": "Pasco Rescue Route: Intercept Before the Restroom",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|pasco-early-intercept|0",
         "pathId": "pasco-early-intercept",
         "crossroadsId": "blue-tech-missed-shift-alarm-2001"
     },
-    "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco": {
+    "/waystation/paths/pasco-early-intercept/pasco-rescue-route-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 1B: Eden Way North, US-287, and Five Minutes to Spare in Pasco",
         "theme": "raggiesoft-books",
@@ -822,7 +828,7 @@
         "pathId": "pasco-early-intercept",
         "crossroadsId": "blue-tech-missed-shift-alarm-2001"
     },
-    "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-1-eden-way-north-at-eight-eighteen-and-two-pre-dawn-tickets-west": {
+    "/waystation/paths/pasco-early-intercept/pasco-rescue-route-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-1-eden-way-north-at-eight-eighteen-and-two-pre-dawn-tickets-west": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Eden Way North at Eight-Eighteen and Two Pre-Dawn Tickets West",
         "theme": "raggiesoft-books",
@@ -834,10 +840,10 @@
             "norfolk-bay-four-boarding-2001": "seattle-pathfinder-exodus",
             "blue-tech-missed-shift-alarm-2001": "pasco-early-intercept"
         },
-        "prevUrl": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-3-eight-oh-five-at-the-timeclock-and-two-unspoken-guardrails",
-        "nextUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-2-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake"
+        "prevUrl": "/waystation/paths/seattle-pathfinder-exodus/pathfinder-westbound-route-from-norfolk-to-missed-shift-one/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-3-eight-oh-five-at-the-timeclock-and-two-unspoken-guardrails",
+        "nextUrl": "/waystation/paths/pasco-early-intercept/pasco-rescue-route-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-2-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake"
     },
-    "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-2-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake": {
+    "/waystation/paths/pasco-early-intercept/pasco-rescue-route-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-2-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Bitter Wind in Colby, US-287, and Breaking Skin in Salt Lake",
         "theme": "raggiesoft-books",
@@ -849,10 +855,10 @@
             "norfolk-bay-four-boarding-2001": "seattle-pathfinder-exodus",
             "blue-tech-missed-shift-alarm-2001": "pasco-early-intercept"
         },
-        "prevUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-1-eden-way-north-at-eight-eighteen-and-two-pre-dawn-tickets-west",
-        "nextUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-five-minutes-before-the-restroom-door-and-crying-into-four-safe-arms-in-pasco"
+        "prevUrl": "/waystation/paths/pasco-early-intercept/pasco-rescue-route-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-1-eden-way-north-at-eight-eighteen-and-two-pre-dawn-tickets-west",
+        "nextUrl": "/waystation/paths/pasco-early-intercept/pasco-rescue-route-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-five-minutes-before-the-restroom-door-and-crying-into-four-safe-arms-in-pasco"
     },
-    "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-five-minutes-before-the-restroom-door-and-crying-into-four-safe-arms-in-pasco": {
+    "/waystation/paths/pasco-early-intercept/pasco-rescue-route-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-five-minutes-before-the-restroom-door-and-crying-into-four-safe-arms-in-pasco": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Five Minutes Before the Restroom Door and Crying Into Four Safe Arms in Pasco",
         "theme": "raggiesoft-books",
@@ -864,10 +870,10 @@
             "norfolk-bay-four-boarding-2001": "seattle-pathfinder-exodus",
             "blue-tech-missed-shift-alarm-2001": "pasco-early-intercept"
         },
-        "prevUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-2-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake",
-        "nextUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-4-empty-work-polos-ray-s-personal-number-and-home-in-studio-205"
+        "prevUrl": "/waystation/paths/pasco-early-intercept/pasco-rescue-route-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-2-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake",
+        "nextUrl": "/waystation/paths/pasco-early-intercept/pasco-rescue-route-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-4-empty-work-polos-ray-s-personal-number-and-home-in-studio-205"
     },
-    "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-4-empty-work-polos-ray-s-personal-number-and-home-in-studio-205": {
+    "/waystation/paths/pasco-early-intercept/pasco-rescue-route-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-4-empty-work-polos-ray-s-personal-number-and-home-in-studio-205": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: Empty Work Polos, Ray's Personal Number, and Home in Studio 205",
         "theme": "raggiesoft-books",
@@ -879,18 +885,18 @@
             "norfolk-bay-four-boarding-2001": "seattle-pathfinder-exodus",
             "blue-tech-missed-shift-alarm-2001": "pasco-early-intercept"
         },
-        "prevUrl": "/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-five-minutes-before-the-restroom-door-and-crying-into-four-safe-arms-in-pasco",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-1-amber-glass-beside-the-full-sized-bed"
+        "prevUrl": "/waystation/paths/pasco-early-intercept/pasco-rescue-route-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-3-five-minutes-before-the-restroom-door-and-crying-into-four-safe-arms-in-pasco",
+        "nextUrl": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-1-no-wheelchairs-in-the-star-moss/part-1-amber-glass-beside-the-full-sized-bed"
     },
-    "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound": {
+    "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book One: Ninety-Six Hours to Puget Sound",
+        "title": "Seattle Rescue Route: Puget Sound General and Coming Home",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|seattle-full-exodus-rescue|0",
         "pathId": "seattle-full-exodus-rescue",
         "crossroadsId": "blue-tech-missed-shift-alarm-2001"
     },
-    "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise": {
+    "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Chapter 1B: Pasco, Puget Sound General, and Grandpa Walter's Promise",
         "theme": "raggiesoft-books",
@@ -898,7 +904,7 @@
         "pathId": "seattle-full-exodus-rescue",
         "crossroadsId": "blue-tech-missed-shift-alarm-2001"
     },
-    "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-1-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake": {
+    "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-1-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Bitter Wind in Colby, US-287, and Breaking Skin in Salt Lake",
         "theme": "raggiesoft-books",
@@ -910,10 +916,10 @@
             "norfolk-bay-four-boarding-2001": "seattle-pathfinder-exodus",
             "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
         },
-        "prevUrl": "/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-3-eight-oh-five-at-the-timeclock-and-two-unspoken-guardrails",
-        "nextUrl": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-2-fog-in-pasco-across-the-cascades-and-abandoned-in-seattle"
+        "prevUrl": "/waystation/paths/seattle-pathfinder-exodus/pathfinder-westbound-route-from-norfolk-to-missed-shift-one/chapter-1a-ninety-six-hours-westbound-and-missed-shift-number-one/part-3-eight-oh-five-at-the-timeclock-and-two-unspoken-guardrails",
+        "nextUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-2-fog-in-pasco-across-the-cascades-and-abandoned-in-seattle"
     },
-    "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-2-fog-in-pasco-across-the-cascades-and-abandoned-in-seattle": {
+    "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-2-fog-in-pasco-across-the-cascades-and-abandoned-in-seattle": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Fog in Pasco, Across the Cascades, and Abandoned in Seattle",
         "theme": "raggiesoft-books",
@@ -925,10 +931,10 @@
             "norfolk-bay-four-boarding-2001": "seattle-pathfinder-exodus",
             "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
         },
-        "prevUrl": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-1-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake",
-        "nextUrl": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-puget-sound-general-grounded-skies-and-holding-on-past-october-nineteenth"
+        "prevUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-1-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake",
+        "nextUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-puget-sound-general-grounded-skies-and-holding-on-past-october-nineteenth"
     },
-    "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-puget-sound-general-grounded-skies-and-holding-on-past-october-nineteenth": {
+    "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-puget-sound-general-grounded-skies-and-holding-on-past-october-nineteenth": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 3: Puget Sound General, Grounded Skies, and Holding On Past October Nineteenth",
         "theme": "raggiesoft-books",
@@ -940,10 +946,10 @@
             "norfolk-bay-four-boarding-2001": "seattle-pathfinder-exodus",
             "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
         },
-        "prevUrl": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-2-fog-in-pasco-across-the-cascades-and-abandoned-in-seattle",
-        "nextUrl": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-4-crying-into-four-safe-arms-in-seattle-grandpa-s-final-watch-and-studio-205"
+        "prevUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-2-fog-in-pasco-across-the-cascades-and-abandoned-in-seattle",
+        "nextUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-4-crying-into-four-safe-arms-in-seattle-grandpa-s-final-watch-and-studio-205"
     },
-    "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-4-crying-into-four-safe-arms-in-seattle-grandpa-s-final-watch-and-studio-205": {
+    "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-4-crying-into-four-safe-arms-in-seattle-grandpa-s-final-watch-and-studio-205": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 4: Crying Into Four Safe Arms in Seattle, Grandpa's Final Watch, and Studio 205",
         "theme": "raggiesoft-books",
@@ -955,30 +961,30 @@
             "norfolk-bay-four-boarding-2001": "seattle-pathfinder-exodus",
             "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
         },
-        "prevUrl": "/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-puget-sound-general-grounded-skies-and-holding-on-past-october-nineteenth",
-        "nextUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss/part-1-amber-glass-beside-the-full-sized-bed"
+        "prevUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-puget-sound-general-grounded-skies-and-holding-on-past-october-nineteenth",
+        "nextUrl": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-1-no-wheelchairs-in-the-star-moss/part-1-amber-glass-beside-the-full-sized-bed"
     },
-    "/waystation/paths/lantern-barge-canal/book-one-beyond-the-studio-rift": {
+    "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book One: Beyond the Studio Rift",
+        "title": "Glasswater Canal Route: Lanterns on the Drift",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|lantern-barge-canal|0",
         "pathId": "lantern-barge-canal",
         "crossroadsId": "borderland-three-roads"
     },
-    "/waystation/paths/lantern-barge-canal/book-one-beyond-the-studio-rift/chapter-4-lanterns-on-the-glasswater": {
+    "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-3-lanterns-on-the-glasswater": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 4: Lanterns on the Glasswater",
+        "title": "Chapter 3: Lanterns on the Glasswater",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|lantern-barge-canal|0|0",
         "pathId": "lantern-barge-canal",
         "crossroadsId": "borderland-three-roads"
     },
-    "/waystation/paths/lantern-barge-canal/book-one-beyond-the-studio-rift/chapter-4-lanterns-on-the-glasswater/drifting-under-sapphire-glass": {
+    "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-3-lanterns-on-the-glasswater/drifting-under-sapphire-glass": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Drifting Under Sapphire Glass",
         "theme": "raggiesoft-books",
-        "filePath": "paths/lantern-barge-canal/e001/c004/p001.md",
+        "filePath": "paths/lantern-barge-canal/e002/c003/p001.md",
         "pathId": "lantern-barge-canal",
         "crossroadsId": "borderland-three-roads",
         "requiredChoices": {
@@ -987,22 +993,22 @@
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-3-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
-        "nextUrl": "/waystation/paths/lantern-barge-canal/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway"
+        "prevUrl": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-2-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
+        "nextUrl": "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway"
     },
-    "/waystation/paths/lantern-barge-canal/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen": {
+    "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 5: Keepers' Hall and the Clock at Nine-Fifteen",
+        "title": "Chapter 4: Keepers\u2019 Hall and the Clock at Nine-Fifteen",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|lantern-barge-canal|0|1",
         "pathId": "lantern-barge-canal",
         "crossroadsId": "borderland-three-roads"
     },
-    "/waystation/paths/lantern-barge-canal/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway": {
+    "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Turning the Twin Rings and the Glowing Hearth-Archway",
         "theme": "raggiesoft-books",
-        "filePath": "paths/lantern-barge-canal/e001/c005/p001.md",
+        "filePath": "paths/lantern-barge-canal/e002/c004/p001.md",
         "pathId": "lantern-barge-canal",
         "crossroadsId": "borderland-three-roads",
         "requiredChoices": {
@@ -1011,14 +1017,14 @@
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/paths/lantern-barge-canal/book-one-beyond-the-studio-rift/chapter-4-lanterns-on-the-glasswater/drifting-under-sapphire-glass",
-        "nextUrl": "/waystation/paths/lantern-barge-canal/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-choosing-home"
+        "prevUrl": "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-3-lanterns-on-the-glasswater/drifting-under-sapphire-glass",
+        "nextUrl": "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-choosing-home"
     },
-    "/waystation/paths/lantern-barge-canal/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-choosing-home": {
+    "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-choosing-home": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Nine-Fifteen on the VCR Clock and Choosing Home",
         "theme": "raggiesoft-books",
-        "filePath": "paths/lantern-barge-canal/e001/c005/p002.md",
+        "filePath": "paths/lantern-barge-canal/e002/c004/p002.md",
         "pathId": "lantern-barge-canal",
         "crossroadsId": "borderland-three-roads",
         "requiredChoices": {
@@ -1027,30 +1033,30 @@
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/paths/lantern-barge-canal/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway",
+        "prevUrl": "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway",
         "noNext": true
     },
-    "/waystation/paths/whisperwood-moss-road/book-one-beyond-the-studio-rift": {
+    "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book One: Beyond the Studio Rift",
+        "title": "Whisperwood Moss Route: Road of the Slow-Footed Order",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|whisperwood-moss-road|0",
         "pathId": "whisperwood-moss-road",
         "crossroadsId": "borderland-three-roads"
     },
-    "/waystation/paths/whisperwood-moss-road/book-one-beyond-the-studio-rift/chapter-4-the-slow-footed-order-s-road": {
+    "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-3-the-slow-footed-order-s-road": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 4: The Slow-Footed Order's Road",
+        "title": "Chapter 3: The Slow-Footed Order\u2019s Road",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|whisperwood-moss-road|0|0",
         "pathId": "whisperwood-moss-road",
         "crossroadsId": "borderland-three-roads"
     },
-    "/waystation/paths/whisperwood-moss-road/book-one-beyond-the-studio-rift/chapter-4-the-slow-footed-order-s-road/warm-springs-and-glowing-canopy": {
+    "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-3-the-slow-footed-order-s-road/warm-springs-and-glowing-canopy": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Warm Springs and Glowing Canopy",
         "theme": "raggiesoft-books",
-        "filePath": "paths/whisperwood-moss-road/e001/c004/p001.md",
+        "filePath": "paths/whisperwood-moss-road/e002/c003/p001.md",
         "pathId": "whisperwood-moss-road",
         "crossroadsId": "borderland-three-roads",
         "requiredChoices": {
@@ -1059,22 +1065,22 @@
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-3-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
-        "nextUrl": "/waystation/paths/whisperwood-moss-road/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway"
+        "prevUrl": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-2-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
+        "nextUrl": "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway"
     },
-    "/waystation/paths/whisperwood-moss-road/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen": {
+    "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 5: Keepers' Hall and the Clock at Nine-Fifteen",
+        "title": "Chapter 4: Keepers\u2019 Hall and the Clock at Nine-Fifteen",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|whisperwood-moss-road|0|1",
         "pathId": "whisperwood-moss-road",
         "crossroadsId": "borderland-three-roads"
     },
-    "/waystation/paths/whisperwood-moss-road/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway": {
+    "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Turning the Twin Rings and the Glowing Hearth-Archway",
         "theme": "raggiesoft-books",
-        "filePath": "paths/whisperwood-moss-road/e001/c005/p001.md",
+        "filePath": "paths/whisperwood-moss-road/e002/c004/p001.md",
         "pathId": "whisperwood-moss-road",
         "crossroadsId": "borderland-three-roads",
         "requiredChoices": {
@@ -1083,14 +1089,14 @@
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/paths/whisperwood-moss-road/book-one-beyond-the-studio-rift/chapter-4-the-slow-footed-order-s-road/warm-springs-and-glowing-canopy",
-        "nextUrl": "/waystation/paths/whisperwood-moss-road/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-choosing-home"
+        "prevUrl": "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-3-the-slow-footed-order-s-road/warm-springs-and-glowing-canopy",
+        "nextUrl": "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-choosing-home"
     },
-    "/waystation/paths/whisperwood-moss-road/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-choosing-home": {
+    "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-choosing-home": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Nine-Fifteen on the VCR Clock and Choosing Home",
         "theme": "raggiesoft-books",
-        "filePath": "paths/whisperwood-moss-road/e001/c005/p002.md",
+        "filePath": "paths/whisperwood-moss-road/e002/c004/p002.md",
         "pathId": "whisperwood-moss-road",
         "crossroadsId": "borderland-three-roads",
         "requiredChoices": {
@@ -1099,30 +1105,30 @@
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/paths/whisperwood-moss-road/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway",
+        "prevUrl": "/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway",
         "noNext": true
     },
-    "/waystation/paths/brass-counterweight-way/book-one-beyond-the-studio-rift": {
+    "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Book One: Beyond the Studio Rift",
+        "title": "Amber Crags Gondola Route: Above the Painted Clouds",
         "theme": "raggiesoft-books",
         "filePath": "__ERA_TOC__|brass-counterweight-way|0",
         "pathId": "brass-counterweight-way",
         "crossroadsId": "borderland-three-roads"
     },
-    "/waystation/paths/brass-counterweight-way/book-one-beyond-the-studio-rift/chapter-4-above-the-painted-clouds": {
+    "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-3-above-the-painted-clouds": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 4: Above the Painted Clouds",
+        "title": "Chapter 3: Above the Painted Clouds",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|brass-counterweight-way|0|0",
         "pathId": "brass-counterweight-way",
         "crossroadsId": "borderland-three-roads"
     },
-    "/waystation/paths/brass-counterweight-way/book-one-beyond-the-studio-rift/chapter-4-above-the-painted-clouds/gondolas-of-the-amber-crags": {
+    "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-3-above-the-painted-clouds/gondolas-of-the-amber-crags": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Gondolas of the Amber Crags",
         "theme": "raggiesoft-books",
-        "filePath": "paths/brass-counterweight-way/e001/c004/p001.md",
+        "filePath": "paths/brass-counterweight-way/e002/c003/p001.md",
         "pathId": "brass-counterweight-way",
         "crossroadsId": "borderland-three-roads",
         "requiredChoices": {
@@ -1131,22 +1137,22 @@
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/book-one-beyond-the-studio-rift/chapter-3-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
-        "nextUrl": "/waystation/paths/brass-counterweight-way/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway"
+        "prevUrl": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-2-the-three-roads-of-the-sunken-milestone/where-the-flagstones-divide",
+        "nextUrl": "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway"
     },
-    "/waystation/paths/brass-counterweight-way/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen": {
+    "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Chapter 5: Keepers' Hall and the Clock at Nine-Fifteen",
+        "title": "Chapter 4: Keepers\u2019 Hall and the Clock at Nine-Fifteen",
         "theme": "raggiesoft-books",
         "filePath": "__CHAP_TOC__|brass-counterweight-way|0|1",
         "pathId": "brass-counterweight-way",
         "crossroadsId": "borderland-three-roads"
     },
-    "/waystation/paths/brass-counterweight-way/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway": {
+    "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 1: Turning the Twin Rings and the Glowing Hearth-Archway",
         "theme": "raggiesoft-books",
-        "filePath": "paths/brass-counterweight-way/e001/c005/p001.md",
+        "filePath": "paths/brass-counterweight-way/e002/c004/p001.md",
         "pathId": "brass-counterweight-way",
         "crossroadsId": "borderland-three-roads",
         "requiredChoices": {
@@ -1155,14 +1161,14 @@
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/paths/brass-counterweight-way/book-one-beyond-the-studio-rift/chapter-4-above-the-painted-clouds/gondolas-of-the-amber-crags",
-        "nextUrl": "/waystation/paths/brass-counterweight-way/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-choosing-home"
+        "prevUrl": "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-3-above-the-painted-clouds/gondolas-of-the-amber-crags",
+        "nextUrl": "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-choosing-home"
     },
-    "/waystation/paths/brass-counterweight-way/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-choosing-home": {
+    "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-2-nine-fifteen-on-the-vcr-clock-and-choosing-home": {
         "view": "pages/raggiesoft-books/books/viewer",
         "title": "Part 2: Nine-Fifteen on the VCR Clock and Choosing Home",
         "theme": "raggiesoft-books",
-        "filePath": "paths/brass-counterweight-way/e001/c005/p002.md",
+        "filePath": "paths/brass-counterweight-way/e002/c004/p002.md",
         "pathId": "brass-counterweight-way",
         "crossroadsId": "borderland-three-roads",
         "requiredChoices": {
@@ -1171,7 +1177,7 @@
         "defaultChoices": {
             "norfolk-pathfinder-terminal-2001": "lock-wheelchair-brakes-emerald-creek"
         },
-        "prevUrl": "/waystation/paths/brass-counterweight-way/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway",
+        "prevUrl": "/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen/part-1-turning-the-twin-rings-and-the-glowing-hearth-archway",
         "noNext": true
     }
 }

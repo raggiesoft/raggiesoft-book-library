@@ -189,11 +189,56 @@ $legacyPartRedirects = [
         => '/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-4-crying-into-four-safe-arms-in-seattle-grandpa-s-final-watch-and-studio-205',
 ];
 
-// Check if the requested path is in `$legacyPartRedirects` and issue an instant 301 redirect if so.
+// Check if the requested path is in `$legacyPartRedirects` (or matches a renamed Waystation Book One / Book Two / Route prefix) and issue an instant 301 redirect.
 $normalizedRequestUri = ($requestUri !== '/') ? rtrim($requestUri, '/') : '/';
+$waystationPrefixRedirects = [
+    '/waystation/book-one-beyond-the-studio-rift/chapter-2-no-wheelchairs-in-the-star-moss'
+        => '/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-1-no-wheelchairs-in-the-star-moss',
+    '/waystation/book-one-beyond-the-studio-rift/chapter-3-the-three-roads-of-the-sunken-milestone'
+        => '/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-2-the-three-roads-of-the-sunken-milestone',
+    '/waystation/book-one-beyond-the-studio-rift'
+        => '/waystation/book-one-tidewater-and-studio-205',
+    '/waystation/paths/norfolk-ticket-counter/book-one-ninety-nine-dollars-at-the-ticket-window'
+        => '/waystation/paths/norfolk-ticket-counter/norfolk-terminal-route-ninety-nine-dollars-at-the-ticket-window',
+    '/waystation/paths/ticket-snap-refuse-boarding/book-one-turning-around-at-gate-four'
+        => '/waystation/paths/ticket-snap-refuse-boarding/gate-four-route-refusing-the-steps-and-denise-s-cab-home',
+    '/waystation/paths/seattle-pathfinder-exodus/book-one-the-ninety-nine-dollar-pathfinder'
+        => '/waystation/paths/seattle-pathfinder-exodus/pathfinder-westbound-route-from-norfolk-to-missed-shift-one',
+    '/waystation/paths/seattle-pathfinder-exodus/book-one-the-pathfinder-exodus'
+        => '/waystation/paths/seattle-pathfinder-exodus/pathfinder-westbound-route-from-norfolk-to-missed-shift-one',
+    '/waystation/paths/pasco-early-intercept/book-one-intercept-before-the-restroom'
+        => '/waystation/paths/pasco-early-intercept/pasco-rescue-route-intercept-before-the-restroom',
+    '/waystation/paths/seattle-full-exodus-rescue/book-one-ninety-six-hours-to-puget-sound'
+        => '/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home',
+    '/waystation/paths/lantern-barge-canal/book-one-beyond-the-studio-rift/chapter-4-lanterns-on-the-glasswater'
+        => '/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-3-lanterns-on-the-glasswater',
+    '/waystation/paths/lantern-barge-canal/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen'
+        => '/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen',
+    '/waystation/paths/whisperwood-moss-road/book-one-beyond-the-studio-rift/chapter-4-the-slow-footed-order-s-road'
+        => '/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-3-the-slow-footed-order-s-road',
+    '/waystation/paths/whisperwood-moss-road/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen'
+        => '/waystation/paths/whisperwood-moss-road/whisperwood-moss-route-road-of-the-slow-footed-order/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen',
+    '/waystation/paths/brass-counterweight-way/book-one-beyond-the-studio-rift/chapter-4-above-the-painted-clouds'
+        => '/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-3-above-the-painted-clouds',
+    '/waystation/paths/brass-counterweight-way/book-one-beyond-the-studio-rift/chapter-5-keepers-hall-and-the-clock-at-nine-fifteen'
+        => '/waystation/paths/brass-counterweight-way/amber-crags-gondola-route-above-the-painted-clouds/chapter-4-keepers-hall-and-the-clock-at-nine-fifteen',
+];
 if (isset($legacyPartRedirects[$normalizedRequestUri])) {
-    header('Location: ' . $legacyPartRedirects[$normalizedRequestUri], true, 301);
+    $redirDest = $legacyPartRedirects[$normalizedRequestUri];
+    foreach ($waystationPrefixRedirects as $oldPfx => $newPfx) {
+        if ($redirDest === $oldPfx || str_starts_with($redirDest, $oldPfx . '/')) {
+            $redirDest = $newPfx . substr($redirDest, strlen($oldPfx));
+            break;
+        }
+    }
+    header('Location: ' . $redirDest, true, 301);
     exit;
+}
+foreach ($waystationPrefixRedirects as $oldPfx => $newPfx) {
+    if ($normalizedRequestUri === $oldPfx || str_starts_with($normalizedRequestUri, $oldPfx . '/')) {
+        header('Location: ' . $newPfx . substr($normalizedRequestUri, strlen($oldPfx)), true, 301);
+        exit;
+    }
 }
 
 // =============================================================================
