@@ -145,64 +145,97 @@ class StardustParsedown extends Parsedown {
      *   so wide tables scroll horizontally on phones instead of breaking the page width.
      */
     protected function blockTableComplete(array $Block) {
-        // `parent::blockTableComplete($Block)` is like `super.blockTableComplete(Block)` in JS:
-        // let the base Parsedown class build the standard table structure first.
-        $Block = parent::blockTableComplete($Block);
+        // Guard clause: base `Parsedown` (v1.8) invokes `blockTableComplete()` dynamically via
+        // `method_exists()` without defining `Parsedown::blockTableComplete()` itself—so only
+        // call `parent::blockTableComplete()` when a parent class actually implements it!
+        if (method_exists(parent::class, 'blockTableComplete')) {
+            $Block = parent::blockTableComplete($Block);
+        }
 
-        // Guard clause: if Parsedown decided this wasn't a valid table, return early.
-        if (!$Block) {
+        if (!$Block || !isset($Block['element'])) {
             return $Block;
         }
 
-        // 1. Navigate into Parsedown's nested table AST to reach the `<th>` cells inside `<thead><tr>`:
-        //    `$Block['element']['text'][0]`       -> `<thead>`
-        //    `$Block['element']['text'][0]['text'][0]` -> first `<tr>` inside `<thead>`
-        //    `...['text']`                        -> list of `<th>` header cell arrays.
-        if (isset($Block['element']['text'][0]['text'][0]['text'])) {
-            // Notice the `&` symbol (`&$Block[...]` and `&$th`):
-            // Unlike JavaScript (where objects/arrays are always passed by reference),
-            // PHP copies arrays by value unless you use `&` ("reference"). Using `&` lets
-            // us mutate the original `$Block` tree directly in place!
-            $headers = &$Block['element']['text'][0]['text'][0]['text'];
-            
-            // Add `scope="col"` to every column header `<th scope="col">` for screen readers.
-            foreach ($headers as &$th) {
+        // Parsedown 1.8 stores child AST nodes under `'elements'` (with raw cell Markdown in
+        // `$cell['handler']['argument']`), whereas Parsedown 1.7 used `'text'`. Support both!
+        $childKey = isset($Block['element']['elements']) ? 'elements' : 'text';
+
+        if (isset($Block['element'][$childKey][0][$childKey][0][$childKey])) {
+            $headers = &$Block['element'][$childKey][0][$childKey][0][$childKey];
+            $Block['element'][$childKey][0]['attributes']['role'] = 'rowgroup';
+            $Block['element'][$childKey][0][$childKey][0]['attributes']['role'] = 'row';
+
+            // 1. Add `scope="col"` to every `<th scope="col">` and extract plain-text header labels
+            //    for mobile stacked-card `data-label="..."` captions (`< 768px`).
+            $headerLabels = [];
+            foreach ($headers as $hIdx => &$th) {
                 $th['attributes']['scope'] = 'col';
-            }
-            
-            // 2. Convention check: If the author left the top-left corner cell blank
-            //    (`|   | Col 1 | Col 2 |`), that signals the first column contains ROW labels!
-            $isRowHeaderTable = empty(trim($headers[0]['text']));
-            
-            // 3. When row headers are active, walk every `<tr>` in `<tbody>` (`text[1]`)
-            //    and upgrade its first cell (`text[0]`) from `<td>` to `<th scope="row">`.
-            if ($isRowHeaderTable && isset($Block['element']['text'][1]['text'])) {
-                $rows = &$Block['element']['text'][1]['text']; // The <tbody> <tr> rows
-                
-                foreach ($rows as &$tr) {
-                    if (isset($tr['text'][0])) {
-                        // Change the HTML tag name from 'td' to 'th'
-                        $tr['text'][0]['name'] = 'th';
-                        // Tell assistive technology this header labels the entire horizontal row
-                        $tr['text'][0]['attributes']['scope'] = 'row';
-                    }
+                $th['attributes']['role'] = 'columnheader';
+                $rawHdrText = '';
+                if (isset($th['handler']['argument']) && is_string($th['handler']['argument'])) {
+                    $rawHdrText = $th['handler']['argument'];
+                } elseif (isset($th['text']) && is_string($th['text'])) {
+                    $rawHdrText = $th['text'];
                 }
+                $headerLabels[$hIdx] = trim(preg_replace('/[*_`~]+/', '', strip_tags($rawHdrText)));
+            }
+            unset($th);
+
+            // 2. If the top-left header cell is blank (`|   | Col 1 | Col 2 |`), treat col 0 as `<th scope="row">`.
+            $isRowHeaderTable = ($headerLabels[0] ?? '') === '';
+
+            // 3. Stamp `role="row"`, `scope="row"` / `role="rowheader"`, and `data-label` onto `<tbody>` rows!
+            if (isset($Block['element'][$childKey][1][$childKey])) {
+                $Block['element'][$childKey][1]['attributes']['role'] = 'rowgroup';
+                $rows = &$Block['element'][$childKey][1][$childKey];
+
+                foreach ($rows as &$tr) {
+                    $tr['attributes']['role'] = 'row';
+                    if (!isset($tr[$childKey]) || !is_array($tr[$childKey])) {
+                        continue;
+                    }
+                    foreach ($tr[$childKey] as $cIdx => &$cell) {
+                        if ($cIdx === 0 && $isRowHeaderTable) {
+                            $cell['name'] = 'th';
+                            $cell['attributes']['scope'] = 'row';
+                            $cell['attributes']['role'] = 'rowheader';
+                        } else {
+                            $cell['attributes']['role'] = 'cell';
+                            if (!empty($headerLabels[$cIdx])) {
+                                $cell['attributes']['data-label'] = $headerLabels[$cIdx];
+                            }
+                        }
+                    }
+                    unset($cell);
+                }
+                unset($tr);
             }
         }
 
-        // 4. Attach styling classes for striped rows, hover highlighting, and vertical centering.
-        $Block['element']['attributes']['class'] = 'table table-striped table-hover align-middle';
+        // 4. Attach styling classes and explicit `role="table"` for mobile stacked cards + desktop tables.
+        $Block['element']['attributes']['class'] = 'table table-striped table-hover align-middle rs-mobile-stack-table';
+        $Block['element']['attributes']['role'] = 'table';
 
-        // 5. Wrap the `<table>` AST node inside `<div class="table-responsive my-4">`
-        //    so narrow mobile screens gain a clean horizontal scrollbar if needed.
-        $ResponsiveWrapper = array(
-            'name' => 'div',
-            'attributes' => array(
-                'class' => 'table-responsive my-4'
-            ),
-            'handler' => 'element',
-            'text' => $Block['element']
-        );
+        // 5. Wrap `<table>` inside `<div class="table-responsive my-4">` using Parsedown 1.8's `'elements'` array
+        //    (or `'handler' => 'element'` in 1.7) so wide tables never overflow mobile screens.
+        if ($childKey === 'elements') {
+            $ResponsiveWrapper = array(
+                'name' => 'div',
+                'attributes' => array(
+                    'class' => 'table-responsive my-4',
+                ),
+                'elements' => array($Block['element']),
+            );
+        } else {
+            $ResponsiveWrapper = array(
+                'name' => 'div',
+                'attributes' => array(
+                    'class' => 'table-responsive my-4',
+                ),
+                'handler' => 'element',
+                'text' => $Block['element'],
+            );
+        }
 
         $Block['element'] = $ResponsiveWrapper;
 
