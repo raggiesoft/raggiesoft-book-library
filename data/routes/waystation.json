@@ -14,24 +14,24 @@
         "ebook_sizes": {
             "epub": "13.7 MB",
             "pdf": "13.3 MB",
-            "text_epub": "220 KB",
-            "text_pdf": "555 KB",
-            "package_7z": "159 KB",
-            "epub_bytes": 14317958,
-            "pdf_bytes": 13964564,
-            "text_epub_bytes": 224823,
-            "text_pdf_bytes": 567927,
-            "package_7z_bytes": 162512
+            "text_epub": "219 KB",
+            "text_pdf": "553 KB",
+            "package_7z": "158 KB",
+            "epub_bytes": 14317172,
+            "pdf_bytes": 13963020,
+            "text_epub_bytes": 224048,
+            "text_pdf_bytes": 565828,
+            "package_7z_bytes": 161451
         },
         "illustration_count": 51,
         "word_stats": {
-            "story_word_count": 77285,
-            "lore_word_count": 10755,
-            "combined_word_count": 88040,
-            "story_page_count": 281,
-            "combined_page_count": 320,
-            "reading_hours": 5.2,
-            "reading_minutes": 309,
+            "story_word_count": 77015,
+            "lore_word_count": 10778,
+            "combined_word_count": 87793,
+            "story_page_count": 280,
+            "combined_page_count": 319,
+            "reading_hours": 5.1,
+            "reading_minutes": 308,
             "novel_equivalent": 0.9,
             "scale_category": "Full-Length Contemporary Novel",
             "scale_badge": "Full-Length Novel",
@@ -172,8 +172,8 @@
                             "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
                         },
                         "part_count": 7,
-                        "word_count": 9036,
-                        "reading_minutes": 37,
+                        "word_count": 8766,
+                        "reading_minutes": 36,
                         "image": "/raggiesoft-books/images/scenes/waystation/paths/seattle_p001_colby_kansas_truckstop.jpg"
                     }
                 ]
@@ -512,7 +512,7 @@
         "rejoinPrevBySegment": {
             "ticket-snap-refuse-boarding": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-18-eighty-nine-degrees-and-one-rattling-fan",
             "pasco-early-intercept": "/waystation/paths/pasco-early-intercept/pasco-rescue-route-intercept-before-the-restroom/chapter-1b-eden-way-north-us-287-and-five-minutes-to-spare-in-pasco/part-6-empty-work-polos-ray-s-personal-number-and-home-in-studio-205",
-            "seattle-full-exodus-rescue": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-7-sea-tac-checkpoints-skipping-the-prismatic-corridor-via-midway-and-grandpa-s-final-watch",
+            "seattle-full-exodus-rescue": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-7-eighteen-candles-around-grandpa-s-table-ray-s-home-line-and-studio-205",
             "lock-wheelchair-brakes-emerald-creek": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-18-eighty-nine-degrees-and-one-rattling-fan"
         },
         "prevUrl": "/waystation/book-one-tidewater-and-studio-205/chapter-1-two-names-on-one-studio-lease/part-18-eighty-nine-degrees-and-one-rattling-fan",
@@ -872,8 +872,8 @@
                         "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
                     },
                     "part_count": 7,
-                    "word_count": 9036,
-                    "reading_minutes": 37,
+                    "word_count": 8766,
+                    "reading_minutes": 36,
                     "image": "/raggiesoft-books/images/scenes/waystation/paths/seattle_p001_colby_kansas_truckstop.jpg"
                 }
             ]
@@ -1029,11 +1029,11 @@
             "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
         },
         "prevUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-1-bitter-wind-in-colby-us-287-and-breaking-skin-in-salt-lake",
-        "nextUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-air-flotation-bedrest-seattle-police-and-ms-rivera-s-plain-truth"
+        "nextUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-iv-to-oral-step-down-seattle-police-and-ms-rivera-s-plain-truth"
     },
-    "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-air-flotation-bedrest-seattle-police-and-ms-rivera-s-plain-truth": {
+    "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-iv-to-oral-step-down-seattle-police-and-ms-rivera-s-plain-truth": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 3: Air-Flotation Bedrest, Seattle Police, and Ms. Rivera's Plain Truth",
+        "title": "Part 3: IV-to-Oral Step-Down, Seattle Police, and Ms. Rivera's Plain Truth",
         "theme": "raggiesoft-books",
         "filePath": "paths/seattle-full-exodus-rescue/e001/c001/p003.md",
         "pathId": "seattle-full-exodus-rescue",
@@ -1044,11 +1044,11 @@
             "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
         },
         "prevUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-2-fog-in-pasco-across-the-cascades-and-abandoned-in-seattle",
-        "nextUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-4-hospital-television-static-and-three-time-zones-from-home"
+        "nextUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-4-labor-day-weekend-reunion-in-seattle-and-wide-awake-by-sea-tac"
     },
-    "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-4-hospital-television-static-and-three-time-zones-from-home": {
+    "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-4-labor-day-weekend-reunion-in-seattle-and-wide-awake-by-sea-tac": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 4: Hospital Television Static and Three Time Zones From Home",
+        "title": "Part 4: Labor Day Weekend Reunion in Seattle and Wide Awake by Sea-Tac",
         "theme": "raggiesoft-books",
         "filePath": "paths/seattle-full-exodus-rescue/e001/c001/p004.md",
         "pathId": "seattle-full-exodus-rescue",
@@ -1058,12 +1058,12 @@
             "norfolk-bay-four-boarding-2001": "seattle-pathfinder-exodus",
             "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
         },
-        "prevUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-air-flotation-bedrest-seattle-police-and-ms-rivera-s-plain-truth",
-        "nextUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-5-eighteen-candles-over-a-corded-hospital-phone-and-grandpa-s-iron-vow"
+        "prevUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-3-iv-to-oral-step-down-seattle-police-and-ms-rivera-s-plain-truth",
+        "nextUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-5-skipping-the-prismatic-corridor-via-midway-and-home-before-junior-year"
     },
-    "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-5-eighteen-candles-over-a-corded-hospital-phone-and-grandpa-s-iron-vow": {
+    "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-5-skipping-the-prismatic-corridor-via-midway-and-home-before-junior-year": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 5: Eighteen Candles Over a Corded Hospital Phone and Grandpa's Iron Vow",
+        "title": "Part 5: Skipping the Prismatic Corridor via Midway and Home Before Junior Year",
         "theme": "raggiesoft-books",
         "filePath": "paths/seattle-full-exodus-rescue/e001/c001/p005.md",
         "pathId": "seattle-full-exodus-rescue",
@@ -1073,12 +1073,12 @@
             "norfolk-bay-four-boarding-2001": "seattle-pathfinder-exodus",
             "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
         },
-        "prevUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-4-hospital-television-static-and-three-time-zones-from-home",
-        "nextUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-6-crying-into-four-safe-arms-in-seattle-and-wide-awake-by-sea-tac"
+        "prevUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-4-labor-day-weekend-reunion-in-seattle-and-wide-awake-by-sea-tac",
+        "nextUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-6-resting-off-my-hip-on-eden-way-north-when-the-sky-went-silent"
     },
-    "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-6-crying-into-four-safe-arms-in-seattle-and-wide-awake-by-sea-tac": {
+    "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-6-resting-off-my-hip-on-eden-way-north-when-the-sky-went-silent": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 6: Crying Into Four Safe Arms in Seattle and Wide Awake by Sea-Tac",
+        "title": "Part 6: Resting Off My Hip on Eden Way North When the Sky Went Silent",
         "theme": "raggiesoft-books",
         "filePath": "paths/seattle-full-exodus-rescue/e001/c001/p006.md",
         "pathId": "seattle-full-exodus-rescue",
@@ -1088,12 +1088,12 @@
             "norfolk-bay-four-boarding-2001": "seattle-pathfinder-exodus",
             "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
         },
-        "prevUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-5-eighteen-candles-over-a-corded-hospital-phone-and-grandpa-s-iron-vow",
-        "nextUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-7-sea-tac-checkpoints-skipping-the-prismatic-corridor-via-midway-and-grandpa-s-final-watch"
+        "prevUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-5-skipping-the-prismatic-corridor-via-midway-and-home-before-junior-year",
+        "nextUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-7-eighteen-candles-around-grandpa-s-table-ray-s-home-line-and-studio-205"
     },
-    "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-7-sea-tac-checkpoints-skipping-the-prismatic-corridor-via-midway-and-grandpa-s-final-watch": {
+    "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-7-eighteen-candles-around-grandpa-s-table-ray-s-home-line-and-studio-205": {
         "view": "pages/raggiesoft-books/books/viewer",
-        "title": "Part 7: Sea-Tac Checkpoints, Skipping the Prismatic Corridor via Midway, and Grandpa's Final Watch",
+        "title": "Part 7: Eighteen Candles Around Grandpa's Table, Ray's Home Line, and Studio 205",
         "theme": "raggiesoft-books",
         "filePath": "paths/seattle-full-exodus-rescue/e001/c001/p007.md",
         "pathId": "seattle-full-exodus-rescue",
@@ -1103,7 +1103,7 @@
             "norfolk-bay-four-boarding-2001": "seattle-pathfinder-exodus",
             "blue-tech-missed-shift-alarm-2001": "seattle-full-exodus-rescue"
         },
-        "prevUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-6-crying-into-four-safe-arms-in-seattle-and-wide-awake-by-sea-tac",
+        "prevUrl": "/waystation/paths/seattle-full-exodus-rescue/seattle-rescue-route-puget-sound-general-and-coming-home/chapter-1b-pasco-puget-sound-general-and-grandpa-walter-s-promise/part-6-resting-off-my-hip-on-eden-way-north-when-the-sky-went-silent",
         "nextUrl": "/waystation/book-two-vaeloria-beyond-the-studio-rift/chapter-1-no-wheelchairs-in-the-star-moss/part-1-amber-glass-beside-the-full-sized-bed"
     },
     "/waystation/paths/lantern-barge-canal/glasswater-canal-route-lanterns-on-the-drift": {
